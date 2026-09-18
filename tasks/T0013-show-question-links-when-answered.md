@@ -4,9 +4,9 @@ owner: "@antigravity"
 needs: []
 branch: task/T0013-show-question-links-when-answered
 worktree: ./work/T0013-show-question-links-when-answered
-status: needs-review
+status: completed
 started: 2026-09-18
-ended: —
+ended: 2026-09-18
 ---
 
 # T0013: Show Question Links When Answered
@@ -50,6 +50,9 @@ Verify visual rendering and test suite integrity across the updated quiz.
 
 - [2026-09-18] **[Doc]**
   Updated requirements, question bank source notes, and changelog records with link details.
+
+- [2026-09-18] **[Complete]**
+  Delivered official rule and explainer reference links revealed upon answering each question.
 
 ## Walkthrough & Validation
 
