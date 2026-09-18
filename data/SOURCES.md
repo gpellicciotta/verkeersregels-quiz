@@ -4,31 +4,31 @@ Content for the Belgian theoretical driving exam quiz, generated and verified on
 
 ## Question bank summary
 
-Total questions: 63, stored in `data/questions.json`.
+Total questions: 126, stored in `data/questions.json`.
 
 Breakdown by type:
 
-- recognize: 22
-- identify: 9
-- rule: 32
+- recognize: 35
+- identify: 12
+- rule: 79
 
 Breakdown by category:
 
-- fietsers-voetgangers: 14
-- voorrang: 9
-- algemeen: 7
+- fietsers-voetgangers: 28
+- voorrang: 20
+- algemeen: 16
+- parkeren: 11
+- verbod: 9
+- snelheid: 9
+- aanwijzing: 9
+- autosnelweg: 8
 - gevaar: 6
-- snelheid: 5
-- verbod: 5
-- aanwijzing: 4
-- autosnelweg: 4
-- alcohol: 2
+- alcohol: 4
 - gebod: 2
 - gordel: 2
-- parkeren: 2
-- telefoon: 1
+- telefoon: 2
 
-Answer positions (`correctIndex`) are spread across all four slots (roughly 15-17 questions per index) so the correct answer is not systematically in the same position.
+Answer positions (`correctIndex`) are spread evenly across all four slots (31 or 32 questions per index: 31 for 0, 32 for 1, 32 for 2, 31 for 3) so the correct answer is not systematically in the same position.
 
 ## Rule sources
 
@@ -148,4 +148,11 @@ Cross-reference used to confirm which code matches which meaning and shape: the 
   - Added question on velomobile safety flag visibility rules (KB 9 oktober 2022).
   - Added question on bicycle street F111 junction validity (KB 8 juni 2021).
   - Added question on Brussels default 30 km/u speed limit (BRBHG 22 september 2021).
+
+- 2026-09-18: expanded question bank from 63 to 126 questions with full sign coverage and recent rules:
+  - Added dedicated recognize questions for all signs in `assets/signs/`, achieving 100% direct coverage (35/35).
+  - Added dedicated identify questions for C39, E3, and F3b.
+  - Added questions on post-2022 legislation including e-scooters, smartphone mounting, emergency corridors, and zipper merging.
+  - Added realistic traffic scenarios covering priority rules, trams, bus stops, manoeuvres, and crossings.
+  - Balanced answer positions evenly across all four options with 31 or 32 questions each.
 
