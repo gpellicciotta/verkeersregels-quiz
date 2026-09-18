@@ -78,7 +78,7 @@ License: all files are public domain under Belgian law, because official traffic
 | B19.svg | Smalle doorgang, voorrang verlenen aan tegenliggers | [File:Belgian traffic sign B19.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_B19.svg) |
 | C1.svg | Verboden richting in te rijden | [File:Belgian traffic sign C1.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_C1.svg) |
 | C3.svg | Verboden toegang in beide richtingen | [File:Belgian traffic sign C3.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_C3.svg) |
-| C31.svg | Verbod om links af te slaan (C31a) | [File:Belgian traffic sign C31a.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_C31a.svg) |
+| C31a.svg | Verbod aan het volgend kruispunt links af te slaan (C31a) | [File:Belgian traffic sign C31a.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_C31a.svg) |
 | C33.svg | Verbod om te keren | [File:Belgian traffic sign C33.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_C33.svg) |
 | C35.svg | Verbod in te halen | [File:Belgian traffic sign C35.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_C35.svg) |
 | C39.svg | Verbod voor vrachtwagens om in te halen | [File:Belgian traffic sign C39.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_C39.svg) |
@@ -86,7 +86,7 @@ License: all files are public domain under Belgian law, because official traffic
 | D1a.svg | Verplichte rijrichting rechtdoor | [File:Belgian traffic sign D1a.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_D1a.svg) |
 | D5.svg | Verplicht rondgaand verkeer (rotonde) | [File:Belgian road sign D05.svg](https://commons.wikimedia.org/wiki/File:Belgian_road_sign_D05.svg) |
 | D7.svg | Verplicht fietspad | [File:Belgian road sign D07.svg](https://commons.wikimedia.org/wiki/File:Belgian_road_sign_D07.svg) |
-| D9a.svg | Gedeeld pad voetgangers/fietsers/bromfiets klasse A | [File:Belgian road sign D09.svg](https://commons.wikimedia.org/wiki/File:Belgian_road_sign_D09.svg) |
+| D9.svg | Deel van de openbare weg voorbehouden voor voetgangers, fietsen en bromfietsen klasse A (D9) | [File:Belgian road sign D09.svg](https://commons.wikimedia.org/wiki/File:Belgian_road_sign_D09.svg) |
 | D10.svg | Gedeeld pad voetgangers en fietsers | [File:Belgian road sign D10.svg](https://commons.wikimedia.org/wiki/File:Belgian_road_sign_D10.svg) |
 | E1.svg | Verboden te parkeren | [File:Belgian traffic sign E1.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_E1.svg) |
 | E3.svg | Verboden te parkeren en te stilstaan | [File:Belgian traffic sign E3.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_E3.svg) |
@@ -103,8 +103,9 @@ Cross-reference used to confirm which code matches which meaning and shape: the 
 
 ## Manual review recommended
 
-- `rule-snelheid-buiten-vl`: the 70 km/u default outside built-up areas is specific to the Flemish Region (Wallonia and Brussels still use 90 km/u); the question text names Vlaanderen explicitly, but double-check it still matches the app's target audience.
-- `iden-d10` / `rec-d7`: the distinction between D9a (shared path incl. class-A mopeds) and D10 (pedestrians and cyclists only) is a fine legal nuance; worth a quick read-through since it is easy to misremember.
+- `rule-snelheid-bebouwd`: general limit is 50 km/u in Flanders and Wallonia (art. 11.1), but 30 km/u in Brussels; question explicitly targets Flanders.
+- `rule-snelheid-buiten-vl`: the 70 km/u default outside built-up areas applies in Flanders and Brussels (art. 11.2); only Wallonia still uses 90 km/u.
+- `iden-d10` / `rec-d7`: the distinction between D9 (shared path incl. class-A mopeds) and D10 (pedestrians and cyclists only) matches the official Wegcode codes.
 - Everything else in the bank was verified against a live, fetched source (either the Wikimedia Commons file/category pages for sign meanings, or one of the 16 rule sources above) and is not flagged for further review.
 
 ## Correction log
@@ -127,3 +128,12 @@ Cross-reference used to confirm which code matches which meaning and shape: the 
 - 2026-09-18: B9 uses the yellow "Belgian road sign B9.svg" upload, because the orange "Belgian traffic sign B9.svg"
   upload does not match the yellow B9 on wegcode.be. Commons files all pre-2024 designs under "historic" categories;
   in Belgian law they stay the valid designs until 2027-06-01.
+
+- 2026-09-18: reviewed all 54 questions against the consolidated Wegcode for task T0002:
+  - `rule-snelheid-bebouwd`: restricted question scope to Flanders (50 km/u, art. 11.1) and noted Brussels general 30 km/u limit in explanation.
+  - `rule-snelheid-buiten-vl`: corrected explanation to clarify that Brussels also uses 70 km/u (art. 11.2), and only Wallonia uses 90 km/u.
+  - `rule-gsm`: corrected distractor to remove requirement for an engine switch-off; cited article 8.4 and definition of stilstaan/parkeren (art. 2.22/2.23).
+  - `rule-mistlichten`: updated question and explanation from optional ("mag") to mandatory ("moeten verplicht branden") under article 30.1.2°.
+  - `iden-c31`: renamed `C31.svg` to `C31a.svg` to match Wegcode art. 68.3; updated question and explanation to specify left turn prohibition.
+  - `iden-d10`: renamed `D9a.svg` to `D9.svg` to match official Wegcode art. 69.3 designation; updated references in `questions.json`.
+  - Added specific Wegcode article citations across all 23 rule question explanations.

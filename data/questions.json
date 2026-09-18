@@ -6,7 +6,12 @@
       "category": "gevaar",
       "question": "Wat betekent dit verkeersbord?",
       "sign": "assets/signs/A1a.svg",
-      "options": ["Gevaarlijke bocht naar links", "Gevaarlijke bocht naar rechts", "Rijbaanversmalling", "Tweerichtingsverkeer"],
+      "options": [
+        "Gevaarlijke bocht naar links",
+        "Gevaarlijke bocht naar rechts",
+        "Rijbaanversmalling",
+        "Tweerichtingsverkeer"
+      ],
       "correctIndex": 0,
       "explanation": "Dit gevaarsbord waarschuwt voor een gevaarlijke bocht naar links."
     },
@@ -16,7 +21,12 @@
       "category": "gevaar",
       "question": "Wat betekent dit verkeersbord?",
       "sign": "assets/signs/A1b.svg",
-      "options": ["Dubbele bocht", "Gevaarlijke bocht naar rechts", "Gladde rijbaan", "Gevaarlijke bocht naar links"],
+      "options": [
+        "Dubbele bocht",
+        "Gevaarlijke bocht naar rechts",
+        "Gladde rijbaan",
+        "Gevaarlijke bocht naar links"
+      ],
       "correctIndex": 1,
       "explanation": "Dit gevaarsbord waarschuwt voor een gevaarlijke bocht naar rechts."
     },
@@ -26,7 +36,12 @@
       "category": "gevaar",
       "question": "Wat betekent dit verkeersbord?",
       "sign": "assets/signs/A7a.svg",
-      "options": ["Werken op de weg", "Glibberige rijbaan", "Rijbaanversmalling", "Tweerichtingsverkeer"],
+      "options": [
+        "Werken op de weg",
+        "Glibberige rijbaan",
+        "Rijbaanversmalling",
+        "Tweerichtingsverkeer"
+      ],
       "correctIndex": 2,
       "explanation": "Dit bord waarschuwt dat de rijbaan verderop smaller wordt."
     },
@@ -36,7 +51,12 @@
       "category": "fietsers-voetgangers",
       "question": "Wat betekent dit verkeersbord?",
       "sign": "assets/signs/A21.svg",
-      "options": ["Verplichte oversteekplaats voor fietsers", "Schoolomgeving met veel kinderen", "Voetgangerszone", "Waarschuwing voor een oversteekplaats voor voetgangers"],
+      "options": [
+        "Verplichte oversteekplaats voor fietsers",
+        "Schoolomgeving met veel kinderen",
+        "Voetgangerszone",
+        "Waarschuwing voor een oversteekplaats voor voetgangers"
+      ],
       "correctIndex": 3,
       "explanation": "Dit gevaarsbord kondigt vooraf een oversteekplaats voor voetgangers aan."
     },
@@ -46,7 +66,12 @@
       "category": "fietsers-voetgangers",
       "question": "Wat betekent dit verkeersbord?",
       "sign": "assets/signs/A25.svg",
-      "options": ["Waarschuwing voor een oversteekplaats voor fietsers", "Verplicht fietspad", "Fietszone", "Waarschuwing voor een oversteekplaats voor voetgangers"],
+      "options": [
+        "Waarschuwing voor een oversteekplaats voor fietsers",
+        "Verplicht fietspad",
+        "Fietszone",
+        "Waarschuwing voor een oversteekplaats voor voetgangers"
+      ],
       "correctIndex": 0,
       "explanation": "Dit bord waarschuwt voor een plaats waar fietsers de rijbaan oversteken."
     },
@@ -56,7 +81,12 @@
       "category": "gevaar",
       "question": "Wat betekent dit verkeersbord?",
       "sign": "assets/signs/A23.svg",
-      "options": ["Oversteekplaats voor voetgangers", "Plaats waar veel kinderen komen, bijvoorbeeld een school", "Bebouwde kom", "Speelstraat"],
+      "options": [
+        "Oversteekplaats voor voetgangers",
+        "Plaats waar veel kinderen komen, bijvoorbeeld een school",
+        "Bebouwde kom",
+        "Speelstraat"
+      ],
       "correctIndex": 1,
       "explanation": "Dit bord waarschuwt voor een plek waar opvallend veel kinderen kunnen opduiken, zoals bij een school."
     },
@@ -66,7 +96,12 @@
       "category": "gevaar",
       "question": "Wat betekent dit verkeersbord?",
       "sign": "assets/signs/A31.svg",
-      "options": ["Verkeerslichten", "File", "Wegenwerken", "Vallende stenen"],
+      "options": [
+        "Verkeerslichten",
+        "File",
+        "Wegenwerken",
+        "Vallende stenen"
+      ],
       "correctIndex": 2,
       "explanation": "Dit bord waarschuwt voor werken op of langs de rijbaan."
     },
@@ -76,7 +111,12 @@
       "category": "gevaar",
       "question": "Wat betekent dit verkeersbord?",
       "sign": "assets/signs/A41.svg",
-      "options": ["Overweg zonder slagbomen", "Tramsporen", "Beweegbare brug", "Overweg met slagbomen"],
+      "options": [
+        "Overweg zonder slagbomen",
+        "Tramsporen",
+        "Beweegbare brug",
+        "Overweg met slagbomen"
+      ],
       "correctIndex": 3,
       "explanation": "Dit bord waarschuwt voor een spoorwegovergang die uitgerust is met slagbomen."
     },
@@ -86,7 +126,12 @@
       "category": "voorrang",
       "question": "Wat betekent dit verkeersbord?",
       "sign": "assets/signs/B1.svg",
-      "options": ["Voorrang verlenen", "Voorrangsweg", "Stopbord", "Einde voorrangsweg"],
+      "options": [
+        "Voorrang verlenen",
+        "Voorrangsweg",
+        "Stopbord",
+        "Einde voorrangsweg"
+      ],
       "correctIndex": 0,
       "explanation": "Deze omgekeerde driehoek betekent dat je voorrang moet verlenen aan het kruisende verkeer."
     },
@@ -96,7 +141,12 @@
       "category": "voorrang",
       "question": "Wat betekent dit verkeersbord?",
       "sign": "assets/signs/B5.svg",
-      "options": ["Voorrang verlenen zonder te stoppen", "Stoppen en voorrang verlenen", "Voorrangsweg", "Kruispunt met voorrang van rechts"],
+      "options": [
+        "Voorrang verlenen zonder te stoppen",
+        "Stoppen en voorrang verlenen",
+        "Voorrangsweg",
+        "Kruispunt met voorrang van rechts"
+      ],
       "correctIndex": 1,
       "explanation": "Bij dit achthoekige bord moet je volledig stoppen en voorrang verlenen aan het andere verkeer."
     },
@@ -106,7 +156,12 @@
       "category": "voorrang",
       "question": "Wat betekent dit verkeersbord?",
       "sign": "assets/signs/B9.svg",
-      "options": ["Kruispunt met voorrang van rechts", "Einde van een voorrangsweg", "Voorrangsweg", "Smalle doorgang met voorrang"],
+      "options": [
+        "Kruispunt met voorrang van rechts",
+        "Einde van een voorrangsweg",
+        "Voorrangsweg",
+        "Smalle doorgang met voorrang"
+      ],
       "correctIndex": 2,
       "explanation": "Dit ruitvormige bord geeft aan dat je op een voorrangsweg rijdt."
     },
@@ -116,7 +171,12 @@
       "category": "voorrang",
       "question": "Wat betekent dit verkeersbord?",
       "sign": "assets/signs/B17.svg",
-      "options": ["Voorrangsweg", "Voorrang verlenen", "Rotonde", "Kruispunt waar voorrang van rechts geldt"],
+      "options": [
+        "Voorrangsweg",
+        "Voorrang verlenen",
+        "Rotonde",
+        "Kruispunt waar voorrang van rechts geldt"
+      ],
       "correctIndex": 3,
       "explanation": "Dit bord herinnert eraan dat op dit kruispunt de gewone regel voorrang van rechts geldt."
     },
@@ -126,7 +186,12 @@
       "category": "verbod",
       "question": "Wat betekent dit verkeersbord?",
       "sign": "assets/signs/C1.svg",
-      "options": ["Verboden richting in te rijden", "Verboden toegang in beide richtingen", "Verboden in te halen", "Verboden te keren"],
+      "options": [
+        "Verboden richting in te rijden",
+        "Verboden toegang in beide richtingen",
+        "Verboden in te halen",
+        "Verboden te keren"
+      ],
       "correctIndex": 0,
       "explanation": "Dit bord met de witte balk verbiedt om de weg in die richting in te rijden, bijvoorbeeld tegen eenrichtingsverkeer in."
     },
@@ -136,7 +201,12 @@
       "category": "verbod",
       "question": "Wat betekent dit verkeersbord?",
       "sign": "assets/signs/C3.svg",
-      "options": ["Verboden richting in te rijden", "Verboden toegang in beide richtingen voor elke bestuurder", "Verboden voor voetgangers", "Doodlopende straat"],
+      "options": [
+        "Verboden richting in te rijden",
+        "Verboden toegang in beide richtingen voor elke bestuurder",
+        "Verboden voor voetgangers",
+        "Doodlopende straat"
+      ],
       "correctIndex": 1,
       "explanation": "Dit volledig rode bord sluit de weg af voor alle bestuurders, in beide richtingen."
     },
@@ -146,7 +216,12 @@
       "category": "verbod",
       "question": "Wat betekent dit verkeersbord?",
       "sign": "assets/signs/C35.svg",
-      "options": ["Verboden te keren", "Verboden stil te staan", "Verboden in te halen", "Verboden voor motorvoertuigen"],
+      "options": [
+        "Verboden te keren",
+        "Verboden stil te staan",
+        "Verboden in te halen",
+        "Verboden voor motorvoertuigen"
+      ],
       "correctIndex": 2,
       "explanation": "Dit bord verbiedt om voertuigen met meer dan twee wielen links in te halen."
     },
@@ -156,7 +231,12 @@
       "category": "snelheid",
       "question": "Wat betekent dit verkeersbord?",
       "sign": "assets/signs/C43-70.svg",
-      "options": ["Snelheidsbeperking van 90 km/u", "Einde van de snelheidsbeperking", "Aanbevolen snelheid van 70 km/u", "Snelheidsbeperking van 70 km/u"],
+      "options": [
+        "Snelheidsbeperking van 90 km/u",
+        "Einde van de snelheidsbeperking",
+        "Aanbevolen snelheid van 70 km/u",
+        "Snelheidsbeperking van 70 km/u"
+      ],
       "correctIndex": 3,
       "explanation": "Het getal op dit ronde bord is de maximumsnelheid die vanaf hier geldt tot het volgende kruispunt."
     },
@@ -166,7 +246,12 @@
       "category": "gebod",
       "question": "Wat betekent dit verkeersbord?",
       "sign": "assets/signs/D1a.svg",
-      "options": ["Verplichte rijrichting: rechtdoor", "Verplicht fietspad", "Verplicht rondgaand verkeer", "Vrije keuze van rijrichting"],
+      "options": [
+        "Verplichte rijrichting: rechtdoor",
+        "Verplicht fietspad",
+        "Verplicht rondgaand verkeer",
+        "Vrije keuze van rijrichting"
+      ],
       "correctIndex": 0,
       "explanation": "Dit blauwe ronde bord verplicht je de rijrichting van de pijl te volgen, hier rechtdoor."
     },
@@ -176,7 +261,12 @@
       "category": "gebod",
       "question": "Wat betekent dit verkeersbord?",
       "sign": "assets/signs/D5.svg",
-      "options": ["Verplichte rijrichting rechtdoor", "Verplicht rondgaand verkeer (rotonde)", "Kruispunt met voorrang van rechts", "Verkeersplein"],
+      "options": [
+        "Verplichte rijrichting rechtdoor",
+        "Verplicht rondgaand verkeer (rotonde)",
+        "Kruispunt met voorrang van rechts",
+        "Verkeersplein"
+      ],
       "correctIndex": 1,
       "explanation": "Dit bord kondigt een rotonde aan waarop je verplicht in de aangeduide richting moet rondrijden."
     },
@@ -186,7 +276,12 @@
       "category": "fietsers-voetgangers",
       "question": "Wat betekent dit verkeersbord?",
       "sign": "assets/signs/D7.svg",
-      "options": ["Verplicht voetpad", "Fietsen toegelaten, maar niet verplicht", "Verplicht fietspad", "Einde fietspad"],
+      "options": [
+        "Verplicht voetpad",
+        "Fietsen toegelaten, maar niet verplicht",
+        "Verplicht fietspad",
+        "Einde fietspad"
+      ],
       "correctIndex": 2,
       "explanation": "Fietsers en bestuurders van tweewielige bromfietsen klasse A moeten dit fietspad verplicht gebruiken."
     },
@@ -196,7 +291,12 @@
       "category": "parkeren",
       "question": "Wat betekent dit verkeersbord?",
       "sign": "assets/signs/E1.svg",
-      "options": ["Parkeren toegelaten", "Verboden te parkeren en te stilstaan", "Beperkte parkeertijd", "Verboden te parkeren"],
+      "options": [
+        "Parkeren toegelaten",
+        "Verboden te parkeren en te stilstaan",
+        "Beperkte parkeertijd",
+        "Verboden te parkeren"
+      ],
       "correctIndex": 3,
       "explanation": "Dit bord verbiedt parkeren, maar kort stilstaan blijft toegelaten."
     },
@@ -206,7 +306,12 @@
       "category": "aanwijzing",
       "question": "Wat betekent dit verkeersbord?",
       "sign": "assets/signs/F45.svg",
-      "options": ["Doodlopende weg", "Wegomlegging", "Einde van de werken", "Versmalling van de weg"],
+      "options": [
+        "Doodlopende weg",
+        "Wegomlegging",
+        "Einde van de werken",
+        "Versmalling van de weg"
+      ],
       "correctIndex": 0,
       "explanation": "Dit bord toont dat de weg verderop niet doorloopt."
     },
@@ -216,7 +321,12 @@
       "category": "autosnelweg",
       "question": "Wat betekent dit verkeersbord?",
       "sign": "assets/signs/F5.svg",
-      "options": ["Einde van een autosnelweg", "Begin van een autosnelweg", "Begin van een autoweg", "Verkeersplein"],
+      "options": [
+        "Einde van een autosnelweg",
+        "Begin van een autosnelweg",
+        "Begin van een autoweg",
+        "Verkeersplein"
+      ],
       "correctIndex": 1,
       "explanation": "Vanaf dit bord gelden de specifieke verkeersregels voor autosnelwegen."
     },
@@ -225,7 +335,12 @@
       "type": "identify",
       "category": "voorrang",
       "question": "Welk bord hoort bij deze situatie: een smalle doorgang waar jij voorrang moet verlenen aan bestuurders die uit de tegenovergestelde richting komen?",
-      "options": ["assets/signs/B19.svg", "assets/signs/B1.svg", "assets/signs/B17.svg", "assets/signs/B9.svg"],
+      "options": [
+        "assets/signs/B19.svg",
+        "assets/signs/B1.svg",
+        "assets/signs/B17.svg",
+        "assets/signs/B9.svg"
+      ],
       "correctIndex": 0,
       "explanation": "Bord B19 duidt een smalle doorgang aan waarbij jij voorrang moet verlenen aan het tegemoetkomend verkeer."
     },
@@ -233,17 +348,27 @@
       "id": "iden-c31",
       "type": "identify",
       "category": "verbod",
-      "question": "Welk bord verbiedt om op het eerstvolgende kruispunt af te slaan in de richting die de pijl toont?",
-      "options": ["assets/signs/C1.svg", "assets/signs/C31.svg", "assets/signs/C33.svg", "assets/signs/C3.svg"],
+      "question": "Welk bord verbiedt om op het eerstvolgende kruispunt links af te slaan?",
+      "options": [
+        "assets/signs/C1.svg",
+        "assets/signs/C31a.svg",
+        "assets/signs/C33.svg",
+        "assets/signs/C3.svg"
+      ],
       "correctIndex": 1,
-      "explanation": "Bord C31 verbiedt om op het volgende kruispunt af te slaan in de op het bord getoonde richting."
+      "explanation": "Bord C31a verbiedt om op het volgende kruispunt links af te slaan in de richting van de pijl (art. 68.3)."
     },
     {
       "id": "iden-c33",
       "type": "identify",
       "category": "verbod",
       "question": "Welk bord verbiedt je om te keren voor het volgende kruispunt?",
-      "options": ["assets/signs/C35.svg", "assets/signs/C39.svg", "assets/signs/C33.svg", "assets/signs/C31.svg"],
+      "options": [
+        "assets/signs/C35.svg",
+        "assets/signs/C39.svg",
+        "assets/signs/C33.svg",
+        "assets/signs/C31a.svg"
+      ],
       "correctIndex": 2,
       "explanation": "Bord C33 verbiedt een U-bocht (keren) tot aan het volgende kruispunt."
     },
@@ -252,7 +377,12 @@
       "type": "identify",
       "category": "parkeren",
       "question": "Welk bord duidt een parkeerplaats aan die voorbehouden is voor personen met een handicap?",
-      "options": ["assets/signs/E1.svg", "assets/signs/D9a.svg", "assets/signs/E3.svg", "assets/signs/E9a.svg"],
+      "options": [
+        "assets/signs/E1.svg",
+        "assets/signs/D9.svg",
+        "assets/signs/E3.svg",
+        "assets/signs/E9a.svg"
+      ],
       "correctIndex": 3,
       "explanation": "Bord E9a met het rolstoelsymbool markeert een voorbehouden parkeerplaats voor personen met een handicap."
     },
@@ -261,7 +391,12 @@
       "type": "identify",
       "category": "aanwijzing",
       "question": "Welk bord geeft het begin van een bebouwde kom aan?",
-      "options": ["assets/signs/F1b.svg", "assets/signs/F103.svg", "assets/signs/F3b.svg", "assets/signs/F45.svg"],
+      "options": [
+        "assets/signs/F1b.svg",
+        "assets/signs/F103.svg",
+        "assets/signs/F3b.svg",
+        "assets/signs/F45.svg"
+      ],
       "correctIndex": 0,
       "explanation": "Bord F1b markeert het begin van een bebouwde kom, waar de standaardlimiet van 50 km/u start."
     },
@@ -270,7 +405,12 @@
       "type": "identify",
       "category": "aanwijzing",
       "question": "Welk bord duidt een straat met eenrichtingsverkeer aan?",
-      "options": ["assets/signs/F45.svg", "assets/signs/F19.svg", "assets/signs/D1a.svg", "assets/signs/F103.svg"],
+      "options": [
+        "assets/signs/F45.svg",
+        "assets/signs/F19.svg",
+        "assets/signs/D1a.svg",
+        "assets/signs/F103.svg"
+      ],
       "correctIndex": 1,
       "explanation": "Bord F19 geeft aan dat je op een openbare weg met eenrichtingsverkeer rijdt."
     },
@@ -279,7 +419,12 @@
       "type": "identify",
       "category": "fietsers-voetgangers",
       "question": "Welk bord duidt de exacte locatie van een oversteekplaats voor voetgangers aan (dus niet de waarschuwing vooraf)?",
-      "options": ["assets/signs/D9a.svg", "assets/signs/F103.svg", "assets/signs/F49.svg", "assets/signs/A21.svg"],
+      "options": [
+        "assets/signs/D9.svg",
+        "assets/signs/F103.svg",
+        "assets/signs/F49.svg",
+        "assets/signs/A21.svg"
+      ],
       "correctIndex": 2,
       "explanation": "Bord F49 duidt de oversteekplaats zelf aan, terwijl gevaarsbord A21 er vooraf voor waarschuwt."
     },
@@ -288,7 +433,12 @@
       "type": "identify",
       "category": "aanwijzing",
       "question": "Welk bord geeft het begin van een voetgangerszone aan?",
-      "options": ["assets/signs/F19.svg", "assets/signs/F45.svg", "assets/signs/F1b.svg", "assets/signs/F103.svg"],
+      "options": [
+        "assets/signs/F19.svg",
+        "assets/signs/F45.svg",
+        "assets/signs/F1b.svg",
+        "assets/signs/F103.svg"
+      ],
       "correctIndex": 3,
       "explanation": "Bord F103 markeert het begin van een voetgangerszone."
     },
@@ -297,18 +447,28 @@
       "type": "identify",
       "category": "fietsers-voetgangers",
       "question": "Welk bord duidt een pad aan dat voetgangers en fietsers verplicht samen moeten gebruiken (zonder bromfietsers klasse A)?",
-      "options": ["assets/signs/D10.svg", "assets/signs/D7.svg", "assets/signs/D9a.svg", "assets/signs/D1a.svg"],
+      "options": [
+        "assets/signs/D10.svg",
+        "assets/signs/D7.svg",
+        "assets/signs/D9.svg",
+        "assets/signs/D1a.svg"
+      ],
       "correctIndex": 0,
-      "explanation": "Bord D10 is voorbehouden voor voetgangers en fietsers samen; bord D9a laat ook bromfietsers klasse A toe."
+      "explanation": "Bord D10 is voorbehouden voor voetgangers en fietsers samen (art. 69.3); bord D9 laat ook bestuurders van tweewielige bromfietsen klasse A toe."
     },
     {
       "id": "rule-snelheid-bebouwd",
       "type": "rule",
       "category": "snelheid",
-      "question": "Wat is de algemene maximumsnelheid binnen de bebouwde kom in België, tenzij een verkeersbord iets anders aangeeft?",
-      "options": ["50 km/u", "30 km/u", "70 km/u", "90 km/u"],
+      "question": "Wat is de algemene maximumsnelheid binnen de bebouwde kom in Vlaanderen, tenzij een verkeersbord iets anders aangeeft?",
+      "options": [
+        "50 km/u",
+        "30 km/u",
+        "70 km/u",
+        "90 km/u"
+      ],
       "correctIndex": 0,
-      "explanation": "Binnen de bebouwde kom geldt standaard 50 km/u, tenzij een bord een andere limiet zoals zone 30 aangeeft.",
+      "explanation": "In Vlaanderen en Wallonië geldt binnen de bebouwde kom standaard 50 km/u (art. 11.1). In het Brussels Hoofdstedelijk Gewest geldt daarentegen standaard 30 km/u.",
       "source": "https://www.wegcode.be/nl/verkeersreglement/uitleg-bij-het-verkeersreglement/snelheidsbeperkingen"
     },
     {
@@ -316,9 +476,14 @@
       "type": "rule",
       "category": "snelheid",
       "question": "Wat is sinds de snelheidshervorming de standaard maximumsnelheid buiten de bebouwde kom op Vlaamse wegen zonder specifiek snelheidsbord?",
-      "options": ["50 km/u", "70 km/u", "90 km/u", "120 km/u"],
+      "options": [
+        "50 km/u",
+        "70 km/u",
+        "90 km/u",
+        "120 km/u"
+      ],
       "correctIndex": 1,
-      "explanation": "In Vlaanderen geldt buiten de bebouwde kom voortaan 70 km/u als geen bord anders aangeeft; in Wallonie en Brussel is dat nog 90 km/u.",
+      "explanation": "In Vlaanderen en Brussel geldt buiten de bebouwde kom standaard 70 km/u (art. 11.2). Enkel in het Waals Gewest geldt standaard nog 90 km/u.",
       "source": "https://magazine.vab.be/op-weg/mobiliteit/hoe-snel-mag-je-rijden/"
     },
     {
@@ -326,9 +491,14 @@
       "type": "rule",
       "category": "autosnelweg",
       "question": "Wat is de maximumsnelheid op autosnelwegen in België?",
-      "options": ["100 km/u", "110 km/u", "120 km/u", "130 km/u"],
+      "options": [
+        "100 km/u",
+        "110 km/u",
+        "120 km/u",
+        "130 km/u"
+      ],
       "correctIndex": 2,
-      "explanation": "Op Belgische autosnelwegen geldt een maximumsnelheid van 120 km/u, tenzij een bord iets anders aangeeft.",
+      "explanation": "Volgens artikel 11.2.1°a geldt op Belgische autosnelwegen een maximumsnelheid van 120 km/u, tenzij een verkeersbord een andere snelheid oplegt.",
       "source": "https://www.wegcode.be/nl/verkeersreglement/uitleg-bij-het-verkeersreglement/snelheidsbeperkingen"
     },
     {
@@ -336,9 +506,14 @@
       "type": "rule",
       "category": "autosnelweg",
       "question": "Welke minimumsnelheid geldt in principe op een autosnelweg, als de omstandigheden dit toelaten?",
-      "options": ["50 km/u", "60 km/u", "80 km/u", "70 km/u"],
+      "options": [
+        "50 km/u",
+        "60 km/u",
+        "80 km/u",
+        "70 km/u"
+      ],
       "correctIndex": 3,
-      "explanation": "Op autosnelwegen geldt een minimumsnelheid van 70 km/u, behalve wanneer omstandigheden zoals file dit niet toelaten.",
+      "explanation": "Volgens artikel 21.2 geldt op autosnelwegen een minimumsnelheid van 70 km/u, behalve wanneer omstandigheden zoals file dit verhinderen.",
       "source": "https://magazine.vab.be/op-weg/mobiliteit/hoe-snel-mag-je-rijden/"
     },
     {
@@ -346,9 +521,14 @@
       "type": "rule",
       "category": "alcohol",
       "question": "Wat is de wettelijke alcohollimiet voor een gewone bestuurder in België?",
-      "options": ["0,5 promille", "0,0 promille", "0,2 promille", "0,8 promille"],
+      "options": [
+        "0,5 promille",
+        "0,0 promille",
+        "0,2 promille",
+        "0,8 promille"
+      ],
       "correctIndex": 0,
-      "explanation": "Voor gewone bestuurders ligt de wettelijke grens op 0,5 promille alcohol in het bloed.",
+      "explanation": "Voor gewone bestuurders ligt de wettelijke alcohollimiet op 0,5 promille in het bloed (0,22 mg/l uitgeademde lucht, art. 34 Wegverkeerswet).",
       "source": "https://www.veiligverkeer.be/veilig-rijden/rijden-onder-invloed/alcohol-limiet-hoeveel-promille-drinken-alcoholcontrole-boete-straffen/"
     },
     {
@@ -356,9 +536,14 @@
       "type": "rule",
       "category": "alcohol",
       "question": "Welke strengere alcohollimiet geldt in België voor beroepschauffeurs, zoals bus-, taxi- en vrachtwagenchauffeurs?",
-      "options": ["0,0 promille", "0,2 promille", "0,5 promille", "0,35 promille"],
+      "options": [
+        "0,0 promille",
+        "0,2 promille",
+        "0,5 promille",
+        "0,35 promille"
+      ],
       "correctIndex": 1,
-      "explanation": "Beroepschauffeurs moeten zich houden aan 0,2 promille, wat in de praktijk neerkomt op zo goed als nultolerantie.",
+      "explanation": "Beroepschauffeurs moeten zich volgens artikel 34 van de Wegverkeerswet houden aan 0,2 promille (0,09 mg/l uitgeademde lucht).",
       "source": "https://www.veiligverkeer.be/veilig-rijden/rijden-onder-invloed/alcohol-limiet-hoeveel-promille-drinken-alcoholcontrole-boete-straffen/"
     },
     {
@@ -366,9 +551,14 @@
       "type": "rule",
       "category": "gordel",
       "question": "Moet je de veiligheidsgordel dragen op de achterbank van een auto?",
-      "options": ["Nee, enkel voorin is verplicht", "Enkel verplicht buiten de bebouwde kom", "Ja, op elke zitplaats die met een gordel is uitgerust", "Enkel verplicht voor kinderen"],
+      "options": [
+        "Nee, enkel voorin is verplicht",
+        "Enkel verplicht buiten de bebouwde kom",
+        "Ja, op elke zitplaats die met een gordel is uitgerust",
+        "Enkel verplicht voor kinderen"
+      ],
       "correctIndex": 2,
-      "explanation": "De gordelplicht geldt voor- en achterin, op elke zitplaats die van een gordel is voorzien.",
+      "explanation": "Volgens artikel 35.1.1 geldt de gordelplicht voor- en achterin, op elke zitplaats die van een veiligheidsgordel is voorzien.",
       "source": "https://passetonpermis.be/nl/blog/het-dragen-van-de-veiligheidsgordel"
     },
     {
@@ -376,9 +566,14 @@
       "type": "rule",
       "category": "gordel",
       "question": "Tot welke lichaamslengte is een kind in de auto verplicht een goedgekeurd kinderbeveiligingssysteem te gebruiken?",
-      "options": ["1,20 m", "1,50 m", "Tot de leeftijd van 12 jaar, ongeacht lengte", "1,35 m"],
+      "options": [
+        "1,20 m",
+        "1,50 m",
+        "Tot de leeftijd van 12 jaar, ongeacht lengte",
+        "1,35 m"
+      ],
       "correctIndex": 3,
-      "explanation": "De verplichting is gebaseerd op lengte, niet op leeftijd: kinderen kleiner dan 1,35 m moeten in een kinderzitje.",
+      "explanation": "Volgens artikel 35.1.1 moeten kinderen jonger dan 18 jaar en kleiner dan 1,35 m vervoerd worden in een voor hen geschikt kinderbeveiligingssysteem.",
       "source": "https://www.veiligverkeer.be/veilig-rijden/gordel-en-kinderzitjes/regels-wetgeving-belgie-leeftijd-kind-vooraan-zitten-boete/"
     },
     {
@@ -386,9 +581,14 @@
       "type": "rule",
       "category": "telefoon",
       "question": "Mag je als bestuurder je gsm in de hand vasthouden terwijl je stilstaat aan een rood verkeerslicht?",
-      "options": ["Nee, vasthouden mag enkel als het voertuig geparkeerd is met uitgeschakelde motor", "Ja, want de auto staat stil", "Ja, zolang je niet belt", "Nee, maar enkel op autosnelwegen"],
+      "options": [
+        "Nee, vasthouden mag enkel als het voertuig stilstaat of geparkeerd is",
+        "Ja, want de auto staat stil",
+        "Ja, zolang je niet belt",
+        "Nee, maar enkel op autosnelwegen"
+      ],
       "correctIndex": 0,
-      "explanation": "Zolang je deelneemt aan het verkeer, mag je een gsm met scherm niet vasthouden, ook niet bij stilstand.",
+      "explanation": "Wachten voor een rood licht geldt niet als stilstaan of parkeren (art. 2.22 en 2.23). Artikel 8.4 verbiedt het vasthouden of manipuleren van mobiele apparaten met een scherm tijdens het rijden; de motor hoeft wettelijk niet uitgeschakeld te zijn.",
       "source": "https://www.veiligverkeer.be/veilig-rijden/afleiding/gsm-achter-het-stuur-regels-en-boetes/"
     },
     {
@@ -396,7 +596,12 @@
       "type": "rule",
       "category": "voorrang",
       "question": "Wie heeft voorrang op een kruispunt zonder verkeersborden, verkeerslichten of een agent?",
-      "options": ["Het verkeer van links", "Het verkeer van rechts", "Het grootste voertuig", "Wie er het eerst aankomt"],
+      "options": [
+        "Het verkeer van links",
+        "Het verkeer van rechts",
+        "Het grootste voertuig",
+        "Wie er het eerst aankomt"
+      ],
       "correctIndex": 1,
       "explanation": "Zonder aanduidingen geldt de regel voorrang van rechts, zoals bepaald in artikel 12.3.1 van de wegcode.",
       "source": "https://mijnadvocaten.be/verkeersrecht/voorrang-van-rechts-art-12-3-1-wegcode/"
@@ -406,9 +611,14 @@
       "type": "rule",
       "category": "voorrang",
       "question": "Verlies je je voorrang van rechts als je even stopt aan het kruispunt voor je verder rijdt?",
-      "options": ["Ja, wie stopt verliest zijn voorrang", "Enkel als er een stopbord staat", "Nee, ook een gestopte bestuurder van rechts behoudt voorrang", "Enkel buiten de bebouwde kom"],
+      "options": [
+        "Ja, wie stopt verliest zijn voorrang",
+        "Enkel als er een stopbord staat",
+        "Nee, ook een gestopte bestuurder van rechts behoudt voorrang",
+        "Enkel buiten de bebouwde kom"
+      ],
       "correctIndex": 2,
-      "explanation": "Je behoudt je voorrang van rechts ook als je eerst even stilstaat voor het kruispunt.",
+      "explanation": "Volgens vaste rechtspraak bij artikel 12.3.1 behoudt een bestuurder van rechts zijn voorrang, ook als hij eerst stopt voor het kruispunt.",
       "source": "https://mijnadvocaten.be/verkeersrecht/voorrang-van-rechts-art-12-3-1-wegcode/"
     },
     {
@@ -416,9 +626,14 @@
       "type": "rule",
       "category": "voorrang",
       "question": "Wie heeft voorrang op een rotonde die is aangeduid met bord D5?",
-      "options": ["Het verkeer dat de rotonde wil oprijden", "Altijd het verkeer van rechts", "Het grootste voertuig", "Het verkeer dat al op de rotonde rijdt"],
+      "options": [
+        "Het verkeer dat de rotonde wil oprijden",
+        "Altijd het verkeer van rechts",
+        "Het grootste voertuig",
+        "Het verkeer dat al op de rotonde rijdt"
+      ],
       "correctIndex": 3,
-      "explanation": "Op een rotonde met bord D5 heeft het verkeer dat er al op rijdt voorrang op wie wil toetreden.",
+      "explanation": "Op een rotonde aangeduid met bord D5 heeft het verkeer dat er al op rijdt voorrang op wie wil toetreden (art. 12.3.1).",
       "source": "https://www.verkeerszaken.be/blog/artikel/a/432/De-regels-voor-rotondes-en-rondpunten"
     },
     {
@@ -426,9 +641,14 @@
       "type": "rule",
       "category": "voorrang",
       "question": "Wat moet je doen als een prioritair voertuig met zwaailicht en sirene nadert?",
-      "options": ["Onmiddellijk plaats maken en voorrang verlenen", "Gewoon je weg vervolgen", "Enkel opzij gaan als je op een kruispunt staat", "Versnellen om het kruispunt vrij te maken"],
+      "options": [
+        "Onmiddellijk plaats maken en voorrang verlenen",
+        "Gewoon je weg vervolgen",
+        "Enkel opzij gaan als je op een kruispunt staat",
+        "Versnellen om het kruispunt vrij te maken"
+      ],
       "correctIndex": 0,
-      "explanation": "Zodra het geluidssein van een prioritair voertuig weerklinkt, moet elke weggebruiker onmiddellijk plaats maken.",
+      "explanation": "Zodra het geluidstoestel van een prioritair voertuig weerklinkt, moet elke weggebruiker onmiddellijk plaats maken en voorrang verlenen (art. 38).",
       "source": "https://www.vias.be/publications/Briefing%20-%20Prioritaire%20voertuigen/Briefing%20-%20Prioritaire%20voertuigen.pdf"
     },
     {
@@ -436,9 +656,14 @@
       "type": "rule",
       "category": "fietsers-voetgangers",
       "question": "Welke zijdelingse afstand moet je minstens houden bij het inhalen van een fietser buiten de bebouwde kom?",
-      "options": ["1 meter", "1,5 meter", "0,5 meter", "2 meter"],
+      "options": [
+        "1 meter",
+        "1,5 meter",
+        "0,5 meter",
+        "2 meter"
+      ],
       "correctIndex": 1,
-      "explanation": "Buiten de bebouwde kom is minstens 1,5 meter zijdelingse afstand verplicht; binnen de bebouwde kom is dat 1 meter.",
+      "explanation": "Volgens artikel 40ter is buiten de bebouwde kom minstens 1,5 meter zijdelingse afstand verplicht; binnen de bebouwde kom is dat 1 meter.",
       "source": "https://www.wegcode.be/nl/verkeersreglement/fietsers-en-de-wegcode"
     },
     {
@@ -446,9 +671,14 @@
       "type": "rule",
       "category": "fietsers-voetgangers",
       "question": "Wat moet je doen als een voetganger op een zebrapad aan het oversteken is?",
-      "options": ["Voorrang hebben, want je zit in de auto", "Snel voorbij rijden voor hij de rijbaan bereikt", "Voorrang verlenen en zo nodig stoppen", "Enkel voorrang verlenen buiten de bebouwde kom"],
+      "options": [
+        "Voorrang hebben, want je zit in de auto",
+        "Snel voorbij rijden voor hij de rijbaan bereikt",
+        "Voorrang verlenen en zo nodig stoppen",
+        "Enkel voorrang verlenen buiten de bebouwde kom"
+      ],
       "correctIndex": 2,
-      "explanation": "Een voetganger die op een oversteekplaats aan het oversteken is, heeft voorrang; jij moet vaart minderen of stoppen.",
+      "explanation": "Volgens artikel 40.4.2 moet een bestuurder voorrang verlenen en zo nodig stoppen voor voetgangers die op een oversteekplaats oversteken.",
       "source": "https://www.veiligverkeer.be/weggebruikers/voetgangers/waarop-moeten-bestuurders-letten-in-de-buurt-van-voetgangers/"
     },
     {
@@ -456,9 +686,14 @@
       "type": "rule",
       "category": "fietsers-voetgangers",
       "question": "Hoe wordt een fietser behandeld die met de fiets aan de hand een zebrapad oversteekt?",
-      "options": ["Als fietser, dus zonder voorrang", "Hij mag helemaal niet oversteken op een zebrapad", "Enkel als voetganger als hij ook een fietshelm draagt", "Als voetganger, dus met voorrang"],
+      "options": [
+        "Als fietser, dus zonder voorrang",
+        "Hij mag helemaal niet oversteken op een zebrapad",
+        "Enkel als voetganger als hij ook een fietshelm draagt",
+        "Als voetganger, dus met voorrang"
+      ],
       "correctIndex": 3,
-      "explanation": "Wie zijn fiets aan de hand meeneemt, wordt wettelijk als voetganger beschouwd en heeft dus voorrang op het zebrapad.",
+      "explanation": "Wie zijn fiets aan de hand meeneemt, valt onder de regels voor voetgangers (art. 42.2.1) en heeft voorrang op het zebrapad (art. 40.4.2).",
       "source": "https://www.veiligverkeer.be/weggebruikers/voetgangers/waarop-moeten-bestuurders-letten-in-de-buurt-van-voetgangers/"
     },
     {
@@ -466,9 +701,14 @@
       "type": "rule",
       "category": "algemeen",
       "question": "Wat is wettelijk verplicht voor elk motorvoertuig dat op de openbare weg rijdt in België?",
-      "options": ["Een verzekering burgerlijke aansprakelijkheid (BA/WAM)", "Enkel een geldige keuring", "Enkel een omniumverzekering", "Een verzekering is niet verplicht als je goed verzekerd bent via je gezondheidsverzekering"],
+      "options": [
+        "Een verzekering burgerlijke aansprakelijkheid (BA/WAM)",
+        "Enkel een geldige keuring",
+        "Enkel een omniumverzekering",
+        "Een verzekering is niet verplicht als je goed verzekerd bent via je gezondheidsverzekering"
+      ],
       "correctIndex": 0,
-      "explanation": "De WAM-wet verplicht elk motorvoertuig om een verzekering burgerlijke aansprakelijkheid te hebben.",
+      "explanation": "De WAM-wet (art. 2) verplicht elk motorvoertuig dat op de openbare weg rijdt om een verzekering burgerlijke aansprakelijkheid te hebben.",
       "source": "https://www.wegcode.be/nl/regelgeving/1989011371~e9i0a75brp"
     },
     {
@@ -476,19 +716,29 @@
       "type": "rule",
       "category": "autosnelweg",
       "question": "Wat moet je doen als het verkeer op een autosnelweg met minstens twee rijstroken per richting stilvalt of stapvoets rijdt?",
-      "options": ["Op de vluchtstrook gaan rijden", "Een reddingsstrook vormen tussen de linkse en de andere rijstroken", "Gewoon in je rijstrook blijven staan", "Een reddingsstrook vormen, maar enkel als je een zwaailicht ziet"],
+      "options": [
+        "Op de vluchtstrook gaan rijden",
+        "Een reddingsstrook vormen tussen de linkse en de andere rijstroken",
+        "Gewoon in je rijstrook blijven staan",
+        "Een reddingsstrook vormen, maar enkel als je een zwaailicht ziet"
+      ],
       "correctIndex": 1,
-      "explanation": "Sinds 2020 moet je bij file altijd een reddingsstrook vormen: links helemaal links, de rest helemaal rechts.",
+      "explanation": "Volgens artikel 9.8 en 2.70 moeten bestuurders bij file op wegen met minstens twee rijstroken per richting altijd een reddingsstrook vormen.",
       "source": "https://www.touring.be/nl/artikels/reddingsstrook-verplicht-1-oktober"
     },
     {
       "id": "rule-mistlichten",
       "type": "rule",
       "category": "algemeen",
-      "question": "Wanneer mag je je mistachterlichten gebruiken?",
-      "options": ["Altijd bij regen, ook lichte regen", "Altijd 's nachts", "Enkel bij mist of sneeuwval met minder dan 100 m zicht, of bij hevige regen", "Enkel op autosnelwegen"],
+      "question": "Wanneer moeten de achtermistlichten van een auto verplicht branden?",
+      "options": [
+        "Altijd bij regen, ook lichte regen",
+        "Altijd 's nachts",
+        "Bij mist of sneeuwval met minder dan 100 m zicht, of bij felle regen",
+        "Enkel op autosnelwegen"
+      ],
       "correctIndex": 2,
-      "explanation": "Mistachterlichten zijn enkel toegelaten bij mist of sneeuw met minder dan 100 m zicht, of bij hevige regen; anders verblinden ze het verkeer.",
+      "explanation": "Volgens artikel 30.1.2° zijn achtermistlichten verplicht bij mist of sneeuwval die het zicht beperkt tot minder dan 100 m, en bij felle regen. In alle andere omstandigheden is het gebruik verboden.",
       "source": "https://www.veiligverkeer.be/weggebruikers/automobilisten/wanneer-mag-of-moet-je-je-mistlichten-aanzetten/"
     },
     {
@@ -496,9 +746,14 @@
       "type": "rule",
       "category": "algemeen",
       "question": "Vanaf welke leeftijd kan je in België een voorlopig rijbewijs B met begeleider behalen?",
-      "options": ["16 jaar", "18 jaar", "19 jaar", "17 jaar"],
+      "options": [
+        "16 jaar",
+        "18 jaar",
+        "19 jaar",
+        "17 jaar"
+      ],
       "correctIndex": 3,
-      "explanation": "Met een begeleider kan je al vanaf 17 jaar een voorlopig rijbewijs B halen; zonder begeleider pas vanaf 18 jaar.",
+      "explanation": "Met een begeleider kan je vanaf 17 jaar een voorlopig rijbewijs B behalen; zonder begeleider pas vanaf 18 jaar (KB 10 juli 1998, art. 3).",
       "source": "http://mobilit.belgium.be/nl/weg/rijden/rijbewijzen/belgisch-rijbewijs/voorlopige-rijbewijzen-categorie-b/voorlopig-rijbewijs-0"
     },
     {
@@ -506,9 +761,14 @@
       "type": "rule",
       "category": "algemeen",
       "question": "Hoeveel jaar moet een begeleider minstens al zijn rijbewijs hebben om als begeleider op te treden bij een voorlopig rijbewijs B?",
-      "options": ["8 jaar", "3 jaar", "5 jaar", "10 jaar"],
+      "options": [
+        "8 jaar",
+        "3 jaar",
+        "5 jaar",
+        "10 jaar"
+      ],
       "correctIndex": 0,
-      "explanation": "Een begeleider moet op het moment van de begeleiding minstens 8 jaar houder zijn van een rijbewijs B.",
+      "explanation": "Een begeleider moet op het moment van de scholing minstens 8 jaar houder zijn van een geldig rijbewijs B (KB 10 juli 1998, art. 7).",
       "source": "http://mobilit.belgium.be/nl/weg/rijden/rijbewijzen/belgisch-rijbewijs/voorlopige-rijbewijzen-categorie-b/voorlopig-rijbewijs-0"
     },
     {
@@ -516,9 +776,14 @@
       "type": "rule",
       "category": "algemeen",
       "question": "Wat moet je doen als je een overweg nadert en de rode lichten beginnen te knipperen?",
-      "options": ["Zo snel mogelijk oversteken voor de slagbomen zakken", "Stoppen en wachten tot de lichten stoppen met knipperen", "Enkel vertragen, niet stoppen", "Alleen stoppen als je ook de slagbomen ziet zakken"],
+      "options": [
+        "Zo snel mogelijk oversteken voor de slagbomen zakken",
+        "Stoppen en wachten tot de lichten stoppen met knipperen",
+        "Enkel vertragen, niet stoppen",
+        "Alleen stoppen als je ook de slagbomen ziet zakken"
+      ],
       "correctIndex": 1,
-      "explanation": "Zodra de rode lichten knipperen, mag je de overweg niet meer oprijden, ook al zijn de slagbomen nog niet gesloten.",
+      "explanation": "Zodra de rode lichten knipperen, is het volgens artikel 20.3.1° verboden de overweg op te rijden, ook al zijn de slagbomen nog open.",
       "source": "https://www.evocaat.be/nl/themas/een-gesloten-spooroverweg-oversteken-wat-zijn-de-juridische-gevolgen"
     },
     {
@@ -526,9 +791,14 @@
       "type": "rule",
       "category": "snelheid",
       "question": "Welke maximumsnelheid geldt in een zone die is aangeduid met een zone 30-bord?",
-      "options": ["20 km/u", "40 km/u", "30 km/u", "50 km/u"],
+      "options": [
+        "20 km/u",
+        "40 km/u",
+        "30 km/u",
+        "50 km/u"
+      ],
       "correctIndex": 2,
-      "explanation": "In een zone 30 mag je, tenzij anders aangeduid, niet sneller dan 30 km/u rijden.",
+      "explanation": "In een zone 30 mag je volgens artikel 22quater en 65.5 niet sneller dan 30 km/u rijden.",
       "source": "https://www.wegcode.be/nl/verkeersreglement/uitleg-bij-het-verkeersreglement/snelheidsbeperkingen"
     }
   ]
