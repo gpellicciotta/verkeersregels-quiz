@@ -15,7 +15,7 @@ An overview of all tasks and their planning.
 
 ## Next Milestone
 
-- [ ] T0010 Add the version to the start page and when clicked, show the CHANGELOG
+- [~] T0010 [owner: @antigravity] Add version display on the start screen that opens the CHANGELOG on click.
 - [ ] T0003 [needs: T0010] Release v1.0.0 on GitHub Pages.
 
 ---
