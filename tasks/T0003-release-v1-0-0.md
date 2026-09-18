@@ -1,10 +1,10 @@
 ---
 id: T0003
-owner: ""
+owner: "@antigravity"
 needs: []
 branch: task/T0003-release-v1-0-0
 worktree: ./work/T0003-release-v1-0-0
-status: available
+status: active
 started: 2026-09-18
 ended: —
 ---

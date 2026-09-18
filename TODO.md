@@ -15,7 +15,7 @@ An overview of all tasks and their planning.
 
 ## Next Milestone
 
-- [ ] T0003 Release v1.0.0 on GitHub Pages.
+- [~] T0003 [owner: @antigravity] Release v1.0.0 on GitHub Pages.
 - [ ] T0012 Extend the set of questions: try to double it and at least add questions about all new signs and rules introduced since 2022.
 - [ ] T0013 Try to have a link for each question, shown once the answer is shown, to either the official rule, or to a site that explains the sign or rule.
 - [ ] A0015 Allow extra query parameter syntax, as aliases: "s" = "since" = "sinds"; "q" = "quantity"
