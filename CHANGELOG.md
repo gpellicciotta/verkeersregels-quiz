@@ -13,7 +13,8 @@ A summarized overview of all changes, per version of this project.
 
 ---
 
-## v1.0.1-pre
+## v1.1.0-pre
+- Content: Doubled question bank to 126 questions with full sign coverage and post-2022 rules.
 
 ## v1.0.0 [2026-09-18]
 - Docs: Added standard project documentation including requirements, DevOps guide, license, and documentation index.
