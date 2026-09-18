@@ -15,7 +15,7 @@ An overview of all tasks and their planning.
 
 ## Next Milestone
 
-- [ ] A0011 Er mogen geen vragen zijn die naar een bord verwijzen maar het niet tonen.
+- [~] A0011 [owner: @antigravity] Ensure no questions refer to a traffic sign without showing it.
 - [ ] T0003 [needs: A0011] Release v1.0.0 on GitHub Pages.
 
 ---
