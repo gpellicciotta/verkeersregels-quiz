@@ -1,3 +1,4 @@
+/** @OnlyCurrentDoc */
 function doPost(e) {
   var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Resultaten');
   if (!sheet) {

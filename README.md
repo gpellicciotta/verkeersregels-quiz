@@ -61,6 +61,21 @@ Werkt met JavaScript zonder probleem: GitHub Pages is gewoon statische bestandsh
 Zolang `SHEET_WEBAPP_URL` op `null` staat, wordt dit gewoon overgeslagen — de quiz werkt ook
 zonder deze stap.
 
+### Rechten van het script
+
+`Code.gs` bevat de annotatie `/** @OnlyCurrentDoc */`. Daardoor vraagt Google bij het autoriseren
+enkel toegang tot deze ene gekoppelde Sheet (`spreadsheets.currentonly`), niet tot al je Google
+Sheets. Als je het script al had geautoriseerd voordat deze annotatie werd toegevoegd, deed je dat
+met de bredere toegang. Om dat recht te laten intrekken en te vervangen door de vernauwde versie:
+
+1. Plak de bijgewerkte inhoud van `Code.gs` opnieuw in de script-editor en sla op.
+2. Ga naar Deployen > Implementaties beheren > potlood-icoon > Versie: Nieuwe versie > Implementeren.
+   Dit houdt dezelfde web-app-URL, maar draait de nieuwe (vernauwde) code.
+3. Ga naar [myaccount.google.com/permissions](https://myaccount.google.com/permissions), zoek het
+   script-project op en verwijder de bestaande toegang.
+4. Doorloop de quiz opnieuw zodat het script opnieuw om toestemming vraagt — controleer dan of de
+   vraag nu specifiek over "deze spreadsheet" gaat, niet over "al je spreadsheets".
+
 ## Open vragen / vervolgstappen
 
 - Vragenbank uitbreiden met meer categorieen naarmate er tijd is.
