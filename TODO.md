@@ -15,9 +15,8 @@ An overview of all tasks and their planning.
 
 ## Next Milestone
 
-- [~] T0007 [owner: @antigravity] Add a report error button on each question screen and log reports to Google Sheet.
 - [ ] T0010 Add the version to the start page and when clicked, show the CHANGELOG
-- [ ] T0003 [needs: T0007, T0010] Release v1.0.0 on GitHub Pages.
+- [ ] T0003 [needs: T0010] Release v1.0.0 on GitHub Pages.
 
 ---
 
