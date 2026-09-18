@@ -384,7 +384,8 @@
         "assets/signs/E9a.svg"
       ],
       "correctIndex": 3,
-      "explanation": "Bord E9a met het rolstoelsymbool markeert een voorbehouden parkeerplaats voor personen met een handicap."
+      "explanation": "Bord E9a met het rolstoelsymbool markeert een voorbehouden parkeerplaats voor personen met een handicap.",
+      "since": 1990
     },
     {
       "id": "iden-f1b",
@@ -440,7 +441,8 @@
         "assets/signs/F103.svg"
       ],
       "correctIndex": 3,
-      "explanation": "Bord F103 markeert het begin van een voetgangerszone."
+      "explanation": "Bord F103 markeert het begin van een voetgangerszone.",
+      "since": 1988
     },
     {
       "id": "iden-d10",
@@ -454,7 +456,8 @@
         "assets/signs/D1a.svg"
       ],
       "correctIndex": 0,
-      "explanation": "Bord D10 is voorbehouden voor voetgangers en fietsers samen (art. 69.3); bord D9 laat ook bestuurders van tweewielige bromfietsen klasse A toe."
+      "explanation": "Bord D10 is voorbehouden voor voetgangers en fietsers samen (art. 69.3); bord D9 laat ook bestuurders van tweewielige bromfietsen klasse A toe.",
+      "since": 2014
     },
     {
       "id": "rule-snelheid-bebouwd",
@@ -469,7 +472,8 @@
       ],
       "correctIndex": 0,
       "explanation": "In Vlaanderen en Wallonië geldt binnen de bebouwde kom standaard 50 km/u (art. 11.1). In het Brussels Hoofdstedelijk Gewest geldt daarentegen standaard 30 km/u.",
-      "source": "https://www.wegcode.be/nl/verkeersreglement/uitleg-bij-het-verkeersreglement/snelheidsbeperkingen"
+      "source": "https://www.wegcode.be/nl/verkeersreglement/uitleg-bij-het-verkeersreglement/snelheidsbeperkingen",
+      "since": 1992
     },
     {
       "id": "rule-snelheid-buiten-vl",
@@ -484,7 +488,8 @@
       ],
       "correctIndex": 1,
       "explanation": "In Vlaanderen en Brussel geldt buiten de bebouwde kom standaard 70 km/u (art. 11.2). Enkel in het Waals Gewest geldt standaard nog 90 km/u.",
-      "source": "https://magazine.vab.be/op-weg/mobiliteit/hoe-snel-mag-je-rijden/"
+      "source": "https://magazine.vab.be/op-weg/mobiliteit/hoe-snel-mag-je-rijden/",
+      "since": 2017
     },
     {
       "id": "rule-snelheid-autosnelweg",
@@ -529,7 +534,8 @@
       ],
       "correctIndex": 0,
       "explanation": "Voor gewone bestuurders ligt de wettelijke alcohollimiet op 0,5 promille in het bloed (0,22 mg/l uitgeademde lucht, art. 34 Wegverkeerswet).",
-      "source": "https://www.veiligverkeer.be/veilig-rijden/rijden-onder-invloed/alcohol-limiet-hoeveel-promille-drinken-alcoholcontrole-boete-straffen/"
+      "source": "https://www.veiligverkeer.be/veilig-rijden/rijden-onder-invloed/alcohol-limiet-hoeveel-promille-drinken-alcoholcontrole-boete-straffen/",
+      "since": 1994
     },
     {
       "id": "rule-alcohol-beroep",
@@ -544,7 +550,8 @@
       ],
       "correctIndex": 1,
       "explanation": "Beroepschauffeurs moeten zich volgens artikel 34 van de Wegverkeerswet houden aan 0,2 promille (0,09 mg/l uitgeademde lucht).",
-      "source": "https://www.veiligverkeer.be/veilig-rijden/rijden-onder-invloed/alcohol-limiet-hoeveel-promille-drinken-alcoholcontrole-boete-straffen/"
+      "source": "https://www.veiligverkeer.be/veilig-rijden/rijden-onder-invloed/alcohol-limiet-hoeveel-promille-drinken-alcoholcontrole-boete-straffen/",
+      "since": 2014
     },
     {
       "id": "rule-gordel-algemeen",
@@ -559,7 +566,8 @@
       ],
       "correctIndex": 2,
       "explanation": "Volgens artikel 35.1.1 geldt de gordelplicht voor- en achterin, op elke zitplaats die van een veiligheidsgordel is voorzien.",
-      "source": "https://passetonpermis.be/nl/blog/het-dragen-van-de-veiligheidsgordel"
+      "source": "https://passetonpermis.be/nl/blog/het-dragen-van-de-veiligheidsgordel",
+      "since": 1992
     },
     {
       "id": "rule-kinderzitje",
@@ -574,7 +582,8 @@
       ],
       "correctIndex": 3,
       "explanation": "Volgens artikel 35.1.1 moeten kinderen jonger dan 18 jaar en kleiner dan 1,35 m vervoerd worden in een voor hen geschikt kinderbeveiligingssysteem.",
-      "source": "https://www.veiligverkeer.be/veilig-rijden/gordel-en-kinderzitjes/regels-wetgeving-belgie-leeftijd-kind-vooraan-zitten-boete/"
+      "source": "https://www.veiligverkeer.be/veilig-rijden/gordel-en-kinderzitjes/regels-wetgeving-belgie-leeftijd-kind-vooraan-zitten-boete/",
+      "since": 2006
     },
     {
       "id": "rule-gsm",
@@ -589,7 +598,8 @@
       ],
       "correctIndex": 0,
       "explanation": "Wachten voor een rood licht geldt niet als stilstaan of parkeren (art. 2.22 en 2.23). Artikel 8.4 verbiedt het vasthouden of manipuleren van mobiele apparaten met een scherm tijdens het rijden; de motor hoeft wettelijk niet uitgeschakeld te zijn.",
-      "source": "https://www.veiligverkeer.be/veilig-rijden/afleiding/gsm-achter-het-stuur-regels-en-boetes/"
+      "source": "https://www.veiligverkeer.be/veilig-rijden/afleiding/gsm-achter-het-stuur-regels-en-boetes/",
+      "since": 2022
     },
     {
       "id": "rule-voorrang-rechts",
@@ -634,7 +644,8 @@
       ],
       "correctIndex": 3,
       "explanation": "Op een rotonde aangeduid met bord D5 heeft het verkeer dat er al op rijdt voorrang op wie wil toetreden (art. 12.3.1).",
-      "source": "https://www.verkeerszaken.be/blog/artikel/a/432/De-regels-voor-rotondes-en-rondpunten"
+      "source": "https://www.verkeerszaken.be/blog/artikel/a/432/De-regels-voor-rotondes-en-rondpunten",
+      "since": 1997
     },
     {
       "id": "rule-prioritair",
@@ -664,7 +675,8 @@
       ],
       "correctIndex": 1,
       "explanation": "Volgens artikel 40ter is buiten de bebouwde kom minstens 1,5 meter zijdelingse afstand verplicht; binnen de bebouwde kom is dat 1 meter.",
-      "source": "https://www.wegcode.be/nl/verkeersreglement/fietsers-en-de-wegcode"
+      "source": "https://www.wegcode.be/nl/verkeersreglement/fietsers-en-de-wegcode",
+      "since": 2019
     },
     {
       "id": "rule-zebra",
@@ -709,7 +721,8 @@
       ],
       "correctIndex": 0,
       "explanation": "De WAM-wet (art. 2) verplicht elk motorvoertuig dat op de openbare weg rijdt om een verzekering burgerlijke aansprakelijkheid te hebben.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1989011371~e9i0a75brp"
+      "source": "https://www.wegcode.be/nl/regelgeving/1989011371~e9i0a75brp",
+      "since": 1989
     },
     {
       "id": "rule-reddingsstrook",
@@ -724,7 +737,8 @@
       ],
       "correctIndex": 1,
       "explanation": "Volgens artikel 9.8 en 2.70 moeten bestuurders bij file op wegen met minstens twee rijstroken per richting altijd een reddingsstrook vormen.",
-      "source": "https://www.touring.be/nl/artikels/reddingsstrook-verplicht-1-oktober"
+      "source": "https://www.touring.be/nl/artikels/reddingsstrook-verplicht-1-oktober",
+      "since": 2020
     },
     {
       "id": "rule-mistlichten",
@@ -754,7 +768,8 @@
       ],
       "correctIndex": 3,
       "explanation": "Met een begeleider kan je vanaf 17 jaar een voorlopig rijbewijs B behalen; zonder begeleider pas vanaf 18 jaar (KB 10 juli 1998, art. 3).",
-      "source": "http://mobilit.belgium.be/nl/weg/rijden/rijbewijzen/belgisch-rijbewijs/voorlopige-rijbewijzen-categorie-b/voorlopig-rijbewijs-0"
+      "source": "http://mobilit.belgium.be/nl/weg/rijden/rijbewijzen/belgisch-rijbewijs/voorlopige-rijbewijzen-categorie-b/voorlopig-rijbewijs-0",
+      "since": 2007
     },
     {
       "id": "rule-begeleider-ervaring",
@@ -769,7 +784,8 @@
       ],
       "correctIndex": 0,
       "explanation": "Een begeleider moet op het moment van de scholing minstens 8 jaar houder zijn van een geldig rijbewijs B (KB 10 juli 1998, art. 7).",
-      "source": "http://mobilit.belgium.be/nl/weg/rijden/rijbewijzen/belgisch-rijbewijs/voorlopige-rijbewijzen-categorie-b/voorlopig-rijbewijs-0"
+      "source": "http://mobilit.belgium.be/nl/weg/rijden/rijbewijzen/belgisch-rijbewijs/voorlopige-rijbewijzen-categorie-b/voorlopig-rijbewijs-0",
+      "since": 1998
     },
     {
       "id": "rule-overweg",
@@ -799,7 +815,152 @@
       ],
       "correctIndex": 2,
       "explanation": "In een zone 30 mag je volgens artikel 22quater en 65.5 niet sneller dan 30 km/u rijden.",
-      "source": "https://www.wegcode.be/nl/verkeersreglement/uitleg-bij-het-verkeersreglement/snelheidsbeperkingen"
+      "source": "https://www.wegcode.be/nl/verkeersreglement/uitleg-bij-het-verkeersreglement/snelheidsbeperkingen",
+      "since": 1998
+    },
+    {
+      "id": "rule-estep-helm-2026",
+      "type": "rule",
+      "category": "fietsers-voetgangers",
+      "question": "Vanaf welke constructiesnelheid is een valhelm verplicht op een gemotoriseerd voortbewegingstoestel (zoals een e-step)?",
+      "options": [
+        "Boven 20 km/u",
+        "Boven 15 km/u",
+        "Boven 25 km/u",
+        "Een helm is nooit verplicht op een e-step"
+      ],
+      "correctIndex": 0,
+      "explanation": "Volgens artikel 36 van de wegcode (ingevoerd door het KB van 27 augustus 2026, in werking op 1 september 2026) is een valhelm verplicht op gemotoriseerde voortbewegingstoestellen met een constructiesnelheid van meer dan 20 km/u.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "since": 2026
+    },
+    {
+      "id": "rule-vierwieler-helm-2024",
+      "type": "rule",
+      "category": "algemeen",
+      "question": "Moet de bestuurder van een motorvierwieler zonder gesloten carrosserie een valhelm dragen?",
+      "options": [
+        "Nee, een helm is enkel verplicht voor tweewielers",
+        "Ja, tenzij het voertuig voorzien is van een veiligheidsgordel én een beveiligingssysteem (zoals een rolbeugel)",
+        "Enkel verplicht buiten de bebouwde kom",
+        "Enkel verplicht bij snelheden boven 50 km/u"
+      ],
+      "correctIndex": 1,
+      "explanation": "Volgens artikel 36.2 van de wegcode (gewijzigd door KB van 2 oktober 2023 en KB van 24 januari 2024, in werking op 1 februari 2024) is een goedgekeurde valhelm verplicht op motorvierwielers zonder carrosserie, tenzij er een veiligheidsgordel en rolbeugel aanwezig zijn.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "since": 2024
+    },
+    {
+      "id": "rule-middenrijbaan-2022",
+      "type": "rule",
+      "category": "algemeen",
+      "question": "Waar moet je rijden op een weg die is ingericht met een middenrijbaan (twee evenwijdige denkbeeldige randen van telkens twee korte witte strepen)?",
+      "options": [
+        "Je rijdt op de centrale middenrijbaan en wijkt naar de zijstrook uit om tegenliggers te kruisen of in te halen",
+        "Je moet verplicht steeds op de rechtse zijstrook rijden en mag de middenrijbaan nooit betreden",
+        "De middenrijbaan is uitsluitend voorbehouden voor bussen en prioritaire voertuigen",
+        "Je mag de middenrijbaan enkel gebruiken om links af te slaan"
+      ],
+      "correctIndex": 0,
+      "explanation": "Volgens artikel 9.1.3° (ingevoerd door het KB van 30 juli 2022, in werking op 1 oktober 2022) rijden bestuurders op de centrale rijstrook. Zij mogen de rechtse zijstrook slechts gebruiken om tegenliggers te kruisen of in te halen.",
+      "source": "https://www.wegcode.be/nl/nieuws/nieuwe-verkeersregels-van-kracht-op-1-oktober-de-10-belangrijkste-veranderingen~ntwif2jyud",
+      "since": 2022
+    },
+    {
+      "id": "rule-estep-leeftijd-2022",
+      "type": "rule",
+      "category": "fietsers-voetgangers",
+      "question": "Vanaf welke minimumleeftijd mag je een gemotoriseerd voortbewegingstoestel (zoals een e-step) besturen op de openbare weg in België?",
+      "options": [
+        "Vanaf 12 jaar",
+        "Vanaf 14 jaar",
+        "Vanaf 16 jaar (behoudens in woonerven, speelstraten of voetgangerszones)",
+        "Vanaf 18 jaar"
+      ],
+      "correctIndex": 2,
+      "explanation": "Artikel 8.2bis (ingevoerd door de Wet van 15 mei 2022, in werking op 1 juli 2022) stelt de minimumleeftijd voor het besturen van een gemotoriseerd voortbewegingstoestel op 16 jaar, behalve in woonerven, speelstraten of voetgangerszones.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "since": 2022
+    },
+    {
+      "id": "rule-estep-passagier-2022",
+      "type": "rule",
+      "category": "fietsers-voetgangers",
+      "question": "Mag je met twee personen op één elektrische step rijden op de openbare weg?",
+      "options": [
+        "Ja, als beiden een helm dragen",
+        "Ja, mits het totale gewicht onder 120 kg blijft",
+        "Nee, het is uitdrukkelijk verboden om passagiers te vervoeren op een voortbewegingstoestel",
+        "Enkel als de passagier een kind jonger dan 7 jaar is"
+      ],
+      "correctIndex": 2,
+      "explanation": "Artikel 8.2bis (ingevoerd door de Wet van 15 mei 2022, in werking op 1 juli 2022) verbiedt uitdrukkelijk om passagiers te vervoeren op een voortbewegingstoestel.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "since": 2022
+    },
+    {
+      "id": "rule-speed-pedelec-d9-2022",
+      "type": "rule",
+      "category": "fietsers-voetgangers",
+      "question": "Mag een bestuurder van een speed pedelec gebruikmaken van een deel van de openbare weg aangeduid met bord D9 (voetgangers, fietsers en bromfietsen klasse A)?",
+      "options": [
+        "Nee, speed pedelecs zijn nooit toegelaten op een D9",
+        "Ja, speed pedelecs mogen het D9-pad gebruiken, tenzij een onderbord hen dit verbiedt",
+        "Enkel als ze niet sneller dan 15 km/u rijden",
+        "Enkel buiten de bebouwde kom"
+      ],
+      "correctIndex": 1,
+      "explanation": "Bij het KB van 30 juli 2022 (in werking op 1 oktober 2022, art. 9.1.2° en 69.3) werd de toelating voor bestuurders van speed pedelecs op het D9-pad hersteld, tenzij een onderbord hen de toegang ontzegt.",
+      "source": "https://www.wegcode.be/nl/nieuws/nieuwe-verkeersregels-van-kracht-op-1-oktober-de-10-belangrijkste-veranderingen~ntwif2jyud",
+      "since": 2022
+    },
+    {
+      "id": "rule-velomobiel-2022",
+      "type": "rule",
+      "category": "fietsers-voetgangers",
+      "question": "Welke extra zichtbaarheidsvereiste geldt voor een velomobiel (gesloten ligfiets) met een hoogte van minder dan 1 meter?",
+      "options": [
+        "Een oranje zwaailicht op het dak",
+        "Een veiligheidsvlag met retro-reflecterende stroken op voldoende hoogte",
+        "Verplichte gele zijknipperlichten",
+        "Een fluorescerende bodycoat rond het hele voertuig"
+      ],
+      "correctIndex": 1,
+      "explanation": "Volgens artikel 82bis (ingevoerd door het KB van 9 oktober 2022, in werking op 1 december 2022) moeten velomobielen lager dan 1 meter uitgerust zijn met een veiligheidsvlag met retro-reflecterende stroken op minstens 1,40 meter hoogte.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "since": 2022
+    },
+    {
+      "id": "rule-fietsstraat-f111-2021",
+      "type": "rule",
+      "category": "fietsers-voetgangers",
+      "question": "Tot waar geldt de werking van het verkeersbord F111 (begin van een fietszone of fietsstraat)?",
+      "options": [
+        "Tot het eerstvolgende kruispunt (tenzij herhaald of in een zonebepaling opgenomen)",
+        "Steeds over een vaste afstand van 250 meter",
+        "Tot het bord F113 (einde fietszone); zonder eindbord blijft het onbeperkt gelden",
+        "Enkel ter hoogte van de eerste 50 meter"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sinds het KB van 8 juni 2021 (in werking 1 augustus 2021, art. 65.5) geldt verkeersbord F111 tot het eerstvolgende kruispunt, waardoor een bord F113 aan elk tussenliggend kruispunt niet langer verplicht is.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "since": 2021
+    },
+    {
+      "id": "rule-brussel-stad30-2021",
+      "type": "rule",
+      "category": "snelheid",
+      "question": "Wat is sinds 2021 de algemene maximumsnelheid binnen de bebouwde kom in het Brussels Hoofdstedelijk Gewest, tenzij een bord een andere snelheid oplegt?",
+      "options": [
+        "50 km/u",
+        "40 km/u",
+        "30 km/u",
+        "20 km/u"
+      ],
+      "correctIndex": 2,
+      "explanation": "Sinds 1 januari 2021 geldt in het Brussels Hoofdstedelijk Gewest (Besluit van de Brusselse Hoofdstedelijke Regering van 22 september 2021, art. 11.2) standaard 30 km/u binnen de bebouwde kom ('Stad 30').",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "since": 2021
     }
   ]
 }

@@ -6,12 +6,15 @@ const CONFIG = {
   SHEET_SECRET: "8jd6H2Byuj0HaIqL",
 };
 
+let allQuestions = [];
+
 const state = {
   playerName: "",
   pool: [],
   round: [],
   currentIndex: 0,
   answers: [],
+  filterSince: null,
 };
 
 const el = {
@@ -21,8 +24,12 @@ const el = {
   playerNameInput: document.getElementById("player-name"),
   btnStart: document.getElementById("btn-start"),
   startError: document.getElementById("start-error"),
+  startDesc: document.getElementById("start-desc"),
+  filterNotice: document.getElementById("filter-notice"),
   quizProgress: document.getElementById("quiz-progress"),
   quizScore: document.getElementById("quiz-score"),
+  quizBadgeWrap: document.getElementById("quiz-badge-wrap"),
+  quizBadge: document.getElementById("quiz-badge"),
   progressFill: document.getElementById("progress-fill"),
   questionText: document.getElementById("question-text"),
   questionImageWrap: document.getElementById("question-image-wrap"),
@@ -58,12 +65,89 @@ async function loadQuestions() {
   return data.questions;
 }
 
+function getSinceBadge(since) {
+  if (!since || typeof since !== "number") return null;
+  const currentYear = new Date().getFullYear();
+  const diff = currentYear - since;
+  const isRecent = diff <= 5;
+  return {
+    year: since,
+    text: `Sinds ${since}`,
+    className: isRecent ? "badge-since badge-amber badge-since-amber" : "badge-since badge-blue badge-since-blue",
+    isRecent,
+  };
+}
+
+function getSinceFilter() {
+  const param = new URLSearchParams(window.location.search).get("since");
+  if (!param) return null;
+  const year = parseInt(param, 10);
+  return Number.isInteger(year) && year >= 1900 && year <= 2100 ? year : null;
+}
+
+function applyFilter() {
+  const filterSince = getSinceFilter();
+  state.filterSince = filterSince;
+  if (filterSince !== null) {
+    state.pool = allQuestions.filter(
+      (q) => typeof q.since === "number" && q.since >= filterSince
+    );
+  } else {
+    state.pool = allQuestions.slice();
+  }
+  updateStartScreenNotice();
+}
+
+function updateStartScreenNotice() {
+  if (state.filterSince !== null) {
+    const badgeInfo = getSinceBadge(state.filterSince) || {
+      text: `Sinds ${state.filterSince}`,
+      className: "badge-since badge-amber badge-since-amber",
+    };
+    const count = state.pool.length;
+    if (count > 0) {
+      el.filterNotice.innerHTML = `
+        <span class="${badgeInfo.className}">${badgeInfo.text}</span>
+        <span>Quiz gefilterd op regels gewijzigd sinds <strong>${state.filterSince}</strong> (${count} ${count === 1 ? "vraag" : "vragen"} in de selectie).</span>
+      `;
+      el.filterNotice.classList.remove("hidden");
+      if (el.startDesc) {
+        el.startDesc.textContent = `Oefen recente wetswijzigingen sinds ${state.filterSince}: ${count} ${count === 1 ? "vraag" : "vragen"} in deze selectie.`;
+      }
+      el.startError.classList.add("hidden");
+      el.btnStart.disabled = false;
+    } else {
+      el.filterNotice.innerHTML = `
+        <span class="badge-since badge-amber badge-since-amber">Sinds ${state.filterSince}</span>
+        <span>Geen vragen gevonden voor wetswijzigingen sinds <strong>${state.filterSince}</strong>.</span>
+      `;
+      el.filterNotice.classList.remove("hidden");
+      el.startError.textContent = `Er zijn geen quizvragen beschikbaar met wetswijzigingen sinds ${state.filterSince}.`;
+      el.startError.classList.remove("hidden");
+      el.btnStart.disabled = true;
+    }
+  } else {
+    el.filterNotice.classList.add("hidden");
+    el.filterNotice.innerHTML = "";
+    if (el.startDesc) {
+      el.startDesc.textContent = "Oefen voor je theoretisch rijexamen: 20 vragen over verkeersborden en verkeersregels.";
+    }
+    el.startError.classList.add("hidden");
+    el.btnStart.disabled = false;
+  }
+}
+
 function getQuestionCountOverride() {
   const q = parseInt(new URLSearchParams(window.location.search).get("q"), 10);
   return Number.isInteger(q) && q > 0 ? q : null;
 }
 
 function startQuiz() {
+  if (!state.pool || state.pool.length === 0) {
+    el.startError.textContent = "Geen vragen beschikbaar om de quiz te starten.";
+    el.startError.classList.remove("hidden");
+    return;
+  }
   state.playerName = el.playerNameInput.value.trim();
   const desired = getQuestionCountOverride() || CONFIG.QUESTIONS_PER_ROUND;
   const count = Math.min(desired, state.pool.length);
@@ -82,6 +166,15 @@ function renderQuestion() {
   const correctSoFar = state.answers.filter((a) => a.correct).length;
   el.quizScore.textContent = `Score: ${correctSoFar}/${state.answers.length}`;
   el.progressFill.style.width = `${(state.currentIndex / total) * 100}%`;
+
+  const badgeInfo = getSinceBadge(q.since);
+  if (badgeInfo && el.quizBadgeWrap && el.quizBadge) {
+    el.quizBadge.textContent = badgeInfo.text;
+    el.quizBadge.className = badgeInfo.className;
+    el.quizBadgeWrap.classList.remove("hidden");
+  } else if (el.quizBadgeWrap) {
+    el.quizBadgeWrap.classList.add("hidden");
+  }
 
   el.questionText.textContent = q.question;
 
@@ -126,6 +219,7 @@ function selectOption(chosenIndex) {
     question: q.question,
     type: q.type,
     sign: q.sign,
+    since: q.since,
     chosenIndex,
     correctIndex: q.correctIndex,
     options: q.options,
@@ -168,10 +262,14 @@ function optionCell(question, index) {
 }
 
 function questionCell(question) {
-  if (question.type === "recognize") {
-    return `<img src="${question.sign}" alt="Bord" class="table-thumb">${question.question}`;
+  const badgeInfo = getSinceBadge(question.since);
+  const badgeHtml = badgeInfo ? `<span class="${badgeInfo.className}">${badgeInfo.text}</span>` : "";
+  const signImg = question.type === "recognize" ? `<img src="${question.sign}" alt="Bord" class="table-thumb">` : "";
+
+  if (badgeInfo) {
+    return `<div class="table-question-wrap">${badgeHtml}<div>${signImg}${question.question}</div></div>`;
   }
-  return question.question;
+  return signImg ? `${signImg}${question.question}` : question.question;
 }
 
 function showResult() {
@@ -243,6 +341,7 @@ async function submitToSheet(correct, total, pct) {
 
 function restart() {
   el.playerNameInput.value = state.playerName;
+  applyFilter();
   showScreen("start");
 }
 
@@ -258,9 +357,26 @@ el.btnNext.addEventListener("click", nextQuestion);
 el.btnRestart.addEventListener("click", restart);
 el.btnPrint.addEventListener("click", () => window.print());
 
+function checkAutoStart() {
+  const params = new URLSearchParams(window.location.search);
+  if (params.get("autotest") === "results") {
+    startQuiz();
+    while (state.currentIndex < state.round.length) {
+      const q = state.round[state.currentIndex];
+      selectOption(q.correctIndex);
+      state.currentIndex++;
+    }
+    showResult();
+  } else if (params.get("autostart") === "1") {
+    startQuiz();
+  }
+}
+
 loadQuestions()
   .then((questions) => {
-    state.pool = questions;
+    allQuestions = questions;
+    applyFilter();
+    checkAutoStart();
   })
   .catch((err) => {
     console.error(err);

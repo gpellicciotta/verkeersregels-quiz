@@ -13,7 +13,8 @@
   <!-- Start screen -->
   <section id="screen-start" class="screen">
     <h1>Verkeersregels Quiz</h1>
-    <p>Oefen voor je theoretisch rijexamen: 20 vragen over verkeersborden en verkeersregels.</p>
+    <p id="start-desc">Oefen voor je theoretisch rijexamen: 20 vragen over verkeersborden en verkeersregels.</p>
+    <div id="filter-notice" class="filter-notice hidden"></div>
     <label for="player-name">Naam (optioneel)</label>
     <input type="text" id="player-name" placeholder="Bv. Noah">
     <button id="btn-start" class="btn-primary">Start quiz</button>
@@ -27,6 +28,9 @@
       <span id="quiz-score">Score: 0</span>
     </div>
     <div class="progress-bar"><div id="progress-fill"></div></div>
+    <div id="quiz-badge-wrap" class="quiz-badge-wrap hidden">
+      <span id="quiz-badge" class="badge-since"></span>
+    </div>
     <div id="explanation" class="explanation hidden"></div>
     <button id="btn-next" class="btn-primary hidden">Volgende vraag</button>
     <h2 id="question-text"></h2>
