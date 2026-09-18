@@ -78,7 +78,7 @@ License: all files are public domain under Belgian law, because official traffic
 | B19.svg | Smalle doorgang, voorrang verlenen aan tegenliggers | [File:Belgian traffic sign B19 KB-AR 03-06-2024.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_B19_KB-AR_03-06-2024.svg) |
 | C1.svg | Verboden richting in te rijden | [File:Belgian traffic sign C1 KB-AR 03-06-2024.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_C1_KB-AR_03-06-2024.svg) |
 | C3.svg | Verboden toegang in beide richtingen | [File:Belgian traffic sign C3 KB-AR 03-06-2024.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_C3_KB-AR_03-06-2024.svg) |
-| C31.svg | Verbod af te slaan in pijlrichting | [File:Belgian traffic sign C31 KB-AR 03-06-2024.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_C31_KB-AR_03-06-2024.svg) |
+| C31.svg | Verbod om links af te slaan (C31a) | [File:Belgian traffic sign C31a.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_C31a.svg) |
 | C33.svg | Verbod om te keren | [File:Belgian traffic sign C33 KB-AR 03-06-2024.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_C33_KB-AR_03-06-2024.svg) |
 | C35.svg | Verbod in te halen | [File:Belgian traffic sign C35 KB-AR 03-06-2024.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_C35_KB-AR_03-06-2024.svg) |
 | C39.svg | Verbod voor vrachtwagens om in te halen | [File:Belgian traffic sign C39 KB-AR 03-06-2024.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_C39_KB-AR_03-06-2024.svg) |
@@ -87,7 +87,7 @@ License: all files are public domain under Belgian law, because official traffic
 | D5.svg | Verplicht rondgaand verkeer (rotonde) | [File:Belgian road sign D05.svg](https://commons.wikimedia.org/wiki/File:Belgian_road_sign_D05.svg) |
 | D7.svg | Verplicht fietspad | [File:Belgian road sign D07.svg](https://commons.wikimedia.org/wiki/File:Belgian_road_sign_D07.svg) |
 | D9a.svg | Gedeeld pad voetgangers/fietsers/bromfiets klasse A | [File:Belgian road sign D09.svg](https://commons.wikimedia.org/wiki/File:Belgian_road_sign_D09.svg) |
-| D10.svg | Gedeeld pad voetgangers en fietsers | [File:Belgian traffic sign D10 KB-AR 03-06-2024.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_D10_KB-AR_03-06-2024.svg) |
+| D10.svg | Gedeeld pad voetgangers en fietsers | [File:Belgian road sign D10.svg](https://commons.wikimedia.org/wiki/File:Belgian_road_sign_D10.svg) |
 | E1.svg | Verboden te parkeren | [File:Belgian traffic sign E1 KB-AR 03-06-2024.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_E1_KB-AR_03-06-2024.svg) |
 | E3.svg | Verboden te parkeren en te stilstaan | [File:Belgian traffic sign E3 KB-AR 03-06-2024.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_E3_KB-AR_03-06-2024.svg) |
 | E9a.svg | Voorbehouden parkeerplaats voor personen met een handicap | [File:Belgian traffic sign E9a Handicap.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_E9a_Handicap.svg) |
@@ -106,3 +106,16 @@ Cross-reference used to confirm which code matches which meaning and shape: the 
 - `rule-snelheid-buiten-vl`: the 70 km/u default outside built-up areas is specific to the Flemish Region (Wallonia and Brussels still use 90 km/u); the question text names Vlaanderen explicitly, but double-check it still matches the app's target audience.
 - `iden-d10` / `rec-d7`: the distinction between D9a (shared path incl. class-A mopeds) and D10 (pedestrians and cyclists only) is a fine legal nuance; worth a quick read-through since it is easy to misremember.
 - Everything else in the bank was verified against a live, fetched source (either the Wikimedia Commons file/category pages for sign meanings, or one of the 16 rule sources above) and is not flagged for further review.
+
+## Correction log
+
+- 2026-09-18: found that `C31.svg` and `D10.svg` were downloaded from a Wikimedia Commons upload
+  batch ("KB-AR 03-06-2024") whose own file descriptions did not match the code used in the
+  filename: the file saved as `C31.svg` was actually captioned "verboden toegang voor
+  kampeerwagens" (camper vans forbidden) on Commons, and the file saved as `D10.svg` was actually
+  captioned "einde van het deel... klasse A" (end of the D9a shared path). Both were replaced with
+  separately-sourced files whose own captions match the intended meaning (see table above); the
+  question text and explanations were already correct and did not need changes. Re-verified against
+  the current (Aug 2026) Dutch Wikipedia C- and D-series articles, which do not show any renumbering
+  for these codes. The rest of the "KB-AR 03-06-2024" batch was spot-checked against the same
+  Wikipedia articles and matched.
