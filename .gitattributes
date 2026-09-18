@@ -1,0 +1,2 @@
+# Keep official PDF documents byte-identical
+*.pdf binary
