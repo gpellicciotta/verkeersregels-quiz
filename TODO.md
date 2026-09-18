@@ -15,7 +15,7 @@ An overview of all tasks and their planning.
 
 ## Next Milestone
 
-- [ ] T0014 Release as v1.1.0
+- [~] T0014 [owner: @antigravity] Release v1.1.0 on GitHub Pages with updated questions and features.
 - [ ] T0019 Ensure there is a sign and a question for each traffic sign currently in use in Belgium
 
 ---
