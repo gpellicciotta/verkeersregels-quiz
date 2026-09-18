@@ -15,8 +15,8 @@ An overview of all tasks and their planning.
 
 ## Next Milestone
 
-- [~] T0010 [owner: @antigravity] Add version display on the start screen that opens the CHANGELOG on click.
-- [ ] T0003 [needs: T0010] Release v1.0.0 on GitHub Pages.
+- [ ] A0011 Er mogen geen vragen zijn die naar een bord verwijzen maar het niet tonen.
+- [ ] T0003 [needs: A0011] Release v1.0.0 on GitHub Pages.
 
 ---
 
