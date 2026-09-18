@@ -1,10 +1,10 @@
 ---
 id: T0002
-owner: ""
+owner: "@antigravity"
 needs: []
 branch: task/T0002-review-all-questions-and-answers
 worktree: ./work/T0002-review-all-questions-and-answers
-status: available
+status: active
 started: 2026-09-18
 ended: —
 ---
