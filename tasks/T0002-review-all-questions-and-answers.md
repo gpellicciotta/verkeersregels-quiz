@@ -50,6 +50,6 @@ Found on 2026-09-18 against the consolidated Wegcode in data/law, not yet fixed:
 
 ### Already Checked
 
-- All 35 sign images show designs valid under the current Wegcode, compared with the images on wegcode.be.
+- All 35 sign images show current Wegcode designs; 30 match the wegcode.be images, and C31, C39, C43, D1a and F3b have none there.
 - E9a with a wheelchair symbol is valid: article 70.2.1.3°c allows the symbol on the sign itself.
 - Articles 12.3.1, 21.2 and 40ter match `rule-voorrang-rechts`, `rule-snelheid-min-autosnelweg` and `rule-fietser-inhalen`.
