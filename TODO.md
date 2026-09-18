@@ -15,7 +15,7 @@ An overview of all tasks and their planning.
 
 ## Next Milestone
 
-- [ ] T0013 Try to have a link for each question, shown once the answer is shown, to either the official rule, or to a site that explains the sign or rule.
+- [~] T0013 [owner: @antigravity] Add official rule or explainer links to all questions displayed upon answering.
 - [ ] A0015 Allow extra query parameter syntax, as aliases: "s" = "since" = "sinds"; "q" = "quantity"
 - [ ] A0016 Make screenshots of the start page, of a question page with a good answer, one with a bad answer, results with confetti and results without confetti, both on desktop and on mobile. Add these screenshots as a visual tour to the README.md
 - [ ] A0017 When q=n is given, the start page (and also other pages) shoukd not mentiond "20" vragen but "n" vragen
