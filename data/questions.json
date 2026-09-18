@@ -1588,6 +1588,406 @@
       "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
     },
     {
+      "id": "rec-c5",
+      "type": "recognize",
+      "category": "verbod",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/C5.svg",
+      "options": [
+        "Verboden toegang voor bestuurders van motorvoertuigen met meer dan twee wielen en van motorfietsen met zijspan",
+        "Verboden toegang voor alle motorvoertuigen, inclusief tweewielige motorfietsen zonder zijspan",
+        "Verplichte rijstrook voorbehouden voor carpoolers en taxi's",
+        "Verboden toegang voor bestuurders van voertuigen bestemd voor goederenvervoer"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bord C5 verbiedt de toegang voor bestuurders van motorvoertuigen met meer dan twee wielen en van motorfietsen met zijspan (art. 68 KB 1 december 1975). Tweewielige motorfietsen zonder zijspan mogen hier wel rijden.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+    },
+    {
+      "id": "rec-c6",
+      "type": "recognize",
+      "category": "verbod",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/C6.svg",
+      "options": [
+        "Verboden toegang voor alle vierwielige landbouwvoertuigen en tractoren",
+        "Verboden toegang voor bestuurders van vierwielige motorvoertuigen geconstrueerd voor onverhard terrein (quads)",
+        "Verplichte route voor quads en terreinvoertuigen",
+        "Verboden toegang voor bromfietsen met vier wielen"
+      ],
+      "correctIndex": 1,
+      "explanation": "Bord C6 verbiedt de toegang voor bestuurders van vierwielige motorvoertuigen met een open carrosserie, stuur als op een motorfiets en zadel, ontworpen voor onverhard terrein, zoals quads (art. 68 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+    },
+    {
+      "id": "rec-c7",
+      "type": "recognize",
+      "category": "verbod",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/C7.svg",
+      "options": [
+        "Verboden toegang voor bromfietsen en speedpedelecs",
+        "Verplichte parkeerstrook voor tweewielige motorvoertuigen",
+        "Verboden toegang voor bestuurders van motorfietsen",
+        "Inhaalverbod voor alle bestuurders van motorfietsen"
+      ],
+      "correctIndex": 2,
+      "explanation": "Bord C7 verbiedt de toegang voor bestuurders van motorfietsen (art. 68 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+    },
+    {
+      "id": "rec-c9",
+      "type": "recognize",
+      "category": "verbod",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/C9.svg",
+      "options": [
+        "Verboden toegang voor rijwielen en speedpedelecs",
+        "Verplicht fietspad voor bromfietsen klasse B",
+        "Verboden toegang voor alle gemotoriseerde tweewielers boven 50 cc",
+        "Verboden toegang voor bestuurders van bromfietsen"
+      ],
+      "correctIndex": 3,
+      "explanation": "Bord C9 verbiedt de toegang voor bestuurders van bromfietsen (art. 68 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+    },
+    {
+      "id": "rec-c11",
+      "type": "recognize",
+      "category": "verbod",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/C11.svg",
+      "options": [
+        "Verboden toegang voor bestuurders van rijwielen",
+        "Verplicht fietspad voor fietsers en speedpedelecs",
+        "Verboden toegang voor voetgangers en voortbewegingstoestellen",
+        "Einde van het verplichte fietspad"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bord C11 verbiedt de toegang voor bestuurders van rijwielen (art. 68 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+    },
+    {
+      "id": "rec-c13",
+      "type": "recognize",
+      "category": "verbod",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/C13.svg",
+      "options": [
+        "Verboden toegang voor ruiters en bereden dieren",
+        "Verboden toegang voor bestuurders van gespannen",
+        "Verplichte route voor paarden en huifkarren",
+        "Verboden toegang voor landbouwvoertuigen"
+      ],
+      "correctIndex": 1,
+      "explanation": "Bord C13 verbiedt de toegang voor bestuurders van gespannen (art. 68 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+    },
+    {
+      "id": "rec-c15",
+      "type": "recognize",
+      "category": "verbod",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/C15.svg",
+      "options": [
+        "Verboden toegang voor bestuurders van gespannen",
+        "Verplichte weg voor ruiters (ruiterpad)",
+        "Verboden toegang voor ruiters",
+        "Waarschuwing voor overstekend vee of paarden"
+      ],
+      "correctIndex": 2,
+      "explanation": "Bord C15 verbiedt de toegang voor ruiters (art. 68 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+    },
+    {
+      "id": "rec-c17",
+      "type": "recognize",
+      "category": "verbod",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/C17.svg",
+      "options": [
+        "Verboden toegang voor voetgangers met kinderwagens",
+        "Verplichte laad- en loszone voor handkarren",
+        "Verboden toegang voor kruiwagens op het trottoir",
+        "Verboden toegang voor bestuurders van handkarren"
+      ],
+      "correctIndex": 3,
+      "explanation": "Bord C17 verbiedt de toegang voor bestuurders van handkarren (art. 68 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+    },
+    {
+      "id": "rec-c19",
+      "type": "recognize",
+      "category": "verbod",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/C19.svg",
+      "options": [
+        "Verboden toegang voor voetgangers",
+        "Verplichte weg voor voetgangers (voetpad)",
+        "Oversteekplaats voor voetgangers",
+        "Einde van het voetgangersgebied"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bord C19 verbiedt de toegang voor voetgangers (art. 68 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+    },
+    {
+      "id": "rec-c21",
+      "type": "recognize",
+      "category": "verbod",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/C21.svg",
+      "options": [
+        "Verboden toegang voor voertuigen met een maximale toegelaten massa (MTM) boven de aangeduide massa",
+        "Verboden toegang voor bestuurders van voertuigen waarvan de massa in beladen toestand hoger is dan de aangeduide massa",
+        "Verplichte maximale aslast per as voor vrachtwagens",
+        "Aanbevolen maximumgewicht voor vrachtwagens en bussen"
+      ],
+      "correctIndex": 1,
+      "explanation": "Bord C21 verbiedt de toegang voor bestuurders van voertuigen waarvan de werkelijke massa in beladen toestand (MBTA) hoger is dan de aangeduide massa (art. 68 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+    },
+    {
+      "id": "rec-c22",
+      "type": "recognize",
+      "category": "verbod",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/C22.svg",
+      "options": [
+        "Verboden toegang voor geregelde diensten voor gemeenschappelijk openbaar vervoer",
+        "Parkeerverbod voor autobussen en touringcars",
+        "Verboden toegang voor bestuurders van autocars",
+        "Voorbehouden rijstrook voor autobussen en autocars"
+      ],
+      "correctIndex": 2,
+      "explanation": "Bord C22 verbiedt de toegang voor bestuurders van autocars (art. 68 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+    },
+    {
+      "id": "rec-c23",
+      "type": "recognize",
+      "category": "verbod",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/C23.svg",
+      "options": [
+        "Verboden toegang voor alle motorvoertuigen met aanhangwagen",
+        "Inhaalverbod voor vrachtauto's van meer dan 3,5 ton",
+        "Verplichte rijstrook voor goederenvervoer",
+        "Verboden toegang voor bestuurders van motorvoertuigen en slepen ontworpen en gebouwd voor het vervoer van goederen"
+      ],
+      "correctIndex": 3,
+      "explanation": "Bord C23 verbiedt de toegang voor bestuurders van motorvoertuigen en slepen ontworpen en gebouwd voor goederenvervoer (art. 68 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+    },
+    {
+      "id": "rec-c24a",
+      "type": "recognize",
+      "category": "verbod",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/C24a.svg",
+      "options": [
+        "Verboden toegang voor bestuurders van voertuigen die gevaarlijke goederen vervoeren",
+        "Verplichte rijrichting voor voertuigen die gevaarlijke goederen vervoeren",
+        "Verboden toegang voor voertuigen met ontvlambare of ontplofbare stoffen",
+        "Verbod om gevaarlijke goederen te laden of lossen binnen de bebouwde kom"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bord C24a verbiedt de toegang voor bestuurders van voertuigen die gevaarlijke goederen vervoeren (art. 68 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+    },
+    {
+      "id": "rec-c24b",
+      "type": "recognize",
+      "category": "verbod",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/C24b.svg",
+      "options": [
+        "Verboden toegang voor alle voertuigen met een LPG- of aardgasinstallatie",
+        "Verboden toegang voor bestuurders van voertuigen die gevaarlijke ontvlambare of ontplofbare stoffen vervoeren",
+        "Verboden toegang voor voertuigen die waterverontreinigende stoffen vervoeren",
+        "Verbod op open vuur en roken nabij tankstations"
+      ],
+      "correctIndex": 1,
+      "explanation": "Bord C24b verbiedt de toegang voor bestuurders van voertuigen die gevaarlijke ontvlambare of ontplofbare stoffen vervoeren (art. 68 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+    },
+    {
+      "id": "rec-c24c",
+      "type": "recognize",
+      "category": "verbod",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/C24c.svg",
+      "options": [
+        "Verboden toegang voor voertuigen die ontvlambare gassen vervoeren",
+        "Verbod om vloeistoffen of afval te lozen in oppervlaktewater",
+        "Verboden toegang voor bestuurders van voertuigen die gevaarlijke verontreinigende stoffen vervoeren",
+        "Waarschuwing voor een waterwingebied met verhoogd overstromingsrisico"
+      ],
+      "correctIndex": 2,
+      "explanation": "Bord C24c verbiedt de toegang voor bestuurders van voertuigen die gevaarlijke verontreinigende stoffen vervoeren (art. 68 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+    },
+    {
+      "id": "rec-c25",
+      "type": "recognize",
+      "category": "verbod",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/C25.svg",
+      "options": [
+        "Verboden toegang voor gelede bussen en vrachtwagens met aanhangwagen",
+        "Aanbevolen minimale afstand tot voorliggers voor lange voertuigen",
+        "Verplichte volgafstand van minstens de aangeduide afstand in meters",
+        "Verboden toegang voor bestuurders van voertuigen of slepen waarvan de lengte, lading inbegrepen, groter is dan de aangeduide"
+      ],
+      "correctIndex": 3,
+      "explanation": "Bord C25 verbiedt de toegang voor bestuurders van voertuigen of slepen waarvan de lengte, lading inbegrepen, groter is dan aangeduid op het bord (art. 68 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+    },
+    {
+      "id": "rec-c27",
+      "type": "recognize",
+      "category": "verbod",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/C27.svg",
+      "options": [
+        "Verboden toegang voor bestuurders van voertuigen waarvan de breedte, lading inbegrepen, groter is dan de aangeduide",
+        "Waarschuwing voor een rijbaanversmalling langs beide zijden van de weg",
+        "Aanbevolen minimale passeerbreedte voor landbouwvoertuigen",
+        "Verbod om op een rijstrook smaller dan de aangeduide maat in te halen"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bord C27 verbiedt de toegang voor bestuurders van voertuigen waarvan de breedte, lading inbegrepen, groter is dan de aangeduide maat (art. 68 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+    },
+    {
+      "id": "rec-c29",
+      "type": "recognize",
+      "category": "verbod",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/C29.svg",
+      "options": [
+        "Waarschuwing voor een viaduct of tunnel met beperkte doorgangshoogte",
+        "Verboden toegang voor bestuurders van voertuigen waarvan de hoogte, lading inbegrepen, groter is dan de aangeduide",
+        "Aanbevolen doorrijhoogte voor touringcars en dubbeldekkers",
+        "Verplichte minimumhoogte voor bedrijfsvoertuigen onder het kunstwerk"
+      ],
+      "correctIndex": 1,
+      "explanation": "Bord C29 verbiedt de toegang voor bestuurders van voertuigen waarvan de hoogte, lading inbegrepen, groter is dan de aangeduide hoogte (art. 68 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+    },
+    {
+      "id": "rec-c31b",
+      "type": "recognize",
+      "category": "verbod",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/C31b.svg",
+      "options": [
+        "Verplichte rijrichting rechtsaf op het eerstvolgend kruispunt",
+        "Eenrichtingsweg met verboden toegang vanaf de rechterzijde",
+        "Verbod aan het volgend kruispunt af te slaan in de richting door de pijl aangegeven (rechts)",
+        "Doodlopende straat aan de eerstvolgende afslag rechts"
+      ],
+      "correctIndex": 2,
+      "explanation": "Bord C31b verbiedt om op het eerstvolgende kruispunt af te slaan in de richting aangeduid door de pijl, hier rechtsaf (art. 68 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+    },
+    {
+      "id": "rec-c37",
+      "type": "recognize",
+      "category": "verbod",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/C37.svg",
+      "options": [
+        "Begin van een zone met inhaalverbod voor alle motorvoertuigen",
+        "Einde van het inhaalverbod uitsluitend voor vrachtwagens boven 3,5 ton",
+        "Verbod om voertuigen met meer dan twee wielen langs rechts in te halen",
+        "Einde van het verbod een gespan of een voertuig met meer dan twee wielen links in te halen"
+      ],
+      "correctIndex": 3,
+      "explanation": "Bord C37 duidt het einde aan van het inhaalverbod dat was opgelegd door bord C35 (art. 68 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+    },
+    {
+      "id": "rec-c41",
+      "type": "recognize",
+      "category": "verbod",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/C41.svg",
+      "options": [
+        "Einde van het verbod voor goederenvoertuigen met een MTM van meer dan 3,5 ton om links in te halen",
+        "Einde van het algemeen inhaalverbod voor personenauto's en motorfietsen",
+        "Begin van een inhaalverbod voor vrachtwagens bij regenweer",
+        "Verplichte rijstrook voor vrachtauto's met een MTM boven 3,5 ton"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bord C41 duidt het einde aan van het inhaalverbod voor bestuurders van voertuigen gebruikt voor goederenvervoer met een MTM van meer dan 3,5 ton (einde bord C39, art. 68 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+    },
+    {
+      "id": "rec-c43",
+      "type": "recognize",
+      "category": "verbod",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/C43.svg",
+      "options": [
+        "Aanbevolen snelheid tot aan het volgend kruispunt",
+        "Verbod te rijden met een grotere snelheid dan deze die is aangeduid tot het volgend kruispunt",
+        "Verplichte minimumsnelheid op dit wegvak",
+        "Begin van een zonale snelheidsbeperking die enkel eindigt bij een zone-eindebord"
+      ],
+      "correctIndex": 1,
+      "explanation": "Bord C43 verbiedt te rijden met een grotere snelheid dan aangeduid, vanaf het bord tot het volgend kruispunt, tenzij anders aangegeven (art. 68 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+    },
+    {
+      "id": "rec-c45",
+      "type": "recognize",
+      "category": "verbod",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/C45.svg",
+      "options": [
+        "Einde van alle plaatselijke verbodsbepalingen voor voertuigen in beweging",
+        "Einde van de adviessnelheid op het betrokken wegvak",
+        "Einde van de snelheidsbeperking opgelegd door het verkeersbord C43",
+        "Einde van de minimale snelheid op deze openbare weg"
+      ],
+      "correctIndex": 2,
+      "explanation": "Bord C45 duidt het einde aan van de snelheidsbeperking die eerder werd opgelegd door bord C43 (art. 68 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+    },
+    {
+      "id": "rec-c46",
+      "type": "recognize",
+      "category": "verbod",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/C46.svg",
+      "options": [
+        "Einde van alle parkeer- en stilstandverboden op deze weg",
+        "Einde van de autosnelweg of autoweg",
+        "Einde van de voorrangsweg bij het eerstvolgende kruispunt",
+        "Einde van alle plaatselijke verbodsbepalingen opgelegd aan de voertuigen in beweging"
+      ],
+      "correctIndex": 3,
+      "explanation": "Bord C46 duidt het einde aan van alle plaatselijke verbodsbepalingen die eerder werden opgelegd aan voertuigen in beweging, zoals snelheidsbeperkingen en inhaalverboden (art. 68 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+    },
+    {
+      "id": "rec-c47",
+      "type": "recognize",
+      "category": "verbod",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/C47.svg",
+      "options": [
+        "Einde van de toltrajectzone op de autosnelweg",
+        "Verplichte weegbrug en aslastcontrole voor vrachtwagens",
+        "Grensovergang waar uitsluitend vrachtwagens moeten stoppen",
+        "Tolpost: verbod voorbij te rijden zonder te stoppen"
+      ],
+      "correctIndex": 3,
+      "explanation": "Bord C47 (Tolpost of Taks) legt een verbod op om voorbij te rijden zonder te stoppen (art. 68 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+    },
+    {
       "id": "rec-d9",
       "type": "recognize",
       "category": "fietsers-voetgangers",
