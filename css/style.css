@@ -142,7 +142,7 @@ button {
 }
 
 .explanation {
-  margin-top: 16px;
+  margin: 16px 0;
   padding: 14px;
   background: #eef2ff;
   border-radius: var(--radius);
@@ -283,7 +283,7 @@ button {
   #screen-quiz { padding-bottom: 0; }
   #btn-next {
     position: static;
-    margin-top: 20px;
+    margin: 20px 0;
     border-radius: var(--radius);
     padding: 14px 20px;
     box-shadow: none;

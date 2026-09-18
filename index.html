@@ -15,7 +15,7 @@
     <h1>Verkeersregels Quiz</h1>
     <p>Oefen voor je theoretisch rijexamen: 20 vragen over verkeersborden en verkeersregels.</p>
     <label for="player-name">Naam (optioneel)</label>
-    <input type="text" id="player-name" placeholder="Bv. Jef">
+    <input type="text" id="player-name" placeholder="Bv. Noah">
     <button id="btn-start" class="btn-primary">Start quiz</button>
     <p id="start-error" class="error hidden"></p>
   </section>
@@ -27,13 +27,13 @@
       <span id="quiz-score">Score: 0</span>
     </div>
     <div class="progress-bar"><div id="progress-fill"></div></div>
+    <div id="explanation" class="explanation hidden"></div>
+    <button id="btn-next" class="btn-primary hidden">Volgende vraag</button>
     <h2 id="question-text"></h2>
     <div id="question-image-wrap" class="hidden">
       <img id="question-image" alt="Verkeersbord">
     </div>
     <div id="options" class="options"></div>
-    <div id="explanation" class="explanation hidden"></div>
-    <button id="btn-next" class="btn-primary hidden">Volgende vraag</button>
   </section>
 
   <!-- Result screen -->
