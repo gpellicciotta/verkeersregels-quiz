@@ -9,14 +9,19 @@ An overview of all tasks and their planning.
 > Owner: `[owner: @name]` shown only when active/blocked/needs-review.
 > Dependencies: `[needs: Tnnnn]` shown only when unresolved.
 
-**Next ID:** 0011
+**Next ID:** 0017
 
 ---
 
 ## Next Milestone
 
-- [~] A0011 [owner: @antigravity] Ensure no questions refer to a traffic sign without showing it.
-- [ ] T0003 [needs: A0011] Release v1.0.0 on GitHub Pages.
+- [ ] T0003 Release v1.0.0 on GitHub Pages.
+- [ ] T0012 Extend the set of questions: try to double it and at least add questions about all new signs and rules introduced since 2022.
+- [ ] T0013 Try to have a link for each question, shown once the answer is shown, to either the official rule, or to a site that explains the sign or rule.
+- [ ] A0015 Allow extra query parameter syntax, as aliases: "s" = "since" = "sinds"; "q" = "quantity"
+- [ ] A0016 Make screenshots of the start page, of a question page with a good answer, one with a bad answer, results with confetti and results without confetti, both on desktop and on mobile. Add these screenshots as a visual tour to the README.md
+- [ ] A0017 When q=n is given, the start page (and also other pages) shoukd not mentiond "20" vragen but "n" vragen
+- [ ] T0014 [needs A0015 T0003, T0012, A0017 T0013 A0016] Release as v1.1.0
 
 ---
 

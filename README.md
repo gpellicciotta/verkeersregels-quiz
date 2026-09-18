@@ -47,7 +47,7 @@ Elke vraag heeft een `type`:
 
 - `recognize` — toont een bord (`sign`), 4 tekstopties als mogelijke betekenis.
 - `identify` — toont een omschrijving, 4 bord-afbeeldingen als opties.
-- `rule` — pure tekstvraag over een verkeersregel, 4 tekstopties.
+- `rule` — vraag over een verkeersregel, 4 tekstopties (toont optioneel een bord via `sign`).
 
 Verkeersbord-afbeeldingen staan in `assets/signs/`, genoemd naar hun officiële Wegcode-code
 (bv. `A1a.svg`).

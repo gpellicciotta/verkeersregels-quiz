@@ -200,7 +200,7 @@ function renderQuestion() {
 
   el.questionText.textContent = q.question;
 
-  const showsSignImage = q.type === "recognize";
+  const showsSignImage = Boolean(q.sign);
   el.questionImageWrap.classList.toggle("hidden", !showsSignImage);
   if (showsSignImage) {
     el.questionImage.src = q.sign;
@@ -286,7 +286,7 @@ function optionCell(question, index) {
 function questionCell(question) {
   const badgeInfo = getSinceBadge(question.since);
   const badgeHtml = badgeInfo ? `<span class="${badgeInfo.className}">${badgeInfo.text}</span>` : "";
-  const signImg = question.type === "recognize" ? `<img src="${question.sign}" alt="Bord" class="table-thumb">` : "";
+  const signImg = question.sign ? `<img src="${question.sign}" alt="Bord" class="table-thumb">` : "";
 
   if (badgeInfo) {
     return `<div class="table-question-wrap">${badgeHtml}<div>${signImg}${question.question}</div></div>`;

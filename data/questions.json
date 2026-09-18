@@ -463,7 +463,7 @@
       "id": "rule-snelheid-bebouwd",
       "type": "rule",
       "category": "snelheid",
-      "question": "Wat is de algemene maximumsnelheid binnen de bebouwde kom in Vlaanderen, tenzij een verkeersbord iets anders aangeeft?",
+      "question": "Wat is de algemene maximumsnelheid binnen de bebouwde kom in Vlaanderen, tenzij anders aangegeven?",
       "options": [
         "50 km/u",
         "30 km/u",
@@ -479,7 +479,7 @@
       "id": "rule-snelheid-buiten-vl",
       "type": "rule",
       "category": "snelheid",
-      "question": "Wat is sinds de snelheidshervorming de standaard maximumsnelheid buiten de bebouwde kom op Vlaamse wegen zonder specifiek snelheidsbord?",
+      "question": "Wat is sinds de snelheidshervorming de standaard maximumsnelheid buiten de bebouwde kom op Vlaamse wegen, tenzij anders aangegeven?",
       "options": [
         "50 km/u",
         "70 km/u",
@@ -605,7 +605,7 @@
       "id": "rule-voorrang-rechts",
       "type": "rule",
       "category": "voorrang",
-      "question": "Wie heeft voorrang op een kruispunt zonder verkeersborden, verkeerslichten of een agent?",
+      "question": "Wie heeft voorrang op een kruispunt waar de voorrang niet specifiek geregeld is?",
       "options": [
         "Het verkeer van links",
         "Het verkeer van rechts",
@@ -623,7 +623,7 @@
       "question": "Verlies je je voorrang van rechts als je even stopt aan het kruispunt voor je verder rijdt?",
       "options": [
         "Ja, wie stopt verliest zijn voorrang",
-        "Enkel als er een stopbord staat",
+        "Enkel als er een stopgebod geldt",
         "Nee, ook een gestopte bestuurder van rechts behoudt voorrang",
         "Enkel buiten de bebouwde kom"
       ],
@@ -636,6 +636,7 @@
       "type": "rule",
       "category": "voorrang",
       "question": "Wie heeft voorrang op een rotonde die is aangeduid met bord D5?",
+      "sign": "assets/signs/D5.svg",
       "options": [
         "Het verkeer dat de rotonde wil oprijden",
         "Altijd het verkeer van rechts",
@@ -806,7 +807,7 @@
       "id": "rule-zone30",
       "type": "rule",
       "category": "snelheid",
-      "question": "Welke maximumsnelheid geldt in een zone die is aangeduid met een zone 30-bord?",
+      "question": "Welke maximumsnelheid geldt in een zone 30?",
       "options": [
         "20 km/u",
         "40 km/u",
@@ -903,8 +904,9 @@
       "type": "rule",
       "category": "fietsers-voetgangers",
       "question": "Mag een bestuurder van een speed pedelec gebruikmaken van een deel van de openbare weg aangeduid met bord D9 (voetgangers, fietsers en bromfietsen klasse A)?",
+      "sign": "assets/signs/D9.svg",
       "options": [
-        "Nee, speed pedelecs zijn nooit toegelaten op een D9",
+        "Nee, speed pedelecs zijn nooit toegelaten op een D9-pad",
         "Ja, speed pedelecs mogen het D9-pad gebruiken, tenzij een onderbord hen dit verbiedt",
         "Enkel als ze niet sneller dan 15 km/u rijden",
         "Enkel buiten de bebouwde kom"
@@ -934,11 +936,11 @@
       "id": "rule-fietsstraat-f111-2021",
       "type": "rule",
       "category": "fietsers-voetgangers",
-      "question": "Tot waar geldt de werking van het verkeersbord F111 (begin van een fietszone of fietsstraat)?",
+      "question": "Tot waar gelden de specifieke voorrangs- en snelheidsregels in een fietsstraat of fietszone?",
       "options": [
         "Tot het eerstvolgende kruispunt (tenzij herhaald of in een zonebepaling opgenomen)",
         "Steeds over een vaste afstand van 250 meter",
-        "Tot het bord F113 (einde fietszone); zonder eindbord blijft het onbeperkt gelden",
+        "Tot het einde van de zone; zonder expliciete eindmarkering blijft dit onbeperkt gelden",
         "Enkel ter hoogte van de eerste 50 meter"
       ],
       "correctIndex": 0,
@@ -950,7 +952,7 @@
       "id": "rule-brussel-stad30-2021",
       "type": "rule",
       "category": "snelheid",
-      "question": "Wat is sinds 2021 de algemene maximumsnelheid binnen de bebouwde kom in het Brussels Hoofdstedelijk Gewest, tenzij een bord een andere snelheid oplegt?",
+      "question": "Wat is sinds 2021 de algemene maximumsnelheid binnen de bebouwde kom in het Brussels Hoofdstedelijk Gewest, tenzij anders aangegeven?",
       "options": [
         "50 km/u",
         "40 km/u",
