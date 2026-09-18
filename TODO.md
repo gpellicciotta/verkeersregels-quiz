@@ -15,7 +15,7 @@ An overview of all tasks and their planning.
 
 ## Next Milestone
 
-- [ ] T0008 Track the duration of the quiz, show it on the results page and store it in the Google sheet
+- [~] T0008 [owner: @antigravity] Track quiz duration, display it on the results screen, and store it in Google Sheet.
 - [ ] T0007 Add a "wrong question/answer" button on each question page and store it in a separate tab in the Google sheet.
       Also explain the button/icon on the start page.
 - [ ] T0003 [needs: T0007, T0008] Release v1.0.0 on GitHub Pages.
