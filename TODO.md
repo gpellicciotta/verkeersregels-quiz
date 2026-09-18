@@ -15,8 +15,7 @@ An overview of all tasks and their planning.
 
 ## Next Milestone
 
-- [ ] T0007 Add a "wrong question/answer" button on each question page and store it in a separate tab in the Google sheet.
-      Also explain the button/icon on the start page.
+- [~] T0007 [owner: @antigravity] Add a report error button on each question screen and log reports to Google Sheet.
 - [ ] T0010 Add the version to the start page and when clicked, show the CHANGELOG
 - [ ] T0003 [needs: T0007, T0010] Release v1.0.0 on GitHub Pages.
 
