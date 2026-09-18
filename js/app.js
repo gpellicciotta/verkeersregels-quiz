@@ -482,29 +482,27 @@ async function submitToSheet(correct, total, pct, durationSeconds, formattedDura
   }
 }
 
-async function submitErrorReport(remark) {
-  if (!CONFIG.SHEET_WEBAPP_URL) return;
-  const q = state.round[state.currentIndex];
-  if (!q) return;
+function submitErrorReport(targetQuestion, remark) {
+  if (!CONFIG.SHEET_WEBAPP_URL || !targetQuestion) return Promise.resolve();
 
-  try {
-    await fetch(CONFIG.SHEET_WEBAPP_URL, {
-      method: "POST",
-      mode: "no-cors",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams({
-        actie: "report_error",
-        sleutel: CONFIG.SHEET_SECRET,
-        datum: new Date().toISOString(),
-        vraagId: q.id || "",
-        vraag: q.question || "",
-        naam: state.playerName || "Anoniem",
-        opmerking: remark || "",
-      }),
-    });
-  } catch (err) {
-    console.warn("Kon melding niet naar Google Sheet sturen:", err);
-  }
+  const payload = new URLSearchParams({
+    actie: "report_error",
+    sleutel: CONFIG.SHEET_SECRET,
+    datum: new Date().toISOString(),
+    vraagId: targetQuestion.id || "",
+    vraag: targetQuestion.question || "",
+    naam: state.playerName || "Anoniem",
+    opmerking: remark || "",
+  });
+
+  return fetch(CONFIG.SHEET_WEBAPP_URL, {
+    method: "POST",
+    mode: "no-cors",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: payload,
+  }).catch((err) => {
+    console.error("Kon melding niet naar Google Sheet sturen:", err);
+  });
 }
 
 function openReportModal() {
@@ -528,23 +526,18 @@ function closeReportModal() {
   el.modalFeedback.className = "modal-feedback hidden";
 }
 
-async function handleReportSubmit(e) {
+function handleReportSubmit(e) {
   e.preventDefault();
   const q = state.round[state.currentIndex];
   if (!q) return;
 
-  el.btnModalSubmit.disabled = true;
   const remark = el.reportRemark.value.trim();
 
-  await submitErrorReport(remark);
+  // Instant dismissal with zero lag
+  closeReportModal();
 
-  el.modalFeedback.textContent = "Bedankt voor je melding!";
-  el.modalFeedback.className = "modal-feedback feedback-success";
-  el.modalFeedback.classList.remove("hidden");
-
-  setTimeout(() => {
-    closeReportModal();
-  }, 1200);
+  // Asynchronous background transmission with error logging to console
+  submitErrorReport(q, remark);
 }
 
 let changelogHtmlCache = null;
