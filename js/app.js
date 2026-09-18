@@ -208,7 +208,7 @@ function renderQuestion() {
   el.quizProgress.textContent = `Vraag ${state.currentIndex + 1}/${total}`;
   const correctSoFar = state.answers.filter((a) => a.correct).length;
   el.quizScore.textContent = `Score: ${correctSoFar}/${state.answers.length}`;
-  el.progressFill.style.width = `${(state.currentIndex / total) * 100}%`;
+  el.progressFill.style.width = `${((state.currentIndex + 1) / total) * 100}%`;
 
   const badgeInfo = getSinceBadge(q.since);
   if (badgeInfo && el.quizBadgeWrap && el.quizBadge) {

@@ -15,9 +15,8 @@ An overview of all tasks and their planning.
 
 ## Next Milestone
 
-- [ ] A0028 The progress bar seems to run behind, e.g when starting a quiz with 3 questions, and I'm on question 1, it should be filled for 1/3 while currently it isn't filled at all. On the last question it should be filled completely.
 - [ ] A0029 Since this is a Dutch audience project, the CHANGELOG entries should be rewritten in Dutch too.
-- [ ] A0030 [needs: A0028 A0029] Make a new v1.2.0 or v2.0.0 release
+- [ ] A0030 [needs: A0029] Make a new v1.2.0 or v2.0.0 release
 
 ---
 
