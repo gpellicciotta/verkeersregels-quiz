@@ -1412,6 +1412,134 @@
       "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-67"
     },
     {
+      "id": "rec-b3",
+      "type": "recognize",
+      "category": "voorrang",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/B3.svg",
+      "options": [
+        "Aankondiging van bord B1 (voorrang verlenen) op de aangeduide afstand",
+        "Aankondiging van bord B5 (stoppen en voorrang verlenen) op de aangeduide afstand",
+        "Voorrang verlenen aan alle bestuurders op het kruispunt",
+        "Kruispunt waar de voorrang van rechts geldt"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bord B3 kondigt bord B1 (voorrang verlenen) aan op de bij benadering aangeduide afstand (art. 67 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-67"
+    },
+    {
+      "id": "rec-b7",
+      "type": "recognize",
+      "category": "voorrang",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/B7.svg",
+      "options": [
+        "Aankondiging van bord B1 (voorrang verlenen) op de aangeduide afstand",
+        "Aankondiging van bord B5 (stoppen en voorrang verlenen) op de aangeduide afstand",
+        "Verplicht stoppen bij het bord en voorrang verlenen",
+        "Gevaarlijke drempel op de aangeduide afstand"
+      ],
+      "correctIndex": 1,
+      "explanation": "Bord B7 kondigt bord B5 (stoppen en voorrang verlenen) aan op de bij benadering aangeduide afstand (art. 67 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-67"
+    },
+    {
+      "id": "rec-b11",
+      "type": "recognize",
+      "category": "voorrang",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/B11.svg",
+      "options": [
+        "Begin van een voorrangsweg",
+        "Aankondiging van het einde van de voorrangsweg op afstand",
+        "Einde van de voorrangsweg",
+        "Kruispunt met voorrang van rechts"
+      ],
+      "correctIndex": 2,
+      "explanation": "Bord B11 duidt het einde van een voorrangsweg aan (art. 67 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-67"
+    },
+    {
+      "id": "rec-b13",
+      "type": "recognize",
+      "category": "voorrang",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/B13.svg",
+      "options": [
+        "Einde van de voorrangsweg vanaf dit bord",
+        "Begin van een voorrangsweg op de aangeduide afstand",
+        "Voorrang op het eerstvolgende kruispunt",
+        "Aankondiging van het einde van de voorrangsweg op de aangeduide afstand"
+      ],
+      "correctIndex": 3,
+      "explanation": "Bord B13 kondigt het einde van de voorrangsweg (bord B11) aan op de bij benadering aangeduide afstand (art. 67 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-67"
+    },
+    {
+      "id": "rec-b15",
+      "type": "recognize",
+      "category": "voorrang",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/B15.svg",
+      "options": [
+        "Voorrang op het eerstvolgende kruispunt",
+        "Begin van een voorrangsweg",
+        "Kruispunt waar voorrang van rechts geldt",
+        "Smalle doorgang met voorrang op tegenliggers"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bord B15 geeft aan dat bestuurders voorrang hebben op het eerstvolgende kruispunt (art. 67 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-67"
+    },
+    {
+      "id": "rec-b21",
+      "type": "recognize",
+      "category": "voorrang",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/B21.svg",
+      "options": [
+        "Smalle doorgang waarbij je voorrang moet verlenen aan tegenliggers",
+        "Smalle doorgang met voorrang ten opzichte van tegenliggers",
+        "Eenrichtingsverkeer in de aangeduide rijrichting",
+        "Doodlopende weg"
+      ],
+      "correctIndex": 1,
+      "explanation": "Bord B21 duidt een smalle doorgang aan waarbij je voorrang hebt ten opzichte van tegemoetkomende bestuurders (art. 67 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-67"
+    },
+    {
+      "id": "rec-b22",
+      "type": "recognize",
+      "category": "voorrang",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/B22.svg",
+      "options": [
+        "Verplicht fietspad met afslag naar rechts",
+        "Fietsers en speedpedelecs mogen bij rood licht rechtdoor rijden mits voorrang",
+        "Fietsers en speedpedelecs mogen bij rood licht rechtsaf slaan mits voorrang te verlenen",
+        "Verbod voor fietsers om rechtsaf te slaan bij rood licht"
+      ],
+      "correctIndex": 2,
+      "explanation": "Bord B22 laat fietsers en bestuurders van speedpedelecs toe om bij rood of oranjegeel licht rechtsaf te slaan, mits zij voorrang verlenen (art. 67 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-67"
+    },
+    {
+      "id": "rec-b23",
+      "type": "recognize",
+      "category": "voorrang",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/B23.svg",
+      "options": [
+        "Fietsers en speedpedelecs mogen bij rood licht rechtsaf slaan mits voorrang",
+        "Verplicht fietspad rechtdoor",
+        "Voorbehouden rijstrook voor fietsers en speedpedelecs",
+        "Fietsers en speedpedelecs mogen bij rood licht rechtdoor rijden mits voorrang te verlenen"
+      ],
+      "correctIndex": 3,
+      "explanation": "Bord B23 laat fietsers en bestuurders van speedpedelecs toe om bij rood of oranjegeel licht rechtdoor te rijden, mits zij voorrang verlenen (art. 67 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-67"
+    },
+    {
       "id": "rec-c31a",
       "type": "recognize",
       "category": "verbod",
@@ -1489,6 +1617,134 @@
       ],
       "correctIndex": 1,
       "explanation": "Bord D10 duidt een pad aan voorbehouden voor voetgangers en fietsers; in tegenstelling tot bord D9 mogen bromfietsen klasse A hier niet rijden (art. 69.3).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-69"
+    },
+    {
+      "id": "rec-d1b",
+      "type": "recognize",
+      "category": "gebod",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/D1b.svg",
+      "options": [
+        "Verplichte rijrichting: links afslaan op het kruispunt",
+        "Verplichte rijrichting: rechtdoor rijden",
+        "Verplichting om de hindernis langs links voorbij te rijden",
+        "Verbod om links af te slaan op het kruispunt"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bord D1b legt de verplichting op om op het kruispunt de door de pijl aangeduide richting te volgen, hier linksaf (art. 69 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-69"
+    },
+    {
+      "id": "rec-d1c",
+      "type": "recognize",
+      "category": "gebod",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/D1c.svg",
+      "options": [
+        "Verplichting om de hindernis langs rechts voorbij te rijden",
+        "Verplichting om de hindernis langs links voorbij te rijden",
+        "Verplichte rijrichting linksaf op het kruispunt",
+        "Eenrichtingsverkeer naar links"
+      ],
+      "correctIndex": 1,
+      "explanation": "Bord D1c legt de verplichting op om de hindernis langs de door de pijl aangeduide zijde voorbij te rijden, hier links (art. 69 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-69"
+    },
+    {
+      "id": "rec-d1d",
+      "type": "recognize",
+      "category": "gebod",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/D1d.svg",
+      "options": [
+        "Verplichting om de hindernis langs links voorbij te rijden",
+        "Verplichte rijrichting rechtsaf op het kruispunt",
+        "Verplichting om de hindernis langs rechts voorbij te rijden",
+        "Gevaarlijke bocht naar rechts"
+      ],
+      "correctIndex": 2,
+      "explanation": "Bord D1d legt de verplichting op om de hindernis langs de door de pijl aangeduide zijde voorbij te rijden, hier rechts (art. 69 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-69"
+    },
+    {
+      "id": "rec-d1e",
+      "type": "recognize",
+      "category": "gebod",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/D1e.svg",
+      "options": [
+        "Verplichte rijrichting: rechtdoor rijden",
+        "Verplichting om de hindernis langs links voorbij te rijden",
+        "Doodlopende straat aan de linkerzijde",
+        "Verplichte rijrichting: afslaan naar links vóór het verkeersbord"
+      ],
+      "correctIndex": 3,
+      "explanation": "Bord D1e verplicht bestuurders om de richting van de pijl te volgen vóór het verkeersbord, hier linksaf (art. 69 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-69"
+    },
+    {
+      "id": "rec-d3",
+      "type": "recognize",
+      "category": "gebod",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/D3.svg",
+      "options": [
+        "Verplichting om één van de door de pijlen aangeduide richtingen te volgen",
+        "Verplichte rijrichting uitsluitend rechtdoor",
+        "Kruispunt waar voorrang van rechts geldt",
+        "Verbod om rechtdoor of rechtsaf te rijden"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bord D3 verplicht bestuurders om één van de door de pijlen aangeduide richtingen te volgen, hier rechtdoor of rechtsaf (art. 69 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-69"
+    },
+    {
+      "id": "rec-d4",
+      "type": "recognize",
+      "category": "gebod",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/D4.svg",
+      "options": [
+        "Toegangsverbod voor voertuigen die gevaarlijke goederen vervoeren",
+        "Verplichte rijrichting voor voertuigen die gevaarlijke goederen vervoeren",
+        "Aanbevolen route voor vrachtwagens met een MTM van meer dan 3,5 ton",
+        "Verplichte rijrichting voor alle bedrijfsvoertuigen"
+      ],
+      "correctIndex": 1,
+      "explanation": "Bord D4 legt een verplichte rijrichting op voor voertuigen die gevaarlijke goederen vervoeren (art. 69 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-69"
+    },
+    {
+      "id": "rec-d11",
+      "type": "recognize",
+      "category": "gebod",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/D11.svg",
+      "options": [
+        "Verplicht fietspad waar voetgangers mogen wandelen",
+        "Voetgangerszone waar fietsers stapvoets mogen rijden",
+        "Verplichte weg voor voetgangers (voetpad)",
+        "Oversteekplaats voor voetgangers"
+      ],
+      "correctIndex": 2,
+      "explanation": "Bord D11 legt een verplichte weg voor voetgangers op; dit pad is uitsluitend voorbehouden voor voetgangers (art. 69 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-69"
+    },
+    {
+      "id": "rec-d13",
+      "type": "recognize",
+      "category": "gebod",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/D13.svg",
+      "options": [
+        "Toegangsverbod voor ruiters en gespannen voertuigen",
+        "Waarschuwing voor overstekend groot wild of vee",
+        "Deel van de openbare weg voorbehouden voor landbouwvoertuigen",
+        "Verplichte weg voor ruiters (ruiterpad)"
+      ],
+      "correctIndex": 3,
+      "explanation": "Bord D13 legt een verplichte weg voor ruiters op; dit pad is uitsluitend voorbehouden voor bereden dieren (art. 69 KB 1 december 1975).",
       "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-69"
     },
     {
