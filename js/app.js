@@ -58,9 +58,15 @@ async function loadQuestions() {
   return data.questions;
 }
 
+function getQuestionCountOverride() {
+  const q = parseInt(new URLSearchParams(window.location.search).get("q"), 10);
+  return Number.isInteger(q) && q > 0 ? q : null;
+}
+
 function startQuiz() {
   state.playerName = el.playerNameInput.value.trim();
-  const count = Math.min(CONFIG.QUESTIONS_PER_ROUND, state.pool.length);
+  const desired = getQuestionCountOverride() || CONFIG.QUESTIONS_PER_ROUND;
+  const count = Math.min(desired, state.pool.length);
   state.round = shuffle(state.pool).slice(0, count);
   state.currentIndex = 0;
   state.answers = [];
@@ -74,7 +80,7 @@ function renderQuestion() {
 
   el.quizProgress.textContent = `Vraag ${state.currentIndex + 1}/${total}`;
   const correctSoFar = state.answers.filter((a) => a.correct).length;
-  el.quizScore.textContent = `Score: ${correctSoFar}`;
+  el.quizScore.textContent = `Score: ${correctSoFar}/${state.answers.length}`;
   el.progressFill.style.width = `${(state.currentIndex / total) * 100}%`;
 
   el.questionText.textContent = q.question;
@@ -139,7 +145,7 @@ function selectOption(chosenIndex) {
     el.explanation.classList.remove("hidden");
   }
 
-  el.quizScore.textContent = `Score: ${state.answers.filter((a) => a.correct).length}`;
+  el.quizScore.textContent = `Score: ${state.answers.filter((a) => a.correct).length}/${state.answers.length}`;
   el.btnNext.classList.remove("hidden");
 }
 
@@ -190,10 +196,29 @@ function showResult() {
   });
 
   showScreen("result");
-  submitToSheet(correct, total);
+  if (total > 0 && correct === total) showConfetti();
+  submitToSheet(correct, total, pct);
 }
 
-async function submitToSheet(correct, total) {
+function showConfetti() {
+  const colors = ["#1a56db", "#1a7f37", "#f59e0b", "#c81e1e", "#7c3aed"];
+  const layer = document.createElement("div");
+  layer.id = "confetti-layer";
+  for (let i = 0; i < 80; i++) {
+    const piece = document.createElement("div");
+    piece.className = "confetti-piece";
+    piece.style.left = `${Math.random() * 100}vw`;
+    piece.style.background = colors[i % colors.length];
+    piece.style.borderRadius = Math.random() > 0.5 ? "50%" : "2px";
+    piece.style.animationDuration = `${2 + Math.random() * 1.5}s`;
+    piece.style.animationDelay = `${Math.random() * 0.4}s`;
+    layer.appendChild(piece);
+  }
+  document.body.appendChild(layer);
+  setTimeout(() => layer.remove(), 4000);
+}
+
+async function submitToSheet(correct, total, pct) {
   if (!CONFIG.SHEET_WEBAPP_URL) return;
   try {
     await fetch(CONFIG.SHEET_WEBAPP_URL, {
@@ -204,6 +229,7 @@ async function submitToSheet(correct, total) {
         naam: state.playerName || "(onbekend)",
         score: correct,
         totaal: total,
+        percentage: pct,
         datum: new Date().toISOString(),
         sleutel: CONFIG.SHEET_SECRET,
       }),
