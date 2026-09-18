@@ -134,16 +134,17 @@ class TestQuizData(unittest.TestCase):
 
     def test_no_questions_refer_to_unshown_signs(self) -> None:
         """Validates that questions do not refer to a traffic sign without displaying it via 'sign'."""
-        sign_code_pattern = re.compile(r"\bbord\s+[A-Z][0-9]+", re.IGNORECASE)
+        sign_code_pattern = re.compile(r"\b(?:bord|toelatingsbord|verkeersbord)?\s*\(?([A-F][0-9]+[a-z]?)\)?\b", re.IGNORECASE)
         for q in self.questions:
             qid = q.get("id", "unknown")
             q_text = q.get("question", "")
+            q_type = q.get("type", "")
             has_sign = bool(q.get("sign"))
-            if not has_sign:
+            if not has_sign and q_type != "identify":
                 self.assertNotIn("dit bord", q_text.lower(), f"Question {qid} refers to 'dit bord' without sign")
                 self.assertNotIn("dit verkeersbord", q_text.lower(), f"Question {qid} refers to 'dit verkeersbord' without sign")
                 match = sign_code_pattern.search(q_text)
-                self.assertIsNone(match, f"Question {qid} mentions sign without showing it via 'sign'")
+                self.assertIsNone(match, f"Question {qid} mentions sign code without showing it via 'sign': {match.group(0) if match else ''}")
 
 
 if __name__ == "__main__":

@@ -1367,7 +1367,8 @@
       "id": "rule-fietsstraat-f111-2021",
       "type": "rule",
       "category": "fietsers-voetgangers",
-      "question": "Tot waar gelden de specifieke voorrangs- en snelheidsregels in een fietsstraat of fietszone?",
+      "sign": "assets/signs/F111.svg",
+      "question": "Tot waar gelden de specifieke verkeersregels na het voorbijrijden van dit verkeersbord (F111)?",
       "options": [
         "Tot het eerstvolgende kruispunt (tenzij herhaald of in een zonebepaling opgenomen)",
         "Steeds over een vaste afstand van 250 meter",
@@ -3974,7 +3975,8 @@
       "id": "rule-fietser-b22",
       "type": "rule",
       "category": "fietsers-voetgangers",
-      "question": "Wat laat een toelatingsbord met een fietssymbool en een gele pijl naar rechts (B22) toe bij een rood verkeerslicht?",
+      "sign": "assets/signs/B22.svg",
+      "question": "Wat laat dit toelatingsbord (B22) toe aan fietsers en bestuurders van speed pedelecs bij een rood verkeerslicht?",
       "options": [
         "Fietsers mogen bij rood licht rechts afslaan, mits zij voorrang verlenen aan overig verkeer en voetgangers",
         "Fietsers moeten verplicht stoppen tot het licht groen wordt",
@@ -3990,7 +3992,8 @@
       "id": "rule-fietser-b23",
       "type": "rule",
       "category": "fietsers-voetgangers",
-      "question": "Wat betekent het toelatingsbord met een fietssymbool en een gele pijl rechtdoor (B23) bij een rood verkeerslicht?",
+      "sign": "assets/signs/B23.svg",
+      "question": "Wat betekent dit toelatingsbord (B23) voor fietsers en bestuurders van speed pedelecs bij een rood verkeerslicht?",
       "options": [
         "Fietsers moeten wachten tot het groen wordt voor ze rechtdoor mogen rijden",
         "Fietsers mogen rechtdoor rijden bij rood licht, mits zij voorrang verlenen aan overig verkeer en voetgangers",
