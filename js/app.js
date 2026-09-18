@@ -284,12 +284,13 @@ function showResult() {
   state.answers.forEach((a, i) => {
     const tr = document.createElement("tr");
     tr.className = a.correct ? "correct-row" : "wrong-row";
+    const userAnsLabel = a.correct ? "Jouw Juiste Antwoord" : "Jouw antwoord";
     tr.innerHTML = `
-      <td data-label="Vraag nr.">${i + 1}</td>
-      <td data-label="Vraag">${questionCell(a)}</td>
-      <td data-label="Jouw antwoord">${optionCell(a, a.chosenIndex)}</td>
-      <td data-label="Juist antwoord">${optionCell(a, a.correctIndex)}</td>
-      <td data-label="Resultaat" class="${a.correct ? "tag-correct" : "tag-wrong"}">${a.correct ? "Juist" : "Fout"}</td>
+      <td class="col-num" data-label="Vraag nr.">${i + 1}</td>
+      <td class="col-question" data-label="Vraag Nr. ${i + 1}">${questionCell(a)}</td>
+      <td class="col-user-ans" data-label="${userAnsLabel}">${optionCell(a, a.chosenIndex)}</td>
+      <td class="col-correct-ans" data-label="Juist antwoord">${optionCell(a, a.correctIndex)}</td>
+      <td class="col-result"><span class="badge-result ${a.correct ? "badge-result-correct" : "badge-result-wrong"}">${a.correct ? "Juist" : "Fout"}</span></td>
     `;
     el.resultTableBody.appendChild(tr);
   });
@@ -359,11 +360,16 @@ el.btnPrint.addEventListener("click", () => window.print());
 
 function checkAutoStart() {
   const params = new URLSearchParams(window.location.search);
-  if (params.get("autotest") === "results") {
+  const autotest = params.get("autotest");
+  if (autotest === "results" || autotest === "results-mixed") {
     startQuiz();
     while (state.currentIndex < state.round.length) {
       const q = state.round[state.currentIndex];
-      selectOption(q.correctIndex);
+      if (autotest === "results-mixed" && state.currentIndex % 2 === 1) {
+        selectOption((q.correctIndex + 1) % q.options.length);
+      } else {
+        selectOption(q.correctIndex);
+      }
       state.currentIndex++;
     }
     showResult();
