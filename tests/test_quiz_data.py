@@ -25,8 +25,8 @@ class TestQuizData(unittest.TestCase):
         cls.questions = cls.data.get("questions", [])
 
     def test_total_question_count(self) -> None:
-        """Validates that the question bank contains exactly 241 questions."""
-        self.assertEqual(len(self.questions), 241, f"Expected exactly 241 questions, found {len(self.questions)}")
+        """Validates that the question bank contains exactly 284 questions."""
+        self.assertEqual(len(self.questions), 284, f"Expected exactly 284 questions, found {len(self.questions)}")
 
     def test_question_ids_unique_and_valid(self) -> None:
         """Validates that all question IDs are non-empty, kebab-case formatted, and unique."""
