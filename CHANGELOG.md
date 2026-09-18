@@ -14,6 +14,7 @@ A summarized overview of all changes, per version of this project.
 ---
 
 ## v1.1.0-pre
+- FrontEnd: Added a blue road sign SVG favicon and updated the final question button to show results.
 - FrontEnd: Updated start notices and progress indicators to display dynamic question counts clamped to available questions.
 - FrontEnd: Supported URL query parameter aliases for since-year filtering and question count overrides.
 - FrontEnd: Displayed authoritative official rule and explainer reference links upon answering each quiz question.

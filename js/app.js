@@ -248,6 +248,12 @@ function renderQuestion() {
     el.options.appendChild(btn);
   });
 
+  if (state.currentIndex === state.round.length - 1) {
+    el.btnNext.textContent = "Toon Resultaat";
+  } else {
+    el.btnNext.textContent = "Volgende vraag";
+  }
+
   el.explanation.classList.add("hidden");
   el.explanation.textContent = "";
   el.btnNext.classList.add("hidden");
@@ -281,6 +287,11 @@ function selectOption(chosenIndex) {
   renderExplanation(q);
 
   el.quizScore.textContent = `Score: ${state.answers.filter((a) => a.correct).length}/${state.answers.length}`;
+  if (state.currentIndex === state.round.length - 1) {
+    el.btnNext.textContent = "Toon Resultaat";
+  } else {
+    el.btnNext.textContent = "Volgende vraag";
+  }
   el.btnNext.classList.remove("hidden");
 }
 
@@ -657,6 +668,7 @@ function restart() {
   state.endTime = null;
   state.durationSeconds = 0;
   el.playerNameInput.value = state.playerName;
+  if (el.btnNext) el.btnNext.textContent = "Volgende vraag";
   applyFilter();
   showScreen("start");
 }
