@@ -71,6 +71,62 @@ button {
 
 .error { color: var(--color-wrong); }
 
+/* Legal source links on start screen */
+.start-legal-links {
+  margin-top: 28px;
+  padding-top: 18px;
+  border-top: 1px solid #e5e7eb;
+  font-size: 0.85rem;
+  color: var(--color-muted);
+  text-align: center;
+}
+
+.start-legal-title {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-muted);
+  margin-bottom: 8px;
+}
+
+.start-legal-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px 12px;
+}
+
+.start-legal-links a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.15s ease, text-decoration 0.15s ease;
+}
+
+.start-legal-links a:hover,
+.start-legal-links a:focus-visible {
+  color: var(--color-primary-dark);
+  text-decoration: underline;
+}
+
+.start-legal-separator {
+  color: #9ca3af;
+  user-select: none;
+}
+
+@media screen and (max-width: 639px) {
+  .start-legal-items {
+    flex-direction: column;
+    gap: 6px;
+  }
+  .start-legal-separator {
+    display: none;
+  }
+}
+
 /* Year badges for Wegcode amendments */
 .badge-since {
   display: inline-flex;
