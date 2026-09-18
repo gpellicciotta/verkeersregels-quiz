@@ -4,9 +4,9 @@ owner: "@antigravity"
 needs: []
 branch: task/T0010-show-version-and-changelog
 worktree: ./work/T0010-show-version-and-changelog
-status: active
+status: completed
 started: 2026-09-18
-ended: —
+ended: 2026-09-18
 ---
 
 # T0010: Show Version and Changelog
@@ -20,24 +20,69 @@ Ensure the version and changelog view look great across desktop and mobile devic
 
 ## Task Execution Steps
 
-- [ ] **[Read]**      Inspect start screen markup and determine changelog fetching or rendering approach.
-- [ ] **[Implement]** Add a clickable version indicator to the start screen in index.html.
-- [ ] **[Implement]** Build an accessible modal to display formatted changelog notes on click.
-- [ ] **[Implement]** Style version badge and changelog modal cleanly in css/style.css.
-- [ ] **[Verify]**    Verify version display and changelog modal interaction with before and after screenshots.
-- [ ] **[Doc]**       Document version display in README.md and record validation in the task file.
+- [x] **[Read]**      Inspect start screen markup and determine changelog fetching or rendering approach.
+- [x] **[Implement]** Add a clickable version indicator to the start screen in index.html.
+- [x] **[Implement]** Build an accessible modal to display formatted changelog notes on click.
+- [x] **[Implement]** Style version badge and changelog modal cleanly in css/style.css.
+- [x] **[Verify]**    Verify version display and changelog modal interaction with before and after screenshots.
+- [x] **[Doc]**       Document version display in README.md and record validation in the task file.
 
 ## Execution Log
 
 - [2026-09-18] **[Decided]**
   Created task to display the app version on the start screen and show the CHANGELOG on click.
 
+- [2026-09-18] **[Read]**
+  Reviewed start screen markup, existing modal patterns, and changelog structure to design the viewer.
+
+- [2026-09-18] **[Implement]**
+  Added a version button to the start screen footer and built the modal changelog dialog.
+
+- [2026-09-18] **[Implement]**
+  Styled the version pill button and changelog modal with smooth scrolling and responsive typography.
+
+- [2026-09-18] **[Implement]**
+  Implemented changelog fetching, semantic markdown parsing, category badges, and keyboard dismiss handling.
+
+- [2026-09-18] **[Verify]**
+  Verified modal interaction flows and captured baseline, updated start, and modal screenshots.
+  - T0010-view-before.png: baseline start screen view.
+  - T0010-view-after.png: start screen with version badge.
+  - T0010-modal.png: changelog modal dialog open.
+
+- [2026-09-18] **[Doc]**
+  Documented the version indicator and changelog modal viewer in README.md and updated CHANGELOG.md.
+
+- [2026-09-18] **[Complete]**
+  Delivered start screen version display and accessible interactive changelog modal viewer.
+
 ## Walkthrough & Validation
 
-### Scope & Criteria
+### Changes Made
 
-- Version string (e.g. `v1.0.0-pre`) displayed on start screen.
-- Clickable version opens changelog modal.
-- Formatted display of CHANGELOG.md contents with versions and release notes.
-- Dismissible via Close button, backdrop click, or Escape key.
-- Visual screenshots comparing start screen and open changelog modal.
+- `js/app.js`: configured version string, wired dynamic badge text, implemented markdown parser with category badges, and added modal open/close listeners.
+- `index.html`: added version badge button `#btn-version` to `#screen-start` footer and added accessible dialog `#modal-changelog`.
+- `css/style.css`: styled `.btn-version` as an interactive pill badge, styled `.modal-dialog-changelog` with scrolling body and badges, and excluded modal from print.
+- `README.md`: documented version indicator, changelog modal interaction, and `?modal=changelog` query parameter.
+- `CHANGELOG.md`: added release note bullet under `v1.0.0-pre`.
+
+### Visual Validation
+
+Visual checks on desktop confirmed clean layout and smooth modal interactions:
+
+- Baseline start screen view captured in [T0010-view-before.png](T0010-view-before.png).
+- Updated start screen with version badge captured in [T0010-view-after.png](T0010-view-after.png).
+- Interactive changelog modal captured in [T0010-modal.png](T0010-modal.png).
+- Local web server returned HTTP 200 for all quiz assets.
+- Verified dismissal via Close button, Sluiten button, backdrop click, and Escape key.
+
+![Baseline Start View](T0010-view-before.png)
+
+![Updated Start View with Version](T0010-view-after.png)
+
+![Changelog Modal](T0010-modal.png)
+
+### Automated Checks
+
+- End-to-end tests: verified automated Playwright interactions opening modal, parsing changelog, and testing all dismiss mechanisms.
+- Linters passed: verified documentation and task file formatting with dev-guidelines scripts.

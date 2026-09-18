@@ -14,6 +14,7 @@ A summarized overview of all changes, per version of this project.
 ---
 
 ## v1.0.0-pre
+- FrontEnd: Added an interactive version badge to the start screen opening a formatted changelog modal on click.
 - FrontEnd: Added an in-quiz error reporting button and modal sending question feedback to a dedicated Google Sheet tab.
 - FrontEnd: Tracked quiz duration from start to finish, displaying elapsed time on results and logging to Google Sheets.
 - FrontEnd: Added direct links to the official consolidated Wegcode and amendment ledger on the start screen.

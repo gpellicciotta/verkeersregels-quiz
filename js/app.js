@@ -1,4 +1,5 @@
 const CONFIG = {
+  VERSION: "v1.0.0-pre",
   QUESTIONS_PER_ROUND: 20,
   // If null, no results will be propagated:
   SHEET_WEBAPP_URL: "https://script.google.com/macros/s/AKfycbyYyBMb8KTD13MrJhOpmZIYKHCbuGD5PyiL01tdzcWNRle6juEB6Qgap1yYfmmJJ2lE/exec",
@@ -54,10 +55,16 @@ const el = {
   modalQuestionText: document.getElementById("modal-question-text"),
   reportRemark: document.getElementById("report-remark"),
   modalFeedback: document.getElementById("modal-feedback"),
+  btnVersion: document.getElementById("btn-version"),
+  modalChangelog: document.getElementById("modal-changelog"),
+  btnChangelogClose: document.getElementById("btn-changelog-close"),
+  btnChangelogDismiss: document.getElementById("btn-changelog-dismiss"),
+  changelogBody: document.getElementById("changelog-body"),
 };
 
 function showScreen(name) {
   closeReportModal();
+  closeChangelogModal();
   el.screenStart.classList.toggle("hidden", name !== "start");
   el.screenQuiz.classList.toggle("hidden", name !== "quiz");
   el.screenResult.classList.toggle("hidden", name !== "result");
@@ -449,6 +456,122 @@ async function handleReportSubmit(e) {
   }, 1200);
 }
 
+let changelogHtmlCache = null;
+
+function escapeHtml(str) {
+  return String(str)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
+function formatInlineMarkdown(text) {
+  let s = escapeHtml(text);
+  s = s.replace(/`([^`]+)`/g, "<code>$1</code>");
+  s = s.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
+  s = s.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>');
+  return s;
+}
+
+function renderChangelogMarkdown(md) {
+  const lines = md.split(/\r?\n/);
+  let html = "";
+  let inList = false;
+
+  function closeList() {
+    if (inList) {
+      html += "</ul>";
+      inList = false;
+    }
+  }
+
+  for (let i = 0; i < lines.length; i++) {
+    const rawLine = lines[i];
+    const line = rawLine.trim();
+
+    if (!line || line === "---") {
+      closeList();
+      continue;
+    }
+
+    if (line.startsWith("# ")) {
+      closeList();
+      continue;
+    }
+
+    if (line.startsWith(">")) {
+      closeList();
+      continue;
+    }
+
+    if (line.startsWith("## ")) {
+      closeList();
+      const title = escapeHtml(line.slice(3).trim());
+      html += `<h4 class="changelog-version-title">${title}</h4>`;
+      continue;
+    }
+
+    if (line.startsWith("- ")) {
+      if (!inList) {
+        html += '<ul class="changelog-list">';
+        inList = true;
+      }
+      const content = line.slice(2).trim();
+      const match = content.match(/^([A-Za-z]+):\s*(.*)$/);
+      if (match) {
+        const area = escapeHtml(match[1]);
+        const desc = formatInlineMarkdown(match[2]);
+        html += `<li><span class="changelog-badge changelog-badge-${area.toLowerCase()}">${area}</span> ${desc}</li>`;
+      } else {
+        html += `<li>${formatInlineMarkdown(content)}</li>`;
+      }
+      continue;
+    }
+
+    closeList();
+    html += `<p class="changelog-p">${formatInlineMarkdown(line)}</p>`;
+  }
+
+  closeList();
+  return html;
+}
+
+async function loadChangelog() {
+  if (changelogHtmlCache) {
+    el.changelogBody.innerHTML = changelogHtmlCache;
+    return;
+  }
+  el.changelogBody.innerHTML = '<p class="changelog-loading">Versiegeschiedenis laden...</p>';
+  try {
+    const res = await fetch("CHANGELOG.md");
+    if (!res.ok) throw new Error("Kon CHANGELOG.md niet laden: " + res.status);
+    const md = await res.text();
+    changelogHtmlCache = renderChangelogMarkdown(md);
+    el.changelogBody.innerHTML = changelogHtmlCache;
+  } catch (err) {
+    console.warn("Changelog laden mislukt:", err);
+    el.changelogBody.innerHTML = `
+      <p class="error">Kon versiegeschiedenis niet laden.</p>
+      <p class="modal-desc">Bekijk <a href="CHANGELOG.md" target="_blank" rel="noopener noreferrer">CHANGELOG.md</a> direct.</p>
+    `;
+  }
+}
+
+function openChangelogModal() {
+  if (!el.modalChangelog) return;
+  el.modalChangelog.classList.remove("hidden");
+  loadChangelog();
+  if (el.btnChangelogClose) el.btnChangelogClose.focus();
+}
+
+function closeChangelogModal() {
+  if (!el.modalChangelog) return;
+  el.modalChangelog.classList.add("hidden");
+  if (el.btnVersion) el.btnVersion.focus();
+}
+
 function restart() {
   state.startTime = null;
   state.endTime = null;
@@ -476,9 +599,27 @@ el.formReport.addEventListener("submit", handleReportSubmit);
 el.modalReport.addEventListener("click", (e) => {
   if (e.target === el.modalReport) closeReportModal();
 });
+
+if (el.btnVersion) {
+  el.btnVersion.textContent = CONFIG.VERSION;
+  el.btnVersion.addEventListener("click", openChangelogModal);
+}
+if (el.btnChangelogClose) el.btnChangelogClose.addEventListener("click", closeChangelogModal);
+if (el.btnChangelogDismiss) el.btnChangelogDismiss.addEventListener("click", closeChangelogModal);
+if (el.modalChangelog) {
+  el.modalChangelog.addEventListener("click", (e) => {
+    if (e.target === el.modalChangelog) closeChangelogModal();
+  });
+}
+
 document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape" && !el.modalReport.classList.contains("hidden")) {
-    closeReportModal();
+  if (e.key === "Escape") {
+    if (el.modalReport && !el.modalReport.classList.contains("hidden")) {
+      closeReportModal();
+    }
+    if (el.modalChangelog && !el.modalChangelog.classList.contains("hidden")) {
+      closeChangelogModal();
+    }
   }
 });
 
@@ -502,6 +643,8 @@ function checkAutoStart() {
     if (params.get("report") === "1") {
       openReportModal();
     }
+  } else if (params.get("modal") === "changelog" || params.get("autotest") === "changelog" || params.get("changelog") === "1") {
+    openChangelogModal();
   }
 }
 

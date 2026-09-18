@@ -15,6 +15,8 @@ Geen server nodig: platte HTML/CSS/JS, te hosten via GitHub Pages.
 - Op het einde krijg je je score, de verstreken tijdsduur en een volledig overzicht van alle
   vragen, jouw antwoorden en de juiste antwoorden. Dat overzicht kan je printen of als PDF
   opslaan via de knop "Printen" (gebruikt de browser-printfunctie).
+- Onderaan het startscherm toont een versiebadge de actieve applicatieversie (bv. `v1.0.0-pre`).
+  Klik op deze knop om het changelog-venster met de volledige versiegeschiedenis te openen.
 
 ## URL-parameters
 
@@ -22,6 +24,7 @@ De quiz ondersteunt optionele parameters in de URL:
 
 - `?since=YYYY`: filtert de vragenpool op regels ingevoerd vanaf het opgegeven jaartal (bv. `?since=2022`).
 - `?q=N`: stelt het aantal vragen per ronde in (standaard 20, bv. `?q=10` of `?since=2022&q=5`).
+- `?modal=changelog`: opent bij het openen van de pagina meteen de versiegeschiedenis.
 
 Vragen over recente wetswijzigingen (binnen 5 jaar) dragen een amberkleurige "Sinds YYYY" badge.
 Oudere wetswijzigingen tonen een blauwe badge.

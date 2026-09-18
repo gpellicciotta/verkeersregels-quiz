@@ -30,6 +30,9 @@
         <span class="start-legal-separator" aria-hidden="true">•</span>
         <a href="https://www.wegcode.be/nl/regelgeving/1975120109/wijzigingen~hra8v386pu" target="_blank" rel="noopener noreferrer">Overzicht wetswijzigingen</a>
       </div>
+      <div class="start-version-wrap">
+        <button id="btn-version" class="btn-version" type="button" title="Bekijk changelog" aria-haspopup="dialog">v1.0.0-pre</button>
+      </div>
     </footer>
   </section>
 
@@ -102,6 +105,22 @@
           <button type="submit" id="btn-modal-submit" class="btn-primary">Versturen</button>
         </div>
       </form>
+    </div>
+  </div>
+
+  <!-- Modal for displaying changelog -->
+  <div id="modal-changelog" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="modal-changelog-title">
+    <div class="modal-dialog modal-dialog-changelog">
+      <div class="modal-header">
+        <h3 id="modal-changelog-title">Versiegeschiedenis</h3>
+        <button type="button" id="btn-changelog-close" class="modal-close" aria-label="Sluiten">&times;</button>
+      </div>
+      <div id="changelog-body" class="modal-body modal-changelog-body">
+        <p class="changelog-loading">Versiegeschiedenis laden...</p>
+      </div>
+      <div class="modal-actions modal-actions-changelog">
+        <button type="button" id="btn-changelog-dismiss" class="btn-secondary">Sluiten</button>
+      </div>
     </div>
   </div>
 </main>

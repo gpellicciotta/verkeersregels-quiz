@@ -152,6 +152,43 @@ button {
   }
 }
 
+/* Version indicator on start screen */
+.start-version-wrap {
+  margin-top: 14px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-version {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #f1f5f9;
+  color: #475569;
+  border: 1px solid #cbd5e1;
+  border-radius: 9999px;
+  padding: 4px 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  font-family: inherit;
+  line-height: 1.2;
+}
+
+.btn-version:hover {
+  background: #e2e8f0;
+  color: #0f172a;
+  border-color: #94a3b8;
+  transform: translateY(-1px);
+}
+
+.btn-version:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
 /* Year badges for Wegcode amendments */
 .badge-since {
   display: inline-flex;
@@ -641,6 +678,100 @@ button {
   border: 1px solid #fecaca;
 }
 
+/* Changelog modal */
+.modal-dialog-changelog {
+  max-width: 620px;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-changelog-body {
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 18px 22px;
+  flex: 1 1 auto;
+}
+
+.modal-actions-changelog {
+  padding: 12px 20px;
+  border-top: 1px solid #e5e7eb;
+  margin-top: 0;
+  background: #f9fafb;
+}
+
+.changelog-loading {
+  color: var(--color-muted);
+  font-style: italic;
+  margin: 10px 0;
+}
+
+.changelog-version-title {
+  margin: 18px 0 10px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 4px;
+}
+
+.modal-changelog-body > .changelog-version-title:first-child {
+  margin-top: 0;
+}
+
+.changelog-list {
+  margin: 0 0 16px;
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.changelog-list li {
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #374151;
+}
+
+.changelog-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  padding: 1px 6px;
+  border-radius: 4px;
+  margin-right: 4px;
+  line-height: 1.3;
+}
+
+.changelog-badge-frontend { background: #dbeafe; color: #1e40af; }
+.changelog-badge-backend { background: #f3e8ff; color: #6b21a8; }
+.changelog-badge-content { background: #dcfce7; color: #166534; }
+.changelog-badge-docs { background: #fef3c7; color: #92400e; }
+.changelog-badge-devex { background: #e0e7ff; color: #3730a3; }
+.changelog-badge-config { background: #f1f5f9; color: #475569; }
+.changelog-badge-security { background: #fee2e2; color: #991b1b; }
+.changelog-badge-cli { background: #ccfbf1; color: #115e59; }
+
+.changelog-p {
+  margin: 8px 0;
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+.modal-changelog-body code {
+  background: #f1f5f9;
+  padding: 2px 5px;
+  border-radius: 4px;
+  font-size: 0.85em;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+}
+
+.modal-changelog-body a {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
 /* Tablet and up: give the layout room to breathe instead of stretching edge to edge. */
 @media (min-width: 640px) {
   body { padding: 32px 16px; }
@@ -687,7 +818,8 @@ button {
   #screen-start,
   #screen-quiz,
   #confetti-layer,
-  #modal-report {
+  #modal-report,
+  #modal-changelog {
     display: none !important;
   }
 
