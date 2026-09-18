@@ -53,7 +53,7 @@ Every `rule`-type question with a numeric limit, exception or legal nuance carri
 
 All 16 URLs were fetched with a standard browser user agent and returned HTTP 200 before being cited.
 
-Sign-meaning questions (`recognize` and `identify`) do not carry a `source` field, since the pictogram meanings are unambiguous and confirmed directly against the official Belgian sign catalogue (see below), not against a secondary explainer site.
+Sign-meaning questions (`recognize` and `identify`) carry direct authoritative links to the consolidated Wegcode articles governing each sign series (Articles 66 through 71 of KB 1 December 1975). Every quiz question displays a clickable external reference link upon being answered.
 
 ## Sign images
 

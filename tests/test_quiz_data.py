@@ -50,6 +50,7 @@ class TestQuizData(unittest.TestCase):
             "options": list,
             "correctIndex": int,
             "explanation": str,
+            "source": str,
         }
         valid_types = {"recognize", "identify", "rule"}
         for q in self.questions:
@@ -88,6 +89,16 @@ class TestQuizData(unittest.TestCase):
                     1968 <= since <= 2026,
                     f"Question {qid} 'since' year {since} outside expected range (1968-2026)",
                 )
+
+    def test_all_questions_have_valid_source_url(self) -> None:
+        """Validates that every question provides an authoritative, valid HTTP/HTTPS source link."""
+        for q in self.questions:
+            qid = q.get("id", "unknown")
+            source = q.get("source", "")
+            self.assertTrue(
+                source.startswith("https://") or source.startswith("http://"),
+                f"Question {qid} source must be an HTTP(S) URL, got: {source}",
+            )
 
     def test_referenced_signs_exist_and_are_valid_svg(self) -> None:
         """Validates that every referenced sign file exists in assets/signs/ and is valid SVG."""

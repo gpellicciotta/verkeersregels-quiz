@@ -14,6 +14,7 @@ A summarized overview of all changes, per version of this project.
 ---
 
 ## v1.1.0-pre
+- FrontEnd: Displayed authoritative official rule and explainer reference links upon answering each quiz question.
 - Content: Doubled question bank to 126 questions with full sign coverage and post-2022 rules.
 
 ## v1.0.0 [2026-09-18]

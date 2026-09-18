@@ -13,7 +13,8 @@
         "Tweerichtingsverkeer"
       ],
       "correctIndex": 0,
-      "explanation": "Dit gevaarsbord waarschuwt voor een gevaarlijke bocht naar links."
+      "explanation": "Dit gevaarsbord waarschuwt voor een gevaarlijke bocht naar links.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
     },
     {
       "id": "rec-a1b",
@@ -28,7 +29,8 @@
         "Gevaarlijke bocht naar links"
       ],
       "correctIndex": 1,
-      "explanation": "Dit gevaarsbord waarschuwt voor een gevaarlijke bocht naar rechts."
+      "explanation": "Dit gevaarsbord waarschuwt voor een gevaarlijke bocht naar rechts.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
     },
     {
       "id": "rec-a7a",
@@ -43,7 +45,8 @@
         "Tweerichtingsverkeer"
       ],
       "correctIndex": 2,
-      "explanation": "Dit bord waarschuwt dat de rijbaan verderop smaller wordt."
+      "explanation": "Dit bord waarschuwt dat de rijbaan verderop smaller wordt.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
     },
     {
       "id": "rec-a21",
@@ -58,7 +61,8 @@
         "Waarschuwing voor een oversteekplaats voor voetgangers"
       ],
       "correctIndex": 3,
-      "explanation": "Dit gevaarsbord kondigt vooraf een oversteekplaats voor voetgangers aan."
+      "explanation": "Dit gevaarsbord kondigt vooraf een oversteekplaats voor voetgangers aan.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
     },
     {
       "id": "rec-a25",
@@ -73,7 +77,8 @@
         "Waarschuwing voor een oversteekplaats voor voetgangers"
       ],
       "correctIndex": 0,
-      "explanation": "Dit bord waarschuwt voor een plaats waar fietsers de rijbaan oversteken."
+      "explanation": "Dit bord waarschuwt voor een plaats waar fietsers de rijbaan oversteken.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
     },
     {
       "id": "rec-a23",
@@ -88,7 +93,8 @@
         "Speelstraat"
       ],
       "correctIndex": 1,
-      "explanation": "Dit bord waarschuwt voor een plek waar opvallend veel kinderen kunnen opduiken, zoals bij een school."
+      "explanation": "Dit bord waarschuwt voor een plek waar opvallend veel kinderen kunnen opduiken, zoals bij een school.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
     },
     {
       "id": "rec-a31",
@@ -103,7 +109,8 @@
         "Vallende stenen"
       ],
       "correctIndex": 2,
-      "explanation": "Dit bord waarschuwt voor werken op of langs de rijbaan."
+      "explanation": "Dit bord waarschuwt voor werken op of langs de rijbaan.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
     },
     {
       "id": "rec-a41",
@@ -118,7 +125,8 @@
         "Overweg met slagbomen"
       ],
       "correctIndex": 3,
-      "explanation": "Dit bord waarschuwt voor een spoorwegovergang die uitgerust is met slagbomen."
+      "explanation": "Dit bord waarschuwt voor een spoorwegovergang die uitgerust is met slagbomen.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
     },
     {
       "id": "rec-b1",
@@ -133,7 +141,8 @@
         "Einde voorrangsweg"
       ],
       "correctIndex": 0,
-      "explanation": "Deze omgekeerde driehoek betekent dat je voorrang moet verlenen aan het kruisende verkeer."
+      "explanation": "Deze omgekeerde driehoek betekent dat je voorrang moet verlenen aan het kruisende verkeer.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-67"
     },
     {
       "id": "rec-b5",
@@ -148,7 +157,8 @@
         "Kruispunt met voorrang van rechts"
       ],
       "correctIndex": 1,
-      "explanation": "Bij dit achthoekige bord moet je volledig stoppen en voorrang verlenen aan het andere verkeer."
+      "explanation": "Bij dit achthoekige bord moet je volledig stoppen en voorrang verlenen aan het andere verkeer.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-67"
     },
     {
       "id": "rec-b9",
@@ -163,7 +173,8 @@
         "Smalle doorgang met voorrang"
       ],
       "correctIndex": 2,
-      "explanation": "Dit ruitvormige bord geeft aan dat je op een voorrangsweg rijdt."
+      "explanation": "Dit ruitvormige bord geeft aan dat je op een voorrangsweg rijdt.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-67"
     },
     {
       "id": "rec-b17",
@@ -178,7 +189,8 @@
         "Kruispunt waar voorrang van rechts geldt"
       ],
       "correctIndex": 3,
-      "explanation": "Dit bord herinnert eraan dat op dit kruispunt de gewone regel voorrang van rechts geldt."
+      "explanation": "Dit bord herinnert eraan dat op dit kruispunt de gewone regel voorrang van rechts geldt.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-67"
     },
     {
       "id": "rec-c1",
@@ -193,7 +205,8 @@
         "Verboden te keren"
       ],
       "correctIndex": 0,
-      "explanation": "Dit bord met de witte balk verbiedt om de weg in die richting in te rijden, bijvoorbeeld tegen eenrichtingsverkeer in."
+      "explanation": "Dit bord met de witte balk verbiedt om de weg in die richting in te rijden, bijvoorbeeld tegen eenrichtingsverkeer in.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
     },
     {
       "id": "rec-c3",
@@ -208,7 +221,8 @@
         "Doodlopende straat"
       ],
       "correctIndex": 1,
-      "explanation": "Dit volledig rode bord sluit de weg af voor alle bestuurders, in beide richtingen."
+      "explanation": "Dit volledig rode bord sluit de weg af voor alle bestuurders, in beide richtingen.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
     },
     {
       "id": "rec-c35",
@@ -223,7 +237,8 @@
         "Verboden voor motorvoertuigen"
       ],
       "correctIndex": 2,
-      "explanation": "Dit bord verbiedt om voertuigen met meer dan twee wielen links in te halen."
+      "explanation": "Dit bord verbiedt om voertuigen met meer dan twee wielen links in te halen.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
     },
     {
       "id": "rec-c43-70",
@@ -238,7 +253,8 @@
         "Snelheidsbeperking van 70 km/u"
       ],
       "correctIndex": 3,
-      "explanation": "Het getal op dit ronde bord is de maximumsnelheid die vanaf hier geldt tot het volgende kruispunt."
+      "explanation": "Het getal op dit ronde bord is de maximumsnelheid die vanaf hier geldt tot het volgende kruispunt.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
     },
     {
       "id": "rec-d1a",
@@ -253,7 +269,8 @@
         "Vrije keuze van rijrichting"
       ],
       "correctIndex": 0,
-      "explanation": "Dit blauwe ronde bord verplicht je de rijrichting van de pijl te volgen, hier rechtdoor."
+      "explanation": "Dit blauwe ronde bord verplicht je de rijrichting van de pijl te volgen, hier rechtdoor.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-69"
     },
     {
       "id": "rec-d5",
@@ -268,7 +285,8 @@
         "Verkeersplein"
       ],
       "correctIndex": 1,
-      "explanation": "Dit bord kondigt een rotonde aan waarop je verplicht in de aangeduide richting moet rondrijden."
+      "explanation": "Dit bord kondigt een rotonde aan waarop je verplicht in de aangeduide richting moet rondrijden.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-69"
     },
     {
       "id": "rec-d7",
@@ -283,7 +301,8 @@
         "Einde fietspad"
       ],
       "correctIndex": 2,
-      "explanation": "Fietsers en bestuurders van tweewielige bromfietsen klasse A moeten dit fietspad verplicht gebruiken."
+      "explanation": "Fietsers en bestuurders van tweewielige bromfietsen klasse A moeten dit fietspad verplicht gebruiken.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-69"
     },
     {
       "id": "rec-e1",
@@ -298,7 +317,8 @@
         "Verboden te parkeren"
       ],
       "correctIndex": 3,
-      "explanation": "Dit bord verbiedt parkeren, maar kort stilstaan blijft toegelaten."
+      "explanation": "Dit bord verbiedt parkeren, maar kort stilstaan blijft toegelaten.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-70"
     },
     {
       "id": "rec-f45",
@@ -313,7 +333,8 @@
         "Versmalling van de weg"
       ],
       "correctIndex": 0,
-      "explanation": "Dit bord toont dat de weg verderop niet doorloopt."
+      "explanation": "Dit bord toont dat de weg verderop niet doorloopt.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
     },
     {
       "id": "rec-f5",
@@ -328,7 +349,8 @@
         "Verkeersplein"
       ],
       "correctIndex": 1,
-      "explanation": "Vanaf dit bord gelden de specifieke verkeersregels voor autosnelwegen."
+      "explanation": "Vanaf dit bord gelden de specifieke verkeersregels voor autosnelwegen.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
     },
     {
       "id": "iden-b19",
@@ -342,7 +364,8 @@
         "assets/signs/B9.svg"
       ],
       "correctIndex": 0,
-      "explanation": "Bord B19 duidt een smalle doorgang aan waarbij jij voorrang moet verlenen aan het tegemoetkomend verkeer."
+      "explanation": "Bord B19 duidt een smalle doorgang aan waarbij jij voorrang moet verlenen aan het tegemoetkomend verkeer.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-67"
     },
     {
       "id": "iden-c31",
@@ -356,7 +379,8 @@
         "assets/signs/C3.svg"
       ],
       "correctIndex": 1,
-      "explanation": "Bord C31a verbiedt om op het volgende kruispunt links af te slaan in de richting van de pijl (art. 68.3)."
+      "explanation": "Bord C31a verbiedt om op het volgende kruispunt links af te slaan in de richting van de pijl (art. 68.3).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
     },
     {
       "id": "iden-c33",
@@ -370,7 +394,8 @@
         "assets/signs/C31a.svg"
       ],
       "correctIndex": 2,
-      "explanation": "Bord C33 verbiedt een U-bocht (keren) tot aan het volgende kruispunt."
+      "explanation": "Bord C33 verbiedt een U-bocht (keren) tot aan het volgende kruispunt.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
     },
     {
       "id": "iden-e9a",
@@ -385,7 +410,8 @@
       ],
       "correctIndex": 3,
       "explanation": "Bord E9a met het rolstoelsymbool markeert een voorbehouden parkeerplaats voor personen met een handicap.",
-      "since": 1990
+      "since": 1990,
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-70"
     },
     {
       "id": "iden-f1b",
@@ -399,7 +425,8 @@
         "assets/signs/F45.svg"
       ],
       "correctIndex": 0,
-      "explanation": "Bord F1b markeert het begin van een bebouwde kom, waar de standaardlimiet van 50 km/u start."
+      "explanation": "Bord F1b markeert het begin van een bebouwde kom, waar de standaardlimiet van 50 km/u start.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
     },
     {
       "id": "iden-f19",
@@ -413,7 +440,8 @@
         "assets/signs/F103.svg"
       ],
       "correctIndex": 1,
-      "explanation": "Bord F19 geeft aan dat je op een openbare weg met eenrichtingsverkeer rijdt."
+      "explanation": "Bord F19 geeft aan dat je op een openbare weg met eenrichtingsverkeer rijdt.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
     },
     {
       "id": "iden-f49",
@@ -427,7 +455,8 @@
         "assets/signs/A21.svg"
       ],
       "correctIndex": 2,
-      "explanation": "Bord F49 duidt de oversteekplaats zelf aan, terwijl gevaarsbord A21 er vooraf voor waarschuwt."
+      "explanation": "Bord F49 duidt de oversteekplaats zelf aan, terwijl gevaarsbord A21 er vooraf voor waarschuwt.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
     },
     {
       "id": "iden-f103",
@@ -442,7 +471,8 @@
       ],
       "correctIndex": 3,
       "explanation": "Bord F103 markeert het begin van een voetgangerszone.",
-      "since": 1988
+      "since": 1988,
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
     },
     {
       "id": "iden-d10",
@@ -457,7 +487,8 @@
       ],
       "correctIndex": 0,
       "explanation": "Bord D10 is voorbehouden voor voetgangers en fietsers samen (art. 69.3); bord D9 laat ook bestuurders van tweewielige bromfietsen klasse A toe.",
-      "since": 2014
+      "since": 2014,
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-69"
     },
     {
       "id": "rule-snelheid-bebouwd",
@@ -977,7 +1008,8 @@
         "Verplicht rechtdoor rijden"
       ],
       "correctIndex": 0,
-      "explanation": "Bord B19 legt op dat je bij een smalle doorgang voorrang moet verlenen aan bestuurders die uit de tegenovergestelde richting komen (art. 67.3)."
+      "explanation": "Bord B19 legt op dat je bij een smalle doorgang voorrang moet verlenen aan bestuurders die uit de tegenovergestelde richting komen (art. 67.3).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-67"
     },
     {
       "id": "rec-c31a",
@@ -992,7 +1024,8 @@
         "Doodlopende weg aan de linkerkant"
       ],
       "correctIndex": 1,
-      "explanation": "Bord C31a verbiedt om aan het eerstvolgende kruispunt links af te slaan in de richting van de pijl (art. 68.3)."
+      "explanation": "Bord C31a verbiedt om aan het eerstvolgende kruispunt links af te slaan in de richting van de pijl (art. 68.3).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
     },
     {
       "id": "rec-c33",
@@ -1007,7 +1040,8 @@
         "Scherpe bocht naar links"
       ],
       "correctIndex": 2,
-      "explanation": "Bord C33 verbiedt bestuurders om te keren (een U-bocht te maken) tot aan het volgende kruispunt (art. 68.3)."
+      "explanation": "Bord C33 verbiedt bestuurders om te keren (een U-bocht te maken) tot aan het volgende kruispunt (art. 68.3).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
     },
     {
       "id": "rec-c39",
@@ -1022,7 +1056,8 @@
         "Inhaalverbod voor vrachtwagens met een MTM van meer dan 3,5 ton"
       ],
       "correctIndex": 3,
-      "explanation": "Bord C39 verbiedt vrachtwagens met een maximale toegelaten massa van meer dan 3,5 ton om een gespan of motorvoertuig met meer dan twee wielen in te halen (art. 68.3)."
+      "explanation": "Bord C39 verbiedt vrachtwagens met een maximale toegelaten massa van meer dan 3,5 ton om een gespan of motorvoertuig met meer dan twee wielen in te halen (art. 68.3).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
     },
     {
       "id": "rec-d9",
@@ -1037,7 +1072,8 @@
         "Deel van de openbare weg voorbehouden voor voetgangers, fietsers en bromfietsers klasse A"
       ],
       "correctIndex": 3,
-      "explanation": "Bord D9 duidt een deel van de openbare weg aan dat voorbehouden is voor het verkeer van voetgangers, fietsers en tweewielige bromfietsen klasse A (art. 69.3)."
+      "explanation": "Bord D9 duidt een deel van de openbare weg aan dat voorbehouden is voor het verkeer van voetgangers, fietsers en tweewielige bromfietsen klasse A (art. 69.3).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-69"
     },
     {
       "id": "rec-d10",
@@ -1052,7 +1088,8 @@
         "Verplicht voetpad waar fietsers niet mogen rijden"
       ],
       "correctIndex": 1,
-      "explanation": "Bord D10 duidt een pad aan voorbehouden voor voetgangers en fietsers; in tegenstelling tot bord D9 mogen bromfietsen klasse A hier niet rijden (art. 69.3)."
+      "explanation": "Bord D10 duidt een pad aan voorbehouden voor voetgangers en fietsers; in tegenstelling tot bord D9 mogen bromfietsen klasse A hier niet rijden (art. 69.3).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-69"
     },
     {
       "id": "rec-e3",
@@ -1067,7 +1104,8 @@
         "Einde van een parkeerzone"
       ],
       "correctIndex": 2,
-      "explanation": "Bord E3 betekent dat zowel stilstaan als parkeren verboden is aan de zijde van de openbare weg waar het bord staat (art. 70.2.1)."
+      "explanation": "Bord E3 betekent dat zowel stilstaan als parkeren verboden is aan de zijde van de openbare weg waar het bord staat (art. 70.2.1).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-70"
     },
     {
       "id": "rec-e9a",
@@ -1083,7 +1121,8 @@
       ],
       "correctIndex": 3,
       "explanation": "Bord E9a met rolstoelsymbool geeft aan dat het parkeren uitsluitend voorbehouden is voor voertuigen gebruikt door personen met een handicap met een speciale parkeerkaart (art. 70.2.1).",
-      "since": 1990
+      "since": 1990,
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-70"
     },
     {
       "id": "rec-f1b",
@@ -1098,7 +1137,8 @@
         "Begin van een autosnelweg"
       ],
       "correctIndex": 0,
-      "explanation": "Bord F1b geeft het begin van een bebouwde kom aan (art. 71.2), waar in Vlaanderen een standaard maximumsnelheid van 50 km/u geldt."
+      "explanation": "Bord F1b geeft het begin van een bebouwde kom aan (art. 71.2), waar in Vlaanderen een standaard maximumsnelheid van 50 km/u geldt.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
     },
     {
       "id": "rec-f3b",
@@ -1113,7 +1153,8 @@
         "Einde van een autoweg"
       ],
       "correctIndex": 1,
-      "explanation": "Bord F3b geeft het einde van een bebouwde kom aan (art. 71.2)."
+      "explanation": "Bord F3b geeft het einde van een bebouwde kom aan (art. 71.2).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
     },
     {
       "id": "rec-f19",
@@ -1128,7 +1169,8 @@
         "Doodlopende straat"
       ],
       "correctIndex": 2,
-      "explanation": "Bord F19 geeft aan dat je op een openbare weg met eenrichtingsverkeer rijdt (art. 71.2)."
+      "explanation": "Bord F19 geeft aan dat je op een openbare weg met eenrichtingsverkeer rijdt (art. 71.2).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
     },
     {
       "id": "rec-f49",
@@ -1143,7 +1185,8 @@
         "Plaats van een oversteekplaats voor voetgangers"
       ],
       "correctIndex": 3,
-      "explanation": "Aanwijzingsbord F49 duidt de precieze plaats van een oversteekplaats voor voetgangers aan (art. 71.2)."
+      "explanation": "Aanwijzingsbord F49 duidt de precieze plaats van een oversteekplaats voor voetgangers aan (art. 71.2).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
     },
     {
       "id": "rec-f103",
@@ -1159,7 +1202,8 @@
       ],
       "correctIndex": 2,
       "explanation": "Bord F103 duidt het begin van een voetgangerszone aan (art. 71.2).",
-      "since": 1988
+      "since": 1988,
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
     },
     {
       "id": "iden-c39",
@@ -1173,7 +1217,8 @@
         "assets/signs/C1.svg"
       ],
       "correctIndex": 1,
-      "explanation": "Bord C39 verbiedt vrachtwagens met een MTM boven 3,5 ton om meersporige voertuigen in te halen."
+      "explanation": "Bord C39 verbiedt vrachtwagens met een MTM boven 3,5 ton om meersporige voertuigen in te halen.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
     },
     {
       "id": "iden-e3",
@@ -1187,7 +1232,8 @@
         "assets/signs/C3.svg"
       ],
       "correctIndex": 2,
-      "explanation": "Bord E3 (blauw bord met rood kruis) verbiedt zowel het stilstaan als het parkeren."
+      "explanation": "Bord E3 (blauw bord met rood kruis) verbiedt zowel het stilstaan als het parkeren.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-70"
     },
     {
       "id": "iden-f3b",
@@ -1201,7 +1247,8 @@
         "assets/signs/F3b.svg"
       ],
       "correctIndex": 3,
-      "explanation": "Bord F3b toont de silhouet van de bebouwde kom met een schuine rode streep en geeft het einde van de bebouwde kom aan."
+      "explanation": "Bord F3b toont de silhouet van de bebouwde kom met een schuine rode streep en geeft het einde van de bebouwde kom aan.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
     },
     {
       "id": "rule-estep-trottoir-2022",
