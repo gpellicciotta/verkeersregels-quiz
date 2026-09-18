@@ -15,7 +15,7 @@ An overview of all tasks and their planning.
 
 ## Next Milestone
 
-- [ ] A0015 Allow extra query parameter syntax, as aliases: "s" = "since" = "sinds"; "q" = "quantity"
+- [~] A0015 [owner: @antigravity] Allow extra query parameter syntax, as aliases: "s" = "since" = "sinds"; "q" = "quantity"
 - [ ] A0016 Make screenshots of the start page, of a question page with a good answer, one with a bad answer, results with confetti and results without confetti, both on desktop and on mobile. Add these screenshots as a visual tour to the README.md
 - [ ] A0017 When q=n is given, the start page (and also other pages) shoukd not mentiond "20" vragen but "n" vragen
       Also make sure that even when n is asked, but if there are only m (smaller than n) questions available, to take m in all these places.
