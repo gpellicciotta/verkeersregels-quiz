@@ -15,7 +15,7 @@ An overview of all tasks and their planning.
 
 ## Next Milestone
 
-- [ ] A0030 Make a new v1.2.0 or v2.0.0 release
+*(Currently no tasks)*
 
 ---
 

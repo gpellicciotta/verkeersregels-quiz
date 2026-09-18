@@ -1,5 +1,5 @@
 const CONFIG = {
-  VERSION: "v1.1.0",
+  VERSION: "v2.0.0",
   QUESTIONS_PER_ROUND: 20,
   // If null, no results will be propagated:
   SHEET_WEBAPP_URL: "https://script.google.com/macros/s/AKfycbyYyBMb8KTD13MrJhOpmZIYKHCbuGD5PyiL01tdzcWNRle6juEB6Qgap1yYfmmJJ2lE/exec",

@@ -13,7 +13,9 @@ A summarized overview of all changes, per version of this project.
 
 ---
 
-## v1.1.1-pre
+## v2.0.1-pre
+
+## v2.0.0 [2026-09-18]
 - Inhoud: Volledige dekking van alle Belgische verkeersborden gerealiseerd met 193 bordafbeeldingen en 284 vragen.
 - FrontEnd: Foutmeldingsformulier geoptimaliseerd voor onmiddellijke achtergrondverzending zonder enige vertraging in de interface.
 - FrontEnd: Voortgangsbalk gecorrigeerd zodat deze vanaf de eerste vraag evenredig oploopt tot 100 procent.
