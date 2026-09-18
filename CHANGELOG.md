@@ -25,7 +25,7 @@ A summarized overview of all changes, per version of this project.
 - FrontEnd: Added a mobile-first Dutch quiz asking 20 random sign and traffic-rule questions with instant explanations.
 - FrontEnd: Added a printable results overview with sign thumbnails and confetti on a perfect score.
 - Content: Aligned quiz questions, answers, explanations, and sign images with current Belgian traffic law.
-- Content: Added 54 exam questions with cited sources and 35 Belgian sign images in currently valid designs.
+- Content: Added 63 verified exam questions with cited sources and 35 Belgian sign images in currently valid designs.
 - BackEnd: Added optional Google Sheet score logging for named players through a restricted Apps Script endpoint.
 - Docs: Added README instructions for local testing, GitHub Pages deployment and Google Sheet setup.
 - Docs: Added the official Wegcode text and all amending acts since 2021 as reference sources.

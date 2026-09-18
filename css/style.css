@@ -266,13 +266,23 @@ button {
   cursor: pointer;
   transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
   line-height: 1.2;
+  font-family: inherit;
 }
 
-.btn-report-error:hover,
-.btn-report-error:focus-visible {
+.btn-report-error:not(:disabled):hover,
+.btn-report-error:not(:disabled):focus-visible {
   background: #fee2e2;
   color: #b91c1c;
   border-color: #fca5a5;
+}
+
+.btn-report-error:disabled,
+.btn-report-preview {
+  opacity: 0.9;
+  cursor: default;
+  pointer-events: none;
+  vertical-align: middle;
+  margin: 0 2px;
 }
 
 .report-icon {
