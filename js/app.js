@@ -15,6 +15,9 @@ const state = {
   currentIndex: 0,
   answers: [],
   filterSince: null,
+  startTime: null,
+  endTime: null,
+  durationSeconds: 0,
 };
 
 const el = {
@@ -148,6 +151,7 @@ function startQuiz() {
     el.startError.classList.remove("hidden");
     return;
   }
+  state.startTime = Date.now();
   state.playerName = el.playerNameInput.value.trim();
   const desired = getQuestionCountOverride() || CONFIG.QUESTIONS_PER_ROUND;
   const count = Math.min(desired, state.pool.length);
@@ -272,13 +276,38 @@ function questionCell(question) {
   return signImg ? `${signImg}${question.question}` : question.question;
 }
 
+function formatDuration(seconds) {
+  const s = Math.max(1, Math.round(seconds || 1));
+  const min = Math.floor(s / 60);
+  const remSec = s % 60;
+  if (min === 0) {
+    return `${remSec} sec`;
+  }
+  if (remSec === 0) {
+    return `${min} min`;
+  }
+  return `${min} min ${remSec} sec`;
+}
+
 function showResult() {
+  state.endTime = Date.now();
+  const durationOverride = parseInt(new URLSearchParams(window.location.search).get("duration"), 10);
+  if (Number.isInteger(durationOverride) && durationOverride > 0) {
+    state.durationSeconds = durationOverride;
+  } else {
+    state.durationSeconds = Math.max(
+      1,
+      Math.round((state.endTime - (state.startTime || state.endTime)) / 1000)
+    );
+  }
+  const formattedDuration = formatDuration(state.durationSeconds);
+
   const total = state.answers.length;
   const correct = state.answers.filter((a) => a.correct).length;
   const pct = Math.round((correct / total) * 100);
 
   const namePart = state.playerName ? `${state.playerName}, je` : "Je";
-  el.resultSummary.textContent = `${namePart} scoorde ${correct}/${total} (${pct}%).`;
+  el.resultSummary.textContent = `${namePart} scoorde ${correct}/${total} (${pct}%) in ${formattedDuration}.`;
 
   el.resultTableBody.innerHTML = "";
   state.answers.forEach((a, i) => {
@@ -297,7 +326,7 @@ function showResult() {
 
   showScreen("result");
   if (total > 0 && correct === total) showConfetti();
-  submitToSheet(correct, total, pct);
+  submitToSheet(correct, total, pct, state.durationSeconds, formattedDuration);
 }
 
 function showConfetti() {
@@ -318,9 +347,11 @@ function showConfetti() {
   setTimeout(() => layer.remove(), 4000);
 }
 
-async function submitToSheet(correct, total, pct) {
+async function submitToSheet(correct, total, pct, durationSeconds, formattedDuration) {
   if (!CONFIG.SHEET_WEBAPP_URL) return;
   if (!state.playerName) return;
+  const duur = durationSeconds !== undefined ? durationSeconds : state.durationSeconds;
+  const duurTekst = formattedDuration || formatDuration(duur);
   try {
     await fetch(CONFIG.SHEET_WEBAPP_URL, {
       method: "POST",
@@ -331,6 +362,8 @@ async function submitToSheet(correct, total, pct) {
         score: correct,
         totaal: total,
         percentage: pct,
+        duur: duur,
+        duur_tekst: duurTekst,
         datum: new Date().toISOString(),
         sleutel: CONFIG.SHEET_SECRET,
       }),
@@ -341,6 +374,9 @@ async function submitToSheet(correct, total, pct) {
 }
 
 function restart() {
+  state.startTime = null;
+  state.endTime = null;
+  state.durationSeconds = 0;
   el.playerNameInput.value = state.playerName;
   applyFilter();
   showScreen("start");

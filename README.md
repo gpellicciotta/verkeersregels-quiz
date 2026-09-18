@@ -11,9 +11,9 @@ Geen server nodig: platte HTML/CSS/JS, te hosten via GitHub Pages.
   en soms een vraag over een verkeersregel.
 - Na elk antwoord zie je meteen of het juist was, met een korte uitleg. Je kan niet terug naar
   een vorige vraag.
-- Op het einde krijg je je score en een volledig overzicht van alle vragen, jouw antwoorden en
-  de juiste antwoorden. Dat overzicht kan je printen of als PDF opslaan via de knop
-  "Printen / opslaan als PDF" (gebruikt de browser-printfunctie).
+- Op het einde krijg je je score, de verstreken tijdsduur en een volledig overzicht van alle
+  vragen, jouw antwoorden en de juiste antwoorden. Dat overzicht kan je printen of als PDF
+  opslaan via de knop "Printen" (gebruikt de browser-printfunctie).
 
 ## URL-parameters
 
@@ -66,7 +66,8 @@ Werkt met JavaScript zonder probleem: GitHub Pages is gewoon statische bestandsh
    - "Toegang": Iedereen.
 4. Kopieer de gegenereerde web-app-URL.
 5. Plak die URL als waarde van `SHEET_WEBAPP_URL` bovenaan in [js/app.js](js/app.js).
-6. Elke afgeronde quiz voegt automatisch een rij toe aan het tabblad "Resultaten" van de Sheet.
+6. Elke afgeronde quiz voegt automatisch een rij toe aan het tabblad "Resultaten" van de Sheet
+   (datum, naam, score, aantal vragen, percentage en tijdsduur).
 
 Zolang `SHEET_WEBAPP_URL` op `null` staat, wordt dit gewoon overgeslagen — de quiz werkt ook
 zonder deze stap.
@@ -98,7 +99,7 @@ en herdeploy het script (zie vorige sectie, stap 2).
 
 1. Open de site en doorloop de quiz volledig tot het resultatenscherm.
 2. Open de Google Sheet: er moet een tabblad "Resultaten" verschenen zijn met een nieuwe rij
-   (datum, naam, score, totaal).
+   (datum, naam, score, totaal, percentage, duur in seconden en geformatteerde duur).
 3. Zie je geen rij verschijnen, open dan de browserconsole (F12 > Console) tijdens het spelen —
    een mislukte aanroep logt daar een waarschuwing "Kon score niet naar Google Sheet sturen".
 4. Wil je het los van de UI testen: open in de Apps Script-editor het menu Uitvoeringen

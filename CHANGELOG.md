@@ -14,6 +14,7 @@ A summarized overview of all changes, per version of this project.
 ---
 
 ## v1.0.0-pre
+- FrontEnd: Tracked quiz duration from start to finish, displaying elapsed time on results and logging to Google Sheets.
 - FrontEnd: Added direct links to the official consolidated Wegcode and amendment ledger on the start screen.
 - FrontEnd: Expanded printed results to full width with page-break protection against split rows and repeating headers.
 - FrontEnd: Condensed mobile result cards with top-right pill badges and unified answer fields for correct responses.

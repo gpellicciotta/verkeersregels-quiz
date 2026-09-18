@@ -10,13 +10,13 @@ function doPost(e) {
       .createTextOutput(JSON.stringify({ status: 'forbidden' }))
       .setMimeType(ContentService.MimeType.JSON);
   }
-  var headers = ['Wanneer', 'Wie', 'Juiste Antwoorden', 'Aantal Vragen', 'Percentage'];
+  var headers = ['Wanneer', 'Wie', 'Juiste Antwoorden', 'Aantal Vragen', 'Percentage', 'Duur (sec)', 'Duur'];
   var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Resultaten');
   if (!sheet) {
     sheet = SpreadsheetApp.getActiveSpreadsheet().insertSheet('Resultaten');
   }
   sheet.getRange(1, 1, 1, headers.length).setValues([headers]);
-  sheet.appendRow([p.datum, p.naam, p.score, p.totaal, p.percentage]);
+  sheet.appendRow([p.datum, p.naam, p.score, p.totaal, p.percentage, p.duur || '', p.duur_tekst || '']);
   return ContentService
     .createTextOutput(JSON.stringify({ status: 'ok' }))
     .setMimeType(ContentService.MimeType.JSON);
