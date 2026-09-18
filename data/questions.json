@@ -1,0 +1,40 @@
+{
+  "questions": [
+    {
+      "id": "placeholder-001",
+      "type": "rule",
+      "category": "voorrang",
+      "question": "Op een kruispunt zonder verkeersborden of verkeerslichten, wie heeft voorrang?",
+      "options": ["Verkeer van links", "Verkeer van rechts", "Het grootste voertuig", "Wie er het eerst aankwam"],
+      "correctIndex": 1,
+      "explanation": "PLACEHOLDER - wordt vervangen door geverifieerde inhoud."
+    },
+    {
+      "id": "placeholder-002",
+      "type": "rule",
+      "category": "snelheid",
+      "question": "Wat is de algemene snelheidslimiet binnen de bebouwde kom in Belgie, tenzij anders aangeduid?",
+      "options": ["30 km/u", "50 km/u", "70 km/u", "90 km/u"],
+      "correctIndex": 1,
+      "explanation": "PLACEHOLDER - wordt vervangen door geverifieerde inhoud."
+    },
+    {
+      "id": "placeholder-003",
+      "type": "rule",
+      "category": "alcohol",
+      "question": "Wat is de wettelijke alcohollimiet voor een gewone bestuurder in Belgie?",
+      "options": ["0.0 promille", "0.2 promille", "0.5 promille", "0.8 promille"],
+      "correctIndex": 2,
+      "explanation": "PLACEHOLDER - wordt vervangen door geverifieerde inhoud."
+    },
+    {
+      "id": "placeholder-004",
+      "type": "rule",
+      "category": "gordel",
+      "question": "Moet je als bestuurder je veiligheidsgordel dragen op een korte rit in de stad?",
+      "options": ["Ja, altijd verplicht", "Nee, enkel buiten de bebouwde kom", "Nee, enkel op de snelweg", "Enkel als er passagiers zijn"],
+      "correctIndex": 0,
+      "explanation": "PLACEHOLDER - wordt vervangen door geverifieerde inhoud."
+    }
+  ]
+}
