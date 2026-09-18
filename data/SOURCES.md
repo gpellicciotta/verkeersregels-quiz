@@ -4,31 +4,31 @@ Content for the Belgian theoretical driving exam quiz, generated and verified on
 
 ## Question bank summary
 
-Total questions: 126, stored in `data/questions.json`.
+Total questions: 284, stored in `data/questions.json`.
 
 Breakdown by type:
 
-- recognize: 35
+- recognize: 193
 - identify: 12
 - rule: 79
 
 Breakdown by category:
 
+- aanwijzing: 89
+- verbod: 34
+- gevaar: 31
+- voorrang: 28
 - fietsers-voetgangers: 28
-- voorrang: 20
+- parkeren: 23
 - algemeen: 16
-- parkeren: 11
-- verbod: 9
+- gebod: 10
 - snelheid: 9
-- aanwijzing: 9
 - autosnelweg: 8
-- gevaar: 6
 - alcohol: 4
-- gebod: 2
 - gordel: 2
 - telefoon: 2
 
-Answer positions (`correctIndex`) are spread evenly across all four slots (31 or 32 questions per index: 31 for 0, 32 for 1, 32 for 2, 31 for 3) so the correct answer is not systematically in the same position.
+Answer positions (`correctIndex`) are spread evenly across all four slots (70 for 0, 71 for 1, 71 for 2, 72 for 3) so the correct answer is not systematically in the same position.
 
 ## Rule sources
 
@@ -149,10 +149,12 @@ Cross-reference used to confirm which code matches which meaning and shape: the 
   - Added question on bicycle street F111 junction validity (KB 8 juni 2021).
   - Added question on Brussels default 30 km/u speed limit (BRBHG 22 september 2021).
 
-- 2026-09-18: expanded question bank from 63 to 126 questions with full sign coverage and recent rules:
-  - Added dedicated recognize questions for all signs in `assets/signs/`, achieving 100% direct coverage (35/35).
-  - Added dedicated identify questions for C39, E3, and F3b.
-  - Added questions on post-2022 legislation including e-scooters, smartphone mounting, emergency corridors, and zipper merging.
-  - Added realistic traffic scenarios covering priority rules, trams, bus stops, manoeuvres, and crossings.
-  - Balanced answer positions evenly across all four options with 31 or 32 questions each.
+- 2026-09-18: completed full coverage of all Belgian traffic signs under tasks T0019–T0025:
+  - Expanded question bank from 126 to 284 questions with 193 validated SVG traffic sign assets.
+  - Sourced, verified, and added questions for 25 warning signs in Series A (A1c through A51).
+  - Sourced, verified, and added questions for 8 priority signs in Series B (B3 through B23) and 8 mandatory signs in Series D (D1b through D13).
+  - Sourced, verified, and added questions for 25 prohibitory signs in Series C (C5 through C47).
+  - Sourced, verified, and added questions for 12 parking and stopping signs in Series E (E5 through E11).
+  - Sourced, verified, and added questions for 80 indication signs in Series F (F1a through F120).
+  - Maintained perfectly balanced answer option distributions (70, 71, 71, 72 across indices 0–3).
 
