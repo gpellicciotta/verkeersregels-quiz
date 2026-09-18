@@ -15,7 +15,7 @@ An overview of all tasks and their planning.
 
 ## Next Milestone
 
-- [ ] T0005 The results page when printed should use the full width of the to-be-printed page and make sure to not have rows that are split over 2 pages.
+- [~] T0005 [owner: @antigravity] Ensure the printed results page uses full width and avoids splitting rows across pages.
 - [ ] T0008 Track the duration of the quiz, show it on the results page and store it in the Google sheet
 - [ ] T0007 Add a "wrong question/answer" button on each question page and store it in a separate tab in the Google sheet.
       Also explain the button/icon on the start page.
