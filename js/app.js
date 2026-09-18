@@ -119,6 +119,7 @@ function selectOption(chosenIndex) {
     id: q.id,
     question: q.question,
     type: q.type,
+    sign: q.sign,
     chosenIndex,
     correctIndex: q.correctIndex,
     options: q.options,
@@ -151,14 +152,20 @@ function nextQuestion() {
   }
 }
 
-function optionLabel(question, index) {
+function optionCell(question, index) {
   if (index === -1 || index === undefined) return "-";
   const value = question.options[index];
   if (question.type === "identify") {
-    const filename = value.split("/").pop();
-    return filename;
+    return `<img src="${value}" alt="Bord" class="table-thumb">`;
   }
   return value;
+}
+
+function questionCell(question) {
+  if (question.type === "recognize") {
+    return `<img src="${question.sign}" alt="Bord" class="table-thumb">${question.question}`;
+  }
+  return question.question;
 }
 
 function showResult() {
@@ -174,9 +181,9 @@ function showResult() {
     const tr = document.createElement("tr");
     tr.innerHTML = `
       <td>${i + 1}</td>
-      <td>${a.question}</td>
-      <td>${optionLabel(a, a.chosenIndex)}</td>
-      <td>${optionLabel(a, a.correctIndex)}</td>
+      <td>${questionCell(a)}</td>
+      <td>${optionCell(a, a.chosenIndex)}</td>
+      <td>${optionCell(a, a.correctIndex)}</td>
       <td class="${a.correct ? "tag-correct" : "tag-wrong"}">${a.correct ? "Juist" : "Fout"}</td>
     `;
     el.resultTableBody.appendChild(tr);
