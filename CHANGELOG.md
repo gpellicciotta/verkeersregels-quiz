@@ -14,6 +14,7 @@ A summarized overview of all changes, per version of this project.
 ---
 
 ## v1.0.0-pre
+- FrontEnd: Added amendment year badges and supported URL query filtering to practice recent traffic rule changes.
 - FrontEnd: Added a mobile-first Dutch quiz asking 20 random sign and traffic-rule questions with instant explanations.
 - FrontEnd: Added a printable results overview with sign thumbnails and confetti on a perfect score.
 - Content: Aligned quiz questions, answers, explanations, and sign images with current Belgian traffic law.
