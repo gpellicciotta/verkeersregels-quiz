@@ -59,37 +59,37 @@ Sign-meaning questions (`recognize` and `identify`) do not carry a `source` fiel
 
 All 35 SVG files in `assets/signs/` come from Wikimedia Commons, drawn from the "Road signs of Belgium" categories (`Category:SVG warning/priority/prohibitory/mandatory/parking road signs of Belgium` and the `File:Belgian traffic sign F...` set). Every file was downloaded, checked for a valid, non-trivial SVG body, and spot-checked for correct shape and color coding (red danger triangles, red prohibition circles, blue mandatory/information signs, correct pictogram fills) before use.
 
-License: all files are public domain under Belgian law, because official traffic signs are part of Belgian legislation (Belgian Copyright Act, art. 8, §2) - stated on each file's Commons description page. Most A/B/C/D/E-series files reproduce the June 3, 2024 Royal Decree annex ("KB-AR 03-06-2024" uploads); the F-series and a few D/E files are the long-standing plain Commons uploads for those codes.
+License: all files are public domain under Belgian law, because official traffic signs are part of Belgian legislation (Belgian Copyright Act, art. 8, §2) - stated on each file's Commons description page. All files show the designs of the current Wegcode (KB 1 December 1975). The redesigned signs of the Royal Decree of 3 June 2024 ("KB-AR 03-06-2024" uploads) only become valid on 2027-06-01 and renumber some codes, so they are not used.
 
 | Local file | Meaning (NL) | Wikimedia Commons source page |
 |---|---|---|
-| A1a.svg | Gevaarlijke bocht naar links | [File:Belgian traffic sign A1a KB-AR 03-06-2024.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_A1a_KB-AR_03-06-2024.svg) |
-| A1b.svg | Gevaarlijke bocht naar rechts | [File:Belgian traffic sign A1b KB-AR 03-06-2024.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_A1b_KB-AR_03-06-2024.svg) |
-| A7a.svg | Rijbaanversmalling | [File:Belgian traffic sign A7a KB-AR 03-06-2024.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_A7a_KB-AR_03-06-2024.svg) |
-| A21.svg | Waarschuwing oversteekplaats voetgangers | [File:Belgian traffic sign A21 KB-AR 03-06-2024.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_A21_KB-AR_03-06-2024.svg) |
-| A23.svg | Plaats met veel kinderen (schoolomgeving) | [File:Belgian traffic sign A23 KB-AR 03-06-2024.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_A23_KB-AR_03-06-2024.svg) |
-| A25.svg | Waarschuwing oversteekplaats fietsers | [File:Belgian traffic sign A25 KB-AR 03-06-2024.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_A25_KB-AR_03-06-2024.svg) |
-| A31.svg | Wegenwerken | [File:Belgian traffic sign A31 KB-AR 03-06-2024.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_A31_KB-AR_03-06-2024.svg) |
-| A41.svg | Overweg met slagbomen | [File:Belgian traffic sign A41 KB-AR 03-06-2024.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_A41_KB-AR_03-06-2024.svg) |
-| B1.svg | Voorrang verlenen | [File:Belgian traffic sign B1 KB-AR 03-06-2024.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_B1_KB-AR_03-06-2024.svg) |
-| B5.svg | Stoppen en voorrang verlenen | [File:Belgian traffic sign B5 KB-AR 03-06-2024.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_B5_KB-AR_03-06-2024.svg) |
-| B9.svg | Voorrangsweg | [File:Belgian traffic sign B9 KB-AR 03-06-2024.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_B9_KB-AR_03-06-2024.svg) |
-| B17.svg | Kruispunt met voorrang van rechts | [File:Belgian traffic sign B17 KB-AR 03-06-2024.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_B17_KB-AR_03-06-2024.svg) |
-| B19.svg | Smalle doorgang, voorrang verlenen aan tegenliggers | [File:Belgian traffic sign B19 KB-AR 03-06-2024.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_B19_KB-AR_03-06-2024.svg) |
-| C1.svg | Verboden richting in te rijden | [File:Belgian traffic sign C1 KB-AR 03-06-2024.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_C1_KB-AR_03-06-2024.svg) |
-| C3.svg | Verboden toegang in beide richtingen | [File:Belgian traffic sign C3 KB-AR 03-06-2024.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_C3_KB-AR_03-06-2024.svg) |
+| A1a.svg | Gevaarlijke bocht naar links | [File:Belgian traffic sign A1a.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_A1a.svg) |
+| A1b.svg | Gevaarlijke bocht naar rechts | [File:Belgian traffic sign A1b.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_A1b.svg) |
+| A7a.svg | Rijbaanversmalling | [File:Belgian traffic sign A7a.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_A7a.svg) |
+| A21.svg | Waarschuwing oversteekplaats voetgangers | [File:Belgian traffic sign A21.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_A21.svg) |
+| A23.svg | Plaats met veel kinderen (schoolomgeving) | [File:Belgian traffic sign A23.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_A23.svg) |
+| A25.svg | Waarschuwing oversteekplaats fietsers | [File:Belgian traffic sign A25.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_A25.svg) |
+| A31.svg | Wegenwerken | [File:Belgian traffic sign A31.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_A31.svg) |
+| A41.svg | Overweg met slagbomen | [File:Belgian traffic sign A41.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_A41.svg) |
+| B1.svg | Voorrang verlenen | [File:Belgian traffic sign B1.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_B1.svg) |
+| B5.svg | Stoppen en voorrang verlenen | [File:Belgian traffic sign B5.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_B5.svg) |
+| B9.svg | Voorrangsweg | [File:Belgian road sign B9.svg](https://commons.wikimedia.org/wiki/File:Belgian_road_sign_B9.svg) |
+| B17.svg | Kruispunt met voorrang van rechts | [File:Belgian traffic sign B17.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_B17.svg) |
+| B19.svg | Smalle doorgang, voorrang verlenen aan tegenliggers | [File:Belgian traffic sign B19.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_B19.svg) |
+| C1.svg | Verboden richting in te rijden | [File:Belgian traffic sign C1.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_C1.svg) |
+| C3.svg | Verboden toegang in beide richtingen | [File:Belgian traffic sign C3.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_C3.svg) |
 | C31.svg | Verbod om links af te slaan (C31a) | [File:Belgian traffic sign C31a.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_C31a.svg) |
-| C33.svg | Verbod om te keren | [File:Belgian traffic sign C33 KB-AR 03-06-2024.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_C33_KB-AR_03-06-2024.svg) |
-| C35.svg | Verbod in te halen | [File:Belgian traffic sign C35 KB-AR 03-06-2024.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_C35_KB-AR_03-06-2024.svg) |
-| C39.svg | Verbod voor vrachtwagens om in te halen | [File:Belgian traffic sign C39 KB-AR 03-06-2024.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_C39_KB-AR_03-06-2024.svg) |
-| C43-70.svg | Snelheidsbeperking 70 km/u | [File:Belgian traffic sign C43 70 KB-AR 03-06-2024.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_C43_70_KB-AR_03-06-2024.svg) |
-| D1a.svg | Verplichte rijrichting rechtdoor | [File:Belgian traffic sign D1a KB-AR 03-06-2024.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_D1a_KB-AR_03-06-2024.svg) |
+| C33.svg | Verbod om te keren | [File:Belgian traffic sign C33.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_C33.svg) |
+| C35.svg | Verbod in te halen | [File:Belgian traffic sign C35.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_C35.svg) |
+| C39.svg | Verbod voor vrachtwagens om in te halen | [File:Belgian traffic sign C39.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_C39.svg) |
+| C43-70.svg | Snelheidsbeperking 70 km/u | [File:Belgian traffic sign C43 70.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_C43_70.svg) |
+| D1a.svg | Verplichte rijrichting rechtdoor | [File:Belgian traffic sign D1a.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_D1a.svg) |
 | D5.svg | Verplicht rondgaand verkeer (rotonde) | [File:Belgian road sign D05.svg](https://commons.wikimedia.org/wiki/File:Belgian_road_sign_D05.svg) |
 | D7.svg | Verplicht fietspad | [File:Belgian road sign D07.svg](https://commons.wikimedia.org/wiki/File:Belgian_road_sign_D07.svg) |
 | D9a.svg | Gedeeld pad voetgangers/fietsers/bromfiets klasse A | [File:Belgian road sign D09.svg](https://commons.wikimedia.org/wiki/File:Belgian_road_sign_D09.svg) |
 | D10.svg | Gedeeld pad voetgangers en fietsers | [File:Belgian road sign D10.svg](https://commons.wikimedia.org/wiki/File:Belgian_road_sign_D10.svg) |
-| E1.svg | Verboden te parkeren | [File:Belgian traffic sign E1 KB-AR 03-06-2024.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_E1_KB-AR_03-06-2024.svg) |
-| E3.svg | Verboden te parkeren en te stilstaan | [File:Belgian traffic sign E3 KB-AR 03-06-2024.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_E3_KB-AR_03-06-2024.svg) |
+| E1.svg | Verboden te parkeren | [File:Belgian traffic sign E1.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_E1.svg) |
+| E3.svg | Verboden te parkeren en te stilstaan | [File:Belgian traffic sign E3.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_E3.svg) |
 | E9a.svg | Voorbehouden parkeerplaats voor personen met een handicap | [File:Belgian traffic sign E9a Handicap.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_E9a_Handicap.svg) |
 | F1b.svg | Begin van een bebouwde kom | [File:Belgian traffic sign F1b verticaal.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_F1b_verticaal.svg) |
 | F3b.svg | Einde van een bebouwde kom | [File:Belgian traffic sign F3b verticaal.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_F3b_verticaal.svg) |
@@ -119,3 +119,11 @@ Cross-reference used to confirm which code matches which meaning and shape: the 
   the current (Aug 2026) Dutch Wikipedia C- and D-series articles, which do not show any renumbering
   for these codes. The rest of the "KB-AR 03-06-2024" batch was spot-checked against the same
   Wikipedia articles and matched.
+
+- 2026-09-18: replaced the remaining 22 images from the "KB-AR 03-06-2024" batch with the designs of the
+  current Wegcode, because that decree only takes effect on 2027-06-01. Each new file was compared with the
+  image shown next to the current law text on wegcode.be (C39, C43 and D1a have no image there).
+
+- 2026-09-18: B9 uses the yellow "Belgian road sign B9.svg" upload, because the orange "Belgian traffic sign B9.svg"
+  upload does not match the yellow B9 on wegcode.be. Commons files all pre-2024 designs under "historic" categories;
+  in Belgian law they stay the valid designs until 2027-06-01.
