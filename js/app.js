@@ -100,7 +100,9 @@ function getSinceBadge(since) {
 }
 
 function getSinceFilter() {
-  const param = new URLSearchParams(window.location.search).get("since");
+  if (typeof window === "undefined" || !window.location) return null;
+  const params = new URLSearchParams(window.location.search);
+  const param = params.get("since") || params.get("sinds") || params.get("s");
   if (!param) return null;
   const year = parseInt(param, 10);
   return Number.isInteger(year) && year >= 1900 && year <= 2100 ? year : null;
@@ -159,7 +161,11 @@ function updateStartScreenNotice() {
 }
 
 function getQuestionCountOverride() {
-  const q = parseInt(new URLSearchParams(window.location.search).get("q"), 10);
+  if (typeof window === "undefined" || !window.location) return null;
+  const params = new URLSearchParams(window.location.search);
+  const raw = params.get("q") || params.get("quantity");
+  if (!raw) return null;
+  const q = parseInt(raw, 10);
   return Number.isInteger(q) && q > 0 ? q : null;
 }
 

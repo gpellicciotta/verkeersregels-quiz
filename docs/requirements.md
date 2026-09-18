@@ -45,8 +45,9 @@ Functional and technical requirements for the Verkeersregels Quiz application.
   - `rule`: presents a concrete driving scenario or regulatory question with four choice options.
 - **Sign Assets**: All signs reside in `assets/signs/` as valid SVGs using official Belgian designation codes (e.g. `A1a.svg`, `C31a.svg`, `D5.svg`).
 - **Unshown Sign Safeguard**: No question may refer to a specific traffic sign without displaying its SVG image.
-- **Query Parameter Filtering**:
-  - `?since=YYYY` (or alias `?s=YYYY`): restricts question pool to questions introduced in or after the specified year.
+- **Query Parameter Filtering and Configuration**:
+  - `?since=YYYY` (aliases: `?sinds=YYYY`, `?s=YYYY`): restricts question pool to questions introduced in or after the specified year.
+  - `?q=N` (alias: `?quantity=N`): overrides the number of questions per round (default 20).
   - `?autotest=results`: automatically completes the quiz for visual verification and testing.
 
 ### Google Sheets Integration and Error Reporting

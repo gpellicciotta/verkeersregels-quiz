@@ -14,6 +14,7 @@ A summarized overview of all changes, per version of this project.
 ---
 
 ## v1.1.0-pre
+- FrontEnd: Supported URL query parameter aliases for since-year filtering and question count overrides.
 - FrontEnd: Displayed authoritative official rule and explainer reference links upon answering each quiz question.
 - Content: Doubled question bank to 126 questions with full sign coverage and post-2022 rules.
 
