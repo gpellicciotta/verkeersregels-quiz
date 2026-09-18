@@ -13,7 +13,9 @@ A summarized overview of all changes, per version of this project.
 
 ---
 
-## v1.1.0-pre
+## v1.1.1-pre
+
+## v1.1.0 [2026-09-18]
 - Docs: Added a visual tour with desktop and mobile screenshots to the README.
 - FrontEnd: Added a blue road sign SVG favicon and updated the final question button to show results.
 - FrontEnd: Updated start notices and progress indicators to display dynamic question counts clamped to available questions.
