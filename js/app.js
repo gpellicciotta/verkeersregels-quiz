@@ -185,12 +185,13 @@ function showResult() {
   el.resultTableBody.innerHTML = "";
   state.answers.forEach((a, i) => {
     const tr = document.createElement("tr");
+    tr.className = a.correct ? "correct-row" : "wrong-row";
     tr.innerHTML = `
-      <td>${i + 1}</td>
-      <td>${questionCell(a)}</td>
-      <td>${optionCell(a, a.chosenIndex)}</td>
-      <td>${optionCell(a, a.correctIndex)}</td>
-      <td class="${a.correct ? "tag-correct" : "tag-wrong"}">${a.correct ? "Juist" : "Fout"}</td>
+      <td data-label="Vraag nr.">${i + 1}</td>
+      <td data-label="Vraag">${questionCell(a)}</td>
+      <td data-label="Jouw antwoord">${optionCell(a, a.chosenIndex)}</td>
+      <td data-label="Juist antwoord">${optionCell(a, a.correctIndex)}</td>
+      <td data-label="Resultaat" class="${a.correct ? "tag-correct" : "tag-wrong"}">${a.correct ? "Juist" : "Fout"}</td>
     `;
     el.resultTableBody.appendChild(tr);
   });

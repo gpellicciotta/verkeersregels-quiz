@@ -186,6 +186,43 @@ button {
 .tag-correct { color: var(--color-correct); font-weight: 600; }
 .tag-wrong { color: var(--color-wrong); font-weight: 600; }
 
+/* Below tablet width, turn the result table into one full-width card per question
+   instead of a cramped table (print keeps the compact table regardless of screen size). */
+@media screen and (max-width: 639px) {
+  #result-table, #result-table tbody, #result-table tr, #result-table td {
+    display: block;
+    width: 100%;
+  }
+  #result-table thead { display: none; }
+  #result-table {
+    border-collapse: separate;
+    border-spacing: 0 12px;
+    margin-top: 4px;
+  }
+  #result-table tr {
+    border: 1px solid #e5e7eb;
+    border-left: 4px solid var(--color-wrong);
+    border-radius: var(--radius);
+    background: var(--color-card);
+    padding: 12px 14px;
+  }
+  #result-table tr.correct-row { border-left-color: var(--color-correct); }
+  #result-table td {
+    border: none;
+    padding: 6px 0;
+  }
+  #result-table td[data-label]::before {
+    content: attr(data-label);
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: var(--color-muted);
+    margin-bottom: 2px;
+  }
+}
+
 /* On mobile, keep "Volgende vraag" reachable with the thumb instead of scrolling to it. */
 #screen-quiz {
   padding-bottom: 90px;
