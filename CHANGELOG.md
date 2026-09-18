@@ -13,7 +13,12 @@ A summarized overview of all changes, per version of this project.
 
 ---
 
-## v1.0.0-pre
+## v1.0.1-pre
+
+## v1.0.0 [2026-09-18]
+- Docs: Added standard project documentation including requirements, DevOps guide, license, and documentation index.
+- DevEx: Added cross-platform bootstrap and deployment scripts with CLI version and help flags.
+- Test: Added automated test suite validating question schema, sign assets, and legal since years.
 - FrontEnd: Rendered sign images and result thumbnails for sign questions and reworded unshown sign references.
 - FrontEnd: Added an interactive version badge to the start screen opening a formatted changelog modal on click.
 - FrontEnd: Added an in-quiz error reporting button and modal sending question feedback to a dedicated Google Sheet tab.

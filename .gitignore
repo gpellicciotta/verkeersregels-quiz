@@ -5,3 +5,8 @@ node_modules/
 
 # Task worktrees
 work/
+
+# Python caches
+__pycache__/
+*.py[cod]
+
