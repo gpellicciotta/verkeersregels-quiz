@@ -15,6 +15,16 @@ Geen server nodig: platte HTML/CSS/JS, te hosten via GitHub Pages.
   de juiste antwoorden. Dat overzicht kan je printen of als PDF opslaan via de knop
   "Printen / opslaan als PDF" (gebruikt de browser-printfunctie).
 
+## URL-parameters
+
+De quiz ondersteunt optionele parameters in de URL:
+
+- `?since=YYYY`: filtert de vragenpool op regels ingevoerd vanaf het opgegeven jaartal (bv. `?since=2022`).
+- `?q=N`: stelt het aantal vragen per ronde in (standaard 20, bv. `?q=10` of `?since=2022&q=5`).
+
+Vragen over recente wetswijzigingen (binnen 5 jaar) dragen een amberkleurige "Sinds YYYY" badge.
+Oudere wetswijzigingen tonen een blauwe badge.
+
 ## Lokaal uittesten
 
 Vanuit de projectmap:

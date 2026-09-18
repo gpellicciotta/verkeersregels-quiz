@@ -4,31 +4,31 @@ Content for the Belgian theoretical driving exam quiz, generated and verified on
 
 ## Question bank summary
 
-Total questions: 54, stored in `data/questions.json`.
+Total questions: 63, stored in `data/questions.json`.
 
 Breakdown by type:
 
 - recognize: 22
 - identify: 9
-- rule: 23
+- rule: 32
 
 Breakdown by category:
 
+- fietsers-voetgangers: 14
 - voorrang: 9
-- fietsers-voetgangers: 8
+- algemeen: 7
 - gevaar: 6
+- snelheid: 5
 - verbod: 5
-- algemeen: 5
-- snelheid: 4
 - aanwijzing: 4
 - autosnelweg: 4
-- gebod: 2
-- parkeren: 2
 - alcohol: 2
+- gebod: 2
 - gordel: 2
+- parkeren: 2
 - telefoon: 1
 
-Answer positions (`correctIndex`) are spread across all four slots (roughly 12-15 questions per index) so the correct answer is not systematically in the same position.
+Answer positions (`correctIndex`) are spread across all four slots (roughly 15-17 questions per index) so the correct answer is not systematically in the same position.
 
 ## Rule sources
 
@@ -137,3 +137,15 @@ Cross-reference used to confirm which code matches which meaning and shape: the 
   - `iden-c31`: renamed `C31.svg` to `C31a.svg` to match Wegcode art. 68.3; updated question and explanation to specify left turn prohibition.
   - `iden-d10`: renamed `D9a.svg` to `D9.svg` to match official Wegcode art. 69.3 designation; updated references in `questions.json`.
   - Added specific Wegcode article citations across all 23 rule question explanations.
+
+- 2026-09-18: annotated amendment years and added 9 questions for recent Wegcode reforms under task T0006:
+  - Annotated seventeen historical questions with `since` metadata based on amending acts.
+  - Added question on e-step helmet requirement above 20 km/u (KB 27 augustus 2026).
+  - Added question on motor quadricycle helmet requirements (KB 24 januari 2024).
+  - Added question on driving rules for central lanes (KB 30 juli 2022).
+  - Added questions on e-step age limits and passenger bans (Wet 15 mei 2022).
+  - Added question on speed pedelecs on shared D9 paths (KB 30 juli 2022).
+  - Added question on velomobile safety flag visibility rules (KB 9 oktober 2022).
+  - Added question on bicycle street F111 junction validity (KB 8 juni 2021).
+  - Added question on Brussels default 30 km/u speed limit (BRBHG 22 september 2021).
+
