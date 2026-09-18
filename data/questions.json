@@ -963,6 +963,964 @@
       "explanation": "Sinds 1 januari 2021 geldt in het Brussels Hoofdstedelijk Gewest (Besluit van de Brusselse Hoofdstedelijke Regering van 22 september 2021, art. 11.2) standaard 30 km/u binnen de bebouwde kom ('Stad 30').",
       "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
       "since": 2021
+    },
+    {
+      "id": "rec-b19",
+      "type": "recognize",
+      "category": "voorrang",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/B19.svg",
+      "options": [
+        "Smalle doorgang waarbij je voorrang moet verlenen aan tegenliggers",
+        "Smalle doorgang waarbij tegenliggers voorrang moeten verlenen aan jou",
+        "Einde van een voorrangsweg",
+        "Verplicht rechtdoor rijden"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bord B19 legt op dat je bij een smalle doorgang voorrang moet verlenen aan bestuurders die uit de tegenovergestelde richting komen (art. 67.3)."
+    },
+    {
+      "id": "rec-c31a",
+      "type": "recognize",
+      "category": "verbod",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/C31a.svg",
+      "options": [
+        "Verplicht links afslaan op het volgend kruispunt",
+        "Verbod aan het volgend kruispunt links af te slaan",
+        "Eenrichtingsverkeer naar links",
+        "Doodlopende weg aan de linkerkant"
+      ],
+      "correctIndex": 1,
+      "explanation": "Bord C31a verbiedt om aan het eerstvolgende kruispunt links af te slaan in de richting van de pijl (art. 68.3)."
+    },
+    {
+      "id": "rec-c33",
+      "type": "recognize",
+      "category": "verbod",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/C33.svg",
+      "options": [
+        "Verbod om rechts af te slaan",
+        "Verplicht keren op de rijbaan",
+        "Verbod om te keren (U-bocht maken)",
+        "Scherpe bocht naar links"
+      ],
+      "correctIndex": 2,
+      "explanation": "Bord C33 verbiedt bestuurders om te keren (een U-bocht te maken) tot aan het volgende kruispunt (art. 68.3)."
+    },
+    {
+      "id": "rec-c39",
+      "type": "recognize",
+      "category": "verbod",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/C39.svg",
+      "options": [
+        "Inhaalverbod voor alle motorvoertuigen",
+        "Verboden toegang voor vrachtwagens",
+        "Verplichte rijstrook voor vrachtwagens",
+        "Inhaalverbod voor vrachtwagens met een MTM van meer dan 3,5 ton"
+      ],
+      "correctIndex": 3,
+      "explanation": "Bord C39 verbiedt vrachtwagens met een maximale toegelaten massa van meer dan 3,5 ton om een gespan of motorvoertuig met meer dan twee wielen in te halen (art. 68.3)."
+    },
+    {
+      "id": "rec-d9",
+      "type": "recognize",
+      "category": "fietsers-voetgangers",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/D9.svg",
+      "options": [
+        "Verplicht fietspad waar voetgangers verboden zijn",
+        "Voetgangerszone waar fietsen niet is toegestaan",
+        "Oversteekplaats voor fietsers en voetgangers",
+        "Deel van de openbare weg voorbehouden voor voetgangers, fietsers en bromfietsers klasse A"
+      ],
+      "correctIndex": 3,
+      "explanation": "Bord D9 duidt een deel van de openbare weg aan dat voorbehouden is voor het verkeer van voetgangers, fietsers en tweewielige bromfietsen klasse A (art. 69.3)."
+    },
+    {
+      "id": "rec-d10",
+      "type": "recognize",
+      "category": "fietsers-voetgangers",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/D10.svg",
+      "options": [
+        "Fietspad uitsluitend bestemd voor racefietsen",
+        "Deel van de openbare weg voorbehouden voor voetgangers en fietsers (zonder bromfietsen)",
+        "Begin van een woonerf",
+        "Verplicht voetpad waar fietsers niet mogen rijden"
+      ],
+      "correctIndex": 1,
+      "explanation": "Bord D10 duidt een pad aan voorbehouden voor voetgangers en fietsers; in tegenstelling tot bord D9 mogen bromfietsen klasse A hier niet rijden (art. 69.3)."
+    },
+    {
+      "id": "rec-e3",
+      "type": "recognize",
+      "category": "parkeren",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/E3.svg",
+      "options": [
+        "Enkel parkeerverbod",
+        "Voorbehouden parkeerplaats",
+        "Stilstaan en parkeren verboden",
+        "Einde van een parkeerzone"
+      ],
+      "correctIndex": 2,
+      "explanation": "Bord E3 betekent dat zowel stilstaan als parkeren verboden is aan de zijde van de openbare weg waar het bord staat (art. 70.2.1)."
+    },
+    {
+      "id": "rec-e9a",
+      "type": "recognize",
+      "category": "parkeren",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/E9a.svg",
+      "options": [
+        "Parkeerplaats voor ziekenwagens",
+        "Parkeerverbod voor mindervaliden",
+        "Oversteekplaats voor rolstoelgebruikers",
+        "Parkeerplaats voorbehouden voor personen met een handicap"
+      ],
+      "correctIndex": 3,
+      "explanation": "Bord E9a met rolstoelsymbool geeft aan dat het parkeren uitsluitend voorbehouden is voor voertuigen gebruikt door personen met een handicap met een speciale parkeerkaart (art. 70.2.1).",
+      "since": 1990
+    },
+    {
+      "id": "rec-f1b",
+      "type": "recognize",
+      "category": "aanwijzing",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/F1b.svg",
+      "options": [
+        "Begin van een bebouwde kom",
+        "Begin van een woonerf",
+        "Einde van een bebouwde kom",
+        "Begin van een autosnelweg"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bord F1b geeft het begin van een bebouwde kom aan (art. 71.2), waar in Vlaanderen een standaard maximumsnelheid van 50 km/u geldt."
+    },
+    {
+      "id": "rec-f3b",
+      "type": "recognize",
+      "category": "aanwijzing",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/F3b.svg",
+      "options": [
+        "Begin van een bebouwde kom",
+        "Einde van een bebouwde kom",
+        "Verboden toegang voor alle verkeer",
+        "Einde van een autoweg"
+      ],
+      "correctIndex": 1,
+      "explanation": "Bord F3b geeft het einde van een bebouwde kom aan (art. 71.2)."
+    },
+    {
+      "id": "rec-f19",
+      "type": "recognize",
+      "category": "aanwijzing",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/F19.svg",
+      "options": [
+        "Verplicht rechtdoor rijden",
+        "Voorrangsweg",
+        "Weg met eenrichtingsverkeer",
+        "Doodlopende straat"
+      ],
+      "correctIndex": 2,
+      "explanation": "Bord F19 geeft aan dat je op een openbare weg met eenrichtingsverkeer rijdt (art. 71.2)."
+    },
+    {
+      "id": "rec-f49",
+      "type": "recognize",
+      "category": "fietsers-voetgangers",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/F49.svg",
+      "options": [
+        "Waarschuwing voor een oversteekplaats voor voetgangers verderop",
+        "Begin van een voetgangerszone",
+        "Verplicht voetpad",
+        "Plaats van een oversteekplaats voor voetgangers"
+      ],
+      "correctIndex": 3,
+      "explanation": "Aanwijzingsbord F49 duidt de precieze plaats van een oversteekplaats voor voetgangers aan (art. 71.2)."
+    },
+    {
+      "id": "rec-f103",
+      "type": "recognize",
+      "category": "aanwijzing",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/F103.svg",
+      "options": [
+        "Einde van een voetgangerszone",
+        "Oversteekplaats voor schoolkinderen",
+        "Begin van een voetgangerszone",
+        "Begin van een speelstraat"
+      ],
+      "correctIndex": 2,
+      "explanation": "Bord F103 duidt het begin van een voetgangerszone aan (art. 71.2).",
+      "since": 1988
+    },
+    {
+      "id": "iden-c39",
+      "type": "identify",
+      "category": "verbod",
+      "question": "Welk bord duidt een inhaalverbod aan voor vrachtwagens met een maximale toegelaten massa van meer dan 3,5 ton?",
+      "options": [
+        "assets/signs/C35.svg",
+        "assets/signs/C39.svg",
+        "assets/signs/C3.svg",
+        "assets/signs/C1.svg"
+      ],
+      "correctIndex": 1,
+      "explanation": "Bord C39 verbiedt vrachtwagens met een MTM boven 3,5 ton om meersporige voertuigen in te halen."
+    },
+    {
+      "id": "iden-e3",
+      "type": "identify",
+      "category": "parkeren",
+      "question": "Welk bord geeft een verbod aan om zowel stil te staan als te parkeren?",
+      "options": [
+        "assets/signs/E1.svg",
+        "assets/signs/E9a.svg",
+        "assets/signs/E3.svg",
+        "assets/signs/C3.svg"
+      ],
+      "correctIndex": 2,
+      "explanation": "Bord E3 (blauw bord met rood kruis) verbiedt zowel het stilstaan als het parkeren."
+    },
+    {
+      "id": "iden-f3b",
+      "type": "identify",
+      "category": "aanwijzing",
+      "question": "Welk bord duidt het einde van een bebouwde kom aan?",
+      "options": [
+        "assets/signs/F1b.svg",
+        "assets/signs/F45.svg",
+        "assets/signs/F103.svg",
+        "assets/signs/F3b.svg"
+      ],
+      "correctIndex": 3,
+      "explanation": "Bord F3b toont de silhouet van de bebouwde kom met een schuine rode streep en geeft het einde van de bebouwde kom aan."
+    },
+    {
+      "id": "rule-estep-trottoir-2022",
+      "type": "rule",
+      "category": "fietsers-voetgangers",
+      "question": "Mag je met een gemotoriseerde e-step op het trottoir rijden?",
+      "options": [
+        "Nee, e-steps volgen de regels voor fietsers en mogen nooit op het trottoir rijden (tenzij je ermee aan de hand stapt)",
+        "Ja, zolang je niet sneller dan 6 km/u rijdt",
+        "Ja, maar enkel als er geen fietspad aanwezig is",
+        "Ja, maar enkel binnen de bebouwde kom"
+      ],
+      "correctIndex": 0,
+      "explanation": "Sinds 1 juli 2022 (Wet 15 mei 2022, art. 9.1.2°) worden bestuurders van gemotoriseerde voortbewegingstoestellen gelijkgesteld met fietsers. Zij mogen niet meer op het trottoir rijden, ongeacht hun snelheid.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "since": 2022
+    },
+    {
+      "id": "rule-estep-snelheid-2022",
+      "type": "rule",
+      "category": "fietsers-voetgangers",
+      "question": "Wat is de maximale constructiesnelheid van een gemotoriseerd voortbewegingstoestel (zoals een e-step) om op de openbare weg te mogen rijden?",
+      "options": [
+        "18 km/u",
+        "25 km/u",
+        "30 km/u",
+        "45 km/u"
+      ],
+      "correctIndex": 1,
+      "explanation": "Volgens artikel 2.15.2 van de wegcode bedraagt de maximale snelheid door het ontwerp van een gemotoriseerd voortbewegingstoestel ten hoogste 25 km/u.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "since": 2022
+    },
+    {
+      "id": "rule-estep-parkeren-2022",
+      "type": "rule",
+      "category": "parkeren",
+      "question": "Waar mag je een elektrische deelstep achterlaten na je rit?",
+      "options": [
+        "Willekeurig op het trottoir, zolang hij plat op de grond ligt",
+        "Midden op het fietspad",
+        "In een voorziene dropzone of op het trottoir waar hij de doorgang van voetgangers niet belemmert",
+        "Uitsluitend op betalende autoparkeerplaatsen"
+      ],
+      "correctIndex": 2,
+      "explanation": "Sinds juli 2022 (art. 75.3) mogen e-steps worden geparkeerd in specifieke dropzones of op het trottoir, op voorwaarde dat zij de doorgang voor voetgangers niet hinderen.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "since": 2022
+    },
+    {
+      "id": "rule-gsm-houder-2022",
+      "type": "rule",
+      "category": "telefoon",
+      "question": "Onder welke voorwaarde mag een bestuurder tijdens het rijden een smartphone gebruiken voor navigatie?",
+      "options": [
+        "Zolang het toestel op de schoot van de bestuurder ligt",
+        "Als de bestuurder het toestel met één hand vasthoudt",
+        "Zolang de luidspreker op maximaal volume staat",
+        "Enkel wanneer het toestel in een speciaal daartoe bestemde houder aan het voertuig is bevestigd"
+      ],
+      "correctIndex": 3,
+      "explanation": "Artikel 8.4 van de wegcode verbiedt het gebruiken, vasthouden of manipuleren van een mobiel apparaat met een scherm, tenzij het in een daartoe bestemde houder aan het voertuig is bevestigd.",
+      "source": "https://www.veiligverkeer.be/veilig-rijden/afleiding/gsm-achter-het-stuur-regels-en-boetes/",
+      "since": 2022
+    },
+    {
+      "id": "rule-speed-pedelec-rijbewijs-2022",
+      "type": "rule",
+      "category": "algemeen",
+      "question": "Welk rijbewijs moet je minstens bezitten om een speed pedelec op de openbare weg te besturen?",
+      "options": [
+        "Minstens rijbewijs categorie AM (bromfiets) of categorie B (auto)",
+        "Er is geen enkel rijbewijs vereist",
+        "Verplicht motorrijbewijs categorie A",
+        "Enkel een speciaal fietscertificaat van de gemeente"
+      ],
+      "correctIndex": 0,
+      "explanation": "Een speed pedelec wordt gecategoriseerd als bromfiets klasse P. De bestuurder moet minstens 16 jaar oud zijn en minstens over een rijbewijs AM of een autorijbewijs B beschikken.",
+      "source": "https://www.wegcode.be/nl/nieuws/nieuwe-verkeersregels-van-kracht-op-1-oktober-de-10-belangrijkste-veranderingen~ntwif2jyud",
+      "since": 2022
+    },
+    {
+      "id": "rule-speed-pedelec-snelheid-2022",
+      "type": "rule",
+      "category": "snelheid",
+      "question": "Tot welke maximale snelheid mag de trapondersteuning van een speed pedelec wettelijk actief blijven?",
+      "options": [
+        "25 km/u",
+        "45 km/u",
+        "35 km/u",
+        "50 km/u"
+      ],
+      "correctIndex": 1,
+      "explanation": "Volgens artikel 2.17 van de wegcode levert een speed pedelec trapondersteuning tot maximaal 45 km/u. Boven die snelheid moet de hulpmotor automatisch uitschakelen.",
+      "source": "https://www.wegcode.be/nl/nieuws/nieuwe-verkeersregels-van-kracht-op-1-oktober-de-10-belangrijkste-veranderingen~ntwif2jyud",
+      "since": 2022
+    },
+    {
+      "id": "rule-velomobiel-hoogte-2022",
+      "type": "rule",
+      "category": "fietsers-voetgangers",
+      "question": "Tot welke minimumhoogte boven de grond moet de veiligheidsvlag van een velomobiel lager dan 1 meter reiken?",
+      "options": [
+        "Minstens 1,10 meter",
+        "Minstens 1,20 meter",
+        "Minstens 1,40 meter",
+        "Minstens 1,80 meter"
+      ],
+      "correctIndex": 2,
+      "explanation": "Volgens artikel 82bis van de wegcode (KB 9 oktober 2022) moet de veiligheidsvlag van een lage velomobiel reiken tot minstens 1,40 meter boven het wegdek.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "since": 2022
+    },
+    {
+      "id": "rule-reddingsstrook-vorming-2022",
+      "type": "rule",
+      "category": "autosnelweg",
+      "question": "Hoe moeten bestuurders op een weg met drie rijstroken in dezelfde richting een reddingsstrook vormen bij file?",
+      "options": [
+        "Alle auto's moeten direct uitwijken naar de pechstrook",
+        "De voertuigen op de middelste rijstrook moeten stoppen en de motor uitzetten",
+        "De twee rechtse rijstroken wijken naar links uit en de linkse rijstrook naar rechts",
+        "De meest linkse rijstrook wijkt zoveel mogelijk naar links uit, de overige twee rijstroken wijken zoveel mogelijk naar rechts uit"
+      ],
+      "correctIndex": 3,
+      "explanation": "Volgens artikel 9.8 en 2.70 wijken bestuurders op de uiterst linkse rijstrook maximaal naar links uit en bestuurders op de overige rijstroken naar rechts, zodat ertussen een vrije doorgang ontstaat.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "since": 2022
+    },
+    {
+      "id": "rule-ritsen-locatie",
+      "type": "rule",
+      "category": "algemeen",
+      "question": "Waar moet je bij vertraagd verkeer invoegen bij een rijstrookvermindering (ritsen)?",
+      "options": [
+        "Vlak vóór de versmalling van de rijstrook",
+        "Al minstens 500 meter vóór de versmalling",
+        "Zodra je het eerste aankondigingsbord van de wegwerkzaamheden ziet",
+        "Op de vluchtstrook om vlotter vooruit te komen"
+      ],
+      "correctIndex": 0,
+      "explanation": "Volgens artikel 12quinquies moeten bestuurders bij sterk vertraagd verkeer doorrijden tot vlak vóór de versmalling en pas daar invoegen.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "since": 2022
+    },
+    {
+      "id": "rule-ritsen-voorrang",
+      "type": "rule",
+      "category": "algemeen",
+      "question": "Hoe verloopt de voorrang bij verplicht ritsen op het punt van de versmalling?",
+      "options": [
+        "Bestuurders op de doorgaande rijstrook hebben altijd voorrang en hoeven niemand tussen te laten",
+        "Bestuurders op de vrije rijstrook moeten beurtelings één invoegende bestuurder voorlaten",
+        "Wie het snelst accelereert heeft voorrang",
+        "Alleen vrachtwagens moeten voorrang verlenen aan auto's"
+      ],
+      "correctIndex": 1,
+      "explanation": "Artikel 12quinquies bepaalt dat bestuurders op de vrije rijstrook ter hoogte van de versmalling om beurten één invoegend voertuig moeten voorlaten.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "since": 2022
+    },
+    {
+      "id": "rule-fietsstraat-inhalen",
+      "type": "rule",
+      "category": "fietsers-voetgangers",
+      "question": "Mag een auto een fietser inhalen in een fietsstraat?",
+      "options": [
+        "Ja, als er minstens 1 meter tussenruimte is",
+        "Ja, als de fietser trager rijdt dan 15 km/u",
+        "Nee, motorvoertuigen mogen in een fietsstraat nooit fietsers inhalen",
+        "Enkel als de fietser uitdrukkelijk een handgebaar geeft"
+      ],
+      "correctIndex": 2,
+      "explanation": "In een fietsstraat (art. 22novies) is het voor motorvoertuigen te allen tijde verboden om fietsers in te halen.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "since": 2022
+    },
+    {
+      "id": "rule-fietsstraat-snelheid",
+      "type": "rule",
+      "category": "snelheid",
+      "question": "Wat is de absolute maximumsnelheid voor alle verkeer in een fietsstraat?",
+      "options": [
+        "15 km/u",
+        "20 km/u",
+        "25 km/u",
+        "30 km/u"
+      ],
+      "correctIndex": 3,
+      "explanation": "Volgens artikel 22novies mag de snelheid in een fietsstraat nooit hoger liggen dan 30 km/u, noch voor auto's noch voor fietsers.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "since": 2022
+    },
+    {
+      "id": "rule-fietser-b22",
+      "type": "rule",
+      "category": "fietsers-voetgangers",
+      "question": "Wat laat een toelatingsbord met een fietssymbool en een gele pijl naar rechts (B22) toe bij een rood verkeerslicht?",
+      "options": [
+        "Fietsers mogen bij rood licht rechts afslaan, mits zij voorrang verlenen aan overig verkeer en voetgangers",
+        "Fietsers moeten verplicht stoppen tot het licht groen wordt",
+        "Fietsers krijgen automatisch absolute voorrang op kruisend verkeer bij het afslaan",
+        "Alle gemotoriseerde voertuigen mogen eveneens rechts afslaan bij rood"
+      ],
+      "correctIndex": 0,
+      "explanation": "Verkeersbord B22 laat fietsers en speed pedelecs toe om door te rijden en rechts af te slaan bij rood of oranjegeel licht, mits zij voorrang verlenen (art. 67.3).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "since": 2022
+    },
+    {
+      "id": "rule-fietser-b23",
+      "type": "rule",
+      "category": "fietsers-voetgangers",
+      "question": "Wat betekent het toelatingsbord met een fietssymbool en een gele pijl rechtdoor (B23) bij een rood verkeerslicht?",
+      "options": [
+        "Fietsers moeten wachten tot het groen wordt voor ze rechtdoor mogen rijden",
+        "Fietsers mogen rechtdoor rijden bij rood licht, mits zij voorrang verlenen aan overig verkeer en voetgangers",
+        "Fietsers mogen links afslaan zonder te stoppen",
+        "Het rode licht is defect en buiten werking gesteld"
+      ],
+      "correctIndex": 1,
+      "explanation": "Bord B23 staat fietsers en bestuurders van speed pedelecs toe om rechtdoor te rijden bij een rood of oranjegeel licht, op voorwaarde dat zij voorrang verlenen (art. 67.3).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "since": 2022
+    },
+    {
+      "id": "rule-voorrang-aardeweg",
+      "type": "rule",
+      "category": "voorrang",
+      "question": "Heeft een bestuurder die van rechts komt uit een aardeweg voorrang op een bestuurder op een verharde openbare weg?",
+      "options": [
+        "Ja, voorrang van rechts geldt altijd en overal",
+        "Enkel als de bestuurder op de aardeweg met een landbouwvoertuig rijdt",
+        "Nee, wie van een aardeweg of een pad op een verharde openbare weg komt, moet voorrang verlenen",
+        "Enkel als de verharde weg smaller is dan 3 meter"
+      ],
+      "correctIndex": 2,
+      "explanation": "Volgens artikel 12.3.1 moet elke bestuurder voorrang verlenen wanneer hij van een aardeweg of een pad op een openbare weg met een verharde rijbaan komt.",
+      "source": "https://mijnadvocaten.be/verkeersrecht/voorrang-van-rechts-art-12-3-1-wegcode/"
+    },
+    {
+      "id": "rule-voorrang-uitrit",
+      "type": "rule",
+      "category": "voorrang",
+      "question": "Wie heeft voorrang wanneer een bestuurder uit een garage, parking of private eigendom de openbare weg oprijdt?",
+      "options": [
+        "De bestuurder die uit de garage komt, als hij van rechts komt",
+        "De bestuurder die de garage verlaat, mits hij claxonneert",
+        "De voetgangers moeten wachten, maar voertuigen hebben voorrang",
+        "De weggebruikers op de openbare weg; de uitrijdende bestuurder voert een manoeuvre uit en moet aan iedereen voorrang verlenen"
+      ],
+      "correctIndex": 3,
+      "explanation": "Het oprijden van de openbare weg vanuit een eigendom of parking geldt volgens artikel 12.4 als een manoeuvre, waarbij aan alle andere weggebruikers voorrang moet worden verleend.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
+    },
+    {
+      "id": "rule-voorrang-afslaan-tegenligger",
+      "type": "rule",
+      "category": "voorrang",
+      "question": "Je slaat op een gelijkwaardig kruispunt links af. Moet je voorrang verlenen aan een tegenligger die rechtdoor wil rijden?",
+      "options": [
+        "Ja, wie links afslaat moet voorrang verlenen aan tegenliggers die rechtdoor gaan of rechts afslaan",
+        "Nee, want wie links afslaat heeft voorrang van rechts ten opzichte van de tegenligger",
+        "Alleen als de tegenligger al op het kruispunt stilstaat",
+        "Enkel binnen de bebouwde kom"
+      ],
+      "correctIndex": 0,
+      "explanation": "Volgens artikel 19.3.3° moet de bestuurder die naar links afslaat voorrang verlenen aan de tegenliggers op de rijbaan die hij gaat verlaten.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
+    },
+    {
+      "id": "rule-voorrang-tram-algemeen",
+      "type": "rule",
+      "category": "voorrang",
+      "question": "Geldt de algemene voorrang van rechts ten opzichte van een tram op een kruispunt zonder verkeersborden of verkeerslichten?",
+      "options": [
+        "Ja, een tram moet altijd voorrang van rechts verlenen aan auto's",
+        "Nee, een tram heeft voorrang op alle andere weggebruikers, zowel van links als van rechts",
+        "Enkel als de tram van links komt",
+        "Alleen als de tram passagiers aan boord heeft"
+      ],
+      "correctIndex": 1,
+      "explanation": "Volgens artikel 12.1 en 12.3.1 hebben spoorvoertuigen (trams) altijd voorrang op andere weggebruikers, tenzij anders geregeld door verkeerslichten of bevoegde personen.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
+    },
+    {
+      "id": "rule-voorrang-tram-voetganger",
+      "type": "rule",
+      "category": "voorrang",
+      "question": "Moet een tram stoppen voor een voetganger die oversteekt op een zebrapad zonder verkeerslichten?",
+      "options": [
+        "Ja, voetgangers op een zebrapad hebben altijd absolute voorrang op alle voertuigen inclusief trams",
+        "Alleen als de voetganger een kind of bejaarde is",
+        "Nee, de tram behoudt zijn voorrang en hoeft niet te stoppen voor overstekende voetgangers",
+        "Enkel 's nachts wanneer de tram lichten aan heeft"
+      ],
+      "correctIndex": 2,
+      "explanation": "Volgens artikel 40.4.2° geldt de voorrang van voetgangers op een oversteekplaats niet ten opzichte van spoorvoertuigen (de tram).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
+    },
+    {
+      "id": "rule-bus-bebouwde-kom",
+      "type": "rule",
+      "category": "voorrang",
+      "question": "Wat moet je doen als binnen de bebouwde kom een lijnbus met knipperlicht zijn halteplaats wil verlaten?",
+      "options": [
+        "Claxonneren en snel voorbijrijden voor de bus vertrekt",
+        "Altijd inhalen langs de linkerkant",
+        "Gewoon je snelheid behouden; de bus moet wachten",
+        "Vertragen en zo nodig stoppen om de bus voorrang te verlenen om de halte te verlaten"
+      ],
+      "correctIndex": 3,
+      "explanation": "Binnen de bebouwde kom moet je volgens artikel 39 vertragen en indien nodig stoppen om een autobus die zijn richtingaanwijzer aanzet de gelegenheid te geven zijn halte te verlaten.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
+    },
+    {
+      "id": "rule-bus-buiten-bebouwde-kom",
+      "type": "rule",
+      "category": "voorrang",
+      "question": "Moet je buiten de bebouwde kom stoppen voor een lijnbus die met zijn richtingaanwijzer wil wegrijden van een bushalte?",
+      "options": [
+        "Nee, de verplichting om een wegrijdende bus voorrang te verlenen geldt uitsluitend binnen de bebouwde kom",
+        "Ja, deze regel geldt overal op de openbare weg",
+        "Ja, maar enkel op wegen met een snelheidsbeperking van 70 km/u",
+        "Alleen als de buschauffeur met zijn hand zwaait"
+      ],
+      "correctIndex": 0,
+      "explanation": "Artikel 39 verplicht bestuurders enkel binnen de bebouwde kom om een wegrijdende bus voor te laten. Buiten de bebouwde kom moet de buschauffeur zelf voorrang verlenen alvorens de rijbaan op te rijden.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
+    },
+    {
+      "id": "rule-manoeuvre-achteruitrijden",
+      "type": "rule",
+      "category": "algemeen",
+      "question": "Wie heeft voorrang wanneer je achteruit een straat of parkeervak uitrijdt?",
+      "options": [
+        "Jij, als je al met de helft van de auto op de weg staat",
+        "Alle andere weggebruikers; achteruitrijden is een manoeuvre waarbij je aan iedereen voorrang moet verlenen",
+        "Jij hebt voorrang ten opzichte van fietsers en voetgangers",
+        "De voorrang van rechts blijft gewoon van toepassing"
+      ],
+      "correctIndex": 1,
+      "explanation": "Achteruitrijden is een manoeuvre volgens artikel 12.4. De bestuurder die een manoeuvre uitvoert moet voorrang verlenen aan alle andere weggebruikers.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
+    },
+    {
+      "id": "rule-manoeuvre-rijstrookwissel",
+      "type": "rule",
+      "category": "algemeen",
+      "question": "Wat zijn de regels wanneer je op een weg met meerdere rijstroken van rijstrook verandert (buiten een ritssituatie)?",
+      "options": [
+        "Zodra je je richtingaanwijzer aanzet, moeten achterliggers op die rijstrook voor jou remmen",
+        "Je mag enkel wisselen als er binnen 500 meter geen ander voertuig te zien is",
+        "Je voert een manoeuvre uit en moet voorrang verlenen aan de bestuurders op de rijstrook waar je naartoe gaat",
+        "Bestuurders op de linkerrijstrook hebben altijd voorrang op bestuurders op de rechterrijstrook"
+      ],
+      "correctIndex": 2,
+      "explanation": "Van rijstrook veranderen is een manoeuvre (art. 12.4). Je moet tijdig je richtingaanwijzer aanzetten en voorrang verlenen aan het verkeer op de doelrijstrook.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
+    },
+    {
+      "id": "rule-oversteekplaats-fietser",
+      "type": "rule",
+      "category": "fietsers-voetgangers",
+      "question": "Heeft een fietser op een fietsoversteekplaats (aangeduid met witte blokken) automatisch voorrang op naderende auto's op de rijbaan?",
+      "options": [
+        "Ja, net zoals voetgangers op een zebrapad hebben overstekende fietsers altijd voorrang",
+        "Enkel als de fietser van rechts komt",
+        "Alleen als de fietser sneller dan 20 km/u fietst",
+        "Nee, fietsers op een oversteekplaats moeten voorrang verlenen aan naderend verkeer op de rijbaan (tenzij verkeerslichten groen geven)"
+      ],
+      "correctIndex": 3,
+      "explanation": "Volgens artikel 40ter hebben fietsers op een dwarsende fietsoversteekplaats geen voorrang. Zij mogen zich slechts voorzichtig op de oversteekplaats begeven met inachtneming van naderend verkeer.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
+    },
+    {
+      "id": "rule-fietser-op-zebrapad",
+      "type": "rule",
+      "category": "fietsers-voetgangers",
+      "question": "Geniet een fietser die al fietsend over een zebrapad rijdt dezelfde voorrang als een voetganger?",
+      "options": [
+        "Nee, alleen wie afstapt en met de fiets aan de hand stapt geldt als voetganger en heeft voorrang",
+        "Ja, elke fietser op een zebrapad heeft voorrang",
+        "Ja, mits hij niet sneller rijdt dan 10 km/u",
+        "Alleen als er geen fietspad in de buurt ligt"
+      ],
+      "correctIndex": 0,
+      "explanation": "Een fietser die op de fiets blijft zitten op een zebrapad heeft geen voetgangersvoorrang (art. 40.4.2°). Pas wanneer hij afstapt en te voet gaat, heeft hij voorrang als voetganger.",
+      "source": "https://www.veiligverkeer.be/weggebruikers/voetgangers/waarop-moeten-bestuurders-letten-in-de-buurt-van-voetgangers/"
+    },
+    {
+      "id": "rule-parkeren-zebrapad-afstand",
+      "type": "rule",
+      "category": "parkeren",
+      "question": "Op welke minimale afstand vóór een oversteekplaats voor voetgangers is stilstaan en parkeren op de rijbaan verboden?",
+      "options": [
+        "Minstens 10 meter",
+        "Minstens 5 meter",
+        "Minstens 3 meter",
+        "Minstens 15 meter"
+      ],
+      "correctIndex": 1,
+      "explanation": "Artikel 24.4° verbiedt stilstaan en parkeren op de oversteekplaats en op de rijbaan binnen een afstand van 5 meter vóór de oversteekplaats.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
+    },
+    {
+      "id": "rule-parkeren-bushalte-afstand",
+      "type": "rule",
+      "category": "parkeren",
+      "question": "Binnen welke afstand aan weerszijden van een bushaltebord is parkeren verboden als er geen wegmarkering is aangebracht?",
+      "options": [
+        "5 meter aan weerszijden",
+        "10 meter aan weerszijden",
+        "15 meter aan weerszijden van het bord",
+        "25 meter aan weerszijden"
+      ],
+      "correctIndex": 2,
+      "explanation": "Volgens artikel 25.1.2° is parkeren verboden op minder dan 15 meter aan weerszijden van het bord dat een halte van bussen of trams aanduidt.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
+    },
+    {
+      "id": "rule-stilstaan-vs-parkeren",
+      "type": "rule",
+      "category": "parkeren",
+      "question": "Wat is volgens de wegcode het strikte verschil tussen stilstaan en parkeren?",
+      "options": [
+        "Stilstaan is als de motor draait; als de motor uit staat is het altijd parkeren",
+        "Stilstaan mag maximaal 15 minuten duren ongeacht de activiteit",
+        "Er is wettelijk geen enkel verschil tussen stilstaan en parkeren",
+        "Stilstaan is uitsluitend de tijd nodig om personen in of uit te laten stappen of goederen te laden of lossen; al het overige is parkeren"
+      ],
+      "correctIndex": 3,
+      "explanation": "Volgens artikel 2.22 en 2.23 is stilstaan beperkt tot de tijd die nodig is voor het in- of uitstappen van personen of het laden en lossen van goederen. Elk ander stilstaan geldt juridisch als parkeren.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
+    },
+    {
+      "id": "rule-parkeren-kruispunt-afstand",
+      "type": "rule",
+      "category": "parkeren",
+      "question": "Binnen welke afstand van een kruispunt is het verboden een voertuig op de rijbaan te parkeren?",
+      "options": [
+        "Minder dan 5 meter vanaf de verlenging van de buitenste rand van de dwarsrijbaan",
+        "Minder dan 2 meter van het kruispunt",
+        "Minder dan 10 meter van het kruispunt",
+        "Parkeren op een kruispunt is enkel verboden als er een geel kruis staat"
+      ],
+      "correctIndex": 0,
+      "explanation": "Artikel 25.1.1° verbiedt het parkeren op de rijbaan op minder dan 5 meter van de verlenging van de buitenste rand van de dwarsrijbaan van een kruispunt.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
+    },
+    {
+      "id": "rule-parkeren-brandkraan",
+      "type": "rule",
+      "category": "parkeren",
+      "question": "Binnen welke afstand van een ondergrondse brandkraan mag je je voertuig niet parkeren?",
+      "options": [
+        "Minder dan 3 meter",
+        "Minder dan 1 meter van de plaats waar een brandkraan is aangeduid",
+        "Minder dan 5 meter",
+        "Brandkranen hebben geen invloed op parkeren"
+      ],
+      "correctIndex": 1,
+      "explanation": "Volgens artikel 25.1.13° is het verboden een voertuig te parkeren op plaatsen waar de toegang tot een brandkraan wordt belemmerd, met name binnen een afstand van 1 meter.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
+    },
+    {
+      "id": "rule-verlichting-tunnels",
+      "type": "rule",
+      "category": "algemeen",
+      "question": "Welke verlichting moet verplicht branden wanneer je overdag een verlichte tunnel inrijdt?",
+      "options": [
+        "De vier richtingsaanwijzers",
+        "Alleen de standlichten zijn voldoende",
+        "De dimlichten (of grootlichten) moeten branden, ook in een verlichte tunnel",
+        "Geen enkele verlichting als de tunnel verlicht is"
+      ],
+      "correctIndex": 2,
+      "explanation": "Artikel 30.1 stelt dat de dimlichten of grootlichten te allen tijde moeten branden in tunnels, ongeacht het tijdstip en de eventuele tunnelverlichting.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
+    },
+    {
+      "id": "rule-verlichting-duisternis",
+      "type": "rule",
+      "category": "algemeen",
+      "question": "Vanaf welke verminderde zichtbaarheid overdag door mist, sneeuw of regen moeten minstens de dimlichten branden?",
+      "options": [
+        "Vanaf minder dan 500 meter zicht",
+        "Vanaf minder dan 300 meter zicht",
+        "Enkel wanneer je minder dan 50 meter ver ziet",
+        "Zodra het zicht beperkt is tot minder dan ongeveer 200 meter"
+      ],
+      "correctIndex": 3,
+      "explanation": "Artikel 30.1 verplicht het voeren van dimlichten (of grootlichten) tussen het vallen van de avond en het aanbreken van de dag, en overdag wanneer het zicht minder dan ongeveer 200 meter bedraagt.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
+    },
+    {
+      "id": "rule-grootlicht-tegenligger",
+      "type": "rule",
+      "category": "algemeen",
+      "question": "Wat moet je doen met je grootlichten wanneer een tegenligger nadert?",
+      "options": [
+        "Onmiddellijk overschakelen op dimlichten zodra de tegenligger verblind kan worden",
+        "De grootlichten aan laten als de straat onverlicht is",
+        "Kort knipperen met de grootlichten en ze aan laten",
+        "Overschakelen naar enkel standlichten"
+      ],
+      "correctIndex": 0,
+      "explanation": "Volgens artikel 31.1 moeten grootlichten worden gedoofd en vervangen door dimlichten zodra een tegenligger nadert om verblinding te voorkomen.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
+    },
+    {
+      "id": "rule-inhalen-kruispunt",
+      "type": "rule",
+      "category": "voorrang",
+      "question": "Mag je een andere auto links inhalen op een kruispunt waar de voorrang van rechts geldt?",
+      "options": [
+        "Ja, zolang je niet sneller rijdt dan 50 km/u",
+        "Nee, links inhalen van een stelsel van voertuigen of een auto is verboden op een kruispunt met voorrang van rechts",
+        "Ja, maar enkel als het kruispunt overzichtelijk is",
+        "Enkel als je je claxon gebruikt"
+      ],
+      "correctIndex": 1,
+      "explanation": "Artikel 16.4.1° verbiedt het links inhalen van een gespan of van een motorvoertuig met meer dan twee wielen op kruispunten waar de voorrang van rechts geldt.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
+    },
+    {
+      "id": "rule-inhalen-oversteekplaats",
+      "type": "rule",
+      "category": "fietsers-voetgangers",
+      "question": "Mag je een voertuig inhalen dat vertraagt of stopt voor een zebrapad zonder verkeerslichten?",
+      "options": [
+        "Ja, mits je naar links uitwijkt",
+        "Ja, als je geen voetgangers ziet lopen",
+        "Nee, het is ten strengste verboden om een voertuig in te halen dat een oversteekplaats nadert of ervoor stopt",
+        "Enkel als je stapvoets voorbijrijdt"
+      ],
+      "correctIndex": 2,
+      "explanation": "Artikel 16.5 en artikel 40.4.1° verbieden het inhalen van een voertuig dat vertraagt of stopt voor een oversteekplaats voor voetgangers of fietsers.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
+    },
+    {
+      "id": "rule-snelheid-woonerf",
+      "type": "rule",
+      "category": "snelheid",
+      "question": "Welke maximumsnelheid geldt binnen een woonerf of een erf?",
+      "options": [
+        "30 km/u",
+        "10 km/u",
+        "15 km/u",
+        "20 km/u"
+      ],
+      "correctIndex": 3,
+      "explanation": "Volgens artikel 22bis.2° mag de snelheid in een erf of woonerf niet meer bedragen dan 20 km/u voor alle bestuurders.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
+    },
+    {
+      "id": "rule-woonerf-voetganger",
+      "type": "rule",
+      "category": "fietsers-voetgangers",
+      "question": "Welke bijzondere regel geldt voor voetgangers en spelende kinderen binnen een erf of woonerf?",
+      "options": [
+        "Zij mogen de ganse breedte van de openbare weg gebruiken en er spelen, zonder het verkeer nodeloos te belemmeren",
+        "Zij moeten verplicht op het trottoir blijven lopen",
+        "Kinderen mogen enkel onder begeleiding van een volwassene op straat spelen",
+        "Voetgangers moeten altijd voorrang verlenen aan naderende auto's"
+      ],
+      "correctIndex": 0,
+      "explanation": "Volgens artikel 22bis.1° mogen voetgangers de ganse breedte van de openbare weg gebruiken en is spelen toegelaten. Bestuurders mogen hen niet in gevaar brengen.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
+    },
+    {
+      "id": "rule-slepen-snelheid",
+      "type": "rule",
+      "category": "snelheid",
+      "question": "Wat is de maximumsnelheid wanneer een auto een ander defect voertuig sleept met behulp van een kabel of trekstang?",
+      "options": [
+        "40 km/u",
+        "25 km/u",
+        "30 km/u",
+        "50 km/u"
+      ],
+      "correctIndex": 1,
+      "explanation": "Volgens artikel 49.1 mag de snelheid van een gesleept voertuig nooit hoger liggen dan 25 km/u bij voorlopige sleping met een kabel of stang.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
+    },
+    {
+      "id": "rule-alcohol-alarmfase",
+      "type": "rule",
+      "category": "alcohol",
+      "question": "Welke onmiddellijke maatregel legt de politie op bij een ademtest met resultaat 'Alarm' (tussen 0,5 en 0,8 promille)?",
+      "options": [
+        "Een onmiddellijk rijverbod van 1 uur",
+        "Enkel een schriftelijke waarschuwing zonder rijverbod",
+        "Een tijdelijk rijverbod van 3 uur met inhouding van het rijbewijs",
+        "Een definitieve intrekking van het rijbewijs door de rechtbank"
+      ],
+      "correctIndex": 2,
+      "explanation": "Bij een ademtest in de alarmfase (tussen 0,22 mg/l en 0,35 mg/l uitgeademde lucht, oftewel 0,5 en 0,8 promille) geldt een onmiddellijk tijdelijk rijverbod van 3 uur (Wegverkeerswet art. 60).",
+      "source": "https://www.veiligverkeer.be/veilig-rijden/rijden-onder-invloed/alcohol-limiet-hoeveel-promille-drinken-alcoholcontrole-boete-straffen/"
+    },
+    {
+      "id": "rule-alcohol-positief-3uur",
+      "type": "rule",
+      "category": "alcohol",
+      "question": "Hoe lang duurt het tijdelijke stuurverbod dat de politie oplegt bij een resultaat 'Positief' vanaf 0,8 promille alcohol in het bloed?",
+      "options": [
+        "Minstens 2 uur",
+        "Minstens 4 uur",
+        "Minstens 12 uur",
+        "Minstens 6 uur"
+      ],
+      "correctIndex": 3,
+      "explanation": "Vanaf 0,35 mg/l uitgeademde alveolaire lucht (0,8 promille in het bloed) legt de politie een onmiddellijk rijverbod op van minstens 6 uur (Wegverkeerswet art. 60).",
+      "source": "https://www.veiligverkeer.be/veilig-rijden/rijden-onder-invloed/alcohol-limiet-hoeveel-promille-drinken-alcoholcontrole-boete-straffen/"
+    },
+    {
+      "id": "rule-autosnelweg-omkeren",
+      "type": "rule",
+      "category": "autosnelweg",
+      "question": "Mag je op een autosnelweg omkeren of achteruitrijden als je de afrit hebt gemist?",
+      "options": [
+        "Nee, keren, achteruitrijden en rijden over de middenberm zijn ten strengste verboden op de autosnelweg",
+        "Ja, als je op de pechstrook blijft en je vier pinkers aanzet",
+        "Ja, zolang je niet sneller dan 10 km/u achteruitrijdt",
+        "Enkel als de politie het verkeer regelt"
+      ],
+      "correctIndex": 0,
+      "explanation": "Volgens artikel 21.4 is het op autosnelwegen absoluut verboden om te keren, achteruit te rijden of de dwarsverbindingen van de middenberm te gebruiken.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
+    },
+    {
+      "id": "rule-autosnelweg-pechstrook",
+      "type": "rule",
+      "category": "autosnelweg",
+      "question": "Wanneer mag je met een voertuig gebruikmaken van de pechstrook op een autosnelweg?",
+      "options": [
+        "Om een telefoongesprek te voeren of even uit te rusten",
+        "Uitsluitend in geval van pech of acute nood, of wanneer een dynamisch verkeersbord dit expliciet toestaat",
+        "Om een file rechts voorbij te rijden naar de dichtstbijzijnde afrit",
+        "Wanneer de andere rijstroken overvol zijn"
+      ],
+      "correctIndex": 1,
+      "explanation": "De vluchtstrook / pechstrook is volgens artikel 9.7 en 21.4 uitsluitend bestemd voor voertuigen die door pech of nood gedwongen zijn te stoppen, of als spitsstrook wanneer aangeduid.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
+    },
+    {
+      "id": "rule-autosnelweg-inhalen-rechts",
+      "type": "rule",
+      "category": "autosnelweg",
+      "question": "Wanneer mag je op een autosnelweg een andere auto langs rechts inhalen?",
+      "options": [
+        "Als de linkerrijstrook rijdt met een snelheid van minder dan 100 km/u",
+        "Wanneer je haast hebt en de bestuurder links niet naar rechts wil opschuiven",
+        "Wanneer het verkeer in evenwijdige files rijdt en jouw rijstrook sneller opschuift dan de rijstrook links van jou",
+        "Rechts inhalen is onder alle denkbare omstandigheden strikt verboden"
+      ],
+      "correctIndex": 2,
+      "explanation": "Volgens artikel 16.2 geldt het voorbijrijden van voertuigen in parallelle files niet als inhalen. In normaal vloeiend verkeer is rechts inhalen altijd verboden.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
+    },
+    {
+      "id": "rule-rotonde-pinker",
+      "type": "rule",
+      "category": "voorrang",
+      "question": "Wanneer moet je op een rotonde je rechterrichtingaanwijzer aanzetten?",
+      "options": [
+        "Al ruim voordat je de rotonde oprijdt",
+        "Voortdurend zolang je op de rotonde blijft rijden",
+        "Alleen als er een fietser naast je rijdt",
+        "Wanneer je de rotonde gaat verlaten, tijdig vóór je gekozen afrit"
+      ],
+      "correctIndex": 3,
+      "explanation": "Bij het oprijden van een rotonde hoef je niet te pinken. Je bent volgens artikel 19.3 verplicht je rechterrichtingaanwijzer te gebruiken zodra je de rotonde gaat verlaten.",
+      "source": "https://www.verkeerszaken.be/blog/artikel/a/432/De-regels-voor-rotondes-en-rondpunten"
+    },
+    {
+      "id": "rule-rotonde-voorsorteren",
+      "type": "rule",
+      "category": "voorrang",
+      "question": "Welke rijstrook kies je bij voorkeur op een rotonde met meerdere rijstroken als je de eerste afrit wil nemen?",
+      "options": [
+        "De meest linkse binnenste rijstrook",
+        "De middelste rijstrook",
+        "Dat maakt wettelijk niets uit",
+        "De meest rechtse rijstrook"
+      ],
+      "correctIndex": 3,
+      "explanation": "Volgens de algemene regel (art. 9.1.1) moet je zo dicht mogelijk bij de rechterrand van de rijbaan rijden. Wie de rotonde snel verlaat (eerste afrit), kiest de rechtse rijstrook.",
+      "source": "https://www.verkeerszaken.be/blog/artikel/a/432/De-regels-voor-rotondes-en-rondpunten"
+    },
+    {
+      "id": "rule-schoolbus-gevaarslichten",
+      "type": "rule",
+      "category": "algemeen",
+      "question": "Wat moet je doen als een schoolbus stilstaat en zijn vier richtingsaanwijzers (gevaarslichten) en het bord 'vervoer van kinderen' branden?",
+      "options": [
+        "Claxonneren om de overstekende kinderen te waarschuwen",
+        "Gewoon doorrijden; het waarschuwingssignaal geldt enkel voor de buspassagiers zelf",
+        "Onmiddellijk omkeren en een andere route kiezen",
+        "Je snelheid aanzienlijk verminderen en zo nodig stoppen om de veiligheid van kinderen te waarborgen"
+      ],
+      "correctIndex": 3,
+      "explanation": "Artikel 39bis bepaalt dat bestuurders hun snelheid sterk moeten matigen en zo nodig moeten stoppen wanneer een autobus voor schoolvervoer stilstaat met ingeschakelde gevaarslichten.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
+    },
+    {
+      "id": "rule-fietser-naast-elkaar",
+      "type": "rule",
+      "category": "fietsers-voetgangers",
+      "question": "Mogen twee fietsers naast elkaar op de rijbaan rijden buiten de bebouwde kom?",
+      "options": [
+        "Nee, buiten de bebouwde kom moeten fietsers altijd achter elkaar rijden",
+        "Ja, fietsers mogen altijd en overal met maximaal vier personen naast elkaar rijden",
+        "Alleen als de weg breder is dan 7 meter",
+        "Ja, maar ze moeten achter elkaar gaan rijden zodra een achteropkomend voertuig nadert"
+      ],
+      "correctIndex": 3,
+      "explanation": "Volgens artikel 43.1 mogen fietsers met twee naast elkaar rijden, maar buiten de bebouwde kom moeten ze achter elkaar gaan rijden wanneer een achteropkomend voertuig nadert.",
+      "source": "https://www.wegcode.be/nl/verkeersreglement/fietsers-en-de-wegcode"
     }
   ]
 }
