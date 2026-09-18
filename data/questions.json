@@ -129,6 +129,406 @@
       "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
     },
     {
+      "id": "rec-a1c",
+      "type": "recognize",
+      "category": "gevaar",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/A1c.svg",
+      "options": [
+        "Gevaarlijke bocht: dubbele bocht of opeenvolging van meer dan twee bochten, de eerste naar links",
+        "Gevaarlijke bocht: dubbele bocht of opeenvolging van meer dan twee bochten, de eerste naar rechts",
+        "Gevaarlijke daling met scherpe haarspeldbocht",
+        "Rijbaanversmalling langs links met slingerende rijstrook"
+      ],
+      "correctIndex": 0,
+      "explanation": "Verkeersbord A1c waarschuwt voor een dubbele bocht of een opeenvolging van meer dan twee bochten, waarvan de eerste naar links draait (art. 66 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+    },
+    {
+      "id": "rec-a1d",
+      "type": "recognize",
+      "category": "gevaar",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/A1d.svg",
+      "options": [
+        "Gevaarlijke bocht: bocht naar links met tegenliggers",
+        "Gevaarlijke bocht: dubbele bocht of opeenvolging van meer dan twee bochten, de eerste naar rechts",
+        "Gevaarlijke bocht: dubbele bocht of opeenvolging van meer dan twee bochten, de eerste naar links",
+        "Verplichting om aan het volgend kruispunt naar rechts af te slaan"
+      ],
+      "correctIndex": 1,
+      "explanation": "Verkeersbord A1d waarschuwt voor een dubbele bocht of een opeenvolging van meer dan twee bochten, waarvan de eerste naar rechts draait (art. 66 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+    },
+    {
+      "id": "rec-a3",
+      "type": "recognize",
+      "category": "gevaar",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/A3.svg",
+      "options": [
+        "Steile helling (stijgend)",
+        "Uitholling overdwars of ezelsrug",
+        "Gevaarlijke daling",
+        "Wegdek in slechte staat"
+      ],
+      "correctIndex": 2,
+      "explanation": "Verkeersbord A3 waarschuwt voor een gevaarlijke daling op de weg (art. 66 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+    },
+    {
+      "id": "rec-a5",
+      "type": "recognize",
+      "category": "gevaar",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/A5.svg",
+      "options": [
+        "Gevaarlijke daling",
+        "Verhoogde inrichting in het wegdek",
+        "Beweegbare brug",
+        "Steile helling"
+      ],
+      "correctIndex": 3,
+      "explanation": "Verkeersbord A5 waarschuwt voor een steile helling (klimmend weggedeelte) (art. 66 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+    },
+    {
+      "id": "rec-a7b",
+      "type": "recognize",
+      "category": "gevaar",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/A7b.svg",
+      "options": [
+        "Rijbaanversmalling langs links",
+        "Rijbaanversmalling langs rechts",
+        "Verplicht ritsen vanaf links",
+        "Verbod voor voertuigen breder dan aangeduid"
+      ],
+      "correctIndex": 0,
+      "explanation": "Verkeersbord A7b waarschuwt voor een versmalling van de rijbaan aan de linkerkant (art. 66 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+    },
+    {
+      "id": "rec-a7c",
+      "type": "recognize",
+      "category": "gevaar",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/A7c.svg",
+      "options": [
+        "Rijbaanversmalling langs links",
+        "Rijbaanversmalling langs rechts",
+        "Smalste doorgang met voorrang voor tegenliggers",
+        "Einde van een pechstrook"
+      ],
+      "correctIndex": 1,
+      "explanation": "Verkeersbord A7c waarschuwt voor een versmalling van de rijbaan aan de rechterkant (art. 66 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+    },
+    {
+      "id": "rec-a9",
+      "type": "recognize",
+      "category": "gevaar",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/A9.svg",
+      "options": [
+        "Uitweg op een kaai of oever",
+        "Overweg met slagbomen",
+        "Beweegbare brug",
+        "Vaste brug met beperkte doorrijhoogte"
+      ],
+      "correctIndex": 2,
+      "explanation": "Verkeersbord A9 waarschuwt voor het naderen van een beweegbare brug (art. 66 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+    },
+    {
+      "id": "rec-a11",
+      "type": "recognize",
+      "category": "gevaar",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/A11.svg",
+      "options": [
+        "Beweegbare brug",
+        "Veerpont of overzetboot",
+        "Glibberige rijbaan langs waterlopen",
+        "Uitweg op een kaai of een oever"
+      ],
+      "correctIndex": 3,
+      "explanation": "Verkeersbord A11 waarschuwt dat de weg uitloopt op een kaai of een oever zonder slagboom of borstwering (art. 66 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+    },
+    {
+      "id": "rec-a13",
+      "type": "recognize",
+      "category": "gevaar",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/A13.svg",
+      "options": [
+        "Uitholling overdwars of ezelsrug",
+        "Verhoogde inrichting (verkeersdrempel)",
+        "Wegwerkzaamheden",
+        "Glibberige rijbaan bij neerslag"
+      ],
+      "correctIndex": 0,
+      "explanation": "Verkeersbord A13 waarschuwt voor een uitholling overdwars, een ezelsrug of een oneffen wegdek (art. 66 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+    },
+    {
+      "id": "rec-a14",
+      "type": "recognize",
+      "category": "gevaar",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/A14.svg",
+      "options": [
+        "Uitholling overdwars of ezelsrug",
+        "Verhoogde inrichting(en)",
+        "Zone met een snelheidsbeperking van 30 km/u",
+        "Oversteekplaats voor voetgangers met plateau"
+      ],
+      "correctIndex": 1,
+      "explanation": "Verkeersbord A14 waarschuwt voor één of meerdere verhoogde inrichtingen, zoals een verkeersdrempel of plateau (art. 66 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+    },
+    {
+      "id": "rec-a15",
+      "type": "recognize",
+      "category": "gevaar",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/A15.svg",
+      "options": [
+        "Wegspattende steenslag",
+        "Zijwind",
+        "Glibberige rijbaan",
+        "Doortocht van landbouwvoertuigen"
+      ],
+      "correctIndex": 2,
+      "explanation": "Verkeersbord A15 waarschuwt voor een glibberige rijbaan of verhoogd slipgevaar (art. 66 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+    },
+    {
+      "id": "rec-a17",
+      "type": "recognize",
+      "category": "gevaar",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/A17.svg",
+      "options": [
+        "Vallende stenen uit rotswanden",
+        "Werken op de rijbaan",
+        "Glibberige rijbaan door modder",
+        "Kiezelprojectie"
+      ],
+      "correctIndex": 3,
+      "explanation": "Verkeersbord A17 waarschuwt voor gevaar van wegspattende losse kiezels of steenslag (kiezelprojectie) (art. 66 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+    },
+    {
+      "id": "rec-a19",
+      "type": "recognize",
+      "category": "gevaar",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/A19.svg",
+      "options": [
+        "Vallende stenen",
+        "Kiezelprojectie",
+        "Oneffen wegdek",
+        "Werken aan een talud"
+      ],
+      "correctIndex": 0,
+      "explanation": "Verkeersbord A19 waarschuwt voor gevaar van vallende stenen of stenen op de rijbaan (art. 66 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+    },
+    {
+      "id": "rec-a27",
+      "type": "recognize",
+      "category": "gevaar",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/A27.svg",
+      "options": [
+        "Doortocht van vee",
+        "Doortocht van groot wild",
+        "Natuurreservaat met ruiters",
+        "Dierenasiel of hondenlosloopweide"
+      ],
+      "correctIndex": 1,
+      "explanation": "Verkeersbord A27 waarschuwt voor de mogelijke doortocht van groot wild op de rijbaan (art. 66 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+    },
+    {
+      "id": "rec-a29",
+      "type": "recognize",
+      "category": "gevaar",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/A29.svg",
+      "options": [
+        "Doortocht van groot wild",
+        "Landbouwzone uitsluitend voor tractors",
+        "Doortocht van vee",
+        "Mestverwerking op de openbare weg"
+      ],
+      "correctIndex": 2,
+      "explanation": "Verkeersbord A29 waarschuwt voor de mogelijke oversteek of aanwezigheid van vee op de openbare weg (art. 66 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+    },
+    {
+      "id": "rec-a33",
+      "type": "recognize",
+      "category": "gevaar",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/A33.svg",
+      "options": [
+        "Kruispunt waar de voorrang van rechts geldt",
+        "Gevaarlijke spoorwegovergang",
+        "Oversteekplaats met knipperlichten",
+        "Verkeerslichten"
+      ],
+      "correctIndex": 3,
+      "explanation": "Verkeersbord A33 kondigt het naderen van een kruispunt of oversteekplaats met verkeerslichten aan (art. 66 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+    },
+    {
+      "id": "rec-a35",
+      "type": "recognize",
+      "category": "gevaar",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/A35.svg",
+      "options": [
+        "Overtocht van vliegtuigen op geringe hoogte",
+        "Gevaar voor plotselinge hevige zijwind",
+        "Toegang tot een luchthaventerrein",
+        "Luchtdrukverschillen bij tunnelmonden"
+      ],
+      "correctIndex": 0,
+      "explanation": "Verkeersbord A35 waarschuwt voor overtocht van vliegtuigen op geringe hoogte of plotse lawaaihinder (art. 66 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+    },
+    {
+      "id": "rec-a37",
+      "type": "recognize",
+      "category": "gevaar",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/A37.svg",
+      "options": [
+        "Overtocht van vliegtuigen op geringe hoogte",
+        "Zijwind",
+        "Kustzone met stormwaarschuwing",
+        "Verhoogd risico op aquaplaning"
+      ],
+      "correctIndex": 1,
+      "explanation": "Verkeersbord A37 waarschuwt voor een weggedeelte dat vaak blootgesteld is aan plotse, krachtige zijwind (art. 66 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+    },
+    {
+      "id": "rec-a39",
+      "type": "recognize",
+      "category": "gevaar",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/A39.svg",
+      "options": [
+        "Verplichte rijrichting rechtdoor of keren",
+        "Rijbaanversmalling met voorrang voor tegenliggers",
+        "Verkeer toegelaten in twee richtingen na een gedeelte van de rijbaan met eenrichtingsverkeer",
+        "Gescheiden rijbanen met tegenverkeer"
+      ],
+      "correctIndex": 2,
+      "explanation": "Verkeersbord A39 waarschuwt dat eenrichtingsverkeer eindigt en verkeer in beide richtingen opnieuw is toegelaten (art. 66 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+    },
+    {
+      "id": "rec-a43",
+      "type": "recognize",
+      "category": "gevaar",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/A43.svg",
+      "options": [
+        "Overweg met slagbomen",
+        "Tramsporen die de rijbaan dwarsen",
+        "Historische stoomtreinverbinding",
+        "Overweg zonder slagbomen"
+      ],
+      "correctIndex": 3,
+      "explanation": "Verkeersbord A43 waarschuwt vooraf voor een overweg zonder slagbomen (art. 66 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+    },
+    {
+      "id": "rec-a45",
+      "type": "recognize",
+      "category": "gevaar",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/A45.svg",
+      "options": [
+        "Overweg voor enkel spoor",
+        "Overweg voor twee of meer sporen",
+        "Kruispunt waar voorrang van rechts geldt",
+        "Overweg met automatische halve slagbomen"
+      ],
+      "correctIndex": 0,
+      "explanation": "Verkeersbord A45 (enkel Andreaskruis) duidt de onmiddellijke nabijheid aan van een spoorwegovergang met enkel spoor (art. 66 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+    },
+    {
+      "id": "rec-a47",
+      "type": "recognize",
+      "category": "gevaar",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/A47.svg",
+      "options": [
+        "Overweg voor enkel spoor",
+        "Overweg voor twee of meer sporen",
+        "Kruising van twee tramlijnen",
+        "Verboden toegang voor spoorwegpersoneel"
+      ],
+      "correctIndex": 1,
+      "explanation": "Verkeersbord A47 (dubbel Andreaskruis) duidt de onmiddellijke nabijheid aan van een spoorwegovergang met twee of meer sporen (art. 66 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+    },
+    {
+      "id": "rec-a49",
+      "type": "recognize",
+      "category": "gevaar",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/A49.svg",
+      "options": [
+        "Overweg zonder slagbomen",
+        "Verplicht fietspad met oversteekplaats voor treinen",
+        "Kruising van een openbare weg door een of meer in de rijbaan aangelegde sporen",
+        "Einde van een tramstrook"
+      ],
+      "correctIndex": 2,
+      "explanation": "Verkeersbord A49 waarschuwt voor de kruising van een openbare weg door sporen die in het wegdek liggen (art. 66 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+    },
+    {
+      "id": "rec-a50",
+      "type": "recognize",
+      "category": "gevaar",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/A50.svg",
+      "options": [
+        "Wegwerkzaamheden met vertraagd verkeer",
+        "Gevaarlijke daling met stilstaand verkeer",
+        "Tolplein of grensovergang",
+        "File"
+      ],
+      "correctIndex": 3,
+      "explanation": "Verkeersbord A50 waarschuwt voor het risico op vertraagd verkeer of filevorming (art. 66 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+    },
+    {
+      "id": "rec-a51",
+      "type": "recognize",
+      "category": "gevaar",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/A51.svg",
+      "options": [
+        "Verplicht stoppen voor onbekend gevaar",
+        "Wegenwerken in uitvoering",
+        "Doodlopende weg met hindernissen",
+        "Gevaar dat niet door een speciaal symbool wordt bepaald"
+      ],
+      "correctIndex": 3,
+      "explanation": "Verkeersbord A51 waarschuwt voor een gevaar dat niet door een specifiek symbool wordt aangeduid; een onderbord vermeldt de aard van het gevaar (art. 66 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+    },
+    {
       "id": "rec-b1",
       "type": "recognize",
       "category": "voorrang",

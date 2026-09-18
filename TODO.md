@@ -15,8 +15,7 @@ An overview of all tasks and their planning.
 
 ## Next Milestone
 
-- [~] T0019 [owner: @antigravity] [needs: T0020, T0021, T0022, T0023, T0024, T0025] Ensure there is a sign and a question for each traffic sign currently in use in Belgium.
-- [ ] T0020 Add sign assets and quiz questions for all remaining Belgian warning signs in Series A.
+- [~] T0019 [owner: @antigravity] [needs: T0021, T0022, T0023, T0024, T0025] Ensure there is a sign and a question for each traffic sign currently in use in Belgium.
 - [ ] T0021 Add sign assets and quiz questions for all remaining Belgian priority signs and mandatory signs in Series B and D.
 - [ ] T0022 Add sign assets and quiz questions for all remaining Belgian prohibitory signs in Series C.
 - [ ] T0023 Add sign assets and quiz questions for all remaining Belgian parking and stopping signs in Series E.

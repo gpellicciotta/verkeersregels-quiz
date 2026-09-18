@@ -6,6 +6,7 @@ import argparse
 import logging
 import re
 import sys
+import time
 import xml.etree.ElementTree as ET
 from pathlib import Path
 
@@ -28,6 +29,46 @@ SIGNS_DIR = REPO_ROOT / "assets" / "signs"
 COMMONS_API = "https://commons.wikimedia.org/w/api.php"
 USER_AGENT = "VerkeersregelsQuizBot/1.1 (https://github.com/gpellicciotta/verkeersregels-quiz; contact@verkeersregels-quiz.local)"
 
+SERIES_SIGNS: dict[str, list[str]] = {
+    "A": [
+        "A1a", "A1b", "A1c", "A1d", "A3", "A5", "A7a", "A7b", "A7c", "A9",
+        "A11", "A13", "A14", "A15", "A17", "A19", "A21", "A23", "A25", "A27",
+        "A29", "A31", "A33", "A35", "A37", "A39", "A41", "A43", "A45", "A47",
+        "A49", "A50", "A51"
+    ],
+    "B": [
+        "B1", "B3", "B5", "B7", "B9", "B11", "B13", "B15", "B17", "B19",
+        "B21", "B22", "B23"
+    ],
+    "C": [
+        "C1", "C3", "C5", "C6", "C7", "C9", "C11", "C13", "C15", "C17",
+        "C19", "C21", "C22", "C23", "C24a", "C24b", "C24c", "C25", "C27", "C29",
+        "C31a", "C31b", "C33", "C35", "C37", "C39", "C41", "C43", "C45", "C46", "C47"
+    ],
+    "D": [
+        "D1a", "D1b", "D1c", "D1d", "D1e", "D3", "D4", "D5", "D7", "D9",
+        "D10", "D11", "D13"
+    ],
+    "E": [
+        "E1", "E3", "E5", "E7", "E9a", "E9b", "E9c", "E9d", "E9e", "E9f",
+        "E9g", "E9h", "E9i", "E9j", "E11"
+    ],
+    "F1": [
+        "F1a", "F1b", "F3a", "F3b", "F4a", "F4b", "F5", "F7", "F8", "F9",
+        "F11", "F12a", "F12b", "F13", "F14", "F15", "F17", "F18", "F19", "F21",
+        "F23a", "F23b", "F23c", "F23d", "F25", "F27", "F29", "F31", "F33a", "F33b",
+        "F33c", "F34a", "F35", "F37", "F39", "F41", "F43", "F45", "F45b", "F47",
+        "F49", "F50", "F50bis"
+    ],
+    "F2": [
+        "F51", "F52", "F52bis", "F53", "F55", "F56", "F57", "F59", "F60", "F61",
+        "F62", "F63", "F65", "F67", "F69", "F71", "F73", "F75", "F77", "F79",
+        "F81", "F83", "F85", "F87", "F89", "F91", "F93", "F95", "F97", "F98",
+        "F99a", "F99b", "F99c", "F101a", "F101b", "F101c", "F103", "F105", "F111", "F113",
+        "F117", "F118", "F119", "F120"
+    ],
+}
+
 
 def query_commons_image_url(filename: str, session: requests.Session) -> str | None:
     """Queries Wikimedia Commons API for the direct download URL of a given file."""
@@ -38,23 +79,30 @@ def query_commons_image_url(filename: str, session: requests.Session) -> str | N
         "iiprop": "url|mime",
         "format": "json",
     }
-    try:
-        resp = session.get(COMMONS_API, params=params, timeout=15)
-        resp.raise_for_status()
-        data = resp.json()
-        pages = data.get("query", {}).get("pages", {})
-        for _, pdata in pages.items():
-            imageinfo = pdata.get("imageinfo", [])
-            if imageinfo and "url" in imageinfo[0]:
-                return imageinfo[0]["url"]
-    except Exception as exc:
-        logging.debug("Error querying Commons for %s: %s", filename, exc)
+    for attempt in range(3):
+        try:
+            time.sleep(1.0)
+            resp = session.get(COMMONS_API, params=params, timeout=15)
+            if resp.status_code == 429:
+                logging.warning("Hit rate limit on API query for %s, backing off...", filename)
+                time.sleep(4.0 * (attempt + 1))
+                continue
+            resp.raise_for_status()
+            data = resp.json()
+            pages = data.get("query", {}).get("pages", {})
+            for _, pdata in pages.items():
+                imageinfo = pdata.get("imageinfo", [])
+                if imageinfo and "url" in imageinfo[0]:
+                    return imageinfo[0]["url"]
+            return None
+        except Exception as exc:
+            logging.debug("Error querying Commons for %s (attempt %d): %s", filename, attempt, exc)
+            time.sleep(2.0)
     return None
 
 
 def get_candidate_filenames(code: str) -> list[str]:
     """Generates ordered candidate Wikimedia Commons filenames for a given sign code."""
-    # Examples: A1c, B11, D1a, D01a, E9a, F103
     candidates = [
         f"Belgian road sign {code}.svg",
         f"Belgian traffic sign {code}.svg",
@@ -72,19 +120,26 @@ def get_candidate_filenames(code: str) -> list[str]:
 
 def download_and_validate_svg(url: str, dest_path: Path, session: requests.Session) -> bool:
     """Downloads an SVG from url, parses it as valid XML, and writes to dest_path."""
-    try:
-        resp = session.get(url, timeout=20)
-        resp.raise_for_status()
-        content = resp.content
-        root = ET.fromstring(content)
-        if "svg" not in root.tag.lower():
-            logging.error("Root element of %s is not svg: %s", dest_path.name, root.tag)
-            return False
-        dest_path.write_bytes(content)
-        return True
-    except Exception as exc:
-        logging.error("Failed downloading or parsing SVG from %s: %s", url, exc)
-        return False
+    for attempt in range(3):
+        try:
+            time.sleep(1.2)
+            resp = session.get(url, timeout=20)
+            if resp.status_code == 429:
+                logging.warning("Rate limit hit downloading %s, backing off...", dest_path.name)
+                time.sleep(4.0 * (attempt + 1))
+                continue
+            resp.raise_for_status()
+            content = resp.content
+            root = ET.fromstring(content)
+            if "svg" not in root.tag.lower():
+                logging.error("Root element of %s is not svg: %s", dest_path.name, root.tag)
+                return False
+            dest_path.write_bytes(content)
+            return True
+        except Exception as exc:
+            logging.warning("Download failed for %s (attempt %d): %s", dest_path.name, attempt, exc)
+            time.sleep(2.0)
+    return False
 
 
 def fetch_sign(code: str, session: requests.Session, force: bool = False) -> bool:
@@ -110,9 +165,34 @@ def fetch_sign(code: str, session: requests.Session, force: bool = False) -> boo
     return False
 
 
+def expand_sign_codes(args_codes: list[str]) -> list[str]:
+    """Expands series aliases (like 'A', 'B', 'all') to concrete sign codes."""
+    expanded: list[str] = []
+    for item in args_codes:
+        upper = item.upper()
+        if upper == "ALL":
+            for series_list in SERIES_SIGNS.values():
+                expanded.extend(series_list)
+        elif upper == "F":
+            expanded.extend(SERIES_SIGNS["F1"])
+            expanded.extend(SERIES_SIGNS["F2"])
+        elif upper in SERIES_SIGNS:
+            expanded.extend(SERIES_SIGNS[upper])
+        else:
+            expanded.append(item)
+    # Deduplicate while preserving order
+    seen = set()
+    dedup = []
+    for c in expanded:
+        if c not in seen:
+            seen.add(c)
+            dedup.append(c)
+    return dedup
+
+
 def main() -> int:
     parser = build_action_parser(PROG, DESCRIPTION, ACTIONS, DEFAULT_ACTION)
-    parser.add_argument("codes", nargs="*", help="Sign codes to fetch (e.g. A3 A15 B3) or 'all'")
+    parser.add_argument("codes", nargs="*", help="Sign codes or series to fetch (e.g. A, B, A3, all)")
     parser.add_argument("--force", action="store_true", help="Overwrite existing files in assets/signs/")
     parser.add_argument("--log-file", type=Path, help="Append operational logs to file")
 
@@ -167,13 +247,13 @@ def main() -> int:
 
     if args.action == "fetch":
         if not args.codes:
-            logging.error("No sign codes specified to fetch. Provide sign codes or use --help.")
+            logging.error("No sign codes specified to fetch. Provide sign codes or series (e.g. A, B, all).")
             return 2
 
         session = requests.Session()
         session.headers.update({"User-Agent": USER_AGENT})
 
-        codes_to_fetch = args.codes
+        codes_to_fetch = expand_sign_codes(args.codes)
         success_count = 0
         failure_count = 0
         for code in codes_to_fetch:
