@@ -1,22 +1,67 @@
 # Verkeers-regels Quiz
 
-De bedoeling van dit project is om een simpele quiz te maken, om te helpen de Belgische verkeersregels aan te leren.
-De quiz zou online moeten kunnen gebruikt worden, en steeds max. 10' mogen duren.
-Op het eind moet er een score zijn, en die zou ideaal gezien ook ergens worden opgeslagen, bv. in een Google sheet.
+Een simpele webquiz om te helpen bij het voorbereiden van het Belgische theoretisch rijexamen.
+Geen server nodig: platte HTML/CSS/JS, te hosten via GitHub Pages.
 
-## Hoe spelen?
+## Hoe spelen
 
-- Gewoon naar de hoofdpagina gaan en "start" klikken, eventueel na het invullen van een naam
-- Dan krijg je steeds 20 vragen (bv. een uitleg, en dan moet je uit 4 verkeersborden kiezen, of omgekeerd) en eens je een antwoord hebt doorgegeven, krijg je het juiste antwoord, en eventueel extra uitleg hierover te zien
-- Dan kan je naar de volgende vraag gaan, maar nooit terug
-- Op't eind krijg je punten en een volledig overzicht van wat er gevraagd werd, wat geantwoord, wat goed was en wat slecht, liefts in 1 groot overzicht dat dan kan gedownload of geprint worden
-- De resultaten worden dan ook weggeschreven in de Google sheet
+- Ga naar de hoofdpagina, vul optioneel een naam in en klik op "Start quiz".
+- Je krijgt telkens 20 willekeurige vragen uit de vragenbank: soms een verkeersbord waarvan je
+  de betekenis moet kiezen, soms een omschrijving waarbij je het juiste bord moet aanduiden,
+  en soms een vraag over een verkeersregel.
+- Na elk antwoord zie je meteen of het juist was, met een korte uitleg. Je kan niet terug naar
+  een vorige vraag.
+- Op het einde krijg je je score en een volledig overzicht van alle vragen, jouw antwoorden en
+  de juiste antwoorden. Dat overzicht kan je printen of als PDF opslaan via de knop
+  "Printen / opslaan als PDF" (gebruikt de browser-printfunctie).
 
-## Open vragen
+## Lokaal uittesten
 
- - Hoe deployen? Is het simpelste tewoon een github project maken en dan via GitHub pages? Werkt dat als we Javascript nodig hebben?
- - Hoe resultaten opslaan? In een Google sheet die gekoppeld is aan mijn account?
- - Waar materiaal halen voor de quiz? Bv. https://www.verkeersbord.be/officieel/ voor verkeersborden, maar zijn er andere zodat we meer kunnen testen dan enkel verkeersborden. Ideaal zou zijn dezelfde soort vragen die op het echte examen aan bod komen.
- 
+Vanuit de projectmap:
 
+```bash
+python -m http.server 8420
+```
 
+Open dan <http://localhost:8420/index.html> in de browser.
+
+## Vragenbank aanpassen
+
+De vragen staan in [data/questions.json](data/questions.json), zie
+[data/SOURCES.md](data/SOURCES.md) voor de gebruikte bronnen en verkeersbord-afbeeldingen.
+Elke vraag heeft een `type`:
+
+- `recognize` — toont een bord (`sign`), 4 tekstopties als mogelijke betekenis.
+- `identify` — toont een omschrijving, 4 bord-afbeeldingen als opties.
+- `rule` — pure tekstvraag over een verkeersregel, 4 tekstopties.
+
+Verkeersbord-afbeeldingen staan in `assets/signs/`, genoemd naar hun officiële Wegcode-code
+(bv. `A1a.svg`).
+
+## Deployen naar GitHub Pages
+
+1. Maak een GitHub-repository aan en push deze projectmap ernaartoe.
+2. Ga naar Settings > Pages, kies branch `main` en map `/ (root)`.
+3. Na een minuut is de site live op `https://<gebruikersnaam>.github.io/<repo-naam>/`.
+
+Werkt met JavaScript zonder probleem: GitHub Pages is gewoon statische bestandshosting.
+
+## Scores opslaan in een Google Sheet (optioneel)
+
+1. Maak een nieuwe Google Sheet aan.
+2. Ga naar Extensies > Apps Script, en plak de inhoud van
+   [google-apps-script/Code.gs](google-apps-script/Code.gs) in het script-editorvenster.
+3. Klik op Deployen > Nieuwe implementatie > type "Web app".
+   - "Uitvoeren als": jouw account.
+   - "Toegang": Iedereen.
+4. Kopieer de gegenereerde web-app-URL.
+5. Plak die URL als waarde van `SHEET_WEBAPP_URL` bovenaan in [js/app.js](js/app.js).
+6. Elke afgeronde quiz voegt automatisch een rij toe aan het tabblad "Resultaten" van de Sheet.
+
+Zolang `SHEET_WEBAPP_URL` op `null` staat, wordt dit gewoon overgeslagen — de quiz werkt ook
+zonder deze stap.
+
+## Open vragen / vervolgstappen
+
+- Vragenbank uitbreiden met meer categorieen naarmate er tijd is.
+- Overwegen om her-antwoorden van foutieve vragen als extra oefenronde toe te voegen.
