@@ -15,13 +15,12 @@ An overview of all tasks and their planning.
 
 ## Next Milestone
 
-- [~] T0013 [owner: @antigravity] Add official rule or explainer links to all questions displayed upon answering.
 - [ ] A0015 Allow extra query parameter syntax, as aliases: "s" = "since" = "sinds"; "q" = "quantity"
 - [ ] A0016 Make screenshots of the start page, of a question page with a good answer, one with a bad answer, results with confetti and results without confetti, both on desktop and on mobile. Add these screenshots as a visual tour to the README.md
 - [ ] A0017 When q=n is given, the start page (and also other pages) shoukd not mentiond "20" vragen but "n" vragen
       Also make sure that even when n is asked, but if there are only m (smaller than n) questions available, to take m in all these places.
 - [ ] A0018 Add a favicon representing a blue road sign and on the last question: rename the button 'Volgende Vraag' naar 'Toon Resultaat'
-- [ ] T0014 [needs: A0015, A0018, A0017, T0013, A0016] Release as v1.1.0
+- [ ] T0014 [needs: A0015, A0018, A0017, A0016] Release as v1.1.0
 - [ ] T0019 Ensure there is a sign and a question for each traffic sign currently in use in Belgium
 
 ---
