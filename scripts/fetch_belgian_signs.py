@@ -112,6 +112,11 @@ def get_candidate_filenames(code: str) -> list[str]:
     if m_d:
         candidates.append(f"Belgian road sign D0{m_d.group(1)}{m_d.group(2)}.svg")
         candidates.append(f"Belgian traffic sign D0{m_d.group(1)}{m_d.group(2)}.svg")
+    # Special cases for F1a / F3a horizontal/vertical variants
+    if code.lower() == "f1a":
+        candidates.extend(["Belgian traffic sign F1a horizontaal.svg", "Belgian traffic sign F1a verticaal.svg"])
+    elif code.lower() == "f3a":
+        candidates.extend(["Belgian traffic sign F3a horizontaal.svg", "Belgian traffic sign F3a verticaal.svg"])
     # Uppercase/lowercase variations
     candidates.append(f"Belgian road sign {code.upper()}.svg")
     candidates.append(f"Belgian traffic sign {code.upper()}.svg")
@@ -270,3 +275,4 @@ def main() -> int:
 
 if __name__ == "__main__":
     sys.exit(main())
+

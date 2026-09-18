@@ -2437,6 +2437,598 @@
       "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
     },
     {
+      "id": "rec-f1a",
+      "type": "recognize",
+      "category": "aanwijzing",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/F1a.svg",
+      "options": [
+        "Begin van een bebouwde kom",
+        "Begin van een zone 30",
+        "Begin van een woonerf of erf",
+        "Einde van een bebouwde kom"
+      ],
+      "correctIndex": 0,
+      "explanation": "Verkeersbord F1a geeft het begin van een bebouwde kom aan (art. 71.2 van de Wegcode). In Vlaanderen geldt hier standaard maximaal 50 km/u, in Brussel 30 km/u.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+    },
+    {
+      "id": "rec-f3a",
+      "type": "recognize",
+      "category": "aanwijzing",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/F3a.svg",
+      "options": [
+        "Begin van een bebouwde kom",
+        "Einde van een bebouwde kom",
+        "Einde van een zone 30",
+        "Einde van een woonerf"
+      ],
+      "correctIndex": 1,
+      "explanation": "Verkeersbord F3a geeft het einde van een bebouwde kom aan (art. 71.2 van de Wegcode).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+    },
+    {
+      "id": "rec-f4a",
+      "type": "recognize",
+      "category": "aanwijzing",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/F4a.svg",
+      "options": [
+        "Snelheidsbeperking van 30 km/u die enkel geldt tot het eerstvolgende kruispunt",
+        "Aanbevolen snelheid van 30 km/u",
+        "Begin van een zone met een snelheidsbeperking van 30 km per uur",
+        "Begin van een woonerf met een maximumsnelheid van 20 km per uur"
+      ],
+      "correctIndex": 2,
+      "explanation": "Bord F4a geeft het begin aan van een zone met een snelheidsbeperking van 30 km per uur (art. 71.2 van de Wegcode). Deze limiet geldt voor de volledige zone tot bord F4b.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+    },
+    {
+      "id": "rec-f4b",
+      "type": "recognize",
+      "category": "aanwijzing",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/F4b.svg",
+      "options": [
+        "Einde van alle snelheidsbeperkingen op deze openbare weg",
+        "Einde van een woonerf of erf",
+        "Einde van een bebouwde kom",
+        "Einde van een zone met een snelheidsbeperking van 30 km per uur"
+      ],
+      "correctIndex": 3,
+      "explanation": "Bord F4b duidt het einde aan van een zone met een snelheidsbeperking van 30 km per uur (art. 71.2 van de Wegcode).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+    },
+    {
+      "id": "rec-f7",
+      "type": "recognize",
+      "category": "aanwijzing",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/F7.svg",
+      "options": [
+        "Einde van een autosnelweg",
+        "Begin van een autoweg",
+        "Einde van een autoweg",
+        "Einde van alle voorrang"
+      ],
+      "correctIndex": 0,
+      "explanation": "Verkeersbord F7 duidt het einde van een autosnelweg aan (art. 71.2 van de Wegcode).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+    },
+    {
+      "id": "rec-f8",
+      "type": "recognize",
+      "category": "aanwijzing",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/F8.svg",
+      "options": [
+        "Ondergrondse parking",
+        "Tunnel met een lengte van meer dan 500 meter",
+        "Pechhaven in een tunnel",
+        "Overdekte viaduct of passage"
+      ],
+      "correctIndex": 1,
+      "explanation": "Aanwijzingsbord F8 duidt een tunnel aan met een lengte van meer dan 500 meter (art. 71.2 van de Wegcode).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+    },
+    {
+      "id": "rec-f9",
+      "type": "recognize",
+      "category": "aanwijzing",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/F9.svg",
+      "options": [
+        "Begin van een autosnelweg",
+        "Weg voorbehouden voor motorvoertuigen en bromfietsen",
+        "Begin van een autoweg",
+        "Verplichte weg voor personenwagens"
+      ],
+      "correctIndex": 2,
+      "explanation": "Verkeersbord F9 geeft het begin aan van een autoweg (art. 71.2 van de Wegcode), waar de specifieke regels voor autowegen van toepassing zijn.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+    },
+    {
+      "id": "rec-f11",
+      "type": "recognize",
+      "category": "aanwijzing",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/F11.svg",
+      "options": [
+        "Einde van een autoweg",
+        "Einde van een autosnelweg",
+        "Verboden toegang voor motorvoertuigen",
+        "Einde van een zone met verhoogde snelheid"
+      ],
+      "correctIndex": 0,
+      "explanation": "Verkeersbord F11 duidt het einde aan van een autoweg (art. 71.2 van de Wegcode).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+    },
+    {
+      "id": "rec-f12a",
+      "type": "recognize",
+      "category": "aanwijzing",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/F12a.svg",
+      "options": [
+        "Begin van een speelstraat",
+        "Begin van een woonerf of van een erf",
+        "Begin van een schoolomgeving",
+        "Begin van een voetgangerszone"
+      ],
+      "correctIndex": 1,
+      "explanation": "Bord F12a geeft het begin aan van een woonerf of erf (art. 71.2 van de Wegcode). De maximumsnelheid bedraagt 20 km/u en voetgangers mogen de hele breedte van de weg gebruiken.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+    },
+    {
+      "id": "rec-f12b",
+      "type": "recognize",
+      "category": "aanwijzing",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/F12b.svg",
+      "options": [
+        "Einde van een speelstraat",
+        "Einde van een zone 30",
+        "Einde van een woonerf of van een erf",
+        "Begin van een bebouwde kom"
+      ],
+      "correctIndex": 2,
+      "explanation": "Bord F12b duidt het einde aan van een woonerf of van een erf (art. 71.2 van de Wegcode).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+    },
+    {
+      "id": "rec-f13",
+      "type": "recognize",
+      "category": "aanwijzing",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/F13.svg",
+      "options": [
+        "Verplichte rijrichting bij het eerstvolgende kruispunt",
+        "Aanbeveling om links in te halen op een tweerichtingsweg",
+        "Aanduiding van een splitsing van twee autosnelwegen",
+        "Verkeersbord dat pijlen op de rijbaan aankondigt en de keuze van een rijstrook voorschrijft"
+      ],
+      "correctIndex": 3,
+      "explanation": "Bord F13 kondigt pijlen op het wegdek aan en schrijft de keuze van een rijstrook voor overeenkomstig de gewenste rijrichting (art. 71.2 van de Wegcode).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+    },
+    {
+      "id": "rec-f14",
+      "type": "recognize",
+      "category": "aanwijzing",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/F14.svg",
+      "options": [
+        "Opstelvak voor fietsers en bestuurders van tweewielige bromfietsen",
+        "Verplicht fietspad bij het naderen van verkeerslichten",
+        "Parkeerplaats gereserveerd voor fietsen en bromfietsen",
+        "Oversteekplaats voor fietsers en voetgangers"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bord F14 duidt een opstelvak aan (art. 71.2 van de Wegcode), waar fietsers en tweewielige bromfietsers klasse A zich vóór het verkeerslicht mogen opstellen.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+    },
+    {
+      "id": "rec-f15",
+      "type": "recognize",
+      "category": "aanwijzing",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/F15.svg",
+      "options": [
+        "Vermindering van het aantal rijstroken op de rijbaan",
+        "Verkeersbord dat de keuze van een richting voorschrijft",
+        "Wegwijzer naar een toeristische bestemming",
+        "Aanduiding van een pechstrook langs een autosnelweg"
+      ],
+      "correctIndex": 1,
+      "explanation": "Bord F15 is een verkeersbord dat door middel van pijlen boven de rijbaan de keuze van een richting voorschrijft per rijstrook (art. 71.2 van de Wegcode).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+    },
+    {
+      "id": "rec-f17",
+      "type": "recognize",
+      "category": "aanwijzing",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/F17.svg",
+      "options": [
+        "Aanduiding van de rijstroken van een rijbaan met een strook voorbehouden voor autobussen",
+        "Busstation of halteplaats voor autobussen",
+        "Parkeerverbod voor alle voertuigen behalve autobussen",
+        "Bijzondere overrijdbare bedding voor trams en bussen"
+      ],
+      "correctIndex": 0,
+      "explanation": "Aanwijzingsbord F17 toont de indeling van rijstroken met een strook voorbehouden voor voertuigen van geregelde diensten voor gemeenschappelijk vervoer (art. 71.2 van de Wegcode).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+    },
+    {
+      "id": "rec-f18",
+      "type": "recognize",
+      "category": "aanwijzing",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/F18.svg",
+      "options": [
+        "Einde van een busstrook",
+        "Aanwijzing van een bijzondere overrijdbare bedding, voorbehouden aan het openbaar vervoer",
+        "Oversteekplaats voor trams en bussen",
+        "Parkeerstrook voor bussen en autocars"
+      ],
+      "correctIndex": 1,
+      "explanation": "Bord F18 wijst een bijzondere overrijdbare bedding aan die voorbehouden is voor voertuigen van geregelde diensten voor gemeenschappelijk vervoer (art. 71.2 van de Wegcode).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+    },
+    {
+      "id": "rec-f21",
+      "type": "recognize",
+      "category": "aanwijzing",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/F21.svg",
+      "options": [
+        "Rechts of links voorbijrijden toegelaten",
+        "Verplicht rechtdoor rijden of afslaan naar rechts",
+        "Splitsing van twee autosnelwegen",
+        "Verplichte rijrichting naar rechts"
+      ],
+      "correctIndex": 0,
+      "explanation": "Aanwijzingsbord F21 geeft aan dat bestuurders een hindernis of vluchtheuvel zowel links als rechts mogen voorbijrijden (art. 71.2 van de Wegcode).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+    },
+    {
+      "id": "rec-f23a",
+      "type": "recognize",
+      "category": "aanwijzing",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/F23a.svg",
+      "options": [
+        "Nummer van een autosnelweg",
+        "Nummer van een gewone weg",
+        "Nummer van een internationale weg",
+        "Nummer van een ringweg rond een agglomeratie"
+      ],
+      "correctIndex": 1,
+      "explanation": "Bord F23a geeft het identificatienummer aan van een gewone weg, zoals een nationale of gewestweg (art. 71.2 van de Wegcode).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+    },
+    {
+      "id": "rec-f23b",
+      "type": "recognize",
+      "category": "aanwijzing",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/F23b.svg",
+      "options": [
+        "Nummer van een gewestweg",
+        "Nummer van een afrit",
+        "Nummer van een autosnelweg",
+        "Afstand in kilometers tot het volgende knooppunt"
+      ],
+      "correctIndex": 2,
+      "explanation": "Bord F23b duidt het administratieve nummer van een autosnelweg aan (art. 71.2 van de Wegcode).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+    },
+    {
+      "id": "rec-f23c",
+      "type": "recognize",
+      "category": "aanwijzing",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/F23c.svg",
+      "options": [
+        "Nummer van een gewone gewestweg",
+        "Nummer van een ringweg",
+        "Nummer van een milieuzone",
+        "Nummer van een internationale weg"
+      ],
+      "correctIndex": 3,
+      "explanation": "Bord F23c duidt het nummer van een internationale weg (Europese E-route) aan (art. 71.2 van de Wegcode).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+    },
+    {
+      "id": "rec-f23d",
+      "type": "recognize",
+      "category": "aanwijzing",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/F23d.svg",
+      "options": [
+        "Nummer van een rotonde",
+        "Nummer van een autosnelwegparking",
+        "Nummer van een internationale transitroute",
+        "Nummer van een ring"
+      ],
+      "correctIndex": 3,
+      "explanation": "Bord F23d duidt het routenummer van een ringweg (ring) rond een agglomeratie of stad aan (art. 71.2 van de Wegcode).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+    },
+    {
+      "id": "rec-f25",
+      "type": "recognize",
+      "category": "aanwijzing",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/F25.svg",
+      "options": [
+        "Voorwegwijzer",
+        "Wegwijzer op het kruispunt zelf",
+        "Routebevestigingsbord na een kruispunt",
+        "Aankondiging van een toeristische attractie"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bord F25 is een voorwegwijzer die voor het kruispunt de te volgen richtingen en bestemmingen aankondigt (art. 71.2 van de Wegcode).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+    },
+    {
+      "id": "rec-f27",
+      "type": "recognize",
+      "category": "aanwijzing",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/F27.svg",
+      "options": [
+        "Einde van een autosnelweg",
+        "Voorwegwijzer die een reisweg over een autosnelweg aankondigt",
+        "Wegwijzer uitsluitend voor zwaar vrachtverkeer",
+        "Voorwegwijzer die een doodlopende weg aanduidt"
+      ],
+      "correctIndex": 1,
+      "explanation": "Bord F27 is een voorwegwijzer die aangeeft dat de gesignaleerde reisweg over een autosnelweg loopt (art. 71.2 van de Wegcode).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+    },
+    {
+      "id": "rec-f29",
+      "type": "recognize",
+      "category": "aanwijzing",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/F29.svg",
+      "options": [
+        "Voorwegwijzer die een rotonde aankondigt",
+        "Aankondiging van een tolweg",
+        "Wegwijzer die de te volgen richting aanduidt naar een bestemming",
+        "Routebevestigingsbord langs een autosnelweg"
+      ],
+      "correctIndex": 2,
+      "explanation": "Bord F29 is een wegwijzer die op de afslag de richting naar een bestemming aanduidt, eventueel met afstandsvermelding (art. 71.2 van de Wegcode).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+    },
+    {
+      "id": "rec-f31",
+      "type": "recognize",
+      "category": "aanwijzing",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/F31.svg",
+      "options": [
+        "Begin van een zone voor snelverkeer",
+        "Wegwijzer naar een secundaire gewestweg",
+        "Verplichte rijrichting voor personenwagens",
+        "Wegwijzer die een reisweg over een autosnelweg aanduidt"
+      ],
+      "correctIndex": 3,
+      "explanation": "Bord F31 is een wegwijzer die aangeeft dat de aangeduide reisweg naar de bestemming over een autosnelweg loopt (art. 71.2 van de Wegcode).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+    },
+    {
+      "id": "rec-f33a",
+      "type": "recognize",
+      "category": "aanwijzing",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/F33a.svg",
+      "options": [
+        "Bewegwijzeringsbord op afstand naar een openbaar of industrieel centrum",
+        "Wegwijzer naar een recreatieve wandelroute",
+        "Aanduiding van een parkeerterrein voor vrachtwagens",
+        "Aankondiging van een douanegrenspost"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bord F33a is een bewegwijzeringsbord op afstand naar specifieke bestemmingen zoals een haven, universiteit of industriepark (art. 71.2 van de Wegcode).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+    },
+    {
+      "id": "rec-f33b",
+      "type": "recognize",
+      "category": "aanwijzing",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/F33b.svg",
+      "options": [
+        "Aanduiding van een drinkwaterbeschermingsgebied",
+        "Bewegwijzeringsbord op afstand naar een vallei of waterloop van toeristische aard",
+        "Waarschuwing voor overstromingsgevaar van de rijbaan",
+        "Wegwijzer naar een jachthaven of aanlegsteiger"
+      ],
+      "correctIndex": 1,
+      "explanation": "Bord F33b is een toeristisch bewegwijzeringsbord op afstand dat leidt naar een vallei of waterloop van toeristische aard (art. 71.2 van de Wegcode).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+    },
+    {
+      "id": "rec-f33c",
+      "type": "recognize",
+      "category": "aanwijzing",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/F33c.svg",
+      "options": [
+        "Aankondiging van een beschermd natuurgebied met toegangsverbod",
+        "Wegwijzer naar een openbare begraafplaats",
+        "Bewegwijzeringsbord op afstand naar een toeristische bezienswaardigheid of recreatiegebied",
+        "Voorwegwijzer naar een stedelijk politiekantoor"
+      ],
+      "correctIndex": 2,
+      "explanation": "Bord F33c wijst op afstand de weg naar monumenten, recreatieparken, sportcentra of toeristische trekpleisters (art. 71.2 van de Wegcode).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+    },
+    {
+      "id": "rec-f34a",
+      "type": "recognize",
+      "category": "aanwijzing",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/F34a.svg",
+      "options": [
+        "Verplichte route voor hulpdiensten",
+        "Parkeerverbod nabij openbare gebouwen",
+        "Wegwijzer voor fietsers en ruiters",
+        "Bewegwijzeringsbord in de nabijheid van een openbare inrichting of dienst van algemeen belang"
+      ],
+      "correctIndex": 3,
+      "explanation": "Bord F34a wijst in de nabijheid de weg naar openbare inrichtingen en instellingen van algemeen belang (art. 71.2 van de Wegcode).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+    },
+    {
+      "id": "rec-f35",
+      "type": "recognize",
+      "category": "aanwijzing",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/F35.svg",
+      "options": [
+        "Wegwijzer naar een industrieterrein of vrachtwagenparking",
+        "Aanduiding van een bosbrandgevaargebied",
+        "Aankondiging van een jeugdherberg of kampeerterrein",
+        "Toeristische wegwijzer naar een monument, bezienswaardigheid of recreatiepark"
+      ],
+      "correctIndex": 3,
+      "explanation": "Bord F35 is een toeristische wegwijzer naar een bezienswaardigheid, monument, sportcentrum of recreatiepark (art. 71.2 van de Wegcode).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+    },
+    {
+      "id": "rec-f37",
+      "type": "recognize",
+      "category": "aanwijzing",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/F37.svg",
+      "options": [
+        "Aanduiding van een openbare rustplaats langs een autosnelweg",
+        "Parkeerplaats uitsluitend voor kampeerwagens en caravans",
+        "Wegwijzer naar een woonzorgcentrum",
+        "Toeristische wegwijzer naar een verblijfsaccommodatie, camping of jeugdherberg"
+      ],
+      "correctIndex": 3,
+      "explanation": "Bord F37 wijst de richting aan naar toeristische verblijfsaccommodaties, zoals hotels, campings of jeugdherbergen (art. 71.2 van de Wegcode).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+    },
+    {
+      "id": "rec-f39",
+      "type": "recognize",
+      "category": "aanwijzing",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/F39.svg",
+      "options": [
+        "Voorwegwijzer die een omlegging aankondigt",
+        "Wegwijzer die het einde van de werken aanduidt",
+        "Aankondiging van een doodlopende straat wegens werken",
+        "Verplichte rijstrookindeling bij wegwerkzaamheden"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bord F39 is een voorwegwijzer die bestuurders vooraf waarschuwt voor een omlegging van de normale reisweg (art. 71.2 van de Wegcode).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+    },
+    {
+      "id": "rec-f41",
+      "type": "recognize",
+      "category": "aanwijzing",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/F41.svg",
+      "options": [
+        "Voorwegwijzer naar een alternatieve autosnelweg",
+        "Wegwijzer die een omleggingsweg aanduidt",
+        "Aanduiding van een tijdelijke parkeerzone",
+        "Verplicht rechtdoor rijden bij wegenwerken"
+      ],
+      "correctIndex": 1,
+      "explanation": "Bord F41 is een wegwijzer die tijdens een omlegging de richting aangeeft van de te volgen omleggingsweg (art. 71.2 van de Wegcode).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+    },
+    {
+      "id": "rec-f43",
+      "type": "recognize",
+      "category": "aanwijzing",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/F43.svg",
+      "options": [
+        "Begin van een bebouwde kom met een snelheidsbeperking van 50 km/u",
+        "Begin van een erf of woonzone",
+        "Plaatsnaambord zonder snelheidsbeperking van een bebouwde kom",
+        "Aanduiding van een provinciegrens"
+      ],
+      "correctIndex": 2,
+      "explanation": "Bord F43 is een plaatsnaambord dat louter de naam van een plaats aanduidt; het legt geen snelheidsbeperking van een bebouwde kom op (art. 71.2 van de Wegcode).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+    },
+    {
+      "id": "rec-f45b",
+      "type": "recognize",
+      "category": "aanwijzing",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/F45b.svg",
+      "options": [
+        "Doodlopende weg voor alle weggebruikers",
+        "Weg uitsluitend voorbehouden voor fietsers en voetgangers",
+        "Eenrichtingsverkeer met uitzondering voor fietsers",
+        "Doodlopende weg, uitgezonderd voor voetgangers en fietsers"
+      ],
+      "correctIndex": 3,
+      "explanation": "Bord F45b duidt een doodlopende weg aan die wél doorgankelijk blijft voor fietsers en voetgangers (art. 71.2 van de Wegcode).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+    },
+    {
+      "id": "rec-f47",
+      "type": "recognize",
+      "category": "aanwijzing",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/F47.svg",
+      "options": [
+        "Begin van een werfzone met verlaagde snelheid",
+        "Einde van een omleggingsweg",
+        "Einde van de werken",
+        "Einde van alle voorrangsbepalingen"
+      ],
+      "correctIndex": 2,
+      "explanation": "Verkeersbord F47 geeft het einde van de werken op de openbare weg aan (art. 71.2 van de Wegcode).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+    },
+    {
+      "id": "rec-f50",
+      "type": "recognize",
+      "category": "aanwijzing",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/F50.svg",
+      "options": [
+        "Begin van een verplicht fietspad",
+        "Waarschuwing voor een oversteekplaats voor fietsers verderop",
+        "Oversteekplaats voor fietsers en bestuurders van tweewielige bromfietsen",
+        "Weg voorbehouden voor fietsers en tweewielige bromfietsen"
+      ],
+      "correctIndex": 2,
+      "explanation": "Bord F50 duidt de precieze plaats aan van een oversteekplaats voor fietsers en bestuurders van tweewielige bromfietsen (art. 71.2 van de Wegcode).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+    },
+    {
+      "id": "rec-f50bis",
+      "type": "recognize",
+      "category": "aanwijzing",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/F50bis.svg",
+      "options": [
+        "Verplicht fietspad langs beide zijden van de rijbaan",
+        "Verbod om rechts af te slaan voor fietsers",
+        "Voorrang van rechts geldt ook voor alle fietsers",
+        "Bord dat bestuurders die van richting veranderen wijst op fietsers en bestuurders van tweewielige bromfietsen die dezelfde weg volgen"
+      ],
+      "correctIndex": 3,
+      "explanation": "Bord F50bis wijst bestuurders die van richting veranderen op fietsers en tweewielige bromfietsers die dezelfde openbare weg rechtdoor blijven volgen (art. 71.2 van de Wegcode).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+    },
+    {
       "id": "rec-f103",
       "type": "recognize",
       "category": "aanwijzing",
