@@ -1,8 +1,9 @@
 const CONFIG = {
   QUESTIONS_PER_ROUND: 20,
-  // Vul dit in na het deployen van de Google Apps Script Web App (zie README).
-  // Zolang dit null is, wordt het resultaat niet naar een Google Sheet gestuurd.
-  SHEET_WEBAPP_URL: null,
+  // If null, no results will be propagated:
+  SHEET_WEBAPP_URL: "https://script.google.com/macros/s/AKfycbyYyBMb8KTD13MrJhOpmZIYKHCbuGD5PyiL01tdzcWNRle6juEB6Qgap1yYfmmJJ2lE/exec",
+  // Moet overeenkomen met SHARED_SECRET in google-apps-script/Code.gs.
+  SHEET_SECRET: "8jd6H2Byuj0HaIqL",
 };
 
 const state = {
@@ -196,6 +197,7 @@ async function submitToSheet(correct, total) {
         score: correct,
         totaal: total,
         datum: new Date().toISOString(),
+        sleutel: CONFIG.SHEET_SECRET,
       }),
     });
   } catch (err) {

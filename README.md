@@ -76,6 +76,25 @@ met de bredere toegang. Om dat recht te laten intrekken en te vervangen door de 
 4. Doorloop de quiz opnieuw zodat het script opnieuw om toestemming vraagt — controleer dan of de
    vraag nu specifiek over "deze spreadsheet" gaat, niet over "al je spreadsheets".
 
+### Gedeeld geheim tegen spam
+
+`Code.gs` en `js/app.js` delen een `sleutel`-waarde (`SHARED_SECRET` / `CONFIG.SHEET_SECRET`) die
+moet overeenkomen voor er een rij wordt toegevoegd. Dit is geen echte beveiliging — de waarde staat
+gewoon leesbaar in de publieke broncode — maar houdt generieke bots tegen die lukraak Apps
+Script-URL's aanschieten. Wijzig je de waarde in het ene bestand, wijzig ze dan ook in het andere
+en herdeploy het script (zie vorige sectie, stap 2).
+
+### Testen of de Sheet-koppeling werkt
+
+1. Open de site en doorloop de quiz volledig tot het resultatenscherm.
+2. Open de Google Sheet: er moet een tabblad "Resultaten" verschenen zijn met een nieuwe rij
+   (datum, naam, score, totaal).
+3. Zie je geen rij verschijnen, open dan de browserconsole (F12 > Console) tijdens het spelen —
+   een mislukte aanroep logt daar een waarschuwing "Kon score niet naar Google Sheet sturen".
+4. Wil je het los van de UI testen: open in de Apps Script-editor het menu Uitvoeringen
+   (Executions, links in de zijbalk) na een testoproep, dat toont de laatste `doPost`-aanroepen
+   en eventuele foutmeldingen.
+
 ## Open vragen / vervolgstappen
 
 - Vragenbank uitbreiden met meer categorieen naarmate er tijd is.
