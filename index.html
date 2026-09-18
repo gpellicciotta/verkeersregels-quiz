@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Verkeersregels Quiz</title>
-<link rel="icon" href="data:,">
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verkeersregels Quiz</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
 <main id="app">
-
+  <!-- Start screen -->
   <section id="screen-start" class="screen">
     <h1>Verkeersregels Quiz</h1>
     <p>Oefen voor je theoretisch rijexamen: 20 vragen over verkeersborden en verkeersregels.</p>
@@ -19,35 +18,29 @@
     <button id="btn-start" class="btn-primary">Start quiz</button>
     <p id="start-error" class="error hidden"></p>
   </section>
-
+  <!-- Question screens -->
   <section id="screen-quiz" class="screen hidden">
     <div class="quiz-header">
       <span id="quiz-progress">Vraag 1/20</span>
       <span id="quiz-score">Score: 0</span>
     </div>
     <div class="progress-bar"><div id="progress-fill"></div></div>
-
     <h2 id="question-text"></h2>
     <div id="question-image-wrap" class="hidden">
       <img id="question-image" alt="Verkeersbord">
     </div>
-
     <div id="options" class="options"></div>
-
     <div id="explanation" class="explanation hidden"></div>
-
     <button id="btn-next" class="btn-primary hidden">Volgende vraag</button>
   </section>
-
+  <!-- Result screen -->
   <section id="screen-result" class="screen hidden">
     <h1>Resultaat</h1>
     <p id="result-summary"></p>
-
     <div class="result-actions no-print">
       <button id="btn-print" class="btn-secondary">Printen / opslaan als PDF</button>
       <button id="btn-restart" class="btn-primary">Opnieuw spelen</button>
     </div>
-
     <table id="result-table">
       <thead>
         <tr>
@@ -61,9 +54,7 @@
       <tbody id="result-table-body"></tbody>
     </table>
   </section>
-
 </main>
-
 <script src="js/app.js"></script>
 </body>
 </html>
