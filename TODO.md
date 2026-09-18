@@ -9,16 +9,16 @@ An overview of all tasks and their planning.
 > Owner: `[owner: @name]` shown only when active/blocked/needs-review.
 > Dependencies: `[needs: Tnnnn]` shown only when unresolved.
 
-**Next ID:** 0010
+**Next ID:** 0011
 
 ---
 
 ## Next Milestone
 
-- [~] T0008 [owner: @antigravity] Track quiz duration, display it on the results screen, and store it in Google Sheet.
 - [ ] T0007 Add a "wrong question/answer" button on each question page and store it in a separate tab in the Google sheet.
       Also explain the button/icon on the start page.
-- [ ] T0003 [needs: T0007, T0008] Release v1.0.0 on GitHub Pages.
+- [ ] T0010 Add the version to the start page and when clicked, show the CHANGELOG
+- [ ] T0003 [needs: T0007, T0010] Release v1.0.0 on GitHub Pages.
 
 ---
 
