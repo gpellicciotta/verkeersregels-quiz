@@ -21,9 +21,9 @@ body {
 }
 
 #app {
-  max-width: 640px;
+  width: 100%;
   margin: 0 auto;
-  padding: 24px 16px 64px;
+  padding: 20px 16px 64px;
 }
 
 h1 { font-size: 1.6rem; margin-bottom: 8px; }
@@ -173,6 +173,25 @@ button {
 
 .tag-correct { color: var(--color-correct); font-weight: 600; }
 .tag-wrong { color: var(--color-wrong); font-weight: 600; }
+
+/* Tablet and up: give the layout room to breathe instead of stretching edge to edge. */
+@media (min-width: 640px) {
+  body { padding: 32px 16px; }
+
+  #app {
+    max-width: 620px;
+    background: var(--color-card);
+    border-radius: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08), 0 8px 24px rgba(0, 0, 0, 0.06);
+    padding: 32px 40px 40px;
+  }
+
+  h1 { font-size: 1.8rem; }
+
+  .options-images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 
 @media print {
   .no-print { display: none !important; }

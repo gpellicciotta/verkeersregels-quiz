@@ -88,6 +88,7 @@ function renderQuestion() {
 
   el.options.innerHTML = "";
   const optionIsImage = q.type === "identify";
+  el.options.classList.toggle("options-images", optionIsImage);
 
   q.options.forEach((opt, idx) => {
     const btn = document.createElement("button");
