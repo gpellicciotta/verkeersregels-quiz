@@ -10,6 +10,20 @@ function doPost(e) {
       .createTextOutput(JSON.stringify({ status: 'forbidden' }))
       .setMimeType(ContentService.MimeType.JSON);
   }
+
+  if (p.actie === 'report_error') {
+    var meldingenHeaders = ['Wanneer', 'Vraag ID', 'Vraag', 'Wie', 'Opmerking'];
+    var meldingenSheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Meldingen');
+    if (!meldingenSheet) {
+      meldingenSheet = SpreadsheetApp.getActiveSpreadsheet().insertSheet('Meldingen');
+    }
+    meldingenSheet.getRange(1, 1, 1, meldingenHeaders.length).setValues([meldingenHeaders]);
+    meldingenSheet.appendRow([p.datum, p.vraagId, p.vraag, p.naam || 'Anoniem', p.opmerking || '']);
+    return ContentService
+      .createTextOutput(JSON.stringify({ status: 'ok' }))
+      .setMimeType(ContentService.MimeType.JSON);
+  }
+
   var headers = ['Wanneer', 'Wie', 'Juiste Antwoorden', 'Aantal Vragen', 'Percentage', 'Duur (sec)', 'Duur'];
   var sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Resultaten');
   if (!sheet) {

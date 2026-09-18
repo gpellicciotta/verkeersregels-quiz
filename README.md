@@ -11,6 +11,7 @@ Geen server nodig: platte HTML/CSS/JS, te hosten via GitHub Pages.
   en soms een vraag over een verkeersregel.
 - Na elk antwoord zie je meteen of het juist was, met een korte uitleg. Je kan niet terug naar
   een vorige vraag.
+- Zie je een fout of onduidelijkheid? Klik op de knop "Meld fout" om direct een opmerking door te geven.
 - Op het einde krijg je je score, de verstreken tijdsduur en een volledig overzicht van alle
   vragen, jouw antwoorden en de juiste antwoorden. Dat overzicht kan je printen of als PDF
   opslaan via de knop "Printen" (gebruikt de browser-printfunctie).
@@ -94,6 +95,17 @@ moet overeenkomen voor er een rij wordt toegevoegd. Dit is geen echte beveiligin
 gewoon leesbaar in de publieke broncode — maar houdt generieke bots tegen die lukraak Apps
 Script-URL's aanschieten. Wijzig je de waarde in het ene bestand, wijzig ze dan ook in het andere
 en herdeploy het script (zie vorige sectie, stap 2).
+
+### Foutmeldingen opslaan in tabblad "Meldingen"
+
+Spelers kunnen tijdens elke vraag op "Meld fout" klikken om een opmerking door te geven.
+Het script maakt automatisch een apart tabblad "Meldingen" aan met de volgende kolommen:
+
+- `Wanneer`: tijdstip van melding in ISO-formaat.
+- `Vraag ID`: unieke identifier van de vraag.
+- `Vraag`: volledige tekst van de vraag.
+- `Wie`: spelersnaam of "Anoniem" als er geen naam werd ingevuld.
+- `Opmerking`: toelichting of voorgestelde correctie van de speler.
 
 ### Testen of de Sheet-koppeling werkt
 

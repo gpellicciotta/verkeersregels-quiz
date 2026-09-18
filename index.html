@@ -19,6 +19,10 @@
     <input type="text" id="player-name" placeholder="Bv. Noah">
     <button id="btn-start" class="btn-primary">Start quiz</button>
     <p id="start-error" class="error hidden"></p>
+    <div class="start-report-hint">
+      <span class="report-hint-icon" aria-hidden="true">🚩</span>
+      <p class="report-hint-text">Zie je een fout of onduidelijkheid in een vraag of antwoord? Klik tijdens de quiz op de 'Meld fout'-knop om een correctie door te geven.</p>
+    </div>
     <footer class="start-legal-links">
       <span class="start-legal-title">Officiële wetgeving:</span>
       <div class="start-legal-items">
@@ -33,6 +37,13 @@
   <section id="screen-quiz" class="screen hidden">
     <div class="quiz-header">
       <span id="quiz-progress">Vraag 1/20</span>
+      <button type="button" id="btn-report-error" class="btn-report-error" title="Meld een fout in deze vraag" aria-label="Meld fout in deze vraag">
+        <svg class="report-icon" aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
+          <line x1="4" y1="22" x2="4" y2="15"></line>
+        </svg>
+        <span>Meld fout</span>
+      </button>
       <span id="quiz-score">Score: 0</span>
     </div>
     <div class="progress-bar"><div id="progress-fill"></div></div>
@@ -69,6 +80,30 @@
       <tbody id="result-table-body"></tbody>
     </table>
   </section>
+
+  <!-- Modal for reporting question error -->
+  <div id="modal-report" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="modal-report-title">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 id="modal-report-title">Fout melden</h3>
+        <button type="button" id="btn-modal-close" class="modal-close" aria-label="Sluiten">&times;</button>
+      </div>
+      <form id="form-report" class="modal-body">
+        <p class="modal-desc">Zie je een onjuistheid of onduidelijkheid in deze vraag of antwoorden? Geef het hier door.</p>
+        <div class="modal-question-summary">
+          <div id="modal-question-id" class="modal-question-id"></div>
+          <div id="modal-question-text" class="modal-question-text"></div>
+        </div>
+        <label for="report-remark">Opmerking of toelichting (optioneel):</label>
+        <textarea id="report-remark" name="opmerking" rows="3" placeholder="Wat klopt er niet of wat kan duidelijker?"></textarea>
+        <div id="modal-feedback" class="modal-feedback hidden"></div>
+        <div class="modal-actions">
+          <button type="button" id="btn-modal-cancel" class="btn-secondary">Annuleren</button>
+          <button type="submit" id="btn-modal-submit" class="btn-primary">Versturen</button>
+        </div>
+      </form>
+    </div>
+  </div>
 </main>
 </body>
 </html>

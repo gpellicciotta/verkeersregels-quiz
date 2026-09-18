@@ -71,6 +71,31 @@ button {
 
 .error { color: var(--color-wrong); }
 
+/* Start screen error reporting hint */
+.start-report-hint {
+  margin-top: 20px;
+  padding: 12px 14px;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--radius);
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: #475569;
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.report-hint-icon {
+  font-size: 1.1rem;
+  line-height: 1.2;
+  flex-shrink: 0;
+}
+
+.report-hint-text {
+  margin: 0;
+}
+
 /* Legal source links on start screen */
 .start-legal-links {
   margin-top: 28px;
@@ -182,9 +207,39 @@ button {
 .quiz-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   font-weight: 600;
   color: var(--color-muted);
   margin-bottom: 8px;
+  gap: 8px;
+}
+
+.btn-report-error {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin: 0;
+  padding: 4px 10px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #4b5563;
+  background: #f3f4f6;
+  border: 1px solid #d1d5db;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  line-height: 1.2;
+}
+
+.btn-report-error:hover,
+.btn-report-error:focus-visible {
+  background: #fee2e2;
+  color: #b91c1c;
+  border-color: #fca5a5;
+}
+
+.report-icon {
+  flex-shrink: 0;
 }
 
 .progress-bar {
@@ -428,6 +483,164 @@ button {
   }
 }
 
+/* Reporting modal */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: 16px;
+}
+
+.modal-dialog {
+  background: var(--color-card);
+  border-radius: 12px;
+  max-width: 480px;
+  width: 100%;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  animation: modal-pop 0.18s ease-out;
+}
+
+@keyframes modal-pop {
+  from {
+    opacity: 0;
+    transform: scale(0.96) translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.modal-header h3 {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.modal-close {
+  background: transparent;
+  border: none;
+  margin: 0;
+  padding: 2px 6px;
+  font-size: 1.5rem;
+  line-height: 1;
+  color: var(--color-muted);
+  cursor: pointer;
+  border-radius: 4px;
+  transition: color 0.15s ease;
+}
+
+.modal-close:hover,
+.modal-close:focus-visible {
+  color: var(--color-text);
+}
+
+.modal-body {
+  padding: 18px 20px 20px;
+}
+
+.modal-desc {
+  margin: 0 0 12px;
+  font-size: 0.9rem;
+  color: var(--color-muted);
+  line-height: 1.4;
+}
+
+.modal-question-summary {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin-bottom: 14px;
+  font-size: 0.88rem;
+}
+
+.modal-question-id {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 4px;
+}
+
+.modal-question-text {
+  font-weight: 500;
+  color: var(--color-text);
+  line-height: 1.35;
+}
+
+.modal-body label {
+  margin-top: 0;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.modal-body textarea {
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px 12px;
+  font-size: 0.92rem;
+  font-family: inherit;
+  border: 1px solid #d1d5db;
+  border-radius: var(--radius);
+  resize: vertical;
+  box-sizing: border-box;
+}
+
+.modal-body textarea:focus {
+  outline: 2px solid var(--color-primary);
+  border-color: transparent;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.modal-actions button {
+  margin-top: 0;
+  flex: 1;
+  padding: 10px 14px;
+  font-size: 0.95rem;
+}
+
+.modal-feedback {
+  margin-top: 12px;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.modal-feedback.feedback-success {
+  background: #ecfdf3;
+  color: #15803d;
+  border: 1px solid #bbf7d0;
+}
+
+.modal-feedback.feedback-error {
+  background: #fef2f2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+}
+
 /* Tablet and up: give the layout room to breathe instead of stretching edge to edge. */
 @media (min-width: 640px) {
   body { padding: 32px 16px; }
@@ -473,7 +686,8 @@ button {
 
   #screen-start,
   #screen-quiz,
-  #confetti-layer {
+  #confetti-layer,
+  #modal-report {
     display: none !important;
   }
 

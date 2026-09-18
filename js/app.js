@@ -44,9 +44,20 @@ const el = {
   resultTableBody: document.getElementById("result-table-body"),
   btnPrint: document.getElementById("btn-print"),
   btnRestart: document.getElementById("btn-restart"),
+  btnReportError: document.getElementById("btn-report-error"),
+  modalReport: document.getElementById("modal-report"),
+  btnModalClose: document.getElementById("btn-modal-close"),
+  btnModalCancel: document.getElementById("btn-modal-cancel"),
+  btnModalSubmit: document.getElementById("btn-modal-submit"),
+  formReport: document.getElementById("form-report"),
+  modalQuestionId: document.getElementById("modal-question-id"),
+  modalQuestionText: document.getElementById("modal-question-text"),
+  reportRemark: document.getElementById("report-remark"),
+  modalFeedback: document.getElementById("modal-feedback"),
 };
 
 function showScreen(name) {
+  closeReportModal();
   el.screenStart.classList.toggle("hidden", name !== "start");
   el.screenQuiz.classList.toggle("hidden", name !== "quiz");
   el.screenResult.classList.toggle("hidden", name !== "result");
@@ -373,6 +384,71 @@ async function submitToSheet(correct, total, pct, durationSeconds, formattedDura
   }
 }
 
+async function submitErrorReport(remark) {
+  if (!CONFIG.SHEET_WEBAPP_URL) return;
+  const q = state.round[state.currentIndex];
+  if (!q) return;
+
+  try {
+    await fetch(CONFIG.SHEET_WEBAPP_URL, {
+      method: "POST",
+      mode: "no-cors",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams({
+        actie: "report_error",
+        sleutel: CONFIG.SHEET_SECRET,
+        datum: new Date().toISOString(),
+        vraagId: q.id || "",
+        vraag: q.question || "",
+        naam: state.playerName || "Anoniem",
+        opmerking: remark || "",
+      }),
+    });
+  } catch (err) {
+    console.warn("Kon melding niet naar Google Sheet sturen:", err);
+  }
+}
+
+function openReportModal() {
+  const q = state.round[state.currentIndex];
+  if (!q) return;
+
+  el.modalQuestionId.textContent = q.id ? `Vraag ${q.id}` : `Vraag ${state.currentIndex + 1}`;
+  el.modalQuestionText.textContent = q.question;
+  el.reportRemark.value = "";
+  el.modalFeedback.textContent = "";
+  el.modalFeedback.className = "modal-feedback hidden";
+  el.btnModalSubmit.disabled = false;
+  el.modalReport.classList.remove("hidden");
+  el.reportRemark.focus();
+}
+
+function closeReportModal() {
+  if (!el.modalReport) return;
+  el.modalReport.classList.add("hidden");
+  el.modalFeedback.textContent = "";
+  el.modalFeedback.className = "modal-feedback hidden";
+}
+
+async function handleReportSubmit(e) {
+  e.preventDefault();
+  const q = state.round[state.currentIndex];
+  if (!q) return;
+
+  el.btnModalSubmit.disabled = true;
+  const remark = el.reportRemark.value.trim();
+
+  await submitErrorReport(remark);
+
+  el.modalFeedback.textContent = "Bedankt voor je melding!";
+  el.modalFeedback.className = "modal-feedback feedback-success";
+  el.modalFeedback.classList.remove("hidden");
+
+  setTimeout(() => {
+    closeReportModal();
+  }, 1200);
+}
+
 function restart() {
   state.startTime = null;
   state.endTime = null;
@@ -393,6 +469,18 @@ el.btnStart.addEventListener("click", () => {
 el.btnNext.addEventListener("click", nextQuestion);
 el.btnRestart.addEventListener("click", restart);
 el.btnPrint.addEventListener("click", () => window.print());
+el.btnReportError.addEventListener("click", openReportModal);
+el.btnModalClose.addEventListener("click", closeReportModal);
+el.btnModalCancel.addEventListener("click", closeReportModal);
+el.formReport.addEventListener("submit", handleReportSubmit);
+el.modalReport.addEventListener("click", (e) => {
+  if (e.target === el.modalReport) closeReportModal();
+});
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && !el.modalReport.classList.contains("hidden")) {
+    closeReportModal();
+  }
+});
 
 function checkAutoStart() {
   const params = new URLSearchParams(window.location.search);
@@ -411,6 +499,9 @@ function checkAutoStart() {
     showResult();
   } else if (params.get("autostart") === "1") {
     startQuiz();
+    if (params.get("report") === "1") {
+      openReportModal();
+    }
   }
 }
 
