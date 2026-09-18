@@ -15,12 +15,11 @@ An overview of all tasks and their planning.
 
 ## Next Milestone
 
-- [~] T0005 [owner: @antigravity] Ensure the printed results page uses full width and avoids splitting rows across pages.
 - [ ] T0008 Track the duration of the quiz, show it on the results page and store it in the Google sheet
 - [ ] T0007 Add a "wrong question/answer" button on each question page and store it in a separate tab in the Google sheet.
       Also explain the button/icon on the start page.
 - [ ] T0009 Add links on the home page to the originele wegcode
-- [ ] T0003 [needs: T0009, T0007, T0008, T0005] Release v1.0.0 on GitHub Pages.
+- [ ] T0003 [needs: T0009, T0007, T0008] Release v1.0.0 on GitHub Pages.
 
 ---
 

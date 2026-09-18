@@ -14,6 +14,7 @@ A summarized overview of all changes, per version of this project.
 ---
 
 ## v1.0.0-pre
+- FrontEnd: Expanded printed results to full width with page-break protection against split rows and repeating headers.
 - FrontEnd: Condensed mobile result cards with top-right pill badges and unified answer fields for correct responses.
 - FrontEnd: Added amendment year badges and supported URL query filtering to practice recent traffic rule changes.
 - FrontEnd: Added a mobile-first Dutch quiz asking 20 random sign and traffic-rule questions with instant explanations.
