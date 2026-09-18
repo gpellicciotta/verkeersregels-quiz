@@ -5,7 +5,7 @@ A summarized overview of all changes, per version of this project.
 > Entries will be added in reverse chronological order, so with the most recent at the top.
 >
 > The top-most version heading is always the active in-development version, identified by a `-pre`
-> suffix on its version number (e.g. `## v1.0.1-pre`) instead of a status tag. Once a version is frozen
+> suffix on its version number (e.g. `## v1.1.1-pre`) instead of a status tag. Once a version is frozen
 > or released, that suffix is replaced by one of these status codes:
 > - `[{{date}}]` - frozen/finalized on {{date}}
 > - `[released: {{date}}]` - released to package manager or production on {{date}}
@@ -14,31 +14,35 @@ A summarized overview of all changes, per version of this project.
 ---
 
 ## v1.1.1-pre
+- Inhoud: Volledige dekking van alle Belgische verkeersborden gerealiseerd met 193 bordafbeeldingen en 284 vragen.
+- FrontEnd: Foutmeldingsformulier geoptimaliseerd voor onmiddellijke achtergrondverzending zonder enige vertraging in de interface.
+- FrontEnd: Voortgangsbalk gecorrigeerd zodat deze vanaf de eerste vraag evenredig oploopt tot 100 procent.
+- Test: Testsuite uitgebreid met strenge controle op aanwezigheid van bordafbeeldingen bij alle bordvragen.
 
 ## v1.1.0 [2026-09-18]
-- Docs: Added a visual tour with desktop and mobile screenshots to the README.
-- FrontEnd: Added a blue road sign SVG favicon and updated the final question button to show results.
-- FrontEnd: Updated start notices and progress indicators to display dynamic question counts clamped to available questions.
-- FrontEnd: Supported URL query parameter aliases for since-year filtering and question count overrides.
-- FrontEnd: Displayed authoritative official rule and explainer reference links upon answering each quiz question.
-- Content: Doubled question bank to 126 questions with full sign coverage and post-2022 rules.
+- Documentatie: Visuele rondleiding met desktop- en mobiele schermafbeeldingen toegevoegd aan de README.
+- FrontEnd: Blauw verkeersbord-favicon toegevoegd en knop bij de laatste vraag aangepast naar resultaat tonen.
+- FrontEnd: Startmelding en voortgangsindicatoren tonen nu dynamische vragenaantallen begrensd op beschikbare vragen.
+- FrontEnd: URL-queryparameters toegevoegd voor filteren op jaartal van wetswijziging en aantal vragen.
+- FrontEnd: Officiële wetsartikelen en toelichtingslinks weergegeven na het beantwoorden van elke quizvraag.
+- Inhoud: Vragenbank verdubbeld naar 126 vragen met volledige borddekking en regels van na 2022.
 
 ## v1.0.0 [2026-09-18]
-- Docs: Added standard project documentation including requirements, DevOps guide, license, and documentation index.
-- DevEx: Added cross-platform bootstrap and deployment scripts with CLI version and help flags.
-- Test: Added automated test suite validating question schema, sign assets, and legal since years.
-- FrontEnd: Rendered sign images and result thumbnails for sign questions and reworded unshown sign references.
-- FrontEnd: Added an interactive version badge to the start screen opening a formatted changelog modal on click.
-- FrontEnd: Added an in-quiz error reporting button and modal sending question feedback to a dedicated Google Sheet tab.
-- FrontEnd: Tracked quiz duration from start to finish, displaying elapsed time on results and logging to Google Sheets.
-- FrontEnd: Added direct links to the official consolidated Wegcode and amendment ledger on the start screen.
-- FrontEnd: Expanded printed results to full width with page-break protection against split rows and repeating headers.
-- FrontEnd: Condensed mobile result cards with top-right pill badges and unified answer fields for correct responses.
-- FrontEnd: Added amendment year badges and supported URL query filtering to practice recent traffic rule changes.
-- FrontEnd: Added a mobile-first Dutch quiz asking 20 random sign and traffic-rule questions with instant explanations.
-- FrontEnd: Added a printable results overview with sign thumbnails and confetti on a perfect score.
-- Content: Aligned quiz questions, answers, explanations, and sign images with current Belgian traffic law.
-- Content: Added 63 verified exam questions with cited sources and 35 Belgian sign images in currently valid designs.
-- BackEnd: Added optional Google Sheet score logging for named players through a restricted Apps Script endpoint.
-- Docs: Added README instructions for local testing, GitHub Pages deployment and Google Sheet setup.
-- Docs: Added the official Wegcode text and all amending acts since 2021 as reference sources.
+- Documentatie: Standaard projectdocumentatie toegevoegd inclusief vereisten, DevOps-handleiding, licentie en documentatie-index.
+- DevEx: Platformonafhankelijke bootstrap- en implementatiescripts toegevoegd met CLI-versie- en help-opties.
+- Test: Geautomatiseerde testsuite toegevoegd voor verificatie van vraagstructuur, bordafbeeldingen en wetsjaren.
+- FrontEnd: Verkeersborden en miniaturen op het resultatenoverzicht getoond voor bordgerelateerde vragen.
+- FrontEnd: Interactieve versiebadge op het startscherm toegevoegd die bij aanklikken de changelog opent.
+- FrontEnd: Foutmeldingsknop en dialoogvenster toegevoegd om feedback op vragen naar Google Sheets te sturen.
+- FrontEnd: Quizduur van start tot finish bijgehouden, getoond bij resultaten en vastgelegd in Google Sheets.
+- FrontEnd: Directe links naar de officiële geconsolideerde Wegcode en wetswijzigingen toegevoegd op het startscherm.
+- FrontEnd: Resultatenoverzicht bij printen schermvullend gemaakt met paginascheidingsbeveiliging en herhalende koppen.
+- FrontEnd: Mobiele resultaatkaarten compacter gemaakt met statusbadges rechtsboven en samengevoegde antwoordvelden.
+- FrontEnd: Wetswijzigingsbadges en URL-parameters toegevoegd om recente verkeersregels gericht te oefenen.
+- FrontEnd: Mobielvriendelijke Nederlandstalige quiz gebouwd met 20 willekeurige vragen en directe feedback.
+- FrontEnd: Printbaar resultatenoverzicht met bordminiaturen en confetti bij een perfecte score toegevoegd.
+- Inhoud: Vragen, antwoorden, toelichtingen en verkeersborden afgestemd op de huidige Belgische verkeerswetgeving.
+- Inhoud: 63 geverifieerde examenvragen met bronvermeldingen en 35 Belgische verkeersborden toegevoegd.
+- BackEnd: Optionele score-registratie in Google Sheets voor spelers via een beveiligd Apps Script-eindpunt.
+- Documentatie: Instructies toegevoegd voor lokaal testen, GitHub Pages-publicatie en Google Sheet-configuratie.
+- Documentatie: Officiële Wegcode en alle wijzigingsbesluiten sinds 2021 toegevoegd als juridische referentiebronnen.

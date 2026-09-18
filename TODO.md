@@ -15,8 +15,7 @@ An overview of all tasks and their planning.
 
 ## Next Milestone
 
-- [ ] A0029 Since this is a Dutch audience project, the CHANGELOG entries should be rewritten in Dutch too.
-- [ ] A0030 [needs: A0029] Make a new v1.2.0 or v2.0.0 release
+- [ ] A0030 Make a new v1.2.0 or v2.0.0 release
 
 ---
 
