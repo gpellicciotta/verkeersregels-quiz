@@ -121,21 +121,43 @@ function applyFilter() {
   updateStartScreenNotice();
 }
 
+function getQuestionCountOverride() {
+  if (typeof window === "undefined" || !window.location) return null;
+  const params = new URLSearchParams(window.location.search);
+  const raw = params.get("q") || params.get("quantity");
+  if (!raw) return null;
+  const q = parseInt(raw, 10);
+  return Number.isInteger(q) && q > 0 ? q : null;
+}
+
+function getEffectiveQuestionCount() {
+  const desired = getQuestionCountOverride() || CONFIG.QUESTIONS_PER_ROUND;
+  const available = state.pool ? state.pool.length : allQuestions.length;
+  return Math.min(desired, available);
+}
+
 function updateStartScreenNotice() {
+  const desired = getQuestionCountOverride() || CONFIG.QUESTIONS_PER_ROUND;
+  const available = state.pool ? state.pool.length : allQuestions.length;
+  const effectiveCount = Math.min(desired, available);
+
+  if (el.quizProgress && effectiveCount > 0) {
+    el.quizProgress.textContent = `Vraag 1/${effectiveCount}`;
+  }
+
   if (state.filterSince !== null) {
     const badgeInfo = getSinceBadge(state.filterSince) || {
       text: `Sinds ${state.filterSince}`,
       className: "badge-since badge-amber badge-since-amber",
     };
-    const count = state.pool.length;
-    if (count > 0) {
+    if (available > 0) {
       el.filterNotice.innerHTML = `
         <span class="${badgeInfo.className}">${badgeInfo.text}</span>
-        <span>Quiz gefilterd op regels gewijzigd sinds <strong>${state.filterSince}</strong> (${count} ${count === 1 ? "vraag" : "vragen"} in de selectie).</span>
+        <span>Quiz gefilterd op regels gewijzigd sinds <strong>${state.filterSince}</strong> (${effectiveCount} ${effectiveCount === 1 ? "vraag" : "vragen"} in de selectie).</span>
       `;
       el.filterNotice.classList.remove("hidden");
       if (el.startDesc) {
-        el.startDesc.textContent = `Oefen recente wetswijzigingen sinds ${state.filterSince}: ${count} ${count === 1 ? "vraag" : "vragen"} in deze selectie.`;
+        el.startDesc.textContent = `Oefen recente wetswijzigingen sinds ${state.filterSince}: ${effectiveCount} ${effectiveCount === 1 ? "vraag" : "vragen"} in deze selectie.`;
       }
       el.startError.classList.add("hidden");
       el.btnStart.disabled = false;
@@ -145,6 +167,9 @@ function updateStartScreenNotice() {
         <span>Geen vragen gevonden voor wetswijzigingen sinds <strong>${state.filterSince}</strong>.</span>
       `;
       el.filterNotice.classList.remove("hidden");
+      if (el.startDesc) {
+        el.startDesc.textContent = `Oefen recente wetswijzigingen sinds ${state.filterSince}: 0 vragen in deze selectie.`;
+      }
       el.startError.textContent = `Er zijn geen quizvragen beschikbaar met wetswijzigingen sinds ${state.filterSince}.`;
       el.startError.classList.remove("hidden");
       el.btnStart.disabled = true;
@@ -153,20 +178,11 @@ function updateStartScreenNotice() {
     el.filterNotice.classList.add("hidden");
     el.filterNotice.innerHTML = "";
     if (el.startDesc) {
-      el.startDesc.textContent = "Oefen voor je theoretisch rijexamen: 20 vragen over verkeersborden en verkeersregels.";
+      el.startDesc.textContent = `Oefen voor je theoretisch rijexamen: ${effectiveCount} ${effectiveCount === 1 ? "vraag" : "vragen"} over verkeersborden en verkeersregels.`;
     }
     el.startError.classList.add("hidden");
-    el.btnStart.disabled = false;
+    el.btnStart.disabled = effectiveCount === 0;
   }
-}
-
-function getQuestionCountOverride() {
-  if (typeof window === "undefined" || !window.location) return null;
-  const params = new URLSearchParams(window.location.search);
-  const raw = params.get("q") || params.get("quantity");
-  if (!raw) return null;
-  const q = parseInt(raw, 10);
-  return Number.isInteger(q) && q > 0 ? q : null;
 }
 
 function startQuiz() {
@@ -177,9 +193,8 @@ function startQuiz() {
   }
   state.startTime = Date.now();
   state.playerName = el.playerNameInput.value.trim();
-  const desired = getQuestionCountOverride() || CONFIG.QUESTIONS_PER_ROUND;
-  const count = Math.min(desired, state.pool.length);
-  state.round = shuffle(state.pool).slice(0, count);
+  const effectiveCount = getEffectiveQuestionCount();
+  state.round = shuffle(state.pool).slice(0, effectiveCount);
   state.currentIndex = 0;
   state.answers = [];
   showScreen("quiz");

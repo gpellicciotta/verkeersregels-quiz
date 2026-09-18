@@ -16,9 +16,8 @@ An overview of all tasks and their planning.
 ## Next Milestone
 
 - [ ] A0016 Make screenshots of the start page, of a question page with a good answer, one with a bad answer, results with confetti and results without confetti, both on desktop and on mobile. Add these screenshots as a visual tour to the README.md
-- [~] A0017 [owner: @antigravity] Dynamic question count display and available question pool clamping.
 - [ ] A0018 Add a favicon representing a blue road sign and on the last question: rename the button 'Volgende Vraag' naar 'Toon Resultaat'
-- [ ] T0014 [needs: A0018, A0017, A0016] Release as v1.1.0
+- [ ] T0014 [needs: A0018, A0016] Release as v1.1.0
 - [ ] T0019 Ensure there is a sign and a question for each traffic sign currently in use in Belgium
 
 ---
