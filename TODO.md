@@ -15,8 +15,7 @@ An overview of all tasks and their planning.
 
 ## Next Milestone
 
-- [~] A0016 [owner: @antigravity] Capture desktop and mobile screenshots for start, questions, and results, adding a visual tour to README.md
-- [ ] T0014 [needs: A0016] Release as v1.1.0
+- [ ] T0014 Release as v1.1.0
 - [ ] T0019 Ensure there is a sign and a question for each traffic sign currently in use in Belgium
 
 ---

@@ -17,6 +17,40 @@ Geen server nodig: platte HTML/CSS/JS, te hosten via GitHub Pages.
 - Onderaan het startscherm toont een versiebadge de actieve applicatieversie (bv. `v1.0.0-pre`).
   Klik op deze knop om het changelog-venster met de volledige versiegeschiedenis te openen.
 
+## Visuele rondleiding
+
+Een overzicht van de quiz-interface op desktop en mobiele apparaten:
+
+### Startscherm
+
+| Desktop | Mobiel |
+|---|---|
+| ![Startscherm desktop](assets/screenshots/start-desktop.png) | ![Startscherm mobiel](assets/screenshots/start-mobile.png) |
+
+### Vraag met juist antwoord
+
+| Desktop | Mobiel |
+|---|---|
+| ![Juist antwoord desktop](assets/screenshots/question-correct-desktop.png) | ![Juist antwoord mobiel](assets/screenshots/question-correct-mobile.png) |
+
+### Vraag met fout antwoord
+
+| Desktop | Mobiel |
+|---|---|
+| ![Fout antwoord desktop](assets/screenshots/question-wrong-desktop.png) | ![Fout antwoord mobiel](assets/screenshots/question-wrong-mobile.png) |
+
+### Resultaten met confetti (perfecte score)
+
+| Desktop | Mobiel |
+|---|---|
+| ![Resultaten met confetti desktop](assets/screenshots/results-confetti-desktop.png) | ![Resultaten met confetti mobiel](assets/screenshots/results-confetti-mobile.png) |
+
+### Resultaten zonder confetti
+
+| Desktop | Mobiel |
+|---|---|
+| ![Resultaten zonder confetti desktop](assets/screenshots/results-no-confetti-desktop.png) | ![Resultaten zonder confetti mobiel](assets/screenshots/results-no-confetti-mobile.png) |
+
 ## URL-parameters
 
 De quiz ondersteunt optionele parameters in de URL:

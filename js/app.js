@@ -732,6 +732,13 @@ function checkAutoStart() {
     showResult();
   } else if (params.get("autostart") === "1") {
     startQuiz();
+    if (params.get("answer") === "correct") {
+      const q = state.round[state.currentIndex];
+      selectOption(q.correctIndex);
+    } else if (params.get("answer") === "wrong") {
+      const q = state.round[state.currentIndex];
+      selectOption((q.correctIndex + 1) % q.options.length);
+    }
     if (params.get("report") === "1") {
       openReportModal();
     }
