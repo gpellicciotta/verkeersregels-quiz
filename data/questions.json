@@ -2164,6 +2164,38 @@
       "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-70"
     },
     {
+      "id": "rec-e5",
+      "type": "recognize",
+      "category": "parkeren",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/E5.svg",
+      "options": [
+        "Parkeerverbod van de 1e tot de 15e van de maand",
+        "Parkeerverbod van de 16e tot het einde van de maand",
+        "Stilstaan en parkeren verboden gedurende de eerste twee weken",
+        "Voorbehouden parkeerplaats voor één voertuig"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bord E5 legt een parkeerverbod op langs de kant van de weg waar het staat, van de 1e tot de 15e van de maand (art. 70.2.1).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-70"
+    },
+    {
+      "id": "rec-e7",
+      "type": "recognize",
+      "category": "parkeren",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/E7.svg",
+      "options": [
+        "Parkeerverbod van de 1e tot de 15e van de maand",
+        "Parkeerverbod van de 16e tot het einde van de maand",
+        "Verboden te parkeren op feestdagen en in het weekend",
+        "Beurtelings parkeren met een maximale parkeertijd van 2 uur"
+      ],
+      "correctIndex": 1,
+      "explanation": "Bord E7 legt een parkeerverbod op langs de kant van de weg waar het staat, van de 16e tot het einde van de maand (art. 70.2.1).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-70"
+    },
+    {
       "id": "rec-e9a",
       "type": "recognize",
       "category": "parkeren",
@@ -2178,6 +2210,166 @@
       "correctIndex": 3,
       "explanation": "Bord E9a met rolstoelsymbool geeft aan dat het parkeren uitsluitend voorbehouden is voor voertuigen gebruikt door personen met een handicap met een speciale parkeerkaart (art. 70.2.1).",
       "since": 1990,
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-70"
+    },
+    {
+      "id": "rec-e9b",
+      "type": "recognize",
+      "category": "parkeren",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/E9b.svg",
+      "options": [
+        "Parkeren uitsluitend voor vrachtauto's en autobussen",
+        "Verplicht parkeren op de verhoogde berm",
+        "Parkeren uitsluitend voor motorfietsen, personenauto's, auto's voor dubbelgebruik en minibussen",
+        "Parkeerplaats voorbehouden voor carpoolwagens"
+      ],
+      "correctIndex": 2,
+      "explanation": "Bord E9b geeft aan dat het parkeren uitsluitend is voorbehouden voor motorfietsen, personenauto's, auto's voor dubbelgebruik en minibussen (art. 70.2.1).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-70"
+    },
+    {
+      "id": "rec-e9c",
+      "type": "recognize",
+      "category": "parkeren",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/E9c.svg",
+      "options": [
+        "Parkeerverbod voor voertuigen zwaarder dan 3,5 ton",
+        "Plaats voorbehouden voor het laden en lossen van goederen",
+        "Verplicht parkeren van vrachtwagens op de pechstrook",
+        "Parkeren uitsluitend voor lichte vrachtauto's en vrachtauto's"
+      ],
+      "correctIndex": 3,
+      "explanation": "Bord E9c geeft aan dat de parkeergelegenheid uitsluitend voorbehouden is voor lichte vrachtauto's en vrachtauto's (art. 70.2.1).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-70"
+    },
+    {
+      "id": "rec-e9d",
+      "type": "recognize",
+      "category": "parkeren",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/E9d.svg",
+      "options": [
+        "Parkeren uitsluitend voor autocars",
+        "Halte voor stadsbussen van het openbaar vervoer",
+        "Parkeerplaats voorbehouden voor schoolvervoer",
+        "Verbod voor bussen om passagiers te laten in- of uitstappen"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bord E9d duidt een parkeerplaats aan die uitsluitend voorbehouden is voor autocars (autobussen) (art. 70.2.1).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-70"
+    },
+    {
+      "id": "rec-e9e",
+      "type": "recognize",
+      "category": "parkeren",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/E9e.svg",
+      "options": [
+        "Verplicht parkeren op de rijbaan",
+        "Verplicht parkeren op de berm of op het trottoir",
+        "Verplicht parkeren deels op de berm of op het trottoir",
+        "Verboden te parkeren op het trottoir"
+      ],
+      "correctIndex": 1,
+      "explanation": "Bord E9e verplicht bestuurders om het voertuig volledig op de berm of op het trottoir te parkeren (art. 70.2.1).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-70"
+    },
+    {
+      "id": "rec-e9f",
+      "type": "recognize",
+      "category": "parkeren",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/E9f.svg",
+      "options": [
+        "Verplicht parkeren volledig op de berm of het trottoir",
+        "Verplicht parkeren op de rijbaan evenwijdig met de stoeprand",
+        "Verplicht parkeren deels op de berm of op het trottoir",
+        "Parkeerstrook uitsluitend voor tweewielige motorvoertuigen"
+      ],
+      "correctIndex": 2,
+      "explanation": "Bord E9f legt de verplichting op om deels op de berm of op het trottoir en deels op de rijbaan te parkeren (art. 70.2.1).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-70"
+    },
+    {
+      "id": "rec-e9g",
+      "type": "recognize",
+      "category": "parkeren",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/E9g.svg",
+      "options": [
+        "Verplicht parkeren op de berm of op het trottoir",
+        "Verplicht parkeren deels op het trottoir en deels op de rijbaan",
+        "Einde van een parkeerzone op de rijbaan",
+        "Verplicht parkeren op de rijbaan"
+      ],
+      "correctIndex": 3,
+      "explanation": "Bord E9g verplicht bestuurders om op de rijbaan te parkeren en verbiedt het parkeren op de berm of het trottoir (art. 70.2.1).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-70"
+    },
+    {
+      "id": "rec-e9h",
+      "type": "recognize",
+      "category": "parkeren",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/E9h.svg",
+      "options": [
+        "Parkeren uitsluitend voor kampeerauto's",
+        "Toegelaten kampeerterrein en caravanparking",
+        "Parkeerverbod voor voertuigen met een aanhangwagen of caravan",
+        "Parkeerplaats voorbehouden voor lichte vrachtauto's"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bord E9h duidt een parkeerplaats aan die uitsluitend voorbehouden is voor kampeerauto's (campers/mobilhomes) (art. 70.2.1).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-70"
+    },
+    {
+      "id": "rec-e9i",
+      "type": "recognize",
+      "category": "parkeren",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/E9i.svg",
+      "options": [
+        "Verplicht fietspad en bromfietspad",
+        "Parkeren uitsluitend voor motorfietsen",
+        "Parkeerplaats voor alle tweewielige voertuigen inclusief fietsen",
+        "Verboden te parkeren voor motorfietsen en bromfietsen"
+      ],
+      "correctIndex": 1,
+      "explanation": "Bord E9i geeft aan dat het parkeren uitsluitend voorbehouden is voor motorfietsen (art. 70.2.1).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-70"
+    },
+    {
+      "id": "rec-e9j",
+      "type": "recognize",
+      "category": "parkeren",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/E9j.svg",
+      "options": [
+        "Verplicht gecombineerd fietspad en rijbaan voor auto's",
+        "Parkeerplaats met permanente voorrang voor fietsers",
+        "Wisselend parkeren met voorbehouden parkeertijd per categorie van voertuigen",
+        "Parkeerzone waar enkel elektrische fietsen en elektrische auto's mogen staan"
+      ],
+      "correctIndex": 2,
+      "explanation": "Bord E9j duidt aan dat het parkeren tijdens bepaalde tijdsperioden voorbehouden is voor specifieke categorieën van voertuigen (art. 70.2.1).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-70"
+    },
+    {
+      "id": "rec-e11",
+      "type": "recognize",
+      "category": "parkeren",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/E11.svg",
+      "options": [
+        "Begin van een zone met betalend parkeren voor de hele gemeente",
+        "Algemeen parkeerverbod binnen de bebouwde kom",
+        "Einde van het beurtelings parkeren in de bebouwde kom",
+        "Halfmaandelijks parkeren in gans de bebouwde kom"
+      ],
+      "correctIndex": 3,
+      "explanation": "Bord E11 duidt aan dat in de ganse bebouwde kom beurtelings halfmaandelijks geparkeerd moet worden (art. 70.3).",
       "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-70"
     },
     {

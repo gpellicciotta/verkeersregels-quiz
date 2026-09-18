@@ -15,8 +15,7 @@ An overview of all tasks and their planning.
 
 ## Next Milestone
 
-- [~] T0019 [owner: @antigravity] [needs: T0023, T0024, T0025] Ensure there is a sign and a question for each traffic sign currently in use in Belgium.
-- [ ] T0023 Add sign assets and quiz questions for all remaining Belgian parking and stopping signs in Series E.
+- [~] T0019 [owner: @antigravity] [needs: T0024, T0025] Ensure there is a sign and a question for each traffic sign currently in use in Belgium.
 - [ ] T0024 Add sign assets and quiz questions for Belgian indication signs F1a through F50bis.
 - [ ] T0025 Add sign assets and quiz questions for Belgian indication signs F51 through F120.
 - [ ] T0026 Dubbel-check all questions about traffic signs to actually have the visual sign. See e.g. rule-fietser-b23 for a questions that is not OK.
