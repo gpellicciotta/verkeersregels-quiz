@@ -1,7 +1,7 @@
 ---
 id: T0003
 owner: ""
-needs: [T0009, T0007, T0008]
+needs: [T0007, T0008]
 branch: task/T0003-release-v1-0-0
 worktree: ./work/T0003-release-v1-0-0
 status: available
