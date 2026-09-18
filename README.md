@@ -55,7 +55,7 @@ Een overzicht van de quiz-interface op desktop en mobiele apparaten:
 
 De quiz ondersteunt optionele parameters in de URL:
 
-- `?since=YYYY` (aliassen: `?sinds=YYYY`, `?s=YYYY`): filtert de vragenpool op regels ingevoerd vanaf het opgegeven jaartal (bv. `?since=2022` of `?s=2022`).
+- `?s=YYYY` (aliassen: `?sinds=YYYY`, `?since=YYYY`): filtert de vragenpool op regels ingevoerd vanaf het opgegeven jaartal (bv. `?sinds=2022` of `?s=2022`).
 - `?q=N` (alias: `?quantity=N`): stelt het aantal vragen per ronde in (standaard 20, bv. `?q=10` of `?quantity=10`).
 - `?modal=changelog`: opent bij het openen van de pagina meteen de versiegeschiedenis.
 
@@ -77,7 +77,6 @@ Open dan <http://localhost:8420/index.html> in de browser.
 De vragen staan in [data/questions.json](data/questions.json), zie
 [data/SOURCES.md](data/SOURCES.md) voor de gebruikte bronnen en verkeersbord-afbeeldingen.
 Elke vraag heeft een `type`:
-
 - `recognize` — toont een bord (`sign`), 4 tekstopties als mogelijke betekenis.
 - `identify` — toont een omschrijving, 4 bord-afbeeldingen als opties.
 - `rule` — vraag over een verkeersregel, 4 tekstopties (toont optioneel een bord via `sign`).
