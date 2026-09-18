@@ -353,10 +353,52 @@ button {
 
 .explanation {
   margin: 16px 0;
-  padding: 14px;
+  padding: 14px 16px;
   background: #eef2ff;
+  border: 1px solid #c7d2fe;
   border-radius: var(--radius);
   font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.explanation-text {
+  margin: 0;
+  color: #1e1b4b;
+}
+
+.explanation-source {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #c7d2fe;
+}
+
+.explanation-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 2px 4px;
+  margin-left: -4px;
+  transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+.explanation-link:hover {
+  color: var(--color-primary-hover);
+  text-decoration: underline;
+  background-color: rgba(37, 99, 235, 0.08);
+}
+
+.explanation-link:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.explanation-link-icon {
+  flex-shrink: 0;
 }
 
 #result-summary {

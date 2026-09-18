@@ -28,7 +28,7 @@ Functional and technical requirements for the Verkeersregels Quiz application.
   - Shows real-time progress indicators (`Vraag X/20`) and running score count.
   - Displays amendment year badges (e.g. `Sinds 2021`) for questions covering recently updated traffic rules.
   - Renders official SVG sign illustrations for sign recognition and rule-related sign questions.
-  - Delivers immediate color-coded feedback upon option selection with detailed legal explanations.
+  - Delivers immediate color-coded feedback upon option selection with legal explanations and authoritative reference links.
   - Offers a dedicated "Meld fout" button on every question allowing users to report inaccuracies.
 - **Results and Review**:
   - Displays total score, accuracy percentage, and total elapsed duration (minutes and seconds).
@@ -38,7 +38,7 @@ Functional and technical requirements for the Verkeersregels Quiz application.
 
 ### Question Bank and Legal Accuracy
 
-- **Question Catalog**: Contains 63 verified questions covering hazard warnings, priority rules, speed limits, road positioning, and pedestrian/cyclist infrastructure.
+- **Question Catalog**: Contains 126 verified questions covering hazard warnings, priority rules, speed limits, road positioning, and pedestrian/cyclist infrastructure.
 - **Question Types**:
   - `recognize`: displays a traffic sign SVG and asks the user to identify its official meaning.
   - `identify`: displays a legal description and presents candidate sign options.
@@ -80,10 +80,11 @@ Functional and technical requirements for the Verkeersregels Quiz application.
 ### Automated Testing and Quality Assurance
 
 - **Unit Test Suite**: `tests/test_quiz_data.py` (runnable via `python -m unittest tests.test_quiz_data`) validates:
-  - Exact count of 63 questions in `data/questions.json`.
+  - Exact count of 126 questions in `data/questions.json`.
   - Schema integrity, unique IDs, required fields, and valid option counts (`options >= 2`).
   - Correct index validity (`0 <= correctIndex < len(options)`).
   - Integer validity of `since` amendment years.
+  - Authoritative HTTP(S) source URL validity on every question.
   - Existence and XML validity of all referenced SVG files in `assets/signs/`.
   - Confirmation that no questions reference unshown signs.
 - **DevOps Tooling**: Python scripts in `scripts/` automate local bootstrapping and pre-flight release validation.

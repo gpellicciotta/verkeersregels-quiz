@@ -247,6 +247,7 @@ function selectOption(chosenIndex) {
     options: q.options,
     correct,
     explanation: q.explanation || "",
+    source: q.source || "",
   });
 
   const buttons = el.options.querySelectorAll(".option-btn");
@@ -256,13 +257,71 @@ function selectOption(chosenIndex) {
     else if (idx === chosenIndex) btn.classList.add("wrong");
   });
 
-  if (q.explanation) {
-    el.explanation.textContent = q.explanation;
-    el.explanation.classList.remove("hidden");
-  }
+  renderExplanation(q);
 
   el.quizScore.textContent = `Score: ${state.answers.filter((a) => a.correct).length}/${state.answers.length}`;
   el.btnNext.classList.remove("hidden");
+}
+
+function renderExplanation(q) {
+  el.explanation.replaceChildren();
+
+  if (q.explanation) {
+    const p = document.createElement("p");
+    p.className = "explanation-text";
+    p.textContent = q.explanation;
+    el.explanation.appendChild(p);
+  }
+
+  if (q.source) {
+    const sourceWrap = document.createElement("div");
+    sourceWrap.className = "explanation-source";
+
+    const link = document.createElement("a");
+    link.className = "explanation-link";
+    link.href = q.source;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.title = "Open officiële regelgeving of toelichting in een nieuw tabblad";
+
+    const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    svg.setAttribute("class", "explanation-link-icon");
+    svg.setAttribute("aria-hidden", "true");
+    svg.setAttribute("width", "14");
+    svg.setAttribute("height", "14");
+    svg.setAttribute("viewBox", "0 0 24 24");
+    svg.setAttribute("fill", "none");
+    svg.setAttribute("stroke", "currentColor");
+    svg.setAttribute("stroke-width", "2");
+    svg.setAttribute("stroke-linecap", "round");
+    svg.setAttribute("stroke-linejoin", "round");
+
+    const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+    path.setAttribute("d", "M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6");
+    const polyline = document.createElementNS("http://www.w3.org/2000/svg", "polyline");
+    polyline.setAttribute("points", "15 3 21 3 21 9");
+    const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
+    line.setAttribute("x1", "10");
+    line.setAttribute("y1", "14");
+    line.setAttribute("x2", "21");
+    line.setAttribute("y2", "3");
+
+    svg.appendChild(path);
+    svg.appendChild(polyline);
+    svg.appendChild(line);
+
+    const span = document.createElement("span");
+    span.textContent = "Officiële regelgeving / toelichting bekijken";
+
+    link.appendChild(svg);
+    link.appendChild(span);
+    sourceWrap.appendChild(link);
+    el.explanation.appendChild(sourceWrap);
+  }
+
+  if (q.explanation || q.source) {
+    el.explanation.classList.remove("hidden");
+  }
 }
 
 function nextQuestion() {

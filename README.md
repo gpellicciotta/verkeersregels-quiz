@@ -9,8 +9,7 @@ Geen server nodig: platte HTML/CSS/JS, te hosten via GitHub Pages.
 - Je krijgt telkens 20 willekeurige vragen uit de vragenbank: soms een verkeersbord waarvan je
   de betekenis moet kiezen, soms een omschrijving waarbij je het juiste bord moet aanduiden,
   en soms een vraag over een verkeersregel.
-- Na elk antwoord zie je meteen of het juist was, met een korte uitleg. Je kan niet terug naar
-  een vorige vraag.
+- Na elk antwoord zie je meteen of het juist was, met een uitleg en een directe link naar de officiële regelgeving of toelichting. Je kan niet terug naar een vorige vraag.
 - Zie je een fout of onduidelijkheid? Klik op de knop "Meld fout" om direct een opmerking door te geven.
 - Op het einde krijg je je score, de verstreken tijdsduur en een volledig overzicht van alle
   vragen, jouw antwoorden en de juiste antwoorden. Dat overzicht kan je printen of als PDF
