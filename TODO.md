@@ -15,9 +15,8 @@ An overview of all tasks and their planning.
 
 ## Next Milestone
 
-- [~] T0032 [owner: @antigravity] Integrate 10 real-live traffic situation photo questions with URL type filtering.
-- [ ] T0033 [needs: T0032] [owner: claude] Review all questions for issues or inconsistencies. List all issues and ask me for confirmation before trying to fix them.
-- [ ] A0034 [needs: T0032 T0033] Release as 2.1.0 or 3.0.0
+- [ ] T0033 [owner: claude] Review all questions for issues or inconsistencies. List all issues and ask me for confirmation before trying to fix them.
+- [ ] A0034 [needs: T0033] Release as 2.1.0 or 3.0.0
 
 ---
 
