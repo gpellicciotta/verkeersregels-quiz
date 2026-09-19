@@ -39,6 +39,13 @@
         </svg>
         <span>Installeer app</span>
       </button>
+      <a href="?sign-carrousel&delay=5" id="link-carousel" class="btn-secondary btn-carousel-link">
+        <svg class="carousel-nav-icon" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polygon points="10 8 16 12 10 16 10 8"></polygon>
+        </svg>
+        <span>Verkeersborden carrousel</span>
+      </a>
     </div>
     <p id="start-error" class="error hidden"></p>
     <div class="start-report-hint">
@@ -130,6 +137,99 @@
       </thead>
       <tbody id="result-table-body"></tbody>
     </table>
+  </section>
+
+  <!-- Sign Carousel screen -->
+  <section id="screen-carousel" class="screen hidden" aria-label="Verkeersborden Carrousel">
+    <div class="carousel-header">
+      <div class="carousel-header-info">
+        <h1 class="carousel-title">Verkeersborden Carrousel</h1>
+        <span id="carousel-counter" class="carousel-counter">Bord 1 / 198</span>
+      </div>
+      <div class="carousel-header-actions">
+        <button id="btn-carousel-exit" class="btn-secondary btn-carousel-exit" type="button" aria-label="Carrousel sluiten">
+          <svg class="carousel-icon" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+          <span>Sluiten</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Interactive stage: click/touch toggles pause/play -->
+    <div id="carousel-stage" class="carousel-stage" role="region" aria-label="Verkeersbord kaart" tabindex="0" title="Klik om te pauzeren of hervatten">
+      <!-- Prominent Pause Indicator Banner/Overlay -->
+      <div id="carousel-pause-overlay" class="carousel-pause-overlay hidden" aria-live="assertive">
+        <div class="carousel-pause-banner">
+          <div class="carousel-pause-badge">
+            <span class="carousel-pause-icon" aria-hidden="true">⏸</span>
+            <span class="carousel-pause-text">Gepauzeerd</span>
+          </div>
+          <p class="carousel-pause-hint">Klik op de kaart of druk op Spatie om te hervatten</p>
+        </div>
+      </div>
+
+      <div class="carousel-card-body">
+        <div class="carousel-card-image-col">
+          <div class="carousel-sign-wrap">
+            <img id="carousel-sign-img" class="carousel-sign-img" src="" alt="Verkeersbord">
+          </div>
+        </div>
+        <div class="carousel-card-info-col">
+          <div class="carousel-badges">
+            <span id="carousel-category-badge" class="badge-since badge-blue"></span>
+            <span id="carousel-since-badge" class="badge-since badge-amber hidden"></span>
+          </div>
+          <h2 id="carousel-sign-title" class="carousel-sign-title"></h2>
+          <p id="carousel-explanation" class="carousel-explanation"></p>
+          <div id="carousel-source-wrap" class="carousel-source-wrap hidden">
+            <a id="carousel-source-link" class="source-link" href="#" target="_blank" rel="noopener noreferrer">
+              <span>Bekijk artikel in Wegcode</span>
+              <svg class="source-icon" aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Timer progress bar -->
+    <div class="carousel-progress-track" aria-hidden="true">
+      <div id="carousel-progress-fill" class="carousel-progress-fill"></div>
+    </div>
+
+    <!-- Navigation & Playback Controls -->
+    <div class="carousel-controls">
+      <div class="carousel-control-buttons">
+        <button id="btn-carousel-prev" class="btn-secondary btn-carousel-ctrl" type="button" aria-label="Vorig bord" title="Vorig bord (Pijl-links)">
+          <svg class="carousel-icon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+          </svg>
+          <span class="btn-ctrl-label">Vorige</span>
+        </button>
+
+        <button id="btn-carousel-toggle" class="btn-primary btn-carousel-toggle" type="button" aria-label="Pauzeren of hervatten" title="Pauzeren of hervatten (Spatiebalk)">
+          <span id="carousel-toggle-icon" class="carousel-toggle-icon" aria-hidden="true">⏸</span>
+          <span id="carousel-toggle-text" class="carousel-toggle-text">Pauzeren</span>
+        </button>
+
+        <button id="btn-carousel-next" class="btn-secondary btn-carousel-ctrl" type="button" aria-label="Volgend bord" title="Volgend bord (Pijl-rechts)">
+          <span class="btn-ctrl-label">Volgende</span>
+          <svg class="carousel-icon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"></polyline>
+          </svg>
+        </button>
+      </div>
+
+      <div class="carousel-status-info">
+        <span id="carousel-delay-info" class="carousel-delay-info">Wisselt elke 5 seconden</span>
+        <span class="carousel-shortcut-hint">Tip: klik op de kaart of druk op Spatie om te pauzeren</span>
+      </div>
+    </div>
   </section>
 
   <!-- Modal for reporting question error -->

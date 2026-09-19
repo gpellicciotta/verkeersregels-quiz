@@ -1146,6 +1146,398 @@ button {
   }
 }
 
+/* ==========================================================================
+   Sign Carousel Screen (#screen-carousel)
+   ========================================================================== */
+
+.btn-carousel-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  width: 100%;
+  margin-top: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.btn-carousel-link:hover {
+  background: #eff6ff;
+}
+
+.carousel-nav-icon {
+  flex-shrink: 0;
+}
+
+#screen-carousel {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.carousel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.carousel-header-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.carousel-title {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.carousel-counter {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  background: #e5edff;
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: 0.88rem;
+  border-radius: 9999px;
+}
+
+.btn-carousel-exit {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 14px;
+  font-size: 0.9rem;
+  margin-top: 0;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Stage & Card */
+.carousel-stage {
+  position: relative;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
+  min-height: 280px;
+}
+
+.carousel-stage:hover {
+  border-color: #cbd5e1;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.carousel-stage:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* Card Body Layout */
+.carousel-card-body {
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  gap: 32px;
+  align-items: center;
+  min-width: 0;
+}
+
+.carousel-card-image-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 0;
+}
+
+.carousel-sign-wrap {
+  width: 100%;
+  max-width: 220px;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+  background: #f8fafc;
+  border-radius: 12px;
+  border: 1px solid #edf2f7;
+}
+
+.carousel-sign-img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.carousel-card-info-col {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 0;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.carousel-badges {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.carousel-sign-title {
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: 1.35;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.carousel-explanation {
+  margin: 0;
+  font-size: 1.05rem;
+  color: #374151;
+  line-height: 1.6;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.carousel-source-wrap {
+  margin-top: 4px;
+}
+
+/* Prominent Pause Overlay */
+.carousel-pause-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  padding: 20px;
+  animation: fadeInPause 0.15s ease-out;
+}
+
+@keyframes fadeInPause {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.carousel-pause-banner {
+  background: #ffffff;
+  border: 2px solid #f59e0b;
+  border-radius: 14px;
+  padding: 20px 28px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+  max-width: 400px;
+  width: 100%;
+}
+
+.carousel-pause-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #fef3c7;
+  color: #92400e;
+  padding: 8px 18px;
+  border-radius: 9999px;
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  margin-bottom: 10px;
+  border: 1px solid #fcd34d;
+}
+
+.carousel-pause-icon {
+  font-size: 1.2rem;
+}
+
+.carousel-pause-hint {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #4b5563;
+  font-weight: 500;
+}
+
+/* Progress Bar */
+.carousel-progress-track {
+  height: 6px;
+  background: #e5e7eb;
+  border-radius: 9999px;
+  margin-top: 18px;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-progress-fill {
+  height: 100%;
+  width: 0%;
+  background: var(--color-primary);
+  border-radius: 9999px;
+  transition: width 0.05s linear;
+}
+
+/* Controls */
+.carousel-controls {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.carousel-control-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.btn-carousel-ctrl {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 0;
+  padding: 12px 20px;
+  font-weight: 600;
+  min-width: 120px;
+  flex: 1;
+  max-width: 160px;
+}
+
+.btn-carousel-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 0;
+  padding: 14px 28px;
+  font-weight: 700;
+  font-size: 1.05rem;
+  flex: 1.4;
+  max-width: 220px;
+  box-shadow: 0 2px 8px rgba(26, 86, 219, 0.3);
+}
+
+.btn-carousel-toggle.is-paused {
+  background: #d97706;
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(217, 119, 6, 0.35);
+}
+
+.btn-carousel-toggle.is-paused:hover {
+  background: #b45309;
+}
+
+.carousel-toggle-icon {
+  font-size: 1.1rem;
+}
+
+.carousel-status-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.88rem;
+  color: var(--color-muted);
+  text-align: center;
+}
+
+.carousel-shortcut-hint {
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+@media (max-width: 639px) {
+  .carousel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+    gap: 8px;
+    flex-wrap: nowrap;
+  }
+  .carousel-header-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+    min-width: 0;
+  }
+  .carousel-title {
+    font-size: 1.15rem;
+    line-height: 1.25;
+  }
+  .carousel-counter {
+    padding: 2px 8px;
+    font-size: 0.78rem;
+  }
+  .btn-carousel-exit {
+    padding: 6px 12px;
+    font-size: 0.85rem;
+    flex-shrink: 0;
+  }
+  .carousel-stage {
+    padding: 16px;
+    min-height: 240px;
+  }
+  .carousel-card-body {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 16px;
+    min-width: 0;
+  }
+  .carousel-sign-wrap {
+    height: 160px;
+    max-width: 160px;
+    padding: 8px;
+  }
+  .carousel-sign-title {
+    font-size: 1.15rem;
+  }
+  .carousel-explanation {
+    font-size: 0.92rem;
+    line-height: 1.5;
+  }
+  .carousel-control-buttons {
+    gap: 8px;
+    justify-content: space-between;
+  }
+  .btn-carousel-ctrl {
+    min-width: 0 !important;
+    max-width: none !important;
+    flex: 1 !important;
+    padding: 10px 8px !important;
+    font-size: 0.88rem !important;
+  }
+  .btn-carousel-toggle {
+    min-width: 0 !important;
+    max-width: none !important;
+    flex: 1.25 !important;
+    padding: 12px 8px !important;
+    font-size: 0.92rem !important;
+  }
+}
+
 @media print {
   @page {
     size: auto;

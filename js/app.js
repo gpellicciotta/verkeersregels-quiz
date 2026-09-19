@@ -63,6 +63,37 @@ const el = {
   btnChangelogClose: document.getElementById("btn-changelog-close"),
   btnChangelogDismiss: document.getElementById("btn-changelog-dismiss"),
   changelogBody: document.getElementById("changelog-body"),
+  screenCarousel: document.getElementById("screen-carousel"),
+  carouselStage: document.getElementById("carousel-stage"),
+  carouselPauseOverlay: document.getElementById("carousel-pause-overlay"),
+  carouselSignImg: document.getElementById("carousel-sign-img"),
+  carouselCategoryBadge: document.getElementById("carousel-category-badge"),
+  carouselSinceBadge: document.getElementById("carousel-since-badge"),
+  carouselSignTitle: document.getElementById("carousel-sign-title"),
+  carouselExplanation: document.getElementById("carousel-explanation"),
+  carouselSourceWrap: document.getElementById("carousel-source-wrap"),
+  carouselSourceLink: document.getElementById("carousel-source-link"),
+  carouselCounter: document.getElementById("carousel-counter"),
+  carouselProgressFill: document.getElementById("carousel-progress-fill"),
+  btnCarouselPrev: document.getElementById("btn-carousel-prev"),
+  btnCarouselToggle: document.getElementById("btn-carousel-toggle"),
+  carouselToggleIcon: document.getElementById("carousel-toggle-icon"),
+  carouselToggleText: document.getElementById("carousel-toggle-text"),
+  btnCarouselNext: document.getElementById("btn-carousel-next"),
+  btnCarouselExit: document.getElementById("btn-carousel-exit"),
+  carouselDelayInfo: document.getElementById("carousel-delay-info"),
+  linkCarousel: document.getElementById("link-carousel"),
+};
+
+const carouselState = {
+  isActive: false,
+  items: [],
+  currentIndex: 0,
+  delayMs: 5000,
+  isPaused: false,
+  animFrameId: null,
+  slideStartTime: 0,
+  elapsedBeforePause: 0,
 };
 
 function showScreen(name) {
@@ -71,6 +102,13 @@ function showScreen(name) {
   el.screenStart.classList.toggle("hidden", name !== "start");
   el.screenQuiz.classList.toggle("hidden", name !== "quiz");
   el.screenResult.classList.toggle("hidden", name !== "result");
+  if (el.screenCarousel) {
+    el.screenCarousel.classList.toggle("hidden", name !== "carousel");
+  }
+  if (name !== "carousel" && carouselState.isActive) {
+    pauseCarouselTimer();
+    carouselState.isActive = false;
+  }
 }
 
 function shuffle(array) {
@@ -879,7 +917,291 @@ if (el.modalChangelog) {
   });
 }
 
+function formatCategoryName(cat) {
+  const map = {
+    gevaar: "Gevaar",
+    voorrang: "Voorrang",
+    verbod: "Verbod",
+    gebod: "Gebod",
+    parkeren: "Parkeren & Stilstaan",
+    aanwijzing: "Aanwijzing",
+    snelheid: "Snelheid",
+    autosnelweg: "Autosnelweg",
+    "fietsers-voetgangers": "Fietsers & Voetgangers",
+  };
+  return map[cat] || (cat ? cat.charAt(0).toUpperCase() + cat.slice(1) : "Verkeersbord");
+}
+
+function getCarouselParams() {
+  if (typeof window === "undefined" || !window.location) {
+    return { active: false, delay: 5 };
+  }
+  const params = new URLSearchParams(window.location.search);
+  const isCarrousel =
+    params.has("sign-carrousel") ||
+    params.has("sign-carousel") ||
+    params.get("mode") === "carrousel" ||
+    params.get("mode") === "carousel";
+
+  const rawDelay = params.get("delay");
+  const parsedDelay = parseInt(rawDelay, 10);
+  const delay = Number.isInteger(parsedDelay) && parsedDelay > 0 ? parsedDelay : 5;
+
+  return {
+    active: isCarrousel,
+    delay,
+  };
+}
+
+function renderCarouselCard() {
+  if (!carouselState.items || carouselState.items.length === 0) return;
+  const item = carouselState.items[carouselState.currentIndex];
+
+  if (el.carouselSignImg) {
+    el.carouselSignImg.src = item.sign || "";
+    el.carouselSignImg.alt =
+      item.options && item.correctIndex != null ? item.options[item.correctIndex] : "Verkeersbord";
+  }
+
+  if (el.carouselCounter) {
+    el.carouselCounter.textContent = `Bord ${carouselState.currentIndex + 1} / ${carouselState.items.length}`;
+  }
+
+  if (el.carouselCategoryBadge) {
+    el.carouselCategoryBadge.textContent = formatCategoryName(item.category);
+  }
+
+  if (el.carouselSinceBadge) {
+    const badge = getSinceBadge(item.since);
+    if (badge) {
+      el.carouselSinceBadge.textContent = badge.text;
+      el.carouselSinceBadge.className = badge.className;
+      el.carouselSinceBadge.classList.remove("hidden");
+    } else {
+      el.carouselSinceBadge.classList.add("hidden");
+    }
+  }
+
+  if (el.carouselSignTitle) {
+    const signName =
+      item.options && item.correctIndex != null ? item.options[item.correctIndex] : (item.question || "");
+    el.carouselSignTitle.textContent = signName;
+  }
+
+  if (el.carouselExplanation) {
+    el.carouselExplanation.textContent = item.explanation || "";
+  }
+
+  if (el.carouselSourceWrap && el.carouselSourceLink) {
+    if (item.source) {
+      el.carouselSourceLink.href = item.source;
+      el.carouselSourceWrap.classList.remove("hidden");
+    } else {
+      el.carouselSourceWrap.classList.add("hidden");
+    }
+  }
+
+  if (el.carouselProgressFill) {
+    el.carouselProgressFill.style.width = "0%";
+  }
+}
+
+function startCarouselTimer() {
+  if (carouselState.animFrameId) {
+    cancelAnimationFrame(carouselState.animFrameId);
+    carouselState.animFrameId = null;
+  }
+  if (carouselState.isPaused || !carouselState.isActive) return;
+
+  carouselState.slideStartTime = Date.now() - carouselState.elapsedBeforePause;
+
+  function tick() {
+    if (carouselState.isPaused || !carouselState.isActive) return;
+    const now = Date.now();
+    const elapsed = now - carouselState.slideStartTime;
+    const pct = Math.min(100, (elapsed / carouselState.delayMs) * 100);
+    if (el.carouselProgressFill) {
+      el.carouselProgressFill.style.width = `${pct}%`;
+    }
+    if (elapsed >= carouselState.delayMs) {
+      nextCarouselSign();
+    } else {
+      carouselState.animFrameId = requestAnimationFrame(tick);
+    }
+  }
+
+  carouselState.animFrameId = requestAnimationFrame(tick);
+}
+
+function pauseCarouselTimer() {
+  if (carouselState.animFrameId) {
+    cancelAnimationFrame(carouselState.animFrameId);
+    carouselState.animFrameId = null;
+  }
+  if (carouselState.slideStartTime) {
+    carouselState.elapsedBeforePause = Math.min(
+      carouselState.delayMs,
+      Date.now() - carouselState.slideStartTime
+    );
+  }
+}
+
+function nextCarouselSign() {
+  if (!carouselState.items || carouselState.items.length === 0) return;
+  if (carouselState.animFrameId) {
+    cancelAnimationFrame(carouselState.animFrameId);
+    carouselState.animFrameId = null;
+  }
+  carouselState.elapsedBeforePause = 0;
+  carouselState.slideStartTime = Date.now();
+  carouselState.currentIndex++;
+  if (carouselState.currentIndex >= carouselState.items.length) {
+    carouselState.currentIndex = 0;
+    carouselState.items = shuffle(carouselState.items);
+  }
+  renderCarouselCard();
+  if (!carouselState.isPaused) {
+    startCarouselTimer();
+  }
+}
+
+function prevCarouselSign() {
+  if (!carouselState.items || carouselState.items.length === 0) return;
+  if (carouselState.animFrameId) {
+    cancelAnimationFrame(carouselState.animFrameId);
+    carouselState.animFrameId = null;
+  }
+  carouselState.elapsedBeforePause = 0;
+  carouselState.slideStartTime = Date.now();
+  carouselState.currentIndex =
+    (carouselState.currentIndex - 1 + carouselState.items.length) % carouselState.items.length;
+  renderCarouselCard();
+  if (!carouselState.isPaused) {
+    startCarouselTimer();
+  }
+}
+
+function toggleCarouselPause(forceState) {
+  if (!carouselState.isActive) return;
+  const target = typeof forceState === "boolean" ? forceState : !carouselState.isPaused;
+  if (target === carouselState.isPaused) return;
+
+  carouselState.isPaused = target;
+  if (carouselState.isPaused) {
+    pauseCarouselTimer();
+    if (el.carouselPauseOverlay) el.carouselPauseOverlay.classList.remove("hidden");
+    if (el.btnCarouselToggle) {
+      el.btnCarouselToggle.classList.add("is-paused");
+      el.btnCarouselToggle.setAttribute("aria-label", "Hervatten");
+    }
+    if (el.carouselToggleIcon) el.carouselToggleIcon.textContent = "▶";
+    if (el.carouselToggleText) el.carouselToggleText.textContent = "Hervatten";
+  } else {
+    if (el.carouselPauseOverlay) el.carouselPauseOverlay.classList.add("hidden");
+    if (el.btnCarouselToggle) {
+      el.btnCarouselToggle.classList.remove("is-paused");
+      el.btnCarouselToggle.setAttribute("aria-label", "Pauzeren");
+    }
+    if (el.carouselToggleIcon) el.carouselToggleIcon.textContent = "⏸";
+    if (el.carouselToggleText) el.carouselToggleText.textContent = "Pauzeren";
+    startCarouselTimer();
+  }
+}
+
+function startCarousel(options = {}) {
+  const signItems = allQuestions.filter((q) => Boolean(q.sign));
+  if (signItems.length === 0) return;
+
+  const delaySeconds = options.delay && options.delay > 0 ? options.delay : 5;
+  carouselState.isActive = true;
+  carouselState.items = shuffle(signItems);
+  carouselState.currentIndex = 0;
+  carouselState.delayMs = delaySeconds * 1000;
+  carouselState.isPaused = false;
+  carouselState.elapsedBeforePause = 0;
+  carouselState.slideStartTime = Date.now();
+
+  if (el.carouselDelayInfo) {
+    el.carouselDelayInfo.textContent = `Wisselt elke ${delaySeconds} seconden`;
+  }
+
+  if (el.carouselPauseOverlay) {
+    el.carouselPauseOverlay.classList.add("hidden");
+  }
+
+  if (el.btnCarouselToggle) {
+    el.btnCarouselToggle.classList.remove("is-paused");
+    el.btnCarouselToggle.setAttribute("aria-label", "Pauzeren");
+  }
+  if (el.carouselToggleIcon) el.carouselToggleIcon.textContent = "⏸";
+  if (el.carouselToggleText) el.carouselToggleText.textContent = "Pauzeren";
+
+  showScreen("carousel");
+  renderCarouselCard();
+  startCarouselTimer();
+}
+
+function stopCarousel() {
+  pauseCarouselTimer();
+  carouselState.isActive = false;
+  carouselState.isPaused = true;
+  showScreen("start");
+}
+
+if (el.carouselStage) {
+  el.carouselStage.addEventListener("click", (e) => {
+    if (e.target.closest("a") || e.target.closest("button")) return;
+    toggleCarouselPause();
+  });
+}
+
+if (el.btnCarouselToggle) {
+  el.btnCarouselToggle.addEventListener("click", () => toggleCarouselPause());
+}
+
+if (el.btnCarouselPrev) {
+  el.btnCarouselPrev.addEventListener("click", prevCarouselSign);
+}
+
+if (el.btnCarouselNext) {
+  el.btnCarouselNext.addEventListener("click", nextCarouselSign);
+}
+
+if (el.btnCarouselExit) {
+  el.btnCarouselExit.addEventListener("click", stopCarousel);
+}
+
+if (el.linkCarousel) {
+  el.linkCarousel.addEventListener("click", (e) => {
+    e.preventDefault();
+    startCarousel({ delay: 5 });
+  });
+}
+
 document.addEventListener("keydown", (e) => {
+  if (carouselState.isActive && el.screenCarousel && !el.screenCarousel.classList.contains("hidden")) {
+    if (e.key === " " || e.code === "Space") {
+      const targetTag = e.target && e.target.tagName;
+      if (targetTag !== "INPUT" && targetTag !== "TEXTAREA") {
+        e.preventDefault();
+        toggleCarouselPause();
+        return;
+      }
+    } else if (e.key === "ArrowLeft") {
+      e.preventDefault();
+      prevCarouselSign();
+      return;
+    } else if (e.key === "ArrowRight") {
+      e.preventDefault();
+      nextCarouselSign();
+      return;
+    } else if (e.key === "Escape") {
+      e.preventDefault();
+      stopCarousel();
+      return;
+    }
+  }
+
   if (e.key === "Escape") {
     if (el.modalReport && !el.modalReport.classList.contains("hidden")) {
       closeReportModal();
@@ -890,8 +1212,25 @@ document.addEventListener("keydown", (e) => {
   }
 });
 
+if (typeof window !== "undefined") {
+  window.carouselState = carouselState;
+  window.startCarousel = startCarousel;
+  window.stopCarousel = stopCarousel;
+  window.toggleCarouselPause = toggleCarouselPause;
+  window.nextCarouselSign = nextCarouselSign;
+  window.prevCarouselSign = prevCarouselSign;
+}
+
 function checkAutoStart() {
   const params = new URLSearchParams(window.location.search);
+  const carouselParams = getCarouselParams();
+  if (carouselParams.active) {
+    startCarousel({ delay: carouselParams.delay });
+    if (params.get("pause") === "1") {
+      toggleCarouselPause(true);
+    }
+    return;
+  }
   const autotest = params.get("autotest");
   if (autotest === "results" || autotest === "results-mixed") {
     startQuiz();
