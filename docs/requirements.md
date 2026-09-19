@@ -58,6 +58,11 @@ Functional and technical requirements for the Verkeersregels Quiz application.
 - **Question Error Reporting**:
   - Accessible modal dialog allowing users to submit corrections or feedback for a specific question.
   - Submits timestamp, question ID, question text, player name, and user remarks into a `Meldingen` sheet.
+  - Offline FIFO queue in `localStorage` preserving error reports when disconnected, automatically dispatching sequentially upon reconnection.
+- **Progressive Web App & Offline Execution**:
+  - Installable application with standalone display mode, D5 roundabout icon suite, and native install prompt.
+  - 100% offline execution via root Service Worker pre-caching all 193 sign SVGs, question banks, and assets.
+  - Real-time offline indicator alerting users when operating without network connectivity.
 
 ---
 
@@ -80,12 +85,13 @@ Functional and technical requirements for the Verkeersregels Quiz application.
 
 ### Automated Testing and Quality Assurance
 
-- **Unit Test Suite**: `tests/test_quiz_data.py` (runnable via `python -m unittest tests.test_quiz_data`) validates:
-  - Exact count of 126 questions in `data/questions.json`.
+- **Unit Test Suite**: `tests/test_quiz_data.py` and `tests/test_pwa.py` validate:
+  - Exact count of 284 questions in `data/questions.json`.
   - Schema integrity, unique IDs, required fields, and valid option counts (`options >= 2`).
   - Correct index validity (`0 <= correctIndex < len(options)`).
   - Integer validity of `since` amendment years.
   - Authoritative HTTP(S) source URL validity on every question.
   - Existence and XML validity of all referenced SVG files in `assets/signs/`.
   - Confirmation that no questions reference unshown signs.
-- **DevOps Tooling**: Python scripts in `scripts/` automate local bootstrapping and pre-flight release validation.
+  - Manifest validity, icon presence and dimensions, and completeness of service worker pre-caching.
+- **DevOps Tooling**: Python scripts in `scripts/` automate local bootstrapping, PWA icon generation, and pre-flight validation.

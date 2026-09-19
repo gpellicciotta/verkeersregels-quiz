@@ -53,9 +53,12 @@ const el = {
   formReport: document.getElementById("form-report"),
   modalQuestionId: document.getElementById("modal-question-id"),
   modalQuestionText: document.getElementById("modal-question-text"),
+  modalReportDesc: document.querySelector("#modal-report .modal-desc"),
   reportRemark: document.getElementById("report-remark"),
   modalFeedback: document.getElementById("modal-feedback"),
   btnVersion: document.getElementById("btn-version"),
+  btnInstall: document.getElementById("btn-install"),
+  offlineIndicator: document.getElementById("offline-indicator"),
   modalChangelog: document.getElementById("modal-changelog"),
   btnChangelogClose: document.getElementById("btn-changelog-close"),
   btnChangelogDismiss: document.getElementById("btn-changelog-dismiss"),
@@ -482,10 +485,83 @@ async function submitToSheet(correct, total, pct, durationSeconds, formattedDura
   }
 }
 
+const REPORT_QUEUE_KEY = "verkeersquiz_pending_reports";
+const MAX_QUEUED_REPORTS = 50;
+
+function getPendingReports() {
+  try {
+    const raw = localStorage.getItem(REPORT_QUEUE_KEY);
+    return raw ? JSON.parse(raw) : [];
+  } catch (err) {
+    console.warn("Kon foutmeldingswachtrij niet lezen uit localStorage:", err);
+    return [];
+  }
+}
+
+function savePendingReports(reports) {
+  while (reports.length > MAX_QUEUED_REPORTS) {
+    reports.shift();
+  }
+  while (reports.length > 0) {
+    try {
+      localStorage.setItem(REPORT_QUEUE_KEY, JSON.stringify(reports));
+      return true;
+    } catch (err) {
+      console.warn("LocalStorage vol, oudste foutmelding verwijderd:", err);
+      reports.shift();
+    }
+  }
+  try {
+    localStorage.removeItem(REPORT_QUEUE_KEY);
+  } catch (e) {}
+  return false;
+}
+
+function enqueueReport(payloadObj) {
+  const reports = getPendingReports();
+  reports.push({
+    id: Date.now() + "-" + Math.random().toString(36).slice(2, 6),
+    enqueuedAt: new Date().toISOString(),
+    payload: payloadObj,
+  });
+  savePendingReports(reports);
+}
+
+let isDrainingQueue = false;
+
+async function drainReportQueue() {
+  if (isDrainingQueue || !navigator.onLine || !CONFIG.SHEET_WEBAPP_URL) return;
+  const reports = getPendingReports();
+  if (reports.length === 0) return;
+
+  isDrainingQueue = true;
+  try {
+    while (reports.length > 0 && navigator.onLine) {
+      const item = reports[0];
+      try {
+        await fetch(CONFIG.SHEET_WEBAPP_URL, {
+          method: "POST",
+          mode: "no-cors",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: new URLSearchParams(item.payload),
+        });
+        reports.shift();
+        savePendingReports(reports);
+        await new Promise((resolve) => setTimeout(resolve, 500));
+      } catch (err) {
+        console.warn("Verzenden van foutmelding uit wachtrij onderbroken:", err);
+        break;
+      }
+    }
+  } finally {
+    isDrainingQueue = false;
+  }
+}
+
 function submitErrorReport(targetQuestion, remark) {
   if (!CONFIG.SHEET_WEBAPP_URL || !targetQuestion) return Promise.resolve();
 
-  const payload = new URLSearchParams({
+  const payloadData = {
     actie: "report_error",
     sleutel: CONFIG.SHEET_SECRET,
     datum: new Date().toISOString(),
@@ -493,15 +569,23 @@ function submitErrorReport(targetQuestion, remark) {
     vraag: targetQuestion.question || "",
     naam: state.playerName || "Anoniem",
     opmerking: remark || "",
-  });
+  };
 
+  if (!navigator.onLine) {
+    enqueueReport(payloadData);
+    console.info("Offline: foutmelding opgeslagen in lokale wachtrij.");
+    return Promise.resolve();
+  }
+
+  const payload = new URLSearchParams(payloadData);
   return fetch(CONFIG.SHEET_WEBAPP_URL, {
     method: "POST",
     mode: "no-cors",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: payload,
   }).catch((err) => {
-    console.error("Kon melding niet naar Google Sheet sturen:", err);
+    console.warn("Verzenden mislukt; foutmelding opgeslagen in lokale wachtrij:", err);
+    enqueueReport(payloadData);
   });
 }
 
@@ -515,6 +599,15 @@ function openReportModal() {
   el.modalFeedback.textContent = "";
   el.modalFeedback.className = "modal-feedback hidden";
   el.btnModalSubmit.disabled = false;
+
+  if (el.modalReportDesc) {
+    if (!navigator.onLine) {
+      el.modalReportDesc.textContent = "Je bent momenteel offline. Je melding wordt lokaal bewaard en automatisch verzonden zodra je weer online bent.";
+    } else {
+      el.modalReportDesc.textContent = "Zie je een onjuistheid of onduidelijkheid in deze vraag of antwoorden? Geef het hier door.";
+    }
+  }
+
   el.modalReport.classList.remove("hidden");
   el.reportRemark.focus();
 }
@@ -536,7 +629,7 @@ function handleReportSubmit(e) {
   // Instant dismissal with zero lag
   closeReportModal();
 
-  // Asynchronous background transmission with error logging to console
+  // Asynchronous background transmission or local enqueue
   submitErrorReport(q, remark);
 }
 
@@ -740,14 +833,89 @@ function checkAutoStart() {
   }
 }
 
+let deferredInstallPrompt = null;
+
+window.addEventListener("beforeinstallprompt", (e) => {
+  e.preventDefault();
+  deferredInstallPrompt = e;
+  if (el.btnInstall) {
+    el.btnInstall.classList.remove("hidden");
+  }
+});
+
+if (el.btnInstall) {
+  el.btnInstall.addEventListener("click", async () => {
+    if (!deferredInstallPrompt) return;
+    deferredInstallPrompt.prompt();
+    const { outcome } = await deferredInstallPrompt.userChoice;
+    if (outcome === "accepted") {
+      deferredInstallPrompt = null;
+      el.btnInstall.classList.add("hidden");
+    }
+  });
+}
+
+window.addEventListener("appinstalled", () => {
+  deferredInstallPrompt = null;
+  if (el.btnInstall) {
+    el.btnInstall.classList.add("hidden");
+  }
+  console.info("PWA succesvol geïnstalleerd.");
+});
+
+function updateOnlineStatus() {
+  const isOnline = typeof navigator.onLine === "boolean" ? navigator.onLine : true;
+  if (el.offlineIndicator) {
+    el.offlineIndicator.classList.toggle("hidden", isOnline);
+  }
+}
+
+window.addEventListener("online", () => {
+  updateOnlineStatus();
+  drainReportQueue();
+});
+
+window.addEventListener("offline", () => {
+  updateOnlineStatus();
+});
+
+function registerServiceWorker() {
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker
+        .register("./sw.js")
+        .then((reg) => {
+          reg.addEventListener("updatefound", () => {
+            const worker = reg.installing;
+            if (worker) {
+              worker.addEventListener("statechange", () => {
+                if (worker.state === "installed" && navigator.serviceWorker.controller) {
+                  console.info("Nieuwe versie van de quiz beschikbaar.");
+                }
+              });
+            }
+          });
+        })
+        .catch((err) => {
+          console.warn("Service Worker registratie mislukt:", err);
+        });
+    });
+  }
+}
+
+registerServiceWorker();
+updateOnlineStatus();
+
 loadQuestions()
   .then((questions) => {
     allQuestions = questions;
     applyFilter();
     checkAutoStart();
+    drainReportQueue();
   })
   .catch((err) => {
     console.error(err);
     el.startError.textContent = "Vragen konden niet geladen worden. Herlaad de pagina.";
     el.startError.classList.remove("hidden");
   });
+

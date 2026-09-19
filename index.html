@@ -5,11 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Verkeersregels Quiz</title>
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#1a56db">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Verkeersquiz">
   <link rel="stylesheet" href="css/style.css">
   <script src="js/app.js" defer></script>
 </head>
 <body>
 <main id="app">
+  <div id="offline-indicator" class="offline-indicator hidden" role="status" aria-live="polite">
+    <span class="offline-icon" aria-hidden="true">📡</span>
+    <span>Offline modus: quiz werkt volledig offline (alle 284 vragen beschikbaar)</span>
+  </div>
+
   <!-- Start screen -->
   <section id="screen-start" class="screen">
     <h1>Verkeersregels Quiz</h1>
@@ -17,7 +29,17 @@
     <div id="filter-notice" class="filter-notice hidden"></div>
     <label for="player-name">Naam (optioneel)</label>
     <input type="text" id="player-name" placeholder="Bv. Noah">
-    <button id="btn-start" class="btn-primary">Start quiz</button>
+    <div class="start-buttons">
+      <button id="btn-start" class="btn-primary">Start quiz</button>
+      <button id="btn-install" class="btn-secondary btn-install hidden" type="button">
+        <svg class="install-icon" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+          <polyline points="7 10 12 15 17 10"></polyline>
+          <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+        <span>Installeer app</span>
+      </button>
+    </div>
     <p id="start-error" class="error hidden"></p>
     <div class="start-report-hint">
       <span class="report-hint-icon" aria-hidden="true">🚩</span>
