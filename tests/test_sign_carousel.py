@@ -20,7 +20,6 @@ class TestSignCarousel(unittest.TestCase):
         html = INDEX_PATH.read_text(encoding="utf-8")
 
         self.assertIn('id="screen-carousel"', html, "index.html must define screen-carousel section")
-        self.assertIn('id="link-carousel"', html, "index.html must provide carousel link button on start screen")
         self.assertIn('id="carousel-stage"', html, "index.html must define carousel-stage container")
         self.assertIn('id="carousel-pause-overlay"', html, "index.html must define carousel-pause-overlay")
         self.assertIn('class="carousel-pause-banner"', html, "index.html must define carousel-pause-banner")
@@ -53,7 +52,6 @@ class TestSignCarousel(unittest.TestCase):
         self.assertIn(".carousel-progress-track", css, "style.css must style .carousel-progress-track")
         self.assertIn(".carousel-progress-fill", css, "style.css must style .carousel-progress-fill")
         self.assertIn(".btn-carousel-toggle.is-paused", css, "style.css must style paused toggle button")
-        self.assertIn(".btn-carousel-link", css, "style.css must style start screen carousel link button")
         self.assertIn(".carousel-card-body", css, "style.css must define carousel-card-body layout")
         self.assertIn(".start-mode-selector", css, "style.css must define start-mode-selector layout")
         self.assertIn(".start-mode-card", css, "style.css must define start-mode-card styling")

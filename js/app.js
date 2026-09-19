@@ -82,7 +82,6 @@ const el = {
   btnCarouselNext: document.getElementById("btn-carousel-next"),
   btnCarouselExit: document.getElementById("btn-carousel-exit"),
   carouselDelayInfo: document.getElementById("carousel-delay-info"),
-  linkCarousel: document.getElementById("link-carousel"),
   radioModeQuiz: document.getElementById("radio-mode-quiz"),
   radioModeCarousel: document.getElementById("radio-mode-carousel"),
   modeCardQuiz: document.getElementById("mode-card-quiz"),
@@ -1194,7 +1193,6 @@ function setStartMode(mode) {
   if (el.modeCardCarousel) el.modeCardCarousel.classList.toggle("is-selected", isCarousel);
   if (el.quizStartFields) el.quizStartFields.classList.toggle("hidden", isCarousel);
   if (el.carouselStartFields) el.carouselStartFields.classList.toggle("hidden", !isCarousel);
-  if (el.linkCarousel) el.linkCarousel.classList.toggle("hidden", isCarousel);
   if (el.btnStart) {
     el.btnStart.textContent = isCarousel ? "Start carrousel" : "Start quiz";
   }
@@ -1211,15 +1209,6 @@ if (el.modeCardQuiz) {
 }
 if (el.modeCardCarousel) {
   el.modeCardCarousel.addEventListener("click", () => setStartMode("carousel"));
-}
-
-if (el.linkCarousel) {
-  el.linkCarousel.addEventListener("click", (e) => {
-    e.preventDefault();
-    const rawDelay = el.carouselDelaySelect ? el.carouselDelaySelect.value : "5";
-    const delay = parseInt(rawDelay, 10) || 5;
-    startCarousel({ delay });
-  });
 }
 
 document.addEventListener("keydown", (e) => {

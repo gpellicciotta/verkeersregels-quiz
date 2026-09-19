@@ -1243,28 +1243,6 @@ button {
   box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
 }
 
-.btn-carousel-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  width: 100%;
-  margin-top: 10px;
-  box-sizing: border-box;
-  text-align: center;
-  transition: background 0.15s ease, color 0.15s ease;
-}
-
-.btn-carousel-link:hover {
-  background: #eff6ff;
-}
-
-.carousel-nav-icon {
-  flex-shrink: 0;
-}
-
 #screen-carousel {
   max-width: 820px;
   margin: 0 auto;
