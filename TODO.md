@@ -15,7 +15,7 @@ An overview of all tasks and their planning.
 
 ## Next Milestone
 
-- [ ] T0032 Look online for additional questions that use a real-live photo of a traffic situation. Try to find at least 10 and integrate into the quiz.
+- [~] T0032 [owner: @antigravity] Integrate 10 real-live traffic situation photo questions with URL type filtering.
 - [ ] T0033 [needs: T0032] [owner: claude] Review all questions for issues or inconsistencies. List all issues and ask me for confirmation before trying to fix them.
 - [~] T0035 [owner: @antigravity] Optimize responsive UX on desktop and mobile with two-panel layout and zero-scroll flow.
 - [ ] A0034 [needs: T0032 T0033 T0035] Release as 2.1.0 or 3.0.0
