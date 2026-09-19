@@ -1147,8 +1147,101 @@ button {
 }
 
 /* ==========================================================================
-   Sign Carousel Screen (#screen-carousel)
+   Sign Carousel Screen (#screen-carousel) & Mode Selector
    ========================================================================== */
+
+/* Start screen mode selector */
+.start-mode-fieldset {
+  border: none;
+  padding: 0;
+  margin: 18px 0 16px;
+}
+
+.start-mode-legend {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #334155;
+  margin-bottom: 8px;
+}
+
+.start-mode-selector {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.start-mode-card {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px 14px;
+  border: 2px solid #e2e8f0;
+  border-radius: var(--radius);
+  background: #ffffff;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  user-select: none;
+}
+
+.start-mode-card:hover {
+  border-color: #93c5fd;
+  background: #f8fafc;
+}
+
+.start-mode-card.is-selected {
+  border-color: var(--color-primary);
+  background: #eff6ff;
+  box-shadow: 0 0 0 1px var(--color-primary);
+}
+
+.start-mode-card input[type="radio"] {
+  margin-top: 3px;
+  accent-color: var(--color-primary);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.start-mode-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.start-mode-title {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #1e293b;
+}
+
+.start-mode-desc {
+  font-size: 0.8rem;
+  color: #64748b;
+  line-height: 1.35;
+  margin-top: 2px;
+}
+
+.carousel-start-fields {
+  margin-bottom: 4px;
+}
+
+.carousel-delay-select {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1.5px solid #cbd5e1;
+  border-radius: var(--radius);
+  font-size: 0.95rem;
+  background: #ffffff;
+  color: #1e293b;
+  margin-top: 4px;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.carousel-delay-select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
 
 .btn-carousel-link {
   display: inline-flex;
@@ -1469,6 +1562,10 @@ button {
 }
 
 @media (max-width: 639px) {
+  .start-mode-selector {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
   .carousel-header {
     display: flex;
     justify-content: space-between;

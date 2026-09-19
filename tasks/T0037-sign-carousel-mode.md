@@ -48,20 +48,23 @@ Provide prominent visual indicators for paused state and time elapsed until next
 
 ### Changes Made
 
-- `index.html`: added `#screen-carousel`, stage card, pause overlay, progress track, controls, and start link.
-- `css/style.css`: added styles for carousel card, pause overlay banner, progress bar, and mobile responsive rules.
-- `js/app.js`: implemented `getCarouselParams`, `startCarousel`, `toggleCarouselPause`, interval timer, and keyboard handlers.
+- `index.html`: added `#screen-carousel`, stage card, start screen mode selector options, and controls.
+- `css/style.css`: added styles for carousel card, start mode selector cards, progress bar, and mobile responsive rules.
+- `js/app.js`: implemented `getCarouselParams`, `startCarousel`, `setStartMode`, interval timer, and keyboard handlers.
 - `tests/test_sign_carousel.py`: added 3 automated tests verifying DOM structure, styling, and JS lifecycle logic.
 - `CHANGELOG.md`: documented sign carousel mode deliverable under active version `v2.0.1-pre`.
 
 ### Visual Validation
 
 - [T0037-view-before.png](T0037-view-before.png): baseline start screen before changes.
+- [T0037-view-start.png](T0037-view-start.png): start screen with quiz and carousel mode options.
+- [T0037-view-start-carousel.png](T0037-view-start-carousel.png): start screen with carousel mode and interval selector active.
+- [T0037-view-start-mobile.png](T0037-view-start-mobile.png): mobile view of start screen mode selector.
 - [T0037-view-after.png](T0037-view-after.png): running sign carousel displaying sign card, progress bar, and controls.
 - [T0037-view-paused.png](T0037-view-paused.png): paused carousel state displaying prominent "Gepauzeerd" indicator and resume button.
 - [T0037-view-mobile.png](T0037-view-mobile.png): mobile view demonstrating centered sign card, compact buttons, and full responsive layout.
 
 ### Verification Results
 
-- `python -m unittest discover -s tests -v`: 26 of 26 tests passed in 0.48s.
+- `python -m unittest discover -s tests -v`: 26 of 26 tests passed in 0.73s.
 

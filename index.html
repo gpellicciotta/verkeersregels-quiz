@@ -27,8 +27,41 @@
     <h1>Verkeersregels Quiz</h1>
     <p id="start-desc">Oefen voor je theoretisch rijexamen: 20 vragen over verkeersborden en verkeersregels.</p>
     <div id="filter-notice" class="filter-notice hidden"></div>
-    <label for="player-name">Naam (optioneel)</label>
-    <input type="text" id="player-name" placeholder="Bv. Noah">
+    <fieldset class="start-mode-fieldset">
+      <legend class="start-mode-legend">Kies wat je wilt doen</legend>
+      <div class="start-mode-selector" role="radiogroup" aria-label="Kies wat je wilt doen">
+        <label class="start-mode-card is-selected" id="mode-card-quiz">
+          <input type="radio" name="start-mode" id="radio-mode-quiz" value="quiz" checked>
+          <div class="start-mode-info">
+            <span class="start-mode-title">Theoriequiz</span>
+            <span class="start-mode-desc">20 oefenvragen over regels en borden</span>
+          </div>
+        </label>
+        <label class="start-mode-card" id="mode-card-carousel">
+          <input type="radio" name="start-mode" id="radio-mode-carousel" value="carousel">
+          <div class="start-mode-info">
+            <span class="start-mode-title">Verkeersborden carrousel</span>
+            <span class="start-mode-desc">Automatisch wisselende borden met uitleg</span>
+          </div>
+        </label>
+      </div>
+    </fieldset>
+
+    <div id="quiz-start-fields">
+      <label for="player-name">Naam (optioneel)</label>
+      <input type="text" id="player-name" placeholder="Bv. Noah">
+    </div>
+
+    <div id="carousel-start-fields" class="carousel-start-fields hidden">
+      <label for="carousel-delay-select">Wisselinterval per verkeersbord</label>
+      <select id="carousel-delay-select" class="carousel-delay-select">
+        <option value="3">3 seconden (snel)</option>
+        <option value="5" selected>5 seconden (standaard)</option>
+        <option value="8">8 seconden (rustig)</option>
+        <option value="12">12 seconden (uitgebreid)</option>
+      </select>
+    </div>
+
     <div class="start-buttons">
       <button id="btn-start" class="btn-primary">Start quiz</button>
       <button id="btn-install" class="btn-secondary btn-install hidden" type="button">

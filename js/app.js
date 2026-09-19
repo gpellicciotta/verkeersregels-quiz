@@ -83,6 +83,13 @@ const el = {
   btnCarouselExit: document.getElementById("btn-carousel-exit"),
   carouselDelayInfo: document.getElementById("carousel-delay-info"),
   linkCarousel: document.getElementById("link-carousel"),
+  radioModeQuiz: document.getElementById("radio-mode-quiz"),
+  radioModeCarousel: document.getElementById("radio-mode-carousel"),
+  modeCardQuiz: document.getElementById("mode-card-quiz"),
+  modeCardCarousel: document.getElementById("mode-card-carousel"),
+  quizStartFields: document.getElementById("quiz-start-fields"),
+  carouselStartFields: document.getElementById("carousel-start-fields"),
+  carouselDelaySelect: document.getElementById("carousel-delay-select"),
 };
 
 const carouselState = {
@@ -887,6 +894,13 @@ function restart() {
 }
 
 el.btnStart.addEventListener("click", () => {
+  const isCarouselSelected = el.radioModeCarousel && el.radioModeCarousel.checked;
+  if (isCarouselSelected) {
+    const rawDelay = el.carouselDelaySelect ? el.carouselDelaySelect.value : "5";
+    const delay = parseInt(rawDelay, 10) || 5;
+    startCarousel({ delay });
+    return;
+  }
   if (!state.pool || state.pool.length === 0) {
     el.startError.textContent = "Vragen konden niet geladen worden. Herlaad de pagina.";
     el.startError.classList.remove("hidden");
@@ -1172,10 +1186,39 @@ if (el.btnCarouselExit) {
   el.btnCarouselExit.addEventListener("click", stopCarousel);
 }
 
+function setStartMode(mode) {
+  const isCarousel = mode === "carousel";
+  if (el.radioModeQuiz) el.radioModeQuiz.checked = !isCarousel;
+  if (el.radioModeCarousel) el.radioModeCarousel.checked = isCarousel;
+  if (el.modeCardQuiz) el.modeCardQuiz.classList.toggle("is-selected", !isCarousel);
+  if (el.modeCardCarousel) el.modeCardCarousel.classList.toggle("is-selected", isCarousel);
+  if (el.quizStartFields) el.quizStartFields.classList.toggle("hidden", isCarousel);
+  if (el.carouselStartFields) el.carouselStartFields.classList.toggle("hidden", !isCarousel);
+  if (el.linkCarousel) el.linkCarousel.classList.toggle("hidden", isCarousel);
+  if (el.btnStart) {
+    el.btnStart.textContent = isCarousel ? "Start carrousel" : "Start quiz";
+  }
+}
+
+if (el.radioModeQuiz) {
+  el.radioModeQuiz.addEventListener("change", () => setStartMode("quiz"));
+}
+if (el.radioModeCarousel) {
+  el.radioModeCarousel.addEventListener("change", () => setStartMode("carousel"));
+}
+if (el.modeCardQuiz) {
+  el.modeCardQuiz.addEventListener("click", () => setStartMode("quiz"));
+}
+if (el.modeCardCarousel) {
+  el.modeCardCarousel.addEventListener("click", () => setStartMode("carousel"));
+}
+
 if (el.linkCarousel) {
   el.linkCarousel.addEventListener("click", (e) => {
     e.preventDefault();
-    startCarousel({ delay: 5 });
+    const rawDelay = el.carouselDelaySelect ? el.carouselDelaySelect.value : "5";
+    const delay = parseInt(rawDelay, 10) || 5;
+    startCarousel({ delay });
   });
 }
 
@@ -1220,10 +1263,15 @@ if (typeof window !== "undefined") {
   window.toggleCarouselPause = toggleCarouselPause;
   window.nextCarouselSign = nextCarouselSign;
   window.prevCarouselSign = prevCarouselSign;
+  window.setStartMode = setStartMode;
 }
 
 function checkAutoStart() {
   const params = new URLSearchParams(window.location.search);
+  if (params.get("opt") === "carousel" || params.get("keuze") === "carrousel") {
+    setStartMode("carousel");
+    return;
+  }
   const carouselParams = getCarouselParams();
   if (carouselParams.active) {
     startCarousel({ delay: carouselParams.delay });
