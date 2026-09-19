@@ -9,13 +9,13 @@ An overview of all tasks and their planning.
 > Owner: `[owner: @name]` shown only when active/blocked/needs-review.
 > Dependencies: `[needs: Tnnnn]` shown only when unresolved.
 
-**Next ID:** 0038
+**Next ID:** 0040
 
 ---
 
 ## Next Milestone
 
-- [?] T0037 [owner: @antigravity] Add sign carousel mode cycling random signs with delay and pause toggle on click or space.
+- [ ] T0039 Voeg een "About" (info icoon) toe dat een scherm toont met volgende info: a) De versie en release notes, b) links naar bronnen die zijn gebruik. Onderaan ook Copyright (c) Giovanni Pellicciotta. Dit icoon mag de huidige versie-nummer button vervangen. I.p.v. een modal dialog mag het ganse venster (= de ganse view) gebruikt worden, maar het moet mogelijk zijn met "Back" (of door te "Sluiten") terug te keren naar het start scherm. Dit betekent ook dat de huidige links van het start scherm kunnen verdwijnen: we willen het zo luchting en clean mogelijk houden.
 - [ ] A0034 Release as 2.1.0 or 3.0.0
 
 ---
@@ -23,3 +23,4 @@ An overview of all tasks and their planning.
 ## Backlog
 
 - [ ] T0001 Switch the quiz to the Code van de openbare weg when it replaces the Wegcode on 1 June 2027.
+- [ ] T0038 Voeg een manier toe om de resultaten met anderen te sharen

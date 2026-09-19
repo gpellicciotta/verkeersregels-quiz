@@ -14,6 +14,7 @@ A summarized overview of all changes, per version of this project.
 ---
 
 ## v2.0.1-pre
+- FrontEnd: Verkeersborden-carrousel toegevoegd met instelbare wisselduur, pauzeerbediening en duidelijke pauze-indicator via URL-parameters en startknop.
 - Inhoud: Alle 294 vragen herzien; 27 inhoudelijke fouten en 2 onbevestigde jaartallen gecorrigeerd.
 - FrontEnd: Resultatenknoppen compact rechtsboven geplaatst op desktop en wetswijzigingslabels geharmoniseerd qua typografie.
 - Inhoud: Twintig praktijkvragen met foto's van verkeerssituaties toegevoegd inclusief ondersteuning voor filteren via queryparameters.
