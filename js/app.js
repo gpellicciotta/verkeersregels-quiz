@@ -316,15 +316,26 @@ function renderQuestion() {
     el.options.appendChild(btn);
   });
 
-  if (state.currentIndex === state.round.length - 1) {
-    el.btnNext.textContent = "Toon Resultaat";
-  } else {
-    el.btnNext.textContent = "Volgende vraag";
-  }
+  updateNextButtonText();
 
   el.explanation.classList.add("hidden");
   el.explanation.textContent = "";
   el.btnNext.classList.add("hidden");
+}
+
+function updateNextButtonText() {
+  if (!el.btnNext) return;
+  const isLast = state.currentIndex === state.round.length - 1;
+  const label = isLast ? "Toon resultaat" : "Volgende vraag";
+  const textSpan = el.btnNext.querySelector(".btn-next-text");
+  if (textSpan) {
+    textSpan.textContent = label;
+  } else {
+    el.btnNext.textContent = label;
+  }
+  el.btnNext.setAttribute("aria-label", label);
+  el.btnNext.title = label;
+  el.btnNext.classList.toggle("btn-next-finish", isLast);
 }
 
 function selectOption(chosenIndex) {
@@ -349,47 +360,47 @@ function selectOption(chosenIndex) {
   const buttons = el.options.querySelectorAll(".option-btn");
   buttons.forEach((btn, idx) => {
     btn.disabled = true;
-    if (idx === q.correctIndex) btn.classList.add("correct");
-    else if (idx === chosenIndex) btn.classList.add("wrong");
+    if (idx === q.correctIndex) {
+      btn.classList.add("correct");
+    } else if (idx === chosenIndex) {
+      btn.classList.add("wrong");
+    } else {
+      btn.classList.add("option-hidden");
+    }
   });
 
   renderExplanation(q);
 
   el.quizScore.textContent = `Score: ${state.answers.filter((a) => a.correct).length}/${state.answers.length}`;
-  if (state.currentIndex === state.round.length - 1) {
-    el.btnNext.textContent = "Toon Resultaat";
-  } else {
-    el.btnNext.textContent = "Volgende vraag";
-  }
+  updateNextButtonText();
   el.btnNext.classList.remove("hidden");
 }
 
 function renderExplanation(q) {
   el.explanation.replaceChildren();
 
-  if (q.explanation) {
-    const p = document.createElement("p");
-    p.className = "explanation-text";
-    p.textContent = q.explanation;
-    el.explanation.appendChild(p);
-  }
+  const header = document.createElement("div");
+  header.className = "explanation-header";
+
+  const title = document.createElement("span");
+  title.className = "explanation-title";
+  title.textContent = "Toelichting";
+  header.appendChild(title);
 
   if (q.source) {
-    const sourceWrap = document.createElement("div");
-    sourceWrap.className = "explanation-source";
-
     const link = document.createElement("a");
-    link.className = "explanation-link";
+    link.className = "explanation-link-pill";
     link.href = q.source;
     link.target = "_blank";
     link.rel = "noopener noreferrer";
-    link.title = "Open officiële regelgeving of toelichting in een nieuw tabblad";
+    link.title = "Bekijk officieel wetsartikel in de Wegcode";
+    link.setAttribute("aria-label", "Bekijk officieel wetsartikel in de Wegcode");
 
     const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-    svg.setAttribute("class", "explanation-link-icon");
+    svg.setAttribute("class", "explanation-pill-icon");
     svg.setAttribute("aria-hidden", "true");
-    svg.setAttribute("width", "14");
-    svg.setAttribute("height", "14");
+    svg.setAttribute("width", "13");
+    svg.setAttribute("height", "13");
     svg.setAttribute("viewBox", "0 0 24 24");
     svg.setAttribute("fill", "none");
     svg.setAttribute("stroke", "currentColor");
@@ -411,13 +422,21 @@ function renderExplanation(q) {
     svg.appendChild(polyline);
     svg.appendChild(line);
 
-    const span = document.createElement("span");
-    span.textContent = "Officiële regelgeving / toelichting bekijken";
+    const pillText = document.createElement("span");
+    pillText.textContent = "Wegcode ↗";
 
     link.appendChild(svg);
-    link.appendChild(span);
-    sourceWrap.appendChild(link);
-    el.explanation.appendChild(sourceWrap);
+    link.appendChild(pillText);
+    header.appendChild(link);
+  }
+
+  el.explanation.appendChild(header);
+
+  if (q.explanation) {
+    const p = document.createElement("p");
+    p.className = "explanation-text";
+    p.textContent = q.explanation;
+    el.explanation.appendChild(p);
   }
 
   if (q.explanation || q.source) {
@@ -821,7 +840,7 @@ function restart() {
   state.endTime = null;
   state.durationSeconds = 0;
   el.playerNameInput.value = state.playerName;
-  if (el.btnNext) el.btnNext.textContent = "Volgende vraag";
+  updateNextButtonText();
   applyFilter();
   showScreen("start");
 }

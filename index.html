@@ -52,6 +52,10 @@
         <span class="start-legal-separator" aria-hidden="true">•</span>
         <a href="https://www.wegcode.be/nl/regelgeving/1975120109/wijzigingen~hra8v386pu" target="_blank" rel="noopener noreferrer">Overzicht wetswijzigingen</a>
       </div>
+      <p class="start-legal-hint">
+        <span class="start-legal-hint-icon" aria-hidden="true">📖</span>
+        <span>Bij elke vraag vind je via het toelichtingsicoon direct het bijbehorende wetsartikel.</span>
+      </p>
       <div class="start-version-wrap">
         <button id="btn-version" class="btn-version" type="button" title="Bekijk changelog" aria-haspopup="dialog">v2.0.0</button>
       </div>
@@ -72,16 +76,34 @@
       <span id="quiz-score">Score: 0</span>
     </div>
     <div class="progress-bar"><div id="progress-fill"></div></div>
-    <div id="quiz-badge-wrap" class="quiz-badge-wrap hidden">
-      <span id="quiz-badge" class="badge-since"></span>
+
+    <div class="quiz-body">
+      <!-- Left pane: Question text, badge, and traffic sign illustration -->
+      <div class="quiz-pane-question">
+        <div id="quiz-badge-wrap" class="quiz-badge-wrap hidden">
+          <span id="quiz-badge" class="badge-since"></span>
+        </div>
+        <h2 id="question-text"></h2>
+        <div id="question-image-wrap" class="hidden">
+          <img id="question-image" alt="Verkeersbord">
+        </div>
+      </div>
+
+      <!-- Right pane: Answer options, explanation feedback, and next action -->
+      <div class="quiz-pane-answers">
+        <div id="options" class="options"></div>
+        <div id="quiz-feedback-wrap" class="quiz-feedback-wrap">
+          <div id="explanation" class="explanation hidden"></div>
+          <button id="btn-next" class="btn-primary btn-next hidden" type="button" aria-label="Volgende vraag">
+            <span class="btn-next-text">Volgende vraag</span>
+            <svg class="next-icon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
     </div>
-    <div id="explanation" class="explanation hidden"></div>
-    <button id="btn-next" class="btn-primary hidden">Volgende vraag</button>
-    <h2 id="question-text"></h2>
-    <div id="question-image-wrap" class="hidden">
-      <img id="question-image" alt="Verkeersbord">
-    </div>
-    <div id="options" class="options"></div>
   </section>
 
   <!-- Result screen -->
