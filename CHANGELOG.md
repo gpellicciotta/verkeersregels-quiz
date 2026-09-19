@@ -14,6 +14,7 @@ A summarized overview of all changes, per version of this project.
 ---
 
 ## v2.0.1-pre
+- Inhoud: Achttien inhoudelijke fouten in verkeersregelvragen gecorrigeerd na uitgebreide juridische controle.
 - FrontEnd: Resultatenknoppen compact rechtsboven geplaatst op desktop en wetswijzigingslabels geharmoniseerd qua typografie.
 - Inhoud: Tien praktijkvragen met foto's van verkeerssituaties toegevoegd inclusief ondersteuning voor filteren via queryparameters.
 - FrontEnd: Vraagtype-filter toegevoegd met visuele startmeldingen en responsieve fotoweergave voor praktijksituaties.
