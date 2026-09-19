@@ -515,17 +515,38 @@ button {
   transition: transform 0.15s ease;
 }
 
+.result-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.result-header-text h1 {
+  margin-bottom: 4px;
+}
+
 #result-summary {
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   font-weight: 600;
+  margin: 0;
 }
 
 .result-actions {
   display: flex;
-  gap: 12px;
-  margin: 16px 0;
+  gap: 10px;
+  align-items: center;
+  flex-shrink: 0;
+  margin: 0;
 }
-.result-actions button { margin-top: 0; flex: 1; }
+.result-actions button {
+  margin-top: 0;
+  width: auto;
+  flex: none;
+  padding: 8px 16px;
+  font-size: 0.88rem;
+}
 
 #result-table {
   width: 100%;
@@ -596,6 +617,22 @@ button {
 
 /* Below tablet width, turn the result table into condensed full-width cards per question */
 @media screen and (max-width: 639px) {
+  .result-header {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    margin-bottom: 8px;
+  }
+  .result-actions {
+    margin: 12px 0 6px;
+    width: 100%;
+  }
+  .result-actions button {
+    flex: 1;
+    padding: 10px 14px;
+    font-size: 0.95rem;
+  }
+
   #result-table, #result-table tbody, #result-table tr, #result-table td {
     display: block;
     width: 100%;

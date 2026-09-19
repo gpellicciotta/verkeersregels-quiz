@@ -62,6 +62,18 @@ class TestUXLayout(unittest.TestCase):
         self.assertIn(".result-badges-wrap", css, "style.css must declare .result-badges-wrap")
         self.assertIn("padding-right: 155px", css, "style.css must reserve padding for paired badges on mobile")
 
+    def test_result_header_top_right_action_buttons(self) -> None:
+        """Validates that result header positions action buttons in top-right on desktop."""
+        self.assertTrue(INDEX_PATH.exists(), "index.html must exist")
+        self.assertTrue(CSS_PATH.exists(), "style.css must exist")
+        html = INDEX_PATH.read_text(encoding="utf-8")
+        css = CSS_PATH.read_text(encoding="utf-8")
+
+        self.assertIn('class="result-header"', html, "index.html must define result-header")
+        self.assertIn('class="result-header-text"', html, "index.html must define result-header-text")
+        self.assertIn(".result-header", css, "style.css must declare .result-header")
+        self.assertIn("justify-content: space-between", css, "style.css must use space-between in result-header")
+
 
 if __name__ == "__main__":
     unittest.main()
