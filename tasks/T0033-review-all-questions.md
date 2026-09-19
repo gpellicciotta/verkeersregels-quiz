@@ -26,6 +26,8 @@ Produce a findings list only; do not fix anything until the user confirms which 
 - [x] **[Verify]**    Check rule/situation questions against data/law and data/SOURCES.md for legal accuracy.
 - [x] **[Verify]**    Check cross-question consistency: categories, "since" years, source anchors, phrasing.
 - [x] **[Doc]**        Record all findings in the Execution Log and present them for user confirmation.
+- [x] **[Implement]** Fix the 18 confirmed findings in data/questions.json, keeping question IDs stable.
+- [ ] **[Verify]**    Dig further into the 11 uncertain findings and resolve or reclassify each one.
 
 ## Execution Log
 
@@ -39,14 +41,28 @@ Produce a findings list only; do not fix anything until the user confirms which 
 - [2026-09-19] **[Doc]**
   Recorded 33 flagged questions (18 confirmed, 11 uncertain) below; awaiting user confirmation before any fixes.
 
-## Findings (awaiting confirmation, nothing fixed yet)
+- [2026-09-19] **[Decided]**
+  User confirmed: fix all 18 confirmed findings now; keep digging into the 11 uncertain ones.
+
+- [2026-09-19] **[Implement]**
+  Re-verified each of the 18 confirmed findings directly against the consolidated Wegcode PDF, then fixed them.
+  - Fixed 13 wrong article/subsection citations; the stated answers were already correct.
+  - Rewrote 5 questions with genuinely wrong content (2 velomobile, rec-f27, 2 fabricated parking rules).
+
+- [2026-09-19] **[Verify]**
+  Full pytest suite (22 tests) passed; served the fixed questions.json locally and spot-checked the changed entries.
+
+## Findings
 
 Legend: **confirmed** = verified against the consolidated Wegcode text; **uncertain** = plausible but not
 verifiable from locally stored sources, or a judgment call. Source: `data/law/wegcode-kb-1975-12-01-consolidated.pdf`
 unless noted. Automated schema issues (dup IDs, correctIndex bounds, missing files) are excluded — those are
 already covered by tests/test_quiz_data.py.
 
-### Systemic pattern: wrong article subsection on otherwise-correct rule questions (13, confirmed)
+The 18 confirmed findings below are **fixed** (see data/questions.json and the 2026-09-19 entry in
+data/SOURCES.md's Correction log). The 11 uncertain findings are still open, pending further digging.
+
+### Systemic pattern: wrong article subsection on otherwise-correct rule questions (13, confirmed, fixed)
 
 The stated correct answer is right; only the cited article/subsection number is wrong. Likely from citing the
 top-level article without checking the exact subsection letter/number.
@@ -65,7 +81,7 @@ top-level article without checking the exact subsection letter/number.
 - `rule-voorrang-tram-voetganger`: cites "40.4.2°" (no tram content there) → should be art. 12.1.
 - `rule-rotonde-pinker`: cites "19.3" (left-turn article) → should be art. 19.2, 1°.
 
-### Wrong answer content, not just citation (5, confirmed)
+### Wrong answer content, not just citation (5, confirmed, fixed)
 
 - `rule-velomobiel-2022`: claims a safety flag + 1.40m height rule under art. 82bis; that article covers
   e-steps, not velomobiles. The real 2022 rule (art. 82.1.2, 6°) requires a reflective side strip instead.
