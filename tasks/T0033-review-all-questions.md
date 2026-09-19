@@ -4,9 +4,9 @@ owner: "@claude"
 needs: []
 branch: task/T0033-review-all-questions
 worktree: ./work/T0033-review-all-questions
-status: active
+status: completed
 started: 2026-09-19
-ended: —
+ended: 2026-09-19
 ---
 
 # T0033: Review All Questions for Issues or Inconsistencies
@@ -29,7 +29,7 @@ Produce a findings list only; do not fix anything until the user confirms which 
 - [x] **[Implement]** Fix the 18 confirmed findings in data/questions.json, keeping question IDs stable.
 - [x] **[Verify]**    Dig further into the 11 uncertain findings and resolve or reclassify each one.
 - [x] **[Decided]**   User confirmed the last 2 findings are correct content, just drop the unverifiable year.
-- [ ] **[Decide]**    Get user confirmation to merge and push the full fix pass to main.
+- [x] **[Decided]**   User confirmed: merge, push, and close out T0033.
 
 ## Execution Log
 
@@ -66,6 +66,9 @@ Produce a findings list only; do not fix anything until the user confirms which 
 
 - [2026-09-19] **[Verify]**
   Full pytest suite (22 tests) passed a third time after removing the two unverifiable `since` fields.
+
+- [2026-09-19] **[Complete]**
+  Merged all 33 corrected/resolved findings into main and closed the task; no fixes deferred to follow-up.
 
 ## Findings
 

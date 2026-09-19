@@ -9,14 +9,14 @@ An overview of all tasks and their planning.
 > Owner: `[owner: @name]` shown only when active/blocked/needs-review.
 > Dependencies: `[needs: Tnnnn]` shown only when unresolved.
 
-**Next ID:** 0037
+**Next ID:** 0038
 
 ---
 
 ## Next Milestone
 
-- [~] T0033 [owner: claude] Review all questions for issues or inconsistencies. List all issues and ask me for confirmation before trying to fix them.
-- [ ] A0034 [needs: T0033] Release as 2.1.0 or 3.0.0
+- [ ] T0037 Introduce a ?sign-carrousel&delay=5 where every {{delay}} seconds a random sign and it's explanation are shown. Pause the current sign when clicked/touched/space-pressed once, re-start when clicked/touched/space-pressed again (with an 'Gepauzeerd' indication)
+- [ ] A0034 Release as 2.1.0 or 3.0.0
 
 ---
 
