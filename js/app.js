@@ -16,6 +16,7 @@ const state = {
   currentIndex: 0,
   answers: [],
   filterSince: null,
+  filterType: null,
   startTime: null,
   endTime: null,
   durationSeconds: 0,
@@ -90,6 +91,12 @@ const el = {
   quizStartFields: document.getElementById("quiz-start-fields"),
   carouselStartFields: document.getElementById("carousel-start-fields"),
   carouselDelaySelect: document.getElementById("carousel-delay-select"),
+  screenAbout: document.getElementById("screen-about"),
+  btnAbout: document.getElementById("btn-about"),
+  btnAboutBack: document.getElementById("btn-about-back"),
+  aboutChangelogBody: document.getElementById("about-changelog-body"),
+  aboutVersionTag: document.getElementById("about-version-tag"),
+  quizModeDesc: document.getElementById("quiz-mode-desc"),
 };
 
 const carouselState = {
@@ -112,9 +119,15 @@ function showScreen(name) {
   if (el.screenCarousel) {
     el.screenCarousel.classList.toggle("hidden", name !== "carousel");
   }
+  if (el.screenAbout) {
+    el.screenAbout.classList.toggle("hidden", name !== "about");
+  }
   if (name !== "carousel" && carouselState.isActive) {
     pauseCarouselTimer();
     carouselState.isActive = false;
+  }
+  if (name === "about") {
+    loadChangelog();
   }
 }
 
@@ -224,14 +237,18 @@ function getEffectiveQuestionCount() {
 function updateStartScreenNotice() {
   const desired = getQuestionCountOverride() || CONFIG.QUESTIONS_PER_ROUND;
   const available = state.pool ? state.pool.length : allQuestions.length;
-  const effectiveCount = Math.min(desired, available);
+  const effectiveCount = available > 0 ? Math.min(desired, available) : desired;
+
+  if (el.quizModeDesc) {
+    el.quizModeDesc.textContent = `${effectiveCount} ${effectiveCount === 1 ? "oefenvraag" : "oefenvragen"} over regels en borden`;
+  }
 
   if (el.quizProgress && effectiveCount > 0) {
     el.quizProgress.textContent = `Vraag 1/${effectiveCount}`;
   }
 
-  const hasSince = state.filterSince !== null;
-  const hasType = state.filterType !== null;
+  const hasSince = state.filterSince !== null && state.filterSince !== undefined;
+  const hasType = Boolean(state.filterType);
 
   if (hasSince || hasType) {
     const badgesHtml = [];
@@ -246,8 +263,10 @@ function updateStartScreenNotice() {
         rule: "Verkeersregels",
       };
       const label = typeLabels[state.filterType] || state.filterType;
-      badgesHtml.push(`<span class="badge-since badge-blue badge-since-blue">${label}</span>`);
-      descParts.push(`type: ${label.toLowerCase()}`);
+      if (label) {
+        badgesHtml.push(`<span class="badge-since badge-blue badge-since-blue">${label}</span>`);
+        descParts.push(`type: ${String(label).toLowerCase()}`);
+      }
     }
 
     if (hasSince) {
@@ -851,22 +870,27 @@ function renderChangelogMarkdown(md) {
 
 async function loadChangelog() {
   if (changelogHtmlCache) {
-    el.changelogBody.innerHTML = changelogHtmlCache;
+    if (el.changelogBody) el.changelogBody.innerHTML = changelogHtmlCache;
+    if (el.aboutChangelogBody) el.aboutChangelogBody.innerHTML = changelogHtmlCache;
     return;
   }
-  el.changelogBody.innerHTML = '<p class="changelog-loading">Versiegeschiedenis laden...</p>';
+  if (el.changelogBody) el.changelogBody.innerHTML = '<p class="changelog-loading">Versiegeschiedenis laden...</p>';
+  if (el.aboutChangelogBody) el.aboutChangelogBody.innerHTML = '<p class="changelog-loading">Versiegeschiedenis laden...</p>';
   try {
     const res = await fetch("CHANGELOG.md");
     if (!res.ok) throw new Error("Kon CHANGELOG.md niet laden: " + res.status);
     const md = await res.text();
     changelogHtmlCache = renderChangelogMarkdown(md);
-    el.changelogBody.innerHTML = changelogHtmlCache;
+    if (el.changelogBody) el.changelogBody.innerHTML = changelogHtmlCache;
+    if (el.aboutChangelogBody) el.aboutChangelogBody.innerHTML = changelogHtmlCache;
   } catch (err) {
     console.warn("Changelog laden mislukt:", err);
-    el.changelogBody.innerHTML = `
+    const errHtml = `
       <p class="error">Kon versiegeschiedenis niet laden.</p>
       <p class="modal-desc">Bekijk <a href="CHANGELOG.md" target="_blank" rel="noopener noreferrer">CHANGELOG.md</a> direct.</p>
     `;
+    if (el.changelogBody) el.changelogBody.innerHTML = errHtml;
+    if (el.aboutChangelogBody) el.aboutChangelogBody.innerHTML = errHtml;
   }
 }
 
@@ -929,6 +953,20 @@ if (el.modalChangelog) {
   el.modalChangelog.addEventListener("click", (e) => {
     if (e.target === el.modalChangelog) closeChangelogModal();
   });
+}
+
+if (el.btnAbout) {
+  el.btnAbout.addEventListener("click", () => {
+    showScreen("about");
+  });
+}
+if (el.btnAboutBack) {
+  el.btnAboutBack.addEventListener("click", () => {
+    showScreen("start");
+  });
+}
+if (el.aboutVersionTag) {
+  el.aboutVersionTag.textContent = CONFIG.VERSION;
 }
 
 function formatCategoryName(cat) {
@@ -1307,6 +1345,8 @@ function checkAutoStart() {
     if (params.get("report") === "1") {
       openReportModal();
     }
+  } else if (params.get("view") === "about" || params.get("screen") === "about" || params.has("about")) {
+    showScreen("about");
   } else if (params.get("modal") === "changelog" || params.get("autotest") === "changelog" || params.get("changelog") === "1") {
     openChangelogModal();
   }
@@ -1384,6 +1424,8 @@ function registerServiceWorker() {
 
 registerServiceWorker();
 updateOnlineStatus();
+updateStartScreenNotice();
+checkAutoStart();
 
 loadQuestions()
   .then((questions) => {
