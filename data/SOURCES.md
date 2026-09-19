@@ -15,11 +15,11 @@ Breakdown by type:
 
 Breakdown by category:
 
-- aanwijzing: 89
+- aanwijzing: 90
 - voorrang: 36
 - verbod: 34
 - gevaar: 31
-- fietsers-voetgangers: 29
+- fietsers-voetgangers: 28
 - parkeren: 23
 - algemeen: 17
 - gebod: 10
@@ -170,6 +170,21 @@ Cross-reference used to confirm which code matches which meaning and shape: the 
   - Corrected `rule-parkeren-brandkraan`: no fire-hydrant parking rule exists anywhere in the consolidated Wegcode; replaced with the real 1-meter rule from adjacent parked vehicles (art. 25.1, 1°).
   - Corrected `rule-estep-parkeren-2022`: no e-step "dropzone" rule exists federally (cited art. 75.3 is about central-lane markings); replaced with the real rule that mobility devices must be parked outside the roadway without hindering other road users (art. 23.3).
   - 11 further items flagged as uncertain by the review are still open; see `tasks/T0033-review-all-questions.md`.
+
+- 2026-09-19: resolved 9 of the 11 uncertain T0033 findings after further research (amendment PDFs in `data/law/amendments/` and targeted web lookups); 2 remain genuinely unverifiable (see "Manual review recommended" above):
+  - `rule-middenrijbaan-2022`: the driving rule isn't a standalone article; it's the combination of the middenrijbaan/zijdelingse strook definitions (art. 2.71-2.72) with the crossing and overtaking rules (art. 15.3, 16.5), confirmed against `kb-2022-07-30.pdf`'s own explanatory memorandum.
+  - `rule-vierwieler-helm-2024`: the real KB 2 oktober 2023 rule exempts small agricultural quadricycles (≤40 km/u, no motorcycle-style handlebars) from the helmet duty (art. 36, eerste lid) — not a general "seatbelt + rollbar" exemption, which doesn't exist. Rewrote the question around the real rule, confirmed against `kb-2023-10-02.pdf`.
+  - `rule-fietsstraat-f111-2021`: superseded finding — the KB 12 maart 2023 amendment renamed "fietsstraat" to "fietszone" and removed the "ends at next intersection" default entirely; a fietszone now runs until sign F113, and can span multiple streets (art. 2.61). Rewrote the question to reflect current law, confirmed against `kb-2023-03-12.pdf`.
+  - `rule-rijbewijs-begeleider` / `rule-begeleider-ervaring`: both cited the wrong decree. The provisional-license rules (17 jaar with a begeleider, 8 jaar license experience for the begeleider) come from KB 10 juli 2006 (art. 2-4 and art. 3, § 2, b), not "KB 10 juli 1998" (that date/decree doesn't govern these provisions); confirmed via wegcode.be's KB 10-07-2006 page. Both now cite `since: 2007`.
+  - `rule-verlichting-tunnels`: the Wegcode has no tunnel-specific clause; reworded the explanation to ground the claim in the actual trigger (the general <200m visibility rule of art. 30.1), which in practice almost always applies in a tunnel, rather than claiming an explicit tunnel rule that isn't in the text.
+  - `rule-voorrang-aardeweg`: removed "verharde" (paved), a qualifier not present in art. 12.3.1, b); the rule applies to any road with a rijbaan, not only paved ones. Swapped the source to the official wegcode.be article.
+  - `rule-estep-trottoir-2022`: corrected the citation to art. 7bis (as amended by Wet 15 mei 2022, art. 3), which is the actual provision equating motorized mobility device users with cyclists; the previously cited "art. 9.1.2°" governs cycle-path use, not this equivalence.
+  - `rec-d1b` / `rec-d1e`: cross-checked against the Dutch Wikipedia D-series article (already used elsewhere in this file as a secondary source). D1c/D1d's "pass the obstacle left/right" framing was already correct. D1b and D1e, however, both just mean "verplichte rijrichting: links" (two alternate icon designs for the same rule) — removed the invented "op het kruispunt" / "vóór het verkeersbord" distinction, which Wikipedia's table doesn't support.
+  - `rec-f49`: recategorized from `fietsers-voetgangers` to `aanwijzing` to match its closest sibling signs (F50, F51, F14, F45b), which are all `aanwijzing`.
+
+- 2026-09-19: removed the `since` field from `iden-d10` (was 2014) and `iden-e9a` (was 1990): both years
+  were unverifiable (pre-2021, and the government page that might date them is CAPTCHA-gated), but the sign
+  meanings and explanations in both questions are correct and were not changed. Closes T0033.
 
 ## Situation photo sources
 

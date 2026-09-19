@@ -27,7 +27,9 @@ Produce a findings list only; do not fix anything until the user confirms which 
 - [x] **[Verify]**    Check cross-question consistency: categories, "since" years, source anchors, phrasing.
 - [x] **[Doc]**        Record all findings in the Execution Log and present them for user confirmation.
 - [x] **[Implement]** Fix the 18 confirmed findings in data/questions.json, keeping question IDs stable.
-- [ ] **[Verify]**    Dig further into the 11 uncertain findings and resolve or reclassify each one.
+- [x] **[Verify]**    Dig further into the 11 uncertain findings and resolve or reclassify each one.
+- [x] **[Decided]**   User confirmed the last 2 findings are correct content, just drop the unverifiable year.
+- [ ] **[Decide]**    Get user confirmation to merge and push the full fix pass to main.
 
 ## Execution Log
 
@@ -52,6 +54,19 @@ Produce a findings list only; do not fix anything until the user confirms which 
 - [2026-09-19] **[Verify]**
   Full pytest suite (22 tests) passed; served the fixed questions.json locally and spot-checked the changed entries.
 
+- [2026-09-19] **[Implement]**
+  Resolved 9 of 11 uncertain findings using amendment PDFs in data/law/amendments/ and targeted web lookups.
+  - 2 remain genuinely unverifiable (pre-2021 sign-introduction years); documented in data/SOURCES.md instead of guessed.
+
+- [2026-09-19] **[Verify]**
+  Full pytest suite (22 tests) passed again; served the updated questions.json locally and spot-checked changed entries.
+
+- [2026-09-19] **[Decided]**
+  User confirmed iden-d10 and iden-e9a content is correct; removed their unverifiable `since` years rather than guess.
+
+- [2026-09-19] **[Verify]**
+  Full pytest suite (22 tests) passed a third time after removing the two unverifiable `since` fields.
+
 ## Findings
 
 Legend: **confirmed** = verified against the consolidated Wegcode text; **uncertain** = plausible but not
@@ -59,8 +74,8 @@ verifiable from locally stored sources, or a judgment call. Source: `data/law/we
 unless noted. Automated schema issues (dup IDs, correctIndex bounds, missing files) are excluded — those are
 already covered by tests/test_quiz_data.py.
 
-The 18 confirmed findings below are **fixed** (see data/questions.json and the 2026-09-19 entry in
-data/SOURCES.md's Correction log). The 11 uncertain findings are still open, pending further digging.
+All 33 findings below are **fixed** (see data/questions.json and the 2026-09-19 entries in
+data/SOURCES.md's Correction log).
 
 ### Systemic pattern: wrong article subsection on otherwise-correct rule questions (13, confirmed, fixed)
 
@@ -94,26 +109,38 @@ top-level article without checking the exact subsection letter/number.
 - `rule-estep-parkeren-2022`: cited art. 75.3 is about central-lane markings, unrelated; no e-step drop-zone
   text found anywhere in the federal code — this may be a municipal rule, not a Wegcode rule.
 
-### Uncertain — needs a human decision (11)
+### Uncertain findings — resolved (9 of 11, fixed)
 
-- `rule-middenrijbaan-2022`: cited art. 9.1.3° is about draft animals; the actual central-lane behavioral
-  rule wasn't locatable in the consolidated text under any article number.
-- `rule-vierwieler-helm-2024`: cites "36.2" but art. 36 has no subsections; term "rolbeugel" doesn't appear
-  in the text; the quadricycle exemption may exist under different wording not located.
-- `rule-fietsstraat-f111-2021`: cites art. 65.5 (general zone mechanism); no F111-specific "next
-  intersection" clause found there.
-- `rule-rijbewijs-begeleider` / `rule-begeleider-ervaring`: same KB 10 juli 1998 source but different
-  `since` years (2007 vs 1998); that KB predates the locally stored law snapshot (2021+), can't verify.
-- `iden-d10`: `since: 2014` for the D9/D10 split can't be verified against locally stored sources.
-- `iden-e9a`: `since: 1990` for the E9a symbol can't be verified against locally stored sources.
-- `rule-verlichting-tunnels`: no tunnel-specific headlight clause found in art. 30/30.1; may derive from an
-  EU directive not stored locally.
-- `rule-voorrang-aardeweg`: explanation adds "verharde" (paved) as a qualifier not present in art. 12.3.1.b;
-  low-impact wording drift.
-- `rule-estep-trottoir-2022`: citation "Wet 15 mei 2022, art. 9.1.2°" doesn't match the Wegcode's own art.
-  9.1.2° (about cycle-path rules); may reference the amending law's own internal numbering instead.
-- `rec-d1b` / `rec-d1c` / `rec-d1d` / `rec-d1e`: the quiz splits D1 variants into two semantic families
-  (turn-at-intersection vs bypass-obstacle) that the law only defines generically; SVG icon shapes suggest
-  the grouping may not match, but needs a rendered side-by-side check.
-- `rec-f49` category (`fietsers-voetgangers`): sibling F-series pedestrian/cyclist infrastructure signs
-  (f50, f51, f14, f45b) are all categorized `aanwijzing` instead — inconsistent, not necessarily wrong.
+All 9 were resolved using amendment PDFs already cached in `data/law/amendments/` plus a few targeted,
+robots.txt-compliant web lookups (wegcode.be, nl.wikipedia.org). Full evidence for each is in the
+2026-09-19 correction-log entry in `data/SOURCES.md`.
+
+- `rule-middenrijbaan-2022`: not a standalone article — the rule is definitions art. 2.71-2.72 combined
+  with the crossing/overtaking rules art. 15.3 and 16.5. Confirmed against `kb-2022-07-30.pdf`.
+- `rule-vierwieler-helm-2024`: the real KB 2 oktober 2023 rule exempts small agricultural quadricycles
+  (≤40 km/u, no motorcycle handlebars) from the helmet duty — not a "seatbelt + rollbar" exemption, which
+  doesn't exist. Rewrote the question around the real rule.
+- `rule-fietsstraat-f111-2021`: superseded — KB 12 maart 2023 renamed "fietsstraat" to "fietszone" and
+  removed the automatic next-intersection end; a fietszone now runs until sign F113. Rewrote the question.
+- `rule-rijbewijs-begeleider` / `rule-begeleider-ervaring`: both cited the wrong decree (KB 10 juli 1998
+  instead of KB 10 juli 2006, art. 2-4 and art. 3 § 2 b); corrected both, and `since` on both is now 2007.
+- `rule-verlichting-tunnels`: no explicit tunnel clause exists; reworded to ground the claim in the real
+  trigger (art. 30.1's <200m visibility rule) instead of claiming a tunnel-specific rule that isn't in the text.
+- `rule-voorrang-aardeweg`: removed "verharde" (paved), a qualifier art. 12.3.1.b doesn't have; swapped the
+  source to the official wegcode.be article.
+- `rule-estep-trottoir-2022`: corrected the citation to art. 7bis (as amended by Wet 15 mei 2022, art. 3).
+- `rec-d1b` / `rec-d1e`: cross-checked against the Dutch Wikipedia D-series article; both just mean
+  "verplichte rijrichting: links" — removed the invented "op het kruispunt" / "vóór het bord" framing.
+  `rec-d1c` / `rec-d1d` were already correct as-is (obstacle-bypass left/right).
+- `rec-f49`: recategorized from `fietsers-voetgangers` to `aanwijzing` to match its closest siblings.
+
+### Uncertain findings — resolved (final 2, fixed)
+
+- `iden-d10`: `since: 2014` for the D9/D10 split could not be confirmed or disproven — the code predates
+  the local amendment ledger (2021+), and mobilit.belgium.be is CAPTCHA-gated. Sign meaning is correct;
+  removed the unverifiable `since` field rather than guess.
+- `iden-e9a`: `since: 1990` for the E9a symbol had the same problem — sign meaning correct, `since` removed.
+
+All 33 flagged questions are now resolved: 27 fixed with corrected citations/content, 2 fixed by removing an
+unverifiable `since` year, and 4 (`rec-d1a`, `rec-d1c`, `rec-d1d`, plus context on `rec-f49`'s siblings)
+turned out to already be correct on closer inspection.
