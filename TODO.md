@@ -15,7 +15,7 @@ An overview of all tasks and their planning.
 
 ## Next Milestone
 
-- [ ] A0034 Release as 2.1.0 or 3.0.0
+- [~] A0034 [owner: @antigravity] Release as 2.1.0 or 3.0.0
 
 ---
 
