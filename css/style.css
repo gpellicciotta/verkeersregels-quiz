@@ -361,6 +361,12 @@ button {
   max-width: 100%;
   object-fit: contain;
 }
+#question-image.situation-image {
+  height: auto;
+  max-height: 260px;
+  border-radius: var(--radius);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
 
 .options {
   display: grid;

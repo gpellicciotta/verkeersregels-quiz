@@ -4,23 +4,24 @@ Content for the Belgian theoretical driving exam quiz, generated and verified on
 
 ## Question bank summary
 
-Total questions: 284, stored in `data/questions.json`.
+Total questions: 294, stored in `data/questions.json`.
 
 Breakdown by type:
 
 - recognize: 193
 - identify: 12
 - rule: 79
+- situation: 10
 
 Breakdown by category:
 
 - aanwijzing: 89
+- voorrang: 36
 - verbod: 34
 - gevaar: 31
-- voorrang: 28
-- fietsers-voetgangers: 28
+- fietsers-voetgangers: 29
 - parkeren: 23
-- algemeen: 16
+- algemeen: 17
 - gebod: 10
 - snelheid: 9
 - autosnelweg: 8
@@ -28,7 +29,7 @@ Breakdown by category:
 - gordel: 2
 - telefoon: 2
 
-Answer positions (`correctIndex`) are spread evenly across all four slots (70 for 0, 71 for 1, 71 for 2, 72 for 3) so the correct answer is not systematically in the same position.
+Answer positions (`correctIndex`) are spread across options (73 for 0, 75 for 1, 74 for 2, 72 for 3) so the correct answer is not systematically in the same position.
 
 ## Rule sources
 
@@ -156,5 +157,27 @@ Cross-reference used to confirm which code matches which meaning and shape: the 
   - Sourced, verified, and added questions for 25 prohibitory signs in Series C (C5 through C47).
   - Sourced, verified, and added questions for 12 parking and stopping signs in Series E (E5 through E11).
   - Sourced, verified, and added questions for 80 indication signs in Series F (F1a through F120).
-  - Maintained perfectly balanced answer option distributions (70, 71, 71, 72 across indices 0–3).
+  - 2026-09-19: integrated 10 real-live traffic situation photo questions under task T0032:
+  - Sourced 10 real-world photographic traffic situations from De Grote Verkeerstoets (VSV / Vlaamse overheid).
+  - Stored high-resolution photos in `assets/situations/` and registered new `situation` question type.
+  - Linked each question directly to its governing Belgian Wegcode article (Articles 4, 6, 12, 22novies, 40, 67, 76).
+  - Maintained balanced answer distribution across options.
 
+## Situation photo sources
+
+The 10 real-world traffic situation photographs in `assets/situations/` originate from *De Grote Verkeerstoets*, the official public traffic safety educational initiative organized by the Flemish Foundation for Traffic Knowledge ([VSV](https://www.vsv.be)) in partnership with the Flemish Government ([Departement Mobiliteit en Openbare Werken](https://www.vlaanderen.be/departement-mobiliteit-en-openbare-werken)).
+
+In accordance with Belgian copyright law (Wetboek van economisch recht, Art. XI.189 §1, 1° & 2°), the non-commercial use of short illustrative excerpts for educational road safety testing (*onderwijsexceptie* and *citaatrecht*) is permitted with proper attribution to the author and source.
+
+| Local file | Situation | Wegcode legal basis | Source reference |
+|---|---|---|---|
+| `sit-01-b5-stop.jpg` | STOP-bord (B5) met stopstreep | Art. 67.3 & Art. 12.1 | [De Grote Verkeerstoets - Voorrang](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas/voorrang) |
+| `sit-02-b17-voorrang-rechts.jpg` | Kruispunt met voorrang van rechts (B17) | Art. 67.1 & Art. 12.3.1 | [De Grote Verkeerstoets - Voorrang](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas/voorrang) |
+| `sit-03-b1-haaientanden.jpg` | Voorrang verlenen bord B1 met haaientanden | Art. 67.2 & Art. 76.1 | [De Grote Verkeerstoets - Voorrang](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas/voorrang) |
+| `sit-04-b22-rechtsaf-rood.jpg` | Bord B22 rechtsaf vrij voor fietsers bij rood | Art. 67.3 | [De Grote Verkeerstoets - Voorrang](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas/voorrang) |
+| `sit-05-f49-zebrapad-fietser.jpg` | Voetgangersoversteekplaats (F49) en fietser | Art. 40.4.1 | [De Grote Verkeerstoets - Voorrang](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas/voorrang) |
+| `sit-06-b19-smalle-doorgang.jpg` | Smalle doorgang voorrang tegenligger (B19) | Art. 67.4 | [De Grote Verkeerstoets - Voorrang](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas/voorrang) |
+| `sit-07-kruispunt-drie-fietsers.jpg` | Gelijkwaardig kruispunt met 3 fietsers | Art. 12.3.1 | [De Grote Verkeerstoets - Voorrang](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas/voorrang) |
+| `sit-08-licht-boven-bord.jpg` | Verkeerslicht op groen boven STOP-bord B5 | Art. 6.2 | [De Grote Verkeerstoets - Verkeerstekens](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas/verkeerstekens) |
+| `sit-09-fietszone-f111.jpg` | Fietsstraat / fietszone (F111) inhaalverbod | Art. 22novies | [De Grote Verkeerstoets - Verkeerstekens](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas/verkeerstekens) |
+| `sit-10-politieagent-halt.jpg` | Bevoegd persoon met armen horizontaal gestrekt | Art. 4.1 | [De Grote Verkeerstoets - Verkeerstekens](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas/verkeerstekens) |

@@ -4499,6 +4499,157 @@
       "correctIndex": 3,
       "explanation": "Volgens artikel 43.1 mogen fietsers met twee naast elkaar rijden, maar buiten de bebouwde kom moeten ze achter elkaar gaan rijden wanneer een achteropkomend voertuig nadert.",
       "source": "https://www.wegcode.be/nl/verkeersreglement/fietsers-en-de-wegcode"
+    },
+    {
+      "id": "sit-01-b5-stop",
+      "type": "situation",
+      "category": "voorrang",
+      "question": "Je fietst naar school en komt aan dit kruispunt met een STOP-bord. Moet je hier stoppen?",
+      "image": "assets/situations/sit-01-b5-stop.jpg",
+      "options": [
+        "Nee, als fietser hoef ik alleen een beetje te vertragen.",
+        "Ja, ik moet verplicht volledig stoppen en voorrang verlenen aan het verkeer van links en rechts.",
+        "Nee, een STOP-bord geldt enkel voor gemotoriseerde voertuigen."
+      ],
+      "correctIndex": 1,
+      "explanation": "Een STOP-bord (B5) verplicht iedere bestuurder (ook fietsers) om volledig te stoppen aan de stopstreep en voorrang te verlenen aan bestuurders op de dwarsweg.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-67"
+    },
+    {
+      "id": "sit-02-b17-voorrang-rechts",
+      "type": "situation",
+      "category": "voorrang",
+      "question": "Je komt aan dit kruispunt met verkeersbord B17. Wat moet je doen?",
+      "image": "assets/situations/sit-02-b17-voorrang-rechts.jpg",
+      "options": [
+        "Ik stop verplicht en verleen voorrang aan bestuurders van links en rechts.",
+        "Ik mag gewoon doorrijden want bord B17 geeft mij voorrang.",
+        "Ik vertraag en verleen voorrang aan bestuurders die van rechts komen."
+      ],
+      "correctIndex": 2,
+      "explanation": "Verkeersbord B17 geeft aan dat je een kruispunt nadert waar de algemene voorrang van rechts geldt (art. 12.3.1).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-12"
+    },
+    {
+      "id": "sit-03-b1-haaientanden",
+      "type": "situation",
+      "category": "voorrang",
+      "question": "Je komt met de fiets aan dit kruispunt met bord B1 en haaientanden. Wat moet je doen?",
+      "image": "assets/situations/sit-03-b1-haaientanden.jpg",
+      "options": [
+        "Ik vertraag en verleen voorrang aan bestuurders op de dwarsweg (van links en rechts).",
+        "Ik moet altijd verplicht stoppen met een voet aan de grond, ook als er geen verkeer aankomt.",
+        "Ik mag rustig doorrijden, want haaientanden gelden enkel voor automobilisten."
+      ],
+      "correctIndex": 0,
+      "explanation": "Verkeersbord B1 (omgekeerde driehoek) en haaientanden verplichten je voorrang te verlenen aan bestuurders op de dwarsweg. Stoppen moet alleen als het nodig is.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-67"
+    },
+    {
+      "id": "sit-04-b22-rechtsaf-rood",
+      "type": "situation",
+      "category": "voorrang",
+      "question": "Het verkeerslicht staat op rood, maar er hangt bord B22 (gele fiets met pijl) aan de paal. Mag je rechts afslaan?",
+      "image": "assets/situations/sit-04-b22-rechtsaf-rood.jpg",
+      "options": [
+        "Ja, maar alleen als er helemaal geen voetgangersoversteekplaats is.",
+        "Ja, je mag door het rode licht rechts afslaan mits je voorrang verleent aan andere weggebruikers.",
+        "Nee, bij rood licht moet je altijd wachten tot het groen wordt."
+      ],
+      "correctIndex": 1,
+      "explanation": "Verkeersbord B22 laat fietsers toe om voorzichtig door het rode of oranjegeel licht rechtsaf te slaan, mits zij voorrang verlenen aan de overige weggebruikers.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-67"
+    },
+    {
+      "id": "sit-05-f49-zebrapad-fietser",
+      "type": "situation",
+      "category": "fietsers-voetgangers",
+      "question": "Een voetganger steekt over op het zebrapad en er nadert een fietser. Wie moet voorrang verlenen?",
+      "image": "assets/situations/sit-05-f49-zebrapad-fietser.jpg",
+      "options": [
+        "De voetganger moet stoppen voor de fietser.",
+        "De fietser moet alleen voorrang verlenen als de voetganger al over de helft van het zebrapad is.",
+        "De fietser moet voorrang verlenen aan de overstekende voetganger."
+      ],
+      "correctIndex": 2,
+      "explanation": "Bestuurders (inclusief fietsers) moeten voorrang verlenen aan voetgangers die zich op een oversteekplaats bevinden of op het punt staan die te betreden (art. 40.4.1).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-40"
+    },
+    {
+      "id": "sit-06-b19-smalle-doorgang",
+      "type": "situation",
+      "category": "voorrang",
+      "question": "Je nadert deze smalle doorgang met verkeersbord B19. Wie mag eerst doorrijden?",
+      "image": "assets/situations/sit-06-b19-smalle-doorgang.jpg",
+      "options": [
+        "De bestuurder uit de tegenovergestelde richting mag eerst doorrijden.",
+        "Jij mag eerst doorrijden omdat fietsers altijd voorrang hebben bij een versmalling.",
+        "De grootste of snelste bestuurder mag eerst doorrijden."
+      ],
+      "correctIndex": 0,
+      "explanation": "Bord B19 legt het verbod op de doorgang in te rijden wanneer niet gekruist kan worden zonder dat de tegenliggers moeten stoppen. De tegenligger heeft bord B21 en mag eerst.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-67"
+    },
+    {
+      "id": "sit-07-kruispunt-drie-fietsers",
+      "type": "situation",
+      "category": "voorrang",
+      "question": "Aan dit gelijkwaardig kruispunt komen drie fietsers gelijktijdig aan. Wie mag als eerste doorrijden?",
+      "image": "assets/situations/sit-07-kruispunt-drie-fietsers.jpg",
+      "options": [
+        "Fietser 2, want deze rijdt rechtdoor.",
+        "Fietser 1, want deze heeft voorrang van rechts en heeft zelf geen verkeer van rechts.",
+        "Fietser 3, want deze rijdt het dichtst bij het midden van de weg."
+      ],
+      "correctIndex": 1,
+      "explanation": "Zonder voorrangsborden geldt voorrang van rechts. Fietser 3 moet voorrang verlenen aan fietser 2, die voorrang moet geven aan fietser 1. Fietser 1 heeft van rechts geen verkeer en mag eerst.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-12"
+    },
+    {
+      "id": "sit-08-licht-boven-bord",
+      "type": "situation",
+      "category": "voorrang",
+      "question": "Het verkeerslicht staat op groen, maar er hangt ook een STOP-bord aan de paal. Wat moet je doen?",
+      "image": "assets/situations/sit-08-licht-boven-bord.jpg",
+      "options": [
+        "Eerst verplicht stoppen voor het STOP-bord, en dan pas doorrijden als het nog groen is.",
+        "Stoppen en voorrang van rechts verlenen aan kruisend verkeer.",
+        "Doorrijden zonder te stoppen, want werkende verkeerslichten gaan boven verkeersborden."
+      ],
+      "correctIndex": 2,
+      "explanation": "Volgens artikel 6.2 van de Wegcode gaan verkeerslichten boven verkeersborden die de voorrang regelen wanneer de verkeerslichten in werking zijn.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-6"
+    },
+    {
+      "id": "sit-09-fietszone-f111",
+      "type": "situation",
+      "category": "algemeen",
+      "question": "Je rijdt in deze fietsstraat (fietszone, bord F111). Welke regel geldt hier voor automobilisten?",
+      "image": "assets/situations/sit-09-fietszone-f111.jpg",
+      "options": [
+        "Motorvoertuigen mogen fietsers niet inhalen en de maximumsnelheid is 30 km/u.",
+        "Motorvoertuigen mogen fietsers altijd inhalen mits minstens 1 meter zijdelingse afstand.",
+        "In een fietszone mogen motorvoertuigen helemaal niet rijden."
+      ],
+      "correctIndex": 0,
+      "explanation": "In een fietszone (bord F111) mogen motorvoertuigen fietsers niet inhalen en geldt overal een maximumsnelheid van 30 km/u (art. 22novies).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-22novies",
+      "since": 2012
+    },
+    {
+      "id": "sit-10-politieagent-halt",
+      "type": "situation",
+      "category": "voorrang",
+      "question": "De politieagent staat dwars met de armen horizontaal gestrekt op het kruispunt. Wat betekent dit bevel?",
+      "image": "assets/situations/sit-10-politieagent-halt.jpg",
+      "options": [
+        "Doorrijden als je naar rechts wil afslaan.",
+        "Stoppen voor alle weggebruikers die de agent van voren of van achteren naderen.",
+        "Enkel stoppen voor gemotoriseerde voertuigen, niet voor fietsers of voetgangers."
+      ],
+      "correctIndex": 1,
+      "explanation": "De horizontaal uitgestrekte armen van een bevoegd persoon betekenen 'stoppen' voor alle weggebruikers die naderen uit richtingen die de borst of de rug van de agent kruisen (art. 4.1).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-4"
     }
   ]
 }

@@ -1,5 +1,5 @@
 // Service Worker for Verkeersregels Quiz PWA
-const CACHE_NAME = "verkeersquiz-v2.0.1";
+const CACHE_NAME = "verkeersquiz-v2.0.2";
 
 const PRECACHE_ASSETS = [
   "./",
@@ -208,6 +208,16 @@ const PRECACHE_ASSETS = [
   "assets/signs/F99a.svg",
   "assets/signs/F99b.svg",
   "assets/signs/F99c.svg",
+  "assets/situations/sit-01-b5-stop.jpg",
+  "assets/situations/sit-02-b17-voorrang-rechts.jpg",
+  "assets/situations/sit-03-b1-haaientanden.jpg",
+  "assets/situations/sit-04-b22-rechtsaf-rood.jpg",
+  "assets/situations/sit-05-f49-zebrapad-fietser.jpg",
+  "assets/situations/sit-06-b19-smalle-doorgang.jpg",
+  "assets/situations/sit-07-kruispunt-drie-fietsers.jpg",
+  "assets/situations/sit-08-licht-boven-bord.jpg",
+  "assets/situations/sit-09-fietszone-f111.jpg",
+  "assets/situations/sit-10-politieagent-halt.jpg",
 ];
 
 // Install: precache all core assets and all traffic sign illustrations

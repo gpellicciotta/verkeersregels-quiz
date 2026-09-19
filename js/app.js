@@ -111,16 +111,53 @@ function getSinceFilter() {
   return Number.isInteger(year) && year >= 1900 && year <= 2100 ? year : null;
 }
 
+function getTypeFilter() {
+  if (typeof window === "undefined" || !window.location) return null;
+  const params = new URLSearchParams(window.location.search);
+  const raw = params.get("type") || params.get("t");
+  if (!raw) return null;
+  const val = raw.trim().toLowerCase();
+  if (["situation", "situatie", "situaties", "foto", "photo", "fotos", "photos"].includes(val)) {
+    return "situation";
+  }
+  if (["recognize", "herkennen"].includes(val)) {
+    return "recognize";
+  }
+  if (["identify", "identificeren"].includes(val)) {
+    return "identify";
+  }
+  if (["rule", "regel", "regels"].includes(val)) {
+    return "rule";
+  }
+  if (["sign", "signs", "bord", "borden", "verkeersborden"].includes(val)) {
+    return "sign";
+  }
+  return null;
+}
+
 function applyFilter() {
   const filterSince = getSinceFilter();
+  const filterType = getTypeFilter();
   state.filterSince = filterSince;
+  state.filterType = filterType;
+
+  let pool = allQuestions.slice();
+
   if (filterSince !== null) {
-    state.pool = allQuestions.filter(
+    pool = pool.filter(
       (q) => typeof q.since === "number" && q.since >= filterSince
     );
-  } else {
-    state.pool = allQuestions.slice();
   }
+
+  if (filterType !== null) {
+    if (filterType === "sign") {
+      pool = pool.filter((q) => q.type === "recognize" || q.type === "identify");
+    } else {
+      pool = pool.filter((q) => q.type === filterType);
+    }
+  }
+
+  state.pool = pool;
   updateStartScreenNotice();
 }
 
@@ -148,32 +185,58 @@ function updateStartScreenNotice() {
     el.quizProgress.textContent = `Vraag 1/${effectiveCount}`;
   }
 
-  if (state.filterSince !== null) {
-    const badgeInfo = getSinceBadge(state.filterSince) || {
-      text: `Sinds ${state.filterSince}`,
-      className: "badge-since badge-amber badge-since-amber",
-    };
+  const hasSince = state.filterSince !== null;
+  const hasType = state.filterType !== null;
+
+  if (hasSince || hasType) {
+    const badgesHtml = [];
+    const descParts = [];
+
+    if (hasType) {
+      const typeLabels = {
+        situation: "Verkeerssituaties (foto's)",
+        recognize: "Verkeersborden herkennen",
+        identify: "Verkeersborden identificeren",
+        sign: "Alle verkeersborden",
+        rule: "Verkeersregels",
+      };
+      const label = typeLabels[state.filterType] || state.filterType;
+      badgesHtml.push(`<span class="badge-since badge-blue badge-since-blue">${label}</span>`);
+      descParts.push(`type: ${label.toLowerCase()}`);
+    }
+
+    if (hasSince) {
+      const badgeInfo = getSinceBadge(state.filterSince) || {
+        text: `Sinds ${state.filterSince}`,
+        className: "badge-since badge-amber badge-since-amber",
+      };
+      badgesHtml.push(`<span class="${badgeInfo.className}">${badgeInfo.text}</span>`);
+      descParts.push(`wetswijzigingen sinds ${state.filterSince}`);
+    }
+
+    const filterSummary = descParts.join(" en ");
+
     if (available > 0) {
       el.filterNotice.innerHTML = `
-        <span class="${badgeInfo.className}">${badgeInfo.text}</span>
-        <span>Quiz gefilterd op regels gewijzigd sinds <strong>${state.filterSince}</strong> (${effectiveCount} ${effectiveCount === 1 ? "vraag" : "vragen"} in de selectie).</span>
+        ${badgesHtml.join(" ")}
+        <span>Quiz gefilterd op <strong>${filterSummary}</strong> (${effectiveCount} ${effectiveCount === 1 ? "vraag" : "vragen"} in de selectie).</span>
       `;
       el.filterNotice.classList.remove("hidden");
       if (el.startDesc) {
-        el.startDesc.textContent = `Oefen recente wetswijzigingen sinds ${state.filterSince}: ${effectiveCount} ${effectiveCount === 1 ? "vraag" : "vragen"} in deze selectie.`;
+        el.startDesc.textContent = `Oefen ${filterSummary}: ${effectiveCount} ${effectiveCount === 1 ? "vraag" : "vragen"} in deze selectie.`;
       }
       el.startError.classList.add("hidden");
       el.btnStart.disabled = false;
     } else {
       el.filterNotice.innerHTML = `
-        <span class="badge-since badge-amber badge-since-amber">Sinds ${state.filterSince}</span>
-        <span>Geen vragen gevonden voor wetswijzigingen sinds <strong>${state.filterSince}</strong>.</span>
+        ${badgesHtml.join(" ")}
+        <span>Geen vragen gevonden voor de filter <strong>${filterSummary}</strong>.</span>
       `;
       el.filterNotice.classList.remove("hidden");
       if (el.startDesc) {
-        el.startDesc.textContent = `Oefen recente wetswijzigingen sinds ${state.filterSince}: 0 vragen in deze selectie.`;
+        el.startDesc.textContent = `Oefen ${filterSummary}: 0 vragen in deze selectie.`;
       }
-      el.startError.textContent = `Er zijn geen quizvragen beschikbaar met wetswijzigingen sinds ${state.filterSince}.`;
+      el.startError.textContent = `Er zijn geen quizvragen beschikbaar voor ${filterSummary}.`;
       el.startError.classList.remove("hidden");
       el.btnStart.disabled = true;
     }
@@ -224,11 +287,13 @@ function renderQuestion() {
 
   el.questionText.textContent = q.question;
 
-  const showsSignImage = Boolean(q.sign);
-  el.questionImageWrap.classList.toggle("hidden", !showsSignImage);
-  if (showsSignImage) {
-    el.questionImage.src = q.sign;
-    el.questionImage.alt = "Verkeersbord";
+  const imgUrl = q.image || q.sign;
+  const showsImage = Boolean(imgUrl);
+  el.questionImageWrap.classList.toggle("hidden", !showsImage);
+  if (showsImage) {
+    el.questionImage.src = imgUrl;
+    el.questionImage.alt = q.image ? "Verkeerssituatie" : "Verkeersbord";
+    el.questionImage.classList.toggle("situation-image", Boolean(q.image));
   }
 
   el.options.innerHTML = "";
@@ -270,6 +335,7 @@ function selectOption(chosenIndex) {
     id: q.id,
     question: q.question,
     type: q.type,
+    image: q.image,
     sign: q.sign,
     since: q.since,
     chosenIndex,
@@ -380,7 +446,8 @@ function optionCell(question, index) {
 function questionCell(question) {
   const badgeInfo = getSinceBadge(question.since);
   const badgeHtml = badgeInfo ? `<span class="${badgeInfo.className}">${badgeInfo.text}</span>` : "";
-  const signImg = question.sign ? `<img src="${question.sign}" alt="Bord" class="table-thumb">` : "";
+  const imgUrl = question.image || question.sign;
+  const signImg = imgUrl ? `<img src="${imgUrl}" alt="${question.image ? "Situatie" : "Bord"}" class="table-thumb">` : "";
 
   if (badgeInfo) {
     return `<div class="table-question-wrap">${badgeHtml}<div>${signImg}${question.question}</div></div>`;

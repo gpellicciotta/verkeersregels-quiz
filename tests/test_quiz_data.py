@@ -25,8 +25,17 @@ class TestQuizData(unittest.TestCase):
         cls.questions = cls.data.get("questions", [])
 
     def test_total_question_count(self) -> None:
-        """Validates that the question bank contains exactly 284 questions."""
-        self.assertEqual(len(self.questions), 284, f"Expected exactly 284 questions, found {len(self.questions)}")
+        """Validates that the question bank contains exactly 294 questions."""
+        self.assertEqual(len(self.questions), 294, f"Expected exactly 294 questions, found {len(self.questions)}")
+
+    def test_question_counts_by_type(self) -> None:
+        """Validates the question counts for all supported question types."""
+        from collections import Counter
+        counts = Counter(q.get("type") for q in self.questions)
+        self.assertEqual(counts["recognize"], 193)
+        self.assertEqual(counts["identify"], 12)
+        self.assertEqual(counts["rule"], 79)
+        self.assertEqual(counts["situation"], 10)
 
     def test_question_ids_unique_and_valid(self) -> None:
         """Validates that all question IDs are non-empty, kebab-case formatted, and unique."""
@@ -52,7 +61,7 @@ class TestQuizData(unittest.TestCase):
             "explanation": str,
             "source": str,
         }
-        valid_types = {"recognize", "identify", "rule"}
+        valid_types = {"recognize", "identify", "rule", "situation"}
         for q in self.questions:
             qid = q.get("id", "unknown")
             for field, field_type in required_fields.items():
@@ -132,14 +141,27 @@ class TestQuizData(unittest.TestCase):
             except Exception as exc:
                 self.fail(f"Sign SVG {sign_file} failed XML parsing: {exc}")
 
+    def test_referenced_situation_images_exist_and_are_valid_jpg(self) -> None:
+        """Validates that every referenced situation image file exists and is valid JPEG."""
+        situation_questions = [q for q in self.questions if q.get("type") == "situation"]
+        self.assertGreaterEqual(len(situation_questions), 10, "Expected at least 10 situation questions")
+        for q in situation_questions:
+            qid = q.get("id", "unknown")
+            self.assertIn("image", q, f"Situation question {qid} must have 'image' field")
+            img_rel_path = q["image"]
+            img_file = REPO_ROOT / img_rel_path
+            self.assertTrue(img_file.exists(), f"Referenced situation image does not exist: {img_file}")
+            self.assertIn(img_file.suffix.lower(), {".jpg", ".jpeg"}, f"Situation image must be JPEG: {img_file}")
+            self.assertGreater(img_file.stat().st_size, 1000, f"Situation image file is too small: {img_file}")
+
     def test_no_questions_refer_to_unshown_signs(self) -> None:
-        """Validates that questions do not refer to a traffic sign without displaying it via 'sign'."""
+        """Validates that questions do not refer to a traffic sign without displaying it via 'sign' or 'image'."""
         sign_code_pattern = re.compile(r"\b(?:bord|toelatingsbord|verkeersbord)?\s*\(?([A-F][0-9]+[a-z]?)\)?\b", re.IGNORECASE)
         for q in self.questions:
             qid = q.get("id", "unknown")
             q_text = q.get("question", "")
             q_type = q.get("type", "")
-            has_sign = bool(q.get("sign"))
+            has_sign = bool(q.get("sign") or q.get("image"))
             if not has_sign and q_type != "identify":
                 self.assertNotIn("dit bord", q_text.lower(), f"Question {qid} refers to 'dit bord' without sign")
                 self.assertNotIn("dit verkeersbord", q_text.lower(), f"Question {qid} refers to 'dit verkeersbord' without sign")
@@ -149,3 +171,4 @@ class TestQuizData(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+

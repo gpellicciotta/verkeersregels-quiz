@@ -108,6 +108,18 @@ class TestPWA(unittest.TestCase):
 
         self.assertEqual(missing, [], f"The following precached assets do not exist on disk: {missing}")
 
+    def test_service_worker_precaches_all_situation_images(self) -> None:
+        """Validates that sw.js PRECACHE_ASSETS includes all 10 situation photos."""
+        content = SW_PATH.read_text(encoding="utf-8")
+        match = re.search(r"const PRECACHE_ASSETS = \[(.*?)\];", content, re.DOTALL)
+        self.assertIsNotNone(match, "Could not find PRECACHE_ASSETS in sw.js")
+        asset_paths = set(re.findall(r'"([^"]+)"', match.group(1)))
+        situations_dir = REPO_ROOT / "assets" / "situations"
+        if situations_dir.exists():
+            for sit_file in situations_dir.glob("*.jpg"):
+                rel = f"assets/situations/{sit_file.name}"
+                self.assertIn(rel, asset_paths, f"Situation image {rel} missing from sw.js PRECACHE_ASSETS")
+
     def test_index_html_contains_pwa_metadata_and_ui_elements(self) -> None:
         """Validates that index.html links to manifest, apple-touch-icon, and defines UI elements."""
         self.assertTrue(INDEX_PATH.exists(), "index.html must exist")

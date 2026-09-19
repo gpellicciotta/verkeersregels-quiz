@@ -5,9 +5,11 @@ import os
 
 WORKTREE_ROOT = Path(__file__).resolve().parent.parent
 SIGNS_DIR = WORKTREE_ROOT / "assets" / "signs"
+SITUATIONS_DIR = WORKTREE_ROOT / "assets" / "situations"
 SW_PATH = WORKTREE_ROOT / "sw.js"
 
 signs = sorted([f"assets/signs/{f}" for f in os.listdir(SIGNS_DIR) if f.endswith(".svg")])
+situations = sorted([f"assets/situations/{f}" for f in os.listdir(SITUATIONS_DIR) if f.endswith(".jpg")]) if SITUATIONS_DIR.exists() else []
 
 core_assets = [
     "./",
@@ -25,10 +27,10 @@ core_assets = [
     "assets/icons/apple-touch-icon.png",
 ]
 
-all_assets = core_assets + signs
+all_assets = core_assets + signs + situations
 
 sw_template = f"""// Service Worker for Verkeersregels Quiz PWA
-const CACHE_NAME = "verkeersquiz-v2.0.1";
+const CACHE_NAME = "verkeersquiz-v2.0.2";
 
 const PRECACHE_ASSETS = [
 {chr(10).join(f'  "{a}",' for a in all_assets)}
