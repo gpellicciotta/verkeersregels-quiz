@@ -24,11 +24,11 @@
 
   <!-- Start screen -->
   <section id="screen-start" class="screen">
-    <h1>Verkeersregels Quiz</h1>
-    <p id="start-desc">Oefen voor je theoretisch rijexamen: 20 vragen over verkeersborden en verkeersregels.</p>
+    <h1 class="start-title">Verkeersregels Quiz</h1>
+    <p id="start-desc" class="hidden">Oefen voor je theoretisch rijexamen: 20 vragen over verkeersborden en verkeersregels.</p>
     <div id="filter-notice" class="filter-notice hidden"></div>
     <fieldset class="start-mode-fieldset">
-      <legend class="start-mode-legend">Kies wat je wilt doen</legend>
+      <legend class="start-mode-legend sr-only">Kies wat je wilt doen</legend>
       <div class="start-mode-selector" role="radiogroup" aria-label="Kies wat je wilt doen">
         <label class="start-mode-card is-selected" id="mode-card-quiz">
           <input type="radio" name="start-mode" id="radio-mode-quiz" value="quiz" checked>
@@ -64,8 +64,8 @@
 
     <div class="start-buttons">
       <button id="btn-start" class="btn-primary">Start quiz</button>
-      <button id="btn-install" class="btn-secondary btn-install hidden" type="button">
-        <svg class="install-icon" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <button id="btn-install" class="btn-secondary btn-install hidden" type="button" aria-label="Installeer als app">
+        <svg class="install-icon" aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
           <polyline points="7 10 12 15 17 10"></polyline>
           <line x1="12" y1="15" x2="12" y2="3"></line>
@@ -74,23 +74,117 @@
       </button>
     </div>
     <p id="start-error" class="error hidden"></p>
-    <footer class="start-legal-links">
-      <span class="start-legal-title">Officiële wetgeving:</span>
-      <div class="start-legal-items">
-        <a href="https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu" target="_blank" rel="noopener noreferrer">Belgische Wegcode (KB 1 december 1975)</a>
-        <span class="start-legal-separator" aria-hidden="true">•</span>
-        <a href="https://www.wegcode.be/nl/regelgeving/1975120109/wijzigingen~hra8v386pu" target="_blank" rel="noopener noreferrer">Overzicht wetswijzigingen</a>
+
+    <!-- Vertical whitespace and subtle divider line -->
+    <hr class="start-divider">
+
+    <!-- Three icons with tooltips: 2 hint icons + 1 Info/About button -->
+    <div class="start-meta-bar" role="region" aria-label="Informatie en navigatie">
+      <span class="start-meta-item start-meta-hint" tabindex="0" role="img"
+            aria-label="Toelichting wetsartikel: bij elke vraag vind je via dit toelichtingsicoon direct het bijbehorende wetsartikel in de Wegcode"
+            data-tooltip="Bij elke vraag vind je via dit toelichtingsicoon direct het bijbehorende wetsartikel">
+        <svg class="start-meta-svg" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+          <polyline points="15 3 21 3 21 9"></polyline>
+          <line x1="10" y1="14" x2="21" y2="3"></line>
+        </svg>
+      </span>
+
+      <span class="start-meta-item start-meta-hint" tabindex="0" role="img"
+            aria-label="Fout melden: zie je een onjuistheid of onduidelijkheid, klik dan tijdens de quiz op dit icoon om dit door te geven"
+            data-tooltip="Zie je een fout of onduidelijkheid? Klik tijdens de quiz op dit icoon om dit door te geven">
+        <svg class="start-meta-svg" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
+          <line x1="4" y1="22" x2="4" y2="15"></line>
+        </svg>
+      </span>
+
+      <button type="button" id="btn-about" class="start-meta-item start-about-btn"
+              aria-label="Over Verkeersregels Quiz: versie, release notes en bronnen"
+              data-tooltip="Over deze app (versie, release notes &amp; bronnen)">
+        <svg class="start-meta-svg" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"></circle>
+          <line x1="12" y1="16" x2="12" y2="12"></line>
+          <line x1="12" y1="8" x2="12.01" y2="8"></line>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Subtle copyright notice -->
+    <p class="start-copyright">Copyright &copy; Giovanni Pellicciotta</p>
+  </section>
+
+  <!-- About screen: full-window view replacing the window -->
+  <section id="screen-about" class="screen hidden" aria-label="Over Verkeersregels Quiz">
+    <div class="about-header">
+      <h1 class="about-title">Over Verkeersregels Quiz</h1>
+      <button id="btn-about-back" class="btn-secondary btn-about-back" type="button" aria-label="Terug naar startscherm">
+        <svg class="back-icon" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+        <span>Terug</span>
+      </button>
+    </div>
+
+    <div class="about-content">
+      <div class="about-version-card">
+        <div class="about-version-header">
+          <span class="about-version-label">App-versie</span>
+          <span id="about-version-tag" class="about-version-tag">v2.0.0</span>
+        </div>
+        <h2 class="about-section-heading">Versiegeschiedenis &amp; Release Notes</h2>
+        <div id="about-changelog-body" class="about-changelog-body">
+          <p class="changelog-loading">Versiegeschiedenis laden...</p>
+        </div>
       </div>
-      <p class="start-legal-hint">
-        Zie je een fout of onduidelijkheid? Klik tijdens de quiz op <button type="button" class="btn-report-error btn-report-preview" disabled aria-label="Voorbeeld van Meld fout knop"><svg class="report-icon" aria-hidden="true" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line></svg><span>Meld fout</span></button> om dit door te geven.
-      </p>
-      <p class="start-legal-hint">
-        Bij elke vraag vind je via het toelichtingsicoon <svg class="start-legal-ext-icon" aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg> direct het bijbehorende wetsartikel.
-      </p>
-      <div class="start-version-wrap">
-        <button id="btn-version" class="btn-version" type="button" title="Bekijk changelog" aria-haspopup="dialog">v2.0.0</button>
+
+      <div class="about-sources-card">
+        <h2 class="about-section-heading">Gebruikte bronnen &amp; wetgeving</h2>
+        <ul class="about-sources-list">
+          <li class="about-source-item">
+            <a href="https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu" target="_blank" rel="noopener noreferrer" class="about-source-link">
+              <span class="about-source-title">Belgische Wegcode (KB 1 december 1975)</span>
+              <svg class="source-icon" aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+            <p class="about-source-desc">Algemeen reglement op de politie van het wegverkeer en van het gebruik van de openbare weg.</p>
+          </li>
+          <li class="about-source-item">
+            <a href="https://www.wegcode.be/nl/regelgeving/1975120109/wijzigingen~hra8v386pu" target="_blank" rel="noopener noreferrer" class="about-source-link">
+              <span class="about-source-title">Overzicht wetswijzigingen (Wegcode.be)</span>
+              <svg class="source-icon" aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+            <p class="about-source-desc">Historiek en recente aanpassingen aan de verkeersregels en verkeersborden in België.</p>
+          </li>
+          <li class="about-source-item">
+            <a href="https://commons.wikimedia.org/wiki/Category:Diagrams_of_road_signs_of_Belgium" target="_blank" rel="noopener noreferrer" class="about-source-link">
+              <span class="about-source-title">Wikimedia Commons &amp; Verkeersborden België</span>
+              <svg class="source-icon" aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+              </svg>
+            </a>
+            <p class="about-source-desc">Officiële SVG vectorillustraties van Belgische verkeersborden.</p>
+          </li>
+        </ul>
+        <p class="start-legal-hint">
+          Bij elke vraag in de theoriequiz vind je via het toelichtingsicoon ↗ direct het bijbehorende wetsartikel.
+        </p>
       </div>
-    </footer>
+
+      <footer class="about-footer">
+        <p class="about-copyright">Copyright &copy; Giovanni Pellicciotta</p>
+      </footer>
+    </div>
   </section>
 
   <!-- Question screens -->

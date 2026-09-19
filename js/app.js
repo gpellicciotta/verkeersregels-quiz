@@ -90,6 +90,11 @@ const el = {
   quizStartFields: document.getElementById("quiz-start-fields"),
   carouselStartFields: document.getElementById("carousel-start-fields"),
   carouselDelaySelect: document.getElementById("carousel-delay-select"),
+  screenAbout: document.getElementById("screen-about"),
+  btnAbout: document.getElementById("btn-about"),
+  btnAboutBack: document.getElementById("btn-about-back"),
+  aboutChangelogBody: document.getElementById("about-changelog-body"),
+  aboutVersionTag: document.getElementById("about-version-tag"),
 };
 
 const carouselState = {
@@ -112,9 +117,15 @@ function showScreen(name) {
   if (el.screenCarousel) {
     el.screenCarousel.classList.toggle("hidden", name !== "carousel");
   }
+  if (el.screenAbout) {
+    el.screenAbout.classList.toggle("hidden", name !== "about");
+  }
   if (name !== "carousel" && carouselState.isActive) {
     pauseCarouselTimer();
     carouselState.isActive = false;
+  }
+  if (name === "about") {
+    loadChangelog();
   }
 }
 
@@ -851,22 +862,27 @@ function renderChangelogMarkdown(md) {
 
 async function loadChangelog() {
   if (changelogHtmlCache) {
-    el.changelogBody.innerHTML = changelogHtmlCache;
+    if (el.changelogBody) el.changelogBody.innerHTML = changelogHtmlCache;
+    if (el.aboutChangelogBody) el.aboutChangelogBody.innerHTML = changelogHtmlCache;
     return;
   }
-  el.changelogBody.innerHTML = '<p class="changelog-loading">Versiegeschiedenis laden...</p>';
+  if (el.changelogBody) el.changelogBody.innerHTML = '<p class="changelog-loading">Versiegeschiedenis laden...</p>';
+  if (el.aboutChangelogBody) el.aboutChangelogBody.innerHTML = '<p class="changelog-loading">Versiegeschiedenis laden...</p>';
   try {
     const res = await fetch("CHANGELOG.md");
     if (!res.ok) throw new Error("Kon CHANGELOG.md niet laden: " + res.status);
     const md = await res.text();
     changelogHtmlCache = renderChangelogMarkdown(md);
-    el.changelogBody.innerHTML = changelogHtmlCache;
+    if (el.changelogBody) el.changelogBody.innerHTML = changelogHtmlCache;
+    if (el.aboutChangelogBody) el.aboutChangelogBody.innerHTML = changelogHtmlCache;
   } catch (err) {
     console.warn("Changelog laden mislukt:", err);
-    el.changelogBody.innerHTML = `
+    const errHtml = `
       <p class="error">Kon versiegeschiedenis niet laden.</p>
       <p class="modal-desc">Bekijk <a href="CHANGELOG.md" target="_blank" rel="noopener noreferrer">CHANGELOG.md</a> direct.</p>
     `;
+    if (el.changelogBody) el.changelogBody.innerHTML = errHtml;
+    if (el.aboutChangelogBody) el.aboutChangelogBody.innerHTML = errHtml;
   }
 }
 
@@ -929,6 +945,20 @@ if (el.modalChangelog) {
   el.modalChangelog.addEventListener("click", (e) => {
     if (e.target === el.modalChangelog) closeChangelogModal();
   });
+}
+
+if (el.btnAbout) {
+  el.btnAbout.addEventListener("click", () => {
+    showScreen("about");
+  });
+}
+if (el.btnAboutBack) {
+  el.btnAboutBack.addEventListener("click", () => {
+    showScreen("start");
+  });
+}
+if (el.aboutVersionTag) {
+  el.aboutVersionTag.textContent = CONFIG.VERSION;
 }
 
 function formatCategoryName(cat) {
@@ -1307,6 +1337,8 @@ function checkAutoStart() {
     if (params.get("report") === "1") {
       openReportModal();
     }
+  } else if (params.get("view") === "about" || params.get("screen") === "about" || params.has("about")) {
+    showScreen("about");
   } else if (params.get("modal") === "changelog" || params.get("autotest") === "changelog" || params.get("changelog") === "1") {
     openChangelogModal();
   }
