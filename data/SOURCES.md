@@ -163,6 +163,14 @@ Cross-reference used to confirm which code matches which meaning and shape: the 
   - Linked each question directly to its governing Belgian Wegcode article (Articles 4, 6, 12, 22novies, 40, 67, 76).
   - Maintained balanced answer distribution across options.
 
+- 2026-09-19: fixed 18 confirmed issues found by the T0033 content review, verified against `data/law/wegcode-kb-1975-12-01-consolidated.pdf`:
+  - Corrected 13 wrong article/subsection citations where the answer itself was already right: `rule-estep-leeftijd-2022` (8.2, 7°), `rule-estep-passagier-2022` (44.2), `rule-fietser-aan-hand` (2.46), `rule-overweg` (20.3, 2°), `rule-parkeren-kruispunt-afstand` (24, 7°), `rule-ritsen-locatie` and `rule-ritsen-voorrang` (12bis), `rule-inhalen-kruispunt` (17.2, 2°a), `rule-inhalen-oversteekplaats` (17.2, 5°), `sit-08-licht-boven-bord` (6.3), `rule-snelheid-woonerf` (22bis, 3°), `rule-voorrang-tram-voetganger` (12.1), `rule-rotonde-pinker` (19.2, 1°, and swapped its source to the official wegcode.be article instead of a third-party blog).
+  - Corrected `rule-velomobiel-2022` and `rule-velomobiel-hoogte-2022`: both invented a "safety flag + 1.40m height" rule under art. 82bis (which covers e-steps, not velomobiles); the real rule (art. 82.1.2, 6°) is a reflective side strip, with no height threshold. Rewrote both questions around the real rule.
+  - Corrected `rec-f27`: the law gives F27 the same bare "voorwegwijzer" meaning as F25; the motorway-route badge is an optional overlay on several sign types (art. 71.2), not F27's inherent meaning.
+  - Corrected `rule-parkeren-brandkraan`: no fire-hydrant parking rule exists anywhere in the consolidated Wegcode; replaced with the real 1-meter rule from adjacent parked vehicles (art. 25.1, 1°).
+  - Corrected `rule-estep-parkeren-2022`: no e-step "dropzone" rule exists federally (cited art. 75.3 is about central-lane markings); replaced with the real rule that mobility devices must be parked outside the roadway without hindering other road users (art. 23.3).
+  - 11 further items flagged as uncertain by the review are still open; see `tasks/T0033-review-all-questions.md`.
+
 ## Situation photo sources
 
 The 10 real-world traffic situation photographs in `assets/situations/` originate from *De Grote Verkeerstoets*, the official public traffic safety educational initiative organized by the Flemish Foundation for Traffic Knowledge ([VSV](https://www.vsv.be)) in partnership with the Flemish Government ([Departement Mobiliteit en Openbare Werken](https://www.vlaanderen.be/departement-mobiliteit-en-openbare-werken)).
@@ -178,6 +186,6 @@ In accordance with Belgian copyright law (Wetboek van economisch recht, Art. XI.
 | `sit-05-f49-zebrapad-fietser.jpg` | Voetgangersoversteekplaats (F49) en fietser | Art. 40.4.1 | [De Grote Verkeerstoets - Voorrang](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas/voorrang) |
 | `sit-06-b19-smalle-doorgang.jpg` | Smalle doorgang voorrang tegenligger (B19) | Art. 67.4 | [De Grote Verkeerstoets - Voorrang](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas/voorrang) |
 | `sit-07-kruispunt-drie-fietsers.jpg` | Gelijkwaardig kruispunt met 3 fietsers | Art. 12.3.1 | [De Grote Verkeerstoets - Voorrang](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas/voorrang) |
-| `sit-08-licht-boven-bord.jpg` | Verkeerslicht op groen boven STOP-bord B5 | Art. 6.2 | [De Grote Verkeerstoets - Verkeerstekens](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas/verkeerstekens) |
+| `sit-08-licht-boven-bord.jpg` | Verkeerslicht op groen boven STOP-bord B5 | Art. 6.3 | [De Grote Verkeerstoets - Verkeerstekens](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas/verkeerstekens) |
 | `sit-09-fietszone-f111.jpg` | Fietsstraat / fietszone (F111) inhaalverbod | Art. 22novies | [De Grote Verkeerstoets - Verkeerstekens](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas/verkeerstekens) |
 | `sit-10-politieagent-halt.jpg` | Bevoegd persoon met armen horizontaal gestrekt | Art. 4.1 | [De Grote Verkeerstoets - Verkeerstekens](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas/verkeerstekens) |

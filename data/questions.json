@@ -1137,7 +1137,7 @@
         "Als voetganger, dus met voorrang"
       ],
       "correctIndex": 3,
-      "explanation": "Wie zijn fiets aan de hand meeneemt, valt onder de regels voor voetgangers (art. 42.2.1) en heeft voorrang op het zebrapad (art. 40.4.2).",
+      "explanation": "Wie zijn fiets aan de hand meeneemt, wordt gelijkgesteld met een voetganger (art. 2.46) en heeft voorrang op het zebrapad (art. 40.4.2).",
       "source": "https://www.veiligverkeer.be/weggebruikers/voetgangers/waarop-moeten-bestuurders-letten-in-de-buurt-van-voetgangers/"
     },
     {
@@ -1231,7 +1231,7 @@
         "Alleen stoppen als je ook de slagbomen ziet zakken"
       ],
       "correctIndex": 1,
-      "explanation": "Zodra de rode lichten knipperen, is het volgens artikel 20.3.1° verboden de overweg op te rijden, ook al zijn de slagbomen nog open.",
+      "explanation": "Zodra de rode lichten knipperen, is het volgens artikel 20.3, 2° verboden de overweg op te rijden, ook al zijn de slagbomen nog open.",
       "source": "https://www.evocaat.be/nl/themas/een-gesloten-spooroverweg-oversteken-wat-zijn-de-juridische-gevolgen"
     },
     {
@@ -1310,7 +1310,7 @@
         "Vanaf 18 jaar"
       ],
       "correctIndex": 2,
-      "explanation": "Artikel 8.2bis (ingevoerd door de Wet van 15 mei 2022, in werking op 1 juli 2022) stelt de minimumleeftijd voor het besturen van een gemotoriseerd voortbewegingstoestel op 16 jaar, behalve in woonerven, speelstraten of voetgangerszones.",
+      "explanation": "Artikel 8.2, 7° stelt de minimumleeftijd voor het besturen van een gemotoriseerd voortbewegingstoestel op 16 jaar, behalve in woonerven, erven, speelstraten of voetgangerszones.",
       "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
       "since": 2022
     },
@@ -1326,7 +1326,7 @@
         "Enkel als de passagier een kind jonger dan 7 jaar is"
       ],
       "correctIndex": 2,
-      "explanation": "Artikel 8.2bis (ingevoerd door de Wet van 15 mei 2022, in werking op 1 juli 2022) verbiedt uitdrukkelijk om passagiers te vervoeren op een voortbewegingstoestel.",
+      "explanation": "Artikel 44.2 verbiedt uitdrukkelijk om passagiers te vervoeren op een voortbewegingstoestel, behalve op toestellen die specifiek voor personenvervoer gebouwd zijn.",
       "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
       "since": 2022
     },
@@ -1354,12 +1354,12 @@
       "question": "Welke extra zichtbaarheidsvereiste geldt voor een velomobiel (gesloten ligfiets) met een hoogte van minder dan 1 meter?",
       "options": [
         "Een oranje zwaailicht op het dak",
-        "Een veiligheidsvlag met retro-reflecterende stroken op voldoende hoogte",
+        "Een gele of oranje reflecterende strook op de zijkanten",
         "Verplichte gele zijknipperlichten",
         "Een fluorescerende bodycoat rond het hele voertuig"
       ],
       "correctIndex": 1,
-      "explanation": "Volgens artikel 82bis (ingevoerd door het KB van 9 oktober 2022, in werking op 1 december 2022) moeten velomobielen lager dan 1 meter uitgerust zijn met een veiligheidsvlag met retro-reflecterende stroken op minstens 1,40 meter hoogte.",
+      "explanation": "Volgens artikel 82.1.2, 6° moeten velomobielen altijd voorzien zijn van een gele of oranje reflecterende strook op de zijkanten.",
       "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
       "since": 2022
     },
@@ -2781,12 +2781,12 @@
       "sign": "assets/signs/F27.svg",
       "options": [
         "Einde van een autosnelweg",
-        "Voorwegwijzer die een reisweg over een autosnelweg aankondigt",
+        "Voorwegwijzer",
         "Wegwijzer uitsluitend voor zwaar vrachtverkeer",
         "Voorwegwijzer die een doodlopende weg aanduidt"
       ],
       "correctIndex": 1,
-      "explanation": "Bord F27 is een voorwegwijzer die aangeeft dat de gesignaleerde reisweg over een autosnelweg loopt (art. 71.2 van de Wegcode).",
+      "explanation": "Bord F27 is, net als F25, een voorwegwijzer (art. 71.2). Het pictogram voor een reisweg over een autosnelweg mag optioneel op F25, F27, F29, F31, F39 en F41 afgebeeld worden, maar is geen vast kenmerk van F27 zelf.",
       "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
     },
     {
@@ -3819,11 +3819,11 @@
       "options": [
         "Willekeurig op het trottoir, zolang hij plat op de grond ligt",
         "Midden op het fietspad",
-        "In een voorziene dropzone of op het trottoir waar hij de doorgang van voetgangers niet belemmert",
+        "Buiten de rijbaan en de parkeerstroken, zonder de andere weggebruikers te hinderen of in gevaar te brengen",
         "Uitsluitend op betalende autoparkeerplaatsen"
       ],
       "correctIndex": 2,
-      "explanation": "Sinds juli 2022 (art. 75.3) mogen e-steps worden geparkeerd in specifieke dropzones of op het trottoir, op voorwaarde dat zij de doorgang voor voetgangers niet hinderen.",
+      "explanation": "Artikel 23.3 verplicht dat voortbewegingstoestellen zoals e-steps buiten de rijbaan en de parkeerstroken worden opgesteld, zonder de andere weggebruikers te hinderen of in gevaar te brengen. Specifieke dropzones zijn een gemeentelijke regeling, geen federale wegcoderegel.",
       "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
       "since": 2022
     },
@@ -3879,15 +3879,15 @@
       "id": "rule-velomobiel-hoogte-2022",
       "type": "rule",
       "category": "fietsers-voetgangers",
-      "question": "Tot welke minimumhoogte boven de grond moet de veiligheidsvlag van een velomobiel lager dan 1 meter reiken?",
+      "question": "Waar op een velomobiel moet de verplichte reflecterende strook worden aangebracht?",
       "options": [
-        "Minstens 1,10 meter",
-        "Minstens 1,20 meter",
-        "Minstens 1,40 meter",
-        "Minstens 1,80 meter"
+        "Op de zijkanten",
+        "Enkel vooraan",
+        "Enkel achteraan",
+        "Op het dak"
       ],
-      "correctIndex": 2,
-      "explanation": "Volgens artikel 82bis van de wegcode (KB 9 oktober 2022) moet de veiligheidsvlag van een lage velomobiel reiken tot minstens 1,40 meter boven het wegdek.",
+      "correctIndex": 0,
+      "explanation": "Artikel 82.1.2, 6° schrijft voor dat velomobielen een gele of oranje reflecterende strook op de zijkanten moeten voeren.",
       "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
       "since": 2022
     },
@@ -3919,7 +3919,7 @@
         "Op de vluchtstrook om vlotter vooruit te komen"
       ],
       "correctIndex": 0,
-      "explanation": "Volgens artikel 12quinquies moeten bestuurders bij sterk vertraagd verkeer doorrijden tot vlak vóór de versmalling en pas daar invoegen.",
+      "explanation": "Volgens artikel 12bis moeten bestuurders bij sterk vertraagd verkeer doorrijden tot vlak vóór de versmalling en pas daar invoegen.",
       "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
       "since": 2022
     },
@@ -3935,7 +3935,7 @@
         "Alleen vrachtwagens moeten voorrang verlenen aan auto's"
       ],
       "correctIndex": 1,
-      "explanation": "Artikel 12quinquies bepaalt dat bestuurders op de vrije rijstrook ter hoogte van de versmalling om beurten één invoegend voertuig moeten voorlaten.",
+      "explanation": "Artikel 12bis bepaalt dat bestuurders op de vrije rijstrook ter hoogte van de versmalling om beurten één invoegend voertuig moeten voorlaten.",
       "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
       "since": 2022
     },
@@ -4077,7 +4077,7 @@
         "Enkel 's nachts wanneer de tram lichten aan heeft"
       ],
       "correctIndex": 2,
-      "explanation": "Volgens artikel 40.4.2° geldt de voorrang van voetgangers op een oversteekplaats niet ten opzichte van spoorvoertuigen (de tram).",
+      "explanation": "Volgens artikel 12.1 moet elke weggebruiker, dus ook een overstekende voetganger, voorrang verlenen aan spoorvoertuigen zoals de tram.",
       "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
     },
     {
@@ -4227,22 +4227,22 @@
         "Parkeren op een kruispunt is enkel verboden als er een geel kruis staat"
       ],
       "correctIndex": 0,
-      "explanation": "Artikel 25.1.1° verbiedt het parkeren op de rijbaan op minder dan 5 meter van de verlenging van de buitenste rand van de dwarsrijbaan van een kruispunt.",
+      "explanation": "Artikel 24, 7° verbiedt het stilstaan of parkeren op minder dan 5 meter van de verlenging van de naastbijgelegen rand van de dwarsrijbaan van een kruispunt.",
       "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
     },
     {
       "id": "rule-parkeren-brandkraan",
       "type": "rule",
       "category": "parkeren",
-      "question": "Binnen welke afstand van een ondergrondse brandkraan mag je je voertuig niet parkeren?",
+      "question": "Op welke minimumafstand voor of achter een ander stilstaand of geparkeerd voertuig mag je niet parkeren?",
       "options": [
+        "Minder dan 30 centimeter",
+        "Minder dan 1 meter",
         "Minder dan 3 meter",
-        "Minder dan 1 meter van de plaats waar een brandkraan is aangeduid",
-        "Minder dan 5 meter",
-        "Brandkranen hebben geen invloed op parkeren"
+        "Er geldt geen minimumafstand, zolang je niet botst"
       ],
       "correctIndex": 1,
-      "explanation": "Volgens artikel 25.1.13° is het verboden een voertuig te parkeren op plaatsen waar de toegang tot een brandkraan wordt belemmerd, met name binnen een afstand van 1 meter.",
+      "explanation": "Artikel 25.1, 1° verbiedt parkeren op minder dan 1 meter voor of achter een ander stilstaand of geparkeerd voertuig, en overal waar het in- of uitstappen van een ander voertuig belemmerd zou worden.",
       "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
     },
     {
@@ -4302,7 +4302,7 @@
         "Enkel als je je claxon gebruikt"
       ],
       "correctIndex": 1,
-      "explanation": "Artikel 16.4.1° verbiedt het links inhalen van een gespan of van een motorvoertuig met meer dan twee wielen op kruispunten waar de voorrang van rechts geldt.",
+      "explanation": "Artikel 17.2, 2°a verbiedt het links inhalen van een gespan of van een motorvoertuig met meer dan twee wielen op kruispunten waar de voorrang van rechts geldt.",
       "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
     },
     {
@@ -4317,7 +4317,7 @@
         "Enkel als je stapvoets voorbijrijdt"
       ],
       "correctIndex": 2,
-      "explanation": "Artikel 16.5 en artikel 40.4.1° verbieden het inhalen van een voertuig dat vertraagt of stopt voor een oversteekplaats voor voetgangers of fietsers.",
+      "explanation": "Artikel 17.2, 5° verbiedt het inhalen van een bestuurder die stopt voor, of een oversteekplaats voor voetgangers of fietsers nadert.",
       "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
     },
     {
@@ -4332,7 +4332,7 @@
         "20 km/u"
       ],
       "correctIndex": 3,
-      "explanation": "Volgens artikel 22bis.2° mag de snelheid in een erf of woonerf niet meer bedragen dan 20 km/u voor alle bestuurders.",
+      "explanation": "Volgens artikel 22bis, 3° mag de snelheid in een erf of woonerf niet meer bedragen dan 20 km/u voor alle bestuurders.",
       "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
     },
     {
@@ -4452,8 +4452,8 @@
         "Wanneer je de rotonde gaat verlaten, tijdig vóór je gekozen afrit"
       ],
       "correctIndex": 3,
-      "explanation": "Bij het oprijden van een rotonde hoef je niet te pinken. Je bent volgens artikel 19.3 verplicht je rechterrichtingaanwijzer te gebruiken zodra je de rotonde gaat verlaten.",
-      "source": "https://www.verkeerszaken.be/blog/artikel/a/432/De-regels-voor-rotondes-en-rondpunten"
+      "explanation": "Bij het oprijden van een rotonde hoef je niet te pinken. Je bent volgens artikel 19.2, 1° verplicht je rechterrichtingaanwijzer te gebruiken zodra je de rotonde gaat verlaten.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-19"
     },
     {
       "id": "rule-rotonde-voorsorteren",
@@ -4617,7 +4617,7 @@
         "Doorrijden zonder te stoppen, want werkende verkeerslichten gaan boven verkeersborden."
       ],
       "correctIndex": 2,
-      "explanation": "Volgens artikel 6.2 van de Wegcode gaan verkeerslichten boven verkeersborden die de voorrang regelen wanneer de verkeerslichten in werking zijn.",
+      "explanation": "Volgens artikel 6.3 van de Wegcode gelden de voorrangsborden op dezelfde weg niet meer zodra de verkeerslichten er werken.",
       "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-6"
     },
     {
