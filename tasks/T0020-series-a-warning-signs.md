@@ -55,5 +55,5 @@ Update automated test suite assertions to validate question schema integrity and
 ### Verification Evidence
 
 - `python -m unittest discover -s tests -v`: 9 of 9 automated tests passed cleanly.
-- `python C:\Dev-Projects\dev-guidelines\scripts\lint-taskfile.py tasks/T0020-series-a-warning-signs.md`: 0 violations found.
-- `python C:\Dev-Projects\dev-guidelines\scripts\lint-markdown.py TODO.md tasks/T0020-series-a-warning-signs.md`: 0 violations found.
+- `python ../dev-guidelines/scripts/lint-taskfile.py tasks/T0020-series-a-warning-signs.md`: 0 violations found.
+- `python ../dev-guidelines/scripts/lint-markdown.py TODO.md tasks/T0020-series-a-warning-signs.md`: 0 violations found.

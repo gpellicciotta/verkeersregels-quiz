@@ -79,5 +79,5 @@ Provide an intuitive install prompt and clear offline status indicators in the u
 
 - `python -m unittest discover -s tests -v`: 15 of 15 tests passed cleanly with zero warnings.
 - `node scratch/test_queue.js`: verified offline queue buffering, 50-item eviction, and FIFO drain.
-- `python C:\Dev-Projects\dev-guidelines\scripts\lint-taskfile.py tasks/T0031-installable-offline-pwa.md`: 0 violations.
-- `python C:\Dev-Projects\dev-guidelines\scripts\lint-markdown.py tasks/T0031-installable-offline-pwa.md docs/requirements.md CHANGELOG.md`: 0 violations.
+- `python ../dev-guidelines/scripts/lint-taskfile.py tasks/T0031-installable-offline-pwa.md`: 0 violations.
+- `python ../dev-guidelines/scripts/lint-markdown.py tasks/T0031-installable-offline-pwa.md docs/requirements.md CHANGELOG.md`: 0 violations.

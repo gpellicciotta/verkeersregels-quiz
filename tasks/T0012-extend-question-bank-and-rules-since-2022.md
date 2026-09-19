@@ -73,6 +73,6 @@ Ensure all questions strictly reflect current Belgian road legislation and pass 
 ### Verification Results
 
 - `python -m pytest tests/`: 8 passed in 0.09s.
-- `python C:\Dev-Projects\dev-guidelines\scripts\lint-taskfile.py tasks/T0012-extend-question-bank-and-rules-since-2022.md`: passed linting.
-- `python C:\Dev-Projects\dev-guidelines\scripts\lint-markdown.py data/SOURCES.md tasks/T0012-extend-question-bank-and-rules-since-2022.md`: passed linting.
+- `python ../dev-guidelines/scripts/lint-taskfile.py tasks/T0012-extend-question-bank-and-rules-since-2022.md`: passed linting.
+- `python ../dev-guidelines/scripts/lint-markdown.py data/SOURCES.md tasks/T0012-extend-question-bank-and-rules-since-2022.md`: passed linting.
 - Confirmed all 35 SVG sign assets in `assets/signs/` now have dedicated recognize questions and pass XML parsing.

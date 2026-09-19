@@ -81,5 +81,5 @@ Streamline the official reference link into a compact pill badge with a start-sc
 ### Verification Results
 
 - `python -m unittest discover -s tests -v`: 18 of 18 automated tests passed in 0.30s.
-- `python C:\Dev-Projects\dev-guidelines\scripts\lint-taskfile.py tasks/T0035-optimize-desktop-and-mobile-ux.md`: 0 violations.
-- `python C:\Dev-Projects\dev-guidelines\scripts\lint-markdown.py tasks/T0035-optimize-desktop-and-mobile-ux.md docs/requirements.md CHANGELOG.md`: 0 violations.
+- `python ../dev-guidelines/scripts/lint-taskfile.py tasks/T0035-optimize-desktop-and-mobile-ux.md`: 0 violations.
+- `python ../dev-guidelines/scripts/lint-markdown.py tasks/T0035-optimize-desktop-and-mobile-ux.md docs/requirements.md CHANGELOG.md`: 0 violations.

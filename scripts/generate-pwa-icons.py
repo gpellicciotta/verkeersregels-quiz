@@ -60,8 +60,8 @@ def find_chrome_binary() -> str | None:
         shutil.which("google-chrome"),
         shutil.which("chrome"),
         shutil.which("chromium"),
-        r"C:\Program Files\Google\Chrome\Application\chrome.exe",
-        r"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe",
+        "C:/Program Files/Google/Chrome/Application/chrome.exe",
+        "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe",
         r"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
         r"/usr/bin/google-chrome",
         r"/usr/bin/chromium-browser",
@@ -190,3 +190,4 @@ def main(argv: list[str] | None = None) -> int:
 
 if __name__ == "__main__":
     sys.exit(main())
+

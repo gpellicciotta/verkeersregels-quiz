@@ -71,5 +71,5 @@ Validate all SVG assets and ensure all automated unit tests pass cleanly.
 ### Verification Results
 
 - `python -m unittest discover -s tests -v`: 9 of 9 tests passed cleanly in 0.367s.
-- `python C:\Dev-Projects\dev-guidelines\scripts\lint-taskfile.py tasks/T0019-complete-belgian-traffic-sign-coverage.md`: 0 violations.
-- `python C:\Dev-Projects\dev-guidelines\scripts\lint-markdown.py TODO.md data/SOURCES.md tasks/T0019-complete-belgian-traffic-sign-coverage.md`: 0 violations.
+- `python ../dev-guidelines/scripts/lint-taskfile.py tasks/T0019-complete-belgian-traffic-sign-coverage.md`: 0 violations.
+- `python ../dev-guidelines/scripts/lint-markdown.py TODO.md data/SOURCES.md tasks/T0019-complete-belgian-traffic-sign-coverage.md`: 0 violations.

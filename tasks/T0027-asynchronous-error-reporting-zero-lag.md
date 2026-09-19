@@ -54,5 +54,5 @@ Log any network or transmission errors to the browser console.
 ### Verification Results
 
 - `python -m unittest discover -s tests -v`: 9 of 9 tests passed cleanly.
-- `python C:\Dev-Projects\dev-guidelines\scripts\lint-taskfile.py tasks/T0027-asynchronous-error-reporting-zero-lag.md`: 0 violations.
-- `python C:\Dev-Projects\dev-guidelines\scripts\lint-markdown.py tasks/T0027-asynchronous-error-reporting-zero-lag.md`: 0 violations.
+- `python ../dev-guidelines/scripts/lint-taskfile.py tasks/T0027-asynchronous-error-reporting-zero-lag.md`: 0 violations.
+- `python ../dev-guidelines/scripts/lint-markdown.py tasks/T0027-asynchronous-error-reporting-zero-lag.md`: 0 violations.

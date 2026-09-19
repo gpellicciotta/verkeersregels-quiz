@@ -74,8 +74,8 @@ The test suite consists of 32 tests across five test modules:
 Markdown documents and task files are validated using dev-guidelines tooling:
 
 ```bash
-python C:\Dev-Projects\dev-guidelines\scripts\lint-markdown.py LICENSE.md docs/index.md docs/requirements.md docs/devops.md CHANGELOG.md README.md TODO.md
-python C:\Dev-Projects\dev-guidelines\scripts\lint-taskfile.py TODO.md
+python ../dev-guidelines/scripts/lint-markdown.py LICENSE.md docs/index.md docs/requirements.md docs/devops.md CHANGELOG.md README.md TODO.md
+python ../dev-guidelines/scripts/lint-taskfile.py TODO.md
 ```
 
 ---

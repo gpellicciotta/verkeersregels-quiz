@@ -63,5 +63,5 @@ Verify all question schemas and automated test suites pass cleanly.
 ### Verification Results
 
 - `python -m unittest discover -s tests -v`: 9 of 9 tests passed cleanly in 0.611s.
-- `python C:\Dev-Projects\dev-guidelines\scripts\lint-taskfile.py tasks/T0026-verify-visual-signs-in-all-questions.md`: 0 violations.
-- `python C:\Dev-Projects\dev-guidelines\scripts\lint-markdown.py tasks/T0026-verify-visual-signs-in-all-questions.md`: 0 violations.
+- `python ../dev-guidelines/scripts/lint-taskfile.py tasks/T0026-verify-visual-signs-in-all-questions.md`: 0 violations.
+- `python ../dev-guidelines/scripts/lint-markdown.py tasks/T0026-verify-visual-signs-in-all-questions.md`: 0 violations.

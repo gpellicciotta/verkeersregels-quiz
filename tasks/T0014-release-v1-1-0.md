@@ -96,6 +96,6 @@ python scripts/deploy-to-production.py --help
 # Displays usage, options, and exit codes (exit code 0)
 
 # Taskfile and markdown linters
-python C:\Dev-Projects\dev-guidelines\scripts\lint-taskfile.py tasks/T0014-release-v1-1-0.md
-python C:\Dev-Projects\dev-guidelines\scripts\lint-markdown.py CHANGELOG.md tasks/T0014-release-v1-1-0.md
+python ../dev-guidelines/scripts/lint-taskfile.py tasks/T0014-release-v1-1-0.md
+python ../dev-guidelines/scripts/lint-markdown.py CHANGELOG.md tasks/T0014-release-v1-1-0.md
 ```
