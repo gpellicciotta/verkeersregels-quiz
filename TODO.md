@@ -15,7 +15,7 @@ An overview of all tasks and their planning.
 
 ## Next Milestone
 
-- [ ] T0039 Voeg een "About" (info icoon) toe dat een scherm toont met volgende info: a) De versie en release notes, b) links naar bronnen die zijn gebruik. Onderaan ook Copyright (c) Giovanni Pellicciotta. Dit icoon mag de huidige versie-nummer button vervangen. I.p.v. een modal dialog moet het ganse venster (= de ganse view) gebruikt worden, maar het moet mogelijk zijn met "Back" (of door te "Sluiten") terug te keren naar het start scherm. Dit betekent ook dat de huidige links van het start scherm kunnen verdwijnen: we willen het zo luchting en clean mogelijk houden.
+- [~] T0039 [owner: @antigravity] Clean up start screen and add dedicated full-window About view with version history, sources, and copyright.
 - [ ] A0034 Release as 2.1.0 or 3.0.0
 
 ---
