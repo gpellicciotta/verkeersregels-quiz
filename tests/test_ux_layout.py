@@ -47,6 +47,18 @@ class TestUXLayout(unittest.TestCase):
         self.assertIn("explanation-link-pill", js, "app.js must generate explanation-link-pill")
         self.assertIn("updateNextButtonText", js, "app.js must define updateNextButtonText")
 
+    def test_paired_result_badges_and_pill_sizing(self) -> None:
+        """Validates that since badges and result badges share sizing and are paired in result cards."""
+        self.assertTrue(JS_PATH.exists(), "app.js must exist")
+        self.assertTrue(CSS_PATH.exists(), "style.css must exist")
+        js = JS_PATH.read_text(encoding="utf-8")
+        css = CSS_PATH.read_text(encoding="utf-8")
+
+        self.assertIn("result-badges-wrap", js, "app.js must wrap result badges in result-badges-wrap")
+        self.assertIn("${sinceBadgeHtml}${resultBadgeHtml}", js, "app.js must place since badge before result badge")
+        self.assertIn(".result-badges-wrap", css, "style.css must declare .result-badges-wrap")
+        self.assertIn("padding-right: 155px", css, "style.css must reserve padding for paired badges on mobile")
+
 
 if __name__ == "__main__":
     unittest.main()
