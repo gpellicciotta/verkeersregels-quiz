@@ -84,6 +84,28 @@ class TestPWA(unittest.TestCase):
         root = tree.getroot()
         self.assertTrue(root.tag.endswith("svg"), "Root tag must be svg")
 
+    def test_icons_have_transparent_corners(self) -> None:
+        """Validates that standard PWA icons have RGBA mode and transparent corners outside the sign."""
+        for filename in ("icon-192.png", "icon-512.png"):
+            icon_path = ICONS_DIR / filename
+            self.assertTrue(icon_path.exists(), f"{filename} must exist")
+            with Image.open(icon_path) as im:
+                self.assertEqual(im.mode, "RGBA", f"{filename} must be in RGBA mode")
+                w, h = im.size
+                corners = [(0, 0), (w - 1, 0), (0, h - 1), (w - 1, h - 1)]
+                for pt in corners:
+                    pixel = im.getpixel(pt)
+                    self.assertEqual(pixel[3], 0, f"{filename} corner {pt} must be fully transparent (alpha=0), got {pixel}")
+
+    def test_favicon_ico_exists_and_is_valid(self) -> None:
+        """Validates that favicon.ico exists in repo root with transparency."""
+        ico_path = REPO_ROOT / "favicon.ico"
+        self.assertTrue(ico_path.exists(), "favicon.ico must exist at repository root")
+        with Image.open(ico_path) as im:
+            self.assertEqual(im.format, "ICO", "favicon.ico must be in ICO format")
+            self.assertEqual(im.mode, "RGBA", "favicon.ico must be in RGBA mode")
+            self.assertEqual(im.getpixel((0, 0))[3], 0, "favicon.ico corner (0,0) must be fully transparent")
+
     def test_service_worker_precaches_all_files(self) -> None:
         """Validates that all files listed in sw.js PRECACHE_ASSETS exist on disk."""
         self.assertTrue(SW_PATH.exists(), "sw.js must exist at repository root")

@@ -19,6 +19,7 @@ core_assets = [
     "js/app.js",
     "data/questions.json",
     "CHANGELOG.md",
+    "favicon.ico",
     "assets/favicon.svg",
     "assets/icons/icon-192.png",
     "assets/icons/icon-512.png",

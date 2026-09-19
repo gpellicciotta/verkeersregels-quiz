@@ -69,6 +69,7 @@ for filename, w, h, bg, scale in configs:
         chrome_path,
         "--headless=new",
         "--disable-gpu",
+        "--default-background-color=00000000",
         f"--screenshot={out_png.resolve()}",
         f"--window-size={w},{h}",
         temp_html.resolve().as_uri(),
@@ -90,5 +91,14 @@ print("Generated icon-maskable-192.png via PIL")
 
 im_maskable.resize((180, 180), Image.Resampling.LANCZOS).save(ICONS_DIR / "apple-touch-icon.png")
 print("Generated apple-touch-icon.png via PIL")
+
+# Generate root favicon.ico with transparency (16, 32, 48px)
+favicon_ico_path = WORKTREE_ROOT / "favicon.ico"
+im_512.save(
+    favicon_ico_path,
+    format="ICO",
+    sizes=[(16, 16), (32, 32), (48, 48)],
+)
+print(f"Generated {favicon_ico_path.name} with transparency via PIL")
 
 print("All PWA icons generated successfully!")

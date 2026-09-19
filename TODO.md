@@ -16,8 +16,7 @@ An overview of all tasks and their planning.
 ## Next Milestone
 
 - [~] T0039 [owner: @antigravity] Clean up start screen and add dedicated full-window About view with version history, sources, and copyright.
-- [~] A0041 [owner: @antigravity] Improve the favicon/icon to be transparent outside the sign.
-- [ ] A0034 [needs: A0041 T0039] Release as 2.1.0 or 3.0.0
+- [ ] A0034 [needs: T0039] Release as 2.1.0 or 3.0.0
 
 ---
 
