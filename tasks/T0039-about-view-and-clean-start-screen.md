@@ -4,9 +4,9 @@ owner: "@antigravity"
 needs: []
 branch: task/T0039-about-view-and-clean-start-screen
 worktree: ./work/T0039-about-view-and-clean-start-screen
-status: needs-review
+status: completed
 started: 2026-09-19
-ended: —
+ended: 2026-09-19
 ---
 
 # T0039: Clean Up Start Screen and Add Dedicated About View
@@ -48,6 +48,10 @@ Provide clear attribution to official Belgian road legislation and open-source s
 
 - [2026-09-19] **[Doc]**
   Recorded start screen cleanup and About view in active changelog and completed task file walkthrough.
+
+- [2026-09-19] **[Complete]**
+  Integrated cleaned-up start screen and dedicated full-window About view with bottom-pinned metadata and dynamic counts.
+  Validated all 30 automated tests and obtained reviewer visual sign-off.
 
 ## Walkthrough & Validation
 
