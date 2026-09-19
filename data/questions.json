@@ -1199,7 +1199,7 @@
         "17 jaar"
       ],
       "correctIndex": 3,
-      "explanation": "Met een begeleider kan je vanaf 17 jaar een voorlopig rijbewijs B behalen; zonder begeleider pas vanaf 18 jaar (KB 10 juli 1998, art. 3).",
+      "explanation": "Met een begeleider kan je vanaf 17 jaar een voorlopig rijbewijs B behalen (na het theorie-examen); zonder begeleider pas vanaf 18 jaar, na 20 uur praktijklessen (KB van 10 juli 2006, art. 2-4).",
       "source": "http://mobilit.belgium.be/nl/weg/rijden/rijbewijzen/belgisch-rijbewijs/voorlopige-rijbewijzen-categorie-b/voorlopig-rijbewijs-0",
       "since": 2007
     },
@@ -1215,9 +1215,9 @@
         "10 jaar"
       ],
       "correctIndex": 0,
-      "explanation": "Een begeleider moet op het moment van de scholing minstens 8 jaar houder zijn van een geldig rijbewijs B (KB 10 juli 1998, art. 7).",
+      "explanation": "Een begeleider moet op het moment van de scholing minstens 8 jaar houder zijn van een geldig rijbewijs B (KB van 10 juli 2006, art. 3, § 2, b).",
       "source": "http://mobilit.belgium.be/nl/weg/rijden/rijbewijzen/belgisch-rijbewijs/voorlopige-rijbewijzen-categorie-b/voorlopig-rijbewijs-0",
-      "since": 1998
+      "since": 2007
     },
     {
       "id": "rule-overweg",
@@ -1270,16 +1270,16 @@
       "id": "rule-vierwieler-helm-2024",
       "type": "rule",
       "category": "algemeen",
-      "question": "Moet de bestuurder van een motorvierwieler zonder gesloten carrosserie een valhelm dragen?",
+      "question": "Moet de bestuurder van een landbouwvoertuig dat wettelijk als \"vierwieler met motor\" geldt een valhelm dragen?",
       "options": [
-        "Nee, een helm is enkel verplicht voor tweewielers",
-        "Ja, tenzij het voertuig voorzien is van een veiligheidsgordel én een beveiligingssysteem (zoals een rolbeugel)",
-        "Enkel verplicht buiten de bebouwde kom",
-        "Enkel verplicht bij snelheden boven 50 km/u"
+        "Ja, altijd, ongeacht de constructiesnelheid of het stuurtype",
+        "Nee, als de constructiesnelheid niet hoger is dan 40 km/u én het voertuig geen stuur als op een motorfiets heeft",
+        "Enkel als er geen veiligheidsgordel aanwezig is",
+        "Enkel verplicht buiten de bebouwde kom"
       ],
       "correctIndex": 1,
-      "explanation": "Volgens artikel 36.2 van de wegcode (gewijzigd door KB van 2 oktober 2023 en KB van 24 januari 2024, in werking op 1 februari 2024) is een goedgekeurde valhelm verplicht op motorvierwielers zonder carrosserie, tenzij er een veiligheidsgordel en rolbeugel aanwezig zijn.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "explanation": "Artikel 36, eerste lid sluit landbouwvoertuigen die als vierwieler met motor gelden uit van de valhelmplicht, op voorwaarde dat hun constructiesnelheid niet hoger is dan 40 km/u en ze geen stuur als op een motorfiets hebben (KB van 2 oktober 2023). Quads mét motorfietsstuur blijven wel helmplichtig.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-36",
       "since": 2024
     },
     {
@@ -1294,7 +1294,7 @@
         "Je mag de middenrijbaan enkel gebruiken om links af te slaan"
       ],
       "correctIndex": 0,
-      "explanation": "Volgens artikel 9.1.3° (ingevoerd door het KB van 30 juli 2022, in werking op 1 oktober 2022) rijden bestuurders op de centrale rijstrook. Zij mogen de rechtse zijstrook slechts gebruiken om tegenliggers te kruisen of in te halen.",
+      "explanation": "Een middenrijbaan (art. 2.71) functioneert als de rijbaan voor motorvoertuigen; bestuurders volgen ze (art. 9.1.1) en mogen enkel uitwijken naar de zijdelingse strook (art. 2.72) om te kruisen (art. 15.3) of in te halen (art. 16.5).",
       "source": "https://www.wegcode.be/nl/nieuws/nieuwe-verkeersregels-van-kracht-op-1-oktober-de-10-belangrijkste-veranderingen~ntwif2jyud",
       "since": 2022
     },
@@ -1368,17 +1368,17 @@
       "type": "rule",
       "category": "fietsers-voetgangers",
       "sign": "assets/signs/F111.svg",
-      "question": "Tot waar gelden de specifieke verkeersregels na het voorbijrijden van dit verkeersbord (F111)?",
+      "question": "Tot waar gelden de specifieke verkeersregels van een fietszone (aangeduid met bord F111)?",
       "options": [
-        "Tot het eerstvolgende kruispunt (tenzij herhaald of in een zonebepaling opgenomen)",
+        "Tot het eerstvolgende kruispunt, tenzij het bord herhaald wordt",
+        "Tot het verkeersbord F113 dat het einde van de fietszone aanduidt; een fietszone kan meerdere straten omvatten",
         "Steeds over een vaste afstand van 250 meter",
-        "Tot het einde van de zone; zonder expliciete eindmarkering blijft dit onbeperkt gelden",
         "Enkel ter hoogte van de eerste 50 meter"
       ],
-      "correctIndex": 0,
-      "explanation": "Sinds het KB van 8 juni 2021 (in werking 1 augustus 2021, art. 65.5) geldt verkeersbord F111 tot het eerstvolgende kruispunt, waardoor een bord F113 aan elk tussenliggend kruispunt niet langer verplicht is.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
-      "since": 2021
+      "correctIndex": 1,
+      "explanation": "Sinds het KB van 12 maart 2023 heet een \"fietsstraat\" een \"fietszone\" (art. 2.61): ze kan meerdere openbare wegen omvatten en loopt tot het verkeersbord F113, niet automatisch tot het eerstvolgende kruispunt.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-2",
+      "since": 2023
     },
     {
       "id": "rule-brussel-stad30-2021",
@@ -2027,13 +2027,13 @@
       "question": "Wat betekent dit verkeersbord?",
       "sign": "assets/signs/D1b.svg",
       "options": [
-        "Verplichte rijrichting: links afslaan op het kruispunt",
+        "Verplichte rijrichting: links",
         "Verplichte rijrichting: rechtdoor rijden",
         "Verplichting om de hindernis langs links voorbij te rijden",
-        "Verbod om links af te slaan op het kruispunt"
+        "Verbod om links af te slaan"
       ],
       "correctIndex": 0,
-      "explanation": "Bord D1b legt de verplichting op om op het kruispunt de door de pijl aangeduide richting te volgen, hier linksaf (art. 69 KB 1 december 1975).",
+      "explanation": "Dit gebodsbord (D1) verplicht je de rijrichting van de pijl te volgen, hier links (art. 69.3 van de Wegcode).",
       "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-69"
     },
     {
@@ -2078,10 +2078,10 @@
         "Verplichte rijrichting: rechtdoor rijden",
         "Verplichting om de hindernis langs links voorbij te rijden",
         "Doodlopende straat aan de linkerzijde",
-        "Verplichte rijrichting: afslaan naar links vóór het verkeersbord"
+        "Verplichte rijrichting: links"
       ],
       "correctIndex": 3,
-      "explanation": "Bord D1e verplicht bestuurders om de richting van de pijl te volgen vóór het verkeersbord, hier linksaf (art. 69 KB 1 december 1975).",
+      "explanation": "Dit gebodsbord (D1, alternatieve uitvoering) verplicht je de rijrichting van de pijl te volgen, hier links (art. 69.3 van de Wegcode).",
       "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-69"
     },
     {
@@ -2424,7 +2424,7 @@
     {
       "id": "rec-f49",
       "type": "recognize",
-      "category": "fietsers-voetgangers",
+      "category": "aanwijzing",
       "question": "Wat betekent dit verkeersbord?",
       "sign": "assets/signs/F49.svg",
       "options": [
@@ -3791,7 +3791,7 @@
         "Ja, maar enkel binnen de bebouwde kom"
       ],
       "correctIndex": 0,
-      "explanation": "Sinds 1 juli 2022 (Wet 15 mei 2022, art. 9.1.2°) worden bestuurders van gemotoriseerde voortbewegingstoestellen gelijkgesteld met fietsers. Zij mogen niet meer op het trottoir rijden, ongeacht hun snelheid.",
+      "explanation": "Sinds 1 juli 2022 (Wet 15 mei 2022, art. 3, dat art. 7bis wijzigt) worden bestuurders van gemotoriseerde voortbewegingstoestellen gelijkgesteld met fietsers. Zij mogen niet meer op het trottoir rijden, ongeacht hun snelheid.",
       "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
       "since": 2022
     },
@@ -4009,16 +4009,16 @@
       "id": "rule-voorrang-aardeweg",
       "type": "rule",
       "category": "voorrang",
-      "question": "Heeft een bestuurder die van rechts komt uit een aardeweg voorrang op een bestuurder op een verharde openbare weg?",
+      "question": "Heeft een bestuurder die van rechts komt uit een aardeweg voorrang op een bestuurder op een openbare weg met een rijbaan?",
       "options": [
         "Ja, voorrang van rechts geldt altijd en overal",
         "Enkel als de bestuurder op de aardeweg met een landbouwvoertuig rijdt",
-        "Nee, wie van een aardeweg of een pad op een verharde openbare weg komt, moet voorrang verlenen",
-        "Enkel als de verharde weg smaller is dan 3 meter"
+        "Nee, wie van een aardeweg of een pad op een openbare weg met een rijbaan komt, moet voorrang verlenen",
+        "Enkel als de weg smaller is dan 3 meter"
       ],
       "correctIndex": 2,
-      "explanation": "Volgens artikel 12.3.1 moet elke bestuurder voorrang verlenen wanneer hij van een aardeweg of een pad op een openbare weg met een verharde rijbaan komt.",
-      "source": "https://mijnadvocaten.be/verkeersrecht/voorrang-van-rechts-art-12-3-1-wegcode/"
+      "explanation": "Volgens artikel 12.3.1, b) moet elke bestuurder voorrang verlenen wanneer hij van een aardeweg of een pad op een openbare weg met een rijbaan komt.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-12"
     },
     {
       "id": "rule-voorrang-uitrit",
@@ -4257,7 +4257,7 @@
         "Geen enkele verlichting als de tunnel verlicht is"
       ],
       "correctIndex": 2,
-      "explanation": "Artikel 30.1 stelt dat de dimlichten of grootlichten te allen tijde moeten branden in tunnels, ongeacht het tijdstip en de eventuele tunnelverlichting.",
+      "explanation": "Een tunnel biedt zelden meer dan 200 meter duidelijk zicht, ook overdag; daardoor geldt de algemene verplichting van artikel 30.1 om dan de dimlichten (of grootlichten) te voeren. De wegcode noemt tunnels niet apart, maar dat zichtcriterium is er in de praktijk vrijwel altijd van toepassing.",
       "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
     },
     {
