@@ -1,21 +1,21 @@
 # Verkeers-regels Quiz
 
-Een simpele webquiz om te helpen bij het voorbereiden van het Belgische theoretisch rijexamen.
-Geen server nodig: platte HTML/CSS/JS, te hosten via GitHub Pages.
+Een moderne webquiz om te oefenen voor het Belgische theoretisch rijexamen (Categorie B).
+Geen server vereist: statische HTML/CSS/JS, direct te hosten via GitHub Pages en 100% offline bruikbaar als PWA.
 
 ## Hoe spelen
 
-- Ga naar de hoofdpagina, vul optioneel een naam in en klik op "Start quiz".
-- Je krijgt telkens 20 willekeurige vragen uit de vragenbank: soms een verkeersbord waarvan je
-  de betekenis moet kiezen, soms een omschrijving waarbij je het juiste bord moet aanduiden,
-  en soms een vraag over een verkeersregel.
-- Na elk antwoord zie je meteen of het juist was, met een uitleg en een directe link naar de officiële regelgeving of toelichting. Je kan niet terug naar een vorige vraag.
+- Op het startscherm kies je tussen twee modi: "Start quiz" of "Bekijk carrousel".
+- Vul optioneel je naam in om scores en rondetijden bij te houden.
+- In quizmodus krijg je een reeks willekeurige vragen (standaard 20, aanpasbaar via URL-parameters).
+- Vragen bestaan uit verkeersborden herkennen, borden aanduiden bij omschrijvingen, verkeersregels en echte verkeerssituaties met foto's.
+- Na elk antwoord zie je direct feedback, inclusief wetsartikel en een directe `Wegcode ↗` link.
 - Zie je een fout of onduidelijkheid? Klik op de knop "Meld fout" om direct een opmerking door te geven.
-- Op het einde krijg je je score, de verstreken tijdsduur en een volledig overzicht van alle
-  vragen, jouw antwoorden en de juiste antwoorden. Dat overzicht kan je printen of als PDF
-  opslaan via de knop "Printen" (gebruikt de browser-printfunctie).
-- Onderaan het startscherm toont een versiebadge de actieve applicatieversie (bv. `v1.0.0-pre`).
-  Klik op deze knop om het changelog-venster met de volledige versiegeschiedenis te openen.
+- Op het einde krijg je je score, rondetijd en een gedetailleerd review-overzicht dat je kan printen.
+- Onderaan het startscherm vind je drie iconen met tooltips:
+  - Externe link naar de geconsolideerde wegcode op wegcode.be.
+  - Link naar GitHub Issues om opmerkingen of fouten te melden.
+  - Info-knop (`ℹ`) die het scherm met versiegeschiedenis, release notes en bronnen opent.
 
 ## Visuele rondleiding
 
@@ -53,11 +53,15 @@ Een overzicht van de quiz-interface op desktop en mobiele apparaten:
 
 ## URL-parameters
 
-De quiz ondersteunt optionele parameters in de URL:
+De applicatie ondersteunt optionele parameters in de URL:
 
-- `?s=YYYY` (aliassen: `?sinds=YYYY`, `?since=YYYY`): filtert de vragenpool op regels ingevoerd vanaf het opgegeven jaartal (bv. `?sinds=2022` of `?s=2022`).
-- `?q=N` (alias: `?quantity=N`): stelt het aantal vragen per ronde in (standaard 20, bv. `?q=10` of `?quantity=10`).
-- `?modal=changelog`: opent bij het openen van de pagina meteen de versiegeschiedenis.
+- `?s=YYYY` (aliassen: `?sinds=YYYY`, `?since=YYYY`): filtert de vragenpool op regels ingevoerd vanaf het jaartal (bv. `?s=2022`).
+- `?q=N` (alias: `?quantity=N`): stelt het aantal vragen per ronde in (standaard 20, bv. `?q=10`).
+- `?mode=carousel`: start direct de verkeersborden-carrouselmodus.
+- `?speed=N`: wisselduur per bord in seconden tijdens carrouselmodus (standaard 5, bv. `?speed=3`).
+- `?pause=1`: start de carrousel in gepauzeerde toestand.
+- `?view=about` (alias: `?about=1`): opent direct de Over deze app-weergave met versiegeschiedenis en bronnen.
+- `?autostart=1`: start direct een quizronde zonder naam in te vullen.
 
 Vragen over recente wetswijzigingen (binnen 5 jaar) dragen een amberkleurige "Sinds YYYY" badge.
 Oudere wetswijzigingen tonen een blauwe badge.
@@ -67,22 +71,23 @@ Oudere wetswijzigingen tonen een blauwe badge.
 Vanuit de projectmap:
 
 ```bash
-python -m http.server 8420
+python -m http.server 8000
 ```
 
-Open dan <http://localhost:8420/index.html> in de browser.
+Open dan [http://localhost:8000/index.html](http://localhost:8000/index.html) in de browser.
 
 ## Vragenbank aanpassen
 
 De vragen staan in [data/questions.json](data/questions.json), zie
 [data/SOURCES.md](data/SOURCES.md) voor de gebruikte bronnen en verkeersbord-afbeeldingen.
-Elke vraag heeft een `type`:
-- `recognize` — toont een bord (`sign`), 4 tekstopties als mogelijke betekenis.
+De vragenbank telt momenteel 304 geverifieerde vragen. Elke vraag heeft een `type`:
+- `recognize` — toont een verkeersbord (`sign`), 4 tekstopties als mogelijke betekenis.
 - `identify` — toont een omschrijving, 4 bord-afbeeldingen als opties.
 - `rule` — vraag over een verkeersregel, 4 tekstopties (toont optioneel een bord via `sign`).
+- `situation` — toont een foto van een verkeerssituatie (`image`), 4 opties over voorrang of rijgedrag.
 
-Verkeersbord-afbeeldingen staan in `assets/signs/`, genoemd naar hun officiële Wegcode-code
-(bv. `A1a.svg`).
+Verkeersborden staan in `assets/signs/` (193 SVG-bestanden).
+Situatiefoto's staan in `assets/situations/` (20 JPEG-bestanden).
 
 ## Deployen naar GitHub Pages
 
@@ -155,5 +160,5 @@ Het script maakt automatisch een apart tabblad "Meldingen" aan met de volgende k
 
 ## Open vragen / vervolgstappen
 
-- Vragenbank uitbreiden met meer categorieen naarmate er tijd is.
+- Vragenbank uitbreiden met meer categorieën naarmate er tijd is.
 - Overwegen om her-antwoorden van foutieve vragen als extra oefenronde toe te voegen.

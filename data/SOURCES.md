@@ -58,7 +58,7 @@ Sign-meaning questions (`recognize` and `identify`) carry direct authoritative l
 
 ## Sign images
 
-All 35 SVG files in `assets/signs/` come from Wikimedia Commons, drawn from the "Road signs of Belgium" categories (`Category:SVG warning/priority/prohibitory/mandatory/parking road signs of Belgium` and the `File:Belgian traffic sign F...` set). Every file was downloaded, checked for a valid, non-trivial SVG body, and spot-checked for correct shape and color coding (red danger triangles, red prohibition circles, blue mandatory/information signs, correct pictogram fills) before use.
+All 193 SVG files in `assets/signs/` come from Wikimedia Commons, drawn from the "Road signs of Belgium" categories (`Category:SVG warning/priority/prohibitory/mandatory/parking road signs of Belgium` and the `File:Belgian traffic sign F...` set). Every file was downloaded, checked for a valid, non-trivial SVG body, and spot-checked for correct shape and color coding (red danger triangles, red prohibition circles, blue mandatory/information signs, correct pictogram fills) before use.
 
 License: all files are public domain under Belgian law, because official traffic signs are part of Belgian legislation (Belgian Copyright Act, art. 8, §2) - stated on each file's Commons description page. All files show the designs of the current Wegcode (KB 1 December 1975). The redesigned signs of the Royal Decree of 3 June 2024 ("KB-AR 03-06-2024" uploads) only become valid on 2027-06-01 and renumber some codes, so they are not used.
 
@@ -188,7 +188,7 @@ Cross-reference used to confirm which code matches which meaning and shape: the 
 
 ## Situation photo sources
 
-The 10 real-world traffic situation photographs in `assets/situations/` originate from *De Grote Verkeerstoets*, the official public traffic safety educational initiative organized by the Flemish Foundation for Traffic Knowledge ([VSV](https://www.vsv.be)) in partnership with the Flemish Government ([Departement Mobiliteit en Openbare Werken](https://www.vlaanderen.be/departement-mobiliteit-en-openbare-werken)).
+The 20 real-world traffic situation photographs in `assets/situations/` originate from *De Grote Verkeerstoets*, the official public traffic safety educational initiative organized by the Flemish Foundation for Traffic Knowledge ([VSV](https://www.vsv.be)) in partnership with the Flemish Government ([Departement Mobiliteit en Openbare Werken](https://www.vlaanderen.be/departement-mobiliteit-en-openbare-werken)).
 
 In accordance with Belgian copyright law (Wetboek van economisch recht, Art. XI.189 §1, 1° & 2°), the non-commercial use of short illustrative excerpts for educational road safety testing (*onderwijsexceptie* and *citaatrecht*) is permitted with proper attribution to the author and source.
 

@@ -33,20 +33,20 @@ Start a local HTTP server from the repository root:
 python -m http.server 8000
 ```
 
-Open your browser and navigate to:
-
-```text
-http://localhost:8000
-```
+Open your browser and navigate to `http://localhost:8000`.
 
 ### Development URL Testing Hooks
 
 The application includes URL query parameters to speed up development and visual testing:
 
-- `http://localhost:8000/?autostart=1`: starts round immediately without entering a player name.
-- `http://localhost:8000/?autotest=results`: runs through all 20 questions with perfect answers and opens results.
+- `http://localhost:8000/?autostart=1`: starts quiz round immediately without entering a player name.
+- `http://localhost:8000/?autotest=results`: runs through all questions with perfect answers and opens results.
 - `http://localhost:8000/?autotest=results-mixed`: runs through all questions with alternating answers to test imperfect scores.
-- `http://localhost:8000/?modal=changelog`: automatically opens the changelog modal on page load.
+- `http://localhost:8000/?view=about` (alias: `?about=1`): opens the dedicated full-window About view on load.
+- `http://localhost:8000/?mode=carousel`: launches the traffic sign carousel view.
+- `http://localhost:8000/?mode=carousel&speed=5`: configures carousel slide duration in seconds.
+- `http://localhost:8000/?mode=carousel&pause=1`: pauses the carousel immediately on load.
+- `http://localhost:8000/?q=10` (alias: `?quantity=10`): overrides the number of questions per round.
 - `http://localhost:8000/?since=2021`: filters the question pool to regulations amended in or after 2021.
 
 ---
@@ -55,32 +55,40 @@ The application includes URL query parameters to speed up development and visual
 
 ### Running Automated Unit Tests
 
-Run the test suite verifying question schemas, sign assets, and legal metadata:
+Run the full test suite verifying question schemas, sign assets, UX layout, and PWA configuration:
 
 ```bash
-python -m unittest discover tests
-# or run specifically:
-python -m unittest tests.test_quiz_data
+python -m unittest discover -s tests -v
 ```
 
-The test suite automatically verifies:
+The test suite consists of 32 tests across five test modules:
 
-- Total count of 63 questions in `data/questions.json`.
-- Non-empty, unique, kebab-case question IDs.
-- Required fields (`id`, `type`, `category`, `question`, `options`, `correctIndex`, `explanation`).
-- Option counts (`>= 2`) and valid `correctIndex` within range.
-- Valid integer `since` years within the modern traffic legislation era (1968–2026).
-- Existence and XML parsing validity of all sign SVG files.
-- Absence of unshown sign references in question prompts.
+- `tests/test_quiz_data.py`: verifies 304 questions, schemas, IDs, option counts, `since` years, authoritative URLs, and SVG assets.
+- `tests/test_pwa.py`: verifies manifest integrity, icon dimensions, corner transparency, and service worker precaching completeness.
+- `tests/test_ux_layout.py`: verifies desktop two-panel split, mobile floating action button, hidden option collapsing, and pill links.
+- `tests/test_sign_carousel.py`: verifies carousel markup, timing controls, pause overlay, and keyboard navigation.
+- `tests/test_about_view.py`: verifies About screen markup, version tag, sources presentation, start screen cleanup, and navigation.
 
 ### Markdown and Task File Linting
 
-Markdown and task file formatting can be validated using the dev-guidelines tooling:
+Markdown documents and task files are validated using dev-guidelines tooling:
 
 ```bash
-python C:\Dev-Projects\dev-guidelines\scripts\lint-markdown.py LICENSE.md docs/index.md docs/requirements.md docs/devops.md CHANGELOG.md tasks/T0003-release-v1-0-0.md
-python C:\Dev-Projects\dev-guidelines\scripts\lint-taskfile.py tasks/T0003-release-v1-0-0.md
+python C:\Dev-Projects\dev-guidelines\scripts\lint-markdown.py LICENSE.md docs/index.md docs/requirements.md docs/devops.md CHANGELOG.md README.md TODO.md
+python C:\Dev-Projects\dev-guidelines\scripts\lint-taskfile.py TODO.md
 ```
+
+---
+
+## DevOps and Asset Tooling
+
+All developer utilities live in `scripts/` and adhere strictly to CLI guidelines with `--version`, `--help`, `--verbose`, `--debug`, and `--log-file`:
+
+- `scripts/bootstrap-dev-environment.py`: verifies environment readiness, repository structure, and runs test suites.
+- `scripts/deploy-to-production.py`: verifies clean working tree, finalized release version, tests, and documentation linting.
+- `scripts/generate-sw.py`: dynamically scans all assets and writes `sw.js` with versioned cache keys and 227 precached assets.
+- `scripts/generate-pwa-icons.py`: renders transparent PNG and ICO icons via headless Chrome and Pillow.
+- `scripts/fetch-belgian-signs.py`: downloads, verifies, and rate-limits Belgian traffic sign SVGs from Wikimedia Commons.
 
 ---
 
@@ -103,18 +111,20 @@ This verifies:
 1. The git working tree has no uncommitted changes (`git status --porcelain`).
 2. The current version in `js/app.js` is a finalized release (does not end with `-pre`).
 3. All automated unit tests in `tests/` pass cleanly.
+4. All project documentation passes markdown linting.
 
 ### Production Release Procedure
 
 1. Finalize the active version string in `js/app.js`, `index.html`, and `CHANGELOG.md`.
-2. Run automated tests and linters locally.
-3. Commit all changes to the task branch and merge into `main`.
-4. Create the version tag (e.g. `git tag v1.0.0`).
-5. After explicit confirmation, push `main` and tags to GitHub:
+2. Regenerate service worker precache assets via `python scripts/generate-sw.py generate`.
+3. Run automated tests and linters locally.
+4. Commit all changes to the task branch and merge into `main`.
+5. Create the version tag (e.g. `git tag v3.0.0`).
+6. After explicit user confirmation, push `main` and tags to GitHub:
    ```bash
    git push origin main --tags
    ```
-6. GitHub Pages deploys the updated `main` branch automatically.
+7. GitHub Pages deploys the updated `main` branch automatically.
 
 ---
 
