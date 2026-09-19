@@ -15,7 +15,7 @@ An overview of all tasks and their planning.
 
 ## Next Milestone
 
-- [ ] T0037 Introduce a ?sign-carrousel&delay=5 where every {{delay}} seconds a random sign and it's explanation are shown. Pause the current sign when clicked/touched/space-pressed once, re-start when clicked/touched/space-pressed again (with an 'Gepauzeerd' indication)
+- [~] T0037 [owner: @antigravity] Add sign carousel mode cycling random signs with delay and pause toggle on click or space.
 - [ ] A0034 Release as 2.1.0 or 3.0.0
 
 ---
