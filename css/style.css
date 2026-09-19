@@ -179,25 +179,19 @@ button {
 }
 
 .start-legal-hint {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
   font-size: 0.8rem;
   color: var(--color-muted);
   margin: 10px 0 0;
-  line-height: 1.35;
+  line-height: 1.45;
   text-align: center;
 }
 
-.start-legal-hint-icon {
-  font-size: 0.95rem;
-  flex-shrink: 0;
-}
-
-.start-legal-hint-svg {
-  flex-shrink: 0;
-  color: var(--color-muted);
+.start-legal-ext-icon {
+  display: inline-block;
+  vertical-align: -1.5px;
+  margin: 0 1px 0 2px;
+  stroke: currentColor;
+  opacity: 0.85;
 }
 
 @media screen and (max-width: 639px) {
