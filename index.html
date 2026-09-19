@@ -188,14 +188,13 @@
 
     <!-- Interactive stage: click/touch toggles pause/play -->
     <div id="carousel-stage" class="carousel-stage" role="region" aria-label="Verkeersbord kaart" tabindex="0" title="Klik om te pauzeren of hervatten">
-      <!-- Prominent Pause Indicator Banner/Overlay -->
-      <div id="carousel-pause-overlay" class="carousel-pause-overlay hidden" aria-live="assertive">
-        <div class="carousel-pause-banner">
-          <div class="carousel-pause-badge">
-            <span class="carousel-pause-icon" aria-hidden="true">⏸</span>
-            <span class="carousel-pause-text">Gepauzeerd</span>
-          </div>
-          <p class="carousel-pause-hint">Klik op de kaart of druk op <kbd class="kbd-key">Spatie</kbd> om te hervatten</p>
+      <!-- Pause indicator: round pause-icon button without text -->
+      <div id="carousel-pause-overlay" class="carousel-pause-overlay hidden" aria-live="polite">
+        <div class="carousel-pause-round-btn" aria-label="Gepauzeerd" title="Gepauzeerd">
+          <svg class="carousel-pause-round-svg" width="34" height="34" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <rect x="5.5" y="4" width="4.2" height="16" rx="2"></rect>
+            <rect x="14.3" y="4" width="4.2" height="16" rx="2"></rect>
+          </svg>
         </div>
       </div>
 

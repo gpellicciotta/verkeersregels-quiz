@@ -61,10 +61,10 @@ Provide prominent visual indicators for paused state and time elapsed until next
 - [T0037-view-start-carousel.png](T0037-view-start-carousel.png): start screen with carousel mode and interval selector active.
 - [T0037-view-start-mobile.png](T0037-view-start-mobile.png): mobile view of start screen mode selector.
 - [T0037-view-after.png](T0037-view-after.png): running sign carousel displaying sign card, progress bar, and controls.
-- [T0037-view-paused.png](T0037-view-paused.png): paused carousel state displaying prominent "Gepauzeerd" indicator and resume button.
+- [T0037-view-paused.png](T0037-view-paused.png): paused carousel state displaying round pause-icon button overlay without text.
 - [T0037-view-mobile.png](T0037-view-mobile.png): mobile view demonstrating centered sign card, compact buttons, and full responsive layout.
 
 ### Verification Results
 
-- `python -m unittest discover -s tests -v`: 26 of 26 tests passed in 0.73s.
+- `python -m unittest discover -s tests -v`: 26 of 26 tests passed in 0.31s.
 

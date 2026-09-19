@@ -1402,19 +1402,20 @@ button {
   margin-top: 4px;
 }
 
-/* Prominent Pause Overlay */
+/* Pause Overlay: Round Pause-Icon Button */
 .carousel-pause-overlay {
   position: absolute;
   inset: 0;
-  background: rgba(15, 23, 42, 0.65);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  background: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 10;
   padding: 20px;
   animation: fadeInPause 0.15s ease-out;
+  cursor: pointer;
 }
 
 @keyframes fadeInPause {
@@ -1422,42 +1423,36 @@ button {
   to { opacity: 1; }
 }
 
-.carousel-pause-banner {
-  background: #ffffff;
-  border: 2px solid #f59e0b;
-  border-radius: 14px;
-  padding: 20px 28px;
-  text-align: center;
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
-  max-width: 400px;
-  width: 100%;
-}
-
-.carousel-pause-badge {
-  display: inline-flex;
+.carousel-pause-round-btn {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  background: rgba(245, 158, 11, 0.95);
+  color: #ffffff;
+  border: 3px solid rgba(255, 255, 255, 0.95);
+  box-shadow: 0 8px 26px rgba(0, 0, 0, 0.35);
+  display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  background: #fef3c7;
-  color: #92400e;
-  padding: 8px 18px;
-  border-radius: 9999px;
-  font-size: 1.25rem;
-  font-weight: 800;
-  letter-spacing: 0.02em;
-  margin-bottom: 10px;
-  border: 1px solid #fcd34d;
+  pointer-events: none;
+  animation: popInPause 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: transform 0.15s ease, background 0.15s ease;
 }
 
-.carousel-pause-icon {
-  font-size: 1.2rem;
+.carousel-stage:hover .carousel-pause-round-btn {
+  transform: scale(1.08);
+  background: #d97706;
 }
 
-.carousel-pause-hint {
-  margin: 0;
-  font-size: 0.95rem;
-  color: #4b5563;
-  font-weight: 500;
+@keyframes popInPause {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 /* Progress Bar */
@@ -1511,12 +1506,14 @@ button {
   align-items: center;
   justify-content: center;
   margin-top: 0;
-  padding: 10px 22px;
+  padding: 0;
   font-weight: 700;
   font-size: 1.25rem;
-  width: auto;
-  min-width: 72px;
-  flex: 0 0 auto;
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  flex: 0 0 48px;
+  border-radius: 50%;
   box-shadow: 0 2px 8px rgba(26, 86, 219, 0.3);
 }
 
@@ -1573,12 +1570,6 @@ button {
   vertical-align: baseline;
 }
 
-.carousel-pause-hint .kbd-key {
-  background: #ffffff;
-  border-color: #fcd34d;
-  border-bottom-color: #f59e0b;
-  color: #78350f;
-}
 
 @media (max-width: 639px) {
   .start-mode-selector {
@@ -1646,11 +1637,14 @@ button {
     font-size: 0.88rem !important;
   }
   .btn-carousel-toggle {
-    min-width: 58px !important;
-    max-width: none !important;
-    flex: 0 0 58px !important;
-    padding: 10px 8px !important;
-    font-size: 1.2rem !important;
+    min-width: 48px !important;
+    max-width: 48px !important;
+    width: 48px !important;
+    height: 48px !important;
+    flex: 0 0 48px !important;
+    padding: 0 !important;
+    font-size: 1.25rem !important;
+    border-radius: 50% !important;
   }
 }
 
