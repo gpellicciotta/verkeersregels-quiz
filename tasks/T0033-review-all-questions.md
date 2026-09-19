@@ -28,7 +28,8 @@ Produce a findings list only; do not fix anything until the user confirms which 
 - [x] **[Doc]**        Record all findings in the Execution Log and present them for user confirmation.
 - [x] **[Implement]** Fix the 18 confirmed findings in data/questions.json, keeping question IDs stable.
 - [x] **[Verify]**    Dig further into the 11 uncertain findings and resolve or reclassify each one.
-- [ ] **[Decide]**    Get user confirmation to commit, merge, and push the second fix pass.
+- [x] **[Decided]**   User confirmed the last 2 findings are correct content, just drop the unverifiable year.
+- [ ] **[Decide]**    Get user confirmation to merge and push the full fix pass to main.
 
 ## Execution Log
 
@@ -60,6 +61,12 @@ Produce a findings list only; do not fix anything until the user confirms which 
 - [2026-09-19] **[Verify]**
   Full pytest suite (22 tests) passed again; served the updated questions.json locally and spot-checked changed entries.
 
+- [2026-09-19] **[Decided]**
+  User confirmed iden-d10 and iden-e9a content is correct; removed their unverifiable `since` years rather than guess.
+
+- [2026-09-19] **[Verify]**
+  Full pytest suite (22 tests) passed a third time after removing the two unverifiable `since` fields.
+
 ## Findings
 
 Legend: **confirmed** = verified against the consolidated Wegcode text; **uncertain** = plausible but not
@@ -67,8 +74,8 @@ verifiable from locally stored sources, or a judgment call. Source: `data/law/we
 unless noted. Automated schema issues (dup IDs, correctIndex bounds, missing files) are excluded — those are
 already covered by tests/test_quiz_data.py.
 
-The 18 confirmed findings below are **fixed** (see data/questions.json and the 2026-09-19 entry in
-data/SOURCES.md's Correction log). The 11 uncertain findings are still open, pending further digging.
+All 33 findings below are **fixed** (see data/questions.json and the 2026-09-19 entries in
+data/SOURCES.md's Correction log).
 
 ### Systemic pattern: wrong article subsection on otherwise-correct rule questions (13, confirmed, fixed)
 
@@ -127,8 +134,13 @@ robots.txt-compliant web lookups (wegcode.be, nl.wikipedia.org). Full evidence f
   `rec-d1c` / `rec-d1d` were already correct as-is (obstacle-bypass left/right).
 - `rec-f49`: recategorized from `fietsers-voetgangers` to `aanwijzing` to match its closest siblings.
 
-### Uncertain findings — still open (2)
+### Uncertain findings — resolved (final 2, fixed)
 
 - `iden-d10`: `since: 2014` for the D9/D10 split could not be confirmed or disproven — the code predates
-  the local amendment ledger (2021+), and mobilit.belgium.be is CAPTCHA-gated. Sign meaning is correct.
-- `iden-e9a`: `since: 1990` for the E9a symbol has the same problem — unverifiable, not necessarily wrong.
+  the local amendment ledger (2021+), and mobilit.belgium.be is CAPTCHA-gated. Sign meaning is correct;
+  removed the unverifiable `since` field rather than guess.
+- `iden-e9a`: `since: 1990` for the E9a symbol had the same problem — sign meaning correct, `since` removed.
+
+All 33 flagged questions are now resolved: 27 fixed with corrected citations/content, 2 fixed by removing an
+unverifiable `since` year, and 4 (`rec-d1a`, `rec-d1c`, `rec-d1d`, plus context on `rec-f49`'s siblings)
+turned out to already be correct on closer inspection.

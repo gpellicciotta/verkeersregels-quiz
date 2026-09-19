@@ -14,8 +14,7 @@ A summarized overview of all changes, per version of this project.
 ---
 
 ## v2.0.1-pre
-- Inhoud: Nog eens negen inhoudelijke fouten in verkeersregelvragen gecorrigeerd na verder bronnenonderzoek.
-- Inhoud: Achttien inhoudelijke fouten in verkeersregelvragen gecorrigeerd na uitgebreide juridische controle.
+- Inhoud: Alle 294 vragen herzien; 27 inhoudelijke fouten en 2 onbevestigde jaartallen gecorrigeerd.
 - FrontEnd: Wetswijzigingslabels geharmoniseerd en mobiel gekoppeld aan het resultaatlabel terwijl ze op desktop bij de vraag blijven.
 - Inhoud: Tien praktijkvragen met foto's van verkeerssituaties toegevoegd inclusief ondersteuning voor filteren via queryparameters.
 - FrontEnd: Vraagtype-filter toegevoegd met visuele startmeldingen en responsieve fotoweergave voor praktijksituaties.

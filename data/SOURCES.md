@@ -107,7 +107,6 @@ Cross-reference used to confirm which code matches which meaning and shape: the 
 - `rule-snelheid-bebouwd`: general limit is 50 km/u in Flanders and Wallonia (art. 11.1), but 30 km/u in Brussels; question explicitly targets Flanders.
 - `rule-snelheid-buiten-vl`: the 70 km/u default outside built-up areas applies in Flanders and Brussels (art. 11.2); only Wallonia still uses 90 km/u.
 - `iden-d10` / `rec-d7`: the distinction between D9 (shared path incl. class-A mopeds) and D10 (pedestrians and cyclists only) matches the official Wegcode codes.
-- `iden-d10`'s `since: 2014` and `iden-e9a`'s `since: 1990` could not be confirmed or disproven: both codes predate the amendment ledger in `data/law/` (2021+), and the mobilit.belgium.be / wegcode.be pages that might date them are not crawlable (CAPTCHA-gated). The sign meanings themselves are correct; only the introduction year is unverified.
 - Everything else in the bank was verified against a live, fetched source (either the Wikimedia Commons file/category pages for sign meanings, or one of the 16 rule sources above) and is not flagged for further review.
 
 ## Correction log
@@ -182,6 +181,10 @@ Cross-reference used to confirm which code matches which meaning and shape: the 
   - `rule-estep-trottoir-2022`: corrected the citation to art. 7bis (as amended by Wet 15 mei 2022, art. 3), which is the actual provision equating motorized mobility device users with cyclists; the previously cited "art. 9.1.2°" governs cycle-path use, not this equivalence.
   - `rec-d1b` / `rec-d1e`: cross-checked against the Dutch Wikipedia D-series article (already used elsewhere in this file as a secondary source). D1c/D1d's "pass the obstacle left/right" framing was already correct. D1b and D1e, however, both just mean "verplichte rijrichting: links" (two alternate icon designs for the same rule) — removed the invented "op het kruispunt" / "vóór het verkeersbord" distinction, which Wikipedia's table doesn't support.
   - `rec-f49`: recategorized from `fietsers-voetgangers` to `aanwijzing` to match its closest sibling signs (F50, F51, F14, F45b), which are all `aanwijzing`.
+
+- 2026-09-19: removed the `since` field from `iden-d10` (was 2014) and `iden-e9a` (was 1990): both years
+  were unverifiable (pre-2021, and the government page that might date them is CAPTCHA-gated), but the sign
+  meanings and explanations in both questions are correct and were not changed. Closes T0033.
 
 ## Situation photo sources
 
