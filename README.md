@@ -23,32 +23,32 @@ Een overzicht van de quiz-interface op desktop en mobiele apparaten:
 
 ### Startscherm
 
-| Desktop | Mobiel |
-|---|---|
+| Desktop                                                      | Mobiel                                                     |
+|--------------------------------------------------------------|------------------------------------------------------------|
 | ![Startscherm desktop](assets/screenshots/start-desktop.png) | ![Startscherm mobiel](assets/screenshots/start-mobile.png) |
 
 ### Vraag met juist antwoord
 
-| Desktop | Mobiel |
-|---|---|
+| Desktop                                                                    | Mobiel                                                                   |
+|----------------------------------------------------------------------------|--------------------------------------------------------------------------|
 | ![Juist antwoord desktop](assets/screenshots/question-correct-desktop.png) | ![Juist antwoord mobiel](assets/screenshots/question-correct-mobile.png) |
 
 ### Vraag met fout antwoord
 
-| Desktop | Mobiel |
-|---|---|
+| Desktop                                                                 | Mobiel                                                                |
+|-------------------------------------------------------------------------|-----------------------------------------------------------------------|
 | ![Fout antwoord desktop](assets/screenshots/question-wrong-desktop.png) | ![Fout antwoord mobiel](assets/screenshots/question-wrong-mobile.png) |
 
 ### Resultaten met confetti (perfecte score)
 
-| Desktop | Mobiel |
-|---|---|
+| Desktop                                                                             | Mobiel                                                                            |
+|-------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------|
 | ![Resultaten met confetti desktop](assets/screenshots/results-confetti-desktop.png) | ![Resultaten met confetti mobiel](assets/screenshots/results-confetti-mobile.png) |
 
 ### Resultaten zonder confetti
 
-| Desktop | Mobiel |
-|---|---|
+| Desktop                                                                                   | Mobiel                                                                                  |
+|-------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
 | ![Resultaten zonder confetti desktop](assets/screenshots/results-no-confetti-desktop.png) | ![Resultaten zonder confetti mobiel](assets/screenshots/results-no-confetti-mobile.png) |
 
 ## URL-parameters
