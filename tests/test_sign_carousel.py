@@ -38,6 +38,7 @@ class TestSignCarousel(unittest.TestCase):
         self.assertIn('id="radio-mode-quiz"', html, "index.html must define radio-mode-quiz option")
         self.assertIn('id="radio-mode-carousel"', html, "index.html must define radio-mode-carousel option")
         self.assertIn('id="carousel-delay-select"', html, "index.html must define carousel-delay-select")
+        self.assertIn('<kbd class="kbd-key">Spatie</kbd>', html, "index.html must style Spatie with kbd tag")
 
     def test_css_contains_carousel_styling_and_responsive_rules(self) -> None:
         """Validates that style.css defines carousel card layout, pause overlay, and progress bar."""
@@ -56,6 +57,7 @@ class TestSignCarousel(unittest.TestCase):
         self.assertIn(".start-mode-selector", css, "style.css must define start-mode-selector layout")
         self.assertIn(".start-mode-card", css, "style.css must define start-mode-card styling")
         self.assertIn(".carousel-delay-select", css, "style.css must define carousel-delay-select styling")
+        self.assertIn(".kbd-key", css, "style.css must style .kbd-key keyboard button representation")
 
     def test_js_app_implements_carousel_lifecycle_and_controls(self) -> None:
         """Validates that app.js implements query parsing, interval cycling, pause/resume, and keys."""

@@ -74,10 +74,6 @@
       </button>
     </div>
     <p id="start-error" class="error hidden"></p>
-    <div class="start-report-hint">
-      <span class="report-hint-icon" aria-hidden="true">🚩</span>
-      <p class="report-hint-text">Zie je een fout of onduidelijkheid in een vraag of antwoord? Klik tijdens de quiz op de knop <button type="button" class="btn-report-error btn-report-preview" disabled aria-label="Voorbeeld van Meld fout knop"><svg class="report-icon" aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line></svg><span>Meld fout</span></button> om een correctie door te geven.</p>
-    </div>
     <footer class="start-legal-links">
       <span class="start-legal-title">Officiële wetgeving:</span>
       <div class="start-legal-items">
@@ -85,6 +81,13 @@
         <span class="start-legal-separator" aria-hidden="true">•</span>
         <a href="https://www.wegcode.be/nl/regelgeving/1975120109/wijzigingen~hra8v386pu" target="_blank" rel="noopener noreferrer">Overzicht wetswijzigingen</a>
       </div>
+      <p class="start-legal-hint">
+        <svg class="report-icon start-legal-hint-svg" aria-hidden="true" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
+          <line x1="4" y1="22" x2="4" y2="15"></line>
+        </svg>
+        <span>Zie je een fout of onduidelijkheid? Klik tijdens de quiz op <button type="button" class="btn-report-error btn-report-preview" disabled aria-label="Voorbeeld van Meld fout knop"><svg class="report-icon" aria-hidden="true" width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line></svg><span>Meld fout</span></button> om dit door te geven.</span>
+      </p>
       <p class="start-legal-hint">
         <span class="start-legal-hint-icon" aria-hidden="true">📖</span>
         <span>Bij elke vraag vind je via het toelichtingsicoon direct het bijbehorende wetsartikel.</span>
@@ -192,7 +195,7 @@
             <span class="carousel-pause-icon" aria-hidden="true">⏸</span>
             <span class="carousel-pause-text">Gepauzeerd</span>
           </div>
-          <p class="carousel-pause-hint">Klik op de kaart of druk op Spatie om te hervatten</p>
+          <p class="carousel-pause-hint">Klik op de kaart of druk op <kbd class="kbd-key">Spatie</kbd> om te hervatten</p>
         </div>
       </div>
 
@@ -238,9 +241,9 @@
           <span class="btn-ctrl-label">Vorige</span>
         </button>
 
-        <button id="btn-carousel-toggle" class="btn-primary btn-carousel-toggle" type="button" aria-label="Pauzeren of hervatten" title="Pauzeren of hervatten (Spatiebalk)">
+        <button id="btn-carousel-toggle" class="btn-primary btn-carousel-toggle" type="button" aria-label="Pauzeren" title="Pauzeren (Spatiebalk)">
           <span id="carousel-toggle-icon" class="carousel-toggle-icon" aria-hidden="true">⏸</span>
-          <span id="carousel-toggle-text" class="carousel-toggle-text">Pauzeren</span>
+          <span id="carousel-toggle-text" class="carousel-toggle-text sr-only">Pauzeren</span>
         </button>
 
         <button id="btn-carousel-next" class="btn-secondary btn-carousel-ctrl" type="button" aria-label="Volgend bord" title="Volgend bord (Pijl-rechts)">
@@ -253,7 +256,7 @@
 
       <div class="carousel-status-info">
         <span id="carousel-delay-info" class="carousel-delay-info">Wisselt elke 5 seconden</span>
-        <span class="carousel-shortcut-hint">Tip: klik op de kaart of druk op Spatie om te pauzeren</span>
+        <span id="carousel-shortcut-hint" class="carousel-shortcut-hint">Tip: klik op de kaart of druk op <kbd class="kbd-key">Spatie</kbd> om te pauzeren</span>
       </div>
     </div>
   </section>
