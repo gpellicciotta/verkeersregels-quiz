@@ -61,6 +61,8 @@ class TestSignCarousel(unittest.TestCase):
         self.assertIn("getCarouselParams", js, "app.js must define getCarouselParams function")
         self.assertIn("sign-carrousel", js, "app.js must support sign-carrousel Dutch query parameter")
         self.assertIn("sign-carousel", js, "app.js must support sign-carousel English query parameter")
+        self.assertIn('params.get("delay") || params.get("d")', js, "app.js must support d=N alias for delay")
+        self.assertIn('=== "quiz"', js, "app.js must support mode=quiz parameter")
         self.assertIn("startCarousel", js, "app.js must define startCarousel lifecycle function")
         self.assertIn("stopCarousel", js, "app.js must define stopCarousel function")
         self.assertIn("toggleCarouselPause", js, "app.js must define toggleCarouselPause function")
@@ -75,3 +77,4 @@ class TestSignCarousel(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+

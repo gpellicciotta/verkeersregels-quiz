@@ -937,13 +937,14 @@ function getCarouselParams() {
     return { active: false, delay: 5 };
   }
   const params = new URLSearchParams(window.location.search);
+  const mode = (params.get("mode") || "").toLowerCase().trim();
   const isCarrousel =
     params.has("sign-carrousel") ||
     params.has("sign-carousel") ||
-    params.get("mode") === "carrousel" ||
-    params.get("mode") === "carousel";
+    mode === "carrousel" ||
+    mode === "carousel";
 
-  const rawDelay = params.get("delay");
+  const rawDelay = params.get("delay") || params.get("d");
   const parsedDelay = parseInt(rawDelay, 10);
   const delay = Number.isInteger(parsedDelay) && parsedDelay > 0 ? parsedDelay : 5;
 
@@ -1244,7 +1245,7 @@ function checkAutoStart() {
       state.currentIndex++;
     }
     showResult();
-  } else if (params.get("autostart") === "1") {
+  } else if (params.get("autostart") === "1" || (params.get("mode") || "").toLowerCase().trim() === "quiz") {
     startQuiz();
     if (params.get("answer") === "correct") {
       const q = state.round[state.currentIndex];
