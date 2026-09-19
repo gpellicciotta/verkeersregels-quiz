@@ -15,7 +15,7 @@ An overview of all tasks and their planning.
 
 ## Next Milestone
 
-- [ ] T0033 [owner: claude] Review all questions for issues or inconsistencies. List all issues and ask me for confirmation before trying to fix them.
+- [~] T0033 [owner: claude] Review all questions for issues or inconsistencies. List all issues and ask me for confirmation before trying to fix them.
 - [ ] A0034 [needs: T0033] Release as 2.1.0 or 3.0.0
 
 ---
