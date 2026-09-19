@@ -109,7 +109,7 @@ class TestPWA(unittest.TestCase):
         self.assertEqual(missing, [], f"The following precached assets do not exist on disk: {missing}")
 
     def test_service_worker_precaches_all_situation_images(self) -> None:
-        """Validates that sw.js PRECACHE_ASSETS includes all 10 situation photos."""
+        """Validates that sw.js PRECACHE_ASSETS includes all 20 situation photos."""
         content = SW_PATH.read_text(encoding="utf-8")
         match = re.search(r"const PRECACHE_ASSETS = \[(.*?)\];", content, re.DOTALL)
         self.assertIsNotNone(match, "Could not find PRECACHE_ASSETS in sw.js")

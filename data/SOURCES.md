@@ -4,22 +4,22 @@ Content for the Belgian theoretical driving exam quiz, generated and verified on
 
 ## Question bank summary
 
-Total questions: 294, stored in `data/questions.json`.
+Total questions: 304, stored in `data/questions.json`.
 
 Breakdown by type:
 
 - recognize: 193
 - identify: 12
 - rule: 79
-- situation: 10
+- situation: 20
 
 Breakdown by category:
 
-- aanwijzing: 90
-- voorrang: 36
+- aanwijzing: 92
+- voorrang: 38
 - verbod: 34
 - gevaar: 31
-- fietsers-voetgangers: 28
+- fietsers-voetgangers: 34
 - parkeren: 23
 - algemeen: 17
 - gebod: 10
@@ -204,3 +204,13 @@ In accordance with Belgian copyright law (Wetboek van economisch recht, Art. XI.
 | `sit-08-licht-boven-bord.jpg` | Verkeerslicht op groen boven STOP-bord B5 | Art. 6.3 | [De Grote Verkeerstoets - Verkeerstekens](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas/verkeerstekens) |
 | `sit-09-fietszone-f111.jpg` | Fietsstraat / fietszone (F111) inhaalverbod | Art. 22novies | [De Grote Verkeerstoets - Verkeerstekens](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas/verkeerstekens) |
 | `sit-10-politieagent-halt.jpg` | Bevoegd persoon met armen horizontaal gestrekt | Art. 4.1 | [De Grote Verkeerstoets - Verkeerstekens](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas/verkeerstekens) |
+| `sit-11-plaats-geen-fietspad.jpg` | Positie fietser op rijbaan bij ontbreken fietspad | Art. 9.1.2 | [De Grote Verkeerstoets - Plaats op de weg](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas) |
+| `sit-12-step-trottoir.jpg` | Voortbewegingstoestel (step) op trottoir / fietspad | Art. 7bis | [De Grote Verkeerstoets - Plaats op de weg](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas) |
+| `sit-13-bebouwde-kom-naast-elkaar.jpg` | Twee fietsers naast elkaar in bebouwde kom | Art. 43.2 | [De Grote Verkeerstoets - Plaats op de weg](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas) |
+| `sit-14-fietspad-d7-enkelrichting.jpg` | Rijrichting fietspad bord D7 | Art. 9.1.2.1° & Art. 69.1 | [De Grote Verkeerstoets - Plaats op de weg](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas) |
+| `sit-15-kind-voetpad.jpg` | Kind tot 10 jaar fietsen op voetpad | Art. 9.1.2.3° | [De Grote Verkeerstoets - Plaats op de weg](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas) |
+| `sit-16-voetganger-links-rijbaan.jpg` | Voetganger links op de rijbaan bij ontbreken stoep/berm | Art. 42.2.1° | [De Grote Verkeerstoets - Plaats op de weg](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas) |
+| `sit-17-b9-voorrangsweg.jpg` | Voorrangsweg bord B9 | Art. 67.3 | [De Grote Verkeerstoets - Voorrang](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas/voorrang) |
+| `sit-18-b21-voorrang-tegenliggers.jpg` | Smalle doorgang voorrang op tegenligger (bord B21) | Art. 67.4 | [De Grote Verkeerstoets - Voorrang](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas/voorrang) |
+| `sit-19-f19-beperkt-eenrichting.jpg` | Beperkt eenrichtingsverkeer bord F19 met onderbord M2 | Art. 65.2 & Art. 71 | [De Grote Verkeerstoets - Verkeerstekens](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas/verkeerstekens) |
+| `sit-20-f4a-zone-30.jpg` | Zone 30 beginbord F4a | Art. 71 & Art. 22quater | [De Grote Verkeerstoets - Verkeerstekens](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas/verkeerstekens) |

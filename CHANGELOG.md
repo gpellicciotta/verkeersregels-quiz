@@ -16,7 +16,7 @@ A summarized overview of all changes, per version of this project.
 ## v2.0.1-pre
 - Inhoud: Alle 294 vragen herzien; 27 inhoudelijke fouten en 2 onbevestigde jaartallen gecorrigeerd.
 - FrontEnd: Resultatenknoppen compact rechtsboven geplaatst op desktop en wetswijzigingslabels geharmoniseerd qua typografie.
-- Inhoud: Tien praktijkvragen met foto's van verkeerssituaties toegevoegd inclusief ondersteuning voor filteren via queryparameters.
+- Inhoud: Twintig praktijkvragen met foto's van verkeerssituaties toegevoegd inclusief ondersteuning voor filteren via queryparameters.
 - FrontEnd: Vraagtype-filter toegevoegd met visuele startmeldingen en responsieve fotoweergave voor praktijksituaties.
 - FrontEnd: Tweepanelen-layout op desktop en scrollvrije mobiele weergave met zwevende actieknop en compacte wetslink geïmplementeerd.
 - FrontEnd: Progressieve webapp geïnstalleerd met 100 procent offline ondersteuning, rotonde-pictogrammen en lokale foutenwachtrij.

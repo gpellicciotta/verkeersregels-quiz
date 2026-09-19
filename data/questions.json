@@ -4648,6 +4648,157 @@
       "correctIndex": 1,
       "explanation": "De horizontaal uitgestrekte armen van een bevoegd persoon betekenen 'stoppen' voor alle weggebruikers die naderen uit richtingen die de borst of de rug van de agent kruisen (art. 4.1).",
       "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-4"
+    },
+    {
+      "id": "sit-11-plaats-geen-fietspad",
+      "type": "situation",
+      "category": "fietsers-voetgangers",
+      "question": "Er is op deze weg geen fietspad aanwezig, enkel een voetpad. Waar moet je als fietser (vanaf 10 jaar) rijden?",
+      "image": "assets/situations/sit-11-plaats-geen-fietspad.jpg",
+      "options": [
+        "Rechts op de rijbaan.",
+        "Op het voetpad, zolang er geen voetgangers lopen.",
+        "Links op de rijbaan tegen het verkeer in om auto's te zien aankomen."
+      ],
+      "correctIndex": 0,
+      "explanation": "Als er geen fietspad is, moeten fietsers (vanaf 10 jaar) rechts op de rijbaan rijden. Het voetpad is voorbehouden voor voetgangers (art. 9.1.2).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-9"
+    },
+    {
+      "id": "sit-12-step-trottoir",
+      "type": "situation",
+      "category": "fietsers-voetgangers",
+      "question": "Je rijdt met een niet-gemotoriseerde step op de openbare weg. Waar moet je rijden?",
+      "image": "assets/situations/sit-12-step-trottoir.jpg",
+      "options": [
+        "Altijd verplicht op de rijbaan tussen de auto's.",
+        "Dat hangt af van je snelheid: stapvoets volg je de regels voor voetgangers, sneller die voor fietsers.",
+        "Altijd op het fietspad, ongeacht de snelheid."
+      ],
+      "correctIndex": 1,
+      "explanation": "Gebruikers van niet-gemotoriseerde voortbewegingstoestellen volgen de regels voor voetgangers zolang ze niet sneller dan stapvoets rijden. Rijden ze sneller, dan gelden de regels voor fietsers (art. 7bis).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-7bis"
+    },
+    {
+      "id": "sit-13-bebouwde-kom-naast-elkaar",
+      "type": "situation",
+      "category": "fietsers-voetgangers",
+      "question": "Twee fietsers rijden naast elkaar in de bebouwde kom en er nadert een auto achter hen. Wat moeten de fietsers doen?",
+      "image": "assets/situations/sit-13-bebouwde-kom-naast-elkaar.jpg",
+      "options": [
+        "Zij moeten verplicht onmiddellijk achter elkaar gaan rijden.",
+        "Zij moeten stoppen en aan de kant van de weg gaan staan.",
+        "Zij mogen naast elkaar blijven rijden, zolang kruisen met tegenliggers mogelijk blijft."
+      ],
+      "correctIndex": 2,
+      "explanation": "Binnen de bebouwde kom mogen fietsers met twee naast elkaar rijden. Zij moeten enkel achter elkaar gaan rijden wanneer het kruisen met een tegenligger anders niet mogelijk is (art. 43.2).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-43"
+    },
+    {
+      "id": "sit-14-fietspad-d7-enkelrichting",
+      "type": "situation",
+      "category": "fietsers-voetgangers",
+      "question": "Mag je in de tegenovergestelde richting fietsen op dit fietspad aangeduid met bord D7?",
+      "image": "assets/situations/sit-14-fietspad-d7-enkelrichting.jpg",
+      "options": [
+        "Nee, een fietspad mag enkel gebruikt worden in de rijrichting waarin het bord D7 zichtbaar is.",
+        "Ja, op een fietspad mag je altijd in beide richtingen fietsen.",
+        "Ja, maar enkel als je binnen een straal van 500 meter woont."
+      ],
+      "correctIndex": 0,
+      "explanation": "Een fietspad aangeduid met bord D7 mag enkel gebruikt worden in de richting waarin het bord zichtbaar is, tenzij een onderbord of wegmarkering aangeeft dat het om een tweerichtingsfietspad gaat (art. 9.1.2.1°).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-9"
+    },
+    {
+      "id": "sit-15-kind-voetpad",
+      "type": "situation",
+      "category": "fietsers-voetgangers",
+      "question": "Tot welke leeftijd mogen kinderen met een fiets op het voetpad rijden?",
+      "image": "assets/situations/sit-15-kind-voetpad.jpg",
+      "options": [
+        "Tot en met 6 jaar.",
+        "Tot en met 10 jaar, mits zij voetgangers niet in gevaar brengen.",
+        "Kinderen mogen nooit op het voetpad fietsen."
+      ],
+      "correctIndex": 1,
+      "explanation": "Kinderen jonger dan 10 jaar mogen met hun fiets op het trottoir of de verhoogde berm rijden, mits ze andere weggebruikers niet in gevaar brengen (art. 9.1.2.3°, verhoogd van 9 naar 10 jaar in 2022).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-9",
+      "since": 2022
+    },
+    {
+      "id": "sit-16-voetganger-links-rijbaan",
+      "type": "situation",
+      "category": "fietsers-voetgangers",
+      "question": "Er is geen trottoir, berm of fietspad aanwezig. Aan welke kant moeten voetgangers op de rijbaan stappen?",
+      "image": "assets/situations/sit-16-voetganger-links-rijbaan.jpg",
+      "options": [
+        "Rechts, in dezelfde richting als het gemotoriseerd verkeer.",
+        "Voetgangers mogen nooit op de rijbaan lopen als er geen stoep is.",
+        "Links op de rijbaan, zodat zij tegemoetkomend verkeer goed zien naderen."
+      ],
+      "correctIndex": 2,
+      "explanation": "Wanneer voetgangers de rijbaan moeten gebruiken wegens het ontbreken van een trottoir, begaanbare berm of fietspad, moeten zij links van de rijbaan stappen ten opzichte van hun looprichting (art. 42.2.1°).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-42"
+    },
+    {
+      "id": "sit-17-b9-voorrangsweg",
+      "type": "situation",
+      "category": "voorrang",
+      "question": "Je rijdt op deze weg met verkeersbord B9 (oranje/gele ruit). Welke voorrangsregel geldt hier?",
+      "image": "assets/situations/sit-17-b9-voorrangsweg.jpg",
+      "options": [
+        "Bestuurders uit zijstraten moeten jou voorrang verlenen; jij rijdt op een voorrangsweg.",
+        "Op elk kruispunt geldt nog steeds de voorrang van rechts.",
+        "Dit bord duidt enkel het einde van de bebouwde kom aan."
+      ],
+      "correctIndex": 0,
+      "explanation": "Verkeersbord B9 geeft aan dat je op een voorrangsweg rijdt. Bestuurders die uit zijwegen komen, moeten voorrang verlenen aan bestuurders op de voorrangsweg (art. 67.3).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-67"
+    },
+    {
+      "id": "sit-18-b21-voorrang-tegenliggers",
+      "type": "situation",
+      "category": "voorrang",
+      "question": "Je nadert deze smalle doorgang met verkeersbord B21 (blauw vierkant met witte en rode pijl). Wie mag eerst doorrijden?",
+      "image": "assets/situations/sit-18-b21-voorrang-tegenliggers.jpg",
+      "options": [
+        "De tegenligger mag altijd eerst doorrijden.",
+        "Jij mag als eerste doorrijden; tegenliggers moeten voorrang verlenen.",
+        "De grootste auto mag altijd eerst rijden."
+      ],
+      "correctIndex": 1,
+      "explanation": "Verkeersbord B21 geeft aan dat bestuurders bij een smalle doorgang voorrang hebben ten opzichte van tegemoetkomende bestuurders (art. 67.4).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-67"
+    },
+    {
+      "id": "sit-19-f19-beperkt-eenrichting",
+      "type": "situation",
+      "category": "aanwijzing",
+      "question": "Je fietst naar deze straat met bord F19 en onderbord M2 (fiets met pijlen). Wat betekent dit?",
+      "image": "assets/situations/sit-19-f19-beperkt-eenrichting.jpg",
+      "options": [
+        "Fietsers mogen deze eenrichtingsstraat in beide richtingen inrijden (beperkt eenrichtingsverkeer).",
+        "Fietsers mogen hier alleen tussen 9u en 17u rijden.",
+        "Fietsers moeten verplicht afstappen en te voet verdergaan."
+      ],
+      "correctIndex": 0,
+      "explanation": "Bord F19 met onderbord M2 geeft een straat met beperkt eenrichtingsverkeer (SUL) aan: gemotoriseerd verkeer mag maar in één richting rijden, maar fietsers mogen in beide richtingen rijden (art. 65.2 & art. 71).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-65"
+    },
+    {
+      "id": "sit-20-f4a-zone-30",
+      "type": "situation",
+      "category": "aanwijzing",
+      "question": "Je rijdt voorbij verkeersbord F4a (zone 30). Welke snelheidslimiet geldt vanaf hier?",
+      "image": "assets/situations/sit-20-f4a-zone-30.jpg",
+      "options": [
+        "De maximumsnelheid is 50 km/u, behalve in schoolstraten.",
+        "De maximumsnelheid is 30 km/u in de gehele zone tot het zone-eindebord.",
+        "De snelheidsbeperking geldt enkel tijdens de schooluren."
+      ],
+      "correctIndex": 1,
+      "explanation": "Verkeersbord F4a geeft het begin aan van een zone waarin de snelheid overal beperkt is tot maximaal 30 km/u, totdat bord F4b het einde van de zone aangeeft (art. 71 & art. 22quater).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
     }
   ]
 }

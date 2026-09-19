@@ -30,7 +30,7 @@ core_assets = [
 all_assets = core_assets + signs + situations
 
 sw_template = f"""// Service Worker for Verkeersregels Quiz PWA
-const CACHE_NAME = "verkeersquiz-v2.0.2";
+const CACHE_NAME = "verkeersquiz-v2.0.3";
 
 const PRECACHE_ASSETS = [
 {chr(10).join(f'  "{a}",' for a in all_assets)}
