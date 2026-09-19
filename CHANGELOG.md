@@ -14,7 +14,9 @@ A summarized overview of all changes, per version of this project.
 ---
 
 ## v2.0.1-pre
+- FrontEnd: Tweepanelen-layout op desktop en scrollvrije mobiele weergave met zwevende actieknop en compacte wetslink geïmplementeerd.
 - FrontEnd: Progressieve webapp geïnstalleerd met 100 procent offline ondersteuning, rotonde-pictogrammen en lokale foutenwachtrij.
+- Test: Geautomatiseerde lay-outtests toegevoegd voor tweepanelenstructuur, mobiele optieverberging en compacte wetslink.
 - Test: Geautomatiseerde verificatietesten toegevoegd voor webapp-manifest, pictogramgroottes en service worker-voorlaadbestanden.
 
 ## v2.0.0 [2026-09-18]

@@ -24,11 +24,14 @@ Functional and technical requirements for the Verkeersregels Quiz application.
   - Features an interactive version pill badge displaying the current release and opening a changelog modal.
   - Explains the in-quiz question feedback mechanism with a visual hint.
 - **In-Round Quiz Experience**:
+  - Employs a 2-column split layout on desktop (`max-width: 960px`) separating question media on the left and stationary options on the right with zero layout jump.
   - Presents 20 randomized questions per round sampled from the verified question pool.
   - Shows real-time progress indicators (`Vraag X/20`) and running score count.
   - Displays amendment year badges (e.g. `Sinds 2021`) for questions covering recently updated traffic rules.
   - Renders official SVG sign illustrations for sign recognition and rule-related sign questions.
-  - Delivers immediate color-coded feedback upon option selection with legal explanations and authoritative reference links.
+  - Delivers immediate color-coded feedback upon option selection with legal explanations and compact `Wegcode ↗` pill reference links.
+  - On mobile, automatically collapses unchosen wrong options to ensure zero vertical scrolling across standard phone viewports.
+  - Features an ergonomic circular floating action button (FAB `→`) on mobile and right-aligned arrow action on desktop.
   - Offers a dedicated "Meld fout" button on every question allowing users to report inaccuracies.
 - **Results and Review**:
   - Displays total score, accuracy percentage, and total elapsed duration (minutes and seconds).
