@@ -48,14 +48,17 @@ class TestUXLayout(unittest.TestCase):
         self.assertIn("updateNextButtonText", js, "app.js must define updateNextButtonText")
 
     def test_paired_result_badges_and_pill_sizing(self) -> None:
-        """Validates that since badges and result badges share sizing and are paired in result cards."""
+        """Validates that since badges remain with question on desktop and pair on mobile."""
         self.assertTrue(JS_PATH.exists(), "app.js must exist")
         self.assertTrue(CSS_PATH.exists(), "style.css must exist")
         js = JS_PATH.read_text(encoding="utf-8")
         css = CSS_PATH.read_text(encoding="utf-8")
 
+        self.assertIn("badge-since-desktop", js, "app.js must render desktop since badge in questionCell")
+        self.assertIn("badge-since-mobile", js, "app.js must render mobile since badge in showResult")
+        self.assertIn(".badge-since-desktop", css, "style.css must define .badge-since-desktop")
+        self.assertIn(".badge-since-mobile", css, "style.css must define .badge-since-mobile")
         self.assertIn("result-badges-wrap", js, "app.js must wrap result badges in result-badges-wrap")
-        self.assertIn("${sinceBadgeHtml}${resultBadgeHtml}", js, "app.js must place since badge before result badge")
         self.assertIn(".result-badges-wrap", css, "style.css must declare .result-badges-wrap")
         self.assertIn("padding-right: 155px", css, "style.css must reserve padding for paired badges on mobile")
 

@@ -14,7 +14,7 @@ A summarized overview of all changes, per version of this project.
 ---
 
 ## v2.0.1-pre
-- FrontEnd: Wetswijzigingslabels geharmoniseerd qua typografie en gekoppeld links van de resultaatlabels op het resultatenoverzicht.
+- FrontEnd: Wetswijzigingslabels geharmoniseerd en mobiel gekoppeld aan het resultaatlabel terwijl ze op desktop bij de vraag blijven.
 - Inhoud: Tien praktijkvragen met foto's van verkeerssituaties toegevoegd inclusief ondersteuning voor filteren via queryparameters.
 - FrontEnd: Vraagtype-filter toegevoegd met visuele startmeldingen en responsieve fotoweergave voor praktijksituaties.
 - FrontEnd: Tweepanelen-layout op desktop en scrollvrije mobiele weergave met zwevende actieknop en compacte wetslink geïmplementeerd.

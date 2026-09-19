@@ -271,6 +271,14 @@ button {
   white-space: nowrap;
 }
 
+.badge-since-desktop {
+  display: inline-flex;
+}
+
+.badge-since-mobile {
+  display: none;
+}
+
 .badge-amber,
 .badge-since-amber {
   background-color: #fef3c7;
@@ -623,6 +631,8 @@ button {
     padding: 0;
   }
   #result-table .col-result::before { display: none; }
+  .badge-since-desktop { display: none !important; }
+  .badge-since-mobile { display: inline-flex !important; }
   #result-table td {
     border: none;
     padding: 3px 0;

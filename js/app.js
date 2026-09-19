@@ -463,8 +463,14 @@ function optionCell(question, index) {
 }
 
 function questionCell(question) {
+  const badgeInfo = getSinceBadge(question.since);
+  const badgeHtml = badgeInfo ? `<span class="badge-since-desktop ${badgeInfo.className}">${badgeInfo.text}</span>` : "";
   const imgUrl = question.image || question.sign;
   const signImg = imgUrl ? `<img src="${imgUrl}" alt="${question.image ? "Situatie" : "Bord"}" class="table-thumb">` : "";
+
+  if (badgeInfo) {
+    return `<div class="table-question-wrap">${badgeHtml}<div>${signImg}${question.question}</div></div>`;
+  }
   return signImg ? `${signImg}${question.question}` : question.question;
 }
 
@@ -507,14 +513,14 @@ function showResult() {
     tr.className = a.correct ? "correct-row" : "wrong-row";
     const userAnsLabel = a.correct ? "Jouw Juiste Antwoord" : "Jouw antwoord";
     const badgeInfo = getSinceBadge(a.since);
-    const sinceBadgeHtml = badgeInfo ? `<span class="${badgeInfo.className}">${badgeInfo.text}</span>` : "";
+    const sinceBadgeMobileHtml = badgeInfo ? `<span class="badge-since-mobile ${badgeInfo.className}">${badgeInfo.text}</span>` : "";
     const resultBadgeHtml = `<span class="badge-result ${a.correct ? "badge-result-correct" : "badge-result-wrong"}">${a.correct ? "Juist" : "Fout"}</span>`;
     tr.innerHTML = `
       <td class="col-num" data-label="Vraag nr.">${i + 1}</td>
       <td class="col-question" data-label="Vraag Nr. ${i + 1}">${questionCell(a)}</td>
       <td class="col-user-ans" data-label="${userAnsLabel}">${optionCell(a, a.chosenIndex)}</td>
       <td class="col-correct-ans" data-label="Juist antwoord">${optionCell(a, a.correctIndex)}</td>
-      <td class="col-result"><div class="result-badges-wrap">${sinceBadgeHtml}${resultBadgeHtml}</div></td>
+      <td class="col-result"><div class="result-badges-wrap">${sinceBadgeMobileHtml}${resultBadgeHtml}</div></td>
     `;
     el.resultTableBody.appendChild(tr);
   });
