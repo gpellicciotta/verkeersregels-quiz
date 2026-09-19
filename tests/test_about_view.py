@@ -60,12 +60,18 @@ class TestAboutView(unittest.TestCase):
         self.assertIn('Wikimedia Commons', html, "About screen must reference Wikimedia Commons")
         self.assertIn('class="about-copyright"', html, "About screen must define about-copyright")
 
+        # Sources card must be presented before version history card
+        sources_pos = html.index('class="about-sources-card"')
+        version_pos = html.index('class="about-version-card"')
+        self.assertLess(sources_pos, version_pos, "Gebruikte bronnen card must precede Versiegeschiedenis card")
+
     def test_css_contains_about_and_start_meta_styles(self) -> None:
         """Validates that style.css defines layout rules for the start meta row, tooltips, and About view."""
         self.assertTrue(CSS_PATH.exists(), "style.css must exist")
         css = CSS_PATH.read_text(encoding="utf-8")
 
         self.assertIn(".start-title", css, "style.css must define .start-title")
+        self.assertIn(".start-bottom-meta", css, "style.css must define .start-bottom-meta")
         self.assertIn(".start-divider", css, "style.css must define .start-divider")
         self.assertIn(".start-meta-bar", css, "style.css must define .start-meta-bar")
         self.assertIn(".start-meta-item", css, "style.css must define .start-meta-item")
@@ -86,6 +92,8 @@ class TestAboutView(unittest.TestCase):
         self.assertIn('btnAboutBack: document.getElementById("btn-about-back")', js, "app.js must register btnAboutBack")
         self.assertIn('aboutChangelogBody: document.getElementById("about-changelog-body")', js, "app.js must register aboutChangelogBody")
         self.assertIn('aboutVersionTag: document.getElementById("about-version-tag")', js, "app.js must register aboutVersionTag")
+        self.assertIn('quizModeDesc: document.getElementById("quiz-mode-desc")', js, "app.js must register quizModeDesc")
+        self.assertIn('el.quizModeDesc.textContent =', js, "app.js must update quizModeDesc dynamically")
         self.assertIn('showScreen("about")', js, "app.js must support showing about screen")
         self.assertIn('showScreen("start")', js, "app.js must support returning to start screen")
 

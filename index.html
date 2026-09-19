@@ -34,7 +34,7 @@
           <input type="radio" name="start-mode" id="radio-mode-quiz" value="quiz" checked>
           <div class="start-mode-info">
             <span class="start-mode-title">Theoriequiz</span>
-            <span class="start-mode-desc">20 oefenvragen over regels en borden</span>
+            <span class="start-mode-desc" id="quiz-mode-desc">20 oefenvragen over regels en borden</span>
           </div>
         </label>
         <label class="start-mode-card" id="mode-card-carousel">
@@ -75,43 +75,45 @@
     </div>
     <p id="start-error" class="error hidden"></p>
 
-    <!-- Vertical whitespace and subtle divider line -->
-    <hr class="start-divider">
+    <!-- Bottom section: subtle divider line, 3 icons with tooltips, and copyright -->
+    <div class="start-bottom-meta">
+      <hr class="start-divider">
 
-    <!-- Three icons with tooltips: 2 hint icons + 1 Info/About button -->
-    <div class="start-meta-bar" role="region" aria-label="Informatie en navigatie">
-      <span class="start-meta-item start-meta-hint" tabindex="0" role="img"
-            aria-label="Toelichting wetsartikel: bij elke vraag vind je via dit toelichtingsicoon direct het bijbehorende wetsartikel in de Wegcode"
-            data-tooltip="Bij elke vraag vind je via dit toelichtingsicoon direct het bijbehorende wetsartikel">
-        <svg class="start-meta-svg" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-          <polyline points="15 3 21 3 21 9"></polyline>
-          <line x1="10" y1="14" x2="21" y2="3"></line>
-        </svg>
-      </span>
+      <!-- Three icons with tooltips: 2 hint icons + 1 Info/About button -->
+      <div class="start-meta-bar" role="region" aria-label="Informatie en navigatie">
+        <span class="start-meta-item start-meta-hint" tabindex="0" role="img"
+              aria-label="Toelichting wetsartikel: bij elke vraag vind je via dit toelichtingsicoon direct het bijbehorende wetsartikel in de Wegcode"
+              data-tooltip="Bij elke vraag vind je via dit toelichtingsicoon direct het bijbehorende wetsartikel">
+          <svg class="start-meta-svg" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+          </svg>
+        </span>
 
-      <span class="start-meta-item start-meta-hint" tabindex="0" role="img"
-            aria-label="Fout melden: zie je een onjuistheid of onduidelijkheid, klik dan tijdens de quiz op dit icoon om dit door te geven"
-            data-tooltip="Zie je een fout of onduidelijkheid? Klik tijdens de quiz op dit icoon om dit door te geven">
-        <svg class="start-meta-svg" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
-          <line x1="4" y1="22" x2="4" y2="15"></line>
-        </svg>
-      </span>
+        <span class="start-meta-item start-meta-hint" tabindex="0" role="img"
+              aria-label="Fout melden: zie je een onjuistheid of onduidelijkheid, klik dan tijdens de quiz op dit icoon om dit door te geven"
+              data-tooltip="Zie je een fout of onduidelijkheid? Klik tijdens de quiz op dit icoon om dit door te geven">
+          <svg class="start-meta-svg" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
+            <line x1="4" y1="22" x2="4" y2="15"></line>
+          </svg>
+        </span>
 
-      <button type="button" id="btn-about" class="start-meta-item start-about-btn"
-              aria-label="Over Verkeersregels Quiz: versie, release notes en bronnen"
-              data-tooltip="Over deze app (versie, release notes &amp; bronnen)">
-        <svg class="start-meta-svg" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="12" cy="12" r="10"></circle>
-          <line x1="12" y1="16" x2="12" y2="12"></line>
-          <line x1="12" y1="8" x2="12.01" y2="8"></line>
-        </svg>
-      </button>
+        <button type="button" id="btn-about" class="start-meta-item start-about-btn"
+                aria-label="Over Verkeersregels Quiz: versie, release notes en bronnen"
+                data-tooltip="Over deze app (versie, release notes &amp; bronnen)">
+          <svg class="start-meta-svg" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="16" x2="12" y2="12"></line>
+            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Subtle copyright notice -->
+      <p class="start-copyright">Copyright &copy; Giovanni Pellicciotta</p>
     </div>
-
-    <!-- Subtle copyright notice -->
-    <p class="start-copyright">Copyright &copy; Giovanni Pellicciotta</p>
   </section>
 
   <!-- About screen: full-window view replacing the window -->
@@ -128,17 +130,6 @@
     </div>
 
     <div class="about-content">
-      <div class="about-version-card">
-        <div class="about-version-header">
-          <span class="about-version-label">App-versie</span>
-          <span id="about-version-tag" class="about-version-tag">v2.0.0</span>
-        </div>
-        <h2 class="about-section-heading">Versiegeschiedenis &amp; Release Notes</h2>
-        <div id="about-changelog-body" class="about-changelog-body">
-          <p class="changelog-loading">Versiegeschiedenis laden...</p>
-        </div>
-      </div>
-
       <div class="about-sources-card">
         <h2 class="about-section-heading">Gebruikte bronnen &amp; wetgeving</h2>
         <ul class="about-sources-list">
@@ -179,6 +170,17 @@
         <p class="start-legal-hint">
           Bij elke vraag in de theoriequiz vind je via het toelichtingsicoon ↗ direct het bijbehorende wetsartikel.
         </p>
+      </div>
+
+      <div class="about-version-card">
+        <div class="about-version-header">
+          <span class="about-version-label">App-versie</span>
+          <span id="about-version-tag" class="about-version-tag">v2.0.0</span>
+        </div>
+        <h2 class="about-section-heading">Versiegeschiedenis &amp; Release Notes</h2>
+        <div id="about-changelog-body" class="about-changelog-body">
+          <p class="changelog-loading">Versiegeschiedenis laden...</p>
+        </div>
       </div>
 
       <footer class="about-footer">
