@@ -15,7 +15,7 @@ An overview of all tasks and their planning.
 
 ## Next Milestone
 
-- [ ] T0044 Find and integrate 20 additional real traffic situation photo questions with updated service worker caching and tests.
+- [~] T0044 [owner: @gemini] Find and integrate 20 additional real traffic situation photo questions with updated service worker caching and tests.
 
 ---
 
