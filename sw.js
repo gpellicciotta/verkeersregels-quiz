@@ -1,5 +1,5 @@
 // Service Worker for Verkeersregels Quiz PWA
-const CACHE_NAME = "verkeersquiz-v3.1.0-pre";
+const CACHE_NAME = "verkeersquiz-v3.1.0";
 
 const PRECACHE_ASSETS = [
   "./",
