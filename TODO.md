@@ -9,13 +9,13 @@ An overview of all tasks and their planning.
 > Owner: `[owner: @name]` shown only when active/blocked/needs-review.
 > Dependencies: `[needs: Tnnnn]` shown only when unresolved.
 
-**Next ID:** 0042
+**Next ID:** 0043
 
 ---
 
 ## Next Milestone
 
-*(Currently no tasks)*
+- [~] T0042 [owner: @antigravity] Simplify start screen layout and introduce mode switch and configuration modals.
 
 ---
 
