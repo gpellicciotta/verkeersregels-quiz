@@ -217,6 +217,83 @@ function getTypeFilter() {
   return null;
 }
 
+function getThemeParam() {
+  if (typeof window === "undefined" || !window.location) return "system";
+  const params = new URLSearchParams(window.location.search);
+  const raw = params.get("theme");
+  if (!raw) return "system";
+  const val = raw.trim().toLowerCase();
+  if (val === "dark") return "dark";
+  if (val === "light") return "light";
+  if (val === "system") return "system";
+  return "system";
+}
+
+function getThemeColorParam() {
+  if (typeof window === "undefined" || !window.location) return "blue";
+  const params = new URLSearchParams(window.location.search);
+  const raw = params.get("theme-color") || params.get("themecolor") || params.get("theme_color");
+  if (!raw) return "blue";
+  const val = raw.trim().toLowerCase();
+  if (val === "yellow" || val === "geel") return "yellow";
+  if (val === "red" || val === "rood") return "red";
+  if (val === "blue" || val === "blauw") return "blue";
+  return "blue";
+}
+
+function applyTheme(themeSetting, themeColor) {
+  if (typeof document === "undefined" || !document.documentElement) return;
+  const setting = (themeSetting || getThemeParam() || "system").toLowerCase();
+  const color = (themeColor || getThemeColorParam() || "blue").toLowerCase();
+
+  let resolvedTheme = setting;
+  if (setting === "system") {
+    const prefersDark = typeof window !== "undefined" && window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+    resolvedTheme = prefersDark ? "dark" : "light";
+  }
+
+  document.documentElement.setAttribute("data-theme", resolvedTheme);
+  document.documentElement.setAttribute("data-theme-setting", setting);
+  document.documentElement.setAttribute("data-theme-color", color);
+
+  const metaThemeColor = document.querySelector('meta[name="theme-color"]');
+  if (metaThemeColor) {
+    if (resolvedTheme === "dark") {
+      metaThemeColor.setAttribute("content", "#0f172a");
+    } else {
+      if (color === "yellow") metaThemeColor.setAttribute("content", "#ca8a04");
+      else if (color === "red") metaThemeColor.setAttribute("content", "#dc2626");
+      else metaThemeColor.setAttribute("content", "#1a56db");
+    }
+  }
+}
+
+let themeMediaQueryListenerAttached = false;
+
+function initTheme() {
+  const setting = getThemeParam();
+  const color = getThemeColorParam();
+  applyTheme(setting, color);
+
+  if (!themeMediaQueryListenerAttached && typeof window !== "undefined" && window.matchMedia) {
+    const mql = window.matchMedia("(prefers-color-scheme: dark)");
+    const handler = () => {
+      const currentSetting = (document.documentElement && document.documentElement.getAttribute("data-theme-setting")) || getThemeParam();
+      if (currentSetting === "system") {
+        const currentColor = (document.documentElement && document.documentElement.getAttribute("data-theme-color")) || getThemeColorParam();
+        applyTheme("system", currentColor);
+      }
+    };
+    if (mql.addEventListener) {
+      mql.addEventListener("change", handler);
+      themeMediaQueryListenerAttached = true;
+    } else if (mql.addListener) {
+      mql.addListener(handler);
+      themeMediaQueryListenerAttached = true;
+    }
+  }
+}
+
 function getNameParam() {
   if (typeof window === "undefined" || !window.location) return null;
   const params = new URLSearchParams(window.location.search);
@@ -1589,6 +1666,10 @@ if (typeof window !== "undefined") {
   window.closeConfigModal = closeConfigModal;
   window.saveConfig = saveConfig;
   window.getNameParam = getNameParam;
+  window.getThemeParam = getThemeParam;
+  window.getThemeColorParam = getThemeColorParam;
+  window.applyTheme = applyTheme;
+  window.initTheme = initTheme;
 }
 
 function checkAutoStart() {
@@ -1605,6 +1686,14 @@ function checkAutoStart() {
   }
   if (params.get("modal") === "config" || params.get("config") === "1") {
     openConfigModal();
+    return;
+  }
+  if (!allQuestions || allQuestions.length === 0) {
+    if (params.get("view") === "about" || params.get("screen") === "about" || params.has("about")) {
+      showScreen("about");
+    } else if (params.get("modal") === "changelog" || params.get("autotest") === "changelog" || params.get("changelog") === "1") {
+      openChangelogModal();
+    }
     return;
   }
   const carouselParams = getCarouselParams();
@@ -1718,6 +1807,7 @@ function registerServiceWorker() {
 }
 
 registerServiceWorker();
+initTheme();
 updateOnlineStatus();
 setStartMode(state.currentMode);
 updateStartScreenNotice();

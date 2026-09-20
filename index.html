@@ -15,6 +15,24 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="Verkeersquiz">
   <link rel="stylesheet" href="css/style.css">
+  <script>
+    (function() {
+      try {
+        var p = new URLSearchParams(window.location.search);
+        var t = (p.get("theme") || "").trim().toLowerCase();
+        var c = (p.get("theme-color") || p.get("themecolor") || p.get("theme_color") || "").trim().toLowerCase();
+        var color = (c === "yellow" || c === "geel") ? "yellow" : ((c === "red" || c === "rood") ? "red" : "blue");
+        var setting = (t === "dark" || t === "light" || t === "system") ? t : "system";
+        var resolved = setting;
+        if (setting === "system") {
+          resolved = (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) ? "dark" : "light";
+        }
+        document.documentElement.setAttribute("data-theme", resolved);
+        document.documentElement.setAttribute("data-theme-setting", setting);
+        document.documentElement.setAttribute("data-theme-color", color);
+      } catch (e) {}
+    })();
+  </script>
   <script src="js/app.js" defer></script>
 </head>
 <body>
