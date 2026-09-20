@@ -1,5 +1,4 @@
 const CONFIG = {
-  VERSION: "v3.0.0",
   QUESTIONS_PER_ROUND: 20,
   // If null, no results will be propagated:
   SHEET_WEBAPP_URL: "https://script.google.com/macros/s/AKfycbyYyBMb8KTD13MrJhOpmZIYKHCbuGD5PyiL01tdzcWNRle6juEB6Qgap1yYfmmJJ2lE/exec",
@@ -319,7 +318,7 @@ function updateStartScreenNotice() {
   }
 
   if (el.startDesc) {
-    el.startDesc.textContent = "Oefen voor je theoretisch rijexamen over verkeersregels en borden.";
+    el.startDesc.textContent = "Oefen de verkeersregels en -borden.";
   }
 
   if (el.filterNotice) {
@@ -895,6 +894,11 @@ function renderChangelogMarkdown(md) {
   return html;
 }
 
+function extractVersionFromChangelog(md) {
+  const match = md.match(/^##\s+([^\s\[]+)/m);
+  return match ? match[1] : "onbekend";
+}
+
 async function loadChangelog() {
   if (changelogHtmlCache) {
     if (el.changelogBody) el.changelogBody.innerHTML = changelogHtmlCache;
@@ -907,11 +911,16 @@ async function loadChangelog() {
     const res = await fetch("CHANGELOG.md");
     if (!res.ok) throw new Error("Kon CHANGELOG.md niet laden: " + res.status);
     const md = await res.text();
+    const version = extractVersionFromChangelog(md);
+    if (el.aboutVersionTag) el.aboutVersionTag.textContent = version;
+    if (el.btnVersion) el.btnVersion.textContent = version;
     changelogHtmlCache = renderChangelogMarkdown(md);
     if (el.changelogBody) el.changelogBody.innerHTML = changelogHtmlCache;
     if (el.aboutChangelogBody) el.aboutChangelogBody.innerHTML = changelogHtmlCache;
   } catch (err) {
     console.warn("Changelog laden mislukt:", err);
+    if (el.aboutVersionTag) el.aboutVersionTag.textContent = "onbekend";
+    if (el.btnVersion) el.btnVersion.textContent = "onbekend";
     const errHtml = `
       <p class="error">Kon versiegeschiedenis niet laden.</p>
       <p class="modal-desc">Bekijk <a href="CHANGELOG.md" target="_blank" rel="noopener noreferrer">CHANGELOG.md</a> direct.</p>
@@ -986,7 +995,6 @@ el.modalReport.addEventListener("click", (e) => {
 });
 
 if (el.btnVersion) {
-  el.btnVersion.textContent = CONFIG.VERSION;
   el.btnVersion.addEventListener("click", openChangelogModal);
 }
 if (el.btnChangelogClose) el.btnChangelogClose.addEventListener("click", closeChangelogModal);
@@ -1006,9 +1014,6 @@ if (el.btnAboutBack) {
   el.btnAboutBack.addEventListener("click", () => {
     showScreen("start");
   });
-}
-if (el.aboutVersionTag) {
-  el.aboutVersionTag.textContent = CONFIG.VERSION;
 }
 
 function formatCategoryName(cat) {
@@ -1346,8 +1351,8 @@ function setStartMode(mode) {
 
   // Update mode toggle button icon and tooltip
   if (el.btnModeToggle) {
-    const tooltipText = isCarousel ? "Wissel naar theoriequiz" : "Wissel naar borden carrousel";
-    const ariaText = isCarousel ? "Wissel naar Theoriequiz" : "Wissel naar Verkeersborden Carrousel";
+    const tooltipText = isCarousel ? "Wissel naar quiz" : "Wissel naar carrousel";
+    const ariaText = isCarousel ? "Wissel naar quiz" : "Wissel naar carrousel";
     el.btnModeToggle.setAttribute("data-tooltip", tooltipText);
     el.btnModeToggle.setAttribute("aria-label", ariaText);
   }
@@ -1699,6 +1704,7 @@ function registerServiceWorker() {
 registerServiceWorker();
 updateOnlineStatus();
 updateStartScreenNotice();
+loadChangelog();
 checkAutoStart();
 
 loadQuestions()

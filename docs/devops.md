@@ -109,13 +109,13 @@ python scripts/deploy-to-production.py deploy --dry-run
 This verifies:
 
 1. The git working tree has no uncommitted changes (`git status --porcelain`).
-2. The current version in `js/app.js` is a finalized release (does not end with `-pre`).
+2. The current version in `CHANGELOG.md` is a finalized release (does not end with `-pre`).
 3. All automated unit tests in `tests/` pass cleanly.
 4. All project documentation passes markdown linting.
 
 ### Production Release Procedure
 
-1. Finalize the active version string in `js/app.js`, `index.html`, and `CHANGELOG.md`.
+1. Finalize the active version heading in `CHANGELOG.md`.
 2. Regenerate service worker precache assets via `python scripts/generate-sw.py generate`.
 3. Run automated tests and linters locally.
 4. Commit all changes to the task branch and merge into `main`.

@@ -9,7 +9,7 @@ An overview of all tasks and their planning.
 > Owner: `[owner: @name]` shown only when active/blocked/needs-review.
 > Dependencies: `[needs: Tnnnn]` shown only when unresolved.
 
-**Next ID:** 0044
+**Next ID:** 0045
 
 ---
 
@@ -17,6 +17,7 @@ An overview of all tasks and their planning.
 
 - [ ] T0043 Add a name query parameter (aliases: n, naam) and when given, don't show the name input field in quiz mode, but just use the name given in the query parameter
 - [ ] T0040 Voeg een dark theme toe en pas automatisch aan aan de systeem-instelling of als query parameter ?theme=dark staat (andere opties: ?theme=light of ?theme=system)
+- [ ] T0044 Find and integrate 20 additional real traffic situation photo questions with updated service worker caching and tests.
 
 ---
 

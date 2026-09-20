@@ -2,7 +2,7 @@
   "id": "./index.html",
   "name": "Verkeersregels Quiz",
   "short_name": "Verkeersquiz",
-  "description": "Oefen voor je theoretisch rijexamen met officiële verkeersregels en verkeersborden.",
+  "description": "Oefen de officiële verkeersregels en verkeersborden.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",

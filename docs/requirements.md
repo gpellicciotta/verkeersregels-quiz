@@ -47,7 +47,7 @@ Functional and technical requirements for the Verkeersregels Quiz application.
   - Smooth progress bar indicator tracking slide interval.
 - **Dedicated About View**:
   - Full-window view accessible via the start screen Info button or `?view=about` URL parameter.
-  - Displays application version tag dynamically synchronized from configuration.
+  - Displays application version tag dynamically derived from `CHANGELOG.md`.
   - Highlights authoritative legal and educational sources (Wegcode, VSV, Vias, De Grote Verkeerstoets, Wikimedia Commons).
   - Fetches and formats full release notes and version history from `CHANGELOG.md`.
   - Details software license terms and provides an immediate return button to the start screen.

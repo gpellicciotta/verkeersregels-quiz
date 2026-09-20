@@ -27,12 +27,12 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 
 
 def get_project_version() -> str:
-    """Read the version from js/app.js so all scripts self-report consistently."""
+    """Read the active version from CHANGELOG.md so all scripts self-report consistently."""
     try:
-        app_js = REPO_ROOT / "js" / "app.js"
-        if app_js.exists():
-            text = app_js.read_text(encoding="utf-8")
-            m = re.search(r'VERSION:\s*"([^"]+)"', text)
+        changelog = REPO_ROOT / "CHANGELOG.md"
+        if changelog.exists():
+            text = changelog.read_text(encoding="utf-8")
+            m = re.search(r"^##\s+v?([0-9]+(?:\.[0-9]+)+(?:-[^\s\[]+)?|[^\s\[]+)", text, re.MULTILINE)
             if m:
                 v = m.group(1).strip()
                 return v[1:] if v.startswith("v") else v
