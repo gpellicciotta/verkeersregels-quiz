@@ -23,10 +23,14 @@ class TestAboutView(unittest.TestCase):
         self.assertIn('class="start-title"', html, "index.html must define start-title")
         self.assertIn('Verkeersregels Quiz', html, "index.html must contain quiz title")
 
-        # Side-by-side mode choices
-        self.assertIn('class="start-mode-selector"', html, "index.html must define start-mode-selector")
-        self.assertIn('id="mode-card-quiz"', html, "index.html must define quiz mode card")
-        self.assertIn('id="mode-card-carousel"', html, "index.html must define carousel mode card")
+        # Inline action row with name input and arrow start button
+        self.assertIn('class="start-action-row"', html, "index.html must define start-action-row")
+        self.assertIn('id="player-name"', html, "index.html must define player-name input")
+        self.assertIn('btn-start-arrow', html, "index.html must define btn-start-arrow")
+
+        # Five circle buttons in start meta bar
+        self.assertIn('id="btn-mode-toggle"', html, "index.html must define mode switch button")
+        self.assertIn('id="btn-config"', html, "index.html must define configuration button")
 
         # Start and install buttons
         self.assertIn('id="btn-start"', html, "index.html must define btn-start")

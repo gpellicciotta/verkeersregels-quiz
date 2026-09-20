@@ -15,7 +15,7 @@ A summarized overview of all changes, per version of this project.
 
 ## v3.0.1-pre
 
-*(Nog geen wijzigingen)*
+- FrontEnd: Startscherm geminimaliseerd met ronde actieknoppen, modusschakelaar, carrouselbediening en interactieve instellingendialogen.
 
 ## v3.0.0 [2026-09-19]
 - FrontEnd: Startscherm opgeruimd en specifieke About-weergave toegevoegd met versiegeschiedenis, release notes, bronvermeldingen en copyright.

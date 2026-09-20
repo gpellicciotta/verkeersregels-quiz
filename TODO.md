@@ -9,13 +9,14 @@ An overview of all tasks and their planning.
 > Owner: `[owner: @name]` shown only when active/blocked/needs-review.
 > Dependencies: `[needs: Tnnnn]` shown only when unresolved.
 
-**Next ID:** 0043
+**Next ID:** 0044
 
 ---
 
 ## Next Milestone
 
-- [~] T0042 [owner: @antigravity] Simplify start screen layout and introduce mode switch and configuration modals.
+- [ ] T0043 Add a name query parameter (aliases: n, naam) and when given, don't show the name input field in quiz mode, but just use the name given in the query parameter
+- [ ] T0040 Voeg een dark theme toe en pas automatisch aan aan de systeem-instelling of als query parameter ?theme=dark staat (andere opties: ?theme=light of ?theme=system)
 
 ---
 
@@ -23,4 +24,3 @@ An overview of all tasks and their planning.
 
 - [ ] T0001 Switch the quiz to the Code van de openbare weg when it replaces the Wegcode on 1 June 2027.
 - [ ] T0038 Voeg een manier toe om de resultaten met anderen te sharen
-- [ ] T0040 Voeg een dark theme toe en pas automatisch aan aan de systeem-instelling of als query parameter ?theme=dark staat (andere opties: ?theme=light of ?theme=system)

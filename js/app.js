@@ -10,6 +10,7 @@ const CONFIG = {
 let allQuestions = [];
 
 const state = {
+  currentMode: "quiz",
   playerName: "",
   pool: [],
   round: [],
@@ -17,6 +18,9 @@ const state = {
   answers: [],
   filterSince: null,
   filterType: null,
+  configCount: null,
+  configType: null,
+  configSince: null,
   startTime: null,
   endTime: null,
   durationSeconds: 0,
@@ -28,9 +32,27 @@ const el = {
   screenResult: document.getElementById("screen-result"),
   playerNameInput: document.getElementById("player-name"),
   btnStart: document.getElementById("btn-start"),
+  btnStartLabel: document.getElementById("btn-start-label"),
+  startTitle: document.getElementById("start-title"),
+  startActionRow: document.getElementById("start-action-row"),
   startError: document.getElementById("start-error"),
   startDesc: document.getElementById("start-desc"),
   filterNotice: document.getElementById("filter-notice"),
+  btnModeToggle: document.getElementById("btn-mode-toggle"),
+  btnConfig: document.getElementById("btn-config"),
+  modalConfig: document.getElementById("modal-config"),
+  modalConfigTitle: document.getElementById("modal-config-title"),
+  btnConfigClose: document.getElementById("btn-config-close"),
+  btnConfigSave: document.getElementById("btn-config-save"),
+  configSectionQuiz: document.getElementById("config-section-quiz"),
+  configSectionCarousel: document.getElementById("config-section-carousel"),
+  configQuizCount: document.getElementById("config-quiz-count"),
+  configQuizCountWarning: document.getElementById("config-quiz-count-warning"),
+  configQuizType: document.getElementById("config-quiz-type"),
+  configQuizSince: document.getElementById("config-quiz-since"),
+  configCarouselSince: document.getElementById("config-carousel-since"),
+  modeIconCarousel: document.querySelector(".mode-icon-carousel"),
+  modeIconQuiz: document.querySelector(".mode-icon-quiz"),
   quizProgress: document.getElementById("quiz-progress"),
   quizScore: document.getElementById("quiz-score"),
   quizBadgeWrap: document.getElementById("quiz-badge-wrap"),
@@ -47,6 +69,7 @@ const el = {
   btnPrint: document.getElementById("btn-print"),
   btnRestart: document.getElementById("btn-restart"),
   btnReportError: document.getElementById("btn-report-error"),
+  btnReportErrorMobile: document.getElementById("btn-report-error-mobile"),
   modalReport: document.getElementById("modal-report"),
   btnModalClose: document.getElementById("btn-modal-close"),
   btnModalCancel: document.getElementById("btn-modal-cancel"),
@@ -103,7 +126,8 @@ const carouselState = {
   isActive: false,
   items: [],
   currentIndex: 0,
-  delayMs: 5000,
+  delayMs: 8000,
+  filterSince: null,
   isPaused: false,
   animFrameId: null,
   slideStartTime: 0,
@@ -113,6 +137,7 @@ const carouselState = {
 function showScreen(name) {
   closeReportModal();
   closeChangelogModal();
+  closeConfigModal();
   el.screenStart.classList.toggle("hidden", name !== "start");
   el.screenQuiz.classList.toggle("hidden", name !== "quiz");
   el.screenResult.classList.toggle("hidden", name !== "result");
@@ -194,17 +219,27 @@ function getTypeFilter() {
 }
 
 function applyFilter() {
-  const filterSince = getSinceFilter();
-  const filterType = getTypeFilter();
+  const filterSince = state.configSince !== null && state.configSince !== undefined
+    ? state.configSince
+    : getSinceFilter();
+  const filterType = state.configType !== null && state.configType !== undefined
+    ? state.configType
+    : getTypeFilter();
   state.filterSince = filterSince;
   state.filterType = filterType;
 
   let pool = allQuestions.slice();
 
   if (filterSince !== null) {
-    pool = pool.filter(
-      (q) => typeof q.since === "number" && q.since >= filterSince
-    );
+    if (state.configSince !== null && state.configSince !== undefined) {
+      pool = pool.filter(
+        (q) => typeof q.since === "number" && q.since > filterSince
+      );
+    } else {
+      pool = pool.filter(
+        (q) => typeof q.since === "number" && q.since >= filterSince
+      );
+    }
   }
 
   if (filterType !== null) {
@@ -229,13 +264,49 @@ function getQuestionCountOverride() {
 }
 
 function getEffectiveQuestionCount() {
-  const desired = getQuestionCountOverride() || CONFIG.QUESTIONS_PER_ROUND;
+  let desired;
+  if (state.configCount === "all") {
+    desired = state.pool ? state.pool.length : allQuestions.length;
+  } else if (typeof state.configCount === "number" && state.configCount > 0) {
+    desired = state.configCount;
+  } else {
+    desired = getQuestionCountOverride() || CONFIG.QUESTIONS_PER_ROUND;
+  }
   const available = state.pool ? state.pool.length : allQuestions.length;
   return Math.min(desired, available);
 }
 
 function updateStartScreenNotice() {
-  const desired = getQuestionCountOverride() || CONFIG.QUESTIONS_PER_ROUND;
+  if (state.currentMode === "carousel") {
+    let signCount = allQuestions.filter((q) => Boolean(q.sign)).length;
+    if (carouselState.filterSince) {
+      signCount = allQuestions.filter(
+        (q) => Boolean(q.sign) && typeof q.since === "number" && q.since >= carouselState.filterSince
+      ).length;
+    }
+    const delaySec = carouselState.delayMs ? Math.round(carouselState.delayMs / 1000) : 8;
+    if (el.startDesc) {
+      if (carouselState.filterSince) {
+        el.startDesc.textContent = `Automatisch wisselende borden sinds ${carouselState.filterSince} met officiële uitleg (${signCount} borden).`;
+      } else {
+        el.startDesc.textContent = "Automatisch wisselende verkeersborden met officiële uitleg en wetgeving.";
+      }
+    }
+    if (el.filterNotice) {
+      el.filterNotice.classList.add("hidden");
+    }
+    if (el.startError) {
+      el.startError.classList.add("hidden");
+    }
+    if (el.btnStart) {
+      el.btnStart.disabled = false;
+    }
+    return;
+  }
+
+  const desired = (state.configCount === "all")
+    ? (state.pool ? state.pool.length : allQuestions.length)
+    : (typeof state.configCount === "number" && state.configCount > 0 ? state.configCount : (getQuestionCountOverride() || CONFIG.QUESTIONS_PER_ROUND));
   const available = state.pool ? state.pool.length : allQuestions.length;
   const effectiveCount = available > 0 ? Math.min(desired, available) : desired;
 
@@ -247,71 +318,24 @@ function updateStartScreenNotice() {
     el.quizProgress.textContent = `Vraag 1/${effectiveCount}`;
   }
 
-  const hasSince = state.filterSince !== null && state.filterSince !== undefined;
-  const hasType = Boolean(state.filterType);
+  if (el.startDesc) {
+    el.startDesc.textContent = "Oefen voor je theoretisch rijexamen over verkeersregels en borden.";
+  }
 
-  if (hasSince || hasType) {
-    const badgesHtml = [];
-    const descParts = [];
-
-    if (hasType) {
-      const typeLabels = {
-        situation: "Verkeerssituaties (foto's)",
-        recognize: "Verkeersborden herkennen",
-        identify: "Verkeersborden identificeren",
-        sign: "Alle verkeersborden",
-        rule: "Verkeersregels",
-      };
-      const label = typeLabels[state.filterType] || state.filterType;
-      if (label) {
-        badgesHtml.push(`<span class="badge-since badge-blue badge-since-blue">${label}</span>`);
-        descParts.push(`type: ${String(label).toLowerCase()}`);
-      }
-    }
-
-    if (hasSince) {
-      const badgeInfo = getSinceBadge(state.filterSince) || {
-        text: `Sinds ${state.filterSince}`,
-        className: "badge-since badge-amber badge-since-amber",
-      };
-      badgesHtml.push(`<span class="${badgeInfo.className}">${badgeInfo.text}</span>`);
-      descParts.push(`wetswijzigingen sinds ${state.filterSince}`);
-    }
-
-    const filterSummary = descParts.join(" en ");
-
-    if (available > 0) {
-      el.filterNotice.innerHTML = `
-        ${badgesHtml.join(" ")}
-        <span>Quiz gefilterd op <strong>${filterSummary}</strong> (${effectiveCount} ${effectiveCount === 1 ? "vraag" : "vragen"} in de selectie).</span>
-      `;
-      el.filterNotice.classList.remove("hidden");
-      if (el.startDesc) {
-        el.startDesc.textContent = `Oefen ${filterSummary}: ${effectiveCount} ${effectiveCount === 1 ? "vraag" : "vragen"} in deze selectie.`;
-      }
-      el.startError.classList.add("hidden");
-      el.btnStart.disabled = false;
-    } else {
-      el.filterNotice.innerHTML = `
-        ${badgesHtml.join(" ")}
-        <span>Geen vragen gevonden voor de filter <strong>${filterSummary}</strong>.</span>
-      `;
-      el.filterNotice.classList.remove("hidden");
-      if (el.startDesc) {
-        el.startDesc.textContent = `Oefen ${filterSummary}: 0 vragen in deze selectie.`;
-      }
-      el.startError.textContent = `Er zijn geen quizvragen beschikbaar voor ${filterSummary}.`;
-      el.startError.classList.remove("hidden");
-      el.btnStart.disabled = true;
-    }
-  } else {
+  if (el.filterNotice) {
     el.filterNotice.classList.add("hidden");
     el.filterNotice.innerHTML = "";
-    if (el.startDesc) {
-      el.startDesc.textContent = `Oefen voor je theoretisch rijexamen: ${effectiveCount} ${effectiveCount === 1 ? "vraag" : "vragen"} over verkeersborden en verkeersregels.`;
+  }
+
+  if (available > 0) {
+    if (el.startError) el.startError.classList.add("hidden");
+    if (el.btnStart) el.btnStart.disabled = false;
+  } else {
+    if (el.startError) {
+      el.startError.textContent = "Er zijn geen quizvragen beschikbaar voor de gekozen instellingen.";
+      el.startError.classList.remove("hidden");
     }
-    el.startError.classList.add("hidden");
-    el.btnStart.disabled = effectiveCount === 0;
+    if (el.btnStart) el.btnStart.disabled = true;
   }
 }
 
@@ -438,6 +462,9 @@ function selectOption(chosenIndex) {
   el.quizScore.textContent = `Score: ${state.answers.filter((a) => a.correct).length}/${state.answers.length}`;
   updateNextButtonText();
   el.btnNext.classList.remove("hidden");
+  if (el.btnNext) {
+    el.btnNext.focus();
+  }
 }
 
 function renderExplanation(q) {
@@ -918,11 +945,11 @@ function restart() {
 }
 
 el.btnStart.addEventListener("click", () => {
-  const isCarouselSelected = el.radioModeCarousel && el.radioModeCarousel.checked;
+  const isCarouselSelected = state.currentMode === "carousel" || (el.radioModeCarousel && el.radioModeCarousel.checked);
   if (isCarouselSelected) {
-    const rawDelay = el.carouselDelaySelect ? el.carouselDelaySelect.value : "5";
-    const delay = parseInt(rawDelay, 10) || 5;
-    startCarousel({ delay });
+    const rawDelay = el.carouselDelaySelect ? el.carouselDelaySelect.value : "8";
+    const delay = parseInt(rawDelay, 10) || (carouselState.delayMs ? carouselState.delayMs / 1000 : 8);
+    startCarousel({ delay, since: carouselState.filterSince });
     return;
   }
   if (!state.pool || state.pool.length === 0) {
@@ -932,10 +959,25 @@ el.btnStart.addEventListener("click", () => {
   }
   startQuiz();
 });
+
+if (el.playerNameInput) {
+  el.playerNameInput.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
+      e.preventDefault();
+      if (!state.pool || state.pool.length === 0) {
+        el.startError.textContent = "Vragen konden niet geladen worden. Herlaad de pagina.";
+        el.startError.classList.remove("hidden");
+        return;
+      }
+      startQuiz();
+    }
+  });
+}
 el.btnNext.addEventListener("click", nextQuestion);
 el.btnRestart.addEventListener("click", restart);
-el.btnPrint.addEventListener("click", () => window.print());
-el.btnReportError.addEventListener("click", openReportModal);
+if (el.btnPrint) el.btnPrint.addEventListener("click", () => window.print());
+if (el.btnReportError) el.btnReportError.addEventListener("click", openReportModal);
+if (el.btnReportErrorMobile) el.btnReportErrorMobile.addEventListener("click", openReportModal);
 el.btnModalClose.addEventListener("click", closeReportModal);
 el.btnModalCancel.addEventListener("click", closeReportModal);
 el.formReport.addEventListener("submit", handleReportSubmit);
@@ -998,7 +1040,7 @@ function getCarouselParams() {
 
   const rawDelay = params.get("delay") || params.get("d");
   const parsedDelay = parseInt(rawDelay, 10);
-  const delay = Number.isInteger(parsedDelay) && parsedDelay > 0 ? parsedDelay : 5;
+  const delay = Number.isInteger(parsedDelay) && parsedDelay > 0 ? parsedDelay : 8;
 
   return {
     active: isCarrousel,
@@ -1116,6 +1158,9 @@ function nextCarouselSign() {
   if (!carouselState.isPaused) {
     startCarouselTimer();
   }
+  if (el.btnCarouselToggle) {
+    el.btnCarouselToggle.focus();
+  }
 }
 
 function prevCarouselSign() {
@@ -1132,6 +1177,9 @@ function prevCarouselSign() {
   if (!carouselState.isPaused) {
     startCarouselTimer();
   }
+  if (el.btnCarouselToggle) {
+    el.btnCarouselToggle.focus();
+  }
 }
 
 function toggleCarouselPause(forceState) {
@@ -1147,8 +1195,14 @@ function toggleCarouselPause(forceState) {
       el.btnCarouselToggle.classList.add("is-paused");
       el.btnCarouselToggle.setAttribute("aria-label", "Hervatten");
       el.btnCarouselToggle.setAttribute("title", "Hervatten (Spatiebalk)");
+      el.btnCarouselToggle.setAttribute("data-tooltip", "Hervatten (Spatiebalk)");
+      const pauseSvg = el.btnCarouselToggle.querySelector(".icon-pause");
+      const playSvg = el.btnCarouselToggle.querySelector(".icon-play");
+      if (pauseSvg && playSvg) {
+        pauseSvg.classList.add("hidden");
+        playSvg.classList.remove("hidden");
+      }
     }
-    if (el.carouselToggleIcon) el.carouselToggleIcon.textContent = "▶";
     if (el.carouselToggleText) el.carouselToggleText.textContent = "Hervatten";
     if (el.carouselShortcutHint) {
       el.carouselShortcutHint.innerHTML = 'Tip: klik op de kaart of druk op <kbd class="kbd-key">Spatie</kbd> om te hervatten';
@@ -1159,21 +1213,38 @@ function toggleCarouselPause(forceState) {
       el.btnCarouselToggle.classList.remove("is-paused");
       el.btnCarouselToggle.setAttribute("aria-label", "Pauzeren");
       el.btnCarouselToggle.setAttribute("title", "Pauzeren (Spatiebalk)");
+      el.btnCarouselToggle.setAttribute("data-tooltip", "Pauzeren (Spatiebalk)");
+      const pauseSvg = el.btnCarouselToggle.querySelector(".icon-pause");
+      const playSvg = el.btnCarouselToggle.querySelector(".icon-play");
+      if (pauseSvg && playSvg) {
+        pauseSvg.classList.remove("hidden");
+        playSvg.classList.add("hidden");
+      }
     }
-    if (el.carouselToggleIcon) el.carouselToggleIcon.textContent = "⏸";
     if (el.carouselToggleText) el.carouselToggleText.textContent = "Pauzeren";
     if (el.carouselShortcutHint) {
       el.carouselShortcutHint.innerHTML = 'Tip: klik op de kaart of druk op <kbd class="kbd-key">Spatie</kbd> om te pauzeren';
     }
     startCarouselTimer();
   }
+  if (el.btnCarouselToggle) {
+    el.btnCarouselToggle.focus();
+  }
 }
 
 function startCarousel(options = {}) {
-  const signItems = allQuestions.filter((q) => Boolean(q.sign));
-  if (signItems.length === 0) return;
+  let signItems = allQuestions.filter((q) => Boolean(q.sign));
+  const sinceFilter = options.since !== undefined ? options.since : carouselState.filterSince;
+  if (sinceFilter !== null && sinceFilter !== undefined) {
+    signItems = signItems.filter(
+      (q) => typeof q.since === "number" && q.since >= sinceFilter
+    );
+  }
+  if (signItems.length === 0) {
+    signItems = allQuestions.filter((q) => Boolean(q.sign));
+  }
 
-  const delaySeconds = options.delay && options.delay > 0 ? options.delay : 5;
+  const delaySeconds = options.delay && options.delay > 0 ? options.delay : (carouselState.delayMs ? carouselState.delayMs / 1000 : 8);
   carouselState.isActive = true;
   carouselState.items = shuffle(signItems);
   carouselState.currentIndex = 0;
@@ -1194,8 +1265,14 @@ function startCarousel(options = {}) {
     el.btnCarouselToggle.classList.remove("is-paused");
     el.btnCarouselToggle.setAttribute("aria-label", "Pauzeren");
     el.btnCarouselToggle.setAttribute("title", "Pauzeren (Spatiebalk)");
+    el.btnCarouselToggle.setAttribute("data-tooltip", "Pauzeren (Spatiebalk)");
+    const pauseSvg = el.btnCarouselToggle.querySelector(".icon-pause");
+    const playSvg = el.btnCarouselToggle.querySelector(".icon-play");
+    if (pauseSvg && playSvg) {
+      pauseSvg.classList.remove("hidden");
+      playSvg.classList.add("hidden");
+    }
   }
-  if (el.carouselToggleIcon) el.carouselToggleIcon.textContent = "⏸";
   if (el.carouselToggleText) el.carouselToggleText.textContent = "Pauzeren";
   if (el.carouselShortcutHint) {
     el.carouselShortcutHint.innerHTML = 'Tip: klik op de kaart of druk op <kbd class="kbd-key">Spatie</kbd> om te pauzeren';
@@ -1204,6 +1281,9 @@ function startCarousel(options = {}) {
   showScreen("carousel");
   renderCarouselCard();
   startCarouselTimer();
+  if (el.btnCarouselToggle) {
+    el.btnCarouselToggle.focus();
+  }
 }
 
 function stopCarousel() {
@@ -1238,15 +1318,193 @@ if (el.btnCarouselExit) {
 
 function setStartMode(mode) {
   const isCarousel = mode === "carousel";
+  state.currentMode = isCarousel ? "carousel" : "quiz";
+
   if (el.radioModeQuiz) el.radioModeQuiz.checked = !isCarousel;
   if (el.radioModeCarousel) el.radioModeCarousel.checked = isCarousel;
   if (el.modeCardQuiz) el.modeCardQuiz.classList.toggle("is-selected", !isCarousel);
   if (el.modeCardCarousel) el.modeCardCarousel.classList.toggle("is-selected", isCarousel);
   if (el.quizStartFields) el.quizStartFields.classList.toggle("hidden", isCarousel);
   if (el.carouselStartFields) el.carouselStartFields.classList.toggle("hidden", !isCarousel);
-  if (el.btnStart) {
-    el.btnStart.textContent = isCarousel ? "Start carrousel" : "Start quiz";
+
+  // Update title: 1 heading line at top
+  if (el.startTitle) {
+    el.startTitle.textContent = isCarousel ? "Verkeersborden Carrousel" : "Verkeersregels Quiz";
   }
+
+  // Update explanation sentence: 1 line underneath
+  updateStartScreenNotice();
+
+  // Update start button label: smaller start button with arrow to right
+  if (el.btnStartLabel) {
+    el.btnStartLabel.textContent = isCarousel ? "Start carrousel" : "Start quiz";
+  }
+  if (el.btnStart) {
+    el.btnStart.setAttribute("aria-label", isCarousel ? "Start carrousel" : "Start quiz");
+    el.btnStart.setAttribute("title", isCarousel ? "Start carrousel" : "Start quiz");
+  }
+
+  // Update mode toggle button icon and tooltip
+  if (el.btnModeToggle) {
+    const tooltipText = isCarousel ? "Wissel naar theoriequiz" : "Wissel naar borden carrousel";
+    const ariaText = isCarousel ? "Wissel naar Theoriequiz" : "Wissel naar Verkeersborden Carrousel";
+    el.btnModeToggle.setAttribute("data-tooltip", tooltipText);
+    el.btnModeToggle.setAttribute("aria-label", ariaText);
+  }
+  if (el.modeIconCarousel) {
+    el.modeIconCarousel.classList.toggle("hidden", isCarousel);
+  }
+  if (el.modeIconQuiz) {
+    el.modeIconQuiz.classList.toggle("hidden", !isCarousel);
+  }
+}
+
+function openConfigModal() {
+  const isCarousel = state.currentMode === "carousel";
+  if (el.modalConfigTitle) {
+    el.modalConfigTitle.textContent = isCarousel
+      ? "Instellingen Carrousel"
+      : "Instellingen Quiz";
+  }
+  if (el.configSectionQuiz) {
+    el.configSectionQuiz.classList.toggle("hidden", isCarousel);
+  }
+  if (el.configSectionCarousel) {
+    el.configSectionCarousel.classList.toggle("hidden", !isCarousel);
+  }
+
+  // Prepopulate quiz settings
+  if (el.configQuizCount) {
+    if (state.configCount === "all") {
+      el.configQuizCount.value = "all";
+    } else if (state.configCount) {
+      el.configQuizCount.value = String(state.configCount);
+    } else {
+      const qOverride = getQuestionCountOverride();
+      el.configQuizCount.value = qOverride ? String(qOverride) : "20";
+    }
+  }
+  if (el.configQuizType) {
+    el.configQuizType.value = state.filterType || "";
+  }
+  if (el.configQuizSince) {
+    el.configQuizSince.value =
+      state.filterSince !== null && state.filterSince !== undefined
+        ? String(state.filterSince)
+        : "";
+  }
+
+  // Prepopulate carousel settings
+  if (el.carouselDelaySelect) {
+    const delaySec = carouselState.delayMs ? Math.round(carouselState.delayMs / 1000) : 8;
+    el.carouselDelaySelect.value = String(delaySec);
+  }
+  if (el.configCarouselSince) {
+    el.configCarouselSince.value = carouselState.filterSince
+      ? String(carouselState.filterSince)
+      : "";
+  }
+
+  if (el.modalConfig) {
+    el.modalConfig.classList.remove("hidden");
+    updateConfigQuizWarning();
+  }
+}
+
+function updateConfigQuizWarning() {
+  if (!el.configQuizCountWarning || !el.configQuizSince || !el.configQuizCount) return;
+  const sinceVal = el.configQuizSince.value ? parseInt(el.configQuizSince.value, 10) : null;
+  const countVal = el.configQuizCount.value;
+
+  if (sinceVal !== null && !isNaN(sinceVal)) {
+    const availableForSince = (allQuestions || []).filter(
+      (q) => typeof q.since === "number" && q.since > sinceVal
+    ).length;
+
+    const requestedCount =
+      countVal === "all" ? (allQuestions ? allQuestions.length : 304) : parseInt(countVal, 10);
+
+    if (requestedCount > availableForSince) {
+      el.configQuizCountWarning.textContent = `Er zijn slechts ${availableForSince} vragen mogelijk door de 'Ouderdom van de regels' keuze.`;
+      el.configQuizCountWarning.classList.remove("hidden");
+      return;
+    }
+  }
+
+  el.configQuizCountWarning.textContent = "";
+  el.configQuizCountWarning.classList.add("hidden");
+}
+
+function closeConfigModal() {
+  if (el.modalConfig) {
+    el.modalConfig.classList.add("hidden");
+  }
+}
+
+function saveConfig() {
+  if (state.currentMode === "carousel") {
+    if (el.carouselDelaySelect) {
+      const sec = parseInt(el.carouselDelaySelect.value, 10) || 8;
+      carouselState.delayMs = sec * 1000;
+    }
+    if (el.configCarouselSince) {
+      const sinceVal = el.configCarouselSince.value
+        ? parseInt(el.configCarouselSince.value, 10)
+        : null;
+      carouselState.filterSince = sinceVal;
+    }
+    updateStartScreenNotice();
+  } else {
+    if (el.configQuizCount) {
+      const val = el.configQuizCount.value;
+      state.configCount = val === "all" ? "all" : parseInt(val, 10);
+    }
+    if (el.configQuizType) {
+      state.configType = el.configQuizType.value || null;
+    }
+    if (el.configQuizSince) {
+      state.configSince = el.configQuizSince.value
+        ? parseInt(el.configQuizSince.value, 10)
+        : null;
+    }
+    applyFilter();
+  }
+  closeConfigModal();
+}
+
+if (el.configQuizSince) {
+  el.configQuizSince.addEventListener("change", updateConfigQuizWarning);
+}
+
+if (el.configQuizCount) {
+  el.configQuizCount.addEventListener("change", updateConfigQuizWarning);
+}
+
+if (el.btnModeToggle) {
+  el.btnModeToggle.addEventListener("click", () => {
+    const nextMode = state.currentMode === "carousel" ? "quiz" : "carousel";
+    setStartMode(nextMode);
+  });
+}
+
+if (el.btnConfig) {
+  el.btnConfig.addEventListener("click", openConfigModal);
+}
+
+if (el.btnConfigClose) {
+  el.btnConfigClose.addEventListener("click", closeConfigModal);
+}
+
+if (el.btnConfigSave) {
+  el.btnConfigSave.addEventListener("click", saveConfig);
+}
+
+if (el.modalConfig) {
+  el.modalConfig.addEventListener("click", (e) => {
+    if (e.target === el.modalConfig) {
+      closeConfigModal();
+    }
+  });
 }
 
 if (el.radioModeQuiz) {
@@ -1287,6 +1545,9 @@ document.addEventListener("keydown", (e) => {
   }
 
   if (e.key === "Escape") {
+    if (el.modalConfig && !el.modalConfig.classList.contains("hidden")) {
+      closeConfigModal();
+    }
     if (el.modalReport && !el.modalReport.classList.contains("hidden")) {
       closeReportModal();
     }
@@ -1304,12 +1565,25 @@ if (typeof window !== "undefined") {
   window.nextCarouselSign = nextCarouselSign;
   window.prevCarouselSign = prevCarouselSign;
   window.setStartMode = setStartMode;
+  window.openConfigModal = openConfigModal;
+  window.closeConfigModal = closeConfigModal;
+  window.saveConfig = saveConfig;
 }
 
 function checkAutoStart() {
   const params = new URLSearchParams(window.location.search);
+  if (params.get("install") === "1" || params.get("pwa") === "1") {
+    if (el.btnInstall) el.btnInstall.classList.remove("hidden");
+  }
   if (params.get("opt") === "carousel" || params.get("keuze") === "carrousel") {
     setStartMode("carousel");
+    if (params.get("modal") === "config" || params.get("config") === "1") {
+      openConfigModal();
+    }
+    return;
+  }
+  if (params.get("modal") === "config" || params.get("config") === "1") {
+    openConfigModal();
     return;
   }
   const carouselParams = getCarouselParams();
