@@ -13,6 +13,10 @@ A summarized overview of all changes, per version of this project.
 
 ---
 
+## v3.1.1-pre
+
+- FrontEnd: Ondersteuning toegevoegd voor `name`-, `naam`- en `n`-queryparameters om het naaminvoerveld over te slaan.
+
 ## v3.1.0 [2026-09-21]
 
 - FrontEnd: Startscherm geminimaliseerd met ronde actieknoppen, modusschakelaar, carrouselbediening en interactieve instellingendialogen.

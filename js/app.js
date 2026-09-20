@@ -217,6 +217,15 @@ function getTypeFilter() {
   return null;
 }
 
+function getNameParam() {
+  if (typeof window === "undefined" || !window.location) return null;
+  const params = new URLSearchParams(window.location.search);
+  const raw = params.get("name") || params.get("naam") || params.get("n");
+  if (!raw) return null;
+  const trimmed = raw.trim();
+  return trimmed.length > 0 ? trimmed : null;
+}
+
 function applyFilter() {
   const filterSince = state.configSince !== null && state.configSince !== undefined
     ? state.configSince
@@ -345,7 +354,8 @@ function startQuiz() {
     return;
   }
   state.startTime = Date.now();
-  state.playerName = el.playerNameInput.value.trim();
+  const nameParam = getNameParam();
+  state.playerName = nameParam || (el.playerNameInput ? el.playerNameInput.value.trim() : "");
   const effectiveCount = getEffectiveQuestionCount();
   state.round = shuffle(state.pool).slice(0, effectiveCount);
   state.currentIndex = 0;
@@ -947,10 +957,14 @@ function restart() {
   state.startTime = null;
   state.endTime = null;
   state.durationSeconds = 0;
-  el.playerNameInput.value = state.playerName;
+  const nameParam = getNameParam();
+  if (el.playerNameInput) {
+    el.playerNameInput.value = nameParam || state.playerName;
+  }
   updateNextButtonText();
   applyFilter();
   showScreen("start");
+  setStartMode(state.currentMode);
 }
 
 el.btnStart.addEventListener("click", () => {
@@ -1324,12 +1338,13 @@ if (el.btnCarouselExit) {
 function setStartMode(mode) {
   const isCarousel = mode === "carousel";
   state.currentMode = isCarousel ? "carousel" : "quiz";
+  const nameParam = getNameParam();
 
   if (el.radioModeQuiz) el.radioModeQuiz.checked = !isCarousel;
   if (el.radioModeCarousel) el.radioModeCarousel.checked = isCarousel;
   if (el.modeCardQuiz) el.modeCardQuiz.classList.toggle("is-selected", !isCarousel);
   if (el.modeCardCarousel) el.modeCardCarousel.classList.toggle("is-selected", isCarousel);
-  if (el.quizStartFields) el.quizStartFields.classList.toggle("hidden", isCarousel);
+  if (el.quizStartFields) el.quizStartFields.classList.toggle("hidden", isCarousel || Boolean(nameParam));
   if (el.carouselStartFields) el.carouselStartFields.classList.toggle("hidden", !isCarousel);
 
   // Update title: 1 heading line at top
@@ -1573,6 +1588,7 @@ if (typeof window !== "undefined") {
   window.openConfigModal = openConfigModal;
   window.closeConfigModal = closeConfigModal;
   window.saveConfig = saveConfig;
+  window.getNameParam = getNameParam;
 }
 
 function checkAutoStart() {
@@ -1703,6 +1719,7 @@ function registerServiceWorker() {
 
 registerServiceWorker();
 updateOnlineStatus();
+setStartMode(state.currentMode);
 updateStartScreenNotice();
 loadChangelog();
 checkAutoStart();
