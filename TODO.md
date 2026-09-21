@@ -20,7 +20,6 @@ An overview of all tasks and their planning.
 - [~] T0045 [owner: @claude] Localize user interface into French, German, and English with an extensible dictionary, and refine Dutch copy.
 - [ ] T0038 Add quiz result sharing via Web Share API and clipboard copy on the results screen.
 - [ ] T0056 Address generic, non-descriptive image alt text on sign-recognition question images.
-- [ ] A0055 Add `scope="col"` attributes to the result table headers in `index.html`.
 - [ ] T0057 The carrousel is currently re-using the "correct answer" to explain a road sign, but the answer doesn't always make sense without a question. We should be using a separate, clear explanation of the road-sign instead.
 - [ ] T0053 [needs: T0051 T0045 T0038 T0057 T0056] Release version 3.2.0 with modular architecture, service worker auto-updates, configuration persistence, and localization.
 
