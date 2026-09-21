@@ -8,7 +8,11 @@ from pathlib import Path
 WORKTREE_ROOT = Path(__file__).resolve().parent.parent
 INDEX_PATH = WORKTREE_ROOT / "index.html"
 CSS_PATH = WORKTREE_ROOT / "css" / "style.css"
-JS_PATH = WORKTREE_ROOT / "js" / "app.js"
+JS_DIR = WORKTREE_ROOT / "js"
+
+
+def _read_js() -> str:
+    return "\n".join(p.read_text(encoding="utf-8") for p in sorted(JS_DIR.glob("*.js")))
 
 
 class TestAboutView(unittest.TestCase):
@@ -87,17 +91,17 @@ class TestAboutView(unittest.TestCase):
         self.assertIn(".about-changelog-body", css, "style.css must define .about-changelog-body")
 
     def test_js_app_implements_about_screen_navigation(self) -> None:
-        """Validates that app.js manages screen-about lifecycle and event listeners."""
-        self.assertTrue(JS_PATH.exists(), "app.js must exist")
-        js = JS_PATH.read_text(encoding="utf-8")
+        """Validates that the JS modules manage screen-about lifecycle and event listeners."""
+        self.assertTrue(JS_DIR.exists(), "js directory must exist")
+        js = _read_js()
 
-        self.assertIn('screenAbout: document.getElementById("screen-about")', js, "app.js must register screenAbout")
-        self.assertIn('btnAbout: document.getElementById("btn-about")', js, "app.js must register btnAbout")
-        self.assertIn('btnAboutBack: document.getElementById("btn-about-back")', js, "app.js must register btnAboutBack")
-        self.assertIn('aboutChangelogBody: document.getElementById("about-changelog-body")', js, "app.js must register aboutChangelogBody")
-        self.assertIn('aboutVersionTag: document.getElementById("about-version-tag")', js, "app.js must register aboutVersionTag")
-        self.assertIn('quizModeDesc: document.getElementById("quiz-mode-desc")', js, "app.js must register quizModeDesc")
-        self.assertIn('el.quizModeDesc.textContent =', js, "app.js must update quizModeDesc dynamically")
+        self.assertIn('screenAbout: document.getElementById("screen-about")', js, "dom.js must register screenAbout")
+        self.assertIn('btnAbout: document.getElementById("btn-about")', js, "dom.js must register btnAbout")
+        self.assertIn('btnAboutBack: document.getElementById("btn-about-back")', js, "dom.js must register btnAboutBack")
+        self.assertIn('aboutChangelogBody: document.getElementById("about-changelog-body")', js, "dom.js must register aboutChangelogBody")
+        self.assertIn('aboutVersionTag: document.getElementById("about-version-tag")', js, "dom.js must register aboutVersionTag")
+        self.assertIn('quizModeDesc: document.getElementById("quiz-mode-desc")', js, "dom.js must register quizModeDesc")
+        self.assertIn('el.quizModeDesc.textContent =', js, "quiz.js must update quizModeDesc dynamically")
         self.assertIn('showScreen("about")', js, "app.js must support showing about screen")
         self.assertIn('showScreen("start")', js, "app.js must support returning to start screen")
 

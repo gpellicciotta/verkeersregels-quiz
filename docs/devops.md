@@ -135,11 +135,11 @@ This verifies:
 Score logging and error reporting are handled by an external Google Apps Script Web App:
 
 - Script source code is maintained in `google-apps-script/Code.gs`.
-- The Web App URL is configured in `CONFIG.SHEET_WEBAPP_URL` in `js/app.js`.
+- The Web App URL is configured in `CONFIG.SHEET_WEBAPP_URL` in `js/config.js`.
 - If `CONFIG.SHEET_WEBAPP_URL` is set to `null` or empty, client-side logging is disabled and the quiz operates in standalone offline mode.
 
 ### Abuse Mitigation Write Key
 
-- The shared secret `CONFIG.SHEET_SECRET` is defined in `js/app.js` and verified in `Code.gs`.
+- The shared secret `CONFIG.SHEET_SECRET` is defined in `js/config.js` and verified in `Code.gs`.
 - It acts as an abuse mitigation write key to prevent automated scrapers and bots from posting garbage entries to the Google Sheet.
-- When updating the secret, change `SHARED_SECRET` in `Code.gs` and republish a new deployment revision of the Web App, then update `CONFIG.SHEET_SECRET` in `js/app.js`.
+- When updating the secret, change `SHARED_SECRET` in `Code.gs` and republish a new deployment revision of the Web App, then update `CONFIG.SHEET_SECRET` in `js/config.js`.

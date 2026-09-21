@@ -8,7 +8,11 @@ from pathlib import Path
 WORKTREE_ROOT = Path(__file__).resolve().parent.parent
 INDEX_PATH = WORKTREE_ROOT / "index.html"
 CSS_PATH = WORKTREE_ROOT / "css" / "style.css"
-JS_PATH = WORKTREE_ROOT / "js" / "app.js"
+JS_DIR = WORKTREE_ROOT / "js"
+
+
+def _read_js() -> str:
+    return "\n".join(p.read_text(encoding="utf-8") for p in sorted(JS_DIR.glob("*.js")))
 
 
 class TestSignCarousel(unittest.TestCase):
@@ -58,24 +62,24 @@ class TestSignCarousel(unittest.TestCase):
         self.assertIn(".kbd-key", css, "style.css must style .kbd-key keyboard button representation")
 
     def test_js_app_implements_carousel_lifecycle_and_controls(self) -> None:
-        """Validates that app.js implements query parsing, interval cycling, pause/resume, and keys."""
-        self.assertTrue(JS_PATH.exists(), "app.js must exist")
-        js = JS_PATH.read_text(encoding="utf-8")
+        """Validates that the JS modules implement query parsing, interval cycling, pause/resume, and keys."""
+        self.assertTrue(JS_DIR.exists(), "js directory must exist")
+        js = _read_js()
 
-        self.assertIn("getCarouselParams", js, "app.js must define getCarouselParams function")
-        self.assertIn("sign-carrousel", js, "app.js must support sign-carrousel Dutch query parameter")
-        self.assertIn("sign-carousel", js, "app.js must support sign-carousel English query parameter")
-        self.assertIn('params.get("delay") || params.get("d")', js, "app.js must support d=N alias for delay")
+        self.assertIn("getCarouselParams", js, "params.js must define getCarouselParams function")
+        self.assertIn("sign-carrousel", js, "params.js must support sign-carrousel Dutch query parameter")
+        self.assertIn("sign-carousel", js, "params.js must support sign-carousel English query parameter")
+        self.assertIn('params.get("delay") || params.get("d")', js, "params.js must support d=N alias for delay")
         self.assertIn('=== "quiz"', js, "app.js must support mode=quiz parameter")
-        self.assertIn("setStartMode", js, "app.js must define setStartMode function")
+        self.assertIn("setStartMode", js, "ui-mode.js must define setStartMode function")
         self.assertIn("radioModeCarousel", js, "app.js must support start screen mode switching")
-        self.assertIn("startCarousel", js, "app.js must define startCarousel lifecycle function")
-        self.assertIn("stopCarousel", js, "app.js must define stopCarousel function")
-        self.assertIn("toggleCarouselPause", js, "app.js must define toggleCarouselPause function")
-        self.assertIn("nextCarouselSign", js, "app.js must define nextCarouselSign navigation")
-        self.assertIn("prevCarouselSign", js, "app.js must define prevCarouselSign navigation")
-        self.assertIn("renderCarouselCard", js, "app.js must define renderCarouselCard renderer")
-        self.assertIn("carouselState", js, "app.js must manage carouselState object")
+        self.assertIn("startCarousel", js, "carousel.js must define startCarousel lifecycle function")
+        self.assertIn("stopCarousel", js, "carousel.js must define stopCarousel function")
+        self.assertIn("toggleCarouselPause", js, "carousel.js must define toggleCarouselPause function")
+        self.assertIn("nextCarouselSign", js, "carousel.js must define nextCarouselSign navigation")
+        self.assertIn("prevCarouselSign", js, "carousel.js must define prevCarouselSign navigation")
+        self.assertIn("renderCarouselCard", js, "carousel.js must define renderCarouselCard renderer")
+        self.assertIn("carouselState", js, "state.js must manage carouselState object")
         self.assertIn('e.key === "ArrowLeft"', js, "app.js must support ArrowLeft for prev sign")
         self.assertIn('e.key === "ArrowRight"', js, "app.js must support ArrowRight for next sign")
         self.assertIn('e.code === "Space"', js, "app.js must support Space key for pause toggle")

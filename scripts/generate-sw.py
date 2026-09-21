@@ -41,6 +41,7 @@ EXIT_CODES = [
 
 SIGNS_DIR = REPO_ROOT / "assets" / "signs"
 SITUATIONS_DIR = REPO_ROOT / "assets" / "situations"
+JS_DIR = REPO_ROOT / "js"
 SW_PATH = REPO_ROOT / "sw.js"
 
 
@@ -48,13 +49,14 @@ def build_sw_content(version: str) -> tuple[str, int]:
     """Generates the full sw.js content with dynamic version cache name and asset paths."""
     signs = sorted([f"assets/signs/{f}" for f in os.listdir(SIGNS_DIR) if f.endswith(".svg")]) if SIGNS_DIR.exists() else []
     situations = sorted([f"assets/situations/{f}" for f in os.listdir(SITUATIONS_DIR) if f.endswith(".jpg")]) if SITUATIONS_DIR.exists() else []
+    js_modules = sorted([f"js/{f}" for f in os.listdir(JS_DIR) if f.endswith(".js")]) if JS_DIR.exists() else []
 
     core_assets = [
         "./",
         "index.html",
         "manifest.webmanifest",
         "css/style.css",
-        "js/app.js",
+        *js_modules,
         "data/questions.json",
         "CHANGELOG.md",
         "favicon.ico",

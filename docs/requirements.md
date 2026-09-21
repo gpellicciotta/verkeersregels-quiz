@@ -99,6 +99,7 @@ Functional and technical requirements for the Verkeersregels Quiz application.
 ### Client Architecture
 
 - **Technology Stack**: Static HTML5, CSS3, vanilla ES2020 JavaScript without external UI frameworks or bundlers.
+- **Module Structure**: Native ES modules under `js/` separate state (`state.js`, `dom.js`), storage (`preferences.js`, `report-queue.js`, `sheet.js`), and UI concerns (`quiz.js`, `carousel.js`, `screens.js`, and related modules), composed by `app.js`.
 - **Responsive Layout**: Mobile-first design adapting seamlessly from narrow mobile screens (375px) to desktop viewports (1000px+).
 - **Accessibility**: Semantic HTML landmarks, ARIA modal dialogs (`role="dialog"`, `aria-modal="true"`), keyboard traps, and escape key handling.
 - **Hosting Target**: Hosted on GitHub Pages directly from the repository's production branch.
@@ -106,7 +107,7 @@ Functional and technical requirements for the Verkeersregels Quiz application.
 ### Security and Abuse Mitigation
 
 - **Client-Side Secret Architectural Decision**:
-  - The configuration parameter `CONFIG.SHEET_SECRET` in `js/app.js` is an abuse-mitigation write key rather than a confidential secret.
+  - The configuration parameter `CONFIG.SHEET_SECRET` in `js/config.js` is an abuse-mitigation write key rather than a confidential secret.
   - In a public static web application without a custom backend server, all client code and configuration strings are inherently visible to the user browser.
   - The write key acts as a threshold against generic scrapers, spiders, and automated spam bots targeting the Google Apps Script endpoint.
   - This architecture avoids requiring user registration, authentication servers, or database infrastructure while protecting the logging sheet against ambient automated abuse.

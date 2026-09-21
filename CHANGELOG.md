@@ -14,6 +14,7 @@ A summarized overview of all changes, per version of this project.
 ---
 
 ## v3.1.1-pre
+- DevEx: `app.js` opgesplitst in losse ES-modules die state, opslag en UI-logica scheiden.
 - PWA: Geïnstalleerde app herlaadt nu automatisch zodra een nieuwe versie de service worker overneemt.
 - FrontEnd: Introzin op startscherm blijft nu ongewijzigd bij moduswissel of aanpassen van instellingen.
 - FrontEnd: Dark theme en thema-kleuren toegevoegd met automatische systeemvoorkeur en queryparameters voor thema en accentkleur.

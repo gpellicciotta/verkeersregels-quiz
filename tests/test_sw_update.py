@@ -6,7 +6,7 @@ import unittest
 from pathlib import Path
 
 WORKTREE_ROOT = Path(__file__).resolve().parent.parent
-JS_PATH = WORKTREE_ROOT / "js" / "app.js"
+JS_DIR = WORKTREE_ROOT / "js"
 SW_PATH = WORKTREE_ROOT / "sw.js"
 
 
@@ -15,7 +15,7 @@ class TestServiceWorkerUpdate(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls) -> None:
-        cls.js_code = JS_PATH.read_text(encoding="utf-8")
+        cls.js_code = "\n".join(p.read_text(encoding="utf-8") for p in sorted(JS_DIR.glob("*.js")))
         cls.sw_code = SW_PATH.read_text(encoding="utf-8")
 
     def test_sw_activates_new_version_without_waiting(self) -> None:

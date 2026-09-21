@@ -106,7 +106,7 @@ Werkt met JavaScript zonder probleem: GitHub Pages is gewoon statische bestandsh
    - "Uitvoeren als": jouw account.
    - "Toegang": Iedereen.
 4. Kopieer de gegenereerde web-app-URL.
-5. Plak die URL als waarde van `SHEET_WEBAPP_URL` bovenaan in [js/app.js](js/app.js).
+5. Plak die URL als waarde van `SHEET_WEBAPP_URL` bovenaan in [js/config.js](js/config.js).
 6. Elke afgeronde quiz voegt automatisch een rij toe aan het tabblad "Resultaten" van de Sheet
    (datum, naam, score, aantal vragen, percentage en tijdsduur).
 
@@ -130,7 +130,7 @@ met de bredere toegang. Om dat recht te laten intrekken en te vervangen door de 
 
 ### Gedeeld geheim tegen spam
 
-`Code.gs` en `js/app.js` delen een `sleutel`-waarde (`SHARED_SECRET` / `CONFIG.SHEET_SECRET`) die
+`Code.gs` en `js/config.js` delen een `sleutel`-waarde (`SHARED_SECRET` / `CONFIG.SHEET_SECRET`) die
 moet overeenkomen voor er een rij wordt toegevoegd. Dit is geen echte beveiliging — de waarde staat
 gewoon leesbaar in de publieke broncode — maar houdt generieke bots tegen die lukraak Apps
 Script-URL's aanschieten. Wijzig je de waarde in het ene bestand, wijzig ze dan ook in het andere

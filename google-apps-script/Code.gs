@@ -1,5 +1,5 @@
 /** @OnlyCurrentDoc */
-// Must match CONFIG.SHEET_SECRET in js/app.js. Not real security (it is readable
+// Must match CONFIG.SHEET_SECRET in js/config.js. Not real security (it is readable
 // in the public source code), just a barrier against generic bots/scanners.
 var SHARED_SECRET = '8jd6H2Byuj0HaIqL';
 

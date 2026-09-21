@@ -11,7 +11,7 @@ class TestThemeAndColor(unittest.TestCase):
     def setUp(self):
         self.html_path = os.path.join(PROJECT_ROOT, "index.html")
         self.css_path = os.path.join(PROJECT_ROOT, "css", "style.css")
-        self.js_path = os.path.join(PROJECT_ROOT, "js", "app.js")
+        self.js_dir = os.path.join(PROJECT_ROOT, "js")
 
         with open(self.html_path, "r", encoding="utf-8") as f:
             self.html_content = f.read()
@@ -19,8 +19,12 @@ class TestThemeAndColor(unittest.TestCase):
         with open(self.css_path, "r", encoding="utf-8") as f:
             self.css_content = f.read()
 
-        with open(self.js_path, "r", encoding="utf-8") as f:
-            self.js_content = f.read()
+        js_parts = []
+        for name in sorted(os.listdir(self.js_dir)):
+            if name.endswith(".js"):
+                with open(os.path.join(self.js_dir, name), "r", encoding="utf-8") as f:
+                    js_parts.append(f.read())
+        self.js_content = "\n".join(js_parts)
 
     def test_html_contains_early_theme_init_script(self):
         """Validates that index.html contains an early theme initialization script in head."""

@@ -8,7 +8,11 @@ from pathlib import Path
 WORKTREE_ROOT = Path(__file__).resolve().parent.parent
 INDEX_PATH = WORKTREE_ROOT / "index.html"
 CSS_PATH = WORKTREE_ROOT / "css" / "style.css"
-JS_PATH = WORKTREE_ROOT / "js" / "app.js"
+JS_DIR = WORKTREE_ROOT / "js"
+
+
+def _read_js() -> str:
+    return "\n".join(p.read_text(encoding="utf-8") for p in sorted(JS_DIR.glob("*.js")))
 
 
 class TestMinimalStartScreen(unittest.TestCase):
@@ -150,22 +154,22 @@ class TestMinimalStartScreen(unittest.TestCase):
 
     def test_js_app_implements_mode_toggle_and_config_modal(self) -> None:
         """Validates JS logic for mode toggling, default 8s delay, carousel since filtering, and config modal."""
-        self.assertTrue(JS_PATH.exists(), "app.js must exist")
-        js = JS_PATH.read_text(encoding="utf-8")
+        self.assertTrue(JS_DIR.exists(), "js directory must exist")
+        js = _read_js()
 
-        self.assertIn("btnModeToggle", js, "app.js must register btnModeToggle")
-        self.assertIn("btnConfig", js, "app.js must register btnConfig")
-        self.assertIn("modalConfig", js, "app.js must register modalConfig")
-        self.assertIn("openConfigModal", js, "app.js must define openConfigModal")
-        self.assertIn("closeConfigModal", js, "app.js must define closeConfigModal")
-        self.assertIn("saveConfig", js, "app.js must define saveConfig")
-        self.assertIn("updateConfigQuizWarning", js, "app.js must define updateConfigQuizWarning")
-        self.assertIn("configQuizCountWarning", js, "app.js must register configQuizCountWarning")
-        self.assertIn("setStartMode", js, "app.js must define setStartMode")
-        self.assertIn("delayMs: 8000", js, "app.js must default carousel delay to 8000ms")
-        self.assertIn("carouselState.filterSince", js, "app.js must support filtering carousel by since year")
-        self.assertIn("el.btnNext.focus()", js, "app.js must focus next button upon answer selection")
-        self.assertIn("el.btnCarouselToggle.focus()", js, "app.js must focus carousel toggle button for keyboard enter")
+        self.assertIn("btnModeToggle", js, "dom.js must register btnModeToggle")
+        self.assertIn("btnConfig", js, "dom.js must register btnConfig")
+        self.assertIn("modalConfig", js, "dom.js must register modalConfig")
+        self.assertIn("openConfigModal", js, "config-modal.js must define openConfigModal")
+        self.assertIn("closeConfigModal", js, "config-modal.js must define closeConfigModal")
+        self.assertIn("saveConfig", js, "config-modal.js must define saveConfig")
+        self.assertIn("updateConfigQuizWarning", js, "config-modal.js must define updateConfigQuizWarning")
+        self.assertIn("configQuizCountWarning", js, "dom.js must register configQuizCountWarning")
+        self.assertIn("setStartMode", js, "ui-mode.js must define setStartMode")
+        self.assertIn("delayMs: 8000", js, "state.js must default carousel delay to 8000ms")
+        self.assertIn("carouselState.filterSince", js, "carousel.js must support filtering carousel by since year")
+        self.assertIn("el.btnNext.focus()", js, "quiz.js must focus next button upon answer selection")
+        self.assertIn("el.btnCarouselToggle.focus()", js, "carousel.js must focus carousel toggle button for keyboard enter")
 
 
 if __name__ == "__main__":
