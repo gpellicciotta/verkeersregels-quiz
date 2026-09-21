@@ -17,7 +17,7 @@ An overview of all tasks and their planning.
 
 - [?] T0046 [owner: @claude] Review user interface for styling inconsistencies and accessibility issues using deterministic checks, and discuss findings.
 - [ ] T0051 [needs: T0046] Refactor CSS into a composable, mobile-first stylesheet adhering to audit tokens.
-- [ ] T0052 Refactor app.js into composable, readable modules separating state, storage, and UI.
+- [~] T0052 [owner: @claude] Refactor app.js into composable, readable modules separating state, storage, and UI.
 - [ ] T0045 [needs: T0052] Localize user interface into French, German, and English with an extensible dictionary, and refine Dutch copy.
 - [ ] T0038 [needs: T0052] Add quiz result sharing via Web Share API and clipboard copy on the results screen.
 - [ ] T0053 [needs: T0051] [needs: T0045] [needs: T0038] Release version 3.2.0 with modular architecture, service worker auto-updates, configuration persistence, and localization.
