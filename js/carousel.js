@@ -1,6 +1,6 @@
 import { el } from "./dom.js";
 import { carouselState, allQuestions } from "./state.js";
-import { shuffle, getSinceBadge } from "./utils.js";
+import { shuffle, getSinceBadge, getSignCode } from "./utils.js";
 import { showScreen } from "./screens.js";
 import { t } from "./i18n.js";
 
@@ -18,8 +18,10 @@ export function renderCarouselCard() {
 
   if (el.carouselSignImg) {
     el.carouselSignImg.src = item.sign || "";
-    el.carouselSignImg.alt =
-      item.options && item.correctIndex != null ? item.options[item.correctIndex] : t("carousel.sign_img_alt");
+    const signCode = item.signCode || getSignCode(item.sign);
+    el.carouselSignImg.alt = signCode
+      ? t("carousel.sign_img_alt_code", { code: signCode })
+      : (item.options && item.correctIndex != null ? item.options[item.correctIndex] : t("carousel.sign_img_alt"));
   }
 
   if (el.carouselCounter) {

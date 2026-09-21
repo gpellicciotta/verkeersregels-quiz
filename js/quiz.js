@@ -1,7 +1,7 @@
 import { CONFIG } from "./config.js";
 import { el } from "./dom.js";
 import { state, allQuestions } from "./state.js";
-import { shuffle, getSinceBadge, formatDuration } from "./utils.js";
+import { shuffle, getSinceBadge, formatDuration, getSignCode } from "./utils.js";
 import { getNameParam, getQuestionCountOverride, getSinceFilter, getTypeFilter } from "./params.js";
 import { setStoredPreferences } from "./preferences.js";
 import { showScreen } from "./screens.js";
@@ -31,6 +31,7 @@ function applyTranslation(q) {
     question: overlay.question ?? q.question,
     options: overlay.options ?? q.options,
     explanation: overlay.explanation ?? q.explanation,
+    imageAlt: overlay.imageAlt ?? q.imageAlt,
   };
 }
 
@@ -238,7 +239,14 @@ export function renderQuestion() {
   el.questionImageWrap.classList.toggle("hidden", !showsImage);
   if (showsImage) {
     el.questionImage.src = imgUrl;
-    el.questionImage.alt = q.image ? t("quiz.image_alt_situation") : t("quiz.image_alt_sign");
+    if (q.image) {
+      el.questionImage.alt = q.imageAlt || t("quiz.image_alt_situation");
+    } else {
+      const signCode = q.signCode || getSignCode(q.sign);
+      el.questionImage.alt = signCode
+        ? t("quiz.image_alt_sign_code", { code: signCode })
+        : (q.imageAlt || t("quiz.image_alt_sign"));
+    }
     el.questionImage.classList.toggle("situation-image", Boolean(q.image));
   }
 
@@ -253,7 +261,10 @@ export function renderQuestion() {
     if (optionIsImage) {
       const img = document.createElement("img");
       img.src = opt;
-      img.alt = t("quiz.option_img_alt", { n: idx + 1 });
+      const signCode = getSignCode(opt);
+      img.alt = signCode
+        ? t("quiz.option_img_alt_sign", { n: idx + 1, code: signCode })
+        : t("quiz.option_img_alt", { n: idx + 1 });
       btn.appendChild(img);
     } else {
       const span = document.createElement("span");
@@ -460,7 +471,9 @@ export function optionCell(question, index) {
   if (index === -1 || index === undefined) return "-";
   const value = question.options[index];
   if (question.type === "identify") {
-    return `<img src="${value}" alt="${t("result.image_alt_sign")}" class="table-thumb">`;
+    const signCode = getSignCode(value);
+    const alt = signCode ? t("result.image_alt_sign_code", { code: signCode }) : t("result.image_alt_sign");
+    return `<img src="${value}" alt="${alt}" class="table-thumb">`;
   }
   return value;
 }
@@ -469,7 +482,14 @@ export function questionCell(question) {
   const badgeInfo = getSinceBadge(question.since);
   const badgeHtml = badgeInfo ? `<span class="badge-since-desktop ${badgeInfo.className}">${badgeInfo.text}</span>` : "";
   const imgUrl = question.image || question.sign;
-  const signImg = imgUrl ? `<img src="${imgUrl}" alt="${question.image ? t("result.image_alt_situation") : t("result.image_alt_sign")}" class="table-thumb">` : "";
+  let alt = "";
+  if (question.image) {
+    alt = question.imageAlt || t("result.image_alt_situation");
+  } else if (question.sign) {
+    const signCode = question.signCode || getSignCode(question.sign);
+    alt = signCode ? t("result.image_alt_sign_code", { code: signCode }) : (question.imageAlt || t("result.image_alt_sign"));
+  }
+  const signImg = imgUrl ? `<img src="${imgUrl}" alt="${alt}" class="table-thumb">` : "";
 
   if (badgeInfo) {
     return `<div class="table-question-wrap">${badgeHtml}<div>${signImg}${question.question}</div></div>`;

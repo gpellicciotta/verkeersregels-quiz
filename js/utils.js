@@ -34,3 +34,10 @@ export function formatDuration(seconds) {
   }
   return t("duration.min_sec", { m: min, s: remSec });
 }
+
+export function getSignCode(path) {
+  if (!path || typeof path !== "string") return "";
+  const match = path.match(/([A-Za-z0-9_-]+)\.svg$/i);
+  return match ? match[1] : "";
+}
+

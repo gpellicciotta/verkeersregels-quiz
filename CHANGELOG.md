@@ -14,6 +14,7 @@ A summarized overview of all changes, per version of this project.
 ---
 
 ## v3.1.1-pre
+- FrontEnd: Replaced generic image alt text with descriptive sign codes across quiz questions, answer options, and carousel.
 - FrontEnd: Added quiz result sharing via Web Share API with clipboard copy fallback and toast feedback.
 - FrontEnd: Added non-color correct and wrong indicator badges to quiz answer options and header for colorblind accessibility.
 - FrontEnd: Refactored CSS into a composable mobile-first stylesheet adhering to audit tokens and WCAG contrast.
