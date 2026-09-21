@@ -14,6 +14,7 @@ A summarized overview of all changes, per version of this project.
 ---
 
 ## v3.1.1-pre
+- FrontEnd: Refactored CSS into a composable mobile-first stylesheet adhering to audit tokens and WCAG contrast.
 - FrontEnd: Volledige Engelse vertaling en taalschakelaar toegevoegd voor interface, dialoogvensters en alle 324 vragen.
 - FrontEnd: `scope="col"` toegevoegd aan resultatentabelkoppen voor correcte schermlezerondersteuning.
 - DevEx: `app.js` opgesplitst in losse ES-modules die state, opslag en UI-logica scheiden.
