@@ -9,7 +9,7 @@ An overview of all tasks and their planning.
 > Owner: `[owner: @name]` shown only when active/blocked/needs-review.
 > Dependencies: `[needs: Tnnnn]` shown only when unresolved.
 
-**Next ID:** 0058
+**Next ID:** 0060
 
 ---
 
@@ -17,17 +17,18 @@ An overview of all tasks and their planning.
 
 - [ ] T0051 Refactor CSS into a composable, mobile-first stylesheet adhering to audit tokens.
 - [ ] T0054 Add a non-color (icon with text "Juist" of "Fout") correct/wrong indicator at the top and center of the screen, to quiz answer options for colorblind accessibility. 
-- [~] T0045 [owner: @claude] Localize user interface into French, German, and English with an extensible dictionary, and refine Dutch copy.
 - [ ] T0038 Add quiz result sharing via Web Share API and clipboard copy on the results screen.
 - [ ] T0056 Address generic, non-descriptive image alt text on sign-recognition question images.
 - [ ] T0057 The carrousel is currently re-using the "correct answer" to explain a road sign, but the answer doesn't always make sense without a question. We should be using a separate, clear explanation of the road-sign instead.
-- [ ] T0053 [needs: T0051 T0045 T0038 T0057 T0056] Release version 3.2.0 with modular architecture, service worker auto-updates, configuration persistence, and localization.
+- [ ] T0053 [needs: T0051 T0038 T0057 T0056] Release version 3.2.0 with modular architecture, service worker auto-updates, configuration persistence, and localization.
 
 ---
 
 ## Backlog
 
 - [ ] T0001 Switch the quiz to the Code van de openbare weg when it replaces the Wegcode on 1 June 2027.
+- [ ] T0058 Localize user interface and question bank into French.
+- [ ] T0059 Localize user interface and question bank into German.
 
 
 

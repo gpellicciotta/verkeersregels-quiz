@@ -3,13 +3,15 @@ import { state, carouselState, allQuestions } from "./state.js";
 import { getQuestionCountOverride } from "./params.js";
 import { setStoredPreferences } from "./preferences.js";
 import { applyFilter, updateStartScreenNotice } from "./quiz.js";
+import { t } from "./i18n.js";
+
 
 export function openConfigModal() {
   const isCarousel = state.currentMode === "carousel";
   if (el.modalConfigTitle) {
     el.modalConfigTitle.textContent = isCarousel
-      ? "Instellingen Carrousel"
-      : "Instellingen Quiz";
+      ? t("config.title_carousel")
+      : t("config.title_quiz");
   }
   if (el.configSectionQuiz) {
     el.configSectionQuiz.classList.toggle("hidden", isCarousel);
@@ -70,7 +72,7 @@ export function updateConfigQuizWarning() {
       countVal === "all" ? (allQuestions ? allQuestions.length : 304) : parseInt(countVal, 10);
 
     if (requestedCount > availableForSince) {
-      el.configQuizCountWarning.textContent = `Er zijn slechts ${availableForSince} vragen mogelijk door de 'Ouderdom van de regels' keuze.`;
+      el.configQuizCountWarning.textContent = t("config.count_warning", { n: availableForSince });
       el.configQuizCountWarning.classList.remove("hidden");
       return;
     }

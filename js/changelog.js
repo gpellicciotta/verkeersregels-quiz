@@ -1,4 +1,5 @@
 import { el } from "./dom.js";
+import { t } from "./i18n.js";
 
 let changelogHtmlCache = null;
 
@@ -93,8 +94,9 @@ export async function loadChangelog() {
     if (el.aboutChangelogBody) el.aboutChangelogBody.innerHTML = changelogHtmlCache;
     return;
   }
-  if (el.changelogBody) el.changelogBody.innerHTML = '<p class="changelog-loading">Versiegeschiedenis laden...</p>';
-  if (el.aboutChangelogBody) el.aboutChangelogBody.innerHTML = '<p class="changelog-loading">Versiegeschiedenis laden...</p>';
+  const loadingHtml = `<p class="changelog-loading">${t("changelog.loading")}</p>`;
+  if (el.changelogBody) el.changelogBody.innerHTML = loadingHtml;
+  if (el.aboutChangelogBody) el.aboutChangelogBody.innerHTML = loadingHtml;
   try {
     const res = await fetch("CHANGELOG.md");
     if (!res.ok) throw new Error("Kon CHANGELOG.md niet laden: " + res.status);
@@ -107,11 +109,11 @@ export async function loadChangelog() {
     if (el.aboutChangelogBody) el.aboutChangelogBody.innerHTML = changelogHtmlCache;
   } catch (err) {
     console.warn("Changelog laden mislukt:", err);
-    if (el.aboutVersionTag) el.aboutVersionTag.textContent = "onbekend";
-    if (el.btnVersion) el.btnVersion.textContent = "onbekend";
+    if (el.aboutVersionTag) el.aboutVersionTag.textContent = t("version.unknown");
+    if (el.btnVersion) el.btnVersion.textContent = t("version.unknown");
     const errHtml = `
-      <p class="error">Kon versiegeschiedenis niet laden.</p>
-      <p class="modal-desc">Bekijk <a href="CHANGELOG.md" target="_blank" rel="noopener noreferrer">CHANGELOG.md</a> direct.</p>
+      <p class="error">${t("changelog.error")}</p>
+      <p class="modal-desc">${t("changelog.error_link").replace("CHANGELOG.md", '<a href="CHANGELOG.md" target="_blank" rel="noopener noreferrer">CHANGELOG.md</a>')}</p>
     `;
     if (el.changelogBody) el.changelogBody.innerHTML = errHtml;
     if (el.aboutChangelogBody) el.aboutChangelogBody.innerHTML = errHtml;

@@ -50,6 +50,8 @@ def build_sw_content(version: str) -> tuple[str, int]:
     signs = sorted([f"assets/signs/{f}" for f in os.listdir(SIGNS_DIR) if f.endswith(".svg")]) if SIGNS_DIR.exists() else []
     situations = sorted([f"assets/situations/{f}" for f in os.listdir(SITUATIONS_DIR) if f.endswith(".jpg")]) if SITUATIONS_DIR.exists() else []
     js_modules = sorted([f"js/{f}" for f in os.listdir(JS_DIR) if f.endswith(".js")]) if JS_DIR.exists() else []
+    data_dir = REPO_ROOT / "data"
+    data_files = sorted([f"data/{f}" for f in os.listdir(data_dir) if f.endswith(".json")]) if data_dir.exists() else ["data/questions.json"]
 
     core_assets = [
         "./",
@@ -57,7 +59,7 @@ def build_sw_content(version: str) -> tuple[str, int]:
         "manifest.webmanifest",
         "css/style.css",
         *js_modules,
-        "data/questions.json",
+        *data_files,
         "CHANGELOG.md",
         "favicon.ico",
         "assets/favicon.svg",

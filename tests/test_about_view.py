@@ -46,7 +46,7 @@ class TestAboutView(unittest.TestCase):
         self.assertIn('class="start-meta-item start-meta-hint"', html, "index.html must define hint icons")
         self.assertIn('id="btn-about"', html, "index.html must define btn-about")
         self.assertIn('data-tooltip="Bij elke vraag', html, "External link hint must provide tooltip")
-        self.assertIn('data-tooltip="Zie je een fout', html, "Report hint must provide tooltip")
+        self.assertIn('data-tooltip="Fout melden:', html, "Report hint must provide tooltip")
         self.assertIn('data-tooltip="Over deze app', html, "About button must provide tooltip")
 
         # Copyright notice

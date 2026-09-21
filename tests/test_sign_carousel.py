@@ -41,7 +41,7 @@ class TestSignCarousel(unittest.TestCase):
         self.assertIn('id="radio-mode-quiz"', html, "index.html must define radio-mode-quiz option")
         self.assertIn('id="radio-mode-carousel"', html, "index.html must define radio-mode-carousel option")
         self.assertIn('id="carousel-delay-select"', html, "index.html must define carousel-delay-select")
-        self.assertIn('<kbd class="kbd-key">Spatie</kbd>', html, "index.html must style Spatie with kbd tag")
+        self.assertIn('<kbd class="kbd-key">Spatiebalk</kbd>', html, "index.html must style Spatiebalk with kbd tag")
 
     def test_css_contains_carousel_styling_and_responsive_rules(self) -> None:
         """Validates that style.css defines carousel card layout, pause overlay, and progress bar."""

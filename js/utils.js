@@ -1,3 +1,5 @@
+import { t } from "./i18n.js";
+
 export function shuffle(array) {
   const copy = array.slice();
   for (let i = copy.length - 1; i > 0; i--) {
@@ -14,7 +16,7 @@ export function getSinceBadge(since) {
   const isRecent = diff <= 5;
   return {
     year: since,
-    text: `Sinds ${since}`,
+    text: t("badge.since", { year: since }),
     className: isRecent ? "badge-since badge-amber badge-since-amber" : "badge-since badge-blue badge-since-blue",
     isRecent,
   };
@@ -25,10 +27,10 @@ export function formatDuration(seconds) {
   const min = Math.floor(s / 60);
   const remSec = s % 60;
   if (min === 0) {
-    return `${remSec} sec`;
+    return t("duration.sec", { s: remSec });
   }
   if (remSec === 0) {
-    return `${min} min`;
+    return t("duration.min", { m: min });
   }
-  return `${min} min ${remSec} sec`;
+  return t("duration.min_sec", { m: min, s: remSec });
 }

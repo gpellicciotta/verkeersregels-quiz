@@ -1,12 +1,14 @@
 import { el } from "./dom.js";
 import { state } from "./state.js";
 import { submitErrorReport } from "./report-queue.js";
+import { t } from "./i18n.js";
 
 export function openReportModal() {
   const q = state.round[state.currentIndex];
   if (!q) return;
 
-  el.modalQuestionId.textContent = q.id ? `Vraag ${q.id}` : `Vraag ${state.currentIndex + 1}`;
+  const id = q.id || String(state.currentIndex + 1);
+  el.modalQuestionId.textContent = t("report.question_prefix", { id });
   el.modalQuestionText.textContent = q.question;
   el.reportRemark.value = "";
   el.modalFeedback.textContent = "";
@@ -14,11 +16,9 @@ export function openReportModal() {
   el.btnModalSubmit.disabled = false;
 
   if (el.modalReportDesc) {
-    if (!navigator.onLine) {
-      el.modalReportDesc.textContent = "Je bent momenteel offline. Je melding wordt lokaal bewaard en automatisch verzonden zodra je weer online bent.";
-    } else {
-      el.modalReportDesc.textContent = "Zie je een onjuistheid of onduidelijkheid in deze vraag of antwoorden? Geef het hier door.";
-    }
+    el.modalReportDesc.textContent = !navigator.onLine
+      ? t("report.description_offline")
+      : t("report.description");
   }
 
   el.modalReport.classList.remove("hidden");

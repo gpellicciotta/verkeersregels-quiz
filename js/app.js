@@ -11,6 +11,7 @@ import { drainReportQueue } from "./report-queue.js";
 import { showScreen } from "./screens.js";
 import {
   loadQuestions,
+  loadTranslations,
   applyFilter,
   updateStartScreenNotice,
   startQuiz,
@@ -36,6 +37,7 @@ import {
 import { openReportModal, closeReportModal, handleReportSubmit } from "./report-modal.js";
 import { openChangelogModal, closeChangelogModal, loadChangelog } from "./changelog.js";
 import { registerServiceWorker, updateOnlineStatus } from "./pwa.js";
+import { setLang, detectLang, getLang, applyAll } from "./i18n.js";
 
 el.btnStart.addEventListener("click", () => {
   const isCarouselSelected = state.currentMode === "carousel" || (el.radioModeCarousel && el.radioModeCarousel.checked);
@@ -293,24 +295,68 @@ function checkAutoStart() {
   }
 }
 
-registerServiceWorker();
-initTheme();
-updateOnlineStatus();
-applyStoredPreferences();
-setStartMode(state.currentMode);
-updateStartScreenNotice();
-loadChangelog();
-checkAutoStart();
+// ── Language switcher ─────────────────────────────────────────────────────────
+function updateLangButton() {
+  if (!el.btnLang) return;
+  const lang = getLang();
+  const labelEl = el.btnLang.querySelector(".btn-lang-label");
+  if (labelEl) labelEl.textContent = lang === "en" ? "EN" : "NL";
+  el.btnLang.setAttribute("aria-label", lang === "en" ? "Taal wijzigen naar Nederlands" : "Switch language to English");
+  el.btnLang.setAttribute("data-tooltip", lang === "en" ? "NL" : "EN");
+  el.btnLang.setAttribute("title", lang === "en" ? "NL" : "EN");
+}
 
-loadQuestions()
+if (el.btnLang) {
+  el.btnLang.addEventListener("click", () => {
+    const next = getLang() === "nl" ? "en" : "nl";
+    setLang(next).then(() => {
+      loadTranslations(next);
+      updateLangButton();
+      // Re-render dynamic strings that aren't covered by data-i18n
+      updateStartScreenNotice();
+      setStartMode(state.currentMode);
+      loadChangelog();
+    });
+  });
+}
+
+// Re-render all dynamic strings on language change (covers module-local renders)
+document.addEventListener("languagechange", () => {
+  applyAll();
+  updateLangButton();
+});
+
+// ── Application startup ───────────────────────────────────────────────────────
+setLang(detectLang())
+  .then(() => {
+    updateLangButton();
+    registerServiceWorker();
+    initTheme();
+    updateOnlineStatus();
+    applyStoredPreferences();
+    setStartMode(state.currentMode);
+    updateStartScreenNotice();
+    loadChangelog();
+    checkAutoStart();
+
+    return loadQuestions();
+  })
   .then((questions) => {
     setAllQuestions(questions);
     applyFilter();
+    const lang = getLang();
+    if (lang !== "nl") {
+      return loadTranslations(lang).then(() => { checkAutoStart(); drainReportQueue(); });
+    }
     checkAutoStart();
     drainReportQueue();
   })
-  .catch((err) => {
+  .catch(async (err) => {
     console.error(err);
-    el.startError.textContent = "Vragen konden niet geladen worden. Herlaad de pagina.";
-    el.startError.classList.remove("hidden");
+    // i18n may not be loaded if setLang itself failed — fall back to a hardcoded EN/NL string
+    if (el.startError) {
+      const { t } = await import("./i18n.js").catch(() => ({ t: (k) => k }));
+      el.startError.textContent = t("start.error_load_failed");
+      el.startError.classList.remove("hidden");
+    }
   });

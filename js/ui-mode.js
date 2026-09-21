@@ -3,6 +3,7 @@ import { state } from "./state.js";
 import { getNameParam } from "./params.js";
 import { setStoredPreferences } from "./preferences.js";
 import { updateStartScreenNotice } from "./quiz.js";
+import { t } from "./i18n.js";
 
 export function setStartMode(mode, persist) {
   const isCarousel = mode === "carousel";
@@ -21,7 +22,7 @@ export function setStartMode(mode, persist) {
 
   // Update title: 1 heading line at top
   if (el.startTitle) {
-    el.startTitle.textContent = isCarousel ? "Verkeersborden Carrousel" : "Verkeersregels Quiz";
+    el.startTitle.textContent = isCarousel ? t("title.carousel") : t("title.quiz");
   }
 
   // Update explanation sentence: 1 line underneath
@@ -29,18 +30,19 @@ export function setStartMode(mode, persist) {
 
   // Update start button label: smaller start button with arrow to right
   if (el.btnStartLabel) {
-    el.btnStartLabel.textContent = isCarousel ? "Start carrousel" : "Start quiz";
+    el.btnStartLabel.textContent = isCarousel ? t("start.btn_carousel") : t("start.btn_quiz");
   }
   if (el.btnStart) {
-    el.btnStart.setAttribute("aria-label", isCarousel ? "Start carrousel" : "Start quiz");
-    el.btnStart.setAttribute("title", isCarousel ? "Start carrousel" : "Start quiz");
+    el.btnStart.setAttribute("aria-label", isCarousel ? t("start.btn_carousel") : t("start.btn_quiz"));
+    el.btnStart.setAttribute("title", isCarousel ? t("start.btn_carousel") : t("start.btn_quiz"));
   }
 
   // Update mode toggle button icon and tooltip
   if (el.btnModeToggle) {
-    const tooltipText = isCarousel ? "Wissel naar quiz" : "Wissel naar carrousel";
-    const ariaText = isCarousel ? "Wissel naar quiz" : "Wissel naar carrousel";
+    const tooltipText = isCarousel ? t("start.mode_toggle_to_quiz") : t("start.mode_toggle_to_carousel");
+    const ariaText = isCarousel ? t("start.mode_toggle_aria_to_quiz") : t("start.mode_toggle_aria_to_carousel");
     el.btnModeToggle.setAttribute("data-tooltip", tooltipText);
+    el.btnModeToggle.setAttribute("title", tooltipText);
     el.btnModeToggle.setAttribute("aria-label", ariaText);
   }
   if (el.modeIconCarousel) {

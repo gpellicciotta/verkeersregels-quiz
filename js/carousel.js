@@ -2,20 +2,14 @@ import { el } from "./dom.js";
 import { carouselState, allQuestions } from "./state.js";
 import { shuffle, getSinceBadge } from "./utils.js";
 import { showScreen } from "./screens.js";
+import { t } from "./i18n.js";
 
 export function formatCategoryName(cat) {
-  const map = {
-    gevaar: "Gevaar",
-    voorrang: "Voorrang",
-    verbod: "Verbod",
-    gebod: "Gebod",
-    parkeren: "Parkeren & Stilstaan",
-    aanwijzing: "Aanwijzing",
-    snelheid: "Snelheid",
-    autosnelweg: "Autosnelweg",
-    "fietsers-voetgangers": "Fietsers & Voetgangers",
-  };
-  return map[cat] || (cat ? cat.charAt(0).toUpperCase() + cat.slice(1) : "Verkeersbord");
+  if (!cat) return t("carousel.cat.default");
+  const key = `carousel.cat.${cat}`;
+  const translated = t(key);
+  // If the key wasn't found, t() returns the key itself — fall back to capitalised cat
+  return translated !== key ? translated : cat.charAt(0).toUpperCase() + cat.slice(1);
 }
 
 export function renderCarouselCard() {
@@ -25,11 +19,14 @@ export function renderCarouselCard() {
   if (el.carouselSignImg) {
     el.carouselSignImg.src = item.sign || "";
     el.carouselSignImg.alt =
-      item.options && item.correctIndex != null ? item.options[item.correctIndex] : "Verkeersbord";
+      item.options && item.correctIndex != null ? item.options[item.correctIndex] : t("carousel.sign_img_alt");
   }
 
   if (el.carouselCounter) {
-    el.carouselCounter.textContent = `Bord ${carouselState.currentIndex + 1} / ${carouselState.items.length}`;
+    el.carouselCounter.textContent = t("carousel.counter", {
+      n: carouselState.currentIndex + 1,
+      total: carouselState.items.length,
+    });
   }
 
   if (el.carouselCategoryBadge) {
@@ -163,9 +160,9 @@ export function toggleCarouselPause(forceState) {
     if (el.carouselPauseOverlay) el.carouselPauseOverlay.classList.remove("hidden");
     if (el.btnCarouselToggle) {
       el.btnCarouselToggle.classList.add("is-paused");
-      el.btnCarouselToggle.setAttribute("aria-label", "Hervatten");
-      el.btnCarouselToggle.setAttribute("title", "Hervatten (Spatiebalk)");
-      el.btnCarouselToggle.setAttribute("data-tooltip", "Hervatten (Spatiebalk)");
+      el.btnCarouselToggle.setAttribute("aria-label", t("carousel.btn_toggle_resume_aria"));
+      el.btnCarouselToggle.setAttribute("title", t("carousel.btn_toggle_resume_tooltip"));
+      el.btnCarouselToggle.setAttribute("data-tooltip", t("carousel.btn_toggle_resume_tooltip"));
       const pauseSvg = el.btnCarouselToggle.querySelector(".icon-pause");
       const playSvg = el.btnCarouselToggle.querySelector(".icon-play");
       if (pauseSvg && playSvg) {
@@ -173,17 +170,17 @@ export function toggleCarouselPause(forceState) {
         playSvg.classList.remove("hidden");
       }
     }
-    if (el.carouselToggleText) el.carouselToggleText.textContent = "Hervatten";
+    if (el.carouselToggleText) el.carouselToggleText.textContent = t("carousel.toggle_text_resume");
     if (el.carouselShortcutHint) {
-      el.carouselShortcutHint.innerHTML = 'Tip: klik op de kaart of druk op <kbd class="kbd-key">Spatie</kbd> om te hervatten';
+      el.carouselShortcutHint.innerHTML = t("carousel.shortcut_hint_resume");
     }
   } else {
     if (el.carouselPauseOverlay) el.carouselPauseOverlay.classList.add("hidden");
     if (el.btnCarouselToggle) {
       el.btnCarouselToggle.classList.remove("is-paused");
-      el.btnCarouselToggle.setAttribute("aria-label", "Pauzeren");
-      el.btnCarouselToggle.setAttribute("title", "Pauzeren (Spatiebalk)");
-      el.btnCarouselToggle.setAttribute("data-tooltip", "Pauzeren (Spatiebalk)");
+      el.btnCarouselToggle.setAttribute("aria-label", t("carousel.btn_toggle_pause_aria"));
+      el.btnCarouselToggle.setAttribute("title", t("carousel.btn_toggle_pause_tooltip"));
+      el.btnCarouselToggle.setAttribute("data-tooltip", t("carousel.btn_toggle_pause_tooltip"));
       const pauseSvg = el.btnCarouselToggle.querySelector(".icon-pause");
       const playSvg = el.btnCarouselToggle.querySelector(".icon-play");
       if (pauseSvg && playSvg) {
@@ -191,9 +188,9 @@ export function toggleCarouselPause(forceState) {
         playSvg.classList.add("hidden");
       }
     }
-    if (el.carouselToggleText) el.carouselToggleText.textContent = "Pauzeren";
+    if (el.carouselToggleText) el.carouselToggleText.textContent = t("carousel.toggle_text_pause");
     if (el.carouselShortcutHint) {
-      el.carouselShortcutHint.innerHTML = 'Tip: klik op de kaart of druk op <kbd class="kbd-key">Spatie</kbd> om te pauzeren';
+      el.carouselShortcutHint.innerHTML = t("carousel.shortcut_hint_pause");
     }
     startCarouselTimer();
   }
@@ -224,7 +221,7 @@ export function startCarousel(options = {}) {
   carouselState.slideStartTime = Date.now();
 
   if (el.carouselDelayInfo) {
-    el.carouselDelayInfo.textContent = `Wisselt elke ${delaySeconds} seconden`;
+    el.carouselDelayInfo.textContent = t("carousel.delay_info", { seconds: delaySeconds });
   }
 
   if (el.carouselPauseOverlay) {
@@ -233,9 +230,9 @@ export function startCarousel(options = {}) {
 
   if (el.btnCarouselToggle) {
     el.btnCarouselToggle.classList.remove("is-paused");
-    el.btnCarouselToggle.setAttribute("aria-label", "Pauzeren");
-    el.btnCarouselToggle.setAttribute("title", "Pauzeren (Spatiebalk)");
-    el.btnCarouselToggle.setAttribute("data-tooltip", "Pauzeren (Spatiebalk)");
+    el.btnCarouselToggle.setAttribute("aria-label", t("carousel.btn_toggle_pause_aria"));
+    el.btnCarouselToggle.setAttribute("title", t("carousel.btn_toggle_pause_tooltip"));
+    el.btnCarouselToggle.setAttribute("data-tooltip", t("carousel.btn_toggle_pause_tooltip"));
     const pauseSvg = el.btnCarouselToggle.querySelector(".icon-pause");
     const playSvg = el.btnCarouselToggle.querySelector(".icon-play");
     if (pauseSvg && playSvg) {
@@ -243,9 +240,9 @@ export function startCarousel(options = {}) {
       playSvg.classList.add("hidden");
     }
   }
-  if (el.carouselToggleText) el.carouselToggleText.textContent = "Pauzeren";
+  if (el.carouselToggleText) el.carouselToggleText.textContent = t("carousel.toggle_text_pause");
   if (el.carouselShortcutHint) {
-    el.carouselShortcutHint.innerHTML = 'Tip: klik op de kaart of druk op <kbd class="kbd-key">Spatie</kbd> om te pauzeren';
+    el.carouselShortcutHint.innerHTML = t("carousel.shortcut_hint_pause");
   }
 
   showScreen("carousel");

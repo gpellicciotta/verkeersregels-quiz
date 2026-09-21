@@ -1,0 +1,105 @@
+/**
+ * Lightweight i18n module.
+ *
+ * Supported languages: "nl" (default), "en".
+ *
+ * Usage:
+ *   import { t, getLang, setLang } from "./i18n.js";
+ *   await setLang("en");          // load strings, update DOM, fire event
+ *   t("quiz.progress", { n: 3, total: 20 });  // → "Question 3/20"
+ */
+
+let currentLang = "nl";
+let dict = {};
+
+/**
+ * Substitute {name} placeholders in a string.
+ * @param {string} str
+ * @param {Record<string, string|number>} vars
+ */
+function substitute(str, vars) {
+  return str.replace(/\{(\w+)\}/g, (_, key) =>
+    key in vars ? String(vars[key]) : `{${key}}`
+  );
+}
+
+/**
+ * Translate a key, optionally substituting variables.
+ * Falls back to the key itself so missing translations are visible.
+ * @param {string} key
+ * @param {Record<string, string|number>} [vars]
+ * @returns {string}
+ */
+export function t(key, vars = {}) {
+  const str = key in dict ? dict[key] : key;
+  return Object.keys(vars).length ? substitute(str, vars) : str;
+}
+
+/** Return the active language code ("nl" or "en"). */
+export function getLang() {
+  return currentLang;
+}
+
+/**
+ * Detect the preferred language from URL param → localStorage → default "nl".
+ * @returns {"nl"|"en"}
+ */
+export function detectLang() {
+  try {
+    const param = new URLSearchParams(window.location.search).get("lang");
+    if (param === "en" || param === "nl") return param;
+    const stored = localStorage.getItem("lang");
+    if (stored === "en" || stored === "nl") return stored;
+  } catch (_) {
+    // localStorage may be unavailable
+  }
+  return "nl";
+}
+
+/**
+ * Load the string dictionary for `lang`, apply it to the DOM, and fire
+ * a custom "languagechange" event so modules can re-render dynamic strings.
+ * @param {"nl"|"en"} lang
+ */
+export async function setLang(lang) {
+  if (lang !== "nl" && lang !== "en") lang = "nl";
+  const res = await fetch(`data/strings.${lang}.json`);
+  if (!res.ok) throw new Error(`Could not load strings for language: ${lang}`);
+  dict = await res.json();
+  currentLang = lang;
+  try {
+    localStorage.setItem("lang", lang);
+  } catch (_) {}
+  document.documentElement.lang = lang;
+  applyAll();
+  document.dispatchEvent(new CustomEvent("languagechange", { detail: { lang } }));
+}
+
+/**
+ * Set the text of all [data-i18n] elements from the loaded dictionary.
+ * Elements with [data-i18n-html] have their innerHTML set instead (for
+ * strings that contain safe, controlled HTML such as <kbd> tags).
+ */
+export function applyAll() {
+  document.querySelectorAll("[data-i18n]").forEach((el) => {
+    const key = el.getAttribute("data-i18n");
+    const str = t(key);
+    if (el.hasAttribute("data-i18n-html")) {
+      el.innerHTML = str;
+    } else {
+      el.textContent = str;
+    }
+  });
+  document.querySelectorAll("[data-i18n-aria]").forEach((el) => {
+    el.setAttribute("aria-label", t(el.getAttribute("data-i18n-aria")));
+  });
+  document.querySelectorAll("[data-i18n-tooltip]").forEach((el) => {
+    const val = t(el.getAttribute("data-i18n-tooltip"));
+    el.setAttribute("data-tooltip", val);
+    el.setAttribute("title", val);
+  });
+  document.querySelectorAll("[data-i18n-placeholder]").forEach((el) => {
+    el.setAttribute("placeholder", t(el.getAttribute("data-i18n-placeholder")));
+  });
+}
+

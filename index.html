@@ -39,25 +39,25 @@
 <main id="app">
   <div id="offline-indicator" class="offline-indicator hidden" role="status" aria-live="polite">
     <span class="offline-icon" aria-hidden="true">📡</span>
-    <span>Offline modus: quiz werkt volledig offline (alle 284 vragen beschikbaar)</span>
+    <span data-i18n="start.offline">Offline modus: de app werkt volledig offline (alle vragen en borden beschikbaar)</span>
   </div>
 
   <!-- Start screen -->
   <section id="screen-start" class="screen">
     <!-- 1. The title (1 heading line at top) -->
-    <h1 id="start-title" class="start-title">Verkeersregels Quiz</h1>
+    <h1 id="start-title" class="start-title" data-i18n="title.quiz">Verkeersregels Quiz</h1>
 
     <!-- 2. A short explanation sentence (1 line underneath) -->
-    <p id="start-desc" class="start-desc">Oefen de verkeersregels en -borden.</p>
+    <p id="start-desc" class="start-desc" data-i18n="start.description">Oefen Belgische verkeersregels en borden.</p>
     <div id="filter-notice" class="filter-notice hidden"></div>
 
     <!-- 3. An invite to give a name and start the quiz (both on 1 line: smaller start button, shaped like an arrow to the right) -->
     <div class="start-action-row" id="start-action-row">
       <div id="quiz-start-fields" class="quiz-start-fields">
-        <input type="text" id="player-name" class="player-name-input" placeholder="Naam (optioneel)" aria-label="Jouw naam (optioneel)">
+        <input type="text" id="player-name" class="player-name-input" placeholder="Naam (optioneel)" aria-label="Jouw naam (optioneel)" data-i18n-placeholder="start.name_placeholder" data-i18n-aria="start.name_aria">
       </div>
-      <button id="btn-start" class="btn-primary btn-start-arrow" type="button" aria-label="Start quiz" title="Start quiz">
-        <span id="btn-start-label" class="btn-start-label">Start quiz</span>
+      <button id="btn-start" class="btn-primary btn-start-arrow" type="button" aria-label="Start quiz" title="Start quiz" data-i18n-aria="start.btn_quiz" data-i18n-tooltip="start.btn_quiz">
+        <span id="btn-start-label" class="btn-start-label" data-i18n="start.btn_quiz">Start quiz</span>
         <svg class="start-arrow-svg" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
           <line x1="5" y1="12" x2="19" y2="12"></line>
           <polyline points="12 5 19 12 12 19"></polyline>
@@ -70,7 +70,7 @@
     <div class="sr-only" aria-hidden="true">
       <input type="radio" name="start-mode" id="radio-mode-quiz" value="quiz" checked>
       <input type="radio" name="start-mode" id="radio-mode-carousel" value="carousel">
-      <span id="quiz-mode-desc">20 oefenvragen over regels en borden</span>
+      <span id="quiz-mode-desc" data-i18n="start.quiz_mode_description">20 vragen over regels en borden</span>
     </div>
 
     <!-- 4. Whitespace + subtle line -->
@@ -83,7 +83,9 @@
           <!-- Circle 1: Mode switch button (quiz <-> carousel) -->
           <button type="button" id="btn-mode-toggle" class="start-meta-item start-meta-btn start-meta-btn-action"
                   aria-label="Wissel naar Verkeersborden Carrousel"
-                  data-tooltip="Wissel naar carrousel">
+                  data-tooltip="Wissel naar carrousel"
+                  data-i18n-aria="start.mode_toggle_aria_to_carousel"
+                  data-i18n-tooltip="start.mode_toggle_to_carousel">
             <svg class="start-meta-svg mode-icon-carousel" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
               <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
               <line x1="8" y1="21" x2="16" y2="21"></line>
@@ -98,18 +100,22 @@
 
           <!-- Circle 2: Configuration button -->
           <button type="button" id="btn-config" class="start-meta-item start-meta-btn start-meta-btn-action"
-                  aria-label="Instellingen aanpassen"
-                  data-tooltip="Instellingen">
+                  aria-label="Open instellingen"
+                  data-tooltip="Instellingen"
+                  data-i18n-aria="start.btn_config_aria"
+                  data-i18n-tooltip="start.btn_config_tooltip">
             <svg class="start-meta-svg" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="12" cy="12" r="3"></circle>
-              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0 .33-1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
             </svg>
           </button>
 
           <!-- Circle 3: About button -->
           <button type="button" id="btn-about" class="start-meta-item start-about-btn start-meta-btn-action"
-                  aria-label="Over Verkeersregels Quiz: versie, release notes en bronnen"
-                  data-tooltip="Over deze app (versie, release notes &amp; bronnen)">
+                  aria-label="Over deze app (versie, release notes &amp; bronnen)"
+                  data-tooltip="Over deze app (versie, release notes &amp; bronnen)"
+                  data-i18n-aria="start.btn_about_aria"
+                  data-i18n-tooltip="start.btn_about_tooltip">
             <svg class="start-meta-svg" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="12" cy="12" r="10"></circle>
               <line x1="12" y1="16" x2="12" y2="12"></line>
@@ -117,10 +123,21 @@
             </svg>
           </button>
 
-          <!-- Circle 4: Install app button (visible only if prompt available / not installed) -->
+          <!-- Circle 4: Language button (toggles NL / EN) -->
+          <button type="button" id="btn-lang" class="start-meta-item start-meta-btn start-meta-btn-action btn-lang"
+                  aria-label="Taal wijzigen"
+                  data-tooltip="Taal"
+                  data-i18n-aria="start.btn_lang_aria"
+                  data-i18n-tooltip="start.btn_lang_tooltip">
+            <span class="btn-lang-label" aria-hidden="true" style="font-weight: 700; font-size: 0.75rem; letter-spacing: 0.5px;">NL</span>
+          </button>
+
+          <!-- Circle 5: Install app button (visible only if prompt available / not installed) -->
           <button type="button" id="btn-install" class="start-meta-item start-meta-btn start-meta-btn-action btn-install hidden"
                   aria-label="Installeer als app"
-                  data-tooltip="Installeer app">
+                  data-tooltip="Installeer app"
+                  data-i18n-aria="start.btn_install_aria"
+                  data-i18n-tooltip="start.btn_install_tooltip">
             <svg class="start-meta-svg" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
               <polyline points="7 10 12 15 17 10"></polyline>
@@ -133,7 +150,9 @@
           <!-- Hint 1: Law article hint icon -->
           <span class="start-meta-item start-meta-hint" tabindex="0" role="img"
                 aria-label="Toelichting wetsartikel: bij elke vraag vind je via dit toelichtingsicoon direct het bijbehorende wetsartikel in de Wegcode"
-                data-tooltip="Bij elke vraag vind je via dit toelichtingsicoon direct het bijbehorende wetsartikel">
+                data-tooltip="Bij elke vraag vind je via dit toelichtingsicoon direct het bijbehorende wetsartikel"
+                data-i18n-aria="start.hint_law_aria"
+                data-i18n-tooltip="start.hint_law_tooltip">
             <svg class="start-meta-svg" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
               <polyline points="15 3 21 3 21 9"></polyline>
@@ -143,8 +162,10 @@
 
           <!-- Hint 2: Report error hint icon -->
           <span class="start-meta-item start-meta-hint" tabindex="0" role="img"
-                aria-label="Fout melden: zie je een onjuistheid of onduidelijkheid, klik dan tijdens de quiz op dit icoon om dit door te geven"
-                data-tooltip="Zie je een fout of onduidelijkheid? Klik tijdens de quiz op dit icoon om dit door te geven">
+                aria-label="Fout melden: zie je een onjuistheid of onduidelijkheid, klik dan op dit icoon om dit te melden"
+                data-tooltip="Fout melden: zie je een onjuistheid of onduidelijkheid, klik dan op dit icoon om dit te melden"
+                data-i18n-aria="start.hint_report_aria"
+                data-i18n-tooltip="start.hint_report_tooltip">
             <svg class="start-meta-svg" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
               <line x1="4" y1="22" x2="4" y2="15"></line>
@@ -154,73 +175,73 @@
       </div>
 
       <!-- 6. Subtle copyright notice -->
-      <p class="start-copyright">Copyright &copy; Giovanni Pellicciotta</p>
+      <p class="start-copyright" data-i18n="start.copyright">Copyright &copy; Giovanni Pellicciotta</p>
     </div>
   </section>
 
   <!-- About screen: full-window view replacing the window -->
-  <section id="screen-about" class="screen hidden" aria-label="Over Verkeersregels Quiz">
+  <section id="screen-about" class="screen hidden" aria-label="Over Verkeersregels Quiz" data-i18n-aria="about.screen_aria">
     <div class="about-header">
-      <h1 class="about-title">Over Verkeersregels Quiz</h1>
-      <button id="btn-about-back" class="btn-about-close modal-close view-close-btn" type="button" aria-label="Sluiten" title="Sluiten">&times;</button>
+      <h1 class="about-title" data-i18n="about.title">Over Verkeersregels Quiz</h1>
+      <button id="btn-about-back" class="btn-about-close modal-close view-close-btn" type="button" aria-label="Sluiten" title="Sluiten" data-i18n-aria="about.btn_close_aria" data-i18n-tooltip="about.btn_close_aria">&times;</button>
     </div>
 
     <div class="about-content">
       <div class="about-sources-card">
-        <h2 class="about-section-heading">Gebruikte bronnen &amp; wetgeving</h2>
+        <h2 class="about-section-heading" data-i18n="about.sources_heading">Gebruikte bronnen &amp; wetgeving</h2>
         <ul class="about-sources-list">
           <li class="about-source-item">
             <a href="https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu" target="_blank" rel="noopener noreferrer" class="about-source-link">
-              <span class="about-source-title">Belgische Wegcode (KB 1 december 1975)</span>
+              <span class="about-source-title" data-i18n="about.source1_title">Belgische Wegcode (KB 1 december 1975)</span>
               <svg class="source-icon" aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                 <polyline points="15 3 21 3 21 9"></polyline>
                 <line x1="10" y1="14" x2="21" y2="3"></line>
               </svg>
             </a>
-            <p class="about-source-desc">Algemeen reglement op de politie van het wegverkeer en van het gebruik van de openbare weg.</p>
+            <p class="about-source-desc" data-i18n="about.source1_description">Algemeen reglement op de politie van het wegverkeer en van het gebruik van de openbare weg.</p>
           </li>
           <li class="about-source-item">
             <a href="https://www.wegcode.be/nl/regelgeving/1975120109/wijzigingen~hra8v386pu" target="_blank" rel="noopener noreferrer" class="about-source-link">
-              <span class="about-source-title">Overzicht wetswijzigingen (Wegcode.be)</span>
+              <span class="about-source-title" data-i18n="about.source2_title">Overzicht wetswijzigingen (Wegcode.be)</span>
               <svg class="source-icon" aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                 <polyline points="15 3 21 3 21 9"></polyline>
                 <line x1="10" y1="14" x2="21" y2="3"></line>
               </svg>
             </a>
-            <p class="about-source-desc">Historiek en recente aanpassingen aan de verkeersregels en verkeersborden in België.</p>
+            <p class="about-source-desc" data-i18n="about.source2_description">Historiek en recente aanpassingen aan de verkeersregels en verkeersborden in België.</p>
           </li>
           <li class="about-source-item">
             <a href="https://commons.wikimedia.org/wiki/Category:Diagrams_of_road_signs_of_Belgium" target="_blank" rel="noopener noreferrer" class="about-source-link">
-              <span class="about-source-title">Wikimedia Commons &amp; Verkeersborden België</span>
+              <span class="about-source-title" data-i18n="about.source3_title">Wikimedia Commons &amp; Verkeersborden België</span>
               <svg class="source-icon" aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                 <polyline points="15 3 21 3 21 9"></polyline>
                 <line x1="10" y1="14" x2="21" y2="3"></line>
               </svg>
             </a>
-            <p class="about-source-desc">Officiële SVG vectorillustraties van Belgische verkeersborden.</p>
+            <p class="about-source-desc" data-i18n="about.source3_description">Officiële SVG vectorillustraties van Belgische verkeersborden.</p>
           </li>
         </ul>
-        <p class="start-legal-hint">
+        <p class="start-legal-hint" data-i18n="about.law_hint">
           Bij elke vraag in de quiz vind je via het toelichtingsicoon ↗ direct het bijbehorende wetsartikel.
         </p>
       </div>
 
       <div class="about-version-card">
         <div class="about-version-header">
-          <span class="about-version-label">App-versie</span>
+          <span class="about-version-label" data-i18n="about.version_label">App-versie</span>
           <span id="about-version-tag" class="about-version-tag"></span>
         </div>
-        <h2 class="about-section-heading">Versiegeschiedenis &amp; Release Notes</h2>
+        <h2 class="about-section-heading" data-i18n="about.changelog_heading">Versiegeschiedenis &amp; Release Notes</h2>
         <div id="about-changelog-body" class="about-changelog-body">
-          <p class="changelog-loading">Versiegeschiedenis laden...</p>
+          <p class="changelog-loading" data-i18n="about.changelog_loading">Versiegeschiedenis laden...</p>
         </div>
       </div>
 
       <footer class="about-footer">
-        <p class="about-copyright">Copyright &copy; Giovanni Pellicciotta</p>
+        <p class="about-copyright" data-i18n="about.copyright">Copyright &copy; Giovanni Pellicciotta</p>
       </footer>
     </div>
   </section>
@@ -229,12 +250,12 @@
   <section id="screen-quiz" class="screen hidden">
     <div class="quiz-header">
       <span id="quiz-progress"></span>
-      <button type="button" id="btn-report-error-mobile" class="btn-report-error btn-report-error-mobile" title="Meld een fout in deze vraag" aria-label="Meld fout in deze vraag">
+      <button type="button" id="btn-report-error-mobile" class="btn-report-error btn-report-error-mobile" title="Meld een fout in deze vraag" aria-label="Meld fout in deze vraag" data-i18n-aria="quiz.btn_report_mobile_aria" data-i18n-tooltip="quiz.btn_report_mobile_title">
         <svg class="report-icon" aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
           <line x1="4" y1="22" x2="4" y2="15"></line>
         </svg>
-        <span>Meld fout</span>
+        <span data-i18n="quiz.btn_report_mobile_label">Meld fout</span>
       </button>
       <span id="quiz-score">Score: 0</span>
     </div>
@@ -257,8 +278,8 @@
         <div id="options" class="options"></div>
         <div id="quiz-feedback-wrap" class="quiz-feedback-wrap">
           <div id="explanation" class="explanation hidden"></div>
-          <button id="btn-next" class="btn-primary btn-next hidden" type="button" aria-label="Volgende vraag">
-            <span class="btn-next-text">Volgende vraag</span>
+          <button id="btn-next" class="btn-primary btn-next hidden" type="button" aria-label="Volgende vraag" data-i18n-aria="quiz.btn_next">
+            <span class="btn-next-text" data-i18n="quiz.btn_next">Volgende vraag</span>
             <svg class="next-icon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
               <line x1="5" y1="12" x2="19" y2="12"></line>
               <polyline points="12 5 19 12 12 19"></polyline>
@@ -275,7 +296,9 @@
         <button type="button" id="btn-report-error" class="quiz-btn-report-round"
                 aria-label="Meld een fout in deze vraag"
                 title="Meld een fout in deze vraag"
-                data-tooltip="Meld fout">
+                data-tooltip="Meld fout"
+                data-i18n-aria="quiz.btn_report_aria"
+                data-i18n-tooltip="quiz.btn_report_tooltip">
           <svg class="report-icon" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
             <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
             <line x1="4" y1="22" x2="4" y2="15"></line>
@@ -290,28 +313,28 @@
     <div class="result-header">
       <div class="result-header-spacer"></div>
       <div class="result-header-text">
-        <h1 class="result-title">Quiz Resultaat</h1>
+        <h1 class="result-title" data-i18n="result.title">Quiz Resultaat</h1>
         <p id="result-summary"></p>
       </div>
       <div class="result-actions no-print">
-        <button id="btn-print" class="result-btn-round" type="button" aria-label="Resultaten afdrukken" title="Resultaten afdrukken" data-tooltip="Resultaten afdrukken">
+        <button id="btn-print" class="result-btn-round" type="button" aria-label="Resultaten afdrukken" title="Resultaten afdrukken" data-tooltip="Resultaten afdrukken" data-i18n-aria="result.btn_print_aria" data-i18n-tooltip="result.btn_print_aria">
           <svg class="result-icon-svg" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
             <polyline points="6 9 6 2 18 2 18 9"></polyline>
             <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
             <rect x="6" y="14" width="12" height="8"></rect>
           </svg>
         </button>
-        <button id="btn-restart" class="modal-close view-close-btn result-btn-restart" type="button" aria-label="Opnieuw spelen (sluiten)" title="Opnieuw spelen (sluiten)">&times;</button>
+        <button id="btn-restart" class="modal-close view-close-btn result-btn-restart" type="button" aria-label="Opnieuw spelen (sluiten)" title="Opnieuw spelen (sluiten)" data-i18n-aria="result.btn_restart_aria" data-i18n-tooltip="result.btn_restart_aria">&times;</button>
       </div>
     </div>
     <table id="result-table">
       <thead>
         <tr>
-          <th scope="col">#</th>
-          <th scope="col">Vraag</th>
-          <th scope="col">Jouw antwoord</th>
-          <th scope="col">Juist antwoord</th>
-          <th scope="col">Resultaat</th>
+          <th scope="col" data-i18n="result.table_col_num">#</th>
+          <th scope="col" data-i18n="result.table_col_question">Vraag</th>
+          <th scope="col" data-i18n="result.table_col_your_answer">Jouw antwoord</th>
+          <th scope="col" data-i18n="result.table_col_correct_answer">Juist antwoord</th>
+          <th scope="col" data-i18n="result.table_col_result">Resultaat</th>
         </tr>
       </thead>
       <tbody id="result-table-body"></tbody>
@@ -319,20 +342,20 @@
   </section>
 
   <!-- Sign Carousel screen -->
-  <section id="screen-carousel" class="screen hidden" aria-label="Verkeersborden Carrousel">
+  <section id="screen-carousel" class="screen hidden" aria-label="Verkeersborden Carrousel" data-i18n-aria="carousel.title_sr">
     <div class="carousel-header">
       <div class="carousel-header-spacer">
-        <h1 class="carousel-title sr-only">Verkeersborden Carrousel</h1>
+        <h1 class="carousel-title sr-only" data-i18n="carousel.title_sr">Verkeersborden Carrousel</h1>
       </div>
       <div class="carousel-control-buttons">
-        <button id="btn-carousel-prev" class="btn-carousel-ctrl" type="button" aria-label="Vorig bord" title="Vorig bord (Pijl-links)" data-tooltip="Vorig bord (Pijl-links)">
+        <button id="btn-carousel-prev" class="btn-carousel-ctrl" type="button" aria-label="Vorig bord" title="Vorig bord (Pijl-links)" data-tooltip="Vorig bord (Pijl-links)" data-i18n-aria="carousel.btn_prev_aria" data-i18n-tooltip="carousel.btn_prev_tooltip">
           <svg class="carousel-icon" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
             <polyline points="15 18 9 12 15 6"></polyline>
           </svg>
-          <span class="btn-ctrl-label sr-only">Vorige</span>
+          <span class="btn-ctrl-label sr-only" data-i18n="carousel.btn_prev_label_sr">Vorige</span>
         </button>
 
-        <button id="btn-carousel-toggle" class="btn-carousel-ctrl btn-carousel-toggle" type="button" aria-label="Pauzeren" title="Pauzeren (Spatiebalk)" data-tooltip="Pauzeren (Spatiebalk)">
+        <button id="btn-carousel-toggle" class="btn-carousel-ctrl btn-carousel-toggle" type="button" aria-label="Pauzeren" title="Pauzeren (Spatiebalk)" data-tooltip="Pauzeren (Spatiebalk)" data-i18n-aria="carousel.btn_toggle_pause_aria" data-i18n-tooltip="carousel.btn_toggle_pause_tooltip">
           <span id="carousel-toggle-icon" class="carousel-toggle-icon" aria-hidden="true">
             <svg class="carousel-ctrl-svg icon-pause" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
               <rect x="5.5" y="4" width="4.5" height="16" rx="1.5"></rect>
@@ -342,26 +365,26 @@
               <polygon points="6 4 20 12 6 20"></polygon>
             </svg>
           </span>
-          <span id="carousel-toggle-text" class="carousel-toggle-text sr-only">Pauzeren</span>
+          <span id="carousel-toggle-text" class="carousel-toggle-text sr-only" data-i18n="carousel.toggle_text_pause">Pauzeren</span>
         </button>
 
-        <button id="btn-carousel-next" class="btn-carousel-ctrl" type="button" aria-label="Volgend bord" title="Volgend bord (Pijl-rechts)" data-tooltip="Volgend bord (Pijl-rechts)">
+        <button id="btn-carousel-next" class="btn-carousel-ctrl" type="button" aria-label="Volgend bord" title="Volgend bord (Pijl-rechts)" data-tooltip="Volgend bord (Pijl-rechts)" data-i18n-aria="carousel.btn_next_aria" data-i18n-tooltip="carousel.btn_next_tooltip">
           <svg class="carousel-icon" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
             <polyline points="9 18 15 12 9 6"></polyline>
           </svg>
-          <span class="btn-ctrl-label sr-only">Volgende</span>
+          <span class="btn-ctrl-label sr-only" data-i18n="carousel.btn_next_label_sr">Volgende</span>
         </button>
       </div>
       <div class="carousel-header-actions">
-        <button id="btn-carousel-exit" class="btn-carousel-close modal-close view-close-btn" type="button" aria-label="Carrousel sluiten (Escape)" title="Carrousel sluiten (Escape)">&times;</button>
+        <button id="btn-carousel-exit" class="btn-carousel-close modal-close view-close-btn" type="button" aria-label="Carrousel sluiten (Escape)" title="Carrousel sluiten (Escape)" data-i18n-aria="carousel.btn_exit_aria" data-i18n-tooltip="carousel.btn_exit_aria">&times;</button>
       </div>
     </div>
 
     <!-- Interactive stage: click/touch toggles pause/play -->
-    <div id="carousel-stage" class="carousel-stage" role="region" aria-label="Verkeersbord kaart" tabindex="0" title="Klik om te pauzeren of hervatten">
+    <div id="carousel-stage" class="carousel-stage" role="region" aria-label="Verkeersbord kaart" tabindex="0" title="Klik om te pauzeren of hervatten" data-i18n-aria="carousel.stage_aria" data-i18n-tooltip="carousel.stage_title">
       <!-- Pause indicator: round pause-icon button without text -->
       <div id="carousel-pause-overlay" class="carousel-pause-overlay hidden" aria-live="polite">
-        <div class="carousel-pause-round-btn" aria-label="Gepauzeerd" title="Gepauzeerd">
+        <div class="carousel-pause-round-btn" aria-label="Gepauzeerd" title="Gepauzeerd" data-i18n-aria="carousel.pause_overlay_aria" data-i18n-tooltip="carousel.pause_overlay_aria">
           <svg class="carousel-pause-round-svg" width="34" height="34" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
             <rect x="5.5" y="4" width="4.2" height="16" rx="2"></rect>
             <rect x="14.3" y="4" width="4.2" height="16" rx="2"></rect>
@@ -384,7 +407,7 @@
           <p id="carousel-explanation" class="carousel-explanation"></p>
           <div id="carousel-source-wrap" class="carousel-source-wrap hidden">
             <a id="carousel-source-link" class="source-link" href="#" target="_blank" rel="noopener noreferrer">
-              <span>Bekijk artikel in Wegcode</span>
+              <span data-i18n="carousel.source_link_text">Bekijk artikel in Wegcode</span>
               <svg class="source-icon" aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
                 <polyline points="15 3 21 3 21 9"></polyline>
@@ -409,7 +432,7 @@
       <hr class="carousel-divider">
       <div class="carousel-status-info">
         <span id="carousel-delay-info" class="carousel-delay-info">Wisselt elke 8 seconden</span>
-        <span id="carousel-shortcut-hint" class="carousel-shortcut-hint">Tip: klik op de kaart of druk op <kbd class="kbd-key">Spatie</kbd> om te pauzeren</span>
+        <span id="carousel-shortcut-hint" class="carousel-shortcut-hint" data-i18n-html="carousel.shortcut_hint_pause">Tip: klik op de kaart of druk op <kbd class="kbd-key">Spatiebalk</kbd> om te pauzeren</span>
       </div>
     </div>
   </section>
@@ -418,82 +441,82 @@
   <div id="modal-config" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="modal-config-title">
     <div class="modal-dialog modal-dialog-config">
       <div class="modal-header">
-        <h3 id="modal-config-title">Instellingen Quiz</h3>
-        <button type="button" id="btn-config-close" class="modal-close" aria-label="Sluiten">&times;</button>
+        <h3 id="modal-config-title" data-i18n="config.title_quiz">Instellingen Quiz</h3>
+        <button type="button" id="btn-config-close" class="modal-close" aria-label="Sluiten" data-i18n-aria="config.btn_close_aria">&times;</button>
       </div>
       <div class="modal-body modal-config-body">
         <!-- Quiz Configuration Section -->
         <div id="config-section-quiz" class="config-section">
-          <p class="config-section-intro">Stel jouw quiz naar wens in</p>
+          <p class="config-section-intro" data-i18n="config.introduction_quiz">Stel jouw quiz naar wens in</p>
 
           <div class="config-field">
-            <label for="config-quiz-count" class="config-label">Aantal vragen</label>
+            <label for="config-quiz-count" class="config-label" data-i18n="config.label_count">Aantal vragen</label>
             <select id="config-quiz-count" class="config-select">
-              <option value="5">5 vragen</option>
-              <option value="10">10 vragen</option>
-              <option value="20" selected>20 vragen (standaard)</option>
-              <option value="30">30 vragen</option>
-              <option value="40">40 vragen</option>
-              <option value="50">50 vragen</option>
-              <option value="all">Alle vragen (volledige selectie)</option>
+              <option value="5" data-i18n="config.count_5">5 vragen</option>
+              <option value="10" data-i18n="config.count_10">10 vragen</option>
+              <option value="20" selected data-i18n="config.count_20">20 vragen (standaard)</option>
+              <option value="30" data-i18n="config.count_30">30 vragen</option>
+              <option value="40" data-i18n="config.count_40">40 vragen</option>
+              <option value="50" data-i18n="config.count_50">50 vragen</option>
+              <option value="all" data-i18n="config.count_all">Alle vragen (volledige selectie)</option>
             </select>
             <div id="config-quiz-count-warning" class="config-field-warning hidden" role="alert" aria-live="polite"></div>
           </div>
 
           <div class="config-field">
-            <label for="config-quiz-type" class="config-label">Type vragen</label>
+            <label for="config-quiz-type" class="config-label" data-i18n="config.label_type">Type vragen</label>
             <select id="config-quiz-type" class="config-select">
-              <option value="" selected>Alle vraagtypes (borden, regels en situaties)</option>
-              <option value="situation">Enkel verkeerssituaties (foto's)</option>
-              <option value="sign">Enkel verkeersborden</option>
-              <option value="recognize">Enkel borden herkennen</option>
-              <option value="identify">Enkel borden identificeren</option>
-              <option value="rule">Enkel verkeersregels</option>
+              <option value="" selected data-i18n="config.type_all">Alle vraagtypes (borden, regels en situaties)</option>
+              <option value="situation" data-i18n="config.type_situation">Enkel verkeerssituaties (foto's)</option>
+              <option value="sign" data-i18n="config.type_sign">Enkel verkeersborden</option>
+              <option value="recognize" data-i18n="config.type_recognize">Enkel borden herkennen</option>
+              <option value="identify" data-i18n="config.type_identify">Enkel borden identificeren</option>
+              <option value="rule" data-i18n="config.type_rule">Enkel verkeersregels</option>
             </select>
           </div>
 
           <div class="config-field">
-            <label for="config-quiz-since" class="config-label">Ouderdom van de regels</label>
+            <label for="config-quiz-since" class="config-label" data-i18n="config.label_since">Ouderdom van de regels</label>
             <select id="config-quiz-since" class="config-select">
-              <option value="" selected>Maakt niet uit</option>
-              <option value="2021">Enkel ingevoerd na 2021</option>
-              <option value="2020">Enkel ingevoerd na 2020</option>
-              <option value="2019">Enkel ingevoerd na 2019</option>
-              <option value="2015">Enkel ingevoerd na 2015</option>
-              <option value="2010">Enkel ingevoerd na 2010</option>
-              <option value="2000">Enkel ingevoerd na 2000</option>
+              <option value="" selected data-i18n="config.since_any">Maakt niet uit</option>
+              <option value="2021" data-i18n="config.since_2021">Enkel ingevoerd na 2021</option>
+              <option value="2020" data-i18n="config.since_2020">Enkel ingevoerd na 2020</option>
+              <option value="2019" data-i18n="config.since_2019">Enkel ingevoerd na 2019</option>
+              <option value="2015" data-i18n="config.since_2015">Enkel ingevoerd na 2015</option>
+              <option value="2010" data-i18n="config.since_2010">Enkel ingevoerd na 2010</option>
+              <option value="2000" data-i18n="config.since_2000">Enkel ingevoerd na 2000</option>
             </select>
           </div>
         </div>
 
         <!-- Carousel Configuration Section -->
         <div id="config-section-carousel" class="config-section hidden">
-          <p class="config-section-intro">Stel jouw carrousel naar wens in</p>
+          <p class="config-section-intro" data-i18n="config.introduction_carousel">Stel jouw carrousel naar wens in</p>
 
           <div class="config-field">
-            <label for="carousel-delay-select" class="config-label">Wisselinterval per verkeersbord</label>
+            <label for="carousel-delay-select" class="config-label" data-i18n="config.label_carousel_delay">Wisselinterval per verkeersbord</label>
             <select id="carousel-delay-select" class="config-select carousel-delay-select">
-              <option value="3">3 seconden (snel)</option>
-              <option value="5">5 seconden (vlot)</option>
-              <option value="8" selected>8 seconden (standaard)</option>
-              <option value="12">12 seconden (rustig)</option>
-              <option value="15">15 seconden (uitgebreid)</option>
+              <option value="3" data-i18n="config.delay_3">3 seconden (snel)</option>
+              <option value="5" data-i18n="config.delay_5">5 seconden (vlot)</option>
+              <option value="8" selected data-i18n="config.delay_8">8 seconden (standaard)</option>
+              <option value="12" data-i18n="config.delay_12">12 seconden (rustig)</option>
+              <option value="15" data-i18n="config.delay_15">15 seconden (uitgebreid)</option>
             </select>
           </div>
 
           <div class="config-field">
-            <label for="config-carousel-since" class="config-label">Welke borden tonen</label>
+            <label for="config-carousel-since" class="config-label" data-i18n="config.label_carousel_signs">Welke borden tonen</label>
             <select id="config-carousel-since" class="config-select">
-              <option value="" selected>Alle 198 verkeersborden</option>
-              <option value="1990">Borden ingevoerd/gewijzigd vanaf 1990</option>
-              <option value="2000">Borden ingevoerd/gewijzigd vanaf 2000</option>
-              <option value="2010">Borden ingevoerd/gewijzigd vanaf 2010</option>
+              <option value="" selected data-i18n="config.carousel_all">Alle 198 verkeersborden</option>
+              <option value="1990" data-i18n="config.carousel_since_1990">Borden ingevoerd/gewijzigd vanaf 1990</option>
+              <option value="2000" data-i18n="config.carousel_since_2000">Borden ingevoerd/gewijzigd vanaf 2000</option>
+              <option value="2010" data-i18n="config.carousel_since_2010">Borden ingevoerd/gewijzigd vanaf 2010</option>
             </select>
           </div>
         </div>
       </div>
       <div class="modal-actions modal-actions-config">
-        <button type="button" id="btn-config-save" class="btn-primary">Opslaan</button>
+        <button type="button" id="btn-config-save" class="btn-primary" data-i18n="config.btn_save">Opslaan</button>
       </div>
     </div>
   </div>
@@ -502,21 +525,21 @@
   <div id="modal-report" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="modal-report-title">
     <div class="modal-dialog">
       <div class="modal-header">
-        <h3 id="modal-report-title">Fout melden</h3>
-        <button type="button" id="btn-modal-close" class="modal-close" aria-label="Sluiten">&times;</button>
+        <h3 id="modal-report-title" data-i18n="report.title">Meld een fout</h3>
+        <button type="button" id="btn-modal-close" class="modal-close" aria-label="Sluiten" data-i18n-aria="report.btn_close_aria">&times;</button>
       </div>
       <form id="form-report" class="modal-body">
-        <p class="modal-desc">Zie je een onjuistheid of onduidelijkheid in deze vraag of antwoorden? Geef het hier door.</p>
+        <p class="modal-desc" data-i18n="report.description">Zie je een onduidelijkheid of onjuistheid in deze context? Geef het hier door.</p>
         <div class="modal-question-summary">
           <div id="modal-question-id" class="modal-question-id"></div>
           <div id="modal-question-text" class="modal-question-text"></div>
         </div>
-        <label for="report-remark">Opmerking of toelichting (optioneel):</label>
-        <textarea id="report-remark" name="opmerking" rows="3" placeholder="Wat klopt er niet of wat kan duidelijker?"></textarea>
+        <label for="report-remark" data-i18n="report.label_remark">Opmerking of toelichting (optioneel):</label>
+        <textarea id="report-remark" name="opmerking" rows="3" placeholder="Wat klopt er niet of wat kan duidelijker?" data-i18n-placeholder="report.remark_placeholder"></textarea>
         <div id="modal-feedback" class="modal-feedback hidden"></div>
         <div class="modal-actions">
-          <button type="button" id="btn-modal-cancel" class="btn-secondary">Annuleren</button>
-          <button type="submit" id="btn-modal-submit" class="btn-primary">Versturen</button>
+          <button type="button" id="btn-modal-cancel" class="btn-secondary" data-i18n="report.btn_cancel">Annuleren</button>
+          <button type="submit" id="btn-modal-submit" class="btn-primary" data-i18n="report.btn_submit">Versturen</button>
         </div>
       </form>
     </div>
@@ -526,14 +549,14 @@
   <div id="modal-changelog" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="modal-changelog-title">
     <div class="modal-dialog modal-dialog-changelog">
       <div class="modal-header">
-        <h3 id="modal-changelog-title">Versiegeschiedenis</h3>
-        <button type="button" id="btn-changelog-close" class="modal-close" aria-label="Sluiten">&times;</button>
+        <h3 id="modal-changelog-title" data-i18n="changelog.modal_title">Versiegeschiedenis</h3>
+        <button type="button" id="btn-changelog-close" class="modal-close" aria-label="Sluiten" data-i18n-aria="changelog.btn_close_aria">&times;</button>
       </div>
       <div id="changelog-body" class="modal-body modal-changelog-body">
-        <p class="changelog-loading">Versiegeschiedenis laden...</p>
+        <p class="changelog-loading" data-i18n="changelog.loading">Versiegeschiedenis laden...</p>
       </div>
       <div class="modal-actions modal-actions-changelog">
-        <button type="button" id="btn-changelog-dismiss" class="btn-secondary">Sluiten</button>
+        <button type="button" id="btn-changelog-dismiss" class="btn-secondary" data-i18n="changelog.btn_dismiss">Sluiten</button>
       </div>
     </div>
   </div>

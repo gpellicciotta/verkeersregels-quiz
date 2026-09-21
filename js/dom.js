@@ -92,4 +92,5 @@ export const el = {
   aboutChangelogBody: document.getElementById("about-changelog-body"),
   aboutVersionTag: document.getElementById("about-version-tag"),
   quizModeDesc: document.getElementById("quiz-mode-desc"),
+  btnLang: document.getElementById("btn-lang"),
 };

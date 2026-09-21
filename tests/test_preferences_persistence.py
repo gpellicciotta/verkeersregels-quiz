@@ -61,7 +61,11 @@ class TestPreferencesPersistence(unittest.TestCase):
 
     def test_startup_sequence_applies_stored_preferences_before_start_mode(self) -> None:
         """Validates that applyStoredPreferences runs right before the initial setStartMode call."""
-        self.assertIn("applyStoredPreferences();\nsetStartMode(state.currentMode);", self.js_code)
+        import re
+        self.assertTrue(
+            bool(re.search(r"applyStoredPreferences\(\);\s+setStartMode\(state\.currentMode\);", self.js_code)),
+            "applyStoredPreferences must be called before setStartMode",
+        )
 
     def test_js_exports_preference_functions(self) -> None:
         """Validates that preference helper functions are exposed on window object."""
