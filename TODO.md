@@ -14,7 +14,7 @@ An overview of all tasks and their planning.
 ---
 
 ## Next Milestone
-- [ ] T0057 The carrousel is currently re-using the "correct answer" to explain a road sign, but the answer doesn't always make sense without a question. We should be using a separate, clear explanation of the road-sign instead. (and make sure there are translations too)
+- [~] T0057 [owner: @gemini] Use separate localized road sign explanations in the carrousel instead of re-using question answers.
 - [ ] T0053 [needs: T0057] Release version 3.2.0 with modular architecture, service worker auto-updates, configuration persistence, and localization.
 - [ ] T0058 Localize user interface and question bank into French.
 - [ ] T0059 Localize user interface and question bank into German.
