@@ -4,32 +4,32 @@ Content for the Belgian theoretical driving exam quiz, generated and verified on
 
 ## Question bank summary
 
-Total questions: 304, stored in `data/questions.json`.
+Total questions: 324, stored in `data/questions.json`.
 
 Breakdown by type:
 
 - recognize: 193
 - identify: 12
 - rule: 79
-- situation: 20
+- situation: 40
 
 Breakdown by category:
 
-- aanwijzing: 92
-- voorrang: 38
-- verbod: 34
+- aanwijzing: 94
+- voorrang: 44
+- fietsers-voetgangers: 38
+- verbod: 36
 - gevaar: 31
-- fietsers-voetgangers: 34
-- parkeren: 23
-- algemeen: 17
+- parkeren: 24
+- algemeen: 20
 - gebod: 10
+- autosnelweg: 10
 - snelheid: 9
-- autosnelweg: 8
 - alcohol: 4
 - gordel: 2
 - telefoon: 2
 
-Answer positions (`correctIndex`) are spread across options (73 for 0, 75 for 1, 74 for 2, 72 for 3) so the correct answer is not systematically in the same position.
+Answer positions (`correctIndex`) are spread across options (84 for 0, 87 for 1, 81 for 2, 72 for 3) so the correct answer is not systematically in the same position.
 
 ## Rule sources
 
@@ -186,9 +186,15 @@ Cross-reference used to confirm which code matches which meaning and shape: the 
   were unverifiable (pre-2021, and the government page that might date them is CAPTCHA-gated), but the sign
   meanings and explanations in both questions are correct and were not changed. Closes T0033.
 
+- 2026-09-21: integrated 20 additional real traffic situation photo questions under task T0044:
+  - Sourced and validated 20 authentic photographic traffic situations covering roundabouts, level crossings, bus lanes, woonerven, priority vehicles, continuous lines, and cyclist interactions.
+  - Stored high-resolution photos in `assets/situations/` and registered questions `sit-21` through `sit-40` in `data/questions.json`.
+  - Linked each question directly to its governing Belgian Wegcode article (Articles 4, 6, 7bis, 9, 12, 19, 20, 22bis, 22decies, 24, 38, 40, 40ter, 64, 65, 67, 72, 77).
+  - Maintained balanced answer distribution across options and updated Service Worker precache suite to 247 assets.
+
 ## Situation photo sources
 
-The 20 real-world traffic situation photographs in `assets/situations/` originate from *De Grote Verkeerstoets*, the official public traffic safety educational initiative organized by the Flemish Foundation for Traffic Knowledge ([VSV](https://www.vsv.be)) in partnership with the Flemish Government ([Departement Mobiliteit en Openbare Werken](https://www.vlaanderen.be/departement-mobiliteit-en-openbare-werken)).
+The 40 real-world traffic situation photographs in `assets/situations/` originate from *De Grote Verkeerstoets*, the official public traffic safety educational initiative organized by the Flemish Foundation for Traffic Knowledge ([VSV](https://www.vsv.be)) in partnership with the Flemish Government ([Departement Mobiliteit en Openbare Werken](https://www.vlaanderen.be/departement-mobiliteit-en-openbare-werken)).
 
 In accordance with Belgian copyright law (Wetboek van economisch recht, Art. XI.189 §1, 1° & 2°), the non-commercial use of short illustrative excerpts for educational road safety testing (*onderwijsexceptie* and *citaatrecht*) is permitted with proper attribution to the author and source.
 
@@ -214,3 +220,23 @@ In accordance with Belgian copyright law (Wetboek van economisch recht, Art. XI.
 | `sit-18-b21-voorrang-tegenliggers.jpg` | Smalle doorgang voorrang op tegenligger (bord B21) | Art. 67.4 | [De Grote Verkeerstoets - Voorrang](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas/voorrang) |
 | `sit-19-f19-beperkt-eenrichting.jpg` | Beperkt eenrichtingsverkeer bord F19 met onderbord M2 | Art. 65.2 & Art. 71 | [De Grote Verkeerstoets - Verkeerstekens](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas/verkeerstekens) |
 | `sit-20-f4a-zone-30.jpg` | Zone 30 beginbord F4a | Art. 71 & Art. 22quater | [De Grote Verkeerstoets - Verkeerstekens](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas/verkeerstekens) |
+| `sit-21-rotonde-voorrang.jpg` | Rotonde met bord D5 en B1 voorrang verlenen | Art. 12.3.1 & Art. 67.2 | [De Grote Verkeerstoets - Voorrang](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas/voorrang) |
+| `sit-22-overweg-slagbomen.jpg` | Spooroverweg met knipperende rode lichten en slagbomen | Art. 20.3, 2° | [De Grote Verkeerstoets - Verkeerstekens](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas/verkeerstekens) |
+| `sit-23-voorsorteren-pijlen.jpg` | Voorsorteren op kruispunt met voorsorteerpijlen | Art. 77.1 | [De Grote Verkeerstoets - Plaats op de weg](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas) |
+| `sit-24-fietssuggestiestrook.jpg` | Rood-okerkleurige fietssuggestiestrook op rijbaan | Art. 2.62 & Art. 9.1.2 | [De Grote Verkeerstoets - Plaats op de weg](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas) |
+| `sit-25-erf-woonerf-f12a.jpg` | Woonerf / erf aangeduid met bord F12a | Art. 22bis | [De Grote Verkeerstoets - Verkeerstekens](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas/verkeerstekens) |
+| `sit-26-prioritair-voertuig.jpg` | Naderend prioritair voertuig met blauwe zwaailichten en sirene | Art. 38 | [De Grote Verkeerstoets - Voorrang](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas/voorrang) |
+| `sit-27-doorlopende-witte-streep.jpg` | Inhaalverbod over doorlopende witte streep | Art. 72.2 | [De Grote Verkeerstoets - Plaats op de weg](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas) |
+| `sit-28-parkeren-trottoir-verbod.jpg` | Parkeerverbod op het trottoir zonder toelatingsbord E9b | Art. 24.1° & Art. 23.1 | [De Grote Verkeerstoets - Plaats op de weg](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas) |
+| `sit-29-busstrook-f17.jpg` | Busstrook / bijzondere overrijdbare bedding bord F17 | Art. 72.5 | [De Grote Verkeerstoets - Verkeerstekens](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas/verkeerstekens) |
+| `sit-30-blindengeleidehond-oversteken.jpg` | Voorrangsplicht voor blinde voetganger met stok of geleidehond | Art. 40.2 | [De Grote Verkeerstoets - Voorrang](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas/voorrang) |
+| `sit-31-rechtsaf-fietser-voorrang.jpg` | Afslaande bestuurder verleent voorrang aan rechtdoorgaande fietser | Art. 19.3.2° | [De Grote Verkeerstoets - Voorrang](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas/voorrang) |
+| `sit-32-knipperlicht-beweegbare-brug.jpg` | Beurtelings knipperende rode lichten bij beweegbare brug | Art. 64.1 | [De Grote Verkeerstoets - Verkeerstekens](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas/verkeerstekens) |
+| `sit-33-geel-knipperlicht-kruispunt.jpg` | Oranjegeel knipperlicht op kruispunt (voorrang van rechts) | Art. 6.3 & Art. 12.3.1 | [De Grote Verkeerstoets - Verkeerstekens](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas/verkeerstekens) |
+| `sit-34-fietsopstelvak-f107.jpg` | Fietsopstelvak (OFOS) bij verkeerslichten bord F107 | Art. 77.8 | [De Grote Verkeerstoets - Plaats op de weg](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas) |
+| `sit-35-schoolstraat-c3.jpg` | Schoolstraat afgesloten met bord C3 en onderbord | Art. 2.68 & Art. 22decies | [De Grote Verkeerstoets - Verkeerstekens](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas/verkeerstekens) |
+| `sit-36-spitsstrook-matrixbord.jpg` | Geopende spitsstrook op autosnelweg aangeduid met groene pijl | Art. 9.7 & Art. 65.4 | [De Grote Verkeerstoets - Verkeerstekens](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas/verkeerstekens) |
+| `sit-37-tram-halte-uitstappen.jpg` | Stoppen voor uitstappende passagiers bij tramhalte op rijbaan | Art. 40.1 | [De Grote Verkeerstoets - Voorrang](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas/voorrang) |
+| `sit-38-bevoegd-persoon-arm-omhoog.jpg` | Bevoegd persoon met verticaal opgeheven arm (stop voor iedereen) | Art. 4.1 | [De Grote Verkeerstoets - Verkeerstekens](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas/verkeerstekens) |
+| `sit-39-afstand-inhalen-fietser.jpg` | Minimumafstand 1,5 meter bij inhalen fietser buiten bebouwde kom | Art. 40ter | [De Grote Verkeerstoets - Plaats op de weg](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas) |
+| `sit-40-reddingsstrook-file.jpg` | Vorming van reddingsstrook bij file op autosnelweg | Art. 2.70 & Art. 9.8 | [De Grote Verkeerstoets - Plaats op de weg](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas) |

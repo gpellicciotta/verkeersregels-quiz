@@ -25,8 +25,8 @@ class TestQuizData(unittest.TestCase):
         cls.questions = cls.data.get("questions", [])
 
     def test_total_question_count(self) -> None:
-        """Validates that the question bank contains exactly 304 questions."""
-        self.assertEqual(len(self.questions), 304, f"Expected exactly 304 questions, found {len(self.questions)}")
+        """Validates that the question bank contains exactly 324 questions."""
+        self.assertEqual(len(self.questions), 324, f"Expected exactly 324 questions, found {len(self.questions)}")
 
     def test_question_counts_by_type(self) -> None:
         """Validates the question counts for all supported question types."""
@@ -35,7 +35,7 @@ class TestQuizData(unittest.TestCase):
         self.assertEqual(counts["recognize"], 193)
         self.assertEqual(counts["identify"], 12)
         self.assertEqual(counts["rule"], 79)
-        self.assertEqual(counts["situation"], 20)
+        self.assertEqual(counts["situation"], 40)
 
     def test_question_ids_unique_and_valid(self) -> None:
         """Validates that all question IDs are non-empty, kebab-case formatted, and unique."""
@@ -144,7 +144,7 @@ class TestQuizData(unittest.TestCase):
     def test_referenced_situation_images_exist_and_are_valid_jpg(self) -> None:
         """Validates that every referenced situation image file exists and is valid JPEG."""
         situation_questions = [q for q in self.questions if q.get("type") == "situation"]
-        self.assertGreaterEqual(len(situation_questions), 20, "Expected at least 20 situation questions")
+        self.assertGreaterEqual(len(situation_questions), 40, "Expected at least 40 situation questions")
         for q in situation_questions:
             qid = q.get("id", "unknown")
             self.assertIn("image", q, f"Situation question {qid} must have 'image' field")

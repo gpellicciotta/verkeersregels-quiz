@@ -4799,6 +4799,309 @@
       "correctIndex": 1,
       "explanation": "Verkeersbord F4a geeft het begin aan van een zone waarin de snelheid overal beperkt is tot maximaal 30 km/u, totdat bord F4b het einde van de zone aangeeft (art. 71 & art. 22quater).",
       "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+    },
+    {
+      "id": "sit-21-rotonde-voorrang",
+      "type": "situation",
+      "category": "voorrang",
+      "question": "Je nadert deze rotonde aangeduid met bord D5 en B1 met haaientanden. Wie heeft voorrang?",
+      "image": "assets/situations/sit-21-rotonde-voorrang.jpg",
+      "options": [
+        "Bestuurders die al op de rotonde rijden hebben voorrang op oprijdend verkeer.",
+        "Jij hebt als oprijdende bestuurder voorrang van rechts op de rotonde.",
+        "Wie het snelst rijdt heeft altijd voorrang."
+      ],
+      "correctIndex": 0,
+      "explanation": "Bij het oprijden van een rotonde (bord D5 in combinatie met B1 en haaientanden) moet je voorrang verlenen aan alle bestuurders die al op de rotonde rijden (art. 12.3.1 en art. 67.2).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-12"
+    },
+    {
+      "id": "sit-22-overweg-slagbomen",
+      "type": "situation",
+      "category": "algemeen",
+      "question": "De rode lichten knipperen en de slagbomen van de spooroverweg gaan naar beneden. Wat moet je doen?",
+      "image": "assets/situations/sit-22-overweg-slagbomen.jpg",
+      "options": [
+        "Snel nog oversteken zolang de slagboom niet helemaal dicht is.",
+        "Onmiddellijk stoppen voor de stopstreep of het verkeerslicht en wachten tot de lichten doven en de slagbomen volledig open zijn.",
+        "Claxonneren om de treinbestuurder te waarschuwen dat je erdoor wil."
+      ],
+      "correctIndex": 1,
+      "explanation": "Zodra de rode lichten knipperen of de slagbomen in beweging komen, is het verboden de overweg op te rijden. Bestuurders moeten verplicht stoppen (art. 20.3, 2°).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-20"
+    },
+    {
+      "id": "sit-23-voorsorteren-pijlen",
+      "type": "situation",
+      "category": "aanwijzing",
+      "question": "Je rijdt op de rijstrook met de pijl naar links. Mag je op het kruispunt toch rechtdoor rijden?",
+      "image": "assets/situations/sit-23-voorsorteren-pijlen.jpg",
+      "options": [
+        "Ja, als er op dat moment geen ander verkeer naast je rijdt.",
+        "Ja, zolang je je richtingaanwijzer naar rechts aanzet.",
+        "Nee, voorsorteerpijlen op het wegdek verplichten je de aangeduide richting te volgen."
+      ],
+      "correctIndex": 2,
+      "explanation": "Voorsorteerpijlen die op de rijbaan zijn aangebracht, verplichten bestuurders de richting te volgen die door de pijlen wordt aangeduid (art. 77.1).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-77"
+    },
+    {
+      "id": "sit-24-fietssuggestiestrook",
+      "type": "situation",
+      "category": "fietsers-voetgangers",
+      "question": "Je rijdt met de auto langs deze rood-okerkleurige fietssuggestiestrook (zonder verkeersbord D7 of witte onderbroken streep). Mag je hierop rijden?",
+      "image": "assets/situations/sit-24-fietssuggestiestrook.jpg",
+      "options": [
+        "Ja, een fietssuggestiestrook maakt integraal deel uit van de rijbaan; auto's mogen erop rijden, maar mogen fietsers niet in gevaar brengen of hinderen.",
+        "Nee, een fietssuggestiestrook is uitsluitend voorbehouden voor fietsers en verboden voor auto's.",
+        "Alleen als je sneller rijdt dan 50 km/u."
+      ],
+      "correctIndex": 0,
+      "explanation": "Een fietssuggestiestrook is geen echt fietspad en heeft geen juridische status van een voorbehouden deel: het maakt deel uit van de rijbaan waar auto's over mogen rijden zonder fietsers te hinderen (art. 2.62 & art. 9.1.2).",
+      "source": "https://www.wegcode.be/nl/verkeersreglement/fietsers-en-de-wegcode"
+    },
+    {
+      "id": "sit-25-erf-woonerf-f12a",
+      "type": "situation",
+      "category": "algemeen",
+      "question": "Je rijdt een straat binnen met verkeersbord F12a (erf/woonerf). Welke regel geldt hier voor voetgangers en snelheid?",
+      "image": "assets/situations/sit-25-erf-woonerf-f12a.jpg",
+      "options": [
+        "De maximumsnelheid is 30 km/u en voetgangers moeten op het trottoir blijven.",
+        "De maximumsnelheid is 20 km/u en voetgangers mogen de volledige breedte van de openbare weg gebruiken en er spelen.",
+        "Motorvoertuigen zijn hier te allen tijde verboden."
+      ],
+      "correctIndex": 1,
+      "explanation": "Binnen een erf of woonerf (bord F12a) geldt een maximumsnelheid van 20 km/u en mogen voetgangers de ganse breedte van de openbare weg benutten (art. 22bis).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-22bis"
+    },
+    {
+      "id": "sit-26-prioritair-voertuig",
+      "type": "situation",
+      "category": "voorrang",
+      "question": "Er nadert achter je een ziekenwagen met ingeschakelde blauwe knipperlichten en het speciaal geluidstoestel (sirene). Wat moet je doen?",
+      "image": "assets/situations/sit-26-prioritair-voertuig.jpg",
+      "options": [
+        "Gewoon je snelheid aanhouden; het voertuig haalt je vanzelf wel in.",
+        "Meteen hard remmen en stilstaan midden op de rijbaan.",
+        "Onmiddellijk de doorgang vrijmaken, vertragen en zo nodig stoppen of uitwijken om voorrang te verlenen."
+      ],
+      "correctIndex": 2,
+      "explanation": "Zodra een prioritair voertuig zijn blauwe knipperlichten én sirene gebruikt, moet elke weggebruiker onmiddellijk de doorgang vrijmaken en voorrang verlenen (art. 38).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-38"
+    },
+    {
+      "id": "sit-27-doorlopende-witte-streep",
+      "type": "situation",
+      "category": "verbod",
+      "question": "Je rijdt achter deze langzame tractor op een weg met een doorlopende witte streep. Mag je de tractor inhalen door over de streep te rijden?",
+      "image": "assets/situations/sit-27-doorlopende-witte-streep.jpg",
+      "options": [
+        "Nee, het is ten strengste verboden om over een doorlopende witte streep te rijden of deze te overschrijden, ook niet om een langzaam voertuig in te halen.",
+        "Ja, landbouwvoertuigen en tractoren mag je altijd over een doorlopende streep inhalen.",
+        "Ja, zolang je niet sneller rijdt dan 30 km/u."
+      ],
+      "correctIndex": 0,
+      "explanation": "Een doorlopende witte streep mag onder geen beding overschreden worden (art. 72.2). Inhalen door over de doorlopende streep te rijden is verboden, ook bij een trage tractor.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-72"
+    },
+    {
+      "id": "sit-28-parkeren-trottoir-verbod",
+      "type": "situation",
+      "category": "parkeren",
+      "question": "Mag je je auto met twee wielen op het trottoir parkeren zoals getoond op deze foto, als er geen verkeersbord E9b staat?",
+      "image": "assets/situations/sit-28-parkeren-trottoir-verbod.jpg",
+      "options": [
+        "Ja, zolang er minstens 1 meter ruimte voor voetgangers overblijft.",
+        "Nee, parkeren op het trottoir is verboden tenzij een specifiek verkeersbord (zoals E9b) dit uitdrukkelijk toestaat.",
+        "Ja, maar enkel 's nachts en tijdens het weekend."
+      ],
+      "correctIndex": 1,
+      "explanation": "Stilstaan en parkeren op het trottoir is volgens artikel 24.1° verboden, tenzij bord E9b dit expliciet toestaat (art. 23.1 en art. 70).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-24"
+    },
+    {
+      "id": "sit-29-busstrook-f17",
+      "type": "situation",
+      "category": "aanwijzing",
+      "question": "Je rijdt met een gewone personenwagen. Mag je op deze bijzondere overrijdbare bedding of busstrook (bord F17 en markering 'BUS') rijden?",
+      "image": "assets/situations/sit-29-busstrook-f17.jpg",
+      "options": [
+        "Ja, als er op dat moment geen bus in zicht is.",
+        "Ja, om een file van auto's rechts in te halen.",
+        "Nee, gewone auto's mogen er enkel op rijden in de onmiddellijke nabijheid van een kruispunt om van richting te veranderen."
+      ],
+      "correctIndex": 2,
+      "explanation": "Een busstrook of bijzondere overrijdbare bedding (bord F17) is voorbehouden voor openbaar vervoer. Andere bestuurders mogen er enkel de laatste meters op rijden om op een kruispunt af te slaan (art. 72.5).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-72"
+    },
+    {
+      "id": "sit-30-blindengeleidehond-oversteken",
+      "type": "situation",
+      "category": "fietsers-voetgangers",
+      "question": "Een persoon met een witte stok of blindengeleidehond wil oversteken. Wat moet je doen als naderende bestuurder?",
+      "image": "assets/situations/sit-30-blindengeleidehond-oversteken.jpg",
+      "options": [
+        "Voorrang verlenen en in alle omstandigheden voorrang verlenen en stoppen om de persoon veilig te laten oversteken.",
+        "Kort toeteren om te laten weten dat je voorbijrijdt.",
+        "Alleen stoppen als de persoon al midden op de rijbaan staat."
+      ],
+      "correctIndex": 0,
+      "explanation": "Bestuurders moeten in alle omstandigheden voorrang verlenen en stoppen voor blinden met een witte stok of personen met een geleidehond die zich op de rijbaan begeven (art. 40.2).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-40"
+    },
+    {
+      "id": "sit-31-rechtsaf-fietser-voorrang",
+      "type": "situation",
+      "category": "voorrang",
+      "question": "Je wil met de auto rechts afslaan aan dit kruispunt terwijl een fietser op het fietspad rechtdoor rijdt. Wie heeft voorrang?",
+      "image": "assets/situations/sit-31-rechtsaf-fietser-voorrang.jpg",
+      "options": [
+        "De auto, omdat rechts afslaan een kortere bocht is.",
+        "De fietser die rechtdoor blijft rijden op dezelfde weg heeft voorrang op de afslaande auto.",
+        "Wie eerst het kruispunt bereikt heeft voorrang."
+      ],
+      "correctIndex": 1,
+      "explanation": "Een bestuurder die van richting verandert (rechts afslaat) moet voorrang verlenen aan andere weggebruikers (zoals fietsers) die op dezelfde openbare weg rechtdoor blijven rijden (art. 19.3.2°).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-19"
+    },
+    {
+      "id": "sit-32-knipperlicht-beweegbare-brug",
+      "type": "situation",
+      "category": "algemeen",
+      "question": "Je nadert deze beweegbare brug waar twee rode lichten beurtelings knipperen. Wat betekent dit signaal?",
+      "image": "assets/situations/sit-32-knipperlicht-beweegbare-brug.jpg",
+      "options": [
+        "De brug is open voor scheepvaart; het is verboden voorbij het stopsein te rijden.",
+        "Je mag doorrijden als je geen boot ziet varen.",
+        "Het signaal geldt enkel voor vrachtwagens zwaarder dan 3,5 ton."
+      ],
+      "correctIndex": 0,
+      "explanation": "Twee beurtelings knipperende rode lichten bij een beweegbare brug betekenen 'verbod om de stopstreep of het verkeerslicht voorbij te rijden' (art. 64.1).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-64"
+    },
+    {
+      "id": "sit-33-geel-knipperlicht-kruispunt",
+      "type": "situation",
+      "category": "voorrang",
+      "question": "De verkeerslichten op dit kruispunt staan op oranjegeel knipperlicht en er staan geen voorrangsborden. Welke voorrangsregel geldt?",
+      "image": "assets/situations/sit-33-geel-knipperlicht-kruispunt.jpg",
+      "options": [
+        "Bestuurders op de breedste weg hebben altijd automatisch voorrang.",
+        "De algemene voorrang van rechts is van toepassing op het kruispunt.",
+        "Iedereen moet verplicht 5 seconden volledig tot stilstand komen."
+      ],
+      "correctIndex": 1,
+      "explanation": "Wanneer verkeerslichten oranjegeel knipperen en er geen voorrangsborden aanwezig zijn, zijn de normale voorrangsregels van kracht, namelijk de voorrang van rechts (art. 6.3 & art. 12.3.1).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-6"
+    },
+    {
+      "id": "sit-34-fietsopstelvak-f107",
+      "type": "situation",
+      "category": "fietsers-voetgangers",
+      "question": "Waar moeten automobilisten stoppen bij een rood verkeerslicht met een fietsopstelvak (OFOS, bord F107) op de rijbaan?",
+      "image": "assets/situations/sit-34-fietsopstelvak-f107.jpg",
+      "options": [
+        "Midden in het groene fietsopstelvak.",
+        "Aan de tweede stopstreep vlak vóór de verkeerslichten.",
+        "Vóór de eerste stopstreep, zodat het opstelvak volledig vrij blijft voor fietsers en tweewielers."
+      ],
+      "correctIndex": 2,
+      "explanation": "Automobilisten moeten stoppen vóór de eerste stopstreep. De ruimte tussen de twee stopstrepen (het fietsopstelvak, bord F107) is voorbehouden voor fietsers en tweewielige bromfietsers (art. 77.8).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-77"
+    },
+    {
+      "id": "sit-35-schoolstraat-c3",
+      "type": "situation",
+      "category": "verbod",
+      "question": "Wat betekent het bord C3 met onderbord 'Schoolstraat' bij het begin van deze straat tijdens de aangeduide uren?",
+      "image": "assets/situations/sit-35-schoolstraat-c3.jpg",
+      "options": [
+        "De straat is tijdens de begin- en einduren van de school afgesloten voor alle motorvoertuigen.",
+        "Auto's mogen er enkel rijden mits ze hun vier gevaarslichten aanzetten.",
+        "Ouders die hun kinderen met de auto naar school brengen mogen er altijd doorrijden."
+      ],
+      "correctIndex": 0,
+      "explanation": "In een schoolstraat (art. 2.68 en art. 22decies) is de openbare weg tijdens bepaalde uren afgesloten voor motorvoertuigen. Enkel voetgangers, fietsers en hulpdiensten mogen erdoor.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-22decies",
+      "since": 2018
+    },
+    {
+      "id": "sit-36-spitsstrook-matrixbord",
+      "type": "situation",
+      "category": "autosnelweg",
+      "question": "Op het matrixbord boven de pechstrook/spitsstrook brandt een groene pijl naar beneden. Mag je op deze strook rijden?",
+      "image": "assets/situations/sit-36-spitsstrook-matrixbord.jpg",
+      "options": [
+        "Nee, de pechstrook mag nooit gebruikt worden om te rijden.",
+        "Ja, de groene pijl geeft aan dat de spitsstrook geopend is als extra rijstrook.",
+        "Alleen als je een snelheid van minstens 130 km/u aanhoudt."
+      ],
+      "correctIndex": 1,
+      "explanation": "Wanneer de dynamische rijstrooksignalering een groene pijl toont boven de spitsstrook, mag deze als volwaardige rijstrook gebruikt worden (art. 9.7 & art. 65.4).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-65"
+    },
+    {
+      "id": "sit-37-tram-halte-uitstappen",
+      "type": "situation",
+      "category": "voorrang",
+      "question": "Een tram stopt op de rijbaan aan een halte zonder verhoogd perron en reizigers stappen uit. Wat moet je doen als achteropkomende automobilist?",
+      "image": "assets/situations/sit-37-tram-halte-uitstappen.jpg",
+      "options": [
+        "Snel links om de tram heen rijden.",
+        "Claxonneren zodat de reizigers opzij gaan.",
+        "Stoppen aan de kant van het in- en uitstappen om reizigers veilig de rijbaan of het trottoir te laten bereiken."
+      ],
+      "correctIndex": 2,
+      "explanation": "Wanneer een tram stopt zonder verhoogd perron, moeten bestuurders aan de zijde van het in- en uitstappen stoppen om de reizigers veilig te laten oversteken (art. 40.1).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-40"
+    },
+    {
+      "id": "sit-38-bevoegd-persoon-arm-omhoog",
+      "type": "situation",
+      "category": "voorrang",
+      "question": "Een politieagent staat op het kruispunt met één arm verticaal omhoog geheven. Wat betekent dit bevel?",
+      "image": "assets/situations/sit-38-bevoegd-persoon-arm-omhoog.jpg",
+      "options": [
+        "Stoppen voor alle weggebruikers uit alle richtingen, behalve wie zich al op het kruispunt bevindt.",
+        "Alleen stoppen voor fietsers en voetgangers.",
+        "Het verkeer mag versneld doorrijden."
+      ],
+      "correctIndex": 0,
+      "explanation": "Een verticaal opgeheven arm van een bevoegd persoon betekent 'aandacht en stop' voor alle weggebruikers uit alle richtingen, behalve diegenen die zich al op het kruispunt bevinden (art. 4.1).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-4"
+    },
+    {
+      "id": "sit-39-afstand-inhalen-fietser",
+      "type": "situation",
+      "category": "fietsers-voetgangers",
+      "question": "Welke minimale zijdelingse afstand moet een auto bewaren bij het inhalen van een fietser buiten de bebouwde kom?",
+      "image": "assets/situations/sit-39-afstand-inhalen-fietser.jpg",
+      "options": [
+        "Minstens 0,5 meter.",
+        "Minstens 1,5 meter.",
+        "Minstens 1 meter."
+      ],
+      "correctIndex": 1,
+      "explanation": "Buiten de bebouwde kom moet een bestuurder bij het inhalen van een fietser of voetganger een zijdelingse tussenruimte van minstens 1,5 meter laten (binnen de bebouwde kom is dat minstens 1 meter, art. 40ter).",
+      "source": "https://www.wegcode.be/nl/verkeersreglement/fietsers-en-de-wegcode",
+      "since": 2019
+    },
+    {
+      "id": "sit-40-reddingsstrook-file",
+      "type": "situation",
+      "category": "autosnelweg",
+      "question": "Er ontstaat file op een autosnelweg met twee rijstroken. Hoe moeten de bestuurders een reddingsstrook vormen?",
+      "image": "assets/situations/sit-40-reddingsstrook-file.jpg",
+      "options": [
+        "Alle voertuigen moeten naar de pechstrook uitwijken.",
+        "Iedereen blijft gewoon in het midden van zijn rijstrook staan.",
+        "Voertuigen op de linkerrijstrook wijken zoveel mogelijk naar links uit, voertuigen op de rechterrijstrook zoveel mogelijk naar rechts."
+      ],
+      "correctIndex": 2,
+      "explanation": "Bij filevorming moeten voertuigen op de linkerrijstrook uiterst links en die op de rechterrijstrook uiterst rechts gaan rijden om in het midden een vrije reddingsstrook te laten voor hulpdiensten (art. 2.70 & art. 9.8).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-9",
+      "since": 2020
     }
   ]
 }

@@ -17,6 +17,7 @@ A summarized overview of all changes, per version of this project.
 
 - FrontEnd: Dark theme en thema-kleuren toegevoegd met automatische systeemvoorkeur en queryparameters voor thema en accentkleur.
 - FrontEnd: Ondersteuning toegevoegd voor `name`-, `naam`- en `n`-queryparameters om het naaminvoerveld over te slaan.
+- Inhoud: Twintig extra praktijkvragen met foto's van verkeerssituaties toegevoegd met bijgewerkte offline caching en tests.
 
 ## v3.1.0 [2026-09-21]
 
