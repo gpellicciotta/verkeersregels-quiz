@@ -15,11 +15,10 @@ An overview of all tasks and their planning.
 
 ## Next Milestone
 
-- [~] T0049 [owner: @claude] Persist player name and configuration choices in localStorage, with query parameter overrides.
 - [ ] T0050 Ensure installed PWA service worker automatically activates and refreshes on new releases.
 - [ ] T0046 Review user interface for styling inconsistencies and accessibility issues using deterministic checks, and discuss findings.
 - [ ] T0051 [needs: T0046] Refactor CSS into a composable, mobile-first stylesheet adhering to audit tokens.
-- [ ] T0052 [needs: T0049] [needs: T0050] Refactor app.js into composable, readable modules separating state, storage, and UI.
+- [ ] T0052 [needs: T0050] Refactor app.js into composable, readable modules separating state, storage, and UI.
 - [ ] T0045 [needs: T0052] Localize user interface into French, German, and English with an extensible dictionary, and refine Dutch copy.
 - [ ] T0038 [needs: T0052] Add quiz result sharing via Web Share API and clipboard copy on the results screen.
 - [ ] T0053 [needs: T0051] [needs: T0045] [needs: T0038] Release version 3.2.0 with modular architecture, service worker auto-updates, configuration persistence, and localization.

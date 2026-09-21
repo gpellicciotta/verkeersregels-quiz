@@ -19,6 +19,7 @@ A summarized overview of all changes, per version of this project.
 - FrontEnd: Ondersteuning toegevoegd voor `name`-, `naam`- en `n`-queryparameters om het naaminvoerveld over te slaan.
 - Inhoud: Twintig extra praktijkvragen met foto's van verkeerssituaties toegevoegd met bijgewerkte offline caching en tests.
 - DevEx: Alle broncodecommentaar in HTML, JavaScript en CSS staat nu in het Engels.
+- FrontEnd: Spelernaam en instellingenkeuzes worden nu bewaard in localStorage, met voorrang voor queryparameters.
 
 ## v3.1.0 [2026-09-21]
 - FrontEnd: Startscherm geminimaliseerd met ronde actieknoppen, modusschakelaar, carrouselbediening en interactieve instellingendialogen.
