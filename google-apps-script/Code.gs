@@ -1,6 +1,6 @@
 /** @OnlyCurrentDoc */
-// Moet overeenkomen met CONFIG.SHEET_SECRET in js/app.js. Geen echte beveiliging (staat
-// leesbaar in de publieke broncode), enkel een drempel tegen generieke bots/scanners.
+// Must match CONFIG.SHEET_SECRET in js/app.js. Not real security (it is readable
+// in the public source code), just a barrier against generic bots/scanners.
 var SHARED_SECRET = '8jd6H2Byuj0HaIqL';
 
 function doPost(e) {

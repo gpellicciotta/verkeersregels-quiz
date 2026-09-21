@@ -1,5 +1,5 @@
 :root {
-  /* Default Primary Theme Color: Blue / Blauw */
+  /* Default Primary Theme Color: Blue */
   --color-primary: #1a56db;
   --color-primary-dark: #163f9e;
   --color-primary-tint: #eff6ff;
@@ -30,7 +30,7 @@
   --radius: 10px;
 }
 
-/* Theme Color: Yellow / Geel */
+/* Theme Color: Yellow */
 :root[data-theme-color="yellow"] {
   --color-primary: #ca8a04;
   --color-primary-dark: #a16207;
@@ -42,7 +42,7 @@
   --color-primary-focus: rgba(202, 138, 4, 0.2);
 }
 
-/* Theme Color: Red / Rood */
+/* Theme Color: Red */
 :root[data-theme-color="red"] {
   --color-primary: #dc2626;
   --color-primary-dark: #b91c1c;
