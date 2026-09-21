@@ -15,7 +15,7 @@ An overview of all tasks and their planning.
 
 ## Next Milestone
 
-- [ ] T0050 Ensure installed PWA service worker automatically activates and refreshes on new releases.
+- [~] T0050 [owner: @claude] Ensure installed PWA service worker automatically activates and refreshes on new releases.
 - [ ] T0046 Review user interface for styling inconsistencies and accessibility issues using deterministic checks, and discuss findings.
 - [ ] T0051 [needs: T0046] Refactor CSS into a composable, mobile-first stylesheet adhering to audit tokens.
 - [ ] T0052 [needs: T0050] Refactor app.js into composable, readable modules separating state, storage, and UI.
