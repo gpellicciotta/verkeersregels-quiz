@@ -51,3 +51,4 @@ Visual validation captures:
 - [English About View](./T0045-view-about.png)
 - [English Quiz Screen](./T0045-view-quiz.png)
 - [English Carousel Screen](./T0045-view-carousel.png)
+

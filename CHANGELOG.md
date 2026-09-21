@@ -14,8 +14,8 @@ A summarized overview of all changes, per version of this project.
 ---
 
 ## v3.1.1-pre
-- FrontEnd: Added internationalisation and English localization for all interface chrome, modals, and 324 questions.
-- FrontEnd: Added `scope="col"` to result table headers for correct screen-reader column announcement.
+- FrontEnd: Volledige Engelse vertaling en taalschakelaar toegevoegd voor interface, dialoogvensters en alle 324 vragen.
+- FrontEnd: `scope="col"` toegevoegd aan resultatentabelkoppen voor correcte schermlezerondersteuning.
 - DevEx: `app.js` opgesplitst in losse ES-modules die state, opslag en UI-logica scheiden.
 - PWA: Geïnstalleerde app herlaadt nu automatisch zodra een nieuwe versie de service worker overneemt.
 - FrontEnd: Introzin op startscherm blijft nu ongewijzigd bij moduswissel of aanpassen van instellingen.
