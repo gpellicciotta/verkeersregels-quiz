@@ -1407,6 +1407,47 @@ button {
   outline: none;
 }
 
+.result-btn-round.btn-copied {
+  background: var(--color-correct);
+  border-color: var(--color-correct-border);
+  color: var(--color-on-primary);
+  box-shadow: 0 2px 8px rgba(26, 127, 55, 0.35);
+}
+
+.result-btn-round.btn-copied:hover,
+.result-btn-round.btn-copied:focus-visible {
+  background: var(--color-correct);
+  border-color: var(--color-correct-border);
+  color: var(--color-on-primary);
+}
+
+.share-toast {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 6px 0 10px;
+  padding: 8px 14px;
+  background: var(--color-correct-bg);
+  border: 1px solid var(--color-correct-border);
+  color: var(--color-correct-text);
+  border-radius: var(--radius);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  box-shadow: var(--shadow-sm);
+  transition: opacity 0.2s ease;
+}
+
+.share-toast.toast-error {
+  background: var(--color-wrong-bg);
+  border-color: var(--color-wrong-border);
+  color: var(--color-wrong-text);
+}
+
+.share-toast.hidden {
+  display: none;
+}
+
 /* Mobile-first card-based table */
 #result-table {
   width: 100%;

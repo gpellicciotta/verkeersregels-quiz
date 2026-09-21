@@ -39,6 +39,8 @@ export const el = {
   btnNext: document.getElementById("btn-next"),
   resultSummary: document.getElementById("result-summary"),
   resultTableBody: document.getElementById("result-table-body"),
+  btnShare: document.getElementById("btn-share"),
+  shareToast: document.getElementById("share-toast"),
   btnPrint: document.getElementById("btn-print"),
   btnRestart: document.getElementById("btn-restart"),
   btnReportError: document.getElementById("btn-report-error"),

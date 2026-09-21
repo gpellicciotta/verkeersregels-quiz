@@ -38,6 +38,7 @@ import { openReportModal, closeReportModal, handleReportSubmit } from "./report-
 import { openChangelogModal, closeChangelogModal, loadChangelog } from "./changelog.js";
 import { registerServiceWorker, updateOnlineStatus } from "./pwa.js";
 import { setLang, detectLang, getLang, applyAll } from "./i18n.js";
+import { handleShare } from "./share.js";
 
 el.btnStart.addEventListener("click", () => {
   const isCarouselSelected = state.currentMode === "carousel" || (el.radioModeCarousel && el.radioModeCarousel.checked);
@@ -70,6 +71,7 @@ if (el.playerNameInput) {
 }
 el.btnNext.addEventListener("click", nextQuestion);
 el.btnRestart.addEventListener("click", restart);
+if (el.btnShare) el.btnShare.addEventListener("click", handleShare);
 if (el.btnPrint) el.btnPrint.addEventListener("click", () => window.print());
 if (el.btnReportError) el.btnReportError.addEventListener("click", openReportModal);
 if (el.btnReportErrorMobile) el.btnReportErrorMobile.addEventListener("click", openReportModal);
