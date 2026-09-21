@@ -14,13 +14,11 @@ A summarized overview of all changes, per version of this project.
 ---
 
 ## v3.1.1-pre
-
 - FrontEnd: Dark theme en thema-kleuren toegevoegd met automatische systeemvoorkeur en queryparameters voor thema en accentkleur.
 - FrontEnd: Ondersteuning toegevoegd voor `name`-, `naam`- en `n`-queryparameters om het naaminvoerveld over te slaan.
 - Inhoud: Twintig extra praktijkvragen met foto's van verkeerssituaties toegevoegd met bijgewerkte offline caching en tests.
 
 ## v3.1.0 [2026-09-21]
-
 - FrontEnd: Startscherm geminimaliseerd met ronde actieknoppen, modusschakelaar, carrouselbediening en interactieve instellingendialogen.
 - FrontEnd: Betere configuratiekeuzes, consistentere knoppen en vereenvoudigde interface-instructies.
 - DevEx: Versienummering gekoppeld aan de changelog als centrale bron voor frontend en ontwikkelscripts.
