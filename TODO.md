@@ -15,7 +15,7 @@ An overview of all tasks and their planning.
 
 ## Next Milestone
 
-- [ ] T0047 Keep start page intro sentence static during mode and configuration changes.
+- [~] T0047 [owner: @claude] Keep start page intro sentence static during mode and configuration changes.
 - [ ] T0048 Convert all source code comments across HTML, JavaScript, and CSS to US English.
 - [ ] T0049 Persist player name and configuration choices in localStorage, with query parameter overrides.
 - [ ] T0050 Ensure installed PWA service worker automatically activates and refreshes on new releases.
