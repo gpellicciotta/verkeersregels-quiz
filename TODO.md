@@ -15,7 +15,7 @@ An overview of all tasks and their planning.
 
 ## Next Milestone
 
-- [ ] T0048 Convert all source code comments across HTML, JavaScript, and CSS to US English.
+- [~] T0048 [owner: @claude] Convert all source code comments across HTML, JavaScript, and CSS to US English.
 - [ ] T0049 Persist player name and configuration choices in localStorage, with query parameter overrides.
 - [ ] T0050 Ensure installed PWA service worker automatically activates and refreshes on new releases.
 - [ ] T0046 Review user interface for styling inconsistencies and accessibility issues using deterministic checks, and discuss findings.
