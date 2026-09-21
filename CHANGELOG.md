@@ -14,6 +14,7 @@ A summarized overview of all changes, per version of this project.
 ---
 
 ## v3.1.1-pre
+- PWA: Geïnstalleerde app herlaadt nu automatisch zodra een nieuwe versie de service worker overneemt.
 - FrontEnd: Introzin op startscherm blijft nu ongewijzigd bij moduswissel of aanpassen van instellingen.
 - FrontEnd: Dark theme en thema-kleuren toegevoegd met automatische systeemvoorkeur en queryparameters voor thema en accentkleur.
 - FrontEnd: Ondersteuning toegevoegd voor `name`-, `naam`- en `n`-queryparameters om het naaminvoerveld over te slaan.

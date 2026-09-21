@@ -1844,28 +1844,54 @@ window.addEventListener("offline", () => {
   updateOnlineStatus();
 });
 
+const SW_UPDATE_CHECK_INTERVAL_MS = 60 * 60 * 1000;
+
 function registerServiceWorker() {
-  if ("serviceWorker" in navigator) {
-    window.addEventListener("load", () => {
-      navigator.serviceWorker
-        .register("./sw.js")
-        .then((reg) => {
-          reg.addEventListener("updatefound", () => {
-            const worker = reg.installing;
-            if (worker) {
-              worker.addEventListener("statechange", () => {
-                if (worker.state === "installed" && navigator.serviceWorker.controller) {
-                  console.info("Nieuwe versie van de quiz beschikbaar.");
-                }
-              });
-            }
-          });
-        })
-        .catch((err) => {
-          console.warn("Service Worker registratie mislukt:", err);
-        });
-    });
+  if (!("serviceWorker" in navigator)) {
+    return;
   }
+
+  // Reload once the new worker takes control, so open tabs (installed PWA
+  // included) pick up the updated assets without a manual close/reopen.
+  let refreshingAfterUpdate = false;
+  navigator.serviceWorker.addEventListener("controllerchange", () => {
+    if (refreshingAfterUpdate) {
+      return;
+    }
+    refreshingAfterUpdate = true;
+    window.location.reload();
+  });
+
+  window.addEventListener("load", () => {
+    navigator.serviceWorker
+      .register("./sw.js")
+      .then((reg) => {
+        reg.addEventListener("updatefound", () => {
+          const worker = reg.installing;
+          if (worker) {
+            worker.addEventListener("statechange", () => {
+              if (worker.state === "installed" && navigator.serviceWorker.controller) {
+                console.info("Nieuwe versie van de quiz beschikbaar, wordt automatisch geactiveerd.");
+              }
+            });
+          }
+        });
+
+        // Installed PWAs can stay open for a long time without navigating,
+        // so poll for updates periodically and whenever the tab regains focus.
+        setInterval(() => {
+          reg.update().catch(() => {});
+        }, SW_UPDATE_CHECK_INTERVAL_MS);
+        document.addEventListener("visibilitychange", () => {
+          if (document.visibilityState === "visible") {
+            reg.update().catch(() => {});
+          }
+        });
+      })
+      .catch((err) => {
+        console.warn("Service Worker registratie mislukt:", err);
+      });
+  });
 }
 
 registerServiceWorker();
