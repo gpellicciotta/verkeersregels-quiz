@@ -49,6 +49,10 @@
   "quiz.image_alt_situation": "Verkeerssituatie",
   "quiz.image_alt_sign": "Verkeersbord",
   "quiz.option_img_alt": "Optie {n}",
+  "quiz.indicator_correct": "Juist",
+  "quiz.indicator_wrong": "Fout",
+  "quiz.status_correct": "Juist",
+  "quiz.status_wrong": "Fout",
 
   "result.title": "Quiz Resultaat",
   "result.summary_name": "{name}, je scoorde {correct}/{total} ({pct}%) in {duration}.",

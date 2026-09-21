@@ -49,6 +49,10 @@
   "quiz.image_alt_situation": "Traffic situation",
   "quiz.image_alt_sign": "Traffic sign",
   "quiz.option_img_alt": "Option {n}",
+  "quiz.indicator_correct": "Correct",
+  "quiz.indicator_wrong": "Incorrect",
+  "quiz.status_correct": "Correct",
+  "quiz.status_wrong": "Incorrect",
 
   "result.title": "Quiz Result",
   "result.summary_name": "{name}, you scored {correct}/{total} ({pct}%) in {duration}.",

@@ -14,6 +14,7 @@ A summarized overview of all changes, per version of this project.
 ---
 
 ## v3.1.1-pre
+- FrontEnd: Added non-color correct and wrong indicator badges to quiz answer options and header for colorblind accessibility.
 - FrontEnd: Refactored CSS into a composable mobile-first stylesheet adhering to audit tokens and WCAG contrast.
 - FrontEnd: Volledige Engelse vertaling en taalschakelaar toegevoegd voor interface, dialoogvensters en alle 324 vragen.
 - FrontEnd: `scope="col"` toegevoegd aan resultatentabelkoppen voor correcte schermlezerondersteuning.

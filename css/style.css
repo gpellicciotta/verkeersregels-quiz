@@ -940,6 +940,60 @@ button {
   gap: 8px;
 }
 
+#quiz-progress {
+  flex: 1;
+  text-align: left;
+}
+
+#quiz-score {
+  flex: 1;
+  text-align: right;
+}
+
+.quiz-status-indicator {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quiz-status-indicator.hidden {
+  display: none;
+}
+
+.quiz-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 3px 10px;
+  border-radius: var(--radius-full);
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.quiz-status-icon {
+  flex-shrink: 0;
+}
+
+.quiz-status-correct {
+  background-color: var(--color-correct-bg);
+  color: var(--color-correct-text);
+  border: 1px solid var(--color-correct-border);
+}
+
+.quiz-status-wrong {
+  background-color: var(--color-wrong-bg);
+  color: var(--color-wrong-text);
+  border: 1px solid var(--color-wrong-border);
+}
+
+.quiz-header:has(.quiz-status-indicator:not(.hidden)) .btn-report-error-mobile {
+  display: none;
+}
+
 .btn-report-error {
   display: inline-flex;
   align-items: center;
@@ -1027,6 +1081,10 @@ button {
 }
 
 .option-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
   background: var(--color-card);
   border: 2px solid var(--color-border);
   color: var(--color-text);
@@ -1038,6 +1096,20 @@ button {
   font-size: var(--font-size-sm);
   line-height: 1.4;
   transition: border-color 0.15s ease, background-color 0.15s ease, opacity 0.2s ease;
+}
+
+.option-btn .option-text {
+  flex: 1;
+  min-width: 0;
+  text-align: left;
+  word-break: break-word;
+}
+
+.options-images .option-btn {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 .option-btn img {
@@ -1063,6 +1135,36 @@ button {
   border-color: var(--color-wrong-border);
   background: var(--color-wrong-bg);
   color: var(--color-wrong-text);
+}
+
+.option-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: var(--font-size-xs);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  line-height: 1.2;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.option-indicator-icon {
+  flex-shrink: 0;
+}
+
+.option-indicator-correct {
+  background-color: var(--color-correct-bg);
+  color: var(--color-correct-text);
+  border: 1px solid var(--color-correct-border);
+}
+
+.option-indicator-wrong {
+  background-color: var(--color-wrong-bg);
+  color: var(--color-wrong-text);
+  border: 1px solid var(--color-wrong-border);
 }
 
 .option-btn.option-hidden {

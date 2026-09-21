@@ -26,6 +26,7 @@ export const el = {
   modeIconCarousel: document.querySelector(".mode-icon-carousel"),
   modeIconQuiz: document.querySelector(".mode-icon-quiz"),
   quizProgress: document.getElementById("quiz-progress"),
+  quizStatusIndicator: document.getElementById("quiz-status-indicator"),
   quizScore: document.getElementById("quiz-score"),
   quizBadgeWrap: document.getElementById("quiz-badge-wrap"),
   quizBadge: document.getElementById("quiz-badge"),

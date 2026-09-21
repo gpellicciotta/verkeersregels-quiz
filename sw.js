@@ -25,6 +25,7 @@ const PRECACHE_ASSETS = [
   "js/theme.js",
   "js/ui-mode.js",
   "js/utils.js",
+  "data/.trans_cache_en.json",
   "data/questions.json",
   "data/strings.en.json",
   "data/strings.nl.json",

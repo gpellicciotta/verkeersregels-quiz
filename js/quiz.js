@@ -164,9 +164,58 @@ export function startQuiz() {
   renderQuestion();
 }
 
+export function createOptionIndicator(type) {
+  const badge = document.createElement("span");
+  badge.className = `option-indicator option-indicator-${type}`;
+
+  const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+  svg.setAttribute("class", "option-indicator-icon");
+  svg.setAttribute("aria-hidden", "true");
+  svg.setAttribute("width", "14");
+  svg.setAttribute("height", "14");
+  svg.setAttribute("viewBox", "0 0 24 24");
+  svg.setAttribute("fill", "none");
+  svg.setAttribute("stroke", "currentColor");
+  svg.setAttribute("stroke-width", "2.5");
+  svg.setAttribute("stroke-linecap", "round");
+  svg.setAttribute("stroke-linejoin", "round");
+
+  if (type === "correct") {
+    const polyline = document.createElementNS("http://www.w3.org/2000/svg", "polyline");
+    polyline.setAttribute("points", "20 6 9 17 4 12");
+    svg.appendChild(polyline);
+  } else {
+    const line1 = document.createElementNS("http://www.w3.org/2000/svg", "line");
+    line1.setAttribute("x1", "18");
+    line1.setAttribute("y1", "6");
+    line1.setAttribute("x2", "6");
+    line1.setAttribute("y2", "18");
+    const line2 = document.createElementNS("http://www.w3.org/2000/svg", "line");
+    line2.setAttribute("x1", "6");
+    line2.setAttribute("y1", "6");
+    line2.setAttribute("x2", "18");
+    line2.setAttribute("y2", "18");
+    svg.appendChild(line1);
+    svg.appendChild(line2);
+  }
+
+  const label = document.createElement("span");
+  label.className = "option-indicator-label";
+  label.textContent = type === "correct" ? t("quiz.indicator_correct") : t("quiz.indicator_wrong");
+
+  badge.appendChild(svg);
+  badge.appendChild(label);
+  return badge;
+}
+
 export function renderQuestion() {
   const q = applyTranslation(state.round[state.currentIndex]);
   const total = state.round.length;
+
+  if (el.quizStatusIndicator) {
+    el.quizStatusIndicator.classList.add("hidden");
+    el.quizStatusIndicator.replaceChildren();
+  }
 
   el.quizProgress.textContent = t("quiz.progress", { n: state.currentIndex + 1, total });
   const correctSoFar = state.answers.filter((a) => a.correct).length;
@@ -207,7 +256,10 @@ export function renderQuestion() {
       img.alt = t("quiz.option_img_alt", { n: idx + 1 });
       btn.appendChild(img);
     } else {
-      btn.textContent = opt;
+      const span = document.createElement("span");
+      span.className = "option-text";
+      span.textContent = opt;
+      btn.appendChild(span);
     }
     btn.addEventListener("click", () => selectOption(idx));
     el.options.appendChild(btn);
@@ -254,13 +306,61 @@ export function selectOption(chosenIndex) {
     source: q.source || "",
   });
 
+  if (el.quizStatusIndicator) {
+    el.quizStatusIndicator.replaceChildren();
+    const statusBadge = document.createElement("span");
+    statusBadge.className = `quiz-status-badge quiz-status-${correct ? "correct" : "wrong"}`;
+
+    const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    svg.setAttribute("class", "quiz-status-icon");
+    svg.setAttribute("aria-hidden", "true");
+    svg.setAttribute("width", "16");
+    svg.setAttribute("height", "16");
+    svg.setAttribute("viewBox", "0 0 24 24");
+    svg.setAttribute("fill", "none");
+    svg.setAttribute("stroke", "currentColor");
+    svg.setAttribute("stroke-width", "2.5");
+    svg.setAttribute("stroke-linecap", "round");
+    svg.setAttribute("stroke-linejoin", "round");
+
+    if (correct) {
+      const polyline = document.createElementNS("http://www.w3.org/2000/svg", "polyline");
+      polyline.setAttribute("points", "20 6 9 17 4 12");
+      svg.appendChild(polyline);
+    } else {
+      const line1 = document.createElementNS("http://www.w3.org/2000/svg", "line");
+      line1.setAttribute("x1", "18");
+      line1.setAttribute("y1", "6");
+      line1.setAttribute("x2", "6");
+      line1.setAttribute("y2", "18");
+      const line2 = document.createElementNS("http://www.w3.org/2000/svg", "line");
+      line2.setAttribute("x1", "6");
+      line2.setAttribute("y1", "6");
+      line2.setAttribute("x2", "18");
+      line2.setAttribute("y2", "18");
+      svg.appendChild(line1);
+      svg.appendChild(line2);
+    }
+
+    const textSpan = document.createElement("span");
+    textSpan.className = "quiz-status-text";
+    textSpan.textContent = correct ? t("quiz.status_correct") : t("quiz.status_wrong");
+
+    statusBadge.appendChild(svg);
+    statusBadge.appendChild(textSpan);
+    el.quizStatusIndicator.appendChild(statusBadge);
+    el.quizStatusIndicator.classList.remove("hidden");
+  }
+
   const buttons = el.options.querySelectorAll(".option-btn");
   buttons.forEach((btn, idx) => {
     btn.disabled = true;
     if (idx === q.correctIndex) {
       btn.classList.add("correct");
+      btn.appendChild(createOptionIndicator("correct"));
     } else if (idx === chosenIndex) {
       btn.classList.add("wrong");
+      btn.appendChild(createOptionIndicator("wrong"));
     } else {
       btn.classList.add("option-hidden");
     }
