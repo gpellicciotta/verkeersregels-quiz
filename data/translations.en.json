@@ -7,7 +7,9 @@
       "Lane narrowing",
       "Two-way traffic"
     ],
-    "explanation": "This hazard sign warns of a dangerous bend to the left."
+    "explanation": "This hazard sign warns of a dangerous bend to the left.",
+    "signTitle": "Dangerous bend to the left",
+    "signExplanation": "This hazard sign warns of a dangerous bend to the left."
   },
   "rec-a1b": {
     "question": "What does this traffic sign mean?",
@@ -17,7 +19,9 @@
       "Slippery roadway",
       "Dangerous bend to the left"
     ],
-    "explanation": "This danger sign warns of a dangerous bend to the right."
+    "explanation": "This danger sign warns of a dangerous bend to the right.",
+    "signTitle": "Dangerous bend to the right",
+    "signExplanation": "This danger sign warns of a dangerous bend to the right."
   },
   "rec-a7a": {
     "question": "What does this traffic sign mean?",
@@ -27,7 +31,9 @@
       "Lane narrowing",
       "Two-way traffic"
     ],
-    "explanation": "This sign warns that the road ahead will become narrower."
+    "explanation": "This sign warns that the road ahead will become narrower.",
+    "signTitle": "Lane narrowing",
+    "signExplanation": "This sign warns that the road ahead will become narrower."
   },
   "rec-a21": {
     "question": "What does this traffic sign mean?",
@@ -37,7 +43,9 @@
       "Pedestrian zone",
       "Warning for a pedestrian crossing"
     ],
-    "explanation": "This danger sign announces a crossing for pedestrians in advance."
+    "explanation": "This danger sign announces a crossing for pedestrians in advance.",
+    "signTitle": "Warning for a pedestrian crossing",
+    "signExplanation": "This danger sign announces a crossing for pedestrians in advance."
   },
   "rec-a25": {
     "question": "What does this traffic sign mean?",
@@ -47,7 +55,9 @@
       "Cycling zone",
       "Warning for a pedestrian crossing"
     ],
-    "explanation": "This sign warns of a place where cyclists cross the road."
+    "explanation": "This sign warns of a place where cyclists cross the road.",
+    "signTitle": "Warning for a crossing for cyclists",
+    "signExplanation": "This sign warns of a place where cyclists cross the road."
   },
   "rec-a23": {
     "question": "What does this traffic sign mean?",
@@ -57,7 +67,9 @@
       "Built-up area",
       "Speelstraat"
     ],
-    "explanation": "This sign warns of a place where a large number of children may appear, such as a school."
+    "explanation": "This sign warns of a place where a large number of children may appear, such as a school.",
+    "signTitle": "Place where many children come, for example a school",
+    "signExplanation": "This sign warns of a place where a large number of children may appear, such as a school."
   },
   "rec-a31": {
     "question": "What does this traffic sign mean?",
@@ -67,7 +79,9 @@
       "Road works",
       "Falling rocks"
     ],
-    "explanation": "This sign warns of work on or along the roadway."
+    "explanation": "This sign warns of work on or along the roadway.",
+    "signTitle": "Road works",
+    "signExplanation": "This sign warns of work on or along the roadway."
   },
   "rec-a41": {
     "question": "What does this traffic sign mean?",
@@ -77,7 +91,9 @@
       "Movable bridge",
       "Level crossing with barriers"
     ],
-    "explanation": "This sign warns of a level crossing equipped with barriers."
+    "explanation": "This sign warns of a level crossing equipped with barriers.",
+    "signTitle": "Level crossing with barriers",
+    "signExplanation": "This sign warns of a level crossing equipped with barriers."
   },
   "rec-a1c": {
     "question": "What does this traffic sign mean?",
@@ -87,7 +103,9 @@
       "Dangerous descent with sharp hairpin bend",
       "Lane narrowing on the left with a winding lane"
     ],
-    "explanation": "Traffic sign A1c warns of a double bend or a succession of more than two bends, the first of which turns to the left (art. 66 KB 1 December 1975)."
+    "explanation": "Traffic sign A1c warns of a double bend or a succession of more than two bends, the first of which turns to the left (art. 66 KB 1 December 1975).",
+    "signTitle": "Dangerous bend: double bend or sequence of more than two bends, the first to the left",
+    "signExplanation": "Traffic sign A1c warns of a double bend or a succession of more than two bends, the first of which turns to the left (art. 66 KB 1 December 1975)."
   },
   "rec-a1d": {
     "question": "What does this traffic sign mean?",
@@ -97,7 +115,9 @@
       "Dangerous bend: double bend or sequence of more than two bends, the first to the left",
       "Obligation to turn right at the next intersection"
     ],
-    "explanation": "Traffic sign A1d warns of a double bend or a succession of more than two bends, the first of which turns to the right (art. 66 KB 1 December 1975)."
+    "explanation": "Traffic sign A1d warns of a double bend or a succession of more than two bends, the first of which turns to the right (art. 66 KB 1 December 1975).",
+    "signTitle": "Dangerous bend: double bend or sequence of more than two bends, the first to the right",
+    "signExplanation": "Traffic sign A1d warns of a double bend or a succession of more than two bends, the first of which turns to the right (art. 66 KB 1 December 1975)."
   },
   "rec-a3": {
     "question": "What does this traffic sign mean?",
@@ -107,7 +127,9 @@
       "Dangerous descent",
       "Road surface in poor condition"
     ],
-    "explanation": "Traffic sign A3 warns of a dangerous descent on the road (art. 66 KB 1 December 1975)."
+    "explanation": "Traffic sign A3 warns of a dangerous descent on the road (art. 66 KB 1 December 1975).",
+    "signTitle": "Dangerous descent",
+    "signExplanation": "Traffic sign A3 warns of a dangerous descent on the road (art. 66 KB 1 December 1975)."
   },
   "rec-a5": {
     "question": "What does this traffic sign mean?",
@@ -117,7 +139,9 @@
       "Movable bridge",
       "Steep slope"
     ],
-    "explanation": "Traffic sign A5 warns of a steep slope (climbing road section) (art. 66 KB 1 December 1975)."
+    "explanation": "Traffic sign A5 warns of a steep slope (climbing road section) (art. 66 KB 1 December 1975).",
+    "signTitle": "Steep slope",
+    "signExplanation": "Traffic sign A5 warns of a steep slope (climbing road section) (art. 66 KB 1 December 1975)."
   },
   "rec-a7b": {
     "question": "What does this traffic sign mean?",
@@ -127,7 +151,9 @@
       "Mandatory zipping from the left",
       "Prohibition for vehicles wider than indicated"
     ],
-    "explanation": "Traffic sign A7b warns of a narrowing of the carriageway on the left (art. 66 KB 1 December 1975)."
+    "explanation": "Traffic sign A7b warns of a narrowing of the carriageway on the left (art. 66 KB 1 December 1975).",
+    "signTitle": "Lane narrowing on the left",
+    "signExplanation": "Traffic sign A7b warns of a narrowing of the carriageway on the left (art. 66 KB 1 December 1975)."
   },
   "rec-a7c": {
     "question": "What does this traffic sign mean?",
@@ -137,7 +163,9 @@
       "Narrowest passage with priority for oncoming traffic",
       "End of a hard shoulder"
     ],
-    "explanation": "Traffic sign A7c warns of a narrowing of the carriageway on the right (art. 66 KB 1 December 1975)."
+    "explanation": "Traffic sign A7c warns of a narrowing of the carriageway on the right (art. 66 KB 1 December 1975).",
+    "signTitle": "Lane narrowing on the right",
+    "signExplanation": "Traffic sign A7c warns of a narrowing of the carriageway on the right (art. 66 KB 1 December 1975)."
   },
   "rec-a9": {
     "question": "What does this traffic sign mean?",
@@ -147,7 +175,9 @@
       "Movable bridge",
       "Fixed bridge with limited clearance"
     ],
-    "explanation": "Traffic sign A9 warns of approaching a movable bridge (art. 66 KB 1 December 1975)."
+    "explanation": "Traffic sign A9 warns of approaching a movable bridge (art. 66 KB 1 December 1975).",
+    "signTitle": "Movable bridge",
+    "signExplanation": "Traffic sign A9 warns of approaching a movable bridge (art. 66 KB 1 December 1975)."
   },
   "rec-a11": {
     "question": "What does this traffic sign mean?",
@@ -157,7 +187,9 @@
       "Slippery road along watercourses",
       "Way out on a quay or a bank"
     ],
-    "explanation": "Traffic sign A11 warns that the road ends at a quay or a bank without a barrier or parapet (art. 66 Royal Decree of 1 December 1975)."
+    "explanation": "Traffic sign A11 warns that the road ends at a quay or a bank without a barrier or parapet (art. 66 Royal Decree of 1 December 1975).",
+    "signTitle": "Way out on a quay or a bank",
+    "signExplanation": "Traffic sign A11 warns that the road ends at a quay or a bank without a barrier or parapet (art. 66 Royal Decree of 1 December 1975)."
   },
   "rec-a13": {
     "question": "What does this traffic sign mean?",
@@ -167,7 +199,9 @@
       "Road works",
       "Slippery road during precipitation"
     ],
-    "explanation": "Traffic sign A13 warns of a transverse hollow, a donkey's back or an uneven road surface (art. 66 KB 1 December 1975)."
+    "explanation": "Traffic sign A13 warns of a transverse hollow, a donkey's back or an uneven road surface (art. 66 KB 1 December 1975).",
+    "signTitle": "Crosswise concavity or donkey's back",
+    "signExplanation": "Traffic sign A13 warns of a transverse hollow, a donkey's back or an uneven road surface (art. 66 KB 1 December 1975)."
   },
   "rec-a14": {
     "question": "What does this traffic sign mean?",
@@ -177,7 +211,9 @@
       "Zone with a speed limit of 30 km/h",
       "Pedestrian crossing with platform"
     ],
-    "explanation": "Traffic sign A14 warns of one or more elevated devices, such as a speed bump or plateau (art. 66 KB 1 December 1975)."
+    "explanation": "Traffic sign A14 warns of one or more elevated devices, such as a speed bump or plateau (art. 66 KB 1 December 1975).",
+    "signTitle": "Elevated device(s)",
+    "signExplanation": "Traffic sign A14 warns of one or more elevated devices, such as a speed bump or plateau (art. 66 KB 1 December 1975)."
   },
   "rec-a15": {
     "question": "What does this traffic sign mean?",
@@ -187,7 +223,9 @@
       "Slippery road",
       "Passage of agricultural vehicles"
     ],
-    "explanation": "Traffic sign A15 warns of a slippery roadway or increased risk of slipping (art. 66 KB 1 December 1975)."
+    "explanation": "Traffic sign A15 warns of a slippery roadway or increased risk of slipping (art. 66 KB 1 December 1975).",
+    "signTitle": "Slippery road",
+    "signExplanation": "Traffic sign A15 warns of a slippery roadway or increased risk of slipping (art. 66 KB 1 December 1975)."
   },
   "rec-a17": {
     "question": "What does this traffic sign mean?",
@@ -197,7 +235,9 @@
       "Slippery road through mud",
       "Pebble projection"
     ],
-    "explanation": "Traffic sign A17 warns of the danger of flying loose pebbles or crushed stone (pebble projection) (art. 66 KB 1 December 1975)."
+    "explanation": "Traffic sign A17 warns of the danger of flying loose pebbles or crushed stone (pebble projection) (art. 66 KB 1 December 1975).",
+    "signTitle": "Pebble projection",
+    "signExplanation": "Traffic sign A17 warns of the danger of flying loose pebbles or crushed stone (pebble projection) (art. 66 KB 1 December 1975)."
   },
   "rec-a19": {
     "question": "What does this traffic sign mean?",
@@ -207,7 +247,9 @@
       "Uneven road surface",
       "Working on an embankment"
     ],
-    "explanation": "Traffic sign A19 warns of the danger of falling rocks or stones on the roadway (art. 66 KB 1 December 1975)."
+    "explanation": "Traffic sign A19 warns of the danger of falling rocks or stones on the roadway (art. 66 KB 1 December 1975).",
+    "signTitle": "Falling rocks",
+    "signExplanation": "Traffic sign A19 warns of the danger of falling rocks or stones on the roadway (art. 66 KB 1 December 1975)."
   },
   "rec-a27": {
     "question": "What does this traffic sign mean?",
@@ -217,7 +259,9 @@
       "Nature reserve with riders",
       "Animal shelter or dog park"
     ],
-    "explanation": "Traffic sign A27 warns of the possible passage of large game on the roadway (art. 66 KB 1 December 1975)."
+    "explanation": "Traffic sign A27 warns of the possible passage of large game on the roadway (art. 66 KB 1 December 1975).",
+    "signTitle": "Passage of big game",
+    "signExplanation": "Traffic sign A27 warns of the possible passage of large game on the roadway (art. 66 KB 1 December 1975)."
   },
   "rec-a29": {
     "question": "What does this traffic sign mean?",
@@ -227,7 +271,9 @@
       "Cattle passage",
       "Manure processing on public roads"
     ],
-    "explanation": "Traffic sign A29 warns of the possible crossing or presence of livestock on public roads (art. 66 KB 1 December 1975)."
+    "explanation": "Traffic sign A29 warns of the possible crossing or presence of livestock on public roads (art. 66 KB 1 December 1975).",
+    "signTitle": "Cattle passage",
+    "signExplanation": "Traffic sign A29 warns of the possible crossing or presence of livestock on public roads (art. 66 KB 1 December 1975)."
   },
   "rec-a33": {
     "question": "What does this traffic sign mean?",
@@ -237,7 +283,9 @@
       "Crossing with flashing lights",
       "Traffic lights"
     ],
-    "explanation": "Traffic sign A33 announces the approach of an intersection or crossing with traffic lights (art. 66 KB 1 December 1975)."
+    "explanation": "Traffic sign A33 announces the approach of an intersection or crossing with traffic lights (art. 66 KB 1 December 1975).",
+    "signTitle": "Traffic lights",
+    "signExplanation": "Traffic sign A33 announces the approach of an intersection or crossing with traffic lights (art. 66 KB 1 December 1975)."
   },
   "rec-a35": {
     "question": "What does this traffic sign mean?",
@@ -247,7 +295,9 @@
       "Access to an airport area",
       "Air pressure differences at tunnel mouths"
     ],
-    "explanation": "Traffic sign A35 warns of aircraft crossing at low altitude or sudden noise nuisance (art. 66 KB 1 December 1975)."
+    "explanation": "Traffic sign A35 warns of aircraft crossing at low altitude or sudden noise nuisance (art. 66 KB 1 December 1975).",
+    "signTitle": "Aircraft crossing at low altitude",
+    "signExplanation": "Traffic sign A35 warns of aircraft crossing at low altitude or sudden noise nuisance (art. 66 KB 1 December 1975)."
   },
   "rec-a37": {
     "question": "What does this traffic sign mean?",
@@ -257,7 +307,9 @@
       "Coastal zone with storm warning",
       "Increased risk of aquaplaning"
     ],
-    "explanation": "Traffic sign A37 warns of a section of road that is often exposed to sudden, strong crosswinds (art. 66 KB 1 December 1975)."
+    "explanation": "Traffic sign A37 warns of a section of road that is often exposed to sudden, strong crosswinds (art. 66 KB 1 December 1975).",
+    "signTitle": "Crosswind",
+    "signExplanation": "Traffic sign A37 warns of a section of road that is often exposed to sudden, strong crosswinds (art. 66 KB 1 December 1975)."
   },
   "rec-a39": {
     "question": "What does this traffic sign mean?",
@@ -267,7 +319,9 @@
       "Traffic allowed in two directions after a section of the carriageway with one-way traffic",
       "Separate lanes with oncoming traffic"
     ],
-    "explanation": "Traffic sign A39 warns that one-way traffic ends and traffic in both directions is allowed again (art. 66 KB 1 December 1975)."
+    "explanation": "Traffic sign A39 warns that one-way traffic ends and traffic in both directions is allowed again (art. 66 KB 1 December 1975).",
+    "signTitle": "Traffic allowed in two directions after a section of the carriageway with one-way traffic",
+    "signExplanation": "Traffic sign A39 warns that one-way traffic ends and traffic in both directions is allowed again (art. 66 KB 1 December 1975)."
   },
   "rec-a43": {
     "question": "What does this traffic sign mean?",
@@ -277,7 +331,9 @@
       "Historic steam train connection",
       "Level crossing without barriers"
     ],
-    "explanation": "Traffic sign A43 warns in advance of a level crossing without barriers (art. 66 KB 1 December 1975)."
+    "explanation": "Traffic sign A43 warns in advance of a level crossing without barriers (art. 66 KB 1 December 1975).",
+    "signTitle": "Level crossing without barriers",
+    "signExplanation": "Traffic sign A43 warns in advance of a level crossing without barriers (art. 66 KB 1 December 1975)."
   },
   "rec-a45": {
     "question": "What does this traffic sign mean?",
@@ -287,7 +343,9 @@
       "Intersection where priority from the right applies",
       "Level crossing with automatic half barriers"
     ],
-    "explanation": "Traffic sign A45 (single St. Andrew's Cross) indicates the immediate vicinity of a single-track level crossing (art. 66 Royal Decree of 1 December 1975)."
+    "explanation": "Traffic sign A45 (single St. Andrew's Cross) indicates the immediate vicinity of a single-track level crossing (art. 66 Royal Decree of 1 December 1975).",
+    "signTitle": "Single track level crossing",
+    "signExplanation": "Traffic sign A45 (single St. Andrew's Cross) indicates the immediate vicinity of a single-track level crossing (art. 66 Royal Decree of 1 December 1975)."
   },
   "rec-a47": {
     "question": "What does this traffic sign mean?",
@@ -297,7 +355,9 @@
       "Crossing of two tram lines",
       "Access prohibited for railway personnel"
     ],
-    "explanation": "Traffic sign A47 (double St. Andrew's cross) indicates the immediate vicinity of a level crossing with two or more tracks (art. 66 Royal Decree of 1 December 1975)."
+    "explanation": "Traffic sign A47 (double St. Andrew's cross) indicates the immediate vicinity of a level crossing with two or more tracks (art. 66 Royal Decree of 1 December 1975).",
+    "signTitle": "Level crossing for two or more tracks",
+    "signExplanation": "Traffic sign A47 (double St. Andrew's cross) indicates the immediate vicinity of a level crossing with two or more tracks (art. 66 Royal Decree of 1 December 1975)."
   },
   "rec-a49": {
     "question": "What does this traffic sign mean?",
@@ -307,7 +367,9 @@
       "Crossing of a public road by one or more tracks constructed in the roadway",
       "End of a tram lane"
     ],
-    "explanation": "Traffic sign A49 warns of the intersection of a public road through tracks in the road surface (art. 66 KB 1 December 1975)."
+    "explanation": "Traffic sign A49 warns of the intersection of a public road through tracks in the road surface (art. 66 KB 1 December 1975).",
+    "signTitle": "Crossing of a public road by one or more tracks constructed in the roadway",
+    "signExplanation": "Traffic sign A49 warns of the intersection of a public road through tracks in the road surface (art. 66 KB 1 December 1975)."
   },
   "rec-a50": {
     "question": "What does this traffic sign mean?",
@@ -317,7 +379,9 @@
       "Toll plaza or border crossing",
       "File"
     ],
-    "explanation": "Traffic sign A50 warns of the risk of delayed traffic or traffic jams (art. 66 KB 1 December 1975)."
+    "explanation": "Traffic sign A50 warns of the risk of delayed traffic or traffic jams (art. 66 KB 1 December 1975).",
+    "signTitle": "File",
+    "signExplanation": "Traffic sign A50 warns of the risk of delayed traffic or traffic jams (art. 66 KB 1 December 1975)."
   },
   "rec-a51": {
     "question": "What does this traffic sign mean?",
@@ -327,7 +391,9 @@
       "Dead end road with obstacles",
       "Danger not identified by a special symbol"
     ],
-    "explanation": "Traffic sign A51 warns of a danger that is not indicated by a specific symbol; a bottom sign states the nature of the danger (art. 66 KB 1 December 1975)."
+    "explanation": "Traffic sign A51 warns of a danger that is not indicated by a specific symbol; a bottom sign states the nature of the danger (art. 66 KB 1 December 1975).",
+    "signTitle": "Danger not identified by a special symbol",
+    "signExplanation": "Traffic sign A51 warns of a danger that is not indicated by a specific symbol; a bottom sign states the nature of the danger (art. 66 KB 1 December 1975)."
   },
   "rec-b1": {
     "question": "What does this traffic sign mean?",
@@ -337,7 +403,9 @@
       "Stop sign",
       "End of priority road"
     ],
-    "explanation": "This inverted triangle means that you must give priority to crossing traffic."
+    "explanation": "This inverted triangle means that you must give priority to crossing traffic.",
+    "signTitle": "Give priority",
+    "signExplanation": "This inverted triangle means that you must give priority to crossing traffic."
   },
   "rec-b5": {
     "question": "What does this traffic sign mean?",
@@ -347,7 +415,9 @@
       "Priority road",
       "Crossroads with priority from the right"
     ],
-    "explanation": "At this octagonal sign you must stop completely and give way to other traffic."
+    "explanation": "At this octagonal sign you must stop completely and give way to other traffic.",
+    "signTitle": "Stop and give way",
+    "signExplanation": "At this octagonal sign you must stop completely and give way to other traffic."
   },
   "rec-b9": {
     "question": "What does this traffic sign mean?",
@@ -357,7 +427,9 @@
       "Priority road",
       "Narrow passage with priority"
     ],
-    "explanation": "This diamond-shaped sign indicates that you are driving on a priority road."
+    "explanation": "This diamond-shaped sign indicates that you are driving on a priority road.",
+    "signTitle": "Priority road",
+    "signExplanation": "This diamond-shaped sign indicates that you are driving on a priority road."
   },
   "rec-b17": {
     "question": "What does this traffic sign mean?",
@@ -367,7 +439,9 @@
       "Roundabout",
       "Intersection where priority from the right applies"
     ],
-    "explanation": "This sign reminds that the normal right-of-way rule applies at this intersection."
+    "explanation": "This sign reminds that the normal right-of-way rule applies at this intersection.",
+    "signTitle": "Intersection where priority from the right applies",
+    "signExplanation": "This sign reminds that the normal right-of-way rule applies at this intersection."
   },
   "rec-c1": {
     "question": "What does this traffic sign mean?",
@@ -377,7 +451,9 @@
       "Overtaking is prohibited",
       "Turning is prohibited"
     ],
-    "explanation": "This sign with the white bar prohibits driving in that direction, for example against one-way traffic."
+    "explanation": "This sign with the white bar prohibits driving in that direction, for example against one-way traffic.",
+    "signTitle": "Driving in this direction is prohibited",
+    "signExplanation": "This sign with the white bar prohibits driving in that direction, for example against one-way traffic."
   },
   "rec-c3": {
     "question": "What does this traffic sign mean?",
@@ -387,7 +463,9 @@
       "Forbidden for pedestrians",
       "Dead end street"
     ],
-    "explanation": "This completely red sign closes the road to all drivers, in both directions."
+    "explanation": "This completely red sign closes the road to all drivers, in both directions.",
+    "signTitle": "No entry in both directions for any driver",
+    "signExplanation": "This completely red sign closes the road to all drivers, in both directions."
   },
   "rec-c35": {
     "question": "What does this traffic sign mean?",
@@ -397,7 +475,9 @@
       "Overtaking is prohibited",
       "Motor vehicles prohibited"
     ],
-    "explanation": "This sign prohibits overtaking vehicles with more than two wheels on the left."
+    "explanation": "This sign prohibits overtaking vehicles with more than two wheels on the left.",
+    "signTitle": "Overtaking is prohibited",
+    "signExplanation": "This sign prohibits overtaking vehicles with more than two wheels on the left."
   },
   "rec-c43-70": {
     "question": "What does this traffic sign mean?",
@@ -407,7 +487,9 @@
       "Recommended speed of 70 km/h",
       "Speed limit of 70 km/h"
     ],
-    "explanation": "The number on this round sign is the maximum speed that applies from here to the next intersection."
+    "explanation": "The number on this round sign is the maximum speed that applies from here to the next intersection.",
+    "signTitle": "Speed limit of 70 km/h",
+    "signExplanation": "The number on this round sign is the maximum speed that applies from here to the next intersection."
   },
   "rec-d1a": {
     "question": "What does this traffic sign mean?",
@@ -417,7 +499,9 @@
       "Mandatory circulating traffic",
       "Free choice of direction of travel"
     ],
-    "explanation": "This blue round sign requires you to follow the direction of the arrow, straight ahead."
+    "explanation": "This blue round sign requires you to follow the direction of the arrow, straight ahead.",
+    "signTitle": "Mandatory direction of travel: straight ahead",
+    "signExplanation": "This blue round sign requires you to follow the direction of the arrow, straight ahead."
   },
   "rec-d5": {
     "question": "What does this traffic sign mean?",
@@ -427,7 +511,9 @@
       "Crossroads with priority from the right",
       "Traffic square"
     ],
-    "explanation": "This sign announces a roundabout where you must drive in the indicated direction."
+    "explanation": "This sign announces a roundabout where you must drive in the indicated direction.",
+    "signTitle": "Mandatory circulating traffic (roundabout)",
+    "signExplanation": "This sign announces a roundabout where you must drive in the indicated direction."
   },
   "rec-d7": {
     "question": "What does this traffic sign mean?",
@@ -437,7 +523,9 @@
       "Mandatory cycle path",
       "End of cycle path"
     ],
-    "explanation": "Cyclists and drivers of two-wheeled mopeds class A must use this cycle path."
+    "explanation": "Cyclists and drivers of two-wheeled mopeds class A must use this cycle path.",
+    "signTitle": "Mandatory cycle path",
+    "signExplanation": "Cyclists and drivers of two-wheeled mopeds class A must use this cycle path."
   },
   "rec-e1": {
     "question": "What does this traffic sign mean?",
@@ -447,7 +535,9 @@
       "Limited parking time",
       "Parking is prohibited"
     ],
-    "explanation": "This sign prohibits parking, but short stops are permitted."
+    "explanation": "This sign prohibits parking, but short stops are permitted.",
+    "signTitle": "Parking is prohibited",
+    "signExplanation": "This sign prohibits parking, but short stops are permitted."
   },
   "rec-f45": {
     "question": "What does this traffic sign mean?",
@@ -457,7 +547,9 @@
       "End of work",
       "Narrowing of the road"
     ],
-    "explanation": "This sign shows that the road does not continue further ahead."
+    "explanation": "This sign shows that the road does not continue further ahead.",
+    "signTitle": "Dead end street",
+    "signExplanation": "This sign shows that the road does not continue further ahead."
   },
   "rec-f5": {
     "question": "What does this traffic sign mean?",
@@ -467,7 +559,9 @@
       "Start of a motorway",
       "Traffic square"
     ],
-    "explanation": "Specific traffic rules for motorways apply from this sign."
+    "explanation": "Specific traffic rules for motorways apply from this sign.",
+    "signTitle": "Start of a motorway",
+    "signExplanation": "Specific traffic rules for motorways apply from this sign."
   },
   "iden-b19": {
     "question": "Which sign corresponds to this situation: a narrow passage where you have to give priority to drivers coming from the opposite direction?",
@@ -677,7 +771,9 @@
       "The largest vehicle",
       "The traffic already on the roundabout"
     ],
-    "explanation": "At a roundabout indicated by sign D5, traffic already on it has priority over those who want to join (art. 12.3.1)."
+    "explanation": "At a roundabout indicated by sign D5, traffic already on it has priority over those who want to join (art. 12.3.1).",
+    "signTitle": "Mandatory roundabout",
+    "signExplanation": "Sign D5 indicates a roundabout where traffic must follow the indicated direction. Drivers already on the roundabout have right of way over entering traffic (art. 12.3.1 and art. 68.3 of the Highway Code)."
   },
   "rule-prioritair": {
     "question": "What should you do if a priority vehicle with flashing lights and siren approaches?",
@@ -847,7 +943,9 @@
       "Only if they do not drive faster than 15 km/h",
       "Only outside built-up areas"
     ],
-    "explanation": "By the Royal Decree of July 30, 2022 (in effect on October 1, 2022, art. 9.1.2° and 69.3), the permission for drivers of speed pedelecs on the D9 path was restored, unless a sign denies them access."
+    "explanation": "By the Royal Decree of July 30, 2022 (in effect on October 1, 2022, art. 9.1.2° and 69.3), the permission for drivers of speed pedelecs on the D9 path was restored, unless a sign denies them access.",
+    "signTitle": "Reserved path for pedestrians, cyclists, and class A mopeds",
+    "signExplanation": "Sign D9 indicates a part of the public road reserved for pedestrians, cyclists, and drivers of class A two-wheeled mopeds (as well as speed pedelecs, unless an additional panel denies them access) (art. 68.3 and 69.3 of the Highway Code)."
   },
   "rule-velomobiel-2022": {
     "question": "What additional visibility requirement applies to a velomobile (closed recumbent bicycle) with a height of less than 1 meter?",
@@ -867,7 +965,9 @@
       "Always over a fixed distance of 250 meters",
       "Only at the first 50 meters"
     ],
-    "explanation": "Since the Royal Decree of March 12, 2023, a \"cycling street\" has been called a \"cycling zone\" (art. 2.61): it can include several public roads and runs to the traffic sign F113, not automatically to the next intersection."
+    "explanation": "Since the Royal Decree of March 12, 2023, a \"cycling street\" has been called a \"cycling zone\" (art. 2.61): it can include several public roads and runs to the traffic sign F113, not automatically to the next intersection.",
+    "signTitle": "Start of a cycling zone",
+    "signExplanation": "Sign F111 indicates the start of a cycling zone (bicycle street). Motor vehicles may not overtake cyclists and must drive at a maximum speed of 30 km/h until sign F113 (art. 2.61 and art. 71.2 of the Highway Code)."
   },
   "rule-brussel-stad30-2021": {
     "question": "What is the general maximum speed within built-up areas in the Brussels-Capital Region since 2021, unless otherwise indicated?",
@@ -887,7 +987,9 @@
       "End of a priority road",
       "Mandatory straight ahead"
     ],
-    "explanation": "Sign B19 states that in a narrow passage you must give priority to drivers coming from the opposite direction (art. 67.3)."
+    "explanation": "Sign B19 states that in a narrow passage you must give priority to drivers coming from the opposite direction (art. 67.3).",
+    "signTitle": "Narrow passage where you have to give priority to oncoming traffic",
+    "signExplanation": "Sign B19 states that in a narrow passage you must give priority to drivers coming from the opposite direction (art. 67.3)."
   },
   "rec-b3": {
     "question": "What does this traffic sign mean?",
@@ -897,7 +999,9 @@
       "Give priority to all drivers at the intersection",
       "Intersection where priority from the right applies"
     ],
-    "explanation": "Sign B3 announces sign B1 (giving priority) at the approximate distance indicated (art. 67 KB 1 December 1975)."
+    "explanation": "Sign B3 announces sign B1 (giving priority) at the approximate distance indicated (art. 67 KB 1 December 1975).",
+    "signTitle": "Announcement of sign B1 (give priority) at the indicated distance",
+    "signExplanation": "Sign B3 announces sign B1 (giving priority) at the approximate distance indicated (art. 67 KB 1 December 1975)."
   },
   "rec-b7": {
     "question": "What does this traffic sign mean?",
@@ -907,7 +1011,9 @@
       "Mandatory stop at the sign and give way",
       "Dangerous threshold at the indicated distance"
     ],
-    "explanation": "Sign B7 announces sign B5 (stopping and giving way) at the approximate distance indicated (art. 67 KB 1 December 1975)."
+    "explanation": "Sign B7 announces sign B5 (stopping and giving way) at the approximate distance indicated (art. 67 KB 1 December 1975).",
+    "signTitle": "Announcement of sign B5 (stopping and giving way) at the indicated distance",
+    "signExplanation": "Sign B7 announces sign B5 (stopping and giving way) at the approximate distance indicated (art. 67 KB 1 December 1975)."
   },
   "rec-b11": {
     "question": "What does this traffic sign mean?",
@@ -917,7 +1023,9 @@
       "End of the priority road",
       "Crossroads with priority from the right"
     ],
-    "explanation": "Sign B11 indicates the end of a priority road (art. 67 KB 1 December 1975)."
+    "explanation": "Sign B11 indicates the end of a priority road (art. 67 KB 1 December 1975).",
+    "signTitle": "End of the priority road",
+    "signExplanation": "Sign B11 indicates the end of a priority road (art. 67 KB 1 December 1975)."
   },
   "rec-b13": {
     "question": "What does this traffic sign mean?",
@@ -927,7 +1035,9 @@
       "Priority at the next intersection",
       "Announcement of the end of the priority road at the indicated distance"
     ],
-    "explanation": "Sign B13 announces the end of the priority road (sign B11) at the approximate distance indicated (art. 67 KB 1 December 1975)."
+    "explanation": "Sign B13 announces the end of the priority road (sign B11) at the approximate distance indicated (art. 67 KB 1 December 1975).",
+    "signTitle": "Announcement of the end of the priority road at the indicated distance",
+    "signExplanation": "Sign B13 announces the end of the priority road (sign B11) at the approximate distance indicated (art. 67 KB 1 December 1975)."
   },
   "rec-b15": {
     "question": "What does this traffic sign mean?",
@@ -937,7 +1047,9 @@
       "Intersection where priority from the right applies",
       "Narrow passage with priority over oncoming traffic"
     ],
-    "explanation": "Sign B15 indicates that drivers have priority at the next intersection (art. 67 KB 1 December 1975)."
+    "explanation": "Sign B15 indicates that drivers have priority at the next intersection (art. 67 KB 1 December 1975).",
+    "signTitle": "Priority at the next intersection",
+    "signExplanation": "Sign B15 indicates that drivers have priority at the next intersection (art. 67 KB 1 December 1975)."
   },
   "rec-b21": {
     "question": "What does this traffic sign mean?",
@@ -947,7 +1059,9 @@
       "One-way traffic in the indicated direction of travel",
       "Dead end street"
     ],
-    "explanation": "Sign B21 indicates a narrow passage where you have priority over oncoming drivers (art. 67 KB 1 December 1975)."
+    "explanation": "Sign B21 indicates a narrow passage where you have priority over oncoming drivers (art. 67 KB 1 December 1975).",
+    "signTitle": "Narrow passage with priority over oncoming traffic",
+    "signExplanation": "Sign B21 indicates a narrow passage where you have priority over oncoming drivers (art. 67 KB 1 December 1975)."
   },
   "rec-b22": {
     "question": "What does this traffic sign mean?",
@@ -957,7 +1071,9 @@
       "Cyclists and speed pedelecs may turn right at red lights provided they give way",
       "Cyclists are prohibited from turning right at a red light"
     ],
-    "explanation": "Sign B22 allows cyclists and drivers of speed pedelecs to turn right at red or orange-yellow lights, provided they give way (art. 67 KB 1 December 1975)."
+    "explanation": "Sign B22 allows cyclists and drivers of speed pedelecs to turn right at red or orange-yellow lights, provided they give way (art. 67 KB 1 December 1975).",
+    "signTitle": "Cyclists and speed pedelecs may turn right at red lights provided they give way",
+    "signExplanation": "Sign B22 allows cyclists and drivers of speed pedelecs to turn right at red or orange-yellow lights, provided they give way (art. 67 KB 1 December 1975)."
   },
   "rec-b23": {
     "question": "What does this traffic sign mean?",
@@ -967,7 +1083,9 @@
       "Reserved lane for cyclists and speed pedelecs",
       "Cyclists and speed pedelecs may drive straight ahead at red lights provided they give way"
     ],
-    "explanation": "Sign B23 allows cyclists and drivers of speed pedelecs to drive straight ahead at red or orange-yellow lights, provided they give way (art. 67 KB 1 December 1975)."
+    "explanation": "Sign B23 allows cyclists and drivers of speed pedelecs to drive straight ahead at red or orange-yellow lights, provided they give way (art. 67 KB 1 December 1975).",
+    "signTitle": "Cyclists and speed pedelecs may drive straight ahead at red lights provided they give way",
+    "signExplanation": "Sign B23 allows cyclists and drivers of speed pedelecs to drive straight ahead at red or orange-yellow lights, provided they give way (art. 67 KB 1 December 1975)."
   },
   "rec-c31a": {
     "question": "What does this traffic sign mean?",
@@ -977,7 +1095,9 @@
       "One-way traffic to the left",
       "Dead end on the left"
     ],
-    "explanation": "Sign C31a prohibits turning left at the next intersection in the direction of the arrow (art. 68.3)."
+    "explanation": "Sign C31a prohibits turning left at the next intersection in the direction of the arrow (art. 68.3).",
+    "signTitle": "Turning left at the next intersection is prohibited",
+    "signExplanation": "Sign C31a prohibits turning left at the next intersection in the direction of the arrow (art. 68.3)."
   },
   "rec-c33": {
     "question": "What does this traffic sign mean?",
@@ -987,7 +1107,9 @@
       "U-turn prohibition",
       "Sharp bend to the left"
     ],
-    "explanation": "Sign C33 prohibits drivers from turning around (making a U-turn) until the next intersection (art. 68.3)."
+    "explanation": "Sign C33 prohibits drivers from turning around (making a U-turn) until the next intersection (art. 68.3).",
+    "signTitle": "U-turn prohibition",
+    "signExplanation": "Sign C33 prohibits drivers from turning around (making a U-turn) until the next intersection (art. 68.3)."
   },
   "rec-c39": {
     "question": "What does this traffic sign mean?",
@@ -997,7 +1119,9 @@
       "Mandatory lane for trucks",
       "Overtaking ban for trucks with a GVW of more than 3.5 tons"
     ],
-    "explanation": "Sign C39 prohibits trucks with a maximum authorized mass of more than 3.5 tonnes from overtaking a team or motor vehicle with more than two wheels (art. 68.3)."
+    "explanation": "Sign C39 prohibits trucks with a maximum authorized mass of more than 3.5 tonnes from overtaking a team or motor vehicle with more than two wheels (art. 68.3).",
+    "signTitle": "Overtaking ban for trucks with a GVW of more than 3.5 tons",
+    "signExplanation": "Sign C39 prohibits trucks with a maximum authorized mass of more than 3.5 tonnes from overtaking a team or motor vehicle with more than two wheels (art. 68.3)."
   },
   "rec-c5": {
     "question": "What does this traffic sign mean?",
@@ -1007,7 +1131,9 @@
       "Mandatory lane reserved for carpoolers and taxis",
       "Access prohibited for drivers of vehicles intended for freight transport"
     ],
-    "explanation": "Sign C5 prohibits access for drivers of motor vehicles with more than two wheels and motorcycles with sidecars (art. 68 KB 1 December 1975). Two-wheeled motorcycles without a sidecar are allowed to drive here."
+    "explanation": "Sign C5 prohibits access for drivers of motor vehicles with more than two wheels and motorcycles with sidecars (art. 68 KB 1 December 1975). Two-wheeled motorcycles without a sidecar are allowed to drive here.",
+    "signTitle": "Access prohibited for drivers of motor vehicles with more than two wheels and motorcycles with sidecars",
+    "signExplanation": "Sign C5 prohibits access for drivers of motor vehicles with more than two wheels and motorcycles with sidecars (art. 68 KB 1 December 1975). Two-wheeled motorcycles without a sidecar are allowed to drive here."
   },
   "rec-c6": {
     "question": "What does this traffic sign mean?",
@@ -1017,7 +1143,9 @@
       "Mandatory route for quads and off-road vehicles",
       "Four-wheeled mopeds are prohibited"
     ],
-    "explanation": "Sign C6 prohibits access to drivers of four-wheeled motor vehicles with an open body, motorcycle-like handlebars and saddle, designed for unpaved terrain, such as quads (art. 68 KB 1 December 1975)."
+    "explanation": "Sign C6 prohibits access to drivers of four-wheeled motor vehicles with an open body, motorcycle-like handlebars and saddle, designed for unpaved terrain, such as quads (art. 68 KB 1 December 1975).",
+    "signTitle": "Access prohibited for drivers of four-wheeled motor vehicles constructed for unpaved terrain (quads)",
+    "signExplanation": "Sign C6 prohibits access to drivers of four-wheeled motor vehicles with an open body, motorcycle-like handlebars and saddle, designed for unpaved terrain, such as quads (art. 68 KB 1 December 1975)."
   },
   "rec-c7": {
     "question": "What does this traffic sign mean?",
@@ -1027,7 +1155,9 @@
       "Access prohibited for motorcycle drivers",
       "Overtaking ban for all motorcycle drivers"
     ],
-    "explanation": "Sign C7 prohibits access for motorcycle drivers (art. 68 KB 1 December 1975)."
+    "explanation": "Sign C7 prohibits access for motorcycle drivers (art. 68 KB 1 December 1975).",
+    "signTitle": "Access prohibited for motorcycle drivers",
+    "signExplanation": "Sign C7 prohibits access for motorcycle drivers (art. 68 KB 1 December 1975)."
   },
   "rec-c9": {
     "question": "What does this traffic sign mean?",
@@ -1037,7 +1167,9 @@
       "Access prohibited for all motorized two-wheelers over 50 cc",
       "Access prohibited for moped drivers"
     ],
-    "explanation": "Sign C9 prohibits access for moped drivers (art. 68 KB 1 December 1975)."
+    "explanation": "Sign C9 prohibits access for moped drivers (art. 68 KB 1 December 1975).",
+    "signTitle": "Access prohibited for moped drivers",
+    "signExplanation": "Sign C9 prohibits access for moped drivers (art. 68 KB 1 December 1975)."
   },
   "rec-c11": {
     "question": "What does this traffic sign mean?",
@@ -1047,7 +1179,9 @@
       "Access prohibited for pedestrians and personal mobility equipment",
       "End of the mandatory cycle path"
     ],
-    "explanation": "Sign C11 prohibits access for bicycle drivers (art. 68 KB 1 December 1975)."
+    "explanation": "Sign C11 prohibits access for bicycle drivers (art. 68 KB 1 December 1975).",
+    "signTitle": "Access prohibited for bicycle drivers",
+    "signExplanation": "Sign C11 prohibits access for bicycle drivers (art. 68 KB 1 December 1975)."
   },
   "rec-c13": {
     "question": "What does this traffic sign mean?",
@@ -1057,7 +1191,9 @@
       "Mandatory route for horses and covered wagons",
       "Access prohibited for agricultural vehicles"
     ],
-    "explanation": "Sign C13 prohibits access for drivers of tense vehicles (art. 68 KB 1 December 1975)."
+    "explanation": "Sign C13 prohibits access for drivers of tense vehicles (art. 68 KB 1 December 1975).",
+    "signTitle": "Access prohibited for tense drivers",
+    "signExplanation": "Sign C13 prohibits access for drivers of tense vehicles (art. 68 KB 1 December 1975)."
   },
   "rec-c15": {
     "question": "What does this traffic sign mean?",
@@ -1067,7 +1203,9 @@
       "No access for riders",
       "Warning for crossing cattle or horses"
     ],
-    "explanation": "Sign C15 prohibits access for horse riders (art. 68 KB 1 December 1975)."
+    "explanation": "Sign C15 prohibits access for horse riders (art. 68 KB 1 December 1975).",
+    "signTitle": "No access for riders",
+    "signExplanation": "Sign C15 prohibits access for horse riders (art. 68 KB 1 December 1975)."
   },
   "rec-c17": {
     "question": "What does this traffic sign mean?",
@@ -1077,7 +1215,9 @@
       "No access for wheelbarrows on the sidewalk",
       "Access prohibited for pushcart drivers"
     ],
-    "explanation": "Sign C17 prohibits access for pushcart drivers (art. 68 KB 1 December 1975)."
+    "explanation": "Sign C17 prohibits access for pushcart drivers (art. 68 KB 1 December 1975).",
+    "signTitle": "Access prohibited for pushcart drivers",
+    "signExplanation": "Sign C17 prohibits access for pushcart drivers (art. 68 KB 1 December 1975)."
   },
   "rec-c19": {
     "question": "What does this traffic sign mean?",
@@ -1087,7 +1227,9 @@
       "Pedestrian crossing",
       "End of the pedestrian zone"
     ],
-    "explanation": "Sign C19 prohibits pedestrian access (art. 68 KB 1 December 1975)."
+    "explanation": "Sign C19 prohibits pedestrian access (art. 68 KB 1 December 1975).",
+    "signTitle": "Pedestrian access prohibited",
+    "signExplanation": "Sign C19 prohibits pedestrian access (art. 68 KB 1 December 1975)."
   },
   "rec-c21": {
     "question": "What does this traffic sign mean?",
@@ -1097,7 +1239,9 @@
       "Mandatory maximum axle load per axle for trucks",
       "Recommended maximum weight for trucks and buses"
     ],
-    "explanation": "Sign C21 prohibits access for drivers of vehicles whose actual loaded mass (MBTA) is higher than the indicated mass (art. 68 KB 1 December 1975)."
+    "explanation": "Sign C21 prohibits access for drivers of vehicles whose actual loaded mass (MBTA) is higher than the indicated mass (art. 68 KB 1 December 1975).",
+    "signTitle": "Access prohibited for drivers of vehicles whose loaded mass exceeds the indicated mass",
+    "signExplanation": "Sign C21 prohibits access for drivers of vehicles whose actual loaded mass (MBTA) is higher than the indicated mass (art. 68 KB 1 December 1975)."
   },
   "rec-c22": {
     "question": "What does this traffic sign mean?",
@@ -1107,7 +1251,9 @@
       "Access prohibited for coach drivers",
       "Reserved lane for buses and coaches"
     ],
-    "explanation": "Sign C22 prohibits access for drivers of coaches (art. 68 KB 1 December 1975)."
+    "explanation": "Sign C22 prohibits access for drivers of coaches (art. 68 KB 1 December 1975).",
+    "signTitle": "Access prohibited for coach drivers",
+    "signExplanation": "Sign C22 prohibits access for drivers of coaches (art. 68 KB 1 December 1975)."
   },
   "rec-c23": {
     "question": "What does this traffic sign mean?",
@@ -1117,7 +1263,9 @@
       "Mandatory lane for freight transport",
       "Access prohibited for drivers of motor vehicles and tows designed and constructed for the carriage of goods"
     ],
-    "explanation": "Sign C23 prohibits access for drivers of motor vehicles and tows designed and constructed for the carriage of goods (art. 68 KB 1 December 1975)."
+    "explanation": "Sign C23 prohibits access for drivers of motor vehicles and tows designed and constructed for the carriage of goods (art. 68 KB 1 December 1975).",
+    "signTitle": "Access prohibited for drivers of motor vehicles and tows designed and constructed for the carriage of goods",
+    "signExplanation": "Sign C23 prohibits access for drivers of motor vehicles and tows designed and constructed for the carriage of goods (art. 68 KB 1 December 1975)."
   },
   "rec-c24a": {
     "question": "What does this traffic sign mean?",
@@ -1127,7 +1275,9 @@
       "Access prohibited for vehicles carrying flammable or explosive substances",
       "Prohibition on loading or unloading dangerous goods within built-up areas"
     ],
-    "explanation": "Sign C24a prohibits access for drivers of vehicles transporting dangerous goods (art. 68 KB 1 December 1975)."
+    "explanation": "Sign C24a prohibits access for drivers of vehicles transporting dangerous goods (art. 68 KB 1 December 1975).",
+    "signTitle": "Access prohibited for drivers of vehicles transporting dangerous goods",
+    "signExplanation": "Sign C24a prohibits access for drivers of vehicles transporting dangerous goods (art. 68 KB 1 December 1975)."
   },
   "rec-c24b": {
     "question": "What does this traffic sign mean?",
@@ -1137,7 +1287,9 @@
       "Entry prohibited for vehicles transporting water pollutants",
       "Ban on open flames and smoking near gas stations"
     ],
-    "explanation": "Sign C24b prohibits access for drivers of vehicles transporting dangerous flammable or explosive substances (art. 68 Royal Decree of 1 December 1975)."
+    "explanation": "Sign C24b prohibits access for drivers of vehicles transporting dangerous flammable or explosive substances (art. 68 Royal Decree of 1 December 1975).",
+    "signTitle": "No access for drivers of vehicles transporting dangerous flammable or explosive substances",
+    "signExplanation": "Sign C24b prohibits access for drivers of vehicles transporting dangerous flammable or explosive substances (art. 68 Royal Decree of 1 December 1975)."
   },
   "rec-c24c": {
     "question": "What does this traffic sign mean?",
@@ -1147,7 +1299,9 @@
       "No entry for drivers of vehicles transporting dangerous pollutants",
       "Warning for a water extraction area with an increased risk of flooding"
     ],
-    "explanation": "Sign C24c prohibits access for drivers of vehicles transporting dangerous pollutants (art. 68 KB 1 December 1975)."
+    "explanation": "Sign C24c prohibits access for drivers of vehicles transporting dangerous pollutants (art. 68 KB 1 December 1975).",
+    "signTitle": "No entry for drivers of vehicles transporting dangerous pollutants",
+    "signExplanation": "Sign C24c prohibits access for drivers of vehicles transporting dangerous pollutants (art. 68 KB 1 December 1975)."
   },
   "rec-c25": {
     "question": "What does this traffic sign mean?",
@@ -1157,7 +1311,9 @@
       "Mandatory following distance of at least the indicated distance in meters",
       "Access is prohibited for drivers of vehicles or tows whose length, including load, exceeds the indicated"
     ],
-    "explanation": "Sign C25 prohibits access for drivers of vehicles or tows whose length, including load, is greater than indicated on the sign (art. 68 KB 1 December 1975)."
+    "explanation": "Sign C25 prohibits access for drivers of vehicles or tows whose length, including load, is greater than indicated on the sign (art. 68 KB 1 December 1975).",
+    "signTitle": "Access is prohibited for drivers of vehicles or tows whose length, including load, exceeds the indicated",
+    "signExplanation": "Sign C25 prohibits access for drivers of vehicles or tows whose length, including load, is greater than indicated on the sign (art. 68 KB 1 December 1975)."
   },
   "rec-c27": {
     "question": "What does this traffic sign mean?",
@@ -1167,7 +1323,9 @@
       "Recommended minimum passing width for agricultural vehicles",
       "Overtaking in a lane narrower than the indicated lane is prohibited"
     ],
-    "explanation": "Sign C27 prohibits access for drivers of vehicles whose width, including load, is greater than the indicated size (art. 68 KB 1 December 1975)."
+    "explanation": "Sign C27 prohibits access for drivers of vehicles whose width, including load, is greater than the indicated size (art. 68 KB 1 December 1975).",
+    "signTitle": "Access prohibited for drivers of vehicles whose width, including load, is greater than the indicated",
+    "signExplanation": "Sign C27 prohibits access for drivers of vehicles whose width, including load, is greater than the indicated size (art. 68 KB 1 December 1975)."
   },
   "rec-c29": {
     "question": "What does this traffic sign mean?",
@@ -1177,7 +1335,9 @@
       "Recommended clearance height for coaches and double-deckers",
       "Mandatory minimum height for commercial vehicles under the structure"
     ],
-    "explanation": "Sign C29 prohibits access for drivers of vehicles whose height, including load, is greater than the indicated height (art. 68 KB 1 December 1975)."
+    "explanation": "Sign C29 prohibits access for drivers of vehicles whose height, including load, is greater than the indicated height (art. 68 KB 1 December 1975).",
+    "signTitle": "Access prohibited for drivers of vehicles whose height, including load, exceeds the indicated",
+    "signExplanation": "Sign C29 prohibits access for drivers of vehicles whose height, including load, is greater than the indicated height (art. 68 KB 1 December 1975)."
   },
   "rec-c31b": {
     "question": "What does this traffic sign mean?",
@@ -1187,7 +1347,9 @@
       "Prohibition at the next intersection to turn in the direction indicated by the arrow (right)",
       "Dead end street at the next exit on the right"
     ],
-    "explanation": "Sign C31b prohibits turning in the direction indicated by the arrow at the next intersection, here turn right (art. 68 KB 1 December 1975)."
+    "explanation": "Sign C31b prohibits turning in the direction indicated by the arrow at the next intersection, here turn right (art. 68 KB 1 December 1975).",
+    "signTitle": "Prohibition at the next intersection to turn in the direction indicated by the arrow (right)",
+    "signExplanation": "Sign C31b prohibits turning in the direction indicated by the arrow at the next intersection, here turn right (art. 68 KB 1 December 1975)."
   },
   "rec-c37": {
     "question": "What does this traffic sign mean?",
@@ -1197,7 +1359,9 @@
       "Prohibition on overtaking vehicles with more than two wheels from the right",
       "End of the ban on overtaking a team or a vehicle with more than two wheels on the left"
     ],
-    "explanation": "Sign C37 indicates the end of the overtaking ban imposed by sign C35 (art. 68 KB 1 December 1975)."
+    "explanation": "Sign C37 indicates the end of the overtaking ban imposed by sign C35 (art. 68 KB 1 December 1975).",
+    "signTitle": "End of the ban on overtaking a team or a vehicle with more than two wheels on the left",
+    "signExplanation": "Sign C37 indicates the end of the overtaking ban imposed by sign C35 (art. 68 KB 1 December 1975)."
   },
   "rec-c41": {
     "question": "What does this traffic sign mean?",
@@ -1207,7 +1371,9 @@
       "Start of an overtaking ban for trucks in rainy weather",
       "Mandatory lane for trucks with a gross vehicle weight over 3.5 tons"
     ],
-    "explanation": "Sign C41 indicates the end of the overtaking ban for drivers of vehicles used for freight transport with a gross vehicle weight of more than 3.5 tons (end of sign C39, art. 68 KB 1 December 1975)."
+    "explanation": "Sign C41 indicates the end of the overtaking ban for drivers of vehicles used for freight transport with a gross vehicle weight of more than 3.5 tons (end of sign C39, art. 68 KB 1 December 1975).",
+    "signTitle": "End of the ban on overtaking on the left for goods vehicles with a GVW of more than 3.5 tonnes",
+    "signExplanation": "Sign C41 indicates the end of the overtaking ban for drivers of vehicles used for freight transport with a gross vehicle weight of more than 3.5 tons (end of sign C39, art. 68 KB 1 December 1975)."
   },
   "rec-c43": {
     "question": "What does this traffic sign mean?",
@@ -1217,7 +1383,9 @@
       "Mandatory minimum speed on this road section",
       "Start of a zonal speed limit that only ends at a zone end sign"
     ],
-    "explanation": "Sign C43 prohibits driving at a greater speed than indicated, from the sign to the next intersection, unless otherwise indicated (art. 68 KB 1 December 1975)."
+    "explanation": "Sign C43 prohibits driving at a greater speed than indicated, from the sign to the next intersection, unless otherwise indicated (art. 68 KB 1 December 1975).",
+    "signTitle": "Prohibition on driving at a speed greater than that indicated until the next intersection",
+    "signExplanation": "Sign C43 prohibits driving at a greater speed than indicated, from the sign to the next intersection, unless otherwise indicated (art. 68 KB 1 December 1975)."
   },
   "rec-c45": {
     "question": "What does this traffic sign mean?",
@@ -1227,7 +1395,9 @@
       "End of the speed limit imposed by traffic sign C43",
       "End of the minimum speed on this public road"
     ],
-    "explanation": "Sign C45 indicates the end of the speed restriction previously imposed by sign C43 (art. 68 KB 1 December 1975)."
+    "explanation": "Sign C45 indicates the end of the speed restriction previously imposed by sign C43 (art. 68 KB 1 December 1975).",
+    "signTitle": "End of the speed limit imposed by traffic sign C43",
+    "signExplanation": "Sign C45 indicates the end of the speed restriction previously imposed by sign C43 (art. 68 KB 1 December 1975)."
   },
   "rec-c46": {
     "question": "What does this traffic sign mean?",
@@ -1237,7 +1407,9 @@
       "End of the priority road at the next intersection",
       "End of all local prohibitions imposed on vehicles in motion"
     ],
-    "explanation": "Sign C46 indicates the end of all local prohibitions previously imposed on vehicles in motion, such as speed limits and overtaking bans (art. 68 KB 1 December 1975)."
+    "explanation": "Sign C46 indicates the end of all local prohibitions previously imposed on vehicles in motion, such as speed limits and overtaking bans (art. 68 KB 1 December 1975).",
+    "signTitle": "End of all local prohibitions imposed on vehicles in motion",
+    "signExplanation": "Sign C46 indicates the end of all local prohibitions previously imposed on vehicles in motion, such as speed limits and overtaking bans (art. 68 KB 1 December 1975)."
   },
   "rec-c47": {
     "question": "What does this traffic sign mean?",
@@ -1247,7 +1419,9 @@
       "Border crossing where only trucks have to stop",
       "Toll post: prohibition on driving past without stopping"
     ],
-    "explanation": "Sign C47 (Toll Post or Tax) imposes a ban on driving past without stopping (art. 68 KB 1 December 1975)."
+    "explanation": "Sign C47 (Toll Post or Tax) imposes a ban on driving past without stopping (art. 68 KB 1 December 1975).",
+    "signTitle": "Toll post: prohibition on driving past without stopping",
+    "signExplanation": "Sign C47 (Toll Post or Tax) imposes a ban on driving past without stopping (art. 68 KB 1 December 1975)."
   },
   "rec-d9": {
     "question": "What does this traffic sign mean?",
@@ -1257,7 +1431,9 @@
       "Crossing for cyclists and pedestrians",
       "Part of the public road reserved for pedestrians, cyclists and class A mopeds"
     ],
-    "explanation": "Sign D9 indicates a part of the public road reserved for the movement of pedestrians, cyclists and two-wheeled mopeds class A (art. 69.3)."
+    "explanation": "Sign D9 indicates a part of the public road reserved for the movement of pedestrians, cyclists and two-wheeled mopeds class A (art. 69.3).",
+    "signTitle": "Part of the public road reserved for pedestrians, cyclists and class A mopeds",
+    "signExplanation": "Sign D9 indicates a part of the public road reserved for the movement of pedestrians, cyclists and two-wheeled mopeds class A (art. 69.3)."
   },
   "rec-d10": {
     "question": "What does this traffic sign mean?",
@@ -1267,7 +1443,9 @@
       "Beginning of a residential area",
       "Mandatory footpath where cyclists are not allowed to ride"
     ],
-    "explanation": "Sign D10 indicates a path reserved for pedestrians and cyclists; In contrast to sign D9, class A mopeds are not allowed to drive here (art. 69.3)."
+    "explanation": "Sign D10 indicates a path reserved for pedestrians and cyclists; In contrast to sign D9, class A mopeds are not allowed to drive here (art. 69.3).",
+    "signTitle": "Part of the public road reserved for pedestrians and cyclists (without mopeds)",
+    "signExplanation": "Sign D10 indicates a path reserved for pedestrians and cyclists; In contrast to sign D9, class A mopeds are not allowed to drive here (art. 69.3)."
   },
   "rec-d1b": {
     "question": "What does this traffic sign mean?",
@@ -1277,7 +1455,9 @@
       "Obligation to pass the obstacle from the left",
       "Prohibition on turning left"
     ],
-    "explanation": "This mandatory sign (D1) obliges you to follow the direction of travel of the arrow, here on the left (art. 69.3 of the Highway Code)."
+    "explanation": "This mandatory sign (D1) obliges you to follow the direction of travel of the arrow, here on the left (art. 69.3 of the Highway Code).",
+    "signTitle": "Mandatory direction of travel: left",
+    "signExplanation": "This mandatory sign (D1) obliges you to follow the direction of travel of the arrow, here on the left (art. 69.3 of the Highway Code)."
   },
   "rec-d1c": {
     "question": "What does this traffic sign mean?",
@@ -1287,7 +1467,9 @@
       "Mandatory direction of travel: turn left at the intersection",
       "One-way traffic to the left"
     ],
-    "explanation": "Sign D1c imposes the obligation to pass the obstacle on the side indicated by the arrow, here on the left (art. 69 KB 1 December 1975)."
+    "explanation": "Sign D1c imposes the obligation to pass the obstacle on the side indicated by the arrow, here on the left (art. 69 KB 1 December 1975).",
+    "signTitle": "Obligation to pass the obstacle from the left",
+    "signExplanation": "Sign D1c imposes the obligation to pass the obstacle on the side indicated by the arrow, here on the left (art. 69 KB 1 December 1975)."
   },
   "rec-d1d": {
     "question": "What does this traffic sign mean?",
@@ -1297,7 +1479,9 @@
       "Obligation to pass the obstacle on the right",
       "Dangerous bend to the right"
     ],
-    "explanation": "Sign D1d imposes the obligation to pass the obstacle on the side indicated by the arrow, here on the right (art. 69 KB 1 December 1975)."
+    "explanation": "Sign D1d imposes the obligation to pass the obstacle on the side indicated by the arrow, here on the right (art. 69 KB 1 December 1975).",
+    "signTitle": "Obligation to pass the obstacle on the right",
+    "signExplanation": "Sign D1d imposes the obligation to pass the obstacle on the side indicated by the arrow, here on the right (art. 69 KB 1 December 1975)."
   },
   "rec-d1e": {
     "question": "What does this traffic sign mean?",
@@ -1307,7 +1491,9 @@
       "Dead end street on the left",
       "Mandatory direction of travel: left"
     ],
-    "explanation": "This mandatory sign (D1, alternative version) obliges you to follow the direction of travel of the arrow, here on the left (art. 69.3 of the Highway Code)."
+    "explanation": "This mandatory sign (D1, alternative version) obliges you to follow the direction of travel of the arrow, here on the left (art. 69.3 of the Highway Code).",
+    "signTitle": "Mandatory direction of travel: left",
+    "signExplanation": "This mandatory sign (D1, alternative version) obliges you to follow the direction of travel of the arrow, here on the left (art. 69.3 of the Highway Code)."
   },
   "rec-d3": {
     "question": "What does this traffic sign mean?",
@@ -1317,7 +1503,9 @@
       "Intersection where priority from the right applies",
       "Prohibition on driving straight ahead or turning right"
     ],
-    "explanation": "Sign D3 obliges drivers to follow one of the directions indicated by the arrows, either straight ahead or right (art. 69 Royal Decree of 1 December 1975)."
+    "explanation": "Sign D3 obliges drivers to follow one of the directions indicated by the arrows, either straight ahead or right (art. 69 Royal Decree of 1 December 1975).",
+    "signTitle": "Obligation to follow one of the directions indicated by the arrows",
+    "signExplanation": "Sign D3 obliges drivers to follow one of the directions indicated by the arrows, either straight ahead or right (art. 69 Royal Decree of 1 December 1975)."
   },
   "rec-d4": {
     "question": "What does this traffic sign mean?",
@@ -1327,7 +1515,9 @@
       "Recommended route for trucks with a GVW of more than 3.5 tons",
       "Mandatory direction of travel for all commercial vehicles"
     ],
-    "explanation": "Sign D4 imposes a mandatory direction of travel for vehicles transporting dangerous goods (art. 69 KB 1 December 1975)."
+    "explanation": "Sign D4 imposes a mandatory direction of travel for vehicles transporting dangerous goods (art. 69 KB 1 December 1975).",
+    "signTitle": "Mandatory direction of travel for vehicles transporting dangerous goods",
+    "signExplanation": "Sign D4 imposes a mandatory direction of travel for vehicles transporting dangerous goods (art. 69 KB 1 December 1975)."
   },
   "rec-d11": {
     "question": "What does this traffic sign mean?",
@@ -1337,7 +1527,9 @@
       "Mandatory path for pedestrians (pedestrian path)",
       "Pedestrian crossing"
     ],
-    "explanation": "Sign D11 imposes a mandatory path for pedestrians; this path is exclusively reserved for pedestrians (art. 69 KB of December 1, 1975)."
+    "explanation": "Sign D11 imposes a mandatory path for pedestrians; this path is exclusively reserved for pedestrians (art. 69 KB of December 1, 1975).",
+    "signTitle": "Mandatory path for pedestrians (pedestrian path)",
+    "signExplanation": "Sign D11 imposes a mandatory path for pedestrians; this path is exclusively reserved for pedestrians (art. 69 KB of December 1, 1975)."
   },
   "rec-d13": {
     "question": "What does this traffic sign mean?",
@@ -1347,7 +1539,9 @@
       "Part of the public road reserved for agricultural vehicles",
       "Mandatory path for horse riders (bridle path)"
     ],
-    "explanation": "Sign D13 imposes a mandatory route for riders; this path is exclusively reserved for ridden animals (art. 69 KB 1 December 1975)."
+    "explanation": "Sign D13 imposes a mandatory route for riders; this path is exclusively reserved for ridden animals (art. 69 KB 1 December 1975).",
+    "signTitle": "Mandatory path for horse riders (bridle path)",
+    "signExplanation": "Sign D13 imposes a mandatory route for riders; this path is exclusively reserved for ridden animals (art. 69 KB 1 December 1975)."
   },
   "rec-e3": {
     "question": "What does this traffic sign mean?",
@@ -1357,7 +1551,9 @@
       "Standing still and parking prohibited",
       "End of a parking zone"
     ],
-    "explanation": "Sign E3 means that both standing and parking are prohibited on the side of the public road where the sign is located (art. 70.2.1)."
+    "explanation": "Sign E3 means that both standing and parking are prohibited on the side of the public road where the sign is located (art. 70.2.1).",
+    "signTitle": "Standing still and parking prohibited",
+    "signExplanation": "Sign E3 means that both standing and parking are prohibited on the side of the public road where the sign is located (art. 70.2.1)."
   },
   "rec-e5": {
     "question": "What does this traffic sign mean?",
@@ -1367,7 +1563,9 @@
       "Standing still and parking prohibited during the first two weeks",
       "Reserved parking for one vehicle"
     ],
-    "explanation": "Sign E5 imposes a parking ban on the side of the road where it is located, from the 1st to the 15th of the month (art. 70.2.1)."
+    "explanation": "Sign E5 imposes a parking ban on the side of the road where it is located, from the 1st to the 15th of the month (art. 70.2.1).",
+    "signTitle": "Parking prohibited from the 1st to the 15th of the month",
+    "signExplanation": "Sign E5 imposes a parking ban on the side of the road where it is located, from the 1st to the 15th of the month (art. 70.2.1)."
   },
   "rec-e7": {
     "question": "What does this traffic sign mean?",
@@ -1377,7 +1575,9 @@
       "Parking is prohibited on public holidays and weekends",
       "Alternate parking with a maximum parking time of 2 hours"
     ],
-    "explanation": "Sign E7 imposes a parking ban on the side of the road where it is located, from the 16th to the end of the month (art. 70.2.1)."
+    "explanation": "Sign E7 imposes a parking ban on the side of the road where it is located, from the 16th to the end of the month (art. 70.2.1).",
+    "signTitle": "Parking ban from the 16th to the end of the month",
+    "signExplanation": "Sign E7 imposes a parking ban on the side of the road where it is located, from the 16th to the end of the month (art. 70.2.1)."
   },
   "rec-e9a": {
     "question": "What does this traffic sign mean?",
@@ -1387,7 +1587,9 @@
       "Crossing for wheelchair users",
       "Parking reserved for people with disabilities"
     ],
-    "explanation": "Sign E9a with wheelchair symbol indicates that parking is reserved exclusively for vehicles used by persons with disabilities with a special parking card (art. 70.2.1)."
+    "explanation": "Sign E9a with wheelchair symbol indicates that parking is reserved exclusively for vehicles used by persons with disabilities with a special parking card (art. 70.2.1).",
+    "signTitle": "Parking reserved for people with disabilities",
+    "signExplanation": "Sign E9a with wheelchair symbol indicates that parking is reserved exclusively for vehicles used by persons with disabilities with a special parking card (art. 70.2.1)."
   },
   "rec-e9b": {
     "question": "What does this traffic sign mean?",
@@ -1397,7 +1599,9 @@
       "Parking only for motorcycles, passenger cars, dual-use cars and minibuses",
       "Parking space reserved for carpool vehicles"
     ],
-    "explanation": "Sign E9b indicates that parking is reserved exclusively for motorcycles, passenger cars, dual-use cars and minibuses (art. 70.2.1)."
+    "explanation": "Sign E9b indicates that parking is reserved exclusively for motorcycles, passenger cars, dual-use cars and minibuses (art. 70.2.1).",
+    "signTitle": "Parking only for motorcycles, passenger cars, dual-use cars and minibuses",
+    "signExplanation": "Sign E9b indicates that parking is reserved exclusively for motorcycles, passenger cars, dual-use cars and minibuses (art. 70.2.1)."
   },
   "rec-e9c": {
     "question": "What does this traffic sign mean?",
@@ -1407,7 +1611,9 @@
       "Mandatory parking of trucks on the emergency lane",
       "Parking for light trucks and trucks only"
     ],
-    "explanation": "Sign E9c indicates that parking is exclusively reserved for light trucks and lorries (art. 70.2.1)."
+    "explanation": "Sign E9c indicates that parking is exclusively reserved for light trucks and lorries (art. 70.2.1).",
+    "signTitle": "Parking for light trucks and trucks only",
+    "signExplanation": "Sign E9c indicates that parking is exclusively reserved for light trucks and lorries (art. 70.2.1)."
   },
   "rec-e9d": {
     "question": "What does this traffic sign mean?",
@@ -1417,7 +1623,9 @@
       "Parking space reserved for school transport",
       "Ban on buses allowing passengers to board or disembark"
     ],
-    "explanation": "Sign E9d indicates a parking space reserved exclusively for coaches (art. 70.2.1)."
+    "explanation": "Sign E9d indicates a parking space reserved exclusively for coaches (art. 70.2.1).",
+    "signTitle": "Parking for coaches only",
+    "signExplanation": "Sign E9d indicates a parking space reserved exclusively for coaches (art. 70.2.1)."
   },
   "rec-e9e": {
     "question": "What does this traffic sign mean?",
@@ -1427,7 +1635,9 @@
       "Mandatory parking, partly on the verge or on the sidewalk",
       "Parking on the sidewalk is prohibited"
     ],
-    "explanation": "Sign E9e obliges drivers to park the vehicle completely on the verge or on the sidewalk (art. 70.2.1)."
+    "explanation": "Sign E9e obliges drivers to park the vehicle completely on the verge or on the sidewalk (art. 70.2.1).",
+    "signTitle": "Mandatory parking on the verge or on the sidewalk",
+    "signExplanation": "Sign E9e obliges drivers to park the vehicle completely on the verge or on the sidewalk (art. 70.2.1)."
   },
   "rec-e9f": {
     "question": "What does this traffic sign mean?",
@@ -1437,7 +1647,9 @@
       "Mandatory parking, partly on the verge or on the sidewalk",
       "Parking lane for two-wheeled motor vehicles only"
     ],
-    "explanation": "Sign E9f imposes the obligation to park partly on the verge or on the sidewalk and partly on the roadway (art. 70.2.1)."
+    "explanation": "Sign E9f imposes the obligation to park partly on the verge or on the sidewalk and partly on the roadway (art. 70.2.1).",
+    "signTitle": "Mandatory parking, partly on the verge or on the sidewalk",
+    "signExplanation": "Sign E9f imposes the obligation to park partly on the verge or on the sidewalk and partly on the roadway (art. 70.2.1)."
   },
   "rec-e9g": {
     "question": "What does this traffic sign mean?",
@@ -1447,7 +1659,9 @@
       "End of a parking zone on the roadway",
       "Mandatory parking on the road"
     ],
-    "explanation": "Sign E9g obliges drivers to park on the roadway and prohibits parking on the verge or sidewalk (art. 70.2.1)."
+    "explanation": "Sign E9g obliges drivers to park on the roadway and prohibits parking on the verge or sidewalk (art. 70.2.1).",
+    "signTitle": "Mandatory parking on the road",
+    "signExplanation": "Sign E9g obliges drivers to park on the roadway and prohibits parking on the verge or sidewalk (art. 70.2.1)."
   },
   "rec-e9h": {
     "question": "What does this traffic sign mean?",
@@ -1457,7 +1671,9 @@
       "Parking ban for vehicles with a trailer or caravan",
       "Parking reserved for light trucks"
     ],
-    "explanation": "Sign E9h indicates a parking space reserved exclusively for campers (campers/mobile homes) (art. 70.2.1)."
+    "explanation": "Sign E9h indicates a parking space reserved exclusively for campers (campers/mobile homes) (art. 70.2.1).",
+    "signTitle": "Parking for campers only",
+    "signExplanation": "Sign E9h indicates a parking space reserved exclusively for campers (campers/mobile homes) (art. 70.2.1)."
   },
   "rec-e9i": {
     "question": "What does this traffic sign mean?",
@@ -1467,7 +1683,9 @@
       "Parking for all two-wheeled vehicles including bicycles",
       "Parking for motorcycles and mopeds is prohibited"
     ],
-    "explanation": "Sign E9i indicates that parking is reserved exclusively for motorcycles (art. 70.2.1)."
+    "explanation": "Sign E9i indicates that parking is reserved exclusively for motorcycles (art. 70.2.1).",
+    "signTitle": "Parking for motorcycles only",
+    "signExplanation": "Sign E9i indicates that parking is reserved exclusively for motorcycles (art. 70.2.1)."
   },
   "rec-e9j": {
     "question": "What does this traffic sign mean?",
@@ -1477,7 +1695,9 @@
       "Alternating parking with reserved parking time per category of vehicles",
       "Parking zone where only electric bicycles and electric cars are allowed"
     ],
-    "explanation": "Sign E9j indicates that parking during certain time periods is reserved for specific categories of vehicles (art. 70.2.1)."
+    "explanation": "Sign E9j indicates that parking during certain time periods is reserved for specific categories of vehicles (art. 70.2.1).",
+    "signTitle": "Alternating parking with reserved parking time per category of vehicles",
+    "signExplanation": "Sign E9j indicates that parking during certain time periods is reserved for specific categories of vehicles (art. 70.2.1)."
   },
   "rec-e11": {
     "question": "What does this traffic sign mean?",
@@ -1487,7 +1707,9 @@
       "End of alternating parking in built-up areas",
       "Semi-monthly parking throughout the built-up area"
     ],
-    "explanation": "Sign E11 indicates that parking must be alternated every six months throughout the built-up area (art. 70.3)."
+    "explanation": "Sign E11 indicates that parking must be alternated every six months throughout the built-up area (art. 70.3).",
+    "signTitle": "Semi-monthly parking throughout the built-up area",
+    "signExplanation": "Sign E11 indicates that parking must be alternated every six months throughout the built-up area (art. 70.3)."
   },
   "rec-f1b": {
     "question": "What does this traffic sign mean?",
@@ -1497,7 +1719,9 @@
       "End of a built-up area",
       "Start of a motorway"
     ],
-    "explanation": "Sign F1b indicates the beginning of a built-up area (art. 71.2), where a standard speed limit of 50 km/h applies in Flanders."
+    "explanation": "Sign F1b indicates the beginning of a built-up area (art. 71.2), where a standard speed limit of 50 km/h applies in Flanders.",
+    "signTitle": "Beginning of a built-up area",
+    "signExplanation": "Sign F1b indicates the beginning of a built-up area (art. 71.2), where a standard speed limit of 50 km/h applies in Flanders."
   },
   "rec-f3b": {
     "question": "What does this traffic sign mean?",
@@ -1507,7 +1731,9 @@
       "Access prohibited for all traffic",
       "End of a motorway"
     ],
-    "explanation": "Sign F3b indicates the end of a built-up area (art. 71.2)."
+    "explanation": "Sign F3b indicates the end of a built-up area (art. 71.2).",
+    "signTitle": "End of a built-up area",
+    "signExplanation": "Sign F3b indicates the end of a built-up area (art. 71.2)."
   },
   "rec-f19": {
     "question": "What does this traffic sign mean?",
@@ -1517,7 +1743,9 @@
       "Away with one-way traffic",
       "Dead end street"
     ],
-    "explanation": "Sign F19 indicates that you are driving on a public road with one-way traffic (art. 71.2)."
+    "explanation": "Sign F19 indicates that you are driving on a public road with one-way traffic (art. 71.2).",
+    "signTitle": "Away with one-way traffic",
+    "signExplanation": "Sign F19 indicates that you are driving on a public road with one-way traffic (art. 71.2)."
   },
   "rec-f49": {
     "question": "What does this traffic sign mean?",
@@ -1527,7 +1755,9 @@
       "Mandatory footpath",
       "Location of a pedestrian crossing"
     ],
-    "explanation": "Directional sign F49 indicates the precise location of a pedestrian crossing (art. 71.2)."
+    "explanation": "Directional sign F49 indicates the precise location of a pedestrian crossing (art. 71.2).",
+    "signTitle": "Location of a pedestrian crossing",
+    "signExplanation": "Directional sign F49 indicates the precise location of a pedestrian crossing (art. 71.2)."
   },
   "rec-f1a": {
     "question": "What does this traffic sign mean?",
@@ -1537,7 +1767,9 @@
       "Beginning of a residential area or yard",
       "End of a built-up area"
     ],
-    "explanation": "Traffic sign F1a indicates the beginning of a built-up area (art. 71.2 of the Highway Code). In Flanders the standard maximum speed is 50 km/h, in Brussels 30 km/h."
+    "explanation": "Traffic sign F1a indicates the beginning of a built-up area (art. 71.2 of the Highway Code). In Flanders the standard maximum speed is 50 km/h, in Brussels 30 km/h.",
+    "signTitle": "Beginning of a built-up area",
+    "signExplanation": "Traffic sign F1a indicates the beginning of a built-up area (art. 71.2 of the Highway Code). In Flanders the standard maximum speed is 50 km/h, in Brussels 30 km/h."
   },
   "rec-f3a": {
     "question": "What does this traffic sign mean?",
@@ -1547,7 +1779,9 @@
       "End of a zone 30",
       "End of a residential area"
     ],
-    "explanation": "Traffic sign F3a indicates the end of a built-up area (art. 71.2 of the Highway Code)."
+    "explanation": "Traffic sign F3a indicates the end of a built-up area (art. 71.2 of the Highway Code).",
+    "signTitle": "End of a built-up area",
+    "signExplanation": "Traffic sign F3a indicates the end of a built-up area (art. 71.2 of the Highway Code)."
   },
   "rec-f4a": {
     "question": "What does this traffic sign mean?",
@@ -1557,7 +1791,9 @@
       "Start of a zone with a speed limit of 30 km per hour",
       "Start of a residential area with a maximum speed of 20 km per hour"
     ],
-    "explanation": "Sign F4a indicates the start of a zone with a speed limit of 30 km per hour (art. 71.2 of the Highway Code). This limit applies to the entire zone up to sign F4b."
+    "explanation": "Sign F4a indicates the start of a zone with a speed limit of 30 km per hour (art. 71.2 of the Highway Code). This limit applies to the entire zone up to sign F4b.",
+    "signTitle": "Start of a zone with a speed limit of 30 km per hour",
+    "signExplanation": "Sign F4a indicates the start of a zone with a speed limit of 30 km per hour (art. 71.2 of the Highway Code). This limit applies to the entire zone up to sign F4b."
   },
   "rec-f4b": {
     "question": "What does this traffic sign mean?",
@@ -1567,7 +1803,9 @@
       "End of a built-up area",
       "End of a zone with a speed limit of 30 km per hour"
     ],
-    "explanation": "Sign F4b indicates the end of a zone with a speed limit of 30 km per hour (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F4b indicates the end of a zone with a speed limit of 30 km per hour (art. 71.2 of the Highway Code).",
+    "signTitle": "End of a zone with a speed limit of 30 km per hour",
+    "signExplanation": "Sign F4b indicates the end of a zone with a speed limit of 30 km per hour (art. 71.2 of the Highway Code)."
   },
   "rec-f7": {
     "question": "What does this traffic sign mean?",
@@ -1577,7 +1815,9 @@
       "End of a motorway",
       "End of all precedence"
     ],
-    "explanation": "Traffic sign F7 indicates the end of a motorway (art. 71.2 of the Highway Code)."
+    "explanation": "Traffic sign F7 indicates the end of a motorway (art. 71.2 of the Highway Code).",
+    "signTitle": "End of a motorway",
+    "signExplanation": "Traffic sign F7 indicates the end of a motorway (art. 71.2 of the Highway Code)."
   },
   "rec-f8": {
     "question": "What does this traffic sign mean?",
@@ -1587,7 +1827,9 @@
       "Breakdown in a tunnel",
       "Covered viaduct or passage"
     ],
-    "explanation": "Directional sign F8 indicates a tunnel with a length of more than 500 meters (art. 71.2 of the Highway Code)."
+    "explanation": "Directional sign F8 indicates a tunnel with a length of more than 500 meters (art. 71.2 of the Highway Code).",
+    "signTitle": "Tunnel with a length of more than 500 meters",
+    "signExplanation": "Directional sign F8 indicates a tunnel with a length of more than 500 meters (art. 71.2 of the Highway Code)."
   },
   "rec-f9": {
     "question": "What does this traffic sign mean?",
@@ -1597,7 +1839,9 @@
       "Start of a motorway",
       "Mandatory road for passenger cars"
     ],
-    "explanation": "Traffic sign F9 indicates the start of a motorway (art. 71.2 of the Highway Code), where the specific rules for motorways apply."
+    "explanation": "Traffic sign F9 indicates the start of a motorway (art. 71.2 of the Highway Code), where the specific rules for motorways apply.",
+    "signTitle": "Start of a motorway",
+    "signExplanation": "Traffic sign F9 indicates the start of a motorway (art. 71.2 of the Highway Code), where the specific rules for motorways apply."
   },
   "rec-f11": {
     "question": "What does this traffic sign mean?",
@@ -1607,7 +1851,9 @@
       "No access for motor vehicles",
       "End of an increased speed zone"
     ],
-    "explanation": "Traffic sign F11 indicates the end of a motorway (art. 71.2 of the Highway Code)."
+    "explanation": "Traffic sign F11 indicates the end of a motorway (art. 71.2 of the Highway Code).",
+    "signTitle": "End of a motorway",
+    "signExplanation": "Traffic sign F11 indicates the end of a motorway (art. 71.2 of the Highway Code)."
   },
   "rec-f12a": {
     "question": "What does this traffic sign mean?",
@@ -1617,7 +1863,9 @@
       "Beginning of a school environment",
       "Start of a pedestrian zone"
     ],
-    "explanation": "Sign F12a indicates the beginning of a residential area or yard (art. 71.2 of the Highway Code). The speed limit is 20 km/h and pedestrians are allowed to use the entire width of the road."
+    "explanation": "Sign F12a indicates the beginning of a residential area or yard (art. 71.2 of the Highway Code). The speed limit is 20 km/h and pedestrians are allowed to use the entire width of the road.",
+    "signTitle": "Beginning of a residential area or a yard",
+    "signExplanation": "Sign F12a indicates the beginning of a residential area or yard (art. 71.2 of the Highway Code). The speed limit is 20 km/h and pedestrians are allowed to use the entire width of the road."
   },
   "rec-f12b": {
     "question": "What does this traffic sign mean?",
@@ -1627,7 +1875,9 @@
       "End of a residential area or a property",
       "Beginning of a built-up area"
     ],
-    "explanation": "Sign F12b indicates the end of a residential area or a property (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F12b indicates the end of a residential area or a property (art. 71.2 of the Highway Code).",
+    "signTitle": "End of a residential area or a property",
+    "signExplanation": "Sign F12b indicates the end of a residential area or a property (art. 71.2 of the Highway Code)."
   },
   "rec-f13": {
     "question": "What does this traffic sign mean?",
@@ -1637,7 +1887,9 @@
       "Indication of a junction of two motorways",
       "Traffic sign announcing arrows on the roadway and prescribing the choice of a lane"
     ],
-    "explanation": "Sign F13 announces arrows on the road surface and prescribes the choice of a lane according to the desired direction of travel (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F13 announces arrows on the road surface and prescribes the choice of a lane according to the desired direction of travel (art. 71.2 of the Highway Code).",
+    "signTitle": "Traffic sign announcing arrows on the roadway and prescribing the choice of a lane",
+    "signExplanation": "Sign F13 announces arrows on the road surface and prescribes the choice of a lane according to the desired direction of travel (art. 71.2 of the Highway Code)."
   },
   "rec-f14": {
     "question": "What does this traffic sign mean?",
@@ -1647,7 +1899,9 @@
       "Parking space reserved for bicycles and mopeds",
       "Crossing for cyclists and pedestrians"
     ],
-    "explanation": "Sign F14 indicates a line-up area (art. 71.2 of the Highway Code), where cyclists and two-wheeled mopeds class A may line up in front of the traffic light."
+    "explanation": "Sign F14 indicates a line-up area (art. 71.2 of the Highway Code), where cyclists and two-wheeled mopeds class A may line up in front of the traffic light.",
+    "signTitle": "Staging area for cyclists and drivers of two-wheeled mopeds",
+    "signExplanation": "Sign F14 indicates a line-up area (art. 71.2 of the Highway Code), where cyclists and two-wheeled mopeds class A may line up in front of the traffic light."
   },
   "rec-f15": {
     "question": "What does this traffic sign mean?",
@@ -1657,7 +1911,9 @@
       "Signpost to a tourist destination",
       "Indication of a hard shoulder along a motorway"
     ],
-    "explanation": "Sign F15 is a traffic sign that prescribes the choice of a direction per lane by means of arrows above the roadway (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F15 is a traffic sign that prescribes the choice of a direction per lane by means of arrows above the roadway (art. 71.2 of the Highway Code).",
+    "signTitle": "Traffic sign that prescribes the choice of a direction",
+    "signExplanation": "Sign F15 is a traffic sign that prescribes the choice of a direction per lane by means of arrows above the roadway (art. 71.2 of the Highway Code)."
   },
   "rec-f17": {
     "question": "What does this traffic sign mean?",
@@ -1667,7 +1923,9 @@
       "Parking ban for all vehicles except buses",
       "Special surface that can be driven over for trams and buses"
     ],
-    "explanation": "Directional sign F17 shows the layout of lanes with a lane reserved for vehicles of regular public transport services (art. 71.2 of the Highway Code)."
+    "explanation": "Directional sign F17 shows the layout of lanes with a lane reserved for vehicles of regular public transport services (art. 71.2 of the Highway Code).",
+    "signTitle": "Indication of the lanes of a carriageway with a lane reserved for buses",
+    "signExplanation": "Directional sign F17 shows the layout of lanes with a lane reserved for vehicles of regular public transport services (art. 71.2 of the Highway Code)."
   },
   "rec-f18": {
     "question": "What does this traffic sign mean?",
@@ -1677,7 +1935,9 @@
       "Crossing for trams and buses",
       "Parking lane for buses and coaches"
     ],
-    "explanation": "Sign F18 indicates a special road surface reserved for vehicles of regular public transport services (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F18 indicates a special road surface reserved for vehicles of regular public transport services (art. 71.2 of the Highway Code).",
+    "signTitle": "Designation of a special surface that can be driven over, reserved for public transport",
+    "signExplanation": "Sign F18 indicates a special road surface reserved for vehicles of regular public transport services (art. 71.2 of the Highway Code)."
   },
   "rec-f21": {
     "question": "What does this traffic sign mean?",
@@ -1687,7 +1947,9 @@
       "Splitting of two motorways",
       "Mandatory direction of travel to the right"
     ],
-    "explanation": "Direction sign F21 indicates that drivers may pass an obstacle or traffic island on both the left and right (art. 71.2 of the Highway Code)."
+    "explanation": "Direction sign F21 indicates that drivers may pass an obstacle or traffic island on both the left and right (art. 71.2 of the Highway Code).",
+    "signTitle": "Passing on the right or left is allowed",
+    "signExplanation": "Direction sign F21 indicates that drivers may pass an obstacle or traffic island on both the left and right (art. 71.2 of the Highway Code)."
   },
   "rec-f23a": {
     "question": "What does this traffic sign mean?",
@@ -1697,7 +1959,9 @@
       "Number of an international road",
       "Number of a ring road around an agglomeration"
     ],
-    "explanation": "Sign F23a indicates the identification number of a normal road, such as a national or regional road (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F23a indicates the identification number of a normal road, such as a national or regional road (art. 71.2 of the Highway Code).",
+    "signTitle": "Number of a normal road",
+    "signExplanation": "Sign F23a indicates the identification number of a normal road, such as a national or regional road (art. 71.2 of the Highway Code)."
   },
   "rec-f23b": {
     "question": "What does this traffic sign mean?",
@@ -1707,7 +1971,9 @@
       "Number of a motorway",
       "Distance in kilometers to the next junction"
     ],
-    "explanation": "Sign F23b indicates the administrative number of a motorway (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F23b indicates the administrative number of a motorway (art. 71.2 of the Highway Code).",
+    "signTitle": "Number of a motorway",
+    "signExplanation": "Sign F23b indicates the administrative number of a motorway (art. 71.2 of the Highway Code)."
   },
   "rec-f23c": {
     "question": "What does this traffic sign mean?",
@@ -1717,7 +1983,9 @@
       "Number of an environmental zone",
       "Number of an international road"
     ],
-    "explanation": "Sign F23c indicates the number of an international road (European E-route) (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F23c indicates the number of an international road (European E-route) (art. 71.2 of the Highway Code).",
+    "signTitle": "Number of an international road",
+    "signExplanation": "Sign F23c indicates the number of an international road (European E-route) (art. 71.2 of the Highway Code)."
   },
   "rec-f23d": {
     "question": "What does this traffic sign mean?",
@@ -1727,7 +1995,9 @@
       "Number of an international transit route",
       "Number of a ring"
     ],
-    "explanation": "Sign F23d indicates the route number of a ring road (ring) around a conurbation or city (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F23d indicates the route number of a ring road (ring) around a conurbation or city (art. 71.2 of the Highway Code).",
+    "signTitle": "Number of a ring",
+    "signExplanation": "Sign F23d indicates the route number of a ring road (ring) around a conurbation or city (art. 71.2 of the Highway Code)."
   },
   "rec-f25": {
     "question": "What does this traffic sign mean?",
@@ -1737,7 +2007,9 @@
       "Route confirmation sign after an intersection",
       "Announcement of a tourist attraction"
     ],
-    "explanation": "Sign F25 is a signpost that announces the directions and destinations to be followed before the intersection (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F25 is a signpost that announces the directions and destinations to be followed before the intersection (art. 71.2 of the Highway Code).",
+    "signTitle": "Signpost",
+    "signExplanation": "Sign F25 is a signpost that announces the directions and destinations to be followed before the intersection (art. 71.2 of the Highway Code)."
   },
   "rec-f27": {
     "question": "What does this traffic sign mean?",
@@ -1747,7 +2019,9 @@
       "Signpost for heavy freight traffic only",
       "Front sign indicating a dead end road"
     ],
-    "explanation": "Sign F27 is, just like F25, a signpost (art. 71.2). The motorway route pictogram may be optionally displayed on F25, F27, F29, F31, F39 and F41, but is not a fixed feature of F27 itself."
+    "explanation": "Sign F27 is, just like F25, a signpost (art. 71.2). The motorway route pictogram may be optionally displayed on F25, F27, F29, F31, F39 and F41, but is not a fixed feature of F27 itself.",
+    "signTitle": "Signpost",
+    "signExplanation": "Sign F27 is, just like F25, a signpost (art. 71.2). The motorway route pictogram may be optionally displayed on F25, F27, F29, F31, F39 and F41, but is not a fixed feature of F27 itself."
   },
   "rec-f29": {
     "question": "What does this traffic sign mean?",
@@ -1757,7 +2031,9 @@
       "Signpost indicating the direction to follow to a destination",
       "Route confirmation sign along a motorway"
     ],
-    "explanation": "Sign F29 is a signpost that indicates the direction to a destination at the exit, possibly with distance indication (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F29 is a signpost that indicates the direction to a destination at the exit, possibly with distance indication (art. 71.2 of the Highway Code).",
+    "signTitle": "Signpost indicating the direction to follow to a destination",
+    "signExplanation": "Sign F29 is a signpost that indicates the direction to a destination at the exit, possibly with distance indication (art. 71.2 of the Highway Code)."
   },
   "rec-f31": {
     "question": "What does this traffic sign mean?",
@@ -1767,7 +2043,9 @@
       "Mandatory direction of travel for passenger cars",
       "Signpost indicating a route on a motorway"
     ],
-    "explanation": "Sign F31 is a signpost indicating that the indicated route to the destination is on a motorway (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F31 is a signpost indicating that the indicated route to the destination is on a motorway (art. 71.2 of the Highway Code).",
+    "signTitle": "Signpost indicating a route on a motorway",
+    "signExplanation": "Sign F31 is a signpost indicating that the indicated route to the destination is on a motorway (art. 71.2 of the Highway Code)."
   },
   "rec-f33a": {
     "question": "What does this traffic sign mean?",
@@ -1777,7 +2055,9 @@
       "Indication of a parking area for trucks",
       "Announcement of a customs border post"
     ],
-    "explanation": "Sign F33a is a signpost at a distance to specific destinations such as a port, university or industrial park (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F33a is a signpost at a distance to specific destinations such as a port, university or industrial park (art. 71.2 of the Highway Code).",
+    "signTitle": "Remote signage sign to a public or industrial center",
+    "signExplanation": "Sign F33a is a signpost at a distance to specific destinations such as a port, university or industrial park (art. 71.2 of the Highway Code)."
   },
   "rec-f33b": {
     "question": "What does this traffic sign mean?",
@@ -1787,7 +2067,9 @@
       "Warning about the risk of flooding of the roadway",
       "Signpost to a marina or jetty"
     ],
-    "explanation": "Sign F33b is a remote tourist signpost leading to a valley or watercourse of a tourist nature (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F33b is a remote tourist signpost leading to a valley or watercourse of a tourist nature (art. 71.2 of the Highway Code).",
+    "signTitle": "Remote signpost to a valley or watercourse of a tourist nature",
+    "signExplanation": "Sign F33b is a remote tourist signpost leading to a valley or watercourse of a tourist nature (art. 71.2 of the Highway Code)."
   },
   "rec-f33c": {
     "question": "What does this traffic sign mean?",
@@ -1797,7 +2079,9 @@
       "Remote signage sign to a tourist attraction or recreational area",
       "Signpost to an urban police station"
     ],
-    "explanation": "Sign F33c points the way from a distance to monuments, recreational parks, sports centers or tourist attractions (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F33c points the way from a distance to monuments, recreational parks, sports centers or tourist attractions (art. 71.2 of the Highway Code).",
+    "signTitle": "Remote signage sign to a tourist attraction or recreational area",
+    "signExplanation": "Sign F33c points the way from a distance to monuments, recreational parks, sports centers or tourist attractions (art. 71.2 of the Highway Code)."
   },
   "rec-f34a": {
     "question": "What does this traffic sign mean?",
@@ -1807,7 +2091,9 @@
       "Signpost for cyclists and horse riders",
       "Signage sign in the vicinity of a public establishment or service of general interest"
     ],
-    "explanation": "Sign F34a nearby points the way to public facilities and institutions of general interest (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F34a nearby points the way to public facilities and institutions of general interest (art. 71.2 of the Highway Code).",
+    "signTitle": "Signage sign in the vicinity of a public establishment or service of general interest",
+    "signExplanation": "Sign F34a nearby points the way to public facilities and institutions of general interest (art. 71.2 of the Highway Code)."
   },
   "rec-f35": {
     "question": "What does this traffic sign mean?",
@@ -1817,7 +2103,9 @@
       "Announcement of a youth hostel or camping site",
       "Tourist signpost to a monument, attraction or recreational park"
     ],
-    "explanation": "Sign F35 is a tourist signpost to a sight, monument, sports center or recreational park (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F35 is a tourist signpost to a sight, monument, sports center or recreational park (art. 71.2 of the Highway Code).",
+    "signTitle": "Tourist signpost to a monument, attraction or recreational park",
+    "signExplanation": "Sign F35 is a tourist signpost to a sight, monument, sports center or recreational park (art. 71.2 of the Highway Code)."
   },
   "rec-f37": {
     "question": "What does this traffic sign mean?",
@@ -1827,7 +2115,9 @@
       "Directions to a residential care center",
       "Tourist signpost to accommodation, campsite or youth hostel"
     ],
-    "explanation": "Sign F37 points in the direction of tourist accommodation, such as hotels, campsites or youth hostels (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F37 points in the direction of tourist accommodation, such as hotels, campsites or youth hostels (art. 71.2 of the Highway Code).",
+    "signTitle": "Tourist signpost to accommodation, campsite or youth hostel",
+    "signExplanation": "Sign F37 points in the direction of tourist accommodation, such as hotels, campsites or youth hostels (art. 71.2 of the Highway Code)."
   },
   "rec-f39": {
     "question": "What does this traffic sign mean?",
@@ -1837,7 +2127,9 @@
       "Announcement of a dead end street due to works",
       "Mandatory lane division during road works"
     ],
-    "explanation": "Sign F39 is a signpost that warns drivers in advance of a detour from the normal route (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F39 is a signpost that warns drivers in advance of a detour from the normal route (art. 71.2 of the Highway Code).",
+    "signTitle": "Signpost announcing a detour",
+    "signExplanation": "Sign F39 is a signpost that warns drivers in advance of a detour from the normal route (art. 71.2 of the Highway Code)."
   },
   "rec-f41": {
     "question": "What does this traffic sign mean?",
@@ -1847,7 +2139,9 @@
       "Indication of a temporary parking zone",
       "Mandatory straight ahead during road works"
     ],
-    "explanation": "Sign F41 is a signpost that indicates the direction of the diversion road to be followed during a diversion (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F41 is a signpost that indicates the direction of the diversion road to be followed during a diversion (art. 71.2 of the Highway Code).",
+    "signTitle": "Signpost indicating a diversion road",
+    "signExplanation": "Sign F41 is a signpost that indicates the direction of the diversion road to be followed during a diversion (art. 71.2 of the Highway Code)."
   },
   "rec-f43": {
     "question": "What does this traffic sign mean?",
@@ -1857,7 +2151,9 @@
       "Place name sign without speed limit of a built-up area",
       "Indication of a provincial border"
     ],
-    "explanation": "Sign F43 is a place name sign that merely indicates the name of a place; it does not impose a speed limit on a built-up area (Article 71.2 of the Highway Code)."
+    "explanation": "Sign F43 is a place name sign that merely indicates the name of a place; it does not impose a speed limit on a built-up area (Article 71.2 of the Highway Code).",
+    "signTitle": "Place name sign without speed limit of a built-up area",
+    "signExplanation": "Sign F43 is a place name sign that merely indicates the name of a place; it does not impose a speed limit on a built-up area (Article 71.2 of the Highway Code)."
   },
   "rec-f45b": {
     "question": "What does this traffic sign mean?",
@@ -1867,7 +2163,9 @@
       "One-way traffic with exception for cyclists",
       "Dead end street, except for pedestrians and cyclists"
     ],
-    "explanation": "Sign F45b indicates a dead end road that remains accessible to cyclists and pedestrians (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F45b indicates a dead end road that remains accessible to cyclists and pedestrians (art. 71.2 of the Highway Code).",
+    "signTitle": "Dead end street, except for pedestrians and cyclists",
+    "signExplanation": "Sign F45b indicates a dead end road that remains accessible to cyclists and pedestrians (art. 71.2 of the Highway Code)."
   },
   "rec-f47": {
     "question": "What does this traffic sign mean?",
@@ -1877,7 +2175,9 @@
       "End of work",
       "End of all priority provisions"
     ],
-    "explanation": "Traffic sign F47 indicates the end of the works on the public road (art. 71.2 of the Highway Code)."
+    "explanation": "Traffic sign F47 indicates the end of the works on the public road (art. 71.2 of the Highway Code).",
+    "signTitle": "End of work",
+    "signExplanation": "Traffic sign F47 indicates the end of the works on the public road (art. 71.2 of the Highway Code)."
   },
   "rec-f50": {
     "question": "What does this traffic sign mean?",
@@ -1887,7 +2187,9 @@
       "Crossing for cyclists and drivers of two-wheeled mopeds",
       "Road reserved for cyclists and two-wheeled mopeds"
     ],
-    "explanation": "Sign F50 indicates the precise location of a crossing for cyclists and drivers of two-wheeled mopeds (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F50 indicates the precise location of a crossing for cyclists and drivers of two-wheeled mopeds (art. 71.2 of the Highway Code).",
+    "signTitle": "Crossing for cyclists and drivers of two-wheeled mopeds",
+    "signExplanation": "Sign F50 indicates the precise location of a crossing for cyclists and drivers of two-wheeled mopeds (art. 71.2 of the Highway Code)."
   },
   "rec-f50bis": {
     "question": "What does this traffic sign mean?",
@@ -1897,7 +2199,9 @@
       "Priority from the right also applies to all cyclists",
       "Sign pointing out drivers changing directions to cyclists and two-wheeled moped drivers following the same road"
     ],
-    "explanation": "Sign F50bis points drivers who change directions to cyclists and two-wheeled moped riders who continue to follow the same public road straight ahead (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F50bis points drivers who change directions to cyclists and two-wheeled moped riders who continue to follow the same public road straight ahead (art. 71.2 of the Highway Code).",
+    "signTitle": "Sign pointing out drivers changing directions to cyclists and two-wheeled moped drivers following the same road",
+    "signExplanation": "Sign F50bis points drivers who change directions to cyclists and two-wheeled moped riders who continue to follow the same public road straight ahead (art. 71.2 of the Highway Code)."
   },
   "rec-f51": {
     "question": "What does this traffic sign mean?",
@@ -1907,7 +2211,9 @@
       "Beginning of a pedestrian zone prohibited to all vehicles",
       "Mandatory footpath intended for pedestrians only"
     ],
-    "explanation": "Sign F51 indicates an underground or above-ground pedestrian crossing (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F51 indicates an underground or above-ground pedestrian crossing (art. 71.2 of the Highway Code).",
+    "signTitle": "Underground or above-ground pedestrian crossing",
+    "signExplanation": "Sign F51 indicates an underground or above-ground pedestrian crossing (art. 71.2 of the Highway Code)."
   },
   "rec-f52": {
     "question": "What does this traffic sign mean?",
@@ -1917,7 +2223,9 @@
       "Beginning of an underground traffic tunnel for motor vehicles",
       "Service exit intended exclusively for road authorities and emergency services"
     ],
-    "explanation": "Sign F52 announces an emergency exit in tunnels (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F52 announces an emergency exit in tunnels (art. 71.2 of the Highway Code).",
+    "signTitle": "Announcement of an emergency exit in tunnels",
+    "signExplanation": "Sign F52 announces an emergency exit in tunnels (art. 71.2 of the Highway Code)."
   },
   "rec-f52bis": {
     "question": "What does this traffic sign mean?",
@@ -1927,7 +2235,9 @@
       "Escape route to the nearest emergency exit in tunnels with indication of direction and distance",
       "Pedestrian tunnel to the nearest metro or train station"
     ],
-    "explanation": "Sign F52bis indicates an escape route to the nearest emergency exit in tunnels with indication of direction and distance (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F52bis indicates an escape route to the nearest emergency exit in tunnels with indication of direction and distance (art. 71.2 of the Highway Code).",
+    "signTitle": "Escape route to the nearest emergency exit in tunnels with indication of direction and distance",
+    "signExplanation": "Sign F52bis indicates an escape route to the nearest emergency exit in tunnels with indication of direction and distance (art. 71.2 of the Highway Code)."
   },
   "rec-f53": {
     "question": "What does this traffic sign mean?",
@@ -1937,7 +2247,9 @@
       "Repair place for broken down motor vehicles",
       "Nursing facility"
     ],
-    "explanation": "Sign F53 indicates a nursing facility where silence is required and drivers must be particularly careful (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F53 indicates a nursing facility where silence is required and drivers must be particularly careful (art. 71.2 of the Highway Code).",
+    "signTitle": "Nursing facility",
+    "signExplanation": "Sign F53 indicates a nursing facility where silence is required and drivers must be particularly careful (art. 71.2 of the Highway Code)."
   },
   "rec-f55": {
     "question": "What does this traffic sign mean?",
@@ -1947,7 +2259,9 @@
       "Fire station with on-call crew",
       "Pharmacy or medical laboratory along the road"
     ],
-    "explanation": "Sign F55 indicates an emergency post where first aid in the event of accidents can be obtained (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F55 indicates an emergency post where first aid in the event of accidents can be obtained (art. 71.2 of the Highway Code).",
+    "signTitle": "Aid station",
+    "signExplanation": "Sign F55 indicates an emergency post where first aid in the event of accidents can be obtained (art. 71.2 of the Highway Code)."
   },
   "rec-f56": {
     "question": "What does this traffic sign mean?",
@@ -1957,7 +2271,9 @@
       "Emergency telephone only for reporting fire",
       "Water extraction point for the fire brigade along the roadway"
     ],
-    "explanation": "Sign F56 indicates the presence of a fire extinguisher (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F56 indicates the presence of a fire extinguisher (art. 71.2 of the Highway Code).",
+    "signTitle": "Fire extinguisher",
+    "signExplanation": "Sign F56 indicates the presence of a fire extinguisher (art. 71.2 of the Highway Code)."
   },
   "rec-f57": {
     "question": "What does this traffic sign mean?",
@@ -1967,7 +2283,9 @@
       "Watercourse",
       "Drinking water extraction area with ban on hazardous transport"
     ],
-    "explanation": "Sign F57 indicates a watercourse, such as a river, canal or stream (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F57 indicates a watercourse, such as a river, canal or stream (art. 71.2 of the Highway Code).",
+    "signTitle": "Watercourse",
+    "signExplanation": "Sign F57 indicates a watercourse, such as a river, canal or stream (art. 71.2 of the Highway Code)."
   },
   "rec-f59": {
     "question": "What does this traffic sign mean?",
@@ -1977,7 +2295,9 @@
       "Carpool parking only for registered carpoolers",
       "Announcement of a parking lot"
     ],
-    "explanation": "Sign F59 announces a parking lot where drivers can park their vehicles (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F59 announces a parking lot where drivers can park their vehicles (art. 71.2 of the Highway Code).",
+    "signTitle": "Announcement of a parking lot",
+    "signExplanation": "Sign F59 announces a parking lot where drivers can park their vehicles (art. 71.2 of the Highway Code)."
   },
   "rec-f60": {
     "question": "What does this traffic sign mean?",
@@ -1987,7 +2307,9 @@
       "Parking zone exclusively intended for local residents with a permit",
       "Covered bicycle shed at a public transport stop"
     ],
-    "explanation": "Sign F60 announces a covered parking (parking garage) (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F60 announces a covered parking (parking garage) (art. 71.2 of the Highway Code).",
+    "signTitle": "Announcement of a covered parking",
+    "signExplanation": "Sign F60 announces a covered parking (parking garage) (art. 71.2 of the Highway Code)."
   },
   "rec-f61": {
     "question": "What does this traffic sign mean?",
@@ -1997,7 +2319,9 @@
       "Radio station with traffic information",
       "Police post along the motorway"
     ],
-    "explanation": "Sign F61 indicates a public telephone (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F61 indicates a public telephone (art. 71.2 of the Highway Code).",
+    "signTitle": "Phone",
+    "signExplanation": "Sign F61 indicates a public telephone (art. 71.2 of the Highway Code)."
   },
   "rec-f62": {
     "question": "What does this traffic sign mean?",
@@ -2007,7 +2331,9 @@
       "Emergency telephone",
       "Police station with permanent presence"
     ],
-    "explanation": "Sign F62 indicates an emergency telephone (talking post) for emergencies and breakdowns (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F62 indicates an emergency telephone (talking post) for emergencies and breakdowns (art. 71.2 of the Highway Code).",
+    "signTitle": "Emergency telephone",
+    "signExplanation": "Sign F62 indicates an emergency telephone (talking post) for emergencies and breakdowns (art. 71.2 of the Highway Code)."
   },
   "rec-f63": {
     "question": "What does this traffic sign mean?",
@@ -2017,7 +2343,9 @@
       "Charging point exclusively for electric bicycles",
       "Gas station"
     ],
-    "explanation": "Sign F63 indicates a filling station for motor fuels or energy (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F63 indicates a filling station for motor fuels or energy (art. 71.2 of the Highway Code).",
+    "signTitle": "Gas station",
+    "signExplanation": "Sign F63 indicates a filling station for motor fuels or energy (art. 71.2 of the Highway Code)."
   },
   "rec-f65": {
     "question": "What does this traffic sign mean?",
@@ -2027,7 +2355,9 @@
       "Camping area for tents and caravans",
       "Holiday village or bungalow park"
     ],
-    "explanation": "Sign F65 indicates a hotel or motel (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F65 indicates a hotel or motel (art. 71.2 of the Highway Code).",
+    "signTitle": "Hotel or motel",
+    "signExplanation": "Sign F65 indicates a hotel or motel (art. 71.2 of the Highway Code)."
   },
   "rec-f67": {
     "question": "What does this traffic sign mean?",
@@ -2037,7 +2367,9 @@
       "Picnic area along the motorway",
       "Bakery or grocery store"
     ],
-    "explanation": "Sign F67 indicates a restaurant along or near the road (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F67 indicates a restaurant along or near the road (art. 71.2 of the Highway Code).",
+    "signTitle": "Restaurant",
+    "signExplanation": "Sign F67 indicates a restaurant along or near the road (art. 71.2 of the Highway Code)."
   },
   "rec-f69": {
     "question": "What does this traffic sign mean?",
@@ -2047,7 +2379,9 @@
       "Drinks",
       "Rest area with sanitary facilities"
     ],
-    "explanation": "Sign F69 indicates a drinking establishment or café (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F69 indicates a drinking establishment or café (art. 71.2 of the Highway Code).",
+    "signTitle": "Drinks",
+    "signExplanation": "Sign F69 indicates a drinking establishment or café (art. 71.2 of the Highway Code)."
   },
   "rec-f71": {
     "question": "What does this traffic sign mean?",
@@ -2057,7 +2391,9 @@
       "Youth hostel or camp house for youth groups",
       "Campsite"
     ],
-    "explanation": "Sign F71 indicates a camping area for tents (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F71 indicates a camping area for tents (art. 71.2 of the Highway Code).",
+    "signTitle": "Campsite",
+    "signExplanation": "Sign F71 indicates a camping area for tents (art. 71.2 of the Highway Code)."
   },
   "rec-f73": {
     "question": "What does this traffic sign mean?",
@@ -2067,7 +2403,9 @@
       "Parking area for trucks with trailers",
       "Temporary location for fairground operators"
     ],
-    "explanation": "Sign F73 indicates a caravan site for caravans and caravans (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F73 indicates a caravan site for caravans and caravans (art. 71.2 of the Highway Code).",
+    "signTitle": "Caravan site",
+    "signExplanation": "Sign F73 indicates a caravan site for caravans and caravans (art. 71.2 of the Highway Code)."
   },
   "rec-f75": {
     "question": "What does this traffic sign mean?",
@@ -2077,7 +2415,9 @@
       "Holiday accommodation for families",
       "Campsite with furnished tents"
     ],
-    "explanation": "Sign F75 indicates a youth hostel (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F75 indicates a youth hostel (art. 71.2 of the Highway Code).",
+    "signTitle": "Youth hostel",
+    "signExplanation": "Sign F75 indicates a youth hostel (art. 71.2 of the Highway Code)."
   },
   "rec-f77": {
     "question": "What does this traffic sign mean?",
@@ -2087,7 +2427,9 @@
       "Association for the Promotion of Foreigners, meeting point for tourist information",
       "Information desk for public transport and train tickets"
     ],
-    "explanation": "Sign F77 indicates an association for the promotion of foreign traffic or a meeting point for tourist information (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F77 indicates an association for the promotion of foreign traffic or a meeting point for tourist information (art. 71.2 of the Highway Code).",
+    "signTitle": "Association for the Promotion of Foreigners, meeting point for tourist information",
+    "signExplanation": "Sign F77 indicates an association for the promotion of foreign traffic or a meeting point for tourist information (art. 71.2 of the Highway Code)."
   },
   "rec-f79": {
     "question": "What does this traffic sign mean?",
@@ -2097,7 +2439,9 @@
       "Overtaking ban for all drivers in the left lane",
       "Advance sign announcing the reduction in the number of lanes"
     ],
-    "explanation": "Sign F79 announces as a signpost the reduction in the number of lanes (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F79 announces as a signpost the reduction in the number of lanes (art. 71.2 of the Highway Code).",
+    "signTitle": "Advance sign announcing the reduction in the number of lanes",
+    "signExplanation": "Sign F79 announces as a signpost the reduction in the number of lanes (art. 71.2 of the Highway Code)."
   },
   "rec-f81": {
     "question": "What does this traffic sign mean?",
@@ -2107,7 +2451,9 @@
       "Front sign announcing a crossing of the central reservation",
       "End of one-way traffic on the roadway"
     ],
-    "explanation": "Sign F81 announces a lane departure as a signpost (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F81 announces a lane departure as a signpost (art. 71.2 of the Highway Code).",
+    "signTitle": "Advance sign announcing a diversion",
+    "signExplanation": "Sign F81 announces a lane departure as a signpost (art. 71.2 of the Highway Code)."
   },
   "rec-f83": {
     "question": "What does this traffic sign mean?",
@@ -2117,7 +2463,9 @@
       "Prohibition on turning on public roads",
       "Connection to another motorway via a loop"
     ],
-    "explanation": "Sign F83 announces a crossing of the central reservation as a signpost (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F83 announces a crossing of the central reservation as a signpost (art. 71.2 of the Highway Code).",
+    "signTitle": "Front sign announcing a crossing of the central reservation",
+    "signExplanation": "Sign F83 announces a crossing of the central reservation as a signpost (art. 71.2 of the Highway Code)."
   },
   "rec-f85": {
     "question": "What does this traffic sign mean?",
@@ -2127,7 +2475,9 @@
       "Traffic allowed in both directions on a one-way section of the carriageway",
       "End of all priority rules at the next intersection"
     ],
-    "explanation": "Sign F85 indicates that traffic in both directions is permitted on a part of the carriageway with one-way traffic (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F85 indicates that traffic in both directions is permitted on a part of the carriageway with one-way traffic (art. 71.2 of the Highway Code).",
+    "signTitle": "Traffic allowed in both directions on a one-way section of the carriageway",
+    "signExplanation": "Sign F85 indicates that traffic in both directions is permitted on a part of the carriageway with one-way traffic (art. 71.2 of the Highway Code)."
   },
   "rec-f87": {
     "question": "What does this traffic sign mean?",
@@ -2137,7 +2487,9 @@
       "Start of a zone with a speed limit of 50 km/h",
       "Elevated device(s)"
     ],
-    "explanation": "Sign F87 indicates an elevated device or several elevated devices, such as a speed bump or traffic plateau (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F87 indicates an elevated device or several elevated devices, such as a speed bump or traffic plateau (art. 71.2 of the Highway Code).",
+    "signTitle": "Elevated device(s)",
+    "signExplanation": "Sign F87 indicates an elevated device or several elevated devices, such as a speed bump or traffic plateau (art. 71.2 of the Highway Code)."
   },
   "rec-f89": {
     "question": "What does this traffic sign mean?",
@@ -2147,7 +2499,9 @@
       "Announcement of a general speed limit for all vehicles",
       "Advance sign announcing an exit with separated lanes"
     ],
-    "explanation": "Sign F89, as a signpost, announces a danger or traffic rule that only applies to one or more designated lanes (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F89, as a signpost, announces a danger or traffic rule that only applies to one or more designated lanes (art. 71.2 of the Highway Code).",
+    "signTitle": "Advance sign announcing a danger or a traffic rule that only applies to one or more lanes",
+    "signExplanation": "Sign F89, as a signpost, announces a danger or traffic rule that only applies to one or more designated lanes (art. 71.2 of the Highway Code)."
   },
   "rec-f91": {
     "question": "What does this traffic sign mean?",
@@ -2157,7 +2511,9 @@
       "Obligation for all drivers to use only the right lane",
       "Indication of a junction of the motorway ahead"
     ],
-    "explanation": "Sign F91 indicates a danger on site or imposes a traffic rule that only applies to one or more designated lanes (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F91 indicates a danger on site or imposes a traffic rule that only applies to one or more designated lanes (art. 71.2 of the Highway Code).",
+    "signTitle": "Traffic sign indicating a danger or prescribing a traffic rule that only applies to one or more lanes",
+    "signExplanation": "Sign F91 indicates a danger on site or imposes a traffic rule that only applies to one or more designated lanes (art. 71.2 of the Highway Code)."
   },
   "rec-f93": {
     "question": "What does this traffic sign mean?",
@@ -2167,7 +2523,9 @@
       "Traffic sign indicating a radio station where traffic information is provided",
       "Emergency frequency for direct communication with the traffic police"
     ],
-    "explanation": "Sign F93 indicates a radio broadcaster that broadcasts regular traffic information (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F93 indicates a radio broadcaster that broadcasts regular traffic information (art. 71.2 of the Highway Code).",
+    "signTitle": "Traffic sign indicating a radio station where traffic information is provided",
+    "signExplanation": "Sign F93 indicates a radio broadcaster that broadcasts regular traffic information (art. 71.2 of the Highway Code)."
   },
   "rec-f95": {
     "question": "What does this traffic sign mean?",
@@ -2177,7 +2535,9 @@
       "Narrowing of the lane with mandatory zipping",
       "Emergency stop lane"
     ],
-    "explanation": "Sign F95 indicates an emergency stop lane to safely stop vehicles without control or vehicles with defective brakes (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F95 indicates an emergency stop lane to safely stop vehicles without control or vehicles with defective brakes (art. 71.2 of the Highway Code).",
+    "signTitle": "Emergency stop lane",
+    "signExplanation": "Sign F95 indicates an emergency stop lane to safely stop vehicles without control or vehicles with defective brakes (art. 71.2 of the Highway Code)."
   },
   "rec-f97": {
     "question": "What does this traffic sign mean?",
@@ -2187,7 +2547,9 @@
       "Advance sign indicating a diversion route to another motorway",
       "Traffic sign announcing a crossing of the central reservation"
     ],
-    "explanation": "Sign F97 indicates a narrowing of the carriageway that has the extent of a full lane (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F97 indicates a narrowing of the carriageway that has the extent of a full lane (art. 71.2 of the Highway Code).",
+    "signTitle": "Road sign indicating a narrowing the size of a lane",
+    "signExplanation": "Sign F97 indicates a narrowing of the carriageway that has the extent of a full lane (art. 71.2 of the Highway Code)."
   },
   "rec-f98": {
     "question": "What does this traffic sign mean?",
@@ -2197,7 +2559,9 @@
       "Carpool parking with transfer option to public transport",
       "Loading and unloading area for deliveries to companies along the motorway"
     ],
-    "explanation": "Sign F98 indicates a refuge area, a safe alternative location along motorways or in tunnels that may only be used in the event of breakdown or emergency (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F98 indicates a refuge area, a safe alternative location along motorways or in tunnels that may only be used in the event of breakdown or emergency (art. 71.2 of the Highway Code).",
+    "signTitle": "Airport",
+    "signExplanation": "Sign F98 indicates a refuge area, a safe alternative location along motorways or in tunnels that may only be used in the event of breakdown or emergency (art. 71.2 of the Highway Code)."
   },
   "rec-f99a": {
     "question": "What does this traffic sign mean?",
@@ -2207,7 +2571,9 @@
       "Start of the road or part of the public road reserved for the movement of pedestrians, cyclists, horse riders and drivers of speed pedelecs",
       "Pedestrian zone where cyclists are only allowed to ride at walking pace"
     ],
-    "explanation": "Sign F99a indicates the beginning of a road reserved for pedestrians, cyclists, horse riders and speed pedelecs (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F99a indicates the beginning of a road reserved for pedestrians, cyclists, horse riders and speed pedelecs (art. 71.2 of the Highway Code).",
+    "signTitle": "Start of the road or part of the public road reserved for the movement of pedestrians, cyclists, horse riders and drivers of speed pedelecs",
+    "signExplanation": "Sign F99a indicates the beginning of a road reserved for pedestrians, cyclists, horse riders and speed pedelecs (art. 71.2 of the Highway Code)."
   },
   "rec-f99b": {
     "question": "What does this traffic sign mean?",
@@ -2217,7 +2583,9 @@
       "End of a zone reserved for pedestrians and cyclists",
       "Beginning of the road reserved for pedestrians, cyclists, riders and drivers of speed pedelecs with indication of the part of the road intended for the different categories"
     ],
-    "explanation": "Sign F99b indicates the start of a reserved road indicating the parts intended for the different categories of road users (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F99b indicates the start of a reserved road indicating the parts intended for the different categories of road users (art. 71.2 of the Highway Code).",
+    "signTitle": "Beginning of the road reserved for pedestrians, cyclists, riders and drivers of speed pedelecs with indication of the part of the road intended for the different categories",
+    "signExplanation": "Sign F99b indicates the start of a reserved road indicating the parts intended for the different categories of road users (art. 71.2 of the Highway Code)."
   },
   "rec-f99c": {
     "question": "What does this traffic sign mean?",
@@ -2227,7 +2595,9 @@
       "Mandatory route for exceptionally heavy agricultural transport",
       "Agricultural zone where only local traffic with motor vehicles is allowed"
     ],
-    "explanation": "Sign F99c indicates the beginning of a road reserved for agricultural vehicles, pedestrians, cyclists, horse riders and speed pedelecs (art. 71.2 of the Road Code)."
+    "explanation": "Sign F99c indicates the beginning of a road reserved for agricultural vehicles, pedestrians, cyclists, horse riders and speed pedelecs (art. 71.2 of the Road Code).",
+    "signTitle": "Beginning of the road reserved for the traffic of agricultural vehicles, pedestrians, cyclists, horse riders and speed pedelec drivers",
+    "signExplanation": "Sign F99c indicates the beginning of a road reserved for agricultural vehicles, pedestrians, cyclists, horse riders and speed pedelecs (art. 71.2 of the Road Code)."
   },
   "rec-f101a": {
     "question": "What does this traffic sign mean?",
@@ -2237,7 +2607,9 @@
       "Start of a zone with absolute priority for cyclists on the road",
       "End of a residential area or area with mixed traffic"
     ],
-    "explanation": "Sign F101a indicates the end of the road reserved for pedestrians, cyclists, riders and drivers of speed pedelecs (art. 71.2 of the Road Code)."
+    "explanation": "Sign F101a indicates the end of the road reserved for pedestrians, cyclists, riders and drivers of speed pedelecs (art. 71.2 of the Road Code).",
+    "signTitle": "End of the road or part of the public road reserved for the movement of pedestrians, cyclists, horse riders and speed pedelec drivers",
+    "signExplanation": "Sign F101a indicates the end of the road reserved for pedestrians, cyclists, riders and drivers of speed pedelecs (art. 71.2 of the Road Code)."
   },
   "rec-f101b": {
     "question": "What does this traffic sign mean?",
@@ -2247,7 +2619,9 @@
       "End of the road reserved for pedestrians, cyclists, riders and drivers of speed pedelecs with indication of the part of the road intended for the different categories",
       "End of a pedestrian zone in a city center"
     ],
-    "explanation": "Sign F101b indicates the end of the reserved road with separate sections for different categories of road users (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F101b indicates the end of the reserved road with separate sections for different categories of road users (art. 71.2 of the Highway Code).",
+    "signTitle": "End of the road reserved for pedestrians, cyclists, riders and drivers of speed pedelecs with indication of the part of the road intended for the different categories",
+    "signExplanation": "Sign F101b indicates the end of the reserved road with separate sections for different categories of road users (art. 71.2 of the Highway Code)."
   },
   "rec-f101c": {
     "question": "What does this traffic sign mean?",
@@ -2257,7 +2631,9 @@
       "End of the built-up area on a rural connecting road",
       "End of the road reserved for the traffic of agricultural vehicles, pedestrians, cyclists, horse riders and speed pedelec drivers"
     ],
-    "explanation": "Sign F101c indicates the end of the road reserved for agricultural vehicles, pedestrians, cyclists, horse riders and speed pedelecs (art. 71.2 of the Road Code)."
+    "explanation": "Sign F101c indicates the end of the road reserved for agricultural vehicles, pedestrians, cyclists, horse riders and speed pedelecs (art. 71.2 of the Road Code).",
+    "signTitle": "End of the road reserved for the traffic of agricultural vehicles, pedestrians, cyclists, horse riders and speed pedelec drivers",
+    "signExplanation": "Sign F101c indicates the end of the road reserved for agricultural vehicles, pedestrians, cyclists, horse riders and speed pedelecs (art. 71.2 of the Road Code)."
   },
   "rec-f103": {
     "question": "What does this traffic sign mean?",
@@ -2267,7 +2643,9 @@
       "Start of a pedestrian zone",
       "Start of a play street"
     ],
-    "explanation": "Sign F103 indicates the start of a pedestrian zone (art. 71.2)."
+    "explanation": "Sign F103 indicates the start of a pedestrian zone (art. 71.2).",
+    "signTitle": "Start of a pedestrian zone",
+    "signExplanation": "Sign F103 indicates the start of a pedestrian zone (art. 71.2)."
   },
   "rec-f105": {
     "question": "What does this traffic sign mean?",
@@ -2277,7 +2655,9 @@
       "End of a residential area or property",
       "Obligation for pedestrians to leave the sidewalk"
     ],
-    "explanation": "Sign F105 indicates the end of a pedestrian zone (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F105 indicates the end of a pedestrian zone (art. 71.2 of the Highway Code).",
+    "signTitle": "End of a pedestrian zone",
+    "signExplanation": "Sign F105 indicates the end of a pedestrian zone (art. 71.2 of the Highway Code)."
   },
   "rec-f111": {
     "question": "What does this traffic sign mean?",
@@ -2287,7 +2667,9 @@
       "Mandatory cycle path designated as a fast cycle route",
       "Ban on all motorized vehicles on this road"
     ],
-    "explanation": "Sign F111 indicates the start of a cycling zone (cycling street) where motor vehicles are not allowed to overtake cyclists and may drive at a maximum speed of 30 km/h (Article 71.2 of the Highway Code)."
+    "explanation": "Sign F111 indicates the start of a cycling zone (cycling street) where motor vehicles are not allowed to overtake cyclists and may drive at a maximum speed of 30 km/h (Article 71.2 of the Highway Code).",
+    "signTitle": "Start of a cycling zone",
+    "signExplanation": "Sign F111 indicates the start of a cycling zone (cycling street) where motor vehicles are not allowed to overtake cyclists and may drive at a maximum speed of 30 km/h (Article 71.2 of the Highway Code)."
   },
   "rec-f113": {
     "question": "What does this traffic sign mean?",
@@ -2297,7 +2679,9 @@
       "End of a cycling zone",
       "End of a zone 30 in a residential area"
     ],
-    "explanation": "Sign F113 indicates the end of a cycling zone (cycling street) (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F113 indicates the end of a cycling zone (cycling street) (art. 71.2 of the Highway Code).",
+    "signTitle": "End of a cycling zone",
+    "signExplanation": "Sign F113 indicates the end of a cycling zone (cycling street) (art. 71.2 of the Highway Code)."
   },
   "rec-f117": {
     "question": "What does this traffic sign mean?",
@@ -2307,7 +2691,9 @@
       "Mandatory driving route for pure electric vehicles and plug-in hybrids",
       "Start of a low emission zone"
     ],
-    "explanation": "Sign F117 indicates the start of a low-emission zone (LEZ) where a selective admission policy applies to motor vehicles based on their emissions (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F117 indicates the start of a low-emission zone (LEZ) where a selective admission policy applies to motor vehicles based on their emissions (art. 71.2 of the Highway Code).",
+    "signTitle": "Start of a low emission zone",
+    "signExplanation": "Sign F117 indicates the start of a low-emission zone (LEZ) where a selective admission policy applies to motor vehicles based on their emissions (art. 71.2 of the Highway Code)."
   },
   "rec-f118": {
     "question": "What does this traffic sign mean?",
@@ -2317,7 +2703,9 @@
       "End of an environmental zone in which only trucks are checked",
       "Polluting diesel vehicles banned from this sign"
     ],
-    "explanation": "Sign F118 indicates the end of a low emission zone (LEZ) (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F118 indicates the end of a low emission zone (LEZ) (art. 71.2 of the Highway Code).",
+    "signTitle": "End of a low emission zone",
+    "signExplanation": "Sign F118 indicates the end of a low emission zone (LEZ) (art. 71.2 of the Highway Code)."
   },
   "rec-f119": {
     "question": "What does this traffic sign mean?",
@@ -2327,7 +2715,9 @@
       "Direction to the passenger terminal of the nearest airport",
       "End of the airport area"
     ],
-    "explanation": "Sign F119 indicates the beginning of an airport area (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F119 indicates the beginning of an airport area (art. 71.2 of the Highway Code).",
+    "signTitle": "Start of an airport area",
+    "signExplanation": "Sign F119 indicates the beginning of an airport area (art. 71.2 of the Highway Code)."
   },
   "rec-f120": {
     "question": "What does this traffic sign mean?",
@@ -2337,7 +2727,9 @@
       "End of an airport area",
       "Prohibition on standing still or parking on access roads to the airport"
     ],
-    "explanation": "Sign F120 indicates the end of an airport area (art. 71.2 of the Highway Code)."
+    "explanation": "Sign F120 indicates the end of an airport area (art. 71.2 of the Highway Code).",
+    "signTitle": "End of an airport area",
+    "signExplanation": "Sign F120 indicates the end of an airport area (art. 71.2 of the Highway Code)."
   },
   "iden-c39": {
     "question": "Which sign indicates an overtaking ban for trucks with a maximum authorized mass of more than 3.5 tons?",
@@ -2497,7 +2889,9 @@
       "Cyclists are automatically given absolute priority over crossing traffic when turning",
       "All motorized vehicles are also allowed to turn right on red"
     ],
-    "explanation": "Traffic sign B22 allows cyclists and speed pedelecs to continue and turn right at red or orange-yellow lights, provided they give way (art. 67.3)."
+    "explanation": "Traffic sign B22 allows cyclists and speed pedelecs to continue and turn right at red or orange-yellow lights, provided they give way (art. 67.3).",
+    "signTitle": "Permission for cyclists to turn right on red",
+    "signExplanation": "Traffic sign B22 permits cyclists and speed pedelecs to turn right at a red or amber-yellow traffic light, provided they give way to other traffic and crossing pedestrians (art. 67.3 of the Highway Code)."
   },
   "rule-fietser-b23": {
     "question": "What does this permission sign (B23) mean for cyclists and drivers of speed pedelecs at a red traffic light?",
@@ -2507,7 +2901,9 @@
       "Cyclists may turn left without stopping",
       "The red light is defective and disabled"
     ],
-    "explanation": "Sign B23 allows cyclists and drivers of speed pedelecs to drive straight ahead at a red or orange-yellow light, provided they give way (art. 67.3)."
+    "explanation": "Sign B23 allows cyclists and drivers of speed pedelecs to drive straight ahead at a red or orange-yellow light, provided they give way (art. 67.3).",
+    "signTitle": "Permission for cyclists to proceed straight ahead on red",
+    "signExplanation": "Traffic sign B23 permits cyclists and speed pedelecs to proceed straight ahead at a red or amber-yellow traffic light, provided they give way to other traffic and crossing pedestrians (art. 67.3 of the Highway Code)."
   },
   "rule-voorrang-aardeweg": {
     "question": "Does a driver coming from the right on a dirt road have priority over a driver on a public road with a carriageway?",

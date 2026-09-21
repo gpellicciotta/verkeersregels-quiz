@@ -27,6 +27,7 @@ import {
   toggleCarouselPause,
   nextCarouselSign,
   prevCarouselSign,
+  renderCarouselCard,
 } from "./carousel.js";
 import {
   openConfigModal,
@@ -312,12 +313,16 @@ if (el.btnLang) {
   el.btnLang.addEventListener("click", () => {
     const next = getLang() === "nl" ? "en" : "nl";
     setLang(next).then(() => {
-      loadTranslations(next);
-      updateLangButton();
-      // Re-render dynamic strings that aren't covered by data-i18n
-      updateStartScreenNotice();
-      setStartMode(state.currentMode);
-      loadChangelog();
+      loadTranslations(next).then(() => {
+        updateLangButton();
+        // Re-render dynamic strings that aren't covered by data-i18n
+        updateStartScreenNotice();
+        setStartMode(state.currentMode);
+        loadChangelog();
+        if (carouselState.isActive) {
+          renderCarouselCard();
+        }
+      });
     });
   });
 }
@@ -326,6 +331,9 @@ if (el.btnLang) {
 document.addEventListener("languagechange", () => {
   applyAll();
   updateLangButton();
+  if (carouselState.isActive) {
+    renderCarouselCard();
+  }
 });
 
 // ── Application startup ───────────────────────────────────────────────────────

@@ -14,7 +14,9 @@
       ],
       "correctIndex": 0,
       "explanation": "Dit gevaarsbord waarschuwt voor een gevaarlijke bocht naar links.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66",
+      "signTitle": "Gevaarlijke bocht naar links",
+      "signExplanation": "Dit gevaarsbord waarschuwt voor een gevaarlijke bocht naar links."
     },
     {
       "id": "rec-a1b",
@@ -30,7 +32,9 @@
       ],
       "correctIndex": 1,
       "explanation": "Dit gevaarsbord waarschuwt voor een gevaarlijke bocht naar rechts.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66",
+      "signTitle": "Gevaarlijke bocht naar rechts",
+      "signExplanation": "Dit gevaarsbord waarschuwt voor een gevaarlijke bocht naar rechts."
     },
     {
       "id": "rec-a7a",
@@ -46,7 +50,9 @@
       ],
       "correctIndex": 2,
       "explanation": "Dit bord waarschuwt dat de rijbaan verderop smaller wordt.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66",
+      "signTitle": "Rijbaanversmalling",
+      "signExplanation": "Dit bord waarschuwt dat de rijbaan verderop smaller wordt."
     },
     {
       "id": "rec-a21",
@@ -62,7 +68,9 @@
       ],
       "correctIndex": 3,
       "explanation": "Dit gevaarsbord kondigt vooraf een oversteekplaats voor voetgangers aan.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66",
+      "signTitle": "Waarschuwing voor een oversteekplaats voor voetgangers",
+      "signExplanation": "Dit gevaarsbord kondigt vooraf een oversteekplaats voor voetgangers aan."
     },
     {
       "id": "rec-a25",
@@ -78,7 +86,9 @@
       ],
       "correctIndex": 0,
       "explanation": "Dit bord waarschuwt voor een plaats waar fietsers de rijbaan oversteken.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66",
+      "signTitle": "Waarschuwing voor een oversteekplaats voor fietsers",
+      "signExplanation": "Dit bord waarschuwt voor een plaats waar fietsers de rijbaan oversteken."
     },
     {
       "id": "rec-a23",
@@ -94,7 +104,9 @@
       ],
       "correctIndex": 1,
       "explanation": "Dit bord waarschuwt voor een plek waar opvallend veel kinderen kunnen opduiken, zoals bij een school.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66",
+      "signTitle": "Plaats waar veel kinderen komen, bijvoorbeeld een school",
+      "signExplanation": "Dit bord waarschuwt voor een plek waar opvallend veel kinderen kunnen opduiken, zoals bij een school."
     },
     {
       "id": "rec-a31",
@@ -110,7 +122,9 @@
       ],
       "correctIndex": 2,
       "explanation": "Dit bord waarschuwt voor werken op of langs de rijbaan.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66",
+      "signTitle": "Wegenwerken",
+      "signExplanation": "Dit bord waarschuwt voor werken op of langs de rijbaan."
     },
     {
       "id": "rec-a41",
@@ -126,7 +140,9 @@
       ],
       "correctIndex": 3,
       "explanation": "Dit bord waarschuwt voor een spoorwegovergang die uitgerust is met slagbomen.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66",
+      "signTitle": "Overweg met slagbomen",
+      "signExplanation": "Dit bord waarschuwt voor een spoorwegovergang die uitgerust is met slagbomen."
     },
     {
       "id": "rec-a1c",
@@ -142,7 +158,9 @@
       ],
       "correctIndex": 0,
       "explanation": "Verkeersbord A1c waarschuwt voor een dubbele bocht of een opeenvolging van meer dan twee bochten, waarvan de eerste naar links draait (art. 66 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66",
+      "signTitle": "Gevaarlijke bocht: dubbele bocht of opeenvolging van meer dan twee bochten, de eerste naar links",
+      "signExplanation": "Verkeersbord A1c waarschuwt voor een dubbele bocht of een opeenvolging van meer dan twee bochten, waarvan de eerste naar links draait (art. 66 KB 1 december 1975)."
     },
     {
       "id": "rec-a1d",
@@ -158,7 +176,9 @@
       ],
       "correctIndex": 1,
       "explanation": "Verkeersbord A1d waarschuwt voor een dubbele bocht of een opeenvolging van meer dan twee bochten, waarvan de eerste naar rechts draait (art. 66 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66",
+      "signTitle": "Gevaarlijke bocht: dubbele bocht of opeenvolging van meer dan twee bochten, de eerste naar rechts",
+      "signExplanation": "Verkeersbord A1d waarschuwt voor een dubbele bocht of een opeenvolging van meer dan twee bochten, waarvan de eerste naar rechts draait (art. 66 KB 1 december 1975)."
     },
     {
       "id": "rec-a3",
@@ -174,7 +194,9 @@
       ],
       "correctIndex": 2,
       "explanation": "Verkeersbord A3 waarschuwt voor een gevaarlijke daling op de weg (art. 66 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66",
+      "signTitle": "Gevaarlijke daling",
+      "signExplanation": "Verkeersbord A3 waarschuwt voor een gevaarlijke daling op de weg (art. 66 KB 1 december 1975)."
     },
     {
       "id": "rec-a5",
@@ -190,7 +212,9 @@
       ],
       "correctIndex": 3,
       "explanation": "Verkeersbord A5 waarschuwt voor een steile helling (klimmend weggedeelte) (art. 66 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66",
+      "signTitle": "Steile helling",
+      "signExplanation": "Verkeersbord A5 waarschuwt voor een steile helling (klimmend weggedeelte) (art. 66 KB 1 december 1975)."
     },
     {
       "id": "rec-a7b",
@@ -206,7 +230,9 @@
       ],
       "correctIndex": 0,
       "explanation": "Verkeersbord A7b waarschuwt voor een versmalling van de rijbaan aan de linkerkant (art. 66 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66",
+      "signTitle": "Rijbaanversmalling langs links",
+      "signExplanation": "Verkeersbord A7b waarschuwt voor een versmalling van de rijbaan aan de linkerkant (art. 66 KB 1 december 1975)."
     },
     {
       "id": "rec-a7c",
@@ -222,7 +248,9 @@
       ],
       "correctIndex": 1,
       "explanation": "Verkeersbord A7c waarschuwt voor een versmalling van de rijbaan aan de rechterkant (art. 66 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66",
+      "signTitle": "Rijbaanversmalling langs rechts",
+      "signExplanation": "Verkeersbord A7c waarschuwt voor een versmalling van de rijbaan aan de rechterkant (art. 66 KB 1 december 1975)."
     },
     {
       "id": "rec-a9",
@@ -238,7 +266,9 @@
       ],
       "correctIndex": 2,
       "explanation": "Verkeersbord A9 waarschuwt voor het naderen van een beweegbare brug (art. 66 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66",
+      "signTitle": "Beweegbare brug",
+      "signExplanation": "Verkeersbord A9 waarschuwt voor het naderen van een beweegbare brug (art. 66 KB 1 december 1975)."
     },
     {
       "id": "rec-a11",
@@ -254,7 +284,9 @@
       ],
       "correctIndex": 3,
       "explanation": "Verkeersbord A11 waarschuwt dat de weg uitloopt op een kaai of een oever zonder slagboom of borstwering (art. 66 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66",
+      "signTitle": "Uitweg op een kaai of een oever",
+      "signExplanation": "Verkeersbord A11 waarschuwt dat de weg uitloopt op een kaai of een oever zonder slagboom of borstwering (art. 66 KB 1 december 1975)."
     },
     {
       "id": "rec-a13",
@@ -270,7 +302,9 @@
       ],
       "correctIndex": 0,
       "explanation": "Verkeersbord A13 waarschuwt voor een uitholling overdwars, een ezelsrug of een oneffen wegdek (art. 66 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66",
+      "signTitle": "Uitholling overdwars of ezelsrug",
+      "signExplanation": "Verkeersbord A13 waarschuwt voor een uitholling overdwars, een ezelsrug of een oneffen wegdek (art. 66 KB 1 december 1975)."
     },
     {
       "id": "rec-a14",
@@ -286,7 +320,9 @@
       ],
       "correctIndex": 1,
       "explanation": "Verkeersbord A14 waarschuwt voor één of meerdere verhoogde inrichtingen, zoals een verkeersdrempel of plateau (art. 66 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66",
+      "signTitle": "Verhoogde inrichting(en)",
+      "signExplanation": "Verkeersbord A14 waarschuwt voor één of meerdere verhoogde inrichtingen, zoals een verkeersdrempel of plateau (art. 66 KB 1 december 1975)."
     },
     {
       "id": "rec-a15",
@@ -302,7 +338,9 @@
       ],
       "correctIndex": 2,
       "explanation": "Verkeersbord A15 waarschuwt voor een glibberige rijbaan of verhoogd slipgevaar (art. 66 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66",
+      "signTitle": "Glibberige rijbaan",
+      "signExplanation": "Verkeersbord A15 waarschuwt voor een glibberige rijbaan of verhoogd slipgevaar (art. 66 KB 1 december 1975)."
     },
     {
       "id": "rec-a17",
@@ -318,7 +356,9 @@
       ],
       "correctIndex": 3,
       "explanation": "Verkeersbord A17 waarschuwt voor gevaar van wegspattende losse kiezels of steenslag (kiezelprojectie) (art. 66 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66",
+      "signTitle": "Kiezelprojectie",
+      "signExplanation": "Verkeersbord A17 waarschuwt voor gevaar van wegspattende losse kiezels of steenslag (kiezelprojectie) (art. 66 KB 1 december 1975)."
     },
     {
       "id": "rec-a19",
@@ -334,7 +374,9 @@
       ],
       "correctIndex": 0,
       "explanation": "Verkeersbord A19 waarschuwt voor gevaar van vallende stenen of stenen op de rijbaan (art. 66 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66",
+      "signTitle": "Vallende stenen",
+      "signExplanation": "Verkeersbord A19 waarschuwt voor gevaar van vallende stenen of stenen op de rijbaan (art. 66 KB 1 december 1975)."
     },
     {
       "id": "rec-a27",
@@ -350,7 +392,9 @@
       ],
       "correctIndex": 1,
       "explanation": "Verkeersbord A27 waarschuwt voor de mogelijke doortocht van groot wild op de rijbaan (art. 66 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66",
+      "signTitle": "Doortocht van groot wild",
+      "signExplanation": "Verkeersbord A27 waarschuwt voor de mogelijke doortocht van groot wild op de rijbaan (art. 66 KB 1 december 1975)."
     },
     {
       "id": "rec-a29",
@@ -366,7 +410,9 @@
       ],
       "correctIndex": 2,
       "explanation": "Verkeersbord A29 waarschuwt voor de mogelijke oversteek of aanwezigheid van vee op de openbare weg (art. 66 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66",
+      "signTitle": "Doortocht van vee",
+      "signExplanation": "Verkeersbord A29 waarschuwt voor de mogelijke oversteek of aanwezigheid van vee op de openbare weg (art. 66 KB 1 december 1975)."
     },
     {
       "id": "rec-a33",
@@ -382,7 +428,9 @@
       ],
       "correctIndex": 3,
       "explanation": "Verkeersbord A33 kondigt het naderen van een kruispunt of oversteekplaats met verkeerslichten aan (art. 66 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66",
+      "signTitle": "Verkeerslichten",
+      "signExplanation": "Verkeersbord A33 kondigt het naderen van een kruispunt of oversteekplaats met verkeerslichten aan (art. 66 KB 1 december 1975)."
     },
     {
       "id": "rec-a35",
@@ -398,7 +446,9 @@
       ],
       "correctIndex": 0,
       "explanation": "Verkeersbord A35 waarschuwt voor overtocht van vliegtuigen op geringe hoogte of plotse lawaaihinder (art. 66 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66",
+      "signTitle": "Overtocht van vliegtuigen op geringe hoogte",
+      "signExplanation": "Verkeersbord A35 waarschuwt voor overtocht van vliegtuigen op geringe hoogte of plotse lawaaihinder (art. 66 KB 1 december 1975)."
     },
     {
       "id": "rec-a37",
@@ -414,7 +464,9 @@
       ],
       "correctIndex": 1,
       "explanation": "Verkeersbord A37 waarschuwt voor een weggedeelte dat vaak blootgesteld is aan plotse, krachtige zijwind (art. 66 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66",
+      "signTitle": "Zijwind",
+      "signExplanation": "Verkeersbord A37 waarschuwt voor een weggedeelte dat vaak blootgesteld is aan plotse, krachtige zijwind (art. 66 KB 1 december 1975)."
     },
     {
       "id": "rec-a39",
@@ -430,7 +482,9 @@
       ],
       "correctIndex": 2,
       "explanation": "Verkeersbord A39 waarschuwt dat eenrichtingsverkeer eindigt en verkeer in beide richtingen opnieuw is toegelaten (art. 66 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66",
+      "signTitle": "Verkeer toegelaten in twee richtingen na een gedeelte van de rijbaan met eenrichtingsverkeer",
+      "signExplanation": "Verkeersbord A39 waarschuwt dat eenrichtingsverkeer eindigt en verkeer in beide richtingen opnieuw is toegelaten (art. 66 KB 1 december 1975)."
     },
     {
       "id": "rec-a43",
@@ -446,7 +500,9 @@
       ],
       "correctIndex": 3,
       "explanation": "Verkeersbord A43 waarschuwt vooraf voor een overweg zonder slagbomen (art. 66 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66",
+      "signTitle": "Overweg zonder slagbomen",
+      "signExplanation": "Verkeersbord A43 waarschuwt vooraf voor een overweg zonder slagbomen (art. 66 KB 1 december 1975)."
     },
     {
       "id": "rec-a45",
@@ -462,7 +518,9 @@
       ],
       "correctIndex": 0,
       "explanation": "Verkeersbord A45 (enkel Andreaskruis) duidt de onmiddellijke nabijheid aan van een spoorwegovergang met enkel spoor (art. 66 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66",
+      "signTitle": "Overweg voor enkel spoor",
+      "signExplanation": "Verkeersbord A45 (enkel Andreaskruis) duidt de onmiddellijke nabijheid aan van een spoorwegovergang met enkel spoor (art. 66 KB 1 december 1975)."
     },
     {
       "id": "rec-a47",
@@ -478,7 +536,9 @@
       ],
       "correctIndex": 1,
       "explanation": "Verkeersbord A47 (dubbel Andreaskruis) duidt de onmiddellijke nabijheid aan van een spoorwegovergang met twee of meer sporen (art. 66 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66",
+      "signTitle": "Overweg voor twee of meer sporen",
+      "signExplanation": "Verkeersbord A47 (dubbel Andreaskruis) duidt de onmiddellijke nabijheid aan van een spoorwegovergang met twee of meer sporen (art. 66 KB 1 december 1975)."
     },
     {
       "id": "rec-a49",
@@ -494,7 +554,9 @@
       ],
       "correctIndex": 2,
       "explanation": "Verkeersbord A49 waarschuwt voor de kruising van een openbare weg door sporen die in het wegdek liggen (art. 66 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66",
+      "signTitle": "Kruising van een openbare weg door een of meer in de rijbaan aangelegde sporen",
+      "signExplanation": "Verkeersbord A49 waarschuwt voor de kruising van een openbare weg door sporen die in het wegdek liggen (art. 66 KB 1 december 1975)."
     },
     {
       "id": "rec-a50",
@@ -510,7 +572,9 @@
       ],
       "correctIndex": 3,
       "explanation": "Verkeersbord A50 waarschuwt voor het risico op vertraagd verkeer of filevorming (art. 66 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66",
+      "signTitle": "File",
+      "signExplanation": "Verkeersbord A50 waarschuwt voor het risico op vertraagd verkeer of filevorming (art. 66 KB 1 december 1975)."
     },
     {
       "id": "rec-a51",
@@ -526,7 +590,9 @@
       ],
       "correctIndex": 3,
       "explanation": "Verkeersbord A51 waarschuwt voor een gevaar dat niet door een specifiek symbool wordt aangeduid; een onderbord vermeldt de aard van het gevaar (art. 66 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66",
+      "signTitle": "Gevaar dat niet door een speciaal symbool wordt bepaald",
+      "signExplanation": "Verkeersbord A51 waarschuwt voor een gevaar dat niet door een specifiek symbool wordt aangeduid; een onderbord vermeldt de aard van het gevaar (art. 66 KB 1 december 1975)."
     },
     {
       "id": "rec-b1",
@@ -542,7 +608,9 @@
       ],
       "correctIndex": 0,
       "explanation": "Deze omgekeerde driehoek betekent dat je voorrang moet verlenen aan het kruisende verkeer.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-67"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-67",
+      "signTitle": "Voorrang verlenen",
+      "signExplanation": "Deze omgekeerde driehoek betekent dat je voorrang moet verlenen aan het kruisende verkeer."
     },
     {
       "id": "rec-b5",
@@ -558,7 +626,9 @@
       ],
       "correctIndex": 1,
       "explanation": "Bij dit achthoekige bord moet je volledig stoppen en voorrang verlenen aan het andere verkeer.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-67"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-67",
+      "signTitle": "Stoppen en voorrang verlenen",
+      "signExplanation": "Bij dit achthoekige bord moet je volledig stoppen en voorrang verlenen aan het andere verkeer."
     },
     {
       "id": "rec-b9",
@@ -574,7 +644,9 @@
       ],
       "correctIndex": 2,
       "explanation": "Dit ruitvormige bord geeft aan dat je op een voorrangsweg rijdt.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-67"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-67",
+      "signTitle": "Voorrangsweg",
+      "signExplanation": "Dit ruitvormige bord geeft aan dat je op een voorrangsweg rijdt."
     },
     {
       "id": "rec-b17",
@@ -590,7 +662,9 @@
       ],
       "correctIndex": 3,
       "explanation": "Dit bord herinnert eraan dat op dit kruispunt de gewone regel voorrang van rechts geldt.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-67"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-67",
+      "signTitle": "Kruispunt waar voorrang van rechts geldt",
+      "signExplanation": "Dit bord herinnert eraan dat op dit kruispunt de gewone regel voorrang van rechts geldt."
     },
     {
       "id": "rec-c1",
@@ -606,7 +680,9 @@
       ],
       "correctIndex": 0,
       "explanation": "Dit bord met de witte balk verbiedt om de weg in die richting in te rijden, bijvoorbeeld tegen eenrichtingsverkeer in.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68",
+      "signTitle": "Verboden richting in te rijden",
+      "signExplanation": "Dit bord met de witte balk verbiedt om de weg in die richting in te rijden, bijvoorbeeld tegen eenrichtingsverkeer in."
     },
     {
       "id": "rec-c3",
@@ -622,7 +698,9 @@
       ],
       "correctIndex": 1,
       "explanation": "Dit volledig rode bord sluit de weg af voor alle bestuurders, in beide richtingen.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68",
+      "signTitle": "Verboden toegang in beide richtingen voor elke bestuurder",
+      "signExplanation": "Dit volledig rode bord sluit de weg af voor alle bestuurders, in beide richtingen."
     },
     {
       "id": "rec-c35",
@@ -638,7 +716,9 @@
       ],
       "correctIndex": 2,
       "explanation": "Dit bord verbiedt om voertuigen met meer dan twee wielen links in te halen.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68",
+      "signTitle": "Verboden in te halen",
+      "signExplanation": "Dit bord verbiedt om voertuigen met meer dan twee wielen links in te halen."
     },
     {
       "id": "rec-c43-70",
@@ -654,7 +734,9 @@
       ],
       "correctIndex": 3,
       "explanation": "Het getal op dit ronde bord is de maximumsnelheid die vanaf hier geldt tot het volgende kruispunt.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68",
+      "signTitle": "Snelheidsbeperking van 70 km/u",
+      "signExplanation": "Het getal op dit ronde bord is de maximumsnelheid die vanaf hier geldt tot het volgende kruispunt."
     },
     {
       "id": "rec-d1a",
@@ -670,7 +752,9 @@
       ],
       "correctIndex": 0,
       "explanation": "Dit blauwe ronde bord verplicht je de rijrichting van de pijl te volgen, hier rechtdoor.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-69"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-69",
+      "signTitle": "Verplichte rijrichting: rechtdoor",
+      "signExplanation": "Dit blauwe ronde bord verplicht je de rijrichting van de pijl te volgen, hier rechtdoor."
     },
     {
       "id": "rec-d5",
@@ -686,7 +770,9 @@
       ],
       "correctIndex": 1,
       "explanation": "Dit bord kondigt een rotonde aan waarop je verplicht in de aangeduide richting moet rondrijden.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-69"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-69",
+      "signTitle": "Verplicht rondgaand verkeer (rotonde)",
+      "signExplanation": "Dit bord kondigt een rotonde aan waarop je verplicht in de aangeduide richting moet rondrijden."
     },
     {
       "id": "rec-d7",
@@ -702,7 +788,9 @@
       ],
       "correctIndex": 2,
       "explanation": "Fietsers en bestuurders van tweewielige bromfietsen klasse A moeten dit fietspad verplicht gebruiken.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-69"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-69",
+      "signTitle": "Verplicht fietspad",
+      "signExplanation": "Fietsers en bestuurders van tweewielige bromfietsen klasse A moeten dit fietspad verplicht gebruiken."
     },
     {
       "id": "rec-e1",
@@ -718,7 +806,9 @@
       ],
       "correctIndex": 3,
       "explanation": "Dit bord verbiedt parkeren, maar kort stilstaan blijft toegelaten.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-70"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-70",
+      "signTitle": "Verboden te parkeren",
+      "signExplanation": "Dit bord verbiedt parkeren, maar kort stilstaan blijft toegelaten."
     },
     {
       "id": "rec-f45",
@@ -734,7 +824,9 @@
       ],
       "correctIndex": 0,
       "explanation": "Dit bord toont dat de weg verderop niet doorloopt.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Doodlopende weg",
+      "signExplanation": "Dit bord toont dat de weg verderop niet doorloopt."
     },
     {
       "id": "rec-f5",
@@ -750,7 +842,9 @@
       ],
       "correctIndex": 1,
       "explanation": "Vanaf dit bord gelden de specifieke verkeersregels voor autosnelwegen.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Begin van een autosnelweg",
+      "signExplanation": "Vanaf dit bord gelden de specifieke verkeersregels voor autosnelwegen."
     },
     {
       "id": "iden-b19",
@@ -1075,7 +1169,9 @@
       "correctIndex": 3,
       "explanation": "Op een rotonde aangeduid met bord D5 heeft het verkeer dat er al op rijdt voorrang op wie wil toetreden (art. 12.3.1).",
       "source": "https://www.verkeerszaken.be/blog/artikel/a/432/De-regels-voor-rotondes-en-rondpunten",
-      "since": 1997
+      "since": 1997,
+      "signTitle": "Verplicht rondgaand verkeer (rotonde)",
+      "signExplanation": "Bord D5 duidt een rotonde aan waar het verkeer verplicht in de aangegeven richting moet rijden. Bestuurders die zich op de rotonde bevinden hebben voorrang op naderend verkeer dat wil toetreden (art. 12.3.1 en art. 68.3 van de Wegcode)."
     },
     {
       "id": "rule-prioritair",
@@ -1343,7 +1439,9 @@
       "correctIndex": 1,
       "explanation": "Bij het KB van 30 juli 2022 (in werking op 1 oktober 2022, art. 9.1.2° en 69.3) werd de toelating voor bestuurders van speed pedelecs op het D9-pad hersteld, tenzij een onderbord hen de toegang ontzegt.",
       "source": "https://www.wegcode.be/nl/nieuws/nieuwe-verkeersregels-van-kracht-op-1-oktober-de-10-belangrijkste-veranderingen~ntwif2jyud",
-      "since": 2022
+      "since": 2022,
+      "signTitle": "Voorbehouden weg voor voetgangers, fietsers en tweewielige bromfietsen klasse A",
+      "signExplanation": "Bord D9 duidt een deel van de openbare weg aan voorbehouden voor voetgangers, fietsers en bestuurders van tweewielige bromfietsen klasse A (alsook speed pedelecs, tenzij een onderbord hen de toegang ontzegt) (art. 68.3 en 69.3 van de Wegcode)."
     },
     {
       "id": "rule-velomobiel-2022",
@@ -1376,7 +1474,9 @@
       "correctIndex": 1,
       "explanation": "Sinds het KB van 12 maart 2023 heet een \"fietsstraat\" een \"fietszone\" (art. 2.61): ze kan meerdere openbare wegen omvatten en loopt tot het verkeersbord F113, niet automatisch tot het eerstvolgende kruispunt.",
       "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-2",
-      "since": 2023
+      "since": 2023,
+      "signTitle": "Begin van een fietszone",
+      "signExplanation": "Bord F111 duidt het begin van een fietszone (fietsstraat) aan. Motorvoertuigen mogen fietsers niet inhalen en mogen maximaal 30 km/u rijden tot bord F113 (art. 2.61 en art. 71.2 van de Wegcode)."
     },
     {
       "id": "rule-brussel-stad30-2021",
@@ -1408,7 +1508,9 @@
       ],
       "correctIndex": 0,
       "explanation": "Bord B19 legt op dat je bij een smalle doorgang voorrang moet verlenen aan bestuurders die uit de tegenovergestelde richting komen (art. 67.3).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-67"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-67",
+      "signTitle": "Smalle doorgang waarbij je voorrang moet verlenen aan tegenliggers",
+      "signExplanation": "Bord B19 legt op dat je bij een smalle doorgang voorrang moet verlenen aan bestuurders die uit de tegenovergestelde richting komen (art. 67.3)."
     },
     {
       "id": "rec-b3",
@@ -1424,7 +1526,9 @@
       ],
       "correctIndex": 0,
       "explanation": "Bord B3 kondigt bord B1 (voorrang verlenen) aan op de bij benadering aangeduide afstand (art. 67 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-67"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-67",
+      "signTitle": "Aankondiging van bord B1 (voorrang verlenen) op de aangeduide afstand",
+      "signExplanation": "Bord B3 kondigt bord B1 (voorrang verlenen) aan op de bij benadering aangeduide afstand (art. 67 KB 1 december 1975)."
     },
     {
       "id": "rec-b7",
@@ -1440,7 +1544,9 @@
       ],
       "correctIndex": 1,
       "explanation": "Bord B7 kondigt bord B5 (stoppen en voorrang verlenen) aan op de bij benadering aangeduide afstand (art. 67 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-67"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-67",
+      "signTitle": "Aankondiging van bord B5 (stoppen en voorrang verlenen) op de aangeduide afstand",
+      "signExplanation": "Bord B7 kondigt bord B5 (stoppen en voorrang verlenen) aan op de bij benadering aangeduide afstand (art. 67 KB 1 december 1975)."
     },
     {
       "id": "rec-b11",
@@ -1456,7 +1562,9 @@
       ],
       "correctIndex": 2,
       "explanation": "Bord B11 duidt het einde van een voorrangsweg aan (art. 67 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-67"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-67",
+      "signTitle": "Einde van de voorrangsweg",
+      "signExplanation": "Bord B11 duidt het einde van een voorrangsweg aan (art. 67 KB 1 december 1975)."
     },
     {
       "id": "rec-b13",
@@ -1472,7 +1580,9 @@
       ],
       "correctIndex": 3,
       "explanation": "Bord B13 kondigt het einde van de voorrangsweg (bord B11) aan op de bij benadering aangeduide afstand (art. 67 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-67"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-67",
+      "signTitle": "Aankondiging van het einde van de voorrangsweg op de aangeduide afstand",
+      "signExplanation": "Bord B13 kondigt het einde van de voorrangsweg (bord B11) aan op de bij benadering aangeduide afstand (art. 67 KB 1 december 1975)."
     },
     {
       "id": "rec-b15",
@@ -1488,7 +1598,9 @@
       ],
       "correctIndex": 0,
       "explanation": "Bord B15 geeft aan dat bestuurders voorrang hebben op het eerstvolgende kruispunt (art. 67 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-67"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-67",
+      "signTitle": "Voorrang op het eerstvolgende kruispunt",
+      "signExplanation": "Bord B15 geeft aan dat bestuurders voorrang hebben op het eerstvolgende kruispunt (art. 67 KB 1 december 1975)."
     },
     {
       "id": "rec-b21",
@@ -1504,7 +1616,9 @@
       ],
       "correctIndex": 1,
       "explanation": "Bord B21 duidt een smalle doorgang aan waarbij je voorrang hebt ten opzichte van tegemoetkomende bestuurders (art. 67 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-67"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-67",
+      "signTitle": "Smalle doorgang met voorrang ten opzichte van tegenliggers",
+      "signExplanation": "Bord B21 duidt een smalle doorgang aan waarbij je voorrang hebt ten opzichte van tegemoetkomende bestuurders (art. 67 KB 1 december 1975)."
     },
     {
       "id": "rec-b22",
@@ -1520,7 +1634,9 @@
       ],
       "correctIndex": 2,
       "explanation": "Bord B22 laat fietsers en bestuurders van speedpedelecs toe om bij rood of oranjegeel licht rechtsaf te slaan, mits zij voorrang verlenen (art. 67 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-67"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-67",
+      "signTitle": "Fietsers en speedpedelecs mogen bij rood licht rechtsaf slaan mits voorrang te verlenen",
+      "signExplanation": "Bord B22 laat fietsers en bestuurders van speedpedelecs toe om bij rood of oranjegeel licht rechtsaf te slaan, mits zij voorrang verlenen (art. 67 KB 1 december 1975)."
     },
     {
       "id": "rec-b23",
@@ -1536,7 +1652,9 @@
       ],
       "correctIndex": 3,
       "explanation": "Bord B23 laat fietsers en bestuurders van speedpedelecs toe om bij rood of oranjegeel licht rechtdoor te rijden, mits zij voorrang verlenen (art. 67 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-67"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-67",
+      "signTitle": "Fietsers en speedpedelecs mogen bij rood licht rechtdoor rijden mits voorrang te verlenen",
+      "signExplanation": "Bord B23 laat fietsers en bestuurders van speedpedelecs toe om bij rood of oranjegeel licht rechtdoor te rijden, mits zij voorrang verlenen (art. 67 KB 1 december 1975)."
     },
     {
       "id": "rec-c31a",
@@ -1552,7 +1670,9 @@
       ],
       "correctIndex": 1,
       "explanation": "Bord C31a verbiedt om aan het eerstvolgende kruispunt links af te slaan in de richting van de pijl (art. 68.3).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68",
+      "signTitle": "Verbod aan het volgend kruispunt links af te slaan",
+      "signExplanation": "Bord C31a verbiedt om aan het eerstvolgende kruispunt links af te slaan in de richting van de pijl (art. 68.3)."
     },
     {
       "id": "rec-c33",
@@ -1568,7 +1688,9 @@
       ],
       "correctIndex": 2,
       "explanation": "Bord C33 verbiedt bestuurders om te keren (een U-bocht te maken) tot aan het volgende kruispunt (art. 68.3).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68",
+      "signTitle": "Verbod om te keren (U-bocht maken)",
+      "signExplanation": "Bord C33 verbiedt bestuurders om te keren (een U-bocht te maken) tot aan het volgende kruispunt (art. 68.3)."
     },
     {
       "id": "rec-c39",
@@ -1584,7 +1706,9 @@
       ],
       "correctIndex": 3,
       "explanation": "Bord C39 verbiedt vrachtwagens met een maximale toegelaten massa van meer dan 3,5 ton om een gespan of motorvoertuig met meer dan twee wielen in te halen (art. 68.3).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68",
+      "signTitle": "Inhaalverbod voor vrachtwagens met een MTM van meer dan 3,5 ton",
+      "signExplanation": "Bord C39 verbiedt vrachtwagens met een maximale toegelaten massa van meer dan 3,5 ton om een gespan of motorvoertuig met meer dan twee wielen in te halen (art. 68.3)."
     },
     {
       "id": "rec-c5",
@@ -1600,7 +1724,9 @@
       ],
       "correctIndex": 0,
       "explanation": "Bord C5 verbiedt de toegang voor bestuurders van motorvoertuigen met meer dan twee wielen en van motorfietsen met zijspan (art. 68 KB 1 december 1975). Tweewielige motorfietsen zonder zijspan mogen hier wel rijden.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68",
+      "signTitle": "Verboden toegang voor bestuurders van motorvoertuigen met meer dan twee wielen en van motorfietsen met zijspan",
+      "signExplanation": "Bord C5 verbiedt de toegang voor bestuurders van motorvoertuigen met meer dan twee wielen en van motorfietsen met zijspan (art. 68 KB 1 december 1975). Tweewielige motorfietsen zonder zijspan mogen hier wel rijden."
     },
     {
       "id": "rec-c6",
@@ -1616,7 +1742,9 @@
       ],
       "correctIndex": 1,
       "explanation": "Bord C6 verbiedt de toegang voor bestuurders van vierwielige motorvoertuigen met een open carrosserie, stuur als op een motorfiets en zadel, ontworpen voor onverhard terrein, zoals quads (art. 68 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68",
+      "signTitle": "Verboden toegang voor bestuurders van vierwielige motorvoertuigen geconstrueerd voor onverhard terrein (quads)",
+      "signExplanation": "Bord C6 verbiedt de toegang voor bestuurders van vierwielige motorvoertuigen met een open carrosserie, stuur als op een motorfiets en zadel, ontworpen voor onverhard terrein, zoals quads (art. 68 KB 1 december 1975)."
     },
     {
       "id": "rec-c7",
@@ -1632,7 +1760,9 @@
       ],
       "correctIndex": 2,
       "explanation": "Bord C7 verbiedt de toegang voor bestuurders van motorfietsen (art. 68 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68",
+      "signTitle": "Verboden toegang voor bestuurders van motorfietsen",
+      "signExplanation": "Bord C7 verbiedt de toegang voor bestuurders van motorfietsen (art. 68 KB 1 december 1975)."
     },
     {
       "id": "rec-c9",
@@ -1648,7 +1778,9 @@
       ],
       "correctIndex": 3,
       "explanation": "Bord C9 verbiedt de toegang voor bestuurders van bromfietsen (art. 68 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68",
+      "signTitle": "Verboden toegang voor bestuurders van bromfietsen",
+      "signExplanation": "Bord C9 verbiedt de toegang voor bestuurders van bromfietsen (art. 68 KB 1 december 1975)."
     },
     {
       "id": "rec-c11",
@@ -1664,7 +1796,9 @@
       ],
       "correctIndex": 0,
       "explanation": "Bord C11 verbiedt de toegang voor bestuurders van rijwielen (art. 68 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68",
+      "signTitle": "Verboden toegang voor bestuurders van rijwielen",
+      "signExplanation": "Bord C11 verbiedt de toegang voor bestuurders van rijwielen (art. 68 KB 1 december 1975)."
     },
     {
       "id": "rec-c13",
@@ -1680,7 +1814,9 @@
       ],
       "correctIndex": 1,
       "explanation": "Bord C13 verbiedt de toegang voor bestuurders van gespannen (art. 68 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68",
+      "signTitle": "Verboden toegang voor bestuurders van gespannen",
+      "signExplanation": "Bord C13 verbiedt de toegang voor bestuurders van gespannen (art. 68 KB 1 december 1975)."
     },
     {
       "id": "rec-c15",
@@ -1696,7 +1832,9 @@
       ],
       "correctIndex": 2,
       "explanation": "Bord C15 verbiedt de toegang voor ruiters (art. 68 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68",
+      "signTitle": "Verboden toegang voor ruiters",
+      "signExplanation": "Bord C15 verbiedt de toegang voor ruiters (art. 68 KB 1 december 1975)."
     },
     {
       "id": "rec-c17",
@@ -1712,7 +1850,9 @@
       ],
       "correctIndex": 3,
       "explanation": "Bord C17 verbiedt de toegang voor bestuurders van handkarren (art. 68 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68",
+      "signTitle": "Verboden toegang voor bestuurders van handkarren",
+      "signExplanation": "Bord C17 verbiedt de toegang voor bestuurders van handkarren (art. 68 KB 1 december 1975)."
     },
     {
       "id": "rec-c19",
@@ -1728,7 +1868,9 @@
       ],
       "correctIndex": 0,
       "explanation": "Bord C19 verbiedt de toegang voor voetgangers (art. 68 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68",
+      "signTitle": "Verboden toegang voor voetgangers",
+      "signExplanation": "Bord C19 verbiedt de toegang voor voetgangers (art. 68 KB 1 december 1975)."
     },
     {
       "id": "rec-c21",
@@ -1744,7 +1886,9 @@
       ],
       "correctIndex": 1,
       "explanation": "Bord C21 verbiedt de toegang voor bestuurders van voertuigen waarvan de werkelijke massa in beladen toestand (MBTA) hoger is dan de aangeduide massa (art. 68 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68",
+      "signTitle": "Verboden toegang voor bestuurders van voertuigen waarvan de massa in beladen toestand hoger is dan de aangeduide massa",
+      "signExplanation": "Bord C21 verbiedt de toegang voor bestuurders van voertuigen waarvan de werkelijke massa in beladen toestand (MBTA) hoger is dan de aangeduide massa (art. 68 KB 1 december 1975)."
     },
     {
       "id": "rec-c22",
@@ -1760,7 +1904,9 @@
       ],
       "correctIndex": 2,
       "explanation": "Bord C22 verbiedt de toegang voor bestuurders van autocars (art. 68 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68",
+      "signTitle": "Verboden toegang voor bestuurders van autocars",
+      "signExplanation": "Bord C22 verbiedt de toegang voor bestuurders van autocars (art. 68 KB 1 december 1975)."
     },
     {
       "id": "rec-c23",
@@ -1776,7 +1922,9 @@
       ],
       "correctIndex": 3,
       "explanation": "Bord C23 verbiedt de toegang voor bestuurders van motorvoertuigen en slepen ontworpen en gebouwd voor goederenvervoer (art. 68 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68",
+      "signTitle": "Verboden toegang voor bestuurders van motorvoertuigen en slepen ontworpen en gebouwd voor het vervoer van goederen",
+      "signExplanation": "Bord C23 verbiedt de toegang voor bestuurders van motorvoertuigen en slepen ontworpen en gebouwd voor goederenvervoer (art. 68 KB 1 december 1975)."
     },
     {
       "id": "rec-c24a",
@@ -1792,7 +1940,9 @@
       ],
       "correctIndex": 0,
       "explanation": "Bord C24a verbiedt de toegang voor bestuurders van voertuigen die gevaarlijke goederen vervoeren (art. 68 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68",
+      "signTitle": "Verboden toegang voor bestuurders van voertuigen die gevaarlijke goederen vervoeren",
+      "signExplanation": "Bord C24a verbiedt de toegang voor bestuurders van voertuigen die gevaarlijke goederen vervoeren (art. 68 KB 1 december 1975)."
     },
     {
       "id": "rec-c24b",
@@ -1808,7 +1958,9 @@
       ],
       "correctIndex": 1,
       "explanation": "Bord C24b verbiedt de toegang voor bestuurders van voertuigen die gevaarlijke ontvlambare of ontplofbare stoffen vervoeren (art. 68 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68",
+      "signTitle": "Verboden toegang voor bestuurders van voertuigen die gevaarlijke ontvlambare of ontplofbare stoffen vervoeren",
+      "signExplanation": "Bord C24b verbiedt de toegang voor bestuurders van voertuigen die gevaarlijke ontvlambare of ontplofbare stoffen vervoeren (art. 68 KB 1 december 1975)."
     },
     {
       "id": "rec-c24c",
@@ -1824,7 +1976,9 @@
       ],
       "correctIndex": 2,
       "explanation": "Bord C24c verbiedt de toegang voor bestuurders van voertuigen die gevaarlijke verontreinigende stoffen vervoeren (art. 68 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68",
+      "signTitle": "Verboden toegang voor bestuurders van voertuigen die gevaarlijke verontreinigende stoffen vervoeren",
+      "signExplanation": "Bord C24c verbiedt de toegang voor bestuurders van voertuigen die gevaarlijke verontreinigende stoffen vervoeren (art. 68 KB 1 december 1975)."
     },
     {
       "id": "rec-c25",
@@ -1840,7 +1994,9 @@
       ],
       "correctIndex": 3,
       "explanation": "Bord C25 verbiedt de toegang voor bestuurders van voertuigen of slepen waarvan de lengte, lading inbegrepen, groter is dan aangeduid op het bord (art. 68 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68",
+      "signTitle": "Verboden toegang voor bestuurders van voertuigen of slepen waarvan de lengte, lading inbegrepen, groter is dan de aangeduide",
+      "signExplanation": "Bord C25 verbiedt de toegang voor bestuurders van voertuigen of slepen waarvan de lengte, lading inbegrepen, groter is dan aangeduid op het bord (art. 68 KB 1 december 1975)."
     },
     {
       "id": "rec-c27",
@@ -1856,7 +2012,9 @@
       ],
       "correctIndex": 0,
       "explanation": "Bord C27 verbiedt de toegang voor bestuurders van voertuigen waarvan de breedte, lading inbegrepen, groter is dan de aangeduide maat (art. 68 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68",
+      "signTitle": "Verboden toegang voor bestuurders van voertuigen waarvan de breedte, lading inbegrepen, groter is dan de aangeduide",
+      "signExplanation": "Bord C27 verbiedt de toegang voor bestuurders van voertuigen waarvan de breedte, lading inbegrepen, groter is dan de aangeduide maat (art. 68 KB 1 december 1975)."
     },
     {
       "id": "rec-c29",
@@ -1872,7 +2030,9 @@
       ],
       "correctIndex": 1,
       "explanation": "Bord C29 verbiedt de toegang voor bestuurders van voertuigen waarvan de hoogte, lading inbegrepen, groter is dan de aangeduide hoogte (art. 68 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68",
+      "signTitle": "Verboden toegang voor bestuurders van voertuigen waarvan de hoogte, lading inbegrepen, groter is dan de aangeduide",
+      "signExplanation": "Bord C29 verbiedt de toegang voor bestuurders van voertuigen waarvan de hoogte, lading inbegrepen, groter is dan de aangeduide hoogte (art. 68 KB 1 december 1975)."
     },
     {
       "id": "rec-c31b",
@@ -1888,7 +2048,9 @@
       ],
       "correctIndex": 2,
       "explanation": "Bord C31b verbiedt om op het eerstvolgende kruispunt af te slaan in de richting aangeduid door de pijl, hier rechtsaf (art. 68 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68",
+      "signTitle": "Verbod aan het volgend kruispunt af te slaan in de richting door de pijl aangegeven (rechts)",
+      "signExplanation": "Bord C31b verbiedt om op het eerstvolgende kruispunt af te slaan in de richting aangeduid door de pijl, hier rechtsaf (art. 68 KB 1 december 1975)."
     },
     {
       "id": "rec-c37",
@@ -1904,7 +2066,9 @@
       ],
       "correctIndex": 3,
       "explanation": "Bord C37 duidt het einde aan van het inhaalverbod dat was opgelegd door bord C35 (art. 68 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68",
+      "signTitle": "Einde van het verbod een gespan of een voertuig met meer dan twee wielen links in te halen",
+      "signExplanation": "Bord C37 duidt het einde aan van het inhaalverbod dat was opgelegd door bord C35 (art. 68 KB 1 december 1975)."
     },
     {
       "id": "rec-c41",
@@ -1920,7 +2084,9 @@
       ],
       "correctIndex": 0,
       "explanation": "Bord C41 duidt het einde aan van het inhaalverbod voor bestuurders van voertuigen gebruikt voor goederenvervoer met een MTM van meer dan 3,5 ton (einde bord C39, art. 68 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68",
+      "signTitle": "Einde van het verbod voor goederenvoertuigen met een MTM van meer dan 3,5 ton om links in te halen",
+      "signExplanation": "Bord C41 duidt het einde aan van het inhaalverbod voor bestuurders van voertuigen gebruikt voor goederenvervoer met een MTM van meer dan 3,5 ton (einde bord C39, art. 68 KB 1 december 1975)."
     },
     {
       "id": "rec-c43",
@@ -1936,7 +2102,9 @@
       ],
       "correctIndex": 1,
       "explanation": "Bord C43 verbiedt te rijden met een grotere snelheid dan aangeduid, vanaf het bord tot het volgend kruispunt, tenzij anders aangegeven (art. 68 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68",
+      "signTitle": "Verbod te rijden met een grotere snelheid dan deze die is aangeduid tot het volgend kruispunt",
+      "signExplanation": "Bord C43 verbiedt te rijden met een grotere snelheid dan aangeduid, vanaf het bord tot het volgend kruispunt, tenzij anders aangegeven (art. 68 KB 1 december 1975)."
     },
     {
       "id": "rec-c45",
@@ -1952,7 +2120,9 @@
       ],
       "correctIndex": 2,
       "explanation": "Bord C45 duidt het einde aan van de snelheidsbeperking die eerder werd opgelegd door bord C43 (art. 68 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68",
+      "signTitle": "Einde van de snelheidsbeperking opgelegd door het verkeersbord C43",
+      "signExplanation": "Bord C45 duidt het einde aan van de snelheidsbeperking die eerder werd opgelegd door bord C43 (art. 68 KB 1 december 1975)."
     },
     {
       "id": "rec-c46",
@@ -1968,7 +2138,9 @@
       ],
       "correctIndex": 3,
       "explanation": "Bord C46 duidt het einde aan van alle plaatselijke verbodsbepalingen die eerder werden opgelegd aan voertuigen in beweging, zoals snelheidsbeperkingen en inhaalverboden (art. 68 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68",
+      "signTitle": "Einde van alle plaatselijke verbodsbepalingen opgelegd aan de voertuigen in beweging",
+      "signExplanation": "Bord C46 duidt het einde aan van alle plaatselijke verbodsbepalingen die eerder werden opgelegd aan voertuigen in beweging, zoals snelheidsbeperkingen en inhaalverboden (art. 68 KB 1 december 1975)."
     },
     {
       "id": "rec-c47",
@@ -1984,7 +2156,9 @@
       ],
       "correctIndex": 3,
       "explanation": "Bord C47 (Tolpost of Taks) legt een verbod op om voorbij te rijden zonder te stoppen (art. 68 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68",
+      "signTitle": "Tolpost: verbod voorbij te rijden zonder te stoppen",
+      "signExplanation": "Bord C47 (Tolpost of Taks) legt een verbod op om voorbij te rijden zonder te stoppen (art. 68 KB 1 december 1975)."
     },
     {
       "id": "rec-d9",
@@ -2000,7 +2174,9 @@
       ],
       "correctIndex": 3,
       "explanation": "Bord D9 duidt een deel van de openbare weg aan dat voorbehouden is voor het verkeer van voetgangers, fietsers en tweewielige bromfietsen klasse A (art. 69.3).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-69"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-69",
+      "signTitle": "Deel van de openbare weg voorbehouden voor voetgangers, fietsers en bromfietsers klasse A",
+      "signExplanation": "Bord D9 duidt een deel van de openbare weg aan dat voorbehouden is voor het verkeer van voetgangers, fietsers en tweewielige bromfietsen klasse A (art. 69.3)."
     },
     {
       "id": "rec-d10",
@@ -2016,7 +2192,9 @@
       ],
       "correctIndex": 1,
       "explanation": "Bord D10 duidt een pad aan voorbehouden voor voetgangers en fietsers; in tegenstelling tot bord D9 mogen bromfietsen klasse A hier niet rijden (art. 69.3).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-69"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-69",
+      "signTitle": "Deel van de openbare weg voorbehouden voor voetgangers en fietsers (zonder bromfietsen)",
+      "signExplanation": "Bord D10 duidt een pad aan voorbehouden voor voetgangers en fietsers; in tegenstelling tot bord D9 mogen bromfietsen klasse A hier niet rijden (art. 69.3)."
     },
     {
       "id": "rec-d1b",
@@ -2032,7 +2210,9 @@
       ],
       "correctIndex": 0,
       "explanation": "Dit gebodsbord (D1) verplicht je de rijrichting van de pijl te volgen, hier links (art. 69.3 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-69"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-69",
+      "signTitle": "Verplichte rijrichting: links",
+      "signExplanation": "Dit gebodsbord (D1) verplicht je de rijrichting van de pijl te volgen, hier links (art. 69.3 van de Wegcode)."
     },
     {
       "id": "rec-d1c",
@@ -2048,7 +2228,9 @@
       ],
       "correctIndex": 1,
       "explanation": "Bord D1c legt de verplichting op om de hindernis langs de door de pijl aangeduide zijde voorbij te rijden, hier links (art. 69 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-69"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-69",
+      "signTitle": "Verplichting om de hindernis langs links voorbij te rijden",
+      "signExplanation": "Bord D1c legt de verplichting op om de hindernis langs de door de pijl aangeduide zijde voorbij te rijden, hier links (art. 69 KB 1 december 1975)."
     },
     {
       "id": "rec-d1d",
@@ -2064,7 +2246,9 @@
       ],
       "correctIndex": 2,
       "explanation": "Bord D1d legt de verplichting op om de hindernis langs de door de pijl aangeduide zijde voorbij te rijden, hier rechts (art. 69 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-69"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-69",
+      "signTitle": "Verplichting om de hindernis langs rechts voorbij te rijden",
+      "signExplanation": "Bord D1d legt de verplichting op om de hindernis langs de door de pijl aangeduide zijde voorbij te rijden, hier rechts (art. 69 KB 1 december 1975)."
     },
     {
       "id": "rec-d1e",
@@ -2080,7 +2264,9 @@
       ],
       "correctIndex": 3,
       "explanation": "Dit gebodsbord (D1, alternatieve uitvoering) verplicht je de rijrichting van de pijl te volgen, hier links (art. 69.3 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-69"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-69",
+      "signTitle": "Verplichte rijrichting: links",
+      "signExplanation": "Dit gebodsbord (D1, alternatieve uitvoering) verplicht je de rijrichting van de pijl te volgen, hier links (art. 69.3 van de Wegcode)."
     },
     {
       "id": "rec-d3",
@@ -2096,7 +2282,9 @@
       ],
       "correctIndex": 0,
       "explanation": "Bord D3 verplicht bestuurders om één van de door de pijlen aangeduide richtingen te volgen, hier rechtdoor of rechtsaf (art. 69 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-69"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-69",
+      "signTitle": "Verplichting om één van de door de pijlen aangeduide richtingen te volgen",
+      "signExplanation": "Bord D3 verplicht bestuurders om één van de door de pijlen aangeduide richtingen te volgen, hier rechtdoor of rechtsaf (art. 69 KB 1 december 1975)."
     },
     {
       "id": "rec-d4",
@@ -2112,7 +2300,9 @@
       ],
       "correctIndex": 1,
       "explanation": "Bord D4 legt een verplichte rijrichting op voor voertuigen die gevaarlijke goederen vervoeren (art. 69 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-69"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-69",
+      "signTitle": "Verplichte rijrichting voor voertuigen die gevaarlijke goederen vervoeren",
+      "signExplanation": "Bord D4 legt een verplichte rijrichting op voor voertuigen die gevaarlijke goederen vervoeren (art. 69 KB 1 december 1975)."
     },
     {
       "id": "rec-d11",
@@ -2128,7 +2318,9 @@
       ],
       "correctIndex": 2,
       "explanation": "Bord D11 legt een verplichte weg voor voetgangers op; dit pad is uitsluitend voorbehouden voor voetgangers (art. 69 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-69"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-69",
+      "signTitle": "Verplichte weg voor voetgangers (voetpad)",
+      "signExplanation": "Bord D11 legt een verplichte weg voor voetgangers op; dit pad is uitsluitend voorbehouden voor voetgangers (art. 69 KB 1 december 1975)."
     },
     {
       "id": "rec-d13",
@@ -2144,7 +2336,9 @@
       ],
       "correctIndex": 3,
       "explanation": "Bord D13 legt een verplichte weg voor ruiters op; dit pad is uitsluitend voorbehouden voor bereden dieren (art. 69 KB 1 december 1975).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-69"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-69",
+      "signTitle": "Verplichte weg voor ruiters (ruiterpad)",
+      "signExplanation": "Bord D13 legt een verplichte weg voor ruiters op; dit pad is uitsluitend voorbehouden voor bereden dieren (art. 69 KB 1 december 1975)."
     },
     {
       "id": "rec-e3",
@@ -2160,7 +2354,9 @@
       ],
       "correctIndex": 2,
       "explanation": "Bord E3 betekent dat zowel stilstaan als parkeren verboden is aan de zijde van de openbare weg waar het bord staat (art. 70.2.1).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-70"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-70",
+      "signTitle": "Stilstaan en parkeren verboden",
+      "signExplanation": "Bord E3 betekent dat zowel stilstaan als parkeren verboden is aan de zijde van de openbare weg waar het bord staat (art. 70.2.1)."
     },
     {
       "id": "rec-e5",
@@ -2176,7 +2372,9 @@
       ],
       "correctIndex": 0,
       "explanation": "Bord E5 legt een parkeerverbod op langs de kant van de weg waar het staat, van de 1e tot de 15e van de maand (art. 70.2.1).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-70"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-70",
+      "signTitle": "Parkeerverbod van de 1e tot de 15e van de maand",
+      "signExplanation": "Bord E5 legt een parkeerverbod op langs de kant van de weg waar het staat, van de 1e tot de 15e van de maand (art. 70.2.1)."
     },
     {
       "id": "rec-e7",
@@ -2192,7 +2390,9 @@
       ],
       "correctIndex": 1,
       "explanation": "Bord E7 legt een parkeerverbod op langs de kant van de weg waar het staat, van de 16e tot het einde van de maand (art. 70.2.1).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-70"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-70",
+      "signTitle": "Parkeerverbod van de 16e tot het einde van de maand",
+      "signExplanation": "Bord E7 legt een parkeerverbod op langs de kant van de weg waar het staat, van de 16e tot het einde van de maand (art. 70.2.1)."
     },
     {
       "id": "rec-e9a",
@@ -2209,7 +2409,9 @@
       "correctIndex": 3,
       "explanation": "Bord E9a met rolstoelsymbool geeft aan dat het parkeren uitsluitend voorbehouden is voor voertuigen gebruikt door personen met een handicap met een speciale parkeerkaart (art. 70.2.1).",
       "since": 1990,
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-70"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-70",
+      "signTitle": "Parkeerplaats voorbehouden voor personen met een handicap",
+      "signExplanation": "Bord E9a met rolstoelsymbool geeft aan dat het parkeren uitsluitend voorbehouden is voor voertuigen gebruikt door personen met een handicap met een speciale parkeerkaart (art. 70.2.1)."
     },
     {
       "id": "rec-e9b",
@@ -2225,7 +2427,9 @@
       ],
       "correctIndex": 2,
       "explanation": "Bord E9b geeft aan dat het parkeren uitsluitend is voorbehouden voor motorfietsen, personenauto's, auto's voor dubbelgebruik en minibussen (art. 70.2.1).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-70"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-70",
+      "signTitle": "Parkeren uitsluitend voor motorfietsen, personenauto's, auto's voor dubbelgebruik en minibussen",
+      "signExplanation": "Bord E9b geeft aan dat het parkeren uitsluitend is voorbehouden voor motorfietsen, personenauto's, auto's voor dubbelgebruik en minibussen (art. 70.2.1)."
     },
     {
       "id": "rec-e9c",
@@ -2241,7 +2445,9 @@
       ],
       "correctIndex": 3,
       "explanation": "Bord E9c geeft aan dat de parkeergelegenheid uitsluitend voorbehouden is voor lichte vrachtauto's en vrachtauto's (art. 70.2.1).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-70"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-70",
+      "signTitle": "Parkeren uitsluitend voor lichte vrachtauto's en vrachtauto's",
+      "signExplanation": "Bord E9c geeft aan dat de parkeergelegenheid uitsluitend voorbehouden is voor lichte vrachtauto's en vrachtauto's (art. 70.2.1)."
     },
     {
       "id": "rec-e9d",
@@ -2257,7 +2463,9 @@
       ],
       "correctIndex": 0,
       "explanation": "Bord E9d duidt een parkeerplaats aan die uitsluitend voorbehouden is voor autocars (autobussen) (art. 70.2.1).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-70"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-70",
+      "signTitle": "Parkeren uitsluitend voor autocars",
+      "signExplanation": "Bord E9d duidt een parkeerplaats aan die uitsluitend voorbehouden is voor autocars (autobussen) (art. 70.2.1)."
     },
     {
       "id": "rec-e9e",
@@ -2273,7 +2481,9 @@
       ],
       "correctIndex": 1,
       "explanation": "Bord E9e verplicht bestuurders om het voertuig volledig op de berm of op het trottoir te parkeren (art. 70.2.1).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-70"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-70",
+      "signTitle": "Verplicht parkeren op de berm of op het trottoir",
+      "signExplanation": "Bord E9e verplicht bestuurders om het voertuig volledig op de berm of op het trottoir te parkeren (art. 70.2.1)."
     },
     {
       "id": "rec-e9f",
@@ -2289,7 +2499,9 @@
       ],
       "correctIndex": 2,
       "explanation": "Bord E9f legt de verplichting op om deels op de berm of op het trottoir en deels op de rijbaan te parkeren (art. 70.2.1).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-70"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-70",
+      "signTitle": "Verplicht parkeren deels op de berm of op het trottoir",
+      "signExplanation": "Bord E9f legt de verplichting op om deels op de berm of op het trottoir en deels op de rijbaan te parkeren (art. 70.2.1)."
     },
     {
       "id": "rec-e9g",
@@ -2305,7 +2517,9 @@
       ],
       "correctIndex": 3,
       "explanation": "Bord E9g verplicht bestuurders om op de rijbaan te parkeren en verbiedt het parkeren op de berm of het trottoir (art. 70.2.1).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-70"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-70",
+      "signTitle": "Verplicht parkeren op de rijbaan",
+      "signExplanation": "Bord E9g verplicht bestuurders om op de rijbaan te parkeren en verbiedt het parkeren op de berm of het trottoir (art. 70.2.1)."
     },
     {
       "id": "rec-e9h",
@@ -2321,7 +2535,9 @@
       ],
       "correctIndex": 0,
       "explanation": "Bord E9h duidt een parkeerplaats aan die uitsluitend voorbehouden is voor kampeerauto's (campers/mobilhomes) (art. 70.2.1).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-70"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-70",
+      "signTitle": "Parkeren uitsluitend voor kampeerauto's",
+      "signExplanation": "Bord E9h duidt een parkeerplaats aan die uitsluitend voorbehouden is voor kampeerauto's (campers/mobilhomes) (art. 70.2.1)."
     },
     {
       "id": "rec-e9i",
@@ -2337,7 +2553,9 @@
       ],
       "correctIndex": 1,
       "explanation": "Bord E9i geeft aan dat het parkeren uitsluitend voorbehouden is voor motorfietsen (art. 70.2.1).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-70"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-70",
+      "signTitle": "Parkeren uitsluitend voor motorfietsen",
+      "signExplanation": "Bord E9i geeft aan dat het parkeren uitsluitend voorbehouden is voor motorfietsen (art. 70.2.1)."
     },
     {
       "id": "rec-e9j",
@@ -2353,7 +2571,9 @@
       ],
       "correctIndex": 2,
       "explanation": "Bord E9j duidt aan dat het parkeren tijdens bepaalde tijdsperioden voorbehouden is voor specifieke categorieën van voertuigen (art. 70.2.1).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-70"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-70",
+      "signTitle": "Wisselend parkeren met voorbehouden parkeertijd per categorie van voertuigen",
+      "signExplanation": "Bord E9j duidt aan dat het parkeren tijdens bepaalde tijdsperioden voorbehouden is voor specifieke categorieën van voertuigen (art. 70.2.1)."
     },
     {
       "id": "rec-e11",
@@ -2369,7 +2589,9 @@
       ],
       "correctIndex": 3,
       "explanation": "Bord E11 duidt aan dat in de ganse bebouwde kom beurtelings halfmaandelijks geparkeerd moet worden (art. 70.3).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-70"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-70",
+      "signTitle": "Halfmaandelijks parkeren in gans de bebouwde kom",
+      "signExplanation": "Bord E11 duidt aan dat in de ganse bebouwde kom beurtelings halfmaandelijks geparkeerd moet worden (art. 70.3)."
     },
     {
       "id": "rec-f1b",
@@ -2385,7 +2607,9 @@
       ],
       "correctIndex": 0,
       "explanation": "Bord F1b geeft het begin van een bebouwde kom aan (art. 71.2), waar in Vlaanderen een standaard maximumsnelheid van 50 km/u geldt.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Begin van een bebouwde kom",
+      "signExplanation": "Bord F1b geeft het begin van een bebouwde kom aan (art. 71.2), waar in Vlaanderen een standaard maximumsnelheid van 50 km/u geldt."
     },
     {
       "id": "rec-f3b",
@@ -2401,7 +2625,9 @@
       ],
       "correctIndex": 1,
       "explanation": "Bord F3b geeft het einde van een bebouwde kom aan (art. 71.2).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Einde van een bebouwde kom",
+      "signExplanation": "Bord F3b geeft het einde van een bebouwde kom aan (art. 71.2)."
     },
     {
       "id": "rec-f19",
@@ -2417,7 +2643,9 @@
       ],
       "correctIndex": 2,
       "explanation": "Bord F19 geeft aan dat je op een openbare weg met eenrichtingsverkeer rijdt (art. 71.2).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Weg met eenrichtingsverkeer",
+      "signExplanation": "Bord F19 geeft aan dat je op een openbare weg met eenrichtingsverkeer rijdt (art. 71.2)."
     },
     {
       "id": "rec-f49",
@@ -2433,7 +2661,9 @@
       ],
       "correctIndex": 3,
       "explanation": "Aanwijzingsbord F49 duidt de precieze plaats van een oversteekplaats voor voetgangers aan (art. 71.2).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Plaats van een oversteekplaats voor voetgangers",
+      "signExplanation": "Aanwijzingsbord F49 duidt de precieze plaats van een oversteekplaats voor voetgangers aan (art. 71.2)."
     },
     {
       "id": "rec-f1a",
@@ -2449,7 +2679,9 @@
       ],
       "correctIndex": 0,
       "explanation": "Verkeersbord F1a geeft het begin van een bebouwde kom aan (art. 71.2 van de Wegcode). In Vlaanderen geldt hier standaard maximaal 50 km/u, in Brussel 30 km/u.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Begin van een bebouwde kom",
+      "signExplanation": "Verkeersbord F1a geeft het begin van een bebouwde kom aan (art. 71.2 van de Wegcode). In Vlaanderen geldt hier standaard maximaal 50 km/u, in Brussel 30 km/u."
     },
     {
       "id": "rec-f3a",
@@ -2465,7 +2697,9 @@
       ],
       "correctIndex": 1,
       "explanation": "Verkeersbord F3a geeft het einde van een bebouwde kom aan (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Einde van een bebouwde kom",
+      "signExplanation": "Verkeersbord F3a geeft het einde van een bebouwde kom aan (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f4a",
@@ -2481,7 +2715,9 @@
       ],
       "correctIndex": 2,
       "explanation": "Bord F4a geeft het begin aan van een zone met een snelheidsbeperking van 30 km per uur (art. 71.2 van de Wegcode). Deze limiet geldt voor de volledige zone tot bord F4b.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Begin van een zone met een snelheidsbeperking van 30 km per uur",
+      "signExplanation": "Bord F4a geeft het begin aan van een zone met een snelheidsbeperking van 30 km per uur (art. 71.2 van de Wegcode). Deze limiet geldt voor de volledige zone tot bord F4b."
     },
     {
       "id": "rec-f4b",
@@ -2497,7 +2733,9 @@
       ],
       "correctIndex": 3,
       "explanation": "Bord F4b duidt het einde aan van een zone met een snelheidsbeperking van 30 km per uur (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Einde van een zone met een snelheidsbeperking van 30 km per uur",
+      "signExplanation": "Bord F4b duidt het einde aan van een zone met een snelheidsbeperking van 30 km per uur (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f7",
@@ -2513,7 +2751,9 @@
       ],
       "correctIndex": 0,
       "explanation": "Verkeersbord F7 duidt het einde van een autosnelweg aan (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Einde van een autosnelweg",
+      "signExplanation": "Verkeersbord F7 duidt het einde van een autosnelweg aan (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f8",
@@ -2529,7 +2769,9 @@
       ],
       "correctIndex": 1,
       "explanation": "Aanwijzingsbord F8 duidt een tunnel aan met een lengte van meer dan 500 meter (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Tunnel met een lengte van meer dan 500 meter",
+      "signExplanation": "Aanwijzingsbord F8 duidt een tunnel aan met een lengte van meer dan 500 meter (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f9",
@@ -2545,7 +2787,9 @@
       ],
       "correctIndex": 2,
       "explanation": "Verkeersbord F9 geeft het begin aan van een autoweg (art. 71.2 van de Wegcode), waar de specifieke regels voor autowegen van toepassing zijn.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Begin van een autoweg",
+      "signExplanation": "Verkeersbord F9 geeft het begin aan van een autoweg (art. 71.2 van de Wegcode), waar de specifieke regels voor autowegen van toepassing zijn."
     },
     {
       "id": "rec-f11",
@@ -2561,7 +2805,9 @@
       ],
       "correctIndex": 0,
       "explanation": "Verkeersbord F11 duidt het einde aan van een autoweg (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Einde van een autoweg",
+      "signExplanation": "Verkeersbord F11 duidt het einde aan van een autoweg (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f12a",
@@ -2577,7 +2823,9 @@
       ],
       "correctIndex": 1,
       "explanation": "Bord F12a geeft het begin aan van een woonerf of erf (art. 71.2 van de Wegcode). De maximumsnelheid bedraagt 20 km/u en voetgangers mogen de hele breedte van de weg gebruiken.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Begin van een woonerf of van een erf",
+      "signExplanation": "Bord F12a geeft het begin aan van een woonerf of erf (art. 71.2 van de Wegcode). De maximumsnelheid bedraagt 20 km/u en voetgangers mogen de hele breedte van de weg gebruiken."
     },
     {
       "id": "rec-f12b",
@@ -2593,7 +2841,9 @@
       ],
       "correctIndex": 2,
       "explanation": "Bord F12b duidt het einde aan van een woonerf of van een erf (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Einde van een woonerf of van een erf",
+      "signExplanation": "Bord F12b duidt het einde aan van een woonerf of van een erf (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f13",
@@ -2609,7 +2859,9 @@
       ],
       "correctIndex": 3,
       "explanation": "Bord F13 kondigt pijlen op het wegdek aan en schrijft de keuze van een rijstrook voor overeenkomstig de gewenste rijrichting (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Verkeersbord dat pijlen op de rijbaan aankondigt en de keuze van een rijstrook voorschrijft",
+      "signExplanation": "Bord F13 kondigt pijlen op het wegdek aan en schrijft de keuze van een rijstrook voor overeenkomstig de gewenste rijrichting (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f14",
@@ -2625,7 +2877,9 @@
       ],
       "correctIndex": 0,
       "explanation": "Bord F14 duidt een opstelvak aan (art. 71.2 van de Wegcode), waar fietsers en tweewielige bromfietsers klasse A zich vóór het verkeerslicht mogen opstellen.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Opstelvak voor fietsers en bestuurders van tweewielige bromfietsen",
+      "signExplanation": "Bord F14 duidt een opstelvak aan (art. 71.2 van de Wegcode), waar fietsers en tweewielige bromfietsers klasse A zich vóór het verkeerslicht mogen opstellen."
     },
     {
       "id": "rec-f15",
@@ -2641,7 +2895,9 @@
       ],
       "correctIndex": 1,
       "explanation": "Bord F15 is een verkeersbord dat door middel van pijlen boven de rijbaan de keuze van een richting voorschrijft per rijstrook (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Verkeersbord dat de keuze van een richting voorschrijft",
+      "signExplanation": "Bord F15 is een verkeersbord dat door middel van pijlen boven de rijbaan de keuze van een richting voorschrijft per rijstrook (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f17",
@@ -2657,7 +2913,9 @@
       ],
       "correctIndex": 0,
       "explanation": "Aanwijzingsbord F17 toont de indeling van rijstroken met een strook voorbehouden voor voertuigen van geregelde diensten voor gemeenschappelijk vervoer (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Aanduiding van de rijstroken van een rijbaan met een strook voorbehouden voor autobussen",
+      "signExplanation": "Aanwijzingsbord F17 toont de indeling van rijstroken met een strook voorbehouden voor voertuigen van geregelde diensten voor gemeenschappelijk vervoer (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f18",
@@ -2673,7 +2931,9 @@
       ],
       "correctIndex": 1,
       "explanation": "Bord F18 wijst een bijzondere overrijdbare bedding aan die voorbehouden is voor voertuigen van geregelde diensten voor gemeenschappelijk vervoer (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Aanwijzing van een bijzondere overrijdbare bedding, voorbehouden aan het openbaar vervoer",
+      "signExplanation": "Bord F18 wijst een bijzondere overrijdbare bedding aan die voorbehouden is voor voertuigen van geregelde diensten voor gemeenschappelijk vervoer (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f21",
@@ -2689,7 +2949,9 @@
       ],
       "correctIndex": 0,
       "explanation": "Aanwijzingsbord F21 geeft aan dat bestuurders een hindernis of vluchtheuvel zowel links als rechts mogen voorbijrijden (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Rechts of links voorbijrijden toegelaten",
+      "signExplanation": "Aanwijzingsbord F21 geeft aan dat bestuurders een hindernis of vluchtheuvel zowel links als rechts mogen voorbijrijden (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f23a",
@@ -2705,7 +2967,9 @@
       ],
       "correctIndex": 1,
       "explanation": "Bord F23a geeft het identificatienummer aan van een gewone weg, zoals een nationale of gewestweg (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Nummer van een gewone weg",
+      "signExplanation": "Bord F23a geeft het identificatienummer aan van een gewone weg, zoals een nationale of gewestweg (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f23b",
@@ -2721,7 +2985,9 @@
       ],
       "correctIndex": 2,
       "explanation": "Bord F23b duidt het administratieve nummer van een autosnelweg aan (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Nummer van een autosnelweg",
+      "signExplanation": "Bord F23b duidt het administratieve nummer van een autosnelweg aan (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f23c",
@@ -2737,7 +3003,9 @@
       ],
       "correctIndex": 3,
       "explanation": "Bord F23c duidt het nummer van een internationale weg (Europese E-route) aan (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Nummer van een internationale weg",
+      "signExplanation": "Bord F23c duidt het nummer van een internationale weg (Europese E-route) aan (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f23d",
@@ -2753,7 +3021,9 @@
       ],
       "correctIndex": 3,
       "explanation": "Bord F23d duidt het routenummer van een ringweg (ring) rond een agglomeratie of stad aan (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Nummer van een ring",
+      "signExplanation": "Bord F23d duidt het routenummer van een ringweg (ring) rond een agglomeratie of stad aan (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f25",
@@ -2769,7 +3039,9 @@
       ],
       "correctIndex": 0,
       "explanation": "Bord F25 is een voorwegwijzer die voor het kruispunt de te volgen richtingen en bestemmingen aankondigt (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Voorwegwijzer",
+      "signExplanation": "Bord F25 is een voorwegwijzer die voor het kruispunt de te volgen richtingen en bestemmingen aankondigt (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f27",
@@ -2785,7 +3057,9 @@
       ],
       "correctIndex": 1,
       "explanation": "Bord F27 is, net als F25, een voorwegwijzer (art. 71.2). Het pictogram voor een reisweg over een autosnelweg mag optioneel op F25, F27, F29, F31, F39 en F41 afgebeeld worden, maar is geen vast kenmerk van F27 zelf.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Voorwegwijzer",
+      "signExplanation": "Bord F27 is, net als F25, een voorwegwijzer (art. 71.2). Het pictogram voor een reisweg over een autosnelweg mag optioneel op F25, F27, F29, F31, F39 en F41 afgebeeld worden, maar is geen vast kenmerk van F27 zelf."
     },
     {
       "id": "rec-f29",
@@ -2801,7 +3075,9 @@
       ],
       "correctIndex": 2,
       "explanation": "Bord F29 is een wegwijzer die op de afslag de richting naar een bestemming aanduidt, eventueel met afstandsvermelding (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Wegwijzer die de te volgen richting aanduidt naar een bestemming",
+      "signExplanation": "Bord F29 is een wegwijzer die op de afslag de richting naar een bestemming aanduidt, eventueel met afstandsvermelding (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f31",
@@ -2817,7 +3093,9 @@
       ],
       "correctIndex": 3,
       "explanation": "Bord F31 is een wegwijzer die aangeeft dat de aangeduide reisweg naar de bestemming over een autosnelweg loopt (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Wegwijzer die een reisweg over een autosnelweg aanduidt",
+      "signExplanation": "Bord F31 is een wegwijzer die aangeeft dat de aangeduide reisweg naar de bestemming over een autosnelweg loopt (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f33a",
@@ -2833,7 +3111,9 @@
       ],
       "correctIndex": 0,
       "explanation": "Bord F33a is een bewegwijzeringsbord op afstand naar specifieke bestemmingen zoals een haven, universiteit of industriepark (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Bewegwijzeringsbord op afstand naar een openbaar of industrieel centrum",
+      "signExplanation": "Bord F33a is een bewegwijzeringsbord op afstand naar specifieke bestemmingen zoals een haven, universiteit of industriepark (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f33b",
@@ -2849,7 +3129,9 @@
       ],
       "correctIndex": 1,
       "explanation": "Bord F33b is een toeristisch bewegwijzeringsbord op afstand dat leidt naar een vallei of waterloop van toeristische aard (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Bewegwijzeringsbord op afstand naar een vallei of waterloop van toeristische aard",
+      "signExplanation": "Bord F33b is een toeristisch bewegwijzeringsbord op afstand dat leidt naar een vallei of waterloop van toeristische aard (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f33c",
@@ -2865,7 +3147,9 @@
       ],
       "correctIndex": 2,
       "explanation": "Bord F33c wijst op afstand de weg naar monumenten, recreatieparken, sportcentra of toeristische trekpleisters (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Bewegwijzeringsbord op afstand naar een toeristische bezienswaardigheid of recreatiegebied",
+      "signExplanation": "Bord F33c wijst op afstand de weg naar monumenten, recreatieparken, sportcentra of toeristische trekpleisters (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f34a",
@@ -2881,7 +3165,9 @@
       ],
       "correctIndex": 3,
       "explanation": "Bord F34a wijst in de nabijheid de weg naar openbare inrichtingen en instellingen van algemeen belang (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Bewegwijzeringsbord in de nabijheid van een openbare inrichting of dienst van algemeen belang",
+      "signExplanation": "Bord F34a wijst in de nabijheid de weg naar openbare inrichtingen en instellingen van algemeen belang (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f35",
@@ -2897,7 +3183,9 @@
       ],
       "correctIndex": 3,
       "explanation": "Bord F35 is een toeristische wegwijzer naar een bezienswaardigheid, monument, sportcentrum of recreatiepark (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Toeristische wegwijzer naar een monument, bezienswaardigheid of recreatiepark",
+      "signExplanation": "Bord F35 is een toeristische wegwijzer naar een bezienswaardigheid, monument, sportcentrum of recreatiepark (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f37",
@@ -2913,7 +3201,9 @@
       ],
       "correctIndex": 3,
       "explanation": "Bord F37 wijst de richting aan naar toeristische verblijfsaccommodaties, zoals hotels, campings of jeugdherbergen (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Toeristische wegwijzer naar een verblijfsaccommodatie, camping of jeugdherberg",
+      "signExplanation": "Bord F37 wijst de richting aan naar toeristische verblijfsaccommodaties, zoals hotels, campings of jeugdherbergen (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f39",
@@ -2929,7 +3219,9 @@
       ],
       "correctIndex": 0,
       "explanation": "Bord F39 is een voorwegwijzer die bestuurders vooraf waarschuwt voor een omlegging van de normale reisweg (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Voorwegwijzer die een omlegging aankondigt",
+      "signExplanation": "Bord F39 is een voorwegwijzer die bestuurders vooraf waarschuwt voor een omlegging van de normale reisweg (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f41",
@@ -2945,7 +3237,9 @@
       ],
       "correctIndex": 1,
       "explanation": "Bord F41 is een wegwijzer die tijdens een omlegging de richting aangeeft van de te volgen omleggingsweg (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Wegwijzer die een omleggingsweg aanduidt",
+      "signExplanation": "Bord F41 is een wegwijzer die tijdens een omlegging de richting aangeeft van de te volgen omleggingsweg (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f43",
@@ -2961,7 +3255,9 @@
       ],
       "correctIndex": 2,
       "explanation": "Bord F43 is een plaatsnaambord dat louter de naam van een plaats aanduidt; het legt geen snelheidsbeperking van een bebouwde kom op (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Plaatsnaambord zonder snelheidsbeperking van een bebouwde kom",
+      "signExplanation": "Bord F43 is een plaatsnaambord dat louter de naam van een plaats aanduidt; het legt geen snelheidsbeperking van een bebouwde kom op (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f45b",
@@ -2977,7 +3273,9 @@
       ],
       "correctIndex": 3,
       "explanation": "Bord F45b duidt een doodlopende weg aan die wél doorgankelijk blijft voor fietsers en voetgangers (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Doodlopende weg, uitgezonderd voor voetgangers en fietsers",
+      "signExplanation": "Bord F45b duidt een doodlopende weg aan die wél doorgankelijk blijft voor fietsers en voetgangers (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f47",
@@ -2993,7 +3291,9 @@
       ],
       "correctIndex": 2,
       "explanation": "Verkeersbord F47 geeft het einde van de werken op de openbare weg aan (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Einde van de werken",
+      "signExplanation": "Verkeersbord F47 geeft het einde van de werken op de openbare weg aan (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f50",
@@ -3009,7 +3309,9 @@
       ],
       "correctIndex": 2,
       "explanation": "Bord F50 duidt de precieze plaats aan van een oversteekplaats voor fietsers en bestuurders van tweewielige bromfietsen (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Oversteekplaats voor fietsers en bestuurders van tweewielige bromfietsen",
+      "signExplanation": "Bord F50 duidt de precieze plaats aan van een oversteekplaats voor fietsers en bestuurders van tweewielige bromfietsen (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f50bis",
@@ -3025,7 +3327,9 @@
       ],
       "correctIndex": 3,
       "explanation": "Bord F50bis wijst bestuurders die van richting veranderen op fietsers en tweewielige bromfietsers die dezelfde openbare weg rechtdoor blijven volgen (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Bord dat bestuurders die van richting veranderen wijst op fietsers en bestuurders van tweewielige bromfietsen die dezelfde weg volgen",
+      "signExplanation": "Bord F50bis wijst bestuurders die van richting veranderen op fietsers en tweewielige bromfietsers die dezelfde openbare weg rechtdoor blijven volgen (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f51",
@@ -3041,7 +3345,9 @@
       ],
       "correctIndex": 0,
       "explanation": "Bord F51 duidt een ondergrondse of bovengrondse oversteekplaats voor voetgangers aan (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Ondergrondse of bovengrondse oversteekplaats voor voetgangers",
+      "signExplanation": "Bord F51 duidt een ondergrondse of bovengrondse oversteekplaats voor voetgangers aan (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f52",
@@ -3057,7 +3363,9 @@
       ],
       "correctIndex": 1,
       "explanation": "Bord F52 kondigt een nooduitgang in tunnels aan (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Aankondiging van een nooduitgang in tunnels",
+      "signExplanation": "Bord F52 kondigt een nooduitgang in tunnels aan (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f52bis",
@@ -3073,7 +3381,9 @@
       ],
       "correctIndex": 2,
       "explanation": "Bord F52bis duidt een vluchtroute aan naar de dichtstbijzijnde nooduitgang in tunnels met aanduiding van richting en afstand (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Vluchtroute naar de dichtstbijzijnde nooduitgang in tunnels met aanduiding van richting en afstand",
+      "signExplanation": "Bord F52bis duidt een vluchtroute aan naar de dichtstbijzijnde nooduitgang in tunnels met aanduiding van richting en afstand (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f53",
@@ -3089,7 +3399,9 @@
       ],
       "correctIndex": 3,
       "explanation": "Bord F53 duidt een verplegingsinrichting aan waar stilte geboden is en bestuurders bijzonder voorzichtig moeten zijn (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Verplegingsinrichting",
+      "signExplanation": "Bord F53 duidt een verplegingsinrichting aan waar stilte geboden is en bestuurders bijzonder voorzichtig moeten zijn (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f55",
@@ -3105,7 +3417,9 @@
       ],
       "correctIndex": 0,
       "explanation": "Bord F55 duidt een hulppost aan waar eerste hulp bij ongevallen kan worden verkregen (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Hulppost",
+      "signExplanation": "Bord F55 duidt een hulppost aan waar eerste hulp bij ongevallen kan worden verkregen (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f56",
@@ -3121,7 +3435,9 @@
       ],
       "correctIndex": 1,
       "explanation": "Bord F56 duidt de aanwezigheid van een brandblusapparaat aan (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Brandblusapparaat",
+      "signExplanation": "Bord F56 duidt de aanwezigheid van een brandblusapparaat aan (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f57",
@@ -3137,7 +3453,9 @@
       ],
       "correctIndex": 2,
       "explanation": "Bord F57 duidt een waterloop aan, zoals een rivier, kanaal of beek (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Waterloop",
+      "signExplanation": "Bord F57 duidt een waterloop aan, zoals een rivier, kanaal of beek (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f59",
@@ -3153,7 +3471,9 @@
       ],
       "correctIndex": 3,
       "explanation": "Bord F59 kondigt een parking aan waar bestuurders hun voertuig kunnen parkeren (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Aankondiging van een parking",
+      "signExplanation": "Bord F59 kondigt een parking aan waar bestuurders hun voertuig kunnen parkeren (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f60",
@@ -3169,7 +3489,9 @@
       ],
       "correctIndex": 0,
       "explanation": "Bord F60 kondigt een overdekte parking (parkeergarage) aan (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Aankondiging van een overdekte parking",
+      "signExplanation": "Bord F60 kondigt een overdekte parking (parkeergarage) aan (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f61",
@@ -3185,7 +3507,9 @@
       ],
       "correctIndex": 1,
       "explanation": "Bord F61 duidt een openbare telefoon aan (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Telefoon",
+      "signExplanation": "Bord F61 duidt een openbare telefoon aan (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f62",
@@ -3201,7 +3525,9 @@
       ],
       "correctIndex": 2,
       "explanation": "Bord F62 duidt een noodtelefoon (praatpaal) aan voor noodgevallen en pech (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Noodtelefoon",
+      "signExplanation": "Bord F62 duidt een noodtelefoon (praatpaal) aan voor noodgevallen en pech (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f63",
@@ -3217,7 +3543,9 @@
       ],
       "correctIndex": 3,
       "explanation": "Bord F63 duidt een tankstation voor motorbrandstoffen of energie aan (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Tankstation",
+      "signExplanation": "Bord F63 duidt een tankstation voor motorbrandstoffen of energie aan (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f65",
@@ -3233,7 +3561,9 @@
       ],
       "correctIndex": 0,
       "explanation": "Bord F65 duidt een hotel of motel aan (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Hotel of motel",
+      "signExplanation": "Bord F65 duidt een hotel of motel aan (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f67",
@@ -3249,7 +3579,9 @@
       ],
       "correctIndex": 1,
       "explanation": "Bord F67 duidt een restaurant aan langs of nabij de weg (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Restaurant",
+      "signExplanation": "Bord F67 duidt een restaurant aan langs of nabij de weg (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f69",
@@ -3265,7 +3597,9 @@
       ],
       "correctIndex": 2,
       "explanation": "Bord F69 duidt een drankgelegenheid of café aan (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Drankgelegenheid",
+      "signExplanation": "Bord F69 duidt een drankgelegenheid of café aan (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f71",
@@ -3281,7 +3615,9 @@
       ],
       "correctIndex": 3,
       "explanation": "Bord F71 duidt een kampeerterrein voor tenten aan (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Kampeerterrein",
+      "signExplanation": "Bord F71 duidt een kampeerterrein voor tenten aan (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f73",
@@ -3297,7 +3633,9 @@
       ],
       "correctIndex": 0,
       "explanation": "Bord F73 duidt een caravanterrein aan voor caravans en woonwagens (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Caravanterrein",
+      "signExplanation": "Bord F73 duidt een caravanterrein aan voor caravans en woonwagens (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f75",
@@ -3313,7 +3651,9 @@
       ],
       "correctIndex": 1,
       "explanation": "Bord F75 duidt een jeugdherberg aan (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Jeugdherberg",
+      "signExplanation": "Bord F75 duidt een jeugdherberg aan (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f77",
@@ -3329,7 +3669,9 @@
       ],
       "correctIndex": 2,
       "explanation": "Bord F77 duidt een vereniging tot bevordering van het vreemdelingenverkeer of een trefpunt voor toeristische informatie aan (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Vereniging tot bevordering van het vreemdelingenverkeer, trefpunt voor toeristische informatie",
+      "signExplanation": "Bord F77 duidt een vereniging tot bevordering van het vreemdelingenverkeer of een trefpunt voor toeristische informatie aan (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f79",
@@ -3345,7 +3687,9 @@
       ],
       "correctIndex": 3,
       "explanation": "Bord F79 kondigt als voorwegwijzer de vermindering van het aantal rijstroken aan (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Voorwegwijzer die de vermindering van het aantal rijstroken aankondigt",
+      "signExplanation": "Bord F79 kondigt als voorwegwijzer de vermindering van het aantal rijstroken aan (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f81",
@@ -3361,7 +3705,9 @@
       ],
       "correctIndex": 0,
       "explanation": "Bord F81 kondigt als voorwegwijzer een uitwijking van rijstroken aan (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Voorwegwijzer die een uitwijking aankondigt",
+      "signExplanation": "Bord F81 kondigt als voorwegwijzer een uitwijking van rijstroken aan (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f83",
@@ -3377,7 +3723,9 @@
       ],
       "correctIndex": 1,
       "explanation": "Bord F83 kondigt als voorwegwijzer een doorsteek van de middenberm aan (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Voorwegwijzer die een doorsteek van de middenberm aankondigt",
+      "signExplanation": "Bord F83 kondigt als voorwegwijzer een doorsteek van de middenberm aan (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f85",
@@ -3393,7 +3741,9 @@
       ],
       "correctIndex": 2,
       "explanation": "Bord F85 duidt aan dat verkeer in beide richtingen is toegelaten op een deel van de rijbaan met eenrichtingsverkeer (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Verkeer toegelaten in beide richtingen op een deel van de rijbaan met eenrichtingsverkeer",
+      "signExplanation": "Bord F85 duidt aan dat verkeer in beide richtingen is toegelaten op een deel van de rijbaan met eenrichtingsverkeer (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f87",
@@ -3409,7 +3759,9 @@
       ],
       "correctIndex": 3,
       "explanation": "Bord F87 duidt een verhoogde inrichting of meerdere verhoogde inrichtingen aan, zoals een verkeersdrempel of verkeersplateau (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Verhoogde inrichting(en)",
+      "signExplanation": "Bord F87 duidt een verhoogde inrichting of meerdere verhoogde inrichtingen aan, zoals een verkeersdrempel of verkeersplateau (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f89",
@@ -3425,7 +3777,9 @@
       ],
       "correctIndex": 0,
       "explanation": "Bord F89 kondigt als voorwegwijzer een gevaar of verkeersregel aan die slechts geldt voor een of meer aangeduide rijstroken (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Voorwegwijzer die een gevaar of een verkeersregel aankondigt die slechts van toepassing is op één of meerdere rijstroken",
+      "signExplanation": "Bord F89 kondigt als voorwegwijzer een gevaar of verkeersregel aan die slechts geldt voor een of meer aangeduide rijstroken (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f91",
@@ -3441,7 +3795,9 @@
       ],
       "correctIndex": 1,
       "explanation": "Bord F91 duidt ter plaatse een gevaar aan of legt een verkeersregel op die slechts geldt voor een of meer aangeduide rijstroken (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Verkeersbord dat een gevaar aanduidt of een verkeersregel voorschrijft die slechts van toepassing is op één of meerdere rijstroken",
+      "signExplanation": "Bord F91 duidt ter plaatse een gevaar aan of legt een verkeersregel op die slechts geldt voor een of meer aangeduide rijstroken (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f93",
@@ -3457,7 +3813,9 @@
       ],
       "correctIndex": 2,
       "explanation": "Bord F93 duidt een radio-omroep aan die regelmatige verkeersinformatie uitzendt (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Verkeersbord dat een radio-omroep aanduidt waar verkeersinformatie gegeven wordt",
+      "signExplanation": "Bord F93 duidt een radio-omroep aan die regelmatige verkeersinformatie uitzendt (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f95",
@@ -3473,7 +3831,9 @@
       ],
       "correctIndex": 3,
       "explanation": "Bord F95 duidt een noodstopstrook aan om stuurloze voertuigen of voertuigen met defecte remmen veilig tot stilstand te brengen (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Noodstopstrook",
+      "signExplanation": "Bord F95 duidt een noodstopstrook aan om stuurloze voertuigen of voertuigen met defecte remmen veilig tot stilstand te brengen (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f97",
@@ -3489,7 +3849,9 @@
       ],
       "correctIndex": 0,
       "explanation": "Bord F97 duidt een versmalling van de rijbaan aan die de omvang van een volledige rijstrook heeft (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Verkeersbord dat een versmalling aanduidt die de omvang van een rijstrook heeft",
+      "signExplanation": "Bord F97 duidt een versmalling van de rijbaan aan die de omvang van een volledige rijstrook heeft (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f98",
@@ -3505,7 +3867,9 @@
       ],
       "correctIndex": 1,
       "explanation": "Bord F98 duidt een vluchthaven aan, een veilige uitwijkplaats langs autosnelwegen of in tunnels die uitsluitend bij pech of nood gebruikt mag worden (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Vluchthaven",
+      "signExplanation": "Bord F98 duidt een vluchthaven aan, een veilige uitwijkplaats langs autosnelwegen of in tunnels die uitsluitend bij pech of nood gebruikt mag worden (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f99a",
@@ -3521,7 +3885,9 @@
       ],
       "correctIndex": 2,
       "explanation": "Bord F99a duidt het begin aan van een weg voorbehouden voor voetgangers, fietsers, ruiters en speed pedelecs (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Begin van de weg of deel van de openbare weg voorbehouden voor het verkeer van voetgangers, fietsers, ruiters en bestuurders van speed pedelecs",
+      "signExplanation": "Bord F99a duidt het begin aan van een weg voorbehouden voor voetgangers, fietsers, ruiters en speed pedelecs (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f99b",
@@ -3537,7 +3903,9 @@
       ],
       "correctIndex": 3,
       "explanation": "Bord F99b duidt het begin aan van een voorbehouden weg met aanduiding van de delen bestemd voor de verschillende categorieën weggebruikers (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Begin van de weg voorbehouden voor voetgangers, fietsers, ruiters en bestuurders van speed pedelecs met aanduiding van het deel van de weg bestemd voor de verschillende categorieën",
+      "signExplanation": "Bord F99b duidt het begin aan van een voorbehouden weg met aanduiding van de delen bestemd voor de verschillende categorieën weggebruikers (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f99c",
@@ -3553,7 +3921,9 @@
       ],
       "correctIndex": 0,
       "explanation": "Bord F99c duidt het begin aan van een weg voorbehouden voor landbouwvoertuigen, voetgangers, fietsers, ruiters en speed pedelecs (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Begin van de weg voorbehouden voor het verkeer van landbouwvoertuigen, voetgangers, fietsers, ruiters en bestuurders van speed pedelecs",
+      "signExplanation": "Bord F99c duidt het begin aan van een weg voorbehouden voor landbouwvoertuigen, voetgangers, fietsers, ruiters en speed pedelecs (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f101a",
@@ -3569,7 +3939,9 @@
       ],
       "correctIndex": 1,
       "explanation": "Bord F101a duidt het einde aan van de weg voorbehouden voor voetgangers, fietsers, ruiters en bestuurders van speed pedelecs (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Einde van de weg of van het deel van de openbare weg voorbehouden voor het verkeer van voetgangers, fietsers, ruiters en bestuurders van speed pedelecs",
+      "signExplanation": "Bord F101a duidt het einde aan van de weg voorbehouden voor voetgangers, fietsers, ruiters en bestuurders van speed pedelecs (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f101b",
@@ -3585,7 +3957,9 @@
       ],
       "correctIndex": 2,
       "explanation": "Bord F101b duidt het einde aan van de voorbehouden weg met gescheiden delen voor verschillende categorieën weggebruikers (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Einde van de weg voorbehouden voor voetgangers, fietsers, ruiters en bestuurders van speed pedelecs met aanduiding van het deel van de weg bestemd voor de verschillende categorieën",
+      "signExplanation": "Bord F101b duidt het einde aan van de voorbehouden weg met gescheiden delen voor verschillende categorieën weggebruikers (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f101c",
@@ -3601,7 +3975,9 @@
       ],
       "correctIndex": 3,
       "explanation": "Bord F101c duidt het einde aan van de weg voorbehouden voor landbouwvoertuigen, voetgangers, fietsers, ruiters en speed pedelecs (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Einde van de weg voorbehouden voor het verkeer van landbouwvoertuigen, voetgangers, fietsers, ruiters en bestuurders van speed pedelecs",
+      "signExplanation": "Bord F101c duidt het einde aan van de weg voorbehouden voor landbouwvoertuigen, voetgangers, fietsers, ruiters en speed pedelecs (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f103",
@@ -3618,7 +3994,9 @@
       "correctIndex": 2,
       "explanation": "Bord F103 duidt het begin van een voetgangerszone aan (art. 71.2).",
       "since": 1988,
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Begin van een voetgangerszone",
+      "signExplanation": "Bord F103 duidt het begin van een voetgangerszone aan (art. 71.2)."
     },
     {
       "id": "rec-f105",
@@ -3634,7 +4012,9 @@
       ],
       "correctIndex": 0,
       "explanation": "Bord F105 duidt het einde van een voetgangerszone aan (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Einde van een voetgangerszone",
+      "signExplanation": "Bord F105 duidt het einde van een voetgangerszone aan (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f111",
@@ -3650,7 +4030,9 @@
       ],
       "correctIndex": 1,
       "explanation": "Bord F111 duidt het begin van een fietszone (fietsstraat) aan waar motorvoertuigen fietsers niet mogen inhalen en maximaal 30 km/u mogen rijden (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Begin van een fietszone",
+      "signExplanation": "Bord F111 duidt het begin van een fietszone (fietsstraat) aan waar motorvoertuigen fietsers niet mogen inhalen en maximaal 30 km/u mogen rijden (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f113",
@@ -3666,7 +4048,9 @@
       ],
       "correctIndex": 2,
       "explanation": "Bord F113 duidt het einde van een fietszone (fietsstraat) aan (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Einde van een fietszone",
+      "signExplanation": "Bord F113 duidt het einde van een fietszone (fietsstraat) aan (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f117",
@@ -3682,7 +4066,9 @@
       ],
       "correctIndex": 3,
       "explanation": "Bord F117 duidt het begin van een lage-emissiezone (LEZ) aan waar een selectief toelatingsbeleid geldt voor motorvoertuigen op basis van hun uitstoot (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Begin van een lage-emissiezone",
+      "signExplanation": "Bord F117 duidt het begin van een lage-emissiezone (LEZ) aan waar een selectief toelatingsbeleid geldt voor motorvoertuigen op basis van hun uitstoot (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f118",
@@ -3698,7 +4084,9 @@
       ],
       "correctIndex": 0,
       "explanation": "Bord F118 duidt het einde van een lage-emissiezone (LEZ) aan (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Einde van een lage-emissiezone",
+      "signExplanation": "Bord F118 duidt het einde van een lage-emissiezone (LEZ) aan (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f119",
@@ -3714,7 +4102,9 @@
       ],
       "correctIndex": 1,
       "explanation": "Bord F119 duidt het begin van een luchthavengebied aan (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Begin van een luchthavengebied",
+      "signExplanation": "Bord F119 duidt het begin van een luchthavengebied aan (art. 71.2 van de Wegcode)."
     },
     {
       "id": "rec-f120",
@@ -3730,7 +4120,9 @@
       ],
       "correctIndex": 2,
       "explanation": "Bord F120 duidt het einde van een luchthavengebied aan (art. 71.2 van de Wegcode).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Einde van een luchthavengebied",
+      "signExplanation": "Bord F120 duidt het einde van een luchthavengebied aan (art. 71.2 van de Wegcode)."
     },
     {
       "id": "iden-c39",
@@ -3984,7 +4376,9 @@
       "correctIndex": 0,
       "explanation": "Verkeersbord B22 laat fietsers en speed pedelecs toe om door te rijden en rechts af te slaan bij rood of oranjegeel licht, mits zij voorrang verlenen (art. 67.3).",
       "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
-      "since": 2022
+      "since": 2022,
+      "signTitle": "Toelating voor fietsers om rechts af te slaan bij rood licht",
+      "signExplanation": "Verkeersbord B22 laat fietsers en bestuurders van speed pedelecs toe om bij een rood of oranjegeel verkeerslicht rechts af te slaan, mits zij voorrang verlenen aan overig verkeer en overstekende voetgangers (art. 67.3 van de Wegcode)."
     },
     {
       "id": "rule-fietser-b23",
@@ -4001,7 +4395,9 @@
       "correctIndex": 1,
       "explanation": "Bord B23 staat fietsers en bestuurders van speed pedelecs toe om rechtdoor te rijden bij een rood of oranjegeel licht, op voorwaarde dat zij voorrang verlenen (art. 67.3).",
       "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
-      "since": 2022
+      "since": 2022,
+      "signTitle": "Toelating voor fietsers om rechtdoor te rijden bij rood licht",
+      "signExplanation": "Verkeersbord B23 laat fietsers en bestuurders van speed pedelecs toe om bij een rood of oranjegeel verkeerslicht rechtdoor te rijden, mits zij voorrang verlenen aan overig verkeer en overstekende voetgangers (art. 67.3 van de Wegcode)."
     },
     {
       "id": "rule-voorrang-aardeweg",

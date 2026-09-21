@@ -64,6 +64,9 @@ class TestI18n(unittest.TestCase):
             self.assertIn("question", item)
             self.assertIn("options", item)
             self.assertIn("explanation", item)
+            if "sign" in q:
+                self.assertIn("signTitle", item, f"signTitle missing in translations for {qid}")
+                self.assertIn("signExplanation", item, f"signExplanation missing in translations for {qid}")
             self.assertEqual(
                 len(item["options"]),
                 len(q["options"]),

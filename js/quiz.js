@@ -23,7 +23,8 @@ async function loadTranslations(lang) {
   }
 }
 
-function applyTranslation(q) {
+export function applyTranslation(q) {
+  if (!q) return q;
   const overlay = translationOverlay[q.id];
   if (!overlay) return q;
   return {
@@ -31,10 +32,11 @@ function applyTranslation(q) {
     question: overlay.question ?? q.question,
     options: overlay.options ?? q.options,
     explanation: overlay.explanation ?? q.explanation,
+    signTitle: overlay.signTitle ?? q.signTitle,
+    signExplanation: overlay.signExplanation ?? q.signExplanation,
     imageAlt: overlay.imageAlt ?? q.imageAlt,
   };
 }
-
 
 export { loadTranslations };
 

@@ -149,6 +149,10 @@ def build_translations(target_lang: str = "en", source_lang: str = "nl") -> int:
         unique_strings.add(q["question"])
         if q.get("explanation"):
             unique_strings.add(q["explanation"])
+        if q.get("signTitle"):
+            unique_strings.add(q["signTitle"])
+        if q.get("signExplanation"):
+            unique_strings.add(q["signExplanation"])
         for opt in q["options"]:
             if not opt.startswith("assets/"):
                 unique_strings.add(opt)
@@ -212,11 +216,25 @@ def build_translations(target_lang: str = "en", source_lang: str = "nl") -> int:
             if target_lang == "en":
                 exp_trans = post_process_en(exp_trans)
 
-        overlay[qid] = {
+        item_overlay = {
             "question": q_trans,
             "options": options_trans,
             "explanation": exp_trans,
         }
+
+        if q.get("signTitle"):
+            st_trans = cache.get(q["signTitle"], q["signTitle"])
+            if target_lang == "en":
+                st_trans = post_process_en(st_trans)
+            item_overlay["signTitle"] = st_trans
+
+        if q.get("signExplanation"):
+            se_trans = cache.get(q["signExplanation"], q["signExplanation"])
+            if target_lang == "en":
+                se_trans = post_process_en(se_trans)
+            item_overlay["signExplanation"] = se_trans
+
+        overlay[qid] = item_overlay
 
     with open(output_file, "w", encoding="utf-8") as f:
         json.dump(overlay, f, indent=2, ensure_ascii=False)

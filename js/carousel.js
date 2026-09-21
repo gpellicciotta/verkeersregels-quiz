@@ -3,6 +3,7 @@ import { carouselState, allQuestions } from "./state.js";
 import { shuffle, getSinceBadge, getSignCode } from "./utils.js";
 import { showScreen } from "./screens.js";
 import { t } from "./i18n.js";
+import { applyTranslation } from "./quiz.js";
 
 export function formatCategoryName(cat) {
   if (!cat) return t("carousel.cat.default");
@@ -14,14 +15,15 @@ export function formatCategoryName(cat) {
 
 export function renderCarouselCard() {
   if (!carouselState.items || carouselState.items.length === 0) return;
-  const item = carouselState.items[carouselState.currentIndex];
+  const rawItem = carouselState.items[carouselState.currentIndex];
+  const item = applyTranslation(rawItem);
 
   if (el.carouselSignImg) {
     el.carouselSignImg.src = item.sign || "";
     const signCode = item.signCode || getSignCode(item.sign);
     el.carouselSignImg.alt = signCode
       ? t("carousel.sign_img_alt_code", { code: signCode })
-      : (item.options && item.correctIndex != null ? item.options[item.correctIndex] : t("carousel.sign_img_alt"));
+      : (item.signTitle || (item.options && item.correctIndex != null ? item.options[item.correctIndex] : t("carousel.sign_img_alt")));
   }
 
   if (el.carouselCounter) {
@@ -47,13 +49,15 @@ export function renderCarouselCard() {
   }
 
   if (el.carouselSignTitle) {
-    const signName =
-      item.options && item.correctIndex != null ? item.options[item.correctIndex] : (item.question || "");
-    el.carouselSignTitle.textContent = signName;
+    const signTitle =
+      item.signTitle ||
+      (item.options && item.correctIndex != null ? item.options[item.correctIndex] : (item.question || ""));
+    el.carouselSignTitle.textContent = signTitle;
   }
 
   if (el.carouselExplanation) {
-    el.carouselExplanation.textContent = item.explanation || "";
+    const signExplanation = item.signExplanation || item.explanation || "";
+    el.carouselExplanation.textContent = signExplanation;
   }
 
   if (el.carouselSourceWrap && el.carouselSourceLink) {
