@@ -14,7 +14,7 @@ An overview of all tasks and their planning.
 ---
 
 ## Next Milestone
-- [ ] T0038 Add quiz result sharing via Web Share API and clipboard copy on the results screen.
+- [~] T0038 [owner: @gemini] Add quiz result sharing via Web Share API and clipboard copy on the results screen.
 - [ ] T0056 Address generic, non-descriptive image alt text on sign-recognition question images.
 - [ ] T0057 The carrousel is currently re-using the "correct answer" to explain a road sign, but the answer doesn't always make sense without a question. We should be using a separate, clear explanation of the road-sign instead. (and make sure there are translations too)
 - [ ] T0053 [needs: T0038 T0057 T0056] Release version 3.2.0 with modular architecture, service worker auto-updates, configuration persistence, and localization.
