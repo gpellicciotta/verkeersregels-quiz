@@ -362,21 +362,11 @@ function getEffectiveQuestionCount() {
 }
 
 function updateStartScreenNotice() {
+  if (el.startDesc) {
+    el.startDesc.textContent = "Oefen de verkeersregels en -borden.";
+  }
+
   if (state.currentMode === "carousel") {
-    let signCount = allQuestions.filter((q) => Boolean(q.sign)).length;
-    if (carouselState.filterSince) {
-      signCount = allQuestions.filter(
-        (q) => Boolean(q.sign) && typeof q.since === "number" && q.since >= carouselState.filterSince
-      ).length;
-    }
-    const delaySec = carouselState.delayMs ? Math.round(carouselState.delayMs / 1000) : 8;
-    if (el.startDesc) {
-      if (carouselState.filterSince) {
-        el.startDesc.textContent = `Automatisch wisselende borden sinds ${carouselState.filterSince} met officiële uitleg (${signCount} borden).`;
-      } else {
-        el.startDesc.textContent = "Automatisch wisselende verkeersborden met officiële uitleg en wetgeving.";
-      }
-    }
     if (el.filterNotice) {
       el.filterNotice.classList.add("hidden");
     }
@@ -401,10 +391,6 @@ function updateStartScreenNotice() {
 
   if (el.quizProgress && effectiveCount > 0) {
     el.quizProgress.textContent = `Vraag 1/${effectiveCount}`;
-  }
-
-  if (el.startDesc) {
-    el.startDesc.textContent = "Oefen de verkeersregels en -borden.";
   }
 
   if (el.filterNotice) {
