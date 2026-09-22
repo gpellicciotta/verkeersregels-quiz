@@ -33,8 +33,10 @@ export function setStartMode(mode, persist) {
     el.btnStartLabel.textContent = isCarousel ? t("start.btn_carousel") : t("start.btn_quiz");
   }
   if (el.btnStart) {
-    el.btnStart.setAttribute("aria-label", isCarousel ? t("start.btn_carousel") : t("start.btn_quiz"));
-    el.btnStart.setAttribute("title", isCarousel ? t("start.btn_carousel") : t("start.btn_quiz"));
+    const startLabel = isCarousel ? t("start.btn_carousel") : t("start.btn_quiz");
+    el.btnStart.setAttribute("aria-label", startLabel);
+    el.btnStart.setAttribute("title", startLabel);
+    el.btnStart.setAttribute("data-tooltip", startLabel);
   }
 
   // Update mode toggle button icon and tooltip
