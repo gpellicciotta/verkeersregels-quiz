@@ -14,19 +14,7 @@ An overview of all tasks and their planning.
 ---
 
 ## Next Milestone
-- [ ] T0066 How can I have a script that runs automatically every day at 7am and 7pm UTC, reads the spreadsheet where the results of non-anomymous users and the issues reported are being stored, summarizes the sheet and send me a mail with the results? The summary should report:
-  - How many times the quiz was played until now, in total and in the past 24h
-  - How many times the quiz was played in the past 24h, the past week (=7x24h)
-  - What is the average number of questions in the past 24h, the past week
-  - What is the average number of play time (in minutes) in the past 24h, the past week
-  - What is the average percentage score in the past 24h, the past week
-  - How many issues are currently reported?
-  - How many additional issues have been reported in the past 24h, the past week?
-  - What are the 3 last issues reported?
-  - What are the 3 most used contexts used over all issues? Of just the 3 latest if there are no "most used"
-  - How many times did Noah or Noahp play in the past 24h, the past week
-  - How many minutes did Noah or Noahp play in the past 24h, the past week
-  - What was the average result percentage of Noah or Noahp in the past 24h, the past week
+- [~] T0066 [owner: @claude] Add a daily/twice-daily email summary of quiz results and reported issues from the Google Sheet.
 
 ---
 
