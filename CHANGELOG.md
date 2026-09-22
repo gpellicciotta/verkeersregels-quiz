@@ -13,7 +13,7 @@ A summarized overview of all changes, per version of this project.
 
 ---
 
-## v3.3.0-pre
+## v3.3.0 [released: 2026-09-22]
 - FrontEnd: Italiaanse vertalingen toegevoegd voor de gebruikersinterface, configuratiedialogen en vragenbank.
 - FrontEnd: Duitse vertalingen toegevoegd voor de gebruikersinterface, configuratiedialogen en vragenbank.
 - FrontEnd: Franse vertalingen toegevoegd voor de gebruikersinterface, configuratiedialogen en vragenbank.
