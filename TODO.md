@@ -14,7 +14,7 @@ An overview of all tasks and their planning.
 ---
 
 ## Next Milestone
-- [ ] T0064 Improve the "Meld een fout modal dialog":
+- [~] T0064 [owner: @claude] Improve the "Meld een fout modal dialog":
   - Add the icon also at the start of the title
   - Start with the "Opmerking of toelichting"+ the comment box but without the word "optioneel
   - Then underneath add the context box but preceded by a checkbox "Include question context:"
