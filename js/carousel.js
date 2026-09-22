@@ -4,6 +4,7 @@ import { shuffle, getSinceBadge, getSignCode, localizeSourceUrl } from "./utils.
 import { showScreen } from "./screens.js";
 import { t, getLang } from "./i18n.js";
 import { applyTranslation } from "./quiz.js";
+import { createIcon } from "./icons.js";
 
 export function formatCategoryName(cat) {
   if (!cat) return t("carousel.cat.default");
@@ -155,6 +156,34 @@ export function prevCarouselSign() {
   }
 }
 
+function renderCarouselToggleIcons(isPaused) {
+  const container = el.carouselToggleIcon;
+  if (!container) return;
+
+  const pauseSvg = createIcon("pause", {
+    className: "carousel-ctrl-svg icon-pause",
+    width: 18,
+    height: 18,
+    fill: "currentColor",
+    stroke: "none",
+    strokeWidth: 0,
+  });
+  const playSvg = createIcon("play", {
+    className: "carousel-ctrl-svg icon-play",
+    width: 18,
+    height: 18,
+    fill: "currentColor",
+    stroke: "none",
+    strokeWidth: 0,
+  });
+
+  pauseSvg.classList.toggle("hidden", isPaused);
+  playSvg.classList.toggle("hidden", !isPaused);
+  playSvg.style.transform = "translateX(1px)";
+
+  container.replaceChildren(pauseSvg, playSvg);
+}
+
 export function toggleCarouselPause(forceState) {
   if (!carouselState.isActive) return;
   const target = typeof forceState === "boolean" ? forceState : !carouselState.isPaused;
@@ -169,12 +198,7 @@ export function toggleCarouselPause(forceState) {
       el.btnCarouselToggle.setAttribute("aria-label", t("carousel.btn_toggle_resume_aria"));
       el.btnCarouselToggle.setAttribute("title", t("carousel.btn_toggle_resume_tooltip"));
       el.btnCarouselToggle.setAttribute("data-tooltip", t("carousel.btn_toggle_resume_tooltip"));
-      const pauseSvg = el.btnCarouselToggle.querySelector(".icon-pause");
-      const playSvg = el.btnCarouselToggle.querySelector(".icon-play");
-      if (pauseSvg && playSvg) {
-        pauseSvg.classList.add("hidden");
-        playSvg.classList.remove("hidden");
-      }
+      renderCarouselToggleIcons(true);
     }
     if (el.carouselToggleText) el.carouselToggleText.textContent = t("carousel.toggle_text_resume");
     if (el.carouselShortcutHint) {
@@ -187,12 +211,7 @@ export function toggleCarouselPause(forceState) {
       el.btnCarouselToggle.setAttribute("aria-label", t("carousel.btn_toggle_pause_aria"));
       el.btnCarouselToggle.setAttribute("title", t("carousel.btn_toggle_pause_tooltip"));
       el.btnCarouselToggle.setAttribute("data-tooltip", t("carousel.btn_toggle_pause_tooltip"));
-      const pauseSvg = el.btnCarouselToggle.querySelector(".icon-pause");
-      const playSvg = el.btnCarouselToggle.querySelector(".icon-play");
-      if (pauseSvg && playSvg) {
-        pauseSvg.classList.remove("hidden");
-        playSvg.classList.add("hidden");
-      }
+      renderCarouselToggleIcons(false);
     }
     if (el.carouselToggleText) el.carouselToggleText.textContent = t("carousel.toggle_text_pause");
     if (el.carouselShortcutHint) {
@@ -239,12 +258,7 @@ export function startCarousel(options = {}) {
     el.btnCarouselToggle.setAttribute("aria-label", t("carousel.btn_toggle_pause_aria"));
     el.btnCarouselToggle.setAttribute("title", t("carousel.btn_toggle_pause_tooltip"));
     el.btnCarouselToggle.setAttribute("data-tooltip", t("carousel.btn_toggle_pause_tooltip"));
-    const pauseSvg = el.btnCarouselToggle.querySelector(".icon-pause");
-    const playSvg = el.btnCarouselToggle.querySelector(".icon-play");
-    if (pauseSvg && playSvg) {
-      pauseSvg.classList.remove("hidden");
-      playSvg.classList.add("hidden");
-    }
+    renderCarouselToggleIcons(false);
   }
   if (el.carouselToggleText) el.carouselToggleText.textContent = t("carousel.toggle_text_pause");
   if (el.carouselShortcutHint) {
