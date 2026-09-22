@@ -76,7 +76,7 @@ python ../dev-guidelines/scripts/lint-taskfile.py TODO.md
 ## DevOps and Asset Tooling
 All developer utilities live in `scripts/` and adhere strictly to CLI guidelines with `--version`, `--help`, `--verbose`, `--debug`, and `--log-file`:
 - `scripts/bootstrap-dev-environment.py`: verifies environment readiness, repository structure, and runs test suites.
-- `scripts/deploy-to-production.py`: verifies clean working tree, finalized release version, tests, and documentation linting.
+- `scripts/deploy-to-production.py`: verifies preconditions, then finalizes `CHANGELOG.md`, regenerates `sw.js`, commits, and tags a release.
 - `scripts/generate-sw.py`: dynamically scans all assets and writes `sw.js` with versioned cache keys and 227 precached assets.
 - `scripts/generate-pwa-icons.py`: renders transparent PNG and ICO icons via headless Chrome and Pillow.
 - `scripts/fetch-belgian-signs.py`: downloads, verifies, and rate-limits Belgian traffic sign SVGs from Wikimedia Commons.
@@ -89,7 +89,7 @@ All developer utilities live in `scripts/` and adhere strictly to CLI guidelines
 The quiz is hosted as a static web site on GitHub Pages directly from the `main` branch root. No build compilation or asset bundling is required.
 
 ### Deployment Pre-flight Checks
-Before deploying a release to production, run the pre-flight verification script:
+Before releasing, dry-run the release script to verify preconditions without changing anything:
 
 ```bash
 python scripts/deploy-to-production.py deploy --dry-run
@@ -97,21 +97,38 @@ python scripts/deploy-to-production.py deploy --dry-run
 
 This verifies:
 1. The git working tree has no uncommitted changes (`git status --porcelain`).
-2. The current version in `CHANGELOG.md` is a finalized release (does not end with `-pre`).
+2. `CHANGELOG.md` has an active in-development version (a top heading ending in `-pre`).
 3. All automated unit tests in `tests/` pass cleanly.
 4. All project documentation passes markdown linting.
 
 ### Production Release Procedure
-1. Finalize the active version heading in `CHANGELOG.md`.
-2. Regenerate service worker precache assets via `python scripts/generate-sw.py generate`.
-3. Run automated tests and linters locally.
-4. Commit all changes to the task branch and merge into `main`.
-5. Create the version tag (e.g. `git tag v3.0.0`).
-6. After explicit user confirmation, push `main` and tags to GitHub:
+1. Ensure the working tree is clean and you are on the branch to release from (usually `main`).
+2. Run the release script for real:
    ```bash
-   git push origin main --tags
+   python scripts/deploy-to-production.py deploy
    ```
-7. GitHub Pages deploys the updated `main` branch automatically.
+   This re-runs the pre-flight checks above, then automatically:
+   - Finalizes the active `-pre` heading in `CHANGELOG.md` to `[released: {{date}}]`.
+   - Regenerates service worker precache assets (`scripts/generate-sw.py generate`).
+   - Commits `CHANGELOG.md` and `sw.js` with the message `Released v{{version}}.`.
+   - Creates the local version tag (e.g. `git tag v3.0.0`).
+3. Push the branch and tag printed by the script:
+   ```bash
+   git push origin main v3.0.0
+   ```
+4. GitHub Pages deploys the updated `main` branch automatically within about 2 minutes.
+5. Add the next `-pre` heading to `CHANGELOG.md` for ongoing development and commit it.
+
+By default the script only prints the step 3 push command; it never pushes on its own.
+Pass `--push` to have it push immediately after tagging instead:
+
+```bash
+python scripts/deploy-to-production.py deploy --push
+```
+
+Passing `--push` on the command line **is** the explicit confirmation to publish — only use
+it when you're ready for GitHub Pages to go live within minutes. `--dry-run` and `--push`
+cannot be combined.
 
 ---
 
