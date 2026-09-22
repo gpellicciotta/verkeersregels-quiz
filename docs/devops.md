@@ -39,10 +39,11 @@ The application includes URL query parameters to speed up development and visual
 - `http://localhost:8000/?autotest=results-mixed`: runs through all questions with alternating answers to test imperfect scores.
 - `http://localhost:8000/?view=about` (alias: `?about=1`): opens the dedicated full-window About view on load.
 - `http://localhost:8000/?mode=carousel`: launches the traffic sign carousel view.
-- `http://localhost:8000/?mode=carousel&speed=5`: configures carousel slide duration in seconds.
+- `http://localhost:8000/?mode=carousel&delay=5` (alias: `?d=5`): configures carousel slide duration in seconds (default 8).
 - `http://localhost:8000/?mode=carousel&pause=1`: pauses the carousel immediately on load.
 - `http://localhost:8000/?q=10` (alias: `?quantity=10`): overrides the number of questions per round.
 - `http://localhost:8000/?since=2021`: filters the question pool to regulations amended in or after 2021.
+- `http://localhost:8000/?lang=fr`: forces the interface language (`nl`, `fr`, `de`, `en`; default `nl`).
 
 ---
 

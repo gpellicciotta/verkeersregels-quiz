@@ -55,13 +55,18 @@ Een overzicht van de quiz-interface op desktop en mobiele apparaten:
 
 De applicatie ondersteunt optionele parameters in de URL:
 
+- `?lang=nl|fr|de|en`: stelt de interfacetaal in (standaard Nederlands, bv. `?lang=fr`).
+- `?name=Jan` (aliassen: `?naam=Jan`, `?n=Jan`): vult de spelersnaam op het startscherm vooraf in.
 - `?s=YYYY` (aliassen: `?sinds=YYYY`, `?since=YYYY`): filtert de vragenpool op regels ingevoerd vanaf het jaartal (bv. `?s=2022`).
+- `?type=rule` (alias: `?t=rule`): filtert de vragenpool op vraagtype (`recognize`, `identify`, `rule`, `situation`, of `sign` voor herkennen + identificeren samen).
 - `?q=N` (alias: `?quantity=N`): stelt het aantal vragen per ronde in (standaard 20, bv. `?q=10`).
-- `?mode=carousel`: start direct de verkeersborden-carrouselmodus.
-- `?speed=N`: wisselduur per bord in seconden tijdens carrouselmodus (standaard 5, bv. `?speed=3`).
+- `?mode=carousel` (aliassen: `?mode=carrousel`, `?sign-carousel`, `?sign-carrousel`): start direct de verkeersborden-carrouselmodus.
+- `?delay=N` (alias: `?d=N`): wisselduur per bord in seconden tijdens carrouselmodus (standaard 8, bv. `?delay=3`).
 - `?pause=1`: start de carrousel in gepauzeerde toestand.
-- `?view=about` (alias: `?about=1`): opent direct de Over deze app-weergave met versiegeschiedenis en bronnen.
-- `?autostart=1`: start direct een quizronde zonder naam in te vullen.
+- `?view=about` (aliassen: `?about=1`, `?screen=about`): opent direct de Over deze app-weergave met versiegeschiedenis en bronnen.
+- `?autostart=1` (alias: `?mode=quiz`): start direct een quizronde zonder naam in te vullen.
+- `?theme=light|dark|system`: stelt het kleurthema in (standaard `system`).
+- `?theme-color=blue|yellow|red` (aliassen: `?themecolor=`, `?theme_color=`, ook `blauw`/`geel`/`rood`): stelt het accentkleurthema in (standaard blauw).
 
 Vragen over recente wetswijzigingen (binnen 5 jaar) dragen een amberkleurige "Sinds YYYY" badge.
 Oudere wetswijzigingen tonen een blauwe badge.

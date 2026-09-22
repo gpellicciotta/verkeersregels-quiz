@@ -39,7 +39,7 @@ Functional and technical requirements for the Verkeersregels Quiz application.
   - Offers a dedicated "Meld fout" button on every question allowing users to report inaccuracies.
 - **Traffic Sign Carousel Mode**:
   - Auto-cycles through Belgian traffic signs with sign codes, names, and legal descriptions.
-  - Customizable slide duration via URL query parameter `?speed=N` (default 5 seconds).
+  - Customizable slide duration via URL query parameter `?delay=N` (alias: `?d=N`, default 8 seconds).
   - Visual pause overlay with play/pause action button.
   - Keyboard shortcuts (Space to toggle pause, Arrow keys to navigate, Escape or Home button to return to start).
   - Smooth progress bar indicator tracking slide interval.
@@ -66,12 +66,17 @@ Functional and technical requirements for the Verkeersregels Quiz application.
 - **Situation Photos**: All 20 situation photos reside in `assets/situations/` as high-resolution JPEG files sourced from De Grote Verkeerstoets.
 - **Unshown Sign Safeguard**: No question may refer to a specific traffic sign without displaying its SVG image or photograph.
 - **Query Parameter Filtering and Configuration**:
+  - `?lang=nl|fr|de|en`: sets the interface language (default `nl`).
+  - `?name=` (aliases: `?naam=`, `?n=`): pre-fills the player name on the start screen.
   - `?since=YYYY` (aliases: `?sinds=YYYY`, `?s=YYYY`): restricts question pool to questions introduced in or after the specified year.
+  - `?type=` (alias: `?t=`): restricts question pool to a type (`recognize`, `identify`, `rule`, `situation`, `sign`).
   - `?q=N` (alias: `?quantity=N`): overrides the number of questions per round (default 20).
-  - `?mode=carousel`: starts traffic sign carousel mode.
-  - `?speed=N`: sets carousel slide duration in seconds.
+  - `?mode=carousel` (aliases: `?mode=carrousel`, `?sign-carousel`, `?sign-carrousel`): starts traffic sign carousel mode.
+  - `?delay=N` (alias: `?d=N`): sets carousel slide duration in seconds (default 8).
   - `?pause=1`: pauses carousel on initial load.
-  - `?view=about` (alias: `?about=1`): opens the dedicated About view on load.
+  - `?view=about` (aliases: `?about=1`, `?screen=about`): opens the dedicated About view on load.
+  - `?theme=light|dark|system`: sets the color theme (default `system`).
+  - `?theme-color=blue|yellow|red` (aliases: `?themecolor=`, `?theme_color=`): sets the accent color theme (default `blue`).
   - `?autotest=results`: automatically completes the quiz for visual verification and testing.
 
 ### Google Sheets Integration and Error Reporting
