@@ -155,7 +155,7 @@ class TestI18n(unittest.TestCase):
         self.assertIn('data-i18n="start.description"', html)
         self.assertIn('data-i18n="start.offline"', html)
         self.assertIn('data-i18n="result.title"', html)
-        self.assertIn('data-i18n="config.title_quiz"', html)
+        self.assertIn('data-i18n="config.title"', html)
         self.assertIn('data-i18n="report.title"', html)
         self.assertIn('data-i18n="changelog.modal_title"', html)
 

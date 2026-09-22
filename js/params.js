@@ -55,6 +55,27 @@ export function getThemeColorParam() {
   return "blue";
 }
 
+export function getThemeQueryOverride() {
+  if (typeof window === "undefined" || !window.location) return null;
+  const params = new URLSearchParams(window.location.search);
+  const raw = params.get("theme");
+  if (!raw) return null;
+  const val = raw.trim().toLowerCase();
+  return val === "dark" || val === "light" || val === "system" ? val : null;
+}
+
+export function getThemeColorQueryOverride() {
+  if (typeof window === "undefined" || !window.location) return null;
+  const params = new URLSearchParams(window.location.search);
+  const raw = params.get("theme-color") || params.get("themecolor") || params.get("theme_color");
+  if (!raw) return null;
+  const val = raw.trim().toLowerCase();
+  if (val === "yellow" || val === "geel") return "yellow";
+  if (val === "red" || val === "rood") return "red";
+  if (val === "blue" || val === "blauw") return "blue";
+  return null;
+}
+
 export function getNameParam() {
   if (typeof window === "undefined" || !window.location) return null;
   const params = new URLSearchParams(window.location.search);

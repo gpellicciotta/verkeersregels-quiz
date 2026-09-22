@@ -2,22 +2,25 @@ import { el } from "./dom.js";
 import { state, carouselState, allQuestions } from "./state.js";
 import { getQuestionCountOverride } from "./params.js";
 import { setStoredPreferences } from "./preferences.js";
-import { applyFilter, updateStartScreenNotice } from "./quiz.js";
-import { t } from "./i18n.js";
-
+import { applyFilter, updateStartScreenNotice, loadTranslations } from "./quiz.js";
+import { setStartMode } from "./ui-mode.js";
+import { loadChangelog } from "./changelog.js";
+import { applyTheme } from "./theme.js";
+import { t, getLang, setLang, SUPPORTED_LANGS } from "./i18n.js";
 
 export function openConfigModal() {
-  const isCarousel = state.currentMode === "carousel";
-  if (el.modalConfigTitle) {
-    el.modalConfigTitle.textContent = isCarousel
-      ? t("config.title_carousel")
-      : t("config.title_quiz");
+  // Prepopulate general settings
+  if (el.configName) {
+    el.configName.value = state.playerName || (el.playerNameInput ? el.playerNameInput.value : "") || "";
   }
-  if (el.configSectionQuiz) {
-    el.configSectionQuiz.classList.toggle("hidden", isCarousel);
+  if (el.configLanguage) {
+    el.configLanguage.value = getLang();
   }
-  if (el.configSectionCarousel) {
-    el.configSectionCarousel.classList.toggle("hidden", !isCarousel);
+  if (el.configTheme) {
+    el.configTheme.value = document.documentElement.getAttribute("data-theme-setting") || "system";
+  }
+  if (el.configThemeColor) {
+    el.configThemeColor.value = document.documentElement.getAttribute("data-theme-color") || "blue";
   }
 
   // Prepopulate quiz settings
@@ -89,41 +92,69 @@ export function closeConfigModal() {
 }
 
 export function saveConfig() {
-  if (state.currentMode === "carousel") {
-    if (el.carouselDelaySelect) {
-      const sec = parseInt(el.carouselDelaySelect.value, 10) || 8;
-      carouselState.delayMs = sec * 1000;
-    }
-    if (el.configCarouselSince) {
-      const sinceVal = el.configCarouselSince.value
-        ? parseInt(el.configCarouselSince.value, 10)
-        : null;
-      carouselState.filterSince = sinceVal;
-    }
-    setStoredPreferences({
-      carouselDelaySeconds: carouselState.delayMs / 1000,
-      carouselSince: carouselState.filterSince,
-    });
-    updateStartScreenNotice();
-  } else {
-    if (el.configQuizCount) {
-      const val = el.configQuizCount.value;
-      state.configCount = val === "all" ? "all" : parseInt(val, 10);
-    }
-    if (el.configQuizType) {
-      state.configType = el.configQuizType.value || null;
-    }
-    if (el.configQuizSince) {
-      state.configSince = el.configQuizSince.value
-        ? parseInt(el.configQuizSince.value, 10)
-        : null;
-    }
-    setStoredPreferences({
-      quizCount: state.configCount,
-      quizType: state.configType,
-      quizSince: state.configSince,
-    });
-    applyFilter();
+  // General settings
+  let name = state.playerName || "";
+  if (el.configName) {
+    name = el.configName.value.trim();
+    state.playerName = name;
+    if (el.playerNameInput) el.playerNameInput.value = name;
   }
+
+  let newLang = getLang();
+  let languageChanged = false;
+  if (el.configLanguage && SUPPORTED_LANGS.includes(el.configLanguage.value) && el.configLanguage.value !== getLang()) {
+    newLang = el.configLanguage.value;
+    languageChanged = true;
+  }
+
+  const themeSetting = el.configTheme ? el.configTheme.value || "system" : "system";
+  const themeColor = el.configThemeColor ? el.configThemeColor.value || "blue" : "blue";
+  applyTheme(themeSetting, themeColor);
+
+  // Carousel settings
+  if (el.carouselDelaySelect) {
+    const sec = parseInt(el.carouselDelaySelect.value, 10) || 8;
+    carouselState.delayMs = sec * 1000;
+  }
+  if (el.configCarouselSince) {
+    carouselState.filterSince = el.configCarouselSince.value
+      ? parseInt(el.configCarouselSince.value, 10)
+      : null;
+  }
+
+  // Quiz settings
+  if (el.configQuizCount) {
+    const val = el.configQuizCount.value;
+    state.configCount = val === "all" ? "all" : parseInt(val, 10);
+  }
+  if (el.configQuizType) {
+    state.configType = el.configQuizType.value || null;
+  }
+  if (el.configQuizSince) {
+    state.configSince = el.configQuizSince.value
+      ? parseInt(el.configQuizSince.value, 10)
+      : null;
+  }
+
+  setStoredPreferences({
+    playerName: name,
+    theme: themeSetting,
+    themeColor,
+    quizCount: state.configCount,
+    quizType: state.configType,
+    quizSince: state.configSince,
+    carouselDelaySeconds: carouselState.delayMs / 1000,
+    carouselSince: carouselState.filterSince,
+  });
+
+  applyFilter();
+  updateStartScreenNotice();
   closeConfigModal();
+
+  if (languageChanged) {
+    setLang(newLang).then(() => loadTranslations(newLang)).then(() => {
+      setStartMode(state.currentMode);
+      loadChangelog();
+    });
+  }
 }

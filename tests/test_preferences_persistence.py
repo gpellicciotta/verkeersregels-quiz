@@ -44,12 +44,37 @@ class TestPreferencesPersistence(unittest.TestCase):
         )
 
     def test_save_config_persists_quiz_and_carousel_choices(self) -> None:
-        """Validates that saveConfig writes quiz and carousel configuration to storage."""
+        """Validates that saveConfig writes general, quiz, and carousel configuration to storage."""
+        self.assertIn("playerName: name,", self.js_code)
+        self.assertIn("theme: themeSetting,", self.js_code)
+        self.assertIn("themeColor,", self.js_code)
         self.assertIn("quizCount: state.configCount,", self.js_code)
         self.assertIn("quizType: state.configType,", self.js_code)
         self.assertIn("quizSince: state.configSince,", self.js_code)
         self.assertIn("carouselDelaySeconds: carouselState.delayMs / 1000,", self.js_code)
         self.assertIn("carouselSince: carouselState.filterSince,", self.js_code)
+
+    def test_save_config_applies_theme_and_language_immediately(self) -> None:
+        """Validates that saveConfig applies the chosen theme and switches language when changed."""
+        self.assertIn("applyTheme(themeSetting, themeColor);", self.js_code)
+        self.assertIn("languageChanged = true;", self.js_code)
+        self.assertIn("setLang(newLang).then(() => loadTranslations(newLang))", self.js_code)
+
+    def test_apply_stored_preferences_restores_theme_unless_query_override(self) -> None:
+        """Validates that stored theme/theme-color are restored at startup unless a query param overrides them."""
+        self.assertIn("const themeOverride = getThemeQueryOverride();", self.js_code)
+        self.assertIn("const themeColorOverride = getThemeColorQueryOverride();", self.js_code)
+        self.assertIn(
+            "if ((themeOverride === null && stored.theme) || (themeColorOverride === null && stored.themeColor)) {",
+            self.js_code,
+        )
+
+    def test_config_modal_defines_general_settings_fields(self) -> None:
+        """Validates that dom.js registers the general settings fields: name, language, theme, theme-color."""
+        self.assertIn('configName: document.getElementById("config-name"),', self.js_code)
+        self.assertIn('configLanguage: document.getElementById("config-language"),', self.js_code)
+        self.assertIn('configTheme: document.getElementById("config-theme"),', self.js_code)
+        self.assertIn('configThemeColor: document.getElementById("config-theme-color"),', self.js_code)
 
     def test_set_start_mode_only_persists_on_user_interaction(self) -> None:
         """Validates that setStartMode accepts a persist flag used only by direct user controls."""

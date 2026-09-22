@@ -21,8 +21,13 @@
         var p = new URLSearchParams(window.location.search);
         var t = (p.get("theme") || "").trim().toLowerCase();
         var c = (p.get("theme-color") || p.get("themecolor") || p.get("theme_color") || "").trim().toLowerCase();
-        var color = (c === "yellow" || c === "geel") ? "yellow" : ((c === "red" || c === "rood") ? "red" : "blue");
-        var setting = (t === "dark" || t === "light" || t === "system") ? t : "system";
+        var stored = {};
+        try {
+          var raw = localStorage.getItem("verkeersquiz_preferences");
+          if (raw) stored = JSON.parse(raw) || {};
+        } catch (e2) {}
+        var color = (c === "yellow" || c === "geel") ? "yellow" : ((c === "red" || c === "rood") ? "red" : ((c === "blue" || c === "blauw") ? "blue" : (stored.themeColor || "blue")));
+        var setting = (t === "dark" || t === "light" || t === "system") ? t : (stored.theme || "system");
         var resolved = setting;
         if (setting === "system") {
           resolved = (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) ? "dark" : "light";
@@ -387,12 +392,53 @@
   <div id="modal-config" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="modal-config-title">
     <div class="modal-dialog modal-dialog-config">
       <div class="modal-header">
-        <h3 id="modal-config-title" data-i18n="config.title_quiz">Instellingen Quiz</h3>
+        <h3 id="modal-config-title" data-i18n="config.title">Instellingen</h3>
         <button type="button" id="btn-config-close" class="modal-close" aria-label="Sluiten" data-i18n-aria="config.btn_close_aria"><span class="modal-close-icon" data-icon="close" aria-hidden="true"></span></button>
       </div>
       <div class="modal-body modal-config-body">
+        <!-- General Settings Section -->
+        <div id="config-section-general" class="config-section">
+          <h4 class="config-section-title" data-i18n="config.section_general">Algemeen</h4>
+          <p class="config-section-intro" data-i18n="config.introduction_general">Deze instellingen gelden overal in de app</p>
+
+          <div class="config-field">
+            <label for="config-name" class="config-label" data-i18n="config.label_name">Jouw naam</label>
+            <input type="text" id="config-name" class="config-input" data-i18n-placeholder="start.name_placeholder" data-i18n-aria="start.name_aria">
+          </div>
+
+          <div class="config-field">
+            <label for="config-language" class="config-label" data-i18n="config.label_language">Taal</label>
+            <select id="config-language" class="config-select">
+              <option value="nl">Nederlands</option>
+              <option value="fr">Français</option>
+              <option value="de">Deutsch</option>
+              <option value="it">Italiano</option>
+              <option value="en">English</option>
+            </select>
+          </div>
+
+          <div class="config-field">
+            <label for="config-theme" class="config-label" data-i18n="config.label_theme">Thema</label>
+            <select id="config-theme" class="config-select">
+              <option value="system" data-i18n="config.theme_system">Systeeminstelling</option>
+              <option value="light" data-i18n="config.theme_light">Licht</option>
+              <option value="dark" data-i18n="config.theme_dark">Donker</option>
+            </select>
+          </div>
+
+          <div class="config-field">
+            <label for="config-theme-color" class="config-label" data-i18n="config.label_theme_color">Kleur</label>
+            <select id="config-theme-color" class="config-select">
+              <option value="blue" data-i18n="config.color_blue">Blauw</option>
+              <option value="yellow" data-i18n="config.color_yellow">Geel</option>
+              <option value="red" data-i18n="config.color_red">Rood</option>
+            </select>
+          </div>
+        </div>
+
         <!-- Quiz Configuration Section -->
         <div id="config-section-quiz" class="config-section">
+          <h4 class="config-section-title" data-i18n="config.section_quiz">Enkel voor de Quiz</h4>
           <p class="config-section-intro" data-i18n="config.introduction_quiz">Stel jouw quiz naar wens in</p>
 
           <div class="config-field">
@@ -436,7 +482,8 @@
         </div>
 
         <!-- Carousel Configuration Section -->
-        <div id="config-section-carousel" class="config-section hidden">
+        <div id="config-section-carousel" class="config-section">
+          <h4 class="config-section-title" data-i18n="config.section_carousel">Enkel voor de Carrousel</h4>
           <p class="config-section-intro" data-i18n="config.introduction_carousel">Stel jouw carrousel naar wens in</p>
 
           <div class="config-field">

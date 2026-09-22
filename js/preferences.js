@@ -1,6 +1,14 @@
 import { el } from "./dom.js";
 import { state, carouselState } from "./state.js";
-import { getNameParam, getQuestionCountOverride, getTypeFilter, getSinceFilter } from "./params.js";
+import {
+  getNameParam,
+  getQuestionCountOverride,
+  getTypeFilter,
+  getSinceFilter,
+  getThemeQueryOverride,
+  getThemeColorQueryOverride,
+} from "./params.js";
+import { applyTheme } from "./theme.js";
 
 export const PREFS_STORAGE_KEY = "verkeersquiz_preferences";
 
@@ -49,6 +57,12 @@ export function applyStoredPreferences() {
   }
   if (stored.carouselSince !== undefined && stored.carouselSince !== null) {
     carouselState.filterSince = stored.carouselSince;
+  }
+
+  const themeOverride = getThemeQueryOverride();
+  const themeColorOverride = getThemeColorQueryOverride();
+  if ((themeOverride === null && stored.theme) || (themeColorOverride === null && stored.themeColor)) {
+    applyTheme(themeOverride || stored.theme, themeColorOverride || stored.themeColor);
   }
 
   const params = new URLSearchParams(window.location.search);

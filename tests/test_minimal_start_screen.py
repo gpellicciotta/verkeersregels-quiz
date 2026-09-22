@@ -56,15 +56,22 @@ class TestMinimalStartScreen(unittest.TestCase):
         self.assertIn('Giovanni Pellicciotta', html, "Copyright must credit Giovanni Pellicciotta")
 
     def test_config_modal_structure_and_options(self) -> None:
-        """Validates configuration modal markup for quiz and carousel settings."""
+        """Validates unified configuration modal markup for general, quiz, and carousel settings."""
         self.assertTrue(INDEX_PATH.exists(), "index.html must exist")
         html = INDEX_PATH.read_text(encoding="utf-8")
 
         self.assertIn('id="modal-config"', html, "index.html must define modal-config dialog")
         self.assertIn('id="modal-config-title"', html, "index.html must define modal-config-title")
-        self.assertIn('>Instellingen Quiz<', html, "modal-config-title must be 'Instellingen Quiz'")
+        self.assertIn('>Instellingen<', html, "modal-config-title must be 'Instellingen'")
         self.assertIn('id="btn-config-close"', html, "index.html must define btn-config-close")
         self.assertIn('id="btn-config-save"', html, "index.html must define btn-config-save")
+
+        # General settings
+        self.assertIn('id="config-section-general"', html, "index.html must define config-section-general")
+        self.assertIn('id="config-name"', html, "index.html must define config-name")
+        self.assertIn('id="config-language"', html, "index.html must define config-language")
+        self.assertIn('id="config-theme"', html, "index.html must define config-theme")
+        self.assertIn('id="config-theme-color"', html, "index.html must define config-theme-color")
 
         # Quiz settings
         self.assertIn('id="config-section-quiz"', html, "index.html must define config-section-quiz")
@@ -112,6 +119,8 @@ class TestMinimalStartScreen(unittest.TestCase):
         self.assertIn(".config-field-warning", css, "style.css must define .config-field-warning")
         self.assertIn(".config-label", css, "style.css must define .config-label")
         self.assertIn(".config-select", css, "style.css must define .config-select")
+        self.assertIn(".config-section-title", css, "style.css must define .config-section-title")
+        self.assertIn(".config-input", css, "style.css must define .config-input")
         self.assertIn(".modal-actions-config", css, "style.css must define .modal-actions-config")
 
     def test_carousel_and_result_round_buttons(self) -> None:
