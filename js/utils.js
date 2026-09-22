@@ -41,3 +41,18 @@ export function getSignCode(path) {
   return match ? match[1] : "";
 }
 
+// wegcode.be publishes the consolidated Wegcode in Dutch and French (same
+// URL structure and article anchors on both) but not in German or English,
+// so those languages — and any future one — fall back to Dutch.
+// Matches both directions so it stays correct when applied repeatedly to
+// an already-swapped href (e.g. the About screen links toggling FR -> NL).
+const WEGCODE_LANG_RE = /^(https:\/\/www\.wegcode\.be\/)(nl|fr)(\/.*)$/;
+
+export function localizeSourceUrl(url, lang) {
+  if (!url || typeof url !== "string") return url;
+  const match = url.match(WEGCODE_LANG_RE);
+  if (!match) return url;
+  const target = lang === "fr" ? "fr" : "nl";
+  return `${match[1]}${target}${match[3]}`;
+}
+

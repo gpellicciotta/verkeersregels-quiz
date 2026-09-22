@@ -1,7 +1,7 @@
 import { CONFIG } from "./config.js";
 import { el } from "./dom.js";
 import { state, allQuestions } from "./state.js";
-import { shuffle, getSinceBadge, formatDuration, getSignCode } from "./utils.js";
+import { shuffle, getSinceBadge, formatDuration, getSignCode, localizeSourceUrl } from "./utils.js";
 import { getNameParam, getQuestionCountOverride, getSinceFilter, getTypeFilter } from "./params.js";
 import { setStoredPreferences } from "./preferences.js";
 import { showScreen } from "./screens.js";
@@ -406,7 +406,7 @@ export function renderExplanation(q) {
   if (q.source) {
     const link = document.createElement("a");
     link.className = "explanation-link-pill";
-    link.href = q.source;
+    link.href = localizeSourceUrl(q.source, getLang());
     link.target = "_blank";
     link.rel = "noopener noreferrer";
     link.title = t("quiz.source_link_title");

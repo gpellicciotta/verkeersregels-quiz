@@ -40,6 +40,7 @@ import { openChangelogModal, closeChangelogModal, loadChangelog } from "./change
 import { registerServiceWorker, updateOnlineStatus } from "./pwa.js";
 import { setLang, detectLang, getLang, applyAll, t } from "./i18n.js";
 import { handleShare } from "./share.js";
+import { localizeSourceUrl } from "./utils.js";
 
 el.btnStart.addEventListener("click", () => {
   const isCarouselSelected = state.currentMode === "carousel" || (el.radioModeCarousel && el.radioModeCarousel.checked);
@@ -311,6 +312,18 @@ function buildLangCycleLabel(lang) {
   }).join(" → ");
 }
 
+// wegcode.be's own source links (About screen) follow the same NL/FR-only
+// pattern as per-question sources — see localizeSourceUrl().
+function updateAboutSourceLinks() {
+  const lang = getLang();
+  if (el.aboutSourceWegcode) {
+    el.aboutSourceWegcode.href = localizeSourceUrl(el.aboutSourceWegcode.href, lang);
+  }
+  if (el.aboutSourceWegcodeChanges) {
+    el.aboutSourceWegcodeChanges.href = localizeSourceUrl(el.aboutSourceWegcodeChanges.href, lang);
+  }
+}
+
 function updateLangButton() {
   if (!el.btnLang) return;
   const lang = getLang();
@@ -329,6 +342,7 @@ if (el.btnLang) {
     setLang(next).then(() => {
       loadTranslations(next).then(() => {
         updateLangButton();
+        updateAboutSourceLinks();
         // Re-render dynamic strings that aren't covered by data-i18n
         updateStartScreenNotice();
         setStartMode(state.currentMode);
@@ -345,6 +359,7 @@ if (el.btnLang) {
 document.addEventListener("languagechange", () => {
   applyAll();
   updateLangButton();
+  updateAboutSourceLinks();
   if (carouselState.isActive) {
     renderCarouselCard();
   }
@@ -354,6 +369,7 @@ document.addEventListener("languagechange", () => {
 setLang(detectLang())
   .then(() => {
     updateLangButton();
+    updateAboutSourceLinks();
     registerServiceWorker();
     initTheme();
     updateOnlineStatus();

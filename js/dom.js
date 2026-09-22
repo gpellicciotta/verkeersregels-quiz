@@ -42,7 +42,7 @@ export const el = {
   btnShare: document.getElementById("btn-share"),
   shareToast: document.getElementById("share-toast"),
   btnPrint: document.getElementById("btn-print"),
-  btnRestart: document.getElementById("btn-restart"),
+  btnResultClose: document.getElementById("btn-result-close"),
   btnReportError: document.getElementById("btn-report-error"),
   btnReportErrorMobile: document.getElementById("btn-report-error-mobile"),
   modalReport: document.getElementById("modal-report"),
@@ -96,4 +96,6 @@ export const el = {
   aboutVersionTag: document.getElementById("about-version-tag"),
   quizModeDesc: document.getElementById("quiz-mode-desc"),
   btnLang: document.getElementById("btn-lang"),
+  aboutSourceWegcode: document.getElementById("about-source-wegcode"),
+  aboutSourceWegcodeChanges: document.getElementById("about-source-wegcode-changes"),
 };

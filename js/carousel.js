@@ -1,8 +1,8 @@
 import { el } from "./dom.js";
 import { carouselState, allQuestions } from "./state.js";
-import { shuffle, getSinceBadge, getSignCode } from "./utils.js";
+import { shuffle, getSinceBadge, getSignCode, localizeSourceUrl } from "./utils.js";
 import { showScreen } from "./screens.js";
-import { t } from "./i18n.js";
+import { t, getLang } from "./i18n.js";
 import { applyTranslation } from "./quiz.js";
 
 export function formatCategoryName(cat) {
@@ -62,7 +62,7 @@ export function renderCarouselCard() {
 
   if (el.carouselSourceWrap && el.carouselSourceLink) {
     if (item.source) {
-      el.carouselSourceLink.href = item.source;
+      el.carouselSourceLink.href = localizeSourceUrl(item.source, getLang());
       el.carouselSourceWrap.classList.remove("hidden");
     } else {
       el.carouselSourceWrap.classList.add("hidden");

@@ -17,6 +17,7 @@ A summarized overview of all changes, per version of this project.
 - FrontEnd: Duitse vertalingen toegevoegd voor de gebruikersinterface, configuratiedialogen en vragenbank.
 - FrontEnd: Franse vertalingen toegevoegd voor de gebruikersinterface, configuratiedialogen en vragenbank.
 - FrontEnd: De tooltip voor het wisselen van taal verduidelijkt; deze toont nu de volledige taalcyclus met de actieve taal gemarkeerd.
+- FrontEnd: Wegcode-broncodelinks tonen nu de Franse versie bij Franse taalkeuze; Duits en Engels blijven op de Nederlandse versie, bij ontbreken van een officieel equivalent.
 
 ## v3.2.0 [2026-09-22]
 - FrontEnd: Aparte, gelokaliseerde uitleg en titels voor verkeersborden toegevoegd aan de carrousel, inclusief volledige Nederlandse en Engelse vertalingen.
