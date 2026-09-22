@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import json
+import re
 import unittest
 from pathlib import Path
 
@@ -53,6 +54,28 @@ class TestI18n(unittest.TestCase):
         self.assertEqual(nl_keys - de_keys, set(), f"Keys in NL but missing in DE: {nl_keys - de_keys}")
         self.assertEqual(de_keys - nl_keys, set(), f"Keys in DE but missing in NL: {de_keys - nl_keys}")
         self.assertGreater(len(nl_keys), 50, "String dictionaries should have over 50 keys")
+
+    def test_all_t_call_keys_exist_in_string_dictionary(self) -> None:
+        """Validates that every literal key passed to t(...) in js/*.js exists in strings.nl.json.
+
+        A key referenced only in code but present in no dictionary (e.g. a typo, or a
+        translation added for one code path but never added to the JSON files) silently
+        falls back to rendering the raw key string to the user instead of translated text.
+        """
+        nl_path = DATA_DIR / "strings.nl.json"
+        with open(nl_path, "r", encoding="utf-8") as f:
+            nl_dict = json.load(f)
+        nl_keys = set(nl_dict.keys())
+
+        key_pattern = re.compile(r"\bt\(\s*[\"']([\w.]+)[\"']")
+        referenced_keys: dict[str, str] = {}
+        for js_path in sorted(JS_DIR.glob("*.js")):
+            code = js_path.read_text(encoding="utf-8")
+            for match in key_pattern.finditer(code):
+                referenced_keys.setdefault(match.group(1), js_path.name)
+
+        missing = {key: src for key, src in referenced_keys.items() if key not in nl_keys}
+        self.assertEqual(missing, {}, f"t() keys referenced in JS but missing from strings.nl.json: {missing}")
 
     def test_translations_en_overlay_covers_all_questions(self) -> None:
         """Validates that translations.en.json contains translations for every question in questions.json."""

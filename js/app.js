@@ -72,7 +72,7 @@ if (el.playerNameInput) {
   });
 }
 el.btnNext.addEventListener("click", nextQuestion);
-el.btnRestart.addEventListener("click", restart);
+el.btnResultClose.addEventListener("click", restart);
 if (el.btnShare) el.btnShare.addEventListener("click", handleShare);
 if (el.btnPrint) el.btnPrint.addEventListener("click", () => window.print());
 if (el.btnReportError) el.btnReportError.addEventListener("click", openReportModal);
@@ -364,6 +364,20 @@ document.addEventListener("languagechange", () => {
     renderCarouselCard();
   }
 });
+
+// Dismiss any open [data-tooltip] popover on resize/orientation change: a tap-focused
+// or touch-hover tooltip would otherwise keep showing (and be mispositioned) after layout changes.
+function dismissOpenTooltips() {
+  if (document.activeElement instanceof HTMLElement && document.activeElement.hasAttribute("data-tooltip")) {
+    document.activeElement.blur();
+  }
+  document.body.classList.add("suppress-tooltips");
+  window.requestAnimationFrame(() => {
+    document.body.classList.remove("suppress-tooltips");
+  });
+}
+window.addEventListener("resize", dismissOpenTooltips);
+window.addEventListener("orientationchange", dismissOpenTooltips);
 
 // ── Application startup ───────────────────────────────────────────────────────
 setLang(detectLang())

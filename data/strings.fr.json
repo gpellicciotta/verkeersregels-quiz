@@ -58,10 +58,11 @@
 
   "result.title": "Résultat du Quiz",
   "result.summary_name": "{name}, vous avez obtenu {correct}/{total} ({pct}%) en {duration}.",
+  "result.summary_no_name": "Vous avez obtenu {correct}/{total} ({pct}%) en {duration}.",
   "result.btn_share_aria": "Partager les résultats",
   "result.btn_share_tooltip": "Partager les résultats",
   "result.btn_print_aria": "Imprimer les résultats",
-  "result.btn_restart_aria": "Rejouer (fermer)",
+  "result.btn_close_aria": "Fermer",
   "result.share_title": "Quiz Code de la Route Belge",
   "result.share_text_name": "{name} a obtenu {correct}/{total} ({pct}%) en {duration} au Quiz Code de la Route !",
   "result.share_text": "J'ai obtenu {correct}/{total} ({pct}%) en {duration} au Quiz Code de la Route !",

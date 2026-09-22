@@ -58,10 +58,6 @@
       </div>
       <button id="btn-start" class="btn-primary btn-start-arrow" type="button" aria-label="Start quiz" title="Start quiz" data-i18n-aria="start.btn_quiz" data-i18n-tooltip="start.btn_quiz">
         <span id="btn-start-label" class="btn-start-label" data-i18n="start.btn_quiz">Start quiz</span>
-        <svg class="start-arrow-svg" aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-          <line x1="5" y1="12" x2="19" y2="12"></line>
-          <polyline points="12 5 19 12 12 19"></polyline>
-        </svg>
       </button>
     </div>
     <p id="start-error" class="error hidden"></p>
@@ -123,7 +119,7 @@
             </svg>
           </button>
 
-          <!-- Circle 4: Language button (toggles NL / EN) -->
+          <!-- Circle 4: Language button (toggles between available languages) -->
           <button type="button" id="btn-lang" class="start-meta-item start-meta-btn start-meta-btn-action btn-lang"
                   aria-label="Taal wijzigen"
                   data-tooltip="Taal: [NL] → FR → DE → EN"
@@ -333,18 +329,18 @@
             <rect x="6" y="14" width="12" height="8"></rect>
           </svg>
         </button>
-        <button id="btn-restart" class="modal-close view-close-btn result-btn-restart" type="button" aria-label="Opnieuw spelen (sluiten)" title="Opnieuw spelen (sluiten)" data-i18n-aria="result.btn_restart_aria" data-i18n-tooltip="result.btn_restart_aria">&times;</button>
+        <button id="btn-result-close" class="modal-close view-close-btn result-btn-close" type="button" aria-label="Sluiten" title="Sluiten" data-i18n-aria="result.btn_close_aria" data-i18n-tooltip="result.btn_close_aria">&times;</button>
       </div>
     </div>
     <div id="share-toast" class="share-toast hidden" role="status" aria-live="polite"></div>
     <table id="result-table">
       <thead>
         <tr>
-          <th scope="col" data-i18n="result.table_col_num">#</th>
-          <th scope="col" data-i18n="result.table_col_question">Vraag</th>
-          <th scope="col" data-i18n="result.table_col_your_answer">Jouw antwoord</th>
-          <th scope="col" data-i18n="result.table_col_correct_answer">Juist antwoord</th>
-          <th scope="col" data-i18n="result.table_col_result">Resultaat</th>
+          <th scope="col" class="col-num" data-i18n="result.table_col_num">#</th>
+          <th scope="col" class="col-question" data-i18n="result.table_col_question">Vraag</th>
+          <th scope="col" class="col-user-ans" data-i18n="result.table_col_your_answer">Jouw antwoord</th>
+          <th scope="col" class="col-correct-ans" data-i18n="result.table_col_correct_answer">Juist antwoord</th>
+          <th scope="col" class="col-result" data-i18n="result.table_col_result">Resultaat</th>
         </tr>
       </thead>
       <tbody id="result-table-body"></tbody>

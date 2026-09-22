@@ -58,10 +58,11 @@
 
   "result.title": "Quiz-Ergebnis",
   "result.summary_name": "{name}, Sie haben {correct}/{total} ({pct}%) in {duration} erreicht.",
+  "result.summary_no_name": "Sie haben {correct}/{total} ({pct}%) in {duration} erreicht.",
   "result.btn_share_aria": "Ergebnis teilen",
   "result.btn_share_tooltip": "Ergebnis teilen",
   "result.btn_print_aria": "Ergebnisse drucken",
-  "result.btn_restart_aria": "Erneut spielen (schließen)",
+  "result.btn_close_aria": "Schließen",
   "result.share_title": "Belgisches Verkehrsregeln-Quiz",
   "result.share_text_name": "{name} hat {correct}/{total} ({pct}%) in {duration} beim Verkehrsregels Quiz erreicht!",
   "result.share_text": "Ich habe {correct}/{total} ({pct}%) in {duration} beim Verkehrsregels Quiz erreicht!",

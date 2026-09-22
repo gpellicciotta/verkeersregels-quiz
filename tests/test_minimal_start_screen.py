@@ -38,7 +38,6 @@ class TestMinimalStartScreen(unittest.TestCase):
         self.assertIn('id="player-name"', html, "index.html must define player-name input")
         self.assertIn('id="btn-start"', html, "index.html must define btn-start button")
         self.assertIn('btn-start-arrow', html, "btn-start must have btn-start-arrow class")
-        self.assertIn('start-arrow-svg', html, "btn-start must contain start-arrow-svg")
 
         # 4. Subtle line
         self.assertIn('class="start-divider"', html, "index.html must define start-divider")
@@ -105,7 +104,6 @@ class TestMinimalStartScreen(unittest.TestCase):
         self.assertIn(".start-action-row", css, "style.css must define .start-action-row")
         self.assertIn(".player-name-input", css, "style.css must define .player-name-input")
         self.assertIn(".btn-start-arrow", css, "style.css must define .btn-start-arrow")
-        self.assertIn(".start-arrow-svg", css, "style.css must define .start-arrow-svg")
         self.assertIn(".start-meta-btn", css, "style.css must define .start-meta-btn")
         self.assertIn(".start-meta-btn-action", css, "style.css must define .start-meta-btn-action")
         self.assertIn(".modal-dialog-config", css, "style.css must define .modal-dialog-config")
@@ -143,9 +141,9 @@ class TestMinimalStartScreen(unittest.TestCase):
         self.assertIn('Quiz Resultaat', html, "Result title must be 'Quiz Resultaat'")
         self.assertIn('result-header-spacer', html, "Result header must include spacer for centering")
         self.assertIn('result-btn-round', html, "index.html must define result-btn-round")
-        self.assertIn('result-btn-restart', html, "index.html must define result-btn-restart")
+        self.assertIn('result-btn-close', html, "index.html must define result-btn-close")
         self.assertIn('.result-btn-round', css, "style.css must style .result-btn-round")
-        self.assertIn('.result-btn-restart', css, "style.css must style .result-btn-restart")
+        self.assertIn('.result-btn-close', css, "style.css must style .result-btn-close")
 
         # Desktop quiz bottom report button
         self.assertIn('quiz-bottom-meta', html, "index.html must define quiz-bottom-meta")

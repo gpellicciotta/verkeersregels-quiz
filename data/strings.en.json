@@ -58,10 +58,11 @@
 
   "result.title": "Quiz Result",
   "result.summary_name": "{name}, you scored {correct}/{total} ({pct}%) in {duration}.",
+  "result.summary_no_name": "You scored {correct}/{total} ({pct}%) in {duration}.",
   "result.btn_share_aria": "Share results",
   "result.btn_share_tooltip": "Share results",
   "result.btn_print_aria": "Print results",
-  "result.btn_restart_aria": "Play again (close)",
+  "result.btn_close_aria": "Close",
   "result.share_title": "Belgian Traffic Rules Quiz",
   "result.share_text_name": "{name} scored {correct}/{total} ({pct}%) in {duration} on the Traffic Rules Quiz!",
   "result.share_text": "I scored {correct}/{total} ({pct}%) in {duration} on the Traffic Rules Quiz!",

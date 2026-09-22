@@ -214,6 +214,7 @@ body {
 }
 
 #app {
+  position: relative;
   width: 100%;
   margin: 0 auto;
   padding: 16px 14px 20px;
@@ -237,13 +238,13 @@ body {
 h1 {
   font-size: var(--font-size-xl);
   margin: 0 0 8px 0;
-  color: var(--color-text-strong);
+  color: var(--color-primary);
 }
 
 h2 {
   font-size: var(--font-size-lg);
   margin: 16px 0 8px 0;
-  color: var(--color-text-strong);
+  color: var(--color-primary);
 }
 
 p {
@@ -530,6 +531,12 @@ button {
   z-index: 30;
 }
 
+/* Force-hide any tooltip left open across a resize/orientation change (see app.js). */
+body.suppress-tooltips [data-tooltip]::after,
+body.suppress-tooltips [data-tooltip]::before {
+  display: none !important;
+}
+
 .start-meta-item:first-child[data-tooltip]::after {
   left: 0;
   transform: translateY(4px);
@@ -573,8 +580,7 @@ button {
 .btn-about-close,
 .btn-about-back,
 .btn-carousel-close,
-.btn-carousel-exit,
-.result-btn-restart,
+.result-btn-close,
 .modal-close {
   background: transparent;
   border: none;
@@ -587,6 +593,8 @@ button {
   transition: color 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
   display: inline-flex;
   align-items: center;
+  position: relative;
+  z-index: 60;
   justify-content: center;
   width: auto;
   height: auto;
@@ -595,20 +603,18 @@ button {
 .btn-about-close:hover,
 .btn-about-back:hover,
 .btn-carousel-close:hover,
-.btn-carousel-exit:hover,
-.result-btn-restart:hover,
+.result-btn-close:hover,
 .modal-close:hover {
-  color: var(--color-text);
+  color: var(--color-primary);
   background-color: var(--color-btn-tint-hover);
 }
 
 .btn-about-close:focus-visible,
 .btn-about-back:focus-visible,
 .btn-carousel-close:focus-visible,
-.btn-carousel-exit:focus-visible,
-.result-btn-restart:focus-visible,
+.result-btn-close:focus-visible,
 .modal-close:focus-visible {
-  color: var(--color-text);
+  color: var(--color-primary);
   background-color: var(--color-btn-tint-hover);
   outline: none;
   box-shadow: 0 0 0 3px var(--color-primary-border);
@@ -626,7 +632,7 @@ button {
   font-weight: 700;
   line-height: 1.25;
   letter-spacing: -0.02em;
-  color: var(--color-text-strong);
+  color: var(--color-primary);
 }
 
 .start-desc {
@@ -675,7 +681,6 @@ button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 7px;
   padding: 0 18px;
   font-size: var(--font-size-sm);
   font-weight: 600;
@@ -697,15 +702,6 @@ button {
   transform: translateY(-1px);
   box-shadow: 0 3px 8px var(--color-primary-shadow-hover);
   outline: none;
-}
-
-.start-arrow-svg {
-  flex-shrink: 0;
-  transition: transform 0.15s ease;
-}
-
-.btn-start-arrow:hover .start-arrow-svg {
-  transform: translateX(2px);
 }
 
 .start-buttons {
@@ -1341,7 +1337,6 @@ button {
   align-items: stretch;
   gap: 0;
   margin-bottom: 8px;
-  position: relative;
 }
 
 .result-header-spacer {
@@ -1375,6 +1370,14 @@ button {
   align-items: center;
   gap: 10px;
   flex-shrink: 0;
+}
+
+/* Positioned relative to #app (the outer card), not .result-actions: sits in the
+   card's actual top-right corner rather than inline with the share/print buttons. */
+.result-btn-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
 }
 
 .result-btn-round {
@@ -1594,6 +1597,14 @@ button {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+}
+
+/* Positioned relative to #app (the outer card), not .carousel-header-actions: sits in the
+   card's actual top-right corner instead of inline with the playback controls. */
+.btn-carousel-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
 }
 
 .btn-carousel-ctrl {
@@ -1860,11 +1871,10 @@ button {
    ========================================================================== */
 
 .about-header {
-  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-bottom: 16px;
+  padding: 16px 0;
   border-bottom: 1px solid var(--color-border-subtle);
   margin-bottom: 20px;
   min-height: 44px;
@@ -1873,7 +1883,7 @@ button {
 .about-title {
   font-size: var(--font-size-lg);
   font-weight: 700;
-  color: var(--color-text-strong);
+  color: var(--color-primary);
   margin: 0;
   text-align: center;
 }
@@ -1881,16 +1891,8 @@ button {
 .btn-about-close,
 .btn-about-back {
   position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.btn-about-close:hover,
-.btn-about-close:focus-visible,
-.btn-about-back:hover,
-.btn-about-back:focus-visible {
-  transform: translateY(-50%);
+  right: 12px;
+  top: 12px;
 }
 
 .about-content {
@@ -2024,6 +2026,7 @@ button {
 }
 
 .modal-dialog {
+  position: relative;
   background: var(--color-card);
   border-radius: var(--radius-lg);
   max-width: 480px;
@@ -2048,7 +2051,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 20px;
+  padding: 16px 44px 16px 20px;
   border-bottom: 1px solid var(--color-border-subtle);
 }
 
@@ -2056,7 +2059,13 @@ button {
   margin: 0;
   font-size: var(--font-size-md);
   font-weight: 700;
-  color: var(--color-text);
+  color: var(--color-primary);
+}
+
+.modal-dialog .modal-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
 }
 
 .modal-body {
@@ -2331,6 +2340,32 @@ button {
    11. Responsive Layout Enhancements (Mobile-First Breakpoints)
    ========================================================================== */
 
+/* Narrow Phone Breakpoint (< 380px) */
+@media (max-width: 380px) {
+  .start-action-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .quiz-start-fields,
+  .btn-start-arrow {
+    width: 100%;
+  }
+
+  .start-meta-bar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .start-meta-info {
+    order: -1;
+  }
+
+  .start-copyright {
+    display: none;
+  }
+}
+
 /* Tablet Breakpoint (>= 640px) */
 @media (min-width: 640px) {
   body {
@@ -2451,6 +2486,7 @@ button {
 
   #result-table {
     border-collapse: collapse;
+    table-layout: fixed;
     margin-top: 16px;
   }
 
@@ -2498,6 +2534,12 @@ button {
 
   #result-table tr.correct-row .col-correct-ans {
     display: table-cell;
+  }
+
+  #result-table .col-question,
+  #result-table .col-user-ans,
+  #result-table .col-correct-ans {
+    width: calc((100% - 36px - 80px) / 3);
   }
 
   #result-table .col-question {
@@ -2657,6 +2699,18 @@ button {
   border-color: var(--color-wrong-border);
 }
 
+/* Only top/right/bottom: preserve the correct/wrong color-coded left accent border. */
+[data-theme="dark"] #result-table tr {
+  border-top-color: var(--color-border);
+  border-right-color: var(--color-border);
+  border-bottom-color: var(--color-border);
+}
+
+[data-theme="dark"] #result-table th,
+[data-theme="dark"] #result-table td {
+  border-color: var(--color-border);
+}
+
 @media (min-width: 640px) {
   [data-theme="dark"] #app {
     box-shadow: 0 1px 4px rgba(0, 0, 0, 0.45), 0 8px 24px rgba(0, 0, 0, 0.35);
@@ -2734,7 +2788,7 @@ button {
     width: 100% !important;
     max-width: 100% !important;
     border-collapse: collapse !important;
-    table-layout: auto !important;
+    table-layout: fixed !important;
     margin: 12px 0 0 0 !important;
     font-size: 0.82rem !important;
     box-shadow: none !important;
@@ -2789,6 +2843,12 @@ button {
     display: table-cell !important;
     width: 32px !important;
     text-align: center !important;
+  }
+
+  #result-table .col-question,
+  #result-table .col-user-ans,
+  #result-table .col-correct-ans {
+    width: calc((100% - 32px - 70px) / 3) !important;
   }
 
   #result-table .col-result {
