@@ -31,15 +31,18 @@ class TestResultShare(unittest.TestCase):
         self.assertIn('aria-live="polite"', html, "#share-toast must have aria-live polite")
 
     def test_share_localization_keys_exist_in_all_dictionaries(self) -> None:
-        """Validates that strings.nl.json, strings.fr.json, and strings.en.json define required share keys."""
+        """Validates that strings.nl.json, strings.fr.json, strings.de.json, and strings.en.json define required share keys."""
         nl_path = DATA_DIR / "strings.nl.json"
         fr_path = DATA_DIR / "strings.fr.json"
+        de_path = DATA_DIR / "strings.de.json"
         en_path = DATA_DIR / "strings.en.json"
 
         with open(nl_path, "r", encoding="utf-8") as f:
             nl_data = json.load(f)
         with open(fr_path, "r", encoding="utf-8") as f:
             fr_data = json.load(f)
+        with open(de_path, "r", encoding="utf-8") as f:
+            de_data = json.load(f)
         with open(en_path, "r", encoding="utf-8") as f:
             en_data = json.load(f)
 
@@ -57,9 +60,11 @@ class TestResultShare(unittest.TestCase):
         for key in required_keys:
             self.assertIn(key, nl_data, f"Key {key} missing from strings.nl.json")
             self.assertIn(key, fr_data, f"Key {key} missing from strings.fr.json")
+            self.assertIn(key, de_data, f"Key {key} missing from strings.de.json")
             self.assertIn(key, en_data, f"Key {key} missing from strings.en.json")
             self.assertTrue(nl_data[key].strip(), f"Key {key} empty in Dutch dictionary")
             self.assertTrue(fr_data[key].strip(), f"Key {key} empty in French dictionary")
+            self.assertTrue(de_data[key].strip(), f"Key {key} empty in German dictionary")
             self.assertTrue(en_data[key].strip(), f"Key {key} empty in English dictionary")
 
     def test_share_module_exports_and_structure(self) -> None:

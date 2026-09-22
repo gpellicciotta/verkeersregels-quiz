@@ -14,7 +14,7 @@ An overview of all tasks and their planning.
 ---
 
 ## Next Milestone
-- [~] T0059 [owner: @gemini] Localize user interface and question bank into German.
+*(Currently no tasks)*
 
 ---
 

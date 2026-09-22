@@ -85,6 +85,22 @@ FR_GLOSSARY_REPLACEMENTS = [
 ]
 
 
+# Belgian traffic law and German road terminology corrections for post-processing
+DE_GLOSSARY_REPLACEMENTS = [
+    (r"\bWegcode\b", "Straßenverkehrsordnung"),
+    (r"\bkm/u\b", "km/h"),
+    (r"\bkm / u\b", "km/h"),
+    (r"\bkm / h\b", "km/h"),
+    (r"\bKB 1 december 1975\b", "Kgl. Erlass vom 1. Dezember 1975"),
+    (r"\bbebouwde kom\b", "geschlossene Ortschaft"),
+    (r"\bwoonerf\b", "Wohnzone"),
+    (r"\bvoorrang van rechts\b", "Rechtsvorfahrt"),
+    (r"\bhaaientanden\b", "Haifischzähne"),
+    (r"\bMAM\b", "zGG"),
+    (r"\bUAL\b", "AAK"),
+]
+
+
 def format_sentence_case(text: str) -> str:
     """Ensures the first letter of the string is capitalized and trailing whitespace stripped."""
     if not text:
@@ -142,12 +158,22 @@ def post_process_fr(text: str) -> str:
     return format_sentence_case(res)
 
 
+def post_process_de(text: str) -> str:
+    """Applies German domain terminology fixes and proper sentence casing."""
+    res = text
+    for pat, rep in DE_GLOSSARY_REPLACEMENTS:
+        res = re.sub(pat, rep, res)
+    return format_sentence_case(res)
+
+
 def post_process(text: str, target_lang: str) -> str:
     """Applies language-specific post-processing rules."""
     if target_lang == "en":
         return post_process_en(text)
     if target_lang == "fr":
         return post_process_fr(text)
+    if target_lang == "de":
+        return post_process_de(text)
     return format_sentence_case(text)
 
 

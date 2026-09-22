@@ -299,14 +299,16 @@ function checkAutoStart() {
 }
 
 // ── Language switcher ─────────────────────────────────────────────────────────
+const LANG_CYCLE = { nl: "fr", fr: "de", de: "en", en: "nl" };
+const LANG_LABELS = { nl: "Nederlands", fr: "Français", de: "Deutsch", en: "English" };
+
 function updateLangButton() {
   if (!el.btnLang) return;
   const lang = getLang();
   const labelEl = el.btnLang.querySelector(".btn-lang-label");
   if (labelEl) labelEl.textContent = lang.toUpperCase();
-  const nextLang = lang === "nl" ? "fr" : (lang === "fr" ? "en" : "nl");
-  const nextLabels = { nl: "Nederlands", fr: "Français", en: "English" };
-  const targetLabel = nextLabels[nextLang] || nextLang.toUpperCase();
+  const nextLang = LANG_CYCLE[lang] || "nl";
+  const targetLabel = LANG_LABELS[nextLang] || nextLang.toUpperCase();
   el.btnLang.setAttribute("aria-label", t("start.btn_lang_aria"));
   el.btnLang.setAttribute("data-tooltip", targetLabel);
   el.btnLang.setAttribute("title", targetLabel);
@@ -315,7 +317,7 @@ function updateLangButton() {
 if (el.btnLang) {
   el.btnLang.addEventListener("click", () => {
     const current = getLang();
-    const next = current === "nl" ? "fr" : (current === "fr" ? "en" : "nl");
+    const next = LANG_CYCLE[current] || "nl";
     setLang(next).then(() => {
       loadTranslations(next).then(() => {
         updateLangButton();

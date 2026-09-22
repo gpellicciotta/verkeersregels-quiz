@@ -51,7 +51,7 @@ def build_sw_content(version: str) -> tuple[str, int]:
     situations = sorted([f"assets/situations/{f}" for f in os.listdir(SITUATIONS_DIR) if f.endswith(".jpg")]) if SITUATIONS_DIR.exists() else []
     js_modules = sorted([f"js/{f}" for f in os.listdir(JS_DIR) if f.endswith(".js")]) if JS_DIR.exists() else []
     data_dir = REPO_ROOT / "data"
-    data_files = sorted([f"data/{f}" for f in os.listdir(data_dir) if f.endswith(".json")]) if data_dir.exists() else ["data/questions.json"]
+    data_files = sorted([f"data/{f}" for f in os.listdir(data_dir) if f.endswith(".json") and not f.startswith(".")]) if data_dir.exists() else ["data/questions.json"]
 
     core_assets = [
         "./",

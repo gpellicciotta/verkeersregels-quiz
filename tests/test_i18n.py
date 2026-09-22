@@ -16,34 +16,42 @@ class TestI18n(unittest.TestCase):
     """Test suite validating UI localization files, dictionary key parity, and translation overlay."""
 
     def test_string_dictionaries_exist_and_have_matching_keys(self) -> None:
-        """Validates that strings.nl.json, strings.fr.json, and strings.en.json exist and share identical key sets."""
+        """Validates that strings.nl.json, strings.fr.json, strings.de.json, and strings.en.json exist and share identical key sets."""
         nl_path = DATA_DIR / "strings.nl.json"
         fr_path = DATA_DIR / "strings.fr.json"
+        de_path = DATA_DIR / "strings.de.json"
         en_path = DATA_DIR / "strings.en.json"
 
         self.assertTrue(nl_path.exists(), "strings.nl.json must exist")
         self.assertTrue(fr_path.exists(), "strings.fr.json must exist")
+        self.assertTrue(de_path.exists(), "strings.de.json must exist")
         self.assertTrue(en_path.exists(), "strings.en.json must exist")
 
         with open(nl_path, "r", encoding="utf-8") as f:
             nl_dict = json.load(f)
         with open(fr_path, "r", encoding="utf-8") as f:
             fr_dict = json.load(f)
+        with open(de_path, "r", encoding="utf-8") as f:
+            de_dict = json.load(f)
         with open(en_path, "r", encoding="utf-8") as f:
             en_dict = json.load(f)
 
         self.assertIsInstance(nl_dict, dict)
         self.assertIsInstance(fr_dict, dict)
+        self.assertIsInstance(de_dict, dict)
         self.assertIsInstance(en_dict, dict)
 
         nl_keys = set(nl_dict.keys())
         fr_keys = set(fr_dict.keys())
+        de_keys = set(de_dict.keys())
         en_keys = set(en_dict.keys())
 
         self.assertEqual(nl_keys - en_keys, set(), f"Keys in NL but missing in EN: {nl_keys - en_keys}")
         self.assertEqual(en_keys - nl_keys, set(), f"Keys in EN but missing in NL: {en_keys - nl_keys}")
         self.assertEqual(nl_keys - fr_keys, set(), f"Keys in NL but missing in FR: {nl_keys - fr_keys}")
         self.assertEqual(fr_keys - nl_keys, set(), f"Keys in FR but missing in NL: {fr_keys - nl_keys}")
+        self.assertEqual(nl_keys - de_keys, set(), f"Keys in NL but missing in DE: {nl_keys - de_keys}")
+        self.assertEqual(de_keys - nl_keys, set(), f"Keys in DE but missing in NL: {de_keys - nl_keys}")
         self.assertGreater(len(nl_keys), 50, "String dictionaries should have over 50 keys")
 
     def test_translations_en_overlay_covers_all_questions(self) -> None:
@@ -53,6 +61,10 @@ class TestI18n(unittest.TestCase):
     def test_translations_fr_overlay_covers_all_questions(self) -> None:
         """Validates that translations.fr.json contains translations for every question in questions.json."""
         self._validate_translation_overlay("fr")
+
+    def test_translations_de_overlay_covers_all_questions(self) -> None:
+        """Validates that translations.de.json contains translations for every question in questions.json."""
+        self._validate_translation_overlay("de")
 
     def _validate_translation_overlay(self, lang: str) -> None:
         questions_path = DATA_DIR / "questions.json"
