@@ -9,12 +9,13 @@ An overview of all tasks and their planning.
 > Owner: `[owner: @name]` shown only when active/blocked/needs-review.
 > Dependencies: `[needs: Tnnnn]` shown only when unresolved.
 
-**Next ID:** 0062
+**Next ID:** 0063
 
 ---
 
 ## Next Milestone
-- [ ] T0061 Group or export all SVG icons so they are more easily reusable.
+- [ ] A0061 Group or export all SVG icons so they are more easily reusable.
+- [~] T0062 [owner: @codex] Add a quiz close button that confirms discarding progress before returning to the start screen.
 
 ---
 
