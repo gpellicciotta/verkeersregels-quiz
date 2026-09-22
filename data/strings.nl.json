@@ -1,4 +1,9 @@
 {
+  "quiz.btn_close_aria": "Quiz stoppen",
+  "quiz.cancel_title": "Quiz stoppen?",
+  "quiz.cancel_description": "Als je stopt, verlies je alle voortgang van deze quiz. Weet je zeker dat je wilt stoppen?",
+  "quiz.cancel_continue": "Doorgaan met quiz",
+  "quiz.cancel_confirm": "Quiz stoppen",
   "title.quiz": "Verkeersregels Quiz",
   "title.carousel": "Verkeersborden Carrousel",
 

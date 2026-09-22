@@ -40,7 +40,10 @@ import { openChangelogModal, closeChangelogModal, loadChangelog } from "./change
 import { registerServiceWorker, updateOnlineStatus } from "./pwa.js";
 import { setLang, detectLang, getLang, applyAll, t } from "./i18n.js";
 import { handleShare } from "./share.js";
+import { initQuizCancel } from "./quiz-cancel.js";
 import { localizeSourceUrl } from "./utils.js";
+
+initQuizCancel();
 
 el.btnStart.addEventListener("click", () => {
   const isCarouselSelected = state.currentMode === "carousel" || (el.radioModeCarousel && el.radioModeCarousel.checked);

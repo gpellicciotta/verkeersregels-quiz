@@ -1,4 +1,9 @@
 {
+  "quiz.btn_close_aria": "Interrompi il quiz",
+  "quiz.cancel_title": "Interrompere il quiz?",
+  "quiz.cancel_description": "Se interrompi, perderai tutti i progressi di questo quiz. Vuoi davvero interrompere?",
+  "quiz.cancel_continue": "Continua il quiz",
+  "quiz.cancel_confirm": "Interrompi il quiz",
   "title.quiz": "Quiz sulle regole del traffico",
   "title.carousel": "Segnaletica stradale Carosello",
   "start.description": "Pratica le regole del traffico e la segnaletica belga.",

@@ -14,7 +14,6 @@ Practical guidance on development environment setup, testing, validation, deploy
 ---
 
 ## Local Development and Setup
-
 ### Initial Bootstrap
 To verify dependencies, validate repository structure, and execute the automated test suite in one step:
 
@@ -49,7 +48,6 @@ The application includes URL query parameters to speed up development and visual
 ---
 
 ## Testing and Quality Assurance
-
 ### Running Automated Unit Tests
 Run the full test suite verifying question schemas, sign assets, UX layout, and PWA configuration:
 
@@ -64,6 +62,25 @@ The test suite consists of 32 tests across five test modules:
 - `tests/test_ux_layout.py`: verifies desktop two-panel split, mobile floating action button, hidden option collapsing, and pill links.
 - `tests/test_sign_carousel.py`: verifies carousel markup, timing controls, pause overlay, and keyboard navigation.
 - `tests/test_about_view.py`: verifies About screen markup, version tag, sources presentation, start screen cleanup, and navigation.
+
+### Quiz Cancellation Browser Checks
+Install the optional browser test dependency locally, then run the review server in a separate terminal:
+
+```bash
+npm install --no-save --package-lock=false playwright
+python -m http.server 8062 --bind 127.0.0.1
+```
+
+With Google Chrome installed, run:
+
+```bash
+node tests/quiz-cancel-browser.cjs
+```
+
+The test checks desktop and mobile cancellation, keyboard focus, dismissal paths, state reset, preferences, translations, and normal completion.
+External requests are intercepted to prevent test scores from reaching Google Sheets.
+Set `QUIZ_TEST_URL` to use a different local server address.
+Use `--screenshots` to refresh task screenshots; `--baseline` captures the UI before implementation.
 
 ### Markdown and Task File Linting
 Markdown documents and task files are validated using dev-guidelines tooling:
@@ -86,7 +103,6 @@ All developer utilities live in `scripts/` and adhere strictly to CLI guidelines
 ---
 
 ## Deployment to GitHub Pages
-
 ### Hosting Architecture
 The quiz is hosted as a static web site on GitHub Pages directly from the `main` branch root. No build compilation or asset bundling is required.
 
@@ -150,7 +166,6 @@ cannot be combined.
 ---
 
 ## Google Apps Script Operations
-
 ### Endpoint Configuration
 Score logging and error reporting are handled by an external Google Apps Script Web App:
 - Script source code is maintained in `google-apps-script/Code.gs`.

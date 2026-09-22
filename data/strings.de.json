@@ -1,4 +1,9 @@
 {
+  "quiz.btn_close_aria": "Quiz beenden",
+  "quiz.cancel_title": "Quiz beenden?",
+  "quiz.cancel_description": "Wenn du aufhörst, geht dein gesamter Fortschritt in diesem Quiz verloren. Möchtest du wirklich aufhören?",
+  "quiz.cancel_continue": "Quiz fortsetzen",
+  "quiz.cancel_confirm": "Quiz beenden",
   "title.quiz": "Verkehrsregels Quiz",
   "title.carousel": "Verkehrszeichen-Karussell",
 

@@ -13,7 +13,8 @@ A summarized overview of all changes, per version of this project.
 
 ---
 
-## v3.3.1-pre
+## v3.4.0-pre
+- FrontEnd: Quizvragen kregen een sluitknop rechtsboven op de kaart met bevestiging van voortgangsverlies in alle vijf talen.
 - FrontEnd: Automatische PWA-updates hersteld met directe registratie, regelmatige controles, verse bestanden en automatisch herladen, ook tijdens een quiz.
 
 ## v3.3.0 [released: 2026-09-22]

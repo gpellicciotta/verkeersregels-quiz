@@ -1,4 +1,9 @@
 {
+  "quiz.btn_close_aria": "Stop quiz",
+  "quiz.cancel_title": "Stop the quiz?",
+  "quiz.cancel_description": "Stopping will lose all progress in this quiz. Are you sure you want to stop?",
+  "quiz.cancel_continue": "Continue quiz",
+  "quiz.cancel_confirm": "Stop quiz",
   "title.quiz": "Traffic Rules Quiz",
   "title.carousel": "Traffic Signs Carousel",
 
