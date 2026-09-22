@@ -41,12 +41,12 @@ A summarized overview of all changes, per version of this project.
 - DevEx: Alle broncodecommentaren in HTML-, CSS- en JavaScript-modules gestandaardiseerd naar Amerikaans-Engels.
 - FrontEnd: Spelersnaam en quizinstellingen opgeslagen in 'local storage', waarbij URL-queryparameters voorrang hebben.
 
-## v3.1.0 [2026-09-21]
+## v3.1.0 [released: 2026-09-21]
 - FrontEnd: Startscherm geminimaliseerd met ronde actieknoppen, modusschakelaar, carrouselbediening en interactieve instellingendialogen.
 - FrontEnd: Betere configuratiekeuzes, consistentere knoppen en vereenvoudigde interface-instructies.
 - DevEx: Versienummering gekoppeld aan de changelog als centrale bron voor frontend en ontwikkelscripts.
 
-## v3.0.0 [2026-09-19]
+## v3.0.0 [released: 2026-09-19]
 - FrontEnd: Startscherm opgeruimd en specifieke About-weergave toegevoegd met versiegeschiedenis, release notes, bronvermeldingen en copyright.
 - FrontEnd: Applicatie-icoon en favicon buiten het ronde verkeersbord volledig transparant gemaakt met meervoudige resolutie-ico.
 - FrontEnd: Verkeersborden-carrousel toegevoegd met instelbare wisselduur, pauzeerbediening en duidelijke pauze-indicator via URL-parameters en startknop.
@@ -60,13 +60,13 @@ A summarized overview of all changes, per version of this project.
 - Test: Geautomatiseerde verificatietesten toegevoegd voor webapp-manifest, pictogramgroottes en service worker-voorlaadbestanden.
 - CLI: Alle ontwikkelscripts gestandaardiseerd naar actiegerichte CLI-richtlijnen met gestructureerde logging en kebab-case bestandsnamen.
 
-## v2.0.0 [2026-09-18]
+## v2.0.0 [released: 2026-09-18]
 - Inhoud: Volledige dekking van alle Belgische verkeersborden gerealiseerd met 193 bordafbeeldingen en 284 vragen.
 - FrontEnd: Foutmeldingsformulier geoptimaliseerd voor onmiddellijke achtergrondverzending zonder enige vertraging in de interface.
 - FrontEnd: Voortgangsbalk gecorrigeerd zodat deze vanaf de eerste vraag evenredig oploopt tot 100 procent.
 - Test: Testsuite uitgebreid met strenge controle op aanwezigheid van bordafbeeldingen bij alle bordvragen.
 
-## v1.1.0 [2026-09-18]
+## v1.1.0 [released: 2026-09-18]
 - Documentatie: Visuele rondleiding met desktop- en mobiele schermafbeeldingen toegevoegd aan de README.
 - FrontEnd: Blauw verkeersbord-favicon toegevoegd en knop bij de laatste vraag aangepast naar resultaat tonen.
 - FrontEnd: Startmelding en voortgangsindicatoren tonen nu dynamische vragenaantallen begrensd op beschikbare vragen.
@@ -74,7 +74,7 @@ A summarized overview of all changes, per version of this project.
 - FrontEnd: Officiële wetsartikelen en toelichtingslinks weergegeven na het beantwoorden van elke quizvraag.
 - Inhoud: Vragenbank verdubbeld naar 126 vragen met volledige borddekking en regels van na 2022.
 
-## v1.0.0 [2026-09-18]
+## v1.0.0 [released: 2026-09-18]
 - Documentatie: Standaard projectdocumentatie toegevoegd inclusief vereisten, DevOps-handleiding, licentie en documentatie-index.
 - DevEx: Platformonafhankelijke bootstrap- en implementatiescripts toegevoegd met CLI-versie- en help-opties.
 - Test: Geautomatiseerde testsuite toegevoegd voor verificatie van vraagstructuur, bordafbeeldingen en wetsjaren.
