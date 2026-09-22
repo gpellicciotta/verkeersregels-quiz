@@ -35,7 +35,12 @@ import {
   saveConfig,
   updateConfigQuizWarning,
 } from "./config-modal.js";
-import { openReportModal, closeReportModal, handleReportSubmit } from "./report-modal.js";
+import {
+  openReportModal,
+  closeReportModal,
+  handleReportSubmit,
+  toggleReportContextVisibility,
+} from "./report-modal.js";
 import { openChangelogModal, closeChangelogModal, loadChangelog } from "./changelog.js";
 import { registerServiceWorker, updateOnlineStatus } from "./pwa.js";
 import { setLang, detectLang, getLang, applyAll, t } from "./i18n.js";
@@ -94,6 +99,7 @@ if (el.btnReportErrorMobile) el.btnReportErrorMobile.addEventListener("click", o
 el.btnModalClose.addEventListener("click", closeReportModal);
 el.btnModalCancel.addEventListener("click", closeReportModal);
 el.formReport.addEventListener("submit", handleReportSubmit);
+el.reportIncludeContext.addEventListener("change", toggleReportContextVisibility);
 el.modalReport.addEventListener("click", (e) => {
   if (e.target === el.modalReport) closeReportModal();
 });

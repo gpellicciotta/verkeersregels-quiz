@@ -15,6 +15,7 @@ A summarized overview of all changes, per version of this project.
 
 ## v3.5.0-pre
 - FrontEnd: About screen now shows the changelog translated into the active interface language.
+- FrontEnd: "Meld een fout" dialoog toont nu een titelicoon en een instelbare optionele vraagcontext.
 - DevEx: Added `translate-markdown.py`, chunking Markdown by heading and paragraph before translating each release.
 
 ## v3.4.0 [released: 2026-09-22]

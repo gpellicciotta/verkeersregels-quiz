@@ -74,15 +74,15 @@ export async function drainReportQueue() {
   }
 }
 
-export function submitErrorReport(targetQuestion, remark) {
+export function submitErrorReport(targetQuestion, remark, includeContext = true) {
   if (!CONFIG.SHEET_WEBAPP_URL || !targetQuestion) return Promise.resolve();
 
   const payloadData = {
     actie: "report_error",
     sleutel: CONFIG.SHEET_SECRET,
     datum: new Date().toISOString(),
-    vraagId: targetQuestion.id || "",
-    vraag: targetQuestion.question || "",
+    vraagId: includeContext ? targetQuestion.id || "" : "",
+    vraag: includeContext ? targetQuestion.question || "" : "",
     naam: state.playerName || "Anoniem",
     opmerking: remark || "",
   };

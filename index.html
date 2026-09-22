@@ -471,17 +471,22 @@
   <div id="modal-report" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="modal-report-title">
     <div class="modal-dialog">
       <div class="modal-header">
-        <h3 id="modal-report-title" data-i18n="report.title">Meld een fout</h3>
+        <h3 id="modal-report-title"><span class="modal-title-icon" data-icon="report" aria-hidden="true"></span><span data-i18n="report.title">Meld een fout</span></h3>
         <button type="button" id="btn-modal-close" class="modal-close" aria-label="Sluiten" data-i18n-aria="report.btn_close_aria"><span class="modal-close-icon" data-icon="close" aria-hidden="true"></span></button>
       </div>
       <form id="form-report" class="modal-body">
-        <p class="modal-desc" data-i18n="report.description">Zie je een onduidelijkheid of onjuistheid in deze context? Geef het hier door.</p>
-        <div class="modal-question-summary">
+        <p class="modal-desc" data-i18n="report.description">Zie je een onduidelijkheid of onjuistheid in deze context?
+Geef het hier door.</p>
+        <label for="report-remark" data-i18n="report.label_remark">Opmerking of toelichting:</label>
+        <textarea id="report-remark" name="opmerking" rows="3" placeholder="Wat klopt er niet of wat kan duidelijker?" data-i18n-placeholder="report.remark_placeholder"></textarea>
+        <label class="modal-checkbox-label" for="report-include-context">
+          <input type="checkbox" id="report-include-context" checked>
+          <span data-i18n="report.label_include_context">Vraagcontext meesturen:</span>
+        </label>
+        <div id="modal-question-summary" class="modal-question-summary">
           <div id="modal-question-id" class="modal-question-id"></div>
           <div id="modal-question-text" class="modal-question-text"></div>
         </div>
-        <label for="report-remark" data-i18n="report.label_remark">Opmerking of toelichting (optioneel):</label>
-        <textarea id="report-remark" name="opmerking" rows="3" placeholder="Wat klopt er niet of wat kan duidelijker?" data-i18n-placeholder="report.remark_placeholder"></textarea>
         <div id="modal-feedback" class="modal-feedback hidden"></div>
         <div class="modal-actions">
           <button type="button" id="btn-modal-cancel" class="btn-secondary" data-i18n="report.btn_cancel">Annuleren</button>

@@ -14,11 +14,6 @@ An overview of all tasks and their planning.
 ---
 
 ## Next Milestone
-- [~] T0064 [owner: @claude] Improve the "Meld een fout modal dialog":
-  - Add the icon also at the start of the title
-  - Start with the "Opmerking of toelichting"+ the comment box but without the word "optioneel
-  - Then underneath add the context box but preceded by a checkbox "Include question context:"
-  - The intro consists of 2 sentences. Make sure each sentence starts on a new line.
 - [ ] T0065 Currently we have separate "Settings" dialogs for carrousel and quiz mode, while some settings (like the default name, the interface language, the theme and them-color) can only be set differently. Make a unified settings dialog, with sections making it clear that some settings are general, otheres for carrousel only and still others for the quiz. Still keep the language toggle button and the query parameters but let the settings overwrite them. All settings should be kept in localStorage and also re-read from there.
 - [ ] T0066 How can I have a script that runs automatically every day at 7am and 7pm UTC, reads the spreadsheet where the results of non-anomymous users and the issues reported are being stored, summarizes the sheet and send me a mail with the results? The summary should report:
   - How many times the quiz was played until now, in total and in the past 24h

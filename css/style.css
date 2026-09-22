@@ -2088,9 +2088,17 @@ body.suppress-tooltips [data-tooltip]::before {
 
 .modal-header h3 {
   margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
   font-size: var(--font-size-md);
   font-weight: 700;
   color: var(--color-primary);
+}
+
+.modal-title-icon {
+  flex-shrink: 0;
+  display: inline-flex;
 }
 
 .modal-dialog .modal-close {
@@ -2108,6 +2116,22 @@ body.suppress-tooltips [data-tooltip]::before {
   font-size: var(--font-size-sm);
   color: var(--color-muted);
   line-height: 1.4;
+  white-space: pre-line;
+}
+
+.modal-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 14px;
+  cursor: pointer;
+}
+
+.modal-checkbox-label input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  accent-color: var(--color-primary);
 }
 
 .modal-question-summary {
@@ -2115,6 +2139,7 @@ body.suppress-tooltips [data-tooltip]::before {
   border: 1px solid var(--color-card-border);
   border-radius: var(--radius-md);
   padding: 10px 12px;
+  margin-top: 8px;
   margin-bottom: 14px;
   font-size: var(--font-size-sm);
 }

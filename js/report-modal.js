@@ -11,6 +11,8 @@ export function openReportModal() {
   el.modalQuestionId.textContent = t("report.question_prefix", { id });
   el.modalQuestionText.textContent = q.question;
   el.reportRemark.value = "";
+  el.reportIncludeContext.checked = true;
+  el.modalQuestionSummary.classList.remove("hidden");
   el.modalFeedback.textContent = "";
   el.modalFeedback.className = "modal-feedback hidden";
   el.btnModalSubmit.disabled = false;
@@ -23,6 +25,10 @@ export function openReportModal() {
 
   el.modalReport.classList.remove("hidden");
   el.reportRemark.focus();
+}
+
+export function toggleReportContextVisibility() {
+  el.modalQuestionSummary.classList.toggle("hidden", !el.reportIncludeContext.checked);
 }
 
 export function closeReportModal() {
@@ -38,10 +44,11 @@ export function handleReportSubmit(e) {
   if (!q) return;
 
   const remark = el.reportRemark.value.trim();
+  const includeContext = el.reportIncludeContext.checked;
 
   // Instant dismissal with zero lag
   closeReportModal();
 
   // Asynchronous background transmission or local enqueue
-  submitErrorReport(q, remark);
+  submitErrorReport(q, remark, includeContext);
 }
