@@ -14,7 +14,7 @@ An overview of all tasks and their planning.
 ---
 
 ## Next Milestone
-- [ ] T0068 Enable starting a quiz with questions where you've made errors in the past. Also at the end of a quiz, enable re-starting with all the questions for which wrong answers were given. Maybe there could be a new checkbox-setting: "Always include errors from last quiz".
+- [~] T0068 [owner: @claude] Enable starting a quiz with questions where you've made errors in the past. Also at the end of a quiz, enable re-starting with all the questions for which wrong answers were given. Maybe there could be a new checkbox-setting: "Always include errors from last quiz".
 
 ---
 
