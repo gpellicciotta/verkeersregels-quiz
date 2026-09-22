@@ -30,21 +30,21 @@ function issue(hoursAgo, overrides) {
   );
 }
 
-test("empty results and issues produce zero counts and n/a averages", () => {
+test("empty results and issues produce zero counts and n.v.t. averages", () => {
   const { buildSummaryEmail_ } = loadContext();
   const summary = buildSummaryEmail_([], [], NOW);
-  assert.match(summary.body, /Plays: 0 total, 0 in the last 24h, 0 in the last 7 days/);
-  assert.match(summary.body, /Avg questions\/play: n\/a \(24h\), n\/a \(7d\)/);
-  assert.match(summary.body, /Issues reported: 0 total, \+0 in the last 24h, \+0 in the last 7 days/);
-  assert.match(summary.body, /Last 3 issues:\n {2}\(none\)/);
-  assert.match(summary.body, /Most used contexts:\n {2}\(none\)/);
+  assert.match(summary.body, /Aantal spelbeurten: 0 totaal, 0 in de laatste 24u, 0 in de laatste 7 dagen/);
+  assert.match(summary.body, /Gem\. vragen per beurt: n\.v\.t\. \(24u\), n\.v\.t\. \(7d\)/);
+  assert.match(summary.body, /Gemelde problemen: 0 totaal, \+0 in de laatste 24u, \+0 in de laatste 7 dagen/);
+  assert.match(summary.body, /Laatste 3 meldingen:\n {2}\(geen\)/);
+  assert.match(summary.body, /Vaakst gemelde vragen:\n {2}\(geen\)/);
 });
 
 test("counts plays within the 24h and 7d windows", () => {
   const { buildSummaryEmail_ } = loadContext();
   const results = [result(1), result(23), result(25), result(6 * 24), result(8 * 24)];
   const summary = buildSummaryEmail_(results, [], NOW);
-  assert.match(summary.body, /Plays: 5 total, 2 in the last 24h, 4 in the last 7 days/);
+  assert.match(summary.body, /Aantal spelbeurten: 5 totaal, 2 in de laatste 24u, 4 in de laatste 7 dagen/);
 });
 
 test("computes averages of questions, minutes, and score percentage", () => {
@@ -54,9 +54,9 @@ test("computes averages of questions, minutes, and score percentage", () => {
     result(2, { total: 20, durationSec: 240, percentage: 100 }),
   ];
   const summary = buildSummaryEmail_(results, [], NOW);
-  assert.match(summary.body, /Avg questions\/play: 15 \(24h\), 15 \(7d\)/);
-  assert.match(summary.body, /Avg play time \(min\): 3 \(24h\), 3 \(7d\)/);
-  assert.match(summary.body, /Avg score: 75% \(24h\), 75% \(7d\)/);
+  assert.match(summary.body, /Gem\. vragen per beurt: 15 \(24u\), 15 \(7d\)/);
+  assert.match(summary.body, /Gem\. speeltijd \(min\): 3 \(24u\), 3 \(7d\)/);
+  assert.match(summary.body, /Gem\. score: 75% \(24u\), 75% \(7d\)/);
 });
 
 test("most used context reports the top-3 frequencies when contexts repeat", () => {
@@ -70,7 +70,7 @@ test("most used context reports the top-3 frequencies when contexts repeat", () 
     issue(6, { question: "Bord C" }),
   ];
   const summary = buildSummaryEmail_([], issues, NOW);
-  assert.match(summary.body, /Most used contexts:\n {2}- Bord B \(3x\)\n {2}- Bord A \(2x\)\n {2}- Bord C \(1x\)/);
+  assert.match(summary.body, /Vaakst gemelde vragen:\n {2}- Bord B \(3x\)\n {2}- Bord A \(2x\)\n {2}- Bord C \(1x\)/);
 });
 
 test("most used context falls back to the 3 latest when every context is unique", () => {
@@ -82,20 +82,30 @@ test("most used context falls back to the 3 latest when every context is unique"
     issue(4, { question: "Bord Nog Ouder" }),
   ];
   const summary = buildSummaryEmail_([], issues, NOW);
-  assert.match(summary.body, /Most used contexts:\n {2}- Bord Nieuwste\n {2}- Bord Midden\n {2}- Bord Oudste/);
+  assert.match(summary.body, /Vaakst gemelde vragen:\n {2}- Bord Nieuwste\n {2}- Bord Midden\n {2}- Bord Oudste/);
 });
 
-test("tracks Noah/Noahp plays case-insensitively and trimmed, ignoring other players", () => {
-  const { buildSummaryEmail_ } = loadContext();
+test("tracks configured player names case-insensitively and trimmed, ignoring other players", () => {
+  const context = loadContext();
+  context.TRACKED_PLAYERS_ = ["Mila", "Sami"];
   const results = [
-    result(1, { who: " Noah ", percentage: 60, durationSec: 60 }),
-    result(2, { who: "NOAHP", percentage: 100, durationSec: 120 }),
+    result(1, { who: " Mila ", percentage: 60, durationSec: 60 }),
+    result(2, { who: "SAMI", percentage: 100, durationSec: 120 }),
     result(3, { who: "Iemand Anders", percentage: 0, durationSec: 600 }),
   ];
-  const summary = buildSummaryEmail_(results, [], NOW);
-  assert.match(summary.body, /Noah\/Noahp plays: 2 \(24h\), 2 \(7d\)/);
-  assert.match(summary.body, /Noah\/Noahp minutes played: 3 \(24h\), 3 \(7d\)/);
-  assert.match(summary.body, /Noah\/Noahp avg score: 80% \(24h\), 80% \(7d\)/);
+  const summary = context.buildSummaryEmail_(results, [], NOW);
+  assert.match(summary.body, /Mila\/Sami - spelbeurten: 2 \(24u\), 2 \(7d\)/);
+  assert.match(summary.body, /Mila\/Sami - gespeelde minuten: 3 \(24u\), 3 \(7d\)/);
+  assert.match(summary.body, /Mila\/Sami - gem\. score: 80% \(24u\), 80% \(7d\)/);
+  assert.match(summary.htmlBody, /Mila\/Sami/);
+});
+
+test("omits the tracked-players section entirely when no player names are configured", () => {
+  const context = loadContext();
+  context.TRACKED_PLAYERS_ = [];
+  const summary = context.buildSummaryEmail_([result(1, { who: "Iemand" })], [], NOW);
+  assert.doesNotMatch(summary.body, /spelbeurten: .* - /);
+  assert.doesNotMatch(summary.body, / - gem\. score/);
 });
 
 test("last 3 issues are listed most-recent first with their remark", () => {
@@ -106,7 +116,7 @@ test("last 3 issues are listed most-recent first with their remark", () => {
     issue(3, { question: "Midden", remark: "" }),
   ];
   const summary = buildSummaryEmail_([], issues, NOW);
-  const lastIssuesBlock = summary.body.split("Last 3 issues:\n")[1].split("\n\n")[0];
+  const lastIssuesBlock = summary.body.split("Laatste 3 meldingen:\n")[1].split("\n\n")[0];
   assert.match(lastIssuesBlock, /Nieuwste - klopt niet/);
   assert.ok(lastIssuesBlock.indexOf("Nieuwste") < lastIssuesBlock.indexOf("Midden"));
   assert.ok(lastIssuesBlock.indexOf("Midden") < lastIssuesBlock.indexOf("Oudste"));
@@ -121,7 +131,7 @@ test("sendDailySummaryEmail reads both sheets and emails the summary to SUMMARY_
   }
   const resultatenSheet = fakeSheet(
     ["Wanneer", "Wie", "Juiste Antwoorden", "Aantal Vragen", "Percentage", "Duur (sec)", "Duur"],
-    [[NOW.toISOString(), "Noah", 8, 10, 80, 300, "5:00"]]
+    [[NOW.toISOString(), "Speler", 8, 10, 80, 300, "5:00"]]
   );
   const meldingenSheet = fakeSheet(
     ["Wanneer", "Vraag ID", "Vraag", "Wie", "Opmerking"],
@@ -141,9 +151,10 @@ test("sendDailySummaryEmail reads both sheets and emails the summary to SUMMARY_
 
   assert.equal(sentEmails.length, 1);
   assert.equal(sentEmails[0].to, context.SUMMARY_EMAIL_TO);
-  assert.match(sentEmails[0].subject, /Verkeersregels-quiz summary/);
-  assert.match(sentEmails[0].body, /Plays: 1 total, 1 in the last 24h, 1 in the last 7 days/);
-  assert.match(sentEmails[0].body, /Issues reported: 1 total, \+1 in the last 24h, \+1 in the last 7 days/);
+  assert.match(sentEmails[0].subject, /Verkeersregels Quiz Status Update/);
+  assert.match(sentEmails[0].body, /Aantal spelbeurten: 1 totaal, 1 in de laatste 24u, 1 in de laatste 7 dagen/);
+  assert.match(sentEmails[0].body, /Gemelde problemen: 1 totaal, \+1 in de laatste 24u, \+1 in de laatste 7 dagen/);
+  assert.match(sentEmails[0].htmlBody, /Verkeersregels Quiz Status Update/);
 });
 
 test("createDailySummaryTriggers replaces existing triggers with 07:00 and 19:00 UTC ones", () => {

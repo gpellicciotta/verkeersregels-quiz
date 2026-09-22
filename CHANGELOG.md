@@ -14,7 +14,7 @@ A summarized overview of all changes, per version of this project.
 ---
 
 ## v3.5.0-pre
-- BackEnd: Google Apps Script verstuurt nu elke dag om 7u en 19u UTC een samenvattende e-mail met resultaten en meldingen.
+- BackEnd: Google Apps Script verstuurt nu elke dag om 7u en 19u UTC een Nederlandstalige, gestylede samenvattende e-mail met resultaten, meldingen en een instelbare lijst van te volgen spelers.
 - FrontEnd: About screen now shows the changelog translated into the active interface language.
 - FrontEnd: "Meld een fout" dialoog toont nu een titelicoon en een instelbare optionele vraagcontext.
 - FrontEnd: Eén instellingendialoog met duidelijke Algemeen/Quiz/Carrousel-secties vervangt de twee losse dialogen.
