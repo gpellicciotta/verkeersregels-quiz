@@ -8,6 +8,7 @@ import { showScreen } from "./screens.js";
 import { submitToSheet } from "./sheet.js";
 import { setStartMode } from "./ui-mode.js";
 import { t, getLang } from "./i18n.js";
+import { createIcon } from "./icons.js";
 
 let translationOverlay = {};
 
@@ -171,36 +172,12 @@ export function createOptionIndicator(type) {
   const badge = document.createElement("span");
   badge.className = `option-indicator option-indicator-${type}`;
 
-  const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-  svg.setAttribute("class", "option-indicator-icon");
-  svg.setAttribute("aria-hidden", "true");
-  svg.setAttribute("width", "14");
-  svg.setAttribute("height", "14");
-  svg.setAttribute("viewBox", "0 0 24 24");
-  svg.setAttribute("fill", "none");
-  svg.setAttribute("stroke", "currentColor");
-  svg.setAttribute("stroke-width", "2.5");
-  svg.setAttribute("stroke-linecap", "round");
-  svg.setAttribute("stroke-linejoin", "round");
-
-  if (type === "correct") {
-    const polyline = document.createElementNS("http://www.w3.org/2000/svg", "polyline");
-    polyline.setAttribute("points", "20 6 9 17 4 12");
-    svg.appendChild(polyline);
-  } else {
-    const line1 = document.createElementNS("http://www.w3.org/2000/svg", "line");
-    line1.setAttribute("x1", "18");
-    line1.setAttribute("y1", "6");
-    line1.setAttribute("x2", "6");
-    line1.setAttribute("y2", "18");
-    const line2 = document.createElementNS("http://www.w3.org/2000/svg", "line");
-    line2.setAttribute("x1", "6");
-    line2.setAttribute("y1", "6");
-    line2.setAttribute("x2", "18");
-    line2.setAttribute("y2", "18");
-    svg.appendChild(line1);
-    svg.appendChild(line2);
-  }
+  const svg = createIcon(type === "correct" ? "check" : "close", {
+    className: "option-indicator-icon",
+    width: 14,
+    height: 14,
+    strokeWidth: 2.5,
+  });
 
   const label = document.createElement("span");
   label.className = "option-indicator-label";
@@ -324,36 +301,12 @@ export function selectOption(chosenIndex) {
     const statusBadge = document.createElement("span");
     statusBadge.className = `quiz-status-badge quiz-status-${correct ? "correct" : "wrong"}`;
 
-    const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-    svg.setAttribute("class", "quiz-status-icon");
-    svg.setAttribute("aria-hidden", "true");
-    svg.setAttribute("width", "16");
-    svg.setAttribute("height", "16");
-    svg.setAttribute("viewBox", "0 0 24 24");
-    svg.setAttribute("fill", "none");
-    svg.setAttribute("stroke", "currentColor");
-    svg.setAttribute("stroke-width", "2.5");
-    svg.setAttribute("stroke-linecap", "round");
-    svg.setAttribute("stroke-linejoin", "round");
-
-    if (correct) {
-      const polyline = document.createElementNS("http://www.w3.org/2000/svg", "polyline");
-      polyline.setAttribute("points", "20 6 9 17 4 12");
-      svg.appendChild(polyline);
-    } else {
-      const line1 = document.createElementNS("http://www.w3.org/2000/svg", "line");
-      line1.setAttribute("x1", "18");
-      line1.setAttribute("y1", "6");
-      line1.setAttribute("x2", "6");
-      line1.setAttribute("y2", "18");
-      const line2 = document.createElementNS("http://www.w3.org/2000/svg", "line");
-      line2.setAttribute("x1", "6");
-      line2.setAttribute("y1", "6");
-      line2.setAttribute("x2", "18");
-      line2.setAttribute("y2", "18");
-      svg.appendChild(line1);
-      svg.appendChild(line2);
-    }
+    const svg = createIcon(correct ? "check" : "close", {
+      className: "quiz-status-icon",
+      width: 16,
+      height: 16,
+      strokeWidth: 2.5,
+    });
 
     const textSpan = document.createElement("span");
     textSpan.className = "quiz-status-text";
@@ -412,31 +365,12 @@ export function renderExplanation(q) {
     link.title = t("quiz.source_link_title");
     link.setAttribute("aria-label", t("quiz.source_link_aria"));
 
-    const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
-    svg.setAttribute("class", "explanation-pill-icon");
-    svg.setAttribute("aria-hidden", "true");
-    svg.setAttribute("width", "13");
-    svg.setAttribute("height", "13");
-    svg.setAttribute("viewBox", "0 0 24 24");
-    svg.setAttribute("fill", "none");
-    svg.setAttribute("stroke", "currentColor");
-    svg.setAttribute("stroke-width", "2");
-    svg.setAttribute("stroke-linecap", "round");
-    svg.setAttribute("stroke-linejoin", "round");
-
-    const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
-    path.setAttribute("d", "M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6");
-    const polyline = document.createElementNS("http://www.w3.org/2000/svg", "polyline");
-    polyline.setAttribute("points", "15 3 21 3 21 9");
-    const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
-    line.setAttribute("x1", "10");
-    line.setAttribute("y1", "14");
-    line.setAttribute("x2", "21");
-    line.setAttribute("y2", "3");
-
-    svg.appendChild(path);
-    svg.appendChild(polyline);
-    svg.appendChild(line);
+    const svg = createIcon("externalLink", {
+      className: "explanation-pill-icon",
+      width: 13,
+      height: 13,
+      strokeWidth: 2,
+    });
 
     const pillText = document.createElement("span");
     pillText.textContent = t("quiz.source_pill_text");

@@ -14,7 +14,7 @@ An overview of all tasks and their planning.
 ---
 
 ## Next Milestone
-- [ ] A0061 Group or export all SVG icons so they are more easily reusable.
+- [~] A0061 [owner: @codex] Group or export all UI SVG icons into a reusable library for app controls like play, pause, info, and close.
 
 ---
 
