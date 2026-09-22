@@ -5,7 +5,6 @@ Functional and technical requirements for the Verkeersregels Quiz application.
 ---
 
 ## High-Level Goals
-
 - Provide a modern, mobile-friendly interactive quiz for practicing the Belgian theoretical driving exam (Category B).
 - Maintain complete legal accuracy under the current Belgian Highway Code (Wegcode / KB 1 December 1975) as applied in Flanders, with explicit annotations for regional rules.
 - Support focused practice on recent legal reforms and newly introduced signs via amendment year tracking (`since`).
@@ -16,7 +15,6 @@ Functional and technical requirements for the Verkeersregels Quiz application.
 ## Functional Requirements
 
 ### Quiz Flow and User Experience
-
 - **Start Screen**:
   - Centered hero title and introductory description.
   - Dual mode selection cards allowing users to choose between Quiz mode and Traffic Sign Carousel mode.
@@ -58,7 +56,6 @@ Functional and technical requirements for the Verkeersregels Quiz application.
   - Provides a print-optimized layout that spans full width and prevents page breaks inside result rows.
 
 ### Question Bank and Legal Accuracy
-
 - **Question Catalog**: Contains 304 verified questions covering hazard warnings, priority rules, speed limits, road positioning, cyclist/pedestrian infrastructure, and real-world traffic situations.
 - **Question Types**:
   - `recognize`: displays a traffic sign SVG and asks the user to identify its official meaning.
@@ -78,7 +75,6 @@ Functional and technical requirements for the Verkeersregels Quiz application.
   - `?autotest=results`: automatically completes the quiz for visual verification and testing.
 
 ### Google Sheets Integration and Error Reporting
-
 - **Result Logging**:
   - Optional score logging to a configured Google Apps Script Web App endpoint when a player name is provided.
   - Records timestamp, player name, correct count, total count, score percentage, and elapsed duration into a `Resultaten` sheet.
@@ -97,7 +93,6 @@ Functional and technical requirements for the Verkeersregels Quiz application.
 ## Technical and Architectural Requirements
 
 ### Client Architecture
-
 - **Technology Stack**: Static HTML5, CSS3, vanilla ES2020 JavaScript without external UI frameworks or bundlers.
 - **Module Structure**: Native ES modules under `js/` separate state (`state.js`, `dom.js`), storage (`preferences.js`, `report-queue.js`, `sheet.js`), and UI concerns (`quiz.js`, `carousel.js`, `screens.js`, and related modules), composed by `app.js`.
 - **Responsive Layout**: Mobile-first design adapting seamlessly from narrow mobile screens (375px) to desktop viewports (1000px+).
@@ -105,7 +100,6 @@ Functional and technical requirements for the Verkeersregels Quiz application.
 - **Hosting Target**: Hosted on GitHub Pages directly from the repository's production branch.
 
 ### Security and Abuse Mitigation
-
 - **Client-Side Secret Architectural Decision**:
   - The configuration parameter `CONFIG.SHEET_SECRET` in `js/config.js` is an abuse-mitigation write key rather than a confidential secret.
   - In a public static web application without a custom backend server, all client code and configuration strings are inherently visible to the user browser.
@@ -113,7 +107,6 @@ Functional and technical requirements for the Verkeersregels Quiz application.
   - This architecture avoids requiring user registration, authentication servers, or database infrastructure while protecting the logging sheet against ambient automated abuse.
 
 ### Automated Testing and Quality Assurance
-
 - **Unit Test Suite**: 32 automated tests across five test modules (`tests/test_quiz_data.py`, `tests/test_pwa.py`, `tests/test_ux_layout.py`, `tests/test_sign_carousel.py`, `tests/test_about_view.py`):
   - Validates exact count of 304 questions in `data/questions.json`.
   - Schema integrity, unique IDs, required fields, and valid option counts (`options >= 2`).
