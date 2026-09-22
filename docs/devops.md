@@ -178,3 +178,16 @@ Score logging and error reporting are handled by an external Google Apps Script 
 - The shared secret `CONFIG.SHEET_SECRET` is defined in `js/config.js` and verified in `Code.gs`.
 - It acts as an abuse mitigation write key to prevent automated scrapers and bots from posting garbage entries to the Google Sheet.
 - When updating the secret, change `SHARED_SECRET` in `Code.gs` and republish a new deployment revision of the Web App, then update `CONFIG.SHEET_SECRET` in `js/config.js`.
+
+### Daily Summary Email
+- `Code.gs` reads the `Resultaten` and `Meldingen` sheets and emails a summary via `sendDailySummaryEmail`.
+- Two Apps Script time-driven triggers call `sendDailySummaryEmail` daily at 07:00 and 19:00 UTC.
+- One-time setup in the deployed Apps Script project (not run automatically on code push):
+  1. Paste the updated `Code.gs` into the Apps Script editor and save.
+  2. Set `SUMMARY_EMAIL_TO` in the editor to the real recipient address; keep the checked-in
+     placeholder (`PUT_YOUR_EMAIL_HERE@example.com`) in source control since `Code.gs` is public.
+  3. Run `createDailySummaryTriggers` once from the editor to install the two triggers.
+     Re-running it is safe: it first removes any existing `sendDailySummaryEmail` triggers.
+  4. Authorize the script's Gmail/MailApp permission when prompted on first run.
+- The pure aggregation logic (`buildSummaryEmail_`) is unit tested under Node; see
+  `tests/gas-summary.test.cjs` and `tests/test_gas_summary.py`.

@@ -14,7 +14,7 @@ An overview of all tasks and their planning.
 ---
 
 ## Next Milestone
-- [~] T0066 [owner: @claude] Add a daily/twice-daily email summary of quiz results and reported issues from the Google Sheet.
+*(Currently no tasks)*
 
 ---
 
