@@ -14,7 +14,7 @@ An overview of all tasks and their planning.
 ---
 
 ## Next Milestone
-- [ ] T0058 Localize user interface and question bank into French.
+- [~] T0058 [owner: @gemini] Localize user interface and question bank into French.
 - [ ] T0059 Localize user interface and question bank into German.
 
 ---
