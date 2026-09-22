@@ -483,6 +483,13 @@ button {
   outline: none;
 }
 
+.btn-review-errors {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  text-align: center;
+}
+
 /* Accessible Tooltips via CSS pseudo-elements */
 [data-tooltip] {
   position: relative;

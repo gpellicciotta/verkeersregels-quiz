@@ -8,6 +8,7 @@ function emptyStats() {
     wrongAnswers: 0,
     lastPlayedAt: null,
     errorCounts: {},
+    lastQuizWrongIds: [],
   };
 }
 
@@ -20,6 +21,7 @@ export function getStoredStats() {
       ...emptyStats(),
       ...parsed,
       errorCounts: (parsed && parsed.errorCounts) || {},
+      lastQuizWrongIds: Array.isArray(parsed && parsed.lastQuizWrongIds) ? parsed.lastQuizWrongIds : [],
     };
   } catch (err) {
     console.warn("Kon speelstatistieken niet lezen uit localStorage:", err);
@@ -44,6 +46,7 @@ export function recordQuizResult(answers) {
   stats.questionsAnswered += answers.length;
   stats.lastPlayedAt = new Date().toISOString();
 
+  const wrongIds = [];
   answers.forEach((answer) => {
     if (answer.correct) {
       stats.correctAnswers += 1;
@@ -53,7 +56,9 @@ export function recordQuizResult(answers) {
     if (answer.id === undefined || answer.id === null) return;
     const key = String(answer.id);
     stats.errorCounts[key] = (stats.errorCounts[key] || 0) + 1;
+    wrongIds.push(key);
   });
+  stats.lastQuizWrongIds = wrongIds;
 
   setStoredStats(stats);
   return stats;
@@ -66,6 +71,21 @@ export function getMostUsedErrors(limit = 10) {
     .map(([id, count]) => ({ id, count }))
     .sort((a, b) => b.count - a.count)
     .slice(0, limit);
+}
+
+/** Returns every question id that was ever answered wrong, in no particular order. */
+export function getErrorQuestionIds() {
+  return Object.keys(getStoredStats().errorCounts);
+}
+
+/** True when at least one question has ever been answered wrong. */
+export function hasStoredErrors() {
+  return getErrorQuestionIds().length > 0;
+}
+
+/** Returns the question ids answered wrong in the most recently finished quiz. */
+export function getLastQuizWrongIds() {
+  return getStoredStats().lastQuizWrongIds;
 }
 
 export function resetStats() {

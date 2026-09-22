@@ -14,6 +14,8 @@ A summarized overview of all changes, per version of this project.
 ---
 
 ## v3.5.1-pre
+- FrontEnd: Nieuwe knoppen starten een quiz met eerdere foutieve vragen of herhalen enkel de foute vragen na afloop.
+- FrontEnd: Instelling voegt foutieve vragen van de vorige quiz automatisch toe aan een nieuwe ronde.
 - FrontEnd: Speelstatistieken en vaakst foutief beantwoorde vragen worden nu lokaal bijgehouden in localStorage.
 - FrontEnd: Meld-een-fout knop is nu een echte, overal beschikbare knop met automatische schermcontext.
 - BackEnd: De samenvattende e-mail toont nu per gevolgde speler een eigen tabel met gelijk verdeelde Altijd/Laatste week/Laatste 24u-kolommen.

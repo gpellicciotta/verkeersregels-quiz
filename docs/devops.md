@@ -95,6 +95,20 @@ External requests are intercepted to prevent test submissions from reaching Goog
 Set `QUIZ_TEST_URL` to use a different local server address.
 Use `--screenshots` to refresh task screenshots.
 
+### Error Review Browser Checks
+With the review server from the previous section running, run:
+
+```bash
+node tests/error-review-browser.cjs
+```
+
+The test checks the start-screen review button's visibility gating, starting a quiz
+from all-time error history, retrying only the current round's wrong answers from the
+result screen, and the "always include errors from last quiz" settings checkbox.
+External requests are intercepted to prevent test scores from reaching Google Sheets.
+Set `QUIZ_TEST_URL` to use a different local server address.
+Use `--screenshots` to refresh task screenshots; `--baseline` captures the UI before implementation.
+
 ### Markdown and Task File Linting
 Markdown documents and task files are validated using dev-guidelines tooling:
 

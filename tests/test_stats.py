@@ -33,6 +33,9 @@ class TestStats(unittest.TestCase):
         self.assertIn("export function recordQuizResult(answers)", self.stats_js)
         self.assertIn("export function getMostUsedErrors(limit = 10)", self.stats_js)
         self.assertIn("export function resetStats()", self.stats_js)
+        self.assertIn("export function getErrorQuestionIds()", self.stats_js)
+        self.assertIn("export function hasStoredErrors()", self.stats_js)
+        self.assertIn("export function getLastQuizWrongIds()", self.stats_js)
 
     def test_stats_storage_key_is_distinct_from_preferences(self) -> None:
         """Guards against accidentally colliding with the existing preferences storage key."""
@@ -42,7 +45,7 @@ class TestStats(unittest.TestCase):
 
     def test_quiz_result_screen_records_stats(self) -> None:
         """Validates that showResult() feeds the finished round's answers into recordQuizResult."""
-        self.assertIn('import { recordQuizResult } from "./stats.js";', self.quiz_js)
+        self.assertRegex(self.quiz_js, r'import \{[^}]*\brecordQuizResult\b[^}]*\} from "\./stats\.js";')
         self.assertIn("recordQuizResult(state.answers);", self.quiz_js)
 
 

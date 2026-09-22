@@ -65,3 +65,37 @@ test("resetStats clears accumulated stats back to zero", async () => {
   resetStats();
   assert.equal(getStoredStats().gamesPlayed, 0);
 });
+
+test("getErrorQuestionIds/hasStoredErrors/getLastQuizWrongIds track error-review helpers", async () => {
+  globalThis.localStorage = makeLocalStorage();
+  const {
+    recordQuizResult,
+    getErrorQuestionIds,
+    hasStoredErrors,
+    getLastQuizWrongIds,
+    resetStats,
+  } = await import(statsUrl);
+  resetStats();
+
+  assert.equal(hasStoredErrors(), false);
+  assert.deepEqual(getErrorQuestionIds(), []);
+  assert.deepEqual(getLastQuizWrongIds(), []);
+
+  recordQuizResult([
+    { id: "q1", correct: true },
+    { id: "q2", correct: false },
+  ]);
+  assert.equal(hasStoredErrors(), true);
+  assert.deepEqual(getErrorQuestionIds(), ["q2"]);
+  assert.deepEqual(getLastQuizWrongIds(), ["q2"]);
+
+  recordQuizResult([
+    { id: "q3", correct: false },
+    { id: "q4", correct: true },
+  ]);
+  assert.deepEqual(getErrorQuestionIds().sort(), ["q2", "q3"]);
+  assert.deepEqual(getLastQuizWrongIds(), ["q3"], "lastQuizWrongIds reflects only the most recent round");
+
+  recordQuizResult([{ id: "q5", correct: true }]);
+  assert.deepEqual(getLastQuizWrongIds(), [], "a fully correct round clears lastQuizWrongIds");
+});

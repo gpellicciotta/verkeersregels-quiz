@@ -15,6 +15,8 @@ import {
   applyFilter,
   updateStartScreenNotice,
   startQuiz,
+  startErrorReviewQuiz,
+  restartWithWrongAnswers,
   selectOption,
   nextQuestion,
   showResult,
@@ -90,8 +92,10 @@ if (el.playerNameInput) {
     }
   });
 }
+if (el.btnStartErrors) el.btnStartErrors.addEventListener("click", startErrorReviewQuiz);
 el.btnNext.addEventListener("click", nextQuestion);
 el.btnResultClose.addEventListener("click", restart);
+if (el.btnResultRetryErrors) el.btnResultRetryErrors.addEventListener("click", restartWithWrongAnswers);
 if (el.btnShare) el.btnShare.addEventListener("click", handleShare);
 if (el.btnPrint) el.btnPrint.addEventListener("click", () => window.print());
 if (el.btnReportError) el.btnReportError.addEventListener("click", openReportModal);

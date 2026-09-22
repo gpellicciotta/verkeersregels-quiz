@@ -33,6 +33,8 @@
   "start.error_no_questions_config": "Aucune question de quiz n'est disponible pour les paramètres sélectionnés.",
   "start.error_load_failed": "Impossible de charger les questions. Veuillez recharger la page.",
   "start.error_start_no_pool": "Aucune question disponible pour démarrer le quiz.",
+  "start.btn_review_errors": "Réviser tes questions ratées",
+  "start.btn_review_errors_aria": "Démarrer un quiz avec les questions auxquelles tu as déjà répondu de façon incorrecte",
 
   "quiz.progress": "Question {n}/{total}",
   "quiz.progress_initial": "Question 1/{total}",
@@ -62,6 +64,8 @@
   "result.title": "Résultat du Quiz",
   "result.summary_name": "{name}, vous avez obtenu {correct}/{total} ({pct}%) en {duration}.",
   "result.summary_no_name": "Vous avez obtenu {correct}/{total} ({pct}%) en {duration}.",
+  "result.btn_retry_errors": "Refaire les questions ratées",
+  "result.btn_retry_errors_aria": "Démarrer un nouveau quiz avec uniquement les questions ratées de ce tour",
   "result.btn_share_aria": "Partager les résultats",
   "result.btn_share_tooltip": "Partager les résultats",
   "result.btn_print_aria": "Imprimer les résultats",
@@ -181,6 +185,7 @@
   "config.carousel_since_1990": "Panneaux introduits/modifiés à partir de 1990",
   "config.carousel_since_2000": "Panneaux introduits/modifiés à partir de 2000",
   "config.carousel_since_2010": "Panneaux introduits/modifiés à partir de 2010",
+  "config.label_always_include_errors": "Toujours inclure les questions ratées du dernier quiz",
   "config.btn_save": "Enregistrer",
 
   "report.title": "Signaler une erreur",

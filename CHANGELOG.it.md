@@ -14,6 +14,8 @@ Una panoramica riepilogativa di tutte le modifiche, per versione di questo proge
 ---
 
 ## v3.5.1-pre
+- FrontEnd: Nuovi pulsanti avviano un quiz con le domande sbagliate in passato o ripetono solo gli errori del turno.
+- FrontEnd: Un'impostazione include automaticamente gli errori dell'ultimo quiz in un nuovo turno.
 - FrontEnd: Le statistiche di gioco e le domande con risposte errate più frequenti vengono ora monitorate localmente in localStorage.
 - FrontEnd: Il pulsante Segnala un bug ora è un pulsante reale e onnipresente con contesto sullo schermo automatico.
 - BackEnd: L'e-mail di riepilogo ora mostra la propria tabella per ciascun giocatore seguito con colonne equamente divise Sempre/Ultima settimana/Ultime 24 ore.

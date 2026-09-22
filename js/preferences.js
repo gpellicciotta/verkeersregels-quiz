@@ -48,6 +48,9 @@ export function applyStoredPreferences() {
   if (getSinceFilter() === null && stored.quizSince !== undefined && stored.quizSince !== null) {
     state.configSince = stored.quizSince;
   }
+  if (typeof stored.alwaysIncludeLastErrors === "boolean") {
+    state.alwaysIncludeLastErrors = stored.alwaysIncludeLastErrors;
+  }
 
   if (typeof stored.carouselDelaySeconds === "number" && stored.carouselDelaySeconds > 0) {
     carouselState.delayMs = stored.carouselDelaySeconds * 1000;

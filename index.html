@@ -66,6 +66,12 @@
       </button>
     </div>
     <p id="start-error" class="error hidden"></p>
+    <button type="button" id="btn-start-errors" class="btn-secondary btn-review-errors hidden"
+            aria-label="Oefen je foutieve vragen"
+            data-i18n="start.btn_review_errors"
+            data-i18n-aria="start.btn_review_errors_aria">
+      Oefen je foutieve vragen
+    </button>
 
     <!-- Hidden mode options for script and testing compatibility -->
     <div class="sr-only" aria-hidden="true">
@@ -287,6 +293,12 @@
         <button id="btn-result-close" class="modal-close view-close-btn result-btn-close" type="button" aria-label="Sluiten" title="Sluiten" data-i18n-aria="result.btn_close_aria" data-i18n-tooltip="result.btn_close_aria"><span class="modal-close-icon" data-icon="close" aria-hidden="true"></span></button>
       </div>
     </div>
+    <button type="button" id="btn-result-retry-errors" class="btn-secondary btn-review-errors no-print hidden"
+            aria-label="Herhaal de vragen die je fout had"
+            data-i18n="result.btn_retry_errors"
+            data-i18n-aria="result.btn_retry_errors_aria">
+      Herhaal foute vragen
+    </button>
     <div id="share-toast" class="share-toast hidden" role="status" aria-live="polite"></div>
     <table id="result-table">
       <thead>
@@ -492,6 +504,13 @@
               <option value="2010" data-i18n="config.since_2010">Enkel ingevoerd na 2010</option>
               <option value="2000" data-i18n="config.since_2000">Enkel ingevoerd na 2000</option>
             </select>
+          </div>
+
+          <div class="config-field">
+            <label class="modal-checkbox-label" for="config-always-include-errors">
+              <input type="checkbox" id="config-always-include-errors">
+              <span data-i18n="config.label_always_include_errors">Neem foutieve vragen van vorige quiz automatisch op</span>
+            </label>
           </div>
         </div>
 

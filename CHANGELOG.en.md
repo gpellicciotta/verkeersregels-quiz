@@ -14,6 +14,8 @@ A summarized overview of all changes, per version of this project.
 ---
 
 ## v3.5.1-pre
+- FrontEnd: New buttons start a quiz with past missed questions or retry only a round's wrong answers.
+- FrontEnd: A setting automatically folds the previous quiz's wrong answers into a new round.
 - FrontEnd: Play statistics and most frequently incorrectly answered questions are now tracked locally in localStorage.
 - FrontEnd: Report a bug button is now a real, ubiquitous button with automatic screen context.
 - BackEnd: The summary email now shows its own table for each followed player with equally divided Always/Last week/Last 24h columns.

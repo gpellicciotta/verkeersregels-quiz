@@ -6,7 +6,7 @@ import { getNameParam, getQuestionCountOverride, getSinceFilter, getTypeFilter }
 import { setStoredPreferences } from "./preferences.js";
 import { showScreen } from "./screens.js";
 import { submitToSheet } from "./sheet.js";
-import { recordQuizResult } from "./stats.js";
+import { recordQuizResult, getErrorQuestionIds, getLastQuizWrongIds, hasStoredErrors } from "./stats.js";
 import { setStartMode } from "./ui-mode.js";
 import { t, getLang } from "./i18n.js";
 import { createIcon } from "./icons.js";
@@ -103,6 +103,10 @@ export function updateStartScreenNotice() {
     el.startDesc.textContent = t("start.description");
   }
 
+  if (el.btnStartErrors) {
+    el.btnStartErrors.classList.toggle("hidden", !hasStoredErrors());
+  }
+
   if (state.currentMode === "carousel") {
     if (el.filterNotice) {
       el.filterNotice.classList.add("hidden");
@@ -149,24 +153,72 @@ export function updateStartScreenNotice() {
   }
 }
 
-export function startQuiz() {
-  if (!state.pool || state.pool.length === 0) {
-    el.startError.textContent = t("start.error_start_no_pool");
-    el.startError.classList.remove("hidden");
-    return;
+/** Shuffle `pool`, guaranteeing the questions matching `forcedIds` are included first. */
+function buildRoundWithForcedIds(pool, forcedIds, effectiveCount) {
+  if (!forcedIds || forcedIds.length === 0) {
+    return shuffle(pool).slice(0, effectiveCount);
   }
+  const idSet = new Set(forcedIds.map(String));
+  const forcedQuestions = allQuestions.filter((q) => idSet.has(String(q.id)));
+  if (forcedQuestions.length === 0) {
+    return shuffle(pool).slice(0, effectiveCount);
+  }
+  const capped = shuffle(forcedQuestions).slice(0, effectiveCount);
+  const remainingSlots = effectiveCount - capped.length;
+  if (remainingSlots <= 0) {
+    return shuffle(capped);
+  }
+  const cappedIds = new Set(capped.map((q) => q.id));
+  const filler = shuffle(pool.filter((q) => !cappedIds.has(q.id))).slice(0, remainingSlots);
+  return shuffle(capped.concat(filler));
+}
+
+/** Set up shared round/session state and switch to the quiz screen for `round`. */
+function beginRound(round) {
   state.startTime = Date.now();
   const nameParam = getNameParam();
   state.playerName = nameParam || (el.playerNameInput ? el.playerNameInput.value.trim() : "");
   if (!nameParam) {
     setStoredPreferences({ playerName: state.playerName });
   }
-  const effectiveCount = getEffectiveQuestionCount();
-  state.round = shuffle(state.pool).slice(0, effectiveCount);
+  state.round = round;
   state.currentIndex = 0;
   state.answers = [];
   showScreen("quiz");
   renderQuestion();
+}
+
+export function startQuiz() {
+  if (!state.pool || state.pool.length === 0) {
+    el.startError.textContent = t("start.error_start_no_pool");
+    el.startError.classList.remove("hidden");
+    return;
+  }
+  const effectiveCount = getEffectiveQuestionCount();
+  const round = state.alwaysIncludeLastErrors
+    ? buildRoundWithForcedIds(state.pool, getLastQuizWrongIds(), effectiveCount)
+    : shuffle(state.pool).slice(0, effectiveCount);
+  beginRound(round);
+}
+
+/** Start a quiz consisting only of questions ever answered wrong across past quizzes. */
+export function startErrorReviewQuiz() {
+  const ids = getErrorQuestionIds();
+  if (ids.length === 0) return;
+  const idSet = new Set(ids);
+  const questions = allQuestions.filter((q) => idSet.has(String(q.id)));
+  if (questions.length === 0) return;
+  beginRound(shuffle(questions));
+}
+
+/** Restart with only the questions answered wrong in the round that just finished. */
+export function restartWithWrongAnswers() {
+  const wrongIds = state.answers.filter((a) => !a.correct).map((a) => String(a.id));
+  if (wrongIds.length === 0) return;
+  const idSet = new Set(wrongIds);
+  const questions = allQuestions.filter((q) => idSet.has(String(q.id)));
+  if (questions.length === 0) return;
+  beginRound(shuffle(questions));
 }
 
 export function createOptionIndicator(type) {
@@ -472,6 +524,10 @@ export function showResult() {
     `;
     el.resultTableBody.appendChild(tr);
   });
+
+  if (el.btnResultRetryErrors) {
+    el.btnResultRetryErrors.classList.toggle("hidden", correct === total);
+  }
 
   showScreen("result");
   if (total > 0 && correct === total) showConfetti();

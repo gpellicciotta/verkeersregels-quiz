@@ -16,6 +16,7 @@ export const state = {
   configCount: null,
   configType: null,
   configSince: null,
+  alwaysIncludeLastErrors: false,
   startTime: null,
   endTime: null,
   durationSeconds: 0,

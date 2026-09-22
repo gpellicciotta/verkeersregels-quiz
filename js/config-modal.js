@@ -43,6 +43,9 @@ export function openConfigModal() {
         ? String(state.filterSince)
         : "";
   }
+  if (el.configAlwaysIncludeErrors) {
+    el.configAlwaysIncludeErrors.checked = !!state.alwaysIncludeLastErrors;
+  }
 
   // Prepopulate carousel settings
   if (el.carouselDelaySelect) {
@@ -135,6 +138,9 @@ export function saveConfig() {
       ? parseInt(el.configQuizSince.value, 10)
       : null;
   }
+  if (el.configAlwaysIncludeErrors) {
+    state.alwaysIncludeLastErrors = !!el.configAlwaysIncludeErrors.checked;
+  }
 
   setStoredPreferences({
     playerName: name,
@@ -143,6 +149,7 @@ export function saveConfig() {
     quizCount: state.configCount,
     quizType: state.configType,
     quizSince: state.configSince,
+    alwaysIncludeLastErrors: state.alwaysIncludeLastErrors,
     carouselDelaySeconds: carouselState.delayMs / 1000,
     carouselSince: carouselState.filterSince,
   });

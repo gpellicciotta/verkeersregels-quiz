@@ -14,6 +14,8 @@ Un aperçu résumé de toutes les modifications, par version de ce projet.
 ---
 
 ## v3.5.1-pre
+- FrontEnd: De nouveaux boutons démarrent un quiz avec les questions ratées ou refont uniquement les erreurs du tour.
+- FrontEnd: Un réglage inclut automatiquement les erreurs du quiz précédent dans un nouveau tour.
 - FrontEnd: Les statistiques de lecture et les questions les plus fréquemment mal répondues sont désormais suivies localement dans localStorage.
 - FrontEnd: Le bouton Signaler un bug est désormais un véritable bouton omniprésent avec un contexte d'écran automatique.
 - BackEnd: L'e-mail récapitulatif affiche désormais son propre tableau pour chaque joueur suivi avec des colonnes Toujours/Dernière semaine/Dernières 24h divisées à parts égales.

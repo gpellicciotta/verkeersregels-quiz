@@ -14,6 +14,8 @@ Eine zusammenfassende Übersicht aller Änderungen pro Version dieses Projekts.
 ---
 
 ## v3.5.1-pre
+- FrontEnd: Neue Schaltflächen starten ein Quiz mit früheren Fehlerfragen oder wiederholen nur die falschen Antworten einer Runde.
+- FrontEnd: Eine Einstellung nimmt die Fehler des letzten Quiz automatisch in eine neue Runde auf.
 - FrontEnd: Spielstatistiken und die am häufigsten falsch beantworteten Fragen werden jetzt lokal in localStorage verfolgt.
 - FrontEnd: Die Schaltfläche „Fehler melden“ ist jetzt eine echte, allgegenwärtige Schaltfläche mit automatischem Bildschirmkontext.
 - BackEnd: Die zusammenfassende E-Mail zeigt jetzt für jeden verfolgten Spieler eine eigene Tabelle mit gleichmäßig aufgeteilten Spalten „Immer“, „Letzte Woche“ und „Letzte 24 Stunden“.

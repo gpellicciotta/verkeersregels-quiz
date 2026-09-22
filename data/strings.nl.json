@@ -33,6 +33,8 @@
   "start.error_no_questions_config": "Er zijn geen quizvragen beschikbaar voor de gekozen instellingen.",
   "start.error_load_failed": "Vragen konden niet geladen worden. Herlaad de pagina.",
   "start.error_start_no_pool": "Geen vragen beschikbaar om de quiz te starten.",
+  "start.btn_review_errors": "Oefen je foutieve vragen",
+  "start.btn_review_errors_aria": "Start een quiz met vragen die je eerder fout beantwoordde",
 
   "quiz.progress": "Vraag {n}/{total}",
   "quiz.progress_initial": "Vraag 1/{total}",
@@ -62,6 +64,8 @@
   "result.title": "Quiz Resultaat",
   "result.summary_name": "{name}, je scoorde {correct}/{total} ({pct}%) in {duration}.",
   "result.summary_no_name": "Je scoorde {correct}/{total} ({pct}%) in {duration}.",
+  "result.btn_retry_errors": "Herhaal foute vragen",
+  "result.btn_retry_errors_aria": "Start een nieuwe quiz met enkel de vragen die je deze ronde fout had",
   "result.btn_share_aria": "Resultaat delen",
   "result.btn_share_tooltip": "Resultaat delen",
   "result.btn_print_aria": "Resultaten afdrukken",
@@ -181,6 +185,7 @@
   "config.carousel_since_1990": "Borden ingevoerd/gewijzigd vanaf 1990",
   "config.carousel_since_2000": "Borden ingevoerd/gewijzigd vanaf 2000",
   "config.carousel_since_2010": "Borden ingevoerd/gewijzigd vanaf 2010",
+  "config.label_always_include_errors": "Neem foutieve vragen van vorige quiz automatisch op",
   "config.btn_save": "Opslaan",
 
   "report.title": "Meld een fout",
