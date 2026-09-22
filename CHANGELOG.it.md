@@ -14,6 +14,7 @@ Una panoramica riepilogativa di tutte le modifiche, per versione di questo proge
 ---
 
 ## v3.5.1-pre
+- FrontEnd: Le statistiche di gioco e le domande con risposte errate più frequenti vengono ora monitorate localmente in localStorage.
 - FrontEnd: Il pulsante Segnala un bug ora è un pulsante reale e onnipresente con contesto sullo schermo automatico.
 - BackEnd: L'e-mail di riepilogo ora mostra la propria tabella per ciascun giocatore seguito con colonne equamente divise Sempre/Ultima settimana/Ultime 24 ore.
 - BackEnd: I problemi segnalati ora mostrano sia l'ID domanda che il testo della domanda invece di uno solo.

@@ -14,6 +14,7 @@ A summarized overview of all changes, per version of this project.
 ---
 
 ## v3.5.1-pre
+- FrontEnd: Play statistics and most frequently incorrectly answered questions are now tracked locally in localStorage.
 - FrontEnd: Report a bug button is now a real, ubiquitous button with automatic screen context.
 - BackEnd: The summary email now shows its own table for each followed player with equally divided Always/Last week/Last 24h columns.
 - BackEnd: Reported issues now show both the question ID and the question text instead of just one.

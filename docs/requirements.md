@@ -105,12 +105,20 @@ Functional and technical requirements for the Verkeersregels Quiz application.
   - Download fresh assets into a content-fingerprinted cache before activation; retain the working release if installation fails.
   - Real-time offline indicator alerting users when operating without network connectivity.
 
+### Local Play Statistics
+- **Storage Scope**: Play stats and most-used errors live only in the browser's `localStorage`
+  (`verkeersquiz_stats` key); never sent to the server and cleared like any other site data.
+- **Tracked Totals**: Games played, questions answered, correct/wrong counts, and the
+  timestamp of the last played round, updated once per finished round.
+- **Most-Used Errors**: Per-question wrong-answer counts, queryable as a ranked top-N list,
+  laying the groundwork for replaying previously-missed questions.
+
 ---
 
 ## Technical and Architectural Requirements
 ### Client Architecture
 - **Technology Stack**: Static HTML5, CSS3, vanilla ES2020 JavaScript without external UI frameworks or bundlers.
-- **Module Structure**: Native ES modules under `js/` separate state (`state.js`, `dom.js`), storage (`preferences.js`, `report-queue.js`, `sheet.js`), and UI concerns (`quiz.js`, `carousel.js`, `screens.js`, and related modules), composed by `app.js`.
+- **Module Structure**: Native ES modules under `js/` separate state (`state.js`, `dom.js`), storage (`preferences.js`, `report-queue.js`, `sheet.js`, `stats.js`), and UI concerns (`quiz.js`, `carousel.js`, `screens.js`, and related modules), composed by `app.js`.
 - **Responsive Layout**: Mobile-first design adapting seamlessly from narrow mobile screens (375px) to desktop viewports (1000px+).
 - **Accessibility**: Semantic HTML landmarks, ARIA modal dialogs (`role="dialog"`, `aria-modal="true"`), keyboard traps, and escape key handling.
 - **Hosting Target**: Hosted on GitHub Pages directly from the repository's production branch.

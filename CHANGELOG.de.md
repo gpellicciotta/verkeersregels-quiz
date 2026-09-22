@@ -14,9 +14,10 @@ Eine zusammenfassende Übersicht aller Änderungen pro Version dieses Projekts.
 ---
 
 ## v3.5.1-pre
+- FrontEnd: Spielstatistiken und die am häufigsten falsch beantworteten Fragen werden jetzt lokal in localStorage verfolgt.
 - FrontEnd: Die Schaltfläche „Fehler melden“ ist jetzt eine echte, allgegenwärtige Schaltfläche mit automatischem Bildschirmkontext.
-- BackEnd: Die zusammenfassende E-Mail zeigt jetzt eine eigene Tabelle für jeden verfolgten Spieler mit gleichmäßig aufgeteilten Spalten „Immer“, „Letzte Woche“ und „Letzte 24 Stunden“.
-- BackEnd: Gemeldete Probleme zeigen jetzt sowohl die Frage-ID als auch den Fragentext statt nur einer.
+- BackEnd: Die zusammenfassende E-Mail zeigt jetzt für jeden verfolgten Spieler eine eigene Tabelle mit gleichmäßig aufgeteilten Spalten „Immer“, „Letzte Woche“ und „Letzte 24 Stunden“.
+- BackEnd: Gemeldete Probleme zeigen jetzt sowohl die Frage-ID als auch den Fragentext statt nur einer an.
 
 ## v3.5.0 [released: 2026-09-22]
 - BackEnd: Google Apps Script sendet jetzt täglich um 7:00 Uhr und 19:00 Uhr UTC eine zusammenfassende E-Mail im niederländischen Stil mit Ergebnissen, Benachrichtigungen und einer anpassbaren Liste der Spieler, denen man folgen kann.

@@ -6,6 +6,7 @@ import { getNameParam, getQuestionCountOverride, getSinceFilter, getTypeFilter }
 import { setStoredPreferences } from "./preferences.js";
 import { showScreen } from "./screens.js";
 import { submitToSheet } from "./sheet.js";
+import { recordQuizResult } from "./stats.js";
 import { setStartMode } from "./ui-mode.js";
 import { t, getLang } from "./i18n.js";
 import { createIcon } from "./icons.js";
@@ -474,6 +475,7 @@ export function showResult() {
 
   showScreen("result");
   if (total > 0 && correct === total) showConfetti();
+  recordQuizResult(state.answers);
   submitToSheet(correct, total, pct, state.durationSeconds, formattedDuration);
 }
 
