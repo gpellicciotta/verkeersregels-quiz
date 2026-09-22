@@ -91,6 +91,8 @@ Functional and technical requirements for the Verkeersregels Quiz application.
   - Installable application with standalone display mode, D5 roundabout icon suite, and native install prompt.
   - 100% offline execution via root Service Worker pre-caching all 227 core assets, sign SVGs, and situation images.
   - Installed clients activate new releases automatically and reload once the updated Service Worker takes control.
+  - Register before language loading; check at startup, every visible minute, and when returning online or resuming.
+  - Download fresh assets into a content-fingerprinted cache before activation; retain the working release if installation fails.
   - Real-time offline indicator alerting users when operating without network connectivity.
 
 ---

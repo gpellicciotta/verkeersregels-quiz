@@ -1,5 +1,5 @@
 // Service Worker for Verkeersregels Quiz PWA
-const CACHE_NAME = "verkeersquiz-v3.3.0";
+const CACHE_NAME = "verkeersquiz-v3.3.1-pre-387c2bea299ceef1";
 
 const PRECACHE_ASSETS = [
   "./",
@@ -284,7 +284,9 @@ self.addEventListener("install", (event) => {
   event.waitUntil(
     caches
       .open(CACHE_NAME)
-      .then((cache) => cache.addAll(PRECACHE_ASSETS))
+      .then((cache) => cache.addAll(
+        PRECACHE_ASSETS.map((asset) => new Request(asset, { cache: "reload" }))
+      ))
       .then(() => self.skipWaiting())
   );
 });
@@ -297,7 +299,7 @@ self.addEventListener("activate", (event) => {
       .then((cacheNames) => {
         return Promise.all(
           cacheNames
-            .filter((name) => name !== CACHE_NAME)
+            .filter((name) => name.startsWith("verkeersquiz-") && name !== CACHE_NAME)
             .map((name) => caches.delete(name))
         );
       })
@@ -324,15 +326,19 @@ self.addEventListener("fetch", (event) => {
   // For navigation requests: try network first, fallback to cached index.html
   if (request.mode === "navigate") {
     event.respondWith(
-      fetch(request)
-        .catch(() => caches.match("index.html") || caches.match("./"))
+      fetch(request, { cache: "no-cache" })
+        .catch(async () => {
+          const cache = await caches.open(CACHE_NAME);
+          return (await cache.match("index.html")) || cache.match("./");
+        })
     );
     return;
   }
 
   // For static assets: cache-first with network fallback and dynamic caching
   event.respondWith(
-    caches.match(request).then((cachedResponse) => {
+    caches.open(CACHE_NAME).then(async (cache) => {
+      const cachedResponse = await cache.match(request);
       if (cachedResponse) {
         return cachedResponse;
       }

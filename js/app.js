@@ -380,11 +380,11 @@ window.addEventListener("resize", dismissOpenTooltips);
 window.addEventListener("orientationchange", dismissOpenTooltips);
 
 // ── Application startup ───────────────────────────────────────────────────────
+registerServiceWorker();
 setLang(detectLang())
   .then(() => {
     updateLangButton();
     updateAboutSourceLinks();
-    registerServiceWorker();
     initTheme();
     updateOnlineStatus();
     applyStoredPreferences();

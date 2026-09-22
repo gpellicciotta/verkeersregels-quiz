@@ -47,17 +47,25 @@ window.addEventListener("offline", () => {
   updateOnlineStatus();
 });
 
-const SW_UPDATE_CHECK_INTERVAL_MS = 60 * 60 * 1000;
+const SW_UPDATE_CHECK_INTERVAL_MS = 60 * 1000;
+let serviceWorkerRegistrationStarted = false;
 
 export function registerServiceWorker() {
-  if (!("serviceWorker" in navigator)) {
+  if (!("serviceWorker" in navigator) || serviceWorkerRegistrationStarted) {
     return;
   }
+  serviceWorkerRegistrationStarted = true;
 
   // Reload once the new worker takes control, so open tabs (installed PWA
   // included) pick up the updated assets without a manual close/reopen.
   let refreshingAfterUpdate = false;
+  let hadController = Boolean(navigator.serviceWorker.controller);
   navigator.serviceWorker.addEventListener("controllerchange", () => {
+    // The first installation needs no reload; subsequent replacements do.
+    if (!hadController) {
+      hadController = Boolean(navigator.serviceWorker.controller);
+      return;
+    }
     if (refreshingAfterUpdate) {
       return;
     }
@@ -65,9 +73,9 @@ export function registerServiceWorker() {
     window.location.reload();
   });
 
-  window.addEventListener("load", () => {
-    navigator.serviceWorker
-      .register("./sw.js")
+  // Startup may run after window.load, so register without waiting for it.
+  return navigator.serviceWorker
+      .register("./sw.js", { updateViaCache: "none" })
       .then((reg) => {
         reg.addEventListener("updatefound", () => {
           const worker = reg.installing;
@@ -80,19 +88,32 @@ export function registerServiceWorker() {
           }
         });
 
-        // Installed PWAs can stay open for a long time without navigating,
-        // so poll for updates periodically and whenever the tab regains focus.
-        setInterval(() => {
-          reg.update().catch(() => {});
-        }, SW_UPDATE_CHECK_INTERVAL_MS);
+        let checking = false;
+        const checkForUpdate = async () => {
+          if (checking || navigator.onLine === false || document.visibilityState === "hidden") {
+            return;
+          }
+          checking = true;
+          try {
+            await reg.update();
+          } catch {
+            // Keep the installed version usable; retry on the next trigger.
+          } finally {
+            checking = false;
+          }
+        };
+        checkForUpdate();
+        setInterval(checkForUpdate, SW_UPDATE_CHECK_INTERVAL_MS);
+        window.addEventListener("online", checkForUpdate);
+        window.addEventListener("focus", checkForUpdate);
+        window.addEventListener("pageshow", checkForUpdate);
         document.addEventListener("visibilitychange", () => {
           if (document.visibilityState === "visible") {
-            reg.update().catch(() => {});
+            checkForUpdate();
           }
         });
       })
       .catch((err) => {
         console.warn("Service Worker registratie mislukt:", err);
       });
-  });
 }

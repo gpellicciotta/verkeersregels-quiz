@@ -11,6 +11,7 @@ Usage:
 
 from __future__ import annotations
 
+import hashlib
 import os
 import sys
 import time
@@ -71,7 +72,13 @@ def build_sw_content(version: str) -> tuple[str, int]:
     ]
 
     all_assets = core_assets + signs + situations
-    cache_name = f"verkeersquiz-v{version}"
+    # Content changes must produce a new worker even when the version is reused.
+    digest = hashlib.sha256(Path(__file__).read_text(encoding="utf-8").encode("utf-8"))
+    for asset in all_assets:
+        digest.update(asset.encode("utf-8") + b"\0")
+        digest.update((REPO_ROOT / ("index.html" if asset == "./" else asset)).read_bytes())
+        digest.update(b"\0")
+    cache_name = f"verkeersquiz-v{version}-{digest.hexdigest()[:16]}"
 
     formatted_assets = "\n".join(f'  "{a}",' for a in all_assets)
 
@@ -87,7 +94,9 @@ self.addEventListener("install", (event) => {{
   event.waitUntil(
     caches
       .open(CACHE_NAME)
-      .then((cache) => cache.addAll(PRECACHE_ASSETS))
+      .then((cache) => cache.addAll(
+        PRECACHE_ASSETS.map((asset) => new Request(asset, {{ cache: "reload" }}))
+      ))
       .then(() => self.skipWaiting())
   );
 }});
@@ -100,7 +109,7 @@ self.addEventListener("activate", (event) => {{
       .then((cacheNames) => {{
         return Promise.all(
           cacheNames
-            .filter((name) => name !== CACHE_NAME)
+            .filter((name) => name.startsWith("verkeersquiz-") && name !== CACHE_NAME)
             .map((name) => caches.delete(name))
         );
       }})
@@ -127,15 +136,19 @@ self.addEventListener("fetch", (event) => {{
   // For navigation requests: try network first, fallback to cached index.html
   if (request.mode === "navigate") {{
     event.respondWith(
-      fetch(request)
-        .catch(() => caches.match("index.html") || caches.match("./"))
+      fetch(request, {{ cache: "no-cache" }})
+        .catch(async () => {{
+          const cache = await caches.open(CACHE_NAME);
+          return (await cache.match("index.html")) || cache.match("./");
+        }})
     );
     return;
   }}
 
   // For static assets: cache-first with network fallback and dynamic caching
   event.respondWith(
-    caches.match(request).then((cachedResponse) => {{
+    caches.open(CACHE_NAME).then(async (cache) => {{
+      const cachedResponse = await cache.match(request);
       if (cachedResponse) {{
         return cachedResponse;
       }}
@@ -165,7 +178,7 @@ def generate(version: str, logger: TeeLogger) -> int:
         content, count = build_sw_content(version)
         SW_PATH.write_text(content, encoding="utf-8")
         logger.log(f"Target file: {SW_PATH}", level="DEBUG")
-        logger.log(f"Cache key: verkeersquiz-v{version}", level="DEBUG")
+        logger.log(content.splitlines()[1], level="DEBUG")
         logger.log(f"Generated sw.js with {count} precached assets (version v{version}).", level="INFO")
         return 0
     except OSError as exc:

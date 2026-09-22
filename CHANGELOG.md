@@ -13,6 +13,9 @@ A summarized overview of all changes, per version of this project.
 
 ---
 
+## v3.3.1-pre
+- FrontEnd: Automatische PWA-updates hersteld met directe registratie, regelmatige controles, verse bestanden en automatisch herladen, ook tijdens een quiz.
+
 ## v3.3.0 [released: 2026-09-22]
 - FrontEnd: Italiaanse vertalingen toegevoegd voor de gebruikersinterface, configuratiedialogen en vragenbank.
 - FrontEnd: Duitse vertalingen toegevoegd voor de gebruikersinterface, configuratiedialogen en vragenbank.

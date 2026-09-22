@@ -6,6 +6,7 @@ Practical guidance on development environment setup, testing, validation, deploy
 
 ## Prerequisites and Environment
 - **Python**: Python 3.10 or higher (for test suites, linters, and dev scripts).
+- **Node.js**: Node.js 22 or higher for executable service worker lifecycle regression tests.
 - **Git**: Git 2.30 or higher supporting worktree isolation (`git worktree`).
 - **Web Browser**: Any standard modern web browser (Google Chrome, Microsoft Edge, Mozilla Firefox, Safari).
 - **Static HTTP Server**: Python built-in `http.server` or any local static web server.
@@ -59,6 +60,7 @@ python -m unittest discover -s tests -v
 The test suite consists of 32 tests across five test modules:
 - `tests/test_quiz_data.py`: verifies 304 questions, schemas, IDs, option counts, `since` years, authoritative URLs, and SVG assets.
 - `tests/test_pwa.py`: verifies manifest integrity, icon dimensions, corner transparency, and service worker precaching completeness.
+- `tests/test_sw_update.py`: executes lifecycle tests in Node and verifies asset fingerprints and startup ordering.
 - `tests/test_ux_layout.py`: verifies desktop two-panel split, mobile floating action button, hidden option collapsing, and pill links.
 - `tests/test_sign_carousel.py`: verifies carousel markup, timing controls, pause overlay, and keyboard navigation.
 - `tests/test_about_view.py`: verifies About screen markup, version tag, sources presentation, start screen cleanup, and navigation.
@@ -87,6 +89,21 @@ All developer utilities live in `scripts/` and adhere strictly to CLI guidelines
 
 ### Hosting Architecture
 The quiz is hosted as a static web site on GitHub Pages directly from the `main` branch root. No build compilation or asset bundling is required.
+
+### Installed App Updates
+Service worker registration starts before language loading and does not depend on the window load event.
+Visible, online clients check at startup, every minute, and on focus, page restoration, visibility restoration, or reconnection.
+Checks bypass the browser's worker HTTP cache; installation downloads fresh assets before activating and reloading existing clients.
+The initial installation does not reload the page.
+Automatic reloads restart an active quiz; saved preferences remain intact.
+Offline or suspended apps update after reconnecting or resuming, subject to browser scheduling and hosting propagation.
+Older installations must first discover this release using their existing update behavior; closing and reopening may be necessary.
+
+Every deployment must regenerate `sw.js`; the release script already does this.
+Its cache key includes an asset-content fingerprint, so regenerated deployments detect changes even with an unchanged version.
+Changing files without regenerating the worker does not trigger an update.
+
+See the [update failure analysis](issues/pwa-update-stalls.md) for reproduction, browser verification, and screenshots.
 
 ### Deployment Pre-flight Checks
 Before releasing, dry-run the release script to verify preconditions without changing anything:

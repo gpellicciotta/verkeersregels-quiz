@@ -18,6 +18,7 @@ Overview of all documentation and specifications for Verkeersregels Quiz.
 - [Specifications](specs/): Interface, format, and protocol specifications.
 - [Architecture Decision Records](adrs/): Architectural decision records explaining key technical choices.
 - [Issue Records](issues/): Root cause analysis and resolution records for complex bugs.
+- [Installed App Update Failures](issues/pwa-update-stalls.md): Startup race, cache freshness, and browser regression verification.
 
 ---
 
