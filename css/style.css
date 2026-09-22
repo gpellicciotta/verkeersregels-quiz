@@ -934,6 +934,7 @@ body.suppress-tooltips [data-tooltip]::before {
   color: var(--color-muted);
   margin-bottom: 8px;
   gap: 8px;
+  padding-right: 36px;
 }
 
 #quiz-progress {
@@ -947,10 +948,9 @@ body.suppress-tooltips [data-tooltip]::before {
 }
 
 .quiz-close {
-  flex: 0 0 44px;
-  width: 44px;
-  height: 44px;
-  margin: 0;
+  position: absolute;
+  top: 12px;
+  right: 12px;
 }
 
 .quiz-status-indicator {

@@ -7,6 +7,7 @@ const baseline = process.argv.includes("--baseline");
 const screenshots = baseline || process.argv.includes("--screenshots");
 const url = process.env.QUIZ_TEST_URL || "http://127.0.0.1:8062/";
 const artifacts = path.resolve(__dirname, "../tasks");
+const screenshotPrefix = process.env.QUIZ_SCREENSHOT_PREFIX || "T0062";
 
 (async () => {
   console.log(`Quiz cancellation browser PID ${process.pid}; server ${url}`);
@@ -39,7 +40,7 @@ const artifacts = path.resolve(__dirname, "../tasks");
       await page.locator("#question-image").evaluate((img) => img.decode());
       const snap = async (suffix) => {
         const label = viewport.width === 320 ? "narrow" : mobile ? "mobile" : "view";
-        if (screenshots) await page.screenshot({ path: path.join(artifacts, `T0062-${label}-${suffix}.png`), fullPage: true });
+        if (screenshots) await page.screenshot({ path: path.join(artifacts, `${screenshotPrefix}-${label}-${suffix}.png`), fullPage: true });
       };
       await snap(baseline ? "before" : "after");
       if (baseline) {
@@ -50,6 +51,23 @@ const artifacts = path.resolve(__dirname, "../tasks");
 
       const dialog = page.locator("#modal-quiz-cancel");
       const close = page.locator("#btn-quiz-close");
+      const checkClosePosition = async () => {
+        const card = await page.locator("#app").boundingBox();
+        const button = await close.boundingBox();
+        assert.equal(await close.evaluate((el) => el.offsetParent.id), "app", "Anchor the close button to the ancestor card");
+        assert.ok(Math.abs(button.y - card.y - 12) < 0.5, "Close button must sit 12px below the card top");
+        assert.ok(Math.abs(card.x + card.width - button.x - button.width - 12) < 0.5, "Close button must sit 12px inside the card right edge");
+        for (const selector of ["#quiz-score", "#quiz-progress", "#quiz-status-indicator", "#btn-report-error-mobile"]) {
+          const item = page.locator(selector);
+          if (!(await item.isVisible())) continue;
+          const rect = await item.boundingBox();
+          const overlaps = button.x < rect.x + rect.width && button.x + button.width > rect.x &&
+            button.y < rect.y + rect.height && button.y + button.height > rect.y;
+          assert.equal(overlaps, false, `Close button must not overlap ${selector}`);
+        }
+        return button;
+      };
+      const quizCloseRect = await checkClosePosition();
       const keep = page.locator("#btn-quiz-continue");
       const stop = page.locator("#btn-quiz-stop");
       const stateSnapshot = () => page.evaluate(async () => JSON.stringify((await import("./js/state.js")).state));
@@ -67,6 +85,7 @@ const artifacts = path.resolve(__dirname, "../tasks");
       const progress = await stateSnapshot();
       const question = await page.locator("#question-text").textContent();
       const prefs = await page.evaluate(() => JSON.stringify(localStorage));
+      await checkClosePosition();
       for (const dismiss of ["continue", "escape", "close", "backdrop"]) {
         await close.click();
         await dialog.waitFor({ state: "visible" });
@@ -117,6 +136,7 @@ const artifacts = path.resolve(__dirname, "../tasks");
       for (const lang of ["nl", "fr", "de", "it", "en"]) {
         assert.equal((await page.goto(`${url}?q=3&type=sign&autostart=1&lang=${lang}`)).status(), 200);
         await page.locator("#question-text").filter({ hasText: /.+/ }).waitFor();
+        await checkClosePosition();
         await close.click();
         const dict = await page.evaluate(async (lang) => (await fetch(`data/strings.${lang}.json`)).json(), lang);
         assert.equal(await dialog.locator("h3").textContent(), dict["quiz.cancel_title"]);
@@ -152,6 +172,11 @@ const artifacts = path.resolve(__dirname, "../tasks");
       }
       await page.locator("#screen-result").waitFor({ state: "visible" });
       assert.equal(await close.isVisible(), false);
+      const resultCloseRect = await page.locator("#btn-result-close").boundingBox();
+      assert.equal(resultCloseRect.x, quizCloseRect.x, "Match the result close button's horizontal placement");
+      // Mobile result pages may scroll; compare positions relative to the same card.
+      assert.equal(await page.locator("#btn-result-close").evaluate((el) => getComputedStyle(el).top), "12px");
+      assert.equal(resultCloseRect.width, quizCloseRect.width, "Match the existing close button size");
       assert.equal(posts.length, 1);
       assert.deepEqual(errors, []);
       console.log(`PASS ${viewport.width}x${viewport.height}: dismissal, keyboard focus, reset, preferences, five languages, completion, no abandoned score`);

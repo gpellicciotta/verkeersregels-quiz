@@ -56,8 +56,16 @@ Preserve player preferences and support keyboard navigation, mobile layouts, and
   Review tier: solo AI agent; implementation awaits human permission for mainline integration.
   The local review server remains running as PID `8400`; no changes were pushed or deployed.
 
+- [2026-09-22] **[Implement]**
+  Corrected the review finding by anchoring the quiz close button to the ancestor card instead of the header layout.
+  Added regression checks for matching offsets, dimensions, and nonoverlapping status controls.
+
+- [2026-09-22] **[Visual]**
+  Inspected updated desktop and mobile captures after HTTP 200 responses; close controls now match the established card positioning.
+  Compare [desktop before](T0062-position-view-before.png), [desktop after](T0062-position-view-after.png), [mobile before](T0062-position-mobile-before.png), and [mobile after](T0062-position-mobile-after.png).
+
 ## Walkthrough & Validation
-The question header now includes an accessible close button.
+The quiz card now includes an accessible close button anchored to its top-right corner, matching other screen close controls.
 Confirmation defaults to continuing; Escape, backdrop clicks, and the dialog close button preserve the current answer and question.
 Confirmed cancellation clears round state and timing, retains preferences, focuses Start, and avoids result submission.
 
@@ -109,3 +117,32 @@ Exit 0: no whitespace errors.
 ```
 
 The review server is available at [localhost port 8062](http://127.0.0.1:8062/).
+
+### Close button positioning follow-up
+The initial implementation placed the button inside the header's flex layout, causing the reported mismatch with other close controls.
+The button now uses the ancestor card as its absolute positioning anchor, with matching 12-pixel top and right offsets.
+Header spacing prevents overlap with the score, progress, reporting control, and answer status.
+
+- Desktop: [before](T0062-position-view-before.png) and [after](T0062-position-view-after.png).
+- Mobile: [before](T0062-position-mobile-before.png) and [after](T0062-position-mobile-after.png).
+- Narrow mobile: [before](T0062-position-narrow-before.png) and [after](T0062-position-narrow-after.png).
+- Confirmation: [desktop](T0062-position-view-confirmation.png) and [mobile](T0062-position-mobile-confirmation.png).
+
+```text
+QUIZ_SCREENSHOT_PREFIX=T0062-position node tests/quiz-cancel-browser.cjs --baseline
+Exit 0, PID 21992: HTTP 200; baseline screenshots at all three viewport widths.
+
+node tests/quiz-cancel-browser.cjs
+Exit 1, PID 24336: reproduced incorrect distance from the card's top edge before the fix.
+
+QUIZ_SCREENSHOT_PREFIX=T0062-position node tests/quiz-cancel-browser.cjs --screenshots
+Exit 0, PID 33436: PASS at 1280x800, 375x667, and 320x568, across all five languages.
+Verified card-relative offsets, no header overlap, matching result close placement, and existing cancellation scenarios.
+PowerShell invocations set the prefix through $env:QUIZ_SCREENSHOT_PREFIX='T0062-position'.
+
+python scripts/generate-sw.py generate
+Exit 0: Generated sw.js with 276 precached assets (version v3.4.0-pre).
+
+python -m pytest tests -q
+Exit 0: 101 passed.
+```

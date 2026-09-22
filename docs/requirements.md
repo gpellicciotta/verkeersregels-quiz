@@ -37,6 +37,7 @@ Functional and technical requirements for the Verkeersregels Quiz application.
   - Features an ergonomic circular floating action button (FAB `→`) on mobile and right-aligned arrow action on desktop.
   - Offers a dedicated "Meld fout" button on every question allowing users to report inaccuracies.
   - Provides a close button on every question, including answered questions and the final question.
+  - Anchors the quiz close button to the ancestor card's top-right corner, matching other screen close controls without overlapping status.
   - Requires confirmation before discarding quiz progress and returning to the start screen without submitting results.
   - Preserves progress when dismissing confirmation through Continue, Escape, the dialog close button, or its backdrop.
   - Keeps keyboard focus inside confirmation, defaults to continuing, and retains player preferences after cancellation.
