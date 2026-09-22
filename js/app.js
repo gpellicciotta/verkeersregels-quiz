@@ -42,6 +42,17 @@ import { setLang, detectLang, getLang, applyAll, t } from "./i18n.js";
 import { handleShare } from "./share.js";
 import { initQuizCancel } from "./quiz-cancel.js";
 import { localizeSourceUrl } from "./utils.js";
+import { renderDataIcons } from "./icons.js";
+
+function hydrateAppIcons() {
+  renderDataIcons(document);
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", hydrateAppIcons, { once: true });
+} else {
+  hydrateAppIcons();
+}
 
 initQuizCancel();
 
@@ -306,13 +317,13 @@ function checkAutoStart() {
 const LANG_CYCLE = { nl: "fr", fr: "de", de: "it", it: "en", en: "nl" };
 const LANG_ORDER = ["nl", "fr", "de", "it", "en"]; // display order, matches LANG_CYCLE traversal
 
-// Builds "NL → [FR] → DE → EN", bracketing the active language since the
+// Builds "NL, [FR], DE, IT, EN", bracketing the active language since the
 // CSS tooltip renders plain text (attr()) and cannot bold a substring.
 function buildLangCycleLabel(lang) {
   return LANG_ORDER.map((code) => {
     const upper = code.toUpperCase();
     return code === lang ? `[${upper}]` : upper;
-  }).join(" → ");
+  }).join(", ");
 }
 
 // wegcode.be's own source links (About screen) follow the same NL/FR-only

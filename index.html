@@ -38,7 +38,7 @@
 <body>
 <main id="app">
   <div id="offline-indicator" class="offline-indicator hidden" role="status" aria-live="polite">
-    <span class="offline-icon" aria-hidden="true">📡</span>
+    <span class="offline-icon" data-icon="wifi" aria-hidden="true"></span>
     <span data-i18n="start.offline">Offline modus: de app werkt volledig offline (alle vragen en borden beschikbaar)</span>
   </div>
 
@@ -82,16 +82,8 @@
                   data-tooltip="Wissel naar carrousel"
                   data-i18n-aria="start.mode_toggle_aria_to_carousel"
                   data-i18n-tooltip="start.mode_toggle_to_carousel">
-            <svg class="start-meta-svg mode-icon-carousel" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-              <line x1="8" y1="21" x2="16" y2="21"></line>
-              <line x1="12" y1="17" x2="12" y2="21"></line>
-              <polygon points="10 7 15 10 10 13 10 7" fill="currentColor"></polygon>
-            </svg>
-            <svg class="start-meta-svg mode-icon-quiz hidden" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M9 11l3 3L22 4"></path>
-              <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path>
-            </svg>
+            <span class="start-meta-svg mode-icon-carousel" data-icon="carousel" aria-hidden="true"></span>
+            <span class="start-meta-svg mode-icon-quiz hidden" data-icon="quiz" aria-hidden="true"></span>
           </button>
 
           <!-- Circle 2: Configuration button -->
@@ -100,10 +92,7 @@
                   data-tooltip="Instellingen"
                   data-i18n-aria="start.btn_config_aria"
                   data-i18n-tooltip="start.btn_config_tooltip">
-            <svg class="start-meta-svg" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="3"></circle>
-              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0 .33-1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
-            </svg>
+            <span class="start-meta-svg" data-icon="settings" aria-hidden="true"></span>
           </button>
 
           <!-- Circle 3: About button -->
@@ -112,17 +101,13 @@
                   data-tooltip="Over deze app (versie, release notes &amp; bronnen)"
                   data-i18n-aria="start.btn_about_aria"
                   data-i18n-tooltip="start.btn_about_tooltip">
-            <svg class="start-meta-svg" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-              <circle cx="12" cy="12" r="10"></circle>
-              <line x1="12" y1="16" x2="12" y2="12"></line>
-              <line x1="12" y1="8" x2="12.01" y2="8"></line>
-            </svg>
+            <span class="start-meta-svg" data-icon="info" aria-hidden="true"></span>
           </button>
 
           <!-- Circle 4: Language button (toggles between available languages) -->
           <button type="button" id="btn-lang" class="start-meta-item start-meta-btn start-meta-btn-action btn-lang"
                   aria-label="Taal wijzigen"
-                  data-tooltip="Taal: [NL] → FR → DE → EN"
+                  data-tooltip="Taal: [NL], FR, DE, IT, EN"
                   data-i18n-aria="start.btn_lang_aria">
             <span class="btn-lang-label" aria-hidden="true" style="font-weight: 700; font-size: 0.75rem; letter-spacing: 0.5px;">NL</span>
           </button>
@@ -133,11 +118,7 @@
                   data-tooltip="Installeer app"
                   data-i18n-aria="start.btn_install_aria"
                   data-i18n-tooltip="start.btn_install_tooltip">
-            <svg class="start-meta-svg" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-              <polyline points="7 10 12 15 17 10"></polyline>
-              <line x1="12" y1="15" x2="12" y2="3"></line>
-            </svg>
+            <span class="start-meta-svg" data-icon="install" aria-hidden="true"></span>
           </button>
         </div>
 
@@ -148,11 +129,7 @@
                 data-tooltip="Bij elke vraag vind je via dit toelichtingsicoon direct het bijbehorende wetsartikel"
                 data-i18n-aria="start.hint_law_aria"
                 data-i18n-tooltip="start.hint_law_tooltip">
-            <svg class="start-meta-svg" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-              <polyline points="15 3 21 3 21 9"></polyline>
-              <line x1="10" y1="14" x2="21" y2="3"></line>
-            </svg>
+            <span class="start-meta-svg" data-icon="externalLink" aria-hidden="true"></span>
           </span>
 
           <!-- Hint 2: Report error hint icon -->
@@ -161,10 +138,7 @@
                 data-tooltip="Fout melden: zie je een onjuistheid of onduidelijkheid, klik dan op dit icoon om dit te melden"
                 data-i18n-aria="start.hint_report_aria"
                 data-i18n-tooltip="start.hint_report_tooltip">
-            <svg class="start-meta-svg" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
-              <line x1="4" y1="22" x2="4" y2="15"></line>
-            </svg>
+            <span class="start-meta-svg" data-icon="report" aria-hidden="true"></span>
           </span>
         </div>
       </div>
@@ -178,7 +152,7 @@
   <section id="screen-about" class="screen hidden" aria-label="Over Verkeersregels Quiz" data-i18n-aria="about.screen_aria">
     <div class="about-header">
       <h1 class="about-title" data-i18n="about.title">Over Verkeersregels Quiz</h1>
-      <button id="btn-about-back" class="btn-about-close modal-close view-close-btn" type="button" aria-label="Sluiten" title="Sluiten" data-i18n-aria="about.btn_close_aria" data-i18n-tooltip="about.btn_close_aria">&times;</button>
+      <button id="btn-about-back" class="btn-about-close modal-close view-close-btn" type="button" aria-label="Sluiten" title="Sluiten" data-i18n-aria="about.btn_close_aria" data-i18n-tooltip="about.btn_close_aria"><span class="modal-close-icon" data-icon="close" aria-hidden="true"></span></button>
     </div>
 
     <div class="about-content">
@@ -188,39 +162,28 @@
           <li class="about-source-item">
             <a id="about-source-wegcode" href="https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu" target="_blank" rel="noopener noreferrer" class="about-source-link">
               <span class="about-source-title" data-i18n="about.source1_title">Belgische Wegcode (KB 1 december 1975)</span>
-              <svg class="source-icon" aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                <polyline points="15 3 21 3 21 9"></polyline>
-                <line x1="10" y1="14" x2="21" y2="3"></line>
-              </svg>
+              <span class="source-icon" data-icon="externalLink" data-icon-width="14" data-icon-height="14" data-icon-stroke-width="2" aria-hidden="true"></span>
             </a>
             <p class="about-source-desc" data-i18n="about.source1_description">Algemeen reglement op de politie van het wegverkeer en van het gebruik van de openbare weg.</p>
           </li>
           <li class="about-source-item">
             <a id="about-source-wegcode-changes" href="https://www.wegcode.be/nl/regelgeving/1975120109/wijzigingen~hra8v386pu" target="_blank" rel="noopener noreferrer" class="about-source-link">
               <span class="about-source-title" data-i18n="about.source2_title">Overzicht wetswijzigingen (Wegcode.be)</span>
-              <svg class="source-icon" aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                <polyline points="15 3 21 3 21 9"></polyline>
-                <line x1="10" y1="14" x2="21" y2="3"></line>
-              </svg>
+              <span class="source-icon" data-icon="externalLink" data-icon-width="14" data-icon-height="14" data-icon-stroke-width="2" aria-hidden="true"></span>
             </a>
             <p class="about-source-desc" data-i18n="about.source2_description">Historiek en recente aanpassingen aan de verkeersregels en verkeersborden in België.</p>
           </li>
           <li class="about-source-item">
             <a href="https://commons.wikimedia.org/wiki/Category:Diagrams_of_road_signs_of_Belgium" target="_blank" rel="noopener noreferrer" class="about-source-link">
               <span class="about-source-title" data-i18n="about.source3_title">Wikimedia Commons &amp; Verkeersborden België</span>
-              <svg class="source-icon" aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                <polyline points="15 3 21 3 21 9"></polyline>
-                <line x1="10" y1="14" x2="21" y2="3"></line>
-              </svg>
+              <span class="source-icon" data-icon="externalLink" data-icon-width="14" data-icon-height="14" data-icon-stroke-width="2" aria-hidden="true"></span>
             </a>
             <p class="about-source-desc" data-i18n="about.source3_description">Officiële SVG vectorillustraties van Belgische verkeersborden.</p>
           </li>
         </ul>
-        <p class="start-legal-hint" data-i18n="about.law_hint">
-          Bij elke vraag in de quiz vind je via het toelichtingsicoon ↗ direct het bijbehorende wetsartikel.
+        <p class="start-legal-hint">
+          <span data-i18n="about.law_hint">Bij elke vraag in de quiz vind je via het toelichtingsicoon direct het bijbehorende wetsartikel.</span>
+          <span class="legal-hint-icon" data-icon="externalLink" data-icon-width="14" data-icon-height="14" aria-hidden="true"></span>
         </p>
       </div>
 
@@ -243,15 +206,12 @@
 
   <!-- Question screens -->
   <section id="screen-quiz" class="screen hidden">
-    <button id="btn-quiz-close" class="modal-close view-close-btn quiz-close" type="button" aria-label="Quiz stoppen" title="Quiz stoppen" data-i18n-aria="quiz.btn_close_aria" data-i18n-tooltip="quiz.btn_close_aria">&times;</button>
+    <button id="btn-quiz-close" class="modal-close view-close-btn quiz-close" type="button" aria-label="Quiz stoppen" title="Quiz stoppen" data-i18n-aria="quiz.btn_close_aria" data-i18n-tooltip="quiz.btn_close_aria"><span class="modal-close-icon" data-icon="close" aria-hidden="true"></span></button>
     <div class="quiz-header">
       <span id="quiz-progress"></span>
       <div id="quiz-status-indicator" class="quiz-status-indicator hidden" role="status" aria-live="polite"></div>
       <button type="button" id="btn-report-error-mobile" class="btn-report-error btn-report-error-mobile" title="Meld een fout in deze vraag" aria-label="Meld fout in deze vraag" data-i18n-aria="quiz.btn_report_mobile_aria" data-i18n-tooltip="quiz.btn_report_mobile_title">
-        <svg class="report-icon" aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
-          <line x1="4" y1="22" x2="4" y2="15"></line>
-        </svg>
+        <span class="report-icon" data-icon="report" data-icon-width="14" data-icon-height="14" data-icon-stroke-width="2" aria-hidden="true"></span>
         <span data-i18n="quiz.btn_report_mobile_label">Meld fout</span>
       </button>
       <span id="quiz-score">Score: 0</span>
@@ -277,10 +237,7 @@
           <div id="explanation" class="explanation hidden"></div>
           <button id="btn-next" class="btn-primary btn-next hidden" type="button" aria-label="Volgende vraag" data-i18n-aria="quiz.btn_next">
             <span class="btn-next-text" data-i18n="quiz.btn_next">Volgende vraag</span>
-            <svg class="next-icon" aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="5" y1="12" x2="19" y2="12"></line>
-              <polyline points="12 5 19 12 12 19"></polyline>
-            </svg>
+            <span class="next-icon" data-icon="arrowRight" data-icon-width="20" data-icon-height="20" data-icon-stroke-width="2.2" aria-hidden="true"></span>
           </button>
         </div>
       </div>
@@ -296,10 +253,7 @@
                 data-tooltip="Meld fout"
                 data-i18n-aria="quiz.btn_report_aria"
                 data-i18n-tooltip="quiz.btn_report_tooltip">
-          <svg class="report-icon" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
-            <line x1="4" y1="22" x2="4" y2="15"></line>
-          </svg>
+          <span class="report-icon" data-icon="report" data-icon-width="18" data-icon-height="18" data-icon-stroke-width="2.2" aria-hidden="true"></span>
         </button>
       </div>
     </div>
@@ -315,22 +269,12 @@
       </div>
       <div class="result-actions no-print">
         <button id="btn-share" class="result-btn-round" type="button" aria-label="Resultaat delen" title="Resultaat delen" data-tooltip="Resultaat delen" data-i18n-aria="result.btn_share_aria" data-i18n-tooltip="result.btn_share_tooltip">
-          <svg class="result-icon-svg" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="18" cy="5" r="3"></circle>
-            <circle cx="6" cy="12" r="3"></circle>
-            <circle cx="18" cy="19" r="3"></circle>
-            <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
-            <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
-          </svg>
+          <span class="result-icon-svg" data-icon="share" data-icon-width="18" data-icon-height="18" data-icon-stroke-width="2.2" aria-hidden="true"></span>
         </button>
         <button id="btn-print" class="result-btn-round" type="button" aria-label="Resultaten afdrukken" title="Resultaten afdrukken" data-tooltip="Resultaten afdrukken" data-i18n-aria="result.btn_print_aria" data-i18n-tooltip="result.btn_print_aria">
-          <svg class="result-icon-svg" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="6 9 6 2 18 2 18 9"></polyline>
-            <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
-            <rect x="6" y="14" width="12" height="8"></rect>
-          </svg>
+          <span class="result-icon-svg" data-icon="print" data-icon-width="18" data-icon-height="18" data-icon-stroke-width="2.2" aria-hidden="true"></span>
         </button>
-        <button id="btn-result-close" class="modal-close view-close-btn result-btn-close" type="button" aria-label="Sluiten" title="Sluiten" data-i18n-aria="result.btn_close_aria" data-i18n-tooltip="result.btn_close_aria">&times;</button>
+        <button id="btn-result-close" class="modal-close view-close-btn result-btn-close" type="button" aria-label="Sluiten" title="Sluiten" data-i18n-aria="result.btn_close_aria" data-i18n-tooltip="result.btn_close_aria"><span class="modal-close-icon" data-icon="close" aria-hidden="true"></span></button>
       </div>
     </div>
     <div id="share-toast" class="share-toast hidden" role="status" aria-live="polite"></div>
@@ -356,34 +300,22 @@
       </div>
       <div class="carousel-control-buttons">
         <button id="btn-carousel-prev" class="btn-carousel-ctrl" type="button" aria-label="Vorig bord" title="Vorig bord (Pijl-links)" data-tooltip="Vorig bord (Pijl-links)" data-i18n-aria="carousel.btn_prev_aria" data-i18n-tooltip="carousel.btn_prev_tooltip">
-          <svg class="carousel-icon" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="15 18 9 12 15 6"></polyline>
-          </svg>
+          <span class="carousel-icon" data-icon="chevronLeft" aria-hidden="true"></span>
           <span class="btn-ctrl-label sr-only" data-i18n="carousel.btn_prev_label_sr">Vorige</span>
         </button>
 
         <button id="btn-carousel-toggle" class="btn-carousel-ctrl btn-carousel-toggle" type="button" aria-label="Pauzeren" title="Pauzeren (Spatiebalk)" data-tooltip="Pauzeren (Spatiebalk)" data-i18n-aria="carousel.btn_toggle_pause_aria" data-i18n-tooltip="carousel.btn_toggle_pause_tooltip">
-          <span id="carousel-toggle-icon" class="carousel-toggle-icon" aria-hidden="true">
-            <svg class="carousel-ctrl-svg icon-pause" width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-              <rect x="5.5" y="4" width="4.5" height="16" rx="1.5"></rect>
-              <rect x="14" y="4" width="4.5" height="16" rx="1.5"></rect>
-            </svg>
-            <svg class="carousel-ctrl-svg icon-play hidden" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" style="transform: translateX(1px);">
-              <polygon points="6 4 20 12 6 20"></polygon>
-            </svg>
-          </span>
+          <span id="carousel-toggle-icon" class="carousel-toggle-icon" data-icon="pause" aria-hidden="true"></span>
           <span id="carousel-toggle-text" class="carousel-toggle-text sr-only" data-i18n="carousel.toggle_text_pause">Pauzeren</span>
         </button>
 
         <button id="btn-carousel-next" class="btn-carousel-ctrl" type="button" aria-label="Volgend bord" title="Volgend bord (Pijl-rechts)" data-tooltip="Volgend bord (Pijl-rechts)" data-i18n-aria="carousel.btn_next_aria" data-i18n-tooltip="carousel.btn_next_tooltip">
-          <svg class="carousel-icon" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
-            <polyline points="9 18 15 12 9 6"></polyline>
-          </svg>
+          <span class="carousel-icon" data-icon="chevronRight" aria-hidden="true"></span>
           <span class="btn-ctrl-label sr-only" data-i18n="carousel.btn_next_label_sr">Volgende</span>
         </button>
       </div>
       <div class="carousel-header-actions">
-        <button id="btn-carousel-exit" class="btn-carousel-close modal-close view-close-btn" type="button" aria-label="Carrousel sluiten (Escape)" title="Carrousel sluiten (Escape)" data-i18n-aria="carousel.btn_exit_aria" data-i18n-tooltip="carousel.btn_exit_aria">&times;</button>
+        <button id="btn-carousel-exit" class="btn-carousel-close modal-close view-close-btn" type="button" aria-label="Carrousel sluiten (Escape)" title="Carrousel sluiten (Escape)" data-i18n-aria="carousel.btn_exit_aria" data-i18n-tooltip="carousel.btn_exit_aria"><span class="modal-close-icon" data-icon="close" aria-hidden="true"></span></button>
       </div>
     </div>
 
@@ -392,10 +324,7 @@
       <!-- Pause indicator: round pause-icon button without text -->
       <div id="carousel-pause-overlay" class="carousel-pause-overlay hidden" aria-live="polite">
         <div class="carousel-pause-round-btn" aria-label="Gepauzeerd" title="Gepauzeerd" data-i18n-aria="carousel.pause_overlay_aria" data-i18n-tooltip="carousel.pause_overlay_aria">
-          <svg class="carousel-pause-round-svg" width="34" height="34" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <rect x="5.5" y="4" width="4.2" height="16" rx="2"></rect>
-            <rect x="14.3" y="4" width="4.2" height="16" rx="2"></rect>
-          </svg>
+          <span class="carousel-pause-round-svg" data-icon="pause" data-icon-width="34" data-icon-height="34" data-icon-fill="currentColor" aria-hidden="true"></span>
         </div>
       </div>
 
@@ -415,11 +344,7 @@
           <div id="carousel-source-wrap" class="carousel-source-wrap hidden">
             <a id="carousel-source-link" class="source-link" href="#" target="_blank" rel="noopener noreferrer">
               <span data-i18n="carousel.source_link_text">Bekijk artikel in Wegcode</span>
-              <svg class="source-icon" aria-hidden="true" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                <polyline points="15 3 21 3 21 9"></polyline>
-                <line x1="10" y1="14" x2="21" y2="3"></line>
-              </svg>
+              <span class="source-icon" data-icon="externalLink" data-icon-width="14" data-icon-height="14" data-icon-stroke-width="2.2" aria-hidden="true"></span>
             </a>
           </div>
         </div>
@@ -448,7 +373,7 @@
   <dialog id="modal-quiz-cancel" class="modal-dialog quiz-cancel-dialog" aria-labelledby="quiz-cancel-title" aria-describedby="quiz-cancel-description">
     <div class="modal-header">
       <h3 id="quiz-cancel-title" data-i18n="quiz.cancel_title">Quiz stoppen?</h3>
-      <button id="btn-quiz-cancel-close" class="modal-close" type="button" aria-label="Doorgaan met quiz" data-i18n-aria="quiz.cancel_continue">&times;</button>
+      <button id="btn-quiz-cancel-close" class="modal-close" type="button" aria-label="Doorgaan met quiz" data-i18n-aria="quiz.cancel_continue"><span class="modal-close-icon" data-icon="close" aria-hidden="true"></span></button>
     </div>
     <div class="modal-body">
       <p id="quiz-cancel-description" class="modal-desc" data-i18n="quiz.cancel_description">Als je stopt, verlies je alle voortgang van deze quiz. Weet je zeker dat je wilt stoppen?</p>
@@ -464,7 +389,7 @@
     <div class="modal-dialog modal-dialog-config">
       <div class="modal-header">
         <h3 id="modal-config-title" data-i18n="config.title_quiz">Instellingen Quiz</h3>
-        <button type="button" id="btn-config-close" class="modal-close" aria-label="Sluiten" data-i18n-aria="config.btn_close_aria">&times;</button>
+        <button type="button" id="btn-config-close" class="modal-close" aria-label="Sluiten" data-i18n-aria="config.btn_close_aria"><span class="modal-close-icon" data-icon="close" aria-hidden="true"></span></button>
       </div>
       <div class="modal-body modal-config-body">
         <!-- Quiz Configuration Section -->
@@ -548,7 +473,7 @@
     <div class="modal-dialog">
       <div class="modal-header">
         <h3 id="modal-report-title" data-i18n="report.title">Meld een fout</h3>
-        <button type="button" id="btn-modal-close" class="modal-close" aria-label="Sluiten" data-i18n-aria="report.btn_close_aria">&times;</button>
+        <button type="button" id="btn-modal-close" class="modal-close" aria-label="Sluiten" data-i18n-aria="report.btn_close_aria"><span class="modal-close-icon" data-icon="close" aria-hidden="true"></span></button>
       </div>
       <form id="form-report" class="modal-body">
         <p class="modal-desc" data-i18n="report.description">Zie je een onduidelijkheid of onjuistheid in deze context? Geef het hier door.</p>
@@ -572,7 +497,7 @@
     <div class="modal-dialog modal-dialog-changelog">
       <div class="modal-header">
         <h3 id="modal-changelog-title" data-i18n="changelog.modal_title">Versiegeschiedenis</h3>
-        <button type="button" id="btn-changelog-close" class="modal-close" aria-label="Sluiten" data-i18n-aria="changelog.btn_close_aria">&times;</button>
+        <button type="button" id="btn-changelog-close" class="modal-close" aria-label="Sluiten" data-i18n-aria="changelog.btn_close_aria"><span class="modal-close-icon" data-icon="close" aria-hidden="true"></span></button>
       </div>
       <div id="changelog-body" class="modal-body modal-changelog-body">
         <p class="changelog-loading" data-i18n="changelog.loading">Versiegeschiedenis laden...</p>

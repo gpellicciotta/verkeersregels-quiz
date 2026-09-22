@@ -896,6 +896,11 @@ body.suppress-tooltips [data-tooltip]::before {
   outline: none;
 }
 
+.icon {
+  display: block;
+  flex-shrink: 0;
+}
+
 .start-meta-svg {
   flex-shrink: 0;
 }
@@ -1326,12 +1331,6 @@ body.suppress-tooltips [data-tooltip]::before {
   transform: translateY(-1px);
   box-shadow: 0 4px 10px var(--color-primary-shadow-hover);
   outline: none;
-}
-
-.quiz-btn-report-round .report-icon {
-  stroke: currentColor;
-  fill: none;
-  display: block;
 }
 
 /* ==========================================================================
