@@ -299,8 +299,8 @@ function checkAutoStart() {
 }
 
 // ── Language switcher ─────────────────────────────────────────────────────────
-const LANG_CYCLE = { nl: "fr", fr: "de", de: "en", en: "nl" };
-const LANG_ORDER = ["nl", "fr", "de", "en"]; // display order, matches LANG_CYCLE traversal
+const LANG_CYCLE = { nl: "fr", fr: "de", de: "it", it: "en", en: "nl" };
+const LANG_ORDER = ["nl", "fr", "de", "it", "en"]; // display order, matches LANG_CYCLE traversal
 
 // Builds "NL → [FR] → DE → EN", bracketing the active language since the
 // CSS tooltip renders plain text (attr()) and cannot bold a substring.
