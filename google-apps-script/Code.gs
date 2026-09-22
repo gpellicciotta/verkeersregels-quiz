@@ -154,15 +154,20 @@ function buildSummaryEmail_(results, issues, now) {
   function fmtNum(value) {
     return value === null ? 'n.v.t.' : (Math.round(value * 10) / 10).toString();
   }
+  function fmtPercent(value) {
+    return value === null ? 'n.v.t.' : fmtNum(value) + '%';
+  }
   function fmtDate(date) {
     return date.toISOString().slice(0, 16).replace('T', ' ') + ' UTC';
   }
-  function isTracked(who) {
-    var trimmedWho = (who || '').trim().toLowerCase();
-    return TRACKED_PLAYERS_.some(function (name) { return name.trim().toLowerCase() === trimmedWho; });
+  function matchesPlayer(who, name) {
+    return (who || '').trim().toLowerCase() === name.trim().toLowerCase();
   }
   function contextOf(issue) {
-    return issue.question || issue.questionId || '(geen context)';
+    if (issue.questionId && issue.question) {
+      return issue.questionId + ' - ' + issue.question;
+    }
+    return issue.questionId || issue.question || '(geen context)';
   }
   function topContexts(allIssues, count) {
     var counts = {};
@@ -194,34 +199,46 @@ function buildSummaryEmail_(results, issues, now) {
   var results7d = since(results, since7d);
   var issues24h = since(issues, since24h);
   var issues7d = since(issues, since7d);
-  var tracked24h = results24h.filter(function (r) { return isTracked(r.who); });
-  var tracked7d = results7d.filter(function (r) { return isTracked(r.who); });
   var last3Issues = issues.slice().sort(function (a, b) { return b.when - a.when; }).slice(0, 3);
   var contexts = topContexts(issues, 3);
-  var trackedLabel = TRACKED_PLAYERS_.join('/');
 
-  var avgQuestions24h = fmtNum(avg(results24h.map(function (r) { return r.total; })));
+  var avgQuestionsAll = fmtNum(avg(results.map(function (r) { return r.total; })));
   var avgQuestions7d = fmtNum(avg(results7d.map(function (r) { return r.total; })));
-  var avgMinutes24h = fmtNum(avg(results24h.map(function (r) { return r.durationSec / 60; })));
+  var avgQuestions24h = fmtNum(avg(results24h.map(function (r) { return r.total; })));
+  var avgMinutesAll = fmtNum(avg(results.map(function (r) { return r.durationSec / 60; })));
   var avgMinutes7d = fmtNum(avg(results7d.map(function (r) { return r.durationSec / 60; })));
-  var avgScore24h = fmtNum(avg(results24h.map(function (r) { return r.percentage; })));
-  var avgScore7d = fmtNum(avg(results7d.map(function (r) { return r.percentage; })));
-  var trackedMinutes24h = fmtNum(sum(tracked24h.map(function (r) { return r.durationSec / 60; })));
-  var trackedMinutes7d = fmtNum(sum(tracked7d.map(function (r) { return r.durationSec / 60; })));
-  var trackedScore24h = fmtNum(avg(tracked24h.map(function (r) { return r.percentage; })));
-  var trackedScore7d = fmtNum(avg(tracked7d.map(function (r) { return r.percentage; })));
+  var avgMinutes24h = fmtNum(avg(results24h.map(function (r) { return r.durationSec / 60; })));
+  var avgScoreAll = fmtPercent(avg(results.map(function (r) { return r.percentage; })));
+  var avgScore7d = fmtPercent(avg(results7d.map(function (r) { return r.percentage; })));
+  var avgScore24h = fmtPercent(avg(results24h.map(function (r) { return r.percentage; })));
+
+  function statsFor(rows) {
+    return {
+      count: rows.length,
+      minutes: fmtNum(sum(rows.map(function (r) { return r.durationSec / 60; }))),
+      score: fmtPercent(avg(rows.map(function (r) { return r.percentage; }))),
+    };
+  }
+  var playerStats = TRACKED_PLAYERS_.map(function (name) {
+    return {
+      name: name,
+      all: statsFor(results.filter(function (r) { return matchesPlayer(r.who, name); })),
+      week: statsFor(results7d.filter(function (r) { return matchesPlayer(r.who, name); })),
+      day: statsFor(results24h.filter(function (r) { return matchesPlayer(r.who, name); })),
+    };
+  });
 
   function issueLine(issue) {
     return fmtDate(issue.when) + ' - ' + (issue.who || 'Anoniem') + ': ' + contextOf(issue) + (issue.remark ? ' - ' + issue.remark : '');
   }
 
   var lines = [];
-  lines.push('Aantal spelbeurten: ' + results.length + ' totaal, ' + results24h.length + ' in de laatste 24u, ' + results7d.length + ' in de laatste 7 dagen');
-  lines.push('Gem. vragen per beurt: ' + avgQuestions24h + ' (24u), ' + avgQuestions7d + ' (7d)');
-  lines.push('Gem. speeltijd (min): ' + avgMinutes24h + ' (24u), ' + avgMinutes7d + ' (7d)');
-  lines.push('Gem. score: ' + avgScore24h + '% (24u), ' + avgScore7d + '% (7d)');
+  lines.push('Aantal spelbeurten: ' + results.length + ' totaal, ' + results7d.length + ' (7d), ' + results24h.length + ' (24u)');
+  lines.push('Gem. vragen per beurt: ' + avgQuestionsAll + ' totaal, ' + avgQuestions7d + ' (7d), ' + avgQuestions24h + ' (24u)');
+  lines.push('Gem. speeltijd (min): ' + avgMinutesAll + ' totaal, ' + avgMinutes7d + ' (7d), ' + avgMinutes24h + ' (24u)');
+  lines.push('Gem. score: ' + avgScoreAll + ' totaal, ' + avgScore7d + ' (7d), ' + avgScore24h + ' (24u)');
   lines.push('');
-  lines.push('Gemelde problemen: ' + issues.length + ' totaal, +' + issues24h.length + ' in de laatste 24u, +' + issues7d.length + ' in de laatste 7 dagen');
+  lines.push('Gemelde problemen: ' + issues.length + ' totaal, +' + issues7d.length + ' (7d), +' + issues24h.length + ' (24u)');
   lines.push('');
   lines.push('Laatste 3 meldingen:');
   if (last3Issues.length === 0) {
@@ -236,22 +253,31 @@ function buildSummaryEmail_(results, issues, now) {
   } else {
     contexts.forEach(function (c) { lines.push('  - ' + c); });
   }
-  if (TRACKED_PLAYERS_.length > 0) {
+  playerStats.forEach(function (player) {
     lines.push('');
-    lines.push(trackedLabel + ' - spelbeurten: ' + tracked24h.length + ' (24u), ' + tracked7d.length + ' (7d)');
-    lines.push(trackedLabel + ' - gespeelde minuten: ' + trackedMinutes24h + ' (24u), ' + trackedMinutes7d + ' (7d)');
-    lines.push(trackedLabel + ' - gem. score: ' + trackedScore24h + '% (24u), ' + trackedScore7d + '% (7d)');
-  }
+    lines.push(player.name + ':');
+    lines.push('  Spelbeurten: ' + player.all.count + ' totaal, ' + player.week.count + ' (7d), ' + player.day.count + ' (24u)');
+    lines.push('  Gespeelde minuten: ' + player.all.minutes + ' totaal, ' + player.week.minutes + ' (7d), ' + player.day.minutes + ' (24u)');
+    lines.push('  Gem. score: ' + player.all.score + ' totaal, ' + player.week.score + ' (7d), ' + player.day.score + ' (24u)');
+  });
 
   // HTML body mimics the app's light-theme/blue palette (see css/style.css :root).
   function htmlStatsTable(rows) {
-    var trs = rows.map(function (row) {
+    var header = '<tr>' +
+      '<td width="25%" style="padding:0 8px 8px 0;border-bottom:2px solid #cbd5e1;"></td>' +
+      '<td width="25%" style="padding:0 8px 8px 8px;border-bottom:2px solid #cbd5e1;color:#6b7280;font-size:11px;font-weight:600;text-transform:uppercase;text-align:right;">Altijd</td>' +
+      '<td width="25%" style="padding:0 8px 8px 8px;border-bottom:2px solid #cbd5e1;color:#6b7280;font-size:11px;font-weight:600;text-transform:uppercase;text-align:right;">Laatste week</td>' +
+      '<td width="25%" style="padding:0 0 8px 8px;border-bottom:2px solid #cbd5e1;color:#6b7280;font-size:11px;font-weight:600;text-transform:uppercase;text-align:right;">Laatste 24u</td>' +
+      '</tr>';
+    var body = rows.map(function (row) {
       return '<tr>' +
-        '<td style="padding:6px 0;border-bottom:1px solid #e2e8f0;color:#6b7280;font-size:13px;">' + escapeHtml_(row[0]) + '</td>' +
-        '<td style="padding:6px 0;border-bottom:1px solid #e2e8f0;color:#0f172a;font-weight:600;font-size:13px;text-align:right;white-space:nowrap;">' + escapeHtml_(row[1]) + '</td>' +
+        '<td width="25%" style="padding:6px 8px 6px 0;border-bottom:1px solid #e2e8f0;color:#6b7280;font-size:13px;">' + escapeHtml_(row[0]) + '</td>' +
+        '<td width="25%" style="padding:6px 8px;border-bottom:1px solid #e2e8f0;color:#0f172a;font-weight:600;font-size:13px;text-align:right;white-space:nowrap;">' + escapeHtml_(row[1]) + '</td>' +
+        '<td width="25%" style="padding:6px 8px;border-bottom:1px solid #e2e8f0;color:#0f172a;font-weight:600;font-size:13px;text-align:right;white-space:nowrap;">' + escapeHtml_(row[2]) + '</td>' +
+        '<td width="25%" style="padding:6px 0 6px 8px;border-bottom:1px solid #e2e8f0;color:#0f172a;font-weight:600;font-size:13px;text-align:right;white-space:nowrap;">' + escapeHtml_(row[3]) + '</td>' +
         '</tr>';
     }).join('');
-    return '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;">' + trs + '</table>';
+    return '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;table-layout:fixed;">' + header + body + '</table>';
   }
   function htmlListBlock(items) {
     if (items.length === 0) {
@@ -269,25 +295,27 @@ function buildSummaryEmail_(results, issues, now) {
   }
 
   var overviewSection = htmlSection('Overzicht', htmlStatsTable([
-    ['Spelbeurten', results.length + ' totaal, ' + results24h.length + ' (24u), ' + results7d.length + ' (7d)'],
-    ['Gem. vragen per beurt', avgQuestions24h + ' (24u), ' + avgQuestions7d + ' (7d)'],
-    ['Gem. speeltijd (min)', avgMinutes24h + ' (24u), ' + avgMinutes7d + ' (7d)'],
-    ['Gem. score', avgScore24h + '% (24u), ' + avgScore7d + '% (7d)'],
+    ['Spelbeurten', String(results.length), String(results7d.length), String(results24h.length)],
+    ['Gem. vragen per beurt', avgQuestionsAll, avgQuestions7d, avgQuestions24h],
+    ['Gem. speeltijd (min)', avgMinutesAll, avgMinutes7d, avgMinutes24h],
+    ['Gem. score', avgScoreAll, avgScore7d, avgScore24h],
   ]));
 
   var issuesSection = htmlSection('Gemelde problemen', htmlStatsTable([
-    ['Totaal', issues.length + ' totaal, +' + issues24h.length + ' (24u), +' + issues7d.length + ' (7d)'],
+    ['Totaal', String(issues.length), String(issues7d.length), String(issues24h.length)],
   ]) +
     '<div style="margin-top:12px;color:#6b7280;font-weight:600;font-size:12px;">Laatste 3 meldingen</div>' +
     '<div style="margin-top:6px;">' + htmlListBlock(last3Issues.map(issueLine)) + '</div>' +
     '<div style="margin-top:12px;color:#6b7280;font-weight:600;font-size:12px;">Vaakst gemelde vragen</div>' +
     '<div style="margin-top:6px;">' + htmlListBlock(contexts) + '</div>');
 
-  var trackedSection = TRACKED_PLAYERS_.length === 0 ? '' : htmlSection(trackedLabel, htmlStatsTable([
-    ['Spelbeurten', tracked24h.length + ' (24u), ' + tracked7d.length + ' (7d)'],
-    ['Gespeelde minuten', trackedMinutes24h + ' (24u), ' + trackedMinutes7d + ' (7d)'],
-    ['Gem. score', trackedScore24h + '% (24u), ' + trackedScore7d + '% (7d)'],
-  ]));
+  var playerSections = playerStats.map(function (player) {
+    return htmlSection(player.name, htmlStatsTable([
+      ['Spelbeurten', String(player.all.count), String(player.week.count), String(player.day.count)],
+      ['Gespeelde minuten', player.all.minutes, player.week.minutes, player.day.minutes],
+      ['Gem. score', player.all.score, player.week.score, player.day.score],
+    ]));
+  }).join('');
 
   var htmlBody =
     '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#f5f7fa;padding:24px 12px;font-family:system-ui,-apple-system,\'Segoe UI\',Roboto,sans-serif;">' +
@@ -298,14 +326,14 @@ function buildSummaryEmail_(results, issues, now) {
     '<div style="font-size:12px;opacity:0.85;margin-top:4px;">' + escapeHtml_(fmtDate(now)) + '</div>' +
     '</td></tr>' +
     '<tr><td style="padding:24px;color:#1f2933;">' +
-    overviewSection + issuesSection + trackedSection +
+    overviewSection + issuesSection + playerSections +
     '</td></tr>' +
     '</table>' +
     '</td></tr>' +
     '</table>';
 
   return {
-    subject: SUMMARY_EMAIL_TITLE_ + ' - ' + fmtDate(now),
+    subject: SUMMARY_EMAIL_TITLE_,
     body: lines.join('\n'),
     htmlBody: htmlBody,
   };

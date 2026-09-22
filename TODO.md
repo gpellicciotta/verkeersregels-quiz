@@ -19,7 +19,8 @@ An overview of all tasks and their planning.
   - For carrousel rounds: the traffic sign being shown when the button was pressed
   - For all other views: the name of the view, e.g. "Quiz resultaten" or "Start scherm" or "Instellingen scherm" 
 - [ ] T0067 Keep (only in localStorage) play stats and most-used errors
-- [ ] T0068 Enable starting a quiz only with questions where you've made errors in the past. Also at the end of a quiz, enable re-starting with only the errors just made.
+- [ ] T0068 Enable starting a quiz with questions where you've made errors in the past. Also at the end of a quiz, enable re-starting with all the questions for which wrong answers were given. Maybe there could be a new checkbox-setting: "Always include errors from last quiz".
+
 ---
 
 ## Backlog

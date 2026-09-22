@@ -95,7 +95,7 @@ Functional and technical requirements for the Verkeersregels Quiz application.
   - Apps Script time-driven triggers run `sendDailySummaryEmail` at 07:00 and 19:00 UTC every day.
   - Reports total and 24h/7d play counts, average questions/play, average play time, and average score.
   - Reports total and 24h/7d issue counts, the 3 latest issues, and the 3 most-reported question contexts.
-  - Reports 24h/7d play counts, minutes played, and average score for a configurable set of tracked player names.
+  - Reports play counts, minutes played, and average score per configured tracked player, each in its own all-time/7d/24h table.
   - Email is titled "Verkeersregels Quiz Status Update", worded in Dutch, and styled after the app's light-theme blue palette.
 - **Progressive Web App & Offline Execution**:
   - Installable application with standalone display mode, D5 roundabout icon suite, and native install prompt.

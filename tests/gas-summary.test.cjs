@@ -33,9 +33,9 @@ function issue(hoursAgo, overrides) {
 test("empty results and issues produce zero counts and n.v.t. averages", () => {
   const { buildSummaryEmail_ } = loadContext();
   const summary = buildSummaryEmail_([], [], NOW);
-  assert.match(summary.body, /Aantal spelbeurten: 0 totaal, 0 in de laatste 24u, 0 in de laatste 7 dagen/);
-  assert.match(summary.body, /Gem\. vragen per beurt: n\.v\.t\. \(24u\), n\.v\.t\. \(7d\)/);
-  assert.match(summary.body, /Gemelde problemen: 0 totaal, \+0 in de laatste 24u, \+0 in de laatste 7 dagen/);
+  assert.match(summary.body, /Aantal spelbeurten: 0 totaal, 0 \(7d\), 0 \(24u\)/);
+  assert.match(summary.body, /Gem\. vragen per beurt: n\.v\.t\. totaal, n\.v\.t\. \(7d\), n\.v\.t\. \(24u\)/);
+  assert.match(summary.body, /Gemelde problemen: 0 totaal, \+0 \(7d\), \+0 \(24u\)/);
   assert.match(summary.body, /Laatste 3 meldingen:\n {2}\(geen\)/);
   assert.match(summary.body, /Vaakst gemelde vragen:\n {2}\(geen\)/);
 });
@@ -44,7 +44,7 @@ test("counts plays within the 24h and 7d windows", () => {
   const { buildSummaryEmail_ } = loadContext();
   const results = [result(1), result(23), result(25), result(6 * 24), result(8 * 24)];
   const summary = buildSummaryEmail_(results, [], NOW);
-  assert.match(summary.body, /Aantal spelbeurten: 5 totaal, 2 in de laatste 24u, 4 in de laatste 7 dagen/);
+  assert.match(summary.body, /Aantal spelbeurten: 5 totaal, 4 \(7d\), 2 \(24u\)/);
 });
 
 test("computes averages of questions, minutes, and score percentage", () => {
@@ -54,9 +54,9 @@ test("computes averages of questions, minutes, and score percentage", () => {
     result(2, { total: 20, durationSec: 240, percentage: 100 }),
   ];
   const summary = buildSummaryEmail_(results, [], NOW);
-  assert.match(summary.body, /Gem\. vragen per beurt: 15 \(24u\), 15 \(7d\)/);
-  assert.match(summary.body, /Gem\. speeltijd \(min\): 3 \(24u\), 3 \(7d\)/);
-  assert.match(summary.body, /Gem\. score: 75% \(24u\), 75% \(7d\)/);
+  assert.match(summary.body, /Gem\. vragen per beurt: 15 totaal, 15 \(7d\), 15 \(24u\)/);
+  assert.match(summary.body, /Gem\. speeltijd \(min\): 3 totaal, 3 \(7d\), 3 \(24u\)/);
+  assert.match(summary.body, /Gem\. score: 75% totaal, 75% \(7d\), 75% \(24u\)/);
 });
 
 test("most used context reports the top-3 frequencies when contexts repeat", () => {
@@ -70,7 +70,7 @@ test("most used context reports the top-3 frequencies when contexts repeat", () 
     issue(6, { question: "Bord C" }),
   ];
   const summary = buildSummaryEmail_([], issues, NOW);
-  assert.match(summary.body, /Vaakst gemelde vragen:\n {2}- Bord B \(3x\)\n {2}- Bord A \(2x\)\n {2}- Bord C \(1x\)/);
+  assert.match(summary.body, /Vaakst gemelde vragen:\n {2}- q1 - Bord B \(3x\)\n {2}- q1 - Bord A \(2x\)\n {2}- q1 - Bord C \(1x\)/);
 });
 
 test("most used context falls back to the 3 latest when every context is unique", () => {
@@ -82,10 +82,26 @@ test("most used context falls back to the 3 latest when every context is unique"
     issue(4, { question: "Bord Nog Ouder" }),
   ];
   const summary = buildSummaryEmail_([], issues, NOW);
-  assert.match(summary.body, /Vaakst gemelde vragen:\n {2}- Bord Nieuwste\n {2}- Bord Midden\n {2}- Bord Oudste/);
+  assert.match(summary.body, /Vaakst gemelde vragen:\n {2}- q1 - Bord Nieuwste\n {2}- q1 - Bord Midden\n {2}- q1 - Bord Oudste/);
 });
 
-test("tracks configured player names case-insensitively and trimmed, ignoring other players", () => {
+test("issue context combines the question ID and question text when both are present", () => {
+  const { buildSummaryEmail_ } = loadContext();
+  const issues = [issue(1, { questionId: "q42", question: "Wat betekent dit verkeersbord?" })];
+  const summary = buildSummaryEmail_([], issues, NOW);
+  assert.match(summary.body, /Laatste 3 meldingen:\n {2}.*q42 - Wat betekent dit verkeersbord\?/);
+  assert.match(summary.body, /Vaakst gemelde vragen:\n {2}- q42 - Wat betekent dit verkeersbord\?/);
+});
+
+test("issue context falls back to whichever of question ID or question text is present", () => {
+  const { buildSummaryEmail_ } = loadContext();
+  const idOnly = buildSummaryEmail_([], [issue(1, { questionId: "q7", question: "" })], NOW);
+  assert.match(idOnly.body, /Vaakst gemelde vragen:\n {2}- q7/);
+  const questionOnly = buildSummaryEmail_([], [issue(1, { questionId: "", question: "Losse vraagtekst" })], NOW);
+  assert.match(questionOnly.body, /Vaakst gemelde vragen:\n {2}- Losse vraagtekst/);
+});
+
+test("reports stats per tracked player individually, not combined", () => {
   const context = loadContext();
   context.TRACKED_PLAYERS_ = ["Mila", "Sami"];
   const results = [
@@ -94,18 +110,18 @@ test("tracks configured player names case-insensitively and trimmed, ignoring ot
     result(3, { who: "Iemand Anders", percentage: 0, durationSec: 600 }),
   ];
   const summary = context.buildSummaryEmail_(results, [], NOW);
-  assert.match(summary.body, /Mila\/Sami - spelbeurten: 2 \(24u\), 2 \(7d\)/);
-  assert.match(summary.body, /Mila\/Sami - gespeelde minuten: 3 \(24u\), 3 \(7d\)/);
-  assert.match(summary.body, /Mila\/Sami - gem\. score: 80% \(24u\), 80% \(7d\)/);
-  assert.match(summary.htmlBody, /Mila\/Sami/);
+  assert.match(summary.body, /Mila:\n {2}Spelbeurten: 1 totaal, 1 \(7d\), 1 \(24u\)\n {2}Gespeelde minuten: 1 totaal, 1 \(7d\), 1 \(24u\)\n {2}Gem\. score: 60% totaal, 60% \(7d\), 60% \(24u\)/);
+  assert.match(summary.body, /Sami:\n {2}Spelbeurten: 1 totaal, 1 \(7d\), 1 \(24u\)\n {2}Gespeelde minuten: 2 totaal, 2 \(7d\), 2 \(24u\)\n {2}Gem\. score: 100% totaal, 100% \(7d\), 100% \(24u\)/);
+  assert.doesNotMatch(summary.body, /Mila\/Sami/);
+  assert.match(summary.htmlBody, />Mila</);
+  assert.match(summary.htmlBody, />Sami</);
 });
 
-test("omits the tracked-players section entirely when no player names are configured", () => {
+test("omits any tracked-player section when no player names are configured", () => {
   const context = loadContext();
   context.TRACKED_PLAYERS_ = [];
   const summary = context.buildSummaryEmail_([result(1, { who: "Iemand" })], [], NOW);
-  assert.doesNotMatch(summary.body, /spelbeurten: .* - /);
-  assert.doesNotMatch(summary.body, / - gem\. score/);
+  assert.doesNotMatch(summary.body, /Gespeelde minuten/);
 });
 
 test("last 3 issues are listed most-recent first with their remark", () => {
@@ -152,8 +168,8 @@ test("sendDailySummaryEmail reads both sheets and emails the summary to SUMMARY_
   assert.equal(sentEmails.length, 1);
   assert.equal(sentEmails[0].to, context.SUMMARY_EMAIL_TO);
   assert.match(sentEmails[0].subject, /Verkeersregels Quiz Status Update/);
-  assert.match(sentEmails[0].body, /Aantal spelbeurten: 1 totaal, 1 in de laatste 24u, 1 in de laatste 7 dagen/);
-  assert.match(sentEmails[0].body, /Gemelde problemen: 1 totaal, \+1 in de laatste 24u, \+1 in de laatste 7 dagen/);
+  assert.match(sentEmails[0].body, /Aantal spelbeurten: 1 totaal, 1 \(7d\), 1 \(24u\)/);
+  assert.match(sentEmails[0].body, /Gemelde problemen: 1 totaal, \+1 \(7d\), \+1 \(24u\)/);
   assert.match(sentEmails[0].htmlBody, /Verkeersregels Quiz Status Update/);
 });
 
