@@ -13,7 +13,7 @@ A summarized overview of all changes, per version of this project.
 
 ---
 
-## v3.4.0-pre
+## v3.4.0 [released: 2026-09-22]
 - FrontEnd: Quizvragen kregen een sluitknop rechtsboven op de kaart met bevestiging van voortgangsverlies in alle vijf talen.
 - FrontEnd: Automatische PWA-updates gaan nu sneller gebeuren.
 - FrontEnd: The iconset is nu apart gezet en overal consistent gebruikt.
