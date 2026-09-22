@@ -254,6 +254,7 @@
         <span data-i18n="quiz.btn_report_mobile_label">Meld fout</span>
       </button>
       <span id="quiz-score">Score: 0</span>
+      <button id="btn-quiz-close" class="modal-close quiz-close" type="button" aria-label="Quiz stoppen" title="Quiz stoppen" data-i18n-aria="quiz.btn_close_aria" data-i18n-tooltip="quiz.btn_close_aria">&times;</button>
     </div>
     <div class="progress-bar"><div id="progress-fill"></div></div>
 
@@ -442,6 +443,21 @@
       </div>
     </div>
   </section>
+
+  <!-- Confirmation before abandoning quiz progress -->
+  <dialog id="modal-quiz-cancel" class="modal-dialog quiz-cancel-dialog" aria-labelledby="quiz-cancel-title" aria-describedby="quiz-cancel-description">
+    <div class="modal-header">
+      <h3 id="quiz-cancel-title" data-i18n="quiz.cancel_title">Quiz stoppen?</h3>
+      <button id="btn-quiz-cancel-close" class="modal-close" type="button" aria-label="Doorgaan met quiz" data-i18n-aria="quiz.cancel_continue">&times;</button>
+    </div>
+    <div class="modal-body">
+      <p id="quiz-cancel-description" class="modal-desc" data-i18n="quiz.cancel_description">Als je stopt, verlies je alle voortgang van deze quiz. Weet je zeker dat je wilt stoppen?</p>
+      <div class="modal-actions">
+        <button id="btn-quiz-continue" class="btn-secondary" type="button" autofocus data-i18n="quiz.cancel_continue">Doorgaan met quiz</button>
+        <button id="btn-quiz-stop" class="btn-primary" type="button" data-i18n="quiz.cancel_confirm">Quiz stoppen</button>
+      </div>
+    </div>
+  </dialog>
 
   <!-- Modal for configuration / settings -->
   <div id="modal-config" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="modal-config-title">

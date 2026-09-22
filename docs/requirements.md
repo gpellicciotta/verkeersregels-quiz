@@ -13,7 +13,6 @@ Functional and technical requirements for the Verkeersregels Quiz application.
 ---
 
 ## Functional Requirements
-
 ### Quiz Flow and User Experience
 - **Start Screen**:
   - Centered hero title and introductory description.
@@ -37,6 +36,10 @@ Functional and technical requirements for the Verkeersregels Quiz application.
   - On mobile, automatically collapses unchosen wrong options to ensure zero vertical scrolling across standard phone viewports.
   - Features an ergonomic circular floating action button (FAB `→`) on mobile and right-aligned arrow action on desktop.
   - Offers a dedicated "Meld fout" button on every question allowing users to report inaccuracies.
+  - Provides a close button on every question, including answered questions and the final question.
+  - Requires confirmation before discarding quiz progress and returning to the start screen without submitting results.
+  - Preserves progress when dismissing confirmation through Continue, Escape, the dialog close button, or its backdrop.
+  - Keeps keyboard focus inside confirmation, defaults to continuing, and retains player preferences after cancellation.
 - **Traffic Sign Carousel Mode**:
   - Auto-cycles through Belgian traffic signs with sign codes, names, and legal descriptions.
   - Customizable slide duration via URL query parameter `?delay=N` (alias: `?d=N`, default 8 seconds).
@@ -98,7 +101,6 @@ Functional and technical requirements for the Verkeersregels Quiz application.
 ---
 
 ## Technical and Architectural Requirements
-
 ### Client Architecture
 - **Technology Stack**: Static HTML5, CSS3, vanilla ES2020 JavaScript without external UI frameworks or bundlers.
 - **Module Structure**: Native ES modules under `js/` separate state (`state.js`, `dom.js`), storage (`preferences.js`, `report-queue.js`, `sheet.js`), and UI concerns (`quiz.js`, `carousel.js`, `screens.js`, and related modules), composed by `app.js`.

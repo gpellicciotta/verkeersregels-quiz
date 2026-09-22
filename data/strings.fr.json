@@ -1,4 +1,9 @@
 {
+  "quiz.btn_close_aria": "Arrêter le quiz",
+  "quiz.cancel_title": "Arrêter le quiz ?",
+  "quiz.cancel_description": "Si vous arrêtez, toute votre progression dans ce quiz sera perdue. Voulez-vous vraiment arrêter ?",
+  "quiz.cancel_continue": "Continuer le quiz",
+  "quiz.cancel_confirm": "Arrêter le quiz",
   "title.quiz": "Quiz Code de la Route",
   "title.carousel": "Carrousel des Panneaux Routiers",
 

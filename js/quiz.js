@@ -561,6 +561,15 @@ export function showConfetti() {
   setTimeout(() => layer.remove(), 4000);
 }
 
+/** Discard an abandoned round without creating or submitting results. */
+export function cancelQuiz() {
+  state.round = [];
+  state.answers = [];
+  state.currentIndex = 0;
+  restart();
+  el.btnStart.focus();
+}
+
 export function restart() {
   state.startTime = null;
   state.endTime = null;

@@ -946,6 +946,13 @@ body.suppress-tooltips [data-tooltip]::before {
   text-align: right;
 }
 
+.quiz-close {
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  margin: 0;
+}
+
 .quiz-status-indicator {
   flex: 0 0 auto;
   display: inline-flex;
@@ -2034,6 +2041,33 @@ body.suppress-tooltips [data-tooltip]::before {
   box-shadow: var(--shadow-modal);
   overflow: hidden;
   animation: modal-pop 0.18s ease-out;
+}
+
+.quiz-cancel-dialog {
+  border: 0;
+  padding: 0;
+  margin: auto;
+  width: calc(100% - 32px);
+  max-height: calc(100dvh - 32px);
+  overflow-y: auto;
+  color: var(--color-text);
+}
+
+.quiz-cancel-dialog::backdrop {
+  background: var(--color-overlay);
+}
+
+.quiz-cancel-dialog .modal-header h3,
+.quiz-cancel-dialog .btn-secondary {
+  color: var(--color-text);
+}
+
+.quiz-cancel-dialog .modal-actions {
+  flex-wrap: wrap;
+}
+
+.quiz-cancel-dialog .modal-actions button {
+  flex-basis: 140px;
 }
 
 @keyframes modal-pop {
