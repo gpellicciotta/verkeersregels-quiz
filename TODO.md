@@ -15,13 +15,11 @@ An overview of all tasks and their planning.
 
 ## Next Milestone
 - [ ] A0061 Group or export all SVG icons so they are more easily reusable.
-- [?] T0062 [owner: @codex] [process: pid=8400, started=2026-09-22T15:20:08+02:00, timeout=none] Add a quiz close button that confirms discarding progress before returning to the start screen.
 
 ---
 
 ## Backlog
 - [ ] T0001 Switch the quiz to the Code van de openbare weg when it replaces the Wegcode on 1 June 2027.
-
 
 
 

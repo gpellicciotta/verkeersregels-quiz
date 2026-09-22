@@ -4,9 +4,9 @@ owner: "@codex"
 needs: []
 branch: task/T0062-confirm-quiz-cancellation
 worktree: ./work/T0062-confirm-quiz-cancellation
-status: needs-review
+status: completed
 started: 2026-09-22
-ended: —
+ended: 2026-09-22
 ---
 
 # T0062: Confirm quiz cancellation
@@ -63,6 +63,10 @@ Preserve player preferences and support keyboard navigation, mobile layouts, and
 - [2026-09-22] **[Visual]**
   Inspected updated desktop and mobile captures after HTTP 200 responses; close controls now match the established card positioning.
   Compare [desktop before](T0062-position-view-before.png), [desktop after](T0062-position-view-after.png), [mobile before](T0062-position-mobile-before.png), and [mobile after](T0062-position-mobile-after.png).
+
+- [2026-09-22] **[Complete]**
+  The user approved the corrected layout and authorized local integration after all tests and visual checks passed.
+  Completed quiz cancellation, card-relative close positioning, translations, regression coverage, documentation, and offline caching without publishing.
 
 ## Walkthrough & Validation
 The quiz card now includes an accessible close button anchored to its top-right corner, matching other screen close controls.
