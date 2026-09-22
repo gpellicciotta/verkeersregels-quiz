@@ -1,14 +1,15 @@
 /**
  * Lightweight i18n module.
  *
- * Supported languages: "nl" (default), "en".
+ * Supported languages: "nl" (default), "fr", "en".
  *
  * Usage:
- *   import { t, getLang, setLang } from "./i18n.js";
- *   await setLang("en");          // load strings, update DOM, fire event
+ *   import { t, getLang, setLang, SUPPORTED_LANGS } from "./i18n.js";
+ *   await setLang("fr");          // load strings, update DOM, fire event
  *   t("quiz.progress", { n: 3, total: 20 });  // → "Question 3/20"
  */
 
+export const SUPPORTED_LANGS = ["nl", "fr", "en"];
 let currentLang = "nl";
 let dict = {};
 
@@ -35,21 +36,21 @@ export function t(key, vars = {}) {
   return Object.keys(vars).length ? substitute(str, vars) : str;
 }
 
-/** Return the active language code ("nl" or "en"). */
+/** Return the active language code ("nl", "fr", or "en"). */
 export function getLang() {
   return currentLang;
 }
 
 /**
  * Detect the preferred language from URL param → localStorage → default "nl".
- * @returns {"nl"|"en"}
+ * @returns {"nl"|"fr"|"en"}
  */
 export function detectLang() {
   try {
     const param = new URLSearchParams(window.location.search).get("lang");
-    if (param === "en" || param === "nl") return param;
+    if (param && SUPPORTED_LANGS.includes(param.toLowerCase())) return param.toLowerCase();
     const stored = localStorage.getItem("lang");
-    if (stored === "en" || stored === "nl") return stored;
+    if (stored && SUPPORTED_LANGS.includes(stored.toLowerCase())) return stored.toLowerCase();
   } catch (_) {
     // localStorage may be unavailable
   }
@@ -59,10 +60,10 @@ export function detectLang() {
 /**
  * Load the string dictionary for `lang`, apply it to the DOM, and fire
  * a custom "languagechange" event so modules can re-render dynamic strings.
- * @param {"nl"|"en"} lang
+ * @param {string} lang
  */
 export async function setLang(lang) {
-  if (lang !== "nl" && lang !== "en") lang = "nl";
+  if (!SUPPORTED_LANGS.includes(lang)) lang = "nl";
   const res = await fetch(`data/strings.${lang}.json`);
   if (!res.ok) throw new Error(`Could not load strings for language: ${lang}`);
   dict = await res.json();

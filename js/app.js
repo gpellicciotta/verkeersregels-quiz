@@ -38,7 +38,7 @@ import {
 import { openReportModal, closeReportModal, handleReportSubmit } from "./report-modal.js";
 import { openChangelogModal, closeChangelogModal, loadChangelog } from "./changelog.js";
 import { registerServiceWorker, updateOnlineStatus } from "./pwa.js";
-import { setLang, detectLang, getLang, applyAll } from "./i18n.js";
+import { setLang, detectLang, getLang, applyAll, t } from "./i18n.js";
 import { handleShare } from "./share.js";
 
 el.btnStart.addEventListener("click", () => {
@@ -303,15 +303,19 @@ function updateLangButton() {
   if (!el.btnLang) return;
   const lang = getLang();
   const labelEl = el.btnLang.querySelector(".btn-lang-label");
-  if (labelEl) labelEl.textContent = lang === "en" ? "EN" : "NL";
-  el.btnLang.setAttribute("aria-label", lang === "en" ? "Taal wijzigen naar Nederlands" : "Switch language to English");
-  el.btnLang.setAttribute("data-tooltip", lang === "en" ? "NL" : "EN");
-  el.btnLang.setAttribute("title", lang === "en" ? "NL" : "EN");
+  if (labelEl) labelEl.textContent = lang.toUpperCase();
+  const nextLang = lang === "nl" ? "fr" : (lang === "fr" ? "en" : "nl");
+  const nextLabels = { nl: "Nederlands", fr: "Français", en: "English" };
+  const targetLabel = nextLabels[nextLang] || nextLang.toUpperCase();
+  el.btnLang.setAttribute("aria-label", t("start.btn_lang_aria"));
+  el.btnLang.setAttribute("data-tooltip", targetLabel);
+  el.btnLang.setAttribute("title", targetLabel);
 }
 
 if (el.btnLang) {
   el.btnLang.addEventListener("click", () => {
-    const next = getLang() === "nl" ? "en" : "nl";
+    const current = getLang();
+    const next = current === "nl" ? "fr" : (current === "fr" ? "en" : "nl");
     setLang(next).then(() => {
       loadTranslations(next).then(() => {
         updateLangButton();
@@ -363,9 +367,7 @@ setLang(detectLang())
   })
   .catch(async (err) => {
     console.error(err);
-    // i18n may not be loaded if setLang itself failed — fall back to a hardcoded EN/NL string
     if (el.startError) {
-      const { t } = await import("./i18n.js").catch(() => ({ t: (k) => k }));
       el.startError.textContent = t("start.error_load_failed");
       el.startError.classList.remove("hidden");
     }

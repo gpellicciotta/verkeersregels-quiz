@@ -69,6 +69,21 @@ EN_GLOSSARY_REPLACEMENTS = [
     (r"\bUAL\b", "BrAC (breath alcohol concentration)"),
 ]
 
+# Belgian traffic law and French road terminology corrections for post-processing
+FR_GLOSSARY_REPLACEMENTS = [
+    (r"\bWegcode\b", "Code de la route"),
+    (r"\bkm/u\b", "km/h"),
+    (r"\bkm / u\b", "km/h"),
+    (r"\bkm / h\b", "km/h"),
+    (r"\bKB 1 december 1975\b", "AR du 1er décembre 1975"),
+    (r"\bbebouwde kom\b", "agglomération"),
+    (r"\bwoonerf\b", "zone résidentielle"),
+    (r"\bvoorrang van rechts\b", "priorité de droite"),
+    (r"\bhaaientanden\b", "dents de requin"),
+    (r"\bMAM\b", "MMA"),
+    (r"\bUAL\b", "AAE"),
+]
+
 
 def format_sentence_case(text: str) -> str:
     """Ensures the first letter of the string is capitalized and trailing whitespace stripped."""
@@ -119,6 +134,23 @@ def post_process_en(text: str) -> str:
     return format_sentence_case(res)
 
 
+def post_process_fr(text: str) -> str:
+    """Applies French domain terminology fixes and proper sentence casing."""
+    res = text
+    for pat, rep in FR_GLOSSARY_REPLACEMENTS:
+        res = re.sub(pat, rep, res)
+    return format_sentence_case(res)
+
+
+def post_process(text: str, target_lang: str) -> str:
+    """Applies language-specific post-processing rules."""
+    if target_lang == "en":
+        return post_process_en(text)
+    if target_lang == "fr":
+        return post_process_fr(text)
+    return format_sentence_case(text)
+
+
 def build_translations(target_lang: str = "en", source_lang: str = "nl") -> int:
     """Extracts, batch-translates, and formats translations.<lang>.json from questions.json."""
     questions_file = DATA_DIR / "questions.json"
@@ -167,16 +199,14 @@ def build_translations(target_lang: str = "en", source_lang: str = "nl") -> int:
         try:
             translated_chunk = translate_batch(chunk, sl=source_lang, tl=target_lang)
             for orig, trans in zip(chunk, translated_chunk):
-                if target_lang == "en":
-                    trans = post_process_en(trans)
+                trans = post_process(trans, target_lang)
                 cache[orig] = trans
         except Exception as e:
             print(f"\nBatch failed ({e}), falling back to single requests...", file=sys.stderr)
             for item in chunk:
                 try:
                     single = translate_batch([item], sl=source_lang, tl=target_lang)[0]
-                    if target_lang == "en":
-                        single = post_process_en(single)
+                    single = post_process(single, target_lang)
                     cache[item] = single
                 except Exception:
                     cache[item] = item
@@ -196,25 +226,19 @@ def build_translations(target_lang: str = "en", source_lang: str = "nl") -> int:
     overlay = {}
     for q in questions:
         qid = q["id"]
-        q_trans = cache.get(q["question"], q["question"])
-        if target_lang == "en":
-            q_trans = post_process_en(q_trans)
+        q_trans = post_process(cache.get(q["question"], q["question"]), target_lang)
 
         options_trans = []
         for opt in q["options"]:
             if opt.startswith("assets/"):
                 options_trans.append(opt)
             else:
-                o_trans = cache.get(opt, opt)
-                if target_lang == "en":
-                    o_trans = post_process_en(o_trans)
+                o_trans = post_process(cache.get(opt, opt), target_lang)
                 options_trans.append(o_trans)
 
         exp_trans = ""
         if q.get("explanation"):
-            exp_trans = cache.get(q["explanation"], q["explanation"])
-            if target_lang == "en":
-                exp_trans = post_process_en(exp_trans)
+            exp_trans = post_process(cache.get(q["explanation"], q["explanation"]), target_lang)
 
         item_overlay = {
             "question": q_trans,
@@ -223,15 +247,11 @@ def build_translations(target_lang: str = "en", source_lang: str = "nl") -> int:
         }
 
         if q.get("signTitle"):
-            st_trans = cache.get(q["signTitle"], q["signTitle"])
-            if target_lang == "en":
-                st_trans = post_process_en(st_trans)
+            st_trans = post_process(cache.get(q["signTitle"], q["signTitle"]), target_lang)
             item_overlay["signTitle"] = st_trans
 
         if q.get("signExplanation"):
-            se_trans = cache.get(q["signExplanation"], q["signExplanation"])
-            if target_lang == "en":
-                se_trans = post_process_en(se_trans)
+            se_trans = post_process(cache.get(q["signExplanation"], q["signExplanation"]), target_lang)
             item_overlay["signExplanation"] = se_trans
 
         overlay[qid] = item_overlay

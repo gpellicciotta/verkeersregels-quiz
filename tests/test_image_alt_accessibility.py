@@ -31,7 +31,7 @@ class TestImageAltAccessibility(unittest.TestCase):
             "carousel.sign_img_alt_code",
         ]
 
-        for lang in ("nl", "en"):
+        for lang in ("nl", "fr", "en"):
             dict_path = DATA_DIR / f"strings.{lang}.json"
             self.assertTrue(dict_path.exists(), f"Dictionary file missing: {dict_path}")
             with open(dict_path, "r", encoding="utf-8") as f:

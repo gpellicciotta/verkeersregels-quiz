@@ -138,7 +138,7 @@ export function updateStartScreenNotice() {
   if (available > 0) {
     if (el.startError) el.startError.classList.add("hidden");
     if (el.btnStart) el.btnStart.disabled = false;
-  } else {
+  } else if (allQuestions.length > 0) {
     if (el.startError) {
       el.startError.textContent = t("start.error_no_questions_config");
       el.startError.classList.remove("hidden");

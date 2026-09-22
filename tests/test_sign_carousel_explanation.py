@@ -21,6 +21,8 @@ class TestSignCarouselExplanation(unittest.TestCase):
             cls.questions_data = json.load(f)["questions"]
         with open(DATA_DIR / "translations.en.json", "r", encoding="utf-8") as f:
             cls.translations_en = json.load(f)
+        with open(DATA_DIR / "translations.fr.json", "r", encoding="utf-8") as f:
+            cls.translations_fr = json.load(f)
 
     def test_all_sign_questions_have_sign_title_and_sign_explanation(self) -> None:
         """Validates that all questions with a 'sign' attribute have non-empty signTitle and signExplanation."""
@@ -48,6 +50,19 @@ class TestSignCarouselExplanation(unittest.TestCase):
             self.assertIn("signExplanation", en_item, f"Question {qid} missing 'signExplanation' in translations.en.json")
             self.assertTrue(en_item["signTitle"].strip(), f"Question {qid} 'signTitle' empty in translations.en.json")
             self.assertTrue(en_item["signExplanation"].strip(), f"Question {qid} 'signExplanation' empty in translations.en.json")
+
+    def test_all_sign_questions_have_french_translations_for_sign_fields(self) -> None:
+        """Validates that translations.fr.json includes signTitle and signExplanation for all sign questions."""
+        sign_questions = [q for q in self.questions_data if "sign" in q]
+
+        for q in sign_questions:
+            qid = q["id"]
+            self.assertIn(qid, self.translations_fr, f"Question {qid} missing in translations.fr.json")
+            fr_item = self.translations_fr[qid]
+            self.assertIn("signTitle", fr_item, f"Question {qid} missing 'signTitle' in translations.fr.json")
+            self.assertIn("signExplanation", fr_item, f"Question {qid} missing 'signExplanation' in translations.fr.json")
+            self.assertTrue(fr_item["signTitle"].strip(), f"Question {qid} 'signTitle' empty in translations.fr.json")
+            self.assertTrue(fr_item["signExplanation"].strip(), f"Question {qid} 'signExplanation' empty in translations.fr.json")
 
     def test_rule_questions_with_signs_have_custom_sign_explanations(self) -> None:
         """Validates that rule questions with signs do not use raw question answers as signTitle or explanation."""

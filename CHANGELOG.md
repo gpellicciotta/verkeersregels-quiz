@@ -13,6 +13,9 @@ A summarized overview of all changes, per version of this project.
 
 ---
 
+## v3.2.1-pre
+- FrontEnd: Added French translations across user interface, configuration dialogs, and question bank.
+
 ## v3.2.0 [2026-09-22]
 - FrontEnd: Added separate localized road sign explanations and titles in carousel with full Dutch and English translations.
 - FrontEnd: Replaced generic image alt text with descriptive sign codes across quiz questions, answer options, and carousel.
