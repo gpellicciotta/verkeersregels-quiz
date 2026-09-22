@@ -14,7 +14,6 @@ An overview of all tasks and their planning.
 ---
 
 ## Next Milestone
-- [ ] T0060 Voeg Italiaans toe als taal 
 - [ ] T0061 Group or export all SVG icons so they are more easily reusable.
 
 ---

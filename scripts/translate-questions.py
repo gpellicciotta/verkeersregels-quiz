@@ -7,6 +7,7 @@ Usage:
   python scripts/translate-questions.py generate --lang en
   python scripts/translate-questions.py generate --lang fr
   python scripts/translate-questions.py generate --lang de
+    python scripts/translate-questions.py generate --lang it
   python scripts/translate-questions.py --version
   python scripts/translate-questions.py --help
 """
@@ -100,6 +101,21 @@ DE_GLOSSARY_REPLACEMENTS = [
     (r"\bUAL\b", "AAK"),
 ]
 
+# Belgian traffic law and Italian road terminology corrections for post-processing
+IT_GLOSSARY_REPLACEMENTS = [
+    (r"\bWegcode\b", "Codice della strada"),
+    (r"\bkm/u\b", "km/h"),
+    (r"\bkm / u\b", "km/h"),
+    (r"\bkm / h\b", "km/h"),
+    (r"\bKB 1 december 1975\b", "Regio decreto del 1° dicembre 1975"),
+    (r"\bbebouwde kom\b", "centro abitato"),
+    (r"\bwoonerf\b", "zona residenziale"),
+    (r"\bvoorrang van rechts\b", "precedenza a destra"),
+    (r"\bhaaientanden\b", "triangoli di precedenza"),
+    (r"\bMAM\b", "MMA"),
+    (r"\bUAL\b", "tasso alcolemico"),
+]
+
 
 def format_sentence_case(text: str) -> str:
     """Ensures the first letter of the string is capitalized and trailing whitespace stripped."""
@@ -166,6 +182,14 @@ def post_process_de(text: str) -> str:
     return format_sentence_case(res)
 
 
+def post_process_it(text: str) -> str:
+    """Applies Italian domain terminology fixes and proper sentence casing."""
+    res = text
+    for pat, rep in IT_GLOSSARY_REPLACEMENTS:
+        res = re.sub(pat, rep, res)
+    return format_sentence_case(res)
+
+
 def post_process(text: str, target_lang: str) -> str:
     """Applies language-specific post-processing rules."""
     if target_lang == "en":
@@ -174,6 +198,8 @@ def post_process(text: str, target_lang: str) -> str:
         return post_process_fr(text)
     if target_lang == "de":
         return post_process_de(text)
+    if target_lang == "it":
+        return post_process_it(text)
     return format_sentence_case(text)
 
 
@@ -300,7 +326,7 @@ def main(argv: list[str] | None = None) -> int:
         "--lang",
         "-l",
         default="en",
-        help="Target language code (default: en). Supported: en, fr, de",
+        help="Target language code (default: en). Supported: en, fr, de, it",
     )
     args = parser.parse_args(argv)
 

@@ -52,13 +52,15 @@ class TestColorblindIndicator(unittest.TestCase):
         self.assertIn(".option-indicator-wrong", css, "style.css must style .option-indicator-wrong")
 
     def test_localization_contains_indicator_strings(self) -> None:
-        """Validates that Dutch, French, German, and English localization strings include indicator labels."""
+        """Validates that all supported localization strings include indicator labels."""
         with open(DATA_DIR / "strings.nl.json", "r", encoding="utf-8") as f:
             nl = json.load(f)
         with open(DATA_DIR / "strings.fr.json", "r", encoding="utf-8") as f:
             fr = json.load(f)
         with open(DATA_DIR / "strings.de.json", "r", encoding="utf-8") as f:
             de = json.load(f)
+        with open(DATA_DIR / "strings.it.json", "r", encoding="utf-8") as f:
+            it = json.load(f)
         with open(DATA_DIR / "strings.en.json", "r", encoding="utf-8") as f:
             en = json.load(f)
 
@@ -76,6 +78,11 @@ class TestColorblindIndicator(unittest.TestCase):
         self.assertEqual(de["quiz.indicator_wrong"], "Falsch")
         self.assertEqual(de["quiz.status_correct"], "Richtig")
         self.assertEqual(de["quiz.status_wrong"], "Falsch")
+
+        self.assertEqual(it["quiz.indicator_correct"], "Corretto")
+        self.assertEqual(it["quiz.indicator_wrong"], "Errato")
+        self.assertEqual(it["quiz.status_correct"], "Corretto")
+        self.assertEqual(it["quiz.status_wrong"], "Errato")
 
         self.assertEqual(en["quiz.indicator_correct"], "Correct")
         self.assertEqual(en["quiz.indicator_wrong"], "Incorrect")

@@ -1,15 +1,15 @@
 /**
  * Lightweight i18n module.
  *
- * Supported languages: "nl" (default), "fr", "de", "en".
+ * Supported languages: "nl" (default), "fr", "de", "it", "en".
  *
  * Usage:
  *   import { t, getLang, setLang, SUPPORTED_LANGS } from "./i18n.js";
- *   await setLang("de");          // load strings, update DOM, fire event
+ *   await setLang("it");          // load strings, update DOM, fire event
  *   t("quiz.progress", { n: 3, total: 20 });  // → "Frage 3/20"
  */
 
-export const SUPPORTED_LANGS = ["nl", "fr", "de", "en"];
+export const SUPPORTED_LANGS = ["nl", "fr", "de", "it", "en"];
 let currentLang = "nl";
 let dict = {};
 
@@ -36,14 +36,14 @@ export function t(key, vars = {}) {
   return Object.keys(vars).length ? substitute(str, vars) : str;
 }
 
-/** Return the active language code ("nl", "fr", or "en"). */
+/** Return the active language code. */
 export function getLang() {
   return currentLang;
 }
 
 /**
  * Detect the preferred language from URL param → localStorage → default "nl".
- * @returns {"nl"|"fr"|"en"}
+ * @returns {"nl"|"fr"|"de"|"it"|"en"}
  */
 export function detectLang() {
   try {
