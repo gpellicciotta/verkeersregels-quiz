@@ -13,6 +13,11 @@ Una panoramica riepilogativa di tutte le modifiche, per versione di questo proge
 
 ---
 
+## v3.5.1-pre
+- FrontEnd: Il pulsante Segnala un bug ora è un pulsante reale e onnipresente con contesto sullo schermo automatico.
+- BackEnd: L'e-mail di riepilogo ora mostra la propria tabella per ciascun giocatore seguito con colonne equamente divise Sempre/Ultima settimana/Ultime 24 ore.
+- BackEnd: I problemi segnalati ora mostrano sia l'ID domanda che il testo della domanda invece di uno solo.
+
 ## v3.5.0 [released: 2026-09-22]
 - BackEnd: Google Apps Script ora invia un'email di riepilogo in stile olandese ogni giorno alle 7:00 e alle 19:00 UTC con risultati, notifiche e un elenco personalizzabile di giocatori da seguire.
 - FrontEnd: La schermata Informazioni ora mostra il registro delle modifiche tradotto nella lingua dell'interfaccia attiva.

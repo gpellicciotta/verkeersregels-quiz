@@ -14,7 +14,6 @@ An overview of all tasks and their planning.
 ---
 
 ## Next Milestone
-- [~] T0069 [owner: @claude] Make the start screen's circular info button a real "Report issue" button, available on every screen, with per-screen default context.
 - [ ] T0067 Keep (only in localStorage) play stats and most-used errors
 - [ ] T0068 Enable starting a quiz with questions where you've made errors in the past. Also at the end of a quiz, enable re-starting with all the questions for which wrong answers were given. Maybe there could be a new checkbox-setting: "Always include errors from last quiz".
 

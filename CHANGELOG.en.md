@@ -13,6 +13,11 @@ A summarized overview of all changes, per version of this project.
 
 ---
 
+## v3.5.1-pre
+- FrontEnd: Report a bug button is now a real, ubiquitous button with automatic screen context.
+- BackEnd: The summary email now shows its own table for each followed player with equally divided Always/Last week/Last 24h columns.
+- BackEnd: Reported issues now show both the question ID and the question text instead of just one.
+
 ## v3.5.0 [released: 2026-09-22]
 - BackEnd: Google Apps Script now sends a Dutch, styled summary email every day at 7am and 7pm UTC with results, notifications and a customizable list of players to follow.
 - FrontEnd: About screen now shows the changelog translated into the active interface language.

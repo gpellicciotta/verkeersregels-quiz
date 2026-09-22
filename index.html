@@ -137,14 +137,14 @@
             <span class="start-meta-svg" data-icon="externalLink" aria-hidden="true"></span>
           </span>
 
-          <!-- Hint 2: Report error hint icon -->
-          <span class="start-meta-item start-meta-hint" tabindex="0" role="img"
-                aria-label="Fout melden: zie je een onjuistheid of onduidelijkheid, klik dan op dit icoon om dit te melden"
-                data-tooltip="Fout melden: zie je een onjuistheid of onduidelijkheid, klik dan op dit icoon om dit te melden"
-                data-i18n-aria="start.hint_report_aria"
-                data-i18n-tooltip="start.hint_report_tooltip">
+          <!-- Report issue button: opens the report modal with the current view as context -->
+          <button type="button" id="btn-report-start" class="start-meta-item start-meta-btn start-meta-btn-action"
+                  aria-label="Meld een fout of probleem"
+                  data-tooltip="Meld fout"
+                  data-i18n-aria="report.btn_generic_aria"
+                  data-i18n-tooltip="report.btn_generic_tooltip">
             <span class="start-meta-svg" data-icon="report" aria-hidden="true"></span>
-          </span>
+          </button>
         </div>
       </div>
 
@@ -156,6 +156,9 @@
   <!-- About screen: full-window view replacing the window -->
   <section id="screen-about" class="screen hidden" aria-label="Over Verkeersregels Quiz" data-i18n-aria="about.screen_aria">
     <div class="about-header">
+      <button id="btn-report-about" class="btn-report-round" type="button" aria-label="Meld een fout of probleem" title="Meld fout" data-tooltip="Meld fout" data-i18n-aria="report.btn_generic_aria" data-i18n-tooltip="report.btn_generic_tooltip">
+        <span class="report-icon" data-icon="report" data-icon-width="18" data-icon-height="18" data-icon-stroke-width="2.2" aria-hidden="true"></span>
+      </button>
       <h1 class="about-title" data-i18n="about.title">Over Verkeersregels Quiz</h1>
       <button id="btn-about-back" class="btn-about-close modal-close view-close-btn" type="button" aria-label="Sluiten" title="Sluiten" data-i18n-aria="about.btn_close_aria" data-i18n-tooltip="about.btn_close_aria"><span class="modal-close-icon" data-icon="close" aria-hidden="true"></span></button>
     </div>
@@ -272,6 +275,9 @@
         <p id="result-summary"></p>
       </div>
       <div class="result-actions no-print">
+        <button id="btn-report-result" class="result-btn-round" type="button" aria-label="Meld een fout of probleem" title="Meld fout" data-tooltip="Meld fout" data-i18n-aria="report.btn_generic_aria" data-i18n-tooltip="report.btn_generic_tooltip">
+          <span class="result-icon-svg" data-icon="report" data-icon-width="18" data-icon-height="18" data-icon-stroke-width="2.2" aria-hidden="true"></span>
+        </button>
         <button id="btn-share" class="result-btn-round" type="button" aria-label="Resultaat delen" title="Resultaat delen" data-tooltip="Resultaat delen" data-i18n-aria="result.btn_share_aria" data-i18n-tooltip="result.btn_share_tooltip">
           <span class="result-icon-svg" data-icon="share" data-icon-width="18" data-icon-height="18" data-icon-stroke-width="2.2" aria-hidden="true"></span>
         </button>
@@ -319,6 +325,9 @@
         </button>
       </div>
       <div class="carousel-header-actions">
+        <button id="btn-report-carousel" class="btn-report-round" type="button" aria-label="Meld een fout of probleem" title="Meld fout" data-tooltip="Meld fout" data-i18n-aria="report.btn_generic_aria" data-i18n-tooltip="report.btn_generic_tooltip">
+          <span class="report-icon" data-icon="report" data-icon-width="18" data-icon-height="18" data-icon-stroke-width="2.2" aria-hidden="true"></span>
+        </button>
         <button id="btn-carousel-exit" class="btn-carousel-close modal-close view-close-btn" type="button" aria-label="Carrousel sluiten (Escape)" title="Carrousel sluiten (Escape)" data-i18n-aria="carousel.btn_exit_aria" data-i18n-tooltip="carousel.btn_exit_aria"><span class="modal-close-icon" data-icon="close" aria-hidden="true"></span></button>
       </div>
     </div>
@@ -393,7 +402,12 @@
     <div class="modal-dialog modal-dialog-config">
       <div class="modal-header">
         <h3 id="modal-config-title" data-i18n="config.title">Instellingen</h3>
-        <button type="button" id="btn-config-close" class="modal-close" aria-label="Sluiten" data-i18n-aria="config.btn_close_aria"><span class="modal-close-icon" data-icon="close" aria-hidden="true"></span></button>
+        <div class="modal-header-actions">
+          <button type="button" id="btn-report-config" class="btn-report-round btn-report-round-sm" aria-label="Meld een fout of probleem" title="Meld fout" data-tooltip="Meld fout" data-i18n-aria="report.btn_generic_aria" data-i18n-tooltip="report.btn_generic_tooltip">
+            <span class="report-icon" data-icon="report" data-icon-width="16" data-icon-height="16" data-icon-stroke-width="2.2" aria-hidden="true"></span>
+          </button>
+          <button type="button" id="btn-config-close" class="modal-close" aria-label="Sluiten" data-i18n-aria="config.btn_close_aria"><span class="modal-close-icon" data-icon="close" aria-hidden="true"></span></button>
+        </div>
       </div>
       <div class="modal-body modal-config-body">
         <!-- General Settings Section -->

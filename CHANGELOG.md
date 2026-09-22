@@ -14,6 +14,7 @@ A summarized overview of all changes, per version of this project.
 ---
 
 ## v3.5.1-pre
+- FrontEnd: Meld-een-fout knop is nu een echte, overal beschikbare knop met automatische schermcontext.
 - BackEnd: De samenvattende e-mail toont nu per gevolgde speler een eigen tabel met gelijk verdeelde Altijd/Laatste week/Laatste 24u-kolommen.
 - BackEnd: Gemelde problemen tonen nu zowel de vraag-ID als de vraagtekst in plaats van slechts één van beide.
 

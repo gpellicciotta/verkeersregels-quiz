@@ -1,15 +1,56 @@
 import { el } from "./dom.js";
-import { state } from "./state.js";
+import { state, carouselState } from "./state.js";
 import { submitErrorReport } from "./report-queue.js";
 import { t } from "./i18n.js";
 
-export function openReportModal() {
-  const q = state.round[state.currentIndex];
-  if (!q) return;
+// The report button is reachable from every screen and the settings modal; this
+// resolves what "context" means at the moment it was pressed. Priority matches
+// visual stacking: an open settings modal sits on top of whatever screen is behind it.
+function getReportContext() {
+  if (el.modalConfig && !el.modalConfig.classList.contains("hidden")) {
+    return { id: "", text: t("report.view_config") };
+  }
+  if (el.screenCarousel && !el.screenCarousel.classList.contains("hidden")) {
+    const item = carouselState.items[carouselState.currentIndex];
+    if (item) {
+      const id = item.id || "";
+      const text = item.signTitle || item.question || "";
+      return { id, text };
+    }
+    return { id: "", text: t("report.view_carousel") };
+  }
+  if (el.screenQuiz && !el.screenQuiz.classList.contains("hidden")) {
+    const q = state.round[state.currentIndex];
+    if (q) {
+      return { id: q.id || String(state.currentIndex + 1), text: q.question };
+    }
+    return { id: "", text: t("report.view_quiz") };
+  }
+  if (el.screenResult && !el.screenResult.classList.contains("hidden")) {
+    return { id: "", text: t("report.view_result") };
+  }
+  if (el.screenAbout && !el.screenAbout.classList.contains("hidden")) {
+    return { id: "", text: t("report.view_about") };
+  }
+  return { id: "", text: t("report.view_start") };
+}
 
-  const id = q.id || String(state.currentIndex + 1);
-  el.modalQuestionId.textContent = t("report.question_prefix", { id });
-  el.modalQuestionText.textContent = q.question;
+// Captured when the modal opens so submission uses the context of the screen the
+// user actually pressed the button on, even if app state changes before they submit.
+let currentReportContext = null;
+
+export function openReportModal() {
+  const context = getReportContext();
+  currentReportContext = context;
+
+  if (context.id) {
+    el.modalQuestionId.textContent = t("report.question_prefix", { id: context.id });
+    el.modalQuestionId.classList.remove("hidden");
+  } else {
+    el.modalQuestionId.textContent = "";
+    el.modalQuestionId.classList.add("hidden");
+  }
+  el.modalQuestionText.textContent = context.text;
   el.reportRemark.value = "";
   el.reportIncludeContext.checked = true;
   el.modalQuestionSummary.classList.remove("hidden");
@@ -40,8 +81,8 @@ export function closeReportModal() {
 
 export function handleReportSubmit(e) {
   e.preventDefault();
-  const q = state.round[state.currentIndex];
-  if (!q) return;
+  const context = currentReportContext;
+  if (!context) return;
 
   const remark = el.reportRemark.value.trim();
   const includeContext = el.reportIncludeContext.checked;
@@ -50,5 +91,5 @@ export function handleReportSubmit(e) {
   closeReportModal();
 
   // Asynchronous background transmission or local enqueue
-  submitErrorReport(q, remark, includeContext);
+  submitErrorReport(context, remark, includeContext);
 }

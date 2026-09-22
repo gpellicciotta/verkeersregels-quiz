@@ -1301,7 +1301,8 @@ body.suppress-tooltips [data-tooltip]::before {
   align-items: center;
 }
 
-.quiz-btn-report-round {
+.quiz-btn-report-round,
+.btn-report-round {
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -1321,8 +1322,33 @@ body.suppress-tooltips [data-tooltip]::before {
   margin: 0;
 }
 
+/* Positioned relative to #app (the outer card), mirroring the top-right close
+   buttons on the carousel and about screens, which sit in the same corner. */
+.carousel-header-actions .btn-report-round,
+.about-header .btn-report-round {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+}
+
+.btn-report-round-sm {
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  max-width: 32px;
+  flex: 0 0 32px;
+}
+
+.modal-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
 .quiz-btn-report-round:hover,
-.quiz-btn-report-round:focus-visible {
+.quiz-btn-report-round:focus-visible,
+.btn-report-round:hover,
+.btn-report-round:focus-visible {
   background: var(--color-primary-dark);
   border-color: var(--color-primary-dark);
   color: var(--color-on-primary);

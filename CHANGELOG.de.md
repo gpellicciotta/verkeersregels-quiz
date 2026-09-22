@@ -13,6 +13,11 @@ Eine zusammenfassende Übersicht aller Änderungen pro Version dieses Projekts.
 
 ---
 
+## v3.5.1-pre
+- FrontEnd: Die Schaltfläche „Fehler melden“ ist jetzt eine echte, allgegenwärtige Schaltfläche mit automatischem Bildschirmkontext.
+- BackEnd: Die zusammenfassende E-Mail zeigt jetzt eine eigene Tabelle für jeden verfolgten Spieler mit gleichmäßig aufgeteilten Spalten „Immer“, „Letzte Woche“ und „Letzte 24 Stunden“.
+- BackEnd: Gemeldete Probleme zeigen jetzt sowohl die Frage-ID als auch den Fragentext statt nur einer.
+
 ## v3.5.0 [released: 2026-09-22]
 - BackEnd: Google Apps Script sendet jetzt täglich um 7:00 Uhr und 19:00 Uhr UTC eine zusammenfassende E-Mail im niederländischen Stil mit Ergebnissen, Benachrichtigungen und einer anpassbaren Liste der Spieler, denen man folgen kann.
 - FrontEnd: Der Info-Bildschirm zeigt nun das Änderungsprotokoll in der Sprache der aktiven Benutzeroberfläche an.

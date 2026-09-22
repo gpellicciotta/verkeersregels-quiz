@@ -74,15 +74,15 @@ export async function drainReportQueue() {
   }
 }
 
-export function submitErrorReport(targetQuestion, remark, includeContext = true) {
-  if (!CONFIG.SHEET_WEBAPP_URL || !targetQuestion) return Promise.resolve();
+export function submitErrorReport(context, remark, includeContext = true) {
+  if (!CONFIG.SHEET_WEBAPP_URL || !context) return Promise.resolve();
 
   const payloadData = {
     actie: "report_error",
     sleutel: CONFIG.SHEET_SECRET,
     datum: new Date().toISOString(),
-    vraagId: includeContext ? targetQuestion.id || "" : "",
-    vraag: includeContext ? targetQuestion.question || "" : "",
+    vraagId: includeContext ? context.id || "" : "",
+    vraag: includeContext ? context.text || "" : "",
     naam: state.playerName || "Anoniem",
     opmerking: remark || "",
   };

@@ -13,6 +13,11 @@ Un aperçu résumé de toutes les modifications, par version de ce projet.
 
 ---
 
+## v3.5.1-pre
+- FrontEnd: Le bouton Signaler un bug est désormais un véritable bouton omniprésent avec un contexte d'écran automatique.
+- BackEnd: L'e-mail récapitulatif affiche désormais son propre tableau pour chaque joueur suivi avec des colonnes toujours/dernière semaine/dernières 24h divisées à parts égales.
+- BackEnd: Les problèmes signalés affichent désormais à la fois l'ID de la question et le texte de la question au lieu d'un seul.
+
 ## v3.5.0 [released: 2026-09-22]
 - BackEnd: Google Apps Script envoie désormais chaque jour à 7h00 et 19h00 UTC un e-mail récapitulatif de style néerlandais avec les résultats, les notifications et une liste personnalisable de joueurs à suivre.
 - FrontEnd: L'écran À propos affiche désormais le journal des modifications traduit dans la langue active de l'interface.

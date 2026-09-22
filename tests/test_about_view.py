@@ -41,12 +41,13 @@ class TestAboutView(unittest.TestCase):
         self.assertIn('id="btn-install"', html, "index.html must define btn-install")
         self.assertIn('class="start-divider"', html, "index.html must define subtle divider line")
 
-        # Meta bar: 2 hint icons + 1 Info/About button with tooltips
+        # Meta bar: 1 hint icon (law article) + 1 real report button + 1 Info/About button, all with tooltips
         self.assertIn('class="start-meta-bar"', html, "index.html must define start-meta-bar")
-        self.assertIn('class="start-meta-item start-meta-hint"', html, "index.html must define hint icons")
+        self.assertIn('class="start-meta-item start-meta-hint"', html, "index.html must define the law article hint icon")
+        self.assertIn('id="btn-report-start"', html, "index.html must define the real report button on the start screen")
         self.assertIn('id="btn-about"', html, "index.html must define btn-about")
         self.assertIn('data-tooltip="Bij elke vraag', html, "External link hint must provide tooltip")
-        self.assertIn('data-tooltip="Fout melden:', html, "Report hint must provide tooltip")
+        self.assertIn('data-tooltip="Meld fout"', html, "Report button must provide tooltip")
         self.assertIn('data-tooltip="Over deze app', html, "About button must provide tooltip")
 
         # Copyright notice
