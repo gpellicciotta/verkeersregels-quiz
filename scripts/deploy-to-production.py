@@ -50,6 +50,8 @@ EXIT_CODES = [
 
 CHANGELOG_PATH = REPO_ROOT / "CHANGELOG.md"
 SW_SCRIPT_PATH = REPO_ROOT / "scripts" / "generate-sw.py"
+TRANSLATE_MARKDOWN_SCRIPT_PATH = REPO_ROOT / "scripts" / "translate-markdown.py"
+TRANSLATED_CHANGELOG_LANGS = ["en", "fr", "de", "it"]
 
 
 def check_clean_git_tree(logger: TeeLogger) -> bool:
@@ -115,6 +117,23 @@ def finalize_changelog(version: str, logger: TeeLogger) -> bool:
     return True
 
 
+def regenerate_translated_changelogs(logger: TeeLogger) -> bool:
+    """Regenerates CHANGELOG.<lang>.md overlays so the About view can show them per language."""
+    logger.log("\n[*] Regenerating translated CHANGELOG overlays\n" + "=" * 60, level="INFO")
+    result = subprocess.run(
+        [sys.executable, str(TRANSLATE_MARKDOWN_SCRIPT_PATH), "generate", "--all"],
+        cwd=str(REPO_ROOT),
+        check=False,
+        capture_output=True,
+        text=True,
+    )
+    if result.returncode != 0:
+        logger.log(f"Translated CHANGELOG generation failed:\n{result.stderr}\n{result.stdout}", level="ERROR")
+        return False
+    logger.log("Translated CHANGELOG overlays regenerated successfully.", level="INFO")
+    return True
+
+
 def regenerate_service_worker(logger: TeeLogger) -> bool:
     """Regenerates sw.js so precached assets and the cache-key version stay current."""
     logger.log("\n[*] Regenerating service worker precache\n" + "=" * 60, level="INFO")
@@ -133,10 +152,11 @@ def regenerate_service_worker(logger: TeeLogger) -> bool:
 
 
 def create_release_commit(version: str, logger: TeeLogger) -> bool:
-    """Commits the finalized CHANGELOG.md and regenerated sw.js."""
+    """Commits the finalized CHANGELOG.md, its translated overlays, and regenerated sw.js."""
     logger.log("\n[*] Committing release\n" + "=" * 60, level="INFO")
+    changelog_files = ["CHANGELOG.md"] + [f"CHANGELOG.{lang}.md" for lang in TRANSLATED_CHANGELOG_LANGS]
     result = subprocess.run(
-        ["git", "add", "CHANGELOG.md", "sw.js"],
+        ["git", "add", *changelog_files, "sw.js"],
         cwd=str(REPO_ROOT),
         check=False,
         capture_output=True,
@@ -295,6 +315,13 @@ def deploy(dry_run: bool, push: bool, logger: TeeLogger) -> int:
 
     if not finalize_changelog(version, logger):
         return 1
+    if not regenerate_translated_changelogs(logger):
+        logger.log(
+            "CHANGELOG.md was finalized but translated CHANGELOG generation failed.\n"
+            "Fix the issue and rerun, or 'git checkout -- CHANGELOG.md' to revert.",
+            level="ERROR",
+        )
+        return 1
     if not regenerate_service_worker(logger):
         logger.log(
             "CHANGELOG.md was finalized but sw.js regeneration failed.\n"
@@ -304,7 +331,7 @@ def deploy(dry_run: bool, push: bool, logger: TeeLogger) -> int:
         return 1
     if not create_release_commit(version, logger):
         logger.log(
-            "CHANGELOG.md and sw.js were updated but not committed.\n"
+            "CHANGELOG.md, its translated overlays, and sw.js were updated but not committed.\n"
             "Inspect with 'git diff', then commit manually or resolve and rerun.",
             level="ERROR",
         )

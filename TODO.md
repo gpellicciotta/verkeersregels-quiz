@@ -14,7 +14,6 @@ An overview of all tasks and their planning.
 ---
 
 ## Next Milestone
-- [~] T0063 [owner: @claude] Generate translated CHANGELOG.<lang>.md files each release via a new translate-markdown.py chunking script.
 - [ ] T0064 Improve the "Meld een fout modal dialog":
   - Add the icon also at the start of the title
   - Start with the "Opmerking of toelichting"+ the comment box but without the word "optioneel

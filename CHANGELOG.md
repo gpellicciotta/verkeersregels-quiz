@@ -13,6 +13,10 @@ A summarized overview of all changes, per version of this project.
 
 ---
 
+## v3.5.0-pre
+- FrontEnd: About screen now shows the changelog translated into the active interface language.
+- DevEx: Added `translate-markdown.py`, chunking Markdown by heading and paragraph before translating each release.
+
 ## v3.4.0 [released: 2026-09-22]
 - FrontEnd: Quizvragen kregen een sluitknop rechtsboven op de kaart met bevestiging van voortgangsverlies in alle vijf talen.
 - FrontEnd: Automatische PWA-updates gaan nu sneller gebeuren.

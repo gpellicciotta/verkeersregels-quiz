@@ -1,7 +1,12 @@
 import { el } from "./dom.js";
-import { t } from "./i18n.js";
+import { t, getLang } from "./i18n.js";
 
 let changelogHtmlCache = null;
+let changelogHtmlCacheLang = null;
+
+function changelogPathForLang(lang) {
+  return lang && lang !== "nl" ? `CHANGELOG.${lang}.md` : "CHANGELOG.md";
+}
 
 function escapeHtml(str) {
   return String(str)
@@ -89,7 +94,8 @@ function extractVersionFromChangelog(md) {
 }
 
 export async function loadChangelog() {
-  if (changelogHtmlCache) {
+  const lang = getLang();
+  if (changelogHtmlCache && changelogHtmlCacheLang === lang) {
     if (el.changelogBody) el.changelogBody.innerHTML = changelogHtmlCache;
     if (el.aboutChangelogBody) el.aboutChangelogBody.innerHTML = changelogHtmlCache;
     return;
@@ -98,17 +104,23 @@ export async function loadChangelog() {
   if (el.changelogBody) el.changelogBody.innerHTML = loadingHtml;
   if (el.aboutChangelogBody) el.aboutChangelogBody.innerHTML = loadingHtml;
   try {
-    const res = await fetch("CHANGELOG.md");
+    let res = await fetch(changelogPathForLang(lang));
+    if (!res.ok && lang !== "nl") {
+      res = await fetch("CHANGELOG.md");
+    }
     if (!res.ok) throw new Error("Kon CHANGELOG.md niet laden: " + res.status);
     const md = await res.text();
     const version = extractVersionFromChangelog(md);
     if (el.aboutVersionTag) el.aboutVersionTag.textContent = version;
     if (el.btnVersion) el.btnVersion.textContent = version;
     changelogHtmlCache = renderChangelogMarkdown(md);
+    changelogHtmlCacheLang = lang;
     if (el.changelogBody) el.changelogBody.innerHTML = changelogHtmlCache;
     if (el.aboutChangelogBody) el.aboutChangelogBody.innerHTML = changelogHtmlCache;
   } catch (err) {
     console.warn("Changelog laden mislukt:", err);
+    changelogHtmlCache = null;
+    changelogHtmlCacheLang = null;
     if (el.aboutVersionTag) el.aboutVersionTag.textContent = t("version.unknown");
     if (el.btnVersion) el.btnVersion.textContent = t("version.unknown");
     const errHtml = `

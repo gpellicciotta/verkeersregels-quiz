@@ -53,6 +53,9 @@ def build_sw_content(version: str) -> tuple[str, int]:
     js_modules = sorted([f"js/{f}" for f in os.listdir(JS_DIR) if f.endswith(".js")]) if JS_DIR.exists() else []
     data_dir = REPO_ROOT / "data"
     data_files = sorted([f"data/{f}" for f in os.listdir(data_dir) if f.endswith(".json") and not f.startswith(".")]) if data_dir.exists() else ["data/questions.json"]
+    translated_changelogs = sorted(
+        f"CHANGELOG.{lang}.md" for lang in ("en", "fr", "de", "it") if (REPO_ROOT / f"CHANGELOG.{lang}.md").exists()
+    )
 
     core_assets = [
         "./",
@@ -62,6 +65,7 @@ def build_sw_content(version: str) -> tuple[str, int]:
         *js_modules,
         *data_files,
         "CHANGELOG.md",
+        *translated_changelogs,
         "favicon.ico",
         "assets/favicon.svg",
         "assets/icons/icon-192.png",

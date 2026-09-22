@@ -95,8 +95,9 @@ python ../dev-guidelines/scripts/lint-taskfile.py TODO.md
 ## DevOps and Asset Tooling
 All developer utilities live in `scripts/` and adhere strictly to CLI guidelines with `--version`, `--help`, `--verbose`, `--debug`, and `--log-file`:
 - `scripts/bootstrap-dev-environment.py`: verifies environment readiness, repository structure, and runs test suites.
-- `scripts/deploy-to-production.py`: verifies preconditions, then finalizes `CHANGELOG.md`, regenerates `sw.js`, commits, and tags a release.
+- `scripts/deploy-to-production.py`: verifies preconditions, then finalizes `CHANGELOG.md`, regenerates translated changelogs and `sw.js`, commits, and tags a release.
 - `scripts/generate-sw.py`: dynamically scans all assets and writes `sw.js` with versioned cache keys and 227 precached assets.
+- `scripts/translate-markdown.py`: translates `CHANGELOG.md` into `CHANGELOG.<lang>.md` overlays for the About view, chunking by heading and paragraph via Google Translate.
 - `scripts/generate-pwa-icons.py`: renders transparent PNG and ICO icons via headless Chrome and Pillow.
 - `scripts/fetch-belgian-signs.py`: downloads, verifies, and rate-limits Belgian traffic sign SVGs from Wikimedia Commons.
 
@@ -142,8 +143,9 @@ This verifies:
    ```
    This re-runs the pre-flight checks above, then automatically:
    - Finalizes the active `-pre` heading in `CHANGELOG.md` to `[released: {{date}}]`.
+   - Regenerates `CHANGELOG.en.md`, `CHANGELOG.fr.md`, `CHANGELOG.de.md`, and `CHANGELOG.it.md` (`scripts/translate-markdown.py generate --all`).
    - Regenerates service worker precache assets (`scripts/generate-sw.py generate`).
-   - Commits `CHANGELOG.md` and `sw.js` with the message `Released v{{version}}.`.
+   - Commits `CHANGELOG.md`, its translated overlays, and `sw.js` with the message `Released v{{version}}.`.
    - Creates the local version tag (e.g. `git tag v3.0.0`).
 3. Push the branch and tag printed by the script:
    ```bash
