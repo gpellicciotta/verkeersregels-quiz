@@ -18,7 +18,7 @@
   "start.btn_install_aria": "Install as app",
   "start.btn_install_tooltip": "Install app",
   "start.btn_lang_aria": "Switch language",
-  "start.btn_lang_tooltip": "Language",
+  "start.btn_lang_tooltip": "Language: {cycle}",
   "start.hint_law_aria": "Law article hint: each question links to the relevant article in the Highway Code via this icon",
   "start.hint_law_tooltip": "Each question links to the relevant law article via this icon",
   "start.hint_report_aria": "Report error: if you spot an inaccuracy or ambiguity, click this icon to report it",

@@ -18,7 +18,7 @@
   "start.btn_install_aria": "Installer comme application",
   "start.btn_install_tooltip": "Installer l'application",
   "start.btn_lang_aria": "Changer de langue",
-  "start.btn_lang_tooltip": "Langue",
+  "start.btn_lang_tooltip": "Langue: {cycle}",
   "start.hint_law_aria": "Explication de l'article de loi : pour chaque question, cette icône vous renvoie directement à l'article correspondant du Code de la route",
   "start.hint_law_tooltip": "Pour chaque question, cette icône vous renvoie directement à l'article de loi correspondant",
   "start.hint_report_aria": "Signaler une erreur : si vous constatez une inexactitude ou une ambiguïté, cliquez sur cette icône pour la signaler",

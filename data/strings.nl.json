@@ -18,7 +18,7 @@
   "start.btn_install_aria": "Installeer als app",
   "start.btn_install_tooltip": "Installeer app",
   "start.btn_lang_aria": "Taal wijzigen",
-  "start.btn_lang_tooltip": "Taal",
+  "start.btn_lang_tooltip": "Taal: {cycle}",
   "start.hint_law_aria": "Toelichting wetsartikel: bij elke vraag vind je via dit toelichtingsicoon direct het bijbehorende wetsartikel in de Wegcode",
   "start.hint_law_tooltip": "Bij elke vraag vind je via dit toelichtingsicoon direct het bijbehorende wetsartikel",
   "start.hint_report_aria": "Fout melden: zie je een onjuistheid of onduidelijkheid, klik dan op dit icoon om dit te melden",

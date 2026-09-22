@@ -300,18 +300,26 @@ function checkAutoStart() {
 
 // ── Language switcher ─────────────────────────────────────────────────────────
 const LANG_CYCLE = { nl: "fr", fr: "de", de: "en", en: "nl" };
-const LANG_LABELS = { nl: "Nederlands", fr: "Français", de: "Deutsch", en: "English" };
+const LANG_ORDER = ["nl", "fr", "de", "en"]; // display order, matches LANG_CYCLE traversal
+
+// Builds "NL → [FR] → DE → EN", bracketing the active language since the
+// CSS tooltip renders plain text (attr()) and cannot bold a substring.
+function buildLangCycleLabel(lang) {
+  return LANG_ORDER.map((code) => {
+    const upper = code.toUpperCase();
+    return code === lang ? `[${upper}]` : upper;
+  }).join(" → ");
+}
 
 function updateLangButton() {
   if (!el.btnLang) return;
   const lang = getLang();
   const labelEl = el.btnLang.querySelector(".btn-lang-label");
   if (labelEl) labelEl.textContent = lang.toUpperCase();
-  const nextLang = LANG_CYCLE[lang] || "nl";
-  const targetLabel = LANG_LABELS[nextLang] || nextLang.toUpperCase();
+  const tooltip = t("start.btn_lang_tooltip", { cycle: buildLangCycleLabel(lang) });
   el.btnLang.setAttribute("aria-label", t("start.btn_lang_aria"));
-  el.btnLang.setAttribute("data-tooltip", targetLabel);
-  el.btnLang.setAttribute("title", targetLabel);
+  el.btnLang.setAttribute("data-tooltip", tooltip);
+  el.btnLang.setAttribute("title", tooltip);
 }
 
 if (el.btnLang) {

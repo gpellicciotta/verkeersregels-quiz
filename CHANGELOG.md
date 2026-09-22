@@ -14,25 +14,26 @@ A summarized overview of all changes, per version of this project.
 ---
 
 ## v3.2.1-pre
-- FrontEnd: Added German translations across user interface, configuration dialogs, and question bank.
-- FrontEnd: Added French translations across user interface, configuration dialogs, and question bank.
+- FrontEnd: Duitse vertalingen toegevoegd voor de gebruikersinterface, configuratiedialogen en vragenbank.
+- FrontEnd: Franse vertalingen toegevoegd voor de gebruikersinterface, configuratiedialogen en vragenbank.
+- FrontEnd: De tooltip voor het wisselen van taal verduidelijkt; deze toont nu de volledige taalcyclus met de actieve taal gemarkeerd.
 
 ## v3.2.0 [2026-09-22]
-- FrontEnd: Added separate localized road sign explanations and titles in carousel with full Dutch and English translations.
-- FrontEnd: Replaced generic image alt text with descriptive sign codes across quiz questions, answer options, and carousel.
-- FrontEnd: Added quiz result sharing via Web Share API with clipboard copy fallback and toast feedback.
-- FrontEnd: Added non-color correct and wrong indicator badges to quiz answer options and header for colorblind accessibility.
-- FrontEnd: Refactored CSS into a composable mobile-first stylesheet adhering to audit tokens and WCAG contrast.
-- FrontEnd: Added English translation and language switcher across user interface, configuration dialogs, and all 324 questions.
-- FrontEnd: Added column header scope attributes to results table for screen reader accessibility.
-- DevEx: Modularized JavaScript architecture into discrete ES modules separating application state, storage, and UI presentation logic.
-- FrontEnd: Enabled automatic service worker lifecycle updates and client reloading when new releases deploy.
-- FrontEnd: Preserved home screen introduction text across quiz mode switches and configuration changes.
-- FrontEnd: Added dark theme and configurable color accents with system preference detection and query parameters.
-- FrontEnd: Added player name query parameter support with aliases to bypass the start screen input field.
-- FrontEnd: Added twenty real-world traffic situation photo questions with updated offline caching and automated tests.
-- DevEx: Standardized all source code comments across HTML, CSS, and JavaScript modules to US English.
-- FrontEnd: Persisted player name and quiz settings to local storage with URL query parameter precedence.
+- FrontEnd: Aparte, gelokaliseerde uitleg en titels voor verkeersborden toegevoegd aan de carrousel, inclusief volledige Nederlandse en Engelse vertalingen.
+- FrontEnd: Algemene alt-teksten voor afbeeldingen vervangen door beschrijvende bordcodes in quizvragen, antwoordopties en de carrousel.
+- FrontEnd: Mogelijkheid toegevoegd om quizresultaten te delen via de Web Share API, met een fallback naar kopiëren naar het klembord en 'toast'-meldingen.
+- FrontEnd: Indicatiebadges (niet afhankelijk van kleur) toegevoegd aan antwoordopties en de koptekst om correcte en foutieve antwoorden aan te geven (toegankelijkheid voor kleurenblinden).
+- FrontEnd: CSS geherstructureerd naar een modulaire 'mobile-first' stylesheet die voldoet aan audit-tokens en WCAG-contrastnormen.
+- FrontEnd: Engelse vertaling en taalschakelaar toegevoegd voor de gebruikersinterface, configuratiedialogen en alle 324 vragen.
+- FrontEnd: 'Scope'-attributen toegevoegd aan kolomkoppen in de resultatentabel voor toegankelijkheid via schermlezers.
+- DevEx: JavaScript-architectuur gemodulariseerd tot afzonderlijke ES-modules, waarbij applicatiestatus, opslag en UI-presentatielogica van elkaar zijn gescheiden.
+- FrontEnd: Automatische updates van de service worker-levenscyclus en herladen van de client ingeschakeld bij het uitrollen van nieuwe releases.
+- FrontEnd: Introductietekst op het startscherm behouden bij het wisselen van quizmodus of wijzigen van configuratie.
+- FrontEnd: Donker thema en configureerbare kleuraccenten toegevoegd, inclusief detectie van systeemvoorkeuren en ondersteuning voor queryparameters.
+- FrontEnd: Ondersteuning toegevoegd voor queryparameters voor de spelersnaam (inclusief aliassen) om het invoerveld op het startscherm te omzeilen.
+- FrontEnd: Twintig fotovragen over reële verkeerssituaties toegevoegd, inclusief verbeterde offline caching en geautomatiseerde tests.
+- DevEx: Alle broncodecommentaren in HTML-, CSS- en JavaScript-modules gestandaardiseerd naar Amerikaans-Engels.
+- FrontEnd: Spelersnaam en quizinstellingen opgeslagen in 'local storage', waarbij URL-queryparameters voorrang hebben.
 
 ## v3.1.0 [2026-09-21]
 - FrontEnd: Startscherm geminimaliseerd met ronde actieknoppen, modusschakelaar, carrouselbediening en interactieve instellingendialogen.

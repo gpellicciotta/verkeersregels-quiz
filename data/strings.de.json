@@ -18,7 +18,7 @@
   "start.btn_install_aria": "Als App installieren",
   "start.btn_install_tooltip": "App installieren",
   "start.btn_lang_aria": "Sprache ändern",
-  "start.btn_lang_tooltip": "Sprache",
+  "start.btn_lang_tooltip": "Sprache: {cycle}",
   "start.hint_law_aria": "Gesetzesartikel-Erläuterung: Bei jeder Frage finden Sie über dieses Symbol direkt den zugehörigen Gesetzesartikel der Straßenverkehrsordnung",
   "start.hint_law_tooltip": "Bei jeder Frage finden Sie über dieses Erläuterungssymbol direkt den zugehörigen Gesetzesartikel",
   "start.hint_report_aria": "Fehler melden: Wenn Sie eine Ungenauigkeit oder Unklarheit sehen, klicken Sie auf dieses Symbol, um sie zu melden",
