@@ -183,11 +183,13 @@ export function renderIconSlot(target, name, options = {}) {
 }
 
 /**
- * Replace [data-icon] placeholders below a root element with SVG icons.
+ * Render SVG icons inside [data-icon] placeholders below a root element.
  *
  * Placeholder elements may provide data-icon-width, data-icon-height,
  * data-icon-stroke-width, data-icon-fill, and data-icon-stroke attributes.
- * Existing classes are transferred to the generated SVG element.
+ * Existing placeholder elements remain in place so cached DOM references stay valid.
+ * Their styling classes are also transferred to the generated SVG element, except
+ * for `hidden`, which belongs to the placeholder's visibility state.
  * @param {Document|Element} [root=document] - Root whose descendant placeholders are hydrated.
  * @returns {void} This function updates the DOM and returns no value.
  */
@@ -197,16 +199,17 @@ export function renderDataIcons(root = document) {
   nodes.forEach((node) => {
     const name = node.dataset.icon;
     if (!name) return;
+    const className = Array.from(node.classList)
+      .filter((classToken) => classToken !== "hidden")
+      .join(" ");
     const svg = createIcon(name, {
-      className: node.getAttribute("class") || undefined,
+      className: className || undefined,
       width: Number(node.dataset.iconWidth || node.dataset.width || 18),
       height: Number(node.dataset.iconHeight || node.dataset.height || 18),
       strokeWidth: Number(node.dataset.iconStrokeWidth || 2.2),
       fill: node.dataset.iconFill || "none",
       stroke: node.dataset.iconStroke || "currentColor",
     });
-    if (svg) {
-      node.replaceWith(svg);
-    }
+    if (svg) node.replaceChildren(svg);
   });
 }
