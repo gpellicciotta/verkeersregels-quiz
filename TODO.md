@@ -9,12 +9,13 @@ An overview of all tasks and their planning.
 > Owner: `[owner: @name]` shown only when active/blocked/needs-review.
 > Dependencies: `[needs: Tnnnn]` shown only when unresolved.
 
-**Next ID:** 0060
+**Next ID:** 0062
 
 ---
 
 ## Next Milestone
-*(Currently no tasks)*
+- [ ] T0060 Voeg Italiaans toe als taal 
+- [ ] T0061 Group or export all SVG icons so they are more easily reusable.
 
 ---
 
