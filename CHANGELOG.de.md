@@ -13,8 +13,12 @@ Eine zusammenfassende Übersicht aller Änderungen pro Version dieses Projekts.
 
 ---
 
-## v3.5.0-pre
+## v3.5.0 [released: 2026-09-22]
+- BackEnd: Google Apps Script sendet jetzt täglich um 7:00 Uhr und 19:00 Uhr UTC eine zusammenfassende E-Mail im niederländischen Stil mit Ergebnissen, Benachrichtigungen und einer anpassbaren Liste der Spieler, denen man folgen kann.
 - FrontEnd: Der Info-Bildschirm zeigt nun das Änderungsprotokoll in der Sprache der aktiven Benutzeroberfläche an.
+- FrontEnd: Das Dialogfeld „Fehler melden“ zeigt jetzt ein Titelsymbol und einen konfigurierbaren optionalen Fragenkontext an.
+- FrontEnd: Ein Einstellungsdialog mit klaren Abschnitten „Allgemein/Quiz/Karussell“ ersetzt die beiden separaten Dialoge.
+- FrontEnd: Name, Sprache, Theme und Theme-Farbe sind nun ebenfalls anpassbar und werden im localStorage gespeichert.
 - DevEx: `translate-markdown.py` hinzugefügt, wobei Markdown vor der Übersetzung jeder Veröffentlichung nach Überschrift und Absatz aufgeteilt wird.
 
 ## v3.4.0 [released: 2026-09-22]

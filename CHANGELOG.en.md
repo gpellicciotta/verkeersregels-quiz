@@ -13,8 +13,12 @@ A summarized overview of all changes, per version of this project.
 
 ---
 
-## v3.5.0-pre
+## v3.5.0 [released: 2026-09-22]
+- BackEnd: Google Apps Script now sends a Dutch, styled summary email every day at 7am and 7pm UTC with results, notifications and a customizable list of players to follow.
 - FrontEnd: About screen now shows the changelog translated into the active interface language.
+- FrontEnd: "Report a bug" dialog now shows a title icon and a configurable optional question context.
+- FrontEnd: One settings dialog with clear General/Quiz/Carousel sections replaces the two separate dialogs.
+- FrontEnd: Name, language, theme and theme color are now also adjustable and saved in localStorage.
 - DevEx: Added `translate-markdown.py`, chunking Markdown by heading and paragraph before translating each release.
 
 ## v3.4.0 [released: 2026-09-22]
