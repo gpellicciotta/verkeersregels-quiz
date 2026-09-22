@@ -14,10 +14,7 @@ An overview of all tasks and their planning.
 ---
 
 ## Next Milestone
-- [ ] T0069 Change the "Report issue" circular info button on the start screen, to actually be the real "Report issue" action button: we want to have this button available on all screens of the app, as issues might appear anywhere. The context - by default selected to be sent - should be determined as follows:
-  - For quiz questions: the question itself
-  - For carrousel rounds: the traffic sign being shown when the button was pressed
-  - For all other views: the name of the view, e.g. "Quiz resultaten" or "Start scherm" or "Instellingen scherm" 
+- [~] T0069 [owner: @claude] Make the start screen's circular info button a real "Report issue" button, available on every screen, with per-screen default context.
 - [ ] T0067 Keep (only in localStorage) play stats and most-used errors
 - [ ] T0068 Enable starting a quiz with questions where you've made errors in the past. Also at the end of a quiz, enable re-starting with all the questions for which wrong answers were given. Maybe there could be a new checkbox-setting: "Always include errors from last quiz".
 
