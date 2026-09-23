@@ -31,11 +31,15 @@ async function answerWrong(page) {
         ? route.continue() : route.fulfill({ status: 200, body: "{}" });
     });
 
+    const snap = async (suffix) => {
+      if (screenshots) await page.screenshot({ path: path.join(artifacts, `${screenshotPrefix}-${suffix}.png`), fullPage: true });
+    };
+
     // Baseline: fresh visitor, no stored errors yet -> review button must stay hidden.
     await page.goto(`${url}?q=3&type=sign&lang=nl`);
     await page.waitForFunction(async () => (await import("./js/state.js")).state.pool.length > 0);
     assert.equal(await page.locator("#btn-start-errors").isVisible(), false, "hidden with no error history");
-    if (screenshots) await page.screenshot({ path: path.join(artifacts, `${screenshotPrefix}-start-${baseline ? "before" : "after"}.png`), fullPage: true });
+    await snap(`start-${baseline ? "before" : "after"}`);
     if (baseline) {
       console.log("PASS baseline: HTTP 200, start screen renders, no review button without history");
       await context.close();
@@ -62,7 +66,7 @@ async function answerWrong(page) {
     }
     await page.locator("#screen-result").waitFor({ state: "visible" });
     assert.equal(await page.locator("#btn-result-retry-errors").isVisible(), true, "retry button shows after a wrong answer");
-    await page.screenshot({ path: path.join(artifacts, `${screenshotPrefix}-result-after.png`), fullPage: true });
+    await snap("result-after");
 
     // Retry with only the wrong question from this round.
     await page.locator("#btn-result-retry-errors").click();
@@ -80,7 +84,7 @@ async function answerWrong(page) {
     // Start screen: review-errors button now visible since stats has an error on record.
     await page.locator("#screen-start").waitFor({ state: "visible" });
     assert.equal(await page.locator("#btn-start-errors").isVisible(), true, "review button appears once an error is on record");
-    await page.screenshot({ path: path.join(artifacts, `${screenshotPrefix}-start-after.png`), fullPage: true });
+    await snap("start-after");
 
     await page.locator("#btn-start-errors").click();
     await page.locator("#question-text").filter({ hasText: /.+/ }).waitFor();
@@ -99,7 +103,7 @@ async function answerWrong(page) {
     await page.locator("#btn-config").click();
     await page.locator("#screen-config").waitFor({ state: "visible" });
     await page.locator("#config-always-include-errors").check();
-    await page.screenshot({ path: path.join(artifacts, `${screenshotPrefix}-config-after.png`), fullPage: true });
+    await snap("config-after");
     await page.locator("#btn-config-save").click();
     assert.equal(
       await page.evaluate(() => JSON.parse(localStorage.getItem("verkeersquiz_preferences")).alwaysIncludeLastErrors),
