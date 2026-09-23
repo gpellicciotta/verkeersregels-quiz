@@ -14,7 +14,6 @@ An overview of all tasks and their planning.
 ---
 
 ## Next Milestone
-- [~] T0073 [owner: @gemini] In Instellingen, zorg ervoor dat wijzigingen in Theme en Theme Color onmiddelijk zichtbaar zijn, maar revert bij annuleren.
 - [ ] T0075 Voeg een "Statistieken" view toe die samenvat hoe vaak een speler gespeeld heeft, hoeveel minuten in totaal, hoe veel vragen en wat zijn gemiddelde score is.
       Laat ook toe deze statistieken te wissen.
       De "Statistieken" ronde-knop mag in mobile view enkel zichtbaar zijn als de "Installeer App" knop er niet is, en dan op diens plaats staan. 

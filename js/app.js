@@ -36,6 +36,7 @@ import {
   closeConfigView,
   saveConfig,
   updateConfigQuizWarning,
+  previewTheme,
 } from "./config-view.js";
 import {
   openReportModal,
@@ -177,6 +178,14 @@ if (el.btnModeToggle) {
   });
 }
 
+if (el.configTheme) {
+  el.configTheme.addEventListener("change", previewTheme);
+}
+
+if (el.configThemeColor) {
+  el.configThemeColor.addEventListener("change", previewTheme);
+}
+
 if (el.btnConfig) {
   el.btnConfig.addEventListener("click", openConfigView);
 }
@@ -250,6 +259,7 @@ if (typeof window !== "undefined") {
   window.openConfigView = openConfigView;
   window.closeConfigView = closeConfigView;
   window.saveConfig = saveConfig;
+  window.previewTheme = previewTheme;
   window.getNameParam = getNameParam;
   window.getThemeParam = getThemeParam;
   window.getThemeColorParam = getThemeColorParam;

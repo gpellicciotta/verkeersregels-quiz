@@ -72,6 +72,20 @@ class TestThemeAndColor(unittest.TestCase):
         self.assertIn("var(--color-primary-border)", self.css_content)
         self.assertIn("var(--color-primary-text)", self.css_content)
 
+    def test_preview_theme_function_and_event_listeners(self):
+        """Validates that previewTheme is implemented, exported, and wired to configTheme and configThemeColor changes."""
+        self.assertIn("function previewTheme()", self.js_content)
+        self.assertIn("window.previewTheme = previewTheme", self.js_content)
+        self.assertIn('el.configTheme.addEventListener("change", previewTheme)', self.js_content)
+        self.assertIn('el.configThemeColor.addEventListener("change", previewTheme)', self.js_content)
+
+    def test_config_view_records_initial_theme_and_reverts_on_close(self):
+        """Validates that openConfigView tracks initial settings and closeConfigView reverts them."""
+        self.assertIn("initialThemeSetting", self.js_content)
+        self.assertIn("initialThemeColor", self.js_content)
+        self.assertIn("applyTheme(initialThemeSetting, initialThemeColor);", self.js_content)
+
 
 if __name__ == "__main__":
     unittest.main()
+

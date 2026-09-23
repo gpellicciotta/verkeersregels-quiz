@@ -58,6 +58,8 @@ Functional and technical requirements for the Verkeersregels Quiz application.
   - Full-window view accessible via the start screen gear button or `?config=1` URL parameter.
   - Mirrors the About view chrome: centered title, report issue button top-left, close button top-right.
   - Groups general, quiz-only, and carousel-only preferences into separate cards, all always visible.
+  - Provides immediate live visual preview when modifying theme or accent color dropdowns.
+  - Reverts uncommitted theme changes when closed via the close button or Escape key.
   - Keeps the bottom "Opslaan" save button sticky at the viewport bottom on both mobile and desktop screens during scrolling.
   - Persists every field to `localStorage` on save and returns to the start screen.
 - **Results and Review**:

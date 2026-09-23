@@ -9,6 +9,20 @@ import { loadChangelog } from "./changelog.js";
 import { applyTheme } from "./theme.js";
 import { t, getLang, setLang, SUPPORTED_LANGS } from "./i18n.js";
 
+let initialThemeSetting = "system";
+let initialThemeColor = "blue";
+
+/**
+ * Preview theme and accent color changes immediately.
+ *
+ * @returns {void}
+ */
+export function previewTheme() {
+  const themeSetting = el.configTheme ? el.configTheme.value || "system" : "system";
+  const themeColor = el.configThemeColor ? el.configThemeColor.value || "blue" : "blue";
+  applyTheme(themeSetting, themeColor);
+}
+
 /**
  * Open the settings view with all fields prepopulated from the current state.
  *
@@ -18,6 +32,9 @@ import { t, getLang, setLang, SUPPORTED_LANGS } from "./i18n.js";
  * @returns {void}
  */
 export function openConfigView() {
+  initialThemeSetting = (document.documentElement && document.documentElement.getAttribute("data-theme-setting")) || "system";
+  initialThemeColor = (document.documentElement && document.documentElement.getAttribute("data-theme-color")) || "blue";
+
   // Prepopulate general settings
   if (el.configName) {
     el.configName.value = state.playerName || (el.playerNameInput ? el.playerNameInput.value : "") || "";
@@ -101,13 +118,21 @@ export function updateConfigQuizWarning() {
 }
 
 /**
- * Leave the settings view.
+ * Leave the settings view without saving, reverting any uncommitted theme preview.
  *
- * Settings is a full-window view, so leaving it means going back to the start screen.
+ * Settings is a full-window view, so leaving it means reverting the theme and going
+ * back to the start screen.
  *
  * @returns {void}
  */
 export function closeConfigView() {
+  applyTheme(initialThemeSetting, initialThemeColor);
+  if (el.configTheme) {
+    el.configTheme.value = initialThemeSetting;
+  }
+  if (el.configThemeColor) {
+    el.configThemeColor.value = initialThemeColor;
+  }
   showScreen("start");
 }
 
@@ -139,6 +164,8 @@ export function saveConfig() {
   const themeSetting = el.configTheme ? el.configTheme.value || "system" : "system";
   const themeColor = el.configThemeColor ? el.configThemeColor.value || "blue" : "blue";
   applyTheme(themeSetting, themeColor);
+  initialThemeSetting = themeSetting;
+  initialThemeColor = themeColor;
 
   // Carousel settings
   if (el.carouselDelaySelect) {
