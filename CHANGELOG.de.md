@@ -13,7 +13,7 @@ Eine zusammenfassende Übersicht aller Änderungen pro Version dieses Projekts.
 
 ---
 
-## v3.7.0-pre
+## v3.7.0 [released: 2026-09-24]
 - FrontEnd: Aktualisierte Support-Links im Info-Bildschirm, um direkte Ko-Fi- und PayPal.Me-Schaltflächen einzuschließen.
 - FrontEnd: Der Karussell-Tipp wurde jetzt entfernt, da er nicht wirklich notwendig ist und die Benutzeroberfläche komplexer macht.
 - FrontEnd: Übersichtskarte für alle verwendeten App-Symbole zum Info-Bildschirm mit genau nachgebildeten Schaltflächen hinzugefügt.

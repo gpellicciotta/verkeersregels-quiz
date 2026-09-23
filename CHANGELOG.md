@@ -13,7 +13,7 @@ A summarized overview of all changes, per version of this project.
 
 ---
 
-## v3.7.0-pre
+## v3.7.0 [released: 2026-09-24]
 - FrontEnd: Ondersteuningslinks in het Over-scherm bijgewerkt met directe Ko-fi- en PayPal.Me-knoppen.
 - FrontEnd: De carrousel-tip is nu verwijderd aangezien hij niet echt nodig is en de UI complexer maakt.
 - FrontEnd: Overzichtskaart voor alle gebruikte app-iconen toegevoegd aan het Over-scherm met exacte replica-knoppen.
