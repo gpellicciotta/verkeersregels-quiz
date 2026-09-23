@@ -67,7 +67,7 @@ Oudere wetswijzigingen tonen een blauwe badge.
 Vanuit de projectmap:
 
 ```bash
-python -m http.server 8000
+python scripts/run-review-server.py serve --port 8000
 ```
 
 Open dan [http://localhost:8000/index.html](http://localhost:8000/index.html) in de browser.

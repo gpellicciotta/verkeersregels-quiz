@@ -9,7 +9,7 @@ Practical guidance on development environment setup, testing, validation, deploy
 - **Node.js**: Node.js 22 or higher for executable service worker lifecycle regression tests.
 - **Git**: Git 2.30 or higher supporting worktree isolation (`git worktree`).
 - **Web Browser**: Any standard modern web browser (Google Chrome, Microsoft Edge, Mozilla Firefox, Safari).
-- **Static HTTP Server**: Python built-in `http.server` or any local static web server.
+- **Static HTTP Server**: `scripts/run-review-server.py` or any threaded local static web server.
 
 ---
 
@@ -24,13 +24,16 @@ python scripts/bootstrap-dev-environment.py
 ### Running the Local Web Server
 Because the quiz fetches `data/questions.json` and `CHANGELOG.md` via JavaScript `fetch()`, files must be served over HTTP rather than opened directly as `file://` to prevent browser CORS restrictions.
 
-Start a local HTTP server from the repository root:
+Start the review server from the repository root:
 
 ```bash
-python -m http.server 8000
+python scripts/run-review-server.py serve --port 8000
 ```
 
 Open your browser and navigate to `http://localhost:8000`.
+The server threads its request handling because the application loads a dozen ES modules in
+parallel, which the single-threaded `python -m http.server` refuses with `ERR_CONNECTION_REFUSED`.
+It also sends `Cache-Control: no-store` so a reviewer always sees the current working tree.
 
 ### Development URL Testing Hooks
 The application includes URL query parameters to speed up development and visual testing:
@@ -69,7 +72,7 @@ Install the optional browser test dependency locally, then run the review server
 
 ```bash
 npm install --no-save --package-lock=false playwright
-python -m http.server 8062 --bind 127.0.0.1
+python scripts/run-review-server.py serve
 ```
 
 With Google Chrome installed, run:
@@ -124,6 +127,7 @@ python ../dev-guidelines/scripts/lint-taskfile.py TODO.md
 All developer utilities live in `scripts/` and adhere strictly to CLI guidelines with `--version`, `--help`, `--verbose`, `--debug`, and `--log-file`:
 - `scripts/bootstrap-dev-environment.py`: verifies environment readiness, repository structure, and runs test suites.
 - `scripts/deploy-to-production.py`: verifies preconditions, then finalizes `CHANGELOG.md`, regenerates translated changelogs and `sw.js`, commits, and tags a release.
+- `scripts/run-review-server.py`: serves the repository over threaded HTTP on `127.0.0.1:8062` for browser review and Playwright runs.
 - `scripts/generate-sw.py`: dynamically scans all assets and writes `sw.js` with versioned cache keys and 227 precached assets.
 - `scripts/translate-markdown.py`: translates `CHANGELOG.md` into `CHANGELOG.<lang>.md` overlays for the About view, chunking by heading and paragraph via Google Translate.
 - `scripts/generate-pwa-icons.py`: renders transparent PNG and ICO icons via headless Chrome and Pillow.

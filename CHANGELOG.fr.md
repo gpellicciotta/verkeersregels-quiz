@@ -14,6 +14,7 @@ Un aperçu résumé de toutes les modifications, par version de ce projet.
 ---
 
 ## v3.5.1-pre
+- DevEx: Le nouveau script `run-review-server.py` sert le projet via HTTP multithread pour la revue et les tests navigateur.
 - FrontEnd: Les paramètres s'ouvrent désormais en plein écran, avec le bouton de signalement en haut à gauche comme sur À propos.
 - FrontEnd: De nouveaux boutons démarrent un quiz avec les questions ratées ou refont uniquement les erreurs du tour.
 - FrontEnd: Un réglage inclut automatiquement les erreurs du quiz précédent dans un nouveau tour.
