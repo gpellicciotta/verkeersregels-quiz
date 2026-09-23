@@ -14,6 +14,7 @@ Una panoramica riepilogativa di tutte le modifiche, per versione di questo proge
 ---
 
 ## v3.5.1-pre
+- FrontEnd: Aggiunta una scheda dedicata per il supporto e la sponsorizzazione del progetto nella vista Informazioni.
 - FrontEnd: I pulsanti di azione ora sono fissi su mobile e il pulsante salva anche su desktop.
 - FrontEnd: Pulsante segnala errore nella visualizzazione quiz mobile spostato in una posizione fissa in basso a sinistra con design rotondo predefinito.
 - DevEx: Standardizzati tutti i messaggi di registrazione della console del browser e di avviso di runtime in inglese su tutti i moduli client.

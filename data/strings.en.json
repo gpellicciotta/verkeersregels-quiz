@@ -6,7 +6,6 @@
   "quiz.cancel_confirm": "Stop quiz",
   "title.quiz": "Traffic Rules Quiz",
   "title.carousel": "Traffic Signs Carousel",
-
   "start.description": "Practice Belgian traffic rules and signs.",
   "start.name_placeholder": "Name (optional)",
   "start.name_aria": "Your name (optional)",
@@ -26,7 +25,7 @@
   "start.btn_lang_tooltip": "Language: {cycle}",
   "start.hint_law_aria": "Law article hint: each question links to the relevant article in the Highway Code via this icon",
   "start.hint_law_tooltip": "Each question links to the relevant law article via this icon",
-  "start.copyright": "Copyright \u00a9 Giovanni Pellicciotta",
+  "start.copyright": "Copyright © Giovanni Pellicciotta",
   "start.offline": "Offline mode: app works fully offline (all questions and traffic signs available)",
   "start.quiz_mode_description": "{count} questions on rules and signs",
   "start.quiz_mode_description_1": "1 question on rules and signs",
@@ -36,7 +35,6 @@
   "start.btn_review_errors": "Practice frequent mistakes",
   "start.btn_review_errors_tooltip": "Practice mistakes made in the past",
   "start.btn_review_errors_aria": "Start a quiz with questions you previously answered incorrectly",
-
   "quiz.progress": "Question {n}/{total}",
   "quiz.progress_initial": "Question 1/{total}",
   "quiz.score": "Score: {correct}/{answered}",
@@ -51,7 +49,7 @@
   "quiz.explanation_title": "Explanation",
   "quiz.source_link_title": "View official law article in the Highway Code",
   "quiz.source_link_aria": "View official law article in the Highway Code",
-  "quiz.source_pill_text": "Highway Code \u2197",
+  "quiz.source_pill_text": "Highway Code ↗",
   "quiz.image_alt_situation": "Traffic situation",
   "quiz.image_alt_sign": "Traffic sign",
   "quiz.image_alt_sign_code": "Traffic sign {code}",
@@ -61,7 +59,6 @@
   "quiz.indicator_wrong": "Incorrect",
   "quiz.status_correct": "Correct",
   "quiz.status_wrong": "Incorrect",
-
   "result.title": "Quiz Result",
   "result.summary_name": "{name}, you scored {correct}/{total} ({pct}%) in {duration}.",
   "result.summary_no_name": "You scored {correct}/{total} ({pct}%) in {duration}.",
@@ -91,11 +88,9 @@
   "result.image_alt_sign": "Traffic sign",
   "result.image_alt_sign_code": "Traffic sign {code}",
   "result.image_alt_situation": "Traffic situation",
-
   "duration.sec": "{s} sec",
   "duration.min": "{m} min",
   "duration.min_sec": "{m} min {s} sec",
-
   "carousel.title_sr": "Traffic Signs Carousel",
   "carousel.btn_prev_aria": "Previous sign",
   "carousel.btn_prev_tooltip": "Previous sign (Arrow left)",
@@ -130,9 +125,7 @@
   "carousel.cat.autosnelweg": "Motorway",
   "carousel.cat.fietsers-voetgangers": "Cyclists & Pedestrians",
   "carousel.cat.default": "Traffic sign",
-
   "badge.since": "Since {year}",
-
   "config.title": "Settings",
   "config.screen_aria": "Settings",
   "config.btn_close_aria": "Close",
@@ -160,7 +153,7 @@
   "config.count_40": "40 questions",
   "config.count_50": "50 questions",
   "config.count_all": "All questions (full selection)",
-  "config.count_warning": "Only {n} questions are available due to the \u2018Rule age\u2019 filter.",
+  "config.count_warning": "Only {n} questions are available due to the ‘Rule age’ filter.",
   "config.label_type": "Question type",
   "config.type_all": "All question types (signs, rules, and situations)",
   "config.type_situation": "Traffic situations only (photos)",
@@ -189,7 +182,6 @@
   "config.carousel_since_2010": "Signs introduced/updated from 2010",
   "config.label_always_include_errors": "Always include errors from the last quiz",
   "config.btn_save": "Save",
-
   "report.title": "Report an error",
   "report.btn_close_aria": "Close",
   "report.description": "Do you see an ambiguity or inaccuracy in this context?\nLet us know here.",
@@ -208,16 +200,13 @@
   "report.view_carousel": "Traffic Sign Carousel",
   "report.view_about": "About screen",
   "report.view_config": "Settings screen",
-
   "changelog.modal_title": "Version history",
   "changelog.btn_close_aria": "Close",
   "changelog.btn_dismiss": "Close",
   "changelog.loading": "Loading version history...",
   "changelog.error": "Could not load version history.",
   "changelog.error_link": "View CHANGELOG.md directly.",
-
   "version.unknown": "unknown",
-
   "about.title": "About Traffic Rules Quiz",
   "about.screen_aria": "About Traffic Rules Quiz",
   "about.btn_close_aria": "Close",
@@ -228,18 +217,20 @@
   "about.source2_description": "History and recent changes to traffic rules and signs in Belgium.",
   "about.source3_title": "Wikimedia Commons & Belgian Traffic Signs",
   "about.source3_description": "Official SVG vector illustrations of Belgian traffic signs.",
-  "about.law_hint": "For each quiz question, the explanation icon \u2197 links directly to the corresponding law article.",
+  "about.law_hint": "For each quiz question, the explanation icon ↗ links directly to the corresponding law article.",
   "about.version_label": "App version",
   "about.changelog_heading": "Version History & Release Notes",
   "about.changelog_loading": "Loading version history...",
-  "about.copyright": "Copyright \u00a9 Giovanni Pellicciotta",
-
+  "about.copyright": "Copyright © Giovanni Pellicciotta",
   "lang.nl": "Nederlands",
   "lang.fr": "Français",
   "lang.de": "Deutsch",
   "lang.it": "Italiano",
   "lang.en": "English",
   "lang.btn_aria": "Switch language",
-  "lang.btn_tooltip": "Language"
+  "lang.btn_tooltip": "Language",
+  "about.support_heading": "Support the project",
+  "about.support_description": "Verkeersregels Quiz is free, open source, and ad-free. If you find the app valuable, consider supporting its development and hosting.",
+  "about.support_github": "Sponsor on GitHub",
+  "about.support_donate": "Support via donation"
 }
-

@@ -1938,11 +1938,60 @@ body.suppress-tooltips [data-tooltip]::before {
 }
 
 .about-version-card,
-.about-sources-card {
+.about-sources-card,
+.about-support-card {
   background: var(--color-card-subtle);
   border: 1px solid var(--color-card-border);
   border-radius: var(--radius);
   padding: 14px;
+}
+
+.about-support-desc {
+  margin: 0 0 14px 0;
+  font-size: var(--font-size-sm);
+  color: var(--color-muted);
+  line-height: 1.5;
+}
+
+.about-support-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.about-support-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  background: var(--color-card);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-md);
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: var(--font-size-sm);
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+.about-support-link:hover,
+.about-support-link:focus-visible {
+  background: var(--color-primary-tint);
+  border-color: var(--color-primary);
+  color: var(--color-primary-dark);
+  text-decoration: none;
+}
+
+.about-support-link .support-icon {
+  display: inline-flex;
+  align-items: center;
+  color: var(--color-primary);
+}
+
+.about-support-link .source-icon {
+  display: inline-flex;
+  align-items: center;
+  opacity: 0.7;
 }
 
 .about-version-header {
@@ -2229,6 +2278,10 @@ body.suppress-tooltips [data-tooltip]::before {
   display: flex;
   flex-direction: column;
   animation: modal-pop 0.18s ease-out;
+}
+
+dialog.modal-dialog:not([open]) {
+  display: none;
 }
 
 .quiz-cancel-dialog {
@@ -2588,6 +2641,7 @@ body.suppress-tooltips [data-tooltip]::before {
 
   .about-version-card,
   .about-sources-card,
+  .about-support-card,
   .config-section {
     padding: 20px;
   }

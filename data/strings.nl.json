@@ -6,7 +6,6 @@
   "quiz.cancel_confirm": "Quiz stoppen",
   "title.quiz": "Verkeersregels Quiz",
   "title.carousel": "Verkeersborden Carrousel",
-
   "start.description": "Oefen Belgische verkeersregels en borden.",
   "start.name_placeholder": "Naam (optioneel)",
   "start.name_aria": "Jouw naam (optioneel)",
@@ -26,7 +25,7 @@
   "start.btn_lang_tooltip": "Taal: {cycle}",
   "start.hint_law_aria": "Toelichting wetsartikel: bij elke vraag vind je via dit toelichtingsicoon direct het bijbehorende wetsartikel in de Wegcode",
   "start.hint_law_tooltip": "Bij elke vraag vind je via dit toelichtingsicoon direct het bijbehorende wetsartikel",
-  "start.copyright": "Copyright \u00a9 Giovanni Pellicciotta",
+  "start.copyright": "Copyright © Giovanni Pellicciotta",
   "start.offline": "Offline modus: de app werkt volledig offline (alle vragen en borden beschikbaar)",
   "start.quiz_mode_description": "{count} vragen over regels en borden",
   "start.quiz_mode_description_1": "1 vraag over regels en borden",
@@ -36,7 +35,6 @@
   "start.btn_review_errors": "Oefen veelgemaakte fouten",
   "start.btn_review_errors_tooltip": "Oefen fouten gemaakt in het verleden",
   "start.btn_review_errors_aria": "Start een quiz met vragen die je eerder fout beantwoordde",
-
   "quiz.progress": "Vraag {n}/{total}",
   "quiz.progress_initial": "Vraag 1/{total}",
   "quiz.score": "Score: {correct}/{answered}",
@@ -51,7 +49,7 @@
   "quiz.explanation_title": "Toelichting",
   "quiz.source_link_title": "Bekijk officieel wetsartikel in de Wegcode",
   "quiz.source_link_aria": "Bekijk officieel wetsartikel in de Wegcode",
-  "quiz.source_pill_text": "Wegcode \u2197",
+  "quiz.source_pill_text": "Wegcode ↗",
   "quiz.image_alt_situation": "Verkeerssituatie",
   "quiz.image_alt_sign": "Verkeersbord",
   "quiz.image_alt_sign_code": "Verkeersbord {code}",
@@ -61,7 +59,6 @@
   "quiz.indicator_wrong": "Fout",
   "quiz.status_correct": "Juist",
   "quiz.status_wrong": "Fout",
-
   "result.title": "Quiz Resultaat",
   "result.summary_name": "{name}, je scoorde {correct}/{total} ({pct}%) in {duration}.",
   "result.summary_no_name": "Je scoorde {correct}/{total} ({pct}%) in {duration}.",
@@ -91,11 +88,9 @@
   "result.image_alt_sign": "Verkeersbord",
   "result.image_alt_sign_code": "Verkeersbord {code}",
   "result.image_alt_situation": "Verkeerssituatie",
-
   "duration.sec": "{s} sec",
   "duration.min": "{m} min",
   "duration.min_sec": "{m} min {s} sec",
-
   "carousel.title_sr": "Verkeersborden Carrousel",
   "carousel.btn_prev_aria": "Vorig bord",
   "carousel.btn_prev_tooltip": "Vorig bord (Pijl-links)",
@@ -130,9 +125,7 @@
   "carousel.cat.autosnelweg": "Autosnelweg",
   "carousel.cat.fietsers-voetgangers": "Fietsers & Voetgangers",
   "carousel.cat.default": "Verkeersbord",
-
   "badge.since": "Sinds {year}",
-
   "config.title": "Instellingen",
   "config.screen_aria": "Instellingen",
   "config.btn_close_aria": "Sluiten",
@@ -189,7 +182,6 @@
   "config.carousel_since_2010": "Borden ingevoerd/gewijzigd vanaf 2010",
   "config.label_always_include_errors": "Neem foutieve vragen van vorige quiz automatisch op",
   "config.btn_save": "Opslaan",
-
   "report.title": "Meld een fout",
   "report.btn_close_aria": "Sluiten",
   "report.description": "Zie je een onduidelijkheid of onjuistheid in deze context?\nGeef het hier door.",
@@ -208,16 +200,13 @@
   "report.view_carousel": "Verkeersborden Carrousel",
   "report.view_about": "Over deze app",
   "report.view_config": "Instellingen scherm",
-
   "changelog.modal_title": "Versiegeschiedenis",
   "changelog.btn_close_aria": "Sluiten",
   "changelog.btn_dismiss": "Sluiten",
   "changelog.loading": "Versiegeschiedenis laden...",
   "changelog.error": "Kon versiegeschiedenis niet laden.",
   "changelog.error_link": "Bekijk CHANGELOG.md direct.",
-
   "version.unknown": "onbekend",
-
   "about.title": "Over Verkeersregels Quiz",
   "about.screen_aria": "Over Verkeersregels Quiz",
   "about.btn_close_aria": "Sluiten",
@@ -225,21 +214,23 @@
   "about.source1_title": "Belgische Wegcode (KB 1 december 1975)",
   "about.source1_description": "Algemeen reglement op de politie van het wegverkeer en van het gebruik van de openbare weg.",
   "about.source2_title": "Overzicht wetswijzigingen (Wegcode.be)",
-  "about.source2_description": "Historiek en recente aanpassingen aan de verkeersregels en verkeersborden in Belgi\u00eb.",
-  "about.source3_title": "Wikimedia Commons & Verkeersborden Belgi\u00eb",
-  "about.source3_description": "Offici\u00eble SVG vectorillustraties van Belgische verkeersborden.",
-  "about.law_hint": "Bij elke vraag in de quiz vind je via het toelichtingsicoon \u2197 direct het bijbehorende wetsartikel.",
+  "about.source2_description": "Historiek en recente aanpassingen aan de verkeersregels en verkeersborden in België.",
+  "about.source3_title": "Wikimedia Commons & Verkeersborden België",
+  "about.source3_description": "Officiële SVG vectorillustraties van Belgische verkeersborden.",
+  "about.law_hint": "Bij elke vraag in de quiz vind je via het toelichtingsicoon ↗ direct het bijbehorende wetsartikel.",
   "about.version_label": "App-versie",
   "about.changelog_heading": "Versiegeschiedenis & Release Notes",
   "about.changelog_loading": "Versiegeschiedenis laden...",
-  "about.copyright": "Copyright \u00a9 Giovanni Pellicciotta",
-
+  "about.copyright": "Copyright © Giovanni Pellicciotta",
   "lang.nl": "Nederlands",
   "lang.fr": "Français",
   "lang.de": "Deutsch",
   "lang.it": "Italiano",
   "lang.en": "English",
   "lang.btn_aria": "Taal wijzigen",
-  "lang.btn_tooltip": "Taal"
+  "lang.btn_tooltip": "Taal",
+  "about.support_heading": "Project ondersteunen",
+  "about.support_description": "Verkeersregels Quiz is gratis, open source en advertentievrij. Vind je de app waardevol? Overweeg om de ontwikkeling en hosting te ondersteunen.",
+  "about.support_github": "Sponsor via GitHub",
+  "about.support_donate": "Steun via donatie"
 }
-

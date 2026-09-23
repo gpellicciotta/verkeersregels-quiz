@@ -14,6 +14,7 @@ A summarized overview of all changes, per version of this project.
 ---
 
 ## v3.5.1-pre
+- FrontEnd: Added a dedicated sponsorship and project support card to the About view.
 - FrontEnd: Made action buttons sticky on mobile and the settings save button sticky on desktop.
 - FrontEnd: Moved report error button in mobile quiz view to a fixed position at the bottom left with default round design.
 - DevEx: Standardized all browser console logging and runtime warning messages to English across all client modules.

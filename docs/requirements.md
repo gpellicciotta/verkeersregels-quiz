@@ -51,6 +51,7 @@ Functional and technical requirements for the Verkeersregels Quiz application.
   - Full-window view accessible via the start screen Info button or `?view=about` URL parameter.
   - Displays application version tag dynamically derived from `CHANGELOG.md`.
   - Highlights authoritative legal and educational sources (Wegcode, VSV, Vias, De Grote Verkeerstoets, Wikimedia Commons).
+  - Offers a dedicated project support card with GitHub Sponsors and voluntary donation links.
   - Fetches and formats full release notes and version history from `CHANGELOG.md`.
   - Details software license terms and provides an immediate return button to the start screen.
 - **Dedicated Settings View**:

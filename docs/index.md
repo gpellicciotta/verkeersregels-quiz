@@ -16,6 +16,7 @@ Overview of all documentation and specifications for Verkeersregels Quiz.
 
 ## Specialized Documentation
 - [Specifications](specs/): Interface, format, and protocol specifications.
+- [Sponsorship & Donations](specs/sponsorship-and-donations.md): Evaluation and architectural recommendations for project funding.
 - [Architecture Decision Records](adrs/): Architectural decision records explaining key technical choices.
 - [Issue Records](issues/): Root cause analysis and resolution records for complex bugs.
 - [Installed App Update Failures](issues/pwa-update-stalls.md): Startup race, cache freshness, and browser regression verification.

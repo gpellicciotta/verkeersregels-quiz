@@ -6,7 +6,6 @@
   "quiz.cancel_confirm": "Quiz beenden",
   "title.quiz": "Verkehrsregels Quiz",
   "title.carousel": "Verkehrszeichen-Karussell",
-
   "start.description": "Üben Sie belgische Verkehrsregeln und Verkehrszeichen.",
   "start.name_placeholder": "Name (optional)",
   "start.name_aria": "Ihr Name (optional)",
@@ -36,7 +35,6 @@
   "start.btn_review_errors": "Häufige Fehler üben",
   "start.btn_review_errors_tooltip": "In der Vergangenheit gemachte Fehler üben",
   "start.btn_review_errors_aria": "Ein Quiz mit Fragen starten, die du zuvor falsch beantwortet hast",
-
   "quiz.progress": "Frage {n}/{total}",
   "quiz.progress_initial": "Frage 1/{total}",
   "quiz.score": "Ergebnis: {correct}/{answered}",
@@ -51,7 +49,7 @@
   "quiz.explanation_title": "Erläuterung",
   "quiz.source_link_title": "Offiziellen Gesetzesartikel in der Straßenverkehrsordnung ansehen",
   "quiz.source_link_aria": "Offiziellen Gesetzesartikel in der Straßenverkehrsordnung ansehen",
-  "quiz.source_pill_text": "Straßenverkehrsordnung \u2197",
+  "quiz.source_pill_text": "Straßenverkehrsordnung ↗",
   "quiz.image_alt_situation": "Verkehrssituation",
   "quiz.image_alt_sign": "Verkehrszeichen",
   "quiz.image_alt_sign_code": "Verkehrszeichen {code}",
@@ -61,7 +59,6 @@
   "quiz.indicator_wrong": "Falsch",
   "quiz.status_correct": "Richtig",
   "quiz.status_wrong": "Falsch",
-
   "result.title": "Quiz-Ergebnis",
   "result.summary_name": "{name}, Sie haben {correct}/{total} ({pct}%) in {duration} erreicht.",
   "result.summary_no_name": "Sie haben {correct}/{total} ({pct}%) in {duration} erreicht.",
@@ -91,11 +88,9 @@
   "result.image_alt_sign": "Verkehrszeichen",
   "result.image_alt_sign_code": "Verkehrszeichen {code}",
   "result.image_alt_situation": "Verkehrssituation",
-
   "duration.sec": "{s} Sek.",
   "duration.min": "{m} Min.",
   "duration.min_sec": "{m} Min. {s} Sek.",
-
   "carousel.title_sr": "Verkehrszeichen-Karussell",
   "carousel.btn_prev_aria": "Vorheriges Schild",
   "carousel.btn_prev_tooltip": "Vorheriges Schild (Pfeil links)",
@@ -130,9 +125,7 @@
   "carousel.cat.autosnelweg": "Autobahn",
   "carousel.cat.fietsers-voetgangers": "Radfahrer & Fußgänger",
   "carousel.cat.default": "Verkehrszeichen",
-
   "badge.since": "Seit {year}",
-
   "config.title": "Einstellungen",
   "config.screen_aria": "Einstellungen",
   "config.btn_close_aria": "Schließen",
@@ -189,7 +182,6 @@
   "config.carousel_since_2010": "Schilder eingeführt/geändert ab 2010",
   "config.label_always_include_errors": "Fehlerfragen des letzten Quiz automatisch aufnehmen",
   "config.btn_save": "Speichern",
-
   "report.title": "Fehler melden",
   "report.btn_close_aria": "Schließen",
   "report.description": "Haben Sie eine Unklarheit oder einen Fehler in diesem Kontext bemerkt?\nBitte teilen Sie es uns hier mit.",
@@ -208,16 +200,13 @@
   "report.view_carousel": "Verkehrsschilder-Karussell",
   "report.view_about": "Info-Bildschirm",
   "report.view_config": "Einstellungsbildschirm",
-
   "changelog.modal_title": "Versionsgeschichte",
   "changelog.btn_close_aria": "Schließen",
   "changelog.btn_dismiss": "Schließen",
   "changelog.loading": "Versionsgeschichte wird geladen...",
   "changelog.error": "Versionsgeschichte konnte nicht geladen werden.",
   "changelog.error_link": "CHANGELOG.md direkt ansehen.",
-
   "version.unknown": "unbekannt",
-
   "about.title": "Über Verkehrsregels Quiz",
   "about.screen_aria": "Über Verkehrsregels Quiz",
   "about.btn_close_aria": "Schließen",
@@ -228,17 +217,20 @@
   "about.source2_description": "Geschichte und jüngste Anpassungen der Verkehrsregeln und Verkehrszeichen in Belgien.",
   "about.source3_title": "Wikimedia Commons & Verkehrszeichen Belgien",
   "about.source3_description": "Offizielle SVG-Vektorillustrationen belgischer Verkehrszeichen.",
-  "about.law_hint": "Bei jeder Quizfrage finden Sie über das Hinweissymbol \u2197 direkt den zugehörigen Gesetzesartikel.",
+  "about.law_hint": "Bei jeder Quizfrage finden Sie über das Hinweissymbol ↗ direkt den zugehörigen Gesetzesartikel.",
   "about.version_label": "App-Version",
   "about.changelog_heading": "Versionsgeschichte & Release Notes",
   "about.changelog_loading": "Versionsgeschichte wird geladen...",
   "about.copyright": "Copyright © Giovanni Pellicciotta",
-
   "lang.nl": "Nederlands",
   "lang.fr": "Français",
   "lang.de": "Deutsch",
   "lang.it": "Italiano",
   "lang.en": "English",
   "lang.btn_aria": "Sprache ändern",
-  "lang.btn_tooltip": "Sprache"
+  "lang.btn_tooltip": "Sprache",
+  "about.support_heading": "Projekt unterstützen",
+  "about.support_description": "Verkeersregels Quiz ist kostenlos, Open Source und werbefrei. Wenn Sie die App nützlich finden, unterstützen Sie gerne Entwicklung und Hosting.",
+  "about.support_github": "Auf GitHub sponsern",
+  "about.support_donate": "Per Spende unterstützen"
 }

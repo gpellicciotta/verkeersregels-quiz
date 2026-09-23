@@ -64,6 +64,10 @@ class TestAboutView(unittest.TestCase):
         self.assertIn('id="about-version-tag"', html, "index.html must define about-version-tag")
         self.assertIn('id="about-changelog-body"', html, "index.html must define about-changelog-body")
         self.assertIn('class="about-sources-card"', html, "index.html must define about-sources-card")
+        self.assertIn('class="about-support-card"', html, "index.html must define about-support-card")
+        self.assertIn('id="about-support-github"', html, "About screen must define GitHub sponsor link")
+        self.assertIn('id="about-support-donate"', html, "About screen must define donation link")
+        self.assertIn('https://github.com/sponsors/gpellicciotta', html, "About screen must link to GitHub Sponsors")
         self.assertIn('Belgische Wegcode', html, "About screen must reference Belgische Wegcode")
         self.assertIn('Overzicht wetswijzigingen', html, "About screen must reference wetswijzigingen")
         self.assertIn('Wikimedia Commons', html, "About screen must reference Wikimedia Commons")
@@ -71,8 +75,10 @@ class TestAboutView(unittest.TestCase):
 
         # Sources card must be presented before version history card
         sources_pos = html.index('class="about-sources-card"')
+        support_pos = html.index('class="about-support-card"')
         version_pos = html.index('class="about-version-card"')
-        self.assertLess(sources_pos, version_pos, "Gebruikte bronnen card must precede Versiegeschiedenis card")
+        self.assertLess(sources_pos, support_pos, "Gebruikte bronnen card must precede Project ondersteunen card")
+        self.assertLess(support_pos, version_pos, "Project ondersteunen card must precede Versiegeschiedenis card")
 
     def test_css_contains_about_and_start_meta_styles(self) -> None:
         """Validates that style.css defines layout rules for the start meta row, tooltips, and About view."""
@@ -89,6 +95,8 @@ class TestAboutView(unittest.TestCase):
         self.assertIn("#screen-about", css, "style.css must define #screen-about styles")
         self.assertIn(".about-header", css, "style.css must define .about-header")
         self.assertIn(".btn-about-back", css, "style.css must define .btn-about-back")
+        self.assertIn(".about-support-card", css, "style.css must define .about-support-card")
+        self.assertIn(".about-support-link", css, "style.css must define .about-support-link")
         self.assertIn(".about-changelog-body", css, "style.css must define .about-changelog-body")
 
     def test_js_app_implements_about_screen_navigation(self) -> None:

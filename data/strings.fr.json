@@ -6,7 +6,6 @@
   "quiz.cancel_confirm": "Arrêter le quiz",
   "title.quiz": "Quiz Code de la Route",
   "title.carousel": "Carrousel des Panneaux Routiers",
-
   "start.description": "Exercez-vous aux règles de circulation et aux panneaux belges.",
   "start.name_placeholder": "Nom (optionnel)",
   "start.name_aria": "Votre nom (optionnel)",
@@ -26,7 +25,7 @@
   "start.btn_lang_tooltip": "Langue: {cycle}",
   "start.hint_law_aria": "Explication de l'article de loi : pour chaque question, cette icône vous renvoie directement à l'article correspondant du Code de la route",
   "start.hint_law_tooltip": "Pour chaque question, cette icône vous renvoie directement à l'article de loi correspondant",
-  "start.copyright": "Copyright \u00a9 Giovanni Pellicciotta",
+  "start.copyright": "Copyright © Giovanni Pellicciotta",
   "start.offline": "Mode hors ligne : l'application fonctionne entièrement hors ligne (toutes les questions et panneaux sont disponibles)",
   "start.quiz_mode_description": "{count} questions sur les règles et les panneaux",
   "start.quiz_mode_description_1": "1 question sur les règles et les panneaux",
@@ -36,7 +35,6 @@
   "start.btn_review_errors": "Réviser les erreurs fréquentes",
   "start.btn_review_errors_tooltip": "Réviser les erreurs commises dans le passé",
   "start.btn_review_errors_aria": "Démarrer un quiz avec les questions auxquelles tu as déjà répondu de façon incorrecte",
-
   "quiz.progress": "Question {n}/{total}",
   "quiz.progress_initial": "Question 1/{total}",
   "quiz.score": "Score : {correct}/{answered}",
@@ -51,7 +49,7 @@
   "quiz.explanation_title": "Explication",
   "quiz.source_link_title": "Consulter l'article officiel dans le Code de la route",
   "quiz.source_link_aria": "Consulter l'article officiel dans le Code de la route",
-  "quiz.source_pill_text": "Code de la route \u2197",
+  "quiz.source_pill_text": "Code de la route ↗",
   "quiz.image_alt_situation": "Situation de circulation",
   "quiz.image_alt_sign": "Panneau de signalisation",
   "quiz.image_alt_sign_code": "Panneau de signalisation {code}",
@@ -61,7 +59,6 @@
   "quiz.indicator_wrong": "Incorrect",
   "quiz.status_correct": "Correct",
   "quiz.status_wrong": "Incorrect",
-
   "result.title": "Résultat du Quiz",
   "result.summary_name": "{name}, vous avez obtenu {correct}/{total} ({pct}%) en {duration}.",
   "result.summary_no_name": "Vous avez obtenu {correct}/{total} ({pct}%) en {duration}.",
@@ -91,11 +88,9 @@
   "result.image_alt_sign": "Panneau de signalisation",
   "result.image_alt_sign_code": "Panneau de signalisation {code}",
   "result.image_alt_situation": "Situation de circulation",
-
   "duration.sec": "{s} s",
   "duration.min": "{m} min",
   "duration.min_sec": "{m} min {s} s",
-
   "carousel.title_sr": "Carrousel des Panneaux Routiers",
   "carousel.btn_prev_aria": "Panneau précédent",
   "carousel.btn_prev_tooltip": "Panneau précédent (Flèche gauche)",
@@ -130,9 +125,7 @@
   "carousel.cat.autosnelweg": "Autoroute",
   "carousel.cat.fietsers-voetgangers": "Cyclistes & Piétons",
   "carousel.cat.default": "Panneau de signalisation",
-
   "badge.since": "Depuis {year}",
-
   "config.title": "Paramètres",
   "config.screen_aria": "Paramètres",
   "config.btn_close_aria": "Fermer",
@@ -189,7 +182,6 @@
   "config.carousel_since_2010": "Panneaux introduits/modifiés à partir de 2010",
   "config.label_always_include_errors": "Toujours inclure les questions ratées du dernier quiz",
   "config.btn_save": "Enregistrer",
-
   "report.title": "Signaler une erreur",
   "report.btn_close_aria": "Fermer",
   "report.description": "Vous constatez une ambiguïté ou une inexactitude dans ce contexte ?\nSignalez-le ici.",
@@ -208,16 +200,13 @@
   "report.view_carousel": "Carrousel des panneaux",
   "report.view_about": "Écran «À propos»",
   "report.view_config": "Écran des paramètres",
-
   "changelog.modal_title": "Historique des versions",
   "changelog.btn_close_aria": "Fermer",
   "changelog.btn_dismiss": "Fermer",
   "changelog.loading": "Chargement de l'historique des versions...",
   "changelog.error": "Impossible de charger l'historique des versions.",
   "changelog.error_link": "Consultez directement CHANGELOG.md.",
-
   "version.unknown": "inconnue",
-
   "about.title": "À propos du Quiz Code de la Route",
   "about.screen_aria": "À propos du Quiz Code de la Route",
   "about.btn_close_aria": "Fermer",
@@ -228,17 +217,20 @@
   "about.source2_description": "Historique et modifications récentes apportées aux règles de circulation et panneaux en Belgique.",
   "about.source3_title": "Wikimedia Commons & Panneaux routiers Belgique",
   "about.source3_description": "Illustrations vectorielles SVG officielles des panneaux routiers belges.",
-  "about.law_hint": "Pour chaque question du quiz, l'icône d'explication \u2197 vous renvoie directement à l'article de loi correspondant.",
+  "about.law_hint": "Pour chaque question du quiz, l'icône d'explication ↗ vous renvoie directement à l'article de loi correspondant.",
   "about.version_label": "Version de l'application",
   "about.changelog_heading": "Historique des versions & Notes de version",
   "about.changelog_loading": "Chargement de l'historique des versions...",
-  "about.copyright": "Copyright \u00a9 Giovanni Pellicciotta",
-
+  "about.copyright": "Copyright © Giovanni Pellicciotta",
   "lang.nl": "Nederlands",
   "lang.fr": "Français",
   "lang.de": "Deutsch",
   "lang.it": "Italiano",
   "lang.en": "English",
   "lang.btn_aria": "Changer de langue",
-  "lang.btn_tooltip": "Langue"
+  "lang.btn_tooltip": "Langue",
+  "about.support_heading": "Soutenir le projet",
+  "about.support_description": "Verkeersregels Quiz est gratuit, open source et sans publicité. Si vous trouvez l'application utile, pensez à soutenir son développement et son hébergement.",
+  "about.support_github": "Sponsoriser sur GitHub",
+  "about.support_donate": "Faire un don"
 }
