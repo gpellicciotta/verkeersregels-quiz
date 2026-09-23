@@ -82,6 +82,7 @@ class TestAboutView(unittest.TestCase):
         self.assertIn('id="about-support-github"', html, "About screen must define GitHub sponsor link")
         self.assertIn('id="about-support-donate"', html, "About screen must define donation link")
         self.assertIn('https://github.com/sponsors/gpellicciotta', html, "About screen must link to GitHub Sponsors")
+        self.assertIn('https://paypal.me/gpellicciotta', html, "About screen must link to PayPal donation")
         self.assertIn('Belgische Wegcode', html, "About screen must reference Belgische Wegcode")
         self.assertIn('Overzicht wetswijzigingen', html, "About screen must reference wetswijzigingen")
         self.assertIn('Wikimedia Commons', html, "About screen must reference Wikimedia Commons")

@@ -32,7 +32,7 @@ We evaluated multiple developer funding and donation mechanisms.
    Provide a direct link to `https://github.com/sponsors/gpellicciotta`.
    Offers zero platform and transaction fees for individual community contributors.
 2. **Direct Donation Option**:
-   Provide a voluntary donation option for supporters without a GitHub profile.
+   Provide a direct link to `https://paypal.me/gpellicciotta` for supporters without a GitHub profile.
 
 ### **[Decided]** Zero-Footprint Client Integration
 - Keep all payment processing external via secure hosted pages.
