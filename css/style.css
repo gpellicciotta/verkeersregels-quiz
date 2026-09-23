@@ -217,11 +217,14 @@ body {
   position: relative;
   width: 100%;
   margin: 0 auto;
-  padding: 16px 14px 20px;
+  padding: 12px 14px;
   display: flex;
   flex-direction: column;
   flex: 1;
   min-height: 100dvh;
+  height: 100dvh;
+  max-height: 100dvh;
+  overflow: hidden;
 }
 
 #screen-start,
@@ -229,11 +232,40 @@ body {
 #screen-carousel,
 #screen-about,
 #screen-config,
-#screen-result {
+#screen-stats,
+#screen-result,
+.screen {
   display: flex;
   flex-direction: column;
-  flex: 1;
+  flex: 1 1 auto;
   width: 100%;
+  height: 100%;
+  min-height: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.view-header {
+  flex-shrink: 0;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: var(--color-bg);
+}
+
+.view-content {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  min-height: 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+.view-footer {
+  flex-shrink: 0;
+  position: sticky;
+  bottom: 0;
+  z-index: 20;
+  background: var(--color-bg);
 }
 
 h1 {
@@ -659,6 +691,19 @@ body.suppress-tooltips [data-tooltip]::before {
   max-width: 480px;
 }
 
+.start-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex: 1 1 auto;
+}
+
+#start-form {
+  width: 100%;
+}
+
 .start-action-row {
   display: flex;
   align-items: center;
@@ -953,7 +998,17 @@ body.suppress-tooltips [data-tooltip]::before {
    ========================================================================== */
 
 #screen-quiz {
-  padding-bottom: 76px;
+  padding-bottom: 0;
+}
+
+.quiz-header-wrap {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: var(--color-bg);
+  padding: 8px 0;
+  border-bottom: 1px solid var(--color-border-subtle);
+  margin-bottom: 0;
 }
 
 .quiz-header {
@@ -962,25 +1017,46 @@ body.suppress-tooltips [data-tooltip]::before {
   align-items: center;
   font-weight: 600;
   color: var(--color-muted);
-  margin-bottom: 8px;
+  margin-bottom: 0;
   gap: 8px;
-  padding-right: 36px;
+  padding-right: 0;
+}
+
+.quiz-header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  min-width: 0;
+}
+
+.quiz-header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
 }
 
 #quiz-progress {
-  flex: 1;
   text-align: left;
 }
 
 #quiz-score {
-  flex: 1;
   text-align: right;
 }
 
 .quiz-close {
-  position: absolute;
-  top: 12px;
-  right: 12px;
+  position: relative;
+  top: auto;
+  right: auto;
+}
+
+.quiz-content {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  padding: 12px 0;
+  min-height: 0;
+  -webkit-overflow-scrolling: touch;
 }
 
 .quiz-status-indicator {
@@ -1345,16 +1421,18 @@ body.suppress-tooltips [data-tooltip]::before {
   z-index: 20;
   background: var(--color-bg);
   display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  gap: 0;
-  margin-bottom: 8px;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 0;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--color-border-subtle);
 }
 
 .result-header-spacer {
-  display: none;
+  display: block;
+  flex: 1;
+  min-width: 0;
 }
 
 .result-header-text {
@@ -1365,8 +1443,79 @@ body.suppress-tooltips [data-tooltip]::before {
 
 .result-header-text h1,
 .result-title {
-  margin: 0 0 4px 0;
+  margin: 0 0 2px 0;
   text-align: center;
+}
+
+#result-subtitle {
+  font-size: var(--font-size-sm);
+  color: var(--color-muted);
+  margin: 0;
+}
+
+.result-header-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+  flex: 1;
+  min-width: 0;
+}
+
+@media (max-width: 639px) {
+  .result-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 0;
+  }
+
+  .result-header-spacer {
+    display: none;
+  }
+
+  .result-header-text {
+    text-align: center;
+    width: 100%;
+    padding: 0 40px;
+  }
+
+  .result-header-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .result-btn-close {
+    position: absolute;
+    top: 10px;
+    right: 6px;
+  }
+}
+
+.result-content {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  padding: 16px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-height: 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+.result-footer {
+  position: sticky;
+  bottom: 0;
+  z-index: 20;
+  background: var(--color-bg);
+  padding: 12px 0;
+  border-top: 1px solid var(--color-border-subtle);
+  margin-top: auto;
+  width: 100%;
 }
 
 #result-summary {
@@ -1377,21 +1526,19 @@ body.suppress-tooltips [data-tooltip]::before {
 }
 
 .result-actions {
-  margin: 12px 0 6px;
+  margin: 0;
   width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   gap: 10px;
-  flex-shrink: 0;
+  flex-wrap: wrap;
 }
 
-/* Positioned relative to #app (the outer card), not .result-actions: sits in the
-   card's actual top-right corner rather than inline with the share/print buttons. */
 .result-btn-close {
-  position: absolute;
-  top: 12px;
-  right: 12px;
+  position: relative;
+  top: auto;
+  right: auto;
 }
 
 .result-btn-round {
@@ -1589,15 +1736,17 @@ body.suppress-tooltips [data-tooltip]::before {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 12px;
+  margin-bottom: 0;
   gap: 8px;
   flex-wrap: nowrap;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--color-border-subtle);
 }
 
 .carousel-header-spacer {
-  flex: 1;
+  width: 38px;
+  min-width: 38px;
+  flex: 0 0 38px;
 }
 
 .carousel-title {
@@ -1613,18 +1762,42 @@ body.suppress-tooltips [data-tooltip]::before {
 }
 
 .carousel-header-actions {
-  flex: 1;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
+  gap: 8px;
+  flex: 1;
 }
 
-/* Positioned relative to #app (the outer card), not .carousel-header-actions: sits in the
-   card's actual top-right corner instead of inline with the playback controls. */
 .btn-carousel-close {
-  position: absolute;
-  top: 12px;
-  right: 12px;
+  width: 38px;
+  min-width: 38px;
+  flex: 0 0 38px;
+  position: relative;
+  top: auto;
+  right: auto;
+}
+
+.carousel-content {
+  flex: 1 1 auto;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 12px 0;
+  min-height: 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+.carousel-footer {
+  position: sticky;
+  bottom: 0;
+  z-index: 20;
+  background: var(--color-bg);
+  padding: 10px 0 4px;
+  border-top: 1px solid var(--color-border-subtle);
+  margin-top: auto;
+  width: 100%;
 }
 
 .btn-carousel-ctrl {
@@ -1921,12 +2094,19 @@ body.suppress-tooltips [data-tooltip]::before {
   z-index: 20;
   background: var(--color-bg);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 16px 0;
+  padding: 10px 0;
   border-bottom: 1px solid var(--color-border-subtle);
-  margin-bottom: 20px;
-  min-height: 44px;
+  margin-bottom: 0;
+  min-height: 48px;
+}
+
+.about-header-spacer {
+  display: block;
+  width: 38px;
+  min-width: 38px;
+  flex: 0 0 38px;
 }
 
 .about-title {
@@ -1935,6 +2115,7 @@ body.suppress-tooltips [data-tooltip]::before {
   color: var(--color-primary);
   margin: 0;
   text-align: center;
+  flex: 1;
 }
 
 .btn-about-close,
@@ -1942,16 +2123,23 @@ body.suppress-tooltips [data-tooltip]::before {
 .btn-config-close,
 .btn-stats-close,
 .btn-stats-back {
-  position: absolute;
-  right: 12px;
-  top: 12px;
+  width: 38px;
+  min-width: 38px;
+  flex: 0 0 38px;
+  position: relative;
+  top: auto;
+  right: auto;
 }
 
 .about-content {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  flex: 1;
+  flex: 1 1 auto;
+  overflow-y: auto;
+  padding: 16px 0;
+  min-height: 0;
+  -webkit-overflow-scrolling: touch;
 }
 
 .about-version-card,
@@ -2107,8 +2295,13 @@ body.suppress-tooltips [data-tooltip]::before {
 }
 
 .about-footer {
+  position: sticky;
+  bottom: 0;
+  z-index: 20;
+  background: var(--color-bg);
+  padding: 10px 0;
+  border-top: 1px solid var(--color-border-subtle);
   margin-top: auto;
-  padding-top: 14px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -2124,12 +2317,18 @@ body.suppress-tooltips [data-tooltip]::before {
   z-index: 20;
   background: var(--color-bg);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 16px 0;
+  padding: 10px 0;
   border-bottom: 1px solid var(--color-border-subtle);
-  margin-bottom: 20px;
-  min-height: 44px;
+  margin-bottom: 0;
+  min-height: 48px;
+}
+
+.stats-header-spacer {
+  display: block;
+  width: 38px;
+  flex-shrink: 0;
 }
 
 .stats-title {
@@ -2138,13 +2337,18 @@ body.suppress-tooltips [data-tooltip]::before {
   color: var(--color-primary);
   margin: 0;
   text-align: center;
+  flex: 1;
 }
 
 .stats-content {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  flex: 1;
+  flex: 1 1 auto;
+  overflow-y: auto;
+  padding: 16px 0;
+  min-height: 0;
+  -webkit-overflow-scrolling: touch;
 }
 
 .stats-card {
@@ -2258,8 +2462,13 @@ body.suppress-tooltips [data-tooltip]::before {
 }
 
 .stats-footer {
+  position: sticky;
+  bottom: 0;
+  z-index: 20;
+  background: var(--color-bg);
+  padding: 10px 0;
+  border-top: 1px solid var(--color-border-subtle);
   margin-top: auto;
-  padding-top: 14px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -2281,12 +2490,19 @@ body.suppress-tooltips [data-tooltip]::before {
   z-index: 20;
   background: var(--color-bg);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 16px 0;
+  padding: 10px 0;
   border-bottom: 1px solid var(--color-border-subtle);
-  margin-bottom: 20px;
-  min-height: 44px;
+  margin-bottom: 0;
+  min-height: 48px;
+}
+
+.config-header-spacer {
+  display: block;
+  width: 38px;
+  min-width: 38px;
+  flex: 0 0 38px;
 }
 
 .config-title {
@@ -2295,13 +2511,18 @@ body.suppress-tooltips [data-tooltip]::before {
   color: var(--color-primary);
   margin: 0;
   text-align: center;
+  flex: 1;
 }
 
 .config-content {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  flex: 1;
+  flex: 1 1 auto;
+  overflow-y: auto;
+  padding: 16px 0;
+  min-height: 0;
+  -webkit-overflow-scrolling: touch;
 }
 
 .config-section {
@@ -2416,8 +2637,8 @@ body.suppress-tooltips [data-tooltip]::before {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
-  padding: 14px 0;
+  margin-top: auto;
+  padding: 10px 0;
   background: var(--color-bg);
   border-top: 1px solid var(--color-border-subtle);
 }
@@ -2427,6 +2648,13 @@ body.suppress-tooltips [data-tooltip]::before {
   width: auto;
   padding: 10px 28px;
   font-size: var(--font-size-sm);
+}
+
+.view-footer-spacer {
+  display: block;
+  width: 38px;
+  min-width: 38px;
+  flex: 0 0 38px;
 }
 
 /* ==========================================================================
@@ -2788,11 +3016,14 @@ dialog.modal-dialog:not([open]) {
 
   #app {
     max-width: 620px;
-    min-height: calc(100vh - 48px);
+    height: calc(100dvh - 48px);
+    max-height: calc(100dvh - 48px);
+    min-height: 0;
     background: var(--color-card);
     border-radius: var(--radius-xl);
     box-shadow: var(--shadow-lg);
-    padding: 28px 32px 32px;
+    padding: 24px 32px;
+    overflow: hidden;
   }
 
   .options-images {
@@ -2835,11 +3066,15 @@ dialog.modal-dialog:not([open]) {
     padding: 20px;
   }
 
+  .view-header,
+  .view-footer,
   .about-header,
   .config-header,
   .stats-header,
   .carousel-header,
   .result-header,
+  .quiz-header-wrap,
+  .quiz-bottom-meta,
   .config-actions {
     background: var(--color-card);
   }
@@ -3010,8 +3245,11 @@ dialog.modal-dialog:not([open]) {
 
   #app {
     max-width: 960px;
-    min-height: calc(100vh - 64px);
-    padding: 32px 40px 32px;
+    height: calc(100dvh - 64px);
+    max-height: calc(100dvh - 64px);
+    min-height: 0;
+    padding: 24px 36px;
+    overflow: hidden;
   }
 
   #screen-start {

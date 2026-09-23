@@ -49,136 +49,131 @@
 
   <!-- Start screen -->
   <section id="screen-start" class="screen">
-    <!-- 1. The title (1 heading line at top) -->
-    <h1 id="start-title" class="start-title" data-i18n="title.quiz">Verkeersregels Quiz</h1>
+    <!-- Header: title and short explanation -->
+    <header class="start-header view-header">
+      <h1 id="start-title" class="start-title" data-i18n="title.quiz">Verkeersregels Quiz</h1>
+      <p id="start-desc" class="start-desc" data-i18n="start.description">Oefen Belgische verkeersregels en borden.</p>
+      <div id="filter-notice" class="filter-notice hidden"></div>
+    </header>
 
-    <!-- 2. A short explanation sentence (1 line underneath) -->
-    <p id="start-desc" class="start-desc" data-i18n="start.description">Oefen Belgische verkeersregels en borden.</p>
-    <div id="filter-notice" class="filter-notice hidden"></div>
-
-    <!-- 3. An invite to give a name and start the quiz (both on 1 line: smaller start button, shaped like an arrow to the right) -->
-    <div class="start-action-row" id="start-action-row">
-      <div id="quiz-start-fields" class="quiz-start-fields">
-        <input type="text" id="player-name" class="player-name-input" placeholder="Naam (optioneel)" aria-label="Jouw naam (optioneel)" data-i18n-placeholder="start.name_placeholder" data-i18n-aria="start.name_aria">
+    <!-- Main content: action row, name input, start button, error review button -->
+    <div class="start-content view-content">
+      <div class="start-action-row" id="start-action-row">
+        <div id="quiz-start-fields" class="quiz-start-fields">
+          <input type="text" id="player-name" class="player-name-input" placeholder="Naam (optioneel)" aria-label="Jouw naam (optioneel)" data-i18n-placeholder="start.name_placeholder" data-i18n-aria="start.name_aria">
+        </div>
+        <button id="btn-start" class="btn-primary btn-start-arrow" type="button" aria-label="Start quiz" title="Start quiz" data-i18n-aria="start.btn_quiz" data-i18n-tooltip="start.btn_quiz">
+          <span id="btn-start-label" class="btn-start-label" data-i18n="start.btn_quiz">Start quiz</span>
+        </button>
       </div>
-      <button id="btn-start" class="btn-primary btn-start-arrow" type="button" aria-label="Start quiz" title="Start quiz" data-i18n-aria="start.btn_quiz" data-i18n-tooltip="start.btn_quiz">
-        <span id="btn-start-label" class="btn-start-label" data-i18n="start.btn_quiz">Start quiz</span>
+      <p id="start-error" class="error hidden"></p>
+      <button type="button" id="btn-start-errors" class="btn-secondary btn-review-errors hidden"
+              aria-label="Oefen veelgemaakte fouten"
+              title="Oefen fouten gemaakt in het verleden"
+              data-tooltip="Oefen fouten gemaakt in het verleden"
+              data-i18n="start.btn_review_errors"
+              data-i18n-aria="start.btn_review_errors_aria"
+              data-i18n-tooltip="start.btn_review_errors_tooltip">
+        Oefen veelgemaakte fouten
       </button>
-    </div>
-    <p id="start-error" class="error hidden"></p>
-    <button type="button" id="btn-start-errors" class="btn-secondary btn-review-errors hidden"
-            aria-label="Oefen veelgemaakte fouten"
-            title="Oefen fouten gemaakt in het verleden"
-            data-tooltip="Oefen fouten gemaakt in het verleden"
-            data-i18n="start.btn_review_errors"
-            data-i18n-aria="start.btn_review_errors_aria"
-            data-i18n-tooltip="start.btn_review_errors_tooltip">
-      Oefen veelgemaakte fouten
-    </button>
 
-    <!-- Hidden mode options for script and testing compatibility -->
-    <div class="sr-only" aria-hidden="true">
-      <input type="radio" name="start-mode" id="radio-mode-quiz" value="quiz" checked>
-      <input type="radio" name="start-mode" id="radio-mode-carousel" value="carousel">
-      <span id="quiz-mode-desc" data-i18n="start.quiz_mode_description">20 vragen over regels en borden</span>
-    </div>
-
-    <!-- 4. Whitespace + subtle line -->
-    <div class="start-bottom-meta">
-      <hr class="start-divider">
-
-      <!-- 5. The circle buttons -->
-      <div class="start-meta-bar" role="region" aria-label="Navigatie, instellingen en informatie">
-        <div class="start-meta-group start-meta-actions">
-          <!-- Circle 1: Mode switch button (quiz <-> carousel) -->
-          <button type="button" id="btn-mode-toggle" class="start-meta-item start-meta-btn start-meta-btn-action"
-                  aria-label="Wissel naar Verkeersborden Carrousel"
-                  data-tooltip="Wissel naar carrousel"
-                  data-i18n-aria="start.mode_toggle_aria_to_carousel"
-                  data-i18n-tooltip="start.mode_toggle_to_carousel">
-            <span class="start-meta-svg mode-icon-carousel" data-icon="carousel" aria-hidden="true"></span>
-            <span class="start-meta-svg mode-icon-quiz hidden" data-icon="quiz" aria-hidden="true"></span>
-          </button>
-
-          <!-- Circle 2: Configuration button -->
-          <button type="button" id="btn-config" class="start-meta-item start-meta-btn start-meta-btn-action"
-                  aria-label="Open instellingen"
-                  data-tooltip="Instellingen"
-                  data-i18n-aria="start.btn_config_aria"
-                  data-i18n-tooltip="start.btn_config_tooltip">
-            <span class="start-meta-svg" data-icon="settings" aria-hidden="true"></span>
-          </button>
-
-          <!-- Circle 3: About button -->
-          <button type="button" id="btn-about" class="start-meta-item start-about-btn start-meta-btn-action"
-                  aria-label="Over deze app (versie, release notes &amp; bronnen)"
-                  data-tooltip="Over deze app (versie, release notes &amp; bronnen)"
-                  data-i18n-aria="start.btn_about_aria"
-                  data-i18n-tooltip="start.btn_about_tooltip">
-            <span class="start-meta-svg" data-icon="info" aria-hidden="true"></span>
-          </button>
-
-          <!-- Circle 4: Language button (toggles between available languages) -->
-          <button type="button" id="btn-lang" class="start-meta-item start-meta-btn start-meta-btn-action btn-lang"
-                  aria-label="Taal wijzigen"
-                  data-tooltip="Taal: [NL] → FR → DE → IT → EN"
-                  data-i18n-aria="start.btn_lang_aria">
-            <span class="btn-lang-label" aria-hidden="true" style="font-weight: 700; font-size: 0.75rem; letter-spacing: 0.5px;">NL</span>
-          </button>
-
-          <!-- Circle 5: Statistics button -->
-          <button type="button" id="btn-stats" class="start-meta-item start-meta-btn start-meta-btn-action btn-stats"
-                  aria-label="Bekijk statistieken"
-                  data-tooltip="Statistieken"
-                  data-i18n-aria="start.btn_stats_aria"
-                  data-i18n-tooltip="start.btn_stats_tooltip">
-            <span class="start-meta-svg" data-icon="stats" aria-hidden="true"></span>
-          </button>
-
-          <!-- Circle 6: Install app button (visible only if prompt available / not installed) -->
-          <button type="button" id="btn-install" class="start-meta-item start-meta-btn start-meta-btn-action btn-install hidden"
-                  aria-label="Installeer als app"
-                  data-tooltip="Installeer app"
-                  data-i18n-aria="start.btn_install_aria"
-                  data-i18n-tooltip="start.btn_install_tooltip">
-            <span class="start-meta-svg" data-icon="install" aria-hidden="true"></span>
-          </button>
-        </div>
-
-        <div class="start-meta-group start-meta-info">
-          <!-- Hint 1: Law article hint icon -->
-          <span class="start-meta-item start-meta-hint" tabindex="0" role="img"
-                aria-label="Toelichting wetsartikel: bij elke vraag vind je via dit toelichtingsicoon direct het bijbehorende wetsartikel in de Wegcode"
-                data-tooltip="Bij elke vraag vind je via dit toelichtingsicoon direct het bijbehorende wetsartikel"
-                data-i18n-aria="start.hint_law_aria"
-                data-i18n-tooltip="start.hint_law_tooltip">
-            <span class="start-meta-svg" data-icon="externalLink" aria-hidden="true"></span>
-          </span>
-
-          <!-- Report issue button: opens the report modal with the current view as context -->
-          <button type="button" id="btn-report-start" class="start-meta-item start-meta-btn start-meta-btn-action"
-                  aria-label="Meld een fout of probleem"
-                  data-tooltip="Meld fout"
-                  data-i18n-aria="report.btn_generic_aria"
-                  data-i18n-tooltip="report.btn_generic_tooltip">
-            <span class="start-meta-svg" data-icon="report" aria-hidden="true"></span>
-          </button>
-        </div>
+      <!-- Hidden mode options for script and testing compatibility -->
+      <div class="sr-only" aria-hidden="true">
+        <input type="radio" name="start-mode" id="radio-mode-quiz" value="quiz" checked>
+        <input type="radio" name="start-mode" id="radio-mode-carousel" value="carousel">
+        <span id="quiz-mode-desc" data-i18n="start.quiz_mode_description">20 vragen over regels en borden</span>
       </div>
-
-      <!-- 6. Subtle copyright notice -->
-      <p class="start-copyright" data-i18n="start.copyright">Copyright &copy; Giovanni Pellicciotta</p>
     </div>
+
+    <!-- Footer: meta bar with circle buttons and subtle copyright -->
+    <footer class="start-footer view-footer">
+      <div class="start-bottom-meta">
+        <hr class="start-divider">
+
+        <div class="start-meta-bar" role="region" aria-label="Navigatie, instellingen en informatie">
+          <div class="start-meta-group start-meta-actions">
+            <button type="button" id="btn-mode-toggle" class="start-meta-item start-meta-btn start-meta-btn-action"
+                    aria-label="Wissel naar Verkeersborden Carrousel"
+                    data-tooltip="Wissel naar carrousel"
+                    data-i18n-aria="start.mode_toggle_aria_to_carousel"
+                    data-i18n-tooltip="start.mode_toggle_to_carousel">
+              <span class="start-meta-svg mode-icon-carousel" data-icon="carousel" aria-hidden="true"></span>
+              <span class="start-meta-svg mode-icon-quiz hidden" data-icon="quiz" aria-hidden="true"></span>
+            </button>
+
+            <button type="button" id="btn-config" class="start-meta-item start-meta-btn start-meta-btn-action"
+                    aria-label="Open instellingen"
+                    data-tooltip="Instellingen"
+                    data-i18n-aria="start.btn_config_aria"
+                    data-i18n-tooltip="start.btn_config_tooltip">
+              <span class="start-meta-svg" data-icon="settings" aria-hidden="true"></span>
+            </button>
+
+            <button type="button" id="btn-about" class="start-meta-item start-about-btn start-meta-btn-action"
+                    aria-label="Over deze app (versie, release notes &amp; bronnen)"
+                    data-tooltip="Over deze app (versie, release notes &amp; bronnen)"
+                    data-i18n-aria="start.btn_about_aria"
+                    data-i18n-tooltip="start.btn_about_tooltip">
+              <span class="start-meta-svg" data-icon="info" aria-hidden="true"></span>
+            </button>
+
+            <button type="button" id="btn-lang" class="start-meta-item start-meta-btn start-meta-btn-action btn-lang"
+                    aria-label="Taal wijzigen"
+                    data-tooltip="Taal: [NL] → FR → DE → IT → EN"
+                    data-i18n-aria="start.btn_lang_aria">
+              <span class="btn-lang-label" aria-hidden="true" style="font-weight: 700; font-size: 0.75rem; letter-spacing: 0.5px;">NL</span>
+            </button>
+
+            <button type="button" id="btn-stats" class="start-meta-item start-meta-btn start-meta-btn-action btn-stats"
+                    aria-label="Bekijk statistieken"
+                    data-tooltip="Statistieken"
+                    data-i18n-aria="start.btn_stats_aria"
+                    data-i18n-tooltip="start.btn_stats_tooltip">
+              <span class="start-meta-svg" data-icon="stats" aria-hidden="true"></span>
+            </button>
+
+            <button type="button" id="btn-install" class="start-meta-item start-meta-btn start-meta-btn-action btn-install hidden"
+                    aria-label="Installeer als app"
+                    data-tooltip="Installeer app"
+                    data-i18n-aria="start.btn_install_aria"
+                    data-i18n-tooltip="start.btn_install_tooltip">
+              <span class="start-meta-svg" data-icon="install" aria-hidden="true"></span>
+            </button>
+          </div>
+
+          <div class="start-meta-group start-meta-info">
+            <span class="start-meta-item start-meta-hint" tabindex="0" role="img"
+                  aria-label="Toelichting wetsartikel: bij elke vraag vind je via dit toelichtingsicoon direct het bijbehorende wetsartikel in de Wegcode"
+                  data-tooltip="Bij elke vraag vind je via dit toelichtingsicoon direct het bijbehorende wetsartikel"
+                  data-i18n-aria="start.hint_law_aria"
+                  data-i18n-tooltip="start.hint_law_tooltip">
+              <span class="start-meta-svg" data-icon="externalLink" aria-hidden="true"></span>
+            </span>
+
+            <button type="button" id="btn-report-start" class="start-meta-item start-meta-btn start-meta-btn-action"
+                    aria-label="Meld een fout of probleem"
+                    data-tooltip="Meld fout"
+                    data-i18n-aria="report.btn_generic_aria"
+                    data-i18n-tooltip="report.btn_generic_tooltip">
+              <span class="start-meta-svg" data-icon="report" aria-hidden="true"></span>
+            </button>
+          </div>
+        </div>
+
+        <p class="start-copyright" data-i18n="start.copyright">Copyright &copy; Giovanni Pellicciotta</p>
+      </div>
+    </footer>
   </section>
 
   <!-- About screen: full-window view replacing the window -->
   <section id="screen-about" class="screen hidden" aria-label="Over Verkeersregels Quiz" data-i18n-aria="about.screen_aria">
-    <button id="btn-about-back" class="btn-about-close modal-close view-close-btn" type="button" aria-label="Sluiten" title="Sluiten" data-i18n-aria="about.btn_close_aria" data-i18n-tooltip="about.btn_close_aria"><span class="modal-close-icon" data-icon="close" aria-hidden="true"></span></button>
-    <div class="about-header">
+    <header class="about-header view-header">
+      <div class="about-header-spacer"></div>
       <h1 class="about-title" data-i18n="about.title">Over Verkeersregels Quiz</h1>
-    </div>
+      <button id="btn-about-back" class="btn-about-close modal-close view-close-btn" type="button" aria-label="Sluiten" title="Sluiten" data-i18n-aria="about.btn_close_aria" data-i18n-tooltip="about.btn_close_aria"><span class="modal-close-icon" data-icon="close" aria-hidden="true"></span></button>
+    </header>
 
-    <div class="about-content">
+    <div class="about-content view-content">
       <div class="about-sources-card">
         <h2 class="about-section-heading" data-i18n="about.sources_heading">Gebruikte bronnen &amp; wetgeving</h2>
         <ul class="about-sources-list">
@@ -236,24 +231,25 @@
           <p class="changelog-loading" data-i18n="about.changelog_loading">Versiegeschiedenis laden...</p>
         </div>
       </div>
-
-      <footer class="about-footer">
-        <button id="btn-report-about" class="btn-report-round" type="button" aria-label="Meld een fout of probleem" title="Meld fout" data-tooltip="Meld fout" data-i18n-aria="report.btn_generic_aria" data-i18n-tooltip="report.btn_generic_tooltip">
-          <span class="report-icon" data-icon="report" data-icon-width="18" data-icon-height="18" data-icon-stroke-width="2.2" aria-hidden="true"></span>
-        </button>
-        <p class="about-copyright" data-i18n="about.copyright">Copyright &copy; Giovanni Pellicciotta</p>
-      </footer>
     </div>
+
+    <footer class="about-footer view-footer">
+      <button id="btn-report-about" class="btn-report-round" type="button" aria-label="Meld een fout of probleem" title="Meld fout" data-tooltip="Meld fout" data-i18n-aria="report.btn_generic_aria" data-i18n-tooltip="report.btn_generic_tooltip">
+        <span class="report-icon" data-icon="report" data-icon-width="18" data-icon-height="18" data-icon-stroke-width="2.2" aria-hidden="true"></span>
+      </button>
+      <p class="about-copyright" data-i18n="about.copyright">Copyright &copy; Giovanni Pellicciotta</p>
+      <div class="view-footer-spacer"></div>
+    </footer>
   </section>
 
   <!-- Statistics screen: full-window view replacing the window -->
   <section id="screen-stats" class="screen hidden" aria-label="Statistieken overzicht" data-i18n-aria="stats.screen_aria">
-    <button id="btn-stats-back" class="btn-stats-close modal-close view-close-btn" type="button" aria-label="Sluiten" title="Sluiten" data-i18n-aria="stats.btn_close_aria" data-i18n-tooltip="stats.btn_close_aria"><span class="modal-close-icon" data-icon="close" aria-hidden="true"></span></button>
-    <div class="stats-header">
+    <header class="stats-header view-header">
       <h1 class="stats-title" data-i18n="stats.title">Statistieken</h1>
-    </div>
+      <button id="btn-stats-back" class="btn-stats-close modal-close view-close-btn" type="button" aria-label="Sluiten" title="Sluiten" data-i18n-aria="stats.btn_close_aria" data-i18n-tooltip="stats.btn_close_aria"><span class="modal-close-icon" data-icon="close" aria-hidden="true"></span></button>
+    </header>
 
-    <div class="stats-content">
+    <div class="stats-content view-content">
       <!-- Summary / Overview Card -->
       <div class="stats-card stats-summary-card">
         <h2 class="stats-section-heading" data-i18n="stats.overview_heading">Overzicht</h2>
@@ -314,24 +310,26 @@
           </button>
         </div>
       </div>
-
-      <footer class="stats-footer">
-        <button id="btn-report-stats" class="btn-report-round" type="button" aria-label="Meld een fout of probleem" title="Meld fout" data-tooltip="Meld fout" data-i18n-aria="report.btn_generic_aria" data-i18n-tooltip="report.btn_generic_tooltip">
-          <span class="report-icon" data-icon="report" data-icon-width="18" data-icon-height="18" data-icon-stroke-width="2.2" aria-hidden="true"></span>
-        </button>
-        <p class="stats-copyright" data-i18n="about.copyright">Copyright &copy; Giovanni Pellicciotta</p>
-      </footer>
     </div>
+
+    <footer class="stats-footer view-footer">
+      <button id="btn-report-stats" class="btn-report-round" type="button" aria-label="Meld een fout of probleem" title="Meld fout" data-tooltip="Meld fout" data-i18n-aria="report.btn_generic_aria" data-i18n-tooltip="report.btn_generic_tooltip">
+        <span class="report-icon" data-icon="report" data-icon-width="18" data-icon-height="18" data-icon-stroke-width="2.2" aria-hidden="true"></span>
+      </button>
+      <p class="stats-copyright" data-i18n="about.copyright">Copyright &copy; Giovanni Pellicciotta</p>
+      <div class="view-footer-spacer"></div>
+    </footer>
   </section>
 
   <!-- Settings screen: full-window view, mirroring the About view -->
   <section id="screen-config" class="screen hidden" aria-label="Instellingen" data-i18n-aria="config.screen_aria">
-    <button type="button" id="btn-config-close" class="btn-config-close modal-close view-close-btn" aria-label="Sluiten" title="Sluiten" data-i18n-aria="config.btn_close_aria" data-i18n-tooltip="config.btn_close_aria"><span class="modal-close-icon" data-icon="close" aria-hidden="true"></span></button>
-    <div class="config-header">
+    <header class="config-header view-header">
+      <div class="config-header-spacer"></div>
       <h1 id="config-title" class="config-title" data-i18n="config.title">Instellingen</h1>
-    </div>
+      <button type="button" id="btn-config-close" class="btn-config-close modal-close view-close-btn" aria-label="Sluiten" title="Sluiten" data-i18n-aria="config.btn_close_aria" data-i18n-tooltip="config.btn_close_aria"><span class="modal-close-icon" data-icon="close" aria-hidden="true"></span></button>
+    </header>
 
-    <div class="config-content">
+    <div class="config-content view-content">
       <!-- General Settings Section -->
       <div id="config-section-general" class="config-section">
         <h4 class="config-section-title" data-i18n="config.section_general">Algemeen</h4>
@@ -453,51 +451,57 @@
       </div>
     </div>
 
-    <div class="config-actions">
+    <footer class="config-footer view-footer config-actions">
       <button type="button" id="btn-report-config" class="btn-report-round" aria-label="Meld een fout of probleem" title="Meld fout" data-tooltip="Meld fout" data-i18n-aria="report.btn_generic_aria" data-i18n-tooltip="report.btn_generic_tooltip">
         <span class="report-icon" data-icon="report" data-icon-width="18" data-icon-height="18" data-icon-stroke-width="2.2" aria-hidden="true"></span>
       </button>
       <button type="button" id="btn-config-save" class="btn-primary" data-i18n="config.btn_save">Opslaan</button>
-    </div>
+    </footer>
   </section>
 
   <!-- Question screens -->
   <section id="screen-quiz" class="screen hidden">
-    <button id="btn-quiz-close" class="modal-close view-close-btn quiz-close" type="button" aria-label="Quiz stoppen" title="Quiz stoppen" data-i18n-aria="quiz.btn_close_aria" data-i18n-tooltip="quiz.btn_close_aria"><span class="modal-close-icon" data-icon="close" aria-hidden="true"></span></button>
-    <div class="quiz-header">
-      <span id="quiz-progress"></span>
-      <div id="quiz-status-indicator" class="quiz-status-indicator hidden" role="status" aria-live="polite"></div>
-      <span id="quiz-score">Score: 0</span>
-    </div>
-    <div class="progress-bar"><div id="progress-fill"></div></div>
-
-    <div class="quiz-body">
-      <!-- Left pane: Question text, badge, and traffic sign illustration -->
-      <div class="quiz-pane-question">
-        <div id="quiz-badge-wrap" class="quiz-badge-wrap hidden">
-          <span id="quiz-badge" class="badge-since"></span>
-        </div>
-        <h2 id="question-text"></h2>
-        <div id="question-image-wrap" class="hidden">
-          <img id="question-image" alt="Verkeersbord">
+    <header class="quiz-header-wrap view-header">
+      <div class="quiz-header">
+        <span id="quiz-progress"></span>
+        <div id="quiz-status-indicator" class="quiz-status-indicator hidden" role="status" aria-live="polite"></div>
+        <div class="quiz-header-right">
+          <span id="quiz-score">Score: 0</span>
+          <button id="btn-quiz-close" class="modal-close view-close-btn quiz-close" type="button" aria-label="Quiz stoppen" title="Quiz stoppen" data-i18n-aria="quiz.btn_close_aria" data-i18n-tooltip="quiz.btn_close_aria"><span class="modal-close-icon" data-icon="close" aria-hidden="true"></span></button>
         </div>
       </div>
+      <div class="progress-bar"><div id="progress-fill"></div></div>
+    </header>
 
-      <!-- Right pane: Answer options, explanation feedback, and next action -->
-      <div class="quiz-pane-answers">
-        <div id="options" class="options"></div>
-        <div id="quiz-feedback-wrap" class="quiz-feedback-wrap">
-          <div id="explanation" class="explanation hidden"></div>
-          <button id="btn-next" class="btn-primary btn-next hidden" type="button" aria-label="Volgende vraag" data-i18n-aria="quiz.btn_next">
-            <span class="btn-next-text" data-i18n="quiz.btn_next">Volgende vraag</span>
-            <span class="next-icon" data-icon="arrowRight" data-icon-width="20" data-icon-height="20" data-icon-stroke-width="2.2" aria-hidden="true"></span>
-          </button>
+    <div class="quiz-content view-content">
+      <div class="quiz-body">
+        <!-- Left pane: Question text, badge, and traffic sign illustration -->
+        <div class="quiz-pane-question">
+          <div id="quiz-badge-wrap" class="quiz-badge-wrap hidden">
+            <span id="quiz-badge" class="badge-since"></span>
+          </div>
+          <h2 id="question-text"></h2>
+          <div id="question-image-wrap" class="hidden">
+            <img id="question-image" alt="Verkeersbord">
+          </div>
+        </div>
+
+        <!-- Right pane: Answer options, explanation feedback, and next action -->
+        <div class="quiz-pane-answers">
+          <div id="options" class="options"></div>
+          <div id="quiz-feedback-wrap" class="quiz-feedback-wrap">
+            <div id="explanation" class="explanation hidden"></div>
+            <button id="btn-next" class="btn-primary btn-next hidden" type="button" aria-label="Volgende vraag" data-i18n-aria="quiz.btn_next">
+              <span class="btn-next-text" data-i18n="quiz.btn_next">Volgende vraag</span>
+              <span class="next-icon" data-icon="arrowRight" data-icon-width="20" data-icon-height="20" data-icon-stroke-width="2.2" aria-hidden="true"></span>
+            </button>
+          </div>
         </div>
       </div>
     </div>
 
     <!-- Desktop bottom metadata with round blue report button -->
-    <div class="quiz-bottom-meta no-print">
+    <footer class="quiz-footer view-footer quiz-bottom-meta no-print">
       <hr class="quiz-divider">
       <div class="quiz-bottom-bar">
         <button type="button" id="btn-report-error" class="quiz-btn-report-round"
@@ -509,22 +513,18 @@
           <span class="report-icon" data-icon="report" data-icon-width="18" data-icon-height="18" data-icon-stroke-width="2.2" aria-hidden="true"></span>
         </button>
       </div>
-    </div>
+    </footer>
   </section>
 
   <!-- Result screen -->
   <section id="screen-result" class="screen hidden">
-    <button id="btn-result-close" class="modal-close view-close-btn result-btn-close" type="button" aria-label="Sluiten" title="Sluiten" data-i18n-aria="result.btn_close_aria" data-i18n-tooltip="result.btn_close_aria"><span class="modal-close-icon" data-icon="close" aria-hidden="true"></span></button>
-    <div class="result-header">
+    <header class="result-header view-header">
       <div class="result-header-spacer"></div>
       <div class="result-header-text">
         <h1 class="result-title" data-i18n="result.title">Quiz Resultaat</h1>
         <p id="result-summary"></p>
       </div>
       <div class="result-actions no-print">
-        <button id="btn-report-result" class="result-btn-round" type="button" aria-label="Meld een fout of probleem" title="Meld fout" data-tooltip="Meld fout" data-i18n-aria="report.btn_generic_aria" data-i18n-tooltip="report.btn_generic_tooltip">
-          <span class="result-icon-svg" data-icon="report" data-icon-width="18" data-icon-height="18" data-icon-stroke-width="2.2" aria-hidden="true"></span>
-        </button>
         <button id="btn-share" class="result-btn-round" type="button" aria-label="Resultaat delen" title="Resultaat delen" data-tooltip="Resultaat delen" data-i18n-aria="result.btn_share_aria" data-i18n-tooltip="result.btn_share_tooltip">
           <span class="result-icon-svg" data-icon="share" data-icon-width="18" data-icon-height="18" data-icon-stroke-width="2.2" aria-hidden="true"></span>
         </button>
@@ -532,32 +532,41 @@
           <span class="result-icon-svg" data-icon="print" data-icon-width="18" data-icon-height="18" data-icon-stroke-width="2.2" aria-hidden="true"></span>
         </button>
       </div>
+      <button id="btn-result-close" class="modal-close view-close-btn result-btn-close" type="button" aria-label="Sluiten" title="Sluiten" data-i18n-aria="result.btn_close_aria" data-i18n-tooltip="result.btn_close_aria"><span class="modal-close-icon" data-icon="close" aria-hidden="true"></span></button>
+    </header>
+
+    <div class="result-content view-content">
+      <button type="button" id="btn-result-retry-errors" class="btn-secondary btn-review-errors no-print hidden"
+              aria-label="Herhaal de vragen die je fout had"
+              data-i18n="result.btn_retry_errors"
+              data-i18n-aria="result.btn_retry_errors_aria">
+        Herhaal foute vragen
+      </button>
+      <div id="share-toast" class="share-toast hidden" role="status" aria-live="polite"></div>
+      <table id="result-table">
+        <thead>
+          <tr>
+            <th scope="col" class="col-num" data-i18n="result.table_col_num">#</th>
+            <th scope="col" class="col-question" data-i18n="result.table_col_question">Vraag</th>
+            <th scope="col" class="col-user-ans" data-i18n="result.table_col_your_answer">Jouw antwoord</th>
+            <th scope="col" class="col-correct-ans" data-i18n="result.table_col_correct_answer">Juist antwoord</th>
+            <th scope="col" class="col-result" data-i18n="result.table_col_result">Resultaat</th>
+          </tr>
+        </thead>
+        <tbody id="result-table-body"></tbody>
+      </table>
     </div>
-    <button type="button" id="btn-result-retry-errors" class="btn-secondary btn-review-errors no-print hidden"
-            aria-label="Herhaal de vragen die je fout had"
-            data-i18n="result.btn_retry_errors"
-            data-i18n-aria="result.btn_retry_errors_aria">
-      Herhaal foute vragen
-    </button>
-    <div id="share-toast" class="share-toast hidden" role="status" aria-live="polite"></div>
-    <table id="result-table">
-      <thead>
-        <tr>
-          <th scope="col" class="col-num" data-i18n="result.table_col_num">#</th>
-          <th scope="col" class="col-question" data-i18n="result.table_col_question">Vraag</th>
-          <th scope="col" class="col-user-ans" data-i18n="result.table_col_your_answer">Jouw antwoord</th>
-          <th scope="col" class="col-correct-ans" data-i18n="result.table_col_correct_answer">Juist antwoord</th>
-          <th scope="col" class="col-result" data-i18n="result.table_col_result">Resultaat</th>
-        </tr>
-      </thead>
-      <tbody id="result-table-body"></tbody>
-    </table>
+
+    <footer class="result-footer view-footer no-print">
+      <button id="btn-report-result" class="result-btn-round" type="button" aria-label="Meld een fout of probleem" title="Meld fout" data-tooltip="Meld fout" data-i18n-aria="report.btn_generic_aria" data-i18n-tooltip="report.btn_generic_tooltip">
+        <span class="result-icon-svg" data-icon="report" data-icon-width="18" data-icon-height="18" data-icon-stroke-width="2.2" aria-hidden="true"></span>
+      </button>
+    </footer>
   </section>
 
   <!-- Sign Carousel screen -->
   <section id="screen-carousel" class="screen hidden" aria-label="Verkeersborden Carrousel" data-i18n-aria="carousel.title_sr">
-    <button id="btn-carousel-exit" class="btn-carousel-close modal-close view-close-btn" type="button" aria-label="Carrousel sluiten (Escape)" title="Carrousel sluiten (Escape)" data-i18n-aria="carousel.btn_exit_aria" data-i18n-tooltip="carousel.btn_exit_aria"><span class="modal-close-icon" data-icon="close" aria-hidden="true"></span></button>
-    <div class="carousel-header">
+    <header class="carousel-header view-header">
       <div class="carousel-header-spacer">
         <h1 class="carousel-title sr-only" data-i18n="carousel.title_sr">Verkeersborden Carrousel</h1>
       </div>
@@ -577,62 +586,66 @@
           <span class="btn-ctrl-label sr-only" data-i18n="carousel.btn_next_label_sr">Volgende</span>
         </button>
       </div>
-      <div class="carousel-header-spacer"></div>
-    </div>
+      <button id="btn-carousel-exit" class="btn-carousel-close modal-close view-close-btn" type="button" aria-label="Carrousel sluiten (Escape)" title="Carrousel sluiten (Escape)" data-i18n-aria="carousel.btn_exit_aria" data-i18n-tooltip="carousel.btn_exit_aria"><span class="modal-close-icon" data-icon="close" aria-hidden="true"></span></button>
+    </header>
 
-    <!-- Interactive stage: click/touch toggles pause/play -->
-    <div id="carousel-stage" class="carousel-stage" role="region" aria-label="Verkeersbord kaart" tabindex="0" title="Klik om te pauzeren of hervatten" data-i18n-aria="carousel.stage_aria" data-i18n-tooltip="carousel.stage_title">
-      <!-- Pause indicator: round pause-icon button without text -->
-      <div id="carousel-pause-overlay" class="carousel-pause-overlay hidden" aria-live="polite">
-        <div class="carousel-pause-round-btn" aria-label="Gepauzeerd" title="Gepauzeerd" data-i18n-aria="carousel.pause_overlay_aria" data-i18n-tooltip="carousel.pause_overlay_aria">
-          <span class="carousel-pause-round-svg" data-icon="pause" data-icon-width="34" data-icon-height="34" data-icon-fill="currentColor" aria-hidden="true"></span>
-        </div>
-      </div>
-
-      <div class="carousel-card-body">
-        <div class="carousel-card-image-col">
-          <div class="carousel-sign-wrap">
-            <img id="carousel-sign-img" class="carousel-sign-img" src="" alt="Verkeersbord">
+    <div class="carousel-content view-content">
+      <!-- Interactive stage: click/touch toggles pause/play -->
+      <div id="carousel-stage" class="carousel-stage" role="region" aria-label="Verkeersbord kaart" tabindex="0" title="Klik om te pauzeren of hervatten" data-i18n-aria="carousel.stage_aria" data-i18n-tooltip="carousel.stage_title">
+        <!-- Pause indicator: round pause-icon button without text -->
+        <div id="carousel-pause-overlay" class="carousel-pause-overlay hidden" aria-live="polite">
+          <div class="carousel-pause-round-btn" aria-label="Gepauzeerd" title="Gepauzeerd" data-i18n-aria="carousel.pause_overlay_aria" data-i18n-tooltip="carousel.pause_overlay_aria">
+            <span class="carousel-pause-round-svg" data-icon="pause" data-icon-width="34" data-icon-height="34" data-icon-fill="currentColor" aria-hidden="true"></span>
           </div>
         </div>
-        <div class="carousel-card-info-col">
-          <div class="carousel-badges">
-            <span id="carousel-category-badge" class="badge-since badge-blue"></span>
-            <span id="carousel-since-badge" class="badge-since badge-amber hidden"></span>
+
+        <div class="carousel-card-body">
+          <div class="carousel-card-image-col">
+            <div class="carousel-sign-wrap">
+              <img id="carousel-sign-img" class="carousel-sign-img" src="" alt="Verkeersbord">
+            </div>
           </div>
-          <h2 id="carousel-sign-title" class="carousel-sign-title"></h2>
-          <p id="carousel-explanation" class="carousel-explanation"></p>
-          <div id="carousel-source-wrap" class="carousel-source-wrap hidden">
-            <a id="carousel-source-link" class="source-link" href="#" target="_blank" rel="noopener noreferrer">
-              <span data-i18n="carousel.source_link_text">Bekijk artikel in Wegcode</span>
-              <span class="source-icon" data-icon="externalLink" data-icon-width="14" data-icon-height="14" data-icon-stroke-width="2.2" aria-hidden="true"></span>
-            </a>
+          <div class="carousel-card-info-col">
+            <div class="carousel-badges">
+              <span id="carousel-category-badge" class="badge-since badge-blue"></span>
+              <span id="carousel-since-badge" class="badge-since badge-amber hidden"></span>
+            </div>
+            <h2 id="carousel-sign-title" class="carousel-sign-title"></h2>
+            <p id="carousel-explanation" class="carousel-explanation"></p>
+            <div id="carousel-source-wrap" class="carousel-source-wrap hidden">
+              <a id="carousel-source-link" class="source-link" href="#" target="_blank" rel="noopener noreferrer">
+                <span data-i18n="carousel.source_link_text">Bekijk artikel in Wegcode</span>
+                <span class="source-icon" data-icon="externalLink" data-icon-width="14" data-icon-height="14" data-icon-stroke-width="2.2" aria-hidden="true"></span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Timer progress bar with counter underneath -->
-    <div class="carousel-progress-wrap">
-      <div class="carousel-progress-track" aria-hidden="true">
-        <div id="carousel-progress-fill" class="carousel-progress-fill"></div>
+    <footer class="carousel-footer view-footer">
+      <!-- Timer progress bar with counter underneath -->
+      <div class="carousel-progress-wrap">
+        <div class="carousel-progress-track" aria-hidden="true">
+          <div id="carousel-progress-fill" class="carousel-progress-fill"></div>
+        </div>
+        <span id="carousel-counter" class="carousel-counter">Bord 1 / 198</span>
       </div>
-      <span id="carousel-counter" class="carousel-counter">Bord 1 / 198</span>
-    </div>
 
-    <!-- Bottom meta bar with subtle divider -->
-    <div class="carousel-bottom-meta">
-      <hr class="carousel-divider">
-      <div class="carousel-bottom-bar">
-        <button id="btn-report-carousel" class="btn-report-round" type="button" aria-label="Meld een fout of probleem" title="Meld fout" data-tooltip="Meld fout" data-i18n-aria="report.btn_generic_aria" data-i18n-tooltip="report.btn_generic_tooltip">
-          <span class="report-icon" data-icon="report" data-icon-width="18" data-icon-height="18" data-icon-stroke-width="2.2" aria-hidden="true"></span>
-        </button>
-        <div class="carousel-status-info">
-          <span id="carousel-delay-info" class="carousel-delay-info">Wisselt elke 8 seconden</span>
-          <span id="carousel-shortcut-hint" class="carousel-shortcut-hint" data-i18n-html="carousel.shortcut_hint_pause">Tip: klik op de kaart of druk op <kbd class="kbd-key">Spatiebalk</kbd> om te pauzeren</span>
+      <!-- Bottom meta bar with subtle divider -->
+      <div class="carousel-bottom-meta">
+        <hr class="carousel-divider">
+        <div class="carousel-bottom-bar">
+          <button id="btn-report-carousel" class="btn-report-round" type="button" aria-label="Meld een fout of probleem" title="Meld fout" data-tooltip="Meld fout" data-i18n-aria="report.btn_generic_aria" data-i18n-tooltip="report.btn_generic_tooltip">
+            <span class="report-icon" data-icon="report" data-icon-width="18" data-icon-height="18" data-icon-stroke-width="2.2" aria-hidden="true"></span>
+          </button>
+          <div class="carousel-status-info">
+            <span id="carousel-delay-info" class="carousel-delay-info">Wisselt elke 8 seconden</span>
+            <span id="carousel-shortcut-hint" class="carousel-shortcut-hint" data-i18n-html="carousel.shortcut_hint_pause">Tip: klik op de kaart of druk op <kbd class="kbd-key">Spatiebalk</kbd> om te pauzeren</span>
+          </div>
         </div>
       </div>
-    </div>
+    </footer>
   </section>
 
   <!-- Confirmation before abandoning quiz progress -->

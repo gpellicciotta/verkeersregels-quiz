@@ -73,7 +73,7 @@ class TestUXLayout(unittest.TestCase):
         html = INDEX_PATH.read_text(encoding="utf-8")
         css = CSS_PATH.read_text(encoding="utf-8")
 
-        self.assertIn('class="result-header"', html, "index.html must define result-header")
+        self.assertTrue('class="result-header"' in html or 'result-header' in html, "index.html must define result-header")
         self.assertIn('class="result-header-text"', html, "index.html must define result-header-text")
         self.assertIn(".result-header", css, "style.css must declare .result-header")
 

@@ -14,17 +14,18 @@ A summarized overview of all changes, per version of this project.
 ---
 
 ## v3.5.1-pre
-- FrontEnd: Added a statistics view summarizing games played, total minutes, questions, and average score with data reset.
-- FrontEnd: Previewed theme and color changes immediately in settings and reverted on uncommitted dismissal.
-- FrontEnd: Ensured the error-review and retry buttons stay hidden when no mistakes exist or upon perfect scores.
-- FrontEnd: Positioned close buttons at the top-right corner across settings, about, carousel, and result views.
-- FrontEnd: Positioned the report issue button at the bottom-left across settings, about, carousel, and quiz views.
-- FrontEnd: Added a dedicated sponsorship and project support card to the About view.
+- FrontEnd: Gestandaardiseerde sticky header- en footer-indeling met onafhankelijk scrollbare inhoud voor alle volledige schermen.
+- FrontEnd: Statistiekenweergave toegevoegd met overzicht van gespeelde spellen, minuten, vragen en gemiddelde score met data-resetoptie.
+- FrontEnd: Thema- en kleurwijzigingen worden direct getoond als voorbeeld en hersteld bij sluiten zonder opslaan.
+- FrontEnd: Fouten-oefen- en herhaalknoppen blijven verborgen wanneer er geen fouten zijn of bij een perfecte score.
+- FrontEnd: Sluitknoppen rechtsboven geplaatst in instellingen-, over-, carrousel- en resultatenschermen.
+- FrontEnd: Meld-een-foutknop linksonder geplaatst in instellingen-, over-, carrousel- en quizschermen.
+- FrontEnd: Kaart voor sponsoring en projectondersteuning toegevoegd aan het Over-scherm.
 - FrontEnd: Knop voor veelgemaakte fouten op het startscherm hernoemd, voorzien van tooltip en passend uitgelijnd qua breedte.
 - FrontEnd: Checkbox voor foutieve vragen in instellingen gebruikt nu hetzelfde lettertype en gewicht als overige veldlabels.
 - FrontEnd: Actieknoppen zijn nu sticky op mobiel en de opslaanknop in instellingen ook op desktop.
 - FrontEnd: Verplaatste meld-foutknop in mobiele quizweergave naar een vaste positie linksonder met standaard ronde vormgeving.
-- DevEx: Standardized all browser console logging and runtime warning messages to English across all client modules.
+- DevEx: Console- en waarschuwingsberichten in de browser gestandaardiseerd naar het Engels in alle modules.
 - DevEx: Alle JavaScript-functies hebben nu JSDoc-documentatie met parameters en retourwaarde, bewaakt door een regressietest.
 - DevEx: Nieuw script `run-review-server.py` bedient het project via threaded HTTP voor review en browsertests.
 - FrontEnd: Instellingen openen nu als volledig scherm, met de meld-fout knop linksboven zoals bij Over deze app.
