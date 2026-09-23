@@ -167,10 +167,9 @@
 
   <!-- About screen: full-window view replacing the window -->
   <section id="screen-about" class="screen hidden" aria-label="Over Verkeersregels Quiz" data-i18n-aria="about.screen_aria">
+    <button id="btn-about-back" class="btn-about-close modal-close view-close-btn" type="button" aria-label="Sluiten" title="Sluiten" data-i18n-aria="about.btn_close_aria" data-i18n-tooltip="about.btn_close_aria"><span class="modal-close-icon" data-icon="close" aria-hidden="true"></span></button>
     <header class="about-header view-header">
-      <div class="about-header-spacer"></div>
       <h1 class="about-title" data-i18n="about.title">Over Verkeersregels Quiz</h1>
-      <button id="btn-about-back" class="btn-about-close modal-close view-close-btn" type="button" aria-label="Sluiten" title="Sluiten" data-i18n-aria="about.btn_close_aria" data-i18n-tooltip="about.btn_close_aria"><span class="modal-close-icon" data-icon="close" aria-hidden="true"></span></button>
     </header>
 
     <div class="about-content view-content">
@@ -244,9 +243,9 @@
 
   <!-- Statistics screen: full-window view replacing the window -->
   <section id="screen-stats" class="screen hidden" aria-label="Statistieken overzicht" data-i18n-aria="stats.screen_aria">
+    <button id="btn-stats-back" class="btn-stats-close modal-close view-close-btn" type="button" aria-label="Sluiten" title="Sluiten" data-i18n-aria="stats.btn_close_aria" data-i18n-tooltip="stats.btn_close_aria"><span class="modal-close-icon" data-icon="close" aria-hidden="true"></span></button>
     <header class="stats-header view-header">
       <h1 class="stats-title" data-i18n="stats.title">Statistieken</h1>
-      <button id="btn-stats-back" class="btn-stats-close modal-close view-close-btn" type="button" aria-label="Sluiten" title="Sluiten" data-i18n-aria="stats.btn_close_aria" data-i18n-tooltip="stats.btn_close_aria"><span class="modal-close-icon" data-icon="close" aria-hidden="true"></span></button>
     </header>
 
     <div class="stats-content view-content">
@@ -323,10 +322,9 @@
 
   <!-- Settings screen: full-window view, mirroring the About view -->
   <section id="screen-config" class="screen hidden" aria-label="Instellingen" data-i18n-aria="config.screen_aria">
+    <button type="button" id="btn-config-close" class="btn-config-close modal-close view-close-btn" aria-label="Sluiten" title="Sluiten" data-i18n-aria="config.btn_close_aria" data-i18n-tooltip="config.btn_close_aria"><span class="modal-close-icon" data-icon="close" aria-hidden="true"></span></button>
     <header class="config-header view-header">
-      <div class="config-header-spacer"></div>
       <h1 id="config-title" class="config-title" data-i18n="config.title">Instellingen</h1>
-      <button type="button" id="btn-config-close" class="btn-config-close modal-close view-close-btn" aria-label="Sluiten" title="Sluiten" data-i18n-aria="config.btn_close_aria" data-i18n-tooltip="config.btn_close_aria"><span class="modal-close-icon" data-icon="close" aria-hidden="true"></span></button>
     </header>
 
     <div class="config-content view-content">
@@ -461,13 +459,13 @@
 
   <!-- Question screens -->
   <section id="screen-quiz" class="screen hidden">
+    <button id="btn-quiz-close" class="modal-close view-close-btn quiz-close" type="button" aria-label="Quiz stoppen" title="Quiz stoppen" data-i18n-aria="quiz.btn_close_aria" data-i18n-tooltip="quiz.btn_close_aria"><span class="modal-close-icon" data-icon="close" aria-hidden="true"></span></button>
     <header class="quiz-header-wrap view-header">
       <div class="quiz-header">
         <span id="quiz-progress"></span>
         <div id="quiz-status-indicator" class="quiz-status-indicator hidden" role="status" aria-live="polite"></div>
         <div class="quiz-header-right">
           <span id="quiz-score">Score: 0</span>
-          <button id="btn-quiz-close" class="modal-close view-close-btn quiz-close" type="button" aria-label="Quiz stoppen" title="Quiz stoppen" data-i18n-aria="quiz.btn_close_aria" data-i18n-tooltip="quiz.btn_close_aria"><span class="modal-close-icon" data-icon="close" aria-hidden="true"></span></button>
         </div>
       </div>
       <div class="progress-bar"><div id="progress-fill"></div></div>
@@ -518,6 +516,7 @@
 
   <!-- Result screen -->
   <section id="screen-result" class="screen hidden">
+    <button id="btn-result-close" class="modal-close view-close-btn result-btn-close" type="button" aria-label="Sluiten" title="Sluiten" data-i18n-aria="result.btn_close_aria" data-i18n-tooltip="result.btn_close_aria"><span class="modal-close-icon" data-icon="close" aria-hidden="true"></span></button>
     <header class="result-header view-header">
       <div class="result-header-spacer"></div>
       <div class="result-header-text">
@@ -532,7 +531,6 @@
           <span class="result-icon-svg" data-icon="print" data-icon-width="18" data-icon-height="18" data-icon-stroke-width="2.2" aria-hidden="true"></span>
         </button>
       </div>
-      <button id="btn-result-close" class="modal-close view-close-btn result-btn-close" type="button" aria-label="Sluiten" title="Sluiten" data-i18n-aria="result.btn_close_aria" data-i18n-tooltip="result.btn_close_aria"><span class="modal-close-icon" data-icon="close" aria-hidden="true"></span></button>
     </header>
 
     <div class="result-content view-content">
@@ -566,6 +564,7 @@
 
   <!-- Sign Carousel screen -->
   <section id="screen-carousel" class="screen hidden" aria-label="Verkeersborden Carrousel" data-i18n-aria="carousel.title_sr">
+    <button id="btn-carousel-exit" class="btn-carousel-close modal-close view-close-btn" type="button" aria-label="Carrousel sluiten (Escape)" title="Carrousel sluiten (Escape)" data-i18n-aria="carousel.btn_exit_aria" data-i18n-tooltip="carousel.btn_exit_aria"><span class="modal-close-icon" data-icon="close" aria-hidden="true"></span></button>
     <header class="carousel-header view-header">
       <div class="carousel-header-spacer">
         <h1 class="carousel-title sr-only" data-i18n="carousel.title_sr">Verkeersborden Carrousel</h1>
@@ -586,7 +585,7 @@
           <span class="btn-ctrl-label sr-only" data-i18n="carousel.btn_next_label_sr">Volgende</span>
         </button>
       </div>
-      <button id="btn-carousel-exit" class="btn-carousel-close modal-close view-close-btn" type="button" aria-label="Carrousel sluiten (Escape)" title="Carrousel sluiten (Escape)" data-i18n-aria="carousel.btn_exit_aria" data-i18n-tooltip="carousel.btn_exit_aria"><span class="modal-close-icon" data-icon="close" aria-hidden="true"></span></button>
+      <div class="carousel-header-spacer"></div>
     </header>
 
     <div class="carousel-content view-content">

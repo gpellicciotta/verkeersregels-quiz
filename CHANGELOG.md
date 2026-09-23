@@ -14,6 +14,7 @@ A summarized overview of all changes, per version of this project.
 ---
 
 ## v3.5.1-pre
+- FrontEnd: Sluitknoppen verankerd in de rechterbovenhoek en tooltip-positionering gecorrigeerd tegen afkappen aan schermranden.
 - FrontEnd: Gestandaardiseerde sticky header- en footer-indeling met onafhankelijk scrollbare inhoud voor alle volledige schermen.
 - FrontEnd: Statistiekenweergave toegevoegd met overzicht van gespeelde spellen, minuten, vragen en gemiddelde score met data-resetoptie.
 - FrontEnd: Thema- en kleurwijzigingen worden direct getoond als voorbeeld en hersteld bij sluiten zonder opslaan.

@@ -557,7 +557,7 @@ button {
   visibility: hidden;
   display: none;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.22);
-  z-index: 30;
+  z-index: 100;
 }
 
 [data-tooltip]::before {
@@ -572,13 +572,164 @@ button {
   opacity: 0;
   visibility: hidden;
   display: none;
-  z-index: 30;
+  z-index: 100;
 }
 
 /* Force-hide any tooltip left open across a resize/orientation change (see app.js). */
 body.suppress-tooltips [data-tooltip]::after,
 body.suppress-tooltips [data-tooltip]::before {
   display: none !important;
+}
+
+[data-tooltip]:hover::after,
+[data-tooltip]:hover::before,
+[data-tooltip]:focus-visible::after,
+[data-tooltip]:focus-visible::before {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Tooltip placement: Close buttons (top-right corner) -> display below and align right */
+.view-close-btn[data-tooltip]::after,
+.modal-close[data-tooltip]::after,
+.btn-about-close[data-tooltip]::after,
+.btn-config-close[data-tooltip]::after,
+.btn-stats-close[data-tooltip]::after,
+.btn-carousel-close[data-tooltip]::after,
+.result-btn-close[data-tooltip]::after,
+.quiz-close[data-tooltip]::after {
+  top: calc(100% + 8px);
+  bottom: auto;
+  left: auto;
+  right: 0;
+  transform: translateY(-4px);
+  text-align: right;
+}
+
+.view-close-btn[data-tooltip]::before,
+.modal-close[data-tooltip]::before,
+.btn-about-close[data-tooltip]::before,
+.btn-config-close[data-tooltip]::before,
+.btn-stats-close[data-tooltip]::before,
+.btn-carousel-close[data-tooltip]::before,
+.result-btn-close[data-tooltip]::before,
+.quiz-close[data-tooltip]::before {
+  top: calc(100% + 2px);
+  bottom: auto;
+  left: auto;
+  right: 12px;
+  transform: none;
+  border-top-color: transparent;
+  border-bottom-color: var(--color-tooltip-bg);
+}
+
+.view-close-btn[data-tooltip]:hover::after,
+.view-close-btn[data-tooltip]:focus-visible::after,
+.modal-close[data-tooltip]:hover::after,
+.modal-close[data-tooltip]:focus-visible::after,
+.btn-about-close[data-tooltip]:hover::after,
+.btn-about-close[data-tooltip]:focus-visible::after,
+.btn-config-close[data-tooltip]:hover::after,
+.btn-config-close[data-tooltip]:focus-visible::after,
+.btn-stats-close[data-tooltip]:hover::after,
+.btn-stats-close[data-tooltip]:focus-visible::after,
+.btn-carousel-close[data-tooltip]:hover::after,
+.btn-carousel-close[data-tooltip]:focus-visible::after,
+.result-btn-close[data-tooltip]:hover::after,
+.result-btn-close[data-tooltip]:focus-visible::after,
+.quiz-close[data-tooltip]:hover::after,
+.quiz-close[data-tooltip]:focus-visible::after {
+  transform: translateY(0);
+}
+
+/* Tooltip placement: Top-bar & Header buttons -> display below */
+.start-header-actions [data-tooltip]::after,
+.carousel-control-buttons [data-tooltip]::after,
+.result-actions [data-tooltip]::after {
+  top: calc(100% + 8px);
+  bottom: auto;
+  transform: translateX(-50%) translateY(-4px);
+}
+
+.start-header-actions [data-tooltip]::before,
+.carousel-control-buttons [data-tooltip]::before,
+.result-actions [data-tooltip]::before {
+  top: calc(100% + 2px);
+  bottom: auto;
+  border-top-color: transparent;
+  border-bottom-color: var(--color-tooltip-bg);
+}
+
+.start-header-actions [data-tooltip]:hover::after,
+.start-header-actions [data-tooltip]:focus-visible::after,
+.carousel-control-buttons [data-tooltip]:hover::after,
+.carousel-control-buttons [data-tooltip]:focus-visible::after,
+.result-actions [data-tooltip]:hover::after,
+.result-actions [data-tooltip]:focus-visible::after {
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Tooltip placement: Bottom-left buttons (Report issue) -> display above and align left */
+.btn-report-round[data-tooltip]::after,
+.quiz-btn-report-round[data-tooltip]::after,
+.start-report-btn[data-tooltip]::after,
+#btn-report-about[data-tooltip]::after,
+#btn-report-stats[data-tooltip]::after,
+#btn-report-config[data-tooltip]::after,
+#btn-report-carousel[data-tooltip]::after,
+#btn-report-result[data-tooltip]::after,
+#btn-report-quiz[data-tooltip]::after,
+#btn-report-error[data-tooltip]::after {
+  bottom: calc(100% + 8px);
+  top: auto;
+  left: 0;
+  right: auto;
+  transform: translateY(4px);
+  text-align: left;
+}
+
+.btn-report-round[data-tooltip]::before,
+.quiz-btn-report-round[data-tooltip]::before,
+.start-report-btn[data-tooltip]::before,
+#btn-report-about[data-tooltip]::before,
+#btn-report-stats[data-tooltip]::before,
+#btn-report-config[data-tooltip]::before,
+#btn-report-carousel[data-tooltip]::before,
+#btn-report-result[data-tooltip]::before,
+#btn-report-quiz[data-tooltip]::before,
+#btn-report-error[data-tooltip]::before {
+  bottom: calc(100% + 2px);
+  top: auto;
+  left: 12px;
+  right: auto;
+  transform: none;
+  border-top-color: var(--color-tooltip-bg);
+  border-bottom-color: transparent;
+}
+
+.btn-report-round[data-tooltip]:hover::after,
+.btn-report-round[data-tooltip]:focus-visible::after,
+.quiz-btn-report-round[data-tooltip]:hover::after,
+.quiz-btn-report-round[data-tooltip]:focus-visible::after,
+.start-report-btn[data-tooltip]:hover::after,
+.start-report-btn[data-tooltip]:focus-visible::after,
+#btn-report-about[data-tooltip]:hover::after,
+#btn-report-about[data-tooltip]:focus-visible::after,
+#btn-report-stats[data-tooltip]:hover::after,
+#btn-report-stats[data-tooltip]:focus-visible::after,
+#btn-report-config[data-tooltip]:hover::after,
+#btn-report-config[data-tooltip]:focus-visible::after,
+#btn-report-carousel[data-tooltip]:hover::after,
+#btn-report-carousel[data-tooltip]:focus-visible::after,
+#btn-report-result[data-tooltip]:hover::after,
+#btn-report-result[data-tooltip]:focus-visible::after,
+#btn-report-quiz[data-tooltip]:hover::after,
+#btn-report-quiz[data-tooltip]:focus-visible::after,
+#btn-report-error[data-tooltip]:hover::after,
+#btn-report-error[data-tooltip]:focus-visible::after {
+  transform: translateY(0);
 }
 
 .start-meta-item:first-child[data-tooltip]::after {
@@ -603,16 +754,6 @@ body.suppress-tooltips [data-tooltip]::before {
   transform: none;
 }
 
-[data-tooltip]:hover::after,
-[data-tooltip]:hover::before,
-[data-tooltip]:focus-visible::after,
-[data-tooltip]:focus-visible::before {
-  display: block;
-  opacity: 1;
-  visibility: visible;
-  transform: translateX(-50%) translateY(0);
-}
-
 .start-meta-item:first-child:hover::after,
 .start-meta-item:first-child:focus-visible::after,
 .start-meta-item:last-child:hover::after,
@@ -620,12 +761,16 @@ body.suppress-tooltips [data-tooltip]::before {
   transform: translateY(0);
 }
 
-/* Close & Back Button with accessible focus rings */
+/* Close & Back Button with accessible focus rings and top-right placement */
 .btn-about-close,
 .btn-about-back,
 .btn-config-close,
+.btn-stats-close,
+.btn-stats-back,
 .btn-carousel-close,
 .result-btn-close,
+.quiz-close,
+.view-close-btn,
 .modal-close {
   background: transparent;
   border: none;
@@ -638,7 +783,9 @@ body.suppress-tooltips [data-tooltip]::before {
   transition: color 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
   display: inline-flex;
   align-items: center;
-  position: relative;
+  position: absolute;
+  top: 12px;
+  right: 12px;
   z-index: 60;
   justify-content: center;
   width: auto;
@@ -648,8 +795,12 @@ body.suppress-tooltips [data-tooltip]::before {
 .btn-about-close:hover,
 .btn-about-back:hover,
 .btn-config-close:hover,
+.btn-stats-close:hover,
+.btn-stats-back:hover,
 .btn-carousel-close:hover,
 .result-btn-close:hover,
+.quiz-close:hover,
+.view-close-btn:hover,
 .modal-close:hover {
   color: var(--color-primary);
   background-color: var(--color-btn-tint-hover);
@@ -658,8 +809,12 @@ body.suppress-tooltips [data-tooltip]::before {
 .btn-about-close:focus-visible,
 .btn-about-back:focus-visible,
 .btn-config-close:focus-visible,
+.btn-stats-close:focus-visible,
+.btn-stats-back:focus-visible,
 .btn-carousel-close:focus-visible,
 .result-btn-close:focus-visible,
+.quiz-close:focus-visible,
+.view-close-btn:focus-visible,
 .modal-close:focus-visible {
   color: var(--color-primary);
   background-color: var(--color-btn-tint-hover);
@@ -1019,7 +1174,7 @@ body.suppress-tooltips [data-tooltip]::before {
   color: var(--color-muted);
   margin-bottom: 0;
   gap: 8px;
-  padding-right: 0;
+  padding-right: 40px;
 }
 
 .quiz-header-left {
@@ -1043,12 +1198,6 @@ body.suppress-tooltips [data-tooltip]::before {
 
 #quiz-score {
   text-align: right;
-}
-
-.quiz-close {
-  position: relative;
-  top: auto;
-  right: auto;
 }
 
 .quiz-content {
@@ -1488,12 +1637,6 @@ body.suppress-tooltips [data-tooltip]::before {
     gap: 12px;
     width: 100%;
   }
-
-  .result-btn-close {
-    position: absolute;
-    top: 10px;
-    right: 6px;
-  }
 }
 
 .result-content {
@@ -1533,12 +1676,6 @@ body.suppress-tooltips [data-tooltip]::before {
   align-items: center;
   gap: 10px;
   flex-wrap: wrap;
-}
-
-.result-btn-close {
-  position: relative;
-  top: auto;
-  right: auto;
 }
 
 .result-btn-round {
@@ -1767,15 +1904,6 @@ body.suppress-tooltips [data-tooltip]::before {
   align-items: center;
   gap: 8px;
   flex: 1;
-}
-
-.btn-carousel-close {
-  width: 38px;
-  min-width: 38px;
-  flex: 0 0 38px;
-  position: relative;
-  top: auto;
-  right: auto;
 }
 
 .carousel-content {
@@ -2116,19 +2244,6 @@ body.suppress-tooltips [data-tooltip]::before {
   margin: 0;
   text-align: center;
   flex: 1;
-}
-
-.btn-about-close,
-.btn-about-back,
-.btn-config-close,
-.btn-stats-close,
-.btn-stats-back {
-  width: 38px;
-  min-width: 38px;
-  flex: 0 0 38px;
-  position: relative;
-  top: auto;
-  right: auto;
 }
 
 .about-content {
