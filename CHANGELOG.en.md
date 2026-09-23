@@ -14,6 +14,8 @@ A summarized overview of all changes, per version of this project.
 ---
 
 ## v3.5.1-pre
+- FrontEnd: Moved report error button in mobile quiz view to a fixed position at the bottom left with default round design.
+- DevEx: Standardized all browser console logging and runtime warning messages to English across all client modules.
 - DevEx: All JavaScript functions now have JSDoc documentation with parameters and return value, monitored by a regression test.
 - DevEx: New script `run-review-server.py` serves the project via threaded HTTP for review and browser testing.
 - FrontEnd: Settings now opens full screen, with the report error button at the top left as in About this app.
@@ -21,7 +23,7 @@ A summarized overview of all changes, per version of this project.
 - FrontEnd: Institution automatically adds incorrect questions from the previous quiz to a new round.
 - FrontEnd: Total playing time, playing statistics and most frequently incorrectly answered questions are now tracked locally in localStorage.
 - FrontEnd: Report a Bug button is now a real, ubiquitous button with automatic screen context.
-- BackEnd: The summary email now shows its own table for each followed player with equally spaced Always/Last week/Last 24h columns.
+- BackEnd: The summary email now shows its own table for each followed player with equally divided Always/Last week/Last 24h columns.
 - BackEnd: Reported issues now show both the question ID and the question text instead of just one.
 
 ## v3.5.0 [released: 2026-09-22]

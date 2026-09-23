@@ -55,7 +55,6 @@ export const el = {
   btnResultClose: document.getElementById("btn-result-close"),
   btnResultRetryErrors: document.getElementById("btn-result-retry-errors"),
   btnReportError: document.getElementById("btn-report-error"),
-  btnReportErrorMobile: document.getElementById("btn-report-error-mobile"),
   btnReportStart: document.getElementById("btn-report-start"),
   btnReportResult: document.getElementById("btn-report-result"),
   btnReportCarousel: document.getElementById("btn-report-carousel"),

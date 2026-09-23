@@ -68,7 +68,7 @@ const screenshotPrefix = process.env.QUIZ_SCREENSHOT_PREFIX || "T0062";
         assert.equal(await close.evaluate((el) => el.offsetParent.id), "app", "Anchor the close button to the ancestor card");
         assert.ok(Math.abs(button.y - card.y - 12) < 0.5, "Close button must sit 12px below the card top");
         assert.ok(Math.abs(card.x + card.width - button.x - button.width - 12) < 0.5, "Close button must sit 12px inside the card right edge");
-        for (const selector of ["#quiz-score", "#quiz-progress", "#quiz-status-indicator", "#btn-report-error-mobile"]) {
+        for (const selector of ["#quiz-score", "#quiz-progress", "#quiz-status-indicator"]) {
           const item = page.locator(selector);
           if (!(await item.isVisible())) continue;
           const rect = await item.boundingBox();

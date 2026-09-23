@@ -1007,46 +1007,6 @@ body.suppress-tooltips [data-tooltip]::before {
   border: 1px solid var(--color-wrong-border);
 }
 
-.quiz-header:has(.quiz-status-indicator:not(.hidden)) .btn-report-error-mobile {
-  display: none;
-}
-
-.btn-report-error {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  margin: 0;
-  padding: 4px 10px;
-  font-size: var(--font-size-xs);
-  font-weight: 600;
-  color: var(--color-text);
-  background: var(--color-card-subtle);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-full);
-  cursor: pointer;
-  line-height: 1.2;
-}
-
-.btn-report-error:not(:disabled):hover,
-.btn-report-error:not(:disabled):focus-visible {
-  background: var(--color-wrong-bg);
-  color: var(--color-wrong);
-  border-color: var(--color-wrong-border);
-  outline: none;
-}
-
-.btn-report-error:disabled {
-  opacity: 0.9;
-  cursor: default;
-  pointer-events: none;
-  vertical-align: middle;
-  margin: 0 2px;
-}
-
-.btn-report-error-mobile {
-  display: inline-flex;
-}
-
 .report-icon {
   flex-shrink: 0;
 }
@@ -1296,10 +1256,11 @@ body.suppress-tooltips [data-tooltip]::before {
 }
 
 .quiz-bottom-meta {
-  display: none;
+  display: block;
 }
 
 .quiz-divider {
+  display: none;
   border: none;
   border-top: 1px solid var(--color-border-subtle);
   margin: 28px 0 18px;
@@ -1333,6 +1294,14 @@ body.suppress-tooltips [data-tooltip]::before {
   margin: 0;
 }
 
+/* On mobile, float the quiz report button sticky at bottom-left */
+.quiz-btn-report-round {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 40;
+}
+
 /* Positioned relative to #app (the outer card), mirroring the top-right close
    buttons on the carousel and about screens, which sit in the same corner. */
 .carousel-header-actions .btn-report-round,
@@ -1353,6 +1322,11 @@ body.suppress-tooltips [data-tooltip]::before {
   transform: translateY(-1px);
   box-shadow: 0 4px 10px var(--color-primary-shadow-hover);
   outline: none;
+}
+
+.quiz-btn-report-round:active,
+.btn-report-round:active {
+  transform: scale(0.92);
 }
 
 /* ==========================================================================
@@ -2766,13 +2740,20 @@ body.suppress-tooltips [data-tooltip]::before {
     padding-bottom: 0;
   }
 
-  .btn-report-error-mobile {
-    display: none;
-  }
-
   .quiz-bottom-meta {
     display: block;
     margin-top: auto;
+  }
+
+  .quiz-divider {
+    display: block;
+  }
+
+  .quiz-btn-report-round {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    z-index: auto;
   }
 
   #btn-next {
@@ -2814,18 +2795,6 @@ body.suppress-tooltips [data-tooltip]::before {
 /* ==========================================================================
    13. Dark Theme Overrides & Refinements
    ========================================================================== */
-
-[data-theme="dark"] .btn-report-error {
-  background: var(--color-card);
-  color: var(--color-border);
-  border-color: var(--color-border);
-}
-
-[data-theme="dark"] .btn-report-error:not(:disabled):hover {
-  background: var(--color-wrong-bg);
-  color: var(--color-wrong-text);
-  border-color: var(--color-wrong-border);
-}
 
 /* Only top/right/bottom: preserve the correct/wrong color-coded left accent border. */
 [data-theme="dark"] #result-table tr {

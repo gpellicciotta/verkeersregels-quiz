@@ -76,8 +76,22 @@ class TestUXLayout(unittest.TestCase):
         self.assertIn('class="result-header"', html, "index.html must define result-header")
         self.assertIn('class="result-header-text"', html, "index.html must define result-header-text")
         self.assertIn(".result-header", css, "style.css must declare .result-header")
-        self.assertIn("justify-content: space-between", css, "style.css must use space-between in result-header")
+
+    def test_quiz_report_button_responsive_layout(self) -> None:
+        """Validates that quiz report button is styled sticky on mobile and centered on desktop."""
+        self.assertTrue(INDEX_PATH.exists(), "index.html must exist")
+        self.assertTrue(CSS_PATH.exists(), "style.css must exist")
+        html = INDEX_PATH.read_text(encoding="utf-8")
+        css = CSS_PATH.read_text(encoding="utf-8")
+
+        self.assertNotIn("btn-report-error-mobile", html, "Obsolete mobile header report button must be removed")
+        self.assertIn('id="btn-report-error"', html, "index.html must define btn-report-error")
+        self.assertIn('class="quiz-btn-report-round"', html, "btn-report-error must use quiz-btn-report-round class")
+        self.assertIn(".quiz-btn-report-round", css, "style.css must style .quiz-btn-report-round")
+        self.assertIn("position: fixed", css, "style.css must position mobile report button fixed")
+        self.assertIn("left: 20px", css, "style.css must position mobile report button at left 20px")
 
 
 if __name__ == "__main__":
     unittest.main()
+

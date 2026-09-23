@@ -15,7 +15,6 @@ An overview of all tasks and their planning.
 
 ## Next Milestone
 - [~] A0073 [owner: @claude] Bij de Carrousel instelling "Welke borden tonen": voorzie een optie "Enkel borden waarop ik tijdens de quiz fouten heb gemaakt"
-- [~] A0074 [owner: @gemini] In mobile view ziet de "Meld fout"-knop er niet standaard uit: de positie zou dan ook beter veranderd worden naar links beneden en daar "sticky" zijn zodat hij niet van het scherm kan scrollen
 - [ ] T0075 In mobile view zouden alle actie-knoppen zouden sticky moeten zijn, zodat ze niet van het scherm kunnen scrollen
       In desktop view moet dit ook zo zijn voor de "Opslaan" knop onderaan
 - [ ] A0076 De checkbox "Neem foutieve vragen van vorige quiz automatisc op lijkt een ander font of font-weight te hebben dan de rest. Maak dit conform.

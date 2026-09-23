@@ -14,6 +14,8 @@ Una panoramica riepilogativa di tutte le modifiche, per versione di questo proge
 ---
 
 ## v3.5.1-pre
+- FrontEnd: Pulsante segnala errore nella visualizzazione quiz mobile spostato in una posizione fissa in basso a sinistra con design rotondo predefinito.
+- DevEx: Standardizzati tutti i messaggi di registrazione della console del browser e di avviso di runtime in inglese su tutti i moduli client.
 - DevEx: Tutte le funzioni JavaScript ora dispongono di documentazione JSDoc con parametri e valore restituito, monitorati da un test di regressione.
 - DevEx: Il nuovo script `run-review-server.py` serve il progetto tramite HTTP con thread per la revisione e il test del browser.
 - FrontEnd: Impostazioni ora si apre a schermo intero, con il pulsante segnala errore in alto a sinistra come in Informazioni su questa app.
@@ -21,7 +23,7 @@ Una panoramica riepilogativa di tutte le modifiche, per versione di questo proge
 - FrontEnd: L'istituto aggiunge automaticamente le domande errate del quiz precedente a un nuovo round.
 - FrontEnd: Il tempo di gioco totale, le statistiche di gioco e le domande con risposte errate più frequenti vengono ora monitorate localmente in localStorage.
 - FrontEnd: Il pulsante Segnala un bug ora è un pulsante reale e onnipresente con contesto sullo schermo automatico.
-- BackEnd: L'e-mail di riepilogo ora mostra la propria tabella per ciascun giocatore seguito con colonne Sempre/Ultima settimana/Ultime 24 ore equidistanti.
+- BackEnd: L'e-mail di riepilogo ora mostra la propria tabella per ciascun giocatore seguito con colonne equamente divise Sempre/Ultima settimana/Ultime 24 ore.
 - BackEnd: I problemi segnalati ora mostrano sia l'ID domanda che il testo della domanda invece di uno solo.
 
 ## v3.5.0 [released: 2026-09-22]
