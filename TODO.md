@@ -14,7 +14,7 @@ An overview of all tasks and their planning.
 ---
 
 ## Next Milestone
-- [ ] A0071 Zorg ervoor dat de sluit-knop (de 'x') steeds rechts boven staat, zoals bij de Quiz view.
+- [~] A0071 [owner: @gemini] Zorg ervoor dat de sluit-knop (de 'x') steeds rechts boven staat, zoals bij de Quiz view.
   Hij staat niet voldoende rechts-boven bij: 
   - Instellingen (met helemaal rechts dan "Opslaan")
   - Over Verkeersregels Quiz  
