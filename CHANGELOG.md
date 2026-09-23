@@ -14,6 +14,7 @@ A summarized overview of all changes, per version of this project.
 ---
 
 ## v3.5.1-pre
+- FrontEnd: Actieknoppen zijn nu sticky op mobiel en de opslaanknop in instellingen ook op desktop.
 - FrontEnd: Verplaatste meld-foutknop in mobiele quizweergave naar een vaste positie linksonder met standaard ronde vormgeving.
 - DevEx: Standardized all browser console logging and runtime warning messages to English across all client modules.
 - DevEx: Alle JavaScript-functies hebben nu JSDoc-documentatie met parameters en retourwaarde, bewaakt door een regressietest.

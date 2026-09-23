@@ -57,9 +57,11 @@ Functional and technical requirements for the Verkeersregels Quiz application.
   - Full-window view accessible via the start screen gear button or `?config=1` URL parameter.
   - Mirrors the About view chrome: centered title, report issue button top-left, close button top-right.
   - Groups general, quiz-only, and carousel-only preferences into separate cards, all always visible.
+  - Keeps the bottom "Opslaan" save button sticky at the viewport bottom on both mobile and desktop screens during scrolling.
   - Persists every field to `localStorage` on save and returns to the start screen.
 - **Results and Review**:
   - Displays total score, accuracy percentage, and total elapsed duration (minutes and seconds).
+  - Keeps action buttons (Report, Share, Print, Close) and error retry controls sticky on mobile view during table scrolling.
   - Triggers a celebratory confetti animation when achieving a perfect score.
   - Presents a complete review table detailing every question, sign thumbnail, user response, and correct answer.
   - Provides a print-optimized layout that spans full width and prevents page breaks inside result rows.

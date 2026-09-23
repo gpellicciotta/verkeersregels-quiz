@@ -91,7 +91,29 @@ class TestUXLayout(unittest.TestCase):
         self.assertIn("position: fixed", css, "style.css must position mobile report button fixed")
         self.assertIn("left: 20px", css, "style.css must position mobile report button at left 20px")
 
+    def test_config_save_button_sticky_positioning(self) -> None:
+        """Validates that .config-actions is styled sticky at bottom for mobile and desktop."""
+        self.assertTrue(CSS_PATH.exists(), "style.css must exist")
+        css = CSS_PATH.read_text(encoding="utf-8")
+
+        self.assertIn(".config-actions", css, "style.css must style .config-actions")
+        self.assertIn("position: sticky", css, "style.css must declare position: sticky")
+        self.assertIn("bottom: 0", css, "style.css must declare bottom: 0")
+
+    def test_sticky_headers_and_modal_actions(self) -> None:
+        """Validates that modal actions and screen headers maintain sticky positioning."""
+        self.assertTrue(CSS_PATH.exists(), "style.css must exist")
+        css = CSS_PATH.read_text(encoding="utf-8")
+
+        self.assertIn(".modal-actions", css, "style.css must declare .modal-actions")
+        self.assertIn(".config-header", css, "style.css must declare .config-header")
+        self.assertIn(".about-header", css, "style.css must declare .about-header")
+        self.assertIn(".carousel-header", css, "style.css must declare .carousel-header")
+        self.assertIn(".result-header", css, "style.css must declare .result-header")
+        self.assertIn(".start-bottom-meta", css, "style.css must declare .start-bottom-meta")
+
 
 if __name__ == "__main__":
     unittest.main()
+
 

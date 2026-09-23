@@ -14,6 +14,7 @@ Un aperçu résumé de toutes les modifications, par version de ce projet.
 ---
 
 ## v3.5.1-pre
+- FrontEnd: Les boutons d'action sont désormais collants sur mobile et le bouton d'enregistrement sur ordinateur.
 - FrontEnd: Bouton d'erreur de rapport déplacé dans la vue du quiz mobile vers une position fixe en bas à gauche avec un design rond par défaut.
 - DevEx: Standardisation de tous les messages de journalisation de la console du navigateur et d'avertissement d'exécution en anglais dans tous les modules clients.
 - DevEx: Toutes les fonctions JavaScript disposent désormais d'une documentation JSDoc avec des paramètres et une valeur de retour, surveillés par un test de régression.

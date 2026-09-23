@@ -14,6 +14,7 @@ Eine zusammenfassende Übersicht aller Änderungen pro Version dieses Projekts.
 ---
 
 ## v3.5.1-pre
+- FrontEnd: Aktionsschaltflächen sind jetzt auf Mobilgeräten sticky und die Speichern-Schaltfläche auch auf dem Desktop.
 - FrontEnd: Die Schaltfläche „Fehler melden“ in der mobilen Quizansicht wurde an eine feste Position unten links mit standardmäßigem runden Design verschoben.
 - DevEx: Alle Browser-Konsolenprotokolle und Laufzeitwarnmeldungen wurden in allen Clientmodulen auf Englisch standardisiert.
 - DevEx: Alle JavaScript-Funktionen verfügen jetzt über eine JSDoc-Dokumentation mit Parametern und Rückgabewerten, überwacht durch einen Regressionstest.
