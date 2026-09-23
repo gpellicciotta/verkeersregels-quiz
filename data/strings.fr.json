@@ -177,6 +177,7 @@
   "config.delay_15": "15 secondes (étendu)",
   "config.label_carousel_signs": "Quels panneaux afficher",
   "config.carousel_all": "Tous les 198 panneaux de signalisation",
+  "config.carousel_errors": "Uniquement les panneaux avec des erreurs lors du quiz",
   "config.carousel_since_1990": "Panneaux introduits/modifiés à partir de 1990",
   "config.carousel_since_2000": "Panneaux introduits/modifiés à partir de 2000",
   "config.carousel_since_2010": "Panneaux introduits/modifiés à partir de 2010",

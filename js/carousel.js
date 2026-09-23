@@ -5,6 +5,7 @@ import { showScreen } from "./screens.js";
 import { t, getLang } from "./i18n.js";
 import { applyTranslation } from "./quiz.js";
 import { createIcon } from "./icons.js";
+import { getErrorQuestionIds } from "./stats.js";
 
 /**
  * Translate a sign category into its display name.
@@ -282,11 +283,11 @@ export function toggleCarouselPause(forceState) {
 /**
  * Start the carousel with a shuffled set of signs and show its screen.
  *
- * A year filter that leaves no signs falls back to all signs, so the carousel always
+ * A year or error filter that leaves no signs falls back to all signs, so the carousel always
  * has something to show.
  *
  * @param {Object} [options] - Startup overrides.
- * @param {number|null} [options.since] - Only show signs in force since this year;
+ * @param {number|string|null} [options.since] - Only show signs in force since this year or "errors" for error signs;
  *        defaults to the stored carousel filter.
  * @param {number} [options.delay] - Slide delay in seconds; defaults to the stored delay.
  * @returns {void}
@@ -294,10 +295,23 @@ export function toggleCarouselPause(forceState) {
 export function startCarousel(options = {}) {
   let signItems = allQuestions.filter((q) => Boolean(q.sign));
   const sinceFilter = options.since !== undefined ? options.since : carouselState.filterSince;
-  if (sinceFilter !== null && sinceFilter !== undefined) {
-    signItems = signItems.filter(
-      (q) => typeof q.since === "number" && q.since >= sinceFilter
+  if (sinceFilter === "errors") {
+    const errorIds = new Set(getErrorQuestionIds());
+    const wrongSigns = new Set(
+      allQuestions
+        .filter((q) => errorIds.has(String(q.id)) && q.sign)
+        .map((q) => q.sign)
     );
+    signItems = signItems.filter(
+      (q) => errorIds.has(String(q.id)) || (q.sign && wrongSigns.has(q.sign))
+    );
+  } else if (sinceFilter !== null && sinceFilter !== undefined && sinceFilter !== "") {
+    const minYear = typeof sinceFilter === "number" ? sinceFilter : parseInt(sinceFilter, 10);
+    if (!isNaN(minYear)) {
+      signItems = signItems.filter(
+        (q) => typeof q.since === "number" && q.since >= minYear
+      );
+    }
   }
   if (signItems.length === 0) {
     signItems = allQuestions.filter((q) => Boolean(q.sign));

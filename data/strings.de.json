@@ -177,6 +177,7 @@
   "config.delay_15": "15 Sekunden (ausführlich)",
   "config.label_carousel_signs": "Welche Schilder anzeigen",
   "config.carousel_all": "Alle 198 Verkehrszeichen",
+  "config.carousel_errors": "Nur Schilder, bei denen ich im Quiz Fehler gemacht habe",
   "config.carousel_since_1990": "Schilder eingeführt/geändert ab 1990",
   "config.carousel_since_2000": "Schilder eingeführt/geändert ab 2000",
   "config.carousel_since_2010": "Schilder eingeführt/geändert ab 2010",

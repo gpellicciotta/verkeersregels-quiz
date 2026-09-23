@@ -177,6 +177,7 @@
   "config.delay_15": "15 secondi (esteso)",
   "config.label_carousel_signs": "Quali segni mostrano",
   "config.carousel_all": "Tutti i 198 segnali stradali",
+  "config.carousel_errors": "Solo segnali su cui ho sbagliato durante il quiz",
   "config.carousel_since_1990": "Segnaletica introdotta/modificata dal 1990",
   "config.carousel_since_2000": "Segnaletica introdotta/modificata dal 2000",
   "config.carousel_since_2010": "Segnaletica introdotta/modificata dal 2010",

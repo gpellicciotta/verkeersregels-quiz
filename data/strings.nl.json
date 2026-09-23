@@ -177,6 +177,7 @@
   "config.delay_15": "15 seconden (uitgebreid)",
   "config.label_carousel_signs": "Welke borden tonen",
   "config.carousel_all": "Alle 198 verkeersborden",
+  "config.carousel_errors": "Enkel borden waarop ik tijdens de quiz fouten heb gemaakt",
   "config.carousel_since_1990": "Borden ingevoerd/gewijzigd vanaf 1990",
   "config.carousel_since_2000": "Borden ingevoerd/gewijzigd vanaf 2000",
   "config.carousel_since_2010": "Borden ingevoerd/gewijzigd vanaf 2010",

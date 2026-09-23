@@ -177,6 +177,7 @@
   "config.delay_15": "15 seconds (extended)",
   "config.label_carousel_signs": "Which signs to show",
   "config.carousel_all": "All 198 traffic signs",
+  "config.carousel_errors": "Only signs answered incorrectly during the quiz",
   "config.carousel_since_1990": "Signs introduced/updated from 1990",
   "config.carousel_since_2000": "Signs introduced/updated from 2000",
   "config.carousel_since_2010": "Signs introduced/updated from 2010",

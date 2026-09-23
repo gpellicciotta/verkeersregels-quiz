@@ -146,9 +146,14 @@ export function saveConfig() {
     carouselState.delayMs = sec * 1000;
   }
   if (el.configCarouselSince) {
-    carouselState.filterSince = el.configCarouselSince.value
-      ? parseInt(el.configCarouselSince.value, 10)
-      : null;
+    const rawVal = el.configCarouselSince.value;
+    if (rawVal === "errors") {
+      carouselState.filterSince = "errors";
+    } else if (rawVal) {
+      carouselState.filterSince = parseInt(rawVal, 10);
+    } else {
+      carouselState.filterSince = null;
+    }
   }
 
   // Quiz settings

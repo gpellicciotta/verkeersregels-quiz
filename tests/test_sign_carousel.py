@@ -84,6 +84,20 @@ class TestSignCarousel(unittest.TestCase):
         self.assertIn('e.key === "ArrowRight"', js, "app.js must support ArrowRight for next sign")
         self.assertIn('e.code === "Space"', js, "app.js must support Space key for pause toggle")
 
+    def test_carousel_sign_filter_includes_error_only_option(self) -> None:
+        """Validates that index.html and JS modules support filtering the carousel to quiz error signs."""
+        html = INDEX_PATH.read_text(encoding="utf-8")
+        js = _read_js()
+
+        self.assertIn('id="config-carousel-since"', html, "index.html must define config-carousel-since select")
+        self.assertIn('value="errors"', html, "config-carousel-since must define errors option")
+        self.assertIn('data-i18n="config.carousel_errors"', html, "errors option must define data-i18n attribute")
+        self.assertIn('Enkel borden waarop ik tijdens de quiz fouten heb gemaakt', html)
+
+        self.assertIn('sinceFilter === "errors"', js, "carousel.js must check for errors filter")
+        self.assertIn('getErrorQuestionIds()', js, "carousel.js must query error question IDs from stats")
+        self.assertIn('rawVal === "errors"', js, "config-view.js must persist errors option")
+
 
 if __name__ == "__main__":
     unittest.main()
