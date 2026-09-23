@@ -14,6 +14,7 @@ A summarized overview of all changes, per version of this project.
 ---
 
 ## v3.5.1-pre
+- FrontEnd: Positioned close buttons at the top-right corner across settings, about, carousel, and result views.
 - FrontEnd: Positioned the report issue button at the bottom-left across settings, about, carousel, and quiz views.
 - FrontEnd: Added a dedicated sponsorship and project support card to the About view.
 - FrontEnd: Knop voor veelgemaakte fouten op het startscherm hernoemd, voorzien van tooltip en passend uitgelijnd qua breedte.

@@ -112,6 +112,19 @@ class TestUXLayout(unittest.TestCase):
         self.assertIn(".result-header", css, "style.css must declare .result-header")
         self.assertIn(".start-bottom-meta", css, "style.css must declare .start-bottom-meta")
 
+    def test_screen_close_buttons_top_right_placement(self) -> None:
+        """Validates that close buttons sit in the card top-right across quiz, about, config, carousel, and result."""
+        self.assertTrue(INDEX_PATH.exists(), "index.html must exist")
+        self.assertTrue(CSS_PATH.exists(), "style.css must exist")
+        html = INDEX_PATH.read_text(encoding="utf-8")
+        css = CSS_PATH.read_text(encoding="utf-8")
+
+        for btn_id in ["btn-quiz-close", "btn-about-back", "btn-config-close", "btn-carousel-exit", "btn-result-close"]:
+            self.assertIn(f'id="{btn_id}"', html, f"index.html must define {btn_id}")
+
+        for cls in [".quiz-close", ".btn-about-close", ".btn-config-close", ".btn-carousel-close", ".result-btn-close"]:
+            self.assertIn(cls, css, f"style.css must style {cls}")
+
 
 if __name__ == "__main__":
     unittest.main()
