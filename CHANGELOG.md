@@ -14,6 +14,7 @@ A summarized overview of all changes, per version of this project.
 ---
 
 ## v3.5.1-pre
+- DevEx: Standardized all browser console logging and runtime warning messages to English across all client modules.
 - DevEx: Alle JavaScript-functies hebben nu JSDoc-documentatie met parameters en retourwaarde, bewaakt door een regressietest.
 - DevEx: Nieuw script `run-review-server.py` bedient het project via threaded HTTP voor review en browsertests.
 - FrontEnd: Instellingen openen nu als volledig scherm, met de meld-fout knop linksboven zoals bij Over deze app.

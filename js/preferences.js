@@ -23,7 +23,7 @@ export function getStoredPreferences() {
     const raw = localStorage.getItem(PREFS_STORAGE_KEY);
     return raw ? JSON.parse(raw) : {};
   } catch (err) {
-    console.warn("Kon voorkeuren niet lezen uit localStorage:", err);
+    console.warn("Failed to read preferences from localStorage:", err);
     return {};
   }
 }
@@ -42,7 +42,7 @@ export function setStoredPreferences(patch) {
     Object.assign(prefs, patch);
     localStorage.setItem(PREFS_STORAGE_KEY, JSON.stringify(prefs));
   } catch (err) {
-    console.warn("Kon voorkeuren niet opslaan in localStorage:", err);
+    console.warn("Failed to save preferences to localStorage:", err);
   }
 }
 

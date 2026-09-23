@@ -37,6 +37,6 @@ export async function submitToSheet(correct, total, pct, durationSeconds, format
       }),
     });
   } catch (err) {
-    console.warn("Kon score niet naar Google Sheet sturen:", err);
+    console.warn("Failed to send score to Google Sheet:", err);
   }
 }

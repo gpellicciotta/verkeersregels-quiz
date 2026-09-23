@@ -28,7 +28,7 @@ window.addEventListener("appinstalled", () => {
   if (el.btnInstall) {
     el.btnInstall.classList.add("hidden");
   }
-  console.info("PWA succesvol geïnstalleerd.");
+  console.info("PWA installed successfully.");
 });
 
 /**
@@ -97,7 +97,7 @@ export function registerServiceWorker() {
           if (worker) {
             worker.addEventListener("statechange", () => {
               if (worker.state === "installed" && navigator.serviceWorker.controller) {
-                console.info("Nieuwe versie van de quiz beschikbaar, wordt automatisch geactiveerd.");
+                console.info("New version of the quiz available, activating automatically.");
               }
             });
           }
@@ -134,6 +134,6 @@ export function registerServiceWorker() {
         });
       })
       .catch((err) => {
-        console.warn("Service Worker registratie mislukt:", err);
+        console.warn("Service Worker registration failed:", err);
       });
 }

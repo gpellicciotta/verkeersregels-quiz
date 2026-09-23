@@ -15,7 +15,7 @@ export function getPendingReports() {
     const raw = localStorage.getItem(REPORT_QUEUE_KEY);
     return raw ? JSON.parse(raw) : [];
   } catch (err) {
-    console.warn("Kon foutmeldingswachtrij niet lezen uit localStorage:", err);
+    console.warn("Failed to read report queue from localStorage:", err);
     return [];
   }
 }
@@ -38,7 +38,7 @@ export function savePendingReports(reports) {
       localStorage.setItem(REPORT_QUEUE_KEY, JSON.stringify(reports));
       return true;
     } catch (err) {
-      console.warn("LocalStorage vol, oudste foutmelding verwijderd:", err);
+      console.warn("LocalStorage full, dropped oldest error report:", err);
       reports.shift();
     }
   }
@@ -95,7 +95,7 @@ export async function drainReportQueue() {
         savePendingReports(reports);
         await new Promise((resolve) => setTimeout(resolve, 500));
       } catch (err) {
-        console.warn("Verzenden van foutmelding uit wachtrij onderbroken:", err);
+        console.warn("Sending queued error report interrupted:", err);
         break;
       }
     }
@@ -127,7 +127,7 @@ export function submitErrorReport(context, remark, includeContext = true) {
 
   if (!navigator.onLine) {
     enqueueReport(payloadData);
-    console.info("Offline: foutmelding opgeslagen in lokale wachtrij.");
+    console.info("Offline: error report saved to local queue.");
     return Promise.resolve();
   }
 
@@ -138,7 +138,7 @@ export function submitErrorReport(context, remark, includeContext = true) {
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
     body: payload,
   }).catch((err) => {
-    console.warn("Verzenden mislukt; foutmelding opgeslagen in lokale wachtrij:", err);
+    console.warn("Sending failed; error report saved to local queue:", err);
     enqueueReport(payloadData);
   });
 }

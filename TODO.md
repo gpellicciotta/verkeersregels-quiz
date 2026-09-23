@@ -14,7 +14,6 @@ An overview of all tasks and their planning.
 ---
 
 ## Next Milestone
-- [~] A0072 [owner: @gemini] English as implementation language: make sure all browser console logging happens exclusively in English, also all code comments are in English.
 - [ ] A0073 Bij de Carrousel instelling "Welke borden tonen": voorzie een optie "Enkel borden waarop ik tijdens de quiz fouten heb gemaakt"
 - [ ] A0074 In mobile view ziet de "Meld fout"-knop er niet standaard uit: de positie zou dan ook beter veranderd worden naar links beneden en daar "sticky" zijn zodat hij niet van het scherm kan scrollen
 - [ ] T0075 In mobile view zouden alle actie-knoppen zouden sticky moeten zijn, zodat ze niet van het scherm kunnen scrollen

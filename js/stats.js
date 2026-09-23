@@ -48,7 +48,7 @@ export function getStoredStats() {
       lastQuizWrongIds: Array.isArray(parsed && parsed.lastQuizWrongIds) ? parsed.lastQuizWrongIds : [],
     };
   } catch (err) {
-    console.warn("Kon speelstatistieken niet lezen uit localStorage:", err);
+    console.warn("Failed to read play statistics from localStorage:", err);
     return emptyStats();
   }
 }
@@ -63,7 +63,7 @@ function setStoredStats(stats) {
   try {
     localStorage.setItem(STATS_STORAGE_KEY, JSON.stringify(stats));
   } catch (err) {
-    console.warn("Kon speelstatistieken niet opslaan in localStorage:", err);
+    console.warn("Failed to save play statistics to localStorage:", err);
   }
 }
 
@@ -168,6 +168,6 @@ export function resetStats() {
   try {
     localStorage.removeItem(STATS_STORAGE_KEY);
   } catch (err) {
-    console.warn("Kon speelstatistieken niet wissen uit localStorage:", err);
+    console.warn("Failed to clear play statistics from localStorage:", err);
   }
 }

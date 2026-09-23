@@ -157,7 +157,7 @@ export async function loadChangelog() {
     if (!res.ok && lang !== "nl") {
       res = await fetch("CHANGELOG.md");
     }
-    if (!res.ok) throw new Error("Kon CHANGELOG.md niet laden: " + res.status);
+    if (!res.ok) throw new Error("Failed to load CHANGELOG.md: " + res.status);
     const md = await res.text();
     const version = extractVersionFromChangelog(md);
     if (el.aboutVersionTag) el.aboutVersionTag.textContent = version;
@@ -167,7 +167,7 @@ export async function loadChangelog() {
     if (el.changelogBody) el.changelogBody.innerHTML = changelogHtmlCache;
     if (el.aboutChangelogBody) el.aboutChangelogBody.innerHTML = changelogHtmlCache;
   } catch (err) {
-    console.warn("Changelog laden mislukt:", err);
+    console.warn("Failed to load changelog:", err);
     changelogHtmlCache = null;
     changelogHtmlCacheLang = null;
     if (el.aboutVersionTag) el.aboutVersionTag.textContent = t("version.unknown");
