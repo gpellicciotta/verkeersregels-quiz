@@ -13,7 +13,7 @@ A summarized overview of all changes, per version of this project.
 
 ---
 
-## v3.6.0-pre
+## v3.6.0 [released: 2026-09-23]
 - FrontEnd: Full screen layout standardized with sticky headers, fixed action buttons and uniform close buttons at the top right.
 - FrontEnd: Report error button uniformly placed at the bottom left of all screens with automatic context detection of the active view.
 - FrontEnd: Added statistics view with locally tracked playing time, game counts, average score and error overviews including data reset option.

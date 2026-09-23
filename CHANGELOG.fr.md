@@ -13,7 +13,7 @@ Un aperçu résumé de toutes les modifications, par version de ce projet.
 
 ---
 
-## v3.6.0-pre
+## v3.6.0 [released: 2026-09-23]
 - FrontEnd: Disposition plein écran standardisée avec des en-têtes collants, des boutons d'action fixes et des boutons de fermeture uniformes en haut à droite.
 - FrontEnd: Bouton de rapport d'erreur uniformément placé en bas à gauche de tous les écrans avec détection automatique du contexte de la vue active.
 - FrontEnd: Ajout d'une vue des statistiques avec le temps de jeu suivi localement, le nombre de jeux, le score moyen et les aperçus des erreurs, y compris l'option de réinitialisation des données.

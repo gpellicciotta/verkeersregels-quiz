@@ -13,7 +13,7 @@ A summarized overview of all changes, per version of this project.
 
 ---
 
-## v3.6.0-pre
+## v3.6.0 [released: 2026-09-23]
 - FrontEnd: Volledig scherm-indeling gestandaardiseerd met sticky headers, vaste actieknoppen en uniforme sluitknoppen rechtsboven.
 - FrontEnd: Meld-foutknop uniform linksonder geplaatst op alle schermen met automatische contextdetectie van de actieve weergave.
 - FrontEnd: Statistiekenweergave toegevoegd met lokaal bijgehouden speeltijd, spelaantallen, gemiddelde score en foutoverzichten inclusief data-resetoptie.

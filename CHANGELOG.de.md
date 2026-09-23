@@ -13,7 +13,7 @@ Eine zusammenfassende Übersicht aller Änderungen pro Version dieses Projekts.
 
 ---
 
-## v3.6.0-pre
+## v3.6.0 [released: 2026-09-23]
 - FrontEnd: Vollbild-Layout standardisiert mit Sticky-Headern, festen Aktionsschaltflächen und einheitlichen Schließschaltflächen oben rechts.
 - FrontEnd: Schaltfläche „Fehler melden“ einheitlich unten links auf allen Bildschirmen platziert mit automatischer Kontexterkennung der aktiven Ansicht.
 - FrontEnd: Statistikansicht mit lokal erfasster Spielzeit, Spielanzahl, Durchschnittspunktzahl und Fehlerübersichten einschließlich der Option zum Zurücksetzen der Daten hinzugefügt.

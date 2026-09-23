@@ -13,7 +13,7 @@ Una panoramica riepilogativa di tutte le modifiche, per versione di questo proge
 
 ---
 
-## v3.6.0-pre
+## v3.6.0 [released: 2026-09-23]
 - FrontEnd: Layout a schermo intero standardizzato con intestazioni permanenti, pulsanti di azione fissi e pulsanti di chiusura uniformi in alto a destra.
 - FrontEnd: Pulsante Segnala errore posizionato uniformemente in basso a sinistra su tutte le schermate con rilevamento automatico del contesto della vista attiva.
 - FrontEnd: Aggiunta la visualizzazione delle statistiche con tempo di gioco monitorato localmente, conteggi delle partite, punteggio medio e panoramiche degli errori inclusa l'opzione di ripristino dei dati.
