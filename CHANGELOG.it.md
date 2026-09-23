@@ -13,20 +13,18 @@ Una panoramica riepilogativa di tutte le modifiche, per versione di questo proge
 
 ---
 
-## v3.5.1-pre
-- FrontEnd: Aggiunta una scheda dedicata per il supporto e la sponsorizzazione del progetto nella vista Informazioni.
-- FrontEnd: I pulsanti di azione ora sono fissi su mobile e il pulsante salva anche su desktop.
-- FrontEnd: Pulsante segnala errore nella visualizzazione quiz mobile spostato in una posizione fissa in basso a sinistra con design rotondo predefinito.
-- DevEx: Standardizzati tutti i messaggi di registrazione della console del browser e di avviso di runtime in inglese su tutti i moduli client.
-- DevEx: Tutte le funzioni JavaScript ora dispongono di documentazione JSDoc con parametri e valore restituito, monitorati da un test di regressione.
-- DevEx: Il nuovo script `run-review-server.py` serve il progetto tramite HTTP con thread per la revisione e il test del browser.
-- FrontEnd: Impostazioni ora si apre a schermo intero, con il pulsante segnala errore in alto a sinistra come in Informazioni su questa app.
-- FrontEnd: I nuovi pulsanti avviano un quiz con le domande errate precedenti o ripetono successivamente solo le domande errate.
-- FrontEnd: L'istituto aggiunge automaticamente le domande errate del quiz precedente a un nuovo round.
-- FrontEnd: Il tempo di gioco totale, le statistiche di gioco e le domande con risposte errate più frequenti vengono ora monitorate localmente in localStorage.
-- FrontEnd: Il pulsante Segnala un bug ora è un pulsante reale e onnipresente con contesto sullo schermo automatico.
-- BackEnd: L'e-mail di riepilogo ora mostra la propria tabella per ciascun giocatore seguito con colonne equamente divise Sempre/Ultima settimana/Ultime 24 ore.
-- BackEnd: I problemi segnalati ora mostrano sia l'ID domanda che il testo della domanda invece di uno solo.
+## v3.6.0-pre
+- FrontEnd: Layout a schermo intero standardizzato con intestazioni permanenti, pulsanti di azione fissi e pulsanti di chiusura uniformi in alto a destra.
+- FrontEnd: Pulsante Segnala errore posizionato uniformemente in basso a sinistra su tutte le schermate con rilevamento automatico del contesto della vista attiva.
+- FrontEnd: Aggiunta la visualizzazione delle statistiche con tempo di gioco monitorato localmente, conteggi delle partite, punteggio medio e panoramiche degli errori inclusa l'opzione di ripristino dei dati.
+- FrontEnd: Modalità pratica e pulsanti di ripetizione per domande errate aggiunti alla schermata iniziale, al carosello, alle impostazioni e alla panoramica dei risultati.
+- FrontEnd: Aggiunta l'anteprima dal vivo per le modifiche al tema e al colore nelle impostazioni con ripristino all'annullamento.
+- FrontEnd: Aggiunta la scheda di sponsorizzazione e supporto del progetto alla schermata Informazioni.
+- DevEx: Ripuliti in modo permanente i selettori di modalità inutilizzati e gli elementi dei moduli nascosti nel codice sorgente e negli stili.
+- DevEx: Script [`scripts/run-review-server.py`](scripts/run-review-server.py) aggiunto per revisioni HTTP con thread locali e test del browser.
+- DevEx: Aggiunta la documentazione JSDoc a tutte le funzioni JavaScript con controllo di regressione automatizzato.
+- DevEx: Messaggi di avviso della console e del browser standardizzati in inglese in tutti i moduli.
+- BackEnd: E-mail di riepilogo migliorate con statistiche periodiche per giocatore e contesto completo delle domande per i messaggi di errore.
 
 ## v3.5.0 [released: 2026-09-22]
 - BackEnd: Google Apps Script ora invia un'email di riepilogo in stile olandese ogni giorno alle 7:00 e alle 19:00 UTC con risultati, notifiche e un elenco personalizzabile di giocatori da seguire.

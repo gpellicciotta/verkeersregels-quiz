@@ -13,20 +13,18 @@ A summarized overview of all changes, per version of this project.
 
 ---
 
-## v3.5.1-pre
-- FrontEnd: Added a dedicated sponsorship and project support card to the About view.
-- FrontEnd: Made action buttons sticky on mobile and the settings save button sticky on desktop.
-- FrontEnd: Moved report error button in mobile quiz view to a fixed position at the bottom left with default round design.
-- DevEx: Standardized all browser console logging and runtime warning messages to English across all client modules.
-- DevEx: All JavaScript functions now have JSDoc documentation with parameters and return value, monitored by a regression test.
-- DevEx: New script `run-review-server.py` serves the project via threaded HTTP for review and browser testing.
-- FrontEnd: Settings now opens full screen, with the report error button at the top left as in About this app.
-- FrontEnd: New buttons start a quiz with previous incorrect questions or repeat only the incorrect questions afterwards.
-- FrontEnd: Institution automatically adds incorrect questions from the previous quiz to a new round.
-- FrontEnd: Total playing time, playing statistics and most frequently incorrectly answered questions are now tracked locally in localStorage.
-- FrontEnd: Report a Bug button is now a real, ubiquitous button with automatic screen context.
-- BackEnd: The summary email now shows its own table for each followed player with equally divided Always/Last week/Last 24h columns.
-- BackEnd: Reported issues now show both the question ID and the question text instead of just one.
+## v3.6.0-pre
+- FrontEnd: Full screen layout standardized with sticky headers, fixed action buttons and uniform close buttons at the top right.
+- FrontEnd: Report error button uniformly placed at the bottom left of all screens with automatic context detection of the active view.
+- FrontEnd: Added statistics view with locally tracked playing time, game counts, average score and error overviews including data reset option.
+- FrontEnd: Practice mode and repeat buttons for incorrect questions added to home screen, carousel, settings and results overview.
+- FrontEnd: Added live preview for theme and color changes in settings with reset on cancel.
+- FrontEnd: Added sponsorship and project support card to the About screen.
+- DevEx: Permanently cleaned up unused mode selectors and hidden form elements in source code and styles.
+- DevEx: Script [`scripts/run-review-server.py`](scripts/run-review-server.py) added for local threaded HTTP reviews and browser testing.
+- DevEx: Added JSDoc documentation to all JavaScript functions with automated regression checking.
+- DevEx: Console and browser warning messages standardized to English in all modules.
+- BackEnd: Summary emails enhanced with periodic stats per player and full question context for error messages.
 
 ## v3.5.0 [released: 2026-09-22]
 - BackEnd: Google Apps Script now sends a Dutch, styled summary email every day at 7am and 7pm UTC with results, notifications and a customizable list of players to follow.

@@ -13,20 +13,18 @@ Un aperçu résumé de toutes les modifications, par version de ce projet.
 
 ---
 
-## v3.5.1-pre
-- FrontEnd: Ajout d'une carte dédiée de soutien et de parrainage au projet dans la vue À propos.
-- FrontEnd: Les boutons d'action sont désormais collants sur mobile et le bouton d'enregistrement sur ordinateur.
-- FrontEnd: Bouton d'erreur de rapport déplacé dans la vue du quiz mobile vers une position fixe en bas à gauche avec un design rond par défaut.
-- DevEx: Standardisation de tous les messages de journalisation de la console du navigateur et d'avertissement d'exécution en anglais dans tous les modules clients.
-- DevEx: Toutes les fonctions JavaScript disposent désormais d'une documentation JSDoc avec des paramètres et une valeur de retour, surveillés par un test de régression.
-- DevEx: Le nouveau script `run-review-server.py` sert le projet via HTTP threadé pour l'examen et les tests du navigateur.
-- FrontEnd: Les paramètres s'ouvrent désormais en plein écran, avec le bouton de rapport d'erreur en haut à gauche comme dans À propos de cette application.
-- FrontEnd: De nouveaux boutons lancent un quiz avec des questions incorrectes précédentes ou répètent uniquement les questions incorrectes par la suite.
-- FrontEnd: L'établissement ajoute automatiquement les questions incorrectes du quiz précédent à un nouveau tour.
-- FrontEnd: Le temps de jeu total, les statistiques de jeu et les questions les plus fréquemment mal répondues sont désormais suivis localement dans localStorage.
-- FrontEnd: Le bouton Signaler un bug est désormais un véritable bouton omniprésent avec un contexte d'écran automatique.
-- BackEnd: L'e-mail récapitulatif affiche désormais son propre tableau pour chaque joueur suivi avec des colonnes Toujours/Dernière semaine/Dernières 24h divisées à parts égales.
-- BackEnd: Les problèmes signalés affichent désormais à la fois l'ID de la question et le texte de la question au lieu d'un seul.
+## v3.6.0-pre
+- FrontEnd: Disposition plein écran standardisée avec des en-têtes collants, des boutons d'action fixes et des boutons de fermeture uniformes en haut à droite.
+- FrontEnd: Bouton de rapport d'erreur uniformément placé en bas à gauche de tous les écrans avec détection automatique du contexte de la vue active.
+- FrontEnd: Ajout d'une vue des statistiques avec le temps de jeu suivi localement, le nombre de jeux, le score moyen et les aperçus des erreurs, y compris l'option de réinitialisation des données.
+- FrontEnd: Mode entraînement et boutons de répétition pour les questions incorrectes ajoutés à l'écran d'accueil, au carrousel, aux paramètres et à l'aperçu des résultats.
+- FrontEnd: Ajout d'un aperçu en direct pour les changements de thème et de couleur dans les paramètres avec réinitialisation en cas d'annulation.
+- FrontEnd: Ajout d'une carte de parrainage et de soutien au projet à l'écran À propos.
+- DevEx: Nettoyage permanent des sélecteurs de mode inutilisés et des éléments de formulaire cachés dans le code source et les styles.
+- DevEx: Script [`scripts/run-review-server.py`](scripts/run-review-server.py) ajouté pour les révisions HTTP des threads locaux et les tests du navigateur.
+- DevEx: Ajout de la documentation JSDoc à toutes les fonctions JavaScript avec vérification de régression automatisée.
+- DevEx: Messages d'avertissement de la console et du navigateur normalisés en anglais dans tous les modules.
+- BackEnd: E-mails récapitulatifs améliorés avec des statistiques périodiques par joueur et un contexte de question complet pour les messages d'erreur.
 
 ## v3.5.0 [released: 2026-09-22]
 - BackEnd: Google Apps Script envoie désormais chaque jour à 7h00 et 19h00 UTC un e-mail récapitulatif de style néerlandais avec les résultats, les notifications et une liste personnalisable de joueurs à suivre.

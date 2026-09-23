@@ -13,20 +13,18 @@ Eine zusammenfassende Übersicht aller Änderungen pro Version dieses Projekts.
 
 ---
 
-## v3.5.1-pre
-- FrontEnd: Eine eigene Karte zur Projekt- und Sponsoringunterstützung in der Ansicht Über diese App hinzugefügt.
-- FrontEnd: Aktionsschaltflächen sind jetzt auf Mobilgeräten sticky und die Speichern-Schaltfläche auch auf dem Desktop.
-- FrontEnd: Die Schaltfläche „Fehler melden“ in der mobilen Quizansicht wurde an eine feste Position unten links mit standardmäßigem runden Design verschoben.
-- DevEx: Alle Browser-Konsolenprotokolle und Laufzeitwarnmeldungen wurden in allen Clientmodulen auf Englisch standardisiert.
-- DevEx: Alle JavaScript-Funktionen verfügen jetzt über eine JSDoc-Dokumentation mit Parametern und Rückgabewerten, überwacht durch einen Regressionstest.
-- DevEx: Das neue Skript `run-review-server.py` stellt das Projekt über Thread-HTTP zur Überprüfung und zum Testen des Browsers bereit.
-- FrontEnd: Die Einstellungen werden jetzt im Vollbildmodus geöffnet, mit der Schaltfläche „Fehler melden“ oben links, wie in „Über diese App“.
-- FrontEnd: Neue Schaltflächen starten ein Quiz mit zuvor falschen Fragen oder wiederholen anschließend nur die falschen Fragen.
-- FrontEnd: Die Institution fügt automatisch falsche Fragen aus dem vorherigen Quiz zu einer neuen Runde hinzu.
-- FrontEnd: Gesamtspielzeit, Spielstatistiken und die am häufigsten falsch beantworteten Fragen werden jetzt lokal in localStorage verfolgt.
-- FrontEnd: Die Schaltfläche „Fehler melden“ ist jetzt eine echte, allgegenwärtige Schaltfläche mit automatischem Bildschirmkontext.
-- BackEnd: Die zusammenfassende E-Mail zeigt jetzt eine eigene Tabelle für jeden verfolgten Spieler mit gleichmäßig aufgeteilten Spalten „Immer“, „Letzte Woche“ und „Letzte 24 Stunden“.
-- BackEnd: Gemeldete Probleme zeigen jetzt sowohl die Frage-ID als auch den Fragentext statt nur einer an.
+## v3.6.0-pre
+- FrontEnd: Vollbild-Layout standardisiert mit Sticky-Headern, festen Aktionsschaltflächen und einheitlichen Schließschaltflächen oben rechts.
+- FrontEnd: Schaltfläche „Fehler melden“ einheitlich unten links auf allen Bildschirmen platziert mit automatischer Kontexterkennung der aktiven Ansicht.
+- FrontEnd: Statistikansicht mit lokal erfasster Spielzeit, Spielanzahl, Durchschnittspunktzahl und Fehlerübersichten einschließlich der Option zum Zurücksetzen der Daten hinzugefügt.
+- FrontEnd: Übungsmodus und Wiederholungsschaltflächen für falsche Fragen zum Startbildschirm, Karussell, Einstellungen und Ergebnisübersicht hinzugefügt.
+- FrontEnd: Live-Vorschau für Design- und Farbänderungen in den Einstellungen mit Zurücksetzen beim Abbrechen hinzugefügt.
+- FrontEnd: Sponsoring- und Projektunterstützungskarte zum Info-Bildschirm hinzugefügt.
+- DevEx: Unbenutzte Modusselektoren und versteckte Formularelemente im Quellcode und in den Stilen wurden dauerhaft bereinigt.
+- DevEx: Skript [`scripts/run-review-server.py`](scripts/run-review-server.py) für lokale Thread-HTTP-Überprüfungen und Browsertests hinzugefügt.
+- DevEx: JSDoc-Dokumentation zu allen JavaScript-Funktionen mit automatischer Regressionsprüfung hinzugefügt.
+- DevEx: Konsolen- und Browser-Warnmeldungen in allen Modulen auf Englisch standardisiert.
+- BackEnd: Zusammenfassungs-E-Mails mit regelmäßigen Statistiken pro Spieler und vollständigem Fragenkontext für Fehlermeldungen.
 
 ## v3.5.0 [released: 2026-09-22]
 - BackEnd: Google Apps Script sendet jetzt täglich um 7:00 Uhr und 19:00 Uhr UTC eine zusammenfassende E-Mail im niederländischen Stil mit Ergebnissen, Benachrichtigungen und einer anpassbaren Liste der Spieler, denen man folgen kann.

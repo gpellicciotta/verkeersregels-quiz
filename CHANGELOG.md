@@ -13,30 +13,18 @@ A summarized overview of all changes, per version of this project.
 
 ---
 
-## v3.5.1-pre
-- DevEx: Oude verborgen radioknoppen en ongebruikte modus-selectors definitief verwijderd uit HTML, JS en CSS.
-- FrontEnd: Sluitknoppen verankerd in de rechterbovenhoek en tooltip-positionering gecorrigeerd tegen afkappen aan schermranden.
-- FrontEnd: Gestandaardiseerde sticky header- en footer-indeling met onafhankelijk scrollbare inhoud voor alle volledige schermen.
-- FrontEnd: Statistiekenweergave toegevoegd met overzicht van gespeelde spellen, minuten, vragen en gemiddelde score met data-resetoptie.
-- FrontEnd: Thema- en kleurwijzigingen worden direct getoond als voorbeeld en hersteld bij sluiten zonder opslaan.
-- FrontEnd: Fouten-oefen- en herhaalknoppen blijven verborgen wanneer er geen fouten zijn of bij een perfecte score.
-- FrontEnd: Sluitknoppen rechtsboven geplaatst in instellingen-, over-, carrousel- en resultatenschermen.
-- FrontEnd: Meld-een-foutknop linksonder geplaatst in instellingen-, over-, carrousel- en quizschermen.
+## v3.6.0-pre
+- FrontEnd: Volledig scherm-indeling gestandaardiseerd met sticky headers, vaste actieknoppen en uniforme sluitknoppen rechtsboven.
+- FrontEnd: Meld-foutknop uniform linksonder geplaatst op alle schermen met automatische contextdetectie van de actieve weergave.
+- FrontEnd: Statistiekenweergave toegevoegd met lokaal bijgehouden speeltijd, spelaantallen, gemiddelde score en foutoverzichten inclusief data-resetoptie.
+- FrontEnd: Oefenmodus en herhaalknoppen voor foutieve vragen toegevoegd aan startscherm, carrousel, instellingen en resultatenoverzicht.
+- FrontEnd: Live voorbeeldweergave toegevoegd voor thema- en kleurwijzigingen in instellingen met herstel bij annuleren.
 - FrontEnd: Kaart voor sponsoring en projectondersteuning toegevoegd aan het Over-scherm.
-- FrontEnd: Knop voor veelgemaakte fouten op het startscherm hernoemd, voorzien van tooltip en passend uitgelijnd qua breedte.
-- FrontEnd: Checkbox voor foutieve vragen in instellingen gebruikt nu hetzelfde lettertype en gewicht als overige veldlabels.
-- FrontEnd: Actieknoppen zijn nu sticky op mobiel en de opslaanknop in instellingen ook op desktop.
-- FrontEnd: Verplaatste meld-foutknop in mobiele quizweergave naar een vaste positie linksonder met standaard ronde vormgeving.
+- DevEx: Ongebruikte moduskiezers en verborgen formulierelementen definitief opgeruimd in broncode en stijlen.
+- DevEx: Script [`scripts/run-review-server.py`](scripts/run-review-server.py) toegevoegd voor lokale threaded HTTP-reviews en browsertests.
+- DevEx: JSDoc-documentatie toegevoegd aan alle JavaScript-functies met geautomatiseerde regressiecontrole.
 - DevEx: Console- en waarschuwingsberichten in de browser gestandaardiseerd naar het Engels in alle modules.
-- DevEx: Alle JavaScript-functies hebben nu JSDoc-documentatie met parameters en retourwaarde, bewaakt door een regressietest.
-- DevEx: Nieuw script `run-review-server.py` bedient het project via threaded HTTP voor review en browsertests.
-- FrontEnd: Instellingen openen nu als volledig scherm, met de meld-fout knop linksboven zoals bij Over deze app.
-- FrontEnd: Nieuwe knoppen starten een quiz met eerdere foutieve vragen of herhalen enkel de foute vragen na afloop.
-- FrontEnd: Instelling voegt foutieve vragen van de vorige quiz automatisch toe aan een nieuwe ronde.
-- FrontEnd: Totale speeltijd, speelstatistieken en vaakst foutief beantwoorde vragen worden nu lokaal bijgehouden in localStorage.
-- FrontEnd: Meld-een-fout knop is nu een echte, overal beschikbare knop met automatische schermcontext.
-- BackEnd: De samenvattende e-mail toont nu per gevolgde speler een eigen tabel met gelijk verdeelde Altijd/Laatste week/Laatste 24u-kolommen.
-- BackEnd: Gemelde problemen tonen nu zowel de vraag-ID als de vraagtekst in plaats van slechts één van beide.
+- BackEnd: Samenvattende e-mails uitgebreid met periodieke statistieken per speler en volledige vraagcontext bij foutmeldingen.
 
 ## v3.5.0 [released: 2026-09-22]
 - BackEnd: Google Apps Script verstuurt nu elke dag om 7u en 19u UTC een Nederlandstalige, gestylede samenvattende e-mail met resultaten, meldingen en een instelbare lijst van te volgen spelers.
