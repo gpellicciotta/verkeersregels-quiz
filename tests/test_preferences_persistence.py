@@ -80,8 +80,6 @@ class TestPreferencesPersistence(unittest.TestCase):
         """Validates that setStartMode accepts a persist flag used only by direct user controls."""
         self.assertIn("function setStartMode(mode, persist)", self.js_code)
         self.assertIn("setStoredPreferences({ mode: state.currentMode });", self.js_code)
-        self.assertIn('setStartMode("quiz", true)', self.js_code)
-        self.assertIn('setStartMode("carousel", true)', self.js_code)
         self.assertIn("setStartMode(nextMode, true);", self.js_code)
 
     def test_startup_sequence_applies_stored_preferences_before_start_mode(self) -> None:

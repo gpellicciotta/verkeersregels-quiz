@@ -71,7 +71,7 @@ if (document.readyState === "loading") {
 initQuizCancel();
 
 el.btnStart.addEventListener("click", () => {
-  const isCarouselSelected = state.currentMode === "carousel" || (el.radioModeCarousel && el.radioModeCarousel.checked);
+  const isCarouselSelected = state.currentMode === "carousel";
   if (isCarouselSelected) {
     const rawDelay = el.carouselDelaySelect ? el.carouselDelaySelect.value : "8";
     const delay = parseInt(rawDelay, 10) || (carouselState.delayMs ? carouselState.delayMs / 1000 : 8);
@@ -220,19 +220,6 @@ if (el.btnConfigClose) {
 
 if (el.btnConfigSave) {
   el.btnConfigSave.addEventListener("click", saveConfig);
-}
-
-if (el.radioModeQuiz) {
-  el.radioModeQuiz.addEventListener("change", () => setStartMode("quiz", true));
-}
-if (el.radioModeCarousel) {
-  el.radioModeCarousel.addEventListener("change", () => setStartMode("carousel", true));
-}
-if (el.modeCardQuiz) {
-  el.modeCardQuiz.addEventListener("click", () => setStartMode("quiz", true));
-}
-if (el.modeCardCarousel) {
-  el.modeCardCarousel.addEventListener("click", () => setStartMode("carousel", true));
 }
 
 document.addEventListener("keydown", (e) => {

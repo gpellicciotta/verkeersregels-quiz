@@ -176,12 +176,6 @@ export function updateStartScreenNotice() {
   const available = state.pool ? state.pool.length : allQuestions.length;
   const effectiveCount = available > 0 ? Math.min(desired, available) : desired;
 
-  if (el.quizModeDesc) {
-    el.quizModeDesc.textContent = effectiveCount === 1
-      ? t("start.quiz_mode_description_1")
-      : t("start.quiz_mode_description", { count: effectiveCount });
-  }
-
   if (el.quizProgress && effectiveCount > 0) {
     el.quizProgress.textContent = t("quiz.progress_initial", { total: effectiveCount });
   }

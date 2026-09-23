@@ -943,66 +943,6 @@ body.suppress-tooltips [data-tooltip]::before {
   margin-bottom: 8px;
 }
 
-.start-mode-selector {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-  gap: 8px;
-}
-
-.start-mode-card {
-  position: relative;
-  display: flex;
-  align-items: flex-start;
-  gap: 6px;
-  padding: 10px 8px;
-  border: 2px solid var(--color-border-subtle);
-  border-radius: var(--radius);
-  background: var(--color-card);
-  cursor: pointer;
-  transition: all 0.15s ease;
-  user-select: none;
-  min-width: 0;
-}
-
-.start-mode-card:hover {
-  border-color: var(--color-primary-border);
-  background: var(--color-card-subtle);
-}
-
-.start-mode-card.is-selected {
-  border-color: var(--color-primary);
-  background: var(--color-primary-tint);
-  box-shadow: 0 0 0 1px var(--color-primary);
-}
-
-.start-mode-card input[type="radio"] {
-  margin-top: 3px;
-  accent-color: var(--color-primary);
-  cursor: pointer;
-  flex-shrink: 0;
-}
-
-.start-mode-info {
-  display: flex;
-  flex-direction: column;
-  min-width: 0;
-  overflow-wrap: break-word;
-  word-break: break-word;
-}
-
-.start-mode-title {
-  font-weight: 700;
-  font-size: var(--font-size-xs);
-  color: var(--color-text-strong);
-  line-height: 1.25;
-}
-
-.start-mode-desc {
-  font-size: var(--font-size-xs);
-  color: var(--color-muted);
-  line-height: 1.25;
-  margin-top: 2px;
-}
 
 .carousel-start-fields {
   margin-bottom: 4px;
@@ -3143,24 +3083,6 @@ dialog.modal-dialog:not([open]) {
 
   .options-images {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .start-mode-selector {
-    gap: 12px;
-  }
-
-  .start-mode-card {
-    padding: 12px 14px;
-    gap: 10px;
-  }
-
-  .start-mode-title {
-    font-size: var(--font-size-sm);
-  }
-
-  .start-mode-desc {
-    font-size: var(--font-size-xs);
-    line-height: 1.35;
   }
 
   .start-meta-bar {

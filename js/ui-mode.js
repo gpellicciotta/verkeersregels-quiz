@@ -8,8 +8,7 @@ import { t } from "./i18n.js";
 /**
  * Switch the start screen between quiz and carousel mode.
  *
- * Updates the radio buttons, mode cards, visible field groups, title, notice
- * text and all start and toggle button labels.
+ * Updates visible field groups, title, notice text and all start and toggle button labels.
  *
  * @param {string} mode - Requested mode; anything other than "carousel" selects quiz mode.
  * @param {boolean} [persist] - When truthy, store the selected mode in the preferences.
@@ -23,10 +22,6 @@ export function setStartMode(mode, persist) {
   }
   const nameParam = getNameParam();
 
-  if (el.radioModeQuiz) el.radioModeQuiz.checked = !isCarousel;
-  if (el.radioModeCarousel) el.radioModeCarousel.checked = isCarousel;
-  if (el.modeCardQuiz) el.modeCardQuiz.classList.toggle("is-selected", !isCarousel);
-  if (el.modeCardCarousel) el.modeCardCarousel.classList.toggle("is-selected", isCarousel);
   if (el.quizStartFields) el.quizStartFields.classList.toggle("hidden", isCarousel || Boolean(nameParam));
   if (el.carouselStartFields) el.carouselStartFields.classList.toggle("hidden", !isCarousel);
 

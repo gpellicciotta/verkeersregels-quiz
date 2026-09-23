@@ -38,8 +38,7 @@ class TestSignCarousel(unittest.TestCase):
         self.assertIn('id="btn-carousel-next"', html, "index.html must define btn-carousel-next")
         self.assertIn('id="btn-carousel-exit"', html, "index.html must define btn-carousel-exit")
         self.assertIn('id="carousel-delay-info"', html, "index.html must define carousel-delay-info")
-        self.assertIn('id="radio-mode-quiz"', html, "index.html must define radio-mode-quiz option")
-        self.assertIn('id="radio-mode-carousel"', html, "index.html must define radio-mode-carousel option")
+        self.assertIn('id="btn-mode-toggle"', html, "index.html must define mode toggle button")
         self.assertIn('id="carousel-delay-select"', html, "index.html must define carousel-delay-select")
         self.assertIn('<kbd class="kbd-key">Spatiebalk</kbd>', html, "index.html must style Spatiebalk with kbd tag")
 
@@ -56,8 +55,7 @@ class TestSignCarousel(unittest.TestCase):
         self.assertIn(".carousel-progress-fill", css, "style.css must style .carousel-progress-fill")
         self.assertIn(".btn-carousel-toggle.is-paused", css, "style.css must style paused toggle button")
         self.assertIn(".carousel-card-body", css, "style.css must define carousel-card-body layout")
-        self.assertIn(".start-mode-selector", css, "style.css must define start-mode-selector layout")
-        self.assertIn(".start-mode-card", css, "style.css must define start-mode-card styling")
+        self.assertIn(".carousel-start-fields", css, "style.css must define carousel-start-fields layout")
         self.assertIn(".carousel-delay-select", css, "style.css must define carousel-delay-select styling")
         self.assertIn(".kbd-key", css, "style.css must style .kbd-key keyboard button representation")
 
@@ -72,7 +70,7 @@ class TestSignCarousel(unittest.TestCase):
         self.assertIn('params.get("delay") || params.get("d")', js, "params.js must support d=N alias for delay")
         self.assertIn('=== "quiz"', js, "app.js must support mode=quiz parameter")
         self.assertIn("setStartMode", js, "ui-mode.js must define setStartMode function")
-        self.assertIn("radioModeCarousel", js, "app.js must support start screen mode switching")
+        self.assertIn("btnModeToggle", js, "dom.js must register btnModeToggle button")
         self.assertIn("startCarousel", js, "carousel.js must define startCarousel lifecycle function")
         self.assertIn("stopCarousel", js, "carousel.js must define stopCarousel function")
         self.assertIn("toggleCarouselPause", js, "carousel.js must define toggleCarouselPause function")
