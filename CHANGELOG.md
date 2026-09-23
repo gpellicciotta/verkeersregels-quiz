@@ -14,7 +14,7 @@ A summarized overview of all changes, per version of this project.
 ---
 
 ## v3.5.1-pre
-- FrontEnd: Optie toegevoegd aan de carrouselinstellingen om enkel verkeersborden met eerdere quizfouten te tonen.
+- FrontEnd: Knop voor veelgemaakte fouten verborgen in carrouselmodus en optie voor foutborden in carrouselinstellingen voorzien.
 - FrontEnd: Aparte kaart voor sponsoring en projectondersteuning toegevoegd aan het Over-deze-app-scherm.
 - FrontEnd: Knop voor veelgemaakte fouten op het startscherm hernoemd, voorzien van tooltip en passend uitgelijnd qua breedte.
 - FrontEnd: Checkbox voor foutieve vragen in instellingen gebruikt nu hetzelfde lettertype en gewicht als overige veldlabels.

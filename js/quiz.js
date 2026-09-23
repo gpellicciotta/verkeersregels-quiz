@@ -154,7 +154,7 @@ export function updateStartScreenNotice() {
   }
 
   if (el.btnStartErrors) {
-    el.btnStartErrors.classList.toggle("hidden", !hasStoredErrors());
+    el.btnStartErrors.classList.toggle("hidden", state.currentMode === "carousel" || !hasStoredErrors());
   }
 
   if (state.currentMode === "carousel") {

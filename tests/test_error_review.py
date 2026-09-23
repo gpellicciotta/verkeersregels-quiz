@@ -71,10 +71,11 @@ class TestErrorReview(unittest.TestCase):
             self.app_js,
         )
 
-    def test_start_screen_button_hidden_unless_errors_exist(self) -> None:
-        """Validates the start-screen review button visibility follows hasStoredErrors()."""
+    def test_start_screen_button_hidden_unless_errors_exist_in_quiz_mode(self) -> None:
+        """Validates the start-screen review button visibility follows hasStoredErrors() in quiz mode."""
         self.assertIn(
-            'el.btnStartErrors.classList.toggle("hidden", !hasStoredErrors());', self.quiz_js
+            'el.btnStartErrors.classList.toggle("hidden", state.currentMode === "carousel" || !hasStoredErrors());',
+            self.quiz_js,
         )
 
     def test_result_screen_button_hidden_on_a_perfect_score(self) -> None:
