@@ -14,6 +14,7 @@ A summarized overview of all changes, per version of this project.
 ---
 
 ## v3.5.1-pre
+- FrontEnd: Ensured the error-review and retry buttons stay hidden when no mistakes exist or upon perfect scores.
 - FrontEnd: Positioned close buttons at the top-right corner across settings, about, carousel, and result views.
 - FrontEnd: Positioned the report issue button at the bottom-left across settings, about, carousel, and quiz views.
 - FrontEnd: Added a dedicated sponsorship and project support card to the About view.

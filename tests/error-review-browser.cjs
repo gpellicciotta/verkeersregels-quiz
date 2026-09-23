@@ -59,7 +59,24 @@ async function answerWrong(page) {
       return;
     }
 
-    // Answer one question wrong to build up error + last-quiz-wrong history.
+    // 1. Play a perfect round: all correct -> retry button on result screen must stay hidden, and start button stays hidden.
+    await page.locator("#btn-start").click();
+    await page.locator("#question-text").filter({ hasText: /.+/ }).waitFor();
+    for (let i = 0; i < 3; i++) {
+      await page.evaluate(async () => {
+        const { state } = await import("./js/state.js");
+        const q = state.round[state.currentIndex];
+        document.querySelectorAll("#options .option-btn")[q.correctIndex].click();
+      });
+      await page.locator("#btn-next").click();
+    }
+    await page.locator("#screen-result").waitFor({ state: "visible" });
+    assert.equal(await page.locator("#btn-result-retry-errors").isVisible(), false, "retry button hidden on perfect score");
+    await page.locator("#btn-result-close").click();
+    await page.locator("#screen-start").waitFor({ state: "visible" });
+    assert.equal(await page.locator("#btn-start-errors").isVisible(), false, "start review button still hidden after perfect round");
+
+    // 2. Answer one question wrong to build up error + last-quiz-wrong history.
     await page.locator("#btn-start").click();
     await page.locator("#question-text").filter({ hasText: /.+/ }).waitFor();
     const wrongQuestionText = await page.evaluate(async () => {

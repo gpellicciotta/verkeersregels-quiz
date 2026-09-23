@@ -138,7 +138,10 @@ export function getMostUsedErrors(limit = 10) {
  * @returns {Array<string>} Question ids with at least one recorded error.
  */
 export function getErrorQuestionIds() {
-  return Object.keys(getStoredStats().errorCounts);
+  const stats = getStoredStats();
+  return Object.entries(stats.errorCounts)
+    .filter(([, count]) => typeof count === "number" && count > 0)
+    .map(([id]) => id);
 }
 
 /**

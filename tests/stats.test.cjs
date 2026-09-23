@@ -124,4 +124,10 @@ test("getErrorQuestionIds/hasStoredErrors/getLastQuizWrongIds track error-review
 
   recordQuizResult([{ id: "q5", correct: true }]);
   assert.deepEqual(getLastQuizWrongIds(), [], "a fully correct round clears lastQuizWrongIds");
+
+  globalThis.localStorage.setItem("verkeersquiz_stats", JSON.stringify({
+    errorCounts: { q1: 0, q2: -1, q3: "invalid" },
+  }));
+  assert.equal(hasStoredErrors(), false, "error counts <= 0 or invalid must not trigger hasStoredErrors");
+  assert.deepEqual(getErrorQuestionIds(), [], "getErrorQuestionIds must return empty array when no counts > 0");
 });
