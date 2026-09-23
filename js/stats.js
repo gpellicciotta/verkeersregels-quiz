@@ -6,6 +6,7 @@ function emptyStats() {
     questionsAnswered: 0,
     correctAnswers: 0,
     wrongAnswers: 0,
+    totalTimePlayedSeconds: 0,
     lastPlayedAt: null,
     errorCounts: {},
     lastQuizWrongIds: [],
@@ -17,9 +18,17 @@ export function getStoredStats() {
     const raw = localStorage.getItem(STATS_STORAGE_KEY);
     if (!raw) return emptyStats();
     const parsed = JSON.parse(raw);
+    const totalTime =
+      typeof parsed?.totalTimePlayedSeconds === "number" && Number.isFinite(parsed.totalTimePlayedSeconds)
+        ? Math.max(0, Math.round(parsed.totalTimePlayedSeconds))
+        : typeof parsed?.totalDurationSeconds === "number" && Number.isFinite(parsed.totalDurationSeconds)
+        ? Math.max(0, Math.round(parsed.totalDurationSeconds))
+        : 0;
+
     return {
       ...emptyStats(),
       ...parsed,
+      totalTimePlayedSeconds: totalTime,
       errorCounts: (parsed && parsed.errorCounts) || {},
       lastQuizWrongIds: Array.isArray(parsed && parsed.lastQuizWrongIds) ? parsed.lastQuizWrongIds : [],
     };
@@ -37,13 +46,19 @@ function setStoredStats(stats) {
   }
 }
 
-/** Fold one finished round's answers into the running localStorage-only stats. */
-export function recordQuizResult(answers) {
+/** Fold one finished round's answers and duration into the running localStorage-only stats. */
+export function recordQuizResult(answers, durationSeconds = 0) {
   const stats = getStoredStats();
   if (!Array.isArray(answers) || answers.length === 0) return stats;
 
+  const validDuration =
+    typeof durationSeconds === "number" && Number.isFinite(durationSeconds) && durationSeconds > 0
+      ? Math.round(durationSeconds)
+      : 0;
+
   stats.gamesPlayed += 1;
   stats.questionsAnswered += answers.length;
+  stats.totalTimePlayedSeconds = (stats.totalTimePlayedSeconds || 0) + validDuration;
   stats.lastPlayedAt = new Date().toISOString();
 
   const wrongIds = [];
@@ -62,6 +77,11 @@ export function recordQuizResult(answers) {
 
   setStoredStats(stats);
   return stats;
+}
+
+/** Returns the accumulated total play time in seconds across finished rounds. */
+export function getTotalTimePlayedSeconds() {
+  return getStoredStats().totalTimePlayedSeconds;
 }
 
 /** Returns the most frequently wrong-answered question ids, most errors first. */

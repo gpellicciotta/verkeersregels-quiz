@@ -14,13 +14,13 @@ Eine zusammenfassende Übersicht aller Änderungen pro Version dieses Projekts.
 ---
 
 ## v3.5.1-pre
-- DevEx: Das neue Skript `run-review-server.py` stellt das Projekt über threaded HTTP für Review und Browsertests bereit.
-- FrontEnd: Die Einstellungen öffnen sich jetzt als Vollbildansicht, mit der Schaltfläche „Fehler melden“ oben links wie bei „Über“.
-- FrontEnd: Neue Schaltflächen starten ein Quiz mit früheren Fehlerfragen oder wiederholen nur die falschen Antworten einer Runde.
-- FrontEnd: Eine Einstellung nimmt die Fehler des letzten Quiz automatisch in eine neue Runde auf.
-- FrontEnd: Spielstatistiken und die am häufigsten falsch beantworteten Fragen werden jetzt lokal in localStorage verfolgt.
+- DevEx: Das neue Skript `run-review-server.py` stellt das Projekt über Thread-HTTP zur Überprüfung und Browsertests bereit.
+- FrontEnd: Einstellungen werden jetzt im Vollbildmodus geöffnet, mit der Schaltfläche „Fehler melden“ oben links, wie in „Über diese App“.
+- FrontEnd: Neue Schaltflächen starten ein Quiz mit zuvor falschen Fragen oder wiederholen anschließend nur die falschen Fragen.
+- FrontEnd: Die Institution fügt automatisch falsche Fragen aus dem vorherigen Quiz zu einer neuen Runde hinzu.
+- FrontEnd: Gesamtspielzeit, Spielstatistiken und die am häufigsten falsch beantworteten Fragen werden jetzt lokal in localStorage verfolgt.
 - FrontEnd: Die Schaltfläche „Fehler melden“ ist jetzt eine echte, allgegenwärtige Schaltfläche mit automatischem Bildschirmkontext.
-- BackEnd: Die zusammenfassende E-Mail zeigt jetzt für jeden verfolgten Spieler eine eigene Tabelle mit gleichmäßig aufgeteilten Spalten „Immer“, „Letzte Woche“ und „Letzte 24 Stunden“.
+- BackEnd: Die Zusammenfassungs-E-Mail zeigt jetzt eine eigene Tabelle für jeden verfolgten Spieler mit gleichmäßig aufgeteilten Spalten „Immer“, „Letzte Woche“ und „Letzte 24 Stunden“.
 - BackEnd: Gemeldete Probleme zeigen jetzt sowohl die Frage-ID als auch den Fragentext statt nur einer an.
 
 ## v3.5.0 [released: 2026-09-22]

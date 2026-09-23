@@ -14,11 +14,11 @@ Una panoramica riepilogativa di tutte le modifiche, per versione di questo proge
 ---
 
 ## v3.5.1-pre
-- DevEx: Il nuovo script `run-review-server.py` serve il progetto via HTTP multithread per revisione e test del browser.
-- FrontEnd: Le impostazioni ora si aprono come vista a schermo intero, con il pulsante di segnalazione in alto a sinistra come in Informazioni.
-- FrontEnd: Nuovi pulsanti avviano un quiz con le domande sbagliate in passato o ripetono solo gli errori del turno.
-- FrontEnd: Un'impostazione include automaticamente gli errori dell'ultimo quiz in un nuovo turno.
-- FrontEnd: Le statistiche di gioco e le domande con risposte errate più frequenti vengono ora monitorate localmente in localStorage.
+- DevEx: Il nuovo script `run-review-server.py` serve il progetto tramite HTTP con thread per la revisione e il test del browser.
+- FrontEnd: Impostazioni ora si apre a schermo intero, con il pulsante segnala errore in alto a sinistra come in Informazioni su questa app.
+- FrontEnd: I nuovi pulsanti avviano un quiz con le domande errate precedenti o ripetono successivamente solo le domande errate.
+- FrontEnd: L'istituto aggiunge automaticamente le domande errate del quiz precedente a un nuovo round.
+- FrontEnd: Il tempo di gioco totale, le statistiche di gioco e le domande con risposte errate più frequenti vengono ora monitorate localmente in localStorage.
 - FrontEnd: Il pulsante Segnala un bug ora è un pulsante reale e onnipresente con contesto sullo schermo automatico.
 - BackEnd: L'e-mail di riepilogo ora mostra la propria tabella per ciascun giocatore seguito con colonne equamente divise Sempre/Ultima settimana/Ultime 24 ore.
 - BackEnd: I problemi segnalati ora mostrano sia l'ID domanda che il testo della domanda invece di uno solo.

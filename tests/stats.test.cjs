@@ -15,25 +15,39 @@ function makeLocalStorage() {
 
 const statsUrl = pathToFileURL(path.join(__dirname, "../js/stats.js")).href;
 
-test("recordQuizResult accumulates games, answers, and per-question error counts", async () => {
+test("recordQuizResult accumulates games, answers, duration, and per-question error counts", async () => {
   globalThis.localStorage = makeLocalStorage();
-  const { recordQuizResult, getStoredStats, getMostUsedErrors, resetStats } = await import(statsUrl);
+  const {
+    recordQuizResult,
+    getStoredStats,
+    getTotalTimePlayedSeconds,
+    getMostUsedErrors,
+    resetStats,
+  } = await import(statsUrl);
   resetStats();
 
-  recordQuizResult([
-    { id: "q1", correct: true },
-    { id: "q2", correct: false },
-  ]);
-  recordQuizResult([
-    { id: "q2", correct: false },
-    { id: "q3", correct: false },
-  ]);
+  recordQuizResult(
+    [
+      { id: "q1", correct: true },
+      { id: "q2", correct: false },
+    ],
+    45
+  );
+  recordQuizResult(
+    [
+      { id: "q2", correct: false },
+      { id: "q3", correct: false },
+    ],
+    30
+  );
 
   const stats = getStoredStats();
   assert.equal(stats.gamesPlayed, 2);
   assert.equal(stats.questionsAnswered, 4);
   assert.equal(stats.correctAnswers, 1);
   assert.equal(stats.wrongAnswers, 3);
+  assert.equal(stats.totalTimePlayedSeconds, 75);
+  assert.equal(getTotalTimePlayedSeconds(), 75);
   assert.equal(stats.errorCounts.q2, 2);
   assert.equal(stats.errorCounts.q3, 1);
   assert.ok(stats.lastPlayedAt);
@@ -46,24 +60,30 @@ test("recordQuizResult ignores empty rounds and getStoredStats survives corrupt 
   const { recordQuizResult, getStoredStats, resetStats } = await import(statsUrl);
   resetStats();
 
-  recordQuizResult([]);
+  recordQuizResult([], 60);
   assert.equal(getStoredStats().gamesPlayed, 0);
+  assert.equal(getStoredStats().totalTimePlayedSeconds, 0);
 
   globalThis.localStorage.setItem("verkeersquiz_stats", "{not json");
   const stats = getStoredStats();
   assert.equal(stats.gamesPlayed, 0);
+  assert.equal(stats.totalTimePlayedSeconds, 0);
   assert.deepEqual(stats.errorCounts, {});
 });
 
 test("resetStats clears accumulated stats back to zero", async () => {
   globalThis.localStorage = makeLocalStorage();
-  const { recordQuizResult, getStoredStats, resetStats } = await import(statsUrl);
+  const { recordQuizResult, getStoredStats, getTotalTimePlayedSeconds, resetStats } = await import(statsUrl);
 
-  recordQuizResult([{ id: "q1", correct: false }]);
+  recordQuizResult([{ id: "q1", correct: false }], 25);
   assert.equal(getStoredStats().gamesPlayed, 1);
+  assert.equal(getStoredStats().totalTimePlayedSeconds, 25);
+  assert.equal(getTotalTimePlayedSeconds(), 25);
 
   resetStats();
   assert.equal(getStoredStats().gamesPlayed, 0);
+  assert.equal(getStoredStats().totalTimePlayedSeconds, 0);
+  assert.equal(getTotalTimePlayedSeconds(), 0);
 });
 
 test("getErrorQuestionIds/hasStoredErrors/getLastQuizWrongIds track error-review helpers", async () => {

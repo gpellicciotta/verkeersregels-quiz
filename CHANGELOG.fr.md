@@ -14,11 +14,11 @@ Un aperçu résumé de toutes les modifications, par version de ce projet.
 ---
 
 ## v3.5.1-pre
-- DevEx: Le nouveau script `run-review-server.py` sert le projet via HTTP multithread pour la revue et les tests navigateur.
-- FrontEnd: Les paramètres s'ouvrent désormais en plein écran, avec le bouton de signalement en haut à gauche comme sur À propos.
-- FrontEnd: De nouveaux boutons démarrent un quiz avec les questions ratées ou refont uniquement les erreurs du tour.
-- FrontEnd: Un réglage inclut automatiquement les erreurs du quiz précédent dans un nouveau tour.
-- FrontEnd: Les statistiques de lecture et les questions les plus fréquemment mal répondues sont désormais suivies localement dans localStorage.
+- DevEx: Le nouveau script `run-review-server.py` sert le projet via HTTP threadé pour l'examen et les tests du navigateur.
+- FrontEnd: Les paramètres s'ouvrent désormais en plein écran, avec le bouton de rapport d'erreur en haut à gauche comme dans À propos de cette application.
+- FrontEnd: De nouveaux boutons lancent un quiz avec des questions incorrectes précédentes ou répètent uniquement les questions incorrectes par la suite.
+- FrontEnd: L'établissement ajoute automatiquement les questions incorrectes du quiz précédent à un nouveau tour.
+- FrontEnd: Le temps de jeu total, les statistiques de jeu et les questions les plus fréquemment mal répondues sont désormais suivis localement dans localStorage.
 - FrontEnd: Le bouton Signaler un bug est désormais un véritable bouton omniprésent avec un contexte d'écran automatique.
 - BackEnd: L'e-mail récapitulatif affiche désormais son propre tableau pour chaque joueur suivi avec des colonnes Toujours/Dernière semaine/Dernières 24h divisées à parts égales.
 - BackEnd: Les problèmes signalés affichent désormais à la fois l'ID de la question et le texte de la question au lieu d'un seul.

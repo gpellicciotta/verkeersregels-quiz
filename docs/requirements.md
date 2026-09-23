@@ -114,8 +114,8 @@ Functional and technical requirements for the Verkeersregels Quiz application.
 ### Local Play Statistics
 - **Storage Scope**: Play stats and most-used errors live only in the browser's `localStorage`
   (`verkeersquiz_stats` key); never sent to the server and cleared like any other site data.
-- **Tracked Totals**: Games played, questions answered, correct/wrong counts, and the
-  timestamp of the last played round, updated once per finished round.
+- **Tracked Totals**: Games played, questions answered, correct/wrong counts, total play time,
+  and the timestamp of the last played round, updated once per finished round.
 - **Most-Used Errors**: Per-question wrong-answer counts, queryable as a ranked top-N list.
 - **Error Review**: A start-screen button starts a quiz from every question ever answered
   wrong; a result-screen button restarts with only the current round's wrong answers.

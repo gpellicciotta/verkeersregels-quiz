@@ -531,7 +531,7 @@ export function showResult() {
 
   showScreen("result");
   if (total > 0 && correct === total) showConfetti();
-  recordQuizResult(state.answers);
+  recordQuizResult(state.answers, state.durationSeconds);
   submitToSheet(correct, total, pct, state.durationSeconds, formattedDuration);
 }
 

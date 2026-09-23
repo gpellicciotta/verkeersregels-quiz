@@ -14,12 +14,12 @@ A summarized overview of all changes, per version of this project.
 ---
 
 ## v3.5.1-pre
-- DevEx: New `run-review-server.py` script serves the project over threaded HTTP for review and browser tests.
-- FrontEnd: Settings now open as a full-window view, with the report issue button top-left as on About.
-- FrontEnd: New buttons start a quiz with past missed questions or retry only a round's wrong answers.
-- FrontEnd: A setting automatically folds the previous quiz's wrong answers into a new round.
-- FrontEnd: Play statistics and most frequently incorrectly answered questions are now tracked locally in localStorage.
-- FrontEnd: Report a bug button is now a real, ubiquitous button with automatic screen context.
+- DevEx: New script `run-review-server.py` serves the project via threaded HTTP for review and browser testing.
+- FrontEnd: Settings now opens full screen, with the report error button at the top left as in About this app.
+- FrontEnd: New buttons start a quiz with previous incorrect questions or repeat only the incorrect questions afterwards.
+- FrontEnd: Institution automatically adds incorrect questions from the previous quiz to a new round.
+- FrontEnd: Total playing time, playing statistics and most frequently incorrectly answered questions are now tracked locally in localStorage.
+- FrontEnd: Report a Bug button is now a real, ubiquitous button with automatic screen context.
 - BackEnd: The summary email now shows its own table for each followed player with equally divided Always/Last week/Last 24h columns.
 - BackEnd: Reported issues now show both the question ID and the question text instead of just one.
 

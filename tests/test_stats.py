@@ -30,7 +30,8 @@ class TestStats(unittest.TestCase):
         """Validates that stats.js defines the dedicated storage key and public API."""
         self.assertIn('const STATS_STORAGE_KEY = "verkeersquiz_stats";', self.stats_js)
         self.assertIn("export function getStoredStats()", self.stats_js)
-        self.assertIn("export function recordQuizResult(answers)", self.stats_js)
+        self.assertIn("export function recordQuizResult(", self.stats_js)
+        self.assertIn("export function getTotalTimePlayedSeconds()", self.stats_js)
         self.assertIn("export function getMostUsedErrors(limit = 10)", self.stats_js)
         self.assertIn("export function resetStats()", self.stats_js)
         self.assertIn("export function getErrorQuestionIds()", self.stats_js)
@@ -44,9 +45,9 @@ class TestStats(unittest.TestCase):
         self.assertNotIn('"verkeersquiz_preferences"', self.stats_js)
 
     def test_quiz_result_screen_records_stats(self) -> None:
-        """Validates that showResult() feeds the finished round's answers into recordQuizResult."""
+        """Validates that showResult() feeds the finished round's answers and duration into recordQuizResult."""
         self.assertRegex(self.quiz_js, r'import \{[^}]*\brecordQuizResult\b[^}]*\} from "\./stats\.js";')
-        self.assertIn("recordQuizResult(state.answers);", self.quiz_js)
+        self.assertIn("recordQuizResult(state.answers, state.durationSeconds);", self.quiz_js)
 
 
 if __name__ == "__main__":

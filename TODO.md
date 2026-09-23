@@ -14,7 +14,6 @@ An overview of all tasks and their planning.
 ---
 
 ## Next Milestone
-- [~] A0070 [owner: @gemini] Also record the total amount of time played in the stats
 - [ ] A0071 Make sure all JS functions are properly documented, also the params and return value.
 - [ ] A0072 English as implementation language: make sure all browser console logging happens exclusively in English, also all code comments are in English.
 - [ ] A0073 Bij de Carrousel instelling "Welke borden tonen": voorzie een optie "Enkel borden waarop ik tijdens de quiz fouten heb gemaakt"
