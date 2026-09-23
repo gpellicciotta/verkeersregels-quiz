@@ -21,6 +21,7 @@ class TestErrorReview(unittest.TestCase):
         cls.preferences_js = (JS_DIR / "preferences.js").read_text(encoding="utf-8")
         cls.config_view_js = (JS_DIR / "config-view.js").read_text(encoding="utf-8")
         cls.index_html = (WORKTREE_ROOT / "index.html").read_text(encoding="utf-8")
+        cls.style_css = (WORKTREE_ROOT / "css" / "style.css").read_text(encoding="utf-8")
 
     def test_quiz_module_exports_error_review_entry_points(self) -> None:
         """Validates that quiz.js exposes the two new round-building entry points."""
@@ -109,6 +110,13 @@ class TestErrorReview(unittest.TestCase):
         self.assertIn('id="btn-start-errors"', self.index_html)
         self.assertIn('id="btn-result-retry-errors"', self.index_html)
         self.assertIn('id="config-always-include-errors"', self.index_html)
+        self.assertIn('class="config-checkbox-label"', self.index_html)
+
+    def test_style_css_defines_config_checkbox_label(self) -> None:
+        """Validates style.css defines .config-checkbox-label matching config label font styles."""
+        self.assertIn(".config-checkbox-label {", self.style_css)
+        self.assertIn("font-size: var(--font-size-sm);", self.style_css)
+        self.assertIn("font-weight: 600;", self.style_css)
 
 
 if __name__ == "__main__":
