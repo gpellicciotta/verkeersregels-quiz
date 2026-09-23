@@ -13,7 +13,7 @@ Un aperçu résumé de toutes les modifications, par version de ce projet.
 
 ---
 
-## v3.6.1-pre
+## v3.7.0-pre
 - FrontEnd: Liens d'assistance mis à jour dans l'écran À propos pour inclure les boutons directs Ko-fi et PayPal.Me.
 - FrontEnd: L'astuce du carrousel a maintenant été supprimée car elle n'est pas vraiment nécessaire et rend l'interface utilisateur plus complexe.
 - FrontEnd: Ajout d'une carte de présentation pour toutes les icônes d'application utilisées sur l'écran À propos avec des boutons de réplique exacte.
