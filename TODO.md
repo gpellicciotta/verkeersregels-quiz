@@ -15,7 +15,7 @@ An overview of all tasks and their planning.
 
 ## Next Milestone
 - [~] A0073 [owner: @claude] Bij de Carrousel instelling "Welke borden tonen": voorzie een optie "Enkel borden waarop ik tijdens de quiz fouten heb gemaakt"
-- [ ] T0078 Add an option to the about view to suggest sponsering me. But how? Check a previous investigation done in the contect of HiNoLuGi counters and come up with suggestions.
+- [~] T0078 [owner: @gemini] Add a sponsorship suggestion option to the about view based on previous investigation.
 
 ---
 
