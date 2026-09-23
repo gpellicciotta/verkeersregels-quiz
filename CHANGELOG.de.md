@@ -13,6 +13,12 @@ Eine zusammenfassende Übersicht aller Änderungen pro Version dieses Projekts.
 
 ---
 
+## v3.6.1-pre
+- FrontEnd: Der Karussell-Tipp wurde jetzt entfernt, da er nicht wirklich notwendig ist und die Benutzeroberfläche komplexer macht.
+- FrontEnd: Übersichtskarte für alle verwendeten App-Symbole zum Info-Bildschirm mit genau nachgebildeten Schaltflächen hinzugefügt.
+- FrontEnd: Die Fußzeilenschaltflächen des Startbildschirms wurden neu angeordnet und der statische Hinweis wurde entfernt, um die Benutzeroberfläche ruhiger zu gestalten.
+- FrontEnd: Tooltips auf Touchscreens deaktiviert und Z-Index auf Desktop-Bildschirmen wiederhergestellt.
+
 ## v3.6.0 [released: 2026-09-23]
 - FrontEnd: Vollbild-Layout standardisiert mit Sticky-Headern, festen Aktionsschaltflächen und einheitlichen Schließschaltflächen oben rechts.
 - FrontEnd: Schaltfläche „Fehler melden“ einheitlich unten links auf allen Bildschirmen platziert mit automatischer Kontexterkennung der aktiven Ansicht.

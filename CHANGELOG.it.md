@@ -13,6 +13,12 @@ Una panoramica riepilogativa di tutte le modifiche, per versione di questo proge
 
 ---
 
+## v3.6.1-pre
+- FrontEnd: Il suggerimento del carosello è stato ora rimosso poiché non è realmente necessario e rende l'interfaccia utente più complessa.
+- FrontEnd: Aggiunta una scheda panoramica per tutte le icone delle app utilizzate nella schermata Informazioni con pulsanti replica esatta.
+- FrontEnd: Pulsanti a piè di pagina della schermata Home riorganizzati e suggerimento statico rimosso per un'interfaccia più tranquilla.
+- FrontEnd: Descrizioni comandi disabilitate sui touch screen e z-index ripristinato sugli schermi dei desktop.
+
 ## v3.6.0 [released: 2026-09-23]
 - FrontEnd: Layout a schermo intero standardizzato con intestazioni permanenti, pulsanti di azione fissi e pulsanti di chiusura uniformi in alto a destra.
 - FrontEnd: Pulsante Segnala errore posizionato uniformemente in basso a sinistra su tutte le schermate con rilevamento automatico del contesto della vista attiva.

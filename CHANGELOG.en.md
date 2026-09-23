@@ -13,6 +13,12 @@ A summarized overview of all changes, per version of this project.
 
 ---
 
+## v3.6.1-pre
+- FrontEnd: The carousel tip has now been removed as it is not really necessary and makes the UI more complex.
+- FrontEnd: Added overview card for all used app icons to the About screen with exact replica buttons.
+- FrontEnd: Home screen footer buttons rearranged and static hint removed for a calmer interface.
+- FrontEnd: Tooltips disabled on touch screens and z-index restored on desktop screens.
+
 ## v3.6.0 [released: 2026-09-23]
 - FrontEnd: Full screen layout standardized with sticky headers, fixed action buttons and uniform close buttons at the top right.
 - FrontEnd: Report error button uniformly placed at the bottom left of all screens with automatic context detection of the active view.

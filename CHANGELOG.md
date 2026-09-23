@@ -13,6 +13,12 @@ A summarized overview of all changes, per version of this project.
 
 ---
 
+## v3.6.1-pre
+- FrontEnd: De carrousel-tip is nu verwijderd aangezien hij niet echt nodig is en de UI complexer maakt.
+- FrontEnd: Overzichtskaart voor alle gebruikte app-iconen toegevoegd aan het Over-scherm met exacte replica-knoppen.
+- FrontEnd: Startscherm-voettekstknoppen herschikt en statische hint verwijderd voor een rustigere interface.
+- FrontEnd: Tooltips uitgeschakeld op touch-schermen en z-index hersteld op desktopschermen.
+
 ## v3.6.0 [released: 2026-09-23]
 - FrontEnd: Volledig scherm-indeling gestandaardiseerd met sticky headers, vaste actieknoppen en uniforme sluitknoppen rechtsboven.
 - FrontEnd: Meld-foutknop uniform linksonder geplaatst op alle schermen met automatische contextdetectie van de actieve weergave.

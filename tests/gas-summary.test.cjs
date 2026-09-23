@@ -174,11 +174,11 @@ test("sendDailySummaryEmail reads both sheets and emails the summary to SUMMARY_
   }
   const resultatenSheet = fakeSheet(
     ["Wanneer", "Wie", "Juiste Antwoorden", "Aantal Vragen", "Percentage", "Duur (sec)", "Duur"],
-    [[NOW.toISOString(), "Speler", 8, 10, 80, 300, "5:00"]]
+    [[new Date().toISOString(), "Speler", 8, 10, 80, 300, "5:00"]]
   );
   const meldingenSheet = fakeSheet(
     ["Wanneer", "Vraag ID", "Vraag", "Wie", "Opmerking"],
-    [[NOW.toISOString(), "q1", "Bord X", "Speler", "opmerking"]]
+    [[new Date().toISOString(), "q1", "Bord X", "Speler", "opmerking"]]
   );
   const sentEmails = [];
   const context = loadContext({

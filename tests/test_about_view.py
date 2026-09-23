@@ -41,14 +41,27 @@ class TestAboutView(unittest.TestCase):
         self.assertIn('id="btn-install"', html, "index.html must define btn-install")
         self.assertIn('class="start-divider"', html, "index.html must define subtle divider line")
 
-        # Meta bar: 1 hint icon (law article) + 1 real report button + 1 Info/About button, all with tooltips
+        # Meta bar: circle action buttons in order: mode, config, lang, report, stats, about (help ?)
         self.assertIn('class="start-meta-bar"', html, "index.html must define start-meta-bar")
-        self.assertIn('class="start-meta-item start-meta-hint"', html, "index.html must define the law article hint icon")
         self.assertIn('id="btn-report-start"', html, "index.html must define the real report button on the start screen")
+        self.assertIn('id="btn-stats"', html, "index.html must define btn-stats")
         self.assertIn('id="btn-about"', html, "index.html must define btn-about")
-        self.assertIn('data-tooltip="Bij elke vraag', html, "External link hint must provide tooltip")
+        self.assertIn('data-icon="help"', html, "btn-about must use the help ? icon")
         self.assertIn('data-tooltip="Meld fout"', html, "Report button must provide tooltip")
         self.assertIn('data-tooltip="Over deze app', html, "About button must provide tooltip")
+
+        # Buttons order verification in start-meta-actions
+        pos_mode = html.index('id="btn-mode-toggle"')
+        pos_config = html.index('id="btn-config"')
+        pos_lang = html.index('id="btn-lang"')
+        pos_report = html.index('id="btn-report-start"')
+        pos_stats = html.index('id="btn-stats"')
+        pos_about = html.index('id="btn-about"')
+        self.assertLess(pos_mode, pos_config, "mode button must precede config button")
+        self.assertLess(pos_config, pos_lang, "config button must precede language button")
+        self.assertLess(pos_lang, pos_report, "language button must precede report button")
+        self.assertLess(pos_report, pos_stats, "report button must precede stats button")
+        self.assertLess(pos_stats, pos_about, "stats button must precede about/help button")
 
         # Copyright notice
         self.assertIn('class="start-copyright"', html, "index.html must define start-copyright")
@@ -63,6 +76,7 @@ class TestAboutView(unittest.TestCase):
         self.assertIn('id="btn-about-back"', html, "index.html must define btn-about-back button")
         self.assertIn('id="about-version-tag"', html, "index.html must define about-version-tag")
         self.assertIn('id="about-changelog-body"', html, "index.html must define about-changelog-body")
+        self.assertIn('class="about-icons-card"', html, "index.html must define about-icons-card")
         self.assertIn('class="about-sources-card"', html, "index.html must define about-sources-card")
         self.assertIn('class="about-support-card"', html, "index.html must define about-support-card")
         self.assertIn('id="about-support-github"', html, "About screen must define GitHub sponsor link")
@@ -73,10 +87,12 @@ class TestAboutView(unittest.TestCase):
         self.assertIn('Wikimedia Commons', html, "About screen must reference Wikimedia Commons")
         self.assertIn('class="about-copyright"', html, "About screen must define about-copyright")
 
-        # Sources card must be presented before version history card
+        # Icons card must be presented first, then sources, then support, then version history
+        icons_pos = html.index('class="about-icons-card"')
         sources_pos = html.index('class="about-sources-card"')
         support_pos = html.index('class="about-support-card"')
         version_pos = html.index('class="about-version-card"')
+        self.assertLess(icons_pos, sources_pos, "Iconen & Symbolen card must precede Gebruikte bronnen card")
         self.assertLess(sources_pos, support_pos, "Gebruikte bronnen card must precede Project ondersteunen card")
         self.assertLess(support_pos, version_pos, "Project ondersteunen card must precede Versiegeschiedenis card")
 
@@ -92,9 +108,11 @@ class TestAboutView(unittest.TestCase):
         self.assertIn(".start-meta-item", css, "style.css must define .start-meta-item")
         self.assertIn("[data-tooltip]::after", css, "style.css must define tooltip bubble styles")
         self.assertIn("[data-tooltip]::before", css, "style.css must define tooltip arrow styles")
+        self.assertIn("@media (hover: hover) and (pointer: fine)", css, "style.css must restrict hover tooltips to non-touch devices")
         self.assertIn("#screen-about", css, "style.css must define #screen-about styles")
         self.assertIn(".about-header", css, "style.css must define .about-header")
         self.assertIn(".btn-about-back", css, "style.css must define .btn-about-back")
+        self.assertIn(".about-icons-card", css, "style.css must define .about-icons-card")
         self.assertIn(".about-support-card", css, "style.css must define .about-support-card")
         self.assertIn(".about-support-link", css, "style.css must define .about-support-link")
         self.assertIn(".about-changelog-body", css, "style.css must define .about-changelog-body")

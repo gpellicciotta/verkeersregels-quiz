@@ -557,7 +557,7 @@ button {
   visibility: hidden;
   display: none;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.22);
-  z-index: 100;
+  z-index: 1000;
 }
 
 [data-tooltip]::before {
@@ -572,7 +572,7 @@ button {
   opacity: 0;
   visibility: hidden;
   display: none;
-  z-index: 100;
+  z-index: 1000;
 }
 
 /* Force-hide any tooltip left open across a resize/orientation change (see app.js). */
@@ -581,8 +581,7 @@ body.suppress-tooltips [data-tooltip]::before {
   display: none !important;
 }
 
-[data-tooltip]:hover::after,
-[data-tooltip]:hover::before,
+/* Keyboard focus navigation shows tooltips on all devices */
 [data-tooltip]:focus-visible::after,
 [data-tooltip]:focus-visible::before {
   display: block;
@@ -625,21 +624,13 @@ body.suppress-tooltips [data-tooltip]::before {
   border-bottom-color: var(--color-tooltip-bg);
 }
 
-.view-close-btn[data-tooltip]:hover::after,
 .view-close-btn[data-tooltip]:focus-visible::after,
-.modal-close[data-tooltip]:hover::after,
 .modal-close[data-tooltip]:focus-visible::after,
-.btn-about-close[data-tooltip]:hover::after,
 .btn-about-close[data-tooltip]:focus-visible::after,
-.btn-config-close[data-tooltip]:hover::after,
 .btn-config-close[data-tooltip]:focus-visible::after,
-.btn-stats-close[data-tooltip]:hover::after,
 .btn-stats-close[data-tooltip]:focus-visible::after,
-.btn-carousel-close[data-tooltip]:hover::after,
 .btn-carousel-close[data-tooltip]:focus-visible::after,
-.result-btn-close[data-tooltip]:hover::after,
 .result-btn-close[data-tooltip]:focus-visible::after,
-.quiz-close[data-tooltip]:hover::after,
 .quiz-close[data-tooltip]:focus-visible::after {
   transform: translateY(0);
 }
@@ -662,11 +653,8 @@ body.suppress-tooltips [data-tooltip]::before {
   border-bottom-color: var(--color-tooltip-bg);
 }
 
-.start-header-actions [data-tooltip]:hover::after,
 .start-header-actions [data-tooltip]:focus-visible::after,
-.carousel-control-buttons [data-tooltip]:hover::after,
 .carousel-control-buttons [data-tooltip]:focus-visible::after,
-.result-actions [data-tooltip]:hover::after,
 .result-actions [data-tooltip]:focus-visible::after {
   transform: translateX(-50%) translateY(0);
 }
@@ -709,25 +697,15 @@ body.suppress-tooltips [data-tooltip]::before {
   border-bottom-color: transparent;
 }
 
-.btn-report-round[data-tooltip]:hover::after,
 .btn-report-round[data-tooltip]:focus-visible::after,
-.quiz-btn-report-round[data-tooltip]:hover::after,
 .quiz-btn-report-round[data-tooltip]:focus-visible::after,
-.start-report-btn[data-tooltip]:hover::after,
 .start-report-btn[data-tooltip]:focus-visible::after,
-#btn-report-about[data-tooltip]:hover::after,
 #btn-report-about[data-tooltip]:focus-visible::after,
-#btn-report-stats[data-tooltip]:hover::after,
 #btn-report-stats[data-tooltip]:focus-visible::after,
-#btn-report-config[data-tooltip]:hover::after,
 #btn-report-config[data-tooltip]:focus-visible::after,
-#btn-report-carousel[data-tooltip]:hover::after,
 #btn-report-carousel[data-tooltip]:focus-visible::after,
-#btn-report-result[data-tooltip]:hover::after,
 #btn-report-result[data-tooltip]:focus-visible::after,
-#btn-report-quiz[data-tooltip]:hover::after,
 #btn-report-quiz[data-tooltip]:focus-visible::after,
-#btn-report-error[data-tooltip]:hover::after,
 #btn-report-error[data-tooltip]:focus-visible::after {
   transform: translateY(0);
 }
@@ -754,11 +732,67 @@ body.suppress-tooltips [data-tooltip]::before {
   transform: none;
 }
 
-.start-meta-item:first-child:hover::after,
 .start-meta-item:first-child:focus-visible::after,
-.start-meta-item:last-child:hover::after,
 .start-meta-item:last-child:focus-visible::after {
   transform: translateY(0);
+}
+
+/* Mouse hover tooltips only on non-touch (fine pointer) devices */
+@media (hover: hover) and (pointer: fine) {
+  [data-tooltip]:hover::after,
+  [data-tooltip]:hover::before {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  .view-close-btn[data-tooltip]:hover::after,
+  .modal-close[data-tooltip]:hover::after,
+  .btn-about-close[data-tooltip]:hover::after,
+  .btn-config-close[data-tooltip]:hover::after,
+  .btn-stats-close[data-tooltip]:hover::after,
+  .btn-carousel-close[data-tooltip]:hover::after,
+  .result-btn-close[data-tooltip]:hover::after,
+  .quiz-close[data-tooltip]:hover::after {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .start-header-actions [data-tooltip]:hover::after,
+  .carousel-control-buttons [data-tooltip]:hover::after,
+  .result-actions [data-tooltip]:hover::after {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  .btn-report-round[data-tooltip]:hover::after,
+  .quiz-btn-report-round[data-tooltip]:hover::after,
+  .start-report-btn[data-tooltip]:hover::after,
+  #btn-report-about[data-tooltip]:hover::after,
+  #btn-report-stats[data-tooltip]:hover::after,
+  #btn-report-config[data-tooltip]:hover::after,
+  #btn-report-carousel[data-tooltip]:hover::after,
+  #btn-report-result[data-tooltip]:hover::after,
+  #btn-report-quiz[data-tooltip]:hover::after,
+  #btn-report-error[data-tooltip]:hover::after {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .start-meta-item:first-child:hover::after,
+  .start-meta-item:last-child:hover::after {
+    display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
 }
 
 /* Close & Back Button with accessible focus rings and top-right placement */
@@ -2142,16 +2176,6 @@ body.suppress-tooltips [data-tooltip]::before {
   padding: 0 44px;
 }
 
-.carousel-shortcut-hint {
-  font-size: var(--font-size-xs);
-  color: var(--color-muted);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 4px;
-  flex-wrap: wrap;
-}
-
 /* ==========================================================================
    9. About Screen (#screen-about)
    ========================================================================== */
@@ -2199,11 +2223,105 @@ body.suppress-tooltips [data-tooltip]::before {
 
 .about-version-card,
 .about-sources-card,
-.about-support-card {
+.about-support-card,
+.about-icons-card {
   background: var(--color-card-subtle);
   border: 1px solid var(--color-card-border);
   border-radius: var(--radius);
   padding: 14px;
+}
+
+.about-icons-desc {
+  margin: 0 0 12px 0;
+  font-size: var(--font-size-sm);
+  color: var(--color-muted);
+  line-height: 1.5;
+}
+
+.about-icons-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+@media (min-width: 500px) {
+  .about-icons-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.about-icon-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 8px 10px;
+  background: var(--color-card);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-md);
+}
+
+.about-icon-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  min-width: 38px;
+  max-width: 38px;
+  flex: 0 0 38px;
+  border-radius: var(--radius-round);
+  border: 1px solid var(--color-primary);
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+  box-shadow: 0 2px 5px var(--color-primary-shadow);
+  margin-top: 2px;
+}
+
+.about-icon-svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.about-icon-badge svg {
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  max-width: 18px;
+  min-height: 18px;
+  max-height: 18px;
+  flex-shrink: 0;
+}
+
+.about-icon-badge-text {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.about-icon-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.about-icon-name {
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  color: var(--color-text);
+  line-height: 1.3;
+}
+
+.about-icon-detail {
+  font-size: var(--font-size-xs);
+  color: var(--color-muted);
+  line-height: 1.35;
+  margin: 0;
 }
 
 .about-support-desc {
@@ -3098,6 +3216,7 @@ dialog.modal-dialog:not([open]) {
   .about-version-card,
   .about-sources-card,
   .about-support-card,
+  .about-icons-card,
   .config-section,
   .stats-card {
     padding: 20px;

@@ -13,6 +13,12 @@ Un aperçu résumé de toutes les modifications, par version de ce projet.
 
 ---
 
+## v3.6.1-pre
+- FrontEnd: L'astuce du carrousel a maintenant été supprimée car elle n'est pas vraiment nécessaire et rend l'interface utilisateur plus complexe.
+- FrontEnd: Ajout d'une carte de présentation pour toutes les icônes d'application utilisées sur l'écran À propos avec des boutons de réplique exacte.
+- FrontEnd: Boutons de pied de page de l'écran d'accueil réorganisés et indice statique supprimé pour une interface plus calme.
+- FrontEnd: Info-bulles désactivées sur les écrans tactiles et z-index restauré sur les écrans de bureau.
+
 ## v3.6.0 [released: 2026-09-23]
 - FrontEnd: Disposition plein écran standardisée avec des en-têtes collants, des boutons d'action fixes et des boutons de fermeture uniformes en haut à droite.
 - FrontEnd: Bouton de rapport d'erreur uniformément placé en bas à gauche de tous les écrans avec détection automatique du contexte de la vue active.

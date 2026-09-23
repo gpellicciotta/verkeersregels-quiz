@@ -42,14 +42,16 @@ class TestMinimalStartScreen(unittest.TestCase):
         # 4. Subtle line
         self.assertIn('class="start-divider"', html, "index.html must define start-divider")
 
-        # 5. Circle buttons: actions on left, info on right, install button in action group
+        # 5. Circle buttons in action group
         self.assertIn('id="btn-mode-toggle"', html, "index.html must define btn-mode-toggle")
         self.assertIn('id="btn-config"', html, "index.html must define btn-config")
+        self.assertIn('id="btn-lang"', html, "index.html must define btn-lang")
+        self.assertIn('id="btn-report-start"', html, "index.html must define btn-report-start")
+        self.assertIn('id="btn-stats"', html, "index.html must define btn-stats")
         self.assertIn('id="btn-about"', html, "index.html must define btn-about")
         self.assertIn('id="btn-install"', html, "index.html must define btn-install")
         self.assertIn('start-meta-btn-action', html, "Action circle buttons must have start-meta-btn-action")
         self.assertIn('start-meta-actions', html, "index.html must define start-meta-actions group")
-        self.assertIn('start-meta-info', html, "index.html must define start-meta-info group")
 
         # 6. Subtle copyright
         self.assertIn('class="start-copyright"', html, "index.html must define start-copyright")

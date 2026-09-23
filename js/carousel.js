@@ -257,9 +257,6 @@ export function toggleCarouselPause(forceState) {
       renderCarouselToggleIcons(true);
     }
     if (el.carouselToggleText) el.carouselToggleText.textContent = t("carousel.toggle_text_resume");
-    if (el.carouselShortcutHint) {
-      el.carouselShortcutHint.innerHTML = t("carousel.shortcut_hint_resume");
-    }
   } else {
     if (el.carouselPauseOverlay) el.carouselPauseOverlay.classList.add("hidden");
     if (el.btnCarouselToggle) {
@@ -270,9 +267,6 @@ export function toggleCarouselPause(forceState) {
       renderCarouselToggleIcons(false);
     }
     if (el.carouselToggleText) el.carouselToggleText.textContent = t("carousel.toggle_text_pause");
-    if (el.carouselShortcutHint) {
-      el.carouselShortcutHint.innerHTML = t("carousel.shortcut_hint_pause");
-    }
     startCarouselTimer();
   }
   if (el.btnCarouselToggle) {
@@ -342,9 +336,6 @@ export function startCarousel(options = {}) {
     renderCarouselToggleIcons(false);
   }
   if (el.carouselToggleText) el.carouselToggleText.textContent = t("carousel.toggle_text_pause");
-  if (el.carouselShortcutHint) {
-    el.carouselShortcutHint.innerHTML = t("carousel.shortcut_hint_pause");
-  }
 
   showScreen("carousel");
   renderCarouselCard();

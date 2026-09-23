@@ -98,7 +98,6 @@ export const el = {
   btnCarouselNext: document.getElementById("btn-carousel-next"),
   btnCarouselExit: document.getElementById("btn-carousel-exit"),
   carouselDelayInfo: document.getElementById("carousel-delay-info"),
-  carouselShortcutHint: document.getElementById("carousel-shortcut-hint"),
   quizStartFields: document.getElementById("quiz-start-fields"),
   carouselStartFields: document.getElementById("carousel-start-fields"),
   carouselDelaySelect: document.getElementById("carousel-delay-select"),

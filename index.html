@@ -102,19 +102,19 @@
               <span class="start-meta-svg" data-icon="settings" aria-hidden="true"></span>
             </button>
 
-            <button type="button" id="btn-about" class="start-meta-item start-about-btn start-meta-btn-action"
-                    aria-label="Over deze app (versie, release notes &amp; bronnen)"
-                    data-tooltip="Over deze app (versie, release notes &amp; bronnen)"
-                    data-i18n-aria="start.btn_about_aria"
-                    data-i18n-tooltip="start.btn_about_tooltip">
-              <span class="start-meta-svg" data-icon="info" aria-hidden="true"></span>
-            </button>
-
             <button type="button" id="btn-lang" class="start-meta-item start-meta-btn start-meta-btn-action btn-lang"
                     aria-label="Taal wijzigen"
                     data-tooltip="Taal: [NL] → FR → DE → IT → EN"
                     data-i18n-aria="start.btn_lang_aria">
               <span class="btn-lang-label" aria-hidden="true" style="font-weight: 700; font-size: 0.75rem; letter-spacing: 0.5px;">NL</span>
+            </button>
+
+            <button type="button" id="btn-report-start" class="start-meta-item start-meta-btn start-meta-btn-action"
+                    aria-label="Meld een fout of probleem"
+                    data-tooltip="Meld fout"
+                    data-i18n-aria="report.btn_generic_aria"
+                    data-i18n-tooltip="report.btn_generic_tooltip">
+              <span class="start-meta-svg" data-icon="report" aria-hidden="true"></span>
             </button>
 
             <button type="button" id="btn-stats" class="start-meta-item start-meta-btn start-meta-btn-action btn-stats"
@@ -125,30 +125,20 @@
               <span class="start-meta-svg" data-icon="stats" aria-hidden="true"></span>
             </button>
 
+            <button type="button" id="btn-about" class="start-meta-item start-about-btn start-meta-btn-action"
+                    aria-label="Over deze app (versie, release notes &amp; bronnen)"
+                    data-tooltip="Over deze app (versie, release notes &amp; bronnen)"
+                    data-i18n-aria="start.btn_about_aria"
+                    data-i18n-tooltip="start.btn_about_tooltip">
+              <span class="start-meta-svg" data-icon="help" aria-hidden="true"></span>
+            </button>
+
             <button type="button" id="btn-install" class="start-meta-item start-meta-btn start-meta-btn-action btn-install hidden"
                     aria-label="Installeer als app"
                     data-tooltip="Installeer app"
                     data-i18n-aria="start.btn_install_aria"
                     data-i18n-tooltip="start.btn_install_tooltip">
               <span class="start-meta-svg" data-icon="install" aria-hidden="true"></span>
-            </button>
-          </div>
-
-          <div class="start-meta-group start-meta-info">
-            <span class="start-meta-item start-meta-hint" tabindex="0" role="img"
-                  aria-label="Toelichting wetsartikel: bij elke vraag vind je via dit toelichtingsicoon direct het bijbehorende wetsartikel in de Wegcode"
-                  data-tooltip="Bij elke vraag vind je via dit toelichtingsicoon direct het bijbehorende wetsartikel"
-                  data-i18n-aria="start.hint_law_aria"
-                  data-i18n-tooltip="start.hint_law_tooltip">
-              <span class="start-meta-svg" data-icon="externalLink" aria-hidden="true"></span>
-            </span>
-
-            <button type="button" id="btn-report-start" class="start-meta-item start-meta-btn start-meta-btn-action"
-                    aria-label="Meld een fout of probleem"
-                    data-tooltip="Meld fout"
-                    data-i18n-aria="report.btn_generic_aria"
-                    data-i18n-tooltip="report.btn_generic_tooltip">
-              <span class="start-meta-svg" data-icon="report" aria-hidden="true"></span>
             </button>
           </div>
         </div>
@@ -166,6 +156,103 @@
     </header>
 
     <div class="about-content view-content">
+      <div class="about-icons-card">
+        <h2 class="about-section-heading" data-i18n="about.icons_heading">Iconen &amp; Symbolen</h2>
+        <p class="about-icons-desc" data-i18n="about.icons_description">Overzicht van de gebruikte iconen en hun functie:</p>
+        <ul class="about-icons-list">
+          <li class="about-icon-item">
+            <span class="about-icon-badge">
+              <span class="about-icon-svg" data-icon="carousel" data-icon-width="18" data-icon-height="18" aria-hidden="true"></span>
+            </span>
+            <div class="about-icon-info">
+              <strong class="about-icon-name" data-i18n="about.icon_mode_title">Modus wisselen</strong>
+              <p class="about-icon-detail" data-i18n="about.icon_mode_desc">Schakel tussen de interactieve Quiz en de Verkeersborden Carrousel.</p>
+            </div>
+          </li>
+          <li class="about-icon-item">
+            <span class="about-icon-badge">
+              <span class="about-icon-svg" data-icon="settings" data-icon-width="18" data-icon-height="18" aria-hidden="true"></span>
+            </span>
+            <div class="about-icon-info">
+              <strong class="about-icon-name" data-i18n="about.icon_config_title">Instellingen</strong>
+              <p class="about-icon-detail" data-i18n="about.icon_config_desc">Pas aantal vragen, spelersnaam, taal, thema en kleuraccenten aan.</p>
+            </div>
+          </li>
+          <li class="about-icon-item">
+            <span class="about-icon-badge">
+              <span class="about-icon-badge-text" aria-hidden="true">NL</span>
+            </span>
+            <div class="about-icon-info">
+              <strong class="about-icon-name" data-i18n="about.icon_lang_title">Taal wijzigen</strong>
+              <p class="about-icon-detail" data-i18n="about.icon_lang_desc">Wissel direct van interface- en vragentaal (NL, FR, DE, IT, EN).</p>
+            </div>
+          </li>
+          <li class="about-icon-item">
+            <span class="about-icon-badge">
+              <span class="about-icon-svg" data-icon="report" data-icon-width="18" data-icon-height="18" aria-hidden="true"></span>
+            </span>
+            <div class="about-icon-info">
+              <strong class="about-icon-name" data-i18n="about.icon_report_title">Meld een fout</strong>
+              <p class="about-icon-detail" data-i18n="about.icon_report_desc">Geef inhoudelijke feedback of meld een probleem bij een vraag of scherm.</p>
+            </div>
+          </li>
+          <li class="about-icon-item">
+            <span class="about-icon-badge">
+              <span class="about-icon-svg" data-icon="stats" data-icon-width="18" data-icon-height="18" aria-hidden="true"></span>
+            </span>
+            <div class="about-icon-info">
+              <strong class="about-icon-name" data-i18n="about.icon_stats_title">Statistieken</strong>
+              <p class="about-icon-detail" data-i18n="about.icon_stats_desc">Bekijk gespeelde spellen, totale tijd, gemiddelde score en foutoverzichten.</p>
+            </div>
+          </li>
+          <li class="about-icon-item">
+            <span class="about-icon-badge">
+              <span class="about-icon-svg" data-icon="help" data-icon-width="18" data-icon-height="18" aria-hidden="true"></span>
+            </span>
+            <div class="about-icon-info">
+              <strong class="about-icon-name" data-i18n="about.icon_about_title">Over &amp; Help</strong>
+              <p class="about-icon-detail" data-i18n="about.icon_about_desc">Bekijk bronnen, wetgeving, release notes, donaties en deze uitleg.</p>
+            </div>
+          </li>
+          <li class="about-icon-item">
+            <span class="about-icon-badge">
+              <span class="about-icon-svg" data-icon="externalLink" data-icon-width="18" data-icon-height="18" aria-hidden="true"></span>
+            </span>
+            <div class="about-icon-info">
+              <strong class="about-icon-name" data-i18n="about.icon_law_title">Wetsartikel toelichting</strong>
+              <p class="about-icon-detail" data-i18n="about.icon_law_desc">Opent het officiële artikel van de Wegcode bij een vraag of verkeersbord.</p>
+            </div>
+          </li>
+          <li class="about-icon-item">
+            <span class="about-icon-badge">
+              <span class="about-icon-svg" data-icon="share" data-icon-width="18" data-icon-height="18" aria-hidden="true"></span>
+            </span>
+            <div class="about-icon-info">
+              <strong class="about-icon-name" data-i18n="about.icon_share_title">Resultaat delen</strong>
+              <p class="about-icon-detail" data-i18n="about.icon_share_desc">Deel je behaalde quizscore en statistieken met vrienden.</p>
+            </div>
+          </li>
+          <li class="about-icon-item">
+            <span class="about-icon-badge">
+              <span class="about-icon-svg" data-icon="print" data-icon-width="18" data-icon-height="18" aria-hidden="true"></span>
+            </span>
+            <div class="about-icon-info">
+              <strong class="about-icon-name" data-i18n="about.icon_print_title">Resultaten afdrukken</strong>
+              <p class="about-icon-detail" data-i18n="about.icon_print_desc">Druk een net overzicht van je score en de behandelde vragen af.</p>
+            </div>
+          </li>
+          <li class="about-icon-item">
+            <span class="about-icon-badge">
+              <span class="about-icon-svg" data-icon="install" data-icon-width="18" data-icon-height="18" aria-hidden="true"></span>
+            </span>
+            <div class="about-icon-info">
+              <strong class="about-icon-name" data-i18n="about.icon_install_title">App installeren</strong>
+              <p class="about-icon-detail" data-i18n="about.icon_install_desc">Installeer deze quiz als applicatie op je telefoon of computer.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
       <div class="about-sources-card">
         <h2 class="about-section-heading" data-i18n="about.sources_heading">Gebruikte bronnen &amp; wetgeving</h2>
         <ul class="about-sources-list">
@@ -633,7 +720,6 @@
           </button>
           <div class="carousel-status-info">
             <span id="carousel-delay-info" class="carousel-delay-info">Wisselt elke 8 seconden</span>
-            <span id="carousel-shortcut-hint" class="carousel-shortcut-hint" data-i18n-html="carousel.shortcut_hint_pause">Tip: klik op de kaart of druk op <kbd class="kbd-key">Spatiebalk</kbd> om te pauzeren</span>
           </div>
         </div>
       </div>
