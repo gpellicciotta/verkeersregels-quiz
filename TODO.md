@@ -14,7 +14,7 @@ An overview of all tasks and their planning.
 ---
 
 ## Next Milestone
-- [ ] A0072 Zorg ervoor dat de knop "Oefen veelgemaakte fouten" enkel zichtbaar is als er ook echt al fouten zijn, 
+- [~] A0072 [owner: @gemini] Zorg ervoor dat de knop "Oefen veelgemaakte fouten" enkel zichtbaar is als er ook echt al fouten zijn, 
       en ook op het Quiz Resultaat scherm mag de knop "Herhaal foute vragen" niet zichtbaar zijn bij een perfecte score.
 - [ ] T0073 In Instellingen, zorg ervoor dat wijzigingen in Theme en Theme Color onmiddelijk zichtbaar zijn, 
       maar revert die wel al de x-knop gekozen wordt i.p.v. de "Opslaan"-knop
