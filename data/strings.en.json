@@ -33,7 +33,8 @@
   "start.error_no_questions_config": "No quiz questions are available for the selected settings.",
   "start.error_load_failed": "Questions could not be loaded. Please reload the page.",
   "start.error_start_no_pool": "No questions available to start the quiz.",
-  "start.btn_review_errors": "Practice your missed questions",
+  "start.btn_review_errors": "Practice frequent mistakes",
+  "start.btn_review_errors_tooltip": "Practice mistakes made in the past",
   "start.btn_review_errors_aria": "Start a quiz with questions you previously answered incorrectly",
 
   "quiz.progress": "Question {n}/{total}",

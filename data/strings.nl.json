@@ -33,7 +33,8 @@
   "start.error_no_questions_config": "Er zijn geen quizvragen beschikbaar voor de gekozen instellingen.",
   "start.error_load_failed": "Vragen konden niet geladen worden. Herlaad de pagina.",
   "start.error_start_no_pool": "Geen vragen beschikbaar om de quiz te starten.",
-  "start.btn_review_errors": "Oefen je foutieve vragen",
+  "start.btn_review_errors": "Oefen veelgemaakte fouten",
+  "start.btn_review_errors_tooltip": "Oefen fouten gemaakt in het verleden",
   "start.btn_review_errors_aria": "Start een quiz met vragen die je eerder fout beantwoordde",
 
   "quiz.progress": "Vraag {n}/{total}",

@@ -14,6 +14,7 @@ A summarized overview of all changes, per version of this project.
 ---
 
 ## v3.5.1-pre
+- FrontEnd: Knop voor veelgemaakte fouten op het startscherm hernoemd, voorzien van tooltip en passend uitgelijnd qua breedte.
 - FrontEnd: Checkbox voor foutieve vragen in instellingen gebruikt nu hetzelfde lettertype en gewicht als overige veldlabels.
 - FrontEnd: Actieknoppen zijn nu sticky op mobiel en de opslaanknop in instellingen ook op desktop.
 - FrontEnd: Verplaatste meld-foutknop in mobiele quizweergave naar een vaste positie linksonder met standaard ronde vormgeving.

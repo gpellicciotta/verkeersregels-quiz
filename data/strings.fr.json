@@ -33,7 +33,8 @@
   "start.error_no_questions_config": "Aucune question de quiz n'est disponible pour les paramètres sélectionnés.",
   "start.error_load_failed": "Impossible de charger les questions. Veuillez recharger la page.",
   "start.error_start_no_pool": "Aucune question disponible pour démarrer le quiz.",
-  "start.btn_review_errors": "Réviser tes questions ratées",
+  "start.btn_review_errors": "Réviser les erreurs fréquentes",
+  "start.btn_review_errors_tooltip": "Réviser les erreurs commises dans le passé",
   "start.btn_review_errors_aria": "Démarrer un quiz avec les questions auxquelles tu as déjà répondu de façon incorrecte",
 
   "quiz.progress": "Question {n}/{total}",

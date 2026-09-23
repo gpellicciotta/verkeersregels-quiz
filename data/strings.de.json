@@ -33,7 +33,8 @@
   "start.error_no_questions_config": "Für die gewählten Einstellungen sind keine Quizfragen verfügbar.",
   "start.error_load_failed": "Fragen konnten nicht geladen werden. Bitte laden Sie die Seite neu.",
   "start.error_start_no_pool": "Keine Fragen verfügbar, um das Quiz zu starten.",
-  "start.btn_review_errors": "Übe deine Fehlerfragen",
+  "start.btn_review_errors": "Häufige Fehler üben",
+  "start.btn_review_errors_tooltip": "In der Vergangenheit gemachte Fehler üben",
   "start.btn_review_errors_aria": "Ein Quiz mit Fragen starten, die du zuvor falsch beantwortet hast",
 
   "quiz.progress": "Frage {n}/{total}",

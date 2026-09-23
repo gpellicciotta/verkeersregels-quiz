@@ -108,6 +108,9 @@ class TestErrorReview(unittest.TestCase):
     def test_index_html_defines_new_markup(self) -> None:
         """Validates index.html defines the start button, result button, and settings checkbox."""
         self.assertIn('id="btn-start-errors"', self.index_html)
+        self.assertIn('data-i18n="start.btn_review_errors"', self.index_html)
+        self.assertIn('data-i18n-tooltip="start.btn_review_errors_tooltip"', self.index_html)
+        self.assertIn('Oefen veelgemaakte fouten', self.index_html)
         self.assertIn('id="btn-result-retry-errors"', self.index_html)
         self.assertIn('id="config-always-include-errors"', self.index_html)
         self.assertIn('class="config-checkbox-label"', self.index_html)
@@ -117,6 +120,11 @@ class TestErrorReview(unittest.TestCase):
         self.assertIn(".config-checkbox-label {", self.style_css)
         self.assertIn("font-size: var(--font-size-sm);", self.style_css)
         self.assertIn("font-weight: 600;", self.style_css)
+
+    def test_style_css_constrains_start_errors_button_width(self) -> None:
+        """Validates style.css constrains #btn-start-errors to max-width 420px matching action row."""
+        self.assertIn("#btn-start-errors {", self.style_css)
+        self.assertIn("max-width: 420px;", self.style_css)
 
 
 if __name__ == "__main__":

@@ -491,6 +491,12 @@ button {
   text-align: center;
 }
 
+#btn-start-errors {
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* Accessible Tooltips via CSS pseudo-elements */
 [data-tooltip] {
   position: relative;
