@@ -4,6 +4,15 @@ import { closeReportModal } from "./report-modal.js";
 import { closeChangelogModal, loadChangelog } from "./changelog.js";
 import { pauseCarouselTimer } from "./carousel.js";
 
+/**
+ * Show one top-level screen and hide all the others.
+ *
+ * Also closes any open modal, stops the carousel when leaving it and lazily
+ * loads the changelog when the About screen becomes visible.
+ *
+ * @param {string} name - Screen key: "start", "quiz", "result", "carousel", "about" or "config".
+ * @returns {void}
+ */
 export function showScreen(name) {
   closeReportModal();
   closeChangelogModal();

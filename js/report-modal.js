@@ -3,8 +3,15 @@ import { state, carouselState } from "./state.js";
 import { submitErrorReport } from "./report-queue.js";
 import { t } from "./i18n.js";
 
-// The report button is reachable from every screen; this resolves what "context"
-// means at the moment it was pressed.
+/**
+ * Resolve what "context" means for the screen that is currently visible.
+ *
+ * The report button is reachable from every screen, so the visible screen decides
+ * whether the report refers to a question, a carousel sign or just a view.
+ *
+ * @returns {{id: string, text: string}} Identifier of the reported item (empty when
+ *          the screen has none) and a human-readable description.
+ */
 function getReportContext() {
   if (el.screenConfig && !el.screenConfig.classList.contains("hidden")) {
     return { id: "", text: t("report.view_config") };
@@ -38,6 +45,14 @@ function getReportContext() {
 // user actually pressed the button on, even if app state changes before they submit.
 let currentReportContext = null;
 
+/**
+ * Open the report modal, capturing the context of the currently visible screen.
+ *
+ * Resets the remark field and feedback area, and switches the description to the
+ * offline variant when there is no connection.
+ *
+ * @returns {void}
+ */
 export function openReportModal() {
   const context = getReportContext();
   currentReportContext = context;
@@ -67,10 +82,20 @@ export function openReportModal() {
   el.reportRemark.focus();
 }
 
+/**
+ * Show or hide the context summary following the "include context" checkbox.
+ *
+ * @returns {void}
+ */
 export function toggleReportContextVisibility() {
   el.modalQuestionSummary.classList.toggle("hidden", !el.reportIncludeContext.checked);
 }
 
+/**
+ * Close the report modal and clear its feedback message.
+ *
+ * @returns {void}
+ */
 export function closeReportModal() {
   if (!el.modalReport) return;
   el.modalReport.classList.add("hidden");
@@ -78,6 +103,15 @@ export function closeReportModal() {
   el.modalFeedback.className = "modal-feedback hidden";
 }
 
+/**
+ * Handle submission of the report form.
+ *
+ * Closes the modal immediately and hands the report to the queue, which sends it
+ * in the background or stores it locally while offline.
+ *
+ * @param {Event} e - Submit event of the report form.
+ * @returns {void}
+ */
 export function handleReportSubmit(e) {
   e.preventDefault();
   const context = currentReportContext;

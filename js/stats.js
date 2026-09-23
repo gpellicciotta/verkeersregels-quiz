@@ -1,5 +1,12 @@
 export const STATS_STORAGE_KEY = "verkeersquiz_stats";
 
+/**
+ * Build a zeroed statistics record used as the baseline for stored values.
+ *
+ * @returns {{gamesPlayed: number, questionsAnswered: number, correctAnswers: number,
+ *          wrongAnswers: number, totalTimePlayedSeconds: number, lastPlayedAt: string|null,
+ *          errorCounts: Record<string, number>, lastQuizWrongIds: Array<string>}} Empty stats.
+ */
 function emptyStats() {
   return {
     gamesPlayed: 0,
@@ -13,6 +20,14 @@ function emptyStats() {
   };
 }
 
+/**
+ * Read the play statistics from localStorage, normalizing missing or legacy fields.
+ *
+ * The older `totalDurationSeconds` field is migrated to `totalTimePlayedSeconds`, and
+ * unreadable storage yields empty statistics rather than an error.
+ *
+ * @returns {Object} Complete statistics record with every field present.
+ */
 export function getStoredStats() {
   try {
     const raw = localStorage.getItem(STATS_STORAGE_KEY);
@@ -38,6 +53,12 @@ export function getStoredStats() {
   }
 }
 
+/**
+ * Persist the statistics record, logging and swallowing storage failures.
+ *
+ * @param {Object} stats - Complete statistics record to store.
+ * @returns {void}
+ */
 function setStoredStats(stats) {
   try {
     localStorage.setItem(STATS_STORAGE_KEY, JSON.stringify(stats));
@@ -46,7 +67,16 @@ function setStoredStats(stats) {
   }
 }
 
-/** Fold one finished round's answers and duration into the running localStorage-only stats. */
+/**
+ * Fold one finished round's answers and duration into the running localStorage-only stats.
+ *
+ * Counts the round, updates the correct and wrong totals, increments the per-question
+ * error counts and replaces the list of ids answered wrong in the last quiz.
+ *
+ * @param {Array<{id: (string|number|undefined), correct: boolean}>} answers - Answers of the round.
+ * @param {number} [durationSeconds=0] - Round duration; non-positive values add no time.
+ * @returns {Object} Updated statistics record, unchanged when there were no answers.
+ */
 export function recordQuizResult(answers, durationSeconds = 0) {
   const stats = getStoredStats();
   if (!Array.isArray(answers) || answers.length === 0) return stats;
@@ -79,12 +109,21 @@ export function recordQuizResult(answers, durationSeconds = 0) {
   return stats;
 }
 
-/** Returns the accumulated total play time in seconds across finished rounds. */
+/**
+ * Returns the accumulated total play time in seconds across finished rounds.
+ *
+ * @returns {number} Total play time in seconds.
+ */
 export function getTotalTimePlayedSeconds() {
   return getStoredStats().totalTimePlayedSeconds;
 }
 
-/** Returns the most frequently wrong-answered question ids, most errors first. */
+/**
+ * Returns the most frequently wrong-answered question ids, most errors first.
+ *
+ * @param {number} [limit=10] - Maximum number of entries to return.
+ * @returns {Array<{id: string, count: number}>} Question ids with their error counts.
+ */
 export function getMostUsedErrors(limit = 10) {
   const stats = getStoredStats();
   return Object.entries(stats.errorCounts)
@@ -93,21 +132,38 @@ export function getMostUsedErrors(limit = 10) {
     .slice(0, limit);
 }
 
-/** Returns every question id that was ever answered wrong, in no particular order. */
+/**
+ * Returns every question id that was ever answered wrong, in no particular order.
+ *
+ * @returns {Array<string>} Question ids with at least one recorded error.
+ */
 export function getErrorQuestionIds() {
   return Object.keys(getStoredStats().errorCounts);
 }
 
-/** True when at least one question has ever been answered wrong. */
+/**
+ * True when at least one question has ever been answered wrong.
+ *
+ * @returns {boolean} Whether any error was ever recorded.
+ */
 export function hasStoredErrors() {
   return getErrorQuestionIds().length > 0;
 }
 
-/** Returns the question ids answered wrong in the most recently finished quiz. */
+/**
+ * Returns the question ids answered wrong in the most recently finished quiz.
+ *
+ * @returns {Array<string>} Question ids answered wrong in the last round.
+ */
 export function getLastQuizWrongIds() {
   return getStoredStats().lastQuizWrongIds;
 }
 
+/**
+ * Remove all stored play statistics.
+ *
+ * @returns {void}
+ */
 export function resetStats() {
   try {
     localStorage.removeItem(STATS_STORAGE_KEY);

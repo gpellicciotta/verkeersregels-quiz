@@ -9,6 +9,12 @@ const url = process.env.QUIZ_TEST_URL || "http://127.0.0.1:8068/";
 const artifacts = path.resolve(__dirname, "../tasks");
 const screenshotPrefix = process.env.QUIZ_SCREENSHOT_PREFIX || "T0068";
 
+/**
+ * Answer the current question wrongly, so it lands in the stored error history.
+ *
+ * @param {import("playwright").Page} page - Page showing an active quiz question.
+ * @returns {Promise<void>} Resolves once the wrong option has been clicked.
+ */
 async function answerWrong(page) {
   await page.evaluate(async () => {
     const { state } = await import("./js/state.js");
@@ -31,6 +37,12 @@ async function answerWrong(page) {
         ? route.continue() : route.fulfill({ status: 200, body: "{}" });
     });
 
+    /**
+     * Capture a task screenshot, unless the run was started without screenshots.
+     *
+     * @param {string} suffix - Screenshot name suffix after the task prefix.
+     * @returns {Promise<void>} Resolves once the screenshot is written or skipped.
+     */
     const snap = async (suffix) => {
       if (screenshots) await page.screenshot({ path: path.join(artifacts, `${screenshotPrefix}-${suffix}.png`), fullPage: true });
     };

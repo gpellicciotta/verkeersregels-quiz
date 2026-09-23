@@ -38,6 +38,12 @@ const screenshotPrefix = process.env.QUIZ_SCREENSHOT_PREFIX || "T0062";
         throw error;
       }
       await page.locator("#question-image").evaluate((img) => img.decode());
+      /**
+       * Capture a task screenshot named after the viewport, unless screenshots are off.
+       *
+       * @param {string} suffix - Screenshot name suffix after the task prefix and viewport label.
+       * @returns {Promise<void>} Resolves once the screenshot is written or skipped.
+       */
       const snap = async (suffix) => {
         const label = viewport.width === 320 ? "narrow" : mobile ? "mobile" : "view";
         if (screenshots) await page.screenshot({ path: path.join(artifacts, `${screenshotPrefix}-${label}-${suffix}.png`), fullPage: true });
@@ -51,6 +57,11 @@ const screenshotPrefix = process.env.QUIZ_SCREENSHOT_PREFIX || "T0062";
 
       const dialog = page.locator("#modal-quiz-cancel");
       const close = page.locator("#btn-quiz-close");
+      /**
+       * Assert the quiz close button sits inside the card and overlaps no other control.
+       *
+       * @returns {Promise<Object>} Bounding box of the close button.
+       */
       const checkClosePosition = async () => {
         const card = await page.locator("#app").boundingBox();
         const button = await close.boundingBox();
@@ -70,6 +81,11 @@ const screenshotPrefix = process.env.QUIZ_SCREENSHOT_PREFIX || "T0062";
       const quizCloseRect = await checkClosePosition();
       const keep = page.locator("#btn-quiz-continue");
       const stop = page.locator("#btn-quiz-stop");
+      /**
+       * Serialize the page's quiz state, so it can be compared before and after an action.
+       *
+       * @returns {Promise<string>} JSON representation of the quiz state.
+       */
       const stateSnapshot = () => page.evaluate(async () => JSON.stringify((await import("./js/state.js")).state));
       const initial = await stateSnapshot();
       await close.click();

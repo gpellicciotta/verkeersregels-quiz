@@ -1,5 +1,5 @@
 // Service Worker for Verkeersregels Quiz PWA
-const CACHE_NAME = "verkeersquiz-v3.5.1-pre-2a4fd5585c35afcd";
+const CACHE_NAME = "verkeersquiz-v3.5.1-pre-f8f624fa58678a9c";
 
 const PRECACHE_ASSETS = [
   "./",
@@ -286,7 +286,12 @@ const PRECACHE_ASSETS = [
   "assets/situations/sit-40-reddingsstrook-file.jpg",
 ];
 
-// Install: precache all core assets and all traffic sign illustrations
+/**
+ * Install: precache all core assets and all traffic sign illustrations.
+ *
+ * @param {ExtendableEvent} event - Install event whose lifetime covers the precaching.
+ * @returns {void}
+ */
 self.addEventListener("install", (event) => {
   event.waitUntil(
     caches
@@ -298,7 +303,12 @@ self.addEventListener("install", (event) => {
   );
 });
 
-// Activate: purge any obsolete caches and claim existing clients
+/**
+ * Activate: purge any obsolete caches and claim existing clients.
+ *
+ * @param {ExtendableEvent} event - Activate event whose lifetime covers the cleanup.
+ * @returns {void}
+ */
 self.addEventListener("activate", (event) => {
   event.waitUntil(
     caches
@@ -314,7 +324,16 @@ self.addEventListener("activate", (event) => {
   );
 });
 
-// Fetch: serve cached assets offline with cache-first and runtime fallback
+/**
+ * Fetch: serve cached assets offline with cache-first and runtime fallback.
+ *
+ * Non-GET and cross-origin requests are left to the browser. Navigations go to the
+ * network first and fall back to the cached page, while other assets are served from
+ * the cache first and added to it after a successful same-origin response.
+ *
+ * @param {FetchEvent} event - Fetch event for the intercepted request.
+ * @returns {void}
+ */
 self.addEventListener("fetch", (event) => {
   const request = event.request;
 

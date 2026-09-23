@@ -7,6 +7,12 @@ const { test } = require("node:test");
 
 const source = fs.readFileSync(path.join(__dirname, "../google-apps-script/Code.gs"), "utf8");
 
+/**
+ * Evaluate the Apps Script source in a fresh sandbox with stubbed Google globals.
+ *
+ * @param {Object} [extraGlobals] - Google service stubs to expose to the script.
+ * @returns {Object} Sandbox context holding the script's globals and functions.
+ */
 function loadContext(extraGlobals) {
   const context = vm.createContext(Object.assign({ console }, extraGlobals));
   vm.runInContext(source, context);
@@ -16,6 +22,13 @@ function loadContext(extraGlobals) {
 const HOUR = 60 * 60 * 1000;
 const NOW = new Date("2026-09-22T19:00:00.000Z");
 
+/**
+ * Build one quiz result row relative to the fixed test clock.
+ *
+ * @param {number} hoursAgo - How long before the test clock the round was played.
+ * @param {Object} [overrides] - Fields overriding the defaults.
+ * @returns {Object} Result row as the summary builder expects it.
+ */
 function result(hoursAgo, overrides) {
   return Object.assign(
     { when: new Date(NOW.getTime() - hoursAgo * HOUR), who: "Speler", correct: 8, total: 10, percentage: 80, durationSec: 300 },
@@ -23,6 +36,13 @@ function result(hoursAgo, overrides) {
   );
 }
 
+/**
+ * Build one reported issue row relative to the fixed test clock.
+ *
+ * @param {number} hoursAgo - How long before the test clock the issue was reported.
+ * @param {Object} [overrides] - Fields overriding the defaults.
+ * @returns {Object} Issue row as the summary builder expects it.
+ */
 function issue(hoursAgo, overrides) {
   return Object.assign(
     { when: new Date(NOW.getTime() - hoursAgo * HOUR), questionId: "q1", question: "Wat betekent dit bord?", who: "Speler", remark: "" },
@@ -139,6 +159,13 @@ test("last 3 issues are listed most-recent first with their remark", () => {
 });
 
 test("sendDailySummaryEmail reads both sheets and emails the summary to SUMMARY_EMAIL_TO", () => {
+  /**
+   * Build a stub spreadsheet sheet serving a fixed header row and data rows.
+   *
+   * @param {Array<string>} headers - Column headers of the sheet.
+   * @param {Array<Array<*>>} rows - Data rows below the headers.
+   * @returns {Object} Stub exposing the sheet methods the script calls.
+   */
   function fakeSheet(headers, rows) {
     return {
       getLastRow: () => rows.length + 1,
@@ -176,6 +203,12 @@ test("sendDailySummaryEmail reads both sheets and emails the summary to SUMMARY_
 test("createDailySummaryTriggers replaces existing triggers with 07:00 and 19:00 UTC ones", () => {
   const deleted = [];
   const created = [];
+  /**
+   * Build a stub trigger builder recording the hour each created trigger fires at.
+   *
+   * @param {Object} hourHolder - Scratch object the requested hour is stored on.
+   * @returns {Object} Stub exposing the chained trigger builder methods.
+   */
   function fakeTriggerBuilder(hourHolder) {
     return {
       timeBased: function () { return this; },

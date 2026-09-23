@@ -7,8 +7,9 @@ let feedbackTimeoutId = null;
 
 /**
  * Builds the payload dictionary for sharing quiz results.
- * @param {object} [customState] - Optional state override for testing.
- * @returns {{ title: string, text: string, url: string }}
+ * @param {Object} [customState=state] - State override; defaults to the live quiz state.
+ * @returns {{title: string, text: string, url: string}} Share title, localized result
+ *          sentence and the application URL (empty outside a browser).
  */
 export function getSharePayload(customState = state) {
   const total = customState.answers ? customState.answers.length : 0;
@@ -65,7 +66,11 @@ export async function copyToClipboard(text) {
 
 /**
  * Shows temporary visual and accessible feedback for clipboard copy.
- * @param {boolean} success - Whether copying succeeded.
+ *
+ * The share button label, tooltip and toast revert automatically after 2.5 seconds.
+ *
+ * @param {boolean} [success=true] - Whether copying succeeded.
+ * @returns {void}
  */
 export function showShareFeedback(success = true) {
   if (feedbackTimeoutId) {
@@ -107,7 +112,10 @@ export function showShareFeedback(success = true) {
 
 /**
  * Handles sharing results via Web Share API or clipboard copy fallback.
- * @returns {Promise<{ shared: boolean, method: string, aborted?: boolean }>}
+ *
+ * @returns {Promise<{shared: boolean, method: string, aborted?: boolean}>} Whether the
+ *          result was shared, which mechanism was used ("web-share" or "clipboard")
+ *          and whether the user cancelled the native share sheet.
  */
 export async function handleShare() {
   const payload = getSharePayload();

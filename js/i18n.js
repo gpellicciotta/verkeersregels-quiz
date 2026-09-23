@@ -15,8 +15,10 @@ let dict = {};
 
 /**
  * Substitute {name} placeholders in a string.
- * @param {string} str
- * @param {Record<string, string|number>} vars
+ *
+ * @param {string} str - Template containing {name} placeholders.
+ * @param {Record<string, string|number>} vars - Values to substitute by placeholder name.
+ * @returns {string} String with every known placeholder replaced; unknown ones are left intact.
  */
 function substitute(str, vars) {
   return str.replace(/\{(\w+)\}/g, (_, key) =>
@@ -27,16 +29,21 @@ function substitute(str, vars) {
 /**
  * Translate a key, optionally substituting variables.
  * Falls back to the key itself so missing translations are visible.
- * @param {string} key
- * @param {Record<string, string|number>} [vars]
- * @returns {string}
+ *
+ * @param {string} key - Dictionary key to look up.
+ * @param {Record<string, string|number>} [vars] - Values for {name} placeholders in the string.
+ * @returns {string} Translated text, or the key when it is not in the dictionary.
  */
 export function t(key, vars = {}) {
   const str = key in dict ? dict[key] : key;
   return Object.keys(vars).length ? substitute(str, vars) : str;
 }
 
-/** Return the active language code. */
+/**
+ * Return the active language code.
+ *
+ * @returns {string} Currently loaded language code.
+ */
 export function getLang() {
   return currentLang;
 }
@@ -60,7 +67,10 @@ export function detectLang() {
 /**
  * Load the string dictionary for `lang`, apply it to the DOM, and fire
  * a custom "languagechange" event so modules can re-render dynamic strings.
- * @param {string} lang
+ *
+ * @param {string} lang - Language code to load; unsupported values fall back to "nl".
+ * @returns {Promise<void>} Resolves once the dictionary is loaded and applied.
+ * @throws {Error} When the dictionary for the language cannot be fetched.
  */
 export async function setLang(lang) {
   if (!SUPPORTED_LANGS.includes(lang)) lang = "nl";
@@ -80,6 +90,11 @@ export async function setLang(lang) {
  * Set the text of all [data-i18n] elements from the loaded dictionary.
  * Elements with [data-i18n-html] have their innerHTML set instead (for
  * strings that contain safe, controlled HTML such as <kbd> tags).
+ *
+ * Also fills aria-label, tooltip and placeholder attributes from their
+ * data-i18n-aria, data-i18n-tooltip and data-i18n-placeholder keys.
+ *
+ * @returns {void}
  */
 export function applyAll() {
   document.querySelectorAll("[data-i18n]").forEach((el) => {

@@ -31,6 +31,11 @@ window.addEventListener("appinstalled", () => {
   console.info("PWA succesvol geïnstalleerd.");
 });
 
+/**
+ * Show or hide the offline indicator based on the current connectivity.
+ *
+ * @returns {void}
+ */
 export function updateOnlineStatus() {
   const isOnline = typeof navigator.onLine === "boolean" ? navigator.onLine : true;
   if (el.offlineIndicator) {
@@ -50,6 +55,16 @@ window.addEventListener("offline", () => {
 const SW_UPDATE_CHECK_INTERVAL_MS = 60 * 1000;
 let serviceWorkerRegistrationStarted = false;
 
+/**
+ * Register the service worker and keep it up to date.
+ *
+ * Registration happens at most once. Once a replacement worker takes control the
+ * page reloads so open tabs pick up the new assets, and updates are polled
+ * periodically as well as on online, focus, pageshow and visibility events.
+ *
+ * @returns {Promise<void>|undefined} Resolves once registration finished, or undefined
+ *          when service workers are unsupported or registration already started.
+ */
 export function registerServiceWorker() {
   if (!("serviceWorker" in navigator) || serviceWorkerRegistrationStarted) {
     return;
@@ -89,6 +104,11 @@ export function registerServiceWorker() {
         });
 
         let checking = false;
+        /**
+         * Ask the browser for a newer service worker, skipping needless checks.
+         *
+         * @returns {Promise<void>} Resolves once the update check finished or was skipped.
+         */
         const checkForUpdate = async () => {
           if (checking || navigator.onLine === false || document.visibilityState === "hidden") {
             return;

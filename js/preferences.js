@@ -12,6 +12,12 @@ import { applyTheme } from "./theme.js";
 
 export const PREFS_STORAGE_KEY = "verkeersquiz_preferences";
 
+/**
+ * Read the persisted user preferences from localStorage.
+ *
+ * @returns {Object} Stored preferences, or an empty object when nothing is stored
+ *          or the value cannot be parsed.
+ */
 export function getStoredPreferences() {
   try {
     const raw = localStorage.getItem(PREFS_STORAGE_KEY);
@@ -22,6 +28,14 @@ export function getStoredPreferences() {
   }
 }
 
+/**
+ * Merge a partial preferences object into the persisted preferences.
+ *
+ * Storage failures are logged and swallowed so the UI keeps working in private mode.
+ *
+ * @param {Object} patch - Preference keys to add or overwrite.
+ * @returns {void}
+ */
 export function setStoredPreferences(patch) {
   try {
     const prefs = getStoredPreferences();
@@ -32,6 +46,14 @@ export function setStoredPreferences(patch) {
   }
 }
 
+/**
+ * Apply the persisted preferences to the runtime state and the start screen.
+ *
+ * Query string parameters take precedence, so a stored value is only applied when
+ * the matching URL override is absent.
+ *
+ * @returns {void}
+ */
 export function applyStoredPreferences() {
   const stored = getStoredPreferences();
 

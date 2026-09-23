@@ -4,6 +4,12 @@ const path = require("node:path");
 const { pathToFileURL } = require("node:url");
 const { test } = require("node:test");
 
+/**
+ * Build an in-memory stand-in for the browser's localStorage.
+ *
+ * @returns {{getItem: Function, setItem: Function, removeItem: Function}} Fake storage
+ *          exposing the methods the stats module uses.
+ */
 function makeLocalStorage() {
   const store = new Map();
   return {

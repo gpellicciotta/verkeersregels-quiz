@@ -1,5 +1,12 @@
 import { getThemeParam, getThemeColorParam } from "./params.js";
 
+/**
+ * Apply a theme and accent color to the document root and the theme-color meta tag.
+ *
+ * @param {string|null|undefined} themeSetting - "light", "dark" or "system"; falls back to the URL parameter.
+ * @param {string|null|undefined} themeColor - Accent color key; falls back to the URL parameter.
+ * @returns {void}
+ */
 export function applyTheme(themeSetting, themeColor) {
   if (typeof document === "undefined" || !document.documentElement) return;
   const setting = (themeSetting || getThemeParam() || "system").toLowerCase();
@@ -29,6 +36,14 @@ export function applyTheme(themeSetting, themeColor) {
 
 let themeMediaQueryListenerAttached = false;
 
+/**
+ * Apply the startup theme and start following the OS dark-mode preference.
+ *
+ * The media query listener is attached only once and only re-applies the theme
+ * while the user keeps the "system" setting.
+ *
+ * @returns {void}
+ */
 export function initTheme() {
   const setting = getThemeParam();
   const color = getThemeColorParam();
@@ -36,6 +51,11 @@ export function initTheme() {
 
   if (!themeMediaQueryListenerAttached && typeof window !== "undefined" && window.matchMedia) {
     const mql = window.matchMedia("(prefers-color-scheme: dark)");
+    /**
+     * Re-apply the theme when the OS dark-mode preference changes.
+     *
+     * @returns {void}
+     */
     const handler = () => {
       const currentSetting = (document.documentElement && document.documentElement.getAttribute("data-theme-setting")) || getThemeParam();
       if (currentSetting === "system") {

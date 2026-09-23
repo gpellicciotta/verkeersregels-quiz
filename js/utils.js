@@ -1,5 +1,11 @@
 import { t } from "./i18n.js";
 
+/**
+ * Return a shuffled copy of an array, leaving the input untouched.
+ *
+ * @param {Array<*>} array - Source array to shuffle.
+ * @returns {Array<*>} New array holding the same items in random order.
+ */
 export function shuffle(array) {
   const copy = array.slice();
   for (let i = copy.length - 1; i > 0; i--) {
@@ -9,6 +15,13 @@ export function shuffle(array) {
   return copy;
 }
 
+/**
+ * Build the presentation data for the "in force since <year>" badge.
+ *
+ * @param {number|null|undefined} since - Year the rule or sign took effect.
+ * @returns {{year: number, text: string, className: string, isRecent: boolean}|null} Badge
+ *          descriptor, or null when no usable year was supplied.
+ */
 export function getSinceBadge(since) {
   if (!since || typeof since !== "number") return null;
   const currentYear = new Date().getFullYear();
@@ -22,6 +35,12 @@ export function getSinceBadge(since) {
   };
 }
 
+/**
+ * Format a duration as a localized minutes and seconds label.
+ *
+ * @param {number} seconds - Duration in seconds; values below one second are clamped to one.
+ * @returns {string} Localized duration text.
+ */
 export function formatDuration(seconds) {
   const s = Math.max(1, Math.round(seconds || 1));
   const min = Math.floor(s / 60);
@@ -35,6 +54,12 @@ export function formatDuration(seconds) {
   return t("duration.min_sec", { m: min, s: remSec });
 }
 
+/**
+ * Extract the traffic sign code from an SVG asset path.
+ *
+ * @param {string} path - Path or URL ending in the sign's SVG file name.
+ * @returns {string} Sign code without extension, or an empty string when no code is present.
+ */
 export function getSignCode(path) {
   if (!path || typeof path !== "string") return "";
   const match = path.match(/([A-Za-z0-9_-]+)\.svg$/i);
@@ -48,6 +73,13 @@ export function getSignCode(path) {
 // an already-swapped href (e.g. the About screen links toggling FR -> NL).
 const WEGCODE_LANG_RE = /^(https:\/\/www\.wegcode\.be\/)(nl|fr)(\/.*)$/;
 
+/**
+ * Rewrite a wegcode.be source link so it points at the requested language.
+ *
+ * @param {string} url - Source URL, possibly already pointing at another language.
+ * @param {string} lang - Target UI language code.
+ * @returns {string} Localized URL, or the input unchanged when it is not a wegcode.be link.
+ */
 export function localizeSourceUrl(url, lang) {
   if (!url || typeof url !== "string") return url;
   const match = url.match(WEGCODE_LANG_RE);

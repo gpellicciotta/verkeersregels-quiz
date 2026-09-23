@@ -1,5 +1,11 @@
 export let allQuestions = [];
 
+/**
+ * Replace the in-memory question bank loaded from the data files.
+ *
+ * @param {Array<Object>} questions - All questions available for quizzes and the carousel.
+ * @returns {void}
+ */
 export function setAllQuestions(questions) {
   allQuestions = questions;
 }

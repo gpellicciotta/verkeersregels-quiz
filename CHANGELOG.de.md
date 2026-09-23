@@ -14,13 +14,14 @@ Eine zusammenfassende Übersicht aller Änderungen pro Version dieses Projekts.
 ---
 
 ## v3.5.1-pre
+- DevEx: Alle JavaScript-Funktionen verfügen jetzt über eine JSDoc-Dokumentation mit Parametern und Rückgabewerten, überwacht durch einen Regressionstest.
 - DevEx: Das neue Skript `run-review-server.py` stellt das Projekt über Thread-HTTP zur Überprüfung und Browsertests bereit.
 - FrontEnd: Einstellungen werden jetzt im Vollbildmodus geöffnet, mit der Schaltfläche „Fehler melden“ oben links, wie in „Über diese App“.
 - FrontEnd: Neue Schaltflächen starten ein Quiz mit zuvor falschen Fragen oder wiederholen anschließend nur die falschen Fragen.
 - FrontEnd: Die Institution fügt automatisch falsche Fragen aus dem vorherigen Quiz zu einer neuen Runde hinzu.
 - FrontEnd: Gesamtspielzeit, Spielstatistiken und die am häufigsten falsch beantworteten Fragen werden jetzt lokal in localStorage verfolgt.
 - FrontEnd: Die Schaltfläche „Fehler melden“ ist jetzt eine echte, allgegenwärtige Schaltfläche mit automatischem Bildschirmkontext.
-- BackEnd: Die Zusammenfassungs-E-Mail zeigt jetzt eine eigene Tabelle für jeden verfolgten Spieler mit gleichmäßig aufgeteilten Spalten „Immer“, „Letzte Woche“ und „Letzte 24 Stunden“.
+- BackEnd: Die Zusammenfassungs-E-Mail zeigt jetzt eine eigene Tabelle für jeden verfolgten Spieler mit gleichmäßig verteilten Spalten „Immer“, „Letzte Woche“ und „Letzte 24 Stunden“.
 - BackEnd: Gemeldete Probleme zeigen jetzt sowohl die Frage-ID als auch den Fragentext statt nur einer an.
 
 ## v3.5.0 [released: 2026-09-22]

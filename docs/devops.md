@@ -59,13 +59,14 @@ Run the full test suite verifying question schemas, sign assets, UX layout, and 
 python -m unittest discover -s tests -v
 ```
 
-The test suite consists of 32 tests across five test modules:
+The test suite consists of 148 tests across 22 test modules, including:
 - `tests/test_quiz_data.py`: verifies 304 questions, schemas, IDs, option counts, `since` years, authoritative URLs, and SVG assets.
 - `tests/test_pwa.py`: verifies manifest integrity, icon dimensions, corner transparency, and service worker precaching completeness.
 - `tests/test_sw_update.py`: executes lifecycle tests in Node and verifies asset fingerprints and startup ordering.
 - `tests/test_ux_layout.py`: verifies desktop two-panel split, mobile floating action button, hidden option collapsing, and pill links.
 - `tests/test_sign_carousel.py`: verifies carousel markup, timing controls, pause overlay, and keyboard navigation.
 - `tests/test_about_view.py`: verifies About screen markup, version tag, sources presentation, start screen cleanup, and navigation.
+- `tests/test_js_jsdoc.py`: verifies every JavaScript function carries a JSDoc block documenting its parameters and return value.
 
 ### Quiz Cancellation Browser Checks
 Install the optional browser test dependency locally, then run the review server in a separate terminal:

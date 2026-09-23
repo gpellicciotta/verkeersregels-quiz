@@ -7,6 +7,14 @@ const { test } = require("node:test");
 const source = fs.readFileSync(path.join(__dirname, "../js/pwa.js"), "utf8")
   .replace(/^import .*;\r?\n/gm, "").replace(/export /g, "");
 
+/**
+ * Evaluate the PWA module in a sandbox with stubbed browser globals.
+ *
+ * @param {boolean} [controlled=true] - Whether a service worker already controls the page.
+ * @returns {{context: Object, window: EventTarget, document: EventTarget,
+ *          navigator: Object, serviceWorker: EventTarget, reg: EventTarget, calls: Object}}
+ *          Sandbox, its stubbed globals and the recorded registration, update and reload calls.
+ */
 function setup(controlled = true) {
   const window = new EventTarget();
   const document = new EventTarget();
@@ -25,6 +33,11 @@ function setup(controlled = true) {
   vm.runInContext(source, context);
   return { context, window, document, navigator, serviceWorker, reg, calls };
 }
+/**
+ * Let the pending microtasks and promise callbacks run.
+ *
+ * @returns {Promise<void>} Resolves on the next event loop turn.
+ */
 const flush = () => new Promise((resolve) => setImmediate(resolve));
 
 test("registration works after load and starts only once", async () => {

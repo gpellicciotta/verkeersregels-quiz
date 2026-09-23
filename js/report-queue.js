@@ -4,6 +4,12 @@ import { state } from "./state.js";
 const REPORT_QUEUE_KEY = "verkeersquiz_pending_reports";
 const MAX_QUEUED_REPORTS = 50;
 
+/**
+ * Read the locally queued error reports from localStorage.
+ *
+ * @returns {Array<{id: string, enqueuedAt: string, payload: Object}>} Queued reports,
+ *          or an empty array when nothing is stored or the value cannot be parsed.
+ */
 export function getPendingReports() {
   try {
     const raw = localStorage.getItem(REPORT_QUEUE_KEY);
@@ -14,6 +20,15 @@ export function getPendingReports() {
   }
 }
 
+/**
+ * Persist the report queue, dropping the oldest entries when storage is full.
+ *
+ * The array is trimmed to the maximum queue length and then shrunk further while
+ * localStorage keeps rejecting the write.
+ *
+ * @param {Array<Object>} reports - Queue to store; mutated in place while trimming.
+ * @returns {boolean} True when the queue was stored, false when nothing could be kept.
+ */
 export function savePendingReports(reports) {
   while (reports.length > MAX_QUEUED_REPORTS) {
     reports.shift();
@@ -33,6 +48,12 @@ export function savePendingReports(reports) {
   return false;
 }
 
+/**
+ * Append one report payload to the local queue for later delivery.
+ *
+ * @param {Object} payloadObj - Form fields to post once a connection is available.
+ * @returns {void}
+ */
 export function enqueueReport(payloadObj) {
   const reports = getPendingReports();
   reports.push({
@@ -45,6 +66,15 @@ export function enqueueReport(payloadObj) {
 
 let isDrainingQueue = false;
 
+/**
+ * Send the queued reports one by one while the connection holds.
+ *
+ * Does nothing when a drain is already running, when offline or when no web app
+ * URL is configured. Sending stops at the first failure so the remaining reports
+ * stay queued, and successfully sent entries are removed right away.
+ *
+ * @returns {Promise<void>} Resolves once the queue is empty or draining stopped.
+ */
 export async function drainReportQueue() {
   if (isDrainingQueue || !navigator.onLine || !CONFIG.SHEET_WEBAPP_URL) return;
   const reports = getPendingReports();
@@ -74,6 +104,14 @@ export async function drainReportQueue() {
   }
 }
 
+/**
+ * Submit one error report, falling back to the local queue when it cannot be sent.
+ *
+ * @param {{id: string, text: string}} context - Reported item as resolved by the report modal.
+ * @param {string} remark - Free-text remark entered by the user.
+ * @param {boolean} [includeContext=true] - When false, the question id and text are omitted.
+ * @returns {Promise<void>} Resolves once the report was sent or queued.
+ */
 export function submitErrorReport(context, remark, includeContext = true) {
   if (!CONFIG.SHEET_WEBAPP_URL || !context) return Promise.resolve();
 

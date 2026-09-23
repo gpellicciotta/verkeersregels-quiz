@@ -5,6 +5,16 @@ import { setStoredPreferences } from "./preferences.js";
 import { updateStartScreenNotice } from "./quiz.js";
 import { t } from "./i18n.js";
 
+/**
+ * Switch the start screen between quiz and carousel mode.
+ *
+ * Updates the radio buttons, mode cards, visible field groups, title, notice
+ * text and all start and toggle button labels.
+ *
+ * @param {string} mode - Requested mode; anything other than "carousel" selects quiz mode.
+ * @param {boolean} [persist] - When truthy, store the selected mode in the preferences.
+ * @returns {void}
+ */
 export function setStartMode(mode, persist) {
   const isCarousel = mode === "carousel";
   state.currentMode = isCarousel ? "carousel" : "quiz";

@@ -27,10 +27,22 @@ const screenshotPrefix = process.env.QUIZ_SCREENSHOT_PREFIX || "T0069";
     const response = await page.goto(`${url}?lang=nl`);
     assert.equal(response.status(), 200);
     await page.waitForFunction(async () => (await import("./js/state.js")).state.pool.length > 0);
+    /**
+     * Capture a task screenshot, unless the run was started without screenshots.
+     *
+     * @param {string} suffix - Screenshot name suffix after the task prefix.
+     * @returns {Promise<void>} Resolves once the screenshot is written or skipped.
+     */
     const snap = async (suffix) => {
       if (screenshots) await page.screenshot({ path: path.join(artifacts, `${screenshotPrefix}-${suffix}.png`), fullPage: true });
     };
 
+    /**
+     * Decode a form-encoded request body into a plain object.
+     *
+     * @param {string} body - Form-encoded request body of an intercepted report.
+     * @returns {Object} Submitted fields keyed by name.
+     */
     const parseParams = (body) => Object.fromEntries(new URLSearchParams(body));
 
     // 1. Start screen: the former decorative hint icon is now a real report button.

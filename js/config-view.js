@@ -9,6 +9,14 @@ import { loadChangelog } from "./changelog.js";
 import { applyTheme } from "./theme.js";
 import { t, getLang, setLang, SUPPORTED_LANGS } from "./i18n.js";
 
+/**
+ * Open the settings view with all fields prepopulated from the current state.
+ *
+ * Fills in the general, quiz and carousel settings, shows the view and refreshes
+ * the question count warning.
+ *
+ * @returns {void}
+ */
 export function openConfigView() {
   // Prepopulate general settings
   if (el.configName) {
@@ -63,6 +71,11 @@ export function openConfigView() {
   updateConfigQuizWarning();
 }
 
+/**
+ * Show a warning when the chosen question count exceeds what the year filter allows.
+ *
+ * @returns {void}
+ */
 export function updateConfigQuizWarning() {
   if (!el.configQuizCountWarning || !el.configQuizSince || !el.configQuizCount) return;
   const sinceVal = el.configQuizSince.value ? parseInt(el.configQuizSince.value, 10) : null;
@@ -87,11 +100,26 @@ export function updateConfigQuizWarning() {
   el.configQuizCountWarning.classList.add("hidden");
 }
 
-// Settings is a full-window view, so leaving it means going back to the start screen.
+/**
+ * Leave the settings view.
+ *
+ * Settings is a full-window view, so leaving it means going back to the start screen.
+ *
+ * @returns {void}
+ */
 export function closeConfigView() {
   showScreen("start");
 }
 
+/**
+ * Apply the settings form to the runtime state and persist them.
+ *
+ * Applies the theme, updates the quiz and carousel settings, stores everything in the
+ * preferences, refreshes the start screen and closes the view. A changed language is
+ * loaded afterwards, which re-renders the strings, the start screen and the changelog.
+ *
+ * @returns {void}
+ */
 export function saveConfig() {
   // General settings
   let name = state.playerName || "";

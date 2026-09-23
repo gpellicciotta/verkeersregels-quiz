@@ -6,6 +6,13 @@ import { t, getLang } from "./i18n.js";
 import { applyTranslation } from "./quiz.js";
 import { createIcon } from "./icons.js";
 
+/**
+ * Translate a sign category into its display name.
+ *
+ * @param {string|null|undefined} cat - Category key of a sign.
+ * @returns {string} Translated category name, the capitalized key when no translation
+ *          exists, or the default label when no category was supplied.
+ */
 export function formatCategoryName(cat) {
   if (!cat) return t("carousel.cat.default");
   const key = `carousel.cat.${cat}`;
@@ -14,6 +21,14 @@ export function formatCategoryName(cat) {
   return translated !== key ? translated : cat.charAt(0).toUpperCase() + cat.slice(1);
 }
 
+/**
+ * Render the sign at the current carousel index.
+ *
+ * Fills the image with its alt text, the counter, the category and year badges, the
+ * title, the explanation and the source link, and resets the progress bar.
+ *
+ * @returns {void}
+ */
 export function renderCarouselCard() {
   if (!carouselState.items || carouselState.items.length === 0) return;
   const rawItem = carouselState.items[carouselState.currentIndex];
@@ -75,6 +90,14 @@ export function renderCarouselCard() {
   }
 }
 
+/**
+ * Start or resume the slide timer that drives the progress bar and advances the sign.
+ *
+ * Does nothing while the carousel is paused or inactive; time already elapsed before
+ * a pause is taken into account.
+ *
+ * @returns {void}
+ */
 export function startCarouselTimer() {
   if (carouselState.animFrameId) {
     cancelAnimationFrame(carouselState.animFrameId);
@@ -84,6 +107,11 @@ export function startCarouselTimer() {
 
   carouselState.slideStartTime = Date.now() - carouselState.elapsedBeforePause;
 
+  /**
+   * Advance the progress bar by one animation frame and move on when time is up.
+   *
+   * @returns {void}
+   */
   function tick() {
     if (carouselState.isPaused || !carouselState.isActive) return;
     const now = Date.now();
@@ -102,6 +130,11 @@ export function startCarouselTimer() {
   carouselState.animFrameId = requestAnimationFrame(tick);
 }
 
+/**
+ * Stop the slide timer and remember how much of the current slide has elapsed.
+ *
+ * @returns {void}
+ */
 export function pauseCarouselTimer() {
   if (carouselState.animFrameId) {
     cancelAnimationFrame(carouselState.animFrameId);
@@ -115,6 +148,11 @@ export function pauseCarouselTimer() {
   }
 }
 
+/**
+ * Show the next sign, reshuffling the deck once the end is reached.
+ *
+ * @returns {void}
+ */
 export function nextCarouselSign() {
   if (!carouselState.items || carouselState.items.length === 0) return;
   if (carouselState.animFrameId) {
@@ -137,6 +175,11 @@ export function nextCarouselSign() {
   }
 }
 
+/**
+ * Show the previous sign, wrapping around to the last one.
+ *
+ * @returns {void}
+ */
 export function prevCarouselSign() {
   if (!carouselState.items || carouselState.items.length === 0) return;
   if (carouselState.animFrameId) {
@@ -156,6 +199,12 @@ export function prevCarouselSign() {
   }
 }
 
+/**
+ * Render the pause and play icons of the toggle button, showing the applicable one.
+ *
+ * @param {boolean} isPaused - Whether the carousel is currently paused.
+ * @returns {void}
+ */
 function renderCarouselToggleIcons(isPaused) {
   const container = el.carouselToggleIcon;
   if (!container) return;
@@ -184,6 +233,12 @@ function renderCarouselToggleIcons(isPaused) {
   container.replaceChildren(pauseSvg, playSvg);
 }
 
+/**
+ * Pause or resume the carousel and update the overlay, button and hint text.
+ *
+ * @param {boolean} [forceState] - Requested paused state; toggles the current one when omitted.
+ * @returns {void}
+ */
 export function toggleCarouselPause(forceState) {
   if (!carouselState.isActive) return;
   const target = typeof forceState === "boolean" ? forceState : !carouselState.isPaused;
@@ -224,6 +279,18 @@ export function toggleCarouselPause(forceState) {
   }
 }
 
+/**
+ * Start the carousel with a shuffled set of signs and show its screen.
+ *
+ * A year filter that leaves no signs falls back to all signs, so the carousel always
+ * has something to show.
+ *
+ * @param {Object} [options] - Startup overrides.
+ * @param {number|null} [options.since] - Only show signs in force since this year;
+ *        defaults to the stored carousel filter.
+ * @param {number} [options.delay] - Slide delay in seconds; defaults to the stored delay.
+ * @returns {void}
+ */
 export function startCarousel(options = {}) {
   let signItems = allQuestions.filter((q) => Boolean(q.sign));
   const sinceFilter = options.since !== undefined ? options.since : carouselState.filterSince;
@@ -273,6 +340,11 @@ export function startCarousel(options = {}) {
   }
 }
 
+/**
+ * Stop the carousel and return to the start screen.
+ *
+ * @returns {void}
+ */
 export function stopCarousel() {
   pauseCarouselTimer();
   carouselState.isActive = false;

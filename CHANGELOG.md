@@ -14,6 +14,7 @@ A summarized overview of all changes, per version of this project.
 ---
 
 ## v3.5.1-pre
+- DevEx: Alle JavaScript-functies hebben nu JSDoc-documentatie met parameters en retourwaarde, bewaakt door een regressietest.
 - DevEx: Nieuw script `run-review-server.py` bedient het project via threaded HTTP voor review en browsertests.
 - FrontEnd: Instellingen openen nu als volledig scherm, met de meld-fout knop linksboven zoals bij Over deze app.
 - FrontEnd: Nieuwe knoppen starten een quiz met eerdere foutieve vragen of herhalen enkel de foute vragen na afloop.

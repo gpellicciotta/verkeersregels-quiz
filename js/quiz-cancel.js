@@ -2,9 +2,21 @@
 import { el } from "./dom.js";
 import { cancelQuiz } from "./quiz.js";
 
-/** Bind the native dialog, which contains focus and makes the quiz inert. */
+/**
+ * Bind the native dialog, which contains focus and makes the quiz inert.
+ *
+ * Wires the open, continue, close and stop buttons, keeps Tab focus cycling
+ * inside the dialog and dismisses it on an outside click.
+ *
+ * @returns {void}
+ */
 export function initQuizCancel() {
   const dialog = el.modalQuizCancel;
+  /**
+   * Close the confirmation dialog without touching the running quiz.
+   *
+   * @returns {void}
+   */
   const dismiss = () => dialog.close();
 
   el.btnQuizClose.addEventListener("click", () => {

@@ -51,6 +51,11 @@ import { initQuizCancel } from "./quiz-cancel.js";
 import { localizeSourceUrl } from "./utils.js";
 import { renderDataIcons } from "./icons.js";
 
+/**
+ * Replace every [data-icon] placeholder in the document with its SVG icon.
+ *
+ * @returns {void}
+ */
 function hydrateAppIcons() {
   renderDataIcons(document);
 }
@@ -256,6 +261,16 @@ if (typeof window !== "undefined") {
   window.applyStoredPreferences = applyStoredPreferences;
 }
 
+/**
+ * Act on the query string parameters that put the app straight into a given state.
+ *
+ * Handles the install prompt, the start mode, the settings view, the About screen,
+ * the changelog modal, the carousel and the autostart and autotest hooks used by the
+ * browser tests. Runs both before and after the questions are loaded, so it ignores
+ * the question-dependent branches while the question bank is still empty.
+ *
+ * @returns {void}
+ */
 function checkAutoStart() {
   const params = new URLSearchParams(window.location.search);
   if (params.get("install") === "1" || params.get("pwa") === "1") {
@@ -324,8 +339,15 @@ function checkAutoStart() {
 const LANG_CYCLE = { nl: "fr", fr: "de", de: "it", it: "en", en: "nl" };
 const LANG_ORDER = ["nl", "fr", "de", "it", "en"]; // display order, matches LANG_CYCLE traversal
 
-// Builds "NL → [FR] → DE → IT → EN", bracketing the active language since the
-// CSS tooltip renders plain text (attr()) and cannot bold a substring.
+/**
+ * Build the language cycle label shown in the language button tooltip.
+ *
+ * Builds "NL → [FR] → DE → IT → EN", bracketing the active language since the
+ * CSS tooltip renders plain text (attr()) and cannot bold a substring.
+ *
+ * @param {string} lang - Active language code.
+ * @returns {string} Label listing every language in cycle order.
+ */
 function buildLangCycleLabel(lang) {
   return LANG_ORDER.map((code) => {
     const upper = code.toUpperCase();
@@ -333,8 +355,14 @@ function buildLangCycleLabel(lang) {
   }).join(" → ");
 }
 
-// wegcode.be's own source links (About screen) follow the same NL/FR-only
-// pattern as per-question sources — see localizeSourceUrl().
+/**
+ * Point the About screen's wegcode.be links at the active language.
+ *
+ * wegcode.be's own source links (About screen) follow the same NL/FR-only
+ * pattern as per-question sources — see localizeSourceUrl().
+ *
+ * @returns {void}
+ */
 function updateAboutSourceLinks() {
   const lang = getLang();
   if (el.aboutSourceWegcode) {
@@ -345,6 +373,11 @@ function updateAboutSourceLinks() {
   }
 }
 
+/**
+ * Refresh the language button's label, tooltip and accessible name.
+ *
+ * @returns {void}
+ */
 function updateLangButton() {
   if (!el.btnLang) return;
   const lang = getLang();
@@ -386,8 +419,14 @@ document.addEventListener("languagechange", () => {
   }
 });
 
-// Dismiss any open [data-tooltip] popover on resize/orientation change: a tap-focused
-// or touch-hover tooltip would otherwise keep showing (and be mispositioned) after layout changes.
+/**
+ * Hide any tooltip that is open at the moment the layout changes.
+ *
+ * Dismiss any open [data-tooltip] popover on resize/orientation change: a tap-focused
+ * or touch-hover tooltip would otherwise keep showing (and be mispositioned) after layout changes.
+ *
+ * @returns {void}
+ */
 function dismissOpenTooltips() {
   if (document.activeElement instanceof HTMLElement && document.activeElement.hasAttribute("data-tooltip")) {
     document.activeElement.blur();

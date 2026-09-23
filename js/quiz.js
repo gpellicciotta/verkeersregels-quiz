@@ -13,6 +13,15 @@ import { createIcon } from "./icons.js";
 
 let translationOverlay = {};
 
+/**
+ * Load the question translation overlay for a language.
+ *
+ * Dutch is the source language and needs no overlay. A failed load is logged and
+ * clears the overlay, so the questions fall back to Dutch.
+ *
+ * @param {string} lang - Language code to load the overlay for.
+ * @returns {Promise<void>} Resolves once the overlay is loaded or cleared.
+ */
 async function loadTranslations(lang) {
   if (lang === "nl") { translationOverlay = {}; return; }
   try {
@@ -25,6 +34,15 @@ async function loadTranslations(lang) {
   }
 }
 
+/**
+ * Overlay the active language's translation onto a question.
+ *
+ * Only the fields present in the overlay are replaced, so a partial translation keeps
+ * its Dutch text for everything else.
+ *
+ * @param {Object|null|undefined} q - Question in the source language.
+ * @returns {Object|null|undefined} Translated copy, or the input when there is no overlay.
+ */
 export function applyTranslation(q) {
   if (!q) return q;
   const overlay = translationOverlay[q.id];
@@ -42,6 +60,12 @@ export function applyTranslation(q) {
 
 export { loadTranslations };
 
+/**
+ * Load the question bank from the data directory.
+ *
+ * @returns {Promise<Array<Object>>} All questions in the source language.
+ * @throws {Error} When the question file cannot be fetched.
+ */
 export async function loadQuestions() {
   const res = await fetch("data/questions.json");
   if (!res.ok) throw new Error("Could not load questions: " + res.status);
@@ -49,6 +73,15 @@ export async function loadQuestions() {
   return data.questions;
 }
 
+/**
+ * Rebuild the question pool from the active year and type filters.
+ *
+ * Settings take precedence over the query string parameters. A year set in the
+ * settings selects the questions in force after that year, while one from the URL
+ * includes the year itself. The "sign" type covers both recognize and identify.
+ *
+ * @returns {void}
+ */
 export function applyFilter() {
   const filterSince = state.configSince !== null && state.configSince !== undefined
     ? state.configSince
@@ -85,6 +118,14 @@ export function applyFilter() {
   updateStartScreenNotice();
 }
 
+/**
+ * Determine how many questions the next round will hold.
+ *
+ * The configured count, the URL override and the default are considered in that
+ * order, and the result never exceeds the number of questions in the pool.
+ *
+ * @returns {number} Number of questions in the next round.
+ */
 export function getEffectiveQuestionCount() {
   let desired;
   if (state.configCount === "all") {
@@ -98,6 +139,15 @@ export function getEffectiveQuestionCount() {
   return Math.min(desired, available);
 }
 
+/**
+ * Refresh the start screen texts, the error review button and the start button state.
+ *
+ * In carousel mode only the button state is reset. In quiz mode the mode description
+ * and progress label follow the effective question count, and an active filter that
+ * leaves no questions disables the start button with an explanatory error.
+ *
+ * @returns {void}
+ */
 export function updateStartScreenNotice() {
   if (el.startDesc) {
     el.startDesc.textContent = t("start.description");
@@ -153,7 +203,17 @@ export function updateStartScreenNotice() {
   }
 }
 
-/** Shuffle `pool`, guaranteeing the questions matching `forcedIds` are included first. */
+/**
+ * Shuffle `pool`, guaranteeing the questions matching `forcedIds` are included first.
+ *
+ * The forced questions are capped at the round size, and any remaining slots are
+ * filled from the pool before the whole round is shuffled again.
+ *
+ * @param {Array<Object>} pool - Questions available for this round.
+ * @param {Array<string|number>|null|undefined} forcedIds - Question ids to include first.
+ * @param {number} effectiveCount - Number of questions the round should hold.
+ * @returns {Array<Object>} Shuffled round of at most `effectiveCount` questions.
+ */
 function buildRoundWithForcedIds(pool, forcedIds, effectiveCount) {
   if (!forcedIds || forcedIds.length === 0) {
     return shuffle(pool).slice(0, effectiveCount);
@@ -173,7 +233,15 @@ function buildRoundWithForcedIds(pool, forcedIds, effectiveCount) {
   return shuffle(capped.concat(filler));
 }
 
-/** Set up shared round/session state and switch to the quiz screen for `round`. */
+/**
+ * Set up shared round/session state and switch to the quiz screen for `round`.
+ *
+ * Starts the timer and resolves the player name, which is persisted unless it comes
+ * from the URL.
+ *
+ * @param {Array<Object>} round - Questions to play, in the order they are asked.
+ * @returns {void}
+ */
 function beginRound(round) {
   state.startTime = Date.now();
   const nameParam = getNameParam();
@@ -188,6 +256,14 @@ function beginRound(round) {
   renderQuestion();
 }
 
+/**
+ * Start a quiz round drawn from the filtered question pool.
+ *
+ * Shows an error instead when the pool is empty. When the matching setting is on,
+ * the questions answered wrong in the previous round are included first.
+ *
+ * @returns {void}
+ */
 export function startQuiz() {
   if (!state.pool || state.pool.length === 0) {
     el.startError.textContent = t("start.error_start_no_pool");
@@ -201,7 +277,13 @@ export function startQuiz() {
   beginRound(round);
 }
 
-/** Start a quiz consisting only of questions ever answered wrong across past quizzes. */
+/**
+ * Start a quiz consisting only of questions ever answered wrong across past quizzes.
+ *
+ * Does nothing when no errors were recorded or none of them still exist.
+ *
+ * @returns {void}
+ */
 export function startErrorReviewQuiz() {
   const ids = getErrorQuestionIds();
   if (ids.length === 0) return;
@@ -211,7 +293,13 @@ export function startErrorReviewQuiz() {
   beginRound(shuffle(questions));
 }
 
-/** Restart with only the questions answered wrong in the round that just finished. */
+/**
+ * Restart with only the questions answered wrong in the round that just finished.
+ *
+ * Does nothing when every question was answered correctly.
+ *
+ * @returns {void}
+ */
 export function restartWithWrongAnswers() {
   const wrongIds = state.answers.filter((a) => !a.correct).map((a) => String(a.id));
   if (wrongIds.length === 0) return;
@@ -221,6 +309,12 @@ export function restartWithWrongAnswers() {
   beginRound(shuffle(questions));
 }
 
+/**
+ * Build the badge marking an answer option as correct or wrong.
+ *
+ * @param {string} type - "correct" or "wrong".
+ * @returns {HTMLSpanElement} Badge holding an icon and a localized label.
+ */
 export function createOptionIndicator(type) {
   const badge = document.createElement("span");
   badge.className = `option-indicator option-indicator-${type}`;
@@ -241,6 +335,15 @@ export function createOptionIndicator(type) {
   return badge;
 }
 
+/**
+ * Render the question at the current round index.
+ *
+ * Updates the progress, score and year badge, shows the situation photo or sign with
+ * its alt text, builds the answer buttons (images for identify questions, text
+ * otherwise) and hides the explanation and the next button.
+ *
+ * @returns {void}
+ */
 export function renderQuestion() {
   const q = applyTranslation(state.round[state.currentIndex]);
   const total = state.round.length;
@@ -315,6 +418,11 @@ export function renderQuestion() {
   el.btnNext.classList.add("hidden");
 }
 
+/**
+ * Label the next button, switching to the result label on the last question.
+ *
+ * @returns {void}
+ */
 export function updateNextButtonText() {
   if (!el.btnNext) return;
   const isLast = state.currentIndex === state.round.length - 1;
@@ -330,6 +438,16 @@ export function updateNextButtonText() {
   el.btnNext.classList.toggle("btn-next-finish", isLast);
 }
 
+/**
+ * Record the chosen answer and reveal whether it was correct.
+ *
+ * Appends the answer to the round, shows the status badge, marks the correct and the
+ * chosen option while hiding the rest, renders the explanation and updates the score
+ * and the next button.
+ *
+ * @param {number} chosenIndex - Index of the option the user picked.
+ * @returns {void}
+ */
 export function selectOption(chosenIndex) {
   const q = applyTranslation(state.round[state.currentIndex]);
   const correct = chosenIndex === q.correctIndex;
@@ -398,6 +516,15 @@ export function selectOption(chosenIndex) {
   }
 }
 
+/**
+ * Render the explanation panel of an answered question.
+ *
+ * Adds a link to the source article when the question has one, and keeps the panel
+ * hidden when there is neither an explanation nor a source.
+ *
+ * @param {Object} q - Answered question, already translated.
+ * @returns {void}
+ */
 export function renderExplanation(q) {
   el.explanation.replaceChildren();
 
@@ -447,6 +574,11 @@ export function renderExplanation(q) {
   }
 }
 
+/**
+ * Move to the next question, or show the result after the last one.
+ *
+ * @returns {void}
+ */
 export function nextQuestion() {
   state.currentIndex++;
   if (state.currentIndex >= state.round.length) {
@@ -456,6 +588,13 @@ export function nextQuestion() {
   }
 }
 
+/**
+ * Render one answer option as a result table cell.
+ *
+ * @param {Object} question - Answered question holding the options.
+ * @param {number|undefined} index - Index of the option; -1 or undefined means unanswered.
+ * @returns {string} Option text, an image tag for identify questions, or "-" when unanswered.
+ */
 export function optionCell(question, index) {
   if (index === -1 || index === undefined) return "-";
   const value = question.options[index];
@@ -467,6 +606,14 @@ export function optionCell(question, index) {
   return value;
 }
 
+/**
+ * Render the question column of a result table row.
+ *
+ * Combines the year badge, the situation photo or sign thumbnail and the question text.
+ *
+ * @param {Object} question - Answered question.
+ * @returns {string} HTML for the question cell.
+ */
 export function questionCell(question) {
   const badgeInfo = getSinceBadge(question.since);
   const badgeHtml = badgeInfo ? `<span class="badge-since-desktop ${badgeInfo.className}">${badgeInfo.text}</span>` : "";
@@ -486,6 +633,15 @@ export function questionCell(question) {
   return signImg ? `${signImg}${question.question}` : question.question;
 }
 
+/**
+ * Close the round and show the result screen.
+ *
+ * Computes the duration (a "duration" URL parameter overrides it for the browser
+ * tests) and the score, builds the answer table, shows confetti on a perfect score,
+ * records the statistics and submits the score to the Google Sheet.
+ *
+ * @returns {void}
+ */
 export function showResult() {
   state.endTime = Date.now();
   const durationOverride = parseInt(new URLSearchParams(window.location.search).get("duration"), 10);
@@ -535,6 +691,11 @@ export function showResult() {
   submitToSheet(correct, total, pct, state.durationSeconds, formattedDuration);
 }
 
+/**
+ * Drop a short confetti animation over the page, cleaned up after four seconds.
+ *
+ * @returns {void}
+ */
 export function showConfetti() {
   const colors = ["#1a56db", "#1a7f37", "#f59e0b", "#c81e1e", "#7c3aed"];
   const layer = document.createElement("div");
@@ -553,7 +714,11 @@ export function showConfetti() {
   setTimeout(() => layer.remove(), 4000);
 }
 
-/** Discard an abandoned round without creating or submitting results. */
+/**
+ * Discard an abandoned round without creating or submitting results.
+ *
+ * @returns {void}
+ */
 export function cancelQuiz() {
   state.round = [];
   state.answers = [];
@@ -562,6 +727,13 @@ export function cancelQuiz() {
   el.btnStart.focus();
 }
 
+/**
+ * Return to the start screen and reset the round timing.
+ *
+ * Restores the name field, reapplies the filters and restores the selected mode.
+ *
+ * @returns {void}
+ */
 export function restart() {
   state.startTime = null;
   state.endTime = null;
