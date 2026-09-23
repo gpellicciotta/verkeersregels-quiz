@@ -14,7 +14,7 @@ An overview of all tasks and their planning.
 ---
 
 ## Next Milestone
-- [ ] T0075 Voeg een "Statistieken" view toe die samenvat hoe vaak een speler gespeeld heeft, hoeveel minuten in totaal, hoe veel vragen en wat zijn gemiddelde score is.
+- [~] T0075 [owner: @gemini] Voeg een Statistieken view toe met aantal spellen, totale tijd, vragen en gemiddelde score.
       Laat ook toe deze statistieken te wissen.
       De "Statistieken" ronde-knop mag in mobile view enkel zichtbaar zijn als de "Installeer App" knop er niet is, en dan op diens plaats staan. 
       
