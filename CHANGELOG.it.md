@@ -14,7 +14,7 @@ Una panoramica riepilogativa di tutte le modifiche, per versione di questo proge
 ---
 
 ## v3.6.1-pre
-- FrontEnd: Aggiunto il collegamento per la donazione diretta a PayPal.Me alla scheda di supporto nella schermata Informazioni.
+- FrontEnd: Collegamenti di supporto aggiornati nella schermata Informazioni per includere i pulsanti diretti Ko-fi e PayPal.Me.
 - FrontEnd: Il suggerimento del carosello è stato ora rimosso poiché non è realmente necessario e rende l'interfaccia utente più complessa.
 - FrontEnd: Aggiunta una scheda panoramica per tutte le icone delle app utilizzate nella schermata Informazioni con pulsanti replica esatta.
 - FrontEnd: Pulsanti a piè di pagina della schermata Home riorganizzati e suggerimento statico rimosso per un'interfaccia più tranquilla.

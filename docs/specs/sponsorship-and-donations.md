@@ -28,11 +28,10 @@ We evaluated multiple developer funding and donation mechanisms.
 ## Recommendations
 
 ### **[Decided]** Dual-Rail External Model
-1. **GitHub Sponsors**:
-   Provide a direct link to `https://github.com/sponsors/gpellicciotta`.
-   Offers zero platform and transaction fees for individual community contributors.
-2. **Direct Donation Option**:
-   Provide a direct link to `https://paypal.me/gpellicciotta` for supporters without a GitHub profile.
+1. **Ko-fi**:
+   Provide a direct link to `https://ko-fi.com/gpellicciotta` for tipping and creator support.
+2. **Direct PayPal Donation**:
+   Provide a direct link to `https://paypal.me/gpellicciotta` for voluntary PayPal donations.
 
 ### **[Decided]** Zero-Footprint Client Integration
 - Keep all payment processing external via secure hosted pages.

@@ -14,7 +14,7 @@ A summarized overview of all changes, per version of this project.
 ---
 
 ## v3.6.1-pre
-- FrontEnd: Directe donatielink naar PayPal.Me toegevoegd aan de ondersteuningskaart in het Over-scherm.
+- FrontEnd: Ondersteuningslinks in het Over-scherm bijgewerkt met directe Ko-fi- en PayPal.Me-knoppen.
 - FrontEnd: De carrousel-tip is nu verwijderd aangezien hij niet echt nodig is en de UI complexer maakt.
 - FrontEnd: Overzichtskaart voor alle gebruikte app-iconen toegevoegd aan het Over-scherm met exacte replica-knoppen.
 - FrontEnd: Startscherm-voettekstknoppen herschikt en statische hint verwijderd voor een rustigere interface.

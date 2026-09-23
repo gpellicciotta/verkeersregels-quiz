@@ -14,7 +14,7 @@ A summarized overview of all changes, per version of this project.
 ---
 
 ## v3.6.1-pre
-- FrontEnd: Added direct donation link to PayPal.Me to the support card in the About screen.
+- FrontEnd: Updated support links in the About screen to include direct Ko-fi and PayPal.Me buttons.
 - FrontEnd: The carousel tip has now been removed as it is not really necessary and makes the UI more complex.
 - FrontEnd: Added overview card for all used app icons to the About screen with exact replica buttons.
 - FrontEnd: Home screen footer buttons rearranged and static hint removed for a calmer interface.

@@ -14,7 +14,7 @@ Un aperçu résumé de toutes les modifications, par version de ce projet.
 ---
 
 ## v3.6.1-pre
-- FrontEnd: Ajout d'un lien de don direct vers PayPal.Me sur la carte d'assistance dans l'écran À propos.
+- FrontEnd: Liens d'assistance mis à jour dans l'écran À propos pour inclure les boutons directs Ko-fi et PayPal.Me.
 - FrontEnd: L'astuce du carrousel a maintenant été supprimée car elle n'est pas vraiment nécessaire et rend l'interface utilisateur plus complexe.
 - FrontEnd: Ajout d'une carte de présentation pour toutes les icônes d'application utilisées sur l'écran À propos avec des boutons de réplique exacte.
 - FrontEnd: Boutons de pied de page de l'écran d'accueil réorganisés et indice statique supprimé pour une interface plus calme.

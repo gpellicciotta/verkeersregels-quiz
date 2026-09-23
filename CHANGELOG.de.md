@@ -14,7 +14,7 @@ Eine zusammenfassende Übersicht aller Änderungen pro Version dieses Projekts.
 ---
 
 ## v3.6.1-pre
-- FrontEnd: Direkter Spendenlink zu PayPal.Me zur Support-Karte im Info-Bildschirm hinzugefügt.
+- FrontEnd: Aktualisierte Support-Links im Info-Bildschirm, um direkte Ko-Fi- und PayPal.Me-Schaltflächen einzuschließen.
 - FrontEnd: Der Karussell-Tipp wurde jetzt entfernt, da er nicht wirklich notwendig ist und die Benutzeroberfläche komplexer macht.
 - FrontEnd: Übersichtskarte für alle verwendeten App-Symbole zum Info-Bildschirm mit genau nachgebildeten Schaltflächen hinzugefügt.
 - FrontEnd: Die Fußzeilenschaltflächen des Startbildschirms wurden neu angeordnet und der statische Hinweis wurde entfernt, um die Benutzeroberfläche ruhiger zu gestalten.
