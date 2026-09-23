@@ -15,8 +15,7 @@ An overview of all tasks and their planning.
 
 ## Next Milestone
 - [~] A0073 [owner: @claude] Bij de Carrousel instelling "Welke borden tonen": voorzie een optie "Enkel borden waarop ik tijdens de quiz fouten heb gemaakt"
-- [ ] T0075 In mobile view zouden alle actie-knoppen zouden sticky moeten zijn, zodat ze niet van het scherm kunnen scrollen
-      In desktop view moet dit ook zo zijn voor de "Opslaan" knop onderaan
+- [~] T0075 [owner: @gemini] In mobile view moeten actieknoppen sticky zijn en in desktop view de opslaanknop.
 - [ ] A0076 De checkbox "Neem foutieve vragen van vorige quiz automatisc op lijkt een ander font of font-weight te hebben dan de rest. Maak dit conform.
 - [ ] A0077 Op het start scherm zou de knop "Oefen je foutieve vragen" kleiner moeten worden in breedte: maximaal zo breed as het naam veld en de start quiz knop samen in desktop view, en evenbreed als het veld en de knop in mobile view. Hernoem hem ook naar "Oefen veelgemaakte fouten" en geef hem een tooltip "Oefen fouten gemaakt in het verleden".
 - [ ] T0078 Add an option to the about view to suggest sponsering me. But how? Check a previous investigation done in the contect of HiNoLuGi counters and come up with suggestions.
