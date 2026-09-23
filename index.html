@@ -165,9 +165,6 @@
   <!-- About screen: full-window view replacing the window -->
   <section id="screen-about" class="screen hidden" aria-label="Over Verkeersregels Quiz" data-i18n-aria="about.screen_aria">
     <div class="about-header">
-      <button id="btn-report-about" class="btn-report-round" type="button" aria-label="Meld een fout of probleem" title="Meld fout" data-tooltip="Meld fout" data-i18n-aria="report.btn_generic_aria" data-i18n-tooltip="report.btn_generic_tooltip">
-        <span class="report-icon" data-icon="report" data-icon-width="18" data-icon-height="18" data-icon-stroke-width="2.2" aria-hidden="true"></span>
-      </button>
       <h1 class="about-title" data-i18n="about.title">Over Verkeersregels Quiz</h1>
       <button id="btn-about-back" class="btn-about-close modal-close view-close-btn" type="button" aria-label="Sluiten" title="Sluiten" data-i18n-aria="about.btn_close_aria" data-i18n-tooltip="about.btn_close_aria"><span class="modal-close-icon" data-icon="close" aria-hidden="true"></span></button>
     </div>
@@ -232,6 +229,9 @@
       </div>
 
       <footer class="about-footer">
+        <button id="btn-report-about" class="btn-report-round" type="button" aria-label="Meld een fout of probleem" title="Meld fout" data-tooltip="Meld fout" data-i18n-aria="report.btn_generic_aria" data-i18n-tooltip="report.btn_generic_tooltip">
+          <span class="report-icon" data-icon="report" data-icon-width="18" data-icon-height="18" data-icon-stroke-width="2.2" aria-hidden="true"></span>
+        </button>
         <p class="about-copyright" data-i18n="about.copyright">Copyright &copy; Giovanni Pellicciotta</p>
       </footer>
     </div>
@@ -240,9 +240,6 @@
   <!-- Settings screen: full-window view, mirroring the About view -->
   <section id="screen-config" class="screen hidden" aria-label="Instellingen" data-i18n-aria="config.screen_aria">
     <div class="config-header">
-      <button type="button" id="btn-report-config" class="btn-report-round" aria-label="Meld een fout of probleem" title="Meld fout" data-tooltip="Meld fout" data-i18n-aria="report.btn_generic_aria" data-i18n-tooltip="report.btn_generic_tooltip">
-        <span class="report-icon" data-icon="report" data-icon-width="18" data-icon-height="18" data-icon-stroke-width="2.2" aria-hidden="true"></span>
-      </button>
       <h1 id="config-title" class="config-title" data-i18n="config.title">Instellingen</h1>
       <button type="button" id="btn-config-close" class="btn-config-close modal-close view-close-btn" aria-label="Sluiten" title="Sluiten" data-i18n-aria="config.btn_close_aria" data-i18n-tooltip="config.btn_close_aria"><span class="modal-close-icon" data-icon="close" aria-hidden="true"></span></button>
     </div>
@@ -370,6 +367,9 @@
     </div>
 
     <div class="config-actions">
+      <button type="button" id="btn-report-config" class="btn-report-round" aria-label="Meld een fout of probleem" title="Meld fout" data-tooltip="Meld fout" data-i18n-aria="report.btn_generic_aria" data-i18n-tooltip="report.btn_generic_tooltip">
+        <span class="report-icon" data-icon="report" data-icon-width="18" data-icon-height="18" data-icon-stroke-width="2.2" aria-hidden="true"></span>
+      </button>
       <button type="button" id="btn-config-save" class="btn-primary" data-i18n="config.btn_save">Opslaan</button>
     </div>
   </section>
@@ -490,9 +490,6 @@
         </button>
       </div>
       <div class="carousel-header-actions">
-        <button id="btn-report-carousel" class="btn-report-round" type="button" aria-label="Meld een fout of probleem" title="Meld fout" data-tooltip="Meld fout" data-i18n-aria="report.btn_generic_aria" data-i18n-tooltip="report.btn_generic_tooltip">
-          <span class="report-icon" data-icon="report" data-icon-width="18" data-icon-height="18" data-icon-stroke-width="2.2" aria-hidden="true"></span>
-        </button>
         <button id="btn-carousel-exit" class="btn-carousel-close modal-close view-close-btn" type="button" aria-label="Carrousel sluiten (Escape)" title="Carrousel sluiten (Escape)" data-i18n-aria="carousel.btn_exit_aria" data-i18n-tooltip="carousel.btn_exit_aria"><span class="modal-close-icon" data-icon="close" aria-hidden="true"></span></button>
       </div>
     </div>
@@ -540,9 +537,14 @@
     <!-- Bottom meta bar with subtle divider -->
     <div class="carousel-bottom-meta">
       <hr class="carousel-divider">
-      <div class="carousel-status-info">
-        <span id="carousel-delay-info" class="carousel-delay-info">Wisselt elke 8 seconden</span>
-        <span id="carousel-shortcut-hint" class="carousel-shortcut-hint" data-i18n-html="carousel.shortcut_hint_pause">Tip: klik op de kaart of druk op <kbd class="kbd-key">Spatiebalk</kbd> om te pauzeren</span>
+      <div class="carousel-bottom-bar">
+        <button id="btn-report-carousel" class="btn-report-round" type="button" aria-label="Meld een fout of probleem" title="Meld fout" data-tooltip="Meld fout" data-i18n-aria="report.btn_generic_aria" data-i18n-tooltip="report.btn_generic_tooltip">
+          <span class="report-icon" data-icon="report" data-icon-width="18" data-icon-height="18" data-icon-stroke-width="2.2" aria-hidden="true"></span>
+        </button>
+        <div class="carousel-status-info">
+          <span id="carousel-delay-info" class="carousel-delay-info">Wisselt elke 8 seconden</span>
+          <span id="carousel-shortcut-hint" class="carousel-shortcut-hint" data-i18n-html="carousel.shortcut_hint_pause">Tip: klik op de kaart of druk op <kbd class="kbd-key">Spatiebalk</kbd> om te pauzeren</span>
+        </div>
       </div>
     </div>
   </section>

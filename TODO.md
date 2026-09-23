@@ -14,11 +14,6 @@ An overview of all tasks and their planning.
 ---
 
 ## Next Milestone
-- [~] A0070 [owner: @gemini] Zorg er nu voor dat de "Meld Probleem" knop in volgende views steeds links beneden staat:
-  - Instellingen (met helemaal rechts dan "Opslaan")
-  - Over Verkeersregels Quiz
-  - Carrousel
-  - Quiz
 - [ ] A0071 Zorg ervoor dat de sluit-knop (de 'x') steeds rechts boven staat, zoals bij de Quiz view.
   Hij staat niet voldoende rechts-boven bij: 
   - Instellingen (met helemaal rechts dan "Opslaan")
