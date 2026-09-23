@@ -14,12 +14,12 @@ A summarized overview of all changes, per version of this project.
 ---
 
 ## v3.5.1-pre
-- FrontEnd: Added a dedicated sponsorship and project support card to the About view.
+- FrontEnd: Aparte kaart voor sponsoring en projectondersteuning toegevoegd aan het Over-deze-app-scherm.
 - FrontEnd: Knop voor veelgemaakte fouten op het startscherm hernoemd, voorzien van tooltip en passend uitgelijnd qua breedte.
 - FrontEnd: Checkbox voor foutieve vragen in instellingen gebruikt nu hetzelfde lettertype en gewicht als overige veldlabels.
 - FrontEnd: Actieknoppen zijn nu sticky op mobiel en de opslaanknop in instellingen ook op desktop.
 - FrontEnd: Verplaatste meld-foutknop in mobiele quizweergave naar een vaste positie linksonder met standaard ronde vormgeving.
-- DevEx: Standardized all browser console logging and runtime warning messages to English across all client modules.
+- DevEx: Alle browserconsole-logs en runtime-waarschuwingen over alle clientmodules heen gestandaardiseerd naar het Engels.
 - DevEx: Alle JavaScript-functies hebben nu JSDoc-documentatie met parameters en retourwaarde, bewaakt door een regressietest.
 - DevEx: Nieuw script `run-review-server.py` bedient het project via threaded HTTP voor review en browsertests.
 - FrontEnd: Instellingen openen nu als volledig scherm, met de meld-fout knop linksboven zoals bij Over deze app.
@@ -32,16 +32,16 @@ A summarized overview of all changes, per version of this project.
 
 ## v3.5.0 [released: 2026-09-22]
 - BackEnd: Google Apps Script verstuurt nu elke dag om 7u en 19u UTC een Nederlandstalige, gestylede samenvattende e-mail met resultaten, meldingen en een instelbare lijst van te volgen spelers.
-- FrontEnd: About screen now shows the changelog translated into the active interface language.
+- FrontEnd: Over-deze-app-scherm toont nu de changelog vertaald naar de actieve interfacetaal.
 - FrontEnd: "Meld een fout" dialoog toont nu een titelicoon en een instelbare optionele vraagcontext.
 - FrontEnd: Eén instellingendialoog met duidelijke Algemeen/Quiz/Carrousel-secties vervangt de twee losse dialogen.
 - FrontEnd: Naam, taal, thema en themakleur zijn nu ook instelbaar en bewaard in localStorage.
-- DevEx: Added `translate-markdown.py`, chunking Markdown by heading and paragraph before translating each release.
+- DevEx: Script `translate-markdown.py` toegevoegd om Markdown per kop en paragraaf op te delen en te vertalen.
 
 ## v3.4.0 [released: 2026-09-22]
 - FrontEnd: Quizvragen kregen een sluitknop rechtsboven op de kaart met bevestiging van voortgangsverlies in alle vijf talen.
 - FrontEnd: Automatische PWA-updates gaan nu sneller gebeuren.
-- FrontEnd: The iconset is nu apart gezet en overal consistent gebruikt.
+- FrontEnd: De iconenset is nu apart gezet en overal consistent gebruikt.
 
 ## v3.3.0 [released: 2026-09-22]
 - FrontEnd: Italiaanse vertalingen toegevoegd voor de gebruikersinterface, configuratiedialogen en vragenbank.
