@@ -133,6 +133,7 @@
   "badge.since": "Sinds {year}",
 
   "config.title": "Instellingen",
+  "config.screen_aria": "Instellingen",
   "config.btn_close_aria": "Sluiten",
   "config.section_general": "Algemeen",
   "config.introduction_general": "Deze instellingen gelden overal in de app",

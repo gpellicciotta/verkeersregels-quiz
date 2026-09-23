@@ -133,6 +133,7 @@
   "badge.since": "Since {year}",
 
   "config.title": "Settings",
+  "config.screen_aria": "Settings",
   "config.btn_close_aria": "Close",
   "config.section_general": "General",
   "config.introduction_general": "These settings apply everywhere in the app",

@@ -217,6 +217,142 @@
     </div>
   </section>
 
+  <!-- Settings screen: full-window view, mirroring the About view -->
+  <section id="screen-config" class="screen hidden" aria-label="Instellingen" data-i18n-aria="config.screen_aria">
+    <div class="config-header">
+      <button type="button" id="btn-report-config" class="btn-report-round" aria-label="Meld een fout of probleem" title="Meld fout" data-tooltip="Meld fout" data-i18n-aria="report.btn_generic_aria" data-i18n-tooltip="report.btn_generic_tooltip">
+        <span class="report-icon" data-icon="report" data-icon-width="18" data-icon-height="18" data-icon-stroke-width="2.2" aria-hidden="true"></span>
+      </button>
+      <h1 id="config-title" class="config-title" data-i18n="config.title">Instellingen</h1>
+      <button type="button" id="btn-config-close" class="btn-config-close modal-close view-close-btn" aria-label="Sluiten" title="Sluiten" data-i18n-aria="config.btn_close_aria" data-i18n-tooltip="config.btn_close_aria"><span class="modal-close-icon" data-icon="close" aria-hidden="true"></span></button>
+    </div>
+
+    <div class="config-content">
+      <!-- General Settings Section -->
+      <div id="config-section-general" class="config-section">
+        <h4 class="config-section-title" data-i18n="config.section_general">Algemeen</h4>
+        <p class="config-section-intro" data-i18n="config.introduction_general">Deze instellingen gelden overal in de app</p>
+
+        <div class="config-field">
+          <label for="config-name" class="config-label" data-i18n="config.label_name">Jouw naam</label>
+          <input type="text" id="config-name" class="config-input" data-i18n-placeholder="start.name_placeholder" data-i18n-aria="start.name_aria">
+        </div>
+
+        <div class="config-field">
+          <label for="config-language" class="config-label" data-i18n="config.label_language">Taal</label>
+          <select id="config-language" class="config-select">
+            <option value="nl">Nederlands</option>
+            <option value="fr">Français</option>
+            <option value="de">Deutsch</option>
+            <option value="it">Italiano</option>
+            <option value="en">English</option>
+          </select>
+        </div>
+
+        <div class="config-field">
+          <label for="config-theme" class="config-label" data-i18n="config.label_theme">Thema</label>
+          <select id="config-theme" class="config-select">
+            <option value="system" data-i18n="config.theme_system">Systeeminstelling</option>
+            <option value="light" data-i18n="config.theme_light">Licht</option>
+            <option value="dark" data-i18n="config.theme_dark">Donker</option>
+          </select>
+        </div>
+
+        <div class="config-field">
+          <label for="config-theme-color" class="config-label" data-i18n="config.label_theme_color">Kleur</label>
+          <select id="config-theme-color" class="config-select">
+            <option value="blue" data-i18n="config.color_blue">Blauw</option>
+            <option value="yellow" data-i18n="config.color_yellow">Geel</option>
+            <option value="red" data-i18n="config.color_red">Rood</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Quiz Configuration Section -->
+      <div id="config-section-quiz" class="config-section">
+        <h4 class="config-section-title" data-i18n="config.section_quiz">Enkel voor de Quiz</h4>
+        <p class="config-section-intro" data-i18n="config.introduction_quiz">Stel jouw quiz naar wens in</p>
+
+        <div class="config-field">
+          <label for="config-quiz-count" class="config-label" data-i18n="config.label_count">Aantal vragen</label>
+          <select id="config-quiz-count" class="config-select">
+            <option value="5" data-i18n="config.count_5">5 vragen</option>
+            <option value="10" data-i18n="config.count_10">10 vragen</option>
+            <option value="20" selected data-i18n="config.count_20">20 vragen (standaard)</option>
+            <option value="30" data-i18n="config.count_30">30 vragen</option>
+            <option value="40" data-i18n="config.count_40">40 vragen</option>
+            <option value="50" data-i18n="config.count_50">50 vragen</option>
+            <option value="all" data-i18n="config.count_all">Alle vragen (volledige selectie)</option>
+          </select>
+          <div id="config-quiz-count-warning" class="config-field-warning hidden" role="alert" aria-live="polite"></div>
+        </div>
+
+        <div class="config-field">
+          <label for="config-quiz-type" class="config-label" data-i18n="config.label_type">Type vragen</label>
+          <select id="config-quiz-type" class="config-select">
+            <option value="" selected data-i18n="config.type_all">Alle vraagtypes (borden, regels en situaties)</option>
+            <option value="situation" data-i18n="config.type_situation">Enkel verkeerssituaties (foto's)</option>
+            <option value="sign" data-i18n="config.type_sign">Enkel verkeersborden</option>
+            <option value="recognize" data-i18n="config.type_recognize">Enkel borden herkennen</option>
+            <option value="identify" data-i18n="config.type_identify">Enkel borden identificeren</option>
+            <option value="rule" data-i18n="config.type_rule">Enkel verkeersregels</option>
+          </select>
+        </div>
+
+        <div class="config-field">
+          <label for="config-quiz-since" class="config-label" data-i18n="config.label_since">Ouderdom van de regels</label>
+          <select id="config-quiz-since" class="config-select">
+            <option value="" selected data-i18n="config.since_any">Maakt niet uit</option>
+            <option value="2021" data-i18n="config.since_2021">Enkel ingevoerd na 2021</option>
+            <option value="2020" data-i18n="config.since_2020">Enkel ingevoerd na 2020</option>
+            <option value="2019" data-i18n="config.since_2019">Enkel ingevoerd na 2019</option>
+            <option value="2015" data-i18n="config.since_2015">Enkel ingevoerd na 2015</option>
+            <option value="2010" data-i18n="config.since_2010">Enkel ingevoerd na 2010</option>
+            <option value="2000" data-i18n="config.since_2000">Enkel ingevoerd na 2000</option>
+          </select>
+        </div>
+
+        <div class="config-field">
+          <label class="modal-checkbox-label" for="config-always-include-errors">
+            <input type="checkbox" id="config-always-include-errors">
+            <span data-i18n="config.label_always_include_errors">Neem foutieve vragen van vorige quiz automatisch op</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Carousel Configuration Section -->
+      <div id="config-section-carousel" class="config-section">
+        <h4 class="config-section-title" data-i18n="config.section_carousel">Enkel voor de Carrousel</h4>
+        <p class="config-section-intro" data-i18n="config.introduction_carousel">Stel jouw carrousel naar wens in</p>
+
+        <div class="config-field">
+          <label for="carousel-delay-select" class="config-label" data-i18n="config.label_carousel_delay">Wisselinterval per verkeersbord</label>
+          <select id="carousel-delay-select" class="config-select carousel-delay-select">
+            <option value="3" data-i18n="config.delay_3">3 seconden (snel)</option>
+            <option value="5" data-i18n="config.delay_5">5 seconden (vlot)</option>
+            <option value="8" selected data-i18n="config.delay_8">8 seconden (standaard)</option>
+            <option value="12" data-i18n="config.delay_12">12 seconden (rustig)</option>
+            <option value="15" data-i18n="config.delay_15">15 seconden (uitgebreid)</option>
+          </select>
+        </div>
+
+        <div class="config-field">
+          <label for="config-carousel-since" class="config-label" data-i18n="config.label_carousel_signs">Welke borden tonen</label>
+          <select id="config-carousel-since" class="config-select">
+            <option value="" selected data-i18n="config.carousel_all">Alle 198 verkeersborden</option>
+            <option value="1990" data-i18n="config.carousel_since_1990">Borden ingevoerd/gewijzigd vanaf 1990</option>
+            <option value="2000" data-i18n="config.carousel_since_2000">Borden ingevoerd/gewijzigd vanaf 2000</option>
+            <option value="2010" data-i18n="config.carousel_since_2010">Borden ingevoerd/gewijzigd vanaf 2010</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="config-actions">
+      <button type="button" id="btn-config-save" class="btn-primary" data-i18n="config.btn_save">Opslaan</button>
+    </div>
+  </section>
+
   <!-- Question screens -->
   <section id="screen-quiz" class="screen hidden">
     <button id="btn-quiz-close" class="modal-close view-close-btn quiz-close" type="button" aria-label="Quiz stoppen" title="Quiz stoppen" data-i18n-aria="quiz.btn_close_aria" data-i18n-tooltip="quiz.btn_close_aria"><span class="modal-close-icon" data-icon="close" aria-hidden="true"></span></button>
@@ -408,144 +544,6 @@
       </div>
     </div>
   </dialog>
-
-  <!-- Modal for configuration / settings -->
-  <div id="modal-config" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="modal-config-title">
-    <div class="modal-dialog modal-dialog-config">
-      <div class="modal-header">
-        <h3 id="modal-config-title" data-i18n="config.title">Instellingen</h3>
-        <div class="modal-header-actions">
-          <button type="button" id="btn-report-config" class="btn-report-round btn-report-round-sm" aria-label="Meld een fout of probleem" title="Meld fout" data-tooltip="Meld fout" data-i18n-aria="report.btn_generic_aria" data-i18n-tooltip="report.btn_generic_tooltip">
-            <span class="report-icon" data-icon="report" data-icon-width="16" data-icon-height="16" data-icon-stroke-width="2.2" aria-hidden="true"></span>
-          </button>
-          <button type="button" id="btn-config-close" class="modal-close" aria-label="Sluiten" data-i18n-aria="config.btn_close_aria"><span class="modal-close-icon" data-icon="close" aria-hidden="true"></span></button>
-        </div>
-      </div>
-      <div class="modal-body modal-config-body">
-        <!-- General Settings Section -->
-        <div id="config-section-general" class="config-section">
-          <h4 class="config-section-title" data-i18n="config.section_general">Algemeen</h4>
-          <p class="config-section-intro" data-i18n="config.introduction_general">Deze instellingen gelden overal in de app</p>
-
-          <div class="config-field">
-            <label for="config-name" class="config-label" data-i18n="config.label_name">Jouw naam</label>
-            <input type="text" id="config-name" class="config-input" data-i18n-placeholder="start.name_placeholder" data-i18n-aria="start.name_aria">
-          </div>
-
-          <div class="config-field">
-            <label for="config-language" class="config-label" data-i18n="config.label_language">Taal</label>
-            <select id="config-language" class="config-select">
-              <option value="nl">Nederlands</option>
-              <option value="fr">Français</option>
-              <option value="de">Deutsch</option>
-              <option value="it">Italiano</option>
-              <option value="en">English</option>
-            </select>
-          </div>
-
-          <div class="config-field">
-            <label for="config-theme" class="config-label" data-i18n="config.label_theme">Thema</label>
-            <select id="config-theme" class="config-select">
-              <option value="system" data-i18n="config.theme_system">Systeeminstelling</option>
-              <option value="light" data-i18n="config.theme_light">Licht</option>
-              <option value="dark" data-i18n="config.theme_dark">Donker</option>
-            </select>
-          </div>
-
-          <div class="config-field">
-            <label for="config-theme-color" class="config-label" data-i18n="config.label_theme_color">Kleur</label>
-            <select id="config-theme-color" class="config-select">
-              <option value="blue" data-i18n="config.color_blue">Blauw</option>
-              <option value="yellow" data-i18n="config.color_yellow">Geel</option>
-              <option value="red" data-i18n="config.color_red">Rood</option>
-            </select>
-          </div>
-        </div>
-
-        <!-- Quiz Configuration Section -->
-        <div id="config-section-quiz" class="config-section">
-          <h4 class="config-section-title" data-i18n="config.section_quiz">Enkel voor de Quiz</h4>
-          <p class="config-section-intro" data-i18n="config.introduction_quiz">Stel jouw quiz naar wens in</p>
-
-          <div class="config-field">
-            <label for="config-quiz-count" class="config-label" data-i18n="config.label_count">Aantal vragen</label>
-            <select id="config-quiz-count" class="config-select">
-              <option value="5" data-i18n="config.count_5">5 vragen</option>
-              <option value="10" data-i18n="config.count_10">10 vragen</option>
-              <option value="20" selected data-i18n="config.count_20">20 vragen (standaard)</option>
-              <option value="30" data-i18n="config.count_30">30 vragen</option>
-              <option value="40" data-i18n="config.count_40">40 vragen</option>
-              <option value="50" data-i18n="config.count_50">50 vragen</option>
-              <option value="all" data-i18n="config.count_all">Alle vragen (volledige selectie)</option>
-            </select>
-            <div id="config-quiz-count-warning" class="config-field-warning hidden" role="alert" aria-live="polite"></div>
-          </div>
-
-          <div class="config-field">
-            <label for="config-quiz-type" class="config-label" data-i18n="config.label_type">Type vragen</label>
-            <select id="config-quiz-type" class="config-select">
-              <option value="" selected data-i18n="config.type_all">Alle vraagtypes (borden, regels en situaties)</option>
-              <option value="situation" data-i18n="config.type_situation">Enkel verkeerssituaties (foto's)</option>
-              <option value="sign" data-i18n="config.type_sign">Enkel verkeersborden</option>
-              <option value="recognize" data-i18n="config.type_recognize">Enkel borden herkennen</option>
-              <option value="identify" data-i18n="config.type_identify">Enkel borden identificeren</option>
-              <option value="rule" data-i18n="config.type_rule">Enkel verkeersregels</option>
-            </select>
-          </div>
-
-          <div class="config-field">
-            <label for="config-quiz-since" class="config-label" data-i18n="config.label_since">Ouderdom van de regels</label>
-            <select id="config-quiz-since" class="config-select">
-              <option value="" selected data-i18n="config.since_any">Maakt niet uit</option>
-              <option value="2021" data-i18n="config.since_2021">Enkel ingevoerd na 2021</option>
-              <option value="2020" data-i18n="config.since_2020">Enkel ingevoerd na 2020</option>
-              <option value="2019" data-i18n="config.since_2019">Enkel ingevoerd na 2019</option>
-              <option value="2015" data-i18n="config.since_2015">Enkel ingevoerd na 2015</option>
-              <option value="2010" data-i18n="config.since_2010">Enkel ingevoerd na 2010</option>
-              <option value="2000" data-i18n="config.since_2000">Enkel ingevoerd na 2000</option>
-            </select>
-          </div>
-
-          <div class="config-field">
-            <label class="modal-checkbox-label" for="config-always-include-errors">
-              <input type="checkbox" id="config-always-include-errors">
-              <span data-i18n="config.label_always_include_errors">Neem foutieve vragen van vorige quiz automatisch op</span>
-            </label>
-          </div>
-        </div>
-
-        <!-- Carousel Configuration Section -->
-        <div id="config-section-carousel" class="config-section">
-          <h4 class="config-section-title" data-i18n="config.section_carousel">Enkel voor de Carrousel</h4>
-          <p class="config-section-intro" data-i18n="config.introduction_carousel">Stel jouw carrousel naar wens in</p>
-
-          <div class="config-field">
-            <label for="carousel-delay-select" class="config-label" data-i18n="config.label_carousel_delay">Wisselinterval per verkeersbord</label>
-            <select id="carousel-delay-select" class="config-select carousel-delay-select">
-              <option value="3" data-i18n="config.delay_3">3 seconden (snel)</option>
-              <option value="5" data-i18n="config.delay_5">5 seconden (vlot)</option>
-              <option value="8" selected data-i18n="config.delay_8">8 seconden (standaard)</option>
-              <option value="12" data-i18n="config.delay_12">12 seconden (rustig)</option>
-              <option value="15" data-i18n="config.delay_15">15 seconden (uitgebreid)</option>
-            </select>
-          </div>
-
-          <div class="config-field">
-            <label for="config-carousel-since" class="config-label" data-i18n="config.label_carousel_signs">Welke borden tonen</label>
-            <select id="config-carousel-since" class="config-select">
-              <option value="" selected data-i18n="config.carousel_all">Alle 198 verkeersborden</option>
-              <option value="1990" data-i18n="config.carousel_since_1990">Borden ingevoerd/gewijzigd vanaf 1990</option>
-              <option value="2000" data-i18n="config.carousel_since_2000">Borden ingevoerd/gewijzigd vanaf 2000</option>
-              <option value="2010" data-i18n="config.carousel_since_2010">Borden ingevoerd/gewijzigd vanaf 2010</option>
-            </select>
-          </div>
-        </div>
-      </div>
-      <div class="modal-actions modal-actions-config">
-        <button type="button" id="btn-config-save" class="btn-primary" data-i18n="config.btn_save">Opslaan</button>
-      </div>
-    </div>
-  </div>
 
   <!-- Modal for reporting question error -->
   <div id="modal-report" class="modal-backdrop hidden" role="dialog" aria-modal="true" aria-labelledby="modal-report-title">

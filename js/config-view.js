@@ -4,11 +4,12 @@ import { getQuestionCountOverride } from "./params.js";
 import { setStoredPreferences } from "./preferences.js";
 import { applyFilter, updateStartScreenNotice, loadTranslations } from "./quiz.js";
 import { setStartMode } from "./ui-mode.js";
+import { showScreen } from "./screens.js";
 import { loadChangelog } from "./changelog.js";
 import { applyTheme } from "./theme.js";
 import { t, getLang, setLang, SUPPORTED_LANGS } from "./i18n.js";
 
-export function openConfigModal() {
+export function openConfigView() {
   // Prepopulate general settings
   if (el.configName) {
     el.configName.value = state.playerName || (el.playerNameInput ? el.playerNameInput.value : "") || "";
@@ -58,10 +59,8 @@ export function openConfigModal() {
       : "";
   }
 
-  if (el.modalConfig) {
-    el.modalConfig.classList.remove("hidden");
-    updateConfigQuizWarning();
-  }
+  showScreen("config");
+  updateConfigQuizWarning();
 }
 
 export function updateConfigQuizWarning() {
@@ -88,10 +87,9 @@ export function updateConfigQuizWarning() {
   el.configQuizCountWarning.classList.add("hidden");
 }
 
-export function closeConfigModal() {
-  if (el.modalConfig) {
-    el.modalConfig.classList.add("hidden");
-  }
+// Settings is a full-window view, so leaving it means going back to the start screen.
+export function closeConfigView() {
+  showScreen("start");
 }
 
 export function saveConfig() {
@@ -156,7 +154,7 @@ export function saveConfig() {
 
   applyFilter();
   updateStartScreenNotice();
-  closeConfigModal();
+  closeConfigView();
 
   if (languageChanged) {
     setLang(newLang).then(() => loadTranslations(newLang)).then(() => {

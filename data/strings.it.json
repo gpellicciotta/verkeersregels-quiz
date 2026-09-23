@@ -126,6 +126,7 @@
   "carousel.cat.default": "Segnale stradale",
   "badge.since": "Da {year}",
   "config.title": "Impostazioni",
+  "config.screen_aria": "Impostazioni",
   "config.btn_close_aria": "Chiudi",
   "config.section_general": "Generale",
   "config.introduction_general": "Queste impostazioni si applicano a tutta l'app",

@@ -53,6 +53,11 @@ Functional and technical requirements for the Verkeersregels Quiz application.
   - Highlights authoritative legal and educational sources (Wegcode, VSV, Vias, De Grote Verkeerstoets, Wikimedia Commons).
   - Fetches and formats full release notes and version history from `CHANGELOG.md`.
   - Details software license terms and provides an immediate return button to the start screen.
+- **Dedicated Settings View**:
+  - Full-window view accessible via the start screen gear button or `?config=1` URL parameter.
+  - Mirrors the About view chrome: centered title, report issue button top-left, close button top-right.
+  - Groups general, quiz-only, and carousel-only preferences into separate cards, all always visible.
+  - Persists every field to `localStorage` on save and returns to the start screen.
 - **Results and Review**:
   - Displays total score, accuracy percentage, and total elapsed duration (minutes and seconds).
   - Triggers a celebratory confetti animation when achieving a perfect score.
@@ -79,6 +84,7 @@ Functional and technical requirements for the Verkeersregels Quiz application.
   - `?delay=N` (alias: `?d=N`): sets carousel slide duration in seconds (default 8).
   - `?pause=1`: pauses carousel on initial load.
   - `?view=about` (aliases: `?about=1`, `?screen=about`): opens the dedicated About view on load.
+  - `?config=1` (alias: `?modal=config`): opens the dedicated Settings view on load.
   - `?theme=light|dark|system`: sets the color theme (default `system`).
   - `?theme-color=blue|yellow|red` (aliases: `?themecolor=`, `?theme_color=`): sets the accent color theme (default `blue`).
   - `?autotest=results`: automatically completes the quiz for visual verification and testing.

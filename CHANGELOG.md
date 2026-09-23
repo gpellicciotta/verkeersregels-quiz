@@ -14,6 +14,7 @@ A summarized overview of all changes, per version of this project.
 ---
 
 ## v3.5.1-pre
+- FrontEnd: Instellingen openen nu als volledig scherm, met de meld-fout knop linksboven zoals bij Over deze app.
 - FrontEnd: Nieuwe knoppen starten een quiz met eerdere foutieve vragen of herhalen enkel de foute vragen na afloop.
 - FrontEnd: Instelling voegt foutieve vragen van de vorige quiz automatisch toe aan een nieuwe ronde.
 - FrontEnd: Speelstatistieken en vaakst foutief beantwoorde vragen worden nu lokaal bijgehouden in localStorage.

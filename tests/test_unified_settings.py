@@ -1,4 +1,4 @@
-"""Automated tests for the unified settings dialog (general, quiz, and carousel sections)."""
+"""Automated tests for the unified settings view (general, quiz, and carousel sections)."""
 
 from __future__ import annotations
 
@@ -15,27 +15,27 @@ def _read_js() -> str:
 
 
 class TestUnifiedSettings(unittest.TestCase):
-    """Test suite validating that one settings dialog covers general, quiz, and carousel settings."""
+    """Test suite validating that one settings view covers general, quiz, and carousel settings."""
 
     @classmethod
     def setUpClass(cls) -> None:
         cls.html = INDEX_PATH.read_text(encoding="utf-8")
         cls.js_code = _read_js()
 
-    def test_modal_no_longer_toggles_sections_by_mode(self) -> None:
-        """Validates that openConfigModal/saveConfig no longer hide sections based on currentMode."""
+    def test_view_no_longer_toggles_sections_by_mode(self) -> None:
+        """Validates that openConfigView/saveConfig no longer hide sections based on currentMode."""
         self.assertNotIn('isCarousel = state.currentMode === "carousel"', self.js_code)
         self.assertNotIn("configSectionQuiz.classList.toggle(\"hidden\"", self.js_code)
         self.assertNotIn("configSectionCarousel.classList.toggle(\"hidden\"", self.js_code)
 
     def test_all_three_sections_present_and_unconditionally_visible(self) -> None:
-        """Validates the dialog defines general/quiz/carousel sections, none hidden by default."""
+        """Validates the view defines general/quiz/carousel sections, none hidden by default."""
         self.assertIn('id="config-section-general" class="config-section"', self.html)
         self.assertIn('id="config-section-quiz" class="config-section"', self.html)
         self.assertIn('id="config-section-carousel" class="config-section"', self.html)
 
     def test_general_fields_populated_from_live_state_on_open(self) -> None:
-        """Validates that openConfigModal prefills name, language, theme, and theme-color."""
+        """Validates that openConfigView prefills name, language, theme, and theme-color."""
         self.assertIn("el.configName.value = state.playerName", self.js_code)
         self.assertIn("el.configLanguage.value = getLang();", self.js_code)
         self.assertIn('el.configTheme.value = document.documentElement.getAttribute("data-theme-setting")', self.js_code)
@@ -65,7 +65,7 @@ class TestUnifiedSettings(unittest.TestCase):
         self.assertIn('value="red"', self.html)
 
     def test_btn_lang_toggle_still_present(self) -> None:
-        """Validates the standalone language toggle button is kept alongside the settings dialog."""
+        """Validates the standalone language toggle button is kept alongside the settings view."""
         self.assertIn('id="btn-lang"', self.html)
         self.assertIn('el.btnLang.addEventListener("click"', self.js_code)
 

@@ -19,7 +19,7 @@ class TestErrorReview(unittest.TestCase):
         cls.dom_js = (JS_DIR / "dom.js").read_text(encoding="utf-8")
         cls.state_js = (JS_DIR / "state.js").read_text(encoding="utf-8")
         cls.preferences_js = (JS_DIR / "preferences.js").read_text(encoding="utf-8")
-        cls.config_modal_js = (JS_DIR / "config-modal.js").read_text(encoding="utf-8")
+        cls.config_view_js = (JS_DIR / "config-view.js").read_text(encoding="utf-8")
         cls.index_html = (WORKTREE_ROOT / "index.html").read_text(encoding="utf-8")
 
     def test_quiz_module_exports_error_review_entry_points(self) -> None:
@@ -92,17 +92,17 @@ class TestErrorReview(unittest.TestCase):
             'if (typeof stored.alwaysIncludeLastErrors === "boolean") {', self.preferences_js
         )
 
-    def test_config_modal_persists_always_include_last_errors(self) -> None:
-        """Validates the settings modal reads and writes the new checkbox."""
+    def test_config_view_persists_always_include_last_errors(self) -> None:
+        """Validates the settings view reads and writes the new checkbox."""
         self.assertIn(
             "el.configAlwaysIncludeErrors.checked = !!state.alwaysIncludeLastErrors;",
-            self.config_modal_js,
+            self.config_view_js,
         )
         self.assertIn(
             "state.alwaysIncludeLastErrors = !!el.configAlwaysIncludeErrors.checked;",
-            self.config_modal_js,
+            self.config_view_js,
         )
-        self.assertIn("alwaysIncludeLastErrors: state.alwaysIncludeLastErrors,", self.config_modal_js)
+        self.assertIn("alwaysIncludeLastErrors: state.alwaysIncludeLastErrors,", self.config_view_js)
 
     def test_index_html_defines_new_markup(self) -> None:
         """Validates index.html defines the start button, result button, and settings checkbox."""

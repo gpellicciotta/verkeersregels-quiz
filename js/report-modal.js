@@ -3,11 +3,10 @@ import { state, carouselState } from "./state.js";
 import { submitErrorReport } from "./report-queue.js";
 import { t } from "./i18n.js";
 
-// The report button is reachable from every screen and the settings modal; this
-// resolves what "context" means at the moment it was pressed. Priority matches
-// visual stacking: an open settings modal sits on top of whatever screen is behind it.
+// The report button is reachable from every screen; this resolves what "context"
+// means at the moment it was pressed.
 function getReportContext() {
-  if (el.modalConfig && !el.modalConfig.classList.contains("hidden")) {
+  if (el.screenConfig && !el.screenConfig.classList.contains("hidden")) {
     return { id: "", text: t("report.view_config") };
   }
   if (el.screenCarousel && !el.screenCarousel.classList.contains("hidden")) {

@@ -97,7 +97,7 @@ async function answerWrong(page) {
 
     // Settings checkbox: enabling it must force last quiz's wrong question(s) into a fresh round.
     await page.locator("#btn-config").click();
-    await page.locator("#modal-config").waitFor({ state: "visible" });
+    await page.locator("#screen-config").waitFor({ state: "visible" });
     await page.locator("#config-always-include-errors").check();
     await page.screenshot({ path: path.join(artifacts, `${screenshotPrefix}-config-after.png`), fullPage: true });
     await page.locator("#btn-config-save").click();

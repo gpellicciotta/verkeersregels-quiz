@@ -38,6 +38,7 @@ The application includes URL query parameters to speed up development and visual
 - `http://localhost:8000/?autotest=results`: runs through all questions with perfect answers and opens results.
 - `http://localhost:8000/?autotest=results-mixed`: runs through all questions with alternating answers to test imperfect scores.
 - `http://localhost:8000/?view=about` (alias: `?about=1`): opens the dedicated full-window About view on load.
+- `http://localhost:8000/?config=1` (alias: `?modal=config`): opens the dedicated full-window Settings view on load.
 - `http://localhost:8000/?mode=carousel`: launches the traffic sign carousel view.
 - `http://localhost:8000/?mode=carousel&delay=5` (alias: `?d=5`): configures carousel slide duration in seconds (default 8).
 - `http://localhost:8000/?mode=carousel&pause=1`: pauses the carousel immediately on load.
@@ -90,7 +91,7 @@ node tests/report-issue-browser.cjs
 ```
 
 The test checks the report button and its per-screen default context on the start,
-quiz, carousel, result, and about screens, and from the settings modal.
+quiz, carousel, result, about, and settings screens.
 External requests are intercepted to prevent test submissions from reaching Google Sheets.
 Set `QUIZ_TEST_URL` to use a different local server address.
 Use `--screenshots` to refresh task screenshots.

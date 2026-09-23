@@ -133,6 +133,7 @@
   "badge.since": "Seit {year}",
 
   "config.title": "Einstellungen",
+  "config.screen_aria": "Einstellungen",
   "config.btn_close_aria": "Schließen",
   "config.section_general": "Allgemein",
   "config.introduction_general": "Diese Einstellungen gelten überall in der App",

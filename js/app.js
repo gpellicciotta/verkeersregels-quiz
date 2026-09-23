@@ -32,11 +32,11 @@ import {
   renderCarouselCard,
 } from "./carousel.js";
 import {
-  openConfigModal,
-  closeConfigModal,
+  openConfigView,
+  closeConfigView,
   saveConfig,
   updateConfigQuizWarning,
-} from "./config-modal.js";
+} from "./config-view.js";
 import {
   openReportModal,
   closeReportModal,
@@ -174,23 +174,15 @@ if (el.btnModeToggle) {
 }
 
 if (el.btnConfig) {
-  el.btnConfig.addEventListener("click", openConfigModal);
+  el.btnConfig.addEventListener("click", openConfigView);
 }
 
 if (el.btnConfigClose) {
-  el.btnConfigClose.addEventListener("click", closeConfigModal);
+  el.btnConfigClose.addEventListener("click", closeConfigView);
 }
 
 if (el.btnConfigSave) {
   el.btnConfigSave.addEventListener("click", saveConfig);
-}
-
-if (el.modalConfig) {
-  el.modalConfig.addEventListener("click", (e) => {
-    if (e.target === el.modalConfig) {
-      closeConfigModal();
-    }
-  });
 }
 
 if (el.radioModeQuiz) {
@@ -231,8 +223,8 @@ document.addEventListener("keydown", (e) => {
   }
 
   if (e.key === "Escape") {
-    if (el.modalConfig && !el.modalConfig.classList.contains("hidden")) {
-      closeConfigModal();
+    if (el.screenConfig && !el.screenConfig.classList.contains("hidden")) {
+      closeConfigView();
     }
     if (el.modalReport && !el.modalReport.classList.contains("hidden")) {
       closeReportModal();
@@ -251,8 +243,8 @@ if (typeof window !== "undefined") {
   window.nextCarouselSign = nextCarouselSign;
   window.prevCarouselSign = prevCarouselSign;
   window.setStartMode = setStartMode;
-  window.openConfigModal = openConfigModal;
-  window.closeConfigModal = closeConfigModal;
+  window.openConfigView = openConfigView;
+  window.closeConfigView = closeConfigView;
   window.saveConfig = saveConfig;
   window.getNameParam = getNameParam;
   window.getThemeParam = getThemeParam;
@@ -272,12 +264,12 @@ function checkAutoStart() {
   if (params.get("opt") === "carousel" || params.get("keuze") === "carrousel") {
     setStartMode("carousel");
     if (params.get("modal") === "config" || params.get("config") === "1") {
-      openConfigModal();
+      openConfigView();
     }
     return;
   }
   if (params.get("modal") === "config" || params.get("config") === "1") {
-    openConfigModal();
+    openConfigView();
     return;
   }
   if (!allQuestions || allQuestions.length === 0) {

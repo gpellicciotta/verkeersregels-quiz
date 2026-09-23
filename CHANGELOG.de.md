@@ -14,6 +14,7 @@ Eine zusammenfassende Übersicht aller Änderungen pro Version dieses Projekts.
 ---
 
 ## v3.5.1-pre
+- FrontEnd: Die Einstellungen öffnen sich jetzt als Vollbildansicht, mit der Schaltfläche „Fehler melden“ oben links wie bei „Über“.
 - FrontEnd: Neue Schaltflächen starten ein Quiz mit früheren Fehlerfragen oder wiederholen nur die falschen Antworten einer Runde.
 - FrontEnd: Eine Einstellung nimmt die Fehler des letzten Quiz automatisch in eine neue Runde auf.
 - FrontEnd: Spielstatistiken und die am häufigsten falsch beantworteten Fragen werden jetzt lokal in localStorage verfolgt.

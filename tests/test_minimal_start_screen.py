@@ -55,14 +55,14 @@ class TestMinimalStartScreen(unittest.TestCase):
         self.assertIn('class="start-copyright"', html, "index.html must define start-copyright")
         self.assertIn('Giovanni Pellicciotta', html, "Copyright must credit Giovanni Pellicciotta")
 
-    def test_config_modal_structure_and_options(self) -> None:
-        """Validates unified configuration modal markup for general, quiz, and carousel settings."""
+    def test_config_view_structure_and_options(self) -> None:
+        """Validates unified settings view markup for general, quiz, and carousel settings."""
         self.assertTrue(INDEX_PATH.exists(), "index.html must exist")
         html = INDEX_PATH.read_text(encoding="utf-8")
 
-        self.assertIn('id="modal-config"', html, "index.html must define modal-config dialog")
-        self.assertIn('id="modal-config-title"', html, "index.html must define modal-config-title")
-        self.assertIn('>Instellingen<', html, "modal-config-title must be 'Instellingen'")
+        self.assertIn('id="screen-config"', html, "index.html must define the screen-config view")
+        self.assertIn('id="config-title"', html, "index.html must define config-title")
+        self.assertIn('>Instellingen<', html, "config-title must be 'Instellingen'")
         self.assertIn('id="btn-config-close"', html, "index.html must define btn-config-close")
         self.assertIn('id="btn-config-save"', html, "index.html must define btn-config-save")
 
@@ -113,15 +113,16 @@ class TestMinimalStartScreen(unittest.TestCase):
         self.assertIn(".btn-start-arrow", css, "style.css must define .btn-start-arrow")
         self.assertIn(".start-meta-btn", css, "style.css must define .start-meta-btn")
         self.assertIn(".start-meta-btn-action", css, "style.css must define .start-meta-btn-action")
-        self.assertIn(".modal-dialog-config", css, "style.css must define .modal-dialog-config")
-        self.assertIn(".modal-config-body", css, "style.css must define .modal-config-body")
+        self.assertIn("#screen-config", css, "style.css must define #screen-config styles")
+        self.assertIn(".config-header", css, "style.css must define .config-header")
+        self.assertIn(".config-content", css, "style.css must define .config-content")
         self.assertIn(".config-field", css, "style.css must define .config-field")
         self.assertIn(".config-field-warning", css, "style.css must define .config-field-warning")
         self.assertIn(".config-label", css, "style.css must define .config-label")
         self.assertIn(".config-select", css, "style.css must define .config-select")
         self.assertIn(".config-section-title", css, "style.css must define .config-section-title")
         self.assertIn(".config-input", css, "style.css must define .config-input")
-        self.assertIn(".modal-actions-config", css, "style.css must define .modal-actions-config")
+        self.assertIn(".config-actions", css, "style.css must define .config-actions")
 
     def test_carousel_and_result_round_buttons(self) -> None:
         """Validates close x buttons in about/carousel/result and centered controls and progress."""
@@ -159,18 +160,18 @@ class TestMinimalStartScreen(unittest.TestCase):
         self.assertIn('quiz-btn-report-round', html, "index.html must define quiz-btn-report-round")
         self.assertIn('.quiz-btn-report-round', css, "style.css must style .quiz-btn-report-round")
 
-    def test_js_app_implements_mode_toggle_and_config_modal(self) -> None:
-        """Validates JS logic for mode toggling, default 8s delay, carousel since filtering, and config modal."""
+    def test_js_app_implements_mode_toggle_and_config_view(self) -> None:
+        """Validates JS logic for mode toggling, default 8s delay, carousel since filtering, and settings view."""
         self.assertTrue(JS_DIR.exists(), "js directory must exist")
         js = _read_js()
 
         self.assertIn("btnModeToggle", js, "dom.js must register btnModeToggle")
         self.assertIn("btnConfig", js, "dom.js must register btnConfig")
-        self.assertIn("modalConfig", js, "dom.js must register modalConfig")
-        self.assertIn("openConfigModal", js, "config-modal.js must define openConfigModal")
-        self.assertIn("closeConfigModal", js, "config-modal.js must define closeConfigModal")
-        self.assertIn("saveConfig", js, "config-modal.js must define saveConfig")
-        self.assertIn("updateConfigQuizWarning", js, "config-modal.js must define updateConfigQuizWarning")
+        self.assertIn("screenConfig", js, "dom.js must register screenConfig")
+        self.assertIn("openConfigView", js, "config-view.js must define openConfigView")
+        self.assertIn("closeConfigView", js, "config-view.js must define closeConfigView")
+        self.assertIn("saveConfig", js, "config-view.js must define saveConfig")
+        self.assertIn("updateConfigQuizWarning", js, "config-view.js must define updateConfigQuizWarning")
         self.assertIn("configQuizCountWarning", js, "dom.js must register configQuizCountWarning")
         self.assertIn("setStartMode", js, "ui-mode.js must define setStartMode")
         self.assertIn("delayMs: 8000", js, "state.js must default carousel delay to 8000ms")

@@ -14,6 +14,7 @@ Una panoramica riepilogativa di tutte le modifiche, per versione di questo proge
 ---
 
 ## v3.5.1-pre
+- FrontEnd: Le impostazioni ora si aprono come vista a schermo intero, con il pulsante di segnalazione in alto a sinistra come in Informazioni.
 - FrontEnd: Nuovi pulsanti avviano un quiz con le domande sbagliate in passato o ripetono solo gli errori del turno.
 - FrontEnd: Un'impostazione include automaticamente gli errori dell'ultimo quiz in un nuovo turno.
 - FrontEnd: Le statistiche di gioco e le domande con risposte errate più frequenti vengono ora monitorate localmente in localStorage.

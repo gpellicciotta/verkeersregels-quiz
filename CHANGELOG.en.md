@@ -14,6 +14,7 @@ A summarized overview of all changes, per version of this project.
 ---
 
 ## v3.5.1-pre
+- FrontEnd: Settings now open as a full-window view, with the report issue button top-left as on About.
 - FrontEnd: New buttons start a quiz with past missed questions or retry only a round's wrong answers.
 - FrontEnd: A setting automatically folds the previous quiz's wrong answers into a new round.
 - FrontEnd: Play statistics and most frequently incorrectly answered questions are now tracked locally in localStorage.

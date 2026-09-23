@@ -91,20 +91,20 @@ const screenshotPrefix = process.env.QUIZ_SCREENSHOT_PREFIX || "T0069";
     await snap("about-modal");
     await page.locator("#btn-modal-cancel").click();
 
-    // 6. Settings modal: reachable from any screen; default context is "Instellingen scherm"
-    //    and the settings modal must remain open underneath the report modal.
+    // 6. Settings view: reachable from the start screen; default context is "Instellingen scherm"
+    //    and the settings view must remain visible underneath the report modal.
     await page.goto(`${url}?lang=nl`);
     await page.waitForFunction(async () => (await import("./js/state.js")).state.pool.length > 0);
     await page.locator("#btn-config").click();
-    await page.locator("#modal-config").waitFor({ state: "visible" });
+    await page.locator("#screen-config").waitFor({ state: "visible" });
     await snap("config-before");
     await page.locator("#btn-report-config").click();
     await page.locator("#modal-report").waitFor({ state: "visible" });
     assert.equal(await page.locator("#modal-question-text").textContent(), "Instellingen scherm");
-    assert.equal(await page.locator("#modal-config").isVisible(), true, "Settings modal must stay open behind the report modal");
+    assert.equal(await page.locator("#screen-config").isVisible(), true, "Settings view must stay visible behind the report modal");
     await snap("config-modal");
     await page.locator("#btn-modal-cancel").click();
-    assert.equal(await page.locator("#modal-config").isVisible(), true, "Closing the report modal must not close settings");
+    assert.equal(await page.locator("#screen-config").isVisible(), true, "Closing the report modal must not leave the settings view");
 
     assert.deepEqual(errors, []);
     console.log("PASS: report button reachable and correctly contextualized on start, quiz, carousel, result, about, and settings");

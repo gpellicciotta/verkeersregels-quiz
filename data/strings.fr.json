@@ -133,6 +133,7 @@
   "badge.since": "Depuis {year}",
 
   "config.title": "Paramètres",
+  "config.screen_aria": "Paramètres",
   "config.btn_close_aria": "Fermer",
   "config.section_general": "Général",
   "config.introduction_general": "Ces paramètres s'appliquent partout dans l'application",
