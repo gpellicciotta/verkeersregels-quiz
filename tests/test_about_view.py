@@ -80,7 +80,7 @@ class TestAboutView(unittest.TestCase):
         self.assertIn('class="about-sources-card"', html, "index.html must define about-sources-card")
         self.assertIn('class="about-support-card"', html, "index.html must define about-support-card")
         self.assertIn('id="about-support-kofi"', html, "About screen must define Ko-fi sponsor link")
-        self.assertIn('id="about-support-donate"', html, "About screen must define donation link")
+        self.assertIn('id="about-support-paypal"', html, "About screen must define PayPal donation link")
         self.assertIn('https://ko-fi.com/gpellicciotta', html, "About screen must link to Ko-fi")
         self.assertIn('https://paypal.me/gpellicciotta', html, "About screen must link to PayPal donation")
         self.assertIn('Belgische Wegcode', html, "About screen must reference Belgische Wegcode")
