@@ -14,6 +14,7 @@ A summarized overview of all changes, per version of this project.
 ---
 
 ## v3.5.1-pre
+- FrontEnd: Added a statistics view summarizing games played, total minutes, questions, and average score with data reset.
 - FrontEnd: Previewed theme and color changes immediately in settings and reverted on uncommitted dismissal.
 - FrontEnd: Ensured the error-review and retry buttons stay hidden when no mistakes exist or upon perfect scores.
 - FrontEnd: Positioned close buttons at the top-right corner across settings, about, carousel, and result views.

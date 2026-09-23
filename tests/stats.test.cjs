@@ -131,3 +131,68 @@ test("getErrorQuestionIds/hasStoredErrors/getLastQuizWrongIds track error-review
   assert.equal(hasStoredErrors(), false, "error counts <= 0 or invalid must not trigger hasStoredErrors");
   assert.deepEqual(getErrorQuestionIds(), [], "getErrorQuestionIds must return empty array when no counts > 0");
 });
+
+test("getStatsSummary computes rounded minutes and average score percentage", async () => {
+  globalThis.localStorage = makeLocalStorage();
+  const { recordQuizResult, getStatsSummary, resetStats } = await import(statsUrl);
+  resetStats();
+
+  let summary = getStatsSummary();
+  assert.equal(summary.gamesPlayed, 0);
+  assert.equal(summary.totalMinutes, 0);
+  assert.equal(summary.questionsAnswered, 0);
+  assert.equal(summary.averageScorePercent, 0);
+
+  recordQuizResult(
+    [
+      { id: "q1", correct: true },
+      { id: "q2", correct: true },
+      { id: "q3", correct: false },
+      { id: "q4", correct: true },
+    ],
+    145 // ~2.4 minutes -> rounds to 2 minutes
+  );
+
+  summary = getStatsSummary();
+  assert.equal(summary.gamesPlayed, 1);
+  assert.equal(summary.totalMinutes, 2);
+  assert.equal(summary.questionsAnswered, 4);
+  assert.equal(summary.correctAnswers, 3);
+  assert.equal(summary.wrongAnswers, 1);
+  assert.equal(summary.averageScorePercent, 75);
+});
+
+test("renderStatsView populates DOM elements with summary metrics", async () => {
+  globalThis.localStorage = makeLocalStorage();
+  const { recordQuizResult, renderStatsView, resetStats } = await import(statsUrl);
+  resetStats();
+
+  recordQuizResult(
+    [
+      { id: "q1", correct: true },
+      { id: "q2", correct: false },
+    ],
+    180 // 3 minutes
+  );
+
+  const elements = {
+    "stats-games-played": { textContent: "" },
+    "stats-total-time": { textContent: "" },
+    "stats-questions-answered": { textContent: "" },
+    "stats-average-score": { textContent: "" },
+    "stats-correct-answers": { textContent: "" },
+    "stats-wrong-answers": { textContent: "" },
+    "stats-last-played": { textContent: "" },
+  };
+
+  renderStatsView(elements);
+
+  assert.equal(elements["stats-games-played"].textContent, "1");
+  assert.equal(elements["stats-total-time"].textContent, "3");
+  assert.equal(elements["stats-questions-answered"].textContent, "2");
+  assert.equal(elements["stats-average-score"].textContent, "50%");
+  assert.equal(elements["stats-correct-answers"].textContent, "1");
+  assert.equal(elements["stats-wrong-answers"].textContent, "1");
+  assert.notEqual(elements["stats-last-played"].textContent, "-");
+});
+

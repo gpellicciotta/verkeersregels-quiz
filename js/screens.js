@@ -3,6 +3,7 @@ import { carouselState } from "./state.js";
 import { closeReportModal } from "./report-modal.js";
 import { closeChangelogModal, loadChangelog } from "./changelog.js";
 import { pauseCarouselTimer } from "./carousel.js";
+import { renderStatsView } from "./stats.js";
 
 /**
  * Show one top-level screen and hide all the others.
@@ -10,7 +11,7 @@ import { pauseCarouselTimer } from "./carousel.js";
  * Also closes any open modal, stops the carousel when leaving it and lazily
  * loads the changelog when the About screen becomes visible.
  *
- * @param {string} name - Screen key: "start", "quiz", "result", "carousel", "about" or "config".
+ * @param {string} name - Screen key: "start", "quiz", "result", "carousel", "about", "config" or "stats".
  * @returns {void}
  */
 export function showScreen(name) {
@@ -28,11 +29,17 @@ export function showScreen(name) {
   if (el.screenConfig) {
     el.screenConfig.classList.toggle("hidden", name !== "config");
   }
+  if (el.screenStats) {
+    el.screenStats.classList.toggle("hidden", name !== "stats");
+  }
   if (name !== "carousel" && carouselState.isActive) {
     pauseCarouselTimer();
     carouselState.isActive = false;
   }
   if (name === "about") {
     loadChangelog();
+  }
+  if (name === "stats") {
+    renderStatsView();
   }
 }

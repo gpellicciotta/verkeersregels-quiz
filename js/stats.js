@@ -174,3 +174,96 @@ export function resetStats() {
     console.warn("Failed to clear play statistics from localStorage:", err);
   }
 }
+
+/**
+ * Compute aggregate statistics summary from stored stats.
+ *
+ * @returns {{gamesPlayed: number, totalTimePlayedSeconds: number, totalMinutes: number,
+ *          questionsAnswered: number, correctAnswers: number, wrongAnswers: number,
+ *          averageScorePercent: number, lastPlayedAt: string|null}} Summary object.
+ */
+export function getStatsSummary() {
+  const stats = getStoredStats();
+  const totalMinutes = Math.round(stats.totalTimePlayedSeconds / 60);
+  const averageScorePercent =
+    stats.questionsAnswered > 0
+      ? Math.round((stats.correctAnswers / stats.questionsAnswered) * 100)
+      : 0;
+
+  return {
+    gamesPlayed: stats.gamesPlayed,
+    totalTimePlayedSeconds: stats.totalTimePlayedSeconds,
+    totalMinutes,
+    questionsAnswered: stats.questionsAnswered,
+    correctAnswers: stats.correctAnswers,
+    wrongAnswers: stats.wrongAnswers,
+    averageScorePercent,
+    lastPlayedAt: stats.lastPlayedAt,
+  };
+}
+
+/**
+ * Retrieve a DOM element by id from an optional dictionary or the document.
+ *
+ * @param {string} id - Element identifier to find.
+ * @param {Object|null} [domElements] - Optional element map.
+ * @returns {HTMLElement|null} The resolved element, or null when unavailable.
+ */
+function resolveTargetElement(id, domElements = null) {
+  if (domElements && domElements[id]) return domElements[id];
+  if (typeof document !== "undefined") return document.getElementById(id);
+  return null;
+}
+
+/**
+ * Render the statistics screen values into the DOM.
+ *
+ * @param {Object} [domElements] - Optional custom DOM elements dictionary.
+ * @returns {void}
+ */
+export function renderStatsView(domElements = null) {
+  if (typeof document === "undefined" && !domElements) return;
+  const summary = getStatsSummary();
+
+  const gamesPlayedEl = resolveTargetElement("stats-games-played", domElements);
+  if (gamesPlayedEl) gamesPlayedEl.textContent = String(summary.gamesPlayed);
+
+  const totalTimeEl = resolveTargetElement("stats-total-time", domElements);
+  if (totalTimeEl) totalTimeEl.textContent = String(summary.totalMinutes);
+
+  const questionsAnsweredEl = resolveTargetElement("stats-questions-answered", domElements);
+  if (questionsAnsweredEl) questionsAnsweredEl.textContent = String(summary.questionsAnswered);
+
+  const averageScoreEl = resolveTargetElement("stats-average-score", domElements);
+  if (averageScoreEl) averageScoreEl.textContent = `${summary.averageScorePercent}%`;
+
+  const correctAnswersEl = resolveTargetElement("stats-correct-answers", domElements);
+  if (correctAnswersEl) correctAnswersEl.textContent = String(summary.correctAnswers);
+
+  const wrongAnswersEl = resolveTargetElement("stats-wrong-answers", domElements);
+  if (wrongAnswersEl) wrongAnswersEl.textContent = String(summary.wrongAnswers);
+
+  const lastPlayedEl = resolveTargetElement("stats-last-played", domElements);
+  if (lastPlayedEl) {
+    if (summary.lastPlayedAt) {
+      try {
+        const d = new Date(summary.lastPlayedAt);
+        if (isNaN(d.getTime())) {
+          lastPlayedEl.textContent = "-";
+        } else {
+          lastPlayedEl.textContent = d.toLocaleString(undefined, {
+            year: "numeric",
+            month: "short",
+            day: "numeric",
+            hour: "2-digit",
+            minute: "2-digit",
+          });
+        }
+      } catch (_) {
+        lastPlayedEl.textContent = summary.lastPlayedAt;
+      }
+    } else {
+      lastPlayedEl.textContent = "-";
+    }
+  }
+}

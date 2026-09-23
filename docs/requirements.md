@@ -61,7 +61,12 @@ Functional and technical requirements for the Verkeersregels Quiz application.
   - Provides immediate live visual preview when modifying theme or accent color dropdowns.
   - Reverts uncommitted theme changes when closed via the close button or Escape key.
   - Keeps the bottom "Opslaan" save button sticky at the viewport bottom on both mobile and desktop screens during scrolling.
-  - Persists every field to `localStorage` on save and returns to the start screen.
+- **Dedicated Statistics View**:
+  - Full-window view accessible via the start screen statistics button or `?view=stats` URL parameter.
+  - Summarizes total games played, total minutes played, total questions answered, and aggregate average score percentage.
+  - Presents detail metrics including correct answers, wrong answers, and the timestamp of the last played session.
+  - Provides a data reset control allowing users to clear all stored statistics and error tracking on the device.
+  - In mobile view, the statistics round-button is displayed when the app install button is absent and takes its place.
 - **Results and Review**:
   - Displays total score, accuracy percentage, and total elapsed duration (minutes and seconds).
   - Keeps action buttons (Report, Share, Print, Close) and error retry controls sticky on mobile view during table scrolling.

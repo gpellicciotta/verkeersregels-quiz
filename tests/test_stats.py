@@ -49,6 +49,39 @@ class TestStats(unittest.TestCase):
         self.assertRegex(self.quiz_js, r'import \{[^}]*\brecordQuizResult\b[^}]*\} from "\./stats\.js";')
         self.assertIn("recordQuizResult(state.answers, state.durationSeconds);", self.quiz_js)
 
+    def test_stats_view_and_button_exist_in_index_html(self) -> None:
+        """Validates that index.html contains the stats round-button and full stats screen."""
+        index_html = (WORKTREE_ROOT / "index.html").read_text(encoding="utf-8")
+        self.assertIn('id="btn-stats"', index_html)
+        self.assertIn('id="screen-stats"', index_html)
+        self.assertIn('id="btn-stats-back"', index_html)
+        self.assertIn('id="btn-stats-reset"', index_html)
+        self.assertIn('id="stats-games-played"', index_html)
+        self.assertIn('id="stats-total-time"', index_html)
+        self.assertIn('id="stats-questions-answered"', index_html)
+        self.assertIn('id="stats-average-score"', index_html)
+
+    def test_stats_screen_wiring_across_modules(self) -> None:
+        """Validates that screens.js, app.js and report-modal.js wire the stats screen properly."""
+        screens_js = (JS_DIR / "screens.js").read_text(encoding="utf-8")
+        report_js = (JS_DIR / "report-modal.js").read_text(encoding="utf-8")
+        app_js = (JS_DIR / "app.js").read_text(encoding="utf-8")
+        self.assertIn("screenStats", screens_js)
+        self.assertIn("renderStatsView", screens_js)
+        self.assertIn("screenStats", report_js)
+        self.assertIn("btnStats", app_js)
+        self.assertIn("btnStatsReset", app_js)
+
+    def test_css_defines_mobile_install_stats_visibility_rules(self) -> None:
+        """Validates that style.css specifies mobile-only hiding of btn-stats when install button is present."""
+        css = (WORKTREE_ROOT / "css" / "style.css").read_text(encoding="utf-8")
+        self.assertIn("#btn-stats", css)
+        self.assertIn("#screen-stats", css)
+        self.assertIn(".stats-metric-card", css)
+        self.assertIn(".stats-grid", css)
+        self.assertIn(".stats-reset-btn", css)
+
+
 
 if __name__ == "__main__":
     unittest.main()

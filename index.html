@@ -126,7 +126,16 @@
             <span class="btn-lang-label" aria-hidden="true" style="font-weight: 700; font-size: 0.75rem; letter-spacing: 0.5px;">NL</span>
           </button>
 
-          <!-- Circle 5: Install app button (visible only if prompt available / not installed) -->
+          <!-- Circle 5: Statistics button -->
+          <button type="button" id="btn-stats" class="start-meta-item start-meta-btn start-meta-btn-action btn-stats"
+                  aria-label="Bekijk statistieken"
+                  data-tooltip="Statistieken"
+                  data-i18n-aria="start.btn_stats_aria"
+                  data-i18n-tooltip="start.btn_stats_tooltip">
+            <span class="start-meta-svg" data-icon="stats" aria-hidden="true"></span>
+          </button>
+
+          <!-- Circle 6: Install app button (visible only if prompt available / not installed) -->
           <button type="button" id="btn-install" class="start-meta-item start-meta-btn start-meta-btn-action btn-install hidden"
                   aria-label="Installeer als app"
                   data-tooltip="Installeer app"
@@ -233,6 +242,84 @@
           <span class="report-icon" data-icon="report" data-icon-width="18" data-icon-height="18" data-icon-stroke-width="2.2" aria-hidden="true"></span>
         </button>
         <p class="about-copyright" data-i18n="about.copyright">Copyright &copy; Giovanni Pellicciotta</p>
+      </footer>
+    </div>
+  </section>
+
+  <!-- Statistics screen: full-window view replacing the window -->
+  <section id="screen-stats" class="screen hidden" aria-label="Statistieken overzicht" data-i18n-aria="stats.screen_aria">
+    <button id="btn-stats-back" class="btn-stats-close modal-close view-close-btn" type="button" aria-label="Sluiten" title="Sluiten" data-i18n-aria="stats.btn_close_aria" data-i18n-tooltip="stats.btn_close_aria"><span class="modal-close-icon" data-icon="close" aria-hidden="true"></span></button>
+    <div class="stats-header">
+      <h1 class="stats-title" data-i18n="stats.title">Statistieken</h1>
+    </div>
+
+    <div class="stats-content">
+      <!-- Summary / Overview Card -->
+      <div class="stats-card stats-summary-card">
+        <h2 class="stats-section-heading" data-i18n="stats.overview_heading">Overzicht</h2>
+        <div class="stats-grid">
+          <!-- Stat 1: Games played -->
+          <div class="stats-metric-card">
+            <span class="stats-metric-value" id="stats-games-played">0</span>
+            <span class="stats-metric-label" data-i18n="stats.games_played">Gespeelde spellen</span>
+          </div>
+
+          <!-- Stat 2: Total minutes played -->
+          <div class="stats-metric-card">
+            <span class="stats-metric-value" id="stats-total-time">0</span>
+            <span class="stats-metric-label" data-i18n="stats.total_time">Minuten gespeeld</span>
+          </div>
+
+          <!-- Stat 3: Total questions answered -->
+          <div class="stats-metric-card">
+            <span class="stats-metric-value" id="stats-questions-answered">0</span>
+            <span class="stats-metric-label" data-i18n="stats.questions_answered">Vragen beantwoord</span>
+          </div>
+
+          <!-- Stat 4: Average score -->
+          <div class="stats-metric-card">
+            <span class="stats-metric-value" id="stats-average-score">0%</span>
+            <span class="stats-metric-label" data-i18n="stats.average_score">Gemiddelde score</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Detail Card -->
+      <div class="stats-card stats-details-card">
+        <h2 class="stats-section-heading" data-i18n="stats.details_heading">Details</h2>
+        <div class="stats-detail-rows">
+          <div class="stats-detail-row">
+            <span class="stats-detail-label" data-i18n="stats.correct_answers">Juiste antwoorden</span>
+            <span class="stats-detail-value text-success" id="stats-correct-answers">0</span>
+          </div>
+          <div class="stats-detail-row">
+            <span class="stats-detail-label" data-i18n="stats.wrong_answers">Foutieve antwoorden</span>
+            <span class="stats-detail-value text-danger" id="stats-wrong-answers">0</span>
+          </div>
+          <div class="stats-detail-row">
+            <span class="stats-detail-label" data-i18n="stats.last_played">Laatst gespeeld</span>
+            <span class="stats-detail-value" id="stats-last-played">-</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Actions Card (Reset statistics) -->
+      <div class="stats-card stats-actions-card">
+        <h2 class="stats-section-heading" data-i18n="stats.manage_heading">Gegevens beheren</h2>
+        <p class="stats-section-desc" data-i18n="stats.reset_desc">Alle opgeslagen statistieken en foutenhistoriek wissen op dit apparaat.</p>
+        <div class="stats-actions">
+          <button type="button" id="btn-stats-reset" class="btn btn-danger stats-reset-btn" data-i18n="stats.btn_reset">
+            <span class="stats-btn-icon" data-icon="close" aria-hidden="true"></span>
+            <span data-i18n="stats.btn_reset_label">Statistieken wissen</span>
+          </button>
+        </div>
+      </div>
+
+      <footer class="stats-footer">
+        <button id="btn-report-stats" class="btn-report-round" type="button" aria-label="Meld een fout of probleem" title="Meld fout" data-tooltip="Meld fout" data-i18n-aria="report.btn_generic_aria" data-i18n-tooltip="report.btn_generic_tooltip">
+          <span class="report-icon" data-icon="report" data-icon-width="18" data-icon-height="18" data-icon-stroke-width="2.2" aria-hidden="true"></span>
+        </button>
+        <p class="stats-copyright" data-i18n="about.copyright">Copyright &copy; Giovanni Pellicciotta</p>
       </footer>
     </div>
   </section>

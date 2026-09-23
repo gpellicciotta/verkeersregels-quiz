@@ -45,7 +45,8 @@ import {
   toggleReportContextVisibility,
 } from "./report-modal.js";
 import { openChangelogModal, closeChangelogModal, loadChangelog } from "./changelog.js";
-import { registerServiceWorker, updateOnlineStatus } from "./pwa.js";
+import { registerServiceWorker, updateOnlineStatus, syncInstallButtonState } from "./pwa.js";
+import { resetStats, renderStatsView } from "./stats.js";
 import { setLang, detectLang, getLang, applyAll, t } from "./i18n.js";
 import { handleShare } from "./share.js";
 import { initQuizCancel } from "./quiz-cancel.js";
@@ -110,6 +111,7 @@ if (el.btnReportResult) el.btnReportResult.addEventListener("click", openReportM
 if (el.btnReportCarousel) el.btnReportCarousel.addEventListener("click", openReportModal);
 if (el.btnReportAbout) el.btnReportAbout.addEventListener("click", openReportModal);
 if (el.btnReportConfig) el.btnReportConfig.addEventListener("click", openReportModal);
+if (el.btnReportStats) el.btnReportStats.addEventListener("click", openReportModal);
 el.btnModalClose.addEventListener("click", closeReportModal);
 el.btnModalCancel.addEventListener("click", closeReportModal);
 el.formReport.addEventListener("submit", handleReportSubmit);
@@ -137,6 +139,28 @@ if (el.btnAbout) {
 if (el.btnAboutBack) {
   el.btnAboutBack.addEventListener("click", () => {
     showScreen("start");
+  });
+}
+
+if (el.btnStats) {
+  el.btnStats.addEventListener("click", () => {
+    showScreen("stats");
+  });
+}
+if (el.btnStatsBack) {
+  el.btnStatsBack.addEventListener("click", () => {
+    showScreen("start");
+  });
+}
+if (el.btnStatsReset) {
+  el.btnStatsReset.addEventListener("click", () => {
+    if (window.confirm(t("stats.reset_confirm"))) {
+      resetStats();
+      renderStatsView();
+      if (el.btnStartErrors) {
+        el.btnStartErrors.classList.add("hidden");
+      }
+    }
   });
 }
 
@@ -283,7 +307,10 @@ if (typeof window !== "undefined") {
 function checkAutoStart() {
   const params = new URLSearchParams(window.location.search);
   if (params.get("install") === "1" || params.get("pwa") === "1") {
-    if (el.btnInstall) el.btnInstall.classList.remove("hidden");
+    if (el.btnInstall) {
+      el.btnInstall.classList.remove("hidden");
+      syncInstallButtonState();
+    }
   }
   if (params.get("opt") === "carousel" || params.get("keuze") === "carrousel") {
     setStartMode("carousel");
@@ -299,6 +326,8 @@ function checkAutoStart() {
   if (!allQuestions || allQuestions.length === 0) {
     if (params.get("view") === "about" || params.get("screen") === "about" || params.has("about")) {
       showScreen("about");
+    } else if (params.get("view") === "stats" || params.get("screen") === "stats" || params.has("stats")) {
+      showScreen("stats");
     } else if (params.get("modal") === "changelog" || params.get("autotest") === "changelog" || params.get("changelog") === "1") {
       openChangelogModal();
     }
@@ -339,6 +368,8 @@ function checkAutoStart() {
     }
   } else if (params.get("view") === "about" || params.get("screen") === "about" || params.has("about")) {
     showScreen("about");
+  } else if (params.get("view") === "stats" || params.get("screen") === "stats" || params.has("stats")) {
+    showScreen("stats");
   } else if (params.get("modal") === "changelog" || params.get("autotest") === "changelog" || params.get("changelog") === "1") {
     openChangelogModal();
   }
@@ -410,6 +441,9 @@ if (el.btnLang) {
         updateStartScreenNotice();
         setStartMode(state.currentMode);
         loadChangelog();
+        if (el.screenStats && !el.screenStats.classList.contains("hidden")) {
+          renderStatsView();
+        }
         if (carouselState.isActive) {
           renderCarouselCard();
         }
@@ -423,6 +457,9 @@ document.addEventListener("languagechange", () => {
   applyAll();
   updateLangButton();
   updateAboutSourceLinks();
+  if (el.screenStats && !el.screenStats.classList.contains("hidden")) {
+    renderStatsView();
+  }
   if (carouselState.isActive) {
     renderCarouselCard();
   }
@@ -450,6 +487,7 @@ window.addEventListener("orientationchange", dismissOpenTooltips);
 
 // ── Application startup ───────────────────────────────────────────────────────
 registerServiceWorker();
+syncInstallButtonState();
 setLang(detectLang())
   .then(() => {
     updateLangButton();
@@ -460,6 +498,7 @@ setLang(detectLang())
     setStartMode(state.currentMode);
     updateStartScreenNotice();
     loadChangelog();
+    syncInstallButtonState();
     checkAutoStart();
 
     return loadQuestions();

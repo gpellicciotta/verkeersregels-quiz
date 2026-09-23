@@ -38,6 +38,9 @@ function getReportContext() {
   if (el.screenAbout && !el.screenAbout.classList.contains("hidden")) {
     return { id: "", text: t("report.view_about") };
   }
+  if (el.screenStats && !el.screenStats.classList.contains("hidden")) {
+    return { id: "", text: t("report.view_stats") };
+  }
   return { id: "", text: t("report.view_start") };
 }
 

@@ -3,11 +3,24 @@ import { drainReportQueue } from "./report-queue.js";
 
 export let deferredInstallPrompt = null;
 
+/**
+ * Synchronize the install button visibility with container modifier classes.
+ *
+ * @returns {void}
+ */
+export function syncInstallButtonState() {
+  if (el.startMetaActions && el.btnInstall) {
+    const isVisible = !el.btnInstall.classList.contains("hidden");
+    el.startMetaActions.classList.toggle("has-install-btn", isVisible);
+  }
+}
+
 window.addEventListener("beforeinstallprompt", (e) => {
   e.preventDefault();
   deferredInstallPrompt = e;
   if (el.btnInstall) {
     el.btnInstall.classList.remove("hidden");
+    syncInstallButtonState();
   }
 });
 
@@ -19,6 +32,7 @@ if (el.btnInstall) {
     if (outcome === "accepted") {
       deferredInstallPrompt = null;
       el.btnInstall.classList.add("hidden");
+      syncInstallButtonState();
     }
   });
 }
@@ -27,6 +41,7 @@ window.addEventListener("appinstalled", () => {
   deferredInstallPrompt = null;
   if (el.btnInstall) {
     el.btnInstall.classList.add("hidden");
+    syncInstallButtonState();
   }
   console.info("PWA installed successfully.");
 });
