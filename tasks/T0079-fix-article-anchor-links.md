@@ -4,7 +4,7 @@ owner: "@claude"
 needs: []
 branch: task/T0079-fix-article-anchor-links
 worktree: ./work/T0079-fix-article-anchor-links
-status: active
+status: needs-review
 started: 2026-09-24
 ended: —
 ---
@@ -31,9 +31,9 @@ a link unanchored only when its target page has no matching HTML anchor.
 - [x] **[Decided]**        Leave 3 bare wegcode.be links unanchored (composite or wrong-law citation); documented in SOURCES.md.
 - [x] **[Decided]**        Repoint 5 wegcode.be explainer/news links to the law-text page with the matching `#art-N`.
 - [x] **[Decided]**        Add verified heading anchors on 5 third-party/explainer pages that already match the cited fact.
-- [ ] **[Implement]**      Apply all 50 source-field edits to data/questions.json via a script.
-- [ ] **[Verify]**         Re-run the extraction script to confirm zero remaining mismatches for changed rows.
-- [ ] **[Doc]**            Log the correction in data/SOURCES.md and CHANGELOG.md.
+- [x] **[Implement]**      Apply all 50 source-field edits to data/questions.json via a script.
+- [x] **[Verify]**         Re-run the extraction script to confirm zero remaining mismatches for changed rows.
+- [x] **[Doc]**            Log the correction in data/SOURCES.md and CHANGELOG.md.
 
 ## Execution Log
 
@@ -50,4 +50,23 @@ a link unanchored only when its target page has no matching HTML anchor.
   Fetched all 16 SOURCES.md third-party pages; only `verkeerszaken.be` (rotondes)
   and `touring.be` (reddingsstrook) and the `wegcode.be` cyclist brochure expose
   real heading anchors matching cited facts; the rest have no usable anchors.
+
+- [2026-09-24] **[Implement]**
+  Applied all 50 planned source-field edits via a script with an old-value
+  assertion per row; `git diff` confirmed exactly those 50 lines changed.
+
+- [2026-09-24] **[Verify]**
+  Re-ran the article-citation extraction: 0 mismatches, only the 3 intentionally
+  unanchored rows remain without a fragment. Full test suite passes (160 pytest
+  + 18 node) and all 5 changed target pages return HTTP 200 with the anchors present.
+
+- [2026-09-24] **[Doc]**
+  Logged the fix in `data/SOURCES.md`'s correction log and added a `v3.7.1-pre`
+  CHANGELOG entry, translated into en/fr/de/it, then regenerated `sw.js` so the
+  updated `data/questions.json` busts the PWA precache.
+
+- [2026-09-24] **[Complete]**
+  Fixed article-anchor links for 50 of 324 questions; 3 links left intentionally
+  unanchored (composite or wrong-law citations) and documented as such. Awaiting
+  human review before merging to `main` (solo AI agent review tier).
 

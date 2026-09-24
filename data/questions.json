@@ -995,7 +995,7 @@
       ],
       "correctIndex": 0,
       "explanation": "In Vlaanderen en Wallonië geldt binnen de bebouwde kom standaard 50 km/u (art. 11.1). In het Brussels Hoofdstedelijk Gewest geldt daarentegen standaard 30 km/u.",
-      "source": "https://www.wegcode.be/nl/verkeersreglement/uitleg-bij-het-verkeersreglement/snelheidsbeperkingen",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-11",
       "since": 1992
     },
     {
@@ -1027,7 +1027,7 @@
       ],
       "correctIndex": 2,
       "explanation": "Volgens artikel 11.2.1°a geldt op Belgische autosnelwegen een maximumsnelheid van 120 km/u, tenzij een verkeersbord een andere snelheid oplegt.",
-      "source": "https://www.wegcode.be/nl/verkeersreglement/uitleg-bij-het-verkeersreglement/snelheidsbeperkingen"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-11"
     },
     {
       "id": "rule-snelheid-min-autosnelweg",
@@ -1168,7 +1168,7 @@
       ],
       "correctIndex": 3,
       "explanation": "Op een rotonde aangeduid met bord D5 heeft het verkeer dat er al op rijdt voorrang op wie wil toetreden (art. 12.3.1).",
-      "source": "https://www.verkeerszaken.be/blog/artikel/a/432/De-regels-voor-rotondes-en-rondpunten",
+      "source": "https://www.verkeerszaken.be/blog/artikel/a/432/De-regels-voor-rotondes-en-rondpunten#3gpgi",
       "since": 1997,
       "signTitle": "Verplicht rondgaand verkeer (rotonde)",
       "signExplanation": "Bord D5 duidt een rotonde aan waar het verkeer verplicht in de aangegeven richting moet rijden. Bestuurders die zich op de rotonde bevinden hebben voorrang op naderend verkeer dat wil toetreden (art. 12.3.1 en art. 68.3 van de Wegcode)."
@@ -1201,7 +1201,7 @@
       ],
       "correctIndex": 1,
       "explanation": "Volgens artikel 40ter is buiten de bebouwde kom minstens 1,5 meter zijdelingse afstand verplicht; binnen de bebouwde kom is dat 1 meter.",
-      "source": "https://www.wegcode.be/nl/verkeersreglement/fietsers-en-de-wegcode",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-40ter",
       "since": 2019
     },
     {
@@ -1247,7 +1247,7 @@
       ],
       "correctIndex": 0,
       "explanation": "De WAM-wet (art. 2) verplicht elk motorvoertuig dat op de openbare weg rijdt om een verzekering burgerlijke aansprakelijkheid te hebben.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1989011371~e9i0a75brp",
+      "source": "https://www.wegcode.be/nl/regelgeving/1989011371~e9i0a75brp#art-2",
       "since": 1989
     },
     {
@@ -1263,7 +1263,7 @@
       ],
       "correctIndex": 1,
       "explanation": "Volgens artikel 9.8 en 2.70 moeten bestuurders bij file op wegen met minstens twee rijstroken per richting altijd een reddingsstrook vormen.",
-      "source": "https://www.touring.be/nl/artikels/reddingsstrook-verplicht-1-oktober",
+      "source": "https://www.touring.be/nl/artikels/reddingsstrook-verplicht-1-oktober#cv91m",
       "since": 2020
     },
     {
@@ -1357,7 +1357,7 @@
       ],
       "correctIndex": 0,
       "explanation": "Volgens artikel 36 van de wegcode (ingevoerd door het KB van 27 augustus 2026, in werking op 1 september 2026) is een valhelm verplicht op gemotoriseerde voortbewegingstoestellen met een constructiesnelheid van meer dan 20 km/u.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-36",
       "since": 2026
     },
     {
@@ -1405,7 +1405,7 @@
       ],
       "correctIndex": 2,
       "explanation": "Artikel 8.2, 7° stelt de minimumleeftijd voor het besturen van een gemotoriseerd voortbewegingstoestel op 16 jaar, behalve in woonerven, erven, speelstraten of voetgangerszones.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-8",
       "since": 2022
     },
     {
@@ -1421,7 +1421,7 @@
       ],
       "correctIndex": 2,
       "explanation": "Artikel 44.2 verbiedt uitdrukkelijk om passagiers te vervoeren op een voortbewegingstoestel, behalve op toestellen die specifiek voor personenvervoer gebouwd zijn.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-44",
       "since": 2022
     },
     {
@@ -1456,7 +1456,7 @@
       ],
       "correctIndex": 1,
       "explanation": "Volgens artikel 82.1.2, 6° moeten velomobielen altijd voorzien zijn van een gele of oranje reflecterende strook op de zijkanten.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-82",
       "since": 2022
     },
     {
@@ -4182,7 +4182,7 @@
       ],
       "correctIndex": 0,
       "explanation": "Sinds 1 juli 2022 (Wet 15 mei 2022, art. 3, dat art. 7bis wijzigt) worden bestuurders van gemotoriseerde voortbewegingstoestellen gelijkgesteld met fietsers. Zij mogen niet meer op het trottoir rijden, ongeacht hun snelheid.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-7bis",
       "since": 2022
     },
     {
@@ -4198,7 +4198,7 @@
       ],
       "correctIndex": 1,
       "explanation": "Volgens artikel 2.15.2 van de wegcode bedraagt de maximale snelheid door het ontwerp van een gemotoriseerd voortbewegingstoestel ten hoogste 25 km/u.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-2",
       "since": 2022
     },
     {
@@ -4214,7 +4214,7 @@
       ],
       "correctIndex": 2,
       "explanation": "Artikel 23.3 verplicht dat voortbewegingstoestellen zoals e-steps buiten de rijbaan en de parkeerstroken worden opgesteld, zonder de andere weggebruikers te hinderen of in gevaar te brengen. Specifieke dropzones zijn een gemeentelijke regeling, geen federale wegcoderegel.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-23",
       "since": 2022
     },
     {
@@ -4262,7 +4262,7 @@
       ],
       "correctIndex": 1,
       "explanation": "Volgens artikel 2.17 van de wegcode levert een speed pedelec trapondersteuning tot maximaal 45 km/u. Boven die snelheid moet de hulpmotor automatisch uitschakelen.",
-      "source": "https://www.wegcode.be/nl/nieuws/nieuwe-verkeersregels-van-kracht-op-1-oktober-de-10-belangrijkste-veranderingen~ntwif2jyud",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-2",
       "since": 2022
     },
     {
@@ -4278,7 +4278,7 @@
       ],
       "correctIndex": 0,
       "explanation": "Artikel 82.1.2, 6° schrijft voor dat velomobielen een gele of oranje reflecterende strook op de zijkanten moeten voeren.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-82",
       "since": 2022
     },
     {
@@ -4310,7 +4310,7 @@
       ],
       "correctIndex": 0,
       "explanation": "Volgens artikel 12bis moeten bestuurders bij sterk vertraagd verkeer doorrijden tot vlak vóór de versmalling en pas daar invoegen.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-12bis",
       "since": 2022
     },
     {
@@ -4326,7 +4326,7 @@
       ],
       "correctIndex": 1,
       "explanation": "Artikel 12bis bepaalt dat bestuurders op de vrije rijstrook ter hoogte van de versmalling om beurten één invoegend voertuig moeten voorlaten.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-12bis",
       "since": 2022
     },
     {
@@ -4342,7 +4342,7 @@
       ],
       "correctIndex": 2,
       "explanation": "In een fietsstraat (art. 22novies) is het voor motorvoertuigen te allen tijde verboden om fietsers in te halen.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-22novies",
       "since": 2022
     },
     {
@@ -4358,7 +4358,7 @@
       ],
       "correctIndex": 3,
       "explanation": "Volgens artikel 22novies mag de snelheid in een fietsstraat nooit hoger liggen dan 30 km/u, noch voor auto's noch voor fietsers.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-22novies",
       "since": 2022
     },
     {
@@ -4375,7 +4375,7 @@
       ],
       "correctIndex": 0,
       "explanation": "Verkeersbord B22 laat fietsers en speed pedelecs toe om door te rijden en rechts af te slaan bij rood of oranjegeel licht, mits zij voorrang verlenen (art. 67.3).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-67",
       "since": 2022,
       "signTitle": "Toelating voor fietsers om rechts af te slaan bij rood licht",
       "signExplanation": "Verkeersbord B22 laat fietsers en bestuurders van speed pedelecs toe om bij een rood of oranjegeel verkeerslicht rechts af te slaan, mits zij voorrang verlenen aan overig verkeer en overstekende voetgangers (art. 67.3 van de Wegcode)."
@@ -4394,7 +4394,7 @@
       ],
       "correctIndex": 1,
       "explanation": "Bord B23 staat fietsers en bestuurders van speed pedelecs toe om rechtdoor te rijden bij een rood of oranjegeel licht, op voorwaarde dat zij voorrang verlenen (art. 67.3).",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-67",
       "since": 2022,
       "signTitle": "Toelating voor fietsers om rechtdoor te rijden bij rood licht",
       "signExplanation": "Verkeersbord B23 laat fietsers en bestuurders van speed pedelecs toe om bij een rood of oranjegeel verkeerslicht rechtdoor te rijden, mits zij voorrang verlenen aan overig verkeer en overstekende voetgangers (art. 67.3 van de Wegcode)."
@@ -4427,7 +4427,7 @@
       ],
       "correctIndex": 3,
       "explanation": "Het oprijden van de openbare weg vanuit een eigendom of parking geldt volgens artikel 12.4 als een manoeuvre, waarbij aan alle andere weggebruikers voorrang moet worden verleend.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-12"
     },
     {
       "id": "rule-voorrang-afslaan-tegenligger",
@@ -4442,7 +4442,7 @@
       ],
       "correctIndex": 0,
       "explanation": "Volgens artikel 19.3.3° moet de bestuurder die naar links afslaat voorrang verlenen aan de tegenliggers op de rijbaan die hij gaat verlaten.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-19"
     },
     {
       "id": "rule-voorrang-tram-algemeen",
@@ -4457,7 +4457,7 @@
       ],
       "correctIndex": 1,
       "explanation": "Volgens artikel 12.1 en 12.3.1 hebben spoorvoertuigen (trams) altijd voorrang op andere weggebruikers, tenzij anders geregeld door verkeerslichten of bevoegde personen.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-12"
     },
     {
       "id": "rule-voorrang-tram-voetganger",
@@ -4472,7 +4472,7 @@
       ],
       "correctIndex": 2,
       "explanation": "Volgens artikel 12.1 moet elke weggebruiker, dus ook een overstekende voetganger, voorrang verlenen aan spoorvoertuigen zoals de tram.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-12"
     },
     {
       "id": "rule-bus-bebouwde-kom",
@@ -4487,7 +4487,7 @@
       ],
       "correctIndex": 3,
       "explanation": "Binnen de bebouwde kom moet je volgens artikel 39 vertragen en indien nodig stoppen om een autobus die zijn richtingaanwijzer aanzet de gelegenheid te geven zijn halte te verlaten.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-39"
     },
     {
       "id": "rule-bus-buiten-bebouwde-kom",
@@ -4502,7 +4502,7 @@
       ],
       "correctIndex": 0,
       "explanation": "Artikel 39 verplicht bestuurders enkel binnen de bebouwde kom om een wegrijdende bus voor te laten. Buiten de bebouwde kom moet de buschauffeur zelf voorrang verlenen alvorens de rijbaan op te rijden.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-39"
     },
     {
       "id": "rule-manoeuvre-achteruitrijden",
@@ -4517,7 +4517,7 @@
       ],
       "correctIndex": 1,
       "explanation": "Achteruitrijden is een manoeuvre volgens artikel 12.4. De bestuurder die een manoeuvre uitvoert moet voorrang verlenen aan alle andere weggebruikers.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-12"
     },
     {
       "id": "rule-manoeuvre-rijstrookwissel",
@@ -4532,7 +4532,7 @@
       ],
       "correctIndex": 2,
       "explanation": "Van rijstrook veranderen is een manoeuvre (art. 12.4). Je moet tijdig je richtingaanwijzer aanzetten en voorrang verlenen aan het verkeer op de doelrijstrook.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-12"
     },
     {
       "id": "rule-oversteekplaats-fietser",
@@ -4547,7 +4547,7 @@
       ],
       "correctIndex": 3,
       "explanation": "Volgens artikel 40ter hebben fietsers op een dwarsende fietsoversteekplaats geen voorrang. Zij mogen zich slechts voorzichtig op de oversteekplaats begeven met inachtneming van naderend verkeer.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-40ter"
     },
     {
       "id": "rule-fietser-op-zebrapad",
@@ -4577,7 +4577,7 @@
       ],
       "correctIndex": 1,
       "explanation": "Artikel 24.4° verbiedt stilstaan en parkeren op de oversteekplaats en op de rijbaan binnen een afstand van 5 meter vóór de oversteekplaats.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-24"
     },
     {
       "id": "rule-parkeren-bushalte-afstand",
@@ -4592,7 +4592,7 @@
       ],
       "correctIndex": 2,
       "explanation": "Volgens artikel 25.1.2° is parkeren verboden op minder dan 15 meter aan weerszijden van het bord dat een halte van bussen of trams aanduidt.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-25"
     },
     {
       "id": "rule-stilstaan-vs-parkeren",
@@ -4607,7 +4607,7 @@
       ],
       "correctIndex": 3,
       "explanation": "Volgens artikel 2.22 en 2.23 is stilstaan beperkt tot de tijd die nodig is voor het in- of uitstappen van personen of het laden en lossen van goederen. Elk ander stilstaan geldt juridisch als parkeren.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-2"
     },
     {
       "id": "rule-parkeren-kruispunt-afstand",
@@ -4622,7 +4622,7 @@
       ],
       "correctIndex": 0,
       "explanation": "Artikel 24, 7° verbiedt het stilstaan of parkeren op minder dan 5 meter van de verlenging van de naastbijgelegen rand van de dwarsrijbaan van een kruispunt.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-24"
     },
     {
       "id": "rule-parkeren-brandkraan",
@@ -4637,7 +4637,7 @@
       ],
       "correctIndex": 1,
       "explanation": "Artikel 25.1, 1° verbiedt parkeren op minder dan 1 meter voor of achter een ander stilstaand of geparkeerd voertuig, en overal waar het in- of uitstappen van een ander voertuig belemmerd zou worden.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-25"
     },
     {
       "id": "rule-verlichting-tunnels",
@@ -4652,7 +4652,7 @@
       ],
       "correctIndex": 2,
       "explanation": "Een tunnel biedt zelden meer dan 200 meter duidelijk zicht, ook overdag; daardoor geldt de algemene verplichting van artikel 30.1 om dan de dimlichten (of grootlichten) te voeren. De wegcode noemt tunnels niet apart, maar dat zichtcriterium is er in de praktijk vrijwel altijd van toepassing.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-30"
     },
     {
       "id": "rule-verlichting-duisternis",
@@ -4667,7 +4667,7 @@
       ],
       "correctIndex": 3,
       "explanation": "Artikel 30.1 verplicht het voeren van dimlichten (of grootlichten) tussen het vallen van de avond en het aanbreken van de dag, en overdag wanneer het zicht minder dan ongeveer 200 meter bedraagt.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-30"
     },
     {
       "id": "rule-grootlicht-tegenligger",
@@ -4682,7 +4682,7 @@
       ],
       "correctIndex": 0,
       "explanation": "Volgens artikel 31.1 moeten grootlichten worden gedoofd en vervangen door dimlichten zodra een tegenligger nadert om verblinding te voorkomen.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-31"
     },
     {
       "id": "rule-inhalen-kruispunt",
@@ -4697,7 +4697,7 @@
       ],
       "correctIndex": 1,
       "explanation": "Artikel 17.2, 2°a verbiedt het links inhalen van een gespan of van een motorvoertuig met meer dan twee wielen op kruispunten waar de voorrang van rechts geldt.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-17"
     },
     {
       "id": "rule-inhalen-oversteekplaats",
@@ -4712,7 +4712,7 @@
       ],
       "correctIndex": 2,
       "explanation": "Artikel 17.2, 5° verbiedt het inhalen van een bestuurder die stopt voor, of een oversteekplaats voor voetgangers of fietsers nadert.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-17"
     },
     {
       "id": "rule-snelheid-woonerf",
@@ -4727,7 +4727,7 @@
       ],
       "correctIndex": 3,
       "explanation": "Volgens artikel 22bis, 3° mag de snelheid in een erf of woonerf niet meer bedragen dan 20 km/u voor alle bestuurders.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-22bis"
     },
     {
       "id": "rule-woonerf-voetganger",
@@ -4742,7 +4742,7 @@
       ],
       "correctIndex": 0,
       "explanation": "Volgens artikel 22bis.1° mogen voetgangers de ganse breedte van de openbare weg gebruiken en is spelen toegelaten. Bestuurders mogen hen niet in gevaar brengen.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-22bis"
     },
     {
       "id": "rule-slepen-snelheid",
@@ -4757,7 +4757,7 @@
       ],
       "correctIndex": 1,
       "explanation": "Volgens artikel 49.1 mag de snelheid van een gesleept voertuig nooit hoger liggen dan 25 km/u bij voorlopige sleping met een kabel of stang.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-49"
     },
     {
       "id": "rule-alcohol-alarmfase",
@@ -4802,7 +4802,7 @@
       ],
       "correctIndex": 0,
       "explanation": "Volgens artikel 21.4 is het op autosnelwegen absoluut verboden om te keren, achteruit te rijden of de dwarsverbindingen van de middenberm te gebruiken.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-21"
     },
     {
       "id": "rule-autosnelweg-pechstrook",
@@ -4832,7 +4832,7 @@
       ],
       "correctIndex": 2,
       "explanation": "Volgens artikel 16.2 geldt het voorbijrijden van voertuigen in parallelle files niet als inhalen. In normaal vloeiend verkeer is rechts inhalen altijd verboden.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-16"
     },
     {
       "id": "rule-rotonde-pinker",
@@ -4862,7 +4862,7 @@
       ],
       "correctIndex": 3,
       "explanation": "Volgens de algemene regel (art. 9.1.1) moet je zo dicht mogelijk bij de rechterrand van de rijbaan rijden. Wie de rotonde snel verlaat (eerste afrit), kiest de rechtse rijstrook.",
-      "source": "https://www.verkeerszaken.be/blog/artikel/a/432/De-regels-voor-rotondes-en-rondpunten"
+      "source": "https://www.verkeerszaken.be/blog/artikel/a/432/De-regels-voor-rotondes-en-rondpunten#9ee2q"
     },
     {
       "id": "rule-schoolbus-gevaarslichten",
@@ -4877,7 +4877,7 @@
       ],
       "correctIndex": 3,
       "explanation": "Artikel 39bis bepaalt dat bestuurders hun snelheid sterk moeten matigen en zo nodig moeten stoppen wanneer een autobus voor schoolvervoer stilstaat met ingeschakelde gevaarslichten.",
-      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu"
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-39bis"
     },
     {
       "id": "rule-fietser-naast-elkaar",
@@ -4892,7 +4892,7 @@
       ],
       "correctIndex": 3,
       "explanation": "Volgens artikel 43.1 mogen fietsers met twee naast elkaar rijden, maar buiten de bebouwde kom moeten ze achter elkaar gaan rijden wanneer een achteropkomend voertuig nadert.",
-      "source": "https://www.wegcode.be/nl/verkeersreglement/fietsers-en-de-wegcode"
+      "source": "https://www.wegcode.be/nl/verkeersreglement/fietsers-en-de-wegcode#zq9niyxyk8"
     },
     {
       "id": "sit-01-b5-stop",
@@ -5254,7 +5254,7 @@
       ],
       "correctIndex": 0,
       "explanation": "Een fietssuggestiestrook is geen echt fietspad en heeft geen juridische status van een voorbehouden deel: het maakt deel uit van de rijbaan waar auto's over mogen rijden zonder fietsers te hinderen (art. 2.62 & art. 9.1.2).",
-      "source": "https://www.wegcode.be/nl/verkeersreglement/fietsers-en-de-wegcode"
+      "source": "https://www.wegcode.be/nl/verkeersreglement/fietsers-en-de-wegcode#hwr5ankp0o"
     },
     {
       "id": "sit-25-erf-woonerf-f12a",
@@ -5480,7 +5480,7 @@
       ],
       "correctIndex": 1,
       "explanation": "Buiten de bebouwde kom moet een bestuurder bij het inhalen van een fietser of voetganger een zijdelingse tussenruimte van minstens 1,5 meter laten (binnen de bebouwde kom is dat minstens 1 meter, art. 40ter).",
-      "source": "https://www.wegcode.be/nl/verkeersreglement/fietsers-en-de-wegcode",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-40ter",
       "since": 2019
     },
     {

@@ -13,6 +13,9 @@ A summarized overview of all changes, per version of this project.
 
 ---
 
+## v3.7.1-pre
+- BackEnd: Bronlinks van 50 vragen rechtstreeks naar het juiste wetsartikel of paragraaf gekoppeld.
+
 ## v3.7.0 [released: 2026-09-24]
 - FrontEnd: Ondersteuningslinks in het Over-scherm bijgewerkt met directe Ko-fi- en PayPal.Me-knoppen.
 - FrontEnd: De carrousel-tip is nu verwijderd aangezien hij niet echt nodig is en de UI complexer maakt.

@@ -186,6 +186,26 @@ Cross-reference used to confirm which code matches which meaning and shape: the 
   were unverifiable (pre-2021, and the government page that might date them is CAPTCHA-gated), but the sign
   meanings and explanations in both questions are correct and were not changed. Closes T0033.
 
+- 2026-09-24: fixed article-anchor links for task T0079, after fetching every distinct source page's
+  raw HTML and confirming which `#`-anchors genuinely exist server-side:
+  - Added the missing `#art-N` fragment to 40 questions whose `source` already pointed at the
+    consolidated Wegcode or WAM-wet text but cited a single article without a fragment.
+  - Repointed 5 questions from a `wegcode.be` explainer/news page (no anchors) to the consolidated
+    law text page's matching `#art-N`, since both pages are on `wegcode.be` and only the law text
+    exposes real per-article anchors.
+  - Added a verified in-page heading anchor on the already-used third-party page for 5 questions:
+    `verkeerszaken.be` (rotondes, 2 questions), `touring.be` (reddingsstrook, 1) and the `wegcode.be`
+    cyclist brochure (fietssuggestiestrook and naast-elkaar-fietsen, 2), after confirming each
+    heading's own text matches the cited fact.
+  - Left 3 questions' links unanchored on purpose: `rule-reddingsstrook-vorming-2022` and
+    `rule-autosnelweg-pechstrook` each cite two unrelated articles (a definition plus an operative
+    rule), so a single `#art-N` would misrepresent which one is "the" reference; `rule-brussel-stad30-2021`
+    cites "art. 11.2" of a *Brussels regional decree*, not the Wegcode, so a wegcode.be `#art-11`
+    anchor would point at unrelated text. No replacement source was fabricated for these three.
+  - Verified every other candidate source domain (16 third-party pages from the "Rule sources" list
+    above) for heading-level anchors; all but the three used above have none, so those links are
+    left as bare page URLs, per the "no HTML anchor" exception.
+
 - 2026-09-21: integrated 20 additional real traffic situation photo questions under task T0044:
   - Sourced and validated 20 authentic photographic traffic situations covering roundabouts, level crossings, bus lanes, woonerven, priority vehicles, continuous lines, and cyclist interactions.
   - Stored high-resolution photos in `assets/situations/` and registered questions `sit-21` through `sit-40` in `data/questions.json`.

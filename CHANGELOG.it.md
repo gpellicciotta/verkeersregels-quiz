@@ -13,6 +13,9 @@ Una panoramica riepilogativa di tutte le modifiche, per versione di questo proge
 
 ---
 
+## v3.7.1-pre
+- BackEnd: Collegamenti sorgente di 50 domande collegate direttamente all'articolo o al paragrafo corretto.
+
 ## v3.7.0 [released: 2026-09-24]
 - FrontEnd: Collegamenti di supporto aggiornati nella schermata Informazioni per includere i pulsanti diretti Ko-fi e PayPal.Me.
 - FrontEnd: Il suggerimento del carosello è stato ora rimosso poiché non è realmente necessario e rende l'interfaccia utente più complessa.

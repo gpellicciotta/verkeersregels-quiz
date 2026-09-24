@@ -13,6 +13,9 @@ Eine zusammenfassende Übersicht aller Änderungen pro Version dieses Projekts.
 
 ---
 
+## v3.7.1-pre
+- BackEnd: Quelllinks von 50 Fragen, die direkt mit dem richtigen Artikel oder Absatz verknüpft sind.
+
 ## v3.7.0 [released: 2026-09-24]
 - FrontEnd: Aktualisierte Support-Links im Info-Bildschirm, um direkte Ko-Fi- und PayPal.Me-Schaltflächen einzuschließen.
 - FrontEnd: Der Karussell-Tipp wurde jetzt entfernt, da er nicht wirklich notwendig ist und die Benutzeroberfläche komplexer macht.

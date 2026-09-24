@@ -13,6 +13,9 @@ A summarized overview of all changes, per version of this project.
 
 ---
 
+## v3.7.1-pre
+- BackEnd: Source links of 50 questions linked directly to the correct article or paragraph.
+
 ## v3.7.0 [released: 2026-09-24]
 - FrontEnd: Updated support links in the About screen to include direct Ko-fi and PayPal.Me buttons.
 - FrontEnd: The carousel tip has now been removed as it is not really necessary and makes the UI more complex.
