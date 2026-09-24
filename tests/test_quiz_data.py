@@ -25,14 +25,14 @@ class TestQuizData(unittest.TestCase):
         cls.questions = cls.data.get("questions", [])
 
     def test_total_question_count(self) -> None:
-        """Validates that the question bank contains exactly 324 questions."""
-        self.assertEqual(len(self.questions), 324, f"Expected exactly 324 questions, found {len(self.questions)}")
+        """Validates that the question bank contains exactly 328 questions."""
+        self.assertEqual(len(self.questions), 328, f"Expected exactly 328 questions, found {len(self.questions)}")
 
     def test_question_counts_by_type(self) -> None:
         """Validates the question counts for all supported question types."""
         from collections import Counter
         counts = Counter(q.get("type") for q in self.questions)
-        self.assertEqual(counts["recognize"], 193)
+        self.assertEqual(counts["recognize"], 197)
         self.assertEqual(counts["identify"], 12)
         self.assertEqual(counts["rule"], 79)
         self.assertEqual(counts["situation"], 40)

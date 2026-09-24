@@ -2095,6 +2095,54 @@
     "signTitle": "Signage sign in the vicinity of a public establishment or service of general interest",
     "signExplanation": "Sign F34a nearby points the way to public facilities and institutions of general interest (art. 71.2 of the Highway Code)."
   },
+  "rec-f34b1": {
+    "question": "What does this traffic sign mean?",
+    "options": [
+      "Mandatory diversion for lorries outside the built-up area",
+      "Warning for a crossing for cyclists and horse riders",
+      "No entry for cyclists, horse riders and pedestrians",
+      "Signpost: recommended route for certain categories of road users, such as cyclists, horse riders or pedestrians"
+    ],
+    "explanation": "Sign F34b.1 is a signpost showing the recommended route for certain categories of road users, supplemented with the symbol of sign C11, C15 or C19 and optionally the distance in km (art. 71.2 of the Highway Code).",
+    "signTitle": "Signpost: recommended route for certain categories of road users, such as cyclists, horse riders or pedestrians",
+    "signExplanation": "Sign F34b.1 is a signpost showing the recommended route for certain categories of road users, supplemented with the symbol of sign C11, C15 or C19 and optionally the distance in km (art. 71.2 of the Highway Code)."
+  },
+  "rec-f34b2": {
+    "question": "What does this traffic sign mean?",
+    "options": [
+      "Signpost: recommended route for certain categories of road users, such as cyclists, horse riders or pedestrians",
+      "Signage sign in the vicinity of a public establishment of general interest",
+      "Mandatory direction for vehicles carrying dangerous goods",
+      "Tourist signpost to a monument or recreation park"
+    ],
+    "explanation": "Sign F34b.2 is the simplified version of F34b.1: mentioning the destination and the arrow is optional, but the meaning remains the same recommended route for the indicated category of road users (art. 71.2 of the Highway Code).",
+    "signTitle": "Signpost: recommended route for certain categories of road users, such as cyclists, horse riders or pedestrians",
+    "signExplanation": "Sign F34b.2 is the simplified version of F34b.1: mentioning the destination and the arrow is optional, but the meaning remains the same recommended route for the indicated category of road users (art. 71.2 of the Highway Code)."
+  },
+  "rec-f34c1": {
+    "question": "What does this traffic sign mean?",
+    "options": [
+      "Tourist signpost to a monument, sight or recreation park",
+      "Distant signage sign to a valley or watercourse of touristic interest",
+      "Signpost: recommended route to a tourist destination for certain categories of road users",
+      "No entry for cyclists, horse riders and pedestrians to tourist areas"
+    ],
+    "explanation": "Sign F34c.1 shows the recommended route to a tourist destination for certain categories of road users, supplemented with the symbol of sign C11, C15 or C19 (art. 71.2 of the Highway Code).",
+    "signTitle": "Signpost: recommended route to a tourist destination for certain categories of road users",
+    "signExplanation": "Sign F34c.1 shows the recommended route to a tourist destination for certain categories of road users, supplemented with the symbol of sign C11, C15 or C19 (art. 71.2 of the Highway Code)."
+  },
+  "rec-f34c2": {
+    "question": "What does this traffic sign mean?",
+    "options": [
+      "Mandatory diversion to a tourist centre",
+      "Signpost: recommended route to a tourist destination for certain categories of road users",
+      "Warning for a crossing for cyclists",
+      "Announcement of a car park near a tourist attraction"
+    ],
+    "explanation": "Sign F34c.2 is the simplified version of F34c.1: the destination and the arrow are optional, but the sign still shows the recommended route to a tourist destination for the indicated category of road users (art. 71.2 of the Highway Code).",
+    "signTitle": "Signpost: recommended route to a tourist destination for certain categories of road users",
+    "signExplanation": "Sign F34c.2 is the simplified version of F34c.1: the destination and the arrow are optional, but the sign still shows the recommended route to a tourist destination for the indicated category of road users (art. 71.2 of the Highway Code)."
+  },
   "rec-f35": {
     "question": "What does this traffic sign mean?",
     "options": [

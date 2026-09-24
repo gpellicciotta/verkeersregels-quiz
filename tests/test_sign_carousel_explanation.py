@@ -31,7 +31,7 @@ class TestSignCarouselExplanation(unittest.TestCase):
     def test_all_sign_questions_have_sign_title_and_sign_explanation(self) -> None:
         """Validates that all questions with a 'sign' attribute have non-empty signTitle and signExplanation."""
         sign_questions = [q for q in self.questions_data if "sign" in q]
-        self.assertEqual(len(sign_questions), 198, "Expected exactly 198 questions with road signs")
+        self.assertEqual(len(sign_questions), 202, "Expected exactly 202 questions with road signs")
 
         for q in sign_questions:
             qid = q["id"]

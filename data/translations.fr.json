@@ -2095,6 +2095,54 @@
     "signTitle": "Enseigne de signalisation à proximité d'un établissement public ou d'un service d'intérêt général",
     "signExplanation": "Le panneau F34a à proximité indique l'accès aux équipements publics et aux établissements d'intérêt général (art. 71.2 du code de la route)."
   },
+  "rec-f34b1": {
+    "question": "Que signifie ce panneau routier ?",
+    "options": [
+      "Déviation obligatoire pour les poids lourds hors agglomération",
+      "Avertissement d'une traversée pour cyclistes et cavaliers",
+      "Accès interdit aux cyclistes, cavaliers et piétons",
+      "Panneau : itinéraire recommandé pour certaines catégories d'usagers de la route, tels que cyclistes, cavaliers ou piétons"
+    ],
+    "explanation": "Le panneau F34b.1 indique l'itinéraire recommandé pour certaines catégories d'usagers de la route, complété par le symbole du panneau C11, C15 ou C19 et éventuellement la distance en km (art. 71.2 du code de la route).",
+    "signTitle": "Panneau : itinéraire recommandé pour certaines catégories d'usagers de la route, tels que cyclistes, cavaliers ou piétons",
+    "signExplanation": "Le panneau F34b.1 indique l'itinéraire recommandé pour certaines catégories d'usagers de la route, complété par le symbole du panneau C11, C15 ou C19 et éventuellement la distance en km (art. 71.2 du code de la route)."
+  },
+  "rec-f34b2": {
+    "question": "Que signifie ce panneau routier ?",
+    "options": [
+      "Panneau : itinéraire recommandé pour certaines catégories d'usagers de la route, tels que cyclistes, cavaliers ou piétons",
+      "Enseigne de signalisation à proximité d'un établissement public d'intérêt général",
+      "Direction obligatoire pour les véhicules transportant des marchandises dangereuses",
+      "Panneau touristique vers un monument ou un parc de loisirs"
+    ],
+    "explanation": "Le panneau F34b.2 est la version simplifiée du F34b.1 : la mention de la destination et la flèche sont facultatives, mais la signification reste le même itinéraire recommandé pour la catégorie d'usagers indiquée (art. 71.2 du code de la route).",
+    "signTitle": "Panneau : itinéraire recommandé pour certaines catégories d'usagers de la route, tels que cyclistes, cavaliers ou piétons",
+    "signExplanation": "Le panneau F34b.2 est la version simplifiée du F34b.1 : la mention de la destination et la flèche sont facultatives, mais la signification reste le même itinéraire recommandé pour la catégorie d'usagers indiquée (art. 71.2 du code de la route)."
+  },
+  "rec-f34c1": {
+    "question": "Que signifie ce panneau routier ?",
+    "options": [
+      "Panneau touristique vers un monument, un site ou un parc de loisirs",
+      "Enseigne de signalisation à distance vers une vallée ou un cours d'eau à caractère touristique",
+      "Panneau : itinéraire recommandé vers une destination touristique pour certaines catégories d'usagers de la route",
+      "Accès interdit aux cyclistes, cavaliers et piétons vers des zones touristiques"
+    ],
+    "explanation": "Le panneau F34c.1 indique l'itinéraire recommandé vers une destination touristique pour certaines catégories d'usagers de la route, complété par le symbole du panneau C11, C15 ou C19 (art. 71.2 du code de la route).",
+    "signTitle": "Panneau : itinéraire recommandé vers une destination touristique pour certaines catégories d'usagers de la route",
+    "signExplanation": "Le panneau F34c.1 indique l'itinéraire recommandé vers une destination touristique pour certaines catégories d'usagers de la route, complété par le symbole du panneau C11, C15 ou C19 (art. 71.2 du code de la route)."
+  },
+  "rec-f34c2": {
+    "question": "Que signifie ce panneau routier ?",
+    "options": [
+      "Déviation obligatoire vers un centre touristique",
+      "Panneau : itinéraire recommandé vers une destination touristique pour certaines catégories d'usagers de la route",
+      "Avertissement d'une traversée pour cyclistes",
+      "Annonce d'un parking à proximité d'une attraction touristique"
+    ],
+    "explanation": "Le panneau F34c.2 est la version simplifiée du F34c.1 : la destination et la flèche sont facultatives, mais le panneau indique toujours l'itinéraire recommandé vers une destination touristique pour la catégorie d'usagers indiquée (art. 71.2 du code de la route).",
+    "signTitle": "Panneau : itinéraire recommandé vers une destination touristique pour certaines catégories d'usagers de la route",
+    "signExplanation": "Le panneau F34c.2 est la version simplifiée du F34c.1 : la destination et la flèche sont facultatives, mais le panneau indique toujours l'itinéraire recommandé vers une destination touristique pour la catégorie d'usagers indiquée (art. 71.2 du code de la route)."
+  },
   "rec-f35": {
     "question": "Que signifie ce panneau routier ?",
     "options": [

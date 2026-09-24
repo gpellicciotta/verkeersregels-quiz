@@ -2095,6 +2095,54 @@
     "signTitle": "Segnaletica in prossimità di un esercizio pubblico o di un servizio di interesse generale",
     "signExplanation": "Nelle vicinanze il cartello F34a indica la via verso strutture pubbliche e istituti di interesse generale (art. 71.2 del Codice della Strada)."
   },
+  "rec-f34b1": {
+    "question": "Cosa significa questo segnale stradale?",
+    "options": [
+      "Deviazione obbligatoria per autocarri fuori dal centro abitato",
+      "Avvertimento di un attraversamento per ciclisti e cavalieri",
+      "Divieto di accesso per ciclisti, cavalieri e pedoni",
+      "Segnale: percorso consigliato per determinate categorie di utenti della strada, come ciclisti, cavalieri o pedoni"
+    ],
+    "explanation": "Il cartello F34b.1 è un segnale che indica il percorso consigliato per determinate categorie di utenti della strada, integrato dal simbolo del cartello C11, C15 o C19 ed eventualmente dalla distanza in km (art. 71.2 del Codice della Strada).",
+    "signTitle": "Segnale: percorso consigliato per determinate categorie di utenti della strada, come ciclisti, cavalieri o pedoni",
+    "signExplanation": "Il cartello F34b.1 è un segnale che indica il percorso consigliato per determinate categorie di utenti della strada, integrato dal simbolo del cartello C11, C15 o C19 ed eventualmente dalla distanza in km (art. 71.2 del Codice della Strada)."
+  },
+  "rec-f34b2": {
+    "question": "Cosa significa questo segnale stradale?",
+    "options": [
+      "Segnale: percorso consigliato per determinate categorie di utenti della strada, come ciclisti, cavalieri o pedoni",
+      "Segnaletica in prossimità di un esercizio pubblico di interesse generale",
+      "Direzione obbligatoria per veicoli che trasportano merci pericolose",
+      "Segnale turistico verso un monumento o un parco ricreativo"
+    ],
+    "explanation": "Il cartello F34b.2 è la versione semplificata del F34b.1: l'indicazione della destinazione e la freccia sono facoltative, ma il significato resta lo stesso percorso consigliato per la categoria di utenti indicata (art. 71.2 del Codice della Strada).",
+    "signTitle": "Segnale: percorso consigliato per determinate categorie di utenti della strada, come ciclisti, cavalieri o pedoni",
+    "signExplanation": "Il cartello F34b.2 è la versione semplificata del F34b.1: l'indicazione della destinazione e la freccia sono facoltative, ma il significato resta lo stesso percorso consigliato per la categoria di utenti indicata (art. 71.2 del Codice della Strada)."
+  },
+  "rec-f34c1": {
+    "question": "Cosa significa questo segnale stradale?",
+    "options": [
+      "Segnale turistico verso un monumento, un'attrazione o un parco ricreativo",
+      "Segnaletica a distanza verso una valle o un corso d'acqua di interesse turistico",
+      "Segnale: percorso consigliato verso una destinazione turistica per determinate categorie di utenti della strada",
+      "Divieto di accesso per ciclisti, cavalieri e pedoni verso zone turistiche"
+    ],
+    "explanation": "Il cartello F34c.1 indica il percorso consigliato verso una destinazione turistica per determinate categorie di utenti della strada, integrato dal simbolo del cartello C11, C15 o C19 (art. 71.2 del Codice della Strada).",
+    "signTitle": "Segnale: percorso consigliato verso una destinazione turistica per determinate categorie di utenti della strada",
+    "signExplanation": "Il cartello F34c.1 indica il percorso consigliato verso una destinazione turistica per determinate categorie di utenti della strada, integrato dal simbolo del cartello C11, C15 o C19 (art. 71.2 del Codice della Strada)."
+  },
+  "rec-f34c2": {
+    "question": "Cosa significa questo segnale stradale?",
+    "options": [
+      "Deviazione obbligatoria verso un centro turistico",
+      "Segnale: percorso consigliato verso una destinazione turistica per determinate categorie di utenti della strada",
+      "Avvertimento di un attraversamento per ciclisti",
+      "Annuncio di un parcheggio in prossimità di un'attrazione turistica"
+    ],
+    "explanation": "Il cartello F34c.2 è la versione semplificata del F34c.1: la destinazione e la freccia sono facoltative, ma il cartello indica ancora il percorso consigliato verso una destinazione turistica per la categoria di utenti indicata (art. 71.2 del Codice della Strada).",
+    "signTitle": "Segnale: percorso consigliato verso una destinazione turistica per determinate categorie di utenti della strada",
+    "signExplanation": "Il cartello F34c.2 è la versione semplificata del F34c.1: la destinazione e la freccia sono facoltative, ma il cartello indica ancora il percorso consigliato verso una destinazione turistica per la categoria di utenti indicata (art. 71.2 del Codice della Strada)."
+  },
   "rec-f35": {
     "question": "Cosa significa questo segnale stradale?",
     "options": [

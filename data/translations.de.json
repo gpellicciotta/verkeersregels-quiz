@@ -2095,6 +2095,54 @@
     "signTitle": "Beschilderungsschild in der Nähe einer öffentlichen Einrichtung oder Dienstleistung von allgemeinem Interesse",
     "signExplanation": "Das in der Nähe befindliche Schild F34a weist den Weg zu öffentlichen Einrichtungen und Institutionen von allgemeinem Interesse (Art. 71.2 der Straßenverkehrsordnung)."
   },
+  "rec-f34b1": {
+    "question": "Was bedeutet dieses Verkehrsschild?",
+    "options": [
+      "Pflichtumleitung für Lkw außerhalb geschlossener Ortschaften",
+      "Warnung vor einer Überquerung für Radfahrer und Reiter",
+      "Verbot der Einfahrt für Radfahrer, Reiter und Fußgänger",
+      "Wegweiser: empfohlene Route für bestimmte Kategorien von Verkehrsteilnehmern, wie Radfahrer, Reiter oder Fußgänger"
+    ],
+    "explanation": "Schild F34b.1 ist ein Wegweiser, der die empfohlene Route für bestimmte Kategorien von Verkehrsteilnehmern zeigt, ergänzt durch das Symbol von Schild C11, C15 oder C19 und gegebenenfalls die Entfernung in km (Art. 71.2 der Straßenverkehrsordnung).",
+    "signTitle": "Wegweiser: empfohlene Route für bestimmte Kategorien von Verkehrsteilnehmern, wie Radfahrer, Reiter oder Fußgänger",
+    "signExplanation": "Schild F34b.1 ist ein Wegweiser, der die empfohlene Route für bestimmte Kategorien von Verkehrsteilnehmern zeigt, ergänzt durch das Symbol von Schild C11, C15 oder C19 und gegebenenfalls die Entfernung in km (Art. 71.2 der Straßenverkehrsordnung)."
+  },
+  "rec-f34b2": {
+    "question": "Was bedeutet dieses Verkehrsschild?",
+    "options": [
+      "Wegweiser: empfohlene Route für bestimmte Kategorien von Verkehrsteilnehmern, wie Radfahrer, Reiter oder Fußgänger",
+      "Beschilderungsschild in der Nähe einer öffentlichen Einrichtung von allgemeinem Interesse",
+      "Vorgeschriebene Fahrtrichtung für Fahrzeuge mit Gefahrguttransport",
+      "Touristischer Wegweiser zu einem Denkmal oder Freizeitpark"
+    ],
+    "explanation": "Schild F34b.2 ist die vereinfachte Version von F34b.1: die Angabe des Ziels und der Pfeil sind fakultativ, aber die Bedeutung bleibt dieselbe empfohlene Route für die angegebene Kategorie von Verkehrsteilnehmern (Art. 71.2 der Straßenverkehrsordnung).",
+    "signTitle": "Wegweiser: empfohlene Route für bestimmte Kategorien von Verkehrsteilnehmern, wie Radfahrer, Reiter oder Fußgänger",
+    "signExplanation": "Schild F34b.2 ist die vereinfachte Version von F34b.1: die Angabe des Ziels und der Pfeil sind fakultativ, aber die Bedeutung bleibt dieselbe empfohlene Route für die angegebene Kategorie von Verkehrsteilnehmern (Art. 71.2 der Straßenverkehrsordnung)."
+  },
+  "rec-f34c1": {
+    "question": "Was bedeutet dieses Verkehrsschild?",
+    "options": [
+      "Touristischer Wegweiser zu einem Denkmal, einer Sehenswürdigkeit oder einem Freizeitpark",
+      "Beschilderungsschild auf Entfernung zu einem Tal oder Gewässer von touristischem Interesse",
+      "Wegweiser: empfohlene Route zu einem touristischen Ziel für bestimmte Kategorien von Verkehrsteilnehmern",
+      "Verbot der Einfahrt für Radfahrer, Reiter und Fußgänger zu touristischen Gebieten"
+    ],
+    "explanation": "Schild F34c.1 zeigt die empfohlene Route zu einem touristischen Ziel für bestimmte Kategorien von Verkehrsteilnehmern, ergänzt durch das Symbol von Schild C11, C15 oder C19 (Art. 71.2 der Straßenverkehrsordnung).",
+    "signTitle": "Wegweiser: empfohlene Route zu einem touristischen Ziel für bestimmte Kategorien von Verkehrsteilnehmern",
+    "signExplanation": "Schild F34c.1 zeigt die empfohlene Route zu einem touristischen Ziel für bestimmte Kategorien von Verkehrsteilnehmern, ergänzt durch das Symbol von Schild C11, C15 oder C19 (Art. 71.2 der Straßenverkehrsordnung)."
+  },
+  "rec-f34c2": {
+    "question": "Was bedeutet dieses Verkehrsschild?",
+    "options": [
+      "Pflichtumleitung zu einem touristischen Zentrum",
+      "Wegweiser: empfohlene Route zu einem touristischen Ziel für bestimmte Kategorien von Verkehrsteilnehmern",
+      "Warnung vor einer Überquerung für Radfahrer",
+      "Ankündigung eines Parkplatzes in der Nähe einer touristischen Attraktion"
+    ],
+    "explanation": "Schild F34c.2 ist die vereinfachte Version von F34c.1: das Ziel und der Pfeil sind fakultativ, aber das Schild zeigt weiterhin die empfohlene Route zu einem touristischen Ziel für die angegebene Kategorie von Verkehrsteilnehmern (Art. 71.2 der Straßenverkehrsordnung).",
+    "signTitle": "Wegweiser: empfohlene Route zu einem touristischen Ziel für bestimmte Kategorien von Verkehrsteilnehmern",
+    "signExplanation": "Schild F34c.2 ist die vereinfachte Version von F34c.1: das Ziel und der Pfeil sind fakultativ, aber das Schild zeigt weiterhin die empfohlene Route zu einem touristischen Ziel für die angegebene Kategorie von Verkehrsteilnehmern (Art. 71.2 der Straßenverkehrsordnung)."
+  },
   "rec-f35": {
     "question": "Was bedeutet dieses Verkehrsschild?",
     "options": [

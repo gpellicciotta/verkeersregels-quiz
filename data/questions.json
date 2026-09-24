@@ -3170,6 +3170,78 @@
       "signExplanation": "Bord F34a wijst in de nabijheid de weg naar openbare inrichtingen en instellingen van algemeen belang (art. 71.2 van de Wegcode)."
     },
     {
+      "id": "rec-f34b1",
+      "type": "recognize",
+      "category": "aanwijzing",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/F34b1.svg",
+      "options": [
+        "Verplichte omleiding voor vrachtwagens buiten de bebouwde kom",
+        "Waarschuwing voor een oversteekplaats voor fietsers en ruiters",
+        "Verboden toegang voor fietsers, ruiters en voetgangers",
+        "Wegwijzer: aanbevolen reisweg voor bepaalde categorieën van weggebruikers, zoals fietsers, ruiters of voetgangers"
+      ],
+      "correctIndex": 3,
+      "explanation": "Bord F34b.1 is een wegwijzer die de aanbevolen reisweg toont voor bepaalde categorieën van weggebruikers, aangevuld met het symbool van bord C11, C15 of C19 en eventueel de afstand in km (art. 71.2 van de Wegcode).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Wegwijzer: aanbevolen reisweg voor bepaalde categorieën van weggebruikers, zoals fietsers, ruiters of voetgangers",
+      "signExplanation": "Bord F34b.1 is een wegwijzer die de aanbevolen reisweg toont voor bepaalde categorieën van weggebruikers, aangevuld met het symbool van bord C11, C15 of C19 en eventueel de afstand in km (art. 71.2 van de Wegcode)."
+    },
+    {
+      "id": "rec-f34b2",
+      "type": "recognize",
+      "category": "aanwijzing",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/F34b2.svg",
+      "options": [
+        "Wegwijzer: aanbevolen reisweg voor bepaalde categorieën van weggebruikers, zoals fietsers, ruiters of voetgangers",
+        "Bewegwijzeringsbord in de nabijheid van een openbare inrichting van algemeen belang",
+        "Verplichte rijrichting voor voertuigen die gevaarlijke goederen vervoeren",
+        "Toeristische wegwijzer naar een monument of recreatiepark"
+      ],
+      "correctIndex": 0,
+      "explanation": "Bord F34b.2 is de vereenvoudigde versie van F34b.1: de vermelding van de bestemming en de pijl zijn facultatief, maar de betekenis blijft dezelfde aanbevolen reisweg voor de aangeduide categorie weggebruikers (art. 71.2 van de Wegcode).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Wegwijzer: aanbevolen reisweg voor bepaalde categorieën van weggebruikers, zoals fietsers, ruiters of voetgangers",
+      "signExplanation": "Bord F34b.2 is de vereenvoudigde versie van F34b.1: de vermelding van de bestemming en de pijl zijn facultatief, maar de betekenis blijft dezelfde aanbevolen reisweg voor de aangeduide categorie weggebruikers (art. 71.2 van de Wegcode)."
+    },
+    {
+      "id": "rec-f34c1",
+      "type": "recognize",
+      "category": "aanwijzing",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/F34c1.svg",
+      "options": [
+        "Toeristische wegwijzer naar een monument, bezienswaardigheid of recreatiepark",
+        "Bewegwijzeringsbord op afstand naar een vallei of waterloop van toeristische aard",
+        "Wegwijzer: aanbevolen reisweg naar een toeristische bestemming voor bepaalde categorieën van weggebruikers",
+        "Verboden toegang voor fietsers, ruiters en voetgangers naar toeristische gebieden"
+      ],
+      "correctIndex": 2,
+      "explanation": "Bord F34c.1 wijst de aanbevolen reisweg naar een toeristische bestemming voor bepaalde categorieën van weggebruikers, aangevuld met het symbool van bord C11, C15 of C19 (art. 71.2 van de Wegcode).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Wegwijzer: aanbevolen reisweg naar een toeristische bestemming voor bepaalde categorieën van weggebruikers",
+      "signExplanation": "Bord F34c.1 wijst de aanbevolen reisweg naar een toeristische bestemming voor bepaalde categorieën van weggebruikers, aangevuld met het symbool van bord C11, C15 of C19 (art. 71.2 van de Wegcode)."
+    },
+    {
+      "id": "rec-f34c2",
+      "type": "recognize",
+      "category": "aanwijzing",
+      "question": "Wat betekent dit verkeersbord?",
+      "sign": "assets/signs/F34c2.svg",
+      "options": [
+        "Verplichte omleiding naar een toeristisch centrum",
+        "Wegwijzer: aanbevolen reisweg naar een toeristische bestemming voor bepaalde categorieën van weggebruikers",
+        "Waarschuwing voor een oversteekplaats voor fietsers",
+        "Aankondiging van een parking nabij een toeristische trekpleister"
+      ],
+      "correctIndex": 1,
+      "explanation": "Bord F34c.2 is de vereenvoudigde versie van F34c.1: de bestemming en de pijl zijn facultatief, maar het bord wijst nog steeds de aanbevolen reisweg naar een toeristische bestemming voor de aangeduide categorie weggebruikers (art. 71.2 van de Wegcode).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71",
+      "signTitle": "Wegwijzer: aanbevolen reisweg naar een toeristische bestemming voor bepaalde categorieën van weggebruikers",
+      "signExplanation": "Bord F34c.2 is de vereenvoudigde versie van F34c.1: de bestemming en de pijl zijn facultatief, maar het bord wijst nog steeds de aanbevolen reisweg naar een toeristische bestemming voor de aangeduide categorie weggebruikers (art. 71.2 van de Wegcode)."
+    },
+    {
       "id": "rec-f35",
       "type": "recognize",
       "category": "aanwijzing",

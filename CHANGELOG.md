@@ -14,6 +14,7 @@ A summarized overview of all changes, per version of this project.
 ---
 
 ## v3.7.1-pre
+- BackEnd: Vier ontbrekende wegwijzerborden F34b.1, F34b.2, F34c.1 en F34c.2 met vragen toegevoegd.
 - BackEnd: Bronlinks van 50 vragen rechtstreeks naar het juiste wetsartikel of paragraaf gekoppeld.
 - BackEnd: Bord E9i.svg gecorrigeerd van een rolstoelpictogram naar het correcte motorfietsparkeerbord.
 - DevEx: Verkeersbordbronnen in SOURCES.md herverifieerd tegen Wikimedia Commons via inhoudshash.
