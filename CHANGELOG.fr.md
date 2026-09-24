@@ -15,6 +15,7 @@ Un aperçu résumé de toutes les modifications, par version de ce projet.
 
 ## v3.7.1-pre
 - BackEnd: Liens sources de 50 questions liées directement au bon article ou paragraphe.
+- DevEx: Sources de panneaux routiers dans SOURCES.md revérifiées par rapport à Wikimedia Commons via un hachage de contenu.
 
 ## v3.7.0 [released: 2026-09-24]
 - FrontEnd: Liens d'assistance mis à jour dans l'écran À propos pour inclure les boutons directs Ko-fi et PayPal.Me.

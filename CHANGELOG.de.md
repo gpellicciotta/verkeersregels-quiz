@@ -15,6 +15,7 @@ Eine zusammenfassende Übersicht aller Änderungen pro Version dieses Projekts.
 
 ## v3.7.1-pre
 - BackEnd: Quelllinks von 50 Fragen, die direkt mit dem richtigen Artikel oder Absatz verknüpft sind.
+- DevEx: Verkehrszeichenquellen in SOURCES.md wurden über den Inhalts-Hash erneut mit Wikimedia Commons verifiziert.
 
 ## v3.7.0 [released: 2026-09-24]
 - FrontEnd: Aktualisierte Support-Links im Info-Bildschirm, um direkte Ko-Fi- und PayPal.Me-Schaltflächen einzuschließen.

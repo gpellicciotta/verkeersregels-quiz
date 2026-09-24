@@ -15,6 +15,7 @@ Una panoramica riepilogativa di tutte le modifiche, per versione di questo proge
 
 ## v3.7.1-pre
 - BackEnd: Collegamenti sorgente di 50 domande collegate direttamente all'articolo o al paragrafo corretto.
+- DevEx: Le fonti dei segnali stradali in SOURCES.md sono state nuovamente verificate rispetto a Wikimedia Commons tramite l'hash del contenuto.
 
 ## v3.7.0 [released: 2026-09-24]
 - FrontEnd: Collegamenti di supporto aggiornati nella schermata Informazioni per includere i pulsanti diretti Ko-fi e PayPal.Me.
