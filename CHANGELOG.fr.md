@@ -14,6 +14,7 @@ Un aperçu résumé de toutes les modifications, par version de ce projet.
 ---
 
 ## v3.8.0-pre
+- FrontEnd: Les icônes des panneaux pouvaient manquer à la première impression ; l'impression attend désormais leur chargement complet.
 - FrontEnd: Le document des panneaux affiche désormais le numéro d'article réel, saute de page par série, utilise un nom de fichier explicite et propose un bouton d'export PDF.
 - FrontEnd: Suppression d'une phrase redondante dans la carte "Sources utilisées & législation".
 - FrontEnd: Ajout d'un lien de paiement Stripe direct, en plus de Ko-fi et PayPal, dans l'écran À propos.

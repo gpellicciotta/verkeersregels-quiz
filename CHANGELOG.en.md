@@ -14,6 +14,7 @@ A summarized overview of all changes, per version of this project.
 ---
 
 ## v3.8.0-pre
+- FrontEnd: Sign icons could be missing on the first print attempt; printing now waits for every icon to finish loading.
 - FrontEnd: Sign printout now shows the real article number per row, breaks pages per series, uses a descriptive filename, and gained a PDF-export button.
 - FrontEnd: Removed a redundant hint sentence from the "Sources & legislation" card.
 - FrontEnd: Added a direct Stripe payment link alongside Ko-fi and PayPal in the About screen.

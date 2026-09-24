@@ -107,7 +107,7 @@ class TestSignsPrintDocument(unittest.TestCase):
         signs_doc_js = (JS_DIR / "signs-doc.js").read_text(encoding="utf-8")
         self.assertIn("export function buildSignCatalog", signs_doc_js)
         self.assertIn("export function renderSignsPrintDocument", signs_doc_js)
-        self.assertIn("export function printSignsDocument", signs_doc_js)
+        self.assertIn("export async function printSignsDocument", signs_doc_js)
 
     def test_print_css_scopes_to_printing_signs_doc_body_class(self) -> None:
         """Validates the print stylesheet only reveals the signs document while body.printing-signs-doc is set."""
@@ -128,6 +128,18 @@ class TestSignsPrintDocument(unittest.TestCase):
         self.assertIn("const originalTitle = document.title;", signs_doc_js)
         self.assertIn('document.title = t("signs_doc.print_filename"', signs_doc_js)
         self.assertIn("document.title = originalTitle;", signs_doc_js)
+
+    def test_print_waits_for_thumbnails_before_calling_window_print(self) -> None:
+        """Validates the print flow awaits every thumbnail's decode() before invoking window.print()."""
+        signs_doc_js = (JS_DIR / "signs-doc.js").read_text(encoding="utf-8")
+        self.assertIn("export async function printSignsDocument", signs_doc_js)
+        self.assertIn("function waitForSignThumbnails", signs_doc_js)
+        self.assertIn("img.decode()", signs_doc_js)
+        self.assertIn("await waitForSignThumbnails();", signs_doc_js)
+        # The wait must happen before window.print() is reached, not after.
+        wait_pos = signs_doc_js.index("await waitForSignThumbnails();")
+        print_pos = signs_doc_js.index("window.print();")
+        self.assertLess(wait_pos, print_pos, "thumbnails must be awaited before window.print() is called")
 
     def test_about_sources_card_no_longer_has_redundant_law_hint(self) -> None:
         """Validates the redundant law-article hint sentence was removed from the sources card."""

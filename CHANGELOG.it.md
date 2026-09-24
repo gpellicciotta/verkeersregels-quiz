@@ -14,6 +14,7 @@ Una panoramica riepilogativa di tutte le modifiche, per versione di questo proge
 ---
 
 ## v3.8.0-pre
+- FrontEnd: Le icone dei segnali potevano mancare alla prima stampa; la stampa ora attende il caricamento completo delle icone.
 - FrontEnd: L'elenco dei segnali mostra ora il numero di articolo reale per riga, interrompe la pagina per serie, usa un nome file descrittivo e ha un pulsante di esportazione PDF.
 - FrontEnd: Rimossa una frase ridondante dalla scheda "Fonti utilizzate e legislazione".
 - FrontEnd: Aggiunto un link di pagamento Stripe diretto accanto a Ko-fi e PayPal nella schermata Informazioni.

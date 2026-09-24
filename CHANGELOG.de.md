@@ -14,6 +14,7 @@ Eine zusammenfassende Übersicht aller Änderungen pro Version dieses Projekts.
 ---
 
 ## v3.8.0-pre
+- FrontEnd: Zeichensymbole fehlten manchmal beim ersten Drucken; das Drucken wartet nun, bis alle Symbole geladen sind.
 - FrontEnd: Die Verkehrszeichenliste zeigt nun die echte Artikelnummer pro Zeile, mit Seitenumbruch je Reihe, einem aussagekräftigen Dateinamen und einem PDF-Export-Button.
 - FrontEnd: Überflüssigen Hinweissatz aus der Karte "Verwendete Quellen & Gesetzgebung" entfernt.
 - FrontEnd: Direkten Stripe-Zahlungslink neben Ko-fi und PayPal im Info-Bildschirm hinzugefügt.

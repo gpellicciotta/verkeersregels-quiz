@@ -51,15 +51,22 @@ const screenshotPrefix = process.env.QUIZ_SCREENSHOT_PREFIX || "T0083";
     await snap("view-after");
 
     // Stub window.print so the test does not block on a real OS print dialog.
-    let printCalled = false;
-    await page.exposeFunction("__markPrintCalled", () => { printCalled = true; });
-    await page.evaluate(() => { window.print = () => window.__markPrintCalled(); });
+    await page.evaluate(() => { window.__printCalled = false; window.print = () => { window.__printCalled = true; }; });
 
     await page.locator("#btn-print-signs").click();
     await page.waitForFunction(() => document.querySelectorAll("#print-signs-document tr").length > 0);
+    // printSignsDocument() awaits every thumbnail's decode() before calling window.print(),
+    // so wait for the print-mode class (added just before the call) rather than asserting immediately.
+    await page.waitForFunction(() => document.body.classList.contains("printing-signs-doc"));
 
-    assert.equal(printCalled, true, "window.print() must be invoked");
-    assert.equal(await page.evaluate(() => document.body.classList.contains("printing-signs-doc")), true, "body must carry the print-mode class while printing");
+    assert.equal(await page.evaluate(() => window.__printCalled), true, "window.print() must be invoked");
+
+    // Regression check for the "icons missing on first print" bug: every thumbnail must have
+    // finished loading (successfully or not) by the time the print dialog is triggered.
+    const incompleteThumbnails = await page.evaluate(
+      () => [...document.querySelectorAll("#print-signs-document .signs-doc-thumb")].filter((img) => !img.complete).length
+    );
+    assert.equal(incompleteThumbnails, 0, "every sign thumbnail must finish loading before window.print() is called");
 
     // Every sign in the question bank with a `sign` field must appear exactly once.
     const expectedSignCount = await page.evaluate(async () => {
@@ -105,11 +112,11 @@ const screenshotPrefix = process.env.QUIZ_SCREENSHOT_PREFIX || "T0083";
     assert.equal(await page.evaluate(() => document.title), originalTitle, "document title must be restored after printing");
 
     // The "Exporteren als PDF" button reuses the same print flow.
-    printCalled = false;
+    await page.evaluate(() => { window.__printCalled = false; });
     await page.locator("#btn-export-signs-pdf").waitFor({ state: "visible" });
     await page.locator("#btn-export-signs-pdf").click();
     await page.waitForFunction(() => document.body.classList.contains("printing-signs-doc"));
-    assert.equal(printCalled, true, "the PDF export button must also invoke window.print()");
+    assert.equal(await page.evaluate(() => window.__printCalled), true, "the PDF export button must also invoke window.print()");
     await page.evaluate(() => window.dispatchEvent(new Event("afterprint")));
     await page.waitForFunction(() => !document.body.classList.contains("printing-signs-doc"));
 

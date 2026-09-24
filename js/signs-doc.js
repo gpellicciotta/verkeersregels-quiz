@@ -169,6 +169,21 @@ export function renderSignsPrintDocument() {
 }
 
 /**
+ * Wait for every sign thumbnail in the print document to finish loading.
+ *
+ * The document is freshly (re)built with new `<img>` elements right before printing;
+ * without this, the very first print can capture the page before those SVGs have
+ * been fetched and decoded, leaving blank thumbnails. A failed image is tolerated
+ * so one broken sign never blocks the rest of the document from printing.
+ *
+ * @returns {Promise<void>} Resolves once every thumbnail has loaded or failed.
+ */
+function waitForSignThumbnails() {
+  const images = el.printSignsDocument ? [...el.printSignsDocument.querySelectorAll("img")] : [];
+  return Promise.all(images.map((img) => img.decode().catch(() => {})));
+}
+
+/**
  * Render the printable signs document and trigger the browser print dialog for it.
  *
  * Toggles a body class so print CSS can hide the rest of the app and show only this
@@ -176,11 +191,13 @@ export function renderSignsPrintDocument() {
  * is temporarily replaced so browsers suggest a descriptive filename when the print
  * dialog is used to save as PDF.
  *
- * @returns {void}
+ * @returns {Promise<void>} Resolves once the print dialog has been triggered.
  */
-export function printSignsDocument() {
+export async function printSignsDocument() {
   const count = renderSignsPrintDocument();
   if (count === 0) return;
+
+  await waitForSignThumbnails();
 
   const originalTitle = document.title;
   document.title = t("signs_doc.print_filename", { title: t("signs_doc.title") });
