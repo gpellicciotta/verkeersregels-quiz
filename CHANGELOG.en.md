@@ -13,13 +13,19 @@ A summarized overview of all changes, per version of this project.
 
 ---
 
-## v3.8.0-pre
-- FrontEnd: Sign icons could be missing on the first print attempt; printing now waits for every icon to finish loading.
-- FrontEnd: Sign printout now shows the real article number per row, breaks pages per series, and uses a descriptive filename.
-- FrontEnd: Removed a redundant hint sentence from the "Sources & legislation" card.
-- FrontEnd: Added a direct Stripe payment link alongside Ko-fi and PayPal in the About screen.
-- BackEnd: Source links of 50 questions linked directly to the correct article or paragraph.
+## v3.8.0 [released: 2026-09-24]
+- FrontEnd: Board icons were sometimes missing on first print; printing now waits for all icons to load.
+- FrontEnd: Traffic sign overview now shows the real law article per sign, with page transition per series and a recognizable file name.
+- FrontEnd: Redundant sentence about the explanation icon removed from the "Sources & legislation used" card.
+- FrontEnd: Added Direct Stripe payment link next to Ko-fi and PayPal in the About screen.
+- FrontEnd: Added a button in the About screen to print all Belgian road signs, grouped and sorted as on wegcode.be.
+- BackEnd: 10 new exam questions added outside signs and traffic situations (breakdown, following distance, driver's licenses, drugs, cargo, helmets).
+- BackEnd: Added 15 new situation questions (`sit-41` to `sit-55`) with real photos from Wikimedia Commons.
+- BackEnd: Four missing signposts F34b.1, F34b.2, F34c.1 and F34c.2 with questions added.
+- BackEnd: Source links of 50 questions linked directly to the correct article or paragraph of law.
+- BackEnd: Corrected sign E9i.svg from a wheelchair icon to the correct motorcycle parking sign.
 - DevEx: Road sign sources in SOURCES.md reverified against Wikimedia Commons via content hash.
+- DevEx: Added check-sign-semantics.py script that detects mislabeled Commons source files.
 
 ## v3.7.0 [released: 2026-09-24]
 - FrontEnd: Updated support links in the About screen to include direct Ko-fi and PayPal.Me buttons.

@@ -13,13 +13,19 @@ Un aperçu résumé de toutes les modifications, par version de ce projet.
 
 ---
 
-## v3.8.0-pre
-- FrontEnd: Les icônes des panneaux pouvaient manquer à la première impression ; l'impression attend désormais leur chargement complet.
-- FrontEnd: Le document des panneaux affiche désormais le numéro d'article réel, saute de page par série et utilise un nom de fichier explicite.
-- FrontEnd: Suppression d'une phrase redondante dans la carte "Sources utilisées & législation".
-- FrontEnd: Ajout d'un lien de paiement Stripe direct, en plus de Ko-fi et PayPal, dans l'écran À propos.
-- BackEnd: Liens sources de 50 questions liées directement au bon article ou paragraphe.
+## v3.8.0 [released: 2026-09-24]
+- FrontEnd: Les icônes du tableau manquaient parfois lors de la première impression ; l'impression attend maintenant que toutes les icônes soient chargées.
+- FrontEnd: L'aperçu des panneaux de signalisation affiche désormais le véritable article de loi par panneau, avec une transition de page par série et un nom de fichier reconnaissable.
+- FrontEnd: Phrase redondante concernant l'icône d'explication supprimée de la fiche "Sources et législation utilisée".
+- FrontEnd: Ajout d'un lien de paiement Direct Stripe à côté de Ko-fi et PayPal dans l'écran À propos.
+- FrontEnd: Ajout d'un bouton dans l'écran À propos pour imprimer tous les panneaux routiers belges, regroupés et triés comme sur wegcode.be.
+- BackEnd: 10 nouvelles questions d'examen ajoutées en dehors des panneaux de signalisation et des situations de circulation (panne, distance de suivi, permis de conduire, drogues, chargement, casques).
+- BackEnd: Ajout de 15 nouvelles questions de situation (`sit-41` à `sit-55`) avec de vraies photos de Wikimedia Commons.
+- BackEnd: Quatre panneaux manquants F34b.1, F34b.2, F34c.1 et F34c.2 avec des questions ajoutées.
+- BackEnd: Liens sources de 50 questions liées directement au bon article ou paragraphe de loi.
+- BackEnd: Correction du panneau E9i.svg d'une icône de fauteuil roulant au bon panneau de stationnement pour motos.
 - DevEx: Sources de panneaux routiers dans SOURCES.md revérifiées par rapport à Wikimedia Commons via un hachage de contenu.
+- DevEx: Ajout du script check-sign-semantics.py qui détecte les fichiers source Commons mal étiquetés.
 
 ## v3.7.0 [released: 2026-09-24]
 - FrontEnd: Liens d'assistance mis à jour dans l'écran À propos pour inclure les boutons directs Ko-fi et PayPal.Me.

@@ -13,13 +13,19 @@ Una panoramica riepilogativa di tutte le modifiche, per versione di questo proge
 
 ---
 
-## v3.8.0-pre
-- FrontEnd: Le icone dei segnali potevano mancare alla prima stampa; la stampa ora attende il caricamento completo delle icone.
-- FrontEnd: L'elenco dei segnali mostra ora il numero di articolo reale per riga, interrompe la pagina per serie e usa un nome file descrittivo.
-- FrontEnd: Rimossa una frase ridondante dalla scheda "Fonti utilizzate e legislazione".
-- FrontEnd: Aggiunto un link di pagamento Stripe diretto accanto a Ko-fi e PayPal nella schermata Informazioni.
-- BackEnd: Collegamenti sorgente di 50 domande collegate direttamente all'articolo o al paragrafo corretto.
+## v3.8.0 [released: 2026-09-24]
+- FrontEnd: Le icone della scheda a volte mancavano nella prima stampa; la stampa ora attende il caricamento di tutte le icone.
+- FrontEnd: La panoramica dei segnali stradali ora mostra l'articolo di legge reale per segnale, con transizione di pagina per serie e un nome di file riconoscibile.
+- FrontEnd: Frase ridondante relativa all'icona spiegazione rimossa dalla scheda "Fonti e legislazione utilizzate".
+- FrontEnd: Aggiunto il collegamento per il pagamento Direct Stripe accanto a Ko-fi e PayPal nella schermata Informazioni.
+- FrontEnd: Aggiunto un pulsante nella schermata Informazioni per stampare tutti i segnali stradali belgi, raggruppati e ordinati come su wegcode.be.
+- BackEnd: Aggiunte 10 nuove domande d'esame sulla segnaletica esterna e sulle situazioni di traffico (panne, distanza percorsa, patenti, farmaci, carico, caschi).
+- BackEnd: Aggiunte 15 nuove domande sulla situazione (da `sit-41` a `sit-55`) con foto reali da Wikimedia Commons.
+- BackEnd: Quattro segnali mancanti F34b.1, F34b.2, F34c.1 e F34c.2 con domande aggiunte.
+- BackEnd: Collegamenti sorgente di 50 domande collegate direttamente all'articolo o al paragrafo della legge corretto.
+- BackEnd: Segnale E9i.svg corretto dall'icona di una sedia a rotelle al segnale di parcheggio per moto corretto.
 - DevEx: Le fonti dei segnali stradali in SOURCES.md sono state nuovamente verificate rispetto a Wikimedia Commons tramite l'hash del contenuto.
+- DevEx: Aggiunto lo script check-sign-semantics.py che rileva i file sorgente Commons etichettati erroneamente.
 
 ## v3.7.0 [released: 2026-09-24]
 - FrontEnd: Collegamenti di supporto aggiornati nella schermata Informazioni per includere i pulsanti diretti Ko-fi e PayPal.Me.

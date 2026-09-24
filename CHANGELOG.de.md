@@ -13,13 +13,19 @@ Eine zusammenfassende Übersicht aller Änderungen pro Version dieses Projekts.
 
 ---
 
-## v3.8.0-pre
-- FrontEnd: Zeichensymbole fehlten manchmal beim ersten Drucken; das Drucken wartet nun, bis alle Symbole geladen sind.
-- FrontEnd: Die Verkehrszeichenliste zeigt nun die echte Artikelnummer pro Zeile, mit Seitenumbruch je Reihe und einem aussagekräftigen Dateinamen.
-- FrontEnd: Überflüssigen Hinweissatz aus der Karte "Verwendete Quellen & Gesetzgebung" entfernt.
-- FrontEnd: Direkten Stripe-Zahlungslink neben Ko-fi und PayPal im Info-Bildschirm hinzugefügt.
-- BackEnd: Quelllinks von 50 Fragen, die direkt mit dem richtigen Artikel oder Absatz verknüpft sind.
-- DevEx: Verkehrszeichenquellen in SOURCES.md wurden über den Inhalts-Hash erneut mit Wikimedia Commons verifiziert.
+## v3.8.0 [released: 2026-09-24]
+- FrontEnd: Board-Symbole fehlten manchmal beim ersten Druck; Beim Drucken wird nun darauf gewartet, dass alle Symbole geladen werden.
+- FrontEnd: Die Verkehrszeichenübersicht zeigt jetzt den echten Gesetzesartikel pro Zeichen, mit Seitenübergängen pro Serie und einem erkennbaren Dateinamen.
+- FrontEnd: Überflüssiger Satz zum Erklärungssymbol aus der Karte „Verwendete Quellen und Gesetzgebung“ entfernt.
+- FrontEnd: Direct Stripe-Zahlungslink neben Ko-fi und PayPal im Info-Bildschirm hinzugefügt.
+- FrontEnd: Im Info-Bildschirm wurde eine Schaltfläche hinzugefügt, um alle belgischen Verkehrszeichen zu drucken, gruppiert und sortiert wie auf wegcode.be.
+- BackEnd: 10 neue Prüfungsfragen hinzugefügt, Außenschilder und Verkehrssituationen (Pannen, Abstand, Führerscheine, Drogen, Fracht, Helme).
+- BackEnd: 15 neue Situationsfragen (`sit-41` bis `sit-55`) mit echten Fotos von Wikimedia Commons hinzugefügt.
+- BackEnd: Vier fehlende Wegweiser F34b.1, F34b.2, F34c.1 und F34c.2 mit hinzugefügten Fragen.
+- BackEnd: Quelllinks von 50 Fragen, die direkt auf den richtigen Artikel oder Paragraphen des Gesetzes verweisen.
+- BackEnd: Korrigiertes Schild E9i.svg von einem Rollstuhlsymbol zum richtigen Motorradparkschild.
+- DevEx: Verkehrszeichenquellen in SOURCES.md wurden per Inhalts-Hash gegenüber Wikimedia Commons erneut verifiziert.
+- DevEx: Skript check-sign-semantics.py hinzugefügt, das falsch beschriftete Commons-Quelldateien erkennt.
 
 ## v3.7.0 [released: 2026-09-24]
 - FrontEnd: Aktualisierte Support-Links im Info-Bildschirm, um direkte Ko-Fi- und PayPal.Me-Schaltflächen einzuschließen.
@@ -71,7 +77,7 @@ Eine zusammenfassende Übersicht aller Änderungen pro Version dieses Projekts.
 - FrontEnd: Englische Übersetzung und Sprachumschaltung für die Benutzeroberfläche, Konfigurationsdialoge und alle 324 Fragen hinzugefügt.
 - FrontEnd: Den Spaltenüberschriften in der Ergebnistabelle wurden „Scope“-Attribute hinzugefügt, um die Barrierefreiheit für Bildschirmleser zu gewährleisten.
 - DevEx: Die JavaScript-Architektur ist in separate ES-Module modularisiert und trennt Anwendungsstatus, Speicher und UI-Präsentationslogik.
-- FrontEnd: Automatische Aktualisierungen des Service-Worker-Lebenszyklus und Neuladen des Clients bei der Einführung neuer Versionen aktiviert.
+- FrontEnd: Aktivierte automatische Aktualisierungen des Service-Worker-Lebenszyklus und Neuladen des Clients bei der Einführung neuer Versionen.
 - FrontEnd: Behalten Sie den Einführungstext auf dem Startbildschirm bei, wenn Sie den Quizmodus wechseln oder Konfigurationen ändern.
 - FrontEnd: Dunkles Design und konfigurierbare Farbakzente hinzugefügt, einschließlich Systempräferenzerkennung und Unterstützung für Abfrageparameter.
 - FrontEnd: Unterstützung für Abfrageparameter für Spielernamen (einschließlich Aliase) hinzugefügt, um das Eingabefeld auf dem Startbildschirm zu umgehen.
