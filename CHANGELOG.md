@@ -15,7 +15,9 @@ A summarized overview of all changes, per version of this project.
 
 ## v3.7.1-pre
 - BackEnd: Bronlinks van 50 vragen rechtstreeks naar het juiste wetsartikel of paragraaf gekoppeld.
+- BackEnd: Bord E9i.svg gecorrigeerd van een rolstoelpictogram naar het correcte motorfietsparkeerbord.
 - DevEx: Verkeersbordbronnen in SOURCES.md herverifieerd tegen Wikimedia Commons via inhoudshash.
+- DevEx: Script check-sign-semantics.py toegevoegd dat foutief gelabelde Commons-bronbestanden opspoort.
 
 ## v3.7.0 [released: 2026-09-24]
 - FrontEnd: Ondersteuningslinks in het Over-scherm bijgewerkt met directe Ko-fi- en PayPal.Me-knoppen.

@@ -167,7 +167,7 @@ License: all files are public domain under Belgian law, because official traffic
 | E9f.svg | Verplicht parkeren deels op de berm of op het trottoir | [File:Belgian road sign E9f.svg](https://commons.wikimedia.org/wiki/File:Belgian_road_sign_E9f.svg) |
 | E9g.svg | Verplicht parkeren op de rijbaan | [File:Belgian road sign E9g.svg](https://commons.wikimedia.org/wiki/File:Belgian_road_sign_E9g.svg) |
 | E9h.svg | Parkeren uitsluitend voor kampeerauto's | [File:Belgian road sign E9h.svg](https://commons.wikimedia.org/wiki/File:Belgian_road_sign_E9h.svg) |
-| E9i.svg | Parkeren uitsluitend voor motorfietsen | [File:Belgian road sign E9i.svg](https://commons.wikimedia.org/wiki/File:Belgian_road_sign_E9i.svg) |
+| E9i.svg | Parkeren uitsluitend voor motorfietsen | [File:Belgian traffic sign E9i.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_E9i.svg) |
 | E9j.svg | Wisselend parkeren met voorbehouden parkeertijd per categorie van voertuigen | [File:Belgian road sign E9j.svg](https://commons.wikimedia.org/wiki/File:Belgian_road_sign_E9j.svg) |
 | E11.svg | Halfmaandelijks parkeren in gans de bebouwde kom | [File:Belgian road sign E11.svg](https://commons.wikimedia.org/wiki/File:Belgian_road_sign_E11.svg) |
 | F1a.svg | Begin van een bebouwde kom | [File:Belgian traffic sign F1a horizontaal.svg](https://commons.wikimedia.org/wiki/File:Belgian_traffic_sign_F1a_horizontaal.svg) |
@@ -270,6 +270,18 @@ Cross-reference used to confirm which code matches which meaning and shape: the 
 - Everything else in the bank was verified against a live, fetched source (either the Wikimedia Commons file/category pages for sign meanings, or one of the 16 rule sources above) and is not flagged for further review.
 
 ## Correction log
+
+- 2026-09-24: task T0084 found that `E9i.svg` was downloaded from Commons file
+  "Belgian road sign E9i.svg", which is itself mislabeled upstream: its own Commons
+  categories are "Diagrams of disability additional road signs" and it renders as a
+  wheelchair pictogram, not the "P + motorcycle" board required by art. 70.2.1 for
+  motorcycle-only parking. Replaced with the byte-identical content of the correctly
+  categorized "Belgian traffic sign E9i.svg" ("Diagrams of motorcycle parking road
+  signs"). Same failure class as the 2026-09-18 `C31.svg`/`D10.svg` entry below. Added
+  `scripts/check-sign-semantics.py`, which cross-checks every local sign's matched
+  Commons file categories against its local meaning text by keyword and would have
+  flagged this one; ran it against all 193 signs (see the task file's Validation
+  Record for the full triage of every flag it raised).
 
 - 2026-09-24: regenerated the Sign images table for task T0080, since it had only ever documented the
   first 35 signs and silently went stale as sign coverage grew to 193. `scripts/generate-sign-sources.py`
