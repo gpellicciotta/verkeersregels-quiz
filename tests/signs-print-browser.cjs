@@ -31,6 +31,7 @@ const screenshotPrefix = process.env.QUIZ_SCREENSHOT_PREFIX || "T0083";
     const response = await page.goto(`${url}?lang=nl`);
     assert.equal(response.status(), 200);
     await page.waitForFunction(async () => (await import("./js/state.js")).state.pool.length > 0);
+    const originalTitle = await page.title();
 
     await page.locator("#btn-about").click();
     await page.locator("#screen-about").waitFor({ state: "visible" });
@@ -77,11 +78,20 @@ const screenshotPrefix = process.env.QUIZ_SCREENSHOT_PREFIX || "T0083";
     const codesA = await page.locator(".signs-doc-table").first().locator("tbody tr td.signs-doc-col-code").allTextContents();
     assert.deepEqual(codesA.slice(0, 4), ["A1a", "A1b", "A1c", "A1d"], "series A must start A1a, A1b, A1c, A1d");
 
-    // Every row must link to wegcode.be.
-    const sourceHosts = await page.evaluate(() =>
-      [...document.querySelectorAll("#print-signs-document .signs-doc-col-source a")].map((a) => new URL(a.href).host)
+    // Every row must link to wegcode.be, showing the article number as its text.
+    const sourceLinks = await page.evaluate(() =>
+      [...document.querySelectorAll("#print-signs-document .signs-doc-col-source a")].map((a) => ({
+        host: new URL(a.href).host,
+        text: a.textContent.trim(),
+      }))
     );
-    assert.ok(sourceHosts.length > 0 && sourceHosts.every((h) => h === "www.wegcode.be"), "every row must link to wegcode.be");
+    assert.ok(sourceLinks.length > 0 && sourceLinks.every((l) => l.host === "www.wegcode.be"), "every row must link to wegcode.be");
+    assert.ok(sourceLinks.every((l) => /^Artikel \d+/.test(l.text)), "every source link must show its article number");
+
+    // The document title is temporarily replaced so a print-to-PDF suggests a descriptive filename.
+    const printingTitle = await page.evaluate(() => document.title);
+    assert.notEqual(printingTitle, originalTitle, "document title must change while the signs document is printing");
+    assert.match(printingTitle, /VerkeersQuiz/, "printing title must use the app's short brand name");
 
     // Emulate print media so the screenshot shows the actual printed layout
     // (the document stays display:none under normal screen media).
@@ -89,7 +99,17 @@ const screenshotPrefix = process.env.QUIZ_SCREENSHOT_PREFIX || "T0083";
     await snap("printing");
     await page.emulateMedia({ media: "screen" });
 
-    // afterprint cleans the body class back up.
+    // afterprint cleans the body class and the document title back up.
+    await page.evaluate(() => window.dispatchEvent(new Event("afterprint")));
+    await page.waitForFunction(() => !document.body.classList.contains("printing-signs-doc"));
+    assert.equal(await page.evaluate(() => document.title), originalTitle, "document title must be restored after printing");
+
+    // The "Exporteren als PDF" button reuses the same print flow.
+    printCalled = false;
+    await page.locator("#btn-export-signs-pdf").waitFor({ state: "visible" });
+    await page.locator("#btn-export-signs-pdf").click();
+    await page.waitForFunction(() => document.body.classList.contains("printing-signs-doc"));
+    assert.equal(printCalled, true, "the PDF export button must also invoke window.print()");
     await page.evaluate(() => window.dispatchEvent(new Event("afterprint")));
     await page.waitForFunction(() => !document.body.classList.contains("printing-signs-doc"));
 

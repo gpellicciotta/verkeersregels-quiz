@@ -23,13 +23,24 @@ function parseSignCode(code) {
 }
 
 /**
+ * Extract the Wegcode article number from a source URL's `#art-NN` fragment.
+ *
+ * @param {string} source - Source URL, such as one ending in "#art-66".
+ * @returns {string|null} The article number as a string, or null when absent.
+ */
+function extractArticleNumber(source) {
+  const match = source.match(/#art-(\d+)/);
+  return match ? match[1] : null;
+}
+
+/**
  * Build the deduplicated, wegcode.be-ordered catalog of every road sign in the question bank.
  *
  * Each sign can back several quiz questions (recognize, identify, rule); the "recognize"
  * question is preferred as the representative since it always carries the sign's own
  * Wegcode article source, unlike a handful of "rule" questions that cite an unrelated page.
  *
- * @returns {Array<{sign: string, code: string, title: string, explanation: string, source: string}>}
+ * @returns {Array<{sign: string, code: string, title: string, explanation: string, source: string, articleNumber: string|null}>}
  *          Signs sorted by Wegcode series (A-F) then by ascending code.
  */
 export function buildSignCatalog() {
@@ -46,13 +57,15 @@ export function buildSignCatalog() {
   const items = [...bySign.values()].map((q) => {
     const tq = applyTranslation(q);
     const code = getSignCode(q.sign);
+    const source = localizeSourceUrl(q.source, lang);
     return {
       sign: q.sign,
       code,
       ...parseSignCode(code),
       title: tq.signTitle || tq.explanation,
       explanation: tq.signExplanation || tq.explanation,
-      source: localizeSourceUrl(q.source, lang),
+      source,
+      articleNumber: extractArticleNumber(source),
     };
   });
 
@@ -99,7 +112,9 @@ function renderSeriesSection(prefix, items) {
             <strong>${escapeHtml(item.title)}</strong>
             <span class="signs-doc-explanation">${escapeHtml(item.explanation)}</span>
           </td>
-          <td class="signs-doc-col-source"><a href="${escapeHtml(item.source)}" target="_blank" rel="noopener noreferrer">${escapeHtml(t("signs_doc.source_link"))}</a></td>
+          <td class="signs-doc-col-source"><a href="${escapeHtml(item.source)}" target="_blank" rel="noopener noreferrer">${escapeHtml(
+            item.articleNumber ? t("signs_doc.article_label", { number: item.articleNumber }) : t("signs_doc.source_link")
+          )}</a></td>
         </tr>`
     )
     .join("");
@@ -157,7 +172,9 @@ export function renderSignsPrintDocument() {
  * Render the printable signs document and trigger the browser print dialog for it.
  *
  * Toggles a body class so print CSS can hide the rest of the app and show only this
- * document, then removes the class again once the print flow ends.
+ * document, then removes the class again once the print flow ends. The document title
+ * is temporarily replaced so browsers suggest a descriptive filename when the print
+ * dialog is used to save as PDF.
  *
  * @returns {void}
  */
@@ -165,14 +182,18 @@ export function printSignsDocument() {
   const count = renderSignsPrintDocument();
   if (count === 0) return;
 
+  const originalTitle = document.title;
+  document.title = t("signs_doc.print_filename", { title: t("signs_doc.title") });
   document.body.classList.add("printing-signs-doc");
   /**
-   * Remove the print-mode body class once the browser's print flow has finished.
+   * Restore the document title and remove the print-mode body class once the
+   * browser's print flow has finished.
    *
    * @returns {void}
    */
   const cleanup = () => {
     document.body.classList.remove("printing-signs-doc");
+    document.title = originalTitle;
     window.removeEventListener("afterprint", cleanup);
   };
   window.addEventListener("afterprint", cleanup);

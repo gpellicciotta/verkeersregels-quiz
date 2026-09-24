@@ -18,6 +18,7 @@ SERIES_ORDER = ["A", "B", "C", "D", "E", "F"]
 
 NEW_KEYS = [
     "about.print_signs_btn",
+    "about.export_signs_pdf_btn",
     "signs_doc.title",
     "signs_doc.intro",
     "signs_doc.col_sign",
@@ -25,6 +26,8 @@ NEW_KEYS = [
     "signs_doc.col_description",
     "signs_doc.col_source",
     "signs_doc.source_link",
+    "signs_doc.article_label",
+    "signs_doc.print_filename",
     "signs_doc.series.A",
     "signs_doc.series.B",
     "signs_doc.series.C",
@@ -85,15 +88,19 @@ class TestSignsPrintDocument(unittest.TestCase):
     def test_button_and_document_markup_exist(self) -> None:
         """Validates index.html defines the print button and the hidden print-only document."""
         self.assertIn('id="btn-print-signs"', self.html)
+        self.assertIn('id="btn-export-signs-pdf"', self.html)
         self.assertIn('id="print-signs-document"', self.html)
         self.assertIn('data-icon="print"', self.html[self.html.index('id="btn-print-signs"'):self.html.index('id="btn-print-signs"') + 400])
+        self.assertIn('data-icon="download"', self.html[self.html.index('id="btn-export-signs-pdf"'):self.html.index('id="btn-export-signs-pdf"') + 400])
 
     def test_dom_and_app_wiring(self) -> None:
-        """Validates dom.js caches the new elements and app.js wires the click handler."""
+        """Validates dom.js caches the new elements and app.js wires the click handlers."""
         self.assertIn('btnPrintSigns: document.getElementById("btn-print-signs")', self.dom_js)
+        self.assertIn('btnExportSignsPdf: document.getElementById("btn-export-signs-pdf")', self.dom_js)
         self.assertIn('printSignsDocument: document.getElementById("print-signs-document")', self.dom_js)
         self.assertIn('from "./signs-doc.js"', self.app_js)
         self.assertIn("el.btnPrintSigns.addEventListener", self.app_js)
+        self.assertIn("el.btnExportSignsPdf.addEventListener", self.app_js)
 
     def test_signs_doc_module_exports(self) -> None:
         """Validates js/signs-doc.js exports the catalog builder and print entry point."""
@@ -107,6 +114,26 @@ class TestSignsPrintDocument(unittest.TestCase):
         self.assertIn(".print-signs-document {", self.css)
         self.assertIn("body.printing-signs-doc #print-signs-document", self.css)
         self.assertIn("body.printing-signs-doc #app > *:not(#print-signs-document)", self.css)
+
+    def test_print_css_breaks_page_before_each_series_except_the_first(self) -> None:
+        """Validates each Wegcode series after the first starts on a new printed page."""
+        self.assertIn(".signs-doc-series-title:not(:first-of-type)", self.css)
+        block = self.css[self.css.index(".signs-doc-series-title:not(:first-of-type)"):]
+        block = block[: block.index("}") + 1]
+        self.assertIn("page-break-before: always", block)
+
+    def test_print_sets_and_restores_document_title(self) -> None:
+        """Validates printSignsDocument sets a descriptive document title and restores it afterward."""
+        signs_doc_js = (JS_DIR / "signs-doc.js").read_text(encoding="utf-8")
+        self.assertIn("const originalTitle = document.title;", signs_doc_js)
+        self.assertIn('document.title = t("signs_doc.print_filename"', signs_doc_js)
+        self.assertIn("document.title = originalTitle;", signs_doc_js)
+
+    def test_about_sources_card_no_longer_has_redundant_law_hint(self) -> None:
+        """Validates the redundant law-article hint sentence was removed from the sources card."""
+        self.assertNotIn("about.law_hint", self.html)
+        for lang in STRINGS_LANGS:
+            self.assertNotIn("about.law_hint", self.strings[lang])
 
     def test_i18n_keys_present_and_non_empty_in_every_language(self) -> None:
         """Validates every new i18n key exists with non-empty text in all 5 supported languages."""
@@ -139,6 +166,13 @@ class TestSignsPrintDocument(unittest.TestCase):
         for prefix, series_items in by_series.items():
             nums_and_suffixes = [(i["num"], i["suffix"]) for i in series_items]
             self.assertEqual(nums_and_suffixes, sorted(nums_and_suffixes), f"series {prefix} not sorted ascending")
+
+    def test_source_column_renders_article_number_as_link_text(self) -> None:
+        """Validates the source cell shows the article number, derived from the source URL, as link text."""
+        signs_doc_js = (JS_DIR / "signs-doc.js").read_text(encoding="utf-8")
+        self.assertIn("function extractArticleNumber", signs_doc_js)
+        self.assertIn("articleNumber: extractArticleNumber(source)", signs_doc_js)
+        self.assertIn('t("signs_doc.article_label", { number: item.articleNumber })', signs_doc_js)
 
     def test_sign_catalog_sources_are_wegcode_article_links(self) -> None:
         """Validates every catalog entry's source URL points at a wegcode.be Wegcode article anchor."""

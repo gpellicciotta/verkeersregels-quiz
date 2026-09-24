@@ -1115,14 +1115,6 @@ body.suppress-tooltips [data-tooltip]::before {
   letter-spacing: 0.02em;
 }
 
-.start-legal-hint {
-  font-size: var(--font-size-xs);
-  color: var(--color-muted);
-  margin: 10px 0 0;
-  line-height: 1.45;
-  text-align: center;
-}
-
 /* ==========================================================================
    6. Quiz Screen (#screen-quiz)
    ========================================================================== */
@@ -2373,13 +2365,19 @@ body.suppress-tooltips [data-tooltip]::before {
   opacity: 0.7;
 }
 
+.about-signs-print-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 14px;
+}
+
 .about-signs-print-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  width: 100%;
-  margin-top: 14px;
+  flex: 1 1 200px;
   padding: 9px 14px;
   background: var(--color-card);
   border: 1px solid var(--color-card-border);
@@ -3754,6 +3752,11 @@ dialog.modal-dialog:not([open]) {
     margin: 20px 0 8px 0;
     break-after: avoid;
     page-break-after: avoid;
+  }
+
+  .signs-doc-series-title:not(:first-of-type) {
+    break-before: page;
+    page-break-before: always;
   }
 
   .signs-doc-table {

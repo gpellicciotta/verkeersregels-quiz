@@ -14,6 +14,8 @@ A summarized overview of all changes, per version of this project.
 ---
 
 ## v3.8.0-pre
+- FrontEnd: Verkeersbordenoverzicht toont nu het echte wetsartikel per bord, met paginaovergang per reeks, een herkenbare bestandsnaam en een "Exporteren als PDF"-knop.
+- FrontEnd: Overbodige zin over het toelichtingsicoon verwijderd uit de kaart "Gebruikte bronnen & wetgeving".
 - FrontEnd: Directe Stripe-betaallink toegevoegd naast Ko-fi en PayPal in het Over-scherm.
 - FrontEnd: Knop toegevoegd in het Over-scherm om alle Belgische verkeersborden af te drukken, gegroepeerd en gesorteerd zoals op wegcode.be.
 - BackEnd: 10 nieuwe examenvragen toegevoegd buiten borden en verkeerssituaties (pech, volgafstand, rijbewijzen, drugs, lading, helmen).

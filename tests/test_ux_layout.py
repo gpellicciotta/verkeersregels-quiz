@@ -29,7 +29,6 @@ class TestUXLayout(unittest.TestCase):
         self.assertIn('class="quiz-feedback-wrap"', html, "index.html must define quiz-feedback-wrap")
         self.assertIn('class="btn-next-text"', html, "btn-next must contain btn-next-text span")
         self.assertIn('class="next-icon"', html, "btn-next must include svg next-icon")
-        self.assertIn('class="start-legal-hint"', html, "index.html must include start-legal-hint")
 
     def test_css_contains_responsive_two_panel_and_fab_rules(self) -> None:
         """Validates that style.css defines two-column grid, mobile FAB, and option-hidden styles."""

@@ -14,6 +14,8 @@ Un aperçu résumé de toutes les modifications, par version de ce projet.
 ---
 
 ## v3.8.0-pre
+- FrontEnd: Le document des panneaux affiche désormais le numéro d'article réel, saute de page par série, utilise un nom de fichier explicite et propose un bouton d'export PDF.
+- FrontEnd: Suppression d'une phrase redondante dans la carte "Sources utilisées & législation".
 - FrontEnd: Ajout d'un lien de paiement Stripe direct, en plus de Ko-fi et PayPal, dans l'écran À propos.
 - BackEnd: Liens sources de 50 questions liées directement au bon article ou paragraphe.
 - DevEx: Sources de panneaux routiers dans SOURCES.md revérifiées par rapport à Wikimedia Commons via un hachage de contenu.

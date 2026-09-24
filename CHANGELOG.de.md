@@ -14,6 +14,8 @@ Eine zusammenfassende Übersicht aller Änderungen pro Version dieses Projekts.
 ---
 
 ## v3.8.0-pre
+- FrontEnd: Die Verkehrszeichenliste zeigt nun die echte Artikelnummer pro Zeile, mit Seitenumbruch je Reihe, einem aussagekräftigen Dateinamen und einem PDF-Export-Button.
+- FrontEnd: Überflüssigen Hinweissatz aus der Karte "Verwendete Quellen & Gesetzgebung" entfernt.
 - FrontEnd: Direkten Stripe-Zahlungslink neben Ko-fi und PayPal im Info-Bildschirm hinzugefügt.
 - BackEnd: Quelllinks von 50 Fragen, die direkt mit dem richtigen Artikel oder Absatz verknüpft sind.
 - DevEx: Verkehrszeichenquellen in SOURCES.md wurden über den Inhalts-Hash erneut mit Wikimedia Commons verifiziert.

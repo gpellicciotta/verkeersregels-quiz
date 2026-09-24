@@ -14,6 +14,8 @@ A summarized overview of all changes, per version of this project.
 ---
 
 ## v3.8.0-pre
+- FrontEnd: Sign printout now shows the real article number per row, breaks pages per series, uses a descriptive filename, and gained a PDF-export button.
+- FrontEnd: Removed a redundant hint sentence from the "Sources & legislation" card.
 - FrontEnd: Added a direct Stripe payment link alongside Ko-fi and PayPal in the About screen.
 - BackEnd: Source links of 50 questions linked directly to the correct article or paragraph.
 - DevEx: Road sign sources in SOURCES.md reverified against Wikimedia Commons via content hash.
