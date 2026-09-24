@@ -14,6 +14,7 @@ A summarized overview of all changes, per version of this project.
 ---
 
 ## v3.7.1-pre
+- FrontEnd: Knop toegevoegd in het Over-scherm om alle Belgische verkeersborden af te drukken, gegroepeerd en gesorteerd zoals op wegcode.be.
 - BackEnd: 10 nieuwe examenvragen toegevoegd buiten borden en verkeerssituaties (pech, volgafstand, rijbewijzen, drugs, lading, helmen).
 - BackEnd: 15 nieuwe situatievragen toegevoegd (`sit-41` t/m `sit-55`) met echte foto's van Wikimedia Commons.
 - BackEnd: Vier ontbrekende wegwijzerborden F34b.1, F34b.2, F34c.1 en F34c.2 met vragen toegevoegd.

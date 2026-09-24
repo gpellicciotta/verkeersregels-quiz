@@ -52,6 +52,7 @@ import { handleShare } from "./share.js";
 import { initQuizCancel } from "./quiz-cancel.js";
 import { localizeSourceUrl } from "./utils.js";
 import { renderDataIcons } from "./icons.js";
+import { printSignsDocument } from "./signs-doc.js";
 
 /**
  * Replace every [data-icon] placeholder in the document with its SVG icon.
@@ -105,6 +106,7 @@ el.btnResultClose.addEventListener("click", restart);
 if (el.btnResultRetryErrors) el.btnResultRetryErrors.addEventListener("click", restartWithWrongAnswers);
 if (el.btnShare) el.btnShare.addEventListener("click", handleShare);
 if (el.btnPrint) el.btnPrint.addEventListener("click", () => window.print());
+if (el.btnPrintSigns) el.btnPrintSigns.addEventListener("click", printSignsDocument);
 if (el.btnReportError) el.btnReportError.addEventListener("click", openReportModal);
 if (el.btnReportStart) el.btnReportStart.addEventListener("click", openReportModal);
 if (el.btnReportResult) el.btnReportResult.addEventListener("click", openReportModal);

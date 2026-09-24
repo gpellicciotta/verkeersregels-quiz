@@ -109,6 +109,8 @@ export const el = {
   btnLang: document.getElementById("btn-lang"),
   aboutSourceWegcode: document.getElementById("about-source-wegcode"),
   aboutSourceWegcodeChanges: document.getElementById("about-source-wegcode-changes"),
+  btnPrintSigns: document.getElementById("btn-print-signs"),
+  printSignsDocument: document.getElementById("print-signs-document"),
   screenStats: document.getElementById("screen-stats"),
   btnStats: document.getElementById("btn-stats"),
   btnStatsBack: document.getElementById("btn-stats-back"),

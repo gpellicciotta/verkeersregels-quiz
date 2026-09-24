@@ -14,7 +14,7 @@ An overview of all tasks and their planning.
 ---
 
 ## Next Milestone
-- [~] T0083 [owner: @claude] Add a button on the About page to print all Belgian road signs with explanations and wegcode.be links.
+*(Currently no tasks)*
 
 
 ---
