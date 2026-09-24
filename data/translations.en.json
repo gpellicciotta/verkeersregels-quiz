@@ -3777,5 +3777,105 @@
       "Straight ahead or left, you choose which of the two directions indicated."
     ],
     "explanation": "Sign D3 obliges drivers to follow one of the directions indicated by the arrows, here straight ahead or left; you can choose between the indicated directions, but not turn right (art. 69 KB 1 December 1975)."
+  },
+  "rule-gevarendriehoek-afstand": {
+    "question": "At what distance must you place a warning triangle in case of a breakdown on a motorway?",
+    "options": [
+      "At least 50 meters behind your vehicle",
+      "At least 30 meters ahead of your vehicle",
+      "Right next to your vehicle, within 5 meters",
+      "At least 100 meters ahead of your vehicle"
+    ],
+    "explanation": "In case of a breakdown or accident, place the warning triangle facing oncoming traffic: at least 30 meters on a normal road, at least 100 meters ahead of your vehicle on a motorway."
+  },
+  "rule-veiligheidsvest": {
+    "question": "When must the driver of a car wear a reflective safety vest?",
+    "options": [
+      "Only at night, regardless of the situation",
+      "A safety vest is never mandatory in Belgium, only recommended",
+      "In case of a breakdown or accident, as soon as he steps out of the vehicle",
+      "Only when passengers are on board"
+    ],
+    "explanation": "In case of a breakdown or accident, the driver must wear a retro-reflective safety vest as soon as they leave the vehicle; this is not mandatory for passengers, though recommended."
+  },
+  "rule-volgafstand": {
+    "question": "What is the rule of thumb for a safe following distance on roads where more than 50 km/h is allowed?",
+    "options": [
+      "At least 1 car length, regardless of speed",
+      "At least 2 seconds of following time behind the car ahead",
+      "There is no general rule of thumb, only a ban on tailgating",
+      "At least 5 seconds of following time, always"
+    ],
+    "explanation": "On roads with a speed limit above 50 km/h, the 'two-second rule' is the rule of thumb for a safe following distance; on wet roads, 3 seconds is safer."
+  },
+  "rule-aanhangwagen-code96": {
+    "question": "With a category B license and code 96, you may tow a trailer with an MTM above 750 kg. Up to what maximum combined weight (towing vehicle + trailer)?",
+    "options": [
+      "4,250 kg",
+      "3,500 kg",
+      "7,500 kg",
+      "6,000 kg"
+    ],
+    "explanation": "With category B alone, a trailer up to 750 kg MTM is allowed; with code 96, the trailer may be heavier, as long as the combined weight of towing vehicle and trailer does not exceed 4,250 kg."
+  },
+  "rule-autokeuring-nieuwe-wagen": {
+    "question": "How many years after purchase must a new passenger car undergo its first periodic technical inspection?",
+    "options": [
+      "1 year",
+      "2 years",
+      "6 years",
+      "4 years"
+    ],
+    "explanation": "A new passenger car only needs to be presented for its first technical inspection 4 years after purchase."
+  },
+  "rule-rijbewijs-am-praktijk": {
+    "question": "From what age can you take the practical exam for the AM license, required to ride a moped up to 45 km/h?",
+    "options": [
+      "15 years",
+      "18 years",
+      "16 years",
+      "17 years"
+    ],
+    "explanation": "The theory exam for the AM license can be taken from age 15 years and 9 months, but the practical exam only from age 16."
+  },
+  "rule-drugs-nultolerantie": {
+    "question": "What is the legal rule for driving under the influence of illegal drugs in Belgium?",
+    "options": [
+      "Only punishable for professional drivers",
+      "Zero tolerance: any trace of an illegal drug in a positive saliva test is punishable",
+      "Allowed as long as you are not clearly unfit to drive",
+      "Only punishable on a second offense within a year"
+    ],
+    "explanation": "Belgium applies a zero-tolerance policy for drugs in traffic: as soon as a saliva test shows a trace of an illegal drug, it is punishable, regardless of the amount."
+  },
+  "rule-vluchtmisdrijf": {
+    "question": "What are you legally required to do if you are involved in a traffic accident?",
+    "options": [
+      "Only stay if there are injuries, otherwise you may leave",
+      "You may leave as soon as you leave your details on a note",
+      "Only stay if you are at fault yourself",
+      "Stay at the scene so the necessary findings can be made"
+    ],
+    "explanation": "Anyone involved in an accident must stay at the scene so the findings can be made; leaving to avoid this is a hit-and-run offense (art. 33 §1 of the Traffic Act of 16 March 1968)."
+  },
+  "rule-lading-uitstekend": {
+    "question": "How far may cargo protrude behind your vehicle at most without mandatory extra signaling?",
+    "options": [
+      "1 meter",
+      "50 centimeters",
+      "3 meters",
+      "2 meters"
+    ],
+    "explanation": "Cargo may protrude at most 1 meter behind the vehicle without special signaling; for long indivisible items this may be up to 3 meters, but then a red-and-white warning board is mandatory."
+  },
+  "rule-motorhelm": {
+    "question": "Who is required to wear a motorcycle helmet on a motorcycle over 50 cc?",
+    "options": [
+      "Only the driver",
+      "Both the driver and the passenger",
+      "Only the passenger",
+      "No one, a bicycle helmet suffices for both"
+    ],
+    "explanation": "Both the driver and the passenger of a motorcycle over 50 cc must wear an approved CE-labeled motorcycle helmet."
   }
 }

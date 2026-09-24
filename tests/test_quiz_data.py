@@ -25,8 +25,8 @@ class TestQuizData(unittest.TestCase):
         cls.questions = cls.data.get("questions", [])
 
     def test_total_question_count(self) -> None:
-        """Validates that the question bank contains exactly 343 questions."""
-        self.assertEqual(len(self.questions), 343, f"Expected exactly 343 questions, found {len(self.questions)}")
+        """Validates that the question bank contains exactly 353 questions."""
+        self.assertEqual(len(self.questions), 353, f"Expected exactly 353 questions, found {len(self.questions)}")
 
     def test_question_counts_by_type(self) -> None:
         """Validates the question counts for all supported question types."""
@@ -34,7 +34,7 @@ class TestQuizData(unittest.TestCase):
         counts = Counter(q.get("type") for q in self.questions)
         self.assertEqual(counts["recognize"], 197)
         self.assertEqual(counts["identify"], 12)
-        self.assertEqual(counts["rule"], 79)
+        self.assertEqual(counts["rule"], 89)
         self.assertEqual(counts["situation"], 55)
 
     def test_question_ids_unique_and_valid(self) -> None:

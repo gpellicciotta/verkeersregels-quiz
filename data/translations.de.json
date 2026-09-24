@@ -3777,5 +3777,105 @@
       "Geradeaus oder links, Sie entscheiden, welche der beiden angegebenen Richtungen Sie wählen."
     ],
     "explanation": "Schild D3 verpflichtet den Autofahrer, einer der durch die Pfeile angezeigten Richtungen zu folgen, hier geradeaus oder links; Sie können zwischen den angegebenen Richtungen wählen, aber nicht rechts abbiegen (Art. 69 KB vom 1. Dezember 1975)."
+  },
+  "rule-gevarendriehoek-afstand": {
+    "question": "In welchem Abstand musst du bei einer Panne auf der Autobahn ein Warndreieck aufstellen?",
+    "options": [
+      "Mindestens 50 Meter hinter deinem Fahrzeug",
+      "Mindestens 30 Meter vor deinem Fahrzeug",
+      "Direkt neben deinem Fahrzeug, innerhalb von 5 Metern",
+      "Mindestens 100 Meter vor deinem Fahrzeug"
+    ],
+    "explanation": "Bei einer Panne oder einem Unfall stellst du das Warndreieck in Richtung des herannahenden Verkehrs auf: auf einer normalen Straße mindestens 30 Meter, auf einer Autobahn mindestens 100 Meter vor deinem Fahrzeug."
+  },
+  "rule-veiligheidsvest": {
+    "question": "Wann muss der Fahrer eines Autos eine reflektierende Sicherheitsweste tragen?",
+    "options": [
+      "Nur nachts, unabhängig von der Situation",
+      "Eine Sicherheitsweste ist in Belgien nie verpflichtend, nur empfohlen",
+      "Bei einer Panne oder einem Unfall, sobald er aus dem Fahrzeug aussteigt",
+      "Nur wenn Passagiere mitfahren"
+    ],
+    "explanation": "Bei einer Panne oder einem Unfall muss der Fahrer eine retroreflektierende Sicherheitsweste tragen, sobald er das Fahrzeug verlässt; für Passagiere ist dies nicht verpflichtend, aber empfehlenswert."
+  },
+  "rule-volgafstand": {
+    "question": "Was ist die Faustregel für einen sicheren Abstand auf Straßen, auf denen mehr als 50 km/h erlaubt sind?",
+    "options": [
+      "Mindestens 1 Wagenlänge, unabhängig von der Geschwindigkeit",
+      "Mindestens 2 Sekunden Zeitabstand zum vorausfahrenden Fahrzeug",
+      "Es gibt keine allgemeine Faustregel, nur ein Verbot des dichten Auffahrens",
+      "Immer mindestens 5 Sekunden Zeitabstand"
+    ],
+    "explanation": "Auf Straßen mit einer zulässigen Geschwindigkeit über 50 km/h gilt die 'Zwei-Sekunden-Regel' als Faustregel für einen sicheren Abstand; bei nasser Fahrbahn sind besser 3 Sekunden einzuhalten."
+  },
+  "rule-aanhangwagen-code96": {
+    "question": "Mit dem Führerschein B und Code 96 darfst du einen Anhänger mit einer zulässigen Gesamtmasse über 750 kg ziehen. Bis zu welchem maximalen Gesamtgewicht (Zugfahrzeug + Anhänger)?",
+    "options": [
+      "4.250 kg",
+      "3.500 kg",
+      "7.500 kg",
+      "6.000 kg"
+    ],
+    "explanation": "Mit dem Führerschein B allein ist ein Anhänger bis 750 kg zulässiger Gesamtmasse erlaubt; mit Code 96 darf der Anhänger schwerer sein, solange das kombinierte Gewicht von Zugfahrzeug und Anhänger 4.250 kg nicht übersteigt."
+  },
+  "rule-autokeuring-nieuwe-wagen": {
+    "question": "Nach wie vielen Jahren muss ein neu gekaufter Personenwagen zum ersten Mal zur technischen Untersuchung?",
+    "options": [
+      "1 Jahr",
+      "2 Jahre",
+      "6 Jahre",
+      "4 Jahre"
+    ],
+    "explanation": "Ein neuer Personenwagen muss erst 4 Jahre nach dem Kauf zum ersten Mal zur technischen Untersuchung vorgeführt werden."
+  },
+  "rule-rijbewijs-am-praktijk": {
+    "question": "Ab welchem Alter darf man die praktische Prüfung für den Führerschein AM ablegen, der für ein Moped bis 45 km/h erforderlich ist?",
+    "options": [
+      "15 Jahre",
+      "18 Jahre",
+      "16 Jahre",
+      "17 Jahre"
+    ],
+    "explanation": "Die theoretische Prüfung für den Führerschein AM darf ab 15 Jahren und 9 Monaten abgelegt werden, die praktische Prüfung jedoch erst ab 16 Jahren."
+  },
+  "rule-drugs-nultolerantie": {
+    "question": "Welche gesetzliche Regel gilt in Belgien für das Fahren unter dem Einfluss illegaler Drogen?",
+    "options": [
+      "Nur für Berufskraftfahrer strafbar",
+      "Nulltoleranz: jede Spur einer illegalen Droge in einem positiven Speicheltest ist strafbar",
+      "Erlaubt, solange man nicht eindeutig fahruntüchtig ist",
+      "Nur bei einem zweiten Verstoß innerhalb eines Jahres strafbar"
+    ],
+    "explanation": "Belgien wendet eine Nulltoleranzpolitik für Drogen im Straßenverkehr an: sobald ein Speicheltest eine Spur einer illegalen Droge zeigt, ist dies strafbar, unabhängig von der Menge."
+  },
+  "rule-vluchtmisdrijf": {
+    "question": "Was musst du gesetzlich tun, wenn du in einen Verkehrsunfall verwickelt bist?",
+    "options": [
+      "Nur bleiben, wenn es Verletzte gibt, sonst darfst du weiterfahren",
+      "Du darfst weiterfahren, sobald du deine Daten auf einem Zettel hinterlässt",
+      "Nur bleiben, wenn du selbst schuld bist",
+      "Am Unfallort bleiben, damit die notwendigen Feststellungen getroffen werden können"
+    ],
+    "explanation": "Jeder, der in einen Unfall verwickelt ist, muss am Unfallort bleiben, damit die Feststellungen getroffen werden können; sich zu entfernen, um dies zu vermeiden, ist Fahrerflucht (Art. 33 §1 des Straßenverkehrsgesetzes vom 16. März 1968)."
+  },
+  "rule-lading-uitstekend": {
+    "question": "Wie weit darf Ladung höchstens hinten über dein Fahrzeug hinausragen, ohne dass eine zusätzliche Kennzeichnung vorgeschrieben ist?",
+    "options": [
+      "1 Meter",
+      "50 Zentimeter",
+      "3 Meter",
+      "2 Meter"
+    ],
+    "explanation": "Ladung darf hinten höchstens 1 Meter ohne besondere Kennzeichnung überstehen; bei langen, unteilbaren Stücken sind bis zu 3 Meter erlaubt, dann ist jedoch eine rot-weiße Warntafel vorgeschrieben."
+  },
+  "rule-motorhelm": {
+    "question": "Wer muss auf einem Motorrad über 50 cm3 verpflichtend einen Sturzhelm tragen?",
+    "options": [
+      "Nur der Fahrer",
+      "Sowohl der Fahrer als auch der Beifahrer",
+      "Nur der Beifahrer",
+      "Niemand, ein Fahrradhelm genügt für beide"
+    ],
+    "explanation": "Sowohl der Fahrer als auch der Beifahrer eines Motorrads über 50 cm3 müssen einen zugelassenen Sturzhelm mit CE-Kennzeichnung tragen."
   }
 }

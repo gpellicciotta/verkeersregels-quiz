@@ -5795,6 +5795,156 @@
       "correctIndex": 2,
       "explanation": "Bord D3 verplicht bestuurders om een van de door de pijlen aangeduide richtingen te volgen, hier rechtdoor of links; je mag zelf kiezen tussen de aangeduide richtingen, maar niet rechtsaf slaan (art. 69 KB 1 december 1975).",
       "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-69"
+    },
+    {
+      "id": "rule-gevarendriehoek-afstand",
+      "type": "rule",
+      "category": "algemeen",
+      "question": "Op welke afstand moet je een gevarendriehoek plaatsen bij pech op een autosnelweg?",
+      "options": [
+        "Op minstens 50 meter achter je voertuig",
+        "Op minstens 30 meter voor je voertuig",
+        "Vlak naast je voertuig, binnen 5 meter",
+        "Op minstens 100 meter voor je voertuig"
+      ],
+      "correctIndex": 3,
+      "explanation": "Bij pech of een ongeval plaats je de gevarendriehoek in de richting van het naderende verkeer: op een gewone weg op minstens 30 meter, op een autosnelweg op minstens 100 meter voor je voertuig.",
+      "source": "https://mijnboete.be/nieuws/veilig-de-weg-op-deze-4-voorwerpen-moeten-verplicht-in-je-auto-aanwezig-zijn/"
+    },
+    {
+      "id": "rule-veiligheidsvest",
+      "type": "rule",
+      "category": "algemeen",
+      "question": "Wanneer moet de bestuurder van een auto een reflecterend veiligheidsvest dragen?",
+      "options": [
+        "Enkel 's nachts, ongeacht de situatie",
+        "Een veiligheidsvest is in België nooit verplicht, enkel aanbevolen",
+        "Bij pech of een ongeval, van zodra hij uit het voertuig stapt",
+        "Enkel als er passagiers meerijden"
+      ],
+      "correctIndex": 2,
+      "explanation": "Bij pech of een ongeval moet de bestuurder een retroreflecterend veiligheidsvest dragen van zodra hij het voertuig verlaat; voor passagiers is dit niet verplicht, maar wel aan te raden.",
+      "source": "https://mijnboete.be/nieuws/veilig-de-weg-op-deze-4-voorwerpen-moeten-verplicht-in-je-auto-aanwezig-zijn/"
+    },
+    {
+      "id": "rule-volgafstand",
+      "type": "rule",
+      "category": "algemeen",
+      "question": "Wat is de vuistregel voor een veilige volgafstand op wegen waar meer dan 50 km/u is toegelaten?",
+      "options": [
+        "Minstens 1 wagenlengte, ongeacht de snelheid",
+        "Minstens 2 seconden volgtijd ten opzichte van de auto voor je",
+        "Er bestaat geen algemene vuistregel, enkel een verbod op bumperkleven",
+        "Minstens 5 seconden volgtijd, altijd"
+      ],
+      "correctIndex": 1,
+      "explanation": "Op wegen met een toegelaten snelheid boven 50 km/u geldt de 'tweesecondenregel' als vuistregel voor een veilige volgafstand; op nat wegdek hanteer je best 3 seconden.",
+      "source": "https://www.veiligverkeer.be/veilig-rijden/snelheid/veilige-volgafstand-de-tweesecondenregel/"
+    },
+    {
+      "id": "rule-aanhangwagen-code96",
+      "type": "rule",
+      "category": "algemeen",
+      "question": "Met rijbewijs B en code 96 mag je een aanhangwagen trekken met een MTM boven 750 kg. Tot welk maximaal gecombineerd gewicht (trekkend voertuig + aanhangwagen)?",
+      "options": [
+        "4.250 kg",
+        "3.500 kg",
+        "7.500 kg",
+        "6.000 kg"
+      ],
+      "correctIndex": 0,
+      "explanation": "Met rijbewijs B alleen is een aanhangwagen tot 750 kg MTM toegelaten; met code 96 mag de aanhangwagen zwaarder zijn, zolang het gecombineerde gewicht van trekkend voertuig en aanhangwagen niet meer dan 4.250 kg bedraagt.",
+      "source": "https://mobilit.belgium.be/nl/weg/rijden/rijbewijzen/belgisch-rijbewijs/personenwagen-aanhangwagen-categorie-be"
+    },
+    {
+      "id": "rule-autokeuring-nieuwe-wagen",
+      "type": "rule",
+      "category": "algemeen",
+      "question": "Na hoeveel jaar moet een nieuw gekochte personenwagen voor het eerst naar de autokeuring?",
+      "options": [
+        "1 jaar",
+        "2 jaar",
+        "6 jaar",
+        "4 jaar"
+      ],
+      "correctIndex": 3,
+      "explanation": "Een nieuwe personenwagen moet pas 4 jaar na aankoop voor het eerst worden aangeboden op de autokeuring.",
+      "source": "https://www.yuzzu.be/nl/blog/wanneer-naar-autokeuring"
+    },
+    {
+      "id": "rule-rijbewijs-am-praktijk",
+      "type": "rule",
+      "category": "algemeen",
+      "question": "Vanaf welke leeftijd mag je het praktijkexamen afleggen voor rijbewijs AM, nodig om een bromfiets tot 45 km/u te besturen?",
+      "options": [
+        "15 jaar",
+        "18 jaar",
+        "16 jaar",
+        "17 jaar"
+      ],
+      "correctIndex": 2,
+      "explanation": "Het theorie-examen voor rijbewijs AM mag je afleggen vanaf 15 jaar en 9 maanden, maar het praktijkexamen pas vanaf 16 jaar.",
+      "source": "https://www.gocavlaanderen.be/detail-page/categorie-am"
+    },
+    {
+      "id": "rule-drugs-nultolerantie",
+      "type": "rule",
+      "category": "algemeen",
+      "question": "Wat is de wettelijke regel voor het rijden onder invloed van illegale drugs in België?",
+      "options": [
+        "Enkel strafbaar voor beroepschauffeurs",
+        "Nultolerantie: elk spoor van een illegale drug in een positieve speekseltest is strafbaar",
+        "Toegelaten zolang je niet duidelijk onbekwaam bent om te rijden",
+        "Enkel strafbaar bij een tweede vaststelling binnen een jaar"
+      ],
+      "correctIndex": 1,
+      "explanation": "België hanteert een nultolerantiebeleid voor drugs in het verkeer: zodra een speekseltest een spoor van een illegale drug aantoont, is dat strafbaar, ongeacht de hoeveelheid.",
+      "source": "https://www.veiligverkeer.be/veilig-rijden/rijden-onder-invloed/drugs-regels-controle-boetes-en-straffen/"
+    },
+    {
+      "id": "rule-vluchtmisdrijf",
+      "type": "rule",
+      "category": "algemeen",
+      "question": "Wat moet je verplicht doen als je betrokken bent bij een verkeersongeval?",
+      "options": [
+        "Enkel blijven als er gewonden zijn, anders mag je vertrekken",
+        "Je mag vertrekken zodra je je gegevens op een briefje achterlaat",
+        "Enkel blijven als je zelf in fout bent",
+        "Ter plaatse blijven zodat de nodige vaststellingen kunnen gebeuren"
+      ],
+      "correctIndex": 3,
+      "explanation": "Iedereen die betrokken is bij een ongeval moet ter plaatse blijven zodat de vaststellingen kunnen gebeuren; vertrekken om dit te vermijden is vluchtmisdrijf (art. 33 §1 Wegverkeerswet van 16 maart 1968).",
+      "source": "https://advo-recht.be/kennisbank/verkeersrecht/overtreding/vluchtmisdrijf/"
+    },
+    {
+      "id": "rule-lading-uitstekend",
+      "type": "rule",
+      "category": "algemeen",
+      "question": "Hoeveel mag lading maximaal achteraan je voertuig uitsteken zonder verplichte extra signalisatie?",
+      "options": [
+        "1 meter",
+        "50 centimeter",
+        "3 meter",
+        "2 meter"
+      ],
+      "correctIndex": 0,
+      "explanation": "Lading mag achteraan maximaal 1 meter uitsteken zonder speciale signalisatie; bij lange ondeelbare stukken mag dit tot 3 meter, maar dan is een rood-wit waarschuwingsbord verplicht.",
+      "source": "https://hetbelgischrijbewijs.com/rijbewijs/hoofdstukken/de-auto/lessen/de-lading"
+    },
+    {
+      "id": "rule-motorhelm",
+      "type": "rule",
+      "category": "algemeen",
+      "question": "Wie moet verplicht een motorhelm dragen op een motorfiets van meer dan 50 cc?",
+      "options": [
+        "Enkel de bestuurder",
+        "Zowel de bestuurder als de passagier",
+        "Enkel de passagier",
+        "Niemand, een fietshelm volstaat voor beiden"
+      ],
+      "correctIndex": 1,
+      "explanation": "Zowel de bestuurder als de passagier van een motorfiets van meer dan 50 cc moeten een goedgekeurde motorhelm met CE-label dragen.",
+      "source": "https://www.motoren-toerisme.be/praktisch/wetgeving/de-verplichte-motorhelm-hoe-zit-dat-juist"
     }
   ]
 }

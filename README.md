@@ -75,7 +75,7 @@ Open dan [http://localhost:8000/index.html](http://localhost:8000/index.html) in
 ## Vragenbank aanpassen
 De vragen staan in [data/questions.json](data/questions.json), zie
 [data/SOURCES.md](data/SOURCES.md) voor de gebruikte bronnen en verkeersbord-afbeeldingen.
-De vragenbank telt momenteel 343 geverifieerde vragen. Elke vraag heeft een `type`:
+De vragenbank telt momenteel 353 geverifieerde vragen. Elke vraag heeft een `type`:
 - `recognize` — toont een verkeersbord (`sign`), 4 tekstopties als mogelijke betekenis.
 - `identify` — toont een omschrijving, 4 bord-afbeeldingen als opties.
 - `rule` — vraag over een verkeersregel, 4 tekstopties (toont optioneel een bord via `sign`).

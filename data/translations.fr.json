@@ -3777,5 +3777,105 @@
       "Tout droit ou à gauche, vous choisissez laquelle des deux directions indiquées."
     ],
     "explanation": "Le panneau D3 oblige les conducteurs à suivre l'une des directions indiquées par les flèches, ici tout droit ou à gauche ; vous pouvez choisir entre les directions indiquées, mais vous ne pouvez pas tourner à droite (art. 69 KB du 1er décembre 1975)."
+  },
+  "rule-gevarendriehoek-afstand": {
+    "question": "A quelle distance devez-vous placer un triangle de signalisation en cas de panne sur autoroute ?",
+    "options": [
+      "A au moins 50 mètres derrière votre véhicule",
+      "A au moins 30 mètres devant votre véhicule",
+      "Juste à côté de votre véhicule, à moins de 5 mètres",
+      "A au moins 100 mètres devant votre véhicule"
+    ],
+    "explanation": "En cas de panne ou d'accident, placez le triangle face à la circulation venant en sens inverse : au moins 30 mètres sur une route normale, au moins 100 mètres devant votre véhicule sur autoroute."
+  },
+  "rule-veiligheidsvest": {
+    "question": "Quand le conducteur d'une voiture doit-il porter un gilet de sécurité réfléchissant ?",
+    "options": [
+      "Uniquement la nuit, quelle que soit la situation",
+      "Un gilet de sécurité n'est jamais obligatoire en Belgique, seulement recommandé",
+      "En cas de panne ou d'accident, dès qu'il sort du véhicule",
+      "Uniquement si des passagers sont à bord"
+    ],
+    "explanation": "En cas de panne ou d'accident, le conducteur doit porter un gilet de sécurité rétroréfléchissant dès qu'il quitte le véhicule ; ce n'est pas obligatoire pour les passagers, mais c'est recommandé."
+  },
+  "rule-volgafstand": {
+    "question": "Quelle est la règle de base pour une distance de sécurité correcte sur les routes où plus de 50 km/h est autorisé ?",
+    "options": [
+      "Au moins 1 longueur de voiture, quelle que soit la vitesse",
+      "Au moins 2 secondes de temps de suivi par rapport au véhicule qui précède",
+      "Il n'existe aucune règle générale, seulement une interdiction de coller au véhicule qui précède",
+      "Au moins 5 secondes de temps de suivi, toujours"
+    ],
+    "explanation": "Sur les routes où la vitesse autorisée dépasse 50 km/h, la 'règle des deux secondes' est la règle de base pour une distance de sécurité correcte ; sur chaussée mouillée, mieux vaut compter 3 secondes."
+  },
+  "rule-aanhangwagen-code96": {
+    "question": "Avec un permis B et le code 96, vous pouvez tracter une remorque dont la MMA dépasse 750 kg. Jusqu'à quel poids combiné maximal (véhicule tracteur + remorque) ?",
+    "options": [
+      "4.250 kg",
+      "3.500 kg",
+      "7.500 kg",
+      "6.000 kg"
+    ],
+    "explanation": "Avec le seul permis B, une remorque jusqu'à 750 kg de MMA est autorisée ; avec le code 96, la remorque peut être plus lourde, tant que le poids combiné du véhicule tracteur et de la remorque ne dépasse pas 4.250 kg."
+  },
+  "rule-autokeuring-nieuwe-wagen": {
+    "question": "Combien d'années après l'achat une voiture particulière neuve doit-elle passer son premier contrôle technique périodique ?",
+    "options": [
+      "1 an",
+      "2 ans",
+      "6 ans",
+      "4 ans"
+    ],
+    "explanation": "Une voiture particulière neuve ne doit être présentée pour son premier contrôle technique que 4 ans après l'achat."
+  },
+  "rule-rijbewijs-am-praktijk": {
+    "question": "A partir de quel âge peut-on présenter l'examen pratique du permis AM, nécessaire pour conduire un cyclomoteur jusqu'à 45 km/h ?",
+    "options": [
+      "15 ans",
+      "18 ans",
+      "16 ans",
+      "17 ans"
+    ],
+    "explanation": "L'examen théorique du permis AM peut être présenté dès 15 ans et 9 mois, mais l'examen pratique seulement à partir de 16 ans."
+  },
+  "rule-drugs-nultolerantie": {
+    "question": "Quelle est la règle légale concernant la conduite sous l'influence de drogues illégales en Belgique ?",
+    "options": [
+      "Uniquement punissable pour les chauffeurs professionnels",
+      "Tolérance zéro : toute trace de drogue illégale détectée par un test salivaire positif est punissable",
+      "Autorisé tant que l'on n'est pas manifestement inapte à conduire",
+      "Uniquement punissable en cas de récidive dans l'année"
+    ],
+    "explanation": "La Belgique applique une politique de tolérance zéro pour les drogues au volant : dès qu'un test salivaire révèle une trace de drogue illégale, c'est punissable, quelle que soit la quantité."
+  },
+  "rule-vluchtmisdrijf": {
+    "question": "Que devez-vous obligatoirement faire si vous êtes impliqué dans un accident de la route ?",
+    "options": [
+      "Ne rester que s'il y a des blessés, sinon vous pouvez partir",
+      "Vous pouvez partir dès que vous laissez vos coordonnées sur un mot",
+      "Ne rester que si vous êtes vous-même en tort",
+      "Rester sur place afin que les constatations nécessaires puissent être faites"
+    ],
+    "explanation": "Toute personne impliquée dans un accident doit rester sur place afin que les constatations puissent être faites ; partir pour l'éviter constitue un délit de fuite (art. 33 §1 de la loi sur la circulation routière du 16 mars 1968)."
+  },
+  "rule-lading-uitstekend": {
+    "question": "De combien un chargement peut-il au maximum dépasser à l'arrière du véhicule sans signalisation supplémentaire obligatoire ?",
+    "options": [
+      "1 mètre",
+      "50 centimètres",
+      "3 mètres",
+      "2 mètres"
+    ],
+    "explanation": "Un chargement peut dépasser au maximum de 1 mètre à l'arrière sans signalisation particulière ; pour les pièces longues et indivisibles, cela peut aller jusqu'à 3 mètres, mais un panneau d'avertissement rouge et blanc est alors obligatoire."
+  },
+  "rule-motorhelm": {
+    "question": "Qui doit obligatoirement porter un casque de moto sur une motocyclette de plus de 50 cm3 ?",
+    "options": [
+      "Uniquement le conducteur",
+      "A la fois le conducteur et le passager",
+      "Uniquement le passager",
+      "Personne, un casque de vélo suffit pour les deux"
+    ],
+    "explanation": "Le conducteur et le passager d'une motocyclette de plus de 50 cm3 doivent tous deux porter un casque de moto homologué portant le label CE."
   }
 }

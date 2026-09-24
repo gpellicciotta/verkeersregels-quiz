@@ -3777,5 +3777,105 @@
       "Dritto o sinistra, scegliete voi quale delle due direzioni indicate."
     ],
     "explanation": "Il segnale D3 obbliga a seguire una delle direzioni indicate dalle frecce, qui dritto oppure a sinistra; si può scegliere tra le direzioni indicate, ma non svoltare a destra (art. 69 KB 1 dicembre 1975)."
+  },
+  "rule-gevarendriehoek-afstand": {
+    "question": "A quale distanza devi posizionare un triangolo di emergenza in caso di guasto in autostrada?",
+    "options": [
+      "Ad almeno 50 metri dietro il tuo veicolo",
+      "Ad almeno 30 metri davanti al tuo veicolo",
+      "Proprio accanto al tuo veicolo, entro 5 metri",
+      "Ad almeno 100 metri davanti al tuo veicolo"
+    ],
+    "explanation": "In caso di guasto o incidente, posiziona il triangolo rivolto verso il traffico in arrivo: almeno 30 metri su una strada normale, almeno 100 metri davanti al tuo veicolo in autostrada."
+  },
+  "rule-veiligheidsvest": {
+    "question": "Quando il conducente di un'auto deve indossare un gilet di sicurezza riflettente?",
+    "options": [
+      "Solo di notte, indipendentemente dalla situazione",
+      "Un gilet di sicurezza non è mai obbligatorio in Belgio, solo consigliato",
+      "In caso di guasto o incidente, non appena scende dal veicolo",
+      "Solo se ci sono passeggeri a bordo"
+    ],
+    "explanation": "In caso di guasto o incidente, il conducente deve indossare un gilet di sicurezza retroriflettente non appena lascia il veicolo; per i passeggeri non è obbligatorio, ma è consigliato."
+  },
+  "rule-volgafstand": {
+    "question": "Qual è la regola generale per una distanza di sicurezza corretta sulle strade dove è consentito più di 50 km/h?",
+    "options": [
+      "Almeno 1 lunghezza di auto, indipendentemente dalla velocità",
+      "Almeno 2 secondi di tempo di percorrenza rispetto al veicolo che precede",
+      "Non esiste una regola generale, solo un divieto di tallonamento",
+      "Sempre almeno 5 secondi di tempo di percorrenza"
+    ],
+    "explanation": "Sulle strade con un limite di velocità superiore a 50 km/h, la 'regola dei due secondi' è la regola generale per una distanza di sicurezza corretta; su strada bagnata è meglio calcolare 3 secondi."
+  },
+  "rule-aanhangwagen-code96": {
+    "question": "Con la patente B e il codice 96 puoi trainare un rimorchio con una massa massima superiore a 750 kg. Fino a quale peso combinato massimo (veicolo trainante + rimorchio)?",
+    "options": [
+      "4.250 kg",
+      "3.500 kg",
+      "7.500 kg",
+      "6.000 kg"
+    ],
+    "explanation": "Con la sola patente B è consentito un rimorchio fino a 750 kg di massa massima; con il codice 96 il rimorchio può essere più pesante, purché il peso combinato di veicolo trainante e rimorchio non superi 4.250 kg."
+  },
+  "rule-autokeuring-nieuwe-wagen": {
+    "question": "Dopo quanti anni un'auto nuova deve sostenere la prima revisione tecnica periodica?",
+    "options": [
+      "1 anno",
+      "2 anni",
+      "6 anni",
+      "4 anni"
+    ],
+    "explanation": "Un'auto nuova deve essere presentata per la prima revisione tecnica solo 4 anni dopo l'acquisto."
+  },
+  "rule-rijbewijs-am-praktijk": {
+    "question": "A partire da quale età si può sostenere l'esame pratico per la patente AM, necessaria per guidare un ciclomotore fino a 45 km/h?",
+    "options": [
+      "15 anni",
+      "18 anni",
+      "16 anni",
+      "17 anni"
+    ],
+    "explanation": "L'esame teorico per la patente AM può essere sostenuto a partire da 15 anni e 9 mesi, ma l'esame pratico solo a partire dai 16 anni."
+  },
+  "rule-drugs-nultolerantie": {
+    "question": "Qual è la regola legale per la guida sotto l'effetto di droghe illegali in Belgio?",
+    "options": [
+      "Punibile solo per gli autisti professionisti",
+      "Tolleranza zero: qualsiasi traccia di droga illegale in un test salivare positivo è punibile",
+      "Consentito finché non si è chiaramente inidonei alla guida",
+      "Punibile solo in caso di recidiva entro un anno"
+    ],
+    "explanation": "Il Belgio applica una politica di tolleranza zero per le droghe alla guida: non appena un test salivare rileva una traccia di droga illegale, è punibile, indipendentemente dalla quantità."
+  },
+  "rule-vluchtmisdrijf": {
+    "question": "Cosa sei obbligato a fare se sei coinvolto in un incidente stradale?",
+    "options": [
+      "Restare solo se ci sono feriti, altrimenti puoi andartene",
+      "Puoi andartene non appena lasci i tuoi dati su un biglietto",
+      "Restare solo se sei tu il responsabile",
+      "Restare sul posto affinché si possano effettuare i rilievi necessari"
+    ],
+    "explanation": "Chiunque sia coinvolto in un incidente deve restare sul posto affinché si possano effettuare i rilievi; allontanarsi per evitarlo costituisce omissione di soccorso/fuga (art. 33 §1 della legge sulla circolazione stradale del 16 marzo 1968)."
+  },
+  "rule-lading-uitstekend": {
+    "question": "Di quanto può sporgere al massimo il carico dietro il veicolo senza segnalazione supplementare obbligatoria?",
+    "options": [
+      "1 metro",
+      "50 centimetri",
+      "3 metri",
+      "2 metri"
+    ],
+    "explanation": "Il carico può sporgere al massimo di 1 metro dietro il veicolo senza segnalazione speciale; per pezzi lunghi e indivisibili è consentito fino a 3 metri, ma in tal caso è obbligatorio un pannello di avviso rosso e bianco."
+  },
+  "rule-motorhelm": {
+    "question": "Chi è obbligato a indossare un casco su una motocicletta di cilindrata superiore a 50 cc?",
+    "options": [
+      "Solo il conducente",
+      "Sia il conducente che il passeggero",
+      "Solo il passeggero",
+      "Nessuno, per entrambi basta un casco da bicicletta"
+    ],
+    "explanation": "Sia il conducente che il passeggero di una motocicletta di cilindrata superiore a 50 cc devono indossare un casco da moto omologato con marchio CE."
   }
 }

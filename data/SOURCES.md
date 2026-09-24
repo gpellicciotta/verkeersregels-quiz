@@ -4,13 +4,13 @@ Content for the Belgian theoretical driving exam quiz, generated and verified on
 
 ## Question bank summary
 
-Total questions: 343, stored in `data/questions.json`.
+Total questions: 353, stored in `data/questions.json`.
 
 Breakdown by type:
 
 - recognize: 197
 - identify: 12
-- rule: 79
+- rule: 89
 - situation: 55
 
 Breakdown by category:
@@ -20,8 +20,8 @@ Breakdown by category:
 - fietsers-voetgangers: 40
 - verbod: 40
 - gevaar: 35
+- algemeen: 32
 - parkeren: 25
-- algemeen: 22
 - gebod: 11
 - autosnelweg: 11
 - snelheid: 9
@@ -29,11 +29,11 @@ Breakdown by category:
 - gordel: 2
 - telefoon: 2
 
-Answer positions (`correctIndex`) are spread across options (91 for 0, 93 for 1, 86 for 2, 73 for 3) so the correct answer is not systematically in the same position.
+Answer positions (`correctIndex`) are spread across options (93 for 0, 96 for 1, 88 for 2, 76 for 3) so the correct answer is not systematically in the same position.
 
 ## Rule sources
 
-Every `rule`-type question with a numeric limit, exception or legal nuance carries a `source` field with a URL that was fetched and checked to confirm the fact. Sixteen distinct pages were used:
+Every `rule`-type question with a numeric limit, exception or legal nuance carries a `source` field with a URL that was fetched and checked to confirm the fact. Sixteen distinct pages were used for the original 79 rule questions:
 
 - [Wegcode.be - Snelheidsbeperkingen](https://www.wegcode.be/nl/verkeersreglement/uitleg-bij-het-verkeersreglement/snelheidsbeperkingen) - general speed limits (bebouwde kom, autosnelweg, zone 30)
 - [VAB Magazine - Welke snelheidslimieten gelden in Vlaanderen?](https://magazine.vab.be/op-weg/mobiliteit/hoe-snel-mag-je-rijden/) - Flemish 70 km/u default outside built-up areas, motorway minimum speed
@@ -53,6 +53,22 @@ Every `rule`-type question with a numeric limit, exception or legal nuance carri
 - [Evocaat.be - Een gesloten spooroverweg oversteken](https://www.evocaat.be/nl/themas/een-gesloten-spooroverweg-oversteken-wat-zijn-de-juridische-gevolgen) - level crossing stop duty once red lights flash
 
 All 16 URLs were fetched with a standard browser user agent and returned HTTP 200 before being cited.
+
+### Rule sources added in task T0082
+
+Nine further pages were fetched and checked to confirm the facts behind 10 new `rule` questions covering exam topics other than signs and traffic situations (breakdown equipment, following distance, towing, technical inspection, licensing, drugs, accident duty, cargo, helmets):
+
+- [Mijnboete.be - 4 voorwerpen die verplicht in je auto aanwezig moeten zijn](https://mijnboete.be/nieuws/veilig-de-weg-op-deze-4-voorwerpen-moeten-verplicht-in-je-auto-aanwezig-zijn/) - warning triangle placement distance (30 m / 100 m on a motorway) and the safety vest duty for the driver in case of breakdown or accident (`rule-gevarendriehoek-afstand`, `rule-veiligheidsvest`)
+- [Veilig Verkeer - Veilige volgafstand: de tweesecondenregel](https://www.veiligverkeer.be/veilig-rijden/snelheid/veilige-volgafstand-de-tweesecondenregel/) - the two-second following-distance rule above 50 km/u (`rule-volgafstand`)
+- [Mobilit.belgium.be - Personenwagen + aanhangwagen (categorie BE)](https://mobilit.belgium.be/nl/weg/rijden/rijbewijzen/belgisch-rijbewijs/personenwagen-aanhangwagen-categorie-be) - official FPS Mobility page: category B trailer limit (750 kg) and the code 96 combined-weight limit (4,250 kg) (`rule-aanhangwagen-code96`)
+- [Yuzzu.be - Wanneer naar de autokeuring?](https://www.yuzzu.be/nl/blog/wanneer-naar-autokeuring) - first periodic technical inspection of a new passenger car, 4 years after purchase (`rule-autokeuring-nieuwe-wagen`)
+- [GOCA Vlaanderen - Categorie AM](https://www.gocavlaanderen.be/detail-page/categorie-am) - minimum age for the AM moped license theory (15y9m) and practical exam (16y) (`rule-rijbewijs-am-praktijk`)
+- [Veilig Verkeer - Rijden onder invloed van drugs](https://www.veiligverkeer.be/veilig-rijden/rijden-onder-invloed/drugs-regels-controle-boetes-en-straffen/) - zero-tolerance policy and saliva test procedure (`rule-drugs-nultolerantie`)
+- [Advo-Recht.be - Vluchtmisdrijf](https://advo-recht.be/kennisbank/verkeersrecht/overtreding/vluchtmisdrijf/) - duty to stay at the scene of an accident, art. 33 §1 Wegverkeerswet (`rule-vluchtmisdrijf`)
+- [Het Belgisch Rijbewijs - De lading](https://hetbelgischrijbewijs.com/rijbewijs/hoofdstukken/de-auto/lessen/de-lading) - maximum unsignaled cargo overhang (1 m) and the 3 m exception for long indivisible items (`rule-lading-uitstekend`)
+- [Motoren en Toerisme - De verplichte motorhelm](https://www.motoren-toerisme.be/praktisch/wetgeving/de-verplichte-motorhelm-hoe-zit-dat-juist) - CE-labeled helmet duty for both rider and passenger on motorcycles over 50 cc (`rule-motorhelm`)
+
+All 9 URLs were fetched with a standard browser user agent and returned HTTP 200 before being cited.
 
 Sign-meaning questions (`recognize` and `identify`) carry direct authoritative links to the consolidated Wegcode articles governing each sign series (Articles 66 through 71 of KB 1 December 1975). Every quiz question displays a clickable external reference link upon being answered.
 

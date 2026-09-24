@@ -75,7 +75,7 @@ Functional and technical requirements for the Verkeersregels Quiz application.
   - Provides a print-optimized layout that spans full width and prevents page breaks inside result rows.
 
 ### Question Bank and Legal Accuracy
-- **Question Catalog**: Contains 343 verified questions covering hazard warnings, priority rules, speed limits, road positioning, cyclist/pedestrian infrastructure, and real-world traffic situations.
+- **Question Catalog**: Contains 353 verified questions covering hazard warnings, priority rules, speed limits, road positioning, cyclist/pedestrian infrastructure, real-world traffic situations, and general exam knowledge (breakdown equipment, following distance, licensing, drugs, accident duty, cargo, helmets).
 - **Question Types**:
   - `recognize`: displays a traffic sign SVG and asks the user to identify its official meaning.
   - `identify`: displays a legal description and presents candidate sign options.
