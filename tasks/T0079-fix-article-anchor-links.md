@@ -4,9 +4,9 @@ owner: "@claude"
 needs: []
 branch: task/T0079-fix-article-anchor-links
 worktree: ./work/T0079-fix-article-anchor-links
-status: needs-review
+status: completed
 started: 2026-09-24
-ended: —
+ended: 2026-09-24
 ---
 
 # T0079: Fix article-anchor links in question sources
@@ -67,6 +67,6 @@ a link unanchored only when its target page has no matching HTML anchor.
 
 - [2026-09-24] **[Complete]**
   Fixed article-anchor links for 50 of 324 questions; 3 links left intentionally
-  unanchored (composite or wrong-law citations) and documented as such. Awaiting
-  human review before merging to `main` (solo AI agent review tier).
+  unanchored (composite or wrong-law citations) and documented as such. Human
+  reviewed the walkthrough and approved merging to `main`.
 
