@@ -14,7 +14,8 @@ An overview of all tasks and their planning.
 ---
 
 ## Next Milestone
-- [~] T0086 [owner: @claude] Improve the sign printout: real article links, per-category pages, correct filename, PDF export, remove redundant hint.
+*(Currently no tasks)*
+
 ---
 
 ## Backlog
