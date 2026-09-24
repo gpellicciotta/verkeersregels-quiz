@@ -27,11 +27,13 @@ We evaluated multiple developer funding and donation mechanisms.
 
 ## Recommendations
 
-### **[Decided]** Dual-Rail External Model
+### **[Decided]** Triple-Rail External Model
 1. **Ko-fi**:
    Provide a direct link to `https://ko-fi.com/gpellicciotta` for tipping and creator support.
-2. **Direct PayPal Donation**:
-   Provide a direct link to `https://paypal.me/gpellicciotta` for voluntary PayPal donations.
+2. **Stripe Payment Link**:
+   Provide a direct link to `https://donate.stripe.com/4gM5kDdELg3t822g3j8AE00` for voluntary donations.
+3. **Direct PayPal Donation**:
+   Provide a direct link to `https://paypal.me/gpellicciotta` for voluntary PayPal donations, listed last.
 
 ### **[Decided]** Zero-Footprint Client Integration
 - Keep all payment processing external via secure hosted pages.

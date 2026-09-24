@@ -245,6 +245,7 @@
   "about.support_heading": "Soutenir le projet",
   "about.support_description": "Verkeersregels Quiz est gratuit, open source et sans publicité. Si vous trouvez l'application utile, pensez à soutenir son développement et son hébergement.",
   "about.support_kofi": "Soutenir via Ko-fi",
+  "about.support_stripe": "Soutenir via Stripe",
   "about.support_paypal": "Soutenir via PayPal",
   "about.support_donate": "Faire un don",
   "about.icons_heading": "Icônes et symboles",

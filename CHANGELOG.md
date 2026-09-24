@@ -13,7 +13,8 @@ A summarized overview of all changes, per version of this project.
 
 ---
 
-## v3.7.1-pre
+## v3.8.0-pre
+- FrontEnd: Directe Stripe-betaallink toegevoegd naast Ko-fi en PayPal in het Over-scherm.
 - FrontEnd: Knop toegevoegd in het Over-scherm om alle Belgische verkeersborden af te drukken, gegroepeerd en gesorteerd zoals op wegcode.be.
 - BackEnd: 10 nieuwe examenvragen toegevoegd buiten borden en verkeerssituaties (pech, volgafstand, rijbewijzen, drugs, lading, helmen).
 - BackEnd: 15 nieuwe situatievragen toegevoegd (`sit-41` t/m `sit-55`) met echte foto's van Wikimedia Commons.

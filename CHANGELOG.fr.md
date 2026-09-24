@@ -13,7 +13,8 @@ Un aperçu résumé de toutes les modifications, par version de ce projet.
 
 ---
 
-## v3.7.1-pre
+## v3.8.0-pre
+- FrontEnd: Ajout d'un lien de paiement Stripe direct, en plus de Ko-fi et PayPal, dans l'écran À propos.
 - BackEnd: Liens sources de 50 questions liées directement au bon article ou paragraphe.
 - DevEx: Sources de panneaux routiers dans SOURCES.md revérifiées par rapport à Wikimedia Commons via un hachage de contenu.
 

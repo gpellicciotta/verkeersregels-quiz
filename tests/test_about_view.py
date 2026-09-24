@@ -80,9 +80,16 @@ class TestAboutView(unittest.TestCase):
         self.assertIn('class="about-sources-card"', html, "index.html must define about-sources-card")
         self.assertIn('class="about-support-card"', html, "index.html must define about-support-card")
         self.assertIn('id="about-support-kofi"', html, "About screen must define Ko-fi sponsor link")
+        self.assertIn('id="about-support-stripe"', html, "About screen must define Stripe donation link")
         self.assertIn('id="about-support-paypal"', html, "About screen must define PayPal donation link")
         self.assertIn('https://ko-fi.com/gpellicciotta', html, "About screen must link to Ko-fi")
+        self.assertIn('https://donate.stripe.com/4gM5kDdELg3t822g3j8AE00', html, "About screen must link to Stripe donation")
         self.assertIn('https://paypal.me/gpellicciotta', html, "About screen must link to PayPal donation")
+
+        # Stripe must be presented before PayPal in the support actions
+        stripe_link_pos = html.index('id="about-support-stripe"')
+        paypal_link_pos = html.index('id="about-support-paypal"')
+        self.assertLess(stripe_link_pos, paypal_link_pos, "Stripe donation link must precede PayPal donation link")
         self.assertIn('Belgische Wegcode', html, "About screen must reference Belgische Wegcode")
         self.assertIn('Overzicht wetswijzigingen', html, "About screen must reference wetswijzigingen")
         self.assertIn('Wikimedia Commons', html, "About screen must reference Wikimedia Commons")

@@ -13,7 +13,8 @@ Eine zusammenfassende Übersicht aller Änderungen pro Version dieses Projekts.
 
 ---
 
-## v3.7.1-pre
+## v3.8.0-pre
+- FrontEnd: Direkten Stripe-Zahlungslink neben Ko-fi und PayPal im Info-Bildschirm hinzugefügt.
 - BackEnd: Quelllinks von 50 Fragen, die direkt mit dem richtigen Artikel oder Absatz verknüpft sind.
 - DevEx: Verkehrszeichenquellen in SOURCES.md wurden über den Inhalts-Hash erneut mit Wikimedia Commons verifiziert.
 
