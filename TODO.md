@@ -14,7 +14,7 @@ An overview of all tasks and their planning.
 ---
 
 ## Next Milestone
-- [ ] T0083 In the about/info page, provide a button to print a document listing, in a table, all Belgian roadsigns with their explanation and a link to wegcode.be, and in the order they are also presented in wegcode.be.
+- [~] T0083 [owner: @claude] Add a button on the About page to print all Belgian road signs with explanations and wegcode.be links.
 
 
 ---
