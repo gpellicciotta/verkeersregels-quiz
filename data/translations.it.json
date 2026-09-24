@@ -2,13 +2,13 @@
   "rec-a1a": {
     "question": "Cosa significa questo segnale stradale?",
     "options": [
-      "Dangerous left turn",
+      "Svolta a sinistra pericolosa",
       "Svolta a destra pericolosa",
       "Restringimento della corsia",
       "Traffico a doppio senso di marcia"
     ],
     "explanation": "Questo segnale di pericolo avverte di una svolta pericolosa a sinistra.",
-    "signTitle": "Dangerous left turn",
+    "signTitle": "Svolta a sinistra pericolosa",
     "signExplanation": "Questo segnale di pericolo avverte di una svolta pericolosa a sinistra."
   },
   "rec-a1b": {
@@ -17,7 +17,7 @@
       "Doppia piega",
       "Svolta a destra pericolosa",
       "Carreggiata scivolosa",
-      "Dangerous left turn"
+      "Svolta a sinistra pericolosa"
     ],
     "explanation": "Questo segnale di pericolo avverte di una svolta a destra pericolosa.",
     "signTitle": "Svolta a destra pericolosa",
@@ -52,7 +52,7 @@
     "options": [
       "Avviso di attraversamento per ciclisti",
       "Pista ciclabile obbligatoria",
-      "Zona ciclistica",
+      "Zona ciclabile",
       "Segnalazione di attraversamento pedonale"
     ],
     "explanation": "Questo segnale avverte di un luogo in cui i ciclisti attraversano la strada.",
@@ -77,7 +77,7 @@
       "Semafori",
       "File",
       "Lavori stradali",
-      "Massi che cadono"
+      "Caduta di massi"
     ],
     "explanation": "Questo segnale avverte di lavori sulla o lungo la carreggiata.",
     "signTitle": "Lavori stradali",
@@ -123,18 +123,18 @@
     "question": "Cosa significa questo segnale stradale?",
     "options": [
       "Pendio ripido (in salita)",
-      "Incavatura trasversale o schiena d'asino",
-      "Caduta pericolosa",
+      "Svuotamento trasversale o schiena d'asino",
+      "Discesa pericolosa",
       "Manto stradale in cattive condizioni"
     ],
     "explanation": "Il segnale stradale A3 avverte di una discesa pericolosa sulla strada (art. 66 KB 1 dicembre 1975).",
-    "signTitle": "Caduta pericolosa",
+    "signTitle": "Discesa pericolosa",
     "signExplanation": "Il segnale stradale A3 avverte di una discesa pericolosa sulla strada (art. 66 KB 1 dicembre 1975)."
   },
   "rec-a5": {
     "question": "Cosa significa questo segnale stradale?",
     "options": [
-      "Caduta pericolosa",
+      "Discesa pericolosa",
       "Design rialzato nel manto stradale",
       "Ponte mobile",
       "Pendio ripido"
@@ -147,7 +147,7 @@
     "question": "Cosa significa questo segnale stradale?",
     "options": [
       "Restrizione della corsia a sinistra",
-      "Restrizione della corsia a destra",
+      "Restringimento della corsia a destra",
       "Zipping obbligatorio da sinistra",
       "Divieto per veicoli più larghi di quanto indicato"
     ],
@@ -159,12 +159,12 @@
     "question": "Cosa significa questo segnale stradale?",
     "options": [
       "Restrizione della corsia a sinistra",
-      "Restrizione della corsia a destra",
+      "Restringimento della corsia a destra",
       "Passaggio più stretto con priorità al traffico in arrivo",
       "Fine di una spalla dura"
     ],
     "explanation": "Il segnale stradale A7c avverte di un restringimento della carreggiata a destra (art. 66 KB 1 dicembre 1975).",
-    "signTitle": "Restrizione della corsia a destra",
+    "signTitle": "Restringimento della corsia a destra",
     "signExplanation": "Il segnale stradale A7c avverte di un restringimento della carreggiata a destra (art. 66 KB 1 dicembre 1975)."
   },
   "rec-a9": {
@@ -194,19 +194,19 @@
   "rec-a13": {
     "question": "Cosa significa questo segnale stradale?",
     "options": [
-      "Incavatura trasversale o schiena d'asino",
+      "Svuotamento trasversale o schiena d'asino",
       "Design rialzato (dosso rallentatore)",
       "Lavori stradali",
       "Strada scivolosa durante le precipitazioni"
     ],
-    "explanation": "Il segnale stradale A13 avverte di un avvallamento trasversale, di una schiena d'asino o di un fondo stradale sconnesso (art. 66 KB 1 dicembre 1975).",
-    "signTitle": "Incavatura trasversale o schiena d'asino",
-    "signExplanation": "Il segnale stradale A13 avverte di un avvallamento trasversale, di una schiena d'asino o di un fondo stradale sconnesso (art. 66 KB 1 dicembre 1975)."
+    "explanation": "Il segnale stradale A13 avverte della presenza di una trasversale, di una schiena d'asino o di un fondo stradale sconnesso (art. 66 KB 1 dicembre 1975).",
+    "signTitle": "Svuotamento trasversale o schiena d'asino",
+    "signExplanation": "Il segnale stradale A13 avverte della presenza di una trasversale, di una schiena d'asino o di un fondo stradale sconnesso (art. 66 KB 1 dicembre 1975)."
   },
   "rec-a14": {
     "question": "Cosa significa questo segnale stradale?",
     "options": [
-      "Incavatura trasversale o schiena d'asino",
+      "Svuotamento trasversale o schiena d'asino",
       "Dispositivo/i elevato/i",
       "Zona con limite di velocità di 30 km/h",
       "Attraversamento pedonale con piattaforma"
@@ -242,13 +242,13 @@
   "rec-a19": {
     "question": "Cosa significa questo segnale stradale?",
     "options": [
-      "Massi che cadono",
+      "Caduta di massi",
       "Proiezione di ciottoli",
       "Fondo stradale irregolare",
       "Lavori su un terrapieno"
     ],
     "explanation": "Il segnale stradale A19 avverte del pericolo di caduta di sassi o sassi sulla carreggiata (art. 66 KB 1 dicembre 1975).",
-    "signTitle": "Massi che cadono",
+    "signTitle": "Caduta di massi",
     "signExplanation": "Il segnale stradale A19 avverte del pericolo di caduta di sassi o sassi sulla carreggiata (art. 66 KB 1 dicembre 1975)."
   },
   "rec-a27": {
@@ -291,7 +291,7 @@
     "question": "Cosa significa questo segnale stradale?",
     "options": [
       "Attraversamento aereo a bassa quota",
-      "Danger of sudden strong crosswinds",
+      "Pericolo di improvvisi forti venti trasversali",
       "Accesso ad un'area aeroportuale",
       "Differenze di pressione atmosferica agli imbocchi dei tunnel"
     ],
@@ -317,11 +317,11 @@
       "Direzione di marcia obbligatoria dritto o svoltare",
       "Restringimento della corsia con priorità al traffico in arrivo",
       "Circolazione consentita nei due sensi di marcia dopo un tratto di strada a senso unico",
-      "Separate lanes with oncoming traffic"
+      "Corsie separate dal traffico in arrivo"
     ],
-    "explanation": "Il segnale stradale A39 avverte che termina il traffico a senso unico ed è nuovamente consentita la circolazione in entrambe le direzioni (art. 66 KB 1 dicembre 1975).",
+    "explanation": "Il segnale stradale A39 avverte che termina la circolazione a senso unico ed è nuovamente consentita la circolazione in entrambe le direzioni (art. 66 KB 1 dicembre 1975).",
     "signTitle": "Circolazione consentita nei due sensi di marcia dopo un tratto di strada a senso unico",
-    "signExplanation": "Il segnale stradale A39 avverte che termina il traffico a senso unico ed è nuovamente consentita la circolazione in entrambe le direzioni (art. 66 KB 1 dicembre 1975)."
+    "signExplanation": "Il segnale stradale A39 avverte che termina la circolazione a senso unico ed è nuovamente consentita la circolazione in entrambe le direzioni (art. 66 KB 1 dicembre 1975)."
   },
   "rec-a43": {
     "question": "Cosa significa questo segnale stradale?",
@@ -331,9 +331,9 @@
       "Storico collegamento con il treno a vapore",
       "Passaggio a livello senza barriere"
     ],
-    "explanation": "Il segnale stradale A43 avvisa in anticipo della presenza di un passaggio a livello senza barriere (art. 66 KB 1 dicembre 1975).",
+    "explanation": "Il segnale stradale A43 avvisa preventivamente del passaggio a livello senza barriere (art. 66 KB 1 dicembre 1975).",
     "signTitle": "Passaggio a livello senza barriere",
-    "signExplanation": "Il segnale stradale A43 avvisa in anticipo della presenza di un passaggio a livello senza barriere (art. 66 KB 1 dicembre 1975)."
+    "signExplanation": "Il segnale stradale A43 avvisa preventivamente del passaggio a livello senza barriere (art. 66 KB 1 dicembre 1975)."
   },
   "rec-a45": {
     "question": "Cosa significa questo segnale stradale?",
@@ -343,9 +343,9 @@
       "Intersezione in cui si applica la priorità da destra",
       "Passaggio a livello con semibarriere automatiche"
     ],
-    "explanation": "Il segnale stradale A45 (Croce di Sant'Andrea unica) indica le immediate vicinanze di un passaggio a livello a binario unico (art. 66 Regio Decreto 1 dicembre 1975).",
+    "explanation": "Il segnale stradale A45 (croce unica di Sant'Andrea) indica le immediate vicinanze di un passaggio a livello a binario unico (art. 66 Regio Decreto 1 dicembre 1975).",
     "signTitle": "Passaggio a livello a binario unico",
-    "signExplanation": "Il segnale stradale A45 (Croce di Sant'Andrea unica) indica le immediate vicinanze di un passaggio a livello a binario unico (art. 66 Regio Decreto 1 dicembre 1975)."
+    "signExplanation": "Il segnale stradale A45 (croce unica di Sant'Andrea) indica le immediate vicinanze di un passaggio a livello a binario unico (art. 66 Regio Decreto 1 dicembre 1975)."
   },
   "rec-a47": {
     "question": "Cosa significa questo segnale stradale?",
@@ -364,17 +364,17 @@
     "options": [
       "Passaggio a livello senza barriere",
       "Pista ciclabile obbligatoria con passaggio a livello",
-      "Attraversamento di una strada pubblica mediante uno o più binari incorporati nella carreggiata",
+      "Attraversamento di una strada pubblica con uno o più binari costruiti nella carreggiata",
       "Fine di una corsia del tram"
     ],
     "explanation": "Il segnale stradale A49 segnala l'intersezione di una strada pubblica attraverso tracce presenti nel manto stradale (art. 66 KB 1 dicembre 1975).",
-    "signTitle": "Attraversamento di una strada pubblica mediante uno o più binari incorporati nella carreggiata",
+    "signTitle": "Attraversamento di una strada pubblica con uno o più binari costruiti nella carreggiata",
     "signExplanation": "Il segnale stradale A49 segnala l'intersezione di una strada pubblica attraverso tracce presenti nel manto stradale (art. 66 KB 1 dicembre 1975)."
   },
   "rec-a50": {
     "question": "Cosa significa questo segnale stradale?",
     "options": [
-      "Lavori stradali con traffico in ritardo",
+      "Lavori stradali con rallentamenti nel traffico",
       "Discesa pericolosa con traffico fermo",
       "Casello autostradale o passaggio di frontiera",
       "File"
@@ -398,13 +398,13 @@
   "rec-b1": {
     "question": "Cosa significa questo segnale stradale?",
     "options": [
-      "Dare priorità",
+      "Dare la priorità",
       "Strada prioritaria",
       "Segnale di stop",
       "Fine della strada prioritaria"
     ],
     "explanation": "Questo triangolo rovesciato significa che bisogna dare la precedenza al traffico in attraversamento.",
-    "signTitle": "Dare priorità",
+    "signTitle": "Dare la priorità",
     "signExplanation": "Questo triangolo rovesciato significa che bisogna dare la precedenza al traffico in attraversamento."
   },
   "rec-b5": {
@@ -435,7 +435,7 @@
     "question": "Cosa significa questo segnale stradale?",
     "options": [
       "Strada prioritaria",
-      "Dare priorità",
+      "Dare la priorità",
       "Rotonda",
       "Intersezione in cui si applica la priorità da destra"
     ],
@@ -459,13 +459,13 @@
     "question": "Cosa significa questo segnale stradale?",
     "options": [
       "È vietato circolare in questa direzione",
-      "Divieto di accesso in entrambe le direzioni per nessun conducente",
+      "Divieto di ingresso in entrambe le direzioni per nessun conducente",
       "Vietato ai pedoni",
       "Strada senza uscita"
     ],
-    "explanation": "Questo cartello completamente rosso chiude la strada a tutti gli automobilisti, in entrambe le direzioni.",
-    "signTitle": "Divieto di accesso in entrambe le direzioni per nessun conducente",
-    "signExplanation": "Questo cartello completamente rosso chiude la strada a tutti gli automobilisti, in entrambe le direzioni."
+    "explanation": "Questo segnale completamente rosso chiude la strada a tutti i conducenti, in entrambe le direzioni.",
+    "signTitle": "Divieto di ingresso in entrambe le direzioni per nessun conducente",
+    "signExplanation": "Questo segnale completamente rosso chiude la strada a tutti i conducenti, in entrambe le direzioni."
   },
   "rec-c35": {
     "question": "Cosa significa questo segnale stradale?",
@@ -506,20 +506,20 @@
   "rec-d5": {
     "question": "Cosa significa questo segnale stradale?",
     "options": [
-      "Senso di marcia obbligatorio dritto",
+      "Direzione di marcia obbligatoria dritto",
       "Circolazione obbligatoria (rotatoria)",
       "Incrocio con priorità da destra",
-      "Piazza del Traffico"
+      "Piazza del traffico"
     ],
-    "explanation": "Questo segnale annuncia una rotatoria dove è necessario proseguire nella direzione indicata.",
+    "explanation": "Questo segnale annuncia una rotatoria dove bisogna proseguire nella direzione indicata.",
     "signTitle": "Circolazione obbligatoria (rotatoria)",
-    "signExplanation": "Questo segnale annuncia una rotatoria dove è necessario proseguire nella direzione indicata."
+    "signExplanation": "Questo segnale annuncia una rotatoria dove bisogna proseguire nella direzione indicata."
   },
   "rec-d7": {
     "question": "Cosa significa questo segnale stradale?",
     "options": [
       "Sentiero obbligatorio",
-      "Bicycles allowed, but not required",
+      "Biciclette ammesse, ma non obbligatorie",
       "Pista ciclabile obbligatoria",
       "Fine della pista ciclabile"
     ],
@@ -533,11 +533,11 @@
       "Parcheggio consentito",
       "È vietato parcheggiare e sostare",
       "Tempo di parcheggio limitato",
-      "Il parcheggio è vietato"
+      "È vietato parcheggiare"
     ],
-    "explanation": "Questo segnale vieta la sosta, ma sono consentite brevi soste.",
-    "signTitle": "Il parcheggio è vietato",
-    "signExplanation": "Questo segnale vieta la sosta, ma sono consentite brevi soste."
+    "explanation": "Questo segnale vieta il parcheggio, ma sono consentite brevi soste.",
+    "signTitle": "È vietato parcheggiare",
+    "signExplanation": "Questo segnale vieta il parcheggio, ma sono consentite brevi soste."
   },
   "rec-f45": {
     "question": "Cosa significa questo segnale stradale?",
@@ -557,7 +557,7 @@
       "Fine di un'autostrada",
       "Inizio di un'autostrada",
       "Inizio di un'autostrada",
-      "Piazza del Traffico"
+      "Piazza del traffico"
     ],
     "explanation": "Da questo segnale si applicano le regole stradali specifiche per le autostrade.",
     "signTitle": "Inizio di un'autostrada",
@@ -604,7 +604,7 @@
     "explanation": "Il cartello E9a con il simbolo della sedia a rotelle segnala un parcheggio riservato alle persone con disabilità."
   },
   "iden-f1b": {
-    "question": "Quale segnale indica l'inizio di un centro abitato?",
+    "question": "Quale segnale indica l'inizio di un abitato?",
     "options": [
       "assets/signs/F1b.svg",
       "assets/signs/F103.svg",
@@ -621,7 +621,7 @@
       "assets/signs/D1a.svg",
       "assets/signs/F103.svg"
     ],
-    "explanation": "Il segnale F19 indica che stai guidando su una strada pubblica a senso unico."
+    "explanation": "Il segnale F19 indica che stai guidando su una strada pubblica con traffico a senso unico."
   },
   "iden-f49": {
     "question": "Quale segnale indica la posizione esatta di un attraversamento pedonale (cioè non l'avviso anticipato)?",
@@ -631,7 +631,7 @@
       "assets/signs/F49.svg",
       "assets/signs/A21.svg"
     ],
-    "explanation": "Il cartello F49 segnala l'attraversamento vero e proprio, mentre il cartello di pericolo A21 avvisa preventivamente."
+    "explanation": "Il cartello F49 segnala l'attraversamento vero e proprio, mentre il cartello di pericolo A21 ne avverte preventivamente."
   },
   "iden-f103": {
     "question": "Quale segnale indica l'inizio di una zona pedonale?",
@@ -661,7 +661,7 @@
       "70 chilometri all'ora",
       "90 km/h"
     ],
-    "explanation": "Nelle Fiandre e in Vallonia, il limite di velocità standard all'interno dei centri abitati è di 50 km/h (art. 11.1). Nella Regione di Bruxelles Capitale, invece, la velocità standard è di 30 km/h."
+    "explanation": "Nelle Fiandre e in Vallonia il limite di velocità standard all'interno dei centri abitati è di 50 km/h (art. 11.1). Nella Regione di Bruxelles Capitale, invece, la velocità standard è di 30 km/h."
   },
   "rule-snelheid-buiten-vl": {
     "question": "Qual è la velocità massima standard fuori dai centri abitati sulle strade fiamminghe dopo la riforma della velocità, se non diversamente indicato?",
@@ -671,7 +671,7 @@
       "90 km/h",
       "120 chilometri all'ora"
     ],
-    "explanation": "Nelle Fiandre e Bruxelles il limite di velocità standard fuori dai centri abitati è di 70 km/h (art. 11.2). Solo in Vallonia la velocità normale è ancora di 90 km/h."
+    "explanation": "Nelle Fiandre e a Bruxelles il limite di velocità standard fuori dai centri abitati è di 70 km/h (art. 11.2). Solo in Vallonia la velocità normale è ancora di 90 km/h."
   },
   "rule-snelheid-autosnelweg": {
     "question": "Qual è il limite di velocità sulle autostrade in Belgio?",
@@ -744,24 +744,24 @@
     "explanation": "L'attesa al semaforo rosso non conta come sosta o parcheggio (art. 2.22 e 2.23). L'articolo 8.4 vieta di tenere o manipolare dispositivi mobili dotati di schermo durante la guida; il motore non deve essere spento per legge."
   },
   "rule-voorrang-rechts": {
-    "question": "Chi ha la priorità in un incrocio dove la priorità non è specificatamente regolamentata?",
+    "question": "Chi ha la priorità in un incrocio in cui la priorità non è specificatamente regolamentata?",
     "options": [
       "Traffico da sinistra",
       "Traffico da destra",
       "Il veicolo più grande",
       "Chi arriva prima"
     ],
-    "explanation": "Senza indicazioni vige la regola della precedenza, come stabilito dall'articolo 12.3.1 del Codice della Strada."
+    "explanation": "Senza indicazioni vale la regola della precedenza, come stabilito dall'articolo 12.3.1 del Codice della Strada."
   },
   "rule-voorrang-rechts-gestopt": {
-    "question": "Perdi la precedenza se ti fermi brevemente all'incrocio prima di proseguire?",
+    "question": "Perdi la priorità da destra se ti fermi brevemente all'incrocio prima di proseguire?",
     "options": [
       "Sì, chi si ferma perde la priorità",
       "Solo se si applica un ordine di stop",
-      "No, anche il conducente fermo da destra mantiene la priorità",
+      "No, anche il pilota fermo da destra mantiene la priorità",
       "Solo fuori dai centri abitati"
     ],
-    "explanation": "Secondo costante giurisprudenza all'articolo 12.3.1, il conducente proveniente da destra conserva la precedenza, anche se si ferma prima prima dell'incrocio."
+    "explanation": "Secondo costante giurisprudenza all'articolo 12.3.1, il conducente da destra mantiene la precedenza, anche se si ferma prima prima dell'incrocio."
   },
   "rule-rotonde": {
     "question": "Chi ha la precedenza in una rotatoria indicata dal segnale D5?",
@@ -786,7 +786,7 @@
     "explanation": "Non appena suona il clacson di un veicolo prioritario, ogni utente della strada deve immediatamente dare la precedenza e dare la precedenza (art. 38)."
   },
   "rule-fietser-inhalen": {
-    "question": "Qual è la distanza laterale minima da mantenere quando si sorpassa un ciclista fuori dai centri abitati?",
+    "question": "Quale distanza laterale minima bisogna mantenere quando si sorpassa un ciclista fuori dai centri abitati?",
     "options": [
       "1 metro",
       "1,5 metri",
@@ -801,15 +801,15 @@
       "Avere la priorità, perché sei in macchina",
       "Passare velocemente prima di raggiungere la strada",
       "Dare la precedenza e fermarsi se necessario",
-      "Concedere la priorità solo al di fuori dei centri abitati"
+      "Concedere la priorità solo fuori dai centri abitati"
     ],
-    "explanation": "Secondo l'articolo 40.4.2, il conducente deve dare la precedenza e, se necessario, fermarsi ai pedoni che attraversano un incrocio."
+    "explanation": "Secondo l'Articolo 40.4.2, il conducente deve dare la precedenza e, se necessario, fermarsi ai pedoni che attraversano un incrocio."
   },
   "rule-fietser-aan-hand": {
     "question": "Come viene trattato un ciclista che attraversa le strisce pedonali tenendo in mano la bicicletta?",
     "options": [
       "Come ciclista, quindi senza priorità",
-      "Non è consentito attraversare sulle strisce pedonali",
+      "Non gli è consentito attraversare le strisce pedonali",
       "Solo come pedone se indossa anche il casco da bicicletta",
       "Come pedone, quindi con priorità"
     ],
@@ -846,7 +846,7 @@
     "explanation": "Secondo l'articolo 30.1.2°, i fendinebbia posteriori sono obbligatori in caso di nebbia o nevicata che limiti la visibilità a meno di 100 me in caso di pioggia battente. L'utilizzo è vietato in tutte le altre circostanze."
   },
   "rule-rijbewijs-begeleider": {
-    "question": "A partire da quale età si può ottenere la patente di guida provvisoria B con accompagnatore in Belgio?",
+    "question": "A partire da quale età si può ottenere una patente di guida provvisoria B con accompagnatore in Belgio?",
     "options": [
       "16 anni",
       "18 anni",
@@ -869,11 +869,11 @@
     "question": "Cosa dovresti fare quando ti avvicini a un passaggio a livello e le luci rosse iniziano a lampeggiare?",
     "options": [
       "Attraversa il più velocemente possibile prima che le barriere si abbassino",
-      "Fermarsi e attendere che le luci smettano di lampeggiare",
+      "Fermati e attendi che le luci smettano di lampeggiare",
       "Rallenta e non fermarti",
       "Fermati solo quando vedi le barriere abbassarsi"
     ],
-    "explanation": "Non appena lampeggia la luce rossa, è vietato ai sensi dell'articolo 20 paragrafo 3, 2° accedere al passaggio a livello, anche se le sbarre sono ancora aperte."
+    "explanation": "Non appena lampeggia la luce rossa, è vietato ai sensi dell'articolo 20 comma 3, 2° transitare sul passaggio a livello, anche se le sbarre sono ancora aperte."
   },
   "rule-zone30": {
     "question": "Quale limite di velocità si applica in una zona 30?",
@@ -899,7 +899,7 @@
     "question": "Il conducente di un veicolo agricolo considerato legalmente un \"quattro ruote a motore\" deve indossare il casco?",
     "options": [
       "Sì, sempre, indipendentemente dalla velocità di costruzione o dal tipo di sterzata",
-      "No, se la velocità di costruzione non è superiore a 40 km/h e il veicolo non è dotato di manubrio di tipo motociclistico",
+      "No, se la velocità di cantiere non supera i 40 km/h e il veicolo non è dotato di manubrio di tipo motociclistico",
       "Solo se non è presente la cintura di sicurezza",
       "Obbligatoria solo fuori dai centri abitati"
     ],
@@ -916,9 +916,9 @@
     "explanation": "Una carreggiata centrale (art. 2.71) funge da carreggiata per gli autoveicoli; i conducenti li seguono (art. 9.1.1) e possono solo deviare sulla corsia laterale (art. 2.72) per attraversare (art. 15.3) o sorpassare (art. 16.5)."
   },
   "rule-estep-leeftijd-2022": {
-    "question": "Da quale età minima è consentito guidare un veicolo a motore (come uno scooter elettrico) sulle strade pubbliche in Belgio?",
+    "question": "Da quale età minima è consentito guidare un dispositivo di propulsione a motore (come uno scooter elettrico) sulle strade pubbliche in Belgio?",
     "options": [
-      "Da 12 anni",
+      "Dai 12 anni",
       "Da 14 anni",
       "Dai 16 anni (eccetto zone residenziali, strade giochi o zone pedonali)",
       "Dai 18 anni"
@@ -944,7 +944,7 @@
       "Solo fuori dai centri abitati"
     ],
     "explanation": "Con il Regio Decreto del 30 luglio 2022 (in vigore dal 1° ottobre 2022, art. 9.1.2° e 69.3), è stato ripristinato il permesso per i conducenti di pedelec veloci sul percorso D9, a meno che un cartello non neghi loro l'accesso.",
-    "signTitle": "Strada riservata a pedoni, ciclisti e ciclomotori di classe A",
+    "signTitle": "Strada riservata a pedoni, ciclisti e ciclomotori a due ruote classe A",
     "signExplanation": "Il segnale D9 indica una parte della strada pubblica riservata ai pedoni, ai ciclisti e ai conducenti di ciclomotori a due ruote di classe A (nonché agli speed-pedelec, a meno che un cartello non vieti loro l'accesso) (art. 68.3 e 69.3 del Codice della Strada)."
   },
   "rule-velomobiel-2022": {
@@ -953,7 +953,7 @@
       "Una luce arancione lampeggiante sul tetto",
       "Una striscia riflettente gialla o arancione sui lati",
       "Indicatori laterali gialli obbligatori",
-      "Una carrozzeria fluorescente attorno all'intero veicolo"
+      "Una carrozzeria fluorescente avvolge l'intero veicolo"
     ],
     "explanation": "Secondo l'articolo 82.1.2, 6°, i velomobili devono essere sempre dotati di una striscia riflettente gialla o arancione sui lati."
   },
@@ -970,7 +970,7 @@
     "signExplanation": "Il cartello F111 indica l'inizio di una zona ciclabile (strada ciclabile). I veicoli a motore non possono sorpassare i ciclisti e possono circolare alla velocità massima di 30 km/h fino al cartello F113 (art. 2.61 e art. 71.2 del Codice della Strada)."
   },
   "rule-brussel-stad30-2021": {
-    "question": "Qual è la velocità massima generale all'interno dei centri abitati della regione di Bruxelles-Capitale dal 2021, se non diversamente indicato?",
+    "question": "Qual è la velocità massima generale all'interno dei centri abitati della regione di Bruxelles-Capitale dal 2021, salvo diversa indicazione?",
     "options": [
       "50 km/ora",
       "40 km/h",
@@ -999,9 +999,9 @@
       "Dare la priorità a tutti i conducenti all'incrocio",
       "Intersezione in cui si applica la priorità da destra"
     ],
-    "explanation": "Il segnale B3 anticipa il segnale B1 (dante priorità) alla distanza approssimativa indicata (art. 67 KB 1 dicembre 1975).",
+    "explanation": "Il segnale B3 anticipa il segnale B1 (di precedenza) alla distanza approssimativa indicata (art. 67 KB 1 dicembre 1975).",
     "signTitle": "Annuncio del segnale B1 (dare priorità) alla distanza indicata",
-    "signExplanation": "Il segnale B3 anticipa il segnale B1 (dante priorità) alla distanza approssimativa indicata (art. 67 KB 1 dicembre 1975)."
+    "signExplanation": "Il segnale B3 anticipa il segnale B1 (di precedenza) alla distanza approssimativa indicata (art. 67 KB 1 dicembre 1975)."
   },
   "rec-b7": {
     "question": "Cosa significa questo segnale stradale?",
@@ -1068,11 +1068,11 @@
     "options": [
       "Pista ciclabile obbligatoria con svolta a destra",
       "I ciclisti e gli speed-Pedelec possono procedere dritto al semaforo rosso purché abbiano la precedenza",
-      "I ciclisti e gli speed-pedelec possono svoltare a destra al semaforo rosso purché diano la precedenza",
+      "I ciclisti e gli speed-Pedelec possono svoltare a destra al semaforo rosso purché diano la precedenza",
       "Ai ciclisti è vietato svoltare a destra al semaforo rosso"
     ],
     "explanation": "Il segnale B22 consente ai ciclisti e ai conducenti di pedelec veloci di svoltare a destra al semaforo rosso o giallo-arancio, purché diano la precedenza (art. 67 KB 1 dicembre 1975).",
-    "signTitle": "I ciclisti e gli speed-pedelec possono svoltare a destra al semaforo rosso purché diano la precedenza",
+    "signTitle": "I ciclisti e gli speed-Pedelec possono svoltare a destra al semaforo rosso purché diano la precedenza",
     "signExplanation": "Il segnale B22 consente ai ciclisti e ai conducenti di pedelec veloci di svoltare a destra al semaforo rosso o giallo-arancio, purché diano la precedenza (art. 67 KB 1 dicembre 1975)."
   },
   "rec-b23": {
@@ -1081,11 +1081,11 @@
       "I ciclisti e gli speed-pedelec possono svoltare a destra al semaforo rosso purché abbiano la precedenza",
       "Pista ciclabile obbligatoria dritto",
       "Corsia riservata ai ciclisti e agli speed-pedelec",
-      "I ciclisti e gli speed-pedelec possono procedere dritto al semaforo rosso purché diano la precedenza"
+      "I ciclisti e gli speed-Pedelec possono procedere dritto al semaforo rosso purché diano la precedenza"
     ],
-    "explanation": "Il segnale B23 consente ai ciclisti e ai conducenti di pedelec veloci di procedere dritto con il semaforo rosso o giallo-arancio, purché diano la precedenza (art. 67 KB 1 dicembre 1975).",
-    "signTitle": "I ciclisti e gli speed-pedelec possono procedere dritto al semaforo rosso purché diano la precedenza",
-    "signExplanation": "Il segnale B23 consente ai ciclisti e ai conducenti di pedelec veloci di procedere dritto con il semaforo rosso o giallo-arancio, purché diano la precedenza (art. 67 KB 1 dicembre 1975)."
+    "explanation": "Il segnale B23 consente ai ciclisti e ai conducenti di pedelec veloci di procedere dritto con semaforo rosso o giallo-arancio, purché diano la precedenza (art. 67 KB 1 dicembre 1975).",
+    "signTitle": "I ciclisti e gli speed-Pedelec possono procedere dritto al semaforo rosso purché diano la precedenza",
+    "signExplanation": "Il segnale B23 consente ai ciclisti e ai conducenti di pedelec veloci di procedere dritto con semaforo rosso o giallo-arancio, purché diano la precedenza (art. 67 KB 1 dicembre 1975)."
   },
   "rec-c31a": {
     "question": "Cosa significa questo segnale stradale?",
@@ -1115,7 +1115,7 @@
     "question": "Cosa significa questo segnale stradale?",
     "options": [
       "Divieto di sorpasso per tutti i veicoli a motore",
-      "Accesso vietato ai camion",
+      "Accesso vietato ai mezzi pesanti",
       "Corsia obbligatoria per i camion",
       "Divieto di sorpasso per gli autocarri con PTT superiore a 3,5 tonnellate"
     ],
@@ -1127,7 +1127,7 @@
     "question": "Cosa significa questo segnale stradale?",
     "options": [
       "Accesso vietato ai conducenti di autoveicoli con più di due ruote e di motocicli con sidecar",
-      "Divieto di accesso a tutti i veicoli a motore, compresi i motocicli a due ruote senza sidecar",
+      "Accesso vietato a tutti i veicoli a motore, compresi i motocicli a due ruote senza sidecar",
       "Corsia obbligatoria riservata ai carpooler e ai taxi",
       "Accesso vietato ai conducenti di veicoli destinati al trasporto merci"
     ],
@@ -1140,8 +1140,8 @@
     "options": [
       "Accesso vietato a tutti i veicoli agricoli a quattro ruote e ai trattori",
       "Accesso vietato ai conducenti di veicoli a motore a quattro ruote costruiti per terreni non asfaltati (quad)",
-      "Percorso obbligatorio per quad e veicoli fuoristrada",
-      "Sono vietati i ciclomotori a quattro ruote"
+      "Percorso obbligatorio per quad e fuoristrada",
+      "I ciclomotori a quattro ruote sono vietati"
     ],
     "explanation": "Il segnale C6 vieta l'accesso ai conducenti di veicoli a motore a quattro ruote con carrozzeria aperta, manubrio e sella di tipo motociclistico, destinati a terreni non asfaltati, come i quad (art. 68 KB 1 dicembre 1975).",
     "signTitle": "Accesso vietato ai conducenti di veicoli a motore a quattro ruote costruiti per terreni non asfaltati (quad)",
@@ -1152,11 +1152,11 @@
     "options": [
       "Divieto di accesso per ciclomotori e pedelec veloci",
       "Corsia di parcheggio obbligatoria per i veicoli a motore a due ruote",
-      "Accesso vietato ai motociclisti",
+      "Accesso vietato ai conducenti di motociclette",
       "Divieto di sorpasso per tutti i conducenti di motocicli"
     ],
     "explanation": "Segnale C7 di divieto di accesso ai conducenti di motocicli (art. 68 KB 1 dicembre 1975).",
-    "signTitle": "Accesso vietato ai motociclisti",
+    "signTitle": "Accesso vietato ai conducenti di motociclette",
     "signExplanation": "Segnale C7 di divieto di accesso ai conducenti di motocicli (art. 68 KB 1 dicembre 1975)."
   },
   "rec-c9": {
@@ -1176,7 +1176,7 @@
     "options": [
       "Accesso vietato ai conducenti di biciclette",
       "Pista ciclabile obbligatoria per ciclisti e pedelec veloci",
-      "Accesso vietato ai pedoni e alle attrezzature per la mobilità personale",
+      "Accesso vietato ai pedoni e alle attrezzature per la mobilità",
       "Fine della pista ciclabile obbligatoria"
     ],
     "explanation": "Segnale C11 di divieto di accesso ai conducenti di biciclette (art. 68 KB 1 dicembre 1975).",
@@ -1187,18 +1187,18 @@
     "question": "Cosa significa questo segnale stradale?",
     "options": [
       "Accesso vietato a cavalieri e animali a cavallo",
-      "Accesso vietato ai conducenti di teso",
+      "Accesso vietato ai conducenti di tesa",
       "Percorso obbligatorio per cavalli e carri coperti",
       "Accesso vietato ai veicoli agricoli"
     ],
     "explanation": "Segnale C13 di divieto di accesso ai conducenti di veicoli tesi (art. 68 KB 1 dicembre 1975).",
-    "signTitle": "Accesso vietato ai conducenti di teso",
+    "signTitle": "Accesso vietato ai conducenti di tesa",
     "signExplanation": "Segnale C13 di divieto di accesso ai conducenti di veicoli tesi (art. 68 KB 1 dicembre 1975)."
   },
   "rec-c15": {
     "question": "Cosa significa questo segnale stradale?",
     "options": [
-      "Accesso vietato ai conducenti di teso",
+      "Accesso vietato ai conducenti di tesa",
       "Percorso obbligatorio per i cavalieri (ippovia)",
       "Divieto di accesso per i ciclisti",
       "Avvertenza per l'attraversamento di bovini o cavalli"
@@ -1210,7 +1210,7 @@
   "rec-c17": {
     "question": "Cosa significa questo segnale stradale?",
     "options": [
-      "Accesso vietato ai pedoni con passeggini",
+      "Divieto di accesso ai pedoni con passeggini",
       "Area di carico e scarico obbligatoria per i carretti a mano",
       "Divieto di accesso per le carriole sul marciapiede",
       "Accesso vietato ai conducenti dei carretti"
@@ -1259,7 +1259,7 @@
     "question": "Cosa significa questo segnale stradale?",
     "options": [
       "Accesso vietato a tutti i veicoli a motore con rimorchio",
-      "Divieto di sorpasso per gli autocarri superiori a 3,5 tonnellate",
+      "Divieto di sorpasso per autocarri superiori a 3,5 tonnellate",
       "Corsia obbligatoria per il trasporto merci",
       "Accesso vietato ai conducenti di autoveicoli e di rimorchi progettati e costruiti per il trasporto di merci"
     ],
@@ -1282,37 +1282,37 @@
   "rec-c24b": {
     "question": "Cosa significa questo segnale stradale?",
     "options": [
-      "Accesso vietato a tutti i veicoli dotati di impianto GPL o metano",
+      "L'accesso è vietato a tutti i veicoli dotati di impianto GPL o metano",
       "Divieto di accesso ai conducenti di veicoli che trasportano sostanze pericolose infiammabili o esplosive",
       "Ingresso vietato ai veicoli che trasportano sostanze inquinanti nell'acqua",
       "Divieto di usare fiamme libere e fumare in prossimità dei distributori di benzina"
     ],
-    "explanation": "Il cartello C24b vieta l'accesso ai conducenti di veicoli che trasportano sostanze pericolose infiammabili o esplosive (art. 68 Regio Decreto 1 dicembre 1975).",
+    "explanation": "Il cartello C24b vieta l'accesso ai conducenti di veicoli che trasportano sostanze pericolose infiammabili o esplosive (art. 68 Regio Decreto 1° dicembre 1975).",
     "signTitle": "Divieto di accesso ai conducenti di veicoli che trasportano sostanze pericolose infiammabili o esplosive",
-    "signExplanation": "Il cartello C24b vieta l'accesso ai conducenti di veicoli che trasportano sostanze pericolose infiammabili o esplosive (art. 68 Regio Decreto 1 dicembre 1975)."
+    "signExplanation": "Il cartello C24b vieta l'accesso ai conducenti di veicoli che trasportano sostanze pericolose infiammabili o esplosive (art. 68 Regio Decreto 1° dicembre 1975)."
   },
   "rec-c24c": {
     "question": "Cosa significa questo segnale stradale?",
     "options": [
       "Accesso vietato ai veicoli che trasportano gas infiammabili",
       "Divieto di scarico di liquidi o rifiuti nelle acque superficiali",
-      "Divieto di accesso ai conducenti di veicoli che trasportano sostanze inquinanti pericolose",
-      "Avvertenza per un'area di estrazione dell'acqua con un rischio elevato di inondazioni"
+      "Divieto di ingresso ai conducenti di veicoli che trasportano sostanze inquinanti pericolose",
+      "Avviso per un'area di estrazione dell'acqua con un rischio elevato di inondazioni"
     ],
     "explanation": "Il cartello C24c vieta l'accesso ai conducenti di veicoli che trasportano sostanze inquinanti pericolose (art. 68 KB 1 dicembre 1975).",
-    "signTitle": "Divieto di accesso ai conducenti di veicoli che trasportano sostanze inquinanti pericolose",
+    "signTitle": "Divieto di ingresso ai conducenti di veicoli che trasportano sostanze inquinanti pericolose",
     "signExplanation": "Il cartello C24c vieta l'accesso ai conducenti di veicoli che trasportano sostanze inquinanti pericolose (art. 68 KB 1 dicembre 1975)."
   },
   "rec-c25": {
     "question": "Cosa significa questo segnale stradale?",
     "options": [
-      "Divieto di accesso agli autobus articolati e ai camion con rimorchio",
+      "Divieto di accesso per gli autobus articolati e gli autocarri con rimorchio",
       "Distanza minima consigliata dai veicoli che precedono per veicoli lunghi",
-      "Obbligatorio seguire una distanza pari almeno alla distanza indicata in metri",
-      "È vietato l'accesso ai conducenti di veicoli o rimorchi la cui lunghezza, compreso il carico, superi quanto indicato"
+      "Distanza obbligatoria pari almeno alla distanza indicata in metri",
+      "Accesso vietato ai conducenti di veicoli o rimorchi la cui lunghezza, compreso il carico, supera quella indicata"
     ],
     "explanation": "Il cartello C25 vieta l'accesso ai conducenti di veicoli o rimorchi la cui lunghezza, compreso il carico, è superiore a quella indicata nel cartello (art. 68 KB 1 dicembre 1975).",
-    "signTitle": "È vietato l'accesso ai conducenti di veicoli o rimorchi la cui lunghezza, compreso il carico, superi quanto indicato",
+    "signTitle": "Accesso vietato ai conducenti di veicoli o rimorchi la cui lunghezza, compreso il carico, supera quella indicata",
     "signExplanation": "Il cartello C25 vieta l'accesso ai conducenti di veicoli o rimorchi la cui lunghezza, compreso il carico, è superiore a quella indicata nel cartello (art. 68 KB 1 dicembre 1975)."
   },
   "rec-c27": {
@@ -1330,7 +1330,7 @@
   "rec-c29": {
     "question": "Cosa significa questo segnale stradale?",
     "options": [
-      "Avvertimento per un viadotto o un tunnel con spazio limitato",
+      "Avvertenza per viadotto o tunnel con spazio limitato",
       "Accesso vietato ai conducenti di veicoli la cui altezza, compreso il carico, supera quella indicata",
       "Altezza libera consigliata per autobus e autobus a due piani",
       "Altezza minima obbligatoria per i veicoli commerciali sotto la struttura"
@@ -1371,9 +1371,9 @@
       "Inizio del divieto di sorpasso per i camion in caso di pioggia",
       "Corsia obbligatoria per gli autocarri con peso totale a terra superiore a 3,5 tonnellate"
     ],
-    "explanation": "Il segnale C41 indica la fine del divieto di sorpasso per i conducenti di veicoli adibiti al trasporto merci con massa complessiva superiore a 3,5 tonnellate (fine segnale C39, art. 68 KB 1 dicembre 1975).",
+    "explanation": "Il segnale C41 indica la fine del divieto di sorpasso per i conducenti di veicoli adibiti al trasporto merci con massa totale a terra superiore a 3,5 tonnellate (fine segnale C39, art. 68 KB 1 dicembre 1975).",
     "signTitle": "Fine del divieto di sorpasso a sinistra per i veicoli commerciali con PTT superiore a 3,5 tonnellate",
-    "signExplanation": "Il segnale C41 indica la fine del divieto di sorpasso per i conducenti di veicoli adibiti al trasporto merci con massa complessiva superiore a 3,5 tonnellate (fine segnale C39, art. 68 KB 1 dicembre 1975)."
+    "signExplanation": "Il segnale C41 indica la fine del divieto di sorpasso per i conducenti di veicoli adibiti al trasporto merci con massa totale a terra superiore a 3,5 tonnellate (fine segnale C39, art. 68 KB 1 dicembre 1975)."
   },
   "rec-c43": {
     "question": "Cosa significa questo segnale stradale?",
@@ -1402,7 +1402,7 @@
   "rec-c46": {
     "question": "Cosa significa questo segnale stradale?",
     "options": [
-      "Fine di tutti i divieti di sosta e sosta su questa strada",
+      "Fine di tutti i divieti di sosta e di sosta su questa strada",
       "Fine dell'autostrada o dell'autostrada",
       "Fine della strada prioritaria al prossimo incrocio",
       "Fine di tutti i divieti locali imposti ai veicoli in movimento"
@@ -1415,13 +1415,13 @@
     "question": "Cosa significa questo segnale stradale?",
     "options": [
       "Fine della zona a pedaggio autostradale",
-      "Pesa a ponte e controllo del carico sugli assi obbligatori per gli autocarri",
+      "Obbligatorio pesa a ponte e controllo del carico sugli assi per gli autocarri",
       "Valico di frontiera dove devono fermarsi solo i camion",
       "Casello autostradale: divieto di transitare senza fermarsi"
     ],
-    "explanation": "Il cartello C47 (Postale o Tassa) impone il divieto di transitare senza fermarsi (art. 68 KB 1 dicembre 1975).",
+    "explanation": "Il cartello C47 (Pedaggio o Tassa) impone il divieto di transitare senza fermarsi (art. 68 KB 1 dicembre 1975).",
     "signTitle": "Casello autostradale: divieto di transitare senza fermarsi",
-    "signExplanation": "Il cartello C47 (Postale o Tassa) impone il divieto di transitare senza fermarsi (art. 68 KB 1 dicembre 1975)."
+    "signExplanation": "Il cartello C47 (Pedaggio o Tassa) impone il divieto di transitare senza fermarsi (art. 68 KB 1 dicembre 1975)."
   },
   "rec-d9": {
     "question": "Cosa significa questo segnale stradale?",
@@ -1441,7 +1441,7 @@
       "Pista ciclabile esclusivamente per biciclette da corsa",
       "Parte della strada pubblica riservata a pedoni e ciclisti (senza ciclomotori)",
       "Inizio di una zona residenziale",
-      "Sentiero pedonale obbligatorio dove non è consentito circolare ai ciclisti"
+      "Sentiero obbligatorio dove è vietato circolare ai ciclisti"
     ],
     "explanation": "Il cartello D10 indica un percorso riservato a pedoni e ciclisti; A differenza del segnale D9 qui non possono circolare i ciclomotori della classe A (art. 69 cpv. 3).",
     "signTitle": "Parte della strada pubblica riservata a pedoni e ciclisti (senza ciclomotori)",
@@ -1479,9 +1479,9 @@
       "Obbligo di superare l'ostacolo a destra",
       "Svolta a destra pericolosa"
     ],
-    "explanation": "Il segnale D1d impone l'obbligo di superare l'ostacolo dal lato indicato dalla freccia, qui a destra (art. 69 KB 1 dicembre 1975).",
+    "explanation": "Il segnale D1d impone l'obbligo di superare l'ostacolo dal lato indicato dalla freccia, qui a destra (art. 69 Regio Decreto 1° dicembre 1975).",
     "signTitle": "Obbligo di superare l'ostacolo a destra",
-    "signExplanation": "Il segnale D1d impone l'obbligo di superare l'ostacolo dal lato indicato dalla freccia, qui a destra (art. 69 KB 1 dicembre 1975)."
+    "signExplanation": "Il segnale D1d impone l'obbligo di superare l'ostacolo dal lato indicato dalla freccia, qui a destra (art. 69 Regio Decreto 1° dicembre 1975)."
   },
   "rec-d1e": {
     "question": "Cosa significa questo segnale stradale?",
@@ -1503,9 +1503,9 @@
       "Intersezione in cui si applica la priorità da destra",
       "Divieto di proseguire dritto o di svoltare a destra"
     ],
-    "explanation": "Il segnale D3 obbliga il conducente a seguire una delle direzioni indicate dalle frecce, diritto o destra (art. 69 Regio Decreto 1° dicembre 1975).",
+    "explanation": "Il segnale D3 obbliga a seguire una delle direzioni indicate dalle frecce, diritto o destra (art. 69 Regio Decreto 1° dicembre 1975).",
     "signTitle": "Obbligo di seguire una delle indicazioni indicate dalle frecce",
-    "signExplanation": "Il segnale D3 obbliga il conducente a seguire una delle direzioni indicate dalle frecce, diritto o destra (art. 69 Regio Decreto 1° dicembre 1975)."
+    "signExplanation": "Il segnale D3 obbliga a seguire una delle direzioni indicate dalle frecce, diritto o destra (art. 69 Regio Decreto 1° dicembre 1975)."
   },
   "rec-d4": {
     "question": "Cosa significa questo segnale stradale?",
@@ -1547,7 +1547,7 @@
     "question": "Cosa significa questo segnale stradale?",
     "options": [
       "Vietato solo il parcheggio",
-      "Posto auto riservato",
+      "Parcheggio riservato",
       "Vietata la sosta e la sosta",
       "Fine di una zona di parcheggio"
     ],
@@ -1575,9 +1575,9 @@
       "Il parcheggio è vietato nei giorni festivi e nei fine settimana",
       "Parcheggio alternativo con tempo massimo di sosta di 2 ore"
     ],
-    "explanation": "Il cartello E7 impone il divieto di sosta sul lato della strada in cui si trova, dal 16 alla fine del mese (art. 70.2.1).",
+    "explanation": "Il segnale E7 impone il divieto di sosta sul lato della strada in cui si trova, dal 16 alla fine del mese (art. 70.2.1).",
     "signTitle": "Divieto di sosta dal 16 a fine mese",
-    "signExplanation": "Il cartello E7 impone il divieto di sosta sul lato della strada in cui si trova, dal 16 alla fine del mese (art. 70.2.1)."
+    "signExplanation": "Il segnale E7 impone il divieto di sosta sul lato della strada in cui si trova, dal 16 alla fine del mese (art. 70.2.1)."
   },
   "rec-e9a": {
     "question": "Cosa significa questo segnale stradale?",
@@ -1595,13 +1595,13 @@
     "question": "Cosa significa questo segnale stradale?",
     "options": [
       "Parcheggio solo per camion e autobus",
-      "Parcheggio obbligatorio sul bordo rialzato",
+      "Parcheggio obbligatorio sul ciglio rialzato",
       "Parcheggio solo per moto, autovetture, auto a duplice uso e minibus",
       "Posto auto riservato ai veicoli in carpool"
     ],
-    "explanation": "Il segnale E9b indica che il parcheggio è riservato esclusivamente a motociclette, autovetture, autoveicoli a duplice uso e minibus (art. 70.2.1).",
+    "explanation": "Il segnale E9b indica che il parcheggio è riservato esclusivamente a motocicli, autovetture, autovetture a duplice uso e minibus (art. 70.2.1).",
     "signTitle": "Parcheggio solo per moto, autovetture, auto a duplice uso e minibus",
-    "signExplanation": "Il segnale E9b indica che il parcheggio è riservato esclusivamente a motociclette, autovetture, autoveicoli a duplice uso e minibus (art. 70.2.1)."
+    "signExplanation": "Il segnale E9b indica che il parcheggio è riservato esclusivamente a motocicli, autovetture, autovetture a duplice uso e minibus (art. 70.2.1)."
   },
   "rec-e9c": {
     "question": "Cosa significa questo segnale stradale?",
@@ -1611,21 +1611,21 @@
       "Parcheggio obbligatorio dei camion sulla corsia di emergenza",
       "Parcheggio solo per autocarri leggeri e autocarri"
     ],
-    "explanation": "Il cartello E9c indica che il parcheggio è riservato esclusivamente agli autocarri leggeri e ai camion (art. 70.2.1).",
+    "explanation": "Il segnale E9c indica che il parcheggio è riservato esclusivamente agli autocarri leggeri e ai camion (art. 70.2.1).",
     "signTitle": "Parcheggio solo per autocarri leggeri e autocarri",
-    "signExplanation": "Il cartello E9c indica che il parcheggio è riservato esclusivamente agli autocarri leggeri e ai camion (art. 70.2.1)."
+    "signExplanation": "Il segnale E9c indica che il parcheggio è riservato esclusivamente agli autocarri leggeri e ai camion (art. 70.2.1)."
   },
   "rec-e9d": {
     "question": "Cosa significa questo segnale stradale?",
     "options": [
       "Parcheggio riservato ai pullman",
       "Fermata degli autobus urbani del trasporto pubblico",
-      "Posto auto riservato al trasporto scolastico",
+      "Parcheggio riservato al trasporto scolastico",
       "Divieto sugli autobus che consentono la salita e la discesa dei passeggeri"
     ],
-    "explanation": "Il cartello E9d indica un parcheggio riservato esclusivamente agli autobus (art. 70.2.1).",
+    "explanation": "Il segnale E9d indica un parcheggio riservato esclusivamente agli autobus (art. 70.2.1).",
     "signTitle": "Parcheggio riservato ai pullman",
-    "signExplanation": "Il cartello E9d indica un parcheggio riservato esclusivamente agli autobus (art. 70.2.1)."
+    "signExplanation": "Il segnale E9d indica un parcheggio riservato esclusivamente agli autobus (art. 70.2.1)."
   },
   "rec-e9e": {
     "question": "Cosa significa questo segnale stradale?",
@@ -1666,13 +1666,13 @@
   "rec-e9h": {
     "question": "Cosa significa questo segnale stradale?",
     "options": [
-      "Parcheggio riservato ai camper",
+      "Parcheggio solo per camper",
       "Area campeggio e sosta roulotte consentite",
-      "Parcheggio vietato ai veicoli con rimorchio o roulotte",
+      "Divieto di sosta per veicoli con rimorchio o roulotte",
       "Parcheggio riservato ai camion leggeri"
     ],
     "explanation": "Il cartello E9h indica un parcheggio riservato esclusivamente ai camper (camper/casa mobile) (art. 70.2.1).",
-    "signTitle": "Parcheggio riservato ai camper",
+    "signTitle": "Parcheggio solo per camper",
     "signExplanation": "Il cartello E9h indica un parcheggio riservato esclusivamente ai camper (camper/casa mobile) (art. 70.2.1)."
   },
   "rec-e9i": {
@@ -1695,9 +1695,9 @@
       "Sosta alternata con sosta riservata per categoria di veicoli",
       "Zona parcheggio dove sono ammesse solo biciclette elettriche e auto elettriche"
     ],
-    "explanation": "Il segnale E9j indica che la sosta in determinati periodi orari è riservata a determinate categorie di veicoli (art. 70.2.1).",
+    "explanation": "Il cartello E9j indica che la sosta in determinati periodi orari è riservata a determinate categorie di veicoli (art. 70.2.1).",
     "signTitle": "Sosta alternata con sosta riservata per categoria di veicoli",
-    "signExplanation": "Il segnale E9j indica che la sosta in determinati periodi orari è riservata a determinate categorie di veicoli (art. 70.2.1)."
+    "signExplanation": "Il cartello E9j indica che la sosta in determinati periodi orari è riservata a determinate categorie di veicoli (art. 70.2.1)."
   },
   "rec-e11": {
     "question": "Cosa significa questo segnale stradale?",
@@ -1827,9 +1827,9 @@
       "Guasto in un tunnel",
       "Viadotto o passaggio coperto"
     ],
-    "explanation": "Il segnale direzionale F8 indica una galleria di lunghezza superiore a 500 metri (art. 71.2 del Codice della Strada).",
+    "explanation": "Il segnale di indicazione F8 indica una galleria di lunghezza superiore a 500 metri (art. 71.2 del Codice della Strada).",
     "signTitle": "Tunnel con una lunghezza di oltre 500 metri",
-    "signExplanation": "Il segnale direzionale F8 indica una galleria di lunghezza superiore a 500 metri (art. 71.2 del Codice della Strada)."
+    "signExplanation": "Il segnale di indicazione F8 indica una galleria di lunghezza superiore a 500 metri (art. 71.2 del Codice della Strada)."
   },
   "rec-f9": {
     "question": "Cosa significa questo segnale stradale?",
@@ -1848,7 +1848,7 @@
     "options": [
       "Fine di un'autostrada",
       "Fine di un'autostrada",
-      "Divieto di accesso ai veicoli a motore",
+      "Divieto di transito per i veicoli a motore",
       "Fine di una zona a velocità aumentata"
     ],
     "explanation": "Il segnale stradale F11 indica la fine di un'autostrada (art. 71.2 del Codice della Strada).",
@@ -1859,12 +1859,12 @@
     "question": "Cosa significa questo segnale stradale?",
     "options": [
       "Inizio di una strada da gioco",
-      "Inizio di un'area residenziale o di un cortile",
+      "Inizio di una zona residenziale o di un cortile",
       "Inizio di un ambiente scolastico",
       "Inizio di una zona pedonale"
     ],
     "explanation": "Il segnale F12a indica l'inizio di un'area residenziale o di un cortile (art. 71.2 del Codice della Strada). Il limite di velocità è di 20 km/he i pedoni possono utilizzare l'intera larghezza della strada.",
-    "signTitle": "Inizio di un'area residenziale o di un cortile",
+    "signTitle": "Inizio di una zona residenziale o di un cortile",
     "signExplanation": "Il segnale F12a indica l'inizio di un'area residenziale o di un cortile (art. 71.2 del Codice della Strada). Il limite di velocità è di 20 km/he i pedoni possono utilizzare l'intera larghezza della strada."
   },
   "rec-f12b": {
@@ -1896,7 +1896,7 @@
     "options": [
       "Area di sosta per ciclisti e conducenti di ciclomotori a due ruote",
       "Pista ciclabile obbligatoria in prossimità dei semafori",
-      "Parcheggio riservato per biciclette e motorini",
+      "Posto auto riservato per biciclette e motorini",
       "Attraversamento per ciclisti e pedoni"
     ],
     "explanation": "Il segnale F14 indica una zona di coda (art. 71.2 del Codice della Strada), dove i ciclisti e i ciclomotori di classe A possono mettersi in fila davanti al semaforo.",
@@ -1923,9 +1923,9 @@
       "Divieto di sosta per tutti i veicoli esclusi gli autobus",
       "Superficie speciale carrabile per tram e autobus"
     ],
-    "explanation": "Il segnale direzionale F17 indica la disposizione delle corsie con una corsia riservata ai veicoli dei servizi di trasporto pubblico regolare (art. 71.2 del Codice della Strada).",
+    "explanation": "Il segnale direzionale F17 evidenzia la disposizione delle corsie con una corsia riservata ai veicoli dei servizi di trasporto pubblico regolare (art. 71.2 del Codice della Strada).",
     "signTitle": "Indicazione delle corsie di una carreggiata con corsia riservata agli autobus",
-    "signExplanation": "Il segnale direzionale F17 indica la disposizione delle corsie con una corsia riservata ai veicoli dei servizi di trasporto pubblico regolare (art. 71.2 del Codice della Strada)."
+    "signExplanation": "Il segnale direzionale F17 evidenzia la disposizione delle corsie con una corsia riservata ai veicoli dei servizi di trasporto pubblico regolare (art. 71.2 del Codice della Strada)."
   },
   "rec-f18": {
     "question": "Cosa significa questo segnale stradale?",
@@ -1959,9 +1959,9 @@
       "Numero di una strada internazionale",
       "Numero di una circonvallazione attorno ad un agglomerato"
     ],
-    "explanation": "Il segnale F23a indica il numero identificativo di una strada normale, come una strada nazionale o regionale (art. 71.2 del Codice della Strada).",
+    "explanation": "Il segnale F23a indica il numero identificativo di una strada normale, ad esempio una strada nazionale o regionale (art. 71.2 del Codice della Strada).",
     "signTitle": "Numero di una strada normale",
-    "signExplanation": "Il segnale F23a indica il numero identificativo di una strada normale, come una strada nazionale o regionale (art. 71.2 del Codice della Strada)."
+    "signExplanation": "Il segnale F23a indica il numero identificativo di una strada normale, ad esempio una strada nazionale o regionale (art. 71.2 del Codice della Strada)."
   },
   "rec-f23b": {
     "question": "Cosa significa questo segnale stradale?",
@@ -2016,7 +2016,7 @@
     "options": [
       "Fine di un'autostrada",
       "Segnaletica",
-      "Segnavia solo per traffico pesante",
+      "Segnaletica riservata solo al traffico pesante",
       "Cartello anteriore che indica una strada senza uscita"
     ],
     "explanation": "Il segnale F27 è, come F25, un cartello stradale (art. 71.2). Il pittogramma del percorso autostradale può essere visualizzato facoltativamente su F25, F27, F29, F31, F39 e F41, ma non è una caratteristica fissa di F27 stesso.",
@@ -2026,13 +2026,13 @@
   "rec-f29": {
     "question": "Cosa significa questo segnale stradale?",
     "options": [
-      "Cartello anteriore che segnala una rotatoria",
+      "Segnaletica che segnala una rotatoria",
       "Annuncio di una strada a pedaggio",
-      "Segnaletica che indica la direzione da seguire per raggiungere una destinazione",
+      "Segnaletica che indica la direzione da seguire verso una destinazione",
       "Segnale di conferma del percorso lungo un'autostrada"
     ],
     "explanation": "Il segnale F29 è un cartello che indica la direzione verso una destinazione all'uscita, eventualmente con indicazione della distanza (art. 71.2 del Codice della Strada).",
-    "signTitle": "Segnaletica che indica la direzione da seguire per raggiungere una destinazione",
+    "signTitle": "Segnaletica che indica la direzione da seguire verso una destinazione",
     "signExplanation": "Il segnale F29 è un cartello che indica la direzione verso una destinazione all'uscita, eventualmente con indicazione della distanza (art. 71.2 del Codice della Strada)."
   },
   "rec-f31": {
@@ -2040,12 +2040,12 @@
     "options": [
       "Inizio di una zona a traffico veloce",
       "Segnavia per una strada regionale secondaria",
-      "Direzione di marcia obbligatoria per le autovetture",
+      "Senso di marcia obbligatorio per le autovetture",
       "Segnaletica che indica un percorso su un'autostrada"
     ],
-    "explanation": "Il segnale F31 è un cartello che indica che il percorso indicato per raggiungere la destinazione si trova su un'autostrada (art. 71.2 del Codice della Strada).",
+    "explanation": "Il segnale F31 è un cartello indicatore che il percorso indicato per raggiungere la destinazione si trova su un'autostrada (art. 71.2 del Codice della Strada).",
     "signTitle": "Segnaletica che indica un percorso su un'autostrada",
-    "signExplanation": "Il segnale F31 è un cartello che indica che il percorso indicato per raggiungere la destinazione si trova su un'autostrada (art. 71.2 del Codice della Strada)."
+    "signExplanation": "Il segnale F31 è un cartello indicatore che il percorso indicato per raggiungere la destinazione si trova su un'autostrada (art. 71.2 del Codice della Strada)."
   },
   "rec-f33a": {
     "question": "Cosa significa questo segnale stradale?",
@@ -2091,57 +2091,57 @@
       "Segnaletica per ciclisti e cavalieri",
       "Segnaletica in prossimità di un esercizio pubblico o di un servizio di interesse generale"
     ],
-    "explanation": "Nelle vicinanze il cartello F34a indica la via verso strutture pubbliche e istituti di interesse generale (art. 71.2 del Codice della Strada).",
+    "explanation": "Nelle vicinanze il cartello F34a indica l'accesso a strutture pubbliche e istituti di interesse generale (art. 71.2 del Codice della Strada).",
     "signTitle": "Segnaletica in prossimità di un esercizio pubblico o di un servizio di interesse generale",
-    "signExplanation": "Nelle vicinanze il cartello F34a indica la via verso strutture pubbliche e istituti di interesse generale (art. 71.2 del Codice della Strada)."
+    "signExplanation": "Nelle vicinanze il cartello F34a indica l'accesso a strutture pubbliche e istituti di interesse generale (art. 71.2 del Codice della Strada)."
   },
   "rec-f34b1": {
     "question": "Cosa significa questo segnale stradale?",
     "options": [
-      "Deviazione obbligatoria per autocarri fuori dal centro abitato",
-      "Avvertimento di un attraversamento per ciclisti e cavalieri",
+      "Deviazione obbligatoria per i mezzi pesanti fuori dai centri abitati",
+      "Avviso di attraversamento per ciclisti e cavalieri",
       "Divieto di accesso per ciclisti, cavalieri e pedoni",
-      "Segnale: percorso consigliato per determinate categorie di utenti della strada, come ciclisti, cavalieri o pedoni"
+      "Segnaletica: percorso consigliato per determinate categorie di utenti della strada, come ciclisti, cavalieri o pedoni"
     ],
-    "explanation": "Il cartello F34b.1 è un segnale che indica il percorso consigliato per determinate categorie di utenti della strada, integrato dal simbolo del cartello C11, C15 o C19 ed eventualmente dalla distanza in km (art. 71.2 del Codice della Strada).",
-    "signTitle": "Segnale: percorso consigliato per determinate categorie di utenti della strada, come ciclisti, cavalieri o pedoni",
-    "signExplanation": "Il cartello F34b.1 è un segnale che indica il percorso consigliato per determinate categorie di utenti della strada, integrato dal simbolo del cartello C11, C15 o C19 ed eventualmente dalla distanza in km (art. 71.2 del Codice della Strada)."
+    "explanation": "Il segnale F34b.1 è un cartello che indica il percorso consigliato per alcune categorie di utenti della strada, integrato con il simbolo del segnale C11, C15 o C19 ed eventualmente la distanza in km (art. 71.2 del Codice della Strada).",
+    "signTitle": "Segnaletica: percorso consigliato per determinate categorie di utenti della strada, come ciclisti, cavalieri o pedoni",
+    "signExplanation": "Il segnale F34b.1 è un cartello che indica il percorso consigliato per alcune categorie di utenti della strada, integrato con il simbolo del segnale C11, C15 o C19 ed eventualmente la distanza in km (art. 71.2 del Codice della Strada)."
   },
   "rec-f34b2": {
     "question": "Cosa significa questo segnale stradale?",
     "options": [
-      "Segnale: percorso consigliato per determinate categorie di utenti della strada, come ciclisti, cavalieri o pedoni",
-      "Segnaletica in prossimità di un esercizio pubblico di interesse generale",
-      "Direzione obbligatoria per veicoli che trasportano merci pericolose",
-      "Segnale turistico verso un monumento o un parco ricreativo"
+      "Segnaletica: percorso consigliato per determinate categorie di utenti della strada, come ciclisti, cavalieri o pedoni",
+      "Segnaletica in prossimità di una struttura pubblica di interesse generale",
+      "Senso di marcia obbligatorio per i veicoli che trasportano merci pericolose",
+      "Segnaletica turistica verso un monumento o un parco ricreativo"
     ],
-    "explanation": "Il cartello F34b.2 è la versione semplificata del F34b.1: l'indicazione della destinazione e la freccia sono facoltative, ma il significato resta lo stesso percorso consigliato per la categoria di utenti indicata (art. 71.2 del Codice della Strada).",
-    "signTitle": "Segnale: percorso consigliato per determinate categorie di utenti della strada, come ciclisti, cavalieri o pedoni",
-    "signExplanation": "Il cartello F34b.2 è la versione semplificata del F34b.1: l'indicazione della destinazione e la freccia sono facoltative, ma il significato resta lo stesso percorso consigliato per la categoria di utenti indicata (art. 71.2 del Codice della Strada)."
+    "explanation": "Il segnale F34b.2 è la versione semplificata di F34b.1: l'indicazione della destinazione e la freccia sono facoltative, ma il significato rimane lo stesso percorso consigliato per la categoria di utenti della strada indicata (art. 71.2 del Codice della Strada).",
+    "signTitle": "Segnaletica: percorso consigliato per determinate categorie di utenti della strada, come ciclisti, cavalieri o pedoni",
+    "signExplanation": "Il segnale F34b.2 è la versione semplificata di F34b.1: l'indicazione della destinazione e la freccia sono facoltative, ma il significato rimane lo stesso percorso consigliato per la categoria di utenti della strada indicata (art. 71.2 del Codice della Strada)."
   },
   "rec-f34c1": {
     "question": "Cosa significa questo segnale stradale?",
     "options": [
-      "Segnale turistico verso un monumento, un'attrazione o un parco ricreativo",
-      "Segnaletica a distanza verso una valle o un corso d'acqua di interesse turistico",
-      "Segnale: percorso consigliato verso una destinazione turistica per determinate categorie di utenti della strada",
-      "Divieto di accesso per ciclisti, cavalieri e pedoni verso zone turistiche"
+      "Segnaletica turistica verso un monumento, un'attrazione o un parco ricreativo",
+      "Segnaletica remota verso una valle o un corso d'acqua a carattere turistico",
+      "Segnaletica: percorso consigliato verso una destinazione turistica per determinate categorie di utenti della strada",
+      "Divieto di accesso per ciclisti, cavalieri e pedoni alle zone turistiche"
     ],
-    "explanation": "Il cartello F34c.1 indica il percorso consigliato verso una destinazione turistica per determinate categorie di utenti della strada, integrato dal simbolo del cartello C11, C15 o C19 (art. 71.2 del Codice della Strada).",
-    "signTitle": "Segnale: percorso consigliato verso una destinazione turistica per determinate categorie di utenti della strada",
-    "signExplanation": "Il cartello F34c.1 indica il percorso consigliato verso una destinazione turistica per determinate categorie di utenti della strada, integrato dal simbolo del cartello C11, C15 o C19 (art. 71.2 del Codice della Strada)."
+    "explanation": "Il segnale F34c.1 riporta il percorso consigliato verso una località turistica per determinate categorie di utenti della strada, integrato con il simbolo del segnale C11, C15 o C19 (art. 71.2 del Codice della Strada).",
+    "signTitle": "Segnaletica: percorso consigliato verso una destinazione turistica per determinate categorie di utenti della strada",
+    "signExplanation": "Il segnale F34c.1 riporta il percorso consigliato verso una località turistica per determinate categorie di utenti della strada, integrato con il simbolo del segnale C11, C15 o C19 (art. 71.2 del Codice della Strada)."
   },
   "rec-f34c2": {
     "question": "Cosa significa questo segnale stradale?",
     "options": [
       "Deviazione obbligatoria verso un centro turistico",
-      "Segnale: percorso consigliato verso una destinazione turistica per determinate categorie di utenti della strada",
-      "Avvertimento di un attraversamento per ciclisti",
-      "Annuncio di un parcheggio in prossimità di un'attrazione turistica"
+      "Segnaletica: percorso consigliato verso una destinazione turistica per determinate categorie di utenti della strada",
+      "Avviso di attraversamento per ciclisti",
+      "Annuncio di un parcheggio vicino ad un'attrazione turistica"
     ],
-    "explanation": "Il cartello F34c.2 è la versione semplificata del F34c.1: la destinazione e la freccia sono facoltative, ma il cartello indica ancora il percorso consigliato verso una destinazione turistica per la categoria di utenti indicata (art. 71.2 del Codice della Strada).",
-    "signTitle": "Segnale: percorso consigliato verso una destinazione turistica per determinate categorie di utenti della strada",
-    "signExplanation": "Il cartello F34c.2 è la versione semplificata del F34c.1: la destinazione e la freccia sono facoltative, ma il cartello indica ancora il percorso consigliato verso una destinazione turistica per la categoria di utenti indicata (art. 71.2 del Codice della Strada)."
+    "explanation": "Il segnale F34c.2 è la versione semplificata di F34c.1: la destinazione e la freccia sono facoltative, ma il segnale indica comunque il percorso consigliato verso una destinazione turistica per la categoria designata di utenti della strada (art. 71.2 del Codice della Strada).",
+    "signTitle": "Segnaletica: percorso consigliato verso una destinazione turistica per determinate categorie di utenti della strada",
+    "signExplanation": "Il segnale F34c.2 è la versione semplificata di F34c.1: la destinazione e la freccia sono facoltative, ma il segnale indica comunque il percorso consigliato verso una destinazione turistica per la categoria designata di utenti della strada (art. 71.2 del Codice della Strada)."
   },
   "rec-f35": {
     "question": "Cosa significa questo segnale stradale?",
@@ -2160,7 +2160,7 @@
     "options": [
       "Indicazione di un'area di sosta pubblica lungo un'autostrada",
       "Posto auto riservato esclusivamente a camper e roulotte",
-      "Segnaletica per un centro di assistenza residenziale",
+      "Indicazioni per raggiungere un centro di assistenza residenziale",
       "Segnaletica turistica per l'alloggio, il campeggio o l'ostello della gioventù"
     ],
     "explanation": "Il cartello F37 indica la direzione delle strutture ricettive turistiche, quali alberghi, campeggi o ostelli della gioventù (art. 71.2 del Codice della Strada).",
@@ -2171,7 +2171,7 @@
     "question": "Cosa significa questo segnale stradale?",
     "options": [
       "Segnaletica che segnala una deviazione",
-      "Segnaletica che indica la fine dei lavori",
+      "Cartello indicante la fine dei lavori",
       "Annuncio di una strada senza uscita a causa di lavori",
       "Divisione obbligatoria delle corsie durante i lavori stradali"
     ],
@@ -2183,12 +2183,12 @@
     "question": "Cosa significa questo segnale stradale?",
     "options": [
       "Segnaletica per un'autostrada alternativa",
-      "Segnavia che indica una strada diversiva",
+      "Segnaletica che indica una strada diversiva",
       "Indicazione di una zona di parcheggio temporaneo",
       "Obbligatorio andare dritto durante i lavori stradali"
     ],
     "explanation": "Il segnale F41 è un cartello che indica la direzione della strada deviata da seguire durante una deviazione (art. 71.2 del Codice della Strada).",
-    "signTitle": "Segnavia che indica una strada diversiva",
+    "signTitle": "Segnaletica che indica una strada diversiva",
     "signExplanation": "Il segnale F41 è un cartello che indica la direzione della strada deviata da seguire durante una deviazione (art. 71.2 del Codice della Strada)."
   },
   "rec-f43": {
@@ -2206,20 +2206,20 @@
   "rec-f45b": {
     "question": "Cosa significa questo segnale stradale?",
     "options": [
-      "Vicolo cieco per tutti gli utenti della strada",
+      "Strada senza uscita per tutti gli utenti della strada",
       "Strada riservata esclusivamente a ciclisti e pedoni",
       "Circolazione a senso unico con eccezione per i ciclisti",
-      "Strada senza uscita, eccetto per pedoni e ciclisti"
+      "Strada senza uscita, eccetto pedoni e ciclisti"
     ],
     "explanation": "Il cartello F45b indica una strada senza uscita che rimane accessibile a ciclisti e pedoni (art. 71.2 del Codice della Strada).",
-    "signTitle": "Strada senza uscita, eccetto per pedoni e ciclisti",
+    "signTitle": "Strada senza uscita, eccetto pedoni e ciclisti",
     "signExplanation": "Il cartello F45b indica una strada senza uscita che rimane accessibile a ciclisti e pedoni (art. 71.2 del Codice della Strada)."
   },
   "rec-f47": {
     "question": "Cosa significa questo segnale stradale?",
     "options": [
       "Inizio di una zona di costruzione a velocità ridotta",
-      "Fine di una strada secondaria",
+      "Fine di una strada deviata",
       "Fine dei lavori",
       "Fine di tutte le disposizioni prioritarie"
     ],
@@ -2278,7 +2278,7 @@
   "rec-f52bis": {
     "question": "Cosa significa questo segnale stradale?",
     "options": [
-      "Direzione e distanza dalla stazione di emergenza o dalla stazione di emergenza più vicina",
+      "Direzione e distanza dal posto di emergenza o dalla stazione di emergenza più vicina",
       "Percorso alternativo obbligatorio per gli automobilisti in caso di ingorghi nel tunnel",
       "Via di fuga verso l'uscita di emergenza più vicina nelle gallerie con indicazione della direzione e della distanza",
       "Tunnel pedonale fino alla stazione metropolitana o ferroviaria più vicina"
@@ -2290,8 +2290,8 @@
   "rec-f53": {
     "question": "Cosa significa questo segnale stradale?",
     "options": [
-      "Postazione di emergenza per il primo soccorso in caso di incidenti",
-      "Farmacia con servizio di reperibilità notturna e festiva permanente",
+      "Stazione di emergenza per il primo soccorso in caso di incidenti",
+      "Farmacia con servizio di guardia notturno e festivo fisso",
       "Luogo di riparazione per autoveicoli in panne",
       "Struttura infermieristica"
     ],
@@ -2304,7 +2304,7 @@
     "options": [
       "Punto di soccorso",
       "Struttura di cura o ospedale con ricovero d'urgenza",
-      "Caserma dei vigili del fuoco con personale di guardia",
+      "Stazione dei vigili del fuoco con personale di guardia",
       "Farmacia o laboratorio medico lungo la strada"
     ],
     "explanation": "Il cartello F55 indica un posto di emergenza dove è possibile ottenere il primo soccorso in caso di incidenti (art. 71.2 del Codice della Strada).",
@@ -2367,9 +2367,9 @@
       "Stazione radio con informazioni sul traffico",
       "Stazione di polizia lungo l'autostrada"
     ],
-    "explanation": "Il cartello F61 indica un telefono pubblico (art. 71.2 del Codice della Strada).",
+    "explanation": "Il segnale F61 indica un telefono pubblico (art. 71.2 del Codice della Strada).",
     "signTitle": "Telefono",
-    "signExplanation": "Il cartello F61 indica un telefono pubblico (art. 71.2 del Codice della Strada)."
+    "signExplanation": "Il segnale F61 indica un telefono pubblico (art. 71.2 del Codice della Strada)."
   },
   "rec-f62": {
     "question": "Cosa significa questo segnale stradale?",
@@ -2377,7 +2377,7 @@
       "Cabina telefonica pubblica per chiamate generali",
       "Punto di soccorso per cure mediche di emergenza",
       "Telefono di emergenza",
-      "Stazione di polizia con presenza fissa"
+      "Stazione di polizia con presenza permanente"
     ],
     "explanation": "Il cartello F62 indica un telefono di emergenza (posto parlante) per emergenze e guasti (art. 71.2 del Codice della Strada).",
     "signTitle": "Telefono di emergenza",
@@ -2446,13 +2446,13 @@
   "rec-f73": {
     "question": "Cosa significa questo segnale stradale?",
     "options": [
-      "Postazione per roulotte",
+      "Posto per roulotte",
       "Campeggio destinato esclusivamente alle tende",
       "Area di parcheggio per camion con rimorchio",
       "Sede temporanea per operatori fieristici"
     ],
     "explanation": "Il cartello F73 indica una piazzola per roulotte e roulotte (art. 71.2 del Codice della Strada).",
-    "signTitle": "Postazione per roulotte",
+    "signTitle": "Posto per roulotte",
     "signExplanation": "Il cartello F73 indica una piazzola per roulotte e roulotte (art. 71.2 del Codice della Strada)."
   },
   "rec-f75": {
@@ -2483,7 +2483,7 @@
     "question": "Cosa significa questo segnale stradale?",
     "options": [
       "Obbligatorio allontanarsi dall'installazione della segnaletica a causa di lavori stradali",
-      "Cartello stradale che indica uno svincolo dell'autostrada",
+      "Segnale stradale che indica uno svincolo dell'autostrada",
       "Divieto di sorpasso per tutti i conducenti sulla corsia di sinistra",
       "Segnale anticipato che annuncia la riduzione del numero di corsie"
     ],
@@ -2511,9 +2511,9 @@
       "Divieto di svoltare sulle strade pubbliche",
       "Collegamento ad un'altra autostrada tramite un raccordo anulare"
     ],
-    "explanation": "Il segnale F83 segnala come segnaletica l'attraversamento dello spartitraffico centrale (art. 71.2 del Codice della Strada).",
+    "explanation": "Il segnale F83 segnala l'attraversamento dello spartitraffico come segnaletica (art. 71.2 del Codice della Strada).",
     "signTitle": "Cartello anteriore che annuncia l'attraversamento dello spartitraffico centrale",
-    "signExplanation": "Il segnale F83 segnala come segnaletica l'attraversamento dello spartitraffico centrale (art. 71.2 del Codice della Strada)."
+    "signExplanation": "Il segnale F83 segnala l'attraversamento dello spartitraffico come segnaletica (art. 71.2 del Codice della Strada)."
   },
   "rec-f85": {
     "question": "Cosa significa questo segnale stradale?",
@@ -2619,9 +2619,9 @@
       "Inizio della strada o parte della strada pubblica riservata alla circolazione di pedoni, ciclisti, cavalieri e conducenti di pedelec veloci",
       "Zona pedonale dove i ciclisti possono circolare solo a passo d'uomo"
     ],
-    "explanation": "Il cartello F99a indica l'inizio di una strada riservata ai pedoni, ai ciclisti, ai cavalieri e agli speed-pedelec (art. 71.2 del Codice della Strada).",
+    "explanation": "Il cartello F99a indica l'inizio di una strada riservata a pedoni, ciclisti, cavalieri e veloci Pedelec (art. 71.2 del Codice della Strada).",
     "signTitle": "Inizio della strada o parte della strada pubblica riservata alla circolazione di pedoni, ciclisti, cavalieri e conducenti di pedelec veloci",
-    "signExplanation": "Il cartello F99a indica l'inizio di una strada riservata ai pedoni, ai ciclisti, ai cavalieri e agli speed-pedelec (art. 71.2 del Codice della Strada)."
+    "signExplanation": "Il cartello F99a indica l'inizio di una strada riservata a pedoni, ciclisti, cavalieri e veloci Pedelec (art. 71.2 del Codice della Strada)."
   },
   "rec-f99b": {
     "question": "Cosa significa questo segnale stradale?",
@@ -2629,10 +2629,10 @@
       "Pista ciclabile e pedonale obbligatoria separata da una linea bianca continua sulla carreggiata",
       "Inizio di una strada da gioco dove in determinati orari il traffico motorizzato è vietato",
       "Fine di una zona riservata a pedoni e ciclisti",
-      "Inizio della strada riservata ai pedoni, ciclisti, ciclisti e conducenti di pedelec veloci con indicazione della parte di strada destinata alle diverse categorie"
+      "Inizio della strada riservata a pedoni, ciclisti, ciclisti e conducenti di pedelec veloci con indicazione della parte di strada destinata alle diverse categorie"
     ],
     "explanation": "Il cartello F99b indica l'inizio di una strada riservata indicando i tratti destinati alle diverse categorie di utenti della strada (art. 71.2 del Codice della Strada).",
-    "signTitle": "Inizio della strada riservata ai pedoni, ciclisti, ciclisti e conducenti di pedelec veloci con indicazione della parte di strada destinata alle diverse categorie",
+    "signTitle": "Inizio della strada riservata a pedoni, ciclisti, ciclisti e conducenti di pedelec veloci con indicazione della parte di strada destinata alle diverse categorie",
     "signExplanation": "Il cartello F99b indica l'inizio di una strada riservata indicando i tratti destinati alle diverse categorie di utenti della strada (art. 71.2 del Codice della Strada)."
   },
   "rec-f99c": {
@@ -2651,13 +2651,13 @@
     "question": "Cosa significa questo segnale stradale?",
     "options": [
       "Fine di una pista ciclabile obbligatoria lungo una normale strada regionale",
-      "Fine della strada o parte della strada pubblica riservata alla circolazione di pedoni, ciclisti, cavalieri e conducenti di pedelec veloci",
-      "Inizio di una zona con priorità assoluta per i ciclisti su strada",
+      "Fine della strada o parte della strada pubblica riservata alla circolazione di pedoni, ciclisti, cavalieri e conducenti di Pedelec veloci",
+      "Inizio di una zona con priorità assoluta per i ciclisti sulla carreggiata",
       "Fine di un'area residenziale o di un'area a traffico misto"
     ],
-    "explanation": "Il segnale F101a indica la fine della strada riservata a pedoni, ciclisti, ciclisti e conducenti di pedelec veloci (art. 71.2 del Codice della Strada).",
-    "signTitle": "Fine della strada o parte della strada pubblica riservata alla circolazione di pedoni, ciclisti, cavalieri e conducenti di pedelec veloci",
-    "signExplanation": "Il segnale F101a indica la fine della strada riservata a pedoni, ciclisti, ciclisti e conducenti di pedelec veloci (art. 71.2 del Codice della Strada)."
+    "explanation": "Il cartello F101a indica la fine della strada riservata a pedoni, ciclisti, ciclisti e conducenti di pedelec veloci (art. 71.2 del Codice della Strada).",
+    "signTitle": "Fine della strada o parte della strada pubblica riservata alla circolazione di pedoni, ciclisti, cavalieri e conducenti di Pedelec veloci",
+    "signExplanation": "Il cartello F101a indica la fine della strada riservata a pedoni, ciclisti, ciclisti e conducenti di pedelec veloci (art. 71.2 del Codice della Strada)."
   },
   "rec-f101b": {
     "question": "Cosa significa questo segnale stradale?",
@@ -2665,11 +2665,11 @@
       "Inizio di una pista ciclabile separata e di una mulattiera lungo una strada pubblica",
       "Obbligo per ciclisti e cavalieri di circolare su strada d'ora in poi",
       "Fine della strada riservata a pedoni, ciclisti, ciclisti e conducenti di pedelec veloci con indicazione della parte di strada destinata alle diverse categorie",
-      "Fine di una zona pedonale in un centro città"
+      "Fine di una zona pedonale nel centro città"
     ],
-    "explanation": "Il segnale F101b indica la fine della strada riservata con tratti separati per le diverse categorie di utenti della strada (art. 71.2 del Codice della Strada).",
+    "explanation": "Il cartello F101b indica la fine della strada riservata con tratti distinti per le diverse categorie di utenti della strada (art. 71.2 del Codice della Strada).",
     "signTitle": "Fine della strada riservata a pedoni, ciclisti, ciclisti e conducenti di pedelec veloci con indicazione della parte di strada destinata alle diverse categorie",
-    "signExplanation": "Il segnale F101b indica la fine della strada riservata con tratti separati per le diverse categorie di utenti della strada (art. 71.2 del Codice della Strada)."
+    "signExplanation": "Il cartello F101b indica la fine della strada riservata con tratti distinti per le diverse categorie di utenti della strada (art. 71.2 del Codice della Strada)."
   },
   "rec-f101c": {
     "question": "Cosa significa questo segnale stradale?",
@@ -2687,7 +2687,7 @@
     "question": "Cosa significa questo segnale stradale?",
     "options": [
       "Fine di una zona pedonale",
-      "Attraversamento per i bambini in età scolare",
+      "Attraversamento per le scolaresche",
       "Inizio di una zona pedonale",
       "Inizio di una strada da gioco"
     ],
@@ -2713,7 +2713,7 @@
       "Fine di una zona ciclabile o di una strada ciclabile",
       "Inizio di una zona ciclabile",
       "Pista ciclabile obbligatoria designata come pista ciclabile veloce",
-      "Divieto di circolazione su questa strada a tutti i veicoli a motore"
+      "Divieto di transito a tutti i veicoli a motore su questa strada"
     ],
     "explanation": "Il segnale F111 indica l'inizio di una zona ciclabile (strada ciclabile) dove i veicoli a motore non possono sorpassare i ciclisti e possono circolare ad una velocità massima di 30 km/h (art. 71.2 del Codice della Strada).",
     "signTitle": "Inizio di una zona ciclabile",
@@ -2736,7 +2736,7 @@
     "options": [
       "Fine di una zona a traffico limitato con accesso gratuito per tutti i veicoli",
       "Inizio di una zona silenziosa attorno ad un'area tranquilla",
-      "Percorso di guida obbligatorio per veicoli puramente elettrici e ibridi plug-in",
+      "Percorso di guida obbligatorio per veicoli esclusivamente elettrici e ibridi plug-in",
       "Inizio di una zona a traffico limitato"
     ],
     "explanation": "Il segnale F117 indica l'inizio di una zona a basse emissioni (LEZ) dove si applica una politica di ammissione selettiva agli autoveicoli in base alle loro emissioni (art. 71.2 del Codice della Strada).",
@@ -2747,7 +2747,7 @@
     "question": "Cosa significa questo segnale stradale?",
     "options": [
       "Fine di una zona a traffico limitato",
-      "Inizio di una zona a basse emissioni con condizioni di accesso selettive",
+      "Inizio di una zona a traffico limitato con condizioni di accesso selettive",
       "Fine di una zona ambientale in cui vengono controllati solo i camion",
       "Divieto di apporre questo segnale ai veicoli diesel inquinanti"
     ],
@@ -2761,7 +2761,7 @@
       "Avvertimento per aerei che volano a bassa quota o rumore improvviso dell'aereo",
       "Inizio di un'area aeroportuale",
       "Direzione per il terminal passeggeri dell'aeroporto più vicino",
-      "Fine della zona aeroportuale"
+      "Fine dell'area aeroportuale"
     ],
     "explanation": "Il segnale F119 indica l'inizio di un'area aeroportuale (art. 71.2 del Codice della Strada).",
     "signTitle": "Inizio di un'area aeroportuale",
@@ -2812,7 +2812,7 @@
   "rule-estep-trottoir-2022": {
     "question": "Sai guidare uno scooter elettrico sul marciapiede?",
     "options": [
-      "No, gli e-scooter seguono le regole per i ciclisti e non possono mai circolare sul marciapiede (a meno che non li si porti per mano)",
+      "No, gli e-scooter seguono le regole per i ciclisti e non dovrebbero mai essere guidati sul marciapiede (a meno che non li si guidi per mano)",
       "Sì, purché non si guidi a una velocità superiore a 6 km/h",
       "Sì, ma solo se non è presente la pista ciclabile",
       "Sì, ma solo all'interno dei centri abitati"
@@ -2832,7 +2832,7 @@
   "rule-estep-parkeren-2022": {
     "question": "Dove puoi lasciare uno scooter elettrico condiviso dopo la corsa?",
     "options": [
-      "Casuale sul marciapiede, purché sia piatto a terra",
+      "A caso sul marciapiede, basta che sia piatto a terra",
       "In mezzo alla pista ciclabile",
       "All'esterno della strada e delle corsie di parcheggio, senza intralciare o mettere in pericolo gli altri utenti della strada",
       "Solo nei parcheggi a pagamento"
@@ -2852,7 +2852,7 @@
   "rule-speed-pedelec-rijbewijs-2022": {
     "question": "Quale patente di guida minima è necessaria per guidare un Pedelec veloce sulle strade pubbliche?",
     "options": [
-      "Almeno patente di categoria AM (ciclomotore) o di categoria B (autovettura)",
+      "Almeno patente di guida di categoria AM (ciclomotore) o di categoria B (autovettura)",
       "Non è richiesta la patente di guida",
       "Patente motociclistica obbligatoria categoria A",
       "Solo un certificato speciale per biciclette del comune"
@@ -2860,14 +2860,14 @@
     "explanation": "Uno speed-pedelec è classificato come ciclomotore della classe P. Il conducente deve avere almeno 16 anni ed essere in possesso almeno della patente AM o della patente B per autoveicoli."
   },
   "rule-speed-pedelec-snelheid-2022": {
-    "question": "Fino a quale velocità massima può rimanere legalmente attiva la pedalata assistita di un Pedelec?",
+    "question": "Fino a quale velocità massima può rimanere legalmente attiva la pedalata assistita di un Pedelec veloce?",
     "options": [
       "25 km/ora",
       "45 km/h",
       "35 km/h",
       "50 km/ora"
     ],
-    "explanation": "Secondo l'articolo 2.17 del Codice della Strada, uno speed-pedelec fornisce assistenza alla pedalata fino ad un massimo di 45 km/h. Al di sopra di tale velocità il motore ausiliario deve spegnersi automaticamente."
+    "explanation": "Secondo l'articolo 2.17 del Codice della Strada, uno speed-pedelec fornisce assistenza alla pedalata fino a un massimo di 45 km/h. Al di sopra di tale velocità il motore ausiliario deve spegnersi automaticamente."
   },
   "rule-velomobiel-hoogte-2022": {
     "question": "Dove va posizionata la striscia riflettente obbligatoria sul velomobile?",
@@ -2877,7 +2877,7 @@
       "Solo posteriore",
       "Sul tetto"
     ],
-    "explanation": "L'articolo 82.1.2, 6° prescrive che i velomobili debbano avere una striscia riflettente gialla o arancione sui lati."
+    "explanation": "L'articolo 82.1.2, 6° prescrive che i velomobili debbano avere sui lati una striscia riflettente gialla o arancione."
   },
   "rule-reddingsstrook-vorming-2022": {
     "question": "Come possono gli automobilisti formare una corsia di soccorso su una strada a tre corsie nella stessa direzione in caso di ingorgo?",
@@ -2894,13 +2894,13 @@
     "options": [
       "Poco prima del restringimento della corsia",
       "Almeno 500 metri prima del restringimento",
-      "Non appena vedi il primo cartellone degli annunci di lavori stradali",
+      "Non appena vedi il primo cartellone pubblicitario dei lavori stradali",
       "Sulla corsia di emergenza per avanzare più velocemente"
     ],
-    "explanation": "Ai sensi dell'articolo 12bis gli automobilisti devono proseguire nella circolazione molto lenta fino a poco prima della restrizione e immettersi solo lì."
+    "explanation": "Ai sensi dell'articolo 12bis, gli automobilisti devono proseguire nella circolazione molto lenta fino a poco prima della restrizione e immettersi solo lì."
   },
   "rule-ritsen-voorrang": {
-    "question": "Come funziona la priorità per la compressione obbligatoria nel punto di restringimento?",
+    "question": "Come funziona la priorità con la compressione obbligatoria nel punto di restringimento?",
     "options": [
       "Gli automobilisti sulla corsia principale hanno sempre la precedenza e non devono far passare nessuno",
       "I conducenti nella corsia libera devono dare la precedenza alternativamente a un conducente che confluisce",
@@ -2917,7 +2917,7 @@
       "No, i veicoli a motore non possono mai sorpassare i ciclisti su una strada ciclabile",
       "Solo se il ciclista fa espressamente un gesto con la mano"
     ],
-    "explanation": "Nelle strade ciclabili (art. 22novies) è sempre vietato il sorpasso dei veicoli a motore rispetto ai ciclisti."
+    "explanation": "Nelle piste ciclabili (art. 22novies) è sempre vietato il sorpasso dei veicoli a motore rispetto ai ciclisti."
   },
   "rule-fietsstraat-snelheid": {
     "question": "Qual è la velocità massima assoluta per tutto il traffico in una strada ciclabile?",
@@ -2946,18 +2946,18 @@
     "options": [
       "I ciclisti devono attendere che diventi verde prima di poter proseguire dritto",
       "I ciclisti possono passare direttamente con il semaforo rosso, purché diano la precedenza agli altri veicoli e ai pedoni",
-      "Cyclists may turn left without stopping",
+      "I ciclisti possono svoltare a sinistra senza fermarsi",
       "La luce rossa è difettosa e disattivata"
     ],
-    "explanation": "Il segnale B23 consente ai ciclisti e ai conducenti di pedelec veloci di procedere dritto con semaforo rosso o giallo-arancio, purché diano precedenza (art. 67.3).",
-    "signTitle": "Autorizzazione per i ciclisti a proseguire dritto al semaforo rosso",
-    "signExplanation": "Il segnale stradale B23 consente ai ciclisti e ai conducenti di pedelec veloci di proseguire dritto davanti a un semaforo rosso o giallo-arancione, a condizione che diano la precedenza al resto del traffico e ai pedoni che attraversano (art. 67.3 del Codice della Strada)."
+    "explanation": "Il segnale B23 consente ai ciclisti e ai conducenti di pedelec veloci di procedere dritto con semaforo rosso o giallo-arancione, purché diano precedenza (art. 67.3).",
+    "signTitle": "Autorizzazione per i ciclisti a procedere dritto al semaforo rosso",
+    "signExplanation": "Il segnale stradale B23 consente ai ciclisti e ai conducenti di pedelec veloci di procedere dritto davanti a un semaforo rosso o giallo-arancione, a condizione che diano la precedenza al resto del traffico e ai pedoni che attraversano (art. 67.3 del Codice della Strada)."
   },
   "rule-voorrang-aardeweg": {
     "question": "Il conducente che proviene da destra su strada sterrata ha la precedenza rispetto al conducente che procede su strada pubblica con carreggiata?",
     "options": [
       "Sì, la priorità da destra vale sempre e ovunque",
-      "Solo se il conducente guida un veicolo agricolo su strada sterrata",
+      "Solo se il conducente guida un mezzo agricolo su strada sterrata",
       "No, chi proviene da una strada sterrata o da un sentiero su una strada pubblica a carreggiata deve dare la precedenza",
       "Solo se la strada è più stretta di 3 metri"
     ],
@@ -3001,7 +3001,7 @@
       "No, il tram mantiene la precedenza e non è obbligato a fermarsi per l'attraversamento pedonale",
       "Solo di notte quando il tram ha le luci accese"
     ],
-    "explanation": "Secondo l'articolo 12.1, ogni utente della strada, compreso un pedone che attraversa, deve dare la priorità ai veicoli ferroviari come il tram."
+    "explanation": "Secondo l'articolo 12.1, ogni utente della strada, compreso il pedone che attraversa, deve dare la priorità ai veicoli ferroviari come il tram."
   },
   "rule-bus-bebouwde-kom": {
     "question": "Cosa fare se un autobus di linea vuole uscire dalla sua fermata all'interno di un centro abitato con luci lampeggianti?",
@@ -3011,14 +3011,14 @@
       "Mantieni la velocità; l'autobus deve aspettare",
       "Rallentare e fermarsi se necessario per dare priorità all'autobus nell'uscita dalla fermata"
     ],
-    "explanation": "All'interno dei centri abitati, ai sensi dell'articolo 39, è obbligatorio rallentare e, se necessario, fermarsi per dare la possibilità all'autobus che accende l'indicatore di direzione di abbandonare la propria fermata."
+    "explanation": "All'interno dei centri abitati, ai sensi dell'articolo 39, è obbligatorio rallentare e, se necessario, fermarsi per dare la possibilità all'autobus che accende l'indicatore di direzione di uscire dalla propria fermata."
   },
   "rule-bus-buiten-bebouwde-kom": {
-    "question": "Devi fermarti fuori dal centro abitato per un autobus di linea che vuole allontanarsi da una fermata dotata di indicatore?",
+    "question": "Devi fermarti fuori dal centro abitato per un autobus di linea che vuole allontanarsi da una fermata dotata di indicatore di direzione?",
     "options": [
       "No, l'obbligo di dare la precedenza all'autobus che conduce vige solo all'interno dei centri abitati",
       "Sì, questa regola si applica ovunque sulle strade pubbliche",
-      "Sì, ma solo sulle strade con limite di velocità di 70 km/h",
+      "Sì, ma solo su strade con limite di velocità di 70 km/h",
       "Solo quando l'autista dell'autobus agita la mano"
     ],
     "explanation": "L'articolo 39 obbliga i conducenti a dare la precedenza a un autobus in partenza solo all'interno dei centri abitati. Al di fuori dei centri abitati, l'autista dell'autobus deve dare la precedenza prima di immettersi sulla strada."
@@ -3034,11 +3034,11 @@
     "explanation": "La retromarcia è una manovra ai sensi dell'articolo 12.4. Il conducente che effettua una manovra deve dare la precedenza a tutti gli altri utenti della strada."
   },
   "rule-manoeuvre-rijstrookwissel": {
-    "question": "Quali sono le regole quando si cambia corsia su una strada a più corsie (a parte una situazione con cerniera lampo)?",
+    "question": "Quali sono le regole quando si cambia corsia su una strada a più corsie (esclusa la situazione con cerniera lampo)?",
     "options": [
       "Non appena accendi l'indicatore di direzione, i conducenti dietro di te nella corsia di fronte a te devono frenare",
       "Puoi cambiare solo se non ci sono altri veicoli in vista nel raggio di 500 metri",
-      "Stai effettuando una manovra e devi dare la precedenza ai conducenti che si trovano nella corsia in cui ti stai dirigendo",
+      "Stai effettuando una manovra e devi dare la precedenza agli autisti nella corsia che intendi percorrere",
       "I conducenti sulla corsia di sinistra hanno sempre la priorità rispetto a quelli sulla corsia di destra"
     ],
     "explanation": "Il cambio di corsia è una manovra (art. 12.4). È necessario accendere l'indicatore di direzione in tempo e dare la priorità al traffico nella corsia di destinazione."
@@ -3046,7 +3046,7 @@
   "rule-oversteekplaats-fietser": {
     "question": "Un ciclista ad un passaggio ciclabile (indicato da blocchi bianchi) ha automaticamente la priorità rispetto alle auto in avvicinamento sulla strada?",
     "options": [
-      "Sì, proprio come i pedoni sulle strisce pedonali, i ciclisti che attraversano hanno sempre la priorità",
+      "Sì, proprio come i pedoni sulle strisce pedonali, i ciclisti che attraversano la strada hanno sempre la priorità",
       "Solo se il ciclista proviene da destra",
       "Solo se il ciclista pedala a una velocità superiore a 20 km/h",
       "No, i ciclisti agli incroci devono dare la precedenza al traffico in avvicinamento sulla carreggiata (a meno che il semaforo non sia verde)"
@@ -3056,22 +3056,22 @@
   "rule-fietser-op-zebrapad": {
     "question": "Un ciclista che attraversa in bicicletta le strisce pedonali ha la stessa priorità di un pedone?",
     "options": [
-      "No, è considerato pedone e ha la precedenza solo chi scende e cammina con la bicicletta in mano",
+      "No, solo chi scende e cammina con la bicicletta in mano è considerato pedone e ha la priorità",
       "Sì, ogni ciclista sulle strisce pedonali ha la priorità",
-      "Sì, purché non guidi a una velocità superiore a 10 km/h",
+      "Sì, a condizione che non guidi a una velocità superiore a 10 km/h",
       "Solo se non c'è pista ciclabile nelle vicinanze"
     ],
-    "explanation": "Il ciclista che rimane seduto sulla bicicletta sulle strisce pedonali non ha la precedenza sui pedoni (art. 40.4.2°). Solo quando scende e va a piedi ha la priorità come pedone."
+    "explanation": "Il ciclista che resta seduto sulla bicicletta sulle strisce pedonali non ha la precedenza pedonale (art. 40.4.2°). Solo quando scende e va a piedi ha la priorità come pedone."
   },
   "rule-parkeren-zebrapad-afstand": {
-    "question": "A quale distanza minima prima di un attraversamento pedonale è vietata la sosta e il parcheggio sulla carreggiata?",
+    "question": "A quale distanza minima prima di un attraversamento pedonale è vietata la sosta e il parcheggio sulla strada?",
     "options": [
       "Almeno 10 metri",
       "Almeno 5 metri",
       "Almeno 3 metri",
       "Almeno 15 metri"
     ],
-    "explanation": "L'articolo 24.4° vieta la sosta e la sosta all'incrocio e sulla carreggiata entro una distanza di 5 metri davanti all'incrocio."
+    "explanation": "L'articolo 24.4° vieta la sosta e il parcheggio all'incrocio e sulla carreggiata entro una distanza di 5 metri davanti all'incrocio."
   },
   "rule-parkeren-bushalte-afstand": {
     "question": "Entro quale distanza su entrambi i lati del segnale di fermata dell'autobus è vietato parcheggiare se non vi è segnaletica orizzontale?",
@@ -3084,7 +3084,7 @@
     "explanation": "Secondo l'articolo 25.1.2°, è vietato parcheggiare a meno di 15 metri da entrambi i lati del segnale che indica una fermata dell'autobus o del tram."
   },
   "rule-stilstaan-vs-parkeren": {
-    "question": "Secondo il codice della strada qual è la differenza sostanziale tra sosta e parcheggio?",
+    "question": "Secondo il codice della strada qual è la netta differenza tra sosta e parcheggio?",
     "options": [
       "Stare fermo è quando il motore è in funzione; a motore spento è sempre in parcheggio",
       "Lo stare fermi può durare al massimo 15 minuti, indipendentemente dall'attività",
@@ -3144,7 +3144,7 @@
     "explanation": "Secondo l'articolo 31.1, gli abbaglianti devono essere spenti e sostituiti da anabbaglianti non appena si avvicina un veicolo in senso contrario per evitare abbagliamenti."
   },
   "rule-inhalen-kruispunt": {
-    "question": "È consentito sorpassare un'altra vettura a sinistra in un incrocio in cui vige la priorità da destra?",
+    "question": "È consentito sorpassare un'altra vettura a sinistra ad un incrocio in cui vige la priorità da destra?",
     "options": [
       "Sì, purché non si guidi a una velocità superiore a 50 km/h",
       "No, è vietato sorpassare un sistema di veicoli o un'auto a sinistra in un incrocio con priorità da destra",
@@ -3164,7 +3164,7 @@
     "explanation": "L'articolo 17.2, 5° vieta di sorpassare un conducente che si ferma davanti o si avvicina a un attraversamento pedonale o ciclistico."
   },
   "rule-snelheid-woonerf": {
-    "question": "Qual è la velocità massima all'interno di una zona residenziale o di una proprietà?",
+    "question": "Quale velocità massima si applica all'interno di una zona residenziale o di una proprietà?",
     "options": [
       "30 km/h",
       "10 km/h",
@@ -3194,11 +3194,11 @@
     "explanation": "Secondo l'articolo 49.1, la velocità di un veicolo rimorchiato non può mai superare i 25 km/h durante il traino temporaneo con un cavo o un'asta."
   },
   "rule-alcohol-alarmfase": {
-    "question": "Quale misura immediata impone la polizia in caso di etilometro con risultato 'Allarme' (tra 0,5 e 0,8 per mille)?",
+    "question": "Quali misure immediate impone la polizia in caso di etilometro con risultato 'Allarme' (tra 0,5 e 0,8 per mille)?",
     "options": [
       "Divieto di circolazione immediato di 1 ora",
       "Solo ammonizione scritta senza divieto di circolazione",
-      "Divieto temporaneo di guida di 3 ore con sospensione della patente",
+      "Interdizione temporanea alla guida di 3 ore con sospensione della patente",
       "Una revoca definitiva della patente di guida da parte del tribunale"
     ],
     "explanation": "In caso di test dell'etilometro in fase di allarme (tra 0,22 mg/l e 0,35 mg/l di aria espirata, ovvero tra 0,5 e 0,8 per mille), scatta l'immediata interdizione temporanea alla guida di 3 ore (Codice della Strada art. 60)."
@@ -3211,17 +3211,17 @@
       "Almeno 12 ore",
       "Almeno 6 ore"
     ],
-    "explanation": "A partire da 0,35 mg/l di aria alveolare espirata (0,8 per mille nel sangue), la polizia impone un divieto immediato di circolazione di almeno 6 ore (Codice della circolazione stradale art. 60)."
+    "explanation": "A partire da 0,35 mg/l di aria alveolare espirata (0,8 per mille nel sangue), la polizia impone un divieto immediato di circolazione di almeno 6 ore (legge sulla circolazione stradale art. 60)."
   },
   "rule-autosnelweg-omkeren": {
-    "question": "È consentito fare inversione o fare retromarcia in autostrada se si è persa l'uscita?",
+    "question": "È consentito fare inversione di marcia o fare retromarcia in autostrada se si è persa l'uscita?",
     "options": [
       "No, in autostrada è severamente vietato svoltare, fare retromarcia e oltrepassare lo spartitraffico centrale",
       "Sì, se rimani sulla corsia di emergenza e accendi quattro indicatori",
       "Sì, purché non si guidi in retromarcia a una velocità superiore a 10 km/h",
       "Solo se la polizia dirige il traffico"
     ],
-    "explanation": "Ai sensi dell'articolo 21.4, è assolutamente vietato effettuare svolte, fare retromarcia o utilizzare i collegamenti della centrale di prenotazione sulle autostrade."
+    "explanation": "Ai sensi dell'articolo 21.4, sulle autostrade è assolutamente vietato effettuare svolte, fare retromarcia o utilizzare lo spartitraffico centrale."
   },
   "rule-autosnelweg-pechstrook": {
     "question": "Quando è possibile utilizzare la corsia di emergenza in autostrada con un veicolo?",
@@ -3231,7 +3231,7 @@
       "Per superare un ingorgo sulla destra fino all'uscita più vicina",
       "Quando le altre corsie sono sovraffollate"
     ],
-    "explanation": "Ai sensi degli articoli 9.7 e 21.4, la corsia di emergenza/corsia di emergenza è destinata esclusivamente ai veicoli costretti a fermarsi a causa di un guasto o di un'emergenza, oppure come corsia di punta quando indicata."
+    "explanation": "Ai sensi degli articoli 9.7 e 21.4, la corsia di emergenza/corsia di emergenza è destinata esclusivamente ai veicoli costretti a fermarsi per guasto o emergenza, oppure come corsia di punta quando indicata."
   },
   "rule-autosnelweg-inhalen-rechts": {
     "question": "Quando è consentito sorpassare un'altra vettura a destra in autostrada?",
@@ -3241,7 +3241,7 @@
       "Quando il traffico è in ingorghi paralleli e la tua corsia si muove più velocemente di quella alla tua sinistra",
       "Il sorpasso a destra è severamente vietato in tutte le circostanze immaginabili"
     ],
-    "explanation": "Secondo l'Articolo 16.2, il sorpasso di veicoli in un ingorgo non conta come sorpasso. Nel traffico normalmente scorrevole è sempre vietato il sorpasso a destra."
+    "explanation": "Secondo l'Articolo 16.2, il sorpasso di veicoli in un ingorgo parallelo non conta come sorpasso. Nel traffico normalmente scorrevole è sempre vietato il sorpasso a destra."
   },
   "rule-rotonde-pinker": {
     "question": "Quando dovresti girare a destra in una rotatoria?",
@@ -3258,7 +3258,7 @@
     "options": [
       "La corsia interna più a sinistra",
       "La corsia centrale",
-      "Ciò non fa alcuna differenza dal punto di vista legale",
+      "Ciò non fa alcuna differenza giuridica",
       "La corsia più a destra"
     ],
     "explanation": "Secondo la regola generale (art. 9.1.1) è necessario avvicinarsi il più possibile al bordo destro della carreggiata. Chi esce velocemente dalla rotonda (prima uscita) sceglie la corsia di destra."
@@ -3281,7 +3281,7 @@
       "Solo se la strada è più larga di 7 metri",
       "Sì, ma devono mettersi in fila non appena si avvicina un veicolo da dietro"
     ],
-    "explanation": "Secondo l'articolo 43.1 i ciclisti possono viaggiare in due, ma al di fuori dei centri abitati devono viaggiare uno dietro l'altro quando si avvicina un veicolo che arriva da dietro."
+    "explanation": "Secondo l'articolo 43.1 i ciclisti possono viaggiare in coppia, ma al di fuori dei centri abitati devono pedalare uno dietro l'altro quando si avvicina un veicolo che arriva da dietro."
   },
   "sit-01-b5-stop": {
     "question": "Vai a scuola in bicicletta e arrivi a questo incrocio con un segnale di STOP. Dovresti fermarti qui?",
@@ -3295,7 +3295,7 @@
   "sit-02-b17-voorrang-rechts": {
     "question": "Arrivi a questo incrocio con il segnale stradale B17. Cosa dovresti fare?",
     "options": [
-      "Faccio una sosta obbligatoria e do la precedenza ai conducenti da sinistra e da destra.",
+      "Faccio una sosta obbligatoria e do la priorità ai conducenti da sinistra e da destra.",
       "Posso proseguire perché il segnale B17 mi dà la priorità.",
       "Rallento e do la precedenza a chi arriva da destra."
     ],
@@ -3317,7 +3317,7 @@
       "Sì, puoi svoltare a destra al semaforo rosso purché dia la precedenza agli altri utenti della strada.",
       "No, al semaforo rosso devi sempre aspettare che diventi verde."
     ],
-    "explanation": "Il segnale stradale B22 consente ai ciclisti di girare a destra con attenzione con il semaforo rosso o giallo-arancione, a condizione di dare la precedenza agli altri utenti della strada."
+    "explanation": "Il segnale stradale B22 consente ai ciclisti di girare a destra con attenzione con il semaforo rosso o giallo-arancione, a condizione che diano la precedenza agli altri utenti della strada."
   },
   "sit-05-f49-zebrapad-fietser": {
     "question": "Un pedone attraversa le strisce pedonali e un ciclista si avvicina. Chi dovrebbe dare la priorità?",
@@ -3329,7 +3329,7 @@
     "explanation": "I conducenti (compresi i ciclisti) devono dare la precedenza ai pedoni che si trovano o stanno per entrare in un attraversamento (art. 40.4.1)."
   },
   "sit-06-b19-smalle-doorgang": {
-    "question": "Ci si avvicina a questo passaggio stretto con il segnale stradale B19. Chi passa per primo?",
+    "question": "Ci si avvicina a questo stretto passaggio con il segnale stradale B19. Chi passa per primo?",
     "options": [
       "Il conducente proveniente dalla direzione opposta potrà passare per primo.",
       "Si può passare per primi perché nelle strettezze i ciclisti hanno sempre la precedenza.",
@@ -3341,7 +3341,7 @@
     "question": "Tre ciclisti arrivano contemporaneamente a questo incrocio equivalente. Chi passa per primo?",
     "options": [
       "Ciclista 2, perché sta andando dritto.",
-      "Ciclista 1, perché ha la priorità da destra e non ha traffico da destra.",
+      "Ciclista 1, perché ha la precedenza da destra e non ha traffico da destra.",
       "Ciclista 3, perché sta pedalando più vicino al centro della strada."
     ],
     "explanation": "Senza segnali di priorità, la priorità si applica da destra. Il ciclista 3 deve dare la precedenza al ciclista 2, che deve dare la precedenza al ciclista 1. Il ciclista 1 non ha traffico da destra e procede per primo."
@@ -3349,20 +3349,20 @@
   "sit-08-licht-boven-bord": {
     "question": "Il semaforo è verde, ma sul palo c'è anche lo STOP. Cosa dovresti fare?",
     "options": [
-      "Fermati prima al segnale STOP e poi continua a guidare quando è ancora verde.",
+      "Fermarsi prima al segnale STOP e poi continuare a guidare quando è ancora verde.",
       "Fermarsi e dare la precedenza al traffico che attraversa da destra.",
       "Proseguire senza fermarsi, perché i semafori funzionanti hanno la precedenza sui segnali stradali."
     ],
-    "explanation": "Secondo l'articolo 6.3 del Codice della Strada, la segnaletica di priorità sulla stessa strada non vale più non appena entrano in funzione i semafori."
+    "explanation": "Secondo l'articolo 6.3 del Codice della Strada, la segnaletica di precedenza sulla stessa strada non vale più non appena entrano in funzione i semafori."
   },
   "sit-09-fietszone-f111": {
-    "question": "Stai percorrendo questa strada ciclabile (zona ciclabile, segnaletica F111). Quale regola vale qui per gli automobilisti?",
+    "question": "Stai pedalando su questa strada ciclabile (zona ciclabile, segnaletica F111). Quale regola vale qui per gli automobilisti?",
     "options": [
       "I veicoli a motore non possono sorpassare i ciclisti e il limite di velocità è di 30 km/h.",
-      "I veicoli a motore sono sempre autorizzati a sorpassare i ciclisti purché mantengano una distanza laterale di almeno 1 metro.",
+      "I veicoli a motore possono sempre sorpassare i ciclisti purché mantengano una distanza laterale minima di 1 metro.",
       "I veicoli a motore non possono circolare in alcuna zona ciclabile."
     ],
-    "explanation": "Nella zona ciclabile (cartello F111) i veicoli a motore non possono sorpassare i ciclisti e ovunque vige la velocità massima di 30 km/h (art. 22novies)."
+    "explanation": "Nella zona ciclabile (segnaletica F111) i veicoli a motore non possono sorpassare i ciclisti e ovunque vige la velocità massima di 30 km/h (art. 22novies)."
   },
   "sit-10-politieagent-halt": {
     "question": "L'ufficiale di polizia sta di traverso con le braccia tese orizzontalmente all'incrocio. Cosa significa questo ordine?",
@@ -3389,7 +3389,7 @@
       "Dipende dalla velocità: a passo d'uomo si seguono le regole per i pedoni, più velocemente quelle per i ciclisti.",
       "Sempre sulla pista ciclabile, indipendentemente dalla velocità."
     ],
-    "explanation": "Gli utenti di dispositivi di mobilità non motorizzati seguono le regole per i pedoni purché non viaggino più velocemente del passo d'uomo. Se vanno più veloci valgono le regole previste per i ciclisti (art. 7bis)."
+    "explanation": "Gli utenti di dispositivi di propulsione non motorizzati seguono le regole per i pedoni purché non procedano più velocemente del passo d'uomo. Se vanno più veloci valgono le regole previste per i ciclisti (art. 7bis)."
   },
   "sit-13-bebouwde-kom-naast-elkaar": {
     "question": "Due ciclisti pedalano uno accanto all'altro in un centro abitato e dietro di loro si avvicina un'auto. Cosa dovrebbero fare i ciclisti?",
@@ -3407,7 +3407,7 @@
       "Sì, su una pista ciclabile è sempre possibile pedalare in entrambe le direzioni.",
       "Sì, ma solo se abiti in un raggio di 500 metri."
     ],
-    "explanation": "Una pista ciclabile indicata con il segnale D7 può essere utilizzata solo nella direzione in cui è visibile il segnale, a meno che un segnale o una segnaletica orizzontale indichi che si tratta di una pista ciclabile a doppio senso (art. 9.1.2.1°)."
+    "explanation": "Una pista ciclabile indicata con il cartello D7 può essere utilizzata solo nella direzione in cui è visibile il cartello, a meno che un segnale o una segnaletica stradale indichi che si tratta di una pista ciclabile a doppio senso (art. 9.1.2.1°)."
   },
   "sit-15-kind-voetpad": {
     "question": "Fino a che età i bambini possono andare in bicicletta sul marciapiede?",
@@ -3416,13 +3416,13 @@
       "Fino a 10 anni, purché non costituiscano pericolo per i pedoni.",
       "I bambini non possono mai andare in bicicletta sul marciapiede."
     ],
-    "explanation": "I bambini di età inferiore a 10 anni possono circolare con la bicicletta sul marciapiede o sulla banchina rialzata, purché non costituiscano pericolo per gli altri utenti della strada (art. 9.1.2.3°, elevato da 9 a 10 anni nel 2022)."
+    "explanation": "I bambini di età inferiore a 10 anni possono circolare con la bicicletta sul marciapiede o sulla banchina rialzata, purché non costituiscano pericolo per gli altri utenti della strada (art. 9.1.2.3°, aumentato da 9 a 10 anni nel 2022)."
   },
   "sit-16-voetganger-links-rijbaan": {
     "question": "Non sono presenti marciapiedi, banchine o piste ciclabili. Da quale lato devono entrare i pedoni sulla carreggiata?",
     "options": [
       "A destra, nella stessa direzione del traffico motorizzato.",
-      "I pedoni non dovrebbero mai camminare sulla carreggiata se non c'è il marciapiede.",
+      "I pedoni non dovrebbero mai camminare sulla carreggiata se non è presente un marciapiede.",
       "Sul lato sinistro della strada, in modo che possano vedere chiaramente il traffico in avvicinamento."
     ],
     "explanation": "Quando i pedoni devono utilizzare la strada per mancanza di marciapiede, banchina accessibile o pista ciclabile, devono tenere il passo a sinistra della strada rispetto al senso di marcia (art. 42.2.1°)."
@@ -3437,7 +3437,7 @@
     "explanation": "Il segnale stradale B9 indica che stai guidando su una strada prioritaria. I conducenti provenienti da strade secondarie devono dare la precedenza a quelli provenienti dalla strada principale (art. 67.3)."
   },
   "sit-18-b21-voorrang-tegenliggers": {
-    "question": "Raggiungete questo passaggio stretto con il segnale stradale B21 (quadrato blu con freccia bianca e rossa). Chi passa per primo?",
+    "question": "Ci si avvicina a questo passaggio stretto con il segnale stradale B21 (quadrato blu con freccia bianca e rossa). Chi passa per primo?",
     "options": [
       "Il veicolo in arrivo può sempre passare per primo.",
       "Puoi passare prima; il traffico in arrivo deve dare la precedenza.",
@@ -3446,13 +3446,13 @@
     "explanation": "Il segnale stradale B21 indica che in un passaggio stretto i conducenti hanno la precedenza rispetto a quelli provenienti dalla direzione opposta (art. 67.4)."
   },
   "sit-19-f19-beperkt-eenrichting": {
-    "question": "Pedalate fino a questa strada con il cartello F19 e il cartello in basso M2 (bicicletta con le frecce). Cosa significa questo?",
+    "question": "Pedalate fino a questa strada con il cartello F19 e ​​il cartello in basso M2 (bicicletta con le frecce). Cosa significa questo?",
     "options": [
       "I ciclisti possono entrare in questa strada a senso unico in entrambe le direzioni (senso unico limitato).",
       "I ciclisti possono circolare qui solo dalle 9:00 alle 17:00.",
       "I ciclisti devono scendere e proseguire a piedi."
     ],
-    "explanation": "Il segnale F19 con sottosegnale M2 indica una strada a senso unico limitato (SUL): il traffico motorizzato può circolare solo in un senso, ma i ciclisti possono circolare in entrambi i sensi (art. 65.2 & art. 71)."
+    "explanation": "Il segnale F19 con sottosegno M2 indica una strada a senso unico limitato (SUL): il traffico motorizzato può circolare solo in un senso, ma i ciclisti possono circolare in entrambi i sensi (art. 65.2 & art. 71)."
   },
   "sit-20-f4a-zone-30": {
     "question": "Superate il segnale stradale F4a (zona 30). Che limite di velocità si applica da qui?",
@@ -3461,37 +3461,37 @@
       "La velocità massima è di 30 km/h in tutta la zona fino al cartello di fine zona.",
       "Il limite di velocità si applica solo durante l'orario scolastico."
     ],
-    "explanation": "Il segnale stradale F4a indica l'inizio di una zona in cui la velocità è ovunque limitata ad un massimo di 30 km/h, fino a quando il segnale F4b indica la fine della zona (art. 71 e art. 22quater)."
+    "explanation": "Il segnale stradale F4a indica l'inizio di una zona in cui la velocità è ovunque limitata ad un massimo di 30 km/h, fino a quando il segnale F4b indica la fine della zona (art. 71 & art. 22quater)."
   },
   "sit-21-rotonde-voorrang": {
-    "question": "Ci si avvicina a questa rotonda indicata dai segnali D5 e B1 con denti di squalo. Chi ha la priorità?",
+    "question": "Ti avvicini a questa rotonda indicata dai segnali D5 e B1 con denti di squalo. Chi ha la priorità?",
     "options": [
-      "Gli automobilisti che già percorrono la rotatoria hanno la precedenza rispetto al traffico in arrivo.",
+      "Gli automobilisti che già percorrono la rotatoria hanno la priorità rispetto al traffico in arrivo.",
       "In qualità di conducente alla guida, hai la priorità da destra alla rotonda.",
       "Chi guida più veloce ha sempre la priorità."
     ],
     "explanation": "Quando si entra in una rotatoria (cartello D5 in combinazione con B1 e denti di squalo), è necessario dare la precedenza a tutti i conducenti che già circolano nella rotatoria (art. 12.3.1 e art. 67.2)."
   },
   "sit-22-overweg-slagbomen": {
-    "question": "Lampeggiano i semafori rossi e le barriere del passaggio a livello si abbassano. Cosa dovresti fare?",
+    "question": "Le luci rosse lampeggiano e le barriere del passaggio a livello si abbassano. Cosa dovresti fare?",
     "options": [
       "Attraversare velocemente finché la barriera non è completamente chiusa.",
       "Fermarsi immediatamente allo stop o al semaforo e attendere che le luci si spengano e le barriere siano completamente aperte.",
       "Suona il clacson per avvisare il macchinista che vuoi passare."
     ],
-    "explanation": "Non appena lampeggiano le luci rosse o le sbarre cominciano a muoversi, è vietato transitare al passaggio a livello. I conducenti hanno l'obbligo di fermarsi (art. 20.3, 2°)."
+    "explanation": "Non appena lampeggiano le luci rosse o le sbarre cominciano a muoversi è vietato transitare al passaggio a livello. I conducenti hanno l'obbligo di fermarsi (art. 20.3, 2°)."
   },
   "sit-23-voorsorteren-pijlen": {
     "question": "Stai guidando nella corsia con la freccia che punta a sinistra. È consentito guidare dritto all'incrocio?",
     "options": [
-      "Sì, se in quel momento non c'è altro traffico che circola accanto a te.",
+      "Sì, se non c'è altro traffico che circola accanto a te in quel momento.",
       "Sì, basta accendere l'indicatore di direzione a destra.",
       "No, le frecce di presmistamento sul manto stradale impongono di seguire la direzione indicata."
     ],
     "explanation": "Le frecce di presmistamento poste sulla carreggiata obbligano i conducenti a seguire la direzione indicata dalle frecce (art. 77.1)."
   },
   "sit-24-fietssuggestiestrook": {
-    "question": "Percorri in macchina questa pista ciclabile suggerita dal colore rosso-ocra (senza segnale stradale D7 né linea tratteggiata bianca). Puoi guidarlo?",
+    "question": "Si percorre in macchina questa pista ciclabile suggerita dal colore rosso-ocra (senza segnale stradale D7 né linea tratteggiata bianca). Puoi guidarlo?",
     "options": [
       "Sì, la pista ciclabile è parte integrante della carreggiata; su di esso possono transitare le auto, ma non possono costituire pericolo o ostacolo per i ciclisti.",
       "No, la pista ciclabile è riservata esclusivamente ai ciclisti e vietata alle auto.",
@@ -3533,7 +3533,7 @@
       "No, è vietato parcheggiare sul marciapiede a meno che un segnale stradale specifico (come E9b) non lo consenta espressamente.",
       "Sì, ma solo di notte e nei fine settimana."
     ],
-    "explanation": "La sosta e la sosta sul marciapiede sono vietate ai sensi dell'articolo 24.1°, a meno che il segnale E9b non lo consenta esplicitamente (art. 23.1 e art. 70)."
+    "explanation": "La sosta e il parcheggio sul marciapiede sono vietati ai sensi dell'articolo 24.1°, a meno che il segnale E9b non lo consenta esplicitamente (articolo 23.1 e articolo 70)."
   },
   "sit-29-busstrook-f17": {
     "question": "Guidi una normale autovettura. È consentito circolare su questa speciale pavimentazione stradale o corsia preferenziale (cartello F17 e scritta 'BUS')?",
@@ -3558,7 +3558,7 @@
     "options": [
       "L'auto, perché girare a destra è una svolta più breve.",
       "Il ciclista che prosegue dritto sulla stessa strada ha la precedenza sull'auto che svolta.",
-      "Chi arriva per primo all'incrocio ha la precedenza."
+      "Chi arriva per primo all'incrocio ha la priorità."
     ],
     "explanation": "Il conducente che cambia direzione (svoltando a destra) deve dare la precedenza agli altri utenti della strada (come i ciclisti) che continuano a guidare dritto sulla stessa strada pubblica (art. 19.3.2°)."
   },
@@ -3612,9 +3612,9 @@
     "options": [
       "Gira velocemente attorno al tram sulla sinistra.",
       "Suona il corno affinché i viaggiatori si spostino.",
-      "Fermarsi sul lato di entrata e di uscita per consentire ai viaggiatori di raggiungere in sicurezza la carreggiata o il marciapiede."
+      "Sostare ai lati di ingresso e di uscita per consentire ai viaggiatori di raggiungere in sicurezza la carreggiata o il marciapiede."
     ],
-    "explanation": "Quando il tram si ferma senza piattaforma rialzata, i conducenti devono fermarsi sul lato di salita e discesa per consentire ai passeggeri di attraversare in sicurezza (art. 40.1)."
+    "explanation": "Quando un tram si ferma senza piattaforma rialzata, i conducenti devono fermarsi sul lato di salita e discesa per consentire ai passeggeri di attraversare in sicurezza (art. 40.1)."
   },
   "sit-38-bevoegd-persoon-arm-omhoog": {
     "question": "Un agente di polizia sta all'incrocio con un braccio alzato verticalmente. Cosa significa questo ordine?",
@@ -3632,15 +3632,150 @@
       "Almeno 1,5 metri.",
       "Almeno 1 metro."
     ],
-    "explanation": "Fuori dai centri abitati, il conducente deve lasciare uno spazio laterale di almeno 1,5 metri quando sorpassa un ciclista o un pedone (nei centri abitati è di almeno 1 metro, art. 40ter)."
+    "explanation": "Fuori dai centri abitati, quando sorpassa un ciclista o un pedone il conducente deve lasciare uno spazio laterale di almeno 1,5 metri (all'interno dei centri abitati almeno 1 metro, art. 40ter)."
   },
   "sit-40-reddingsstrook-file": {
-    "question": "C'è un ingorgo su un'autostrada a due corsie. How should drivers form a rescue lane?",
+    "question": "C'è un ingorgo su un'autostrada a due corsie. Come dovrebbero i conducenti formare una corsia di soccorso?",
     "options": [
       "Tutti i veicoli devono spostarsi sulla corsia di emergenza.",
       "Tutti restano al centro della propria corsia.",
       "I veicoli sulla corsia di sinistra sterzano il più possibile a sinistra, i veicoli sulla corsia di destra il più possibile a destra."
     ],
     "explanation": "In caso di ingorghi, i veicoli sulla corsia di sinistra devono guidare sull'estrema sinistra e quelli sulla corsia di destra devono guidare sull'estrema destra per lasciare una corsia di soccorso libera al centro per i servizi di emergenza (art. 2.70 & art. 9.8)."
+  },
+  "sit-41-c31b-rechtsaf-verboden-fietsers": {
+    "question": "Ti avvicini a questo incrocio ad Anversa con il segnale C31b e un segnale in basso \"EXCEPT\" con il simbolo di una bicicletta. Ti è permesso girare a destra qui in macchina?",
+    "options": [
+      "No, qui nessuno può girare a destra, nemmeno i ciclisti.",
+      "Sì, il divieto vale solo di notte.",
+      "No, il divieto vale per le auto, ma i ciclisti sono esentati e possono svoltare a destra."
+    ],
+    "explanation": "Il segnale C31b vieta di svoltare a destra all'incrocio (art. 68 KB 1 dicembre 1975). Il cartello 'SALVO' con il simbolo della bicicletta limita questo divieto al traffico motorizzato; i ciclisti possono svoltare a destra."
+  },
+  "sit-42-e9a-gehandicaptenparkeerplaats": {
+    "question": "Vedi questo segnale di parcheggio in un parcheggio. Chi può parcheggiare qui?",
+    "options": [
+      "Solo veicoli con tessera europea di parcheggio disabili valida.",
+      "Tutti, purché venga utilizzato il disco orario.",
+      "Solo taxi e veicoli per le consegne."
+    ],
+    "explanation": "Il segnale E9a con il simbolo della sedia a rotelle indica un parcheggio riservato esclusivamente ai veicoli utilizzati da persone con disabilità e con una tessera di parcheggio valida (art. 70.2.1)."
+  },
+  "sit-43-hoogte-gewicht-brug-bus-uitzondering": {
+    "question": "Ci si avvicina a questo ponte con i cartelli che indicano un limite di altezza di 3,80 me un limite di peso di 10 tonnellate, con il cartello in basso \"Excepte bus et autocars\". Un autobus di linea da 14 tonnellate può passare qui?",
+    "options": [
+      "Sì, perché il cartello esclude espressamente autobus e pullman dal limite di peso.",
+      "Solo se l'autobus è alto meno di 3,80 m, ma il peso resta vietato.",
+      "No, il divieto di peso si applica a tutti i veicoli senza eccezioni."
+    ],
+    "explanation": "I segnali C29 (altezza) e C21 (massa) vietano l'accesso al di sopra dei valori indicati (art. 68), ma il segnale inferiore 'Excepte bus et autocars' esclude espressamente da entrambi i segnali di divieto gli autobus di linea e i pullman."
+  },
+  "sit-44-f103-voetgangerszone-laden-lossen": {
+    "question": "Guidi con un furgone verso questa strada con il cartello F103 e il cartello in basso \"Tranne carico e scarico dalle 18:30 alle 11:30\". Puoi venire qui alle 9 per consegnare?",
+    "options": [
+      "No, una zona pedonale è vietata ai veicoli in qualsiasi momento.",
+      "Sì, perché le ore 9 rientrano nell'orario in cui è consentito caricare e scaricare.",
+      "Sì, ma solo se usi la bicicletta al posto del furgone."
+    ],
+    "explanation": "Il segnale F103 indica l'inizio di una zona pedonale, dove in linea di principio è vietato circolare ai veicoli (art. 71.2). Il segnale in basso consente il carico e lo scarico tra le 18:30 e le 11:30, quindi le 9:00 rientrano in tale eccezione."
+  },
+  "sit-45-c1-eenrichting-fietsers-bromfietsers": {
+    "question": "Questa strada ad Anversa ha il segnale C1 con un cartello in basso 'TRANNE' per ciclisti e ciclomotori di classe A. È consentito circolare qui con un ciclomotore di classe A, contro il senso di marcia?",
+    "options": [
+      "No, il segnale C1 lo vieta a tutti i conducenti senza eccezioni.",
+      "Solo se scendi dal motorino e li conduci per mano.",
+      "Sì, il cartello esclude espressamente dal divieto i ciclisti ed i ciclomotori di classe A."
+    ],
+    "explanation": "Il segnale C1 vieta sostanzialmente a chiunque di circolare in quella direzione. Un cartello con il simbolo di una bicicletta e di un ciclomotore può esentare i ciclisti e i ciclomotori di classe A da tale divieto, ad esempio su una strada a senso unico limitato (art. 65.2)."
+  },
+  "sit-46-c3-verboden-toegang-beide-richtingen": {
+    "question": "All'ingresso del mercato di Maaseik vedrai questo cartello completamente rosso. Puoi venire qui in macchina?",
+    "options": [
+      "No, il cartello C3 chiude la strada a tutti i conducenti in entrambe le direzioni.",
+      "Sì, purché si guidi a passo d'uomo.",
+      "Sì, ma solo per il parcheggio."
+    ],
+    "explanation": "Il segnale C3 completamente rosso vieta l'accesso, in entrambe le direzioni, a qualsiasi conducente (art. 68 KB 1 dicembre 1975); sono comunque ammessi solo i pedoni e le eventuali categorie espressamente escluse."
+  },
+  "sit-47-c31a-links-afslaan-verboden": {
+    "question": "Vorresti girare a sinistra a questo incrocio, ma vedi questo cartello appeso sulla facciata. E' permesso?",
+    "options": [
+      "Sì, il divieto vale solo per i camion.",
+      "No, il cartello C31a vieta di svoltare nel senso della freccia all'incrocio, qui a sinistra.",
+      "Sì, girare a sinistra è sempre consentito quando non c'è traffico in avvicinamento."
+    ],
+    "explanation": "Il cartello C31a vieta di svoltare al successivo incrocio nella direzione indicata dalla freccia, qui a sinistra (art. 68 KB 1 dicembre 1975)."
+  },
+  "sit-48-a45-overweg-enkel-spoor-zonder-slagbomen": {
+    "question": "Ti stai avvicinando a questo passaggio a livello lungo la Mosa. Non ci sono barriere, solo la croce di Sant'Andrea. A cosa dovresti prestare attenzione?",
+    "options": [
+      "Senza barriere non c'è pericolo, si può semplicemente passare.",
+      "Devi giudicare da solo se sta arrivando un treno e fermarti non appena si avvicina o le luci lampeggiano.",
+      "Bisogna sempre fermarsi completamente qui, anche se chiaramente non c'è nessun treno in vista."
+    ],
+    "explanation": "Il cartello A45 indica un passaggio a livello a binario unico (art. 66). Senza barriere bisogna fare attenzione: fermarsi non appena si avvicina un treno o si accendono i lampeggianti, e attraversare solo quando è sicuro (art. 20.3)."
+  },
+  "sit-49-d10-voetgangers-fietserspad": {
+    "question": "Si pedala lungo il Mosa a Liegi su questo sentiero con segnaletica D10. Qui può circolare anche un ciclomotore di classe A?",
+    "options": [
+      "Sì, il segnale D10 consente il transito a pedoni, ciclisti e ciclomotori di classe A.",
+      "Sì, ma solo ciclomotori di classe A, non ciclisti abituali.",
+      "No, a differenza del segnale D9, i ciclomotori di classe A non possono circolare sul percorso D10."
+    ],
+    "explanation": "Il cartello D10 indica un percorso riservato a pedoni e ciclisti; A differenza del segnale D9 qui non possono circolare i ciclomotori della classe A (art. 69 cpv. 3)."
+  },
+  "sit-50-a23-schoolomgeving-zone30": {
+    "question": "Qui si supera una zona scolastica con un cartello di avvertimento per bambini e un cartello di zona 30 km/h. Cosa significa questo per la tua velocità?",
+    "options": [
+      "Qui è necessario guidare a una velocità massima di 30 km/h, in tutta la zona e non solo in corrispondenza del cartello.",
+      "Solo alla lavagna il limite di velocità è di 30 km/h, dopodiché si può andare di nuovo più veloci.",
+      "Il limite di velocità si applica solo durante l'orario scolastico."
+    ],
+    "explanation": "Il segnale di avvertimento segnala un luogo dove possono comparire molti bambini (art. 66); il segnale di zona F4a impone una velocità massima di 30 km/h per tutta la zona, finché il segnale F4b non revoca nuovamente tale limite (art. 71 e art. 22quater)."
+  },
+  "sit-51-a31-matrixbord-wegenwerken-file": {
+    "question": "Sull'autostrada vedete questo cartello elettronico a matrice: 'Lavoro a Gent-Seaport, ingorgo da Oostakker'. Cosa fai con questo?",
+    "options": [
+      "Ignori il segnale, perché i segnali elettronici non sono vincolanti.",
+      "Prevedi i ritardi, riduci la velocità per tempo e tieni conto degli ingorghi più avanti lungo la strada.",
+      "È necessario fermarsi immediatamente sulla strada fino alla risoluzione dell'ingorgo."
+    ],
+    "explanation": "Un cartello di informazione variabile, come un cartello fisso dell'A31, avvisa di lavori e pericolo sulla strada da percorrere (art. 66); I conducenti devono adeguare la velocità in tempo e anticipare i disagi del traffico annunciati."
+  },
+  "sit-52-a5-steile-helling-kemmelberg": {
+    "question": "Stai andando in bicicletta o guidando sulla Kemmelbergstraat e vedi questo cartello. Cosa avvisa?",
+    "options": [
+      "Per una pendenza ripida (tratto di strada in salita).",
+      "Prima di una pericolosa svolta a sinistra.",
+      "Per superfici stradali irregolari."
+    ],
+    "explanation": "Il segnale stradale A5 avverte di una pendenza ripida, come qui sulla salita del Kemmelberg a Heuvelland (art. 66 KB 1 dicembre 1975)."
+  },
+  "sit-53-a13-oneffen-wegdek-vooraankondiging": {
+    "question": "Vedete questo cartello contrassegnato con '150 m' lungo una strada rurale. Cosa puoi aspettarti a 150 metri di distanza?",
+    "options": [
+      "Un avvallamento trasversale, un crinale d'asino o un altro fondo stradale irregolare.",
+      "Fermata obbligatoria con priorità da destra.",
+      "La fine della strada pubblica."
+    ],
+    "explanation": "Il segnale stradale A13 avverte in caso di incrocio, di schiena d'asino o di fondo stradale sconnesso; il cartello in basso '150 m' indica la distanza da tale pericolo (art. 66 KB 1 dicembre 1975)."
+  },
+  "sit-54-a39-einde-eenrichtingsverkeer": {
+    "question": "Stai guidando su una strada di notte e vedi questi due triangoli con una freccia rivolta verso il basso e una freccia rivolta verso l'alto. Cosa significano?",
+    "options": [
+      "Che sei obbligato a voltarti.",
+      "Il traffico a senso unico termina e il traffico è nuovamente consentito in entrambe le direzioni.",
+      "Che al traffico in arrivo venga data la priorità in un passaggio stretto."
+    ],
+    "explanation": "Il segnale stradale A39 avverte che termina il traffico a senso unico e che è nuovamente consentita la circolazione in entrambe le direzioni; quindi prestare nuovamente attenzione al traffico in arrivo (art. 66 KB del 1 dicembre 1975)."
+  },
+  "sit-55-d3-verplichte-rijrichting-pijl": {
+    "question": "A questo incrocio vedrete un cartello rotondo blu con una freccia che punta dritto verso sinistra. Quali indicazioni puoi seguire?",
+    "options": [
+      "Sempre dritto.",
+      "Solo a sinistra.",
+      "Dritto o sinistra, scegliete voi quale delle due direzioni indicate."
+    ],
+    "explanation": "Il segnale D3 obbliga a seguire una delle direzioni indicate dalle frecce, qui dritto oppure a sinistra; si può scegliere tra le direzioni indicate, ma non svoltare a destra (art. 69 KB 1 dicembre 1975)."
   }
 }

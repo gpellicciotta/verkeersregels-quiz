@@ -1,6 +1,6 @@
 {
   "rec-a1a": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Virage à gauche dangereux",
       "Virage à droite dangereux",
@@ -12,9 +12,9 @@
     "signExplanation": "Ce panneau de danger avertit d'un virage à gauche dangereux."
   },
   "rec-a1b": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
-      "Double courbure",
+      "Double coude",
       "Virage à droite dangereux",
       "Chaussée glissante",
       "Virage à gauche dangereux"
@@ -24,7 +24,7 @@
     "signExplanation": "Ce panneau de danger avertit d'un virage à droite dangereux."
   },
   "rec-a7a": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Travaux sur la route",
       "Route glissante",
@@ -36,7 +36,7 @@
     "signExplanation": "Ce panneau avertit que la route va devenir plus étroite."
   },
   "rec-a21": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Traversée obligatoire pour les cyclistes",
       "Environnement scolaire avec de nombreux enfants",
@@ -48,7 +48,7 @@
     "signExplanation": "Ce panneau de danger annonce à l'avance un passage pour piétons."
   },
   "rec-a25": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Avertissement pour un passage pour cyclistes",
       "Piste cyclable obligatoire",
@@ -60,7 +60,7 @@
     "signExplanation": "Ce panneau avertit d'un endroit où les cyclistes traversent la route."
   },
   "rec-a23": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Passage piéton",
       "Lieu où viennent de nombreux enfants, par exemple une école",
@@ -72,19 +72,19 @@
     "signExplanation": "Ce panneau avertit d'un endroit où un grand nombre d'enfants peut apparaître, comme une école."
   },
   "rec-a31": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Feux de circulation",
       "Fichier",
       "Travaux routiers",
       "Chutes de pierres"
     ],
-    "explanation": "Ce panneau avertit de travaux sur ou le long de la chaussée.",
+    "explanation": "Ce panneau avertit des travaux sur ou le long de la chaussée.",
     "signTitle": "Travaux routiers",
-    "signExplanation": "Ce panneau avertit de travaux sur ou le long de la chaussée."
+    "signExplanation": "Ce panneau avertit des travaux sur ou le long de la chaussée."
   },
   "rec-a41": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Passage à niveau sans barrières",
       "Voies du tramway",
@@ -96,7 +96,7 @@
     "signExplanation": "Ce panneau avertit d'un passage à niveau équipé de barrières."
   },
   "rec-a1c": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Virage dangereux : double virage ou séquence de plus de deux virages, le premier à gauche",
       "Virage dangereux : double virage ou séquence de plus de deux virages, le premier à droite",
@@ -108,7 +108,7 @@
     "signExplanation": "Le panneau de signalisation A1c avertit d'un double virage ou d'une succession de plus de deux virages dont le premier tourne à gauche (art. 66 KB 1er décembre 1975)."
   },
   "rec-a1d": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Virage dangereux : virage à gauche avec circulation venant en sens inverse",
       "Virage dangereux : double virage ou séquence de plus de deux virages, le premier à droite",
@@ -120,21 +120,21 @@
     "signExplanation": "Le panneau de signalisation A1d avertit d'un double virage ou d'une succession de plus de deux virages dont le premier tourne à droite (art. 66 KB 1er décembre 1975)."
   },
   "rec-a3": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Pente raide (montante)",
       "Creux transversal ou dos d'âne",
-      "Chute dangereuse",
+      "Descente dangereuse",
       "Revêtement routier en mauvais état"
     ],
     "explanation": "Le panneau de signalisation A3 avertit d'une descente dangereuse sur la route (art. 66 KB du 1er décembre 1975).",
-    "signTitle": "Chute dangereuse",
+    "signTitle": "Descente dangereuse",
     "signExplanation": "Le panneau de signalisation A3 avertit d'une descente dangereuse sur la route (art. 66 KB du 1er décembre 1975)."
   },
   "rec-a5": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
-      "Chute dangereuse",
+      "Descente dangereuse",
       "Conception surélevée dans la chaussée",
       "Pont mobile",
       "Pente raide"
@@ -144,7 +144,7 @@
     "signExplanation": "Le panneau de signalisation A5 avertit d'une pente raide (tronçon de route en montée) (art. 66 KB du 1er décembre 1975)."
   },
   "rec-a7b": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Voie rétrécie à gauche",
       "Voie rétrécie à droite",
@@ -156,7 +156,7 @@
     "signExplanation": "Le panneau de signalisation A7b avertit d'un rétrécissement de la chaussée à gauche (art. 66 KB du 1er décembre 1975)."
   },
   "rec-a7c": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Voie rétrécie à gauche",
       "Voie rétrécie à droite",
@@ -168,7 +168,7 @@
     "signExplanation": "Le panneau de signalisation A7c avertit d'un rétrécissement de la chaussée à droite (art. 66 KB du 1er décembre 1975)."
   },
   "rec-a9": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Sortie sur un quai ou une berge",
       "Passage à niveau avec barrières",
@@ -180,7 +180,7 @@
     "signExplanation": "Le panneau de signalisation A9 avertit de l'approche d'un pont mobile (art. 66 KB du 1er décembre 1975)."
   },
   "rec-a11": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Pont mobile",
       "Ferry ou ferry",
@@ -192,19 +192,19 @@
     "signExplanation": "Le panneau de signalisation A11 avertit que la route se termine à un quai ou à une berge sans barrière ni parapet (art. 66 Arrêté royal du 1er décembre 1975)."
   },
   "rec-a13": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Creux transversal ou dos d'âne",
       "Conception surélevée (dos d'âne)",
       "Travaux routiers",
       "Route glissante lors de précipitations"
     ],
-    "explanation": "Le panneau de signalisation A13 avertit d'un creux transversal, d'un dos d'âne ou d'une chaussée inégale (art. 66 KB du 1er décembre 1975).",
+    "explanation": "Le panneau de signalisation A13 avertit d'un croisement, d'un dos d'âne ou d'une chaussée inégale (art. 66 KB du 1er décembre 1975).",
     "signTitle": "Creux transversal ou dos d'âne",
-    "signExplanation": "Le panneau de signalisation A13 avertit d'un creux transversal, d'un dos d'âne ou d'une chaussée inégale (art. 66 KB du 1er décembre 1975)."
+    "signExplanation": "Le panneau de signalisation A13 avertit d'un croisement, d'un dos d'âne ou d'une chaussée inégale (art. 66 KB du 1er décembre 1975)."
   },
   "rec-a14": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Creux transversal ou dos d'âne",
       "Appareil(s) surélevé(s)",
@@ -216,7 +216,7 @@
     "signExplanation": "Le panneau de signalisation A14 avertit d'un ou plusieurs dispositifs surélevés, tels qu'un dos d'âne ou un plateau (art. 66 KB du 1er décembre 1975)."
   },
   "rec-a15": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Éclaboussures de pierres",
       "Vent de travers",
@@ -228,7 +228,7 @@
     "signExplanation": "Le panneau de signalisation A15 avertit d'une chaussée glissante ou d'un risque accru de glissade (art. 66 KB du 1er décembre 1975)."
   },
   "rec-a17": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Chutes de pierres depuis les parois rocheuses",
       "Travaux sur la route",
@@ -240,7 +240,7 @@
     "signExplanation": "Le panneau de signalisation A17 avertit du danger de projection de cailloux ou de pierres concassées (projection de cailloux) (art. 66 KB du 1er décembre 1975)."
   },
   "rec-a19": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Chutes de pierres",
       "Projection de galets",
@@ -252,21 +252,21 @@
     "signExplanation": "Le panneau de signalisation A19 avertit du danger de chutes de pierres ou de pierres sur la chaussée (art. 66 KB du 1er décembre 1975)."
   },
   "rec-a27": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Passage du bétail",
-      "Passage du gros gibier",
+      "Passage de gros gibier",
       "Réserve naturelle avec cavaliers",
       "Refuge pour animaux ou parc à chiens"
     ],
-    "explanation": "Le panneau de signalisation A27 avertit du passage possible de gros gibier sur la chaussée (art. 66 KB 1er décembre 1975).",
-    "signTitle": "Passage du gros gibier",
-    "signExplanation": "Le panneau de signalisation A27 avertit du passage possible de gros gibier sur la chaussée (art. 66 KB 1er décembre 1975)."
+    "explanation": "Le panneau de signalisation A27 avertit du passage éventuel de gros gibier sur la chaussée (art. 66 KB 1er décembre 1975).",
+    "signTitle": "Passage de gros gibier",
+    "signExplanation": "Le panneau de signalisation A27 avertit du passage éventuel de gros gibier sur la chaussée (art. 66 KB 1er décembre 1975)."
   },
   "rec-a29": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
-      "Passage du gros gibier",
+      "Passage de gros gibier",
       "Zone agricole pour tracteurs seulement",
       "Passage du bétail",
       "Traitement du fumier sur la voie publique"
@@ -276,7 +276,7 @@
     "signExplanation": "Le panneau de signalisation A29 avertit d'un éventuel passage ou présence de bétail sur la voie publique (art. 66 KB 1er décembre 1975)."
   },
   "rec-a33": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Intersection où s'applique la priorité à droite",
       "Passage à niveau dangereux",
@@ -288,19 +288,19 @@
     "signExplanation": "Le panneau de signalisation A33 annonce l'approche d'une intersection ou d'un croisement avec feux tricolores (art. 66 KB 1er décembre 1975)."
   },
   "rec-a35": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Traversée d'avion à basse altitude",
       "Danger de vents latéraux forts et soudains",
       "Accès à une zone aéroportuaire",
-      "Différences de pression atmosphérique à l'embouchure du tunnel"
+      "Différences de pression atmosphérique aux bouches des tunnels"
     ],
-    "explanation": "Le panneau de signalisation A35 avertit en cas de croisement d'avions à basse altitude ou de nuisances sonores soudaines (art. 66 KB du 1er décembre 1975).",
+    "explanation": "Le panneau de signalisation A35 avertit en cas de croisement d'avions à basse altitude ou de nuisances sonores soudaines (art. 66 KB 1er décembre 1975).",
     "signTitle": "Traversée d'avion à basse altitude",
-    "signExplanation": "Le panneau de signalisation A35 avertit en cas de croisement d'avions à basse altitude ou de nuisances sonores soudaines (art. 66 KB du 1er décembre 1975)."
+    "signExplanation": "Le panneau de signalisation A35 avertit en cas de croisement d'avions à basse altitude ou de nuisances sonores soudaines (art. 66 KB 1er décembre 1975)."
   },
   "rec-a37": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Traversée d'avion à basse altitude",
       "Vent de travers",
@@ -312,19 +312,19 @@
     "signExplanation": "Le panneau de signalisation A37 avertit d'un tronçon de route souvent exposé à des vents latéraux soudains et forts (art. 66 KB du 1er décembre 1975)."
   },
   "rec-a39": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Sens de marche obligatoire tout droit ou tourner",
       "Rétrécissement des voies avec priorité au trafic venant en sens inverse",
-      "Circulation autorisée dans deux sens après un tronçon de route à sens unique",
+      "Circulation autorisée dans deux directions après un tronçon de route à sens unique",
       "Voies séparées avec circulation venant en sens inverse"
     ],
     "explanation": "Le panneau de signalisation A39 avertit que la circulation à sens unique prend fin et que la circulation dans les deux sens est à nouveau autorisée (art. 66 KB du 1er décembre 1975).",
-    "signTitle": "Circulation autorisée dans deux sens après un tronçon de route à sens unique",
+    "signTitle": "Circulation autorisée dans deux directions après un tronçon de route à sens unique",
     "signExplanation": "Le panneau de signalisation A39 avertit que la circulation à sens unique prend fin et que la circulation dans les deux sens est à nouveau autorisée (art. 66 KB du 1er décembre 1975)."
   },
   "rec-a43": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Passage à niveau avec barrières",
       "Voies de tramway qui traversent la chaussée",
@@ -336,19 +336,19 @@
     "signExplanation": "Le panneau de signalisation A43 avertit à l'avance d'un passage à niveau sans barrières (art. 66 KB du 1er décembre 1975)."
   },
   "rec-a45": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Passage à niveau à voie unique",
       "Passage à niveau pour deux voies ou plus",
-      "Intersection où la priorité à droite s'applique",
+      "Intersection où s'applique la priorité à droite",
       "Passage à niveau avec demi-barrières automatiques"
     ],
-    "explanation": "Le panneau de signalisation A45 (unique croix de Saint-André) indique la proximité immédiate d'un passage à niveau à voie unique (art. 66 arrêté royal du 1er décembre 1975).",
+    "explanation": "Le panneau de signalisation A45 (croix unique de Saint-André) indique la proximité immédiate d'un passage à niveau à voie unique (art. 66 arrêté royal du 1er décembre 1975).",
     "signTitle": "Passage à niveau à voie unique",
-    "signExplanation": "Le panneau de signalisation A45 (unique croix de Saint-André) indique la proximité immédiate d'un passage à niveau à voie unique (art. 66 arrêté royal du 1er décembre 1975)."
+    "signExplanation": "Le panneau de signalisation A45 (croix unique de Saint-André) indique la proximité immédiate d'un passage à niveau à voie unique (art. 66 arrêté royal du 1er décembre 1975)."
   },
   "rec-a47": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Passage à niveau à voie unique",
       "Passage à niveau pour deux voies ou plus",
@@ -360,21 +360,21 @@
     "signExplanation": "Le panneau de signalisation A47 (double croix de Saint-André) indique la proximité immédiate d'un passage à niveau à deux ou plusieurs voies (art. 66 Arrêté royal du 1er décembre 1975)."
   },
   "rec-a49": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Passage à niveau sans barrières",
       "Piste cyclable obligatoire avec passage à niveau",
-      "Traversée d'une voie publique par une ou plusieurs voies intégrées à la chaussée",
+      "Traversée d'une voie publique par une ou plusieurs voies aménagées dans la chaussée",
       "Fin d'une voie de tramway"
     ],
     "explanation": "Le panneau de signalisation A49 avertit de l'intersection d'une voie publique par des voies tracées dans la chaussée (art. 66 KB du 1er décembre 1975).",
-    "signTitle": "Traversée d'une voie publique par une ou plusieurs voies intégrées à la chaussée",
+    "signTitle": "Traversée d'une voie publique par une ou plusieurs voies aménagées dans la chaussée",
     "signExplanation": "Le panneau de signalisation A49 avertit de l'intersection d'une voie publique par des voies tracées dans la chaussée (art. 66 KB du 1er décembre 1975)."
   },
   "rec-a50": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
-      "Travaux routiers avec circulation retardée",
+      "Travaux avec circulation retardée",
       "Descente dangereuse avec circulation à l'arrêt",
       "Poste de péage ou poste frontière",
       "Fichier"
@@ -384,7 +384,7 @@
     "signExplanation": "Le panneau de signalisation A50 avertit des risques de retards de circulation ou d'embouteillages (art. 66 KB 1er décembre 1975)."
   },
   "rec-a51": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Arrêt obligatoire en cas de danger inconnu",
       "Travaux routiers en cours",
@@ -396,7 +396,7 @@
     "signExplanation": "Le panneau de signalisation A51 avertit d'un danger qui n'est pas signalé par un symbole spécifique ; un panneau inférieur indique la nature du danger (art. 66 KB 1er décembre 1975)."
   },
   "rec-b1": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Donner la priorité",
       "Route prioritaire",
@@ -408,7 +408,7 @@
     "signExplanation": "Ce triangle inversé signifie que vous devez donner la priorité à la circulation traversante."
   },
   "rec-b5": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Cédez le passage sans vous arrêter",
       "Arrêtez-vous et cédez le passage",
@@ -420,7 +420,7 @@
     "signExplanation": "À ce panneau octogonal, vous devez vous arrêter complètement et céder le passage aux autres véhicules."
   },
   "rec-b9": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Carrefour avec priorité à droite",
       "Fin d'une route prioritaire",
@@ -432,19 +432,19 @@
     "signExplanation": "Ce panneau en forme de losange indique que vous circulez sur une route prioritaire."
   },
   "rec-b17": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Route prioritaire",
       "Donner la priorité",
       "Rond-point",
-      "Intersection où la priorité à droite s'applique"
+      "Intersection où s'applique la priorité à droite"
     ],
     "explanation": "Ce panneau rappelle que la règle normale de priorité s'applique à cette intersection.",
-    "signTitle": "Intersection où la priorité à droite s'applique",
+    "signTitle": "Intersection où s'applique la priorité à droite",
     "signExplanation": "Ce panneau rappelle que la règle normale de priorité s'applique à cette intersection."
   },
   "rec-c1": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Il est interdit de circuler dans cette direction",
       "Accès interdit dans les deux sens",
@@ -456,19 +456,19 @@
     "signExplanation": "Ce panneau à barre blanche interdit de circuler dans ce sens, par exemple à sens unique."
   },
   "rec-c3": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Il est interdit de circuler dans cette direction",
-      "Aucun accès dans les deux sens pour aucun conducteur",
+      "Aucune entrée dans les deux sens pour aucun conducteur",
       "Interdit aux piétons",
       "Rue sans issue"
     ],
     "explanation": "Ce panneau entièrement rouge ferme la route à tous les automobilistes, dans les deux sens.",
-    "signTitle": "Aucun accès dans les deux sens pour aucun conducteur",
+    "signTitle": "Aucune entrée dans les deux sens pour aucun conducteur",
     "signExplanation": "Ce panneau entièrement rouge ferme la route à tous les automobilistes, dans les deux sens."
   },
   "rec-c35": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Il est interdit de tourner",
       "Il est interdit de rester immobile",
@@ -480,7 +480,7 @@
     "signExplanation": "Ce panneau interdit le dépassement des véhicules ayant plus de deux roues à gauche."
   },
   "rec-c43-70": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Limite de vitesse de 90 km/h",
       "Fin de la limitation de vitesse",
@@ -492,11 +492,11 @@
     "signExplanation": "Le chiffre sur ce panneau rond est la vitesse maximale qui s'applique d'ici à la prochaine intersection."
   },
   "rec-d1a": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Sens de circulation obligatoire : tout droit",
       "Piste cyclable obligatoire",
-      "Trafic circulant obligatoire",
+      "Circulation en circulation obligatoire",
       "Libre choix du sens de déplacement"
     ],
     "explanation": "Ce panneau rond bleu vous oblige à suivre le sens de la flèche, tout droit.",
@@ -504,31 +504,31 @@
     "signExplanation": "Ce panneau rond bleu vous oblige à suivre le sens de la flèche, tout droit."
   },
   "rec-d5": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
-      "Sens de circulation obligatoire tout droit",
+      "Sens de marche obligatoire tout droit",
       "Circulation obligatoire (rond-point)",
       "Carrefour avec priorité à droite",
-      "Place de la circulation"
+      "Place de circulation"
     ],
     "explanation": "Ce panneau annonce un rond-point où vous devez rouler dans le sens indiqué.",
     "signTitle": "Circulation obligatoire (rond-point)",
     "signExplanation": "Ce panneau annonce un rond-point où vous devez rouler dans le sens indiqué."
   },
   "rec-d7": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Sentier obligatoire",
       "Vélos autorisés, mais pas obligatoires",
       "Piste cyclable obligatoire",
-      "Fin de la piste cyclable"
+      "Fin piste cyclable"
     ],
     "explanation": "Les cyclistes et les conducteurs de cyclomoteurs à deux roues classe A doivent emprunter cette piste cyclable.",
     "signTitle": "Piste cyclable obligatoire",
     "signExplanation": "Les cyclistes et les conducteurs de cyclomoteurs à deux roues classe A doivent emprunter cette piste cyclable."
   },
   "rec-e1": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Stationnement autorisé",
       "Le stationnement et l'immobilisation sont interdits",
@@ -540,7 +540,7 @@
     "signExplanation": "Ce panneau interdit le stationnement, mais de courts arrêts sont autorisés."
   },
   "rec-f45": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Rue sans issue",
       "Déviation de route",
@@ -552,12 +552,12 @@
     "signExplanation": "Ce panneau indique que la route ne continue pas plus loin."
   },
   "rec-f5": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Fin d'une autoroute",
       "Début d'une autoroute",
       "Début d'une autoroute",
-      "Place de la circulation"
+      "Place de circulation"
     ],
     "explanation": "Des règles de circulation spécifiques pour les autoroutes s'appliquent à partir de ce panneau.",
     "signTitle": "Début d'une autoroute",
@@ -604,7 +604,7 @@
     "explanation": "Le panneau E9a avec le symbole du fauteuil roulant indique une place de stationnement réservée aux personnes handicapées."
   },
   "iden-f1b": {
-    "question": "Quel panneau indique le début d'une agglomération ?",
+    "question": "Quel signe indique le début d'une agglomération ?",
     "options": [
       "assets/signs/F1b.svg",
       "assets/signs/F103.svg",
@@ -621,7 +621,7 @@
       "assets/signs/D1a.svg",
       "assets/signs/F103.svg"
     ],
-    "explanation": "Le panneau F19 indique que vous conduisez sur une voie publique à sens unique."
+    "explanation": "Le panneau F19 indique que vous circulez sur une voie publique à sens unique."
   },
   "iden-f49": {
     "question": "Quel panneau indique l'emplacement exact d'un passage pour piétons (c'est-à-dire pas l'avertissement préalable) ?",
@@ -631,7 +631,7 @@
       "assets/signs/F49.svg",
       "assets/signs/A21.svg"
     ],
-    "explanation": "Le panneau F49 indique le passage à niveau lui-même, tandis que le panneau de danger A21 prévient à l'avance."
+    "explanation": "Le panneau F49 indique le passage à niveau lui-même, tandis que le panneau de danger A21 en avertit à l'avance."
   },
   "iden-f103": {
     "question": "Quel panneau indique le début d'une zone piétonne ?",
@@ -681,7 +681,7 @@
       "120 km/h",
       "130 km/h"
     ],
-    "explanation": "Selon l'article 11.2.1°a, une vitesse maximale de 120 km/h s'applique sur les autoroutes belges, sauf si un panneau de signalisation impose une vitesse différente."
+    "explanation": "Selon l'article 11.2.1°a, une vitesse maximale de 120 km/h s'applique sur les autoroutes belges, à moins qu'un panneau de signalisation n'impose une vitesse différente."
   },
   "rule-snelheid-min-autosnelweg": {
     "question": "Quelle vitesse minimale s'applique généralement sur une autoroute, si les circonstances le permettent ?",
@@ -746,15 +746,15 @@
   "rule-voorrang-rechts": {
     "question": "Qui a la priorité à une intersection où la priorité n'est pas spécifiquement réglementée ?",
     "options": [
-      "Trafic venant de la gauche",
-      "Trafic venant de la droite",
+      "Circulation venant de la gauche",
+      "Circulation venant de la droite",
       "Le plus gros véhicule",
       "Celui qui arrive en premier"
     ],
     "explanation": "Sans indication, la règle de priorité s'applique, telle que déterminée à l'article 12.3.1 du Code de la route."
   },
   "rule-voorrang-rechts-gestopt": {
-    "question": "Perdez-vous votre priorité si vous vous arrêtez brièvement à l'intersection avant de continuer ?",
+    "question": "Perdez-vous votre priorité par la droite si vous vous arrêtez brièvement à l'intersection avant de continuer ?",
     "options": [
       "Oui, toute personne qui s'arrête perd la priorité",
       "Uniquement si un ordre stop s'applique",
@@ -767,7 +767,7 @@
     "question": "Qui est prioritaire aux ronds-points indiqués par le panneau D5 ?",
     "options": [
       "Le trafic qui veut entrer dans le rond-point",
-      "Circulation toujours à droite",
+      "Toujours circuler à droite",
       "Le plus gros véhicule",
       "La circulation déjà sur le rond-point"
     ],
@@ -776,7 +776,7 @@
     "signExplanation": "Le panneau D5 indique un rond-point où la circulation doit se faire dans le sens indiqué. Les automobilistes présents sur le rond-point ont la priorité sur les véhicules qui s'approchent et qui souhaitent y entrer (art. 12.3.1 et art. 68.3 du Code de la route)."
   },
   "rule-prioritair": {
-    "question": "Que faire si un véhicule prioritaire équipé de gyrophares et de sirène approche ?",
+    "question": "Que faire si un véhicule prioritaire avec gyrophares et sirène approche ?",
     "options": [
       "Cédez immédiatement le passage et cédez le passage",
       "Continuez simplement votre chemin",
@@ -786,7 +786,7 @@
     "explanation": "Dès que le klaxon sonore d'un véhicule prioritaire retentit, tout usager de la route doit immédiatement céder le passage et céder le passage (art. 38)."
   },
   "rule-fietser-inhalen": {
-    "question": "Quelle est la distance latérale minimale à respecter lors d'un dépassement d'un cycliste en dehors des agglomérations ?",
+    "question": "Quelle distance latérale minimale respecter lors d'un dépassement d'un cycliste en dehors des agglomérations ?",
     "options": [
       "1 mètre",
       "1,5 mètres",
@@ -796,12 +796,12 @@
     "explanation": "Selon l'article 40ter, une distance latérale d'au moins 1,5 mètre est obligatoire en dehors des agglomérations ; dans les zones bâties, cette valeur est de 1 mètre."
   },
   "rule-zebra": {
-    "question": "Que faire si un piéton traverse un passage piéton ?",
+    "question": "Que faire si un piéton traverse un passage piéton ?",
     "options": [
       "Ayez la priorité, car vous êtes dans la voiture",
       "Dépasser rapidement avant d'atteindre la route",
       "Cédez le passage et arrêtez-vous si nécessaire",
-      "Enkel voorrang verlenen buiten de agglomération"
+      "Accorder la priorité uniquement en dehors des agglomérations"
     ],
     "explanation": "Selon l'article 40.4.2, un conducteur doit céder le passage et, si nécessaire, s'arrêter aux piétons qui traversent à un passage à niveau."
   },
@@ -810,7 +810,7 @@
     "options": [
       "En tant que cycliste, donc sans priorité",
       "Il n'est pas autorisé à traverser à un passage piéton",
-      "Enkel et voetganger et hij ook un casque de vélo tiré",
+      "Uniquement en tant que piéton s'il porte également un casque de vélo",
       "En tant que piéton, donc en priorité"
     ],
     "explanation": "Toute personne portant son vélo à la main est assimilée à un piéton (art. 2.46) et a la priorité sur le passage piéton (art. 40.4.2)."
@@ -821,7 +821,7 @@
       "Assurance responsabilité civile (BA/WAM)",
       "Seulement une inspection valide",
       "Uniquement assurance tous risques",
-      "L'assurance n'est pas obligatoire si vous êtes correctement assuré par votre assurance maladie"
+      "L'assurance n'est pas obligatoire si vous êtes correctement assuré via votre assurance maladie"
     ],
     "explanation": "La loi WAM (art. 2) oblige tout véhicule automobile circulant sur la voie publique à avoir une assurance responsabilité civile."
   },
@@ -840,7 +840,7 @@
     "options": [
       "Toujours sous la pluie, même légère",
       "Toujours la nuit",
-      "En cas de brouillard ou de chute de neige avec une visibilité inférieure à 100 m, ou en cas de forte pluie",
+      "Dans le brouillard ou les chutes de neige avec une visibilité inférieure à 100 m, ou en cas de forte pluie",
       "Uniquement sur autoroutes"
     ],
     "explanation": "Selon l'article 30.1.2°, les feux antibrouillard arrière sont obligatoires en cas de brouillard ou de neige limitant la visibilité à moins de 100 m, ainsi qu'en cas de forte pluie. L'utilisation est interdite dans toutes les autres circonstances."
@@ -853,7 +853,7 @@
       "19 ans",
       "17 ans"
     ],
-    "explanation": "Avec un encadrant vous pouvez obtenir un permis de conduire provisoire B dès l'âge de 17 ans (après l'examen théorique) ; sans encadrant uniquement à partir de 18 ans, après 20 heures de cours pratiques (arrêté royal du 10 juillet 2006, art. 2-4)."
+    "explanation": "Avec un encadrant vous pouvez obtenir un permis de conduire provisoire B dès l'âge de 17 ans (après l'examen théorique) ; sans encadrant uniquement à partir de 18 ans, après 20 heures de cours pratiques (AR du 10 juillet 2006, art. 2-4)."
   },
   "rule-begeleider-ervaring": {
     "question": "Depuis combien d'années un encadrant doit-il avoir au moins son permis de conduire pour exercer la fonction d'encadrant avec un permis de conduire provisoire B ?",
@@ -899,11 +899,11 @@
     "question": "Le conducteur d'un véhicule agricole considéré légalement comme un « quatre roues à moteur » doit-il porter un casque de protection ?",
     "options": [
       "Oui, toujours, quelle que soit la vitesse de construction ou le type de direction",
-      "Non, si la vitesse de chantier n'est pas supérieure à 40 km/h et que le véhicule n'est pas équipé d'un guidon de type moto.",
-      "Enkel aussi est-il pour voir le gordel de voile est-il",
+      "Non, si la vitesse de chantier ne dépasse pas 40 km/h et que le véhicule n'est pas équipé d'un guidon de type moto",
+      "Uniquement s'il n'y a pas de ceinture de sécurité",
       "Uniquement obligatoire hors agglomération"
     ],
-    "explanation": "L'article 36, premier alinéa, exclut les véhicules agricoles qualifiés de quatre-roues avec moteur de l'obligation de porter un casque, à condition que leur vitesse de construction n'excède pas 40 km/h et qu'ils ne soient pas équipés d'un guidon comme une moto (arrêté royal du 2 octobre 2023). Les quads avec guidon de moto restent obligatoires pour porter le casque."
+    "explanation": "L'article 36, premier alinéa, exclut les véhicules agricoles qualifiés de quatre-roues avec moteur de l'obligation de porter un casque, à condition que leur vitesse de construction n'excède pas 40 km/h et qu'ils ne soient pas équipés d'un guidon comme une moto (arrêté royal du 2 octobre 2023). Les quads avec guidon de moto restent obligatoires pour porter un casque."
   },
   "rule-middenrijbaan-2022": {
     "question": "Où devriez-vous conduire sur une route comportant une voie centrale (deux bords imaginaires parallèles de deux courtes bandes blanches chacun) ?",
@@ -916,7 +916,7 @@
     "explanation": "Une chaussée centrale (art. 2.71) fait office de chaussée pour les véhicules à moteur ; les conducteurs les suivent (art. 9.1.1) et ne peuvent faire un écart que vers la voie latérale (art. 2.72) pour traverser (art. 15.3) ou dépasser (art. 16.5)."
   },
   "rule-estep-leeftijd-2022": {
-    "question": "À partir de quel âge minimum est-il autorisé à conduire un véhicule motorisé (comme un e-scooter) sur la voie publique en Belgique ?",
+    "question": "À partir de quel âge minimum est-il autorisé à conduire un engin de propulsion motorisé (comme un e-scooter) sur la voie publique en Belgique ?",
     "options": [
       "A partir de 12 ans",
       "A partir de 14 ans",
@@ -940,7 +940,7 @@
     "options": [
       "Non, les speed pedelecs ne sont jamais autorisés sur un chemin D9",
       "Oui, les VAE rapides sont autorisés à emprunter le chemin D9, sauf si un panneau le leur interdit.",
-      "Enkel et pas plus loin que 15 km/h de la rivière",
+      "Uniquement s'ils ne roulent pas à plus de 15 km/h",
       "Uniquement en dehors des agglomérations"
     ],
     "explanation": "Par l'arrêté royal du 30 juillet 2022 (en vigueur le 1er octobre 2022, art. 9.1.2° et 69.3), l'autorisation des conducteurs de speed pedelecs sur le chemin D9 a été rétablie, sauf panneau leur refusant l'accès.",
@@ -961,7 +961,7 @@
     "question": "Jusqu'où s'appliquent les règles de circulation spécifiques à une zone cyclable (indiquées par le panneau F111) ?",
     "options": [
       "Jusqu'à la prochaine intersection, sauf si le panneau est répété",
-      "Jusqu'au panneau F113 indiquant la fin de la zone cyclable ; une zone cyclable peut comprendre plusieurs rues",
+      "Jusqu'au panneau F113 qui indique la fin de la zone cyclable ; une zone cyclable peut comprendre plusieurs rues",
       "Toujours sur une distance fixe de 250 mètres",
       "Uniquement dans les 50 premiers mètres"
     ],
@@ -980,7 +980,7 @@
     "explanation": "Depuis le 1er janvier 2021, la limite de vitesse standard de 30 km/h en agglomération (« Ville 30 ») s'applique en Région de Bruxelles-Capitale (Arrêté du Gouvernement de Bruxelles-Capitale du 22 septembre 2021, art. 11.2)."
   },
   "rec-b19": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Passage étroit où il faut donner la priorité à la circulation venant en sens inverse",
       "Passage étroit où la circulation venant en sens inverse doit vous céder le passage",
@@ -992,7 +992,7 @@
     "signExplanation": "Le panneau B19 précise que dans un passage étroit, vous devez donner la priorité aux conducteurs venant en sens inverse (art. 67.3)."
   },
   "rec-b3": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Annonce du panneau B1 (donner la priorité) à la distance indiquée",
       "Annonce du panneau B5 (arrêt et passage) à la distance indiquée",
@@ -1004,7 +1004,7 @@
     "signExplanation": "Le panneau B3 annonce le panneau B1 (prioritaire) à la distance approximative indiquée (art. 67 KB 1er décembre 1975)."
   },
   "rec-b7": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Annonce du panneau B1 (donner la priorité) à la distance indiquée",
       "Annonce du panneau B5 (arrêt et passage) à la distance indiquée",
@@ -1016,7 +1016,7 @@
     "signExplanation": "Le panneau B7 annonce le panneau B5 (arrêt et passage) à la distance approximative indiquée (art. 67 KB 1er décembre 1975)."
   },
   "rec-b11": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Début d'une route prioritaire",
       "Annonce de la fin de la route prioritaire à distance",
@@ -1028,7 +1028,7 @@
     "signExplanation": "Le panneau B11 indique la fin d'une route prioritaire (art. 67 KB 1er décembre 1975)."
   },
   "rec-b13": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Fin de la route prioritaire à partir de ce panneau",
       "Début d'un chemin prioritaire à la distance indiquée",
@@ -1040,11 +1040,11 @@
     "signExplanation": "Le panneau B13 annonce la fin de la route prioritaire (panneau B11) à la distance approximative indiquée (art. 67 KB 1er décembre 1975)."
   },
   "rec-b15": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Priorité à la prochaine intersection",
       "Début d'une route prioritaire",
-      "Intersection où la priorité à droite s'applique",
+      "Intersection où s'applique la priorité à droite",
       "Passage étroit avec priorité sur le trafic venant en sens inverse"
     ],
     "explanation": "Le panneau B15 indique que les conducteurs sont prioritaires à la prochaine intersection (art. 67 KB 1er décembre 1975).",
@@ -1052,7 +1052,7 @@
     "signExplanation": "Le panneau B15 indique que les conducteurs sont prioritaires à la prochaine intersection (art. 67 KB 1er décembre 1975)."
   },
   "rec-b21": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Passage étroit où il faut donner la priorité à la circulation venant en sens inverse",
       "Passage étroit avec priorité sur le trafic venant en sens inverse",
@@ -1064,7 +1064,7 @@
     "signExplanation": "Le panneau B21 indique un passage étroit où vous avez la priorité sur les automobilistes venant en sens inverse (art. 67 KB 1er décembre 1975)."
   },
   "rec-b22": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Piste cyclable obligatoire avec virage à droite",
       "Les cyclistes et les speed pedelecs peuvent rouler tout droit aux feux rouges à condition d'avoir la priorité.",
@@ -1076,19 +1076,19 @@
     "signExplanation": "Le panneau B22 autorise les cyclistes et les conducteurs de speed pedelecs à tourner à droite aux feux rouges ou orange-jaune, à condition qu'ils cèdent le passage (art. 67 KB 1er décembre 1975)."
   },
   "rec-b23": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
-      "Les cyclistes et les speed pedelecs peuvent tourner à droite aux feux rouges à condition d'avoir la priorité",
+      "Les cyclistes et les speed pedelecs peuvent tourner à droite aux feux rouges à condition d'avoir la priorité.",
       "Piste cyclable obligatoire tout droit",
       "Voie réservée aux cyclistes et speed pedelecs",
-      "Les cyclistes et les speed pedelecs peuvent rouler tout droit aux feux rouges à condition qu'ils cèdent le passage."
+      "Les cyclistes et les speed pedelecs peuvent rouler tout droit aux feux rouges à condition qu'ils cèdent le passage"
     ],
     "explanation": "Le panneau B23 autorise les cyclistes et les conducteurs de speed pedelecs à rouler tout droit aux feux rouges ou orange-jaune, à condition qu'ils cèdent le passage (art. 67 KB 1er décembre 1975).",
-    "signTitle": "Les cyclistes et les speed pedelecs peuvent rouler tout droit aux feux rouges à condition qu'ils cèdent le passage.",
+    "signTitle": "Les cyclistes et les speed pedelecs peuvent rouler tout droit aux feux rouges à condition qu'ils cèdent le passage",
     "signExplanation": "Le panneau B23 autorise les cyclistes et les conducteurs de speed pedelecs à rouler tout droit aux feux rouges ou orange-jaune, à condition qu'ils cèdent le passage (art. 67 KB 1er décembre 1975)."
   },
   "rec-c31a": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Tourner à gauche obligatoire à la prochaine intersection",
       "Il est interdit de tourner à gauche à la prochaine intersection",
@@ -1100,7 +1100,7 @@
     "signExplanation": "Le panneau C31a interdit de tourner à gauche à la prochaine intersection dans le sens de la flèche (art. 68.3)."
   },
   "rec-c33": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Interdiction de tourner à droite",
       "Virage obligatoire sur la route",
@@ -1112,7 +1112,7 @@
     "signExplanation": "Le panneau C33 interdit aux conducteurs de faire demi-tour jusqu'à la prochaine intersection (art. 68.3)."
   },
   "rec-c39": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Interdiction de dépasser pour tous les véhicules à moteur",
       "Accès interdit aux camions",
@@ -1124,10 +1124,10 @@
     "signExplanation": "Le panneau C39 interdit aux camions d'une masse maximale autorisée supérieure à 3,5 tonnes de dépasser une équipe ou un véhicule automobile à plus de deux roues (art. 68.3)."
   },
   "rec-c5": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Accès interdit aux conducteurs de véhicules automobiles à plus de deux roues et de motos avec side-car",
-      "Entrée interdite à tous les véhicules à moteur, y compris les motos à deux roues sans side-car",
+      "Accès interdit à tous véhicules automobiles, y compris les motos à deux roues sans side-car",
       "Voie obligatoire réservée aux covoitureurs et aux taxis",
       "Accès interdit aux conducteurs de véhicules destinés au transport de marchandises"
     ],
@@ -1136,7 +1136,7 @@
     "signExplanation": "Le panneau C5 interdit l'accès aux conducteurs de véhicules automobiles à plus de deux roues et aux motocyclettes avec side-car (art. 68 KB du 1er décembre 1975). Les motos à deux roues sans side-car sont autorisées à circuler ici."
   },
   "rec-c6": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Accès interdit à tous véhicules agricoles à quatre roues et tracteurs",
       "Accès interdit aux conducteurs de véhicules automobiles à quatre roues construits pour des terrains non asphaltés (quads)",
@@ -1148,9 +1148,9 @@
     "signExplanation": "Le panneau C6 interdit l'accès aux conducteurs de véhicules automobiles à quatre roues à carrosserie ouverte, au guidon et à la selle de type moto, conçus pour les terrains non pavés, tels que les quads (art. 68 KB du 1er décembre 1975)."
   },
   "rec-c7": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
-      "Accès interdit aux cyclomoteurs et aux speed pedelecs",
+      "Accès interdit aux cyclomoteurs et speed pedelecs",
       "Voie de stationnement obligatoire pour les deux-roues motorisés",
       "Accès interdit aux motocyclistes",
       "Interdiction de dépasser pour tous les conducteurs de moto"
@@ -1160,7 +1160,7 @@
     "signExplanation": "Le panneau C7 interdit l'accès aux motocyclistes (art. 68 KB du 1er décembre 1975)."
   },
   "rec-c9": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "L'accès aux vélos et speed pedelecs est interdit",
       "Piste cyclable obligatoire pour les cyclomoteurs de classe B",
@@ -1172,11 +1172,11 @@
     "signExplanation": "Le panneau C9 interdit l'accès aux conducteurs de cyclomoteurs (art. 68 KB du 1er décembre 1975)."
   },
   "rec-c11": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Accès interdit aux cyclistes",
       "Piste cyclable obligatoire pour les cyclistes et les speed pedelecs",
-      "Accès interdit aux piétons et aux équipements de mobilité personnelle",
+      "Accès interdit aux piétons et aux équipements de mobilité",
       "Fin de la piste cyclable obligatoire"
     ],
     "explanation": "Le panneau C11 interdit l'accès aux cyclistes (art. 68 KB 1er décembre 1975).",
@@ -1184,9 +1184,9 @@
     "signExplanation": "Le panneau C11 interdit l'accès aux cyclistes (art. 68 KB 1er décembre 1975)."
   },
   "rec-c13": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
-      "Accès interdit aux cavaliers et aux animaux montés",
+      "Accès interdit aux cavaliers et animaux montés",
       "Accès interdit aux conducteurs de tension",
       "Parcours obligatoire pour les chevaux et les charrettes couvertes",
       "Accès interdit aux véhicules agricoles"
@@ -1196,10 +1196,10 @@
     "signExplanation": "Le panneau C13 interdit l'accès aux conducteurs de véhicules tendus (art. 68 Ko 1er décembre 1975)."
   },
   "rec-c15": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Accès interdit aux conducteurs de tension",
-      "Sentier obligatoire pour les cavaliers (piste cavalière)",
+      "Sentier obligatoire pour les cavaliers (piste équestre)",
       "Accès interdit aux cavaliers",
       "Avertissement pour le croisement de bovins ou de chevaux"
     ],
@@ -1208,7 +1208,7 @@
     "signExplanation": "Le panneau C15 interdit l'accès aux cavaliers (art. 68 KB 1er décembre 1975)."
   },
   "rec-c17": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Accès interdit aux piétons avec poussettes",
       "Aire de chargement et déchargement obligatoire des charrettes à bras",
@@ -1220,7 +1220,7 @@
     "signExplanation": "Le panneau C17 interdit l'accès aux conducteurs de charrettes (art. 68 KB 1er décembre 1975)."
   },
   "rec-c19": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Accès piétons interdit",
       "Sentier obligatoire pour les piétons (sentier piéton)",
@@ -1232,11 +1232,11 @@
     "signExplanation": "Le panneau C19 interdit l'accès aux piétons (art. 68 KB 1er décembre 1975)."
   },
   "rec-c21": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Accès interdit aux véhicules dont la masse maximale autorisée (MTM) est supérieure à la masse indiquée",
       "Accès interdit aux conducteurs de véhicules dont la masse en charge dépasse la masse indiquée",
-      "Charge maximale obligatoire par essieu pour les camions",
+      "Charge maximale obligatoire par essieu par essieu pour les camions",
       "Poids maximum recommandé pour les camions et les autobus"
     ],
     "explanation": "Le panneau C21 interdit l'accès aux conducteurs de véhicules dont la masse réelle en charge (MBTA) est supérieure à la masse indiquée (art. 68 KB 1er décembre 1975).",
@@ -1244,9 +1244,9 @@
     "signExplanation": "Le panneau C21 interdit l'accès aux conducteurs de véhicules dont la masse réelle en charge (MBTA) est supérieure à la masse indiquée (art. 68 KB 1er décembre 1975)."
   },
   "rec-c22": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
-      "Accès interdit aux transports en commun réguliers",
+      "Accès interdit aux services réguliers de transports en commun",
       "Interdiction de stationnement pour les autobus et autocars",
       "Accès interdit aux chauffeurs d'autocars",
       "Voie réservée aux bus et autocars"
@@ -1256,19 +1256,19 @@
     "signExplanation": "Le panneau C22 interdit l'accès aux conducteurs d'autocars (art. 68 KB du 1er décembre 1975)."
   },
   "rec-c23": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Accès interdit à tous véhicules motorisés avec remorques",
       "Interdiction de dépasser pour les camions de plus de 3,5 tonnes",
       "Voie obligatoire pour le transport de marchandises",
       "Accès interdit aux conducteurs de véhicules automobiles et de remorques conçus et construits pour le transport de marchandises"
     ],
-    "explanation": "Le panneau C23 interdit l'accès aux conducteurs de véhicules automobiles et de remorques conçus et construits pour le transport de marchandises (art. 68 KB du 1er décembre 1975).",
+    "explanation": "Le panneau C23 interdit l'accès aux conducteurs de véhicules automobiles et de remorques conçus et construits pour le transport de marchandises (art. 68 KB 1er décembre 1975).",
     "signTitle": "Accès interdit aux conducteurs de véhicules automobiles et de remorques conçus et construits pour le transport de marchandises",
-    "signExplanation": "Le panneau C23 interdit l'accès aux conducteurs de véhicules automobiles et de remorques conçus et construits pour le transport de marchandises (art. 68 KB du 1er décembre 1975)."
+    "signExplanation": "Le panneau C23 interdit l'accès aux conducteurs de véhicules automobiles et de remorques conçus et construits pour le transport de marchandises (art. 68 KB 1er décembre 1975)."
   },
   "rec-c24a": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Accès interdit aux conducteurs de véhicules transportant des marchandises dangereuses",
       "Sens de circulation obligatoire pour les véhicules transportant des marchandises dangereuses",
@@ -1280,43 +1280,43 @@
     "signExplanation": "Le panneau C24a interdit l'accès aux conducteurs de véhicules transportant des marchandises dangereuses (art. 68 KB 1er décembre 1975)."
   },
   "rec-c24b": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
-      "Accès interdit à tous véhicules équipés d'une installation GPL ou gaz naturel",
+      "L'accès est interdit à tous les véhicules équipés d'une installation GPL ou gaz naturel",
       "Accès interdit aux conducteurs de véhicules transportant des substances dangereuses inflammables ou explosives",
       "Entrée interdite aux véhicules transportant des polluants de l'eau",
-      "Interdiction de faire feu et de fumer à proximité des stations-service"
+      "Interdiction de faire des flammes nues et de fumer à proximité des stations-service"
     ],
     "explanation": "Le panneau C24b interdit l'accès aux conducteurs de véhicules transportant des substances dangereuses inflammables ou explosives (art. 68 Arrêté Royal du 1er décembre 1975).",
     "signTitle": "Accès interdit aux conducteurs de véhicules transportant des substances dangereuses inflammables ou explosives",
     "signExplanation": "Le panneau C24b interdit l'accès aux conducteurs de véhicules transportant des substances dangereuses inflammables ou explosives (art. 68 Arrêté Royal du 1er décembre 1975)."
   },
   "rec-c24c": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Accès interdit aux véhicules transportant des gaz inflammables",
       "Interdiction de rejeter des liquides ou des déchets dans les eaux de surface",
-      "Accès interdit aux conducteurs de véhicules transportant des polluants dangereux",
+      "Entrée interdite aux conducteurs de véhicules transportant des polluants dangereux",
       "Avertissement concernant une zone de captage d'eau présentant un risque accru d'inondation"
     ],
     "explanation": "Le panneau C24c interdit l'accès aux conducteurs de véhicules transportant des polluants dangereux (art. 68 KB 1er décembre 1975).",
-    "signTitle": "Accès interdit aux conducteurs de véhicules transportant des polluants dangereux",
+    "signTitle": "Entrée interdite aux conducteurs de véhicules transportant des polluants dangereux",
     "signExplanation": "Le panneau C24c interdit l'accès aux conducteurs de véhicules transportant des polluants dangereux (art. 68 KB 1er décembre 1975)."
   },
   "rec-c25": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Accès interdit aux autobus articulés et aux camions avec remorques",
       "Distance minimale recommandée par rapport aux véhicules qui précèdent pour les véhicules longs",
       "Distance de suivi obligatoire d'au moins la distance indiquée en mètres",
-      "L'accès est interdit aux conducteurs de véhicules ou de remorques dont la longueur, charge comprise, dépasse la longueur indiquée"
+      "Accès interdit aux conducteurs de véhicules ou de remorques dont la longueur, charge comprise, dépasse la longueur indiquée"
     ],
     "explanation": "Le panneau C25 interdit l'accès aux conducteurs de véhicules ou de remorques dont la longueur, charge comprise, est supérieure à celle indiquée sur le panneau (art. 68 KB 1er décembre 1975).",
-    "signTitle": "L'accès est interdit aux conducteurs de véhicules ou de remorques dont la longueur, charge comprise, dépasse la longueur indiquée",
+    "signTitle": "Accès interdit aux conducteurs de véhicules ou de remorques dont la longueur, charge comprise, dépasse la longueur indiquée",
     "signExplanation": "Le panneau C25 interdit l'accès aux conducteurs de véhicules ou de remorques dont la longueur, charge comprise, est supérieure à celle indiquée sur le panneau (art. 68 KB 1er décembre 1975)."
   },
   "rec-c27": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Accès interdit aux conducteurs de véhicules dont la largeur, charge comprise, est supérieure à celle indiquée",
       "Avertissement d'un rétrécissement de voie des deux côtés de la route",
@@ -1328,7 +1328,7 @@
     "signExplanation": "Le panneau C27 interdit l'accès aux conducteurs de véhicules dont la largeur, charge comprise, est supérieure à la dimension indiquée (art. 68 KB 1er décembre 1975)."
   },
   "rec-c29": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Avertissement pour un viaduc ou un tunnel avec un dégagement limité",
       "Accès interdit aux conducteurs de véhicules dont la hauteur, charge comprise, dépasse la hauteur indiquée",
@@ -1340,7 +1340,7 @@
     "signExplanation": "Le panneau C29 interdit l'accès aux conducteurs de véhicules dont la hauteur, charge comprise, est supérieure à la hauteur indiquée (art. 68 KB 1er décembre 1975)."
   },
   "rec-c31b": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Sens de conduite obligatoire, tourner à droite à la prochaine intersection",
       "Route à sens unique sans accès par la droite",
@@ -1352,7 +1352,7 @@
     "signExplanation": "Le panneau C31b interdit de tourner dans le sens indiqué par la flèche à la prochaine intersection, ici tourner à droite (art. 68 KB 1er décembre 1975)."
   },
   "rec-c37": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Début d'une zone sans dépassement pour tous les véhicules à moteur",
       "Fin de l'interdiction de dépasser uniquement pour les camions de plus de 3,5 tonnes",
@@ -1364,11 +1364,11 @@
     "signExplanation": "Le panneau C37 indique la fin de l'interdiction de dépasser imposée par le panneau C35 (art. 68 KB 1er décembre 1975)."
   },
   "rec-c41": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Fin de l'interdiction de dépassement à gauche pour les véhicules utilitaires d'un PTAC supérieur à 3,5 tonnes",
       "Fin de l'interdiction générale de dépasser pour les voitures particulières et les motos",
-      "Début d'une interdiction de dépassement pour les camions par temps de pluie",
+      "Début de l'interdiction de dépassement pour les camions par temps de pluie",
       "Voie obligatoire pour les camions d'un poids total en charge supérieur à 3,5 tonnes"
     ],
     "explanation": "Le panneau C41 indique la fin de l'interdiction de dépassement pour les conducteurs de véhicules utilisés pour le transport de marchandises d'un poids total en charge supérieur à 3,5 tonnes (fin du panneau C39, art. 68 KB 1er décembre 1975).",
@@ -1376,7 +1376,7 @@
     "signExplanation": "Le panneau C41 indique la fin de l'interdiction de dépassement pour les conducteurs de véhicules utilisés pour le transport de marchandises d'un poids total en charge supérieur à 3,5 tonnes (fin du panneau C39, art. 68 KB 1er décembre 1975)."
   },
   "rec-c43": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Vitesse recommandée jusqu'à la prochaine intersection",
       "Interdiction de rouler à une vitesse supérieure à celle indiquée jusqu'à la prochaine intersection",
@@ -1388,7 +1388,7 @@
     "signExplanation": "Le panneau C43 interdit de circuler à une vitesse supérieure à celle indiquée, du panneau jusqu'à l'intersection suivante, sauf indication contraire (art. 68 KB 1er décembre 1975)."
   },
   "rec-c45": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Fin de toutes les interdictions locales de circulation des véhicules",
       "Fin de la limitation de vitesse conseillée sur le tronçon routier concerné",
@@ -1400,7 +1400,7 @@
     "signExplanation": "Le panneau C45 indique la fin de la limitation de vitesse imposée auparavant par le panneau C43 (art. 68 KB 1er décembre 1975)."
   },
   "rec-c46": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Fin de toutes interdictions de stationnement et d'arrêt sur cette route",
       "Fin de l'autoroute ou de l'autoroute",
@@ -1412,7 +1412,7 @@
     "signExplanation": "Le panneau C46 indique la fin de toutes les interdictions locales imposées auparavant aux véhicules en mouvement, telles que les limitations de vitesse et les interdictions de dépassement (art. 68 KB 1er décembre 1975)."
   },
   "rec-c47": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Fin de la zone à péage autoroutier",
       "Pont-bascule et contrôle de charge par essieu obligatoires pour les camions",
@@ -1424,7 +1424,7 @@
     "signExplanation": "Le panneau C47 (Péage ou Taxe) impose l'interdiction de passer sans s'arrêter (art. 68 KB 1er décembre 1975)."
   },
   "rec-d9": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Piste cyclable obligatoire où les piétons sont interdits",
       "Zone piétonne où les vélos ne sont pas autorisés",
@@ -1436,7 +1436,7 @@
     "signExplanation": "Le panneau D9 indique une partie de la voie publique réservée à la circulation des piétons, des cyclistes et des cyclomoteurs à deux roues classe A (art. 69.3)."
   },
   "rec-d10": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Piste cyclable exclusivement réservée aux vélos de course",
       "Partie de la voie publique réservée aux piétons et cyclistes (sans cyclomoteurs)",
@@ -1448,21 +1448,21 @@
     "signExplanation": "Le panneau D10 indique un chemin réservé aux piétons et aux cyclistes ; Contrairement au panneau D9, les cyclomoteurs de classe A ne sont pas autorisés à circuler ici (art. 69.3)."
   },
   "rec-d1b": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Sens de circulation obligatoire : gauche",
       "Sens de circulation obligatoire : continuer tout droit",
       "Obligation de passer l'obstacle à gauche",
       "Interdiction de tourner à gauche"
     ],
-    "explanation": "Ce panneau obligatoire (D1) vous oblige à suivre le sens de circulation de la flèche, ici à gauche (art. 69.3 du Code de la route).",
+    "explanation": "Ce panneau obligatoire (D1) vous oblige à suivre le sens de déplacement de la flèche, ici à gauche (art. 69.3 du Code de la route).",
     "signTitle": "Sens de circulation obligatoire : gauche",
-    "signExplanation": "Ce panneau obligatoire (D1) vous oblige à suivre le sens de circulation de la flèche, ici à gauche (art. 69.3 du Code de la route)."
+    "signExplanation": "Ce panneau obligatoire (D1) vous oblige à suivre le sens de déplacement de la flèche, ici à gauche (art. 69.3 du Code de la route)."
   },
   "rec-d1c": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
-      "Obligation de passer l'obstacle à droite",
+      "Obligation de franchir l'obstacle à droite",
       "Obligation de passer l'obstacle à gauche",
       "Sens de circulation obligatoire : tourner à gauche à l'intersection",
       "Sens unique à gauche"
@@ -1472,19 +1472,19 @@
     "signExplanation": "Le panneau D1c impose l'obligation de franchir l'obstacle du côté indiqué par la flèche, ici à gauche (art. 69 KB 1er décembre 1975)."
   },
   "rec-d1d": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Obligation de passer l'obstacle à gauche",
       "Sens de circulation obligatoire : tourner à droite à l'intersection",
-      "Obligation de passer l'obstacle à droite",
+      "Obligation de franchir l'obstacle à droite",
       "Virage à droite dangereux"
     ],
-    "explanation": "Le panneau D1d impose l'obligation de franchir l'obstacle du côté indiqué par la flèche, ici à droite (art. 69 KB 1er décembre 1975).",
-    "signTitle": "Obligation de passer l'obstacle à droite",
-    "signExplanation": "Le panneau D1d impose l'obligation de franchir l'obstacle du côté indiqué par la flèche, ici à droite (art. 69 KB 1er décembre 1975)."
+    "explanation": "Le panneau D1d impose l'obligation de franchir l'obstacle du côté indiqué par la flèche, ici à droite (art. 69 Arrêté Royal du 1er décembre 1975).",
+    "signTitle": "Obligation de franchir l'obstacle à droite",
+    "signExplanation": "Le panneau D1d impose l'obligation de franchir l'obstacle du côté indiqué par la flèche, ici à droite (art. 69 Arrêté Royal du 1er décembre 1975)."
   },
   "rec-d1e": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Sens de circulation obligatoire : continuer tout droit",
       "Obligation de passer l'obstacle à gauche",
@@ -1496,11 +1496,11 @@
     "signExplanation": "Ce panneau obligatoire (D1, version alternative) vous oblige à suivre le sens de circulation de la flèche, ici à gauche (art. 69.3 du Code de la route)."
   },
   "rec-d3": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Obligation de suivre une des directions indiquées par les flèches",
       "Sens de circulation obligatoire : tout droit uniquement",
-      "Intersection où la priorité à droite s'applique",
+      "Intersection où s'applique la priorité à droite",
       "Interdiction de rouler tout droit ou de tourner à droite"
     ],
     "explanation": "Le panneau D3 oblige les conducteurs à suivre l'une des directions indiquées par les flèches, soit tout droit, soit à droite (art. 69 Arrêté Royal du 1er décembre 1975).",
@@ -1508,7 +1508,7 @@
     "signExplanation": "Le panneau D3 oblige les conducteurs à suivre l'une des directions indiquées par les flèches, soit tout droit, soit à droite (art. 69 Arrêté Royal du 1er décembre 1975)."
   },
   "rec-d4": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Interdiction d'accès aux véhicules transportant des marchandises dangereuses",
       "Sens de circulation obligatoire pour les véhicules transportant des marchandises dangereuses",
@@ -1520,7 +1520,7 @@
     "signExplanation": "Le panneau D4 impose un sens de circulation obligatoire aux véhicules transportant des marchandises dangereuses (art. 69 KB 1er décembre 1975)."
   },
   "rec-d11": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Piste cyclable obligatoire où les piétons peuvent circuler",
       "Zone piétonne où les cyclistes peuvent circuler au pas",
@@ -1532,22 +1532,22 @@
     "signExplanation": "Le panneau D11 impose un cheminement obligatoire pour les piétons ; ce chemin est exclusivement réservé aux piétons (art. 69 Ko du 1er décembre 1975)."
   },
   "rec-d13": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Interdiction d'accès pour les coureurs et les véhicules tendus",
       "Avertissement en cas de croisement de gros gibier ou de bétail",
       "Partie de la voie publique réservée aux véhicules agricoles",
-      "Sentier obligatoire pour les cavaliers (piste cavalière)"
+      "Sentier obligatoire pour les cavaliers (piste équestre)"
     ],
     "explanation": "Le panneau D13 impose un parcours obligatoire aux coureurs ; ce sentier est exclusivement réservé aux animaux montés (art. 69 KB du 1er décembre 1975).",
-    "signTitle": "Sentier obligatoire pour les cavaliers (piste cavalière)",
+    "signTitle": "Sentier obligatoire pour les cavaliers (piste équestre)",
     "signExplanation": "Le panneau D13 impose un parcours obligatoire aux coureurs ; ce sentier est exclusivement réservé aux animaux montés (art. 69 KB du 1er décembre 1975)."
   },
   "rec-e3": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Seul stationnement interdit",
-      "Place de parking réservée",
+      "Stationnement réservé",
       "Arrêt immobile et stationnement interdit",
       "Fin d'une zone de stationnement"
     ],
@@ -1556,7 +1556,7 @@
     "signExplanation": "Le panneau E3 signifie que l'arrêt ainsi que le stationnement sont interdits du côté de la voie publique où se trouve le panneau (art. 70.2.1)."
   },
   "rec-e5": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Stationnement interdit du 1er au 15 du mois",
       "Interdiction de stationner du 16 à la fin du mois",
@@ -1568,7 +1568,7 @@
     "signExplanation": "Le panneau E5 impose une interdiction de stationner du côté de la route où il se trouve, du 1er au 15 du mois (art. 70.2.1)."
   },
   "rec-e7": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Stationnement interdit du 1er au 15 du mois",
       "Interdiction de stationner du 16 à la fin du mois",
@@ -1580,7 +1580,7 @@
     "signExplanation": "Le panneau E7 impose une interdiction de stationner du côté de la route où il se trouve, du 16 à la fin du mois (art. 70.2.1)."
   },
   "rec-e9a": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Stationnement des ambulances",
       "Interdiction de stationnement pour les personnes handicapées",
@@ -1592,10 +1592,10 @@
     "signExplanation": "Le panneau E9a avec symbole de fauteuil roulant indique que le stationnement est réservé exclusivement aux véhicules utilisés par des personnes handicapées munies d'une carte de stationnement spéciale (art. 70.2.1)."
   },
   "rec-e9b": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Stationnement pour camions et autobus uniquement",
-      "Stationnement obligatoire sur l'accotement surélevé",
+      "Stationnement obligatoire sur le bord surélevé",
       "Parking uniquement pour motos, voitures particulières, voitures mixtes et minibus",
       "Place de parking réservée aux véhicules de covoiturage"
     ],
@@ -1604,23 +1604,23 @@
     "signExplanation": "Le panneau E9b indique que le stationnement est réservé exclusivement aux motos, voitures particulières, voitures à double usage et minibus (art. 70.2.1)."
   },
   "rec-e9c": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Interdiction de stationnement pour les véhicules de plus de 3,5 tonnes",
       "Lieu réservé au chargement et déchargement des marchandises",
       "Stationnement obligatoire des camions sur la bande d'arrêt d'urgence",
       "Stationnement pour camions légers et camions seulement"
     ],
-    "explanation": "Le panneau E9c indique que le stationnement est réservé exclusivement aux camionnettes et camions (art. 70.2.1).",
+    "explanation": "Le panneau E9c indique que le stationnement est exclusivement réservé aux camionnettes et camions (art. 70.2.1).",
     "signTitle": "Stationnement pour camions légers et camions seulement",
-    "signExplanation": "Le panneau E9c indique que le stationnement est réservé exclusivement aux camionnettes et camions (art. 70.2.1)."
+    "signExplanation": "Le panneau E9c indique que le stationnement est exclusivement réservé aux camionnettes et camions (art. 70.2.1)."
   },
   "rec-e9d": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Parking réservé aux autocars",
       "Arrêt des bus urbains des transports publics",
-      "Place de parking réservée au transport scolaire",
+      "Parking réservé au transport scolaire",
       "Interdiction des bus permettant aux passagers d'embarquer ou de débarquer"
     ],
     "explanation": "Le panneau E9d indique une place de stationnement réservée exclusivement aux autocars (art. 70.2.1).",
@@ -1628,7 +1628,7 @@
     "signExplanation": "Le panneau E9d indique une place de stationnement réservée exclusivement aux autocars (art. 70.2.1)."
   },
   "rec-e9e": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Stationnement obligatoire sur la route",
       "Stationnement obligatoire en accotement ou sur le trottoir",
@@ -1640,10 +1640,10 @@
     "signExplanation": "Le panneau E9e oblige les conducteurs à garer le véhicule entièrement sur l'accotement ou sur le trottoir (art. 70.2.1)."
   },
   "rec-e9f": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Stationnement obligatoire entièrement en accotement ou trottoir",
-      "Stationnement obligatoire sur la route parallèle à la bordure du trottoir",
+      "Stationnement obligatoire sur la route parallèle à la bordure",
       "Stationnement obligatoire, en partie en accotement ou sur le trottoir",
       "Voie de stationnement pour véhicules à moteur à deux roues uniquement"
     ],
@@ -1652,7 +1652,7 @@
     "signExplanation": "Le panneau E9f impose l'obligation de stationner en partie en accotement ou sur le trottoir et en partie sur la chaussée (art. 70.2.1)."
   },
   "rec-e9g": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Stationnement obligatoire en accotement ou sur le trottoir",
       "Stationnement obligatoire, en partie sur le trottoir et en partie sur la route",
@@ -1664,31 +1664,31 @@
     "signExplanation": "Le panneau E9g oblige les automobilistes à stationner sur la chaussée et interdit le stationnement en accotement ou sur le trottoir (art. 70.2.1)."
   },
   "rec-e9h": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
-      "Stationnement pour camping-cars seulement",
+      "Stationnement pour camping-cars uniquement",
       "Aire de camping et parking pour caravanes autorisés",
-      "Stationnement interdit aux véhicules avec remorque ou caravane",
+      "Interdiction de stationnement pour les véhicules avec remorque ou caravane",
       "Stationnement réservé aux camions légers"
     ],
     "explanation": "Le panneau E9h indique une place de stationnement réservée exclusivement aux camping-cars (camping-cars/mobil-homes) (art. 70.2.1).",
-    "signTitle": "Stationnement pour camping-cars seulement",
+    "signTitle": "Stationnement pour camping-cars uniquement",
     "signExplanation": "Le panneau E9h indique une place de stationnement réservée exclusivement aux camping-cars (camping-cars/mobil-homes) (art. 70.2.1)."
   },
   "rec-e9i": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Piste cyclable et piste cyclomoteur obligatoires",
-      "Parking pour motos uniquement",
-      "Parking pour tous les deux-roues y compris les vélos",
+      "Stationnement pour motos uniquement",
+      "Parking pour tous les véhicules à deux roues y compris les vélos",
       "Le stationnement des motos et cyclomoteurs est interdit"
     ],
     "explanation": "Le panneau E9i indique que le stationnement est réservé exclusivement aux motos (art. 70.2.1).",
-    "signTitle": "Parking pour motos uniquement",
+    "signTitle": "Stationnement pour motos uniquement",
     "signExplanation": "Le panneau E9i indique que le stationnement est réservé exclusivement aux motos (art. 70.2.1)."
   },
   "rec-e9j": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Piste cyclable et bande réservée aux voitures combinées obligatoires",
       "Stationnement avec priorité permanente pour les cyclistes",
@@ -1700,10 +1700,10 @@
     "signExplanation": "Le panneau E9j indique que le stationnement pendant certaines plages horaires est réservé à certaines catégories de véhicules (art. 70.2.1)."
   },
   "rec-e11": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Début d'une zone de stationnement payant pour toute la commune",
-      "Interdiction générale de stationnement en agglomération",
+      "Interdiction générale de stationner en agglomération",
       "Fin du stationnement alterné en agglomération",
       "Stationnement bimensuel sur toute l'agglomération"
     ],
@@ -1712,7 +1712,7 @@
     "signExplanation": "Le panneau E11 indique que le stationnement doit être alterné tous les six mois dans toute l'agglomération (art. 70.3)."
   },
   "rec-f1b": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Début d'une agglomération",
       "Début d'un quartier résidentiel",
@@ -1724,7 +1724,7 @@
     "signExplanation": "Le panneau F1b indique le début d'une agglomération (art. 71.2), où une limite de vitesse standard de 50 km/h s'applique en Flandre."
   },
   "rec-f3b": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Début d'une agglomération",
       "Fin d'une agglomération",
@@ -1736,7 +1736,7 @@
     "signExplanation": "Le panneau F3b indique la fin d'une agglomération (art. 71.2)."
   },
   "rec-f19": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Obligatoire tout droit",
       "Route prioritaire",
@@ -1748,7 +1748,7 @@
     "signExplanation": "Le panneau F19 indique que vous circulez sur une voie publique à sens unique (art. 71.2)."
   },
   "rec-f49": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Avertissement d'un passage pour piétons devant vous",
       "Début d'une zone piétonne",
@@ -1760,7 +1760,7 @@
     "signExplanation": "Le panneau directionnel F49 indique l'emplacement précis d'un passage piéton (art. 71.2)."
   },
   "rec-f1a": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Début d'une agglomération",
       "Début d'une zone 30",
@@ -1772,7 +1772,7 @@
     "signExplanation": "Le panneau F1a indique le début d'une agglomération (art. 71.2 du Code de la route). En Flandre, la vitesse maximale standard est de 50 km/h, à Bruxelles de 30 km/h."
   },
   "rec-f3a": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Début d'une agglomération",
       "Fin d'une agglomération",
@@ -1784,9 +1784,9 @@
     "signExplanation": "Le panneau F3a indique la fin d'une agglomération (art. 71.2 du Code de la route)."
   },
   "rec-f4a": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
-      "Limitation de vitesse de 30 km/h qui s'applique uniquement à la prochaine intersection",
+      "Limite de vitesse de 30 km/h qui s'applique uniquement à la prochaine intersection",
       "Vitesse recommandée de 30 km/h",
       "Début d'une zone avec une limitation de vitesse à 30 km/h",
       "Début d'une zone résidentielle avec une vitesse maximale de 20 km/h"
@@ -1796,7 +1796,7 @@
     "signExplanation": "Le panneau F4a indique le début d'une zone avec une limitation de vitesse à 30 km/h (art. 71.2 du Code de la route). Cette limite s'applique à l'ensemble de la zone jusqu'au panneau F4b."
   },
   "rec-f4b": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Fin de toutes les limitations de vitesse sur cette voie publique",
       "Fin d'un quartier résidentiel ou d'une propriété",
@@ -1808,7 +1808,7 @@
     "signExplanation": "Le panneau F4b indique la fin d'une zone avec une limitation de vitesse à 30 km/h (art. 71.2 du Code de la route)."
   },
   "rec-f7": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Fin d'une autoroute",
       "Début d'une autoroute",
@@ -1820,19 +1820,19 @@
     "signExplanation": "Le panneau F7 indique la fin d'une autoroute (art. 71.2 du Code de la route)."
   },
   "rec-f8": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Parking souterrain",
-      "Tunnel d'une longueur supérieure à 500 mètres",
+      "Tunnel d'une longueur de plus de 500 mètres",
       "Panne dans un tunnel",
       "Viaduc ou passage couvert"
     ],
-    "explanation": "Le panneau directionnel F8 indique un tunnel d'une longueur supérieure à 500 mètres (art. 71.2 du Code de la route).",
-    "signTitle": "Tunnel d'une longueur supérieure à 500 mètres",
-    "signExplanation": "Le panneau directionnel F8 indique un tunnel d'une longueur supérieure à 500 mètres (art. 71.2 du Code de la route)."
+    "explanation": "Le panneau de signalisation F8 indique un tunnel d'une longueur supérieure à 500 mètres (art. 71.2 du Code de la route).",
+    "signTitle": "Tunnel d'une longueur de plus de 500 mètres",
+    "signExplanation": "Le panneau de signalisation F8 indique un tunnel d'une longueur supérieure à 500 mètres (art. 71.2 du Code de la route)."
   },
   "rec-f9": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Début d'une autoroute",
       "Route réservée aux véhicules automobiles et aux cyclomoteurs",
@@ -1844,11 +1844,11 @@
     "signExplanation": "Le panneau F9 indique le début d'une autoroute (art. 71.2 du Code de la route), où s'appliquent les règles spécifiques aux autoroutes."
   },
   "rec-f11": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Fin d'une autoroute",
       "Fin d'une autoroute",
-      "Accès interdit aux véhicules à moteur",
+      "Entrée interdite aux véhicules à moteur",
       "Fin d'une zone de vitesse augmentée"
     ],
     "explanation": "Le panneau F11 indique la fin d'une autoroute (art. 71.2 du Code de la route).",
@@ -1856,19 +1856,19 @@
     "signExplanation": "Le panneau F11 indique la fin d'une autoroute (art. 71.2 du Code de la route)."
   },
   "rec-f12a": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Début d'une rue ludique",
       "Début d'un quartier résidentiel ou d'une cour",
       "Début d'un milieu scolaire",
       "Début d'une zone piétonne"
     ],
-    "explanation": "Le panneau F12a indique le début d'une zone résidentielle ou d'une cour (art. 71.2 du Code de la route). La limite de vitesse est de 20 km/h et les piétons sont autorisés à emprunter toute la largeur de la route.",
+    "explanation": "Le panneau F12a indique le début d'une zone résidentielle ou d'une cour (art. 71.2 du Code de la route). La vitesse est limitée à 20 km/h et les piétons sont autorisés à emprunter toute la largeur de la route.",
     "signTitle": "Début d'un quartier résidentiel ou d'une cour",
-    "signExplanation": "Le panneau F12a indique le début d'une zone résidentielle ou d'une cour (art. 71.2 du Code de la route). La limite de vitesse est de 20 km/h et les piétons sont autorisés à emprunter toute la largeur de la route."
+    "signExplanation": "Le panneau F12a indique le début d'une zone résidentielle ou d'une cour (art. 71.2 du Code de la route). La vitesse est limitée à 20 km/h et les piétons sont autorisés à emprunter toute la largeur de la route."
   },
   "rec-f12b": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Fin d'une rue de jeu",
       "Fin d'une zone 30",
@@ -1880,7 +1880,7 @@
     "signExplanation": "Le panneau F12b indique la fin d'un quartier d'habitation ou d'une propriété (art. 71.2 du Code de la route)."
   },
   "rec-f13": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Sens de circulation obligatoire à la prochaine intersection",
       "Recommandation de dépasser à gauche sur une route à double sens",
@@ -1892,7 +1892,7 @@
     "signExplanation": "Le panneau F13 annonce des flèches sur la chaussée et prescrit le choix d'une voie en fonction du sens de circulation souhaité (art. 71.2 du Code de la route)."
   },
   "rec-f14": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Aire de rassemblement pour cyclistes et conducteurs de cyclomoteurs à deux roues",
       "Piste cyclable obligatoire à l'approche des feux tricolores",
@@ -1904,7 +1904,7 @@
     "signExplanation": "Le panneau F14 indique une zone d'attente (art. 71.2 du Code de la route), où les cyclistes et les cyclomoteurs à deux roues de classe A peuvent s'aligner devant le feu tricolore."
   },
   "rec-f15": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Réduction du nombre de voies sur la chaussée",
       "Panneau de signalisation qui prescrit le choix d'une direction",
@@ -1916,7 +1916,7 @@
     "signExplanation": "Le panneau F15 est un panneau de signalisation qui prescrit le choix d'une direction par voie au moyen de flèches au-dessus de la chaussée (art. 71.2 du Code de la route)."
   },
   "rec-f17": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Indication des voies d'une chaussée comportant une voie réservée aux bus",
       "Gare routière ou arrêt de bus",
@@ -1928,7 +1928,7 @@
     "signExplanation": "Le panneau directionnel F17 indique le tracé des voies avec une voie réservée aux véhicules des transports publics réguliers (art. 71.2 du Code de la route)."
   },
   "rec-f18": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Fin d'une voie réservée aux bus",
       "Désignation d'une surface spéciale carrossable, réservée aux transports en commun",
@@ -1940,19 +1940,19 @@
     "signExplanation": "Le panneau F18 indique un revêtement routier spécial réservé aux véhicules des transports publics réguliers (art. 71.2 du Code de la route)."
   },
   "rec-f21": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Les dépassements à droite ou à gauche sont autorisés",
       "Obligatoire de rouler tout droit ou de tourner à droite",
       "Séparation de deux autoroutes",
-      "Sens de marche obligatoire vers la droite"
+      "Sens de marche obligatoire à droite"
     ],
     "explanation": "Le panneau de direction F21 indique que les conducteurs peuvent franchir un obstacle ou un îlot de circulation aussi bien à gauche qu'à droite (art. 71.2 du Code de la route).",
     "signTitle": "Les dépassements à droite ou à gauche sont autorisés",
     "signExplanation": "Le panneau de direction F21 indique que les conducteurs peuvent franchir un obstacle ou un îlot de circulation aussi bien à gauche qu'à droite (art. 71.2 du Code de la route)."
   },
   "rec-f23a": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Numéro d'une autoroute",
       "Numéro d'une route normale",
@@ -1964,7 +1964,7 @@
     "signExplanation": "Le panneau F23a indique le numéro d'identification d'une route normale, telle qu'une route nationale ou régionale (art. 71.2 du Code de la route)."
   },
   "rec-f23b": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Numéro d'une route régionale",
       "Numéro d'une sortie",
@@ -1976,7 +1976,7 @@
     "signExplanation": "Le panneau F23b indique le numéro administratif d'une autoroute (art. 71.2 du Code de la route)."
   },
   "rec-f23c": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Numéro d'une route régionale régulière",
       "Numéro d'un périphérique",
@@ -1988,7 +1988,7 @@
     "signExplanation": "Le panneau F23c indique le numéro d'une route internationale (E-route européenne) (art. 71.2 du Code de la route)."
   },
   "rec-f23d": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Numéro d'un rond-point",
       "Numéro d'un parking autoroutier",
@@ -2000,7 +2000,7 @@
     "signExplanation": "Le panneau F23d indique le numéro d'itinéraire d'un périphérique (ring) autour d'une agglomération ou d'une ville (art. 71.2 du code de la route)."
   },
   "rec-f25": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Panneau indicateur",
       "Panneau à l'intersection elle-même",
@@ -2012,11 +2012,11 @@
     "signExplanation": "Le panneau F25 est un panneau indiquant les directions et les destinations à suivre avant l'intersection (art. 71.2 du Code de la route)."
   },
   "rec-f27": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Fin d'une autoroute",
       "Panneau indicateur",
-      "Panneau uniquement pour trafic de marchandises lourd",
+      "Panneau indiquant uniquement le trafic de marchandises lourdes",
       "Panneau avant indiquant une voie sans issue"
     ],
     "explanation": "Le panneau F27 est, tout comme le F25, un panneau de signalisation (art. 71.2). Le pictogramme d'itinéraire autoroutier peut être affiché en option sur F25, F27, F29, F31, F39 et F41, mais n'est pas une fonctionnalité fixe de F27 lui-même.",
@@ -2024,9 +2024,9 @@
     "signExplanation": "Le panneau F27 est, tout comme le F25, un panneau de signalisation (art. 71.2). Le pictogramme d'itinéraire autoroutier peut être affiché en option sur F25, F27, F29, F31, F39 et F41, mais n'est pas une fonctionnalité fixe de F27 lui-même."
   },
   "rec-f29": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
-      "Panneau avant annonçant un rond-point",
+      "Panneau annonçant un rond-point",
       "Annonce d'une route à péage",
       "Panneau indiquant la direction à suivre pour atteindre une destination",
       "Panneau de confirmation d'itinéraire le long d'une autoroute"
@@ -2036,7 +2036,7 @@
     "signExplanation": "Le panneau F29 est un panneau indiquant la direction vers une destination à la sortie, éventuellement avec indication de distance (art. 71.2 du code de la route)."
   },
   "rec-f31": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Début d'une zone à circulation rapide",
       "Panneau indiquant une route régionale secondaire",
@@ -2048,7 +2048,7 @@
     "signExplanation": "Le panneau F31 est un panneau indiquant que l'itinéraire indiqué vers la destination se fait sur une autoroute (art. 71.2 du code de la route)."
   },
   "rec-f33a": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Signalétique à distance vers un centre public ou industriel",
       "Panneau indiquant un itinéraire de randonnée récréative",
@@ -2060,7 +2060,7 @@
     "signExplanation": "Le panneau F33a est un panneau indicateur à distance vers des destinations précises telles qu'un port, une université ou une zone industrielle (art. 71.2 du code de la route)."
   },
   "rec-f33b": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Indication d'une zone de protection de l'eau potable",
       "Panneau déporté indiquant une vallée ou un cours d'eau à caractère touristique",
@@ -2072,19 +2072,19 @@
     "signExplanation": "Le panneau F33b est un panneau touristique éloigné menant à une vallée ou un cours d'eau à caractère touristique (art. 71.2 du code de la route)."
   },
   "rec-f33c": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Annonce d'une réserve naturelle protégée avec interdiction d'accès",
       "Panneau indiquant un cimetière public",
-      "Panneau de signalisation à distance indiquant une attraction touristique ou une zone récréative",
+      "Panneau à distance vers une attraction touristique ou une zone récréative",
       "Panneau indiquant un poste de police urbain"
     ],
     "explanation": "Le panneau F33c indique à distance les monuments, parcs de loisirs, centres sportifs ou attractions touristiques (art. 71.2 du Code de la route).",
-    "signTitle": "Panneau de signalisation à distance indiquant une attraction touristique ou une zone récréative",
+    "signTitle": "Panneau à distance vers une attraction touristique ou une zone récréative",
     "signExplanation": "Le panneau F33c indique à distance les monuments, parcs de loisirs, centres sportifs ou attractions touristiques (art. 71.2 du Code de la route)."
   },
   "rec-f34a": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Itinéraire obligatoire pour les services d'urgence",
       "Stationnement interdit à proximité des édifices publics",
@@ -2096,55 +2096,55 @@
     "signExplanation": "Le panneau F34a à proximité indique l'accès aux équipements publics et aux établissements d'intérêt général (art. 71.2 du code de la route)."
   },
   "rec-f34b1": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
-      "Déviation obligatoire pour les poids lourds hors agglomération",
-      "Avertissement d'une traversée pour cyclistes et cavaliers",
+      "Déviation obligatoire des camions hors agglomération",
+      "Avertissement d'un passage pour cyclistes et cavaliers",
       "Accès interdit aux cyclistes, cavaliers et piétons",
-      "Panneau : itinéraire recommandé pour certaines catégories d'usagers de la route, tels que cyclistes, cavaliers ou piétons"
+      "Panneau de signalisation : itinéraire conseillé pour certaines catégories d'usagers de la route, comme les cyclistes, les cavaliers ou les piétons"
     ],
-    "explanation": "Le panneau F34b.1 indique l'itinéraire recommandé pour certaines catégories d'usagers de la route, complété par le symbole du panneau C11, C15 ou C19 et éventuellement la distance en km (art. 71.2 du code de la route).",
-    "signTitle": "Panneau : itinéraire recommandé pour certaines catégories d'usagers de la route, tels que cyclistes, cavaliers ou piétons",
-    "signExplanation": "Le panneau F34b.1 indique l'itinéraire recommandé pour certaines catégories d'usagers de la route, complété par le symbole du panneau C11, C15 ou C19 et éventuellement la distance en km (art. 71.2 du code de la route)."
+    "explanation": "Le panneau F34b.1 est un panneau indiquant l'itinéraire recommandé pour certaines catégories d'usagers de la route, complété par le symbole du panneau C11, C15 ou C19 et éventuellement la distance en km (art. 71.2 du code de la route).",
+    "signTitle": "Panneau de signalisation : itinéraire conseillé pour certaines catégories d'usagers de la route, comme les cyclistes, les cavaliers ou les piétons",
+    "signExplanation": "Le panneau F34b.1 est un panneau indiquant l'itinéraire recommandé pour certaines catégories d'usagers de la route, complété par le symbole du panneau C11, C15 ou C19 et éventuellement la distance en km (art. 71.2 du code de la route)."
   },
   "rec-f34b2": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
-      "Panneau : itinéraire recommandé pour certaines catégories d'usagers de la route, tels que cyclistes, cavaliers ou piétons",
-      "Enseigne de signalisation à proximité d'un établissement public d'intérêt général",
-      "Direction obligatoire pour les véhicules transportant des marchandises dangereuses",
-      "Panneau touristique vers un monument ou un parc de loisirs"
+      "Panneau de signalisation : itinéraire conseillé pour certaines catégories d'usagers de la route, comme les cyclistes, les cavaliers ou les piétons",
+      "Enseigne de signalisation à proximité d'un équipement public d'intérêt général",
+      "Sens de circulation obligatoire pour les véhicules transportant des marchandises dangereuses",
+      "Panneau touristique vers un monument ou un parc récréatif"
     ],
-    "explanation": "Le panneau F34b.2 est la version simplifiée du F34b.1 : la mention de la destination et la flèche sont facultatives, mais la signification reste le même itinéraire recommandé pour la catégorie d'usagers indiquée (art. 71.2 du code de la route).",
-    "signTitle": "Panneau : itinéraire recommandé pour certaines catégories d'usagers de la route, tels que cyclistes, cavaliers ou piétons",
-    "signExplanation": "Le panneau F34b.2 est la version simplifiée du F34b.1 : la mention de la destination et la flèche sont facultatives, mais la signification reste le même itinéraire recommandé pour la catégorie d'usagers indiquée (art. 71.2 du code de la route)."
+    "explanation": "Le panneau F34b.2 est la version simplifiée du F34b.1 : l'indication de la destination et la flèche sont facultatives, mais la signification reste la même itinéraire recommandé pour la catégorie d'usagers de la route indiquée (art. 71.2 du Code de la route).",
+    "signTitle": "Panneau de signalisation : itinéraire conseillé pour certaines catégories d'usagers de la route, comme les cyclistes, les cavaliers ou les piétons",
+    "signExplanation": "Le panneau F34b.2 est la version simplifiée du F34b.1 : l'indication de la destination et la flèche sont facultatives, mais la signification reste la même itinéraire recommandé pour la catégorie d'usagers de la route indiquée (art. 71.2 du Code de la route)."
   },
   "rec-f34c1": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
-      "Panneau touristique vers un monument, un site ou un parc de loisirs",
-      "Enseigne de signalisation à distance vers une vallée ou un cours d'eau à caractère touristique",
-      "Panneau : itinéraire recommandé vers une destination touristique pour certaines catégories d'usagers de la route",
-      "Accès interdit aux cyclistes, cavaliers et piétons vers des zones touristiques"
+      "Panneau touristique indiquant un monument, une attraction ou un parc récréatif",
+      "Panneau déporté indiquant une vallée ou un cours d'eau à caractère touristique",
+      "Panneau indicateur : itinéraire recommandé vers une destination touristique pour certaines catégories d'usagers de la route",
+      "Accès interdit aux cyclistes, cavaliers et piétons dans les zones touristiques"
     ],
     "explanation": "Le panneau F34c.1 indique l'itinéraire recommandé vers une destination touristique pour certaines catégories d'usagers de la route, complété par le symbole du panneau C11, C15 ou C19 (art. 71.2 du code de la route).",
-    "signTitle": "Panneau : itinéraire recommandé vers une destination touristique pour certaines catégories d'usagers de la route",
+    "signTitle": "Panneau indicateur : itinéraire recommandé vers une destination touristique pour certaines catégories d'usagers de la route",
     "signExplanation": "Le panneau F34c.1 indique l'itinéraire recommandé vers une destination touristique pour certaines catégories d'usagers de la route, complété par le symbole du panneau C11, C15 ou C19 (art. 71.2 du code de la route)."
   },
   "rec-f34c2": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
-      "Déviation obligatoire vers un centre touristique",
-      "Panneau : itinéraire recommandé vers une destination touristique pour certaines catégories d'usagers de la route",
-      "Avertissement d'une traversée pour cyclistes",
-      "Annonce d'un parking à proximité d'une attraction touristique"
+      "Détournement obligatoire vers un centre touristique",
+      "Panneau indicateur : itinéraire recommandé vers une destination touristique pour certaines catégories d'usagers de la route",
+      "Avertissement pour un passage pour cyclistes",
+      "Annonce d'un stationnement à proximité d'un attrait touristique"
     ],
-    "explanation": "Le panneau F34c.2 est la version simplifiée du F34c.1 : la destination et la flèche sont facultatives, mais le panneau indique toujours l'itinéraire recommandé vers une destination touristique pour la catégorie d'usagers indiquée (art. 71.2 du code de la route).",
-    "signTitle": "Panneau : itinéraire recommandé vers une destination touristique pour certaines catégories d'usagers de la route",
-    "signExplanation": "Le panneau F34c.2 est la version simplifiée du F34c.1 : la destination et la flèche sont facultatives, mais le panneau indique toujours l'itinéraire recommandé vers une destination touristique pour la catégorie d'usagers indiquée (art. 71.2 du code de la route)."
+    "explanation": "Le panneau F34c.2 est la version simplifiée du F34c.1 : la destination et la flèche sont facultatives, mais le panneau indique toujours l'itinéraire recommandé vers une destination touristique pour la catégorie d'usagers de la route désignée (art. 71.2 du Code de la route).",
+    "signTitle": "Panneau indicateur : itinéraire recommandé vers une destination touristique pour certaines catégories d'usagers de la route",
+    "signExplanation": "Le panneau F34c.2 est la version simplifiée du F34c.1 : la destination et la flèche sont facultatives, mais le panneau indique toujours l'itinéraire recommandé vers une destination touristique pour la catégorie d'usagers de la route désignée (art. 71.2 du Code de la route)."
   },
   "rec-f35": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Panneau indiquant une zone industrielle ou un parc de camions",
       "Indication d'une zone à risque d'incendie de forêt",
@@ -2156,11 +2156,11 @@
     "signExplanation": "Le panneau F35 est un panneau touristique indiquant un site touristique, un monument, un centre sportif ou un parc de loisirs (art. 71.2 du code de la route)."
   },
   "rec-f37": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Indication d'une aire de repos publique le long d'une autoroute",
       "Place de parking exclusivement pour camping-cars et caravanes",
-      "Panneau indiquant un centre de soins résidentiels",
+      "Comment se rendre à un centre de soins résidentiels",
       "Panneau touristique vers un hébergement, un camping ou une auberge de jeunesse"
     ],
     "explanation": "Le panneau F37 indique la direction des hébergements touristiques, tels que les hôtels, campings ou auberges de jeunesse (art. 71.2 du code de la route).",
@@ -2168,19 +2168,19 @@
     "signExplanation": "Le panneau F37 indique la direction des hébergements touristiques, tels que les hôtels, campings ou auberges de jeunesse (art. 71.2 du code de la route)."
   },
   "rec-f39": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Panneau annonçant un détour",
       "Panneau indiquant la fin des travaux",
       "Annonce d'une impasse en raison de travaux",
       "Division de voie obligatoire lors de travaux routiers"
     ],
-    "explanation": "Le panneau F39 est un panneau qui avertit les conducteurs avant une déviation de l'itinéraire normal (art. 71.2 du code de la route).",
+    "explanation": "Le panneau F39 est un panneau qui avertit les automobilistes d'un détour par rapport à l'itinéraire normal (art. 71.2 du code de la route).",
     "signTitle": "Panneau annonçant un détour",
-    "signExplanation": "Le panneau F39 est un panneau qui avertit les conducteurs avant une déviation de l'itinéraire normal (art. 71.2 du code de la route)."
+    "signExplanation": "Le panneau F39 est un panneau qui avertit les automobilistes d'un détour par rapport à l'itinéraire normal (art. 71.2 du code de la route)."
   },
   "rec-f41": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Panneau indiquant une autoroute alternative",
       "Panneau indiquant une route de déviation",
@@ -2192,7 +2192,7 @@
     "signExplanation": "Le panneau F41 est un panneau indiquant la direction de la route de déviation à suivre lors d'une déviation (art. 71.2 du Code de la route)."
   },
   "rec-f43": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Début d'une agglomération avec une limitation de vitesse à 50 km/h",
       "Début d'une cour ou d'une zone résidentielle",
@@ -2204,11 +2204,11 @@
     "signExplanation": "Le panneau F43 est un panneau nominatif qui indique simplement le nom d'un lieu ; elle n'impose pas de limitation de vitesse en agglomération (article 71.2 du code de la route)."
   },
   "rec-f45b": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Impasse pour tous les usagers de la route",
       "Route réservée exclusivement aux cyclistes et piétons",
-      "Circulation à sens unique sauf pour les cyclistes",
+      "Circulation à sens unique avec exception pour les cyclistes",
       "Rue sans issue, sauf piétons et cyclistes"
     ],
     "explanation": "Le panneau F45b indique une voie sans issue qui reste accessible aux cyclistes et aux piétons (art. 71.2 du Code de la route).",
@@ -2216,7 +2216,7 @@
     "signExplanation": "Le panneau F45b indique une voie sans issue qui reste accessible aux cyclistes et aux piétons (art. 71.2 du Code de la route)."
   },
   "rec-f47": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Début d'une zone de travaux à vitesse réduite",
       "Fin d'un chemin de déviation",
@@ -2228,10 +2228,10 @@
     "signExplanation": "Le panneau F47 indique la fin des travaux sur la voie publique (art. 71.2 du Code de la route)."
   },
   "rec-f50": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Départ d'une piste cyclable obligatoire",
-      "Avertissement d'un passage à niveau pour les cyclistes devant",
+      "Avertissement concernant un passage à niveau pour les cyclistes devant",
       "Passage pour cyclistes et conducteurs de cyclomoteurs à deux roues",
       "Route réservée aux cyclistes et aux cyclomoteurs à deux roues"
     ],
@@ -2240,7 +2240,7 @@
     "signExplanation": "Le panneau F50 indique l'emplacement précis d'un passage pour cyclistes et conducteurs de cyclomoteurs à deux roues (art. 71.2 du Code de la route)."
   },
   "rec-f50bis": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Piste cyclable obligatoire des deux côtés de la route",
       "Interdiction de tourner à droite pour les cyclistes",
@@ -2252,7 +2252,7 @@
     "signExplanation": "Le panneau F50bis pointe les conducteurs qui changent de direction vers les cyclistes et les motocyclistes à deux roues qui continuent tout droit sur la même voie publique (art. 71.2 du Code de la route)."
   },
   "rec-f51": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Passage piéton souterrain ou aérien",
       "Passage pour piétons sur le revêtement routier de la chaussée",
@@ -2264,7 +2264,7 @@
     "signExplanation": "Le panneau F51 indique un passage piéton souterrain ou aérien (art. 71.2 du Code de la route)."
   },
   "rec-f52": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Refuge pour véhicules en panne bloqués sur l'autoroute",
       "Annonce d'une sortie de secours dans les tunnels",
@@ -2276,9 +2276,9 @@
     "signExplanation": "Le panneau F52 annonce une sortie de secours dans les tunnels (art. 71.2 du Code de la route)."
   },
   "rec-f52bis": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
-      "Direction et distance jusqu'au poste d'urgence ou au poste d'urgence le plus proche",
+      "Direction et distance jusqu'au poste d'urgence ou à la station d'urgence le plus proche",
       "Itinéraire alternatif obligatoire pour les conducteurs en cas d'embouteillages dans le tunnel",
       "Chemin d'évacuation vers la sortie de secours la plus proche dans les tunnels avec indication de la direction et de la distance",
       "Tunnel piétonnier jusqu'au métro ou à la gare la plus proche"
@@ -2288,7 +2288,7 @@
     "signExplanation": "Le panneau F52bis indique une voie d'évacuation vers la sortie de secours la plus proche dans les tunnels avec indication de direction et de distance (art. 71.2 du Code de la route)."
   },
   "rec-f53": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Poste d'urgence pour les premiers secours en cas d'accident",
       "Pharmacie avec service de garde permanent nuit et week-end",
@@ -2300,7 +2300,7 @@
     "signExplanation": "Le panneau F53 indique un établissement de soins où le silence est de rigueur et les conducteurs doivent être particulièrement prudents (art. 71.2 du code de la route)."
   },
   "rec-f55": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Poste de secours",
       "Établissement de soins infirmiers ou hôpital avec admission d'urgence",
@@ -2312,7 +2312,7 @@
     "signExplanation": "Le panneau F55 indique un poste de secours où peuvent être obtenus les premiers secours en cas d'accident (art. 71.2 du code de la route)."
   },
   "rec-f56": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Emplacement pour camions de pompiers lors d'interventions",
       "Extincteur",
@@ -2324,19 +2324,19 @@
     "signExplanation": "Le panneau F56 indique la présence d'un extincteur (art. 71.2 du Code de la route)."
   },
   "rec-f57": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Risque d'inondation ou de projections d'eau soudaines",
       "Port ou quai non sécurisé sans barrières",
       "Cours d'eau",
       "Zone de captage d'eau potable avec interdiction des transports dangereux"
     ],
-    "explanation": "Le panneau F57 indique un cours d'eau, tel qu'une rivière, un canal ou un ruisseau (art. 71.2 du code de la route).",
+    "explanation": "Le panneau F57 indique un cours d'eau, tel qu'une rivière, un canal ou un ruisseau (art. 71.2 du Code de la route).",
     "signTitle": "Cours d'eau",
-    "signExplanation": "Le panneau F57 indique un cours d'eau, tel qu'une rivière, un canal ou un ruisseau (art. 71.2 du code de la route)."
+    "signExplanation": "Le panneau F57 indique un cours d'eau, tel qu'une rivière, un canal ou un ruisseau (art. 71.2 du Code de la route)."
   },
   "rec-f59": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Zone de stationnement avec utilisation obligatoire du disque de stationnement",
       "Stationnement exclusivement réservé aux personnes handicapées",
@@ -2348,7 +2348,7 @@
     "signExplanation": "Le panneau F59 annonce un parking où les conducteurs peuvent garer leur véhicule (art. 71.2 du Code de la route)."
   },
   "rec-f60": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Annonce d'un parking couvert",
       "Annonce d'un parking extérieur pour véhicules utilitaires",
@@ -2360,7 +2360,7 @@
     "signExplanation": "Le panneau F60 annonce un parking couvert (parking couvert) (art. 71.2 du Code de la Route)."
   },
   "rec-f61": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Téléphone d'urgence connecté exclusivement aux services d'urgence",
       "Téléphone",
@@ -2372,7 +2372,7 @@
     "signExplanation": "Le panneau F61 indique un téléphone public (art. 71.2 du Code de la route)."
   },
   "rec-f62": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Cabine téléphonique publique pour appels généraux",
       "Poste de secours pour soins médicaux d'urgence",
@@ -2384,7 +2384,7 @@
     "signExplanation": "Le panneau F62 indique un téléphone d'urgence (poste parlant) en cas d'urgence et de panne (art. 71.2 du code de la route)."
   },
   "rec-f63": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Dépannage et atelier de réparation mécanique",
       "Lavage de voitures et station-service pour véhicules automobiles",
@@ -2396,7 +2396,7 @@
     "signExplanation": "Le panneau F63 indique une station-service de carburants ou d'énergie (art. 71.2 du Code de la route)."
   },
   "rec-f65": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Hôtel ou motel",
       "Auberge de jeunesse pour groupes et jeunes",
@@ -2408,7 +2408,7 @@
     "signExplanation": "Le panneau F65 indique un hôtel ou un motel (art. 71.2 du Code de la route)."
   },
   "rec-f67": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Boissons ou café sans repas chauds",
       "Restaurant",
@@ -2420,7 +2420,7 @@
     "signExplanation": "Le panneau F67 indique un restaurant le long ou à proximité de la route (art. 71.2 du Code de la route)."
   },
   "rec-f69": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Restaurant avec plats chauds",
       "Distribution d'eau potable le long d'un itinéraire cyclable touristique",
@@ -2432,19 +2432,19 @@
     "signExplanation": "Le panneau F69 indique un débit de boissons ou un café (art. 71.2 du code de la route)."
   },
   "rec-f71": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Emplacement caravane exclusivement pour caravanes et mobil-homes",
       "Réserve naturelle avec zone de bivouac autorisée",
-      "Auberge de jeunesse ou maison de camp pour groupes de jeunes",
+      "Auberge de jeunesse ou maison de camping pour groupes de jeunes",
       "Camping"
     ],
-    "explanation": "Le panneau F71 indique une aire de camping pour tentes (art. 71.2 du Code de la route).",
+    "explanation": "Le panneau F71 indique une aire de camping pour tentes (art. 71.2 du code de la route).",
     "signTitle": "Camping",
-    "signExplanation": "Le panneau F71 indique une aire de camping pour tentes (art. 71.2 du Code de la route)."
+    "signExplanation": "Le panneau F71 indique une aire de camping pour tentes (art. 71.2 du code de la route)."
   },
   "rec-f73": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Emplacement pour caravanes",
       "Camping destiné exclusivement aux tentes",
@@ -2456,43 +2456,43 @@
     "signExplanation": "Le panneau F73 indique un emplacement caravanier pour caravanes et caravanes (art. 71.2 du Code de la route)."
   },
   "rec-f75": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Hôtel ou motel avec hébergement pour la nuit",
       "Auberge de jeunesse",
       "Hébergement de vacances pour familles",
       "Camping avec tentes aménagées"
     ],
-    "explanation": "Le panneau F75 indique une auberge de jeunesse (art. 71.2 du Code de la route).",
+    "explanation": "Le panneau F75 indique une auberge de jeunesse (art. 71.2 du code de la route).",
     "signTitle": "Auberge de jeunesse",
-    "signExplanation": "Le panneau F75 indique une auberge de jeunesse (art. 71.2 du Code de la route)."
+    "signExplanation": "Le panneau F75 indique une auberge de jeunesse (art. 71.2 du code de la route)."
   },
   "rec-f77": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Poste de police pour touristes et visiteurs",
       "Point Internet public et bureau télégraphique",
-      "Association pour la Promotion des Etrangers, point de rendez-vous d'informations touristiques",
+      "Association pour la Promotion des Etrangers, point de rendez-vous d'information touristique",
       "Bureau d'information sur les transports publics et les billets de train"
     ],
     "explanation": "Le panneau F77 indique une association de promotion du trafic étranger ou un point de rendez-vous d'information touristique (art. 71.2 du code de la route).",
-    "signTitle": "Association pour la Promotion des Etrangers, point de rendez-vous d'informations touristiques",
+    "signTitle": "Association pour la Promotion des Etrangers, point de rendez-vous d'information touristique",
     "signExplanation": "Le panneau F77 indique une association de promotion du trafic étranger ou un point de rendez-vous d'information touristique (art. 71.2 du code de la route)."
   },
   "rec-f79": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Zip obligatoire dès l'installation du panneau en raison de travaux routiers",
       "Panneau routier indiquant un carrefour d'autoroute",
       "Interdiction de dépasser pour tous les conducteurs sur la voie de gauche",
       "Panneau avancé annonçant la réduction du nombre de voies"
     ],
-    "explanation": "Le panneau F79 annonce comme panneau la réduction du nombre de voies (art. 71.2 du Code de la route).",
+    "explanation": "Le panneau F79 annonce comme panneau indicateur la réduction du nombre de voies (art. 71.2 du Code de la route).",
     "signTitle": "Panneau avancé annonçant la réduction du nombre de voies",
-    "signExplanation": "Le panneau F79 annonce comme panneau la réduction du nombre de voies (art. 71.2 du Code de la route)."
+    "signExplanation": "Le panneau F79 annonce comme panneau indicateur la réduction du nombre de voies (art. 71.2 du Code de la route)."
   },
   "rec-f81": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Panneau avancé annonçant une déviation",
       "Sens de circulation obligatoire à droite à la prochaine intersection",
@@ -2504,19 +2504,19 @@
     "signExplanation": "Le panneau F81 annonce un départ de voie à titre de panneau de signalisation (art. 71.2 du Code de la route)."
   },
   "rec-f83": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Virage à gauche dangereux sur l'autoroute",
       "Panneau frontal annonçant un franchissement du terre-plein central",
       "Interdiction de tourner sur la voie publique",
       "Connexion à une autre autoroute via une boucle"
     ],
-    "explanation": "Le panneau F83 annonce comme panneau de signalisation un franchissement du terre-plein central (art. 71.2 du code de la route).",
+    "explanation": "Le panneau F83 annonce un franchissement du terre-plein central à titre de panneau de signalisation (art. 71.2 du Code de la route).",
     "signTitle": "Panneau frontal annonçant un franchissement du terre-plein central",
-    "signExplanation": "Le panneau F83 annonce comme panneau de signalisation un franchissement du terre-plein central (art. 71.2 du code de la route)."
+    "signExplanation": "Le panneau F83 annonce un franchissement du terre-plein central à titre de panneau de signalisation (art. 71.2 du Code de la route)."
   },
   "rec-f85": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Interdiction de tourner sur une route à sens unique",
       "Donner la priorité à la circulation venant en sens inverse sur un passage étroit",
@@ -2528,7 +2528,7 @@
     "signExplanation": "Le panneau F85 indique que la circulation dans les deux sens est autorisée sur une partie de chaussée à sens unique (art. 71.2 du Code de la route)."
   },
   "rec-f87": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Forte montée avec indication de la pente",
       "Danger d'éclats de pierre et d'éclaboussures de gravier sur la chaussée",
@@ -2540,7 +2540,7 @@
     "signExplanation": "Le panneau F87 indique un ou plusieurs appareils surélevés, tels qu'un dos d'âne ou un plateau de circulation (art. 71.2 du Code de la route)."
   },
   "rec-f89": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Panneau avancé annonçant un danger ou un code de la route ne s'appliquant que sur une ou plusieurs voies",
       "Panneau de signalisation imposant un danger général sur l'ensemble de la chaussée à cet endroit",
@@ -2552,7 +2552,7 @@
     "signExplanation": "Le panneau F89, en tant que panneau de signalisation, annonce un danger ou une règle de circulation qui ne s'applique qu'à une ou plusieurs voies désignées (art. 71.2 du Code de la route)."
   },
   "rec-f91": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Panneau avancé annonçant la réduction du nombre de voies",
       "Panneau de signalisation indiquant un danger ou prescrivant un code de la route ne s'appliquant qu'à une ou plusieurs voies",
@@ -2564,19 +2564,19 @@
     "signExplanation": "Le panneau F91 indique un danger sur place ou impose une règle de circulation qui ne s'applique qu'à une ou plusieurs voies désignées (art. 71.2 du Code de la route)."
   },
   "rec-f93": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Obligation d'éteindre l'autoradio à l'entrée d'un tunnel",
       "Indication d'un contrôle automatique de tronçon par ondes électromagnétiques",
-      "Panneau de signalisation indiquant une station de radio diffusant des informations routières",
+      "Panneau de signalisation indiquant une station radio diffusant des informations routières",
       "Fréquence d'urgence pour une communication directe avec la police de la circulation"
     ],
-    "explanation": "Le panneau F93 indique une radio qui diffuse régulièrement des informations routières (art. 71.2 du Code de la route).",
-    "signTitle": "Panneau de signalisation indiquant une station de radio diffusant des informations routières",
-    "signExplanation": "Le panneau F93 indique une radio qui diffuse régulièrement des informations routières (art. 71.2 du Code de la route)."
+    "explanation": "Le panneau F93 désigne un émetteur radio qui diffuse régulièrement des informations routières (art. 71.2 du Code de la route).",
+    "signTitle": "Panneau de signalisation indiquant une station radio diffusant des informations routières",
+    "signExplanation": "Le panneau F93 désigne un émetteur radio qui diffuse régulièrement des informations routières (art. 71.2 du Code de la route)."
   },
   "rec-f95": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Aéroport pour changement de pneus ou petites pannes le long de l'autoroute",
       "Voie de stationnement pour poids lourds la nuit",
@@ -2588,7 +2588,7 @@
     "signExplanation": "Le panneau F95 indique une voie d'arrêt d'urgence pour arrêter en toute sécurité les véhicules sans direction ou dont les freins sont défectueux (art. 71.2 du Code de la route)."
   },
   "rec-f97": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Panneau routier indiquant un rétrécissement de la taille d'une voie",
       "Annonce d'une scission en deux voies différentes",
@@ -2600,19 +2600,19 @@
     "signExplanation": "Le panneau F97 indique un rétrécissement de la chaussée qui a l'étendue d'une voie complète (art. 71.2 du Code de la route)."
   },
   "rec-f98": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Voie de stationnement pour arrêt ou repos de courte durée le long de l'autoroute",
       "Aéroport",
       "Parking covoiturage avec possibilité de transfert vers les transports en commun",
       "Aire de chargement et déchargement pour les livraisons aux entreprises situées le long de l'autoroute"
     ],
-    "explanation": "Le panneau F98 indique un refuge, un emplacement alternatif sûr le long des autoroutes ou dans des tunnels qui ne peut être utilisé qu'en cas de panne ou d'urgence (art. 71.2 du code de la route).",
+    "explanation": "Le panneau F98 indique un refuge, un emplacement alternatif sûr le long des autoroutes ou dans des tunnels qui ne peut être utilisé qu'en cas de panne ou d'urgence (art. 71.2 du Code de la route).",
     "signTitle": "Aéroport",
-    "signExplanation": "Le panneau F98 indique un refuge, un emplacement alternatif sûr le long des autoroutes ou dans des tunnels qui ne peut être utilisé qu'en cas de panne ou d'urgence (art. 71.2 du code de la route)."
+    "signExplanation": "Le panneau F98 indique un refuge, un emplacement alternatif sûr le long des autoroutes ou dans des tunnels qui ne peut être utilisé qu'en cas de panne ou d'urgence (art. 71.2 du Code de la route)."
   },
   "rec-f99a": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Piste cyclable obligatoire où les piétons et cavaliers sont strictement interdits",
       "Début d'une zone résidentielle à circulation mixte et vitesse maximale de 20 km/h",
@@ -2624,7 +2624,7 @@
     "signExplanation": "Le panneau F99a indique le début d'une route réservée aux piétons, cyclistes, cavaliers et speed pedelecs (art. 71.2 du Code de la route)."
   },
   "rec-f99b": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Piste cyclable et sentier piétonnier obligatoires séparés par une ligne blanche continue sur la chaussée",
       "Début d'une rue de jeu où la circulation motorisée est interdite à certaines heures",
@@ -2636,7 +2636,7 @@
     "signExplanation": "Le panneau F99b indique le début d'une route réservée indiquant les parties destinées aux différentes catégories d'usagers de la route (art. 71.2 du Code de la route)."
   },
   "rec-f99c": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Début de la route réservée à la circulation des véhicules agricoles, des piétons, des cyclistes, des cavaliers et des conducteurs de speed pedelec",
       "Interdiction des véhicules agricoles et des tracteurs sur les routes rurales",
@@ -2648,19 +2648,19 @@
     "signExplanation": "Le panneau F99c indique le début d'une route réservée aux véhicules agricoles, aux piétons, aux cyclistes, aux cavaliers et aux speed pedelecs (art. 71.2 du Code de la route)."
   },
   "rec-f101a": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Fin d'une piste cyclable obligatoire le long d'une route régionale normale",
-      "Extrémité de la route ou partie de la voie publique réservée à la circulation des piétons, cyclistes, cavaliers et conducteurs de speed pedelecs",
-      "Début d'une zone de priorité absolue pour les cyclistes sur la route",
+      "Extrémité de la route ou partie de la voie publique réservée à la circulation des piétons, cyclistes, cavaliers et conducteurs de speed pedelec",
+      "Début d'une zone de priorité absolue pour les cyclistes sur la chaussée",
       "Fin d'une zone résidentielle ou à circulation mixte"
     ],
     "explanation": "Le panneau F101a indique la fin de la route réservée aux piétons, cyclistes, conducteurs et conducteurs de speed pedelecs (art. 71.2 du Code de la route).",
-    "signTitle": "Extrémité de la route ou partie de la voie publique réservée à la circulation des piétons, cyclistes, cavaliers et conducteurs de speed pedelecs",
+    "signTitle": "Extrémité de la route ou partie de la voie publique réservée à la circulation des piétons, cyclistes, cavaliers et conducteurs de speed pedelec",
     "signExplanation": "Le panneau F101a indique la fin de la route réservée aux piétons, cyclistes, conducteurs et conducteurs de speed pedelecs (art. 71.2 du Code de la route)."
   },
   "rec-f101b": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Début d'une piste cyclable et d'une piste équestre séparées le long d'une voie publique",
       "Obligation pour les cyclistes et cavaliers de circuler désormais sur la route",
@@ -2672,7 +2672,7 @@
     "signExplanation": "Le panneau F101b indique la fin de la route réservée avec des tronçons séparés pour différentes catégories d'usagers de la route (art. 71.2 du Code de la route)."
   },
   "rec-f101c": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Interdiction de circuler sur la voie publique pour les tracteurs agricoles et les moissonneuses",
       "Début d'une route agricole réservée exclusivement aux tracteurs",
@@ -2684,7 +2684,7 @@
     "signExplanation": "Le panneau F101c indique la fin de la route réservée aux véhicules agricoles, aux piétons, aux cyclistes, aux cavaliers et aux speed pedelecs (art. 71.2 du Code de la route)."
   },
   "rec-f103": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Fin d'une zone piétonne",
       "Passage pour les écoliers",
@@ -2696,7 +2696,7 @@
     "signExplanation": "Le panneau F103 indique le début d'une zone piétonne (art. 71.2)."
   },
   "rec-f105": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Fin d'une zone piétonne",
       "Début d'une zone piétonne",
@@ -2708,7 +2708,7 @@
     "signExplanation": "Le panneau F105 indique la fin d'une zone piétonne (art. 71.2 du Code de la route)."
   },
   "rec-f111": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Fin d'une zone cyclable ou d'une rue cyclable",
       "Début d'une zone cyclable",
@@ -2720,7 +2720,7 @@
     "signExplanation": "Le panneau F111 indique le début d'une zone cyclable (rue cyclable) où les véhicules à moteur ne sont pas autorisés à dépasser les cyclistes et peuvent circuler à une vitesse maximale de 30 km/h (article 71.2 du code de la route)."
   },
   "rec-f113": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Début d'une zone cyclable où les cyclistes sont autorisés à utiliser toute la largeur de la voie",
       "Il est interdit aux cyclistes de continuer sur cette voie publique",
@@ -2732,7 +2732,7 @@
     "signExplanation": "Le panneau F113 indique la fin d'une zone cyclable (rue cyclable) (art. 71.2 du Code de la route)."
   },
   "rec-f117": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Fin d'une zone à faibles émissions avec accès gratuit pour tous les véhicules",
       "Début d'une zone sans bruit autour d'un quartier calme",
@@ -2744,7 +2744,7 @@
     "signExplanation": "Le panneau F117 indique le début d'une zone de faibles émissions (LEZ) où une politique d'admission sélective s'applique aux véhicules à moteur en fonction de leurs émissions (art. 71.2 du Code de la route)."
   },
   "rec-f118": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Fin d'une zone à faibles émissions",
       "Début d'une zone à faibles émissions avec conditions d'accès sélectives",
@@ -2756,7 +2756,7 @@
     "signExplanation": "Le panneau F118 indique la fin d'une zone à faibles émissions (LEZ) (art. 71.2 du Code de la route)."
   },
   "rec-f119": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Avertissement en cas d'avion volant à basse altitude ou de bruit soudain d'avion",
       "Début d'une zone aéroportuaire",
@@ -2768,7 +2768,7 @@
     "signExplanation": "Le panneau F119 indique le début d'une zone aéroportuaire (art. 71.2 du Code de la route)."
   },
   "rec-f120": {
-    "question": "Que signifie ce panneau routier ?",
+    "question": "Que signifie ce panneau de signalisation ?",
     "options": [
       "Début d'une zone aéroportuaire avec réglementation de police particulière",
       "Avertissement en cas de bruit soudain provenant d'un avion au décollage",
@@ -2812,7 +2812,7 @@
   "rule-estep-trottoir-2022": {
     "question": "Pouvez-vous conduire un scooter électrique motorisé sur le trottoir ?",
     "options": [
-      "Non, les scooters électriques suivent les règles pour les cyclistes et ne sont jamais autorisés à rouler sur le trottoir (sauf si vous les marchez par la main)",
+      "Non, les scooters électriques suivent les règles pour les cyclistes et ne doivent jamais circuler sur le trottoir (sauf si vous les promenez par la main)",
       "Oui, à condition de ne pas rouler à plus de 6 km/h",
       "Oui, mais seulement s'il n'y a pas de piste cyclable",
       "Oui, mais uniquement en agglomération"
@@ -2820,7 +2820,7 @@
     "explanation": "Depuis le 1er juillet 2022 (Loi du 15 mai 2022, art. 3, qui modifie l'art. 7bis), les conducteurs d'engins à propulsion motorisée sont assimilés aux cyclistes. Ils ne sont plus autorisés à circuler sur le trottoir, quelle que soit leur vitesse."
   },
   "rule-estep-snelheid-2022": {
-    "question": "Quelle est la vitesse de construction maximale d'un appareil de propulsion motorisé (tel qu'un scooter électrique) pour être autorisé à circuler sur la voie publique ?",
+    "question": "Quelle est la vitesse de construction maximale d'un appareil de propulsion motorisé (comme un scooter électrique) pour être autorisé à circuler sur la voie publique ?",
     "options": [
       "18 km/h",
       "25 km/h",
@@ -2830,7 +2830,7 @@
     "explanation": "Selon l'article 2.15.2 du Code de la route, la vitesse maximale due à la conception d'un engin de propulsion motorisé est de 25 km/h maximum."
   },
   "rule-estep-parkeren-2022": {
-    "question": "Où laisser un scooter électrique partagé après votre trajet ?",
+    "question": "Où pouvez-vous laisser un scooter électrique partagé après votre trajet ?",
     "options": [
       "Au hasard sur le trottoir, à condition qu'il soit à plat sur le sol",
       "Au milieu de la piste cyclable",
@@ -2855,7 +2855,7 @@
       "Au moins un permis de conduire de catégorie AM (cyclomoteur) ou de catégorie B (voiture)",
       "Aucun permis de conduire n'est requis",
       "Permis moto obligatoire catégorie A",
-      "Enkel un certificat de vélo spécial de l'unité"
+      "Uniquement un certificat vélo spécial de la commune"
     ],
     "explanation": "Un VAE rapide est classé dans la catégorie des cyclomoteurs de classe P. Le conducteur doit être âgé d'au moins 16 ans et posséder au minimum un permis de conduire AM ou un permis de conduire voiture B."
   },
@@ -2867,7 +2867,7 @@
       "35 km/h",
       "50 km/h"
     ],
-    "explanation": "Selon l'article 2.17 du Code de la route, un speed pedelec fournit une assistance au pédalage jusqu'à 45 km/h maximum. Au-delà de cette vitesse, le moteur auxiliaire doit s'arrêter automatiquement."
+    "explanation": "Selon l'article 2.17 du Code de la route, un speed pedelec fournit une assistance au pédalage jusqu'à un maximum de 45 km/h. Au-delà de cette vitesse, le moteur auxiliaire doit s'arrêter automatiquement."
   },
   "rule-velomobiel-hoogte-2022": {
     "question": "Où sur un vélomobile doit-on placer la bande réfléchissante obligatoire ?",
@@ -2877,7 +2877,7 @@
       "Arrière uniquement",
       "Sur le toit"
     ],
-    "explanation": "L'article 82.1.2, 6° prescrit que les vélomobiles doivent avoir une bande réfléchissante jaune ou orange sur les côtés."
+    "explanation": "L'article 82.1.2, 6° prescrit que les vélomobiles doivent avoir une bande réfléchissante jaune ou orange sur leurs côtés."
   },
   "rule-reddingsstrook-vorming-2022": {
     "question": "Comment les conducteurs sont-ils censés former une bande de secours sur une route à trois voies dans le même sens en cas d'embouteillage ?",
@@ -2900,7 +2900,7 @@
     "explanation": "Conformément à l'article 12bis, les conducteurs doivent continuer à rouler dans une circulation très lente jusqu'à juste avant le rétrécissement et ne s'y engager que là-bas."
   },
   "rule-ritsen-voorrang": {
-    "question": "Comment fonctionne la priorité pour la compression obligatoire au point de rétrécissement ?",
+    "question": "Comment fonctionne la priorité avec la compression obligatoire au point de rétrécissement ?",
     "options": [
       "Les conducteurs circulant sur la voie principale ont toujours la priorité et ne doivent laisser personne se trouver entre les deux.",
       "Les conducteurs dans la voie libre doivent alternativement céder le passage à un conducteur qui fusionne",
@@ -2910,14 +2910,14 @@
     "explanation": "L'article 12bis stipule que les conducteurs circulant sur la voie libre au point de rétrécissement doivent alternativement céder le passage à un véhicule qui se rassemble."
   },
   "rule-fietsstraat-inhalen": {
-    "question": "Une voiture peut-elle dépasser un cycliste dans une rue cyclable ?",
+    "question": "Une voiture peut-elle dépasser un cycliste dans une rue cyclable ?",
     "options": [
       "Oui, s'il y a au moins 1 mètre entre eux",
       "Oui, si le cycliste roule à moins de 15 km/h",
       "Non, les véhicules à moteur ne sont jamais autorisés à dépasser les cyclistes dans une rue cyclable.",
-      "Enkel en tant que vélo uitdrukkelijk een handgebaar geeft"
+      "Uniquement si le cycliste fait expressément un geste de la main"
     ],
-    "explanation": "Dans une rue cyclable (art. 22novies), il est interdit en tout temps aux véhicules motorisés de dépasser les cyclistes."
+    "explanation": "Dans une rue cyclable (art. 22novies), il est interdit aux véhicules motorisés de dépasser les cyclistes en tout temps."
   },
   "rule-fietsstraat-snelheid": {
     "question": "Quelle est la vitesse maximale absolue pour toute la circulation dans une rue cyclable ?",
@@ -2930,7 +2930,7 @@
     "explanation": "Selon l'article 22novies, la vitesse dans une rue cyclable ne peut jamais dépasser 30 km/h, ni pour les voitures ni pour les cyclistes."
   },
   "rule-fietser-b22": {
-    "question": "Que permet ce panneau d'autorisation (B22) aux cyclistes et aux conducteurs de speed pedelecs à un feu rouge ?",
+    "question": "Que permet ce panneau d'autorisation (B22) pour les cyclistes et les conducteurs de speed pedelecs à un feu rouge ?",
     "options": [
       "Les cyclistes peuvent tourner à droite aux feux rouges, à condition de donner la priorité aux autres véhicules et aux piétons.",
       "Les cyclistes doivent s'arrêter jusqu'à ce que le feu passe au vert",
@@ -2961,7 +2961,7 @@
       "Non, toute personne venant d'un chemin de terre ou d'un chemin donnant sur une voie publique à chaussée doit céder le passage",
       "Uniquement si la route est inférieure à 3 mètres"
     ],
-    "explanation": "Selon l'article 12.3.1, b), tout conducteur doit céder le passage lorsqu'il arrive d'un chemin en terre ou d'un chemin sur une voie publique avec chaussée."
+    "explanation": "Selon l'article 12.3.1, b), tout conducteur doit céder le passage lorsqu'il vient d'un chemin de terre ou d'un chemin sur une voie publique avec chaussée."
   },
   "rule-voorrang-uitrit": {
     "question": "Qui a la priorité lorsqu'un conducteur quitte un garage, un stationnement ou une propriété privée sur la voie publique ?",
@@ -2976,7 +2976,7 @@
   "rule-voorrang-afslaan-tegenligger": {
     "question": "Vous tournez à gauche à une intersection similaire. Devez-vous donner la priorité à une voiture venant en sens inverse et qui veut rouler tout droit ?",
     "options": [
-      "Oui, toute personne tournant à gauche doit donner la priorité à la circulation venant en sens inverse, tout droit ou tournant à droite.",
+      "Oui, toute personne tournant à gauche doit donner la priorité aux véhicules venant en sens inverse qui vont tout droit ou qui tournent à droite.",
       "Non, car celui qui tourne à gauche a la priorité à droite par rapport au véhicule venant en sens inverse.",
       "Uniquement si le véhicule venant en sens inverse est déjà arrêté à l'intersection",
       "Uniquement dans les agglomérations"
@@ -3011,20 +3011,20 @@
       "Gardez simplement votre vitesse ; le bus doit attendre",
       "Ralentissez et arrêtez-vous si nécessaire pour donner la priorité au bus pour sortir de l'arrêt"
     ],
-    "explanation": "En agglomération, selon l'article 39, vous devez ralentir et, si nécessaire, vous arrêter pour donner la possibilité à un autobus qui allume son indicateur de direction de quitter son arrêt."
+    "explanation": "En agglomération, selon l'article 39, vous devez ralentir et, si nécessaire, vous arrêter pour donner la possibilité à un bus qui allume son indicateur de direction de quitter son arrêt."
   },
   "rule-bus-buiten-bebouwde-kom": {
-    "question": "Devez-vous vous arrêter en dehors de l'agglomération pour un bus régulier qui veut s'éloigner d'un arrêt de bus avec son indicateur ?",
+    "question": "Devez-vous vous arrêter en dehors de l'agglomération pour un bus régulier qui veut s'éloigner d'un arrêt de bus avec son indicateur de direction ?",
     "options": [
-      "Non, l'obligation de privilégier un bus roulant ne s'applique qu'en agglomération",
+      "Non, l'obligation de donner la priorité à un bus roulant ne s'applique qu'en agglomération",
       "Oui, cette règle s'applique partout sur la voie publique",
       "Oui, mais uniquement sur les routes où la vitesse est limitée à 70 km/h",
-      "Uniquement lorsque le chauffeur de bus agite la main"
+      "Seulement lorsque le chauffeur de bus agite la main"
     ],
     "explanation": "L'article 39 oblige les conducteurs à céder le passage à un autobus qui s'éloigne uniquement dans les agglomérations. En dehors des agglomérations, le chauffeur de bus doit donner la priorité avant de s'engager sur la route."
   },
   "rule-manoeuvre-achteruitrijden": {
-    "question": "Qui a la priorité lorsque vous faites marche arrière en sortant d'une rue ou d'une place de stationnement ?",
+    "question": "Qui a la priorité lorsque vous sortez d'une rue ou d'une place de stationnement en marche arrière ?",
     "options": [
       "Toi, quand tu es déjà sur la route avec la moitié de la voiture",
       "Tous les autres usagers de la route ; La marche arrière est une manœuvre où il faut donner la priorité à tout le monde",
@@ -3046,7 +3046,7 @@
   "rule-oversteekplaats-fietser": {
     "question": "Un cycliste à un passage à niveau pour vélos (indiqué par des blocs blancs) a-t-il automatiquement la priorité sur les voitures qui approchent sur la route ?",
     "options": [
-      "Oui, tout comme les piétons sur un passage piéton, les cyclistes qui traversent sont toujours prioritaires",
+      "Oui, tout comme les piétons sur un passage piéton, les cyclistes qui traversent la route ont toujours la priorité",
       "Uniquement si le cycliste vient de la droite",
       "Uniquement si le cycliste roule à plus de 20 km/h",
       "Non, les cyclistes à un passage à niveau doivent céder le passage à la circulation qui approche sur la chaussée (à moins que les feux de circulation soient verts)."
@@ -3064,7 +3064,7 @@
     "explanation": "Un cycliste qui reste assis sur son vélo à un passage piéton n'a pas la priorité piéton (art. 40.4.2°). Ce n'est que lorsqu'il descend et repart à pied qu'il a la priorité en tant que piéton."
   },
   "rule-parkeren-zebrapad-afstand": {
-    "question": "À quelle distance minimale avant un passage pour piétons l'arrêt et le stationnement sur la chaussée sont-ils interdits ?",
+    "question": "À quelle distance minimale avant un passage pour piétons l'arrêt et le stationnement sur la route sont-ils interdits ?",
     "options": [
       "Au moins 10 mètres",
       "Au moins 5 mètres",
@@ -3074,7 +3074,7 @@
     "explanation": "L'article 24.4° interdit de stationner et de stationner au passage à niveau et sur la chaussée dans un rayon de 5 mètres devant le passage à niveau."
   },
   "rule-parkeren-bushalte-afstand": {
-    "question": "À quelle distance de chaque côté d'un panneau d'arrêt de bus le stationnement est-il interdit s'il n'y a pas de marquage routier ?",
+    "question": "À quelle distance de chaque côté d'un panneau d'arrêt de bus le stationnement est-il interdit s'il n'y a pas de marquage routier ?",
     "options": [
       "5 mètres de chaque côté",
       "10 mètres de chaque côté",
@@ -3087,7 +3087,7 @@
     "question": "D'après le code de la route, quelle est la stricte différence entre rester à l'arrêt et se garer ?",
     "options": [
       "L'arrêt se produit lorsque le moteur tourne ; quand le moteur est éteint, il est toujours en stationnement",
-      "L'immobilité peut durer au maximum 15 minutes, quelle que soit l'activité",
+      "L'immobilité peut durer au maximum 15 minutes quelle que soit l'activité",
       "Il n'y a pas de différence juridique entre rester immobile et se garer.",
       "L'immobilisation n'est que le temps nécessaire pour permettre aux personnes d'entrer ou de sortir ou de charger ou décharger des marchandises ; tout le reste est un parking"
     ],
@@ -3109,7 +3109,7 @@
       "Moins de 30 centimètres",
       "Moins de 1 mètre",
       "Moins de 3 mètres",
-      "Il n'y a qu'un minimum d'autonomie, je ne peux pas le faire"
+      "Il n'y a pas de distance minimale tant que vous n'entrez pas en collision"
     ],
     "explanation": "L'article 25.1, 1° interdit le stationnement à moins de 1 mètre devant ou derrière un autre véhicule à l'arrêt ou en stationnement, et partout où l'entrée ou la sortie d'un autre véhicule serait gênée."
   },
@@ -3128,7 +3128,7 @@
     "options": [
       "Visibilité à moins de 500 mètres",
       "Visibilité à moins de 300 mètres",
-      "Enkel veut me garder à 50 mètres de là",
+      "Uniquement lorsque vous pouvez voir à moins de 50 mètres",
       "Une fois la visibilité réduite à moins de 200 mètres environ"
     ],
     "explanation": "L'article 30.1 impose l'utilisation des feux de croisement (ou des feux de route) entre le crépuscule et l'aube, et de jour lorsque la visibilité est inférieure à environ 200 mètres."
@@ -3151,10 +3151,10 @@
       "Oui, mais seulement si l'intersection est bien visible",
       "Uniquement si vous utilisez votre klaxon"
     ],
-    "explanation": "L'article 17.2, 2°a interdit le dépassement d'un attelage ou d'un véhicule automobile ayant plus de deux roues à gauche aux intersections où la priorité s'applique par la droite."
+    "explanation": "L'article 17.2, 2°a interdit le dépassement d'un attelage ou d'un véhicule automobile ayant plus de deux roues à gauche aux intersections où s'applique la priorité par la droite."
   },
   "rule-inhalen-oversteekplaats": {
-    "question": "Êtes-vous autorisé à dépasser un véhicule qui ralentit ou s'arrête à un passage piéton sans feux de circulation ?",
+    "question": "Êtes-vous autorisé à dépasser un véhicule qui ralentit ou s'arrête à un passage piéton sans feux tricolores ?",
     "options": [
       "Oui, à condition de faire un écart à gauche",
       "Oui, si vous ne voyez aucun piéton marcher",
@@ -3164,7 +3164,7 @@
     "explanation": "L'article 17.2, 5° interdit de dépasser un conducteur qui s'arrête devant ou s'approche d'un passage pour piétons ou cyclistes."
   },
   "rule-snelheid-woonerf": {
-    "question": "Quelle est la vitesse maximale dans une zone résidentielle ou une propriété ?",
+    "question": "Quelle vitesse maximale s'applique dans une zone résidentielle ou une propriété ?",
     "options": [
       "30km/h",
       "10 km/h",
@@ -3177,7 +3177,7 @@
     "question": "Quelle règle particulière s'applique aux piétons et aux enfants jouant dans une cour ou une zone résidentielle ?",
     "options": [
       "Ils peuvent emprunter toute la largeur de la voie publique et y jouer, sans gêner inutilement la circulation.",
-      "Ils doivent rester sur le trottoir",
+      "Ils doivent demeurer sur le trottoir",
       "Les enfants ne sont autorisés à jouer dans la rue que sous la surveillance d'un adulte.",
       "Les piétons doivent toujours céder le passage aux voitures qui approchent"
     ],
@@ -3196,8 +3196,8 @@
   "rule-alcohol-alarmfase": {
     "question": "Quelle mesure immédiate la police impose-t-elle en cas d'alcootest avec un résultat « Alarme » (entre 0,5 et 0,8 pour mille) ?",
     "options": [
-      "Une interdiction de conduire immédiate d'1 heure",
-      "Enkel un schriftelijke waarschuwing zonder rijverbod",
+      "Une interdiction de conduire immédiate d'une heure",
+      "Seulement un avertissement écrit sans interdiction de conduire",
       "Une interdiction temporaire de conduire de 3 heures avec suspension du permis de conduire",
       "Une révocation définitive du permis de conduire par le tribunal"
     ],
@@ -3217,11 +3217,11 @@
     "question": "Êtes-vous autorisé à faire demi-tour ou à reculer sur une autoroute si vous avez manqué la sortie ?",
     "options": [
       "Non, les virages, les marches arrière et le franchissement du terre-plein central sont strictement interdits sur autoroute",
-      "Oui, si vous restez sur la bande d'arrêt d'urgence et allumez quatre indicateurs",
+      "Oui, si vous restez sur la bande d'arrêt d'urgence et allumez quatre clignotants",
       "Oui, à condition de ne pas reculer à plus de 10 km/h",
       "Uniquement si la police dirige la circulation"
     ],
-    "explanation": "Selon l'article 21.4, il est absolument interdit de faire demi-tour, de faire marche arrière ou d'utiliser les liaisons du terre-plein central sur les autoroutes."
+    "explanation": "Selon l'article 21.4, il est absolument interdit de faire demi-tour, de faire marche arrière ou d'utiliser le terre-plein central sur les autoroutes."
   },
   "rule-autosnelweg-pechstrook": {
     "question": "Quand peut-on utiliser la bande d'arrêt d'urgence sur une autoroute avec un véhicule ?",
@@ -3271,12 +3271,12 @@
       "Faites demi-tour immédiatement et choisissez un autre itinéraire",
       "Réduisez considérablement votre vitesse et arrêtez-vous si nécessaire pour assurer la sécurité des enfants"
     ],
-    "explanation": "L'article 39bis stipule que les conducteurs doivent réduire significativement leur vitesse et, le cas échéant, s'arrêter lorsqu'un autobus de transport scolaire est à l'arrêt avec les feux de détresse allumés."
+    "explanation": "L'article 39bis précise que les conducteurs doivent réduire significativement leur vitesse et, le cas échéant, s'arrêter lorsqu'un autobus de transport scolaire est à l'arrêt avec les feux de détresse allumés."
   },
   "rule-fietser-naast-elkaar": {
     "question": "Deux cyclistes sont-ils autorisés à rouler côte à côte sur la route en dehors des agglomérations ?",
     "options": [
-      "Non, en dehors des agglomérations les cyclistes doivent toujours rouler les uns derrière les autres",
+      "Non, en dehors des agglomérations, les cyclistes doivent toujours rouler les uns derrière les autres",
       "Oui, les cyclistes sont autorisés à rouler avec un maximum de quatre personnes côte à côte, à tout moment et en tout lieu.",
       "Uniquement si la route est plus large que 7 mètres",
       "Oui, mais ils doivent rouler l'un derrière l'autre dès qu'un véhicule venant de l'arrière s'approche"
@@ -3304,7 +3304,7 @@
   "sit-03-b1-haaientanden": {
     "question": "Vous arrivez en vélo à ce carrefour avec panneau B1 et dents de requin. Que devez-vous faire ?",
     "options": [
-      "Je ralentis et je donne la priorité aux conducteurs au carrefour (de gauche à droite).",
+      "Je ralentis et donne la priorité aux conducteurs au carrefour (de gauche à droite).",
       "Je suis toujours obligé de m'arrêter un pied au sol, même lorsqu'il n'y a pas de circulation en approche.",
       "Je peux conduire tranquillement, car les dents de requin ne s'appliquent qu'aux automobilistes."
     ],
@@ -3359,7 +3359,7 @@
     "question": "Vous circulez dans cette rue cyclable (zone cyclable, panneau F111). Quelle règle s'applique ici pour les automobilistes ?",
     "options": [
       "Les véhicules à moteur ne sont pas autorisés à dépasser les cyclistes et la limite de vitesse est de 30 km/h.",
-      "Les véhicules à moteur sont toujours autorisés à dépasser les cyclistes à condition qu'ils respectent une distance d'au moins 1 mètre sur le côté.",
+      "Les véhicules à moteur peuvent toujours dépasser les cyclistes à condition qu'ils respectent une distance minimale de 1 mètre sur le côté.",
       "Les véhicules à moteur ne sont pas du tout autorisés à circuler dans une zone cyclable."
     ],
     "explanation": "Dans une zone cyclable (panneau F111), les véhicules à moteur ne sont pas autorisés à dépasser les cyclistes et une vitesse maximale de 30 km/h s'applique partout (art. 22novies)."
@@ -3368,8 +3368,8 @@
     "question": "Le policier se tient de travers, les bras tendus horizontalement à l'intersection. Que signifie cet ordre ?",
     "options": [
       "Continuez si vous souhaitez tourner à droite.",
-      "Arrêt pour tous les usagers de la route s'approchant du policier par devant ou par derrière.",
-      "Enkel stoppen voor gemotoriseerde voertuigen, niet voor fietsers of voetgangers."
+      "Arrêtez-vous pour tous les usagers de la route s'approchant du policier par devant ou par derrière.",
+      "Arrêt uniquement pour les véhicules motorisés, pas pour les cyclistes ou les piétons."
     ],
     "explanation": "Les bras étendus horizontalement d'une personne autorisée signifient « arrêt » pour tous les usagers de la route venant de directions qui traversent la poitrine ou le dos de l'agent (art. 4.1)."
   },
@@ -3378,7 +3378,7 @@
     "options": [
       "Directement sur la route.",
       "Sur le trottoir, à condition qu'aucun piéton ne marche.",
-      "A gauche sur la route à contresens pour voir les voitures approcher."
+      "À gauche sur la route à contresens pour voir les voitures approcher."
     ],
     "explanation": "S'il n'y a pas de piste cyclable, les cyclistes (10 ans et plus) doivent rouler à droite de la route. Le trottoir est réservé aux piétons (art. 9.1.2)."
   },
@@ -3389,7 +3389,7 @@
       "Cela dépend de votre vitesse : au pas vous suivez les règles pour les piétons, plus vite celles pour les cyclistes.",
       "Toujours sur la piste cyclable, quelle que soit la vitesse."
     ],
-    "explanation": "Les utilisateurs d'aides à la mobilité non motorisées respectent les règles applicables aux piétons à condition de ne pas rouler plus vite que le rythme de la marche. S'ils roulent plus vite, les règles pour les cyclistes s'appliquent (art. 7bis)."
+    "explanation": "Les utilisateurs d'appareils de propulsion non motorisés respectent les règles applicables aux piétons à condition de ne pas rouler plus vite que le rythme de la marche. S'ils roulent plus vite, les règles pour les cyclistes s'appliquent (art. 7bis)."
   },
   "sit-13-bebouwde-kom-naast-elkaar": {
     "question": "Deux cyclistes roulent l'un à côté de l'autre dans une agglomération et une voiture s'approche derrière eux. Que doivent faire les cyclistes ?",
@@ -3449,26 +3449,26 @@
     "question": "Vous roulez jusqu'à cette rue avec le panneau F19 et le panneau inférieur M2 (vélo avec flèches). Qu'est-ce que cela signifie?",
     "options": [
       "Les cyclistes peuvent emprunter cette rue à sens unique dans les deux sens (sens unique limité).",
-      "Les cyclistes ne sont autorisés à rouler ici qu'entre 9h et 17h.",
+      "Les cyclistes ne sont autorisés à circuler ici qu'entre 9h et 17h.",
       "Les cyclistes doivent descendre de vélo et continuer à pied."
     ],
-    "explanation": "Le panneau F19 avec sous-panneau M2 indique une rue à sens unique limité (SUL) : la circulation motorisée ne peut circuler que dans un sens, mais les cyclistes peuvent rouler dans les deux sens (art. 65.2 & art. 71)."
+    "explanation": "Le panneau F19 avec sous-signe M2 indique une rue à sens unique limité (SUL) : la circulation motorisée ne peut circuler que dans un sens, mais les cyclistes peuvent circuler dans les deux sens (art. 65.2 & art. 71)."
   },
   "sit-20-f4a-zone-30": {
     "question": "Vous passez devant le panneau F4a (zone 30). Quelle limite de vitesse s'applique à partir d'ici ?",
     "options": [
       "La limite de vitesse est de 50 km/h, sauf sur les rues scolaires.",
       "La vitesse maximale est de 30 km/h dans toute la zone jusqu'au panneau de fin de zone.",
-      "La limite de vitesse s'applique uniquement pendant les heures de classe."
+      "La limitation de vitesse s'applique uniquement pendant les heures de classe."
     ],
     "explanation": "Le panneau de signalisation F4a indique le début d'une zone dans laquelle la vitesse est partout limitée à un maximum de 30 km/h, jusqu'à ce que le panneau F4b indique la fin de la zone (art. 71 & art. 22quater)."
   },
   "sit-21-rotonde-voorrang": {
     "question": "Vous approchez de ce rond-point indiqué par les panneaux D5 et B1 aux dents de requin. Qui a la priorité ?",
     "options": [
-      "Les conducteurs qui circulent déjà sur le rond-point ont la priorité sur les véhicules venant en sens inverse.",
+      "Les automobilistes circulant déjà sur le rond-point ont la priorité sur les automobilistes venant en sens inverse.",
       "En tant que conducteur, vous avez la priorité au rond-point en partant de la droite.",
-      "Celui qui roule le plus vite a toujours la priorité."
+      "Celui qui conduit le plus vite a toujours la priorité."
     ],
     "explanation": "En entrant dans un rond-point (panneau D5 en combinaison avec B1 et dents de requin), vous devez donner la priorité à tous les conducteurs circulant déjà sur le rond-point (art. 12.3.1 et art. 67.2)."
   },
@@ -3484,25 +3484,25 @@
   "sit-23-voorsorteren-pijlen": {
     "question": "Vous conduisez dans la voie avec la flèche pointant vers la gauche. Êtes-vous autorisé à rouler tout droit à l’intersection ?",
     "options": [
-      "Oui, s'il n'y a aucun autre véhicule circulant à côté de vous à ce moment-là.",
+      "Oui, s'il n'y a aucun autre trafic à côté de vous à ce moment-là.",
       "Oui, à condition d'allumer votre clignotant droit.",
       "Non, les flèches de pré-tri sur la chaussée vous obligent à suivre la direction indiquée."
     ],
     "explanation": "Des flèches de pré-tri placées sur la chaussée obligent les conducteurs à suivre la direction indiquée par les flèches (art. 77.1)."
   },
   "sit-24-fietssuggestiestrook": {
-    "question": "Vous conduisez votre voiture sur cette piste cyclable de couleur rouge ocre (sans panneau D7 ni ligne discontinue blanche). Pouvez-vous conduire ça ?",
+    "question": "Vous circulez en voiture sur cette piste cyclable de couleur rouge ocre (sans panneau D7 ni ligne discontinue blanche). Pouvez-vous conduire ça ?",
     "options": [
       "Oui, une bande cyclable fait partie intégrante de la chaussée; les voitures peuvent y circuler, mais ne peuvent pas mettre en danger ou gêner les cyclistes.",
       "Non, une piste cyclable est exclusivement réservée aux cyclistes et interdite aux voitures.",
       "Uniquement si vous roulez à plus de 50 km/h."
     ],
-    "explanation": "Une piste cyclable n'est pas une véritable piste cyclable et n'a pas le statut juridique d'un tronçon réservé : elle fait partie de la chaussée sur laquelle les voitures peuvent circuler sans gêner les cyclistes (art. 2.62 & art. 9.1.2)."
+    "explanation": "Une bande cyclable n'est pas une véritable piste cyclable et n'a pas le statut juridique d'un tronçon réservé : elle fait partie de la chaussée sur laquelle les voitures peuvent circuler sans gêner les cyclistes (art. 2.62 & art. 9.1.2)."
   },
   "sit-25-erf-woonerf-f12a": {
     "question": "Vous entrez dans une rue avec le panneau de signalisation F12a (cour/zone d'habitation). Quelle règle s'applique ici pour les piétons et la vitesse ?",
     "options": [
-      "La limite de vitesse est de 30 km/h et les piétons doivent rester sur le trottoir.",
+      "La limite de vitesse est de 30 km/h et les piétons doivent demeurer sur le trottoir.",
       "La limite de vitesse est de 20 km/h et les piétons sont autorisés à utiliser et à jouer sur toute la largeur de la voie publique.",
       "Les véhicules à moteur sont interdits ici en tout temps."
     ],
@@ -3533,7 +3533,7 @@
       "Non, le stationnement sur le trottoir est interdit sauf si un panneau de signalisation spécifique (comme le E9b) le permet expressément.",
       "Oui, mais seulement la nuit et le week-end."
     ],
-    "explanation": "L'immobilisation et le stationnement sur le trottoir sont interdits selon l'article 24.1°, sauf si le panneau E9b le permet explicitement (art. 23.1 et art. 70)."
+    "explanation": "L'immobilisation et le stationnement sur le trottoir sont interdits conformément à l'article 24.1°, sauf si le panneau E9b le permet explicitement (article 23.1 et article 70)."
   },
   "sit-29-busstrook-f17": {
     "question": "Vous conduisez une voiture de tourisme normale. Êtes-vous autorisé à circuler sur cette plate-forme spéciale ou cette voie réservée aux bus (panneau F17 et marquage « BUS ») ?",
@@ -3549,7 +3549,7 @@
     "options": [
       "Cédez le passage et en toutes circonstances cédez et arrêtez-vous pour permettre à la personne de traverser en toute sécurité.",
       "Klaxonnez brièvement pour nous signaler votre passage.",
-      "Ne vous arrêtez que si la personne est déjà au milieu de la route."
+      "Ne vous arrêtez que si la personne se trouve déjà au milieu de la route."
     ],
     "explanation": "Les conducteurs doivent en toutes circonstances céder le passage et s'arrêter aux personnes aveugles munies d'une canne blanche ou aux personnes accompagnées d'un chien-guide qui se trouvent sur la chaussée (art. 40.2)."
   },
@@ -3558,14 +3558,14 @@
     "options": [
       "La voiture, car tourner à droite est un virage plus court.",
       "Le cycliste qui continue tout droit sur la même route a la priorité sur la voiture qui tourne.",
-      "Celui qui arrive le premier à l'intersection a la priorité."
+      "Celui qui atteint le carrefour en premier a la priorité."
     ],
     "explanation": "Un conducteur qui change de direction (tournant à droite) doit donner la priorité aux autres usagers de la route (tels que les cyclistes) qui continuent de rouler tout droit sur la même voie publique (art. 19.3.2°)."
   },
   "sit-32-knipperlicht-beweegbare-brug": {
     "question": "Vous approchez de ce pont mobile où deux feux rouges clignotent alternativement. Que signifie ce signal ?",
     "options": [
-      "Le pont est ouvert à l'expédition ; il est interdit de dépasser le signal d'arrêt.",
+      "Le pont est ouvert à la navigation ; il est interdit de dépasser le signal d'arrêt.",
       "Vous pouvez continuer à conduire si vous ne voyez pas de bateau naviguer.",
       "Le signal s'applique uniquement aux camions de plus de 3,5 tonnes."
     ],
@@ -3581,7 +3581,7 @@
     "explanation": "Lorsque les feux tricolores clignotent en orange-jaune et qu'il n'y a pas de panneaux de priorité, les règles de priorité normales s'appliquent, à savoir la priorité par la droite (art. 6.3 & art. 12.3.1)."
   },
   "sit-34-fietsopstelvak-f107": {
-    "question": "Où les automobilistes doivent-ils s'arrêter à un feu rouge avec un emplacement de stationnement pour vélos (OFOS, panneau F107) sur la chaussée ?",
+    "question": "Où les automobilistes doivent-ils s'arrêter au feu rouge avec un emplacement de stationnement pour vélos (OFOS, panneau F107) sur la chaussée ?",
     "options": [
       "Au milieu du parking vélo vert.",
       "Au deuxième arrêt juste avant les feux tricolores.",
@@ -3612,7 +3612,7 @@
     "options": [
       "Contourner rapidement le tramway par la gauche.",
       "Sonnez le klaxon pour que les voyageurs s'écartent.",
-      "S'arrêter du côté de l'entrée et de la sortie pour permettre aux voyageurs d'atteindre la chaussée ou le trottoir en toute sécurité."
+      "Arrêtez-vous aux côtés de l'entrée et de la sortie pour permettre aux voyageurs d'atteindre la chaussée ou le trottoir en toute sécurité."
     ],
     "explanation": "Lorsqu'un tramway s'arrête sans quai surélevé, les conducteurs doivent s'arrêter du côté de l'embarquement et du débarquement pour permettre aux passagers de traverser en toute sécurité (art. 40.1)."
   },
@@ -3639,8 +3639,143 @@
     "options": [
       "Tous les véhicules doivent se déplacer vers la bande d'urgence.",
       "Tout le monde reste au milieu de sa voie.",
-      "Les véhicules sur la voie de gauche dévient le plus possible vers la gauche, les véhicules sur la voie de droite le plus possible vers la droite."
+      "Les véhicules sur la voie de gauche dévieront le plus possible vers la gauche, les véhicules sur la voie de droite le plus possible vers la droite."
     ],
     "explanation": "En cas d'embouteillages, les véhicules se trouvant sur la voie de gauche doivent rouler à l'extrême gauche et ceux se trouvant sur la voie de droite doivent rouler à l'extrême droite pour laisser une voie de secours libre au milieu pour les secours (art. 2.70 & art. 9.8)."
+  },
+  "sit-41-c31b-rechtsaf-verboden-fietsers": {
+    "question": "Vous approchez de ce carrefour à Anvers avec le panneau C31b et un panneau en bas 'EXCEPT' avec un symbole de vélo. Êtes-vous autorisé à tourner à droite ici en voiture ?",
+    "options": [
+      "Non, personne n'est autorisé à tourner à droite ici, pas même les cyclistes.",
+      "Oui, l'interdiction ne s'applique que la nuit.",
+      "Non, l'interdiction s'applique aux voitures, mais les cyclistes en sont exemptés et sont autorisés à tourner à droite."
+    ],
+    "explanation": "Le panneau C31b interdit de tourner à droite à l'intersection (art. 68 KB 1er décembre 1975). Le panneau « EXCEPT » avec le symbole du vélo limite cette interdiction à la circulation motorisée ; les cyclistes sont autorisés à tourner à droite."
+  },
+  "sit-42-e9a-gehandicaptenparkeerplaats": {
+    "question": "Vous voyez ce panneau de stationnement dans un parking. Qui est autorisé à se garer ici ?",
+    "options": [
+      "Uniquement les véhicules disposant d'une carte européenne de stationnement pour personnes handicapées valide.",
+      "Tout le monde, à condition d'utiliser le disque de stationnement.",
+      "Taxis et véhicules de livraison uniquement."
+    ],
+    "explanation": "Le panneau E9a avec symbole de fauteuil roulant indique une place de stationnement réservée exclusivement aux véhicules utilisés par des personnes handicapées et une carte de stationnement valide (art. 70.2.1)."
+  },
+  "sit-43-hoogte-gewicht-brug-bus-uitzondering": {
+    "question": "Vous approchez de ce pont avec des panneaux indiquant une limitation de hauteur à 3,80 m et une limitation de poids à 10 tonnes, avec en bas le panneau 'Sauf bus et autocars'. Un bus régulier de 14 tonnes est-il autorisé à traverser ici ?",
+    "options": [
+      "Oui, car le panneau exclut expressément les bus et autocars de la restriction de poids.",
+      "Uniquement si le bus mesure moins de 3,80 m de haut, mais le poids reste interdit.",
+      "Non, l'interdiction de poids s'applique à tous les véhicules sans exception."
+    ],
+    "explanation": "Les panneaux C29 (hauteur) et C21 (masse) interdisent l'accès au-dessus des valeurs indiquées (art. 68), mais le panneau du bas 'Sauf bus et autocars' exclut expressément les bus et autocars réguliers des deux panneaux d'interdiction."
+  },
+  "sit-44-f103-voetgangerszone-laden-lossen": {
+    "question": "Vous conduisez une camionnette dans cette rue avec le panneau F103 et le panneau du bas 'Sauf chargement et déchargement de 18h30 à 11h30'. Êtes-vous autorisé à venir ici à 9 heures du matin pour livrer ?",
+    "options": [
+      "Non, une zone piétonne est interdite aux véhicules en tout temps.",
+      "Oui, car 9 heures du matin correspond à la période pendant laquelle le chargement et le déchargement sont autorisés.",
+      "Oui, mais seulement si vous utilisez un vélo au lieu d'une camionnette."
+    ],
+    "explanation": "Le panneau F103 indique le début d'une zone piétonne, où les véhicules ne sont en principe pas autorisés à circuler (art. 71.2). Le panneau du bas autorise le chargement et le déchargement entre 18h30 et 11h30, donc 9h00 entre dans cette exception."
+  },
+  "sit-45-c1-eenrichting-fietsers-bromfietsers": {
+    "question": "Cette rue d'Anvers porte le panneau C1 avec en bas un panneau 'EXCEPT' pour les cyclistes et les cyclomoteurs de classe A. Êtes-vous autorisé à circuler ici avec un cyclomoteur de classe A, à contre-sens du reste de la circulation ?",
+    "options": [
+      "Non, le panneau C1 l'interdit à tous les conducteurs sans exception.",
+      "Seulement si vous descendez du cyclomoteur et le conduisez par la main.",
+      "Oui, le panneau exclut expressément les cyclistes et les cyclomoteurs de classe A de l'interdiction."
+    ],
+    "explanation": "Le panneau C1 interdit fondamentalement à quiconque de conduire dans cette direction. Un panneau avec un symbole de vélo et de cyclomoteur peut exempter les cyclistes et les cyclomoteurs de classe A de cette interdiction, par exemple dans une rue à sens unique limité (art. 65.2)."
+  },
+  "sit-46-c3-verboden-toegang-beide-richtingen": {
+    "question": "A l'entrée du marché de Maaseik, vous verrez ce panneau entièrement rouge. Pouvez-vous venir ici en voiture ?",
+    "options": [
+      "Non, le panneau C3 ferme la route à tous les automobilistes dans les deux sens.",
+      "Oui, à condition de rouler au pas.",
+      "Oui, mais uniquement pour le stationnement."
+    ],
+    "explanation": "Le panneau C3 entièrement rouge interdit l'accès, dans les deux sens, à tout conducteur (art. 68 KB 1er décembre 1975) ; seuls les piétons et toutes les catégories explicitement exclues sont toujours autorisés."
+  },
+  "sit-47-c31a-links-afslaan-verboden": {
+    "question": "Vous souhaitez tourner à gauche à cette intersection, mais vous voyez ce panneau accroché sur la façade. Est-ce autorisé ?",
+    "options": [
+      "Oui, l'interdiction ne s'applique qu'aux camions.",
+      "Non, le panneau C31a interdit de tourner dans le sens de la flèche à l'intersection, ici à gauche.",
+      "Oui, tourner à gauche est toujours autorisé lorsqu'il n'y a pas de circulation à l'approche."
+    ],
+    "explanation": "Le panneau C31a interdit aux automobilistes de tourner à la prochaine intersection dans le sens indiqué par la flèche, ici vers la gauche (art. 68 KB 1er décembre 1975)."
+  },
+  "sit-48-a45-overweg-enkel-spoor-zonder-slagbomen": {
+    "question": "Vous approchez de ce passage à niveau le long de la Meuse. Il n'y a pas de barrières, seulement une croix de Saint-André. A quoi faut-il faire attention ?",
+    "options": [
+      "Sans barrières, il n'y a aucun danger, vous pouvez simplement passer.",
+      "Vous devez juger par vous-même si un train arrive et s'arrêter dès qu'il approche ou que les feux clignotent.",
+      "Vous devez toujours vous arrêter complètement ici, même s'il n'y a clairement aucun train en vue."
+    ],
+    "explanation": "Le panneau A45 indique un passage à niveau à voie unique (art. 66). Sans barrières, il faut être prudent : s'arrêter dès qu'un train approche ou que les feux clignotants s'allument, et ne traverser que lorsqu'il est sécuritaire (art. 20.3)."
+  },
+  "sit-49-d10-voetgangers-fietserspad": {
+    "question": "Vous longez la Meuse à Liège sur ce sentier signalé par le panneau D10. Un cyclomoteur de classe A peut-il également circuler ici ?",
+    "options": [
+      "Oui, le panneau D10 autorise les piétons, les cyclistes et les cyclomoteurs de classe A.",
+      "Oui, mais uniquement les cyclomoteurs de classe A, pas les cyclistes réguliers.",
+      "Non, contrairement au panneau D9, les cyclomoteurs de classe A ne sont pas autorisés à circuler sur un chemin D10."
+    ],
+    "explanation": "Le panneau D10 indique un chemin réservé aux piétons et aux cyclistes ; Contrairement au panneau D9, les cyclomoteurs de classe A ne sont pas autorisés à circuler ici (art. 69.3)."
+  },
+  "sit-50-a23-schoolomgeving-zone30": {
+    "question": "Ici, vous passez devant une zone scolaire avec un panneau d'avertissement pour les enfants et un panneau de zone 30 km/h. Qu'est-ce que cela signifie pour votre vitesse ?",
+    "options": [
+      "Vous devez rouler ici à une vitesse maximale de 30 km/h, sur toute la zone et pas seulement au panneau.",
+      "La limite de vitesse est de 30 km/h uniquement au tableau lui-même, après quoi vous pouvez à nouveau aller plus vite.",
+      "La limitation de vitesse s'applique uniquement pendant les heures de classe."
+    ],
+    "explanation": "Le panneau d'avertissement annonce un endroit où de nombreux enfants peuvent apparaître (art. 66) ; le panneau de zone F4a impose une vitesse maximale de 30 km/h pour toute la zone, jusqu'à ce que le panneau F4b lève à nouveau cette limite (art. 71 & art. 22quater)."
+  },
+  "sit-51-a31-matrixbord-wegenwerken-file": {
+    "question": "Sur l'autoroute, vous voyez ce panneau matriciel électronique : 'Travail au port maritime de Gand, embouteillage en provenance d'Oostakker'. Que fais-tu avec ça ?",
+    "options": [
+      "Vous ignorez le panneau, car les panneaux électroniques ne sont pas contraignants.",
+      "Vous anticipez les retards, réduisez votre vitesse à temps et tenez compte des embouteillages plus loin sur la route.",
+      "Vous devez vous arrêter immédiatement sur la route jusqu'à ce que l'embouteillage soit dissipé."
+    ],
+    "explanation": "Un panneau d'information variable, tout comme un panneau fixe A31, avertit des travaux et du danger sur la route à venir (art. 66) ; Les conducteurs doivent adapter leur vitesse à temps et anticiper les perturbations de circulation annoncées."
+  },
+  "sit-52-a5-steile-helling-kemmelberg": {
+    "question": "Vous faites du vélo ou conduisez dans la Kemmelbergstraat et voyez ce panneau. De quoi avertit-il ?",
+    "options": [
+      "Pour une pente raide (tronçon de route en montée).",
+      "Avant un virage à gauche dangereux.",
+      "Pour surfaces routières inégales."
+    ],
+    "explanation": "Le panneau de signalisation A5 avertit d'une pente raide, comme ici lors de la montée du Kemmelberg à Heuvelland (art. 66 KB du 1er décembre 1975)."
+  },
+  "sit-53-a13-oneffen-wegdek-vooraankondiging": {
+    "question": "Vous voyez ce panneau marqué '150 m' le long d'un chemin rural. Que peut-on s’attendre à 150 mètres ?",
+    "options": [
+      "Un creux transversal, une crête d'âne ou une autre surface de route inégale.",
+      "Un arrêt obligatoire avec priorité à droite.",
+      "La fin de la voie publique."
+    ],
+    "explanation": "Le panneau de signalisation A13 avertit d'un croisement, d'un dos d'âne ou d'une chaussée inégale ; le panneau inférieur « 150 m » indique la distance jusqu'à ce danger (art. 66 KB du 1er décembre 1975)."
+  },
+  "sit-54-a39-einde-eenrichtingsverkeer": {
+    "question": "Vous conduisez sur une route la nuit et voyez ces deux triangles avec une flèche vers le bas et une flèche vers le haut. Que veulent-ils dire ?",
+    "options": [
+      "Que tu es obligé de faire demi-tour.",
+      "La circulation à sens unique prend fin et la circulation est à nouveau autorisée dans les deux sens.",
+      "Que le trafic venant en sens inverse soit prioritaire dans un passage étroit."
+    ],
+    "explanation": "Le panneau de signalisation A39 avertit que la circulation à sens unique prend fin et que la circulation est à nouveau autorisée dans les deux sens ; faites donc encore attention au trafic venant en sens inverse (art. 66 KB du 1er décembre 1975)."
+  },
+  "sit-55-d3-verplichte-rijrichting-pijl": {
+    "question": "À cette intersection, vous verrez un panneau rond bleu avec une flèche pointant tout droit vers la gauche. Quelles directions pouvez-vous suivre ?",
+    "options": [
+      "Juste tout droit.",
+      "Gauche seulement.",
+      "Tout droit ou à gauche, vous choisissez laquelle des deux directions indiquées."
+    ],
+    "explanation": "Le panneau D3 oblige les conducteurs à suivre l'une des directions indiquées par les flèches, ici tout droit ou à gauche ; vous pouvez choisir entre les directions indiquées, mais vous ne pouvez pas tourner à droite (art. 69 KB du 1er décembre 1975)."
   }
 }

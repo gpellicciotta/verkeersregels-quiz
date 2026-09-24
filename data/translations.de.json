@@ -1,6 +1,6 @@
 {
   "rec-a1a": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Gefährliche Linkskurve",
       "Gefährliche Rechtskurve",
@@ -12,7 +12,7 @@
     "signExplanation": "Dieses Gefahrenschild warnt vor einer gefährlichen Linkskurve."
   },
   "rec-a1b": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Doppelte Biegung",
       "Gefährliche Rechtskurve",
@@ -24,7 +24,7 @@
     "signExplanation": "Dieses Gefahrenschild warnt vor einer gefährlichen Rechtskurve."
   },
   "rec-a7a": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Arbeiten unterwegs",
       "Rutschige Straße",
@@ -36,7 +36,7 @@
     "signExplanation": "Dieses Schild warnt davor, dass die Straße vor Ihnen schmaler wird."
   },
   "rec-a21": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Überfahrtspflicht für Radfahrer",
       "Schulumfeld mit vielen Kindern",
@@ -48,7 +48,7 @@
     "signExplanation": "Dieses Gefahrenschild kündigt einen Fußgängerübergang im Voraus an."
   },
   "rec-a25": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Warnung vor einer Kreuzung für Radfahrer",
       "Obligatorischer Radweg",
@@ -60,7 +60,7 @@
     "signExplanation": "Dieses Schild warnt vor einer Stelle, an der Radfahrer die Straße überqueren."
   },
   "rec-a23": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Fußgängerüberweg",
       "Ort, an den viele Kinder kommen, zum Beispiel eine Schule",
@@ -72,7 +72,7 @@
     "signExplanation": "Dieses Schild warnt vor einem Ort, an dem sich eine große Anzahl von Kindern aufhalten kann, beispielsweise einer Schule."
   },
   "rec-a31": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Ampel",
       "Datei",
@@ -84,7 +84,7 @@
     "signExplanation": "Dieses Schild warnt vor Arbeiten auf oder entlang der Fahrbahn."
   },
   "rec-a41": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Bahnübergang ohne Schranken",
       "Straßenbahngleise",
@@ -96,7 +96,7 @@
     "signExplanation": "Dieses Schild warnt vor einem mit Schranken ausgestatteten Bahnübergang."
   },
   "rec-a1c": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Gefährliche Kurve: Doppelkurve oder Folge von mehr als zwei Kurven, die erste nach links",
       "Gefährliche Kurve: Doppelkurve oder Folge von mehr als zwei Kurven, die erste nach rechts",
@@ -108,7 +108,7 @@
     "signExplanation": "Das Verkehrszeichen A1c warnt vor einer Doppelkurve oder einer Folge von mehr als zwei Kurven, von denen die erste nach links abbiegt (Art. 66 KB vom 1. Dezember 1975)."
   },
   "rec-a1d": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Gefährliche Kurve: Linkskurve mit Gegenverkehr",
       "Gefährliche Kurve: Doppelkurve oder Folge von mehr als zwei Kurven, die erste nach rechts",
@@ -120,31 +120,31 @@
     "signExplanation": "Das Verkehrszeichen A1d warnt vor einer Doppelkurve oder einer Folge von mehr als zwei Kurven, von denen die erste nach rechts abbiegt (Art. 66 KB vom 1. Dezember 1975)."
   },
   "rec-a3": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Steiler Hang (steigend)",
       "Queraushöhlung oder Eselsrücken",
-      "Gefährlicher Sturz",
-      "Straßenbelag in schlechtem Zustand"
+      "Gefährlicher Abstieg",
+      "Straßenoberfläche in schlechtem Zustand"
     ],
     "explanation": "Das Verkehrszeichen A3 warnt vor einer gefährlichen Abfahrt auf der Straße (Art. 66 KB vom 1. Dezember 1975).",
-    "signTitle": "Gefährlicher Sturz",
+    "signTitle": "Gefährlicher Abstieg",
     "signExplanation": "Das Verkehrszeichen A3 warnt vor einer gefährlichen Abfahrt auf der Straße (Art. 66 KB vom 1. Dezember 1975)."
   },
   "rec-a5": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
-      "Gefährlicher Sturz",
+      "Gefährlicher Abstieg",
       "Erhöhtes Design in der Straßenoberfläche",
       "Bewegliche Brücke",
       "Steiler Hang"
     ],
-    "explanation": "Verkehrszeichen A5 warnt vor starkem Gefälle (Steigungsabschnitt) (Art. 66 KB 1. Dezember 1975).",
+    "explanation": "Verkehrszeichen A5 warnt vor steilem Gefälle (ansteigender Straßenabschnitt) (Art. 66 KB 1. Dezember 1975).",
     "signTitle": "Steiler Hang",
-    "signExplanation": "Verkehrszeichen A5 warnt vor starkem Gefälle (Steigungsabschnitt) (Art. 66 KB 1. Dezember 1975)."
+    "signExplanation": "Verkehrszeichen A5 warnt vor steilem Gefälle (ansteigender Straßenabschnitt) (Art. 66 KB 1. Dezember 1975)."
   },
   "rec-a7b": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Spurverengung auf der linken Seite",
       "Spurverengung auf der rechten Seite",
@@ -156,7 +156,7 @@
     "signExplanation": "Verkehrszeichen A7b warnt vor einer Verengung der Fahrbahn auf der linken Seite (Art. 66 KB 1. Dezember 1975)."
   },
   "rec-a7c": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Spurverengung auf der linken Seite",
       "Spurverengung auf der rechten Seite",
@@ -168,7 +168,7 @@
     "signExplanation": "Verkehrszeichen A7c warnt vor einer Verengung der Fahrbahn auf der rechten Seite (Art. 66 KB 1. Dezember 1975)."
   },
   "rec-a9": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Ausweg an einem Kai oder Ufer",
       "Bahnübergang mit Schranken",
@@ -180,7 +180,7 @@
     "signExplanation": "Das Verkehrszeichen A9 warnt vor der Annäherung an eine bewegliche Brücke (Art. 66 KB vom 1. Dezember 1975)."
   },
   "rec-a11": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Bewegliche Brücke",
       "Fähre oder Fähre",
@@ -192,19 +192,19 @@
     "signExplanation": "Das Verkehrszeichen A11 weist darauf hin, dass die Straße an einem Kai oder einer Bank ohne Barriere oder Brüstung endet (Art. 66 Königlicher Erlass vom 1. Dezember 1975)."
   },
   "rec-a13": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Queraushöhlung oder Eselsrücken",
       "Erhöhtes Design (Geschwindigkeitsschwelle)",
       "Straßenarbeiten",
       "Rutschige Straße bei Niederschlag"
     ],
-    "explanation": "Das Verkehrszeichen A13 warnt vor einer Quermulde, einem Eselsrücken oder einer unebenen Fahrbahn (Art. 66 KB vom 1. Dezember 1975).",
+    "explanation": "Das Verkehrszeichen A13 warnt vor einer Kreuzung, einem Eselsrücken oder einer unebenen Fahrbahn (Art. 66 KB vom 1. Dezember 1975).",
     "signTitle": "Queraushöhlung oder Eselsrücken",
-    "signExplanation": "Das Verkehrszeichen A13 warnt vor einer Quermulde, einem Eselsrücken oder einer unebenen Fahrbahn (Art. 66 KB vom 1. Dezember 1975)."
+    "signExplanation": "Das Verkehrszeichen A13 warnt vor einer Kreuzung, einem Eselsrücken oder einer unebenen Fahrbahn (Art. 66 KB vom 1. Dezember 1975)."
   },
   "rec-a14": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Queraushöhlung oder Eselsrücken",
       "Erhöhte(s) Gerät(e)",
@@ -216,19 +216,19 @@
     "signExplanation": "Das Verkehrszeichen A14 warnt vor einer oder mehreren erhöhten Vorrichtungen, beispielsweise einer Bremsschwelle oder einem Plateau (Art. 66 KB vom 1. Dezember 1975)."
   },
   "rec-a15": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Spritzende Steinschläge",
       "Seitenwind",
       "Rutschige Straße",
       "Durchfahrt landwirtschaftlicher Fahrzeuge"
     ],
-    "explanation": "Verkehrszeichen A15 warnt vor rutschiger Fahrbahn oder erhöhter Rutschgefahr (Art. 66 KB 1. Dezember 1975).",
+    "explanation": "Das Verkehrszeichen A15 warnt vor rutschiger Fahrbahn oder erhöhter Rutschgefahr (Art. 66 KB vom 1. Dezember 1975).",
     "signTitle": "Rutschige Straße",
-    "signExplanation": "Verkehrszeichen A15 warnt vor rutschiger Fahrbahn oder erhöhter Rutschgefahr (Art. 66 KB 1. Dezember 1975)."
+    "signExplanation": "Das Verkehrszeichen A15 warnt vor rutschiger Fahrbahn oder erhöhter Rutschgefahr (Art. 66 KB vom 1. Dezember 1975)."
   },
   "rec-a17": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Steinschlag von Felswänden",
       "Arbeiten unterwegs",
@@ -240,7 +240,7 @@
     "signExplanation": "Das Verkehrszeichen A17 warnt vor der Gefahr durch herumfliegende lose Kieselsteine ​​oder Schotter (Kieselwurf) (Art. 66 KB vom 1. Dezember 1975)."
   },
   "rec-a19": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Steinschlag",
       "Kieselprojektion",
@@ -252,7 +252,7 @@
     "signExplanation": "Das Verkehrszeichen A19 warnt vor der Gefahr durch herabfallende Steine ​​oder Steine ​​auf der Fahrbahn (Art. 66 KB vom 1. Dezember 1975)."
   },
   "rec-a27": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Viehdurchgang",
       "Passage des Großwilds",
@@ -264,7 +264,7 @@
     "signExplanation": "Das Verkehrszeichen A27 warnt vor dem möglichen Durchgang von Großwild auf der Fahrbahn (Art. 66 KB vom 1. Dezember 1975)."
   },
   "rec-a29": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Passage des Großwilds",
       "Landwirtschaftliche Zone nur für Traktoren",
@@ -276,7 +276,7 @@
     "signExplanation": "Das Verkehrszeichen A29 warnt vor dem möglichen Überqueren oder der Anwesenheit von Vieh auf öffentlichen Straßen (Art. 66 KB vom 1. Dezember 1975)."
   },
   "rec-a33": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Kreuzung, an der der Vorrang von rechts gilt",
       "Gefährlicher Bahnübergang",
@@ -288,19 +288,19 @@
     "signExplanation": "Das Verkehrszeichen A33 kündigt die Annäherung an eine Kreuzung oder Kreuzung mit Ampel an (Art. 66 KB vom 1. Dezember 1975)."
   },
   "rec-a35": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Flugzeug kreuzt in geringer Höhe",
       "Gefahr plötzlich auftretender starker Seitenwinde",
       "Zugang zu einem Flughafenbereich",
       "Luftdruckunterschiede an Tunnelmündungen"
     ],
-    "explanation": "Das Verkehrszeichen A35 warnt vor querenden Flugzeugen in geringer Höhe oder vor plötzlicher Lärmbelästigung (Art. 66 KB 1. Dezember 1975).",
+    "explanation": "Das Verkehrszeichen A35 warnt vor kreuzenden Flugzeugen in geringer Höhe oder vor plötzlicher Lärmbelästigung (Art. 66 KB 1. Dezember 1975).",
     "signTitle": "Flugzeug kreuzt in geringer Höhe",
-    "signExplanation": "Das Verkehrszeichen A35 warnt vor querenden Flugzeugen in geringer Höhe oder vor plötzlicher Lärmbelästigung (Art. 66 KB 1. Dezember 1975)."
+    "signExplanation": "Das Verkehrszeichen A35 warnt vor kreuzenden Flugzeugen in geringer Höhe oder vor plötzlicher Lärmbelästigung (Art. 66 KB 1. Dezember 1975)."
   },
   "rec-a37": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Flugzeug kreuzt in geringer Höhe",
       "Seitenwind",
@@ -312,7 +312,7 @@
     "signExplanation": "Das Verkehrszeichen A37 warnt vor einem Straßenabschnitt, der häufig plötzlichen, starken Seitenwinden ausgesetzt ist (Art. 66 KB vom 1. Dezember 1975)."
   },
   "rec-a39": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Vorgeschriebene Fahrtrichtung geradeaus oder abbiegen",
       "Spurverengung mit Vorrang für den Gegenverkehr",
@@ -324,7 +324,7 @@
     "signExplanation": "Das Verkehrszeichen A39 weist darauf hin, dass der Einbahnverkehr eingestellt wird und der Verkehr in beide Richtungen wieder erlaubt ist (Art. 66 KB vom 1. Dezember 1975)."
   },
   "rec-a43": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Bahnübergang mit Schranken",
       "Straßenbahnschienen, die die Fahrbahn kreuzen",
@@ -336,7 +336,7 @@
     "signExplanation": "Das Verkehrszeichen A43 warnt vor einem Bahnübergang ohne Schranken (Art. 66 KB vom 1. Dezember 1975)."
   },
   "rec-a45": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Eingleisiger Bahnübergang",
       "Bahnübergang für zwei oder mehr Gleise",
@@ -348,7 +348,7 @@
     "signExplanation": "Das Verkehrszeichen A45 (einzelnes Andreaskreuz) weist auf die unmittelbare Nähe eines eingleisigen Bahnübergangs hin (Art. 66 Königlicher Erlass vom 1. Dezember 1975)."
   },
   "rec-a47": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Eingleisiger Bahnübergang",
       "Bahnübergang für zwei oder mehr Gleise",
@@ -360,67 +360,67 @@
     "signExplanation": "Das Verkehrszeichen A47 (doppeltes Andreaskreuz) weist auf die unmittelbare Nähe eines Bahnübergangs mit zwei oder mehr Gleisen hin (Art. 66 Königlicher Erlass vom 1. Dezember 1975)."
   },
   "rec-a49": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Bahnübergang ohne Schranken",
       "Pflichtradweg mit Bahnüberquerung",
       "Kreuzung einer öffentlichen Straße durch ein oder mehrere in die Fahrbahn eingebaute Gleise",
       "Ende einer Straßenbahnspur"
     ],
-    "explanation": "Das Verkehrszeichen A49 warnt vor der Kreuzung einer öffentlichen Straße durch Gleise im Straßenbelag (Art. 66 KB 1. Dezember 1975).",
+    "explanation": "Das Verkehrszeichen A49 warnt vor der Kreuzung einer öffentlichen Straße durch Gleise im Straßenbelag (Art. 66 KB vom 1. Dezember 1975).",
     "signTitle": "Kreuzung einer öffentlichen Straße durch ein oder mehrere in die Fahrbahn eingebaute Gleise",
-    "signExplanation": "Das Verkehrszeichen A49 warnt vor der Kreuzung einer öffentlichen Straße durch Gleise im Straßenbelag (Art. 66 KB 1. Dezember 1975)."
+    "signExplanation": "Das Verkehrszeichen A49 warnt vor der Kreuzung einer öffentlichen Straße durch Gleise im Straßenbelag (Art. 66 KB vom 1. Dezember 1975)."
   },
   "rec-a50": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Straßenarbeiten mit verzögertem Verkehr",
       "Gefährlicher Abstieg bei stehendem Verkehr",
       "Mautstelle oder Grenzübergang",
       "Datei"
     ],
-    "explanation": "Das Verkehrszeichen A50 warnt vor der Gefahr von Verkehrsverzögerungen oder Staus (Art. 66 KB vom 1. Dezember 1975).",
+    "explanation": "Das Verkehrszeichen A50 warnt vor der Gefahr von Staus oder Staus (Art. 66 KB 1. Dezember 1975).",
     "signTitle": "Datei",
-    "signExplanation": "Das Verkehrszeichen A50 warnt vor der Gefahr von Verkehrsverzögerungen oder Staus (Art. 66 KB vom 1. Dezember 1975)."
+    "signExplanation": "Das Verkehrszeichen A50 warnt vor der Gefahr von Staus oder Staus (Art. 66 KB 1. Dezember 1975)."
   },
   "rec-a51": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Zwangsstopp wegen unbekannter Gefahr",
       "Straßenarbeiten im Gange",
       "Sackgasse mit Hindernissen",
       "Gefahr, die nicht durch ein spezielles Symbol gekennzeichnet ist"
     ],
-    "explanation": "Das Verkehrszeichen A51 warnt vor einer Gefahr, die nicht durch ein bestimmtes Symbol gekennzeichnet ist; Ein Bodenschild weist auf die Art der Gefahr hin (Art. 66 KB vom 1. Dezember 1975).",
+    "explanation": "Das Verkehrszeichen A51 warnt vor einer Gefahr, die nicht durch ein bestimmtes Symbol gekennzeichnet ist; Ein Bodenschild gibt die Art der Gefahr an (Art. 66 KB vom 1. Dezember 1975).",
     "signTitle": "Gefahr, die nicht durch ein spezielles Symbol gekennzeichnet ist",
-    "signExplanation": "Das Verkehrszeichen A51 warnt vor einer Gefahr, die nicht durch ein bestimmtes Symbol gekennzeichnet ist; Ein Bodenschild weist auf die Art der Gefahr hin (Art. 66 KB vom 1. Dezember 1975)."
+    "signExplanation": "Das Verkehrszeichen A51 warnt vor einer Gefahr, die nicht durch ein bestimmtes Symbol gekennzeichnet ist; Ein Bodenschild gibt die Art der Gefahr an (Art. 66 KB vom 1. Dezember 1975)."
   },
   "rec-b1": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
-      "Geben Sie Priorität",
+      "Priorität geben",
       "Vorfahrtsstraße",
       "Stoppschild",
       "Ende der Vorfahrtsstraße"
     ],
-    "explanation": "Dieses umgekehrte Dreieck bedeutet, dass Sie dem querenden Verkehr Vorrang einräumen müssen.",
-    "signTitle": "Geben Sie Priorität",
-    "signExplanation": "Dieses umgekehrte Dreieck bedeutet, dass Sie dem querenden Verkehr Vorrang einräumen müssen."
+    "explanation": "Dieses umgekehrte Dreieck bedeutet, dass Sie dem kreuzenden Verkehr Vorrang einräumen müssen.",
+    "signTitle": "Priorität geben",
+    "signExplanation": "Dieses umgekehrte Dreieck bedeutet, dass Sie dem kreuzenden Verkehr Vorrang einräumen müssen."
   },
   "rec-b5": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Geben Sie nach, ohne anzuhalten",
-      "Halten Sie an und geben Sie nach",
+      "Anhalten und nachgeben",
       "Vorfahrtsstraße",
       "Kreuzung mit Vorrang von rechts"
     ],
     "explanation": "An diesem achteckigen Schild müssen Sie vollständig anhalten und dem anderen Verkehr Vorfahrt gewähren.",
-    "signTitle": "Halten Sie an und geben Sie nach",
+    "signTitle": "Anhalten und nachgeben",
     "signExplanation": "An diesem achteckigen Schild müssen Sie vollständig anhalten und dem anderen Verkehr Vorfahrt gewähren."
   },
   "rec-b9": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Kreuzung mit Vorrang von rechts",
       "Ende einer Vorfahrtsstraße",
@@ -432,10 +432,10 @@
     "signExplanation": "Dieses rautenförmige Schild zeigt an, dass Sie auf einer Vorfahrtsstraße fahren."
   },
   "rec-b17": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Vorfahrtsstraße",
-      "Geben Sie Priorität",
+      "Priorität geben",
       "Kreisverkehr",
       "Kreuzung, an der der Vorrang von rechts gilt"
     ],
@@ -444,7 +444,7 @@
     "signExplanation": "Dieses Schild erinnert daran, dass an dieser Kreuzung die normale Vorfahrtsregel gilt."
   },
   "rec-c1": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Das Fahren in diese Richtung ist verboten",
       "Zufahrt in beide Richtungen verboten",
@@ -456,19 +456,19 @@
     "signExplanation": "Dieses Schild mit dem weißen Balken verbietet das Fahren in diese Richtung, beispielsweise gegen Einbahnverkehr."
   },
   "rec-c3": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Das Fahren in diese Richtung ist verboten",
-      "Keine Zufahrt in beide Richtungen für Fahrer",
+      "Keine Einfahrt in beide Richtungen für Fahrer",
       "Für Fußgänger verboten",
       "Sackgasse"
     ],
     "explanation": "Dieses komplett rote Schild sperrt die Straße für alle Autofahrer, in beide Richtungen.",
-    "signTitle": "Keine Zufahrt in beide Richtungen für Fahrer",
+    "signTitle": "Keine Einfahrt in beide Richtungen für Fahrer",
     "signExplanation": "Dieses komplett rote Schild sperrt die Straße für alle Autofahrer, in beide Richtungen."
   },
   "rec-c35": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Abbiegen ist verboten",
       "Stillstand ist verboten",
@@ -480,7 +480,7 @@
     "signExplanation": "Dieses Schild verbietet das Überholen von Fahrzeugen mit mehr als zwei Rädern auf der linken Seite."
   },
   "rec-c43-70": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Geschwindigkeitsbegrenzung 90 km/h",
       "Ende der Geschwindigkeitsbegrenzung",
@@ -492,11 +492,11 @@
     "signExplanation": "Die Zahl auf diesem runden Schild gibt die Höchstgeschwindigkeit an, die von hier bis zur nächsten Kreuzung gilt."
   },
   "rec-d1a": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Vorgeschriebene Fahrtrichtung: geradeaus",
       "Obligatorischer Radweg",
-      "Zwingender Umlaufverkehr",
+      "Zwingender Verkehr",
       "Freie Wahl der Fahrtrichtung"
     ],
     "explanation": "Dieses blaue runde Schild fordert Sie auf, der Pfeilrichtung geradeaus zu folgen.",
@@ -504,7 +504,7 @@
     "signExplanation": "Dieses blaue runde Schild fordert Sie auf, der Pfeilrichtung geradeaus zu folgen."
   },
   "rec-d5": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Vorgeschriebene Fahrtrichtung geradeaus",
       "Zwingender Kreisverkehr (Kreisverkehr)",
@@ -516,7 +516,7 @@
     "signExplanation": "Dieses Schild kündigt einen Kreisverkehr an, in den Sie in die angegebene Richtung fahren müssen."
   },
   "rec-d7": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Obligatorischer Fußweg",
       "Fahrräder erlaubt, aber nicht erforderlich",
@@ -528,7 +528,7 @@
     "signExplanation": "Radfahrer und Fahrer von zweirädrigen Kleinkrafträdern der Klasse A müssen diesen Radweg benutzen."
   },
   "rec-e1": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Parken erlaubt",
       "Parken und Stillstand sind verboten",
@@ -540,7 +540,7 @@
     "signExplanation": "Dieses Schild verbietet das Parken, kurze Stopps sind jedoch erlaubt."
   },
   "rec-f45": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Sackgasse",
       "Straßenumleitung",
@@ -552,7 +552,7 @@
     "signExplanation": "Dieses Schild zeigt an, dass die Straße nicht weiter führt."
   },
   "rec-f5": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Ende einer Autobahn",
       "Beginn einer Autobahn",
@@ -594,7 +594,7 @@
     "explanation": "Schild C33 verbietet eine Kehrtwende bis zur nächsten Kreuzung."
   },
   "iden-e9a": {
-    "question": "Welches Schild weist auf einen Parkplatz für Menschen mit Behinderung hin?",
+    "question": "Welches Schild weist auf einen für Menschen mit Behinderungen reservierten Parkplatz hin?",
     "options": [
       "assets/signs/E1.svg",
       "assets/signs/D9.svg",
@@ -621,7 +621,7 @@
       "assets/signs/D1a.svg",
       "assets/signs/F103.svg"
     ],
-    "explanation": "Das Schild F19 weist darauf hin, dass Sie auf einer öffentlichen Einbahnstraße fahren."
+    "explanation": "Das Schild F19 weist darauf hin, dass Sie auf einer öffentlichen Straße mit Einbahnverkehr fahren."
   },
   "iden-f49": {
     "question": "Welches Schild weist auf die genaue Lage eines Fußgängerüberwegs hin (also nicht auf die Vorwarnung)?",
@@ -631,7 +631,7 @@
       "assets/signs/F49.svg",
       "assets/signs/A21.svg"
     ],
-    "explanation": "Das Schild F49 weist auf den Übergang selbst hin, während das Gefahrenschild A21 im Voraus warnt."
+    "explanation": "Das Schild F49 weist auf den Übergang selbst hin, während das Gefahrenschild A21 im Voraus davor warnt."
   },
   "iden-f103": {
     "question": "Welches Schild weist auf den Beginn einer Fußgängerzone hin?",
@@ -714,14 +714,14 @@
     "explanation": "Berufskraftfahrer müssen gemäß § 34 der Straßenverkehrsordnung 0,2 Promille (0,09 mg/l ausgeatmete Luft) einhalten."
   },
   "rule-gordel-algemeen": {
-    "question": "Müssen Sie auf dem Rücksitz eines Autos angeschnallt sein?",
+    "question": "Muss man auf dem Rücksitz eines Autos einen Sicherheitsgurt anlegen?",
     "options": [
       "Nein, nur vorne ist Pflicht",
       "Nur außerhalb geschlossener Ortschaften obligatorisch",
       "Ja, auf jedem Sitzplatz, der mit einem Gurt ausgestattet ist",
       "Nur für Kinder obligatorisch"
     ],
-    "explanation": "Gemäß Artikel 35.1.1 sind Sicherheitsgurte vorne und hinten auf jedem Sitzplatz obligatorisch, der mit einem Sicherheitsgurt ausgestattet ist."
+    "explanation": "Gemäß Artikel 35.1.1 sind Sicherheitsgurte vorne und hinten auf jedem Sitzplatz vorgeschrieben, der mit einem Sicherheitsgurt ausgestattet ist."
   },
   "rule-kinderzitje": {
     "question": "Bis zu welcher Körpergröße muss ein Kind ein zugelassenes Kinderrückhaltesystem im Auto verwenden?",
@@ -754,17 +754,17 @@
     "explanation": "Ohne Angaben gilt die Vorfahrtsregel gemäß Artikel 12.3.1 der Straßenverkehrsordnung."
   },
   "rule-voorrang-rechts-gestopt": {
-    "question": "Verlieren Sie die Vorfahrt, wenn Sie an der Kreuzung kurz anhalten, bevor Sie weiterfahren?",
+    "question": "Verlieren Sie den Vorrang von rechts, wenn Sie an der Kreuzung kurz anhalten, bevor Sie weiterfahren?",
     "options": [
       "Ja, wer anhält, verliert den Vorrang",
       "Nur wenn eine Stop-Order gilt",
-      "Nein, ein von rechts angehaltener Fahrer behält ebenfalls Vorrang",
+      "Nein, auch ein angehaltener Fahrer von rechts behält Vorrang",
       "Nur außerhalb geschlossener Ortschaften"
     ],
     "explanation": "Nach ständiger Rechtsprechung in Artikel 12.3.1 behält ein Fahrer von rechts den Vorrang, auch wenn er zunächst vor der Kreuzung anhält."
   },
   "rule-rotonde": {
-    "question": "Wer hat an einem durch Schild D5 gekennzeichneten Kreisverkehr Vorrang?",
+    "question": "Wer hat an einem durch das Schild D5 gekennzeichneten Kreisverkehr Vorrang?",
     "options": [
       "Der Verkehr, der in den Kreisverkehr einfahren möchte",
       "Immer Verkehr von rechts",
@@ -783,10 +783,10 @@
       "Gehen Sie nur an einer Kreuzung zur Seite",
       "Beschleunigen Sie, um die Kreuzung zu passieren"
     ],
-    "explanation": "Sobald die Hupe eines vorrangigen Fahrzeugs ertönt, muss jeder Verkehrsteilnehmer sofort Vorfahrt gewähren (Art. 38)."
+    "explanation": "Sobald die Hupe eines vorfahrtsberechtigten Fahrzeugs ertönt, muss jeder Verkehrsteilnehmer sofort Vorfahrt gewähren (Art. 38)."
   },
   "rule-fietser-inhalen": {
-    "question": "Welchen seitlichen Mindestabstand müssen Sie beim Überholen eines Radfahrers außerhalb geschlossener Ortschaften einhalten?",
+    "question": "Welchen seitlichen Mindestabstand sollten Sie beim Überholen eines Radfahrers außerhalb geschlossener Ortschaften einhalten?",
     "options": [
       "1 Meter",
       "1,5 Meter",
@@ -798,7 +798,7 @@
   "rule-zebra": {
     "question": "Was sollten Sie tun, wenn ein Fußgänger einen Zebrastreifen überquert?",
     "options": [
-      "Habe Vorrang, weil du im Auto sitzt",
+      "Habe Vorrang, denn du bist im Auto",
       "Fahren Sie schnell vorbei, bevor Sie die Straße erreichen",
       "Vorfahrt geben und bei Bedarf anhalten",
       "Vorrang nur außerhalb geschlossener Ortschaften gewähren"
@@ -813,7 +813,7 @@
       "Nur als Fußgänger, wenn er auch einen Fahrradhelm trägt",
       "Als Fußgänger also mit Vorrang"
     ],
-    "explanation": "Wer sein Fahrrad an der Hand trägt, gilt als Fußgänger (Art. 2.46) und hat auf dem Zebrastreifen Vorrang (Art. 40.4.2)."
+    "explanation": "Wer sein Fahrrad in der Hand trägt, wird wie ein Fußgänger behandelt (Art. 2.46) und hat auf dem Zebrastreifen Vorrang (Art. 40.4.2)."
   },
   "rule-verzekering": {
     "question": "Was ist für jedes Kraftfahrzeug, das auf öffentlichen Straßen in Belgien fährt, gesetzlich vorgeschrieben?",
@@ -821,7 +821,7 @@
       "Haftpflichtversicherung (BA/WAM)",
       "Nur eine gültige Inspektion",
       "Nur Vollkaskoversicherung",
-      "Eine Versicherung ist nicht obligatorisch, wenn Sie über Ihre Krankenversicherung ordnungsgemäß versichert sind"
+      "Eine Versicherungspflicht besteht nicht, wenn Sie über Ihre Krankenversicherung ordnungsgemäß versichert sind"
     ],
     "explanation": "Das WAM-Gesetz (Art. 2) verpflichtet jedes Kraftfahrzeug, das auf öffentlichen Straßen fährt, zum Abschluss einer Haftpflichtversicherung."
   },
@@ -870,7 +870,7 @@
     "options": [
       "Überqueren Sie die Straße so schnell wie möglich, bevor die Absperrungen sinken",
       "Halten Sie an und warten Sie, bis die Lichter aufhören zu blinken",
-      "Machen Sie einfach langsamer, hören Sie nicht auf",
+      "Nur langsamer machen, nicht anhalten",
       "Halten Sie erst an, wenn Sie sehen, dass sich die Barrieren senken"
     ],
     "explanation": "Sobald die roten Lichter blinken, ist es gemäß Artikel 20.3, 2° verboten, den Bahnübergang zu befahren, auch wenn die Schranken noch geöffnet sind."
@@ -899,7 +899,7 @@
     "question": "Muss der Fahrer eines landwirtschaftlichen Fahrzeugs, das gesetzlich als „Vierrad mit Motor“ gilt, einen Schutzhelm tragen?",
     "options": [
       "Ja, immer, unabhängig von Baugeschwindigkeit oder Lenkungsart",
-      "Nein, wenn die Baugeschwindigkeit nicht höher als 40 km/h ist und das Fahrzeug keinen motorradähnlichen Lenker hat",
+      "Nein, wenn die Baugeschwindigkeit 40 km/h nicht überschreitet und das Fahrzeug keinen motorradähnlichen Lenker hat",
       "Nur wenn kein Sicherheitsgurt vorhanden ist",
       "Nur außerhalb geschlossener Ortschaften obligatorisch"
     ],
@@ -909,14 +909,14 @@
     "question": "Wo soll man auf einer Straße fahren, die eine Mittelspur hat (zwei parallele imaginäre Kanten mit jeweils zwei kurzen weißen Streifen)?",
     "options": [
       "Sie fahren auf der mittleren Mittelspur und weichen auf die Seitenspur aus, um den Gegenverkehr zu kreuzen oder zu überholen",
-      "Sie müssen immer auf der rechten Spur fahren und dürfen niemals auf die mittlere Spur wechseln",
+      "Sie müssen immer auf der rechten Seitenspur fahren und dürfen niemals auf die Mittelspur wechseln",
       "Die Mittelspur ist ausschließlich Bussen und Vorzugsfahrzeugen vorbehalten",
       "Sie dürfen nur die Mittelspur zum Linksabbiegen nutzen"
     ],
     "explanation": "Eine Mittelfahrbahn (Art. 2.71) dient als Fahrbahn für Kraftfahrzeuge; Die Fahrer befolgen diese (Art. 9.1.1) und dürfen nur zum Überqueren (Art. 15.3) oder Überholen (Art. 16.5) auf die Seitenspur ausweichen (Art. 2.72)."
   },
   "rule-estep-leeftijd-2022": {
-    "question": "Ab welchem ​​Mindestalter darf man in Belgien ein motorisiertes Fahrzeug (z. B. einen E-Scooter) auf öffentlichen Straßen fahren?",
+    "question": "Ab welchem ​​Mindestalter dürfen Sie in Belgien ein motorisiertes Antriebsgerät (z. B. einen E-Scooter) auf öffentlichen Straßen fahren?",
     "options": [
       "Ab 12 Jahren",
       "Ab 14 Jahren",
@@ -933,7 +933,7 @@
       "Nein, es ist ausdrücklich verboten, Passagiere mit einer Treibladungsmaschine zu befördern",
       "Nur wenn der Passagier ein Kind unter 7 Jahren ist"
     ],
-    "explanation": "Artikel 44.2 verbietet ausdrücklich die Beförderung von Passagieren mit Treibstoffflugzeugen, mit Ausnahme von Flugzeugen, die speziell für den Passagiertransport gebaut wurden."
+    "explanation": "Artikel 44.2 verbietet ausdrücklich die Beförderung von Passagieren mit Treibstoffflugzeugen, mit Ausnahme von Flugzeugen, die speziell für die Passagierbeförderung gebaut wurden."
   },
   "rule-speed-pedelec-d9-2022": {
     "question": "Ist es einem Speed-Pedelec-Fahrer gestattet, einen Teil der öffentlichen Straße zu benutzen, der durch das Zeichen D9 (Fußgänger, Radfahrer und Mopeds der Klasse A) gekennzeichnet ist?",
@@ -945,7 +945,7 @@
     ],
     "explanation": "Durch den Königlichen Erlass vom 30. Juli 2022 (in Kraft getreten am 1. Oktober 2022, Art. 9.1.2° und 69.3) wurde die Erlaubnis für Fahrer von Speed-Pedelecs auf dem D9-Weg wiederhergestellt, es sei denn, ein Schild verweigert ihnen den Zugang.",
     "signTitle": "Reservierte Straße für Fußgänger, Radfahrer und zweirädrige Mopeds der Klasse A",
-    "signExplanation": "Das Schild D9 weist auf einen Teil der öffentlichen Straße hin, der Fußgängern, Radfahrern und Fahrern von zweirädrigen Mopeds der Klasse A (sowie Speed-Pedelecs, es sei denn, ein Schild verweigert ihnen den Zugang) vorbehalten ist (Art. 68.3 und 69.3 der Straßenverkehrsordnung)."
+    "signExplanation": "Das Schild D9 weist auf einen Teil der öffentlichen Straße hin, der Fußgängern, Radfahrern und Fahrern von zweirädrigen Mopeds der Klasse A (sowie Speed-Pedelecs, sofern ihnen der Zugang nicht durch ein Schild verwehrt wird) vorbehalten ist (Art. 68.3 und 69.3 der Straßenverkehrsordnung)."
   },
   "rule-velomobiel-2022": {
     "question": "Welche zusätzliche Sichtanforderung gilt für ein Velomobil (geschlossenes Liegefahrrad) mit einer Höhe von weniger als 1 Meter?",
@@ -980,7 +980,7 @@
     "explanation": "Seit dem 1. Januar 2021 gilt in der Region Brüssel-Hauptstadt die Regelgeschwindigkeitsbegrenzung von 30 km/h innerhalb geschlossener Ortschaften („Stadt 30“) (Beschluss der Regierung Brüssel-Hauptstadt vom 22. September 2021, Art. 11.2)."
   },
   "rec-b19": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Enge Passage, in der man dem Gegenverkehr Vorrang geben muss",
       "Enge Passage, in der der Gegenverkehr Ihnen Vorfahrt gewähren muss",
@@ -992,7 +992,7 @@
     "signExplanation": "Schild B19 besagt, dass in einer engen Passage Fahrern aus der Gegenrichtung Vorrang zu geben ist (Art. 67.3)."
   },
   "rec-b3": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Ankündigung des Zeichens B1 (Vorrang geben) im angegebenen Abstand",
       "Ankündigung des Zeichens B5 (Anhalten und Vorfahrt) im angegebenen Abstand",
@@ -1004,7 +1004,7 @@
     "signExplanation": "Schild B3 kündigt Schild B1 (mit Vorrang) im angegebenen ungefähren Abstand an (Art. 67 KB 1. Dezember 1975)."
   },
   "rec-b7": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Ankündigung des Zeichens B1 (Vorrang geben) im angegebenen Abstand",
       "Ankündigung des Zeichens B5 (Anhalten und Vorfahrt) im angegebenen Abstand",
@@ -1016,9 +1016,9 @@
     "signExplanation": "Das Zeichen B7 kündigt das Zeichen B5 (Anhalten und Vorfahrt) in der ungefähren angegebenen Entfernung an (Art. 67 KB vom 1. Dezember 1975)."
   },
   "rec-b11": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
-      "Beginn einer Prioritätsstraße",
+      "Beginn einer Vorfahrtsstraße",
       "Ankündigung des Endes der Vorfahrtsstraße in einiger Entfernung",
       "Ende der Vorfahrtsstraße",
       "Kreuzung mit Vorrang von rechts"
@@ -1028,7 +1028,7 @@
     "signExplanation": "Das Zeichen B11 zeigt das Ende einer Vorfahrtsstraße an (Art. 67 KB vom 1. Dezember 1975)."
   },
   "rec-b13": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Ende der Vorfahrtsstraße ab diesem Schild",
       "Beginn einer Vorfahrtsstraße in der angegebenen Entfernung",
@@ -1040,10 +1040,10 @@
     "signExplanation": "Das Schild B13 kündigt das Ende der Vorfahrtsstraße (Schild B11) in der ungefähren angegebenen Entfernung an (Art. 67 KB vom 1. Dezember 1975)."
   },
   "rec-b15": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Vorrang an der nächsten Kreuzung",
-      "Beginn einer Prioritätsstraße",
+      "Beginn einer Vorfahrtsstraße",
       "Kreuzung, an der der Vorrang von rechts gilt",
       "Enge Passage mit Vorrang vor dem Gegenverkehr"
     ],
@@ -1052,7 +1052,7 @@
     "signExplanation": "Das Schild B15 weist darauf hin, dass Fahrer an der nächsten Kreuzung Vorrang haben (Art. 67 KB vom 1. Dezember 1975)."
   },
   "rec-b21": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Enge Passage, in der man dem Gegenverkehr Vorrang geben muss",
       "Enge Passage mit Vorrang vor dem Gegenverkehr",
@@ -1064,7 +1064,7 @@
     "signExplanation": "Das Schild B21 weist auf eine enge Passage hin, in der Sie Vorrang vor entgegenkommenden Fahrern haben (Art. 67 KB vom 1. Dezember 1975)."
   },
   "rec-b22": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Pflichtradweg mit Rechtskurve",
       "Radfahrer und Speed-Pedelecs dürfen an roten Ampeln mit Vorrang geradeaus fahren",
@@ -1076,19 +1076,19 @@
     "signExplanation": "Das Schild B22 erlaubt Radfahrern und Fahrern von Speed-Pedelecs das Rechtsabbiegen an roten oder orange-gelben Ampeln, sofern sie Vorfahrt gewähren (Art. 67 KB vom 1. Dezember 1975)."
   },
   "rec-b23": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Radfahrer und Speed-Pedelecs dürfen an roten Ampeln rechts abbiegen, sofern sie Vorrang haben",
       "Pflichtradweg geradeaus",
       "Reservierte Spur für Radfahrer und Speed-Pedelecs",
       "Radfahrer und Speed-Pedelecs dürfen an roten Ampeln geradeaus fahren, sofern diese Vorfahrt gewähren"
     ],
-    "explanation": "Das Zeichen B23 erlaubt Radfahrern und Fahrern von Speed-Pedelecs das Geradeausfahren an roten oder orange-gelben Ampeln, sofern diese Vorfahrt gewähren (Art. 67 KB vom 1. Dezember 1975).",
+    "explanation": "Das Zeichen B23 erlaubt Radfahrern und Fahrern von Speed-Pedelecs das Geradeausfahren an roten oder orange-gelben Ampeln, sofern diese Vorfahrt gewähren (Art. 67 KB 1. Dezember 1975).",
     "signTitle": "Radfahrer und Speed-Pedelecs dürfen an roten Ampeln geradeaus fahren, sofern diese Vorfahrt gewähren",
-    "signExplanation": "Das Zeichen B23 erlaubt Radfahrern und Fahrern von Speed-Pedelecs das Geradeausfahren an roten oder orange-gelben Ampeln, sofern diese Vorfahrt gewähren (Art. 67 KB vom 1. Dezember 1975)."
+    "signExplanation": "Das Zeichen B23 erlaubt Radfahrern und Fahrern von Speed-Pedelecs das Geradeausfahren an roten oder orange-gelben Ampeln, sofern diese Vorfahrt gewähren (Art. 67 KB 1. Dezember 1975)."
   },
   "rec-c31a": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "An der nächsten Kreuzung ist das Linksabbiegen obligatorisch",
       "Das Linksabbiegen an der nächsten Kreuzung ist verboten",
@@ -1100,7 +1100,7 @@
     "signExplanation": "Das Schild C31a verbietet das Linksabbiegen an der nächsten Kreuzung in Pfeilrichtung (Art. 68.3)."
   },
   "rec-c33": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Rechtsabbiegeverbot",
       "Abbiegepflicht auf der Straße",
@@ -1112,22 +1112,22 @@
     "signExplanation": "Das Schild C33 verbietet Autofahrern das Wenden (U-Turn) bis zur nächsten Kreuzung (Art. 68.3)."
   },
   "rec-c39": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Überholverbot für alle Kraftfahrzeuge",
       "Zufahrt für LKW verboten",
       "Pflichtspur für LKW",
       "Überholverbot für Lkw mit einem zulässigen Gesamtgewicht von mehr als 3,5 Tonnen"
     ],
-    "explanation": "Das Zeichen C39 verbietet LKWs mit einer zulässigen Gesamtmasse von mehr als 3,5 Tonnen das Überholen eines Gespanns oder Kraftfahrzeugs mit mehr als zwei Rädern (Art. 68.3).",
+    "explanation": "Das Zeichen C39 verbietet Lkw mit einer zulässigen Gesamtmasse von mehr als 3,5 Tonnen das Überholen eines Gespanns oder eines Kraftfahrzeugs mit mehr als zwei Rädern (Art. 68.3).",
     "signTitle": "Überholverbot für Lkw mit einem zulässigen Gesamtgewicht von mehr als 3,5 Tonnen",
-    "signExplanation": "Das Zeichen C39 verbietet LKWs mit einer zulässigen Gesamtmasse von mehr als 3,5 Tonnen das Überholen eines Gespanns oder Kraftfahrzeugs mit mehr als zwei Rädern (Art. 68.3)."
+    "signExplanation": "Das Zeichen C39 verbietet Lkw mit einer zulässigen Gesamtmasse von mehr als 3,5 Tonnen das Überholen eines Gespanns oder eines Kraftfahrzeugs mit mehr als zwei Rädern (Art. 68.3)."
   },
   "rec-c5": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Zufahrt verboten für Fahrer von Kraftfahrzeugen mit mehr als zwei Rädern und Motorrädern mit Beiwagen",
-      "Einfahrtsverbot für alle Kraftfahrzeuge, einschließlich zweirädriger Motorräder ohne Beiwagen",
+      "Die Zufahrt ist für alle Kraftfahrzeuge, einschließlich zweirädriger Motorräder ohne Beiwagen, verboten",
       "Pflichtspur für Fahrgemeinschaften und Taxis",
       "Zugangsverbot für Fahrer von Fahrzeugen, die für den Gütertransport bestimmt sind"
     ],
@@ -1136,47 +1136,47 @@
     "signExplanation": "Das Zeichen C5 verbietet die Zufahrt für Fahrer von Kraftfahrzeugen mit mehr als zwei Rädern und Motorrädern mit Beiwagen (Art. 68 KB vom 1. Dezember 1975). Hier dürfen zweirädrige Motorräder ohne Beiwagen fahren."
   },
   "rec-c6": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Zufahrt für alle vierrädrigen landwirtschaftlichen Fahrzeuge und Traktoren verboten",
-      "Zufahrtsverbot für Fahrer von vierrädrigen Kraftfahrzeugen, die für unbefestigtes Gelände gebaut sind (Quads)",
+      "Zufahrt verboten für Fahrer von vierrädrigen Kraftfahrzeugen, die für unbefestigtes Gelände gebaut sind (Quads)",
       "Pflichtstrecke für Quads und Geländefahrzeuge",
       "Vierrädrige Mopeds sind verboten"
     ],
-    "explanation": "Zeichen C6 verbietet den Zutritt für Fahrer von vierrädrigen Kraftfahrzeugen mit offener Karosserie, motorradähnlichem Lenker und Sattel, die für unbefestigtes Gelände ausgelegt sind, wie z. B. Quads (Art. 68 KB vom 1. Dezember 1975).",
-    "signTitle": "Zufahrtsverbot für Fahrer von vierrädrigen Kraftfahrzeugen, die für unbefestigtes Gelände gebaut sind (Quads)",
-    "signExplanation": "Zeichen C6 verbietet den Zutritt für Fahrer von vierrädrigen Kraftfahrzeugen mit offener Karosserie, motorradähnlichem Lenker und Sattel, die für unbefestigtes Gelände ausgelegt sind, wie z. B. Quads (Art. 68 KB vom 1. Dezember 1975)."
+    "explanation": "Das Zeichen C6 verbietet den Zugang für Fahrer von vierrädrigen Motorfahrzeugen mit offener Karosserie, motorradähnlichem Lenker und Sattel, die für unbefestigtes Gelände, wie z. B. Quads, bestimmt sind (Art. 68 KB vom 1. Dezember 1975).",
+    "signTitle": "Zufahrt verboten für Fahrer von vierrädrigen Kraftfahrzeugen, die für unbefestigtes Gelände gebaut sind (Quads)",
+    "signExplanation": "Das Zeichen C6 verbietet den Zugang für Fahrer von vierrädrigen Motorfahrzeugen mit offener Karosserie, motorradähnlichem Lenker und Sattel, die für unbefestigtes Gelände, wie z. B. Quads, bestimmt sind (Art. 68 KB vom 1. Dezember 1975)."
   },
   "rec-c7": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Kein Zutritt für Mopeds und Speed-Pedelecs",
       "Pflichtparkstreifen für zweirädrige Kraftfahrzeuge",
       "Zufahrt für Motorradfahrer verboten",
       "Überholverbot für alle Motorradfahrer"
     ],
-    "explanation": "Das Schild C7 verbietet Motorradfahrern die Zufahrt (Art. 68 KB vom 1. Dezember 1975).",
+    "explanation": "Schild C7 verbietet Motorradfahrern die Zufahrt (Art. 68 KB vom 1. Dezember 1975).",
     "signTitle": "Zufahrt für Motorradfahrer verboten",
-    "signExplanation": "Das Schild C7 verbietet Motorradfahrern die Zufahrt (Art. 68 KB vom 1. Dezember 1975)."
+    "signExplanation": "Schild C7 verbietet Motorradfahrern die Zufahrt (Art. 68 KB vom 1. Dezember 1975)."
   },
   "rec-c9": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Der Zutritt für Fahrräder und S-Pedelecs ist verboten",
       "Pflichtradweg für Mopeds der Klasse B",
       "Zufahrt für alle motorisierten Zweiräder über 50 ccm verboten",
       "Zufahrt für Mopedfahrer verboten"
     ],
-    "explanation": "Schild C9 verbietet Mopedfahrern die Zufahrt (Art. 68 KB vom 1. Dezember 1975).",
+    "explanation": "Das Schild C9 verbietet die Zufahrt für Mopedfahrer (Art. 68 KB vom 1. Dezember 1975).",
     "signTitle": "Zufahrt für Mopedfahrer verboten",
-    "signExplanation": "Schild C9 verbietet Mopedfahrern die Zufahrt (Art. 68 KB vom 1. Dezember 1975)."
+    "signExplanation": "Das Schild C9 verbietet die Zufahrt für Mopedfahrer (Art. 68 KB vom 1. Dezember 1975)."
   },
   "rec-c11": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Zufahrt für Fahrradfahrer verboten",
       "Pflichtradweg für Radfahrer und Speed-Pedelecs",
-      "Zutritt für Fußgänger und persönliche Mobilitätsgeräte verboten",
+      "Zugang für Fußgänger und Mobilitätshilfen verboten",
       "Ende des obligatorischen Radweges"
     ],
     "explanation": "Schild C11 verbietet Fahrradfahrern den Zutritt (Art. 68 KB vom 1. Dezember 1975).",
@@ -1184,33 +1184,33 @@
     "signExplanation": "Schild C11 verbietet Fahrradfahrern den Zutritt (Art. 68 KB vom 1. Dezember 1975)."
   },
   "rec-c13": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Zutritt für Reiter und Reittiere verboten",
       "Zugang für angespannte Fahrer verboten",
-      "Pflichtstrecke für Pferde und Planwagen",
+      "Pflichtroute für Pferde und Planwagen",
       "Zufahrt für landwirtschaftliche Fahrzeuge verboten"
     ],
-    "explanation": "Das Schild C13 verbietet die Zufahrt für Fahrer von Fahrzeugen, die überlastet sind (Art. 68 KB vom 1. Dezember 1975).",
+    "explanation": "Das Zeichen C13 verbietet die Zufahrt für Fahrer von Fahrzeugen, die überlastet sind (Art. 68 KB vom 1. Dezember 1975).",
     "signTitle": "Zugang für angespannte Fahrer verboten",
-    "signExplanation": "Das Schild C13 verbietet die Zufahrt für Fahrer von Fahrzeugen, die überlastet sind (Art. 68 KB vom 1. Dezember 1975)."
+    "signExplanation": "Das Zeichen C13 verbietet die Zufahrt für Fahrer von Fahrzeugen, die überlastet sind (Art. 68 KB vom 1. Dezember 1975)."
   },
   "rec-c15": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Zugang für angespannte Fahrer verboten",
       "Pflichtweg für Reiter (Reitweg)",
       "Kein Zutritt für Fahrer",
-      "Warnung beim Überqueren von Rindern oder Pferden"
+      "Warnung vor dem Überqueren von Rindern oder Pferden"
     ],
     "explanation": "Schild C15 verbietet Reitern den Zutritt (Art. 68 KB vom 1. Dezember 1975).",
     "signTitle": "Kein Zutritt für Fahrer",
     "signExplanation": "Schild C15 verbietet Reitern den Zutritt (Art. 68 KB vom 1. Dezember 1975)."
   },
   "rec-c17": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
-      "Zutritt für Fußgänger mit Kinderwagen verboten",
+      "Kein Zutritt für Fußgänger mit Kinderwagen",
       "Obligatorischer Be- und Entladeplatz für Bollerwagen",
       "Kein Zugang für Schubkarren auf dem Gehweg",
       "Zufahrt für Karrenfahrer verboten"
@@ -1220,7 +1220,7 @@
     "signExplanation": "Schild C17 verbietet den Zutritt für Handkarrenfahrer (Art. 68 KB vom 1. Dezember 1975)."
   },
   "rec-c19": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Fußgängerzugang verboten",
       "Pflichtweg für Fußgänger (Fußgängerweg)",
@@ -1232,11 +1232,11 @@
     "signExplanation": "Das Schild C19 verbietet den Fußgängerzugang (Art. 68 KB vom 1. Dezember 1975)."
   },
   "rec-c21": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Die Zufahrt ist für Fahrzeuge mit einer zulässigen Höchstmasse (MTM) über der angegebenen Masse verboten",
       "Der Zutritt ist für Fahrer von Fahrzeugen verboten, deren beladene Masse die angegebene Masse überschreitet",
-      "Vorgeschriebene maximale Achslast pro Achse für Lkw",
+      "Vorgeschriebene maximale Achslast pro Achse für LKW",
       "Empfohlenes Höchstgewicht für LKW und Busse"
     ],
     "explanation": "Das Zeichen C21 verbietet die Zufahrt für Fahrer von Fahrzeugen, deren tatsächliche Gesamtmasse (MBTA) höher ist als die angegebene Masse (Art. 68 KB vom 1. Dezember 1975).",
@@ -1244,9 +1244,9 @@
     "signExplanation": "Das Zeichen C21 verbietet die Zufahrt für Fahrer von Fahrzeugen, deren tatsächliche Gesamtmasse (MBTA) höher ist als die angegebene Masse (Art. 68 KB vom 1. Dezember 1975)."
   },
   "rec-c22": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
-      "Zufahrt für den regulären öffentlichen Nahverkehr verboten",
+      "Zugang für den öffentlichen Linienverkehr verboten",
       "Parkverbot für Busse und Reisebusse",
       "Zufahrt für Busfahrer verboten",
       "Reservierte Spur für Busse und Reisebusse"
@@ -1256,19 +1256,19 @@
     "signExplanation": "Das Schild C22 verbietet den Zutritt für Busfahrer (Art. 68 KB vom 1. Dezember 1975)."
   },
   "rec-c23": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Zufahrt für alle Kraftfahrzeuge mit Anhänger verboten",
       "Überholverbot für LKW über 3,5 Tonnen",
       "Pflichtspur für den Güterverkehr",
-      "Der Zutritt ist für Fahrer von Kraftfahrzeugen und Schleppern, die für die Güterbeförderung konzipiert und gebaut sind, verboten"
+      "Der Zugang ist für Fahrer von Kraftfahrzeugen und Schleppern, die für die Güterbeförderung konzipiert und gebaut sind, verboten"
     ],
     "explanation": "Das Zeichen C23 verbietet den Zugang für Fahrer von Kraftfahrzeugen und Schleppern, die für die Güterbeförderung konzipiert und gebaut sind (Art. 68 KB vom 1. Dezember 1975).",
-    "signTitle": "Der Zutritt ist für Fahrer von Kraftfahrzeugen und Schleppern, die für die Güterbeförderung konzipiert und gebaut sind, verboten",
+    "signTitle": "Der Zugang ist für Fahrer von Kraftfahrzeugen und Schleppern, die für die Güterbeförderung konzipiert und gebaut sind, verboten",
     "signExplanation": "Das Zeichen C23 verbietet den Zugang für Fahrer von Kraftfahrzeugen und Schleppern, die für die Güterbeförderung konzipiert und gebaut sind (Art. 68 KB vom 1. Dezember 1975)."
   },
   "rec-c24a": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Zugangsverbot für Fahrer von Fahrzeugen, die gefährliche Güter transportieren",
       "Vorgeschriebene Fahrtrichtung für Fahrzeuge, die gefährliche Güter transportieren",
@@ -1280,55 +1280,55 @@
     "signExplanation": "Das Zeichen C24a verbietet den Fahrern von Fahrzeugen, die gefährliche Güter transportieren, den Zutritt (Art. 68 KB vom 1. Dezember 1975)."
   },
   "rec-c24b": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
-      "Zufahrt für alle Fahrzeuge mit Flüssiggas- oder Erdgasanlage verboten",
+      "Die Zufahrt ist allen Fahrzeugen mit einer Flüssiggas- oder Erdgasanlage untersagt",
       "Kein Zutritt für Fahrer von Fahrzeugen, die gefährliche brennbare oder explosive Stoffe transportieren",
       "Einfahrtsverbot für Fahrzeuge, die wassergefährdende Stoffe transportieren",
       "Verbot von offenem Feuer und Rauchen in der Nähe von Tankstellen"
     ],
-    "explanation": "Das Zeichen C24b verbietet den Zugang für Fahrer von Fahrzeugen, die gefährliche brennbare oder explosive Stoffe transportieren (Art. 68 Königlicher Erlass vom 1. Dezember 1975).",
+    "explanation": "Das Schild C24b verbietet den Zugang für Fahrer von Fahrzeugen, die gefährliche brennbare oder explosive Stoffe transportieren (Art. 68 Königlicher Erlass vom 1. Dezember 1975).",
     "signTitle": "Kein Zutritt für Fahrer von Fahrzeugen, die gefährliche brennbare oder explosive Stoffe transportieren",
-    "signExplanation": "Das Zeichen C24b verbietet den Zugang für Fahrer von Fahrzeugen, die gefährliche brennbare oder explosive Stoffe transportieren (Art. 68 Königlicher Erlass vom 1. Dezember 1975)."
+    "signExplanation": "Das Schild C24b verbietet den Zugang für Fahrer von Fahrzeugen, die gefährliche brennbare oder explosive Stoffe transportieren (Art. 68 Königlicher Erlass vom 1. Dezember 1975)."
   },
   "rec-c24c": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Zufahrt für Fahrzeuge, die brennbare Gase transportieren, verboten",
       "Verbot der Einleitung von Flüssigkeiten oder Abfällen in Oberflächengewässer",
-      "Keine Zufahrt für Fahrer von Fahrzeugen, die gefährliche Schadstoffe transportieren",
+      "Kein Zutritt für Fahrer von Fahrzeugen, die gefährliche Schadstoffe transportieren",
       "Warnung vor einem Wasserentnahmegebiet mit erhöhter Überschwemmungsgefahr"
     ],
-    "explanation": "Das Zeichen C24c verbietet den Fahrern von Fahrzeugen, die gefährliche Schadstoffe transportieren, den Zutritt (Art. 68 KB vom 1. Dezember 1975).",
-    "signTitle": "Keine Zufahrt für Fahrer von Fahrzeugen, die gefährliche Schadstoffe transportieren",
-    "signExplanation": "Das Zeichen C24c verbietet den Fahrern von Fahrzeugen, die gefährliche Schadstoffe transportieren, den Zutritt (Art. 68 KB vom 1. Dezember 1975)."
+    "explanation": "Das Schild C24c verbietet den Fahrern von Fahrzeugen, die gefährliche Schadstoffe transportieren, den Zutritt (Art. 68 KB vom 1. Dezember 1975).",
+    "signTitle": "Kein Zutritt für Fahrer von Fahrzeugen, die gefährliche Schadstoffe transportieren",
+    "signExplanation": "Das Schild C24c verbietet den Fahrern von Fahrzeugen, die gefährliche Schadstoffe transportieren, den Zutritt (Art. 68 KB vom 1. Dezember 1975)."
   },
   "rec-c25": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Keine Zufahrt für Gelenkbusse und LKW mit Anhänger",
       "Empfohlener Mindestabstand zu vorausfahrenden Fahrzeugen für lange Fahrzeuge",
       "Verpflichtender Folgeabstand von mindestens der angegebenen Distanz in Metern",
-      "Der Zutritt ist Fahrern von Fahrzeugen oder Anhängern untersagt, deren Länge einschließlich Ladung die angegebene Länge überschreitet"
+      "Zufahrt verboten für Fahrer von Fahrzeugen oder Anhängern, deren Länge einschließlich Ladung die angegebene Länge überschreitet"
     ],
-    "explanation": "Das Schild C25 verbietet den Zugang für Fahrer von Fahrzeugen oder Anhängern, deren Länge einschließlich Ladung größer ist als auf dem Schild angegeben (Art. 68 KB vom 1. Dezember 1975).",
-    "signTitle": "Der Zutritt ist Fahrern von Fahrzeugen oder Anhängern untersagt, deren Länge einschließlich Ladung die angegebene Länge überschreitet",
-    "signExplanation": "Das Schild C25 verbietet den Zugang für Fahrer von Fahrzeugen oder Anhängern, deren Länge einschließlich Ladung größer ist als auf dem Schild angegeben (Art. 68 KB vom 1. Dezember 1975)."
+    "explanation": "Das Schild C25 verbietet den Zutritt für Fahrer von Fahrzeugen oder Anhängern, deren Länge einschließlich Ladung größer ist als auf dem Schild angegeben (Art. 68 KB vom 1. Dezember 1975).",
+    "signTitle": "Zufahrt verboten für Fahrer von Fahrzeugen oder Anhängern, deren Länge einschließlich Ladung die angegebene Länge überschreitet",
+    "signExplanation": "Das Schild C25 verbietet den Zutritt für Fahrer von Fahrzeugen oder Anhängern, deren Länge einschließlich Ladung größer ist als auf dem Schild angegeben (Art. 68 KB vom 1. Dezember 1975)."
   },
   "rec-c27": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Zufahrt verboten für Fahrer von Fahrzeugen, deren Breite einschließlich Ladung größer als die angegebene ist",
       "Warnung vor einer Spurverengung auf beiden Straßenseiten",
       "Empfohlene Mindestdurchfahrtsbreite für landwirtschaftliche Fahrzeuge",
       "Das Überholen auf einer Spur, die schmaler als die angegebene Spur ist, ist verboten"
     ],
-    "explanation": "Das Zeichen C27 verbietet die Zufahrt für Fahrer von Fahrzeugen, deren Breite einschließlich Ladung das angegebene Maß übersteigt (Art. 68 KB vom 1. Dezember 1975).",
+    "explanation": "Das Zeichen C27 verbietet die Einfahrt für Fahrer von Fahrzeugen, deren Breite einschließlich Ladung das angegebene Maß übersteigt (Art. 68 KB vom 1. Dezember 1975).",
     "signTitle": "Zufahrt verboten für Fahrer von Fahrzeugen, deren Breite einschließlich Ladung größer als die angegebene ist",
-    "signExplanation": "Das Zeichen C27 verbietet die Zufahrt für Fahrer von Fahrzeugen, deren Breite einschließlich Ladung das angegebene Maß übersteigt (Art. 68 KB vom 1. Dezember 1975)."
+    "signExplanation": "Das Zeichen C27 verbietet die Einfahrt für Fahrer von Fahrzeugen, deren Breite einschließlich Ladung das angegebene Maß übersteigt (Art. 68 KB vom 1. Dezember 1975)."
   },
   "rec-c29": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Warnung vor einem Viadukt oder Tunnel mit begrenzter Durchfahrtshöhe",
       "Zufahrt verboten für Fahrer von Fahrzeugen, deren Höhe einschließlich Ladung die angegebene Höhe überschreitet",
@@ -1340,19 +1340,19 @@
     "signExplanation": "Das Zeichen C29 verbietet den Zutritt für Fahrer von Fahrzeugen, deren Höhe einschließlich Ladung die angegebene Höhe übersteigt (Art. 68 KB vom 1. Dezember 1975)."
   },
   "rec-c31b": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Vorgeschriebene Fahrtrichtung, an der nächsten Kreuzung rechts abbiegen",
       "Einbahnstraße ohne Zufahrt von rechts",
-      "Verbot an der nächsten Kreuzung, in die durch den Pfeil (rechts) angezeigte Richtung abzubiegen",
+      "Abbiegeverbot an der nächsten Kreuzung in die durch den Pfeil (rechts) angezeigte Richtung",
       "Sackgasse bei der nächsten Ausfahrt rechts"
     ],
     "explanation": "Das Schild C31b verbietet an der nächsten Kreuzung das Abbiegen in die durch den Pfeil angezeigte Richtung, hier rechts abbiegen (Art. 68 KB vom 1. Dezember 1975).",
-    "signTitle": "Verbot an der nächsten Kreuzung, in die durch den Pfeil (rechts) angezeigte Richtung abzubiegen",
+    "signTitle": "Abbiegeverbot an der nächsten Kreuzung in die durch den Pfeil (rechts) angezeigte Richtung",
     "signExplanation": "Das Schild C31b verbietet an der nächsten Kreuzung das Abbiegen in die durch den Pfeil angezeigte Richtung, hier rechts abbiegen (Art. 68 KB vom 1. Dezember 1975)."
   },
   "rec-c37": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Beginn einer Zone mit Überholverbot für alle Kraftfahrzeuge",
       "Ende des Überholverbots nur für LKW über 3,5 Tonnen",
@@ -1364,7 +1364,7 @@
     "signExplanation": "Das Zeichen C37 zeigt das Ende des durch das Zeichen C35 verhängten Überholverbots an (Art. 68 KB vom 1. Dezember 1975)."
   },
   "rec-c41": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Ende des Linksüberholverbots für Lkw mit einem zulässigen Gesamtgewicht von mehr als 3,5 Tonnen",
       "Ende des allgemeinen Überholverbots für Pkw und Motorräder",
@@ -1376,7 +1376,7 @@
     "signExplanation": "Das Zeichen C41 weist auf das Ende des Überholverbots für Fahrer von Fahrzeugen zur Güterbeförderung mit einem zulässigen Gesamtgewicht von mehr als 3,5 Tonnen hin (Ende des Zeichens C39, Art. 68 KB, 1. Dezember 1975)."
   },
   "rec-c43": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Empfohlene Geschwindigkeit bis zur nächsten Kreuzung",
       "Fahrverbot mit höherer als der angegebenen Geschwindigkeit bis zur nächsten Kreuzung",
@@ -1388,7 +1388,7 @@
     "signExplanation": "Das Schild C43 verbietet das Fahren mit höherer Geschwindigkeit als angegeben vom Schild bis zur nächsten Kreuzung, sofern nicht anders angegeben (Art. 68 KB vom 1. Dezember 1975)."
   },
   "rec-c45": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Ende aller örtlichen Fahrverbote",
       "Ende der empfohlenen Geschwindigkeitsbegrenzung auf dem betreffenden Straßenabschnitt",
@@ -1400,31 +1400,31 @@
     "signExplanation": "Das Zeichen C45 zeigt das Ende der zuvor durch das Zeichen C43 verhängten Geschwindigkeitsbeschränkung an (Art. 68 KB vom 1. Dezember 1975)."
   },
   "rec-c46": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Ende aller Park- und Halteverbote auf dieser Straße",
       "Ende der Autobahn oder Schnellstraße",
       "Ende der Vorfahrtsstraße an der nächsten Kreuzung",
-      "Ende aller lokalen Verbote für fahrende Fahrzeuge"
+      "Ende aller örtlichen Fahrverbote"
     ],
     "explanation": "Das Zeichen C46 weist auf das Ende aller örtlichen Verbote hin, die bisher für fahrende Fahrzeuge gelten, wie Geschwindigkeitsbegrenzungen und Überholverbote (Art. 68 KB vom 1. Dezember 1975).",
-    "signTitle": "Ende aller lokalen Verbote für fahrende Fahrzeuge",
+    "signTitle": "Ende aller örtlichen Fahrverbote",
     "signExplanation": "Das Zeichen C46 weist auf das Ende aller örtlichen Verbote hin, die bisher für fahrende Fahrzeuge gelten, wie Geschwindigkeitsbegrenzungen und Überholverbote (Art. 68 KB vom 1. Dezember 1975)."
   },
   "rec-c47": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Ende der Autobahnmautzone",
       "Obligatorische Brückenwaage und Achslastkontrolle für LKW",
       "Grenzübergang, an dem nur LKWs anhalten müssen",
       "Mautstelle: Vorbeifahrverbot ohne Anhalten"
     ],
-    "explanation": "Das Zeichen C47 (Mautstelle oder Steuer) verhängt ein Vorbeifahrverbot ohne Anhalten (Art. 68 KB vom 1. Dezember 1975).",
+    "explanation": "Das Schild C47 (Mautstelle oder Steuer) verhängt ein Vorbeifahrverbot ohne Anhalten (Art. 68 KB vom 1. Dezember 1975).",
     "signTitle": "Mautstelle: Vorbeifahrverbot ohne Anhalten",
-    "signExplanation": "Das Zeichen C47 (Mautstelle oder Steuer) verhängt ein Vorbeifahrverbot ohne Anhalten (Art. 68 KB vom 1. Dezember 1975)."
+    "signExplanation": "Das Schild C47 (Mautstelle oder Steuer) verhängt ein Vorbeifahrverbot ohne Anhalten (Art. 68 KB vom 1. Dezember 1975)."
   },
   "rec-d9": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Obligatorischer Radweg, auf dem Fußgänger verboten sind",
       "Fußgängerzone, in der Fahrräder nicht erlaubt sind",
@@ -1436,19 +1436,19 @@
     "signExplanation": "Das Schild D9 weist auf einen Teil der öffentlichen Straße hin, der für den Verkehr von Fußgängern, Radfahrern und zweirädrigen Mopeds der Klasse A reserviert ist (Art. 69.3)."
   },
   "rec-d10": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Radweg ausschließlich für Rennräder",
       "Teil der öffentlichen Straße, der Fußgängern und Radfahrern vorbehalten ist (ohne Mopeds)",
       "Beginn eines Wohngebiets",
       "Vorgeschriebener Fußweg, auf dem Radfahrer nicht fahren dürfen"
     ],
-    "explanation": "Das Schild D10 weist auf einen für Fußgänger und Radfahrer reservierten Weg hin; Im Gegensatz zum Schild D9 dürfen hier keine Mopeds der Klasse A fahren (Art. 69.3).",
+    "explanation": "Schild D10 weist auf einen für Fußgänger und Radfahrer reservierten Weg hin; Im Gegensatz zum Schild D9 dürfen hier keine Mopeds der Klasse A fahren (Art. 69.3).",
     "signTitle": "Teil der öffentlichen Straße, der Fußgängern und Radfahrern vorbehalten ist (ohne Mopeds)",
-    "signExplanation": "Das Schild D10 weist auf einen für Fußgänger und Radfahrer reservierten Weg hin; Im Gegensatz zum Schild D9 dürfen hier keine Mopeds der Klasse A fahren (Art. 69.3)."
+    "signExplanation": "Schild D10 weist auf einen für Fußgänger und Radfahrer reservierten Weg hin; Im Gegensatz zum Schild D9 dürfen hier keine Mopeds der Klasse A fahren (Art. 69.3)."
   },
   "rec-d1b": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Vorgeschriebene Fahrtrichtung: links",
       "Vorgeschriebene Fahrtrichtung: geradeaus fahren",
@@ -1460,7 +1460,7 @@
     "signExplanation": "Dieses Gebotszeichen (D1) verpflichtet Sie, der Fahrtrichtung des Pfeils zu folgen, hier links (Art. 69.3 der Straßenverkehrsordnung)."
   },
   "rec-d1c": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Verpflichtung, das Hindernis rechts zu überwinden",
       "Verpflichtung, das Hindernis links zu überwinden",
@@ -1472,19 +1472,19 @@
     "signExplanation": "Das Zeichen D1c schreibt vor, dass das Hindernis auf der durch den Pfeil angezeigten Seite, hier links, überwunden werden muss (Art. 69 KB vom 1. Dezember 1975)."
   },
   "rec-d1d": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Verpflichtung, das Hindernis links zu überwinden",
       "Vorgeschriebene Fahrtrichtung: An der Kreuzung rechts abbiegen",
       "Verpflichtung, das Hindernis rechts zu überwinden",
       "Gefährliche Rechtskurve"
     ],
-    "explanation": "Das Zeichen D1d verpflichtet dazu, das Hindernis auf der durch den Pfeil angezeigten Seite, hier rechts, zu passieren (Art. 69 KB vom 1. Dezember 1975).",
+    "explanation": "Das Zeichen D1d verpflichtet dazu, das Hindernis auf der durch den Pfeil angezeigten Seite, hier rechts, zu überwinden (Art. 69 Königlicher Erlass vom 1. Dezember 1975).",
     "signTitle": "Verpflichtung, das Hindernis rechts zu überwinden",
-    "signExplanation": "Das Zeichen D1d verpflichtet dazu, das Hindernis auf der durch den Pfeil angezeigten Seite, hier rechts, zu passieren (Art. 69 KB vom 1. Dezember 1975)."
+    "signExplanation": "Das Zeichen D1d verpflichtet dazu, das Hindernis auf der durch den Pfeil angezeigten Seite, hier rechts, zu überwinden (Art. 69 Königlicher Erlass vom 1. Dezember 1975)."
   },
   "rec-d1e": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Vorgeschriebene Fahrtrichtung: geradeaus fahren",
       "Verpflichtung, das Hindernis links zu überwinden",
@@ -1496,19 +1496,19 @@
     "signExplanation": "Dieses Gebotszeichen (D1, alternative Version) verpflichtet Sie, der Fahrtrichtung des Pfeils zu folgen, hier links (Art. 69.3 der Straßenverkehrsordnung)."
   },
   "rec-d3": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Verpflichtung, einer der durch die Pfeile angezeigten Anweisungen zu folgen",
       "Vorgeschriebene Fahrtrichtung: nur geradeaus",
       "Kreuzung, an der der Vorrang von rechts gilt",
       "Verbot des Geradeausfahrens oder Rechtsabbiegens"
     ],
-    "explanation": "Das Schild D3 verpflichtet die Fahrer, einer der durch die Pfeile angezeigten Richtungen zu folgen, entweder geradeaus oder rechts (Art. 69 Königlicher Erlass vom 1. Dezember 1975).",
+    "explanation": "Das Zeichen D3 verpflichtet die Fahrer, einer der durch die Pfeile angezeigten Richtungen zu folgen, entweder geradeaus oder rechts (Art. 69 Königlicher Erlass vom 1. Dezember 1975).",
     "signTitle": "Verpflichtung, einer der durch die Pfeile angezeigten Anweisungen zu folgen",
-    "signExplanation": "Das Schild D3 verpflichtet die Fahrer, einer der durch die Pfeile angezeigten Richtungen zu folgen, entweder geradeaus oder rechts (Art. 69 Königlicher Erlass vom 1. Dezember 1975)."
+    "signExplanation": "Das Zeichen D3 verpflichtet die Fahrer, einer der durch die Pfeile angezeigten Richtungen zu folgen, entweder geradeaus oder rechts (Art. 69 Königlicher Erlass vom 1. Dezember 1975)."
   },
   "rec-d4": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Zufahrtsverbot für Fahrzeuge, die gefährliche Güter transportieren",
       "Vorgeschriebene Fahrtrichtung für Fahrzeuge, die gefährliche Güter transportieren",
@@ -1520,7 +1520,7 @@
     "signExplanation": "Das Zeichen D4 schreibt eine zwingende Fahrtrichtung für Fahrzeuge vor, die gefährliche Güter transportieren (Art. 69 KB vom 1. Dezember 1975)."
   },
   "rec-d11": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Obligatorischer Radweg, auf dem Fußgänger zu Fuß gehen dürfen",
       "Fußgängerzone, in der Radfahrer im Schritttempo fahren dürfen",
@@ -1532,7 +1532,7 @@
     "signExplanation": "Schild D11 schreibt einen obligatorischen Weg für Fußgänger vor; Dieser Weg ist ausschließlich Fußgängern vorbehalten (Art. 69 KB vom 1. Dezember 1975)."
   },
   "rec-d13": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Zufahrtsverbot für Fahrer und angespannte Fahrzeuge",
       "Warnung vor Überquerung von Großwild oder Vieh",
@@ -1544,7 +1544,7 @@
     "signExplanation": "Schild D13 schreibt eine obligatorische Route für Fahrer vor; Dieser Weg ist ausschließlich Reittieren vorbehalten (Art. 69 KB vom 1. Dezember 1975)."
   },
   "rec-e3": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Nur Parken verboten",
       "Reservierter Parkplatz",
@@ -1556,31 +1556,31 @@
     "signExplanation": "Zeichen E3 bedeutet, dass sowohl das Stehen als auch das Parken auf der Seite der öffentlichen Straße, auf der sich das Zeichen befindet, verboten ist (Art. 70.2.1)."
   },
   "rec-e5": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Parkverbot vom 1. bis 15. des Monats",
       "Parkverbot vom 16. bis zum Monatsende",
       "Stillstand und Parkverbot in den ersten zwei Wochen",
       "Reservierter Parkplatz für ein Fahrzeug"
     ],
-    "explanation": "Das Schild E5 verhängt vom 1. bis zum 15. des Monats ein Parkverbot am Straßenrand, an dem es sich befindet (Art. 70.2.1).",
+    "explanation": "Das Schild E5 verhängt ein Parkverbot am Straßenrand, an dem es sich befindet, vom 1. bis zum 15. des Monats (Art. 70.2.1).",
     "signTitle": "Parkverbot vom 1. bis 15. des Monats",
-    "signExplanation": "Das Schild E5 verhängt vom 1. bis zum 15. des Monats ein Parkverbot am Straßenrand, an dem es sich befindet (Art. 70.2.1)."
+    "signExplanation": "Das Schild E5 verhängt ein Parkverbot am Straßenrand, an dem es sich befindet, vom 1. bis zum 15. des Monats (Art. 70.2.1)."
   },
   "rec-e7": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Parkverbot vom 1. bis 15. des Monats",
       "Parkverbot vom 16. bis zum Monatsende",
       "An Feiertagen und Wochenenden ist das Parken verboten",
       "Alternativparken mit einer maximalen Parkdauer von 2 Stunden"
     ],
-    "explanation": "Das Schild E7 verhängt vom 16. bis zum Monatsende ein Parkverbot am Straßenrand, an dem es sich befindet (Art. 70.2.1).",
+    "explanation": "Das Zeichen E7 verhängt ein Parkverbot am Straßenrand, an dem es sich befindet, vom 16. bis zum Ende des Monats (Art. 70.2.1).",
     "signTitle": "Parkverbot vom 16. bis zum Monatsende",
-    "signExplanation": "Das Schild E7 verhängt vom 16. bis zum Monatsende ein Parkverbot am Straßenrand, an dem es sich befindet (Art. 70.2.1)."
+    "signExplanation": "Das Zeichen E7 verhängt ein Parkverbot am Straßenrand, an dem es sich befindet, vom 16. bis zum Ende des Monats (Art. 70.2.1)."
   },
   "rec-e9a": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Parkplatz für Krankenwagen",
       "Parkverbot für Behinderte",
@@ -1592,55 +1592,55 @@
     "signExplanation": "Das Schild E9a mit Rollstuhlsymbol weist darauf hin, dass das Parken ausschließlich für Fahrzeuge reserviert ist, die von Menschen mit Behinderungen mit einem speziellen Parkausweis (Art. 70.2.1) genutzt werden."
   },
   "rec-e9b": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Parkplätze nur für LKWs und Busse",
       "Parkpflicht auf dem Hochstreifen",
       "Parken nur für Motorräder, Pkw, Dual-Use-Pkw und Kleinbusse",
       "Parkplatz für Fahrgemeinschaftsfahrzeuge reserviert"
     ],
-    "explanation": "Das Schild E9b weist darauf hin, dass das Parken ausschließlich für Motorräder, Personenkraftwagen, Mehrzweckfahrzeuge und Kleinbusse reserviert ist (Art. 70.2.1).",
+    "explanation": "Das Zeichen E9b weist darauf hin, dass das Parken ausschließlich Motorrädern, Personenkraftwagen, Mehrzweckfahrzeugen und Kleinbussen vorbehalten ist (Art. 70.2.1).",
     "signTitle": "Parken nur für Motorräder, Pkw, Dual-Use-Pkw und Kleinbusse",
-    "signExplanation": "Das Schild E9b weist darauf hin, dass das Parken ausschließlich für Motorräder, Personenkraftwagen, Mehrzweckfahrzeuge und Kleinbusse reserviert ist (Art. 70.2.1)."
+    "signExplanation": "Das Zeichen E9b weist darauf hin, dass das Parken ausschließlich Motorrädern, Personenkraftwagen, Mehrzweckfahrzeugen und Kleinbussen vorbehalten ist (Art. 70.2.1)."
   },
   "rec-e9c": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
-      "Parkverbot für Fahrzeuge, die schwerer als 3,5 Tonnen sind",
+      "Parkverbot für Fahrzeuge schwerer als 3,5 Tonnen",
       "Platz zum Be- und Entladen von Waren",
-      "Parkpflicht für Lkw auf der Standspur",
+      "Parkpflicht für LKWs auf der Standspur",
       "Parkplätze nur für leichte LKWs und LKWs"
     ],
-    "explanation": "Das Schild E9c weist darauf hin, dass das Parken ausschließlich leichten Lastkraftwagen und Lastkraftwagen vorbehalten ist (Art. 70.2.1).",
+    "explanation": "Das Zeichen E9c weist darauf hin, dass das Parken ausschließlich leichten Lastkraftwagen und Lastkraftwagen vorbehalten ist (Art. 70.2.1).",
     "signTitle": "Parkplätze nur für leichte LKWs und LKWs",
-    "signExplanation": "Das Schild E9c weist darauf hin, dass das Parken ausschließlich leichten Lastkraftwagen und Lastkraftwagen vorbehalten ist (Art. 70.2.1)."
+    "signExplanation": "Das Zeichen E9c weist darauf hin, dass das Parken ausschließlich leichten Lastkraftwagen und Lastkraftwagen vorbehalten ist (Art. 70.2.1)."
   },
   "rec-e9d": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Parkplätze nur für Reisebusse",
       "Haltestelle für Stadtbusse des öffentlichen Nahverkehrs",
       "Parkplatz für den Schultransport reserviert",
-      "Verbot für Busse, die Fahrgästen das Ein- und Aussteigen erlauben"
+      "Verbot für Busse, die Fahrgästen das Ein- und Aussteigen ermöglichen"
     ],
-    "explanation": "Das Schild E9d weist auf einen ausschließlich für Reisebusse reservierten Parkplatz hin (Art. 70.2.1).",
+    "explanation": "Das Zeichen E9d weist auf einen ausschließlich für Reisebusse reservierten Parkplatz hin (Art. 70.2.1).",
     "signTitle": "Parkplätze nur für Reisebusse",
-    "signExplanation": "Das Schild E9d weist auf einen ausschließlich für Reisebusse reservierten Parkplatz hin (Art. 70.2.1)."
+    "signExplanation": "Das Zeichen E9d weist auf einen ausschließlich für Reisebusse reservierten Parkplatz hin (Art. 70.2.1)."
   },
   "rec-e9e": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Parkpflicht auf der Straße",
       "Parkpflicht am Straßenrand oder auf dem Gehweg",
       "Parkpflicht, teilweise am Straßenrand oder auf dem Gehweg",
       "Das Parken auf dem Gehweg ist verboten"
     ],
-    "explanation": "Das Zeichen E9e verpflichtet Fahrer, das Fahrzeug vollständig am Straßenrand oder auf dem Gehweg abzustellen (Art. 70.2.1).",
+    "explanation": "Das Zeichen E9e verpflichtet den Fahrer, das Fahrzeug vollständig am Straßenrand oder auf dem Gehweg abzustellen (Art. 70.2.1).",
     "signTitle": "Parkpflicht am Straßenrand oder auf dem Gehweg",
-    "signExplanation": "Das Zeichen E9e verpflichtet Fahrer, das Fahrzeug vollständig am Straßenrand oder auf dem Gehweg abzustellen (Art. 70.2.1)."
+    "signExplanation": "Das Zeichen E9e verpflichtet den Fahrer, das Fahrzeug vollständig am Straßenrand oder auf dem Gehweg abzustellen (Art. 70.2.1)."
   },
   "rec-e9f": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Obligatorisches Parken ausschließlich am Straßenrand oder auf dem Gehweg",
       "Parkpflicht auf der Straße parallel zum Bordstein",
@@ -1652,10 +1652,10 @@
     "signExplanation": "Das Schild E9f schreibt die Pflicht vor, teilweise am Straßenrand oder auf dem Gehweg und teilweise auf der Fahrbahn zu parken (Art. 70.2.1)."
   },
   "rec-e9g": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Parkpflicht am Straßenrand oder auf dem Gehweg",
-      "Parkpflicht, teilweise auf dem Gehweg und teilweise auf der Straße",
+      "Parkpflicht, teils auf dem Gehweg, teils auf der Straße",
       "Ende einer Parkzone auf der Fahrbahn",
       "Parkpflicht auf der Straße"
     ],
@@ -1664,7 +1664,7 @@
     "signExplanation": "Das Schild E9g verpflichtet Autofahrer zum Parken auf der Fahrbahn und verbietet das Parken am Straßenrand oder Gehweg (Art. 70.2.1)."
   },
   "rec-e9h": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Parkplatz nur für Wohnmobile",
       "Zulässiger Campingplatz und Stellplatz für Wohnwagen",
@@ -1676,7 +1676,7 @@
     "signExplanation": "Das Schild E9h weist auf einen ausschließlich für Wohnmobile (Wohnmobile/Wohnmobile) reservierten Stellplatz hin (Art. 70.2.1)."
   },
   "rec-e9i": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Obligatorischer Rad- und Mopedweg",
       "Parkplatz nur für Motorräder",
@@ -1688,7 +1688,7 @@
     "signExplanation": "Das Schild E9i weist darauf hin, dass das Parken ausschließlich für Motorräder reserviert ist (Art. 70.2.1)."
   },
   "rec-e9j": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Obligatorischer kombinierter Rad- und Autoweg",
       "Parkplatz mit ständigem Vorrang für Radfahrer",
@@ -1700,7 +1700,7 @@
     "signExplanation": "Das Zeichen E9j weist darauf hin, dass das Parken zu bestimmten Zeiten bestimmten Fahrzeugkategorien vorbehalten ist (Art. 70.2.1)."
   },
   "rec-e11": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Beginn einer Zone mit gebührenpflichtigem Parken für die gesamte Gemeinde",
       "Allgemeines Parkverbot innerhalb geschlossener Ortschaften",
@@ -1712,19 +1712,19 @@
     "signExplanation": "Das Schild E11 weist darauf hin, dass im gesamten bebauten Gebiet halbjährlich ein Parkwechsel stattfinden muss (Art. 70.3)."
   },
   "rec-f1b": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Beginn einer bebauten Gegend",
       "Beginn eines Wohngebiets",
       "Ende einer bebauten Gegend",
       "Beginn einer Autobahn"
     ],
-    "explanation": "Das Schild F1b weist auf den Beginn einer Ortschaft (Art. 71.2) hin, in der in Flandern eine Geschwindigkeitsbegrenzung von 50 km/h gilt.",
+    "explanation": "Das Zeichen F1b weist auf den Beginn einer Ortschaft (Art. 71.2) hin, in der in Flandern eine Geschwindigkeitsbegrenzung von 50 km/h gilt.",
     "signTitle": "Beginn einer bebauten Gegend",
-    "signExplanation": "Das Schild F1b weist auf den Beginn einer Ortschaft (Art. 71.2) hin, in der in Flandern eine Geschwindigkeitsbegrenzung von 50 km/h gilt."
+    "signExplanation": "Das Zeichen F1b weist auf den Beginn einer Ortschaft (Art. 71.2) hin, in der in Flandern eine Geschwindigkeitsbegrenzung von 50 km/h gilt."
   },
   "rec-f3b": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Beginn einer bebauten Gegend",
       "Ende einer bebauten Gegend",
@@ -1736,7 +1736,7 @@
     "signExplanation": "Das Zeichen F3b kennzeichnet das Ende einer bebauten Fläche (Art. 71.2)."
   },
   "rec-f19": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Obligatorisch geradeaus",
       "Vorfahrtsstraße",
@@ -1748,19 +1748,19 @@
     "signExplanation": "Das Schild F19 weist darauf hin, dass Sie auf einer öffentlichen Straße mit Einbahnverkehr fahren (Art. 71.2)."
   },
   "rec-f49": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Warnung vor einem Fußgängerüberweg",
       "Beginn einer Fußgängerzone",
       "Obligatorischer Fußweg",
-      "Standort eines Fußgängerüberwegs"
+      "Lage eines Fußgängerüberwegs"
     ],
     "explanation": "Das Wegweiserzeichen F49 zeigt die genaue Lage eines Fußgängerüberwegs an (Art. 71.2).",
-    "signTitle": "Standort eines Fußgängerüberwegs",
+    "signTitle": "Lage eines Fußgängerüberwegs",
     "signExplanation": "Das Wegweiserzeichen F49 zeigt die genaue Lage eines Fußgängerüberwegs an (Art. 71.2)."
   },
   "rec-f1a": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Beginn einer bebauten Gegend",
       "Beginn einer Zone 30",
@@ -1772,7 +1772,7 @@
     "signExplanation": "Das Verkehrszeichen F1a weist auf den Beginn einer Ortschaft hin (Art. 71.2 der Straßenverkehrsordnung). In Flandern beträgt die übliche Höchstgeschwindigkeit 50 km/h, in Brüssel 30 km/h."
   },
   "rec-f3a": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Beginn einer bebauten Gegend",
       "Ende einer bebauten Gegend",
@@ -1784,7 +1784,7 @@
     "signExplanation": "Das Verkehrszeichen F3a weist auf das Ende einer Ortschaft hin (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f4a": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Geschwindigkeitsbegrenzung von 30 km/h, die nur für die nächste Kreuzung gilt",
       "Empfohlene Geschwindigkeit 30 km/h",
@@ -1796,7 +1796,7 @@
     "signExplanation": "Das Zeichen F4a weist auf den Beginn einer Zone mit einer Geschwindigkeitsbegrenzung von 30 km/h hin (Art. 71.2 der Straßenverkehrsordnung). Diese Grenze gilt für die gesamte Zone bis zum Zeichen F4b."
   },
   "rec-f4b": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Ende aller Geschwindigkeitsbegrenzungen auf dieser öffentlichen Straße",
       "Ende eines Wohngebiets oder Grundstücks",
@@ -1808,7 +1808,7 @@
     "signExplanation": "Das Zeichen F4b zeigt das Ende einer Zone mit einer Geschwindigkeitsbegrenzung von 30 km/h an (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f7": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Ende einer Autobahn",
       "Beginn einer Autobahn",
@@ -1820,35 +1820,35 @@
     "signExplanation": "Das Verkehrszeichen F7 weist auf das Ende einer Autobahn hin (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f8": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Tiefgarage",
       "Tunnel mit einer Länge von mehr als 500 Metern",
       "Panne in einem Tunnel",
       "Überdachter Viadukt oder Durchgang"
     ],
-    "explanation": "Das Wegweiserzeichen F8 weist auf einen Tunnel mit einer Länge von mehr als 500 Metern hin (Art. 71.2 der Straßenverkehrsordnung).",
+    "explanation": "Das Hinweiszeichen F8 weist auf einen Tunnel mit einer Länge von mehr als 500 Metern hin (Art. 71.2 der Straßenverkehrsordnung).",
     "signTitle": "Tunnel mit einer Länge von mehr als 500 Metern",
-    "signExplanation": "Das Wegweiserzeichen F8 weist auf einen Tunnel mit einer Länge von mehr als 500 Metern hin (Art. 71.2 der Straßenverkehrsordnung)."
+    "signExplanation": "Das Hinweiszeichen F8 weist auf einen Tunnel mit einer Länge von mehr als 500 Metern hin (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f9": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Beginn einer Autobahn",
       "Straße für Kraftfahrzeuge und Mopeds reserviert",
       "Beginn einer Autobahn",
       "Pflichtstraße für Personenkraftwagen"
     ],
-    "explanation": "Das Verkehrszeichen F9 weist auf den Beginn einer Autobahn hin (Art. 71.2 der Straßenverkehrsordnung), auf der die besonderen Vorschriften für Autobahnen gelten.",
+    "explanation": "Das Verkehrszeichen F9 weist auf den Beginn einer Autobahn hin (Art. 71.2 der Straßenverkehrsordnung), für die die besonderen Vorschriften für Autobahnen gelten.",
     "signTitle": "Beginn einer Autobahn",
-    "signExplanation": "Das Verkehrszeichen F9 weist auf den Beginn einer Autobahn hin (Art. 71.2 der Straßenverkehrsordnung), auf der die besonderen Vorschriften für Autobahnen gelten."
+    "signExplanation": "Das Verkehrszeichen F9 weist auf den Beginn einer Autobahn hin (Art. 71.2 der Straßenverkehrsordnung), für die die besonderen Vorschriften für Autobahnen gelten."
   },
   "rec-f11": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Ende einer Autobahn",
       "Ende einer Autobahn",
-      "Keine Zufahrt für Kraftfahrzeuge",
+      "Keine Einfahrt für Kraftfahrzeuge",
       "Ende einer Zone mit erhöhter Geschwindigkeit"
     ],
     "explanation": "Das Verkehrszeichen F11 weist auf das Ende einer Autobahn hin (Art. 71.2 der Straßenverkehrsordnung).",
@@ -1856,19 +1856,19 @@
     "signExplanation": "Das Verkehrszeichen F11 weist auf das Ende einer Autobahn hin (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f12a": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Beginn einer Spielstraße",
       "Beginn eines Wohngebiets oder eines Hofes",
       "Beginn einer schulischen Umgebung",
       "Beginn einer Fußgängerzone"
     ],
-    "explanation": "Das Zeichen F12a kennzeichnet den Beginn eines Wohngebiets oder Hofes (Art. 71.2 der Straßenverkehrsordnung). Die Geschwindigkeitsbegrenzung beträgt 20 km/h und Fußgänger dürfen die gesamte Straßenbreite nutzen.",
+    "explanation": "Das Zeichen F12a weist auf den Beginn eines Wohngebiets oder Hofes hin (Art. 71.2 der Straßenverkehrsordnung). Die Geschwindigkeitsbegrenzung beträgt 20 km/h und Fußgänger dürfen die gesamte Straßenbreite nutzen.",
     "signTitle": "Beginn eines Wohngebiets oder eines Hofes",
-    "signExplanation": "Das Zeichen F12a kennzeichnet den Beginn eines Wohngebiets oder Hofes (Art. 71.2 der Straßenverkehrsordnung). Die Geschwindigkeitsbegrenzung beträgt 20 km/h und Fußgänger dürfen die gesamte Straßenbreite nutzen."
+    "signExplanation": "Das Zeichen F12a weist auf den Beginn eines Wohngebiets oder Hofes hin (Art. 71.2 der Straßenverkehrsordnung). Die Geschwindigkeitsbegrenzung beträgt 20 km/h und Fußgänger dürfen die gesamte Straßenbreite nutzen."
   },
   "rec-f12b": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Ende einer Spielstraße",
       "Ende einer Zone 30",
@@ -1880,7 +1880,7 @@
     "signExplanation": "Das Zeichen F12b kennzeichnet das Ende eines Wohngebiets oder eines Grundstücks (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f13": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Vorgeschriebene Fahrtrichtung an der nächsten Kreuzung",
       "Empfehlung, auf einer Einbahnstraße links zu überholen",
@@ -1892,7 +1892,7 @@
     "signExplanation": "Das Zeichen F13 kündigt Pfeile auf der Fahrbahnoberfläche an und schreibt die Wahl einer Fahrspur entsprechend der gewünschten Fahrtrichtung vor (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f14": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Aufenthaltsbereich für Radfahrer und Fahrer zweirädriger Mopeds",
       "Vorgeschriebener Radweg vor der Ampel",
@@ -1904,7 +1904,7 @@
     "signExplanation": "Das Zeichen F14 weist auf einen Aufstellbereich (Art. 71.2 der Straßenverkehrsordnung) hin, an dem sich Radfahrer und zweirädrige Kleinkrafträder der Klasse A vor der Ampel aufstellen dürfen."
   },
   "rec-f15": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Reduzierung der Anzahl der Fahrspuren auf der Fahrbahn",
       "Verkehrszeichen, das die Richtungswahl vorschreibt",
@@ -1916,19 +1916,19 @@
     "signExplanation": "Das Zeichen F15 ist ein Verkehrszeichen, das durch Pfeile über der Fahrbahn die Richtungswahl pro Fahrspur vorschreibt (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f17": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Angabe der Fahrspuren einer Fahrbahn mit einer für Busse reservierten Fahrspur",
       "Busbahnhof oder Bushaltestelle",
       "Parkverbot für alle Fahrzeuge außer Busse",
-      "Spezieller befahrbarer Untergrund für Straßenbahnen und Busse"
+      "Befahrbarer Spezialbelag für Straßenbahnen und Busse"
     ],
     "explanation": "Das Richtungszeichen F17 zeigt die Anordnung der Fahrspuren mit einer Fahrspur, die für Fahrzeuge des öffentlichen Linienverkehrs reserviert ist (Art. 71.2 der Straßenverkehrsordnung).",
     "signTitle": "Angabe der Fahrspuren einer Fahrbahn mit einer für Busse reservierten Fahrspur",
     "signExplanation": "Das Richtungszeichen F17 zeigt die Anordnung der Fahrspuren mit einer Fahrspur, die für Fahrzeuge des öffentlichen Linienverkehrs reserviert ist (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f18": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Ende einer Busspur",
       "Bezeichnung einer besonderen befahrbaren Fläche, die dem öffentlichen Verkehr vorbehalten ist",
@@ -1940,7 +1940,7 @@
     "signExplanation": "Das Zeichen F18 weist auf eine spezielle Straßenoberfläche hin, die den Fahrzeugen des öffentlichen Linienverkehrs vorbehalten ist (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f21": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Das Überholen rechts oder links ist erlaubt",
       "Es ist zwingend erforderlich, geradeaus zu fahren oder rechts abzubiegen",
@@ -1952,7 +1952,7 @@
     "signExplanation": "Das Wegweiserzeichen F21 weist darauf hin, dass Autofahrer ein Hindernis oder eine Verkehrsinsel sowohl links als auch rechts passieren dürfen (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f23a": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Nummer einer Autobahn",
       "Nummer einer normalen Straße",
@@ -1964,7 +1964,7 @@
     "signExplanation": "Das Zeichen F23a gibt die Identifikationsnummer einer normalen Straße an, beispielsweise einer National- oder Regionalstraße (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f23b": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Nummer einer Regionalstraße",
       "Nummer eines Ausgangs",
@@ -1976,7 +1976,7 @@
     "signExplanation": "Das Zeichen F23b gibt die Verwaltungsnummer einer Autobahn an (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f23c": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Nummer einer regulären Regionalstraße",
       "Nummer einer Ringstraße",
@@ -1988,7 +1988,7 @@
     "signExplanation": "Das Zeichen F23c gibt die Nummer einer internationalen Straße (europäische E-Route) an (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f23d": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Nummer eines Kreisverkehrs",
       "Nummer eines Autobahnparkplatzes",
@@ -2000,10 +2000,10 @@
     "signExplanation": "Das Zeichen F23d gibt die Streckennummer einer Umgehungsstraße (Ring) um einen Ballungsraum oder eine Stadt an (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f25": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Wegweiser",
-      "Wegweiser an der Kreuzung selbst",
+      "Wegweiser an der Kreuzung",
       "Routenbestätigungsschild nach einer Kreuzung",
       "Ankündigung einer Touristenattraktion"
     ],
@@ -2012,7 +2012,7 @@
     "signExplanation": "Das Schild F25 ist ein Wegweiser, der die Wegbeschreibung und die zu befolgenden Ziele vor der Kreuzung ankündigt (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f27": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Ende einer Autobahn",
       "Wegweiser",
@@ -2024,19 +2024,19 @@
     "signExplanation": "Das Zeichen F27 ist, genau wie F25, ein Wegweiser (Art. 71.2). Das Autobahnroutenpiktogramm kann optional auf F25, F27, F29, F31, F39 und F41 angezeigt werden, ist aber kein fester Bestandteil von F27 selbst."
   },
   "rec-f29": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
-      "Vorderes Schild, das einen Kreisverkehr ankündigt",
+      "Wegweiser, der einen Kreisverkehr ankündigt",
       "Ankündigung einer Mautstraße",
-      "Wegweiser, der die Richtung zum Ziel anzeigt",
+      "Wegweiser, der die Richtung zum Ziel angibt",
       "Routenbestätigungsschild entlang einer Autobahn"
     ],
     "explanation": "Das Zeichen F29 ist ein Wegweiser, der an der Ausfahrt die Richtung zu einem Ziel angibt, ggf. mit Entfernungsangabe (Art. 71.2 der Straßenverkehrsordnung).",
-    "signTitle": "Wegweiser, der die Richtung zum Ziel anzeigt",
+    "signTitle": "Wegweiser, der die Richtung zum Ziel angibt",
     "signExplanation": "Das Zeichen F29 ist ein Wegweiser, der an der Ausfahrt die Richtung zu einem Ziel angibt, ggf. mit Entfernungsangabe (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f31": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Beginn einer Schnellverkehrszone",
       "Wegweiser zu einer Nebenstraße",
@@ -2048,7 +2048,7 @@
     "signExplanation": "Das Zeichen F31 ist ein Wegweiser, der darauf hinweist, dass der angegebene Weg zum Ziel auf einer Autobahn verläuft (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f33a": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Fernbeschilderung für ein öffentliches oder industrielles Zentrum",
       "Wegweiser zu einer Freizeitwanderroute",
@@ -2060,31 +2060,31 @@
     "signExplanation": "Das Zeichen F33a ist ein Wegweiser in einiger Entfernung zu bestimmten Zielen wie einem Hafen, einer Universität oder einem Industriegebiet (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f33b": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Angabe eines Trinkwasserschutzgebietes",
       "Entfernter Wegweiser zu einem Tal oder Wasserlauf mit touristischem Charakter",
       "Warnung vor der Gefahr einer Überschwemmung der Fahrbahn",
       "Wegweiser zu einem Yachthafen oder Steg"
     ],
-    "explanation": "Das Zeichen F33b ist ein abgelegener touristischer Wegweiser, der zu einem Tal oder einem Wasserlauf mit touristischem Charakter führt (Art. 71.2 der Straßenverkehrsordnung).",
+    "explanation": "Das Zeichen F33b ist ein abgelegener touristischer Wegweiser, der zu einem Tal oder Wasserlauf mit touristischem Charakter führt (Art. 71.2 der Straßenverkehrsordnung).",
     "signTitle": "Entfernter Wegweiser zu einem Tal oder Wasserlauf mit touristischem Charakter",
-    "signExplanation": "Das Zeichen F33b ist ein abgelegener touristischer Wegweiser, der zu einem Tal oder einem Wasserlauf mit touristischem Charakter führt (Art. 71.2 der Straßenverkehrsordnung)."
+    "signExplanation": "Das Zeichen F33b ist ein abgelegener touristischer Wegweiser, der zu einem Tal oder Wasserlauf mit touristischem Charakter führt (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f33c": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Ausschreibung eines Naturschutzgebietes mit Zutrittsverbot",
       "Wegweiser zu einem öffentlichen Friedhof",
-      "Fernbeschilderung zu einer Touristenattraktion oder einem Erholungsgebiet",
+      "Fernwegweiser zu einer Touristenattraktion oder einem Erholungsgebiet",
       "Wegweiser zu einer städtischen Polizeistation"
     ],
     "explanation": "Das Zeichen F33c weist aus der Ferne den Weg zu Denkmälern, Freizeitparks, Sportzentren oder Touristenattraktionen (Art. 71.2 der Straßenverkehrsordnung).",
-    "signTitle": "Fernbeschilderung zu einer Touristenattraktion oder einem Erholungsgebiet",
+    "signTitle": "Fernwegweiser zu einer Touristenattraktion oder einem Erholungsgebiet",
     "signExplanation": "Das Zeichen F33c weist aus der Ferne den Weg zu Denkmälern, Freizeitparks, Sportzentren oder Touristenattraktionen (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f34a": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Obligatorische Route für Rettungsdienste",
       "Parken in der Nähe öffentlicher Gebäude verboten",
@@ -2096,55 +2096,55 @@
     "signExplanation": "Das in der Nähe befindliche Schild F34a weist den Weg zu öffentlichen Einrichtungen und Institutionen von allgemeinem Interesse (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f34b1": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
-      "Pflichtumleitung für Lkw außerhalb geschlossener Ortschaften",
-      "Warnung vor einer Überquerung für Radfahrer und Reiter",
-      "Verbot der Einfahrt für Radfahrer, Reiter und Fußgänger",
+      "Zwingende Umleitung für LKW außerhalb geschlossener Ortschaften",
+      "Warnung vor einer Kreuzung für Radfahrer und Reiter",
+      "Kein Zugang für Radfahrer, Reiter und Fußgänger",
       "Wegweiser: empfohlene Route für bestimmte Kategorien von Verkehrsteilnehmern, wie Radfahrer, Reiter oder Fußgänger"
     ],
-    "explanation": "Schild F34b.1 ist ein Wegweiser, der die empfohlene Route für bestimmte Kategorien von Verkehrsteilnehmern zeigt, ergänzt durch das Symbol von Schild C11, C15 oder C19 und gegebenenfalls die Entfernung in km (Art. 71.2 der Straßenverkehrsordnung).",
+    "explanation": "Das Zeichen F34b.1 ist ein Wegweiser, der die empfohlene Route für bestimmte Kategorien von Verkehrsteilnehmern anzeigt, ergänzt durch das Symbol des Zeichens C11, C15 oder C19 und möglicherweise die Entfernung in km (Art. 71.2 der Straßenverkehrsordnung).",
     "signTitle": "Wegweiser: empfohlene Route für bestimmte Kategorien von Verkehrsteilnehmern, wie Radfahrer, Reiter oder Fußgänger",
-    "signExplanation": "Schild F34b.1 ist ein Wegweiser, der die empfohlene Route für bestimmte Kategorien von Verkehrsteilnehmern zeigt, ergänzt durch das Symbol von Schild C11, C15 oder C19 und gegebenenfalls die Entfernung in km (Art. 71.2 der Straßenverkehrsordnung)."
+    "signExplanation": "Das Zeichen F34b.1 ist ein Wegweiser, der die empfohlene Route für bestimmte Kategorien von Verkehrsteilnehmern anzeigt, ergänzt durch das Symbol des Zeichens C11, C15 oder C19 und möglicherweise die Entfernung in km (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f34b2": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Wegweiser: empfohlene Route für bestimmte Kategorien von Verkehrsteilnehmern, wie Radfahrer, Reiter oder Fußgänger",
       "Beschilderungsschild in der Nähe einer öffentlichen Einrichtung von allgemeinem Interesse",
-      "Vorgeschriebene Fahrtrichtung für Fahrzeuge mit Gefahrguttransport",
+      "Vorgeschriebene Fahrtrichtung für Fahrzeuge, die gefährliche Güter transportieren",
       "Touristischer Wegweiser zu einem Denkmal oder Freizeitpark"
     ],
-    "explanation": "Schild F34b.2 ist die vereinfachte Version von F34b.1: die Angabe des Ziels und der Pfeil sind fakultativ, aber die Bedeutung bleibt dieselbe empfohlene Route für die angegebene Kategorie von Verkehrsteilnehmern (Art. 71.2 der Straßenverkehrsordnung).",
+    "explanation": "Das Zeichen F34b.2 ist die vereinfachte Version von F34b.1: Die Angabe des Ziels und des Pfeils sind optional, die Bedeutung bleibt jedoch die gleiche empfohlene Route für die angegebene Kategorie von Verkehrsteilnehmern (Art. 71.2 der Straßenverkehrsordnung).",
     "signTitle": "Wegweiser: empfohlene Route für bestimmte Kategorien von Verkehrsteilnehmern, wie Radfahrer, Reiter oder Fußgänger",
-    "signExplanation": "Schild F34b.2 ist die vereinfachte Version von F34b.1: die Angabe des Ziels und der Pfeil sind fakultativ, aber die Bedeutung bleibt dieselbe empfohlene Route für die angegebene Kategorie von Verkehrsteilnehmern (Art. 71.2 der Straßenverkehrsordnung)."
+    "signExplanation": "Das Zeichen F34b.2 ist die vereinfachte Version von F34b.1: Die Angabe des Ziels und des Pfeils sind optional, die Bedeutung bleibt jedoch die gleiche empfohlene Route für die angegebene Kategorie von Verkehrsteilnehmern (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f34c1": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
-      "Touristischer Wegweiser zu einem Denkmal, einer Sehenswürdigkeit oder einem Freizeitpark",
-      "Beschilderungsschild auf Entfernung zu einem Tal oder Gewässer von touristischem Interesse",
-      "Wegweiser: empfohlene Route zu einem touristischen Ziel für bestimmte Kategorien von Verkehrsteilnehmern",
-      "Verbot der Einfahrt für Radfahrer, Reiter und Fußgänger zu touristischen Gebieten"
+      "Touristischer Wegweiser zu einem Denkmal, einer Attraktion oder einem Freizeitpark",
+      "Entfernter Wegweiser zu einem Tal oder Wasserlauf mit touristischem Charakter",
+      "Wegweiser: empfohlene Route zu einem Touristenziel für bestimmte Kategorien von Verkehrsteilnehmern",
+      "Kein Zugang für Radfahrer, Reiter und Fußgänger zu touristischen Gebieten"
     ],
-    "explanation": "Schild F34c.1 zeigt die empfohlene Route zu einem touristischen Ziel für bestimmte Kategorien von Verkehrsteilnehmern, ergänzt durch das Symbol von Schild C11, C15 oder C19 (Art. 71.2 der Straßenverkehrsordnung).",
-    "signTitle": "Wegweiser: empfohlene Route zu einem touristischen Ziel für bestimmte Kategorien von Verkehrsteilnehmern",
-    "signExplanation": "Schild F34c.1 zeigt die empfohlene Route zu einem touristischen Ziel für bestimmte Kategorien von Verkehrsteilnehmern, ergänzt durch das Symbol von Schild C11, C15 oder C19 (Art. 71.2 der Straßenverkehrsordnung)."
+    "explanation": "Das Zeichen F34c.1 zeigt die empfohlene Route zu einem Touristenziel für bestimmte Kategorien von Verkehrsteilnehmern, ergänzt durch das Symbol des Zeichens C11, C15 oder C19 (Art. 71.2 der Straßenverkehrsordnung).",
+    "signTitle": "Wegweiser: empfohlene Route zu einem Touristenziel für bestimmte Kategorien von Verkehrsteilnehmern",
+    "signExplanation": "Das Zeichen F34c.1 zeigt die empfohlene Route zu einem Touristenziel für bestimmte Kategorien von Verkehrsteilnehmern, ergänzt durch das Symbol des Zeichens C11, C15 oder C19 (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f34c2": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
-      "Pflichtumleitung zu einem touristischen Zentrum",
-      "Wegweiser: empfohlene Route zu einem touristischen Ziel für bestimmte Kategorien von Verkehrsteilnehmern",
-      "Warnung vor einer Überquerung für Radfahrer",
-      "Ankündigung eines Parkplatzes in der Nähe einer touristischen Attraktion"
+      "Obligatorische Umleitung zu einem Touristenzentrum",
+      "Wegweiser: empfohlene Route zu einem Touristenziel für bestimmte Kategorien von Verkehrsteilnehmern",
+      "Warnung vor einer Kreuzung für Radfahrer",
+      "Ankündigung eines Parkplatzes in der Nähe einer Touristenattraktion"
     ],
-    "explanation": "Schild F34c.2 ist die vereinfachte Version von F34c.1: das Ziel und der Pfeil sind fakultativ, aber das Schild zeigt weiterhin die empfohlene Route zu einem touristischen Ziel für die angegebene Kategorie von Verkehrsteilnehmern (Art. 71.2 der Straßenverkehrsordnung).",
-    "signTitle": "Wegweiser: empfohlene Route zu einem touristischen Ziel für bestimmte Kategorien von Verkehrsteilnehmern",
-    "signExplanation": "Schild F34c.2 ist die vereinfachte Version von F34c.1: das Ziel und der Pfeil sind fakultativ, aber das Schild zeigt weiterhin die empfohlene Route zu einem touristischen Ziel für die angegebene Kategorie von Verkehrsteilnehmern (Art. 71.2 der Straßenverkehrsordnung)."
+    "explanation": "Das Schild F34c.2 ist die vereinfachte Version von F34c.1: Das Ziel und der Pfeil sind optional, das Schild zeigt jedoch weiterhin die empfohlene Route zu einem Touristenziel für die festgelegte Kategorie von Verkehrsteilnehmern (Art. 71.2 der Straßenverkehrsordnung).",
+    "signTitle": "Wegweiser: empfohlene Route zu einem Touristenziel für bestimmte Kategorien von Verkehrsteilnehmern",
+    "signExplanation": "Das Schild F34c.2 ist die vereinfachte Version von F34c.1: Das Ziel und der Pfeil sind optional, das Schild zeigt jedoch weiterhin die empfohlene Route zu einem Touristenziel für die festgelegte Kategorie von Verkehrsteilnehmern (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f35": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Wegweiser zu einem Industriegebiet oder LKW-Parkplatz",
       "Hinweis auf ein waldbrandgefährdetes Gebiet",
@@ -2156,11 +2156,11 @@
     "signExplanation": "Das Zeichen F35 ist ein touristischer Wegweiser zu einer Sehenswürdigkeit, einem Denkmal, einem Sportzentrum oder einem Freizeitpark (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f37": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Hinweis auf einen öffentlichen Rastplatz entlang einer Autobahn",
-      "Parkplatz ausschließlich für Wohnmobile und Wohnwagen",
-      "Wegweiser zu einem Pflegeheim",
+      "Stellplatz ausschließlich für Wohnmobile und Wohnwagen",
+      "Wegbeschreibung zu einem Pflegeheim",
       "Touristischer Wegweiser zur Unterkunft, zum Campingplatz oder zur Jugendherberge"
     ],
     "explanation": "Das Schild F37 zeigt in Richtung touristischer Unterkünfte, wie Hotels, Campingplätze oder Jugendherbergen (Art. 71.2 der Straßenverkehrsordnung).",
@@ -2168,7 +2168,7 @@
     "signExplanation": "Das Schild F37 zeigt in Richtung touristischer Unterkünfte, wie Hotels, Campingplätze oder Jugendherbergen (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f39": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Wegweiser, der eine Umleitung ankündigt",
       "Wegweiser, der auf das Ende der Arbeiten hinweist",
@@ -2180,7 +2180,7 @@
     "signExplanation": "Das Zeichen F39 ist ein Wegweiser, der Autofahrer vor einer Abweichung von der normalen Route warnt (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f41": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Wegweiser zu einer alternativen Autobahn",
       "Wegweiser, der auf eine Umleitungsstraße hinweist",
@@ -2192,7 +2192,7 @@
     "signExplanation": "Das Zeichen F41 ist ein Wegweiser, der die Richtung der Umleitungsstraße angibt, der bei einer Umleitung zu folgen ist (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f43": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Beginn einer Ortschaft mit einer Geschwindigkeitsbegrenzung von 50 km/h",
       "Beginn eines Hofes oder einer Wohnzone",
@@ -2204,7 +2204,7 @@
     "signExplanation": "Das Zeichen F43 ist ein Ortsschild, das lediglich den Namen eines Ortes angibt; es sieht keine Geschwindigkeitsbegrenzung in geschlossenen Ortschaften vor (Artikel 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f45b": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Sackgasse für alle Verkehrsteilnehmer",
       "Straße ausschließlich für Radfahrer und Fußgänger reserviert",
@@ -2216,7 +2216,7 @@
     "signExplanation": "Das Schild F45b weist auf eine Sackgasse hin, die für Radfahrer und Fußgänger weiterhin zugänglich ist (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f47": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Beginn einer Baustelle mit reduzierter Geschwindigkeit",
       "Ende einer Umleitungsstraße",
@@ -2228,9 +2228,9 @@
     "signExplanation": "Das Verkehrszeichen F47 weist auf das Ende der Arbeiten auf der öffentlichen Straße hin (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f50": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
-      "Beginn eines obligatorischen Radwegs",
+      "Beginn eines obligatorischen Radweges",
       "Warnung vor einer Kreuzung für Radfahrer",
       "Kreuzung für Radfahrer und Fahrer von zweirädrigen Mopeds",
       "Straße für Radfahrer und zweirädrige Mopeds reserviert"
@@ -2240,7 +2240,7 @@
     "signExplanation": "Das Schild F50 zeigt die genaue Lage einer Kreuzung für Radfahrer und Fahrer von zweirädrigen Mopeds an (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f50bis": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Obligatorischer Radweg auf beiden Straßenseiten",
       "Rechtsabbiegeverbot für Radfahrer",
@@ -2252,7 +2252,7 @@
     "signExplanation": "Das Schild F50bis weist Fahrer, die die Richtung ändern, auf Radfahrer und Zweirad-Mopedfahrer hin, die weiterhin derselben öffentlichen Straße geradeaus folgen (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f51": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Unterirdischer oder oberirdischer Fußgängerüberweg",
       "Fußgängerüberweg auf der Fahrbahnoberfläche",
@@ -2264,7 +2264,7 @@
     "signExplanation": "Das Zeichen F51 weist auf einen unterirdischen oder oberirdischen Fußgängerüberweg hin (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f52": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Zufluchtsort für liegengebliebene liegengebliebene Fahrzeuge auf der Autobahn",
       "Ankündigung eines Notausgangs in Tunneln",
@@ -2276,9 +2276,9 @@
     "signExplanation": "Das Zeichen F52 kündigt eine Notausfahrt in Tunneln an (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f52bis": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
-      "Richtung und Entfernung zur nächstgelegenen Notrufstation oder Notrufstation",
+      "Richtung und Entfernung zur nächsten Notrufzentrale oder Notrufstation",
       "Obligatorische Ausweichroute für Autofahrer bei Staus im Tunnel",
       "Fluchtweg zum nächstgelegenen Notausgang in Tunneln mit Angabe von Richtung und Entfernung",
       "Fußgängertunnel zur nächsten U-Bahn oder zum nächsten Bahnhof"
@@ -2288,11 +2288,11 @@
     "signExplanation": "Das Zeichen F52bis zeigt einen Fluchtweg zum nächstgelegenen Notausgang in Tunneln mit Richtungs- und Entfernungsangabe (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f53": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Notfallstation für Erste Hilfe bei Unfällen",
       "Apotheke mit ständiger Nacht- und Wochenendbereitschaft",
-      "Reparaturstelle für kaputte Kraftfahrzeuge",
+      "Reparaturstelle für liegengebliebene Kraftfahrzeuge",
       "Pflegeeinrichtung"
     ],
     "explanation": "Das Schild F53 weist auf eine Pflegeeinrichtung hin, in der Ruhe geboten ist und die Fahrer besondere Vorsicht walten lassen müssen (Art. 71.2 der Straßenverkehrsordnung).",
@@ -2300,19 +2300,19 @@
     "signExplanation": "Das Schild F53 weist auf eine Pflegeeinrichtung hin, in der Ruhe geboten ist und die Fahrer besondere Vorsicht walten lassen müssen (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f55": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Hilfsstation",
       "Pflegeeinrichtung oder Krankenhaus mit Notaufnahme",
       "Feuerwache mit Bereitschaftsdienst",
       "Apotheke oder medizinisches Labor entlang der Straße"
     ],
-    "explanation": "Das Schild F55 weist auf eine Notrufstation hin, an der bei Unfällen Erste Hilfe geleistet werden kann (Art. 71.2 der Straßenverkehrsordnung).",
+    "explanation": "Das Zeichen F55 weist auf eine Notrufstation hin, an der bei Unfällen Erste Hilfe geleistet werden kann (Art. 71.2 der Straßenverkehrsordnung).",
     "signTitle": "Hilfsstation",
-    "signExplanation": "Das Schild F55 weist auf eine Notrufstation hin, an der bei Unfällen Erste Hilfe geleistet werden kann (Art. 71.2 der Straßenverkehrsordnung)."
+    "signExplanation": "Das Zeichen F55 weist auf eine Notrufstation hin, an der bei Unfällen Erste Hilfe geleistet werden kann (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f56": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Standort für Feuerwehrfahrzeuge bei Einsätzen",
       "Feuerlöscher",
@@ -2324,7 +2324,7 @@
     "signExplanation": "Das Schild F56 weist auf das Vorhandensein eines Feuerlöschers hin (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f57": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Gefahr von Überschwemmungen oder plötzlichem Spritzwasser",
       "Hafen oder ungesicherter Kai ohne Barrieren",
@@ -2336,7 +2336,7 @@
     "signExplanation": "Das Zeichen F57 weist auf einen Wasserlauf hin, beispielsweise einen Fluss, einen Kanal oder einen Bach (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f59": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Parkzone mit Parkscheibenpflicht",
       "Parkplätze ausschließlich für Menschen mit Behinderungen",
@@ -2348,7 +2348,7 @@
     "signExplanation": "Das Schild F59 weist auf einen Parkplatz hin, auf dem Autofahrer ihre Fahrzeuge abstellen können (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f60": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Ankündigung eines überdachten Parkplatzes",
       "Ankündigung eines Freigeländes für Nutzfahrzeuge",
@@ -2360,7 +2360,7 @@
     "signExplanation": "Das Schild F60 weist auf einen überdachten Parkplatz (Parkhaus) hin (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f61": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Notruftelefon, das ausschließlich an die Rettungsdienste angeschlossen ist",
       "Telefon",
@@ -2372,7 +2372,7 @@
     "signExplanation": "Das Zeichen F61 weist auf eine öffentliche Telefonzelle hin (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f62": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Öffentliche Telefonzelle für allgemeine Anrufe",
       "Hilfsstation für medizinische Notfallversorgung",
@@ -2384,7 +2384,7 @@
     "signExplanation": "Das Zeichen F62 weist auf eine Notrufsäule (Sprechstelle) für Notfälle und Pannen hin (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f63": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Pannendienst und mechanische Reparaturwerkstatt",
       "Autowaschanlage und Servicestation für Kraftfahrzeuge",
@@ -2396,7 +2396,7 @@
     "signExplanation": "Das Schild F63 weist auf eine Tankstelle für Kraftstoffe oder Energie hin (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f65": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Hotel oder Motel",
       "Jugendherberge für Gruppen und Jugendliche",
@@ -2408,7 +2408,7 @@
     "signExplanation": "Das Schild F65 weist auf ein Hotel oder Motel hin (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f67": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Getränke oder Café ohne warme Mahlzeiten",
       "Restaurant",
@@ -2420,19 +2420,19 @@
     "signExplanation": "Das Schild F67 weist auf ein Restaurant entlang oder in der Nähe der Straße hin (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f69": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Restaurant mit warmen Speisen",
       "Trinkwasserverteilung entlang einer touristischen Radroute",
       "Getränke",
       "Rastplatz mit Sanitäranlagen"
     ],
-    "explanation": "Das Schild F69 weist auf eine Kneipe oder ein Café hin (Art. 71.2 der Straßenverkehrsordnung).",
+    "explanation": "Das Schild F69 weist auf eine Gaststätte oder ein Café hin (Art. 71.2 der Straßenverkehrsordnung).",
     "signTitle": "Getränke",
-    "signExplanation": "Das Schild F69 weist auf eine Kneipe oder ein Café hin (Art. 71.2 der Straßenverkehrsordnung)."
+    "signExplanation": "Das Schild F69 weist auf eine Gaststätte oder ein Café hin (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f71": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Caravan-Stellplatz ausschließlich für Wohnwagen und Wohnmobile",
       "Naturschutzgebiet mit erlaubter Biwakzone",
@@ -2444,7 +2444,7 @@
     "signExplanation": "Das Schild F71 weist auf einen Campingplatz für Zelte hin (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f73": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Wohnwagenstellplatz",
       "Campingplatz, der ausschließlich für Zelte bestimmt ist",
@@ -2456,9 +2456,9 @@
     "signExplanation": "Das Schild F73 weist auf einen Stellplatz für Wohnwagen und Wohnwagen hin (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f75": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
-      "Hotel oder Motel mit Übernachtungsmöglichkeiten",
+      "Hotel oder Motel mit Übernachtung",
       "Jugendherberge",
       "Ferienunterkünfte für Familien",
       "Campingplatz mit möblierten Zelten"
@@ -2468,7 +2468,7 @@
     "signExplanation": "Das Schild F75 weist auf eine Jugendherberge hin (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f77": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Polizeistation für Touristen und Besucher",
       "Öffentlicher Internetpoint und Telegrafenbüro",
@@ -2480,19 +2480,19 @@
     "signExplanation": "Das Zeichen F77 weist auf einen Verein zur Förderung des Auslandsverkehrs oder einen Treffpunkt für Touristeninformationen hin (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f79": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Aufgrund von Straßenarbeiten ist das Abfahren der Schilder obligatorisch",
       "Straßenschild, das auf eine Autobahnkreuzung hinweist",
       "Überholverbot für alle Fahrer auf der linken Spur",
       "Vorabschild, das die Reduzierung der Fahrspuren ankündigt"
     ],
-    "explanation": "Das Zeichen F79 kündigt als Wegweiser die Reduzierung der Fahrspuren an (Art. 71.2 der Straßenverkehrsordnung).",
+    "explanation": "Das Schild F79 kündigt als Wegweiser die Reduzierung der Fahrspuren an (Art. 71.2 der Straßenverkehrsordnung).",
     "signTitle": "Vorabschild, das die Reduzierung der Fahrspuren ankündigt",
-    "signExplanation": "Das Zeichen F79 kündigt als Wegweiser die Reduzierung der Fahrspuren an (Art. 71.2 der Straßenverkehrsordnung)."
+    "signExplanation": "Das Schild F79 kündigt als Wegweiser die Reduzierung der Fahrspuren an (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f81": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Vorabschild, das eine Umleitung ankündigt",
       "An der nächsten Kreuzung ist die Fahrtrichtung rechts vorgeschrieben",
@@ -2504,55 +2504,55 @@
     "signExplanation": "Das Zeichen F81 kündigt als Wegweiser ein Verlassen der Fahrspur an (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f83": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Gefährliche Linkskurve auf der Autobahn",
       "Vorderes Schild, das die Überquerung des Mittelstreifens ankündigt",
       "Abbiegeverbot auf öffentlichen Straßen",
       "Anschluss an eine andere Autobahn über eine Schleife"
     ],
-    "explanation": "Das Zeichen F83 kündigt als Wegweiser eine Überquerung des Mittelstreifens an (Art. 71.2 der Straßenverkehrsordnung).",
+    "explanation": "Das Zeichen F83 kündigt als Wegweiser die Überquerung des Mittelstreifens an (Art. 71.2 StVO).",
     "signTitle": "Vorderes Schild, das die Überquerung des Mittelstreifens ankündigt",
-    "signExplanation": "Das Zeichen F83 kündigt als Wegweiser eine Überquerung des Mittelstreifens an (Art. 71.2 der Straßenverkehrsordnung)."
+    "signExplanation": "Das Zeichen F83 kündigt als Wegweiser die Überquerung des Mittelstreifens an (Art. 71.2 StVO)."
   },
   "rec-f85": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Abbiegeverbot auf einer Einbahnstraße",
       "Geben Sie dem Gegenverkehr auf einer engen Passage Vorrang",
       "Der Verkehr ist auf einem Einbahnabschnitt der Fahrbahn in beide Richtungen zulässig",
-      "Ende aller Vorrangregeln an der nächsten Kreuzung"
+      "Ende aller Prioritätsregeln an der nächsten Kreuzung"
     ],
     "explanation": "Das Zeichen F85 weist darauf hin, dass der Verkehr in beide Richtungen auf einem Teil der Fahrbahn mit Einbahnverkehr gestattet ist (Art. 71.2 der Straßenverkehrsordnung).",
     "signTitle": "Der Verkehr ist auf einem Einbahnabschnitt der Fahrbahn in beide Richtungen zulässig",
     "signExplanation": "Das Zeichen F85 weist darauf hin, dass der Verkehr in beide Richtungen auf einem Teil der Fahrbahn mit Einbahnverkehr gestattet ist (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f87": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Starker Anstieg mit Angabe der Steigung",
       "Gefahr durch Steinschlag und Kiesspritzer auf der Fahrbahn",
       "Beginn einer Zone mit einer Geschwindigkeitsbegrenzung von 50 km/h",
       "Erhöhte(s) Gerät(e)"
     ],
-    "explanation": "Das Zeichen F87 weist auf eine erhöhte Vorrichtung oder mehrere erhöhte Vorrichtungen hin, beispielsweise eine Geschwindigkeitsbegrenzung oder ein Verkehrsplateau (Art. 71.2 der Straßenverkehrsordnung).",
+    "explanation": "Das Zeichen F87 weist auf eine erhöhte Vorrichtung oder mehrere erhöhte Vorrichtungen hin, beispielsweise eine Bremsschwelle oder ein Verkehrsplateau (Art. 71.2 der Straßenverkehrsordnung).",
     "signTitle": "Erhöhte(s) Gerät(e)",
-    "signExplanation": "Das Zeichen F87 weist auf eine erhöhte Vorrichtung oder mehrere erhöhte Vorrichtungen hin, beispielsweise eine Geschwindigkeitsbegrenzung oder ein Verkehrsplateau (Art. 71.2 der Straßenverkehrsordnung)."
+    "signExplanation": "Das Zeichen F87 weist auf eine erhöhte Vorrichtung oder mehrere erhöhte Vorrichtungen hin, beispielsweise eine Bremsschwelle oder ein Verkehrsplateau (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f89": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Vorabschild, das auf eine Gefahr oder eine Verkehrsregel hinweist, die nur für eine oder mehrere Fahrspuren gilt",
       "Verkehrszeichen, das eine allgemeine Gefahr für die gesamte Fahrbahn an dieser Stelle darstellt",
       "Ankündigung einer allgemeinen Geschwindigkeitsbegrenzung für alle Fahrzeuge",
       "Vorabschild, das eine Ausfahrt mit getrennten Fahrspuren ankündigt"
     ],
-    "explanation": "Das Zeichen F89 kündigt als Wegweiser eine Gefahr oder eine Verkehrsregel an, die nur für eine oder mehrere ausgewiesene Fahrspuren gilt (Art. 71.2 der Straßenverkehrsordnung).",
+    "explanation": "Das Schild F89 kündigt als Wegweiser eine Gefahr oder eine Verkehrsregel an, die nur für eine oder mehrere ausgewiesene Fahrspuren gilt (Art. 71.2 der Straßenverkehrsordnung).",
     "signTitle": "Vorabschild, das auf eine Gefahr oder eine Verkehrsregel hinweist, die nur für eine oder mehrere Fahrspuren gilt",
-    "signExplanation": "Das Zeichen F89 kündigt als Wegweiser eine Gefahr oder eine Verkehrsregel an, die nur für eine oder mehrere ausgewiesene Fahrspuren gilt (Art. 71.2 der Straßenverkehrsordnung)."
+    "signExplanation": "Das Schild F89 kündigt als Wegweiser eine Gefahr oder eine Verkehrsregel an, die nur für eine oder mehrere ausgewiesene Fahrspuren gilt (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f91": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Vorabschild, das die Reduzierung der Fahrspuren ankündigt",
       "Verkehrszeichen, das auf eine Gefahr hinweist oder eine Verkehrsregel vorschreibt, die nur für eine oder mehrere Fahrspuren gilt",
@@ -2564,7 +2564,7 @@
     "signExplanation": "Das Zeichen F91 weist auf eine Gefahr vor Ort hin oder erlässt eine Verkehrsregel, die nur für eine oder mehrere ausgewiesene Fahrspuren gilt (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f93": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Pflicht, das Autoradio beim Einfahren in einen Tunnel auszuschalten",
       "Anzeige einer automatischen Teilbreitensteuerung über elektromagnetische Wellen",
@@ -2576,31 +2576,31 @@
     "signExplanation": "Das Zeichen F93 weist auf einen Radiosender hin, der regelmäßig Verkehrsinformationen ausstrahlt (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f95": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Flughafen für Reifenwechsel oder kleinere Pannen entlang der Autobahn",
       "Parkstreifen für Schwerlastfahrzeuge in der Nacht",
       "Verengung der Fahrspur mit obligatorischem Reißverschluss",
       "Nothaltespur"
     ],
-    "explanation": "Das Zeichen F95 weist auf eine Nothaltespur zum sicheren Anhalten von Fahrzeugen ohne Lenkung oder mit defekten Bremsen hin (Art. 71.2 der Straßenverkehrsordnung).",
+    "explanation": "Das Zeichen F95 weist auf eine Nothaltespur zum sicheren Anhalten von lenklosen Fahrzeugen oder Fahrzeugen mit defekten Bremsen hin (Art. 71.2 der Straßenverkehrsordnung).",
     "signTitle": "Nothaltespur",
-    "signExplanation": "Das Zeichen F95 weist auf eine Nothaltespur zum sicheren Anhalten von Fahrzeugen ohne Lenkung oder mit defekten Bremsen hin (Art. 71.2 der Straßenverkehrsordnung)."
+    "signExplanation": "Das Zeichen F95 weist auf eine Nothaltespur zum sicheren Anhalten von lenklosen Fahrzeugen oder Fahrzeugen mit defekten Bremsen hin (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f97": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Straßenschild, das auf eine Verengung der Fahrspur hinweist",
       "Ankündigung einer Aufteilung in zwei verschiedene Fahrspuren",
       "Vorabschild, das auf eine Umleitung auf eine andere Autobahn hinweist",
-      "Verkehrsschild, das die Überquerung des Mittelstreifens ankündigt"
+      "Verkehrsschild, das eine Überquerung des Mittelstreifens ankündigt"
     ],
     "explanation": "Das Zeichen F97 weist auf eine Verengung der Fahrbahn hin, die das Ausmaß einer Vollspur hat (Art. 71.2 der Straßenverkehrsordnung).",
     "signTitle": "Straßenschild, das auf eine Verengung der Fahrspur hinweist",
     "signExplanation": "Das Zeichen F97 weist auf eine Verengung der Fahrbahn hin, die das Ausmaß einer Vollspur hat (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f98": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Parkstreifen für kurzfristiges Anhalten oder Ausruhen entlang der Autobahn",
       "Flughafen",
@@ -2612,7 +2612,7 @@
     "signExplanation": "Das Zeichen F98 weist auf eine Schutzhütte, einen sicheren Ausweichplatz entlang von Autobahnen oder in Tunneln hin, der nur im Pannen- oder Notfallfall genutzt werden darf (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f99a": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Obligatorischer Radweg, auf dem Fußgänger und Reiter strengstens verboten sind",
       "Beginn eines Wohngebiets mit gemischtem Verkehr und einer Höchstgeschwindigkeit von 20 km/h",
@@ -2624,7 +2624,7 @@
     "signExplanation": "Das Zeichen F99a weist auf den Beginn einer Straße hin, die Fußgängern, Radfahrern, Reitern und Speed-Pedelecs vorbehalten ist (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f99b": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Vorgeschriebener Rad- und Fußweg, getrennt durch eine durchgehende weiße Linie auf der Fahrbahn",
       "Beginn einer Spielstraße, auf der der motorisierte Verkehr zu bestimmten Zeiten verboten ist",
@@ -2636,7 +2636,7 @@
     "signExplanation": "Das Zeichen F99b weist auf den Beginn einer reservierten Straße hin und gibt die Abschnitte an, die für die verschiedenen Kategorien von Verkehrsteilnehmern bestimmt sind (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f99c": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Anfang der Straße, die für den Verkehr von landwirtschaftlichen Fahrzeugen, Fußgängern, Radfahrern, Reitern und Speed-Pedelec-Fahrern reserviert ist",
       "Fahrverbot für landwirtschaftliche Fahrzeuge und Traktoren auf Landstraßen",
@@ -2648,11 +2648,11 @@
     "signExplanation": "Das Zeichen F99c weist auf den Beginn einer Straße hin, die für landwirtschaftliche Fahrzeuge, Fußgänger, Radfahrer, Reiter und schnelle Pedelecs reserviert ist (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f101a": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Ende eines Pflichtradwegs entlang einer normalen Regionalstraße",
       "Ende der Straße oder eines Teils der öffentlichen Straße, der für den Verkehr von Fußgängern, Radfahrern, Reitern und Fahrern von Speed-Pedelecs reserviert ist",
-      "Beginn einer Zone mit absolutem Vorrang für Radfahrer auf der Straße",
+      "Beginn einer Zone mit absolutem Vorrang für Radfahrer auf der Fahrbahn",
       "Ende eines Wohngebiets oder Gebiets mit gemischtem Verkehr"
     ],
     "explanation": "Das Zeichen F101a kennzeichnet das Ende der Straße, die Fußgängern, Radfahrern, Fahrern und Fahrern von Speed-Pedelecs vorbehalten ist (Art. 71.2 der Straßenverkehrsordnung).",
@@ -2660,9 +2660,9 @@
     "signExplanation": "Das Zeichen F101a kennzeichnet das Ende der Straße, die Fußgängern, Radfahrern, Fahrern und Fahrern von Speed-Pedelecs vorbehalten ist (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f101b": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
-      "Beginn eines separaten Rad- und Reitwegs entlang einer öffentlichen Straße",
+      "Beginn eines separaten Rad- und Reitweges entlang einer öffentlichen Straße",
       "Ab sofort ist es für Radfahrer und Reiter Pflicht, auf der Straße zu fahren",
       "Ende der Straße, die Fußgängern, Radfahrern, Fahrern und Fahrern von Speed-Pedelecs vorbehalten ist, mit Angabe des für die verschiedenen Kategorien vorgesehenen Straßenabschnitts",
       "Ende einer Fußgängerzone im Stadtzentrum"
@@ -2672,19 +2672,19 @@
     "signExplanation": "Das Zeichen F101b kennzeichnet das Ende der reservierten Straße mit getrennten Abschnitten für verschiedene Kategorien von Verkehrsteilnehmern (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f101c": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Fahrverbot für landwirtschaftliche Traktoren und Erntemaschinen auf öffentlichen Straßen",
-      "Beginn einer ausschließlich für Traktoren reservierten Agrarstraße",
+      "Beginn einer ausschließlich für Traktoren reservierten landwirtschaftlichen Straße",
       "Ortsende an einer ländlichen Verbindungsstraße",
       "Ende der Straße, die für den Verkehr von landwirtschaftlichen Fahrzeugen, Fußgängern, Radfahrern, Reitern und Speed-Pedelec-Fahrern reserviert ist"
     ],
-    "explanation": "Das Zeichen F101c weist auf das Ende der Straße hin, die für landwirtschaftliche Fahrzeuge, Fußgänger, Radfahrer, Reiter und Speed-Pedelecs reserviert ist (Art. 71.2 der Straßenverkehrsordnung).",
+    "explanation": "Das Schild F101c kennzeichnet das Ende der Straße, die für landwirtschaftliche Fahrzeuge, Fußgänger, Radfahrer, Reiter und Speed-Pedelecs reserviert ist (Art. 71.2 der Straßenverkehrsordnung).",
     "signTitle": "Ende der Straße, die für den Verkehr von landwirtschaftlichen Fahrzeugen, Fußgängern, Radfahrern, Reitern und Speed-Pedelec-Fahrern reserviert ist",
-    "signExplanation": "Das Zeichen F101c weist auf das Ende der Straße hin, die für landwirtschaftliche Fahrzeuge, Fußgänger, Radfahrer, Reiter und Speed-Pedelecs reserviert ist (Art. 71.2 der Straßenverkehrsordnung)."
+    "signExplanation": "Das Schild F101c kennzeichnet das Ende der Straße, die für landwirtschaftliche Fahrzeuge, Fußgänger, Radfahrer, Reiter und Speed-Pedelecs reserviert ist (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f103": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Ende einer Fußgängerzone",
       "Übergang für Schulkinder",
@@ -2696,7 +2696,7 @@
     "signExplanation": "Das Zeichen F103 weist auf den Beginn einer Fußgängerzone hin (Art. 71.2)."
   },
   "rec-f105": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Ende einer Fußgängerzone",
       "Beginn einer Fußgängerzone",
@@ -2708,19 +2708,19 @@
     "signExplanation": "Das Zeichen F105 weist auf das Ende einer Fußgängerzone hin (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f111": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Ende einer Fahrradzone oder Fahrradstraße",
       "Beginn einer Fahrradzone",
       "Pflichtradweg, der als Radschnellweg ausgewiesen ist",
-      "Fahrverbot für alle motorisierten Fahrzeuge auf dieser Straße"
+      "Verbot aller motorisierten Fahrzeuge auf dieser Straße"
     ],
-    "explanation": "Das Zeichen F111 weist auf den Beginn einer Radfahrzone (Radstraße) hin, in der Kraftfahrzeuge Radfahrer nicht überholen dürfen und eine Höchstgeschwindigkeit von 30 km/h eingehalten werden darf (Artikel 71.2 der Straßenverkehrsordnung).",
+    "explanation": "Das Zeichen F111 weist auf den Beginn einer Radfahrzone (Radstraße) hin, in der Kraftfahrzeuge Radfahrer nicht überholen dürfen und eine Höchstgeschwindigkeit von 30 km/h gefahren werden darf (Artikel 71.2 der Straßenverkehrsordnung).",
     "signTitle": "Beginn einer Fahrradzone",
-    "signExplanation": "Das Zeichen F111 weist auf den Beginn einer Radfahrzone (Radstraße) hin, in der Kraftfahrzeuge Radfahrer nicht überholen dürfen und eine Höchstgeschwindigkeit von 30 km/h eingehalten werden darf (Artikel 71.2 der Straßenverkehrsordnung)."
+    "signExplanation": "Das Zeichen F111 weist auf den Beginn einer Radfahrzone (Radstraße) hin, in der Kraftfahrzeuge Radfahrer nicht überholen dürfen und eine Höchstgeschwindigkeit von 30 km/h gefahren werden darf (Artikel 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f113": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Beginn einer Radfahrzone, in der Radfahrer die gesamte Fahrspurbreite nutzen dürfen",
       "Radfahrern ist die Weiterfahrt auf dieser öffentlichen Straße untersagt",
@@ -2732,10 +2732,10 @@
     "signExplanation": "Das Schild F113 zeigt das Ende einer Radfahrzone (Radstraße) an (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f117": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Ende einer Umweltzone mit freier Zufahrt für alle Fahrzeuge",
-      "Beginn einer lärmfreien Zone um einen ruhigen Bereich herum",
+      "Beginn einer lärmfreien Zone rund um einen ruhigen Bereich",
       "Obligatorische Fahrtroute für reine Elektrofahrzeuge und Plug-in-Hybride",
       "Beginn einer Umweltzone"
     ],
@@ -2744,7 +2744,7 @@
     "signExplanation": "Das Zeichen F117 weist auf den Beginn einer Umweltzone (LEZ) hin, in der eine selektive Zulassungsregelung für Kraftfahrzeuge auf der Grundlage ihrer Emissionen gilt (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f118": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Ende einer Umweltzone",
       "Beginn einer Umweltzone mit selektiven Zugangsbedingungen",
@@ -2756,7 +2756,7 @@
     "signExplanation": "Das Zeichen F118 zeigt das Ende einer Umweltzone (LEZ) an (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f119": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Warnung vor tief fliegenden Flugzeugen oder plötzlichem Fluglärm",
       "Beginn eines Flughafengeländes",
@@ -2768,15 +2768,15 @@
     "signExplanation": "Das Schild F119 weist auf den Beginn eines Flughafengeländes hin (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "rec-f120": {
-    "question": "Was bedeutet dieses Verkehrsschild?",
+    "question": "Was bedeutet dieses Verkehrszeichen?",
     "options": [
       "Beginn eines Flughafengeländes mit besonderen Polizeivorschriften",
       "Warnung vor plötzlichem Lärm durch startende Flugzeuge",
-      "Ende eines Flughafenbereichs",
+      "Ende eines Flughafengeländes",
       "Stand- und Parkverbot auf Zufahrtsstraßen zum Flughafen"
     ],
     "explanation": "Das Zeichen F120 weist auf das Ende eines Flughafengeländes hin (Art. 71.2 der Straßenverkehrsordnung).",
-    "signTitle": "Ende eines Flughafenbereichs",
+    "signTitle": "Ende eines Flughafengeländes",
     "signExplanation": "Das Zeichen F120 weist auf das Ende eines Flughafengeländes hin (Art. 71.2 der Straßenverkehrsordnung)."
   },
   "iden-c39": {
@@ -2787,7 +2787,7 @@
       "assets/signs/C3.svg",
       "assets/signs/C1.svg"
     ],
-    "explanation": "Das Zeichen C39 verbietet Lkw mit einem zulässigen Gesamtgewicht über 3,5 Tonnen das Überholen von mehrspurigen Fahrzeugen."
+    "explanation": "Das Schild C39 verbietet Lkws mit einem zulässigen Gesamtgewicht über 3,5 Tonnen das Überholen von mehrspurigen Fahrzeugen."
   },
   "iden-e3": {
     "question": "Welches Schild verbietet sowohl Stehenbleiben als auch Parken?",
@@ -2807,12 +2807,12 @@
       "assets/signs/F103.svg",
       "assets/signs/F3b.svg"
     ],
-    "explanation": "Das Zeichen F3b zeigt mit einer diagonalen roten Linie die Silhouette der bebauten Fläche und markiert das Ende der bebauten Fläche."
+    "explanation": "Das Zeichen F3b zeigt die Silhouette der bebauten Fläche mit einer diagonalen roten Linie und markiert das Ende der bebauten Fläche."
   },
   "rule-estep-trottoir-2022": {
     "question": "Darf man mit einem motorisierten E-Scooter auf dem Gehweg fahren?",
     "options": [
-      "Nein, E-Scooter unterliegen den Regeln für Radfahrer und dürfen niemals auf dem Gehweg fahren (es sei denn, Sie führen sie an der Hand)",
+      "Nein, E-Scooter unterliegen den Regeln für Radfahrer und sollten niemals auf dem Gehweg gefahren werden (es sei denn, Sie führen sie an der Hand)",
       "Ja, solange Sie nicht schneller als 6 km/h fahren",
       "Ja, aber nur, wenn kein Radweg vorhanden ist",
       "Ja, aber nur innerhalb geschlossener Ortschaften"
@@ -2827,14 +2827,14 @@
       "30 km/h",
       "45 km/h"
     ],
-    "explanation": "Gemäß Artikel 2.15.2 der Straßenverkehrsordnung beträgt die konstruktionsbedingte Höchstgeschwindigkeit einer motorisierten Antriebseinrichtung maximal 25 km/h."
+    "explanation": "Gemäß Artikel 2.15.2 der Straßenverkehrsordnung beträgt die bauartbedingte Höchstgeschwindigkeit einer motorisierten Antriebseinrichtung maximal 25 km/h."
   },
   "rule-estep-parkeren-2022": {
     "question": "Wo können Sie Ihren Elektro-Sharing-Scooter nach der Fahrt abstellen?",
     "options": [
       "Zufällig auf dem Bürgersteig, solange es flach auf dem Boden liegt",
       "Mitten auf dem Radweg",
-      "Außerhalb der Fahrbahn und Parkstreifen, ohne andere Verkehrsteilnehmer zu behindern oder zu gefährden",
+      "Außerhalb der Straße und Parkstreifen, ohne andere Verkehrsteilnehmer zu behindern oder zu gefährden",
       "Nur auf gebührenpflichtigen Parkplätzen"
     ],
     "explanation": "Artikel 23.3 verlangt, dass Antriebsgeräte wie E-Scooter außerhalb der Fahrbahn und Parkspuren positioniert werden, ohne andere Verkehrsteilnehmer zu behindern oder zu gefährden. Spezifische Drop-Zones sind eine kommunale Regelung, keine Bundesstraßenverkehrsordnung."
@@ -2857,7 +2857,7 @@
       "Obligatorischer Motorradführerschein der Kategorie A",
       "Nur eine spezielle Fahrradbescheinigung der Gemeinde"
     ],
-    "explanation": "Ein Speed-Pedelec wird als Kleinkraftrad der Klasse P eingestuft. Der Fahrer muss mindestens 16 Jahre alt sein und mindestens einen AM-Führerschein oder einen PKW-Führerschein B besitzen."
+    "explanation": "Ein schnelles Pedelec wird als Kleinkraftrad der Klasse P eingestuft. Der Fahrer muss mindestens 16 Jahre alt sein und mindestens einen AM-Führerschein oder einen PKW-Führerschein B besitzen."
   },
   "rule-speed-pedelec-snelheid-2022": {
     "question": "Bis zu welcher Höchstgeschwindigkeit darf die Tretunterstützung eines S-Pedelecs legal aktiv bleiben?",
@@ -2867,7 +2867,7 @@
       "35 km/h",
       "50 km/h"
     ],
-    "explanation": "Gemäß Artikel 2.17 der Straßenverkehrsordnung bietet ein Speed-Pedelec eine Tretunterstützung bis maximal 45 km/h. Oberhalb dieser Geschwindigkeit muss der Hilfsmotor automatisch abschalten."
+    "explanation": "Gemäß Artikel 2.17 der Straßenverkehrsordnung bietet ein schnelles Pedelec eine Tretunterstützung bis maximal 45 km/h. Oberhalb dieser Geschwindigkeit muss der Hilfsmotor automatisch abschalten."
   },
   "rule-velomobiel-hoogte-2022": {
     "question": "Wo soll bei einem Velomobil der vorgeschriebene Reflektorstreifen angebracht werden?",
@@ -2877,10 +2877,10 @@
       "Nur hinten",
       "Auf dem Dach"
     ],
-    "explanation": "Artikel 82.1.2, 6° schreibt vor, dass Velomobile an den Seiten einen gelben oder orangefarbenen Reflexstreifen haben müssen."
+    "explanation": "Artikel 82.1.2, 6° schreibt vor, dass Velomobile an ihren Seiten einen gelben oder orangefarbenen Reflexstreifen haben müssen."
   },
   "rule-reddingsstrook-vorming-2022": {
-    "question": "Wie sollen Autofahrer im Staufall auf einer Straße mit drei Fahrspuren in die gleiche Richtung eine Rettungsspur bilden?",
+    "question": "Wie sollen Autofahrer im Staufall auf einer Straße mit drei Fahrspuren in die gleiche Richtung eine Rettungsgasse bilden?",
     "options": [
       "Alle Fahrzeuge müssen sofort auf die Standspur ausweichen",
       "Fahrzeuge auf der Mittelspur müssen anhalten und den Motor abstellen",
@@ -2900,14 +2900,14 @@
     "explanation": "Gemäß Artikel 12bis müssen Autofahrer bei sehr langsamem Verkehr bis kurz vor der Verengung weiterfahren und dürfen erst dort einfädeln."
   },
   "rule-ritsen-voorrang": {
-    "question": "Wie funktioniert die Priorität beim obligatorischen Reißverschluss an der Verengungsstelle?",
+    "question": "Wie funktioniert die Priorität mit der obligatorischen Zippung an der Verengungsstelle?",
     "options": [
       "Fahrer auf der Hauptspur haben immer Vorrang und müssen niemanden dazwischen lassen",
       "Fahrer auf der freien Spur müssen abwechselnd einem einfädelnden Fahrer Vorfahrt gewähren",
       "Wer am schnellsten beschleunigt, hat Vorrang",
-      "Nur Lastwagen müssen den Pkw Vorfahrt gewähren"
+      "Nur LKWs müssen PKWs Vorfahrt gewähren"
     ],
-    "explanation": "Artikel 12bis sieht vor, dass Fahrer auf der freien Fahrspur an der Verengungsstelle abwechselnd einem zusammenfahrenden Fahrzeug Vorfahrt gewähren müssen."
+    "explanation": "Artikel 12bis sieht vor, dass Fahrer, die sich an der Verengungsstelle auf der freien Spur befinden, abwechselnd einem zusammenfahrenden Fahrzeug Vorfahrt gewähren müssen."
   },
   "rule-fietsstraat-inhalen": {
     "question": "Kann ein Auto einen Radfahrer auf einer Fahrradstraße überholen?",
@@ -2939,13 +2939,13 @@
     ],
     "explanation": "Das Verkehrszeichen B22 erlaubt Radfahrern und Speed-Pedelecs das Weiterfahren und Rechtsabbiegen an roten oder orange-gelben Ampeln, sofern diese Vorfahrt gewähren (Art. 67.3).",
     "signTitle": "Erlaubnis für Radfahrer, an einer roten Ampel rechts abzubiegen",
-    "signExplanation": "Das Verkehrszeichen B22 erlaubt Radfahrern und Fahrern von Speed-Pedelecs das Rechtsabbiegen an einer roten oder orange-gelben Ampel, sofern sie dem anderen Verkehr und querenden Fußgängern Vorrang geben (Art. 67 Abs. 3 StVO)."
+    "signExplanation": "Das Verkehrszeichen B22 erlaubt Radfahrern und Fahrern von Speed-Pedelecs das Rechtsabbiegen an einer roten oder orange-gelben Ampel, sofern sie dem anderen Verkehr und kreuzenden Fußgängern Vorrang geben (Art. 67 Abs. 3 StVO)."
   },
   "rule-fietser-b23": {
     "question": "Was bedeutet dieses Erlaubniszeichen (B23) für Radfahrer und Fahrer von Speed-Pedelecs an einer roten Ampel?",
     "options": [
       "Radfahrer müssen warten, bis es grün wird, bevor sie geradeaus weiterfahren können",
-      "Radfahrer dürfen bei Rot über eine Ampel geradeaus fahren, sofern sie dem anderen Verkehr und Fußgängern Vorfahrt gewähren",
+      "Radfahrer dürfen über eine rote Ampel geradeaus fahren, sofern sie dem anderen Verkehr und Fußgängern Vorfahrt gewähren",
       "Radfahrer dürfen ohne anzuhalten nach links abbiegen",
       "Das rote Licht ist defekt und deaktiviert"
     ],
@@ -2956,7 +2956,7 @@
   "rule-voorrang-aardeweg": {
     "question": "Hat ein Fahrer, der von rechts auf einer unbefestigten Straße kommt, Vorrang vor einem Fahrer, der auf einer öffentlichen Straße mit Fahrbahn fährt?",
     "options": [
-      "Ja, der Vorrang von rechts gilt immer und überall",
+      "Ja, es gilt immer und überall Vorrang von rechts",
       "Nur wenn der Fahrer mit einem landwirtschaftlichen Fahrzeug auf der unbefestigten Straße fährt",
       "Nein, wer von einer unbefestigten Straße oder einem Weg auf eine öffentliche Straße mit Fahrbahn kommt, muss Vorfahrt gewähren",
       "Nur wenn die Straße schmaler als 3 Meter ist"
@@ -3014,7 +3014,7 @@
     "explanation": "Innerhalb geschlossener Ortschaften müssen Sie gemäß Artikel 39 langsamer fahren und gegebenenfalls anhalten, um einem Bus, der seinen Fahrtrichtungsanzeiger einschaltet, die Möglichkeit zu geben, seine Haltestelle zu verlassen."
   },
   "rule-bus-buiten-bebouwde-kom": {
-    "question": "Müssen Sie außerhalb der Ortschaft anhalten, wenn ein Linienbus von einer Haltestelle mit Blinker wegfahren möchte?",
+    "question": "Müssen Sie für einen Linienbus, der von einer Haltestelle mit Fahrtrichtungsanzeiger wegfahren möchte, außerhalb der Ortschaft anhalten?",
     "options": [
       "Nein, die Vorrangpflicht für fahrende Busse gilt nur innerhalb geschlossener Ortschaften",
       "Ja, diese Regel gilt überall auf öffentlichen Straßen",
@@ -3029,7 +3029,7 @@
       "Du, wenn du schon mit dem halben Auto unterwegs bist",
       "Alle anderen Verkehrsteilnehmer; Das Rückwärtsfahren ist ein Manöver, bei dem Sie jedem Vorrang geben müssen",
       "Sie haben Vorrang vor Radfahrern und Fußgängern",
-      "Es gilt weiterhin der Rechtsvorrang"
+      "Es gilt weiterhin der Vorrang des Rechts"
     ],
     "explanation": "Rückwärtsfahren ist ein Manöver gemäß Artikel 12.4. Der Fahrer, der ein Manöver durchführt, muss allen anderen Verkehrsteilnehmern Vorrang einräumen."
   },
@@ -3038,7 +3038,7 @@
     "options": [
       "Sobald Sie den Blinker betätigen, müssen Fahrer hinter Ihnen auf der Fahrspur vor Ihnen bremsen",
       "Sie dürfen nur umsteigen, wenn sich im Umkreis von 500 Metern kein anderes Fahrzeug in Sichtweite befindet",
-      "Sie führen ein Manöver durch und müssen den Fahrern auf der Spur, auf die Sie fahren, Vorfahrt gewähren",
+      "Sie führen ein Manöver durch und müssen den Fahrern auf der Fahrspur Vorfahrt gewähren",
       "Fahrer auf der linken Spur haben immer Vorrang vor Fahrern auf der rechten Spur"
     ],
     "explanation": "Der Spurwechsel ist ein Manöver (Art. 12.4). Sie müssen Ihren Blinker rechtzeitig einschalten und dem Verkehr auf der Zielspur Vorrang einräumen."
@@ -3046,10 +3046,10 @@
   "rule-oversteekplaats-fietser": {
     "question": "Hat ein Radfahrer an einem Fahrradübergang (gekennzeichnet durch weiße Blöcke) automatisch Vorrang vor entgegenkommenden Autos auf der Straße?",
     "options": [
-      "Ja, genau wie Fußgänger auf einem Zebrastreifen haben Radfahrer beim Überqueren immer Vorrang",
+      "Ja, genau wie Fußgänger auf einem Zebrastreifen haben Radfahrer, die die Straße überqueren, immer Vorrang",
       "Nur wenn der Radfahrer von rechts kommt",
       "Nur wenn der Radfahrer schneller als 20 km/h fährt",
-      "Nein, Radfahrer müssen an einer Kreuzung dem entgegenkommenden Verkehr auf der Fahrbahn Vorfahrt gewähren (es sei denn, die Ampel ist grün)."
+      "Nein, Radfahrer müssen an einer Kreuzung dem entgegenkommenden Verkehr auf der Fahrbahn Vorfahrt gewähren (es sei denn, die Ampel steht auf Grün)."
     ],
     "explanation": "Gemäß Artikel 40ter haben Radfahrer an einem kreuzenden Fahrradübergang keinen Vorrang. Sie dürfen die Kreuzung nur mit Vorsicht und unter Berücksichtigung des herannahenden Verkehrs betreten."
   },
@@ -3064,7 +3064,7 @@
     "explanation": "Ein Radfahrer, der an einem Zebrastreifen auf seinem Fahrrad sitzen bleibt, hat keinen Fußgängervorrang (Art. 40.4.2°). Erst wenn er aussteigt und zu Fuß geht, hat er als Fußgänger Vorrang."
   },
   "rule-parkeren-zebrapad-afstand": {
-    "question": "Ab welchem ​​Mindestabstand vor einem Fußgängerüberweg ist das Anhalten und Parken auf der Fahrbahn verboten?",
+    "question": "Ab welchem ​​Mindestabstand vor einem Fußgängerüberweg ist das Anhalten und Parken auf der Straße verboten?",
     "options": [
       "Mindestens 10 Meter",
       "Mindestens 5 Meter",
@@ -3116,7 +3116,7 @@
   "rule-verlichting-tunnels": {
     "question": "Welche Lichter müssen eingeschaltet sein, wenn man tagsüber einen beleuchteten Tunnel betritt?",
     "options": [
-      "Die vier Richtungsanzeiger",
+      "Die vier Fahrtrichtungsanzeiger",
       "Nur das Standlicht reicht aus",
       "Das Abblendlicht (oder Fernlicht) muss eingeschaltet sein, auch in einem beleuchteten Tunnel",
       "Keine Beleuchtung, wenn der Tunnel beleuchtet ist"
@@ -3128,7 +3128,7 @@
     "options": [
       "Sichtbarkeit aus weniger als 500 Metern",
       "Sichtbarkeit aus weniger als 300 Metern",
-      "Nur wenn Sie weniger als 50 Meter weit sehen können",
+      "Nur wenn Sie weniger als 50 Meter entfernt sehen können",
       "Sobald die Sicht auf weniger als etwa 200 Meter sinkt"
     ],
     "explanation": "Artikel 30.1 erfordert die Verwendung von Abblendlicht (oder Fernlicht) zwischen Dämmerung und Morgengrauen sowie tagsüber, wenn die Sichtweite weniger als etwa 200 Meter beträgt."
@@ -3144,7 +3144,7 @@
     "explanation": "Gemäß Artikel 31.1 muss das Fernlicht ausgeschaltet und durch Abblendlicht ersetzt werden, sobald sich ein entgegenkommendes Fahrzeug nähert, um eine Blendung zu vermeiden."
   },
   "rule-inhalen-kruispunt": {
-    "question": "Dürfen Sie an einer Kreuzung, an der Vorrang von rechts gilt, ein anderes Auto auf der linken Seite überholen?",
+    "question": "Darf man an einer Kreuzung, an der Vorrang von rechts gilt, ein anderes Auto auf der linken Seite überholen?",
     "options": [
       "Ja, solange Sie nicht schneller als 50 km/h fahren",
       "Nein, das Überholen einer Fahrzeuggruppe oder eines Autos auf der linken Seite ist an einer Kreuzung mit Vorrang von rechts verboten",
@@ -3154,7 +3154,7 @@
     "explanation": "Artikel 17.2, 2°a verbietet das Überholen eines Teams oder eines Kraftfahrzeugs mit mehr als zwei Rädern auf der linken Seite an Kreuzungen, an denen von rechts Vorrang gilt."
   },
   "rule-inhalen-oversteekplaats": {
-    "question": "Dürfen Sie ein Fahrzeug überholen, das an einem Zebrastreifen ohne Ampel langsamer wird oder anhält?",
+    "question": "Darf man ein Fahrzeug überholen, das an einem Zebrastreifen ohne Ampel langsamer wird oder anhält?",
     "options": [
       "Ja, vorausgesetzt, Sie weichen nach links aus",
       "Ja, wenn Sie keine Fußgänger sehen",
@@ -3164,7 +3164,7 @@
     "explanation": "Artikel 17.2, 5° verbietet das Überholen eines Fahrers, der vor einem Fußgänger- oder Radfahrerübergang anhält oder sich diesem nähert."
   },
   "rule-snelheid-woonerf": {
-    "question": "Wie hoch ist die Höchstgeschwindigkeit innerhalb eines Wohngebiets oder eines Grundstücks?",
+    "question": "Welche Höchstgeschwindigkeit gilt innerhalb eines Wohngebiets oder eines Grundstücks?",
     "options": [
       "30 km/h",
       "10 km/h",
@@ -3211,30 +3211,30 @@
       "Mindestens 12 Stunden",
       "Mindestens 6 Stunden"
     ],
-    "explanation": "Ab 0,35 mg/l ausgeatmeter Alveolarluft (0,8 Promille im Blut) verhängt die Polizei ein sofortiges Fahrverbot von mindestens 6 Stunden (StVO Art. 60)."
+    "explanation": "Ab 0,35 mg/l ausgeatmeter Alveolarluft (0,8 Promille im Blut) verhängt die Polizei ein sofortiges Fahrverbot von mindestens 6 Stunden (StVZO Art. 60)."
   },
   "rule-autosnelweg-omkeren": {
     "question": "Dürfen Sie auf einer Autobahn wenden oder rückwärts fahren, wenn Sie die Ausfahrt verpasst haben?",
     "options": [
       "Nein, Abbiegen, Rückwärtsfahren und Überfahren des Mittelstreifens sind auf der Autobahn strengstens verboten",
-      "Ja, wenn Sie auf dem Seitenstreifen bleiben und vier Blinker einschalten",
+      "Ja, wenn Sie auf der Rettungsspur bleiben und vier Blinker einschalten",
       "Ja, solange Sie nicht schneller als 10 km/h rückwärts fahren",
       "Nur wenn die Polizei den Verkehr regelt"
     ],
-    "explanation": "Gemäß Artikel 21.4 ist es absolut verboten, auf Autobahnen abzubiegen, rückwärts zu fahren oder die Anschlüsse des Zentralstreifens zu nutzen."
+    "explanation": "Gemäß Artikel 21.4 ist es auf Autobahnen absolut verboten, abzubiegen, rückwärts zu fahren oder den Mittelstreifen zu benutzen."
   },
   "rule-autosnelweg-pechstrook": {
-    "question": "Ab wann darf mit einem Fahrzeug der Rettungsstreifen auf der Autobahn genutzt werden?",
+    "question": "Wann darf man mit einem Fahrzeug den Rettungsstreifen auf einer Autobahn nutzen?",
     "options": [
       "Um einen Anruf zu tätigen oder sich auszuruhen",
       "Nur im Pannen- oder akuten Notfall oder wenn ein dynamisches Verkehrszeichen dies ausdrücklich zulässt",
       "Um an einem Stau rechts vorbei zur nächsten Ausfahrt zu fahren",
       "Wenn die anderen Fahrspuren überfüllt sind"
     ],
-    "explanation": "Gemäß den Artikeln 9.7 und 21.4 ist der Standstreifen/Notstreifen ausschließlich für Fahrzeuge bestimmt, die aufgrund einer Panne oder eines Notfalls anhalten müssen, oder als Spur für die Hauptverkehrszeiten, wenn dies angegeben ist."
+    "explanation": "Gemäß den Artikeln 9.7 und 21.4 ist der Standstreifen/Notstreifen ausschließlich für Fahrzeuge bestimmt, die aufgrund einer Panne oder eines Notfalls anhalten müssen, oder als Spur für die Hauptverkehrszeit, wenn dies angegeben ist."
   },
   "rule-autosnelweg-inhalen-rechts": {
-    "question": "Ab wann darf man auf der Autobahn ein anderes Auto rechts überholen?",
+    "question": "Wann darf man auf der Autobahn ein anderes Auto rechts überholen?",
     "options": [
       "Wenn auf der linken Spur mit einer Geschwindigkeit von weniger als 100 km/h gefahren wird",
       "Wenn Sie es eilig haben und der Fahrer auf der linken Seite nicht nach rechts wechseln möchte",
@@ -3264,7 +3264,7 @@
     "explanation": "Gemäß der allgemeinen Regel (Art. 9.1.1) müssen Sie so nah wie möglich am rechten Fahrbahnrand fahren. Wer den Kreisverkehr schnell verlässt (erste Ausfahrt), wählt die rechte Spur."
   },
   "rule-schoolbus-gevaarslichten": {
-    "question": "Was ist zu tun, wenn ein Schulbus steht und seine vier Fahrtrichtungsanzeiger (Warnblinkanlage) und das Schild „Kinderbeförderung“ leuchten?",
+    "question": "Was ist zu tun, wenn ein Schulbus steht und seine vier Fahrtrichtungsanzeiger (Warnblinkanlage) und das Schild „Beförderung von Kindern“ eingeschaltet sind?",
     "options": [
       "Betätigen Sie die Hupe, um Kinder zu warnen, die die Straße überqueren",
       "Fahren Sie einfach weiter; Das Warnsignal gilt nur für die Busfahrgäste selbst",
@@ -3274,7 +3274,7 @@
     "explanation": "Artikel 39bis sieht vor, dass Fahrer ihre Geschwindigkeit erheblich reduzieren und gegebenenfalls anhalten müssen, wenn ein Schulbus steht und die Warnblinkanlage eingeschaltet ist."
   },
   "rule-fietser-naast-elkaar": {
-    "question": "Dürfen zwei Radfahrer außerhalb von Ortschaften nebeneinander auf der Straße fahren?",
+    "question": "Dürfen zwei Radfahrer außerhalb geschlossener Ortschaften nebeneinander auf der Straße fahren?",
     "options": [
       "Nein, außerhalb geschlossener Ortschaften müssen Radfahrer immer hintereinander fahren",
       "Ja, Radfahrer dürfen immer und überall mit maximal vier Personen nebeneinander fahren",
@@ -3290,7 +3290,7 @@
       "Ja, ich muss vollständig anhalten und dem Verkehr von links und rechts Vorrang geben.",
       "Nein, ein STOP-Schild gilt nur für motorisierte Fahrzeuge."
     ],
-    "explanation": "Ein STOP-Schild (B5) verpflichtet jeden Autofahrer (auch Radfahrer), an der Haltelinie vollständig anzuhalten und den Autofahrern auf der Kreuzung Vorrang einzuräumen."
+    "explanation": "Ein STOP-Schild (B5) verpflichtet jeden Autofahrer (auch Radfahrer), an der Haltelinie vollständig anzuhalten und den Autofahrern auf der Kreuzung Vorrang zu geben."
   },
   "sit-02-b17-voorrang-rechts": {
     "question": "Sie erreichen diese Kreuzung mit dem Verkehrszeichen B17. Was sollten Sie tun?",
@@ -3308,12 +3308,12 @@
       "Ich bin immer verpflichtet, mit einem Fuß auf dem Boden anzuhalten, auch wenn kein Verkehr auf mich zukommt.",
       "Ich kann ruhig fahren, denn Haifischzähne gelten nur für Autofahrer."
     ],
-    "explanation": "Das Verkehrszeichen B1 (umgedrehtes Dreieck) und die Haifischzähne verpflichten Sie, den Autofahrern auf der Kreuzung Vorrang einzuräumen. Sie sollten nur dann aufhören, wenn es nötig ist."
+    "explanation": "Das Verkehrszeichen B1 (umgekehrtes Dreieck) und die Haifischzähne verpflichten Sie, den Autofahrern auf der Kreuzung Vorrang einzuräumen. Sie sollten nur dann aufhören, wenn es nötig ist."
   },
   "sit-04-b22-rechtsaf-rood": {
     "question": "Die Ampel ist rot, aber am Mast steht das Schild B22 (gelbes Fahrrad mit Pfeil). Darf man rechts abbiegen?",
     "options": [
-      "Ja, aber nur, wenn es überhaupt keinen Fußgängerüberweg gibt.",
+      "Ja, aber nur, wenn überhaupt kein Fußgängerüberweg vorhanden ist.",
       "Ja, Sie dürfen an der roten Ampel rechts abbiegen, sofern Sie anderen Verkehrsteilnehmern Vorrang geben.",
       "Nein, an einer roten Ampel muss man immer warten, bis sie grün wird."
     ],
@@ -3323,7 +3323,7 @@
     "question": "Ein Fußgänger überquert den Zebrastreifen und ein Radfahrer nähert sich. Wer sollte Vorrang haben?",
     "options": [
       "Der Fußgänger muss für den Radfahrer anhalten.",
-      "Der Radfahrer darf erst Vorfahrt gewähren, wenn der Fußgänger bereits die Hälfte des Zebrastreifens passiert hat.",
+      "Der Radfahrer darf nur Vorfahrt gewähren, wenn der Fußgänger bereits die Hälfte des Zebrastreifens passiert hat.",
       "Der Radfahrer muss dem querenden Fußgänger Vorfahrt gewähren."
     ],
     "explanation": "Autofahrer (einschließlich Radfahrer) müssen Fußgängern Vorrang einräumen, die sich an einer Kreuzung befinden oder kurz davor sind, diese zu betreten (Art. 40.4.1)."
@@ -3341,7 +3341,7 @@
     "question": "Drei Radfahrer kommen gleichzeitig an dieser entsprechenden Kreuzung an. Wer darf zuerst durchfahren?",
     "options": [
       "Radfahrer 2, weil er geradeaus fährt.",
-      "Radfahrer 1, weil er von rechts Vorfahrt hat und keinen Verkehr von rechts hat.",
+      "Radfahrer 1, da er von rechts Vorfahrt hat und keinen Verkehr von rechts hat.",
       "Radfahrer 3, weil er am nächsten an der Straßenmitte fährt."
     ],
     "explanation": "Ohne Vorrangzeichen gilt der Vorrang von rechts. Radfahrer 3 muss Radfahrer 2 Vorfahrt gewähren, dieser muss Radfahrer 1 Vorfahrt gewähren. Radfahrer 1 hat keinen Verkehr von rechts und fährt zuerst."
@@ -3359,13 +3359,13 @@
     "question": "Sie fahren auf dieser Fahrradstraße (Fahrradzone, Schild F111). Welche Regelung gilt hier für Autofahrer?",
     "options": [
       "Kraftfahrzeuge dürfen Radfahrer nicht überholen und die Höchstgeschwindigkeit beträgt 30 km/h.",
-      "Kraftfahrzeuge dürfen Radfahrer stets überholen, sofern sie einen Abstand von mindestens 1 Meter zur Seite einhalten.",
-      "Kraftfahrzeuge dürfen in einer Fahrradzone überhaupt nicht fahren."
+      "Kraftfahrzeuge dürfen Radfahrer jederzeit überholen, sofern sie einen Mindestabstand von 1 Meter zur Seite einhalten.",
+      "Kraftfahrzeuge dürfen in einer Radfahrzone überhaupt nicht fahren."
     ],
     "explanation": "In einer Fahrradzone (Schild F111) dürfen Kraftfahrzeuge Radfahrer nicht überholen und es gilt überall eine Höchstgeschwindigkeit von 30 km/h (Art. 22 Novies)."
   },
   "sit-10-politieagent-halt": {
-    "question": "Der Polizist steht quer mit waagerecht ausgestreckten Armen an der Kreuzung. Was bedeutet diese Anordnung?",
+    "question": "Der Polizist steht quer mit ausgestreckten Armen an der Kreuzung. Was bedeutet diese Anordnung?",
     "options": [
       "Fahren Sie fort, wenn Sie rechts abbiegen möchten.",
       "Halten Sie für alle Verkehrsteilnehmer an, die sich dem Beamten von vorne oder hinten nähern.",
@@ -3374,7 +3374,7 @@
     "explanation": "Die horizontal ausgestreckten Arme einer berechtigten Person bedeuten „Anhalten“ für alle Verkehrsteilnehmer, die sich aus Richtungen nähern, die die Brust oder den Rücken des Beamten kreuzen (Art. 4.1)."
   },
   "sit-11-plaats-geen-fietspad": {
-    "question": "Auf dieser Straße gibt es keinen Radweg, sondern nur einen Fußweg. Wohin sollte man als Radfahrer (ab 10 Jahren) fahren?",
+    "question": "Auf dieser Straße gibt es keinen Radweg, sondern nur einen Fußweg. Wohin soll man als Radfahrer (ab 10 Jahren) fahren?",
     "options": [
       "Direkt an der Straße.",
       "Auf dem Gehweg, solange keine Fußgänger unterwegs sind.",
@@ -3389,7 +3389,7 @@
       "Das hängt von Ihrer Geschwindigkeit ab: Im Schritttempo befolgen Sie die Regeln für Fußgänger, schneller die für Radfahrer.",
       "Immer auf dem Radweg, unabhängig von der Geschwindigkeit."
     ],
-    "explanation": "Nutzer von nicht motorisierten Mobilitätsgeräten befolgen die Regeln für Fußgänger, sofern sie nicht schneller als Schritttempo unterwegs sind. Fahren sie schneller, gelten die Regeln für Velofahrer (Art. 7bis)."
+    "explanation": "Benutzer von nicht motorisierten Antriebsgeräten beachten die Regeln für Fußgänger, sofern sie sich nicht schneller als Schrittgeschwindigkeit fortbewegen. Fahren sie schneller, gelten die Regeln für Velofahrer (Art. 7bis)."
   },
   "sit-13-bebouwde-kom-naast-elkaar": {
     "question": "Zwei Radfahrer fahren nebeneinander in einem bebauten Gebiet und hinter ihnen nähert sich ein Auto. Was sollten Radfahrer tun?",
@@ -3401,7 +3401,7 @@
     "explanation": "Innerhalb geschlossener Ortschaften dürfen Radfahrer zu zweit nebeneinander fahren. Sie dürfen nur dann hintereinander fahren, wenn das Überqueren mit einem entgegenkommenden Fahrzeug sonst nicht möglich ist (Art. 43.2)."
   },
   "sit-14-fietspad-d7-enkelrichting": {
-    "question": "Dürfen Sie auf diesem durch das Schild D7 gekennzeichneten Radweg in die entgegengesetzte Richtung radeln?",
+    "question": "Dürfen Sie auf diesem mit dem Schild D7 gekennzeichneten Radweg in die entgegengesetzte Richtung radeln?",
     "options": [
       "Nein, ein Radweg darf nur in der Fahrtrichtung befahren werden, in der das D7-Schild sichtbar ist.",
       "Ja, auf einem Radweg kann man immer in beide Richtungen radeln.",
@@ -3423,14 +3423,14 @@
     "options": [
       "Rechts, in Fahrtrichtung des motorisierten Verkehrs.",
       "Fußgänger sollten niemals auf der Fahrbahn gehen, wenn kein Gehweg vorhanden ist.",
-      "Auf der linken Straßenseite, damit sie den entgegenkommenden Verkehr deutlich sehen können."
+      "Auf der linken Straßenseite, damit sie den entgegenkommenden Verkehr deutlich erkennen können."
     ],
     "explanation": "Wenn Fußgänger die Straße benutzen müssen, weil es keinen Gehweg, keinen barrierefreien Seitenstreifen oder keinen Radweg gibt, müssen sie im Verhältnis zu ihrer Gehrichtung links von der Straße gehen (Art. 42.2.1°)."
   },
   "sit-17-b9-voorrangsweg": {
     "question": "Sie fahren auf dieser Straße mit dem Verkehrszeichen B9 (orange/gelbe Raute). Welche Prioritätsregel gilt hier?",
     "options": [
-      "Autofahrer aus Nebenstraßen müssen Ihnen Vorrang geben; Sie fahren auf einer Vorfahrtsstraße.",
+      "Fahrer aus Nebenstraßen müssen Ihnen Vorrang geben; Sie fahren auf einer Vorfahrtsstraße.",
       "An jeder Kreuzung gilt weiterhin Rechtsvorrang.",
       "Dieses Schild zeigt nur das Ende der bebauten Fläche an."
     ],
@@ -3452,16 +3452,16 @@
       "Radfahrer dürfen hier nur zwischen 9 und 17 Uhr fahren.",
       "Radfahrer müssen absteigen und zu Fuß weitergehen."
     ],
-    "explanation": "Das Zeichen F19 mit dem Unterzeichen M2 weist auf eine Straße mit eingeschränktem Einbahnverkehr (SUL) hin: Der motorisierte Verkehr darf nur in eine Richtung fahren, Radfahrer jedoch in beide Richtungen (Art. 65.2 & Art. 71)."
+    "explanation": "Das Schild F19 mit dem Unterzeichen M2 weist auf eine Straße mit eingeschränktem Einbahnverkehr (SUL) hin: Der motorisierte Verkehr darf nur in eine Richtung fahren, Radfahrer jedoch in beide Richtungen (Art. 65.2 & Art. 71)."
   },
   "sit-20-f4a-zone-30": {
     "question": "Sie fahren am Verkehrszeichen F4a (Zone 30) vorbei. Welche Geschwindigkeitsbegrenzung gilt ab hier?",
     "options": [
-      "Die Geschwindigkeitsbegrenzung beträgt 50 km/h, außer auf Schulstraßen.",
+      "Die Höchstgeschwindigkeit beträgt 50 km/h, außer auf Schulstraßen.",
       "Die Höchstgeschwindigkeit beträgt in der gesamten Zone bis zum Zonenendeschild 30 km/h.",
       "Die Geschwindigkeitsbegrenzung gilt nur während der Schulzeit."
     ],
-    "explanation": "Das Verkehrszeichen F4a kennzeichnet den Beginn einer Zone, in der die Geschwindigkeit überall auf maximal 30 km/h begrenzt ist, bis das Verkehrszeichen F4b das Ende der Zone anzeigt (Art. 71 & Art. 22quater)."
+    "explanation": "Das Verkehrszeichen F4a zeigt den Beginn einer Zone an, in der die Geschwindigkeit überall auf maximal 30 km/h begrenzt ist, bis das Zeichen F4b das Ende der Zone anzeigt (Art. 71 & Art. 22quater)."
   },
   "sit-21-rotonde-voorrang": {
     "question": "Sie nähern sich diesem Kreisverkehr, der durch die Schilder D5 und B1 mit Haifischzähnen gekennzeichnet ist. Wer hat Vorrang?",
@@ -3482,7 +3482,7 @@
     "explanation": "Sobald die roten Ampeln blinken oder sich die Schranken in Bewegung setzen, ist das Befahren des Bahnübergangs verboten. Fahrer sind zum Anhalten verpflichtet (Art. 20.3, 2°)."
   },
   "sit-23-voorsorteren-pijlen": {
-    "question": "Sie fahren auf der Fahrspur, deren Pfeil nach links zeigt. Darf man an der Kreuzung geradeaus fahren?",
+    "question": "Sie fahren auf der Spur, deren Pfeil nach links zeigt. Darf man an der Kreuzung geradeaus fahren?",
     "options": [
       "Ja, wenn in diesem Moment kein anderer Verkehr neben Ihnen fährt.",
       "Ja, solange Sie den rechten Blinker einschalten.",
@@ -3491,7 +3491,7 @@
     "explanation": "Auf der Fahrbahn angebrachte Vorsortierungspfeile verpflichten die Fahrer, der durch die Pfeile angezeigten Richtung zu folgen (Art. 77.1)."
   },
   "sit-24-fietssuggestiestrook": {
-    "question": "Sie fahren mit Ihrem Auto auf diesem rot-ockerfarbenen Radweg (ohne Verkehrszeichen D7 oder weiße gestrichelte Linie). Kannst du das fahren?",
+    "question": "Sie fahren mit dem Auto auf diesem rot-ockerfarbenen Radweg (ohne Verkehrszeichen D7 oder weiße gestrichelte Linie). Kannst du das fahren?",
     "options": [
       "Ja, ein Fahrradweg ist ein integraler Bestandteil der Fahrbahn; Autos dürfen darauf fahren, Radfahrer jedoch nicht gefährden oder behindern.",
       "Nein, ein Fahrradweg ist ausschließlich Radfahrern vorbehalten und für Autos verboten.",
@@ -3533,10 +3533,10 @@
       "Nein, das Parken auf dem Gehweg ist verboten, es sei denn, ein bestimmtes Verkehrszeichen (z. B. E9b) erlaubt dies ausdrücklich.",
       "Ja, aber nur nachts und am Wochenende."
     ],
-    "explanation": "Stillstand und Parken auf dem Gehweg sind gemäß Artikel 24.1° verboten, es sei denn, das Zeichen E9b erlaubt dies ausdrücklich (Art. 23.1 und Art. 70)."
+    "explanation": "Das Stehenbleiben und Parken auf dem Gehweg ist gemäß Artikel 24.1° verboten, es sei denn, das Zeichen E9b erlaubt dies ausdrücklich (Artikel 23.1 und Artikel 70)."
   },
   "sit-29-busstrook-f17": {
-    "question": "Sie fahren einen normalen Pkw. Dürfen Sie auf diesem speziellen Straßenbett oder auf dieser Busspur fahren (Schild F17 und Markierung „BUS“)?",
+    "question": "Du fährst einen normalen Pkw. Dürfen Sie auf diesem speziellen Straßenbett oder auf dieser Busspur fahren (Schild F17 und Markierung „BUS“)?",
     "options": [
       "Ja, wenn gerade kein Bus in Sicht ist.",
       "Ja, um eine Reihe von Autos auf der rechten Seite zu überholen.",
@@ -3560,7 +3560,7 @@
       "Der Radfahrer, der auf derselben Straße geradeaus weiterfährt, hat Vorrang vor dem abbiegenden Auto.",
       "Wer zuerst die Kreuzung erreicht, hat Vorrang."
     ],
-    "explanation": "Ein Fahrer, der die Richtung ändert (nach rechts abbiegt), muss anderen Verkehrsteilnehmern (z. B. Radfahrern), die auf derselben öffentlichen Straße geradeaus weiterfahren, Vorrang geben (Art. 19.3.2°)."
+    "explanation": "Ein Fahrer, der die Richtung ändert (nach rechts abbiegt), muss anderen Verkehrsteilnehmern (z. B. Radfahrern), die auf derselben öffentlichen Straße weiter geradeaus fahren, Vorrang geben (Art. 19.3.2°)."
   },
   "sit-32-knipperlicht-beweegbare-brug": {
     "question": "Sie nähern sich dieser beweglichen Brücke, auf der zwei rote Lichter abwechselnd blinken. Was bedeutet dieses Signal?",
@@ -3585,7 +3585,7 @@
     "options": [
       "Mitten im grünen Fahrradparkplatz.",
       "An der zweiten Haltestelle direkt vor der Ampel.",
-      "Vor der ersten Haltelinie, damit der Aufstellungsbereich für Radfahrer und Zweiräder völlig frei bleibt."
+      "Vor der ersten Haltelinie, sodass der Aufstellungsbereich für Radfahrer und Zweiräder völlig frei bleibt."
     ],
     "explanation": "Autofahrer müssen vor der ersten Haltelinie anhalten. Der Platz zwischen den beiden Haltelinien (Fahrradabstellplatz, Schild F107) ist für Radfahrer und Zweiradfahrer reserviert (Art. 77.8)."
   },
@@ -3601,7 +3601,7 @@
   "sit-36-spitsstrook-matrixbord": {
     "question": "Auf der Matrixtafel über dem Rettungsstreifen/Staustreifen leuchtet ein nach unten zeigender grüner Pfeil auf. Darf man auf dieser Spur fahren?",
     "options": [
-      "Nein, der Seitenstreifen darf niemals zum Fahren genutzt werden.",
+      "Nein, der Standstreifen darf niemals zum Fahren genutzt werden.",
       "Ja, der grüne Pfeil zeigt an, dass die Spur zur Hauptverkehrszeit als zusätzliche Spur geöffnet ist.",
       "Nur wenn Sie eine Geschwindigkeit von mindestens 130 km/h einhalten."
     ],
@@ -3612,12 +3612,12 @@
     "options": [
       "Fahren Sie schnell links um die Straßenbahn herum.",
       "Ertönen Sie die Hupe, damit die Reisenden zur Seite gehen.",
-      "Halten an der Ein- und Ausfahrtseite, damit Reisende sicher die Fahrbahn oder den Gehweg erreichen können."
+      "Halten Sie an der Ein- und Ausfahrt an, damit Reisende sicher die Fahrbahn oder den Gehweg erreichen können."
     ],
     "explanation": "Wenn eine Straßenbahn ohne erhöhte Plattform hält, müssen die Fahrer auf der Ein- und Ausstiegsseite anhalten, um den Fahrgästen ein sicheres Überqueren zu ermöglichen (Art. 40.1)."
   },
   "sit-38-bevoegd-persoon-arm-omhoog": {
-    "question": "Ein Polizist steht mit senkrecht erhobenem Arm an der Kreuzung. Was bedeutet diese Anordnung?",
+    "question": "Ein Polizist steht mit erhobenem Arm an der Kreuzung. Was bedeutet diese Anordnung?",
     "options": [
       "Anhalten für alle Verkehrsteilnehmer aus allen Richtungen, außer denen, die sich bereits an der Kreuzung befinden.",
       "Anhalten nur für Radfahrer und Fußgänger.",
@@ -3632,7 +3632,7 @@
       "Mindestens 1,5 Meter.",
       "Mindestens 1 Meter."
     ],
-    "explanation": "Außerhalb geschlossener Ortschaften muss ein Fahrer beim Überholen eines Radfahrers oder Fußgängers einen seitlichen Abstand von mindestens 1,5 Metern einhalten (in geschlossenen Ortschaften mindestens 1 Meter, Art. 40ter)."
+    "explanation": "Außerhalb geschlossener Ortschaften muss ein Fahrer beim Überholen eines Radfahrers oder Fußgängers einen seitlichen Abstand von mindestens 1,5 Metern einhalten (innerhalb geschlossener Ortschaften beträgt dieser mindestens 1 Meter, Art. 40ter)."
   },
   "sit-40-reddingsstrook-file": {
     "question": "Es gibt einen Stau auf einer zweispurigen Autobahn. Wie sollen Autofahrer eine Rettungsgasse bilden?",
@@ -3642,5 +3642,140 @@
       "Fahrzeuge auf der linken Spur weichen so weit wie möglich nach links aus, Fahrzeuge auf der rechten Spur so weit wie möglich nach rechts."
     ],
     "explanation": "Bei Staus müssen Fahrzeuge auf der linken Spur ganz links und diejenigen auf der rechten Spur ganz rechts fahren, um in der Mitte eine freie Rettungsspur für die Rettungskräfte zu lassen (Art. 2.70 & Art. 9.8)."
+  },
+  "sit-41-c31b-rechtsaf-verboden-fietsers": {
+    "question": "Sie nähern sich dieser Kreuzung in Antwerpen mit dem Schild C31b und einem unteren Schild „EXCEPT“ mit einem Fahrradsymbol. Darf man hier mit dem Auto rechts abbiegen?",
+    "options": [
+      "Nein, hier darf niemand rechts abbiegen, auch nicht Radfahrer.",
+      "Ja, das Verbot gilt nur nachts.",
+      "Nein, das Verbot gilt für Autos, Radfahrer sind jedoch ausgenommen und dürfen rechts abbiegen."
+    ],
+    "explanation": "Das Schild C31b verbietet das Rechtsabbiegen an der Kreuzung (Art. 68 KB vom 1. Dezember 1975). Das „EXCEPT“-Schild mit Fahrradsymbol schränkt dieses Verbot auf den motorisierten Verkehr ein; Radfahrer dürfen rechts abbiegen."
+  },
+  "sit-42-e9a-gehandicaptenparkeerplaats": {
+    "question": "Sie sehen dieses Parkschild auf einem Parkplatz. Wer darf hier parken?",
+    "options": [
+      "Nur Fahrzeuge mit gültigem europäischem Behindertenparkausweis.",
+      "Alle, solange die Parkscheibe genutzt wird.",
+      "Nur Taxis und Lieferfahrzeuge."
+    ],
+    "explanation": "Das Schild E9a mit Rollstuhlsymbol weist auf einen ausschließlich für Fahrzeuge von Menschen mit Behinderungen reservierten Parkplatz und einen gültigen Parkausweis (Art. 70.2.1) hin."
+  },
+  "sit-43-hoogte-gewicht-brug-bus-uitzondering": {
+    "question": "Sie nähern sich dieser Brücke mit Schildern für eine Höhenbeschränkung von 3,80 m und einer Gewichtsbeschränkung von 10 Tonnen, mit dem unteren Schild „Excepte bus et autocars“. Darf ein 14-Tonnen-Linienbus hier kreuzen?",
+    "options": [
+      "Ja, denn das Schild schließt Busse und Reisebusse ausdrücklich von der Gewichtsbeschränkung aus.",
+      "Nur wenn der Bus weniger als 3,80 m hoch ist, das Gewicht bleibt jedoch verboten.",
+      "Nein, das Gewichtsverbot gilt ausnahmslos für alle Fahrzeuge."
+    ],
+    "explanation": "Die Schilder C29 (Höhe) und C21 (Masse) verbieten den Zutritt oberhalb der angegebenen Werte (Art. 68), aber das untere Schild „Excepte bus et autocars“ schließt Linienbusse und Reisebusse ausdrücklich von beiden Verbotsschildern aus."
+  },
+  "sit-44-f103-voetgangerszone-laden-lossen": {
+    "question": "Sie fahren mit einem Lieferwagen zu dieser Straße mit dem Schild F103 und dem unteren Schild „Außer Be- und Entladen von 18:30 bis 11:30 Uhr“. Dürfen Sie um 9 Uhr hierherfahren, um zu liefern?",
+    "options": [
+      "Nein, eine Fußgängerzone ist für Fahrzeuge jederzeit gesperrt.",
+      "Ja, da 9 Uhr morgens in den Zeitraum fällt, in dem das Be- und Entladen erlaubt ist.",
+      "Ja, aber nur, wenn Sie ein Fahrrad anstelle eines Transporters benutzen."
+    ],
+    "explanation": "Das Zeichen F103 weist auf den Beginn einer Fußgängerzone hin, in der Fahrzeuge grundsätzlich nicht fahren dürfen (Art. 71.2). Das untere Schild erlaubt das Be- und Entladen zwischen 18:30 und 11:30 Uhr, sodass 9:00 Uhr unter diese Ausnahme fällt."
+  },
+  "sit-45-c1-eenrichting-fietsers-bromfietsers": {
+    "question": "Diese Straße in Antwerpen hat das Schild C1 mit einem unteren Schild „AUSSER“ für Radfahrer und Mopeds der Klasse A. Darf man hier mit einem Moped der Klasse A entgegen der Fahrtrichtung des übrigen Verkehrs fahren?",
+    "options": [
+      "Nein, das Schild C1 verbietet dies ausnahmslos allen Fahrern.",
+      "Nur wenn Sie vom Moped absteigen und es an der Hand führen.",
+      "Ja, das Schild schließt Radfahrer und Mopeds der Klasse A ausdrücklich vom Verbot aus."
+    ],
+    "explanation": "Schild C1 verbietet grundsätzlich jedem, in diese Richtung zu fahren. Ein Schild mit einem Fahrrad- und Mopedsymbol kann Radfahrer und Mopeds der Klasse A von diesem Verbot ausnehmen, beispielsweise auf einer Straße mit eingeschränktem Einbahnverkehr (Art. 65.2)."
+  },
+  "sit-46-c3-verboden-toegang-beide-richtingen": {
+    "question": "Am Eingang zum Markt in Maaseik sehen Sie dieses komplett rote Schild. Können Sie mit dem Auto hierher fahren?",
+    "options": [
+      "Nein, das Schild C3 sperrt die Straße für alle Autofahrer in beide Richtungen.",
+      "Ja, solange Sie im Schritttempo fahren.",
+      "Ja, aber nur zum Parken."
+    ],
+    "explanation": "Das vollständig rote Schild C3 verbietet jedem Fahrer die Zufahrt in beide Richtungen (Art. 68 KB vom 1. Dezember 1975); Nur Fußgänger und alle ausdrücklich ausgeschlossenen Kategorien sind weiterhin erlaubt."
+  },
+  "sit-47-c31a-links-afslaan-verboden": {
+    "question": "Sie möchten an dieser Kreuzung links abbiegen, sehen aber dieses Schild an der Fassade hängen. Ist das erlaubt?",
+    "options": [
+      "Ja, das Verbot gilt nur für LKWs.",
+      "Nein, das Schild C31a verbietet das Abbiegen in Pfeilrichtung an der Kreuzung, hier links.",
+      "Ja, das Linksabbiegen ist immer erlaubt, wenn kein Verkehr entgegenkommt."
+    ],
+    "explanation": "Das Schild C31a verbietet Autofahrern das Abbiegen an der nächsten Kreuzung in die durch den Pfeil angezeigte Richtung, hier nach links (Art. 68 KB vom 1. Dezember 1975)."
+  },
+  "sit-48-a45-overweg-enkel-spoor-zonder-slagbomen": {
+    "question": "Sie nähern sich diesem Bahnübergang entlang der Maas. Es gibt keine Absperrungen, nur ein Andreaskreuz. Worauf sollten Sie achten?",
+    "options": [
+      "Ohne Schranken besteht keine Gefahr, man kann einfach durchfahren.",
+      "Sie müssen selbst beurteilen, ob ein Zug kommt und anhalten, sobald er sich nähert oder die Lichter blinken.",
+      "Hier müssen Sie immer ganz anhalten, auch wenn offensichtlich kein Zug in Sicht ist."
+    ],
+    "explanation": "Das Schild A45 weist auf einen eingleisigen Bahnübergang hin (Art. 66). Ohne Schranken ist Vorsicht geboten: Halten Sie an, sobald sich ein Zug nähert oder die Blaulichter aufleuchten, und überqueren Sie das Gelände erst, wenn es sicher ist (Art. 20.3)."
+  },
+  "sit-49-d10-voetgangers-fietserspad": {
+    "question": "Sie radeln entlang der Maas in Lüttich auf diesem Weg mit dem Schild D10. Darf hier auch ein Klasse-A-Moped fahren?",
+    "options": [
+      "Ja, das Schild D10 erlaubt Fußgängern, Radfahrern und Mopeds der Klasse A.",
+      "Ja, aber nur Mopeds der Klasse A, keine normalen Radfahrer.",
+      "Nein, im Gegensatz zum Schild D9 dürfen Mopeds der Klasse A nicht auf einem D10-Weg fahren."
+    ],
+    "explanation": "Schild D10 weist auf einen für Fußgänger und Radfahrer reservierten Weg hin; Im Gegensatz zum Schild D9 dürfen hier keine Mopeds der Klasse A fahren (Art. 69.3)."
+  },
+  "sit-50-a23-schoolomgeving-zone30": {
+    "question": "Hier fahren Sie an einem Schulgelände mit einem Warnschild für Kinder und einem Tempo-30-Zonenschild vorbei. Was bedeutet das für Ihre Geschwindigkeit?",
+    "options": [
+      "Sie dürfen hier in der gesamten Zone und nicht nur am Schild maximal 30 km/h fahren.",
+      "Nur an der Tafel selbst gilt eine Geschwindigkeitsbegrenzung von 30 km/h, danach darf wieder schneller gefahren werden.",
+      "Die Geschwindigkeitsbegrenzung gilt nur während der Schulzeit."
+    ],
+    "explanation": "Das Warnschild weist auf einen Ort hin, an dem sich möglicherweise viele Kinder aufhalten (Art. 66); Das Zonenzeichen F4a schreibt für die gesamte Zone eine Höchstgeschwindigkeit von 30 km/h vor, bis das Zeichen F4b diese Grenze wieder aufhebt (Art. 71 & Art. 22quater)."
+  },
+  "sit-51-a31-matrixbord-wegenwerken-file": {
+    "question": "Auf der Autobahn sehen Sie dieses elektronische Matrixschild: „Arbeiten in Gent-Seehafen, Stau von Oostakker“. Was machst du damit?",
+    "options": [
+      "Sie ignorieren das Zeichen, da elektronische Zeichen nicht verbindlich sind.",
+      "Sie rechnen mit Verzögerungen, reduzieren rechtzeitig Ihre Geschwindigkeit und berücksichtigen Staus weiter unten auf der Straße.",
+      "Sie müssen sofort auf der Straße anhalten, bis sich der Stau aufgelöst hat."
+    ],
+    "explanation": "Ein Wechselverkehrsschild warnt ebenso wie ein festes A31-Schild vor Arbeiten und Gefahren auf der Straße (Art. 66); Autofahrer müssen ihre Geschwindigkeit rechtzeitig anpassen und mit angekündigten Verkehrsbehinderungen rechnen."
+  },
+  "sit-52-a5-steile-helling-kemmelberg": {
+    "question": "Sie radeln oder fahren auf die Kemmelbergstraat und sehen dieses Schild. Wovor wird gewarnt?",
+    "options": [
+      "Für einen steilen Hang (ansteigender Straßenabschnitt).",
+      "Vor einer gefährlichen Linkskurve.",
+      "Für unebene Straßenoberflächen."
+    ],
+    "explanation": "Das Verkehrszeichen A5 warnt vor einem steilen Abhang, wie hier am Anstieg des Kemmelbergs im Heuvelland (Art. 66 KB, 1. Dezember 1975)."
+  },
+  "sit-53-a13-oneffen-wegdek-vooraankondiging": {
+    "question": "Sie sehen dieses Schild mit der Aufschrift „150 m“ entlang einer Landstraße. Was erwartet Sie in 150 Metern Entfernung?",
+    "options": [
+      "Eine quer verlaufende Senke, ein Eselsrücken oder eine andere unebene Straßenoberfläche.",
+      "Ein Pflichtstopp mit Vorrang von rechts.",
+      "Das Ende der öffentlichen Straße."
+    ],
+    "explanation": "Das Verkehrszeichen A13 warnt vor einer Kreuzung, einem Eselsrücken oder einer unebenen Fahrbahn; Das untere Schild „150 m“ gibt die Entfernung zu dieser Gefahr an (Art. 66 KB vom 1. Dezember 1975)."
+  },
+  "sit-54-a39-einde-eenrichtingsverkeer": {
+    "question": "Sie fahren nachts auf einer Straße und sehen diese beiden Dreiecke mit einem Abwärtspfeil und einem Aufwärtspfeil. Was bedeuten sie?",
+    "options": [
+      "Dass du gezwungen bist, umzukehren.",
+      "Der Einbahnverkehr endet und der Verkehr ist wieder in beide Richtungen erlaubt.",
+      "Dass dem Gegenverkehr in einer engen Passage Vorrang eingeräumt wird."
+    ],
+    "explanation": "Das Verkehrszeichen A39 weist darauf hin, dass der Einbahnverkehr endet und der Verkehr in beide Richtungen wieder erlaubt ist; Achten Sie daher erneut auf den Gegenverkehr (Art. 66 KB vom 1. Dezember 1975)."
+  },
+  "sit-55-d3-verplichte-rijrichting-pijl": {
+    "question": "An dieser Kreuzung sehen Sie ein blaues rundes Schild mit einem Pfeil, der geradeaus und nach links zeigt. Welchen Anweisungen können Sie folgen?",
+    "options": [
+      "Einfach geradeaus.",
+      "Nur links.",
+      "Geradeaus oder links, Sie entscheiden, welche der beiden angegebenen Richtungen Sie wählen."
+    ],
+    "explanation": "Schild D3 verpflichtet den Autofahrer, einer der durch die Pfeile angezeigten Richtungen zu folgen, hier geradeaus oder links; Sie können zwischen den angegebenen Richtungen wählen, aber nicht rechts abbiegen (Art. 69 KB vom 1. Dezember 1975)."
   }
 }

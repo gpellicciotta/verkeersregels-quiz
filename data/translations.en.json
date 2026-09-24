@@ -65,7 +65,7 @@
       "Pedestrian crossing",
       "Place where many children come, for example a school",
       "Built-up area",
-      "Speelstraat"
+      "Play Street"
     ],
     "explanation": "This sign warns of a place where a large number of children may appear, such as a school.",
     "signTitle": "Place where many children come, for example a school",
@@ -77,7 +77,7 @@
       "Traffic lights",
       "File",
       "Road works",
-      "Falling rocks"
+      "Vallende stenen"
     ],
     "explanation": "This sign warns of work on or along the roadway.",
     "signTitle": "Road works",
@@ -87,7 +87,7 @@
     "question": "What does this traffic sign mean?",
     "options": [
       "Level crossing without barriers",
-      "Tram tracks",
+      "Tramsporen",
       "Movable bridge",
       "Level crossing with barriers"
     ],
@@ -123,7 +123,7 @@
     "question": "What does this traffic sign mean?",
     "options": [
       "Steep slope (rising)",
-      "Crosswise concavity or donkey's back",
+      "Crosswise hollowing or donkey's back",
       "Dangerous descent",
       "Road surface in poor condition"
     ],
@@ -194,19 +194,19 @@
   "rec-a13": {
     "question": "What does this traffic sign mean?",
     "options": [
-      "Crosswise concavity or donkey's back",
+      "Crosswise hollowing or donkey's back",
       "Elevated design (speed bump)",
       "Road works",
       "Slippery road during precipitation"
     ],
-    "explanation": "Traffic sign A13 warns of a transverse hollow, a donkey's back or an uneven road surface (art. 66 KB 1 December 1975).",
-    "signTitle": "Crosswise concavity or donkey's back",
-    "signExplanation": "Traffic sign A13 warns of a transverse hollow, a donkey's back or an uneven road surface (art. 66 KB 1 December 1975)."
+    "explanation": "Traffic sign A13 warns of a crosscut, a donkey's back or an uneven road surface (art. 66 KB 1 December 1975).",
+    "signTitle": "Crosswise hollowing or donkey's back",
+    "signExplanation": "Traffic sign A13 warns of a crosscut, a donkey's back or an uneven road surface (art. 66 KB 1 December 1975)."
   },
   "rec-a14": {
     "question": "What does this traffic sign mean?",
     "options": [
-      "Crosswise concavity or donkey's back",
+      "Crosswise hollowing or donkey's back",
       "Elevated device(s)",
       "Zone with a speed limit of 30 km/h",
       "Pedestrian crossing with platform"
@@ -242,13 +242,13 @@
   "rec-a19": {
     "question": "What does this traffic sign mean?",
     "options": [
-      "Falling rocks",
+      "Vallende stenen",
       "Pebble projection",
       "Uneven road surface",
       "Working on an embankment"
     ],
     "explanation": "Traffic sign A19 warns of the danger of falling rocks or stones on the roadway (art. 66 KB 1 December 1975).",
-    "signTitle": "Falling rocks",
+    "signTitle": "Vallende stenen",
     "signExplanation": "Traffic sign A19 warns of the danger of falling rocks or stones on the roadway (art. 66 KB 1 December 1975)."
   },
   "rec-a27": {
@@ -316,11 +316,11 @@
     "options": [
       "Mandatory direction of travel straight ahead or turn",
       "Lane narrowing with priority for oncoming traffic",
-      "Traffic allowed in two directions after a section of the carriageway with one-way traffic",
+      "Traffic allowed in two directions after a one-way section of the road",
       "Separate lanes with oncoming traffic"
     ],
     "explanation": "Traffic sign A39 warns that one-way traffic ends and traffic in both directions is allowed again (art. 66 KB 1 December 1975).",
-    "signTitle": "Traffic allowed in two directions after a section of the carriageway with one-way traffic",
+    "signTitle": "Traffic allowed in two directions after a one-way section of the road",
     "signExplanation": "Traffic sign A39 warns that one-way traffic ends and traffic in both directions is allowed again (art. 66 KB 1 December 1975)."
   },
   "rec-a43": {
@@ -343,9 +343,9 @@
       "Intersection where priority from the right applies",
       "Level crossing with automatic half barriers"
     ],
-    "explanation": "Traffic sign A45 (single St. Andrew's Cross) indicates the immediate vicinity of a single-track level crossing (art. 66 Royal Decree of 1 December 1975).",
+    "explanation": "Traffic sign A45 (single St. Andrew's cross) indicates the immediate vicinity of a single-track level crossing (art. 66 Royal Decree of 1 December 1975).",
     "signTitle": "Single track level crossing",
-    "signExplanation": "Traffic sign A45 (single St. Andrew's Cross) indicates the immediate vicinity of a single-track level crossing (art. 66 Royal Decree of 1 December 1975)."
+    "signExplanation": "Traffic sign A45 (single St. Andrew's cross) indicates the immediate vicinity of a single-track level crossing (art. 66 Royal Decree of 1 December 1975)."
   },
   "rec-a47": {
     "question": "What does this traffic sign mean?",
@@ -374,7 +374,7 @@
   "rec-a50": {
     "question": "What does this traffic sign mean?",
     "options": [
-      "Road works with delayed traffic",
+      "Roadworks with delayed traffic",
       "Dangerous descent with stationary traffic",
       "Toll plaza or border crossing",
       "File"
@@ -471,7 +471,7 @@
     "question": "What does this traffic sign mean?",
     "options": [
       "Turning is prohibited",
-      "Standing still is prohibited",
+      "It is forbidden to stand still",
       "Overtaking is prohibited",
       "Motor vehicles prohibited"
     ],
@@ -482,13 +482,13 @@
   "rec-c43-70": {
     "question": "What does this traffic sign mean?",
     "options": [
-      "Speed limit of 90 km/h",
+      "Snelheidsbeperking van 90 km/h",
       "End of the speed limit",
       "Recommended speed of 70 km/h",
-      "Speed limit of 70 km/h"
+      "Snelheidsbeperking van 70 km/h"
     ],
     "explanation": "The number on this round sign is the maximum speed that applies from here to the next intersection.",
-    "signTitle": "Speed limit of 70 km/h",
+    "signTitle": "Snelheidsbeperking van 70 km/h",
     "signExplanation": "The number on this round sign is the maximum speed that applies from here to the next intersection."
   },
   "rec-d1a": {
@@ -564,7 +564,7 @@
     "signExplanation": "Specific traffic rules for motorways apply from this sign."
   },
   "iden-b19": {
-    "question": "Which sign corresponds to this situation: a narrow passage where you have to give priority to drivers coming from the opposite direction?",
+    "question": "Which sign corresponds to this situation: a narrow passage where you must give priority to drivers coming from the opposite direction?",
     "options": [
       "assets/signs/B19.svg",
       "assets/signs/B1.svg",
@@ -704,7 +704,7 @@
     "explanation": "For regular drivers, the legal alcohol limit is 0.5 per mille in the blood (0.22 mg/l of exhaled air, Article 34 of the Road Traffic Act)."
   },
   "rule-alcohol-beroep": {
-    "question": "Which stricter alcohol limit applies in Belgium for professional drivers, such as bus, taxi and truck drivers?",
+    "question": "Which stricter alcohol limit applies in Belgium to professional drivers, such as bus, taxi and truck drivers?",
     "options": [
       "0.0 per mille",
       "0.2 per mille",
@@ -761,7 +761,7 @@
       "No, a stopped driver from the right also retains priority",
       "Only outside built-up areas"
     ],
-    "explanation": "According to settled case law in Article 12.3.1, a driver from the right retains his priority, even if he first stops before the intersection."
+    "explanation": "According to settled case law in Article 12.3.1, a driver from the right retains priority, even if he first stops before the intersection."
   },
   "rule-rotonde": {
     "question": "Who has priority at a roundabout indicated by sign D5?",
@@ -772,8 +772,8 @@
       "The traffic already on the roundabout"
     ],
     "explanation": "At a roundabout indicated by sign D5, traffic already on it has priority over those who want to join (art. 12.3.1).",
-    "signTitle": "Mandatory roundabout",
-    "signExplanation": "Sign D5 indicates a roundabout where traffic must follow the indicated direction. Drivers already on the roundabout have right of way over entering traffic (art. 12.3.1 and art. 68.3 of the Highway Code)."
+    "signTitle": "Mandatory circulating traffic (roundabout)",
+    "signExplanation": "Sign D5 indicates a roundabout where traffic must drive in the indicated direction. Drivers on the roundabout have priority over approaching traffic that wants to enter (art. 12.3.1 and art. 68.3 of the Highway Code)."
   },
   "rule-prioritair": {
     "question": "What should you do if a priority vehicle with flashing lights and siren approaches?",
@@ -786,7 +786,7 @@
     "explanation": "As soon as the audible horn of a priority vehicle sounds, every road user must immediately give way and give way (art. 38)."
   },
   "rule-fietser-inhalen": {
-    "question": "What is the minimum lateral distance you must keep when overtaking a cyclist outside built-up areas?",
+    "question": "What minimum lateral distance should you keep when overtaking a cyclist outside built-up areas?",
     "options": [
       "1 meter",
       "1.5 meters",
@@ -846,7 +846,7 @@
     "explanation": "According to article 30.1.2°, rear fog lights are mandatory in fog or snowfall that limits visibility to less than 100 m, and in heavy rain. Use is prohibited in all other circumstances."
   },
   "rule-rijbewijs-begeleider": {
-    "question": "From what age can you obtain a provisional driving license B with a supervisor in Belgium?",
+    "question": "From what age can you obtain a provisional driving license B with companion in Belgium?",
     "options": [
       "16 years old",
       "18 years old",
@@ -863,7 +863,7 @@
       "5 years",
       "10 years"
     ],
-    "explanation": "A supervisor must have held a valid driving license B for at least 8 years at the time of training (Royal Decree of 10 July 2006, art. 3, § 2, b)."
+    "explanation": "A supervisor must have held a valid driving license B for at least 8 years at the time of the training (Royal Decree of 10 July 2006, art. 3, § 2, b)."
   },
   "rule-overweg": {
     "question": "What should you do when you approach a level crossing and the red lights start flashing?",
@@ -916,12 +916,12 @@
     "explanation": "A central carriageway (art. 2.71) functions as the carriageway for motor vehicles; drivers follow them (art. 9.1.1) and may only swerve to the side lane (art. 2.72) to cross (art. 15.3) or overtake (art. 16.5)."
   },
   "rule-estep-leeftijd-2022": {
-    "question": "From what minimum age are you allowed to drive a motorized vehicle (such as an e-scooter) on public roads in Belgium?",
+    "question": "From what minimum age are you allowed to drive a motorized propulsion device (such as an e-scooter) on public roads in Belgium?",
     "options": [
-      "From 12 years",
-      "From 14 years",
+      "Vanaf 12 jaar",
+      "Vanaf 14 jaar",
       "From 16 years (except in residential areas, play streets or pedestrian zones)",
-      "From 18 years"
+      "Vanaf 18 jaar"
     ],
     "explanation": "Article 8.2, 7° sets the minimum age for driving a motorized vehicle at 16 years, except in residential areas, yards, play streets or pedestrian zones."
   },
@@ -944,8 +944,8 @@
       "Only outside built-up areas"
     ],
     "explanation": "By the Royal Decree of July 30, 2022 (in effect on October 1, 2022, art. 9.1.2° and 69.3), the permission for drivers of speed pedelecs on the D9 path was restored, unless a sign denies them access.",
-    "signTitle": "Reserved path for pedestrians, cyclists, and class A mopeds",
-    "signExplanation": "Sign D9 indicates a part of the public road reserved for pedestrians, cyclists, and drivers of class A two-wheeled mopeds (as well as speed pedelecs, unless an additional panel denies them access) (art. 68.3 and 69.3 of the Highway Code)."
+    "signTitle": "Reserved road for pedestrians, cyclists and two-wheeled mopeds class A",
+    "signExplanation": "Sign D9 indicates a part of the public road reserved for pedestrians, cyclists and drivers of two-wheeled mopeds class A (as well as speed pedelecs, unless a sign denies them access) (art. 68.3 and 69.3 of the Highway Code)."
   },
   "rule-velomobiel-2022": {
     "question": "What additional visibility requirement applies to a velomobile (closed recumbent bicycle) with a height of less than 1 meter?",
@@ -961,13 +961,13 @@
     "question": "How far do the specific traffic rules of a cycling zone (indicated by sign F111) apply?",
     "options": [
       "Until the next intersection, unless the sign is repeated",
-      "Until the traffic sign F113 indicating the end of the cycling zone; a cycling zone can include several streets",
+      "Until the traffic sign F113 that indicates the end of the cycling zone; a cycling zone can include several streets",
       "Always over a fixed distance of 250 meters",
       "Only at the first 50 meters"
     ],
     "explanation": "Since the Royal Decree of March 12, 2023, a \"cycling street\" has been called a \"cycling zone\" (art. 2.61): it can include several public roads and runs to the traffic sign F113, not automatically to the next intersection.",
     "signTitle": "Start of a cycling zone",
-    "signExplanation": "Sign F111 indicates the start of a cycling zone (bicycle street). Motor vehicles may not overtake cyclists and must drive at a maximum speed of 30 km/h until sign F113 (art. 2.61 and art. 71.2 of the Highway Code)."
+    "signExplanation": "Sign F111 indicates the start of a cycling zone (cycling street). Motor vehicles are not allowed to overtake cyclists and may drive at a maximum speed of 30 km/h up to sign F113 (art. 2.61 and art. 71.2 of the Highway Code)."
   },
   "rule-brussel-stad30-2021": {
     "question": "What is the general maximum speed within built-up areas in the Brussels-Capital Region since 2021, unless otherwise indicated?",
@@ -1008,7 +1008,7 @@
     "options": [
       "Announcement of sign B1 (give priority) at the indicated distance",
       "Announcement of sign B5 (stopping and giving way) at the indicated distance",
-      "Mandatory stop at the sign and give way",
+      "Mandatory to stop at the sign and give way",
       "Dangerous threshold at the indicated distance"
     ],
     "explanation": "Sign B7 announces sign B5 (stopping and giving way) at the approximate distance indicated (art. 67 KB 1 December 1975).",
@@ -1150,7 +1150,7 @@
   "rec-c7": {
     "question": "What does this traffic sign mean?",
     "options": [
-      "Access for mopeds and speed pedelecs is prohibited",
+      "No access for mopeds and speed pedelecs",
       "Mandatory parking lane for two-wheeled motor vehicles",
       "Access prohibited for motorcycle drivers",
       "Overtaking ban for all motorcycle drivers"
@@ -1176,7 +1176,7 @@
     "options": [
       "Access prohibited for bicycle drivers",
       "Mandatory cycle path for cyclists and speed pedelecs",
-      "Access prohibited for pedestrians and personal mobility equipment",
+      "Access prohibited for pedestrians and mobility equipment",
       "End of the mandatory cycle path"
     ],
     "explanation": "Sign C11 prohibits access for bicycle drivers (art. 68 KB 1 December 1975).",
@@ -1187,18 +1187,18 @@
     "question": "What does this traffic sign mean?",
     "options": [
       "Forbidden access for riders and mounted animals",
-      "Access prohibited for tense drivers",
+      "Access prohibited for drivers of tense",
       "Mandatory route for horses and covered wagons",
       "Access prohibited for agricultural vehicles"
     ],
     "explanation": "Sign C13 prohibits access for drivers of tense vehicles (art. 68 KB 1 December 1975).",
-    "signTitle": "Access prohibited for tense drivers",
+    "signTitle": "Access prohibited for drivers of tense",
     "signExplanation": "Sign C13 prohibits access for drivers of tense vehicles (art. 68 KB 1 December 1975)."
   },
   "rec-c15": {
     "question": "What does this traffic sign mean?",
     "options": [
-      "Access prohibited for tense drivers",
+      "Access prohibited for drivers of tense",
       "Mandatory path for horse riders (bridle path)",
       "No access for riders",
       "Warning for crossing cattle or horses"
@@ -1210,7 +1210,7 @@
   "rec-c17": {
     "question": "What does this traffic sign mean?",
     "options": [
-      "Forbidden access for pedestrians with strollers",
+      "No access for pedestrians with strollers",
       "Mandatory loading and unloading area for handcarts",
       "No access for wheelbarrows on the sidewalk",
       "Access prohibited for pushcart drivers"
@@ -1306,13 +1306,13 @@
   "rec-c25": {
     "question": "What does this traffic sign mean?",
     "options": [
-      "Access prohibited for articulated buses and trucks with trailers",
+      "No access for articulated buses and trucks with trailers",
       "Recommended minimum distance from vehicles in front for long vehicles",
       "Mandatory following distance of at least the indicated distance in meters",
-      "Access is prohibited for drivers of vehicles or tows whose length, including load, exceeds the indicated"
+      "Access prohibited for drivers of vehicles or tows whose length, including load, exceeds the indicated"
     ],
     "explanation": "Sign C25 prohibits access for drivers of vehicles or tows whose length, including load, is greater than indicated on the sign (art. 68 KB 1 December 1975).",
-    "signTitle": "Access is prohibited for drivers of vehicles or tows whose length, including load, exceeds the indicated",
+    "signTitle": "Access prohibited for drivers of vehicles or tows whose length, including load, exceeds the indicated",
     "signExplanation": "Sign C25 prohibits access for drivers of vehicles or tows whose length, including load, is greater than indicated on the sign (art. 68 KB 1 December 1975)."
   },
   "rec-c27": {
@@ -1402,8 +1402,8 @@
   "rec-c46": {
     "question": "What does this traffic sign mean?",
     "options": [
-      "End of all parking and stopping prohibitions on this road",
-      "End of the motorway or expressway",
+      "End of all parking and stopping bans on this road",
+      "End of the motorway or highway",
       "End of the priority road at the next intersection",
       "End of all local prohibitions imposed on vehicles in motion"
     ],
@@ -1452,7 +1452,7 @@
     "options": [
       "Mandatory direction of travel: left",
       "Mandatory direction of travel: drive straight ahead",
-      "Obligation to pass the obstacle from the left",
+      "Obligation to pass the obstacle on the left",
       "Prohibition on turning left"
     ],
     "explanation": "This mandatory sign (D1) obliges you to follow the direction of travel of the arrow, here on the left (art. 69.3 of the Highway Code).",
@@ -1463,31 +1463,31 @@
     "question": "What does this traffic sign mean?",
     "options": [
       "Obligation to pass the obstacle on the right",
-      "Obligation to pass the obstacle from the left",
+      "Obligation to pass the obstacle on the left",
       "Mandatory direction of travel: turn left at the intersection",
       "One-way traffic to the left"
     ],
     "explanation": "Sign D1c imposes the obligation to pass the obstacle on the side indicated by the arrow, here on the left (art. 69 KB 1 December 1975).",
-    "signTitle": "Obligation to pass the obstacle from the left",
+    "signTitle": "Obligation to pass the obstacle on the left",
     "signExplanation": "Sign D1c imposes the obligation to pass the obstacle on the side indicated by the arrow, here on the left (art. 69 KB 1 December 1975)."
   },
   "rec-d1d": {
     "question": "What does this traffic sign mean?",
     "options": [
-      "Obligation to pass the obstacle from the left",
+      "Obligation to pass the obstacle on the left",
       "Mandatory direction of travel: turn right at the intersection",
       "Obligation to pass the obstacle on the right",
       "Dangerous bend to the right"
     ],
-    "explanation": "Sign D1d imposes the obligation to pass the obstacle on the side indicated by the arrow, here on the right (art. 69 KB 1 December 1975).",
+    "explanation": "Sign D1d imposes the obligation to pass the obstacle on the side indicated by the arrow, here on the right (art. 69 Royal Decree of 1 December 1975).",
     "signTitle": "Obligation to pass the obstacle on the right",
-    "signExplanation": "Sign D1d imposes the obligation to pass the obstacle on the side indicated by the arrow, here on the right (art. 69 KB 1 December 1975)."
+    "signExplanation": "Sign D1d imposes the obligation to pass the obstacle on the side indicated by the arrow, here on the right (art. 69 Royal Decree of 1 December 1975)."
   },
   "rec-d1e": {
     "question": "What does this traffic sign mean?",
     "options": [
       "Mandatory direction of travel: drive straight ahead",
-      "Obligation to pass the obstacle from the left",
+      "Obligation to pass the obstacle on the left",
       "Dead end street on the left",
       "Mandatory direction of travel: left"
     ],
@@ -1620,7 +1620,7 @@
     "options": [
       "Parking for coaches only",
       "Stop for public transport city buses",
-      "Parking space reserved for school transport",
+      "Parking reserved for school transport",
       "Ban on buses allowing passengers to board or disembark"
     ],
     "explanation": "Sign E9d indicates a parking space reserved exclusively for coaches (art. 70.2.1).",
@@ -1827,9 +1827,9 @@
       "Breakdown in a tunnel",
       "Covered viaduct or passage"
     ],
-    "explanation": "Directional sign F8 indicates a tunnel with a length of more than 500 meters (art. 71.2 of the Highway Code).",
+    "explanation": "Indication sign F8 indicates a tunnel with a length of more than 500 meters (art. 71.2 of the Highway Code).",
     "signTitle": "Tunnel with a length of more than 500 meters",
-    "signExplanation": "Directional sign F8 indicates a tunnel with a length of more than 500 meters (art. 71.2 of the Highway Code)."
+    "signExplanation": "Indication sign F8 indicates a tunnel with a length of more than 500 meters (art. 71.2 of the Highway Code)."
   },
   "rec-f9": {
     "question": "What does this traffic sign mean?",
@@ -1848,7 +1848,7 @@
     "options": [
       "End of a motorway",
       "End of a motorway",
-      "No access for motor vehicles",
+      "No entry for motor vehicles",
       "End of an increased speed zone"
     ],
     "explanation": "Traffic sign F11 indicates the end of a motorway (art. 71.2 of the Highway Code).",
@@ -1859,12 +1859,12 @@
     "question": "What does this traffic sign mean?",
     "options": [
       "Start of a play street",
-      "Beginning of a residential area or a yard",
+      "Start of a residential area or a yard",
       "Beginning of a school environment",
       "Start of a pedestrian zone"
     ],
     "explanation": "Sign F12a indicates the beginning of a residential area or yard (art. 71.2 of the Highway Code). The speed limit is 20 km/h and pedestrians are allowed to use the entire width of the road.",
-    "signTitle": "Beginning of a residential area or a yard",
+    "signTitle": "Start of a residential area or a yard",
     "signExplanation": "Sign F12a indicates the beginning of a residential area or yard (art. 71.2 of the Highway Code). The speed limit is 20 km/h and pedestrians are allowed to use the entire width of the road."
   },
   "rec-f12b": {
@@ -1944,7 +1944,7 @@
     "options": [
       "Passing on the right or left is allowed",
       "Mandatory to drive straight ahead or turn right",
-      "Splitting of two motorways",
+      "Splitsing van twee autosnelwegen",
       "Mandatory direction of travel to the right"
     ],
     "explanation": "Direction sign F21 indicates that drivers may pass an obstacle or traffic island on both the left and right (art. 71.2 of the Highway Code).",
@@ -1978,7 +1978,7 @@
   "rec-f23c": {
     "question": "What does this traffic sign mean?",
     "options": [
-      "Number of a normal regional road",
+      "Number of a regular regional road",
       "Number of a ring road",
       "Number of an environmental zone",
       "Number of an international road"
@@ -2026,7 +2026,7 @@
   "rec-f29": {
     "question": "What does this traffic sign mean?",
     "options": [
-      "Front sign announcing a roundabout",
+      "Signpost announcing a roundabout",
       "Announcement of a toll road",
       "Signpost indicating the direction to follow to a destination",
       "Route confirmation sign along a motorway"
@@ -2076,11 +2076,11 @@
     "options": [
       "Announcement of a protected nature reserve with access ban",
       "Signpost to a public cemetery",
-      "Remote signage sign to a tourist attraction or recreational area",
+      "Remote signpost to a tourist attraction or recreational area",
       "Signpost to an urban police station"
     ],
     "explanation": "Sign F33c points the way from a distance to monuments, recreational parks, sports centers or tourist attractions (art. 71.2 of the Highway Code).",
-    "signTitle": "Remote signage sign to a tourist attraction or recreational area",
+    "signTitle": "Remote signpost to a tourist attraction or recreational area",
     "signExplanation": "Sign F33c points the way from a distance to monuments, recreational parks, sports centers or tourist attractions (art. 71.2 of the Highway Code)."
   },
   "rec-f34a": {
@@ -2098,34 +2098,34 @@
   "rec-f34b1": {
     "question": "What does this traffic sign mean?",
     "options": [
-      "Mandatory diversion for lorries outside the built-up area",
+      "Mandatory diversion for trucks outside built-up areas",
       "Warning for a crossing for cyclists and horse riders",
-      "No entry for cyclists, horse riders and pedestrians",
+      "No access for cyclists, horse riders and pedestrians",
       "Signpost: recommended route for certain categories of road users, such as cyclists, horse riders or pedestrians"
     ],
-    "explanation": "Sign F34b.1 is a signpost showing the recommended route for certain categories of road users, supplemented with the symbol of sign C11, C15 or C19 and optionally the distance in km (art. 71.2 of the Highway Code).",
+    "explanation": "Sign F34b.1 is a signpost that shows the recommended route for certain categories of road users, supplemented with the symbol of sign C11, C15 or C19 and possibly the distance in km (art. 71.2 of the Highway Code).",
     "signTitle": "Signpost: recommended route for certain categories of road users, such as cyclists, horse riders or pedestrians",
-    "signExplanation": "Sign F34b.1 is a signpost showing the recommended route for certain categories of road users, supplemented with the symbol of sign C11, C15 or C19 and optionally the distance in km (art. 71.2 of the Highway Code)."
+    "signExplanation": "Sign F34b.1 is a signpost that shows the recommended route for certain categories of road users, supplemented with the symbol of sign C11, C15 or C19 and possibly the distance in km (art. 71.2 of the Highway Code)."
   },
   "rec-f34b2": {
     "question": "What does this traffic sign mean?",
     "options": [
       "Signpost: recommended route for certain categories of road users, such as cyclists, horse riders or pedestrians",
-      "Signage sign in the vicinity of a public establishment of general interest",
-      "Mandatory direction for vehicles carrying dangerous goods",
-      "Tourist signpost to a monument or recreation park"
+      "Signage sign in the vicinity of a public facility of general interest",
+      "Mandatory direction of travel for vehicles transporting dangerous goods",
+      "Tourist signpost to a monument or recreational park"
     ],
-    "explanation": "Sign F34b.2 is the simplified version of F34b.1: mentioning the destination and the arrow is optional, but the meaning remains the same recommended route for the indicated category of road users (art. 71.2 of the Highway Code).",
+    "explanation": "Sign F34b.2 is the simplified version of F34b.1: the indication of the destination and the arrow are optional, but the meaning remains the same recommended route for the indicated category of road users (art. 71.2 of the Highway Code).",
     "signTitle": "Signpost: recommended route for certain categories of road users, such as cyclists, horse riders or pedestrians",
-    "signExplanation": "Sign F34b.2 is the simplified version of F34b.1: mentioning the destination and the arrow is optional, but the meaning remains the same recommended route for the indicated category of road users (art. 71.2 of the Highway Code)."
+    "signExplanation": "Sign F34b.2 is the simplified version of F34b.1: the indication of the destination and the arrow are optional, but the meaning remains the same recommended route for the indicated category of road users (art. 71.2 of the Highway Code)."
   },
   "rec-f34c1": {
     "question": "What does this traffic sign mean?",
     "options": [
-      "Tourist signpost to a monument, sight or recreation park",
-      "Distant signage sign to a valley or watercourse of touristic interest",
+      "Tourist signpost to a monument, attraction or recreational park",
+      "Remote signpost to a valley or watercourse of a tourist nature",
       "Signpost: recommended route to a tourist destination for certain categories of road users",
-      "No entry for cyclists, horse riders and pedestrians to tourist areas"
+      "No access for cyclists, horse riders and pedestrians to tourist areas"
     ],
     "explanation": "Sign F34c.1 shows the recommended route to a tourist destination for certain categories of road users, supplemented with the symbol of sign C11, C15 or C19 (art. 71.2 of the Highway Code).",
     "signTitle": "Signpost: recommended route to a tourist destination for certain categories of road users",
@@ -2134,14 +2134,14 @@
   "rec-f34c2": {
     "question": "What does this traffic sign mean?",
     "options": [
-      "Mandatory diversion to a tourist centre",
+      "Mandatory diversion to a tourist center",
       "Signpost: recommended route to a tourist destination for certain categories of road users",
       "Warning for a crossing for cyclists",
-      "Announcement of a car park near a tourist attraction"
+      "Announcement of a parking lot near a tourist attraction"
     ],
-    "explanation": "Sign F34c.2 is the simplified version of F34c.1: the destination and the arrow are optional, but the sign still shows the recommended route to a tourist destination for the indicated category of road users (art. 71.2 of the Highway Code).",
+    "explanation": "Sign F34c.2 is the simplified version of F34c.1: the destination and the arrow are optional, but the sign still shows the recommended route to a tourist destination for the designated category of road users (art. 71.2 of the Highway Code).",
     "signTitle": "Signpost: recommended route to a tourist destination for certain categories of road users",
-    "signExplanation": "Sign F34c.2 is the simplified version of F34c.1: the destination and the arrow are optional, but the sign still shows the recommended route to a tourist destination for the indicated category of road users (art. 71.2 of the Highway Code)."
+    "signExplanation": "Sign F34c.2 is the simplified version of F34c.1: the destination and the arrow are optional, but the sign still shows the recommended route to a tourist destination for the designated category of road users (art. 71.2 of the Highway Code)."
   },
   "rec-f35": {
     "question": "What does this traffic sign mean?",
@@ -2159,7 +2159,7 @@
     "question": "What does this traffic sign mean?",
     "options": [
       "Indication of a public rest area along a motorway",
-      "Parking for campers and caravans only",
+      "Parking space exclusively for campers and caravans",
       "Directions to a residential care center",
       "Tourist signpost to accommodation, campsite or youth hostel"
     ],
@@ -2243,20 +2243,20 @@
     "question": "What does this traffic sign mean?",
     "options": [
       "Mandatory cycle path along both sides of the road",
-      "Right-turn ban for cyclists",
+      "Prohibition on turning right for cyclists",
       "Priority from the right also applies to all cyclists",
       "Sign pointing out drivers changing directions to cyclists and two-wheeled moped drivers following the same road"
     ],
-    "explanation": "Sign F50bis points drivers who change directions to cyclists and two-wheeled moped riders who continue to follow the same public road straight ahead (art. 71.2 of the Highway Code).",
+    "explanation": "Sign F50bis points drivers who change direction to cyclists and two-wheeled moped riders who continue to follow the same public road straight ahead (art. 71.2 of the Highway Code).",
     "signTitle": "Sign pointing out drivers changing directions to cyclists and two-wheeled moped drivers following the same road",
-    "signExplanation": "Sign F50bis points drivers who change directions to cyclists and two-wheeled moped riders who continue to follow the same public road straight ahead (art. 71.2 of the Highway Code)."
+    "signExplanation": "Sign F50bis points drivers who change direction to cyclists and two-wheeled moped riders who continue to follow the same public road straight ahead (art. 71.2 of the Highway Code)."
   },
   "rec-f51": {
     "question": "What does this traffic sign mean?",
     "options": [
       "Underground or above-ground pedestrian crossing",
       "Pedestrian crossing on the road surface of the roadway",
-      "Beginning of a pedestrian zone prohibited to all vehicles",
+      "Beginning of a pedestrian zone prohibited for all vehicles",
       "Mandatory footpath intended for pedestrians only"
     ],
     "explanation": "Sign F51 indicates an underground or above-ground pedestrian crossing (art. 71.2 of the Highway Code).",
@@ -2278,7 +2278,7 @@
   "rec-f52bis": {
     "question": "What does this traffic sign mean?",
     "options": [
-      "Direction and distance to the nearest emergency station or emergency station",
+      "Direction and distance to the nearest emergency post or emergency station",
       "Mandatory alternative route for drivers in case of traffic jams in the tunnel",
       "Escape route to the nearest emergency exit in tunnels with indication of direction and distance",
       "Pedestrian tunnel to the nearest metro or train station"
@@ -2327,7 +2327,7 @@
     "question": "What does this traffic sign mean?",
     "options": [
       "Danger of flooding or sudden splashing water",
-      "Port or unsecured quay without barriers",
+      "Harbor or unsecured quay without barriers",
       "Watercourse",
       "Drinking water extraction area with ban on hazardous transport"
     ],
@@ -2365,7 +2365,7 @@
       "Emergency telephone connected exclusively to the emergency services",
       "Phone",
       "Radio station with traffic information",
-      "Police post along the motorway"
+      "Police station along the motorway"
     ],
     "explanation": "Sign F61 indicates a public telephone (art. 71.2 of the Highway Code).",
     "signTitle": "Phone",
@@ -2583,9 +2583,9 @@
       "Narrowing of the lane with mandatory zipping",
       "Emergency stop lane"
     ],
-    "explanation": "Sign F95 indicates an emergency stop lane to safely stop vehicles without control or vehicles with defective brakes (art. 71.2 of the Highway Code).",
+    "explanation": "Sign F95 indicates an emergency stop lane to safely stop steeringless vehicles or vehicles with defective brakes (art. 71.2 of the Highway Code).",
     "signTitle": "Emergency stop lane",
-    "signExplanation": "Sign F95 indicates an emergency stop lane to safely stop vehicles without control or vehicles with defective brakes (art. 71.2 of the Highway Code)."
+    "signExplanation": "Sign F95 indicates an emergency stop lane to safely stop steeringless vehicles or vehicles with defective brakes (art. 71.2 of the Highway Code)."
   },
   "rec-f97": {
     "question": "What does this traffic sign mean?",
@@ -2607,9 +2607,9 @@
       "Carpool parking with transfer option to public transport",
       "Loading and unloading area for deliveries to companies along the motorway"
     ],
-    "explanation": "Sign F98 indicates a refuge area, a safe alternative location along motorways or in tunnels that may only be used in the event of breakdown or emergency (art. 71.2 of the Highway Code).",
+    "explanation": "Sign F98 indicates a refuge, a safe alternative location along motorways or in tunnels that may only be used in the event of breakdown or emergency (art. 71.2 of the Highway Code).",
     "signTitle": "Airport",
-    "signExplanation": "Sign F98 indicates a refuge area, a safe alternative location along motorways or in tunnels that may only be used in the event of breakdown or emergency (art. 71.2 of the Highway Code)."
+    "signExplanation": "Sign F98 indicates a refuge, a safe alternative location along motorways or in tunnels that may only be used in the event of breakdown or emergency (art. 71.2 of the Highway Code)."
   },
   "rec-f99a": {
     "question": "What does this traffic sign mean?",
@@ -2643,21 +2643,21 @@
       "Mandatory route for exceptionally heavy agricultural transport",
       "Agricultural zone where only local traffic with motor vehicles is allowed"
     ],
-    "explanation": "Sign F99c indicates the beginning of a road reserved for agricultural vehicles, pedestrians, cyclists, horse riders and speed pedelecs (art. 71.2 of the Road Code).",
+    "explanation": "Sign F99c indicates the beginning of a road reserved for agricultural vehicles, pedestrians, cyclists, horse riders and speed pedelecs (art. 71.2 of the Highway Code).",
     "signTitle": "Beginning of the road reserved for the traffic of agricultural vehicles, pedestrians, cyclists, horse riders and speed pedelec drivers",
-    "signExplanation": "Sign F99c indicates the beginning of a road reserved for agricultural vehicles, pedestrians, cyclists, horse riders and speed pedelecs (art. 71.2 of the Road Code)."
+    "signExplanation": "Sign F99c indicates the beginning of a road reserved for agricultural vehicles, pedestrians, cyclists, horse riders and speed pedelecs (art. 71.2 of the Highway Code)."
   },
   "rec-f101a": {
     "question": "What does this traffic sign mean?",
     "options": [
       "End of a mandatory cycle path along a normal regional road",
       "End of the road or part of the public road reserved for the movement of pedestrians, cyclists, horse riders and speed pedelec drivers",
-      "Start of a zone with absolute priority for cyclists on the road",
+      "Start of a zone with absolute priority for cyclists on the roadway",
       "End of a residential area or area with mixed traffic"
     ],
-    "explanation": "Sign F101a indicates the end of the road reserved for pedestrians, cyclists, riders and drivers of speed pedelecs (art. 71.2 of the Road Code).",
+    "explanation": "Sign F101a indicates the end of the road reserved for pedestrians, cyclists, riders and drivers of speed pedelecs (art. 71.2 of the Highway Code).",
     "signTitle": "End of the road or part of the public road reserved for the movement of pedestrians, cyclists, horse riders and speed pedelec drivers",
-    "signExplanation": "Sign F101a indicates the end of the road reserved for pedestrians, cyclists, riders and drivers of speed pedelecs (art. 71.2 of the Road Code)."
+    "signExplanation": "Sign F101a indicates the end of the road reserved for pedestrians, cyclists, riders and drivers of speed pedelecs (art. 71.2 of the Highway Code)."
   },
   "rec-f101b": {
     "question": "What does this traffic sign mean?",
@@ -2679,15 +2679,15 @@
       "End of the built-up area on a rural connecting road",
       "End of the road reserved for the traffic of agricultural vehicles, pedestrians, cyclists, horse riders and speed pedelec drivers"
     ],
-    "explanation": "Sign F101c indicates the end of the road reserved for agricultural vehicles, pedestrians, cyclists, horse riders and speed pedelecs (art. 71.2 of the Road Code).",
+    "explanation": "Sign F101c indicates the end of the road reserved for agricultural vehicles, pedestrians, cyclists, horse riders and speed pedelecs (art. 71.2 of the Highway Code).",
     "signTitle": "End of the road reserved for the traffic of agricultural vehicles, pedestrians, cyclists, horse riders and speed pedelec drivers",
-    "signExplanation": "Sign F101c indicates the end of the road reserved for agricultural vehicles, pedestrians, cyclists, horse riders and speed pedelecs (art. 71.2 of the Road Code)."
+    "signExplanation": "Sign F101c indicates the end of the road reserved for agricultural vehicles, pedestrians, cyclists, horse riders and speed pedelecs (art. 71.2 of the Highway Code)."
   },
   "rec-f103": {
     "question": "What does this traffic sign mean?",
     "options": [
       "End of a pedestrian zone",
-      "Crossing for schoolchildren",
+      "Crossing for school children",
       "Start of a pedestrian zone",
       "Start of a play street"
     ],
@@ -2747,7 +2747,7 @@
     "question": "What does this traffic sign mean?",
     "options": [
       "End of a low emission zone",
-      "Start of a low-emission zone with selective access conditions",
+      "Start of a low emission zone with selective access conditions",
       "End of an environmental zone in which only trucks are checked",
       "Polluting diesel vehicles banned from this sign"
     ],
@@ -2771,7 +2771,7 @@
     "question": "What does this traffic sign mean?",
     "options": [
       "Beginning of an airport area with special police regulations",
-      "Warning of sudden noise from aircraft taking off",
+      "Warning for sudden noise from aircraft taking off",
       "End of an airport area",
       "Prohibition on standing still or parking on access roads to the airport"
     ],
@@ -2790,7 +2790,7 @@
     "explanation": "Sign C39 prohibits trucks with a GVW over 3.5 tonnes from overtaking multi-track vehicles."
   },
   "iden-e3": {
-    "question": "Which sign prohibits both standing and parking?",
+    "question": "Which sign prohibits both standing still and parking?",
     "options": [
       "assets/signs/E1.svg",
       "assets/signs/E9a.svg",
@@ -2837,7 +2837,7 @@
       "Outside the road and parking lanes, without hindering or endangering other road users",
       "Only in paid car parks"
     ],
-    "explanation": "Article 23.3 requires that propulsion devices such as e-scooters are positioned outside the roadway and parking lanes, without hindering or endangering other road users. Specific drop zones are a municipal regulation, not a federal highway code rule."
+    "explanation": "Article 23.3 requires that propulsion devices such as e-scooters be positioned outside the roadway and parking lanes, without hindering or endangering other road users. Specific drop zones are a municipal regulation, not a federal highway code rule."
   },
   "rule-gsm-houder-2022": {
     "question": "Under what conditions is a driver allowed to use a smartphone for navigation while driving?",
@@ -2877,13 +2877,13 @@
       "Rear only",
       "On the roof"
     ],
-    "explanation": "Article 82.1.2, 6° prescribes that velomobiles must have a yellow or orange reflective strip on the sides."
+    "explanation": "Article 82.1.2, 6° prescribes that velomobiles must have a yellow or orange reflective strip on their sides."
   },
   "rule-reddingsstrook-vorming-2022": {
     "question": "How are drivers supposed to form a rescue lane on a road with three lanes in the same direction in the event of a traffic jam?",
     "options": [
       "All cars must immediately swerve to the emergency lane",
-      "Vehicles in the center lane must stop and turn off their engines",
+      "Vehicles in the middle lane must stop and turn off their engines",
       "The two right lanes deviate to the left and the left lane to the right",
       "The leftmost lane deviates as much as possible to the left, the other two lanes deviate as much as possible to the right"
     ],
@@ -2897,7 +2897,7 @@
       "As soon as you see the first road works announcement board",
       "On the emergency lane to move forward more quickly"
     ],
-    "explanation": "According to Article 12bis, drivers must continue driving in heavily slowed traffic until just before the narrowing and only merge there."
+    "explanation": "According to Article 12bis, drivers must continue driving in very slow traffic until just before the narrowing and only merge there."
   },
   "rule-ritsen-voorrang": {
     "question": "How does priority work with mandatory zipping at the point of narrowing?",
@@ -2917,7 +2917,7 @@
       "No, motor vehicles are never allowed to overtake cyclists in a bicycle street",
       "Only if the cyclist expressly gives a hand gesture"
     ],
-    "explanation": "In a bicycle street (art. 22novies), motor vehicles are prohibited from overtaking cyclists at all times."
+    "explanation": "In a bicycle street (art. 22novies) it is prohibited for motor vehicles to overtake cyclists at all times."
   },
   "rule-fietsstraat-snelheid": {
     "question": "What is the absolute maximum speed for all traffic in a bicycle street?",
@@ -2938,8 +2938,8 @@
       "All motorized vehicles are also allowed to turn right on red"
     ],
     "explanation": "Traffic sign B22 allows cyclists and speed pedelecs to continue and turn right at red or orange-yellow lights, provided they give way (art. 67.3).",
-    "signTitle": "Permission for cyclists to turn right on red",
-    "signExplanation": "Traffic sign B22 permits cyclists and speed pedelecs to turn right at a red or amber-yellow traffic light, provided they give way to other traffic and crossing pedestrians (art. 67.3 of the Highway Code)."
+    "signTitle": "Permission for cyclists to turn right at a red light",
+    "signExplanation": "Traffic sign B22 allows cyclists and drivers of speed pedelecs to turn right at a red or orange-yellow traffic light, provided they give priority to other traffic and crossing pedestrians (art. 67.3 of the Highway Code)."
   },
   "rule-fietser-b23": {
     "question": "What does this permission sign (B23) mean for cyclists and drivers of speed pedelecs at a red traffic light?",
@@ -2950,8 +2950,8 @@
       "The red light is defective and disabled"
     ],
     "explanation": "Sign B23 allows cyclists and drivers of speed pedelecs to drive straight ahead at a red or orange-yellow light, provided they give way (art. 67.3).",
-    "signTitle": "Permission for cyclists to proceed straight ahead on red",
-    "signExplanation": "Traffic sign B23 permits cyclists and speed pedelecs to proceed straight ahead at a red or amber-yellow traffic light, provided they give way to other traffic and crossing pedestrians (art. 67.3 of the Highway Code)."
+    "signTitle": "Permission for cyclists to drive straight through at red lights",
+    "signExplanation": "Traffic sign B23 allows cyclists and drivers of speed pedelecs to drive straight ahead at a red or orange-yellow traffic light, provided they give priority to other traffic and crossing pedestrians (art. 67.3 of the Highway Code)."
   },
   "rule-voorrang-aardeweg": {
     "question": "Does a driver coming from the right on a dirt road have priority over a driver on a public road with a carriageway?",
@@ -3014,7 +3014,7 @@
     "explanation": "Within built-up areas, according to Article 39, you must slow down and, if necessary, stop to give a bus that turns on its direction indicator the opportunity to leave its stop."
   },
   "rule-bus-buiten-bebouwde-kom": {
-    "question": "Do you have to stop outside the built-up area for a scheduled bus that wants to drive away from a bus stop with its indicator?",
+    "question": "Do you have to stop outside the built-up area for a scheduled bus that wants to drive away from a bus stop with its direction indicator?",
     "options": [
       "No, the obligation to give priority to a driving bus only applies within built-up areas",
       "Yes, this rule applies everywhere on public roads",
@@ -3064,7 +3064,7 @@
     "explanation": "A cyclist who remains seated on his bicycle at a zebra crossing does not have pedestrian priority (art. 40.4.2°). Only when he gets off and goes on foot does he have priority as a pedestrian."
   },
   "rule-parkeren-zebrapad-afstand": {
-    "question": "At what minimum distance before a pedestrian crossing is stopping and parking on the roadway prohibited?",
+    "question": "At what minimum distance before a pedestrian crossing is stopping and parking on the road prohibited?",
     "options": [
       "At least 10 meters",
       "At least 5 meters",
@@ -3124,7 +3124,7 @@
     "explanation": "A tunnel rarely offers more than 200 meters of clear visibility, even during the day; As a result, the general obligation of Article 30.1 to use the dipped beams (or high beams) applies. The highway code does not mention tunnels separately, but that visibility criterion almost always applies in practice."
   },
   "rule-verlichting-duisternis": {
-    "question": "From what point in the daytime visibility reduced due to fog, snow or rain must at least the dipped beam lights be on?",
+    "question": "From what point onwards must visibility be reduced during the day due to fog, snow or rain, at least the dipped beam headlights must be switched on?",
     "options": [
       "Visibility from less than 500 meters",
       "Visibility from less than 300 meters",
@@ -3136,7 +3136,7 @@
   "rule-grootlicht-tegenligger": {
     "question": "What should you do with your high beams when an oncoming car approaches?",
     "options": [
-      "Immediately switch to dipped beam headlights as soon as there is a risk of dazzling oncoming traffic",
+      "Immediately switch to dipped beam as soon as the oncoming vehicle can be dazzled",
       "Leave the high beams on when the street is unlit",
       "Flash the high beams briefly and leave them on",
       "Switch to parking lights only"
@@ -3164,7 +3164,7 @@
     "explanation": "Article 17.2, 5° prohibits overtaking a driver who stops in front of or approaches a pedestrian or cyclist crossing."
   },
   "rule-snelheid-woonerf": {
-    "question": "What is the maximum speed within a residential area or a property?",
+    "question": "What maximum speed applies within a residential area or a property?",
     "options": [
       "30 km/h",
       "10 km/h",
@@ -3197,7 +3197,7 @@
     "question": "What immediate measure does the police impose in the event of a breath test with an 'Alarm' result (between 0.5 and 0.8 per mille)?",
     "options": [
       "An immediate driving ban of 1 hour",
-      "Only a written warning without driving ban",
+      "Only a written warning without a driving ban",
       "A temporary driving ban of 3 hours with suspension of the driver's license",
       "A permanent revocation of the driver's license by the court"
     ],
@@ -3206,10 +3206,10 @@
   "rule-alcohol-positief-3uur": {
     "question": "How long does the temporary driving ban imposed by the police last for a 'Positive' result from 0.8 per mille alcohol in the blood?",
     "options": [
-      "At least 2 hours",
-      "At least 4 hours",
-      "At least 12 hours",
-      "At least 6 hours"
+      "Minstens 2 uur",
+      "Minstens 4 uur",
+      "Minstens 12 uur",
+      "Minstens 6 uur"
     ],
     "explanation": "From 0.35 mg/l exhaled alveolar air (0.8 per mille in the blood), the police imposes an immediate driving ban of at least 6 hours (Road Traffic Act art. 60)."
   },
@@ -3277,11 +3277,11 @@
     "question": "Are two cyclists allowed to ride next to each other on the road outside built-up areas?",
     "options": [
       "No, outside built-up areas cyclists must always ride one behind the other",
-      "Yes, cyclists are allowed to ride side by side with a maximum of four people at any time and anywhere",
+      "Yes, cyclists are allowed to ride with a maximum of four people next to each other anytime and anywhere",
       "Only if the road is wider than 7 meters",
       "Yes, but they have to drive one behind the other as soon as a vehicle from behind approaches"
     ],
-    "explanation": "According to Article 43.1, cyclists are allowed to ride two abreast, but outside built-up areas they must ride one behind the other when a vehicle approaching from behind."
+    "explanation": "According to Article 43.1, cyclists are allowed to ride two abreast, but outside built-up areas they must ride one behind the other when a vehicle approaching from behind is approaching."
   },
   "sit-01-b5-stop": {
     "question": "You cycle to school and come to this intersection with a STOP sign. Should you stop here?",
@@ -3295,7 +3295,7 @@
   "sit-02-b17-voorrang-rechts": {
     "question": "You arrive at this intersection with traffic sign B17. What should you do?",
     "options": [
-      "I am obliged to stop and give priority to drivers from the left and right.",
+      "I make a mandatory stop and give priority to drivers from the left and right.",
       "I can just drive on because sign B17 gives me priority.",
       "I slow down and give priority to drivers coming from the right."
     ],
@@ -3308,7 +3308,7 @@
       "I am always obliged to stop with one foot on the ground, even when there is no traffic approaching.",
       "I can drive quietly, because shark teeth only apply to motorists."
     ],
-    "explanation": "Traffic sign B1 (inverted triangle) and shark teeth require you to give way to drivers on the cross road. You should only stop if necessary."
+    "explanation": "Traffic sign B1 (inverted triangle) and shark teeth oblige you to give priority to drivers on the cross road. You should only stop if necessary."
   },
   "sit-04-b22-rechtsaf-rood": {
     "question": "The traffic light is red, but there is sign B22 (yellow bicycle with arrow) on the pole. Are you allowed to turn right?",
@@ -3360,7 +3360,7 @@
     "options": [
       "Motor vehicles are not allowed to overtake cyclists and the speed limit is 30 km/h.",
       "Motor vehicles may always overtake cyclists provided they keep a minimum distance of 1 meter to the side.",
-      "Motor vehicles are not allowed to drive at all in a bicycle zone."
+      "Motor vehicles are not allowed to drive at all in a cycling zone."
     ],
     "explanation": "In a cycling zone (sign F111), motor vehicles are not allowed to overtake cyclists and a maximum speed of 30 km/h applies everywhere (art. 22novies)."
   },
@@ -3389,7 +3389,7 @@
       "That depends on your speed: at walking pace you follow the rules for pedestrians, faster those for cyclists.",
       "Always on the cycle path, regardless of speed."
     ],
-    "explanation": "Users of non-motorized mobility devices follow the rules for pedestrians as long as they do not travel faster than walking pace. If they drive faster, the rules for cyclists apply (art. 7bis)."
+    "explanation": "Users of non-motorized propulsion devices follow the rules for pedestrians as long as they do not travel faster than walking pace. If they drive faster, the rules for cyclists apply (art. 7bis)."
   },
   "sit-13-bebouwde-kom-naast-elkaar": {
     "question": "Two cyclists ride next to each other in a built-up area and a car approaches behind them. What should cyclists do?",
@@ -3441,7 +3441,7 @@
     "options": [
       "The oncoming vehicle can always drive through first.",
       "You can drive through first; oncoming traffic must give way.",
-      "The biggest car always goes first."
+      "The largest car always goes first."
     ],
     "explanation": "Traffic sign B21 indicates that drivers have priority over oncoming drivers in a narrow passage (art. 67.4)."
   },
@@ -3452,7 +3452,7 @@
       "Cyclists are only allowed to ride here between 9am and 5pm.",
       "Cyclists must dismount and continue on foot."
     ],
-    "explanation": "Sign F19 with sub-sign M2 indicates a street with limited one-way traffic (SUL): motorized traffic may only drive in one direction, but cyclists may ride in both directions (art. 65.2 & art. 71)."
+    "explanation": "Sign F19 with subsign M2 indicates a street with limited one-way traffic (SUL): motorized traffic may only drive in one direction, but cyclists may ride in both directions (art. 65.2 & art. 71)."
   },
   "sit-20-f4a-zone-30": {
     "question": "You drive past traffic sign F4a (zone 30). What speed limit applies from here?",
@@ -3491,7 +3491,7 @@
     "explanation": "Pre-sorting arrows placed on the roadway oblige drivers to follow the direction indicated by the arrows (art. 77.1)."
   },
   "sit-24-fietssuggestiestrook": {
-    "question": "You drive your car along this red-ochre colored bicycle suggestion lane (without traffic sign D7 or white broken line). Can you drive this?",
+    "question": "You drive by car along this red-ochre colored bicycle suggestion lane (without traffic sign D7 or white broken line). Can you drive this?",
     "options": [
       "Yes, a bicycle lane is an integral part of the roadway; cars may drive on it, but may not endanger or hinder cyclists.",
       "No, a bicycle lane is exclusively reserved for cyclists and prohibited for cars.",
@@ -3548,7 +3548,7 @@
     "question": "A person with a white cane or guide dog wants to cross. What should you do as an approaching driver?",
     "options": [
       "Give way and in all circumstances yield and stop to allow the person to cross safely.",
-      "Briefly honk to let us know that you are passing by.",
+      "Briefly honk the horn to let us know that you are passing by.",
       "Only stop if the person is already in the middle of the road."
     ],
     "explanation": "Drivers must in all circumstances give way and stop for blind people with a white cane or persons with a guide dog who are on the roadway (art. 40.2)."
@@ -3612,7 +3612,7 @@
     "options": [
       "Drive quickly around the tram on the left.",
       "Sound the horn so that the travelers move aside.",
-      "Stopping at the entry and exit side to allow travelers to safely reach the roadway or sidewalk."
+      "Stop at the entry and exit sides to allow travelers to safely reach the roadway or sidewalk."
     ],
     "explanation": "When a tram stops without a raised platform, drivers must stop on the boarding and alighting side to allow passengers to cross safely (art. 40.1)."
   },
@@ -3632,7 +3632,7 @@
       "At least 1.5 meters.",
       "At least 1 meter."
     ],
-    "explanation": "Outside built-up areas, a driver must leave a lateral space of at least 1.5 meters when overtaking a cyclist or pedestrian (in built-up areas this is at least 1 meter, art. 40ter)."
+    "explanation": "Outside built-up areas, a driver must leave a lateral space of at least 1.5 meters when overtaking a cyclist or pedestrian (within built-up areas this is at least 1 meter, art. 40ter)."
   },
   "sit-40-reddingsstrook-file": {
     "question": "There is a traffic jam on a two-lane highway. How should drivers form a rescue lane?",
@@ -3642,5 +3642,140 @@
       "Vehicles in the left lane swerve as much as possible to the left, vehicles in the right lane as much as possible to the right."
     ],
     "explanation": "In the event of traffic jams, vehicles in the left lane must drive on the far left and those in the right lane must drive on the far right to leave a free rescue lane in the middle for emergency services (art. 2.70 & art. 9.8)."
+  },
+  "sit-41-c31b-rechtsaf-verboden-fietsers": {
+    "question": "You approach this intersection in Antwerp with sign C31b and a bottom sign 'EXCEPT' with a bicycle symbol. Are you allowed to turn right here by car?",
+    "options": [
+      "No, no one is allowed to turn right here, not even cyclists.",
+      "Yes, the ban only applies at night.",
+      "No, the ban applies to cars, but cyclists are exempt and are allowed to turn right."
+    ],
+    "explanation": "Sign C31b prohibits turning right at the intersection (art. 68 KB 1 December 1975). The 'EXCEPT' sign with bicycle symbol limits this ban to motorized traffic; cyclists are allowed to turn right."
+  },
+  "sit-42-e9a-gehandicaptenparkeerplaats": {
+    "question": "You see this parking sign in a parking lot. Who is allowed to park here?",
+    "options": [
+      "Only vehicles with a valid European disabled parking card.",
+      "Everyone, as long as the parking disc is used.",
+      "Taxis and delivery vehicles only."
+    ],
+    "explanation": "Sign E9a with wheelchair symbol indicates a parking space reserved exclusively for vehicles used by persons with disabilities and a valid parking card (art. 70.2.1)."
+  },
+  "sit-43-hoogte-gewicht-brug-bus-uitzondering": {
+    "question": "You approach this bridge with signs for a height restriction of 3.80 m and a weight restriction of 10 tons, with the bottom sign 'Excepte bus et autocars'. Is a 14-ton scheduled bus allowed to cross here?",
+    "options": [
+      "Yes, because the sign expressly excludes buses and coaches from the weight restriction.",
+      "Only if the bus is less than 3.80 m high, but the weight remains prohibited.",
+      "No, the weight ban applies to all vehicles without exception."
+    ],
+    "explanation": "Signs C29 (height) and C21 (mass) prohibit access above the indicated values ​​(art. 68), but the bottom sign 'Excepte bus et autocars' expressly excludes scheduled buses and coaches from both prohibition signs."
+  },
+  "sit-44-f103-voetgangerszone-laden-lossen": {
+    "question": "You drive a van to this street with sign F103 and the bottom sign 'Except loading and unloading from 6:30 PM to 11:30 AM'. Are you allowed to drive in here at 9am to deliver?",
+    "options": [
+      "No, a pedestrian zone is prohibited for vehicles at any time.",
+      "Yes, because 9 am falls within the time period in which loading and unloading is permitted.",
+      "Yes, but only if you use a bicycle instead of a van."
+    ],
+    "explanation": "Sign F103 indicates the beginning of a pedestrian zone, where vehicles are in principle not allowed to drive (art. 71.2). The bottom sign allows loading and unloading between 6:30 PM and 11:30 AM, so 9 AM falls within that exception."
+  },
+  "sit-45-c1-eenrichting-fietsers-bromfietsers": {
+    "question": "This street in Antwerp has sign C1 with a bottom sign 'EXCEPT' for cyclists and mopeds class A. Are you allowed to drive here with a moped class A, against the direction of other traffic?",
+    "options": [
+      "No, sign C1 prohibits this for all drivers without exception.",
+      "Only if you get off the moped and lead them by the hand.",
+      "Yes, the sign expressly excludes cyclists and class A mopeds from the ban."
+    ],
+    "explanation": "Sign C1 basically prohibits anyone from driving in that direction. A sign with a bicycle and moped symbol can exempt cyclists and class A mopeds from that ban, such as on a street with limited one-way traffic (art. 65.2)."
+  },
+  "sit-46-c3-verboden-toegang-beide-richtingen": {
+    "question": "At the entrance to the Market in Maaseik you will see this completely red sign. Can you drive here by car?",
+    "options": [
+      "No, sign C3 closes the road to all drivers in both directions.",
+      "Yes, as long as you drive at walking pace.",
+      "Yes, but only for parking."
+    ],
+    "explanation": "The completely red sign C3 prohibits access, in both directions, for any driver (art. 68 KB 1 December 1975); only pedestrians and any explicitly excluded categories are still allowed."
+  },
+  "sit-47-c31a-links-afslaan-verboden": {
+    "question": "You want to turn left at this intersection, but you see this sign hanging on the facade. Is that allowed?",
+    "options": [
+      "Yes, the ban only applies to trucks.",
+      "No, sign C31a prohibits turning in the direction of the arrow at the intersection, here on the left.",
+      "Yes, turning left is always allowed when there is no traffic approaching."
+    ],
+    "explanation": "Sign C31a prohibits drivers from turning at the next intersection in the direction indicated by the arrow, here to the left (art. 68 KB 1 December 1975)."
+  },
+  "sit-48-a45-overweg-enkel-spoor-zonder-slagbomen": {
+    "question": "You are approaching this railway crossing along the Maas. There are no barriers, only a St. Andrew's cross. What should you pay attention to?",
+    "options": [
+      "Without barriers there is no danger, you can just drive through.",
+      "You have to judge for yourself whether a train is coming and stop as soon as it approaches or the lights flash.",
+      "You must always stop completely here, even if there is clearly no train in sight."
+    ],
+    "explanation": "Sign A45 indicates a single track level crossing (art. 66). Without barriers, you have to be careful: stop as soon as a train approaches or the flashing lights come on, and only cross when it is safe (art. 20.3)."
+  },
+  "sit-49-d10-voetgangers-fietserspad": {
+    "question": "You cycle along the Maas in Liège on this path with sign D10. Can a class A moped also drive here?",
+    "options": [
+      "Yes, sign D10 allows pedestrians, cyclists and class A mopeds.",
+      "Yes, but only class A mopeds, not regular cyclists.",
+      "No, unlike sign D9, class A mopeds are not allowed to drive on a D10 path."
+    ],
+    "explanation": "Sign D10 indicates a path reserved for pedestrians and cyclists; In contrast to sign D9, class A mopeds are not allowed to drive here (art. 69.3)."
+  },
+  "sit-50-a23-schoolomgeving-zone30": {
+    "question": "Here you drive past a school area with a warning sign for children and a 30 km/h zone sign. What does this mean for your speed?",
+    "options": [
+      "You must drive a maximum of 30 km/h here, over the entire zone and not just at the sign.",
+      "Only at the blackboard itself the speed limit is 30 km/h, after which you can go faster again.",
+      "The speed limit only applies during school hours."
+    ],
+    "explanation": "The warning sign announces a place where many children may appear (art. 66); the zone sign F4a imposes a maximum speed of 30 km/h for the entire zone, until the sign F4b lifts this limit again (art. 71 & art. 22quater)."
+  },
+  "sit-51-a31-matrixbord-wegenwerken-file": {
+    "question": "On the motorway you see this electronic matrix sign: 'Working in Ghent-Seaport, traffic jam from Oostakker'. What do you do with this?",
+    "options": [
+      "You ignore the sign, because electronic signs are not binding.",
+      "You anticipate delays, reduce your speed in time and take into account traffic jams further down the road.",
+      "You must immediately stop on the road until the traffic jam has cleared."
+    ],
+    "explanation": "A variable information sign, just like a fixed A31 sign, warns of works and danger on the road ahead (art. 66); Drivers must adjust their speed in time and anticipate announced traffic disruptions."
+  },
+  "sit-52-a5-steile-helling-kemmelberg": {
+    "question": "You are cycling or driving onto Kemmelbergstraat and see this sign. What does it warn about?",
+    "options": [
+      "For a steep slope (climbing section of road).",
+      "Before a dangerous bend to the left.",
+      "For uneven road surfaces."
+    ],
+    "explanation": "Traffic sign A5 warns of a steep slope, such as here on the climb of the Kemmelberg in Heuvelland (art. 66 KB 1 December 1975)."
+  },
+  "sit-53-a13-oneffen-wegdek-vooraankondiging": {
+    "question": "You see this sign marked '150 m' along a rural road. What can you expect 150 meters away?",
+    "options": [
+      "A transverse dip, a donkey's ridge or another uneven road surface.",
+      "A mandatory stop with priority from the right.",
+      "The end of the public road."
+    ],
+    "explanation": "Traffic sign A13 warns of a cross-cut, a donkey's back or an uneven road surface; the bottom sign '150 m' indicates the distance to that hazard (art. 66 KB 1 December 1975)."
+  },
+  "sit-54-a39-einde-eenrichtingsverkeer": {
+    "question": "You're driving on a road at night and see these two triangles with a down arrow and an up arrow. What do they mean?",
+    "options": [
+      "That you are obliged to turn around.",
+      "That one-way traffic ends and traffic is allowed in both directions again.",
+      "That oncoming traffic is given priority in a narrow passage."
+    ],
+    "explanation": "Traffic sign A39 warns that one-way traffic ends and that traffic is allowed in both directions again; so pay attention again to oncoming traffic (art. 66 KB of December 1, 1975)."
+  },
+  "sit-55-d3-verplichte-rijrichting-pijl": {
+    "question": "At this intersection you will see a blue round sign with an arrow pointing straight ahead and to the left. Which directions can you follow?",
+    "options": [
+      "Just straight ahead.",
+      "Left only.",
+      "Straight ahead or left, you choose which of the two directions indicated."
+    ],
+    "explanation": "Sign D3 obliges drivers to follow one of the directions indicated by the arrows, here straight ahead or left; you can choose between the indicated directions, but not turn right (art. 69 KB 1 December 1975)."
   }
 }

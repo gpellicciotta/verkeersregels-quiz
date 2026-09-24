@@ -4,32 +4,32 @@ Content for the Belgian theoretical driving exam quiz, generated and verified on
 
 ## Question bank summary
 
-Total questions: 328, stored in `data/questions.json`.
+Total questions: 343, stored in `data/questions.json`.
 
 Breakdown by type:
 
 - recognize: 197
 - identify: 12
 - rule: 79
-- situation: 40
+- situation: 55
 
 Breakdown by category:
 
 - aanwijzing: 98
 - voorrang: 44
-- fietsers-voetgangers: 38
-- verbod: 36
-- gevaar: 31
-- parkeren: 24
-- algemeen: 20
-- gebod: 10
-- autosnelweg: 10
+- fietsers-voetgangers: 40
+- verbod: 40
+- gevaar: 35
+- parkeren: 25
+- algemeen: 22
+- gebod: 11
+- autosnelweg: 11
 - snelheid: 9
 - alcohol: 4
 - gordel: 2
 - telefoon: 2
 
-Answer positions (`correctIndex`) are spread across options (84 for 0, 87 for 1, 81 for 2, 72 for 3) so the correct answer is not systematically in the same position.
+Answer positions (`correctIndex`) are spread across options (91 for 0, 93 for 1, 86 for 2, 73 for 3) so the correct answer is not systematically in the same position.
 
 ## Rule sources
 
@@ -276,6 +276,22 @@ Cross-reference used to confirm which code matches which meaning and shape: the 
 
 ## Correction log
 
+- 2026-09-24: task T0081 added 15 `situation` questions (`sit-41` through `sit-55`), each with a
+  real, unstaged Wikimedia Commons street photo of a live Belgian traffic sign rather than a
+  studio-rendered sign graphic. Sourcing method: browsed Commons's per-sign-code categories
+  (`Category:<code> (road sign, Belgium)`), which independently confirmed the same sign codes
+  and legal meanings already verified in `assets/signs/`, then opened each full-resolution
+  candidate photo and visually inspected it before use, rather than trusting a filename or
+  thumbnail. This caught two problems before they shipped: a "Belgisch verkeersbord ... .jpg"
+  series (A11/A51/D1/F8) turned out to be isolated studio renders on plain backgrounds, not
+  real-world situation photos, so it was dropped entirely; and a candidate file initially
+  assumed to show sign C33 (verbod om te keren) was, on close inspection, actually sign C31a
+  (verbod links af te slaan) - the question text was written to match what the photo actually
+  shows. The handicap-parking photo (`sit-42`) was cropped to remove an unofficial joke
+  undersign glued below the real E9a sign, keeping only the official signage in frame. Every
+  row's license and photographer/uploader were read from that file's own Commons `imageinfo`
+  metadata (see the dedicated attribution table below), not assumed from the upload series.
+
 - 2026-09-24: task T0085 found four missing signs by extracting every sign code mentioned
   in `data/law/wegcode-kb-1975-12-01-consolidated.pdf` (the locally stored authoritative
   text) and diffing that ground-truth list against `assets/signs/`, rather than trusting
@@ -420,7 +436,9 @@ Cross-reference used to confirm which code matches which meaning and shape: the 
 
 ## Situation photo sources
 
-The 40 real-world traffic situation photographs in `assets/situations/` originate from *De Grote Verkeerstoets*, the official public traffic safety educational initiative organized by the Flemish Foundation for Traffic Knowledge ([VSV](https://www.vsv.be)) in partnership with the Flemish Government ([Departement Mobiliteit en Openbare Werken](https://www.vlaanderen.be/departement-mobiliteit-en-openbare-werken)).
+The first 40 real-world traffic situation photographs (`sit-01` through `sit-40`) in `assets/situations/` originate from *De Grote Verkeerstoets*, the official public traffic safety educational initiative organized by the Flemish Foundation for Traffic Knowledge ([VSV](https://www.vsv.be)) in partnership with the Flemish Government ([Departement Mobiliteit en Openbare Werken](https://www.vlaanderen.be/departement-mobiliteit-en-openbare-werken)).
+
+Fifteen further photographs (`sit-41` through `sit-55`, added under task T0081) come from Wikimedia Commons instead: each is a real, unstaged street photograph of an actual Belgian traffic sign in its physical setting, individually selected after visually inspecting the full-resolution image to confirm the sign and its meaning are legible, and used under the free license stated on its own Commons file page (see the dedicated table below).
 
 In accordance with Belgian copyright law (Wetboek van economisch recht, Art. XI.189 §1, 1° & 2°), the non-commercial use of short illustrative excerpts for educational road safety testing (*onderwijsexceptie* and *citaatrecht*) is permitted with proper attribution to the author and source.
 
@@ -466,3 +484,27 @@ In accordance with Belgian copyright law (Wetboek van economisch recht, Art. XI.
 | `sit-38-bevoegd-persoon-arm-omhoog.jpg` | Bevoegd persoon met verticaal opgeheven arm (stop voor iedereen) | Art. 4.1 | [De Grote Verkeerstoets - Verkeerstekens](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas/verkeerstekens) |
 | `sit-39-afstand-inhalen-fietser.jpg` | Minimumafstand 1,5 meter bij inhalen fietser buiten bebouwde kom | Art. 40ter | [De Grote Verkeerstoets - Plaats op de weg](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas) |
 | `sit-40-reddingsstrook-file.jpg` | Vorming van reddingsstrook bij file op autosnelweg | Art. 2.70 & Art. 9.8 | [De Grote Verkeerstoets - Plaats op de weg](https://www.degroteverkeerstoets.be/aan-de-slag-in-de-klas) |
+
+### Situation photos added in task T0081 (Wikimedia Commons)
+
+Every row below was verified individually: the full-resolution photo was opened and visually inspected to
+confirm the sign, its undersign text (if any), and the surrounding context are legible and match the question
+text, and the license/author shown come from that file's own Commons `imageinfo` metadata (not assumed).
+
+| Local file | Situation | Wegcode legal basis | Photographer | License | Commons source page |
+|---|---|---|---|---|---|
+| `sit-41-c31b-rechtsaf-verboden-fietsers.jpg` | Bord C31b (verbod rechtsaf) met onderbord dat fietsers uitzondert, Antwerpen | Art. 68 | MatteoNL97 (OnwardToThePast) | CC BY-SA 4.0 | [File:Right turn prohibited, Belgian traffic sign.jpg](https://commons.wikimedia.org/wiki/File:Right_turn_prohibited,_Belgian_traffic_sign.jpg) |
+| `sit-42-e9a-gehandicaptenparkeerplaats.jpg` | Gehandicaptenparkeerplaats bord E9a, Antwerpen | Art. 70.2.1 | MatteoNL97 (OnwardToThePast) | CC BY-SA 4.0 | [File:Handicap parking with funny undersign, Belgian traffic sign.jpg](https://commons.wikimedia.org/wiki/File:Handicap_parking_with_funny_undersign,_Belgian_traffic_sign.jpg) |
+| `sit-43-hoogte-gewicht-brug-bus-uitzondering.jpg` | Hoogte- (3,80 m, C29) en gewichtsbeperking (10 t, C21) met busuitzondering, brug van Godinne | Art. 68 | Miguel Tremblay | CC0 | [File:Pont de Godinne restriction de tonnage.jpg](https://commons.wikimedia.org/wiki/File:Pont_de_Godinne_restriction_de_tonnage.jpg) |
+| `sit-44-f103-voetgangerszone-laden-lossen.jpg` | Voetgangerszone bord F103 met onderbord voor laden en lossen, Maaseik | Art. 71.2 | Jean Housen | CC BY-SA 4.0 | [File:20190714 162 maaseik.jpg](https://commons.wikimedia.org/wiki/File:20190714_162_maaseik.jpg) |
+| `sit-45-c1-eenrichting-fietsers-bromfietsers.jpg` | Bord C1 (eenrichting) met onderbord dat fietsers en bromfietsen klasse A uitzondert, Antwerpen | Art. 65.2 | MatteoNL97 (OnwardToThePast) | CC BY-SA 4.0 | [File:One-way street prohibited entry, Belgian traffic sign.jpg](https://commons.wikimedia.org/wiki/File:One-way_street_prohibited_entry,_Belgian_traffic_sign.jpg) |
+| `sit-46-c3-verboden-toegang-beide-richtingen.jpg` | Bord C3 (verboden toegang, beide richtingen) bij de Markt, Maaseik | Art. 68 | Jean Housen | CC BY-SA 4.0 | [File:20190714 099 maaseik.jpg](https://commons.wikimedia.org/wiki/File:20190714_099_maaseik.jpg) |
+| `sit-47-c31a-links-afslaan-verboden.jpg` | Bord C31a (verbod links af te slaan), Antwerpen | Art. 68 | Jean Housen | CC BY-SA 4.0 | [File:20210626 antwerpen337.jpg](https://commons.wikimedia.org/wiki/File:20210626_antwerpen337.jpg) |
+| `sit-48-a45-overweg-enkel-spoor-zonder-slagbomen.jpg` | Spooroverweg met enkel spoor zonder slagbomen (bord A45), Ivoz-Ramet | Art. 66 & Art. 20.3 | Jean Housen | CC BY-SA 4.0 | [File:20170426 ivoz ramet07.jpg](https://commons.wikimedia.org/wiki/File:20170426_ivoz_ramet07.jpg) |
+| `sit-49-d10-voetgangers-fietserspad.jpg` | Bord D10 (pad voor voetgangers en fietsers), Maaskade, Luik | Art. 69.3 | Jean Housen | CC BY-SA 4.0 | [File:20170405 liege36.jpg](https://commons.wikimedia.org/wiki/File:20170405_liege36.jpg) |
+| `sit-50-a23-schoolomgeving-zone30.jpg` | Schoolomgeving (bord A23) samen met zone 30 (bord F4a) | Art. 66, Art. 71 & Art. 22quater | Alain Rouiller | CC BY-SA 2.0 | [File:Liège 921 (8344968121).jpg](https://commons.wikimedia.org/wiki/File:Li%C3%A8ge_921_(8344968121).jpg) |
+| `sit-51-a31-matrixbord-wegenwerken-file.jpg` | Variabel informatiebord met wegenwerken- en filewaarschuwing op autosnelweg | Art. 66 | Thomas Vlerick | CC BY 2.0 | [File:Variable-message road sign Belgium.jpg](https://commons.wikimedia.org/wiki/File:Variable-message_road_sign_Belgium.jpg) |
+| `sit-52-a5-steile-helling-kemmelberg.jpg` | Bord A5 (steile helling), Kemmelbergstraat, Heuvelland | Art. 66 | Astro (vls.wikipedia) | Public domain | [File:Kemmelberg23.jpg](https://commons.wikimedia.org/wiki/File:Kemmelberg23.jpg) |
+| `sit-53-a13-oneffen-wegdek-vooraankondiging.jpg` | Bord A13 (oneffen wegdek) met onderbord '150 m', Bovekerke | Art. 66 | User:LimoWreck | CC BY 2.5 | [File:Bovekerke - Vladslostraat 1.jpg](https://commons.wikimedia.org/wiki/File:Bovekerke_-_Vladslostraat_1.jpg) |
+| `sit-54-a39-einde-eenrichtingsverkeer.jpg` | Bord A39 (einde eenrichtingsverkeer), nachtopname | Art. 66 | Geertivp | CC BY-SA 4.0 | [File:Duplicate road sign one lane traffic.jpg](https://commons.wikimedia.org/wiki/File:Duplicate_road_sign_one_lane_traffic.jpg) |
+| `sit-55-d3-verplichte-rijrichting-pijl.jpg` | Bord D3 (verplichte rijrichting, rechtdoor of links) | Art. 69 | Jean Housen | CC BY-SA 4.0 | [File:20170226 angleur115.jpg](https://commons.wikimedia.org/wiki/File:20170226_angleur115.jpg) |

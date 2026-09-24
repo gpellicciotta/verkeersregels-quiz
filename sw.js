@@ -1,5 +1,5 @@
 // Service Worker for Verkeersregels Quiz PWA
-const CACHE_NAME = "verkeersquiz-v3.7.1-pre-2b6426ae2de66e2d";
+const CACHE_NAME = "verkeersquiz-v3.7.1-pre-d1029d421414cc65";
 
 const PRECACHE_ASSETS = [
   "./",
@@ -288,6 +288,21 @@ const PRECACHE_ASSETS = [
   "assets/situations/sit-38-bevoegd-persoon-arm-omhoog.jpg",
   "assets/situations/sit-39-afstand-inhalen-fietser.jpg",
   "assets/situations/sit-40-reddingsstrook-file.jpg",
+  "assets/situations/sit-41-c31b-rechtsaf-verboden-fietsers.jpg",
+  "assets/situations/sit-42-e9a-gehandicaptenparkeerplaats.jpg",
+  "assets/situations/sit-43-hoogte-gewicht-brug-bus-uitzondering.jpg",
+  "assets/situations/sit-44-f103-voetgangerszone-laden-lossen.jpg",
+  "assets/situations/sit-45-c1-eenrichting-fietsers-bromfietsers.jpg",
+  "assets/situations/sit-46-c3-verboden-toegang-beide-richtingen.jpg",
+  "assets/situations/sit-47-c31a-links-afslaan-verboden.jpg",
+  "assets/situations/sit-48-a45-overweg-enkel-spoor-zonder-slagbomen.jpg",
+  "assets/situations/sit-49-d10-voetgangers-fietserspad.jpg",
+  "assets/situations/sit-50-a23-schoolomgeving-zone30.jpg",
+  "assets/situations/sit-51-a31-matrixbord-wegenwerken-file.jpg",
+  "assets/situations/sit-52-a5-steile-helling-kemmelberg.jpg",
+  "assets/situations/sit-53-a13-oneffen-wegdek-vooraankondiging.jpg",
+  "assets/situations/sit-54-a39-einde-eenrichtingsverkeer.jpg",
+  "assets/situations/sit-55-d3-verplichte-rijrichting-pijl.jpg",
 ];
 
 /**

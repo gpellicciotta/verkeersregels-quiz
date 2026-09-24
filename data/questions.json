@@ -5570,6 +5570,231 @@
       "explanation": "Bij filevorming moeten voertuigen op de linkerrijstrook uiterst links en die op de rechterrijstrook uiterst rechts gaan rijden om in het midden een vrije reddingsstrook te laten voor hulpdiensten (art. 2.70 & art. 9.8).",
       "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-9",
       "since": 2020
+    },
+    {
+      "id": "sit-41-c31b-rechtsaf-verboden-fietsers",
+      "type": "situation",
+      "category": "verbod",
+      "question": "Je nadert dit kruispunt in Antwerpen met bord C31b en een onderbord 'UITGEZONDERD' met een fietssymbool. Mag je hier met de auto rechtsaf slaan?",
+      "image": "assets/situations/sit-41-c31b-rechtsaf-verboden-fietsers.jpg",
+      "options": [
+        "Nee, niemand mag hier rechtsaf slaan, ook fietsers niet.",
+        "Ja, het verbod geldt enkel 's nachts.",
+        "Nee, voor auto's geldt het verbod, maar fietsers zijn uitgezonderd en mogen wel rechtsaf."
+      ],
+      "correctIndex": 2,
+      "explanation": "Bord C31b verbiedt om op het kruispunt rechtsaf te slaan (art. 68 KB 1 december 1975). Het onderbord 'UITGEZONDERD' met fietssymbool beperkt dit verbod tot gemotoriseerd verkeer; fietsers mogen er wel rechtsaf.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+    },
+    {
+      "id": "sit-42-e9a-gehandicaptenparkeerplaats",
+      "type": "situation",
+      "category": "parkeren",
+      "question": "Je ziet dit parkeerbord op een parkeerplaats. Wie mag hier parkeren?",
+      "image": "assets/situations/sit-42-e9a-gehandicaptenparkeerplaats.jpg",
+      "options": [
+        "Enkel voertuigen met een geldige Europese invalidenparkeerkaart.",
+        "Iedereen, zolang de parkeerschijf wordt gebruikt.",
+        "Enkel taxi's en leveringsvoertuigen."
+      ],
+      "correctIndex": 0,
+      "explanation": "Bord E9a met rolstoelsymbool duidt een parkeerplaats aan die uitsluitend voorbehouden is voor voertuigen gebruikt door personen met een handicap en een geldige parkeerkaart (art. 70.2.1).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-70"
+    },
+    {
+      "id": "sit-43-hoogte-gewicht-brug-bus-uitzondering",
+      "type": "situation",
+      "category": "verbod",
+      "question": "Je nadert deze brug met borden voor een hoogtebeperking van 3,80 m en een gewichtsbeperking van 10 ton, met onderbord 'Excepte bus et autocars'. Mag een lijnbus van 14 ton hier over?",
+      "image": "assets/situations/sit-43-hoogte-gewicht-brug-bus-uitzondering.jpg",
+      "options": [
+        "Ja, want het onderbord zondert bussen en autocars uitdrukkelijk uit van de gewichtsbeperking.",
+        "Enkel als de bus minder dan 3,80 m hoog is, maar het gewicht blijft verboden.",
+        "Nee, het gewichtsverbod geldt zonder uitzondering voor alle voertuigen."
+      ],
+      "correctIndex": 0,
+      "explanation": "De borden C29 (hoogte) en C21 (massa) verbieden de toegang boven de aangeduide waarden (art. 68), maar het onderbord 'Excepte bus et autocars' zondert lijnbussen en autocars uitdrukkelijk uit van beide verbodsborden.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+    },
+    {
+      "id": "sit-44-f103-voetgangerszone-laden-lossen",
+      "type": "situation",
+      "category": "algemeen",
+      "question": "Je rijdt met een bestelwagen naar deze straat met bord F103 en onderbord 'Uitgezonderd laden en lossen van 18.30 tot 11.30 u'. Mag je hier om 9 uur 's morgens inrijden om te leveren?",
+      "image": "assets/situations/sit-44-f103-voetgangerszone-laden-lossen.jpg",
+      "options": [
+        "Nee, een voetgangerszone is op elk moment verboden voor voertuigen.",
+        "Ja, want 9 uur 's morgens valt binnen het tijdvak waarin laden en lossen is toegelaten.",
+        "Ja, maar enkel als je een fiets gebruikt in plaats van een bestelwagen."
+      ],
+      "correctIndex": 1,
+      "explanation": "Bord F103 duidt het begin van een voetgangerszone aan, waar voertuigen in principe niet mogen rijden (art. 71.2). Het onderbord laat laden en lossen toe tussen 18.30 en 11.30 uur, dus 9 uur 's morgens valt binnen die uitzondering.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+    },
+    {
+      "id": "sit-45-c1-eenrichting-fietsers-bromfietsers",
+      "type": "situation",
+      "category": "fietsers-voetgangers",
+      "question": "Deze straat in Antwerpen heeft bord C1 met een onderbord 'UITGEZONDERD' voor fietsers en bromfietsen klasse A. Mag je hier met een bromfiets klasse A inrijden, tegen de rijrichting van het overige verkeer in?",
+      "image": "assets/situations/sit-45-c1-eenrichting-fietsers-bromfietsers.jpg",
+      "options": [
+        "Nee, bord C1 verbiedt dit voor alle bestuurders zonder uitzondering.",
+        "Enkel als je van de bromfiets afstapt en ze aan de hand leidt.",
+        "Ja, het onderbord zondert fietsers en bromfietsen klasse A uitdrukkelijk uit van het verbod."
+      ],
+      "correctIndex": 2,
+      "explanation": "Bord C1 verbiedt in principe iedereen om in die richting in te rijden. Een onderbord met fiets- en bromfietssymbool kan fietsers en bromfietsen klasse A van dat verbod uitzonderen, zoals bij een straat met beperkt eenrichtingsverkeer (art. 65.2).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-65"
+    },
+    {
+      "id": "sit-46-c3-verboden-toegang-beide-richtingen",
+      "type": "situation",
+      "category": "verbod",
+      "question": "Bij de ingang van de Markt in Maaseik zie je dit volledig rode bord. Mag je hier met de auto inrijden?",
+      "image": "assets/situations/sit-46-c3-verboden-toegang-beide-richtingen.jpg",
+      "options": [
+        "Nee, bord C3 sluit de weg af voor alle bestuurders, in beide richtingen.",
+        "Ja, zolang je stapvoets rijdt.",
+        "Ja, maar enkel om te parkeren."
+      ],
+      "correctIndex": 0,
+      "explanation": "Het volledig rode bord C3 verbiedt de toegang, in beide richtingen, voor iedere bestuurder (art. 68 KB 1 december 1975); enkel voetgangers en eventueel uitdrukkelijk uitgezonderde categorieen mogen er nog.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+    },
+    {
+      "id": "sit-47-c31a-links-afslaan-verboden",
+      "type": "situation",
+      "category": "verbod",
+      "question": "Je wil op dit kruispunt linksaf slaan, maar ziet dit bord aan de gevel hangen. Mag dat?",
+      "image": "assets/situations/sit-47-c31a-links-afslaan-verboden.jpg",
+      "options": [
+        "Ja, het verbod geldt enkel voor vrachtwagens.",
+        "Nee, bord C31a verbiedt om op het kruispunt af te slaan in de richting van de pijl, hier links.",
+        "Ja, links afslaan is altijd toegelaten als er geen verkeer aankomt."
+      ],
+      "correctIndex": 1,
+      "explanation": "Bord C31a verbiedt bestuurders om op het eerstvolgende kruispunt af te slaan in de richting die de pijl aangeeft, hier naar links (art. 68 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-68"
+    },
+    {
+      "id": "sit-48-a45-overweg-enkel-spoor-zonder-slagbomen",
+      "type": "situation",
+      "category": "gevaar",
+      "question": "Je nadert deze spooroverweg langs de Maas. Er zijn geen slagbomen, enkel een Andreaskruis. Waar moet je op letten?",
+      "image": "assets/situations/sit-48-a45-overweg-enkel-spoor-zonder-slagbomen.jpg",
+      "options": [
+        "Zonder slagbomen is er geen gevaar, je mag gewoon doorrijden.",
+        "Je moet zelf inschatten of er een trein aankomt en stoppen zodra die nadert of de lichten knipperen.",
+        "Je moet hier altijd volledig stoppen, ook als er duidelijk geen trein in zicht is."
+      ],
+      "correctIndex": 1,
+      "explanation": "Bord A45 duidt een overweg met een enkel spoor aan (art. 66). Zonder slagbomen moet je zelf voorzichtig zijn: stop zodra een trein nadert of de knipperlichten aanspringen, en steek pas over als het veilig is (art. 20.3).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-20"
+    },
+    {
+      "id": "sit-49-d10-voetgangers-fietserspad",
+      "type": "situation",
+      "category": "fietsers-voetgangers",
+      "question": "Je fietst langs de Maas in Luik op dit pad met bord D10. Mag een bromfiets klasse A hier ook rijden?",
+      "image": "assets/situations/sit-49-d10-voetgangers-fietserspad.jpg",
+      "options": [
+        "Ja, bord D10 laat voetgangers, fietsers en bromfietsen klasse A toe.",
+        "Ja, maar enkel bromfietsen klasse A, geen gewone fietsers.",
+        "Nee, in tegenstelling tot bord D9 mogen bromfietsen klasse A op een D10-pad niet rijden."
+      ],
+      "correctIndex": 2,
+      "explanation": "Bord D10 duidt een pad voorbehouden voor voetgangers en fietsers aan; in tegenstelling tot bord D9 mogen bromfietsen klasse A hier niet rijden (art. 69.3).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-69"
+    },
+    {
+      "id": "sit-50-a23-schoolomgeving-zone30",
+      "type": "situation",
+      "category": "gevaar",
+      "question": "Je rijdt hier voorbij een schoolomgeving met een waarschuwingsbord voor kinderen en een zonebord van 30 km/u. Wat betekent dit voor jouw snelheid?",
+      "image": "assets/situations/sit-50-a23-schoolomgeving-zone30.jpg",
+      "options": [
+        "Je moet hier maximaal 30 km/u rijden, over de volledige zone en niet enkel ter hoogte van het bord.",
+        "Enkel ter hoogte van het schoolbord zelf geldt 30 km/u, daarna mag je weer sneller.",
+        "De snelheidsbeperking geldt enkel tijdens de schooluren."
+      ],
+      "correctIndex": 0,
+      "explanation": "Het waarschuwingsbord kondigt een plaats aan waar veel kinderen kunnen opduiken (art. 66); het zonebord F4a legt een maximumsnelheid van 30 km/u op voor de volledige zone, tot het bord F4b die weer opheft (art. 71 & art. 22quater).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-71"
+    },
+    {
+      "id": "sit-51-a31-matrixbord-wegenwerken-file",
+      "type": "situation",
+      "category": "autosnelweg",
+      "question": "Op de autosnelweg zie je dit elektronische matrixbord: 'Werken in Gent-Zeehaven, file vanaf Oostakker'. Wat doe je hiermee?",
+      "image": "assets/situations/sit-51-a31-matrixbord-wegenwerken-file.jpg",
+      "options": [
+        "Je negeert het bord, want elektronische borden zijn niet bindend.",
+        "Je anticipeert op vertraging, vermindert tijdig je snelheid en houdt rekening met filevorming verderop.",
+        "Je moet onmiddellijk stoppen op de rijbaan tot de file is opgelost."
+      ],
+      "correctIndex": 1,
+      "explanation": "Een variabel informatiebord waarschuwt, net als een vast bord A31, voor werken en gevaar op de rijbaan verderop (art. 66); bestuurders moeten hun snelheid tijdig aanpassen en anticiperen op de aangekondigde verkeershinder.",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+    },
+    {
+      "id": "sit-52-a5-steile-helling-kemmelberg",
+      "type": "situation",
+      "category": "gevaar",
+      "question": "Je fietst of rijdt de Kemmelbergstraat op en ziet dit bord. Waarvoor waarschuwt het?",
+      "image": "assets/situations/sit-52-a5-steile-helling-kemmelberg.jpg",
+      "options": [
+        "Voor een steile helling (klimmend weggedeelte).",
+        "Voor een gevaarlijke bocht naar links.",
+        "Voor een oneffen wegdek."
+      ],
+      "correctIndex": 0,
+      "explanation": "Verkeersbord A5 waarschuwt voor een steile helling, zoals hier op de beklimming van de Kemmelberg in Heuvelland (art. 66 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+    },
+    {
+      "id": "sit-53-a13-oneffen-wegdek-vooraankondiging",
+      "type": "situation",
+      "category": "gevaar",
+      "question": "Je ziet dit bord met de aanduiding '150 m' langs een landelijke weg. Wat kan je 150 meter verderop verwachten?",
+      "image": "assets/situations/sit-53-a13-oneffen-wegdek-vooraankondiging.jpg",
+      "options": [
+        "Een uitholling overdwars, een ezelsrug of een ander oneffen wegdek.",
+        "Een verplichte stop met voorrang van rechts.",
+        "Het einde van de openbare weg."
+      ],
+      "correctIndex": 0,
+      "explanation": "Verkeersbord A13 waarschuwt voor een uitholling overdwars, een ezelsrug of een oneffen wegdek; het onderbord '150 m' geeft de afstand tot dat gevaar aan (art. 66 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+    },
+    {
+      "id": "sit-54-a39-einde-eenrichtingsverkeer",
+      "type": "situation",
+      "category": "algemeen",
+      "question": "Je rijdt 's nachts op een weg en ziet deze twee driehoeken met een pijl omlaag en een pijl omhoog. Wat betekenen ze?",
+      "image": "assets/situations/sit-54-a39-einde-eenrichtingsverkeer.jpg",
+      "options": [
+        "Dat je verplicht moet keren.",
+        "Dat eenrichtingsverkeer eindigt en verkeer weer in beide richtingen is toegelaten.",
+        "Dat tegenliggers voorrang krijgen op een smalle doorgang."
+      ],
+      "correctIndex": 1,
+      "explanation": "Verkeersbord A39 waarschuwt dat eenrichtingsverkeer eindigt en dat verkeer weer in beide richtingen is toegelaten; let dus weer op tegemoetkomend verkeer (art. 66 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-66"
+    },
+    {
+      "id": "sit-55-d3-verplichte-rijrichting-pijl",
+      "type": "situation",
+      "category": "gebod",
+      "question": "Op dit kruispunt zie je een blauw rond bord met een pijl die rechtdoor en naar links wijst. Welke richtingen mag je volgen?",
+      "image": "assets/situations/sit-55-d3-verplichte-rijrichting-pijl.jpg",
+      "options": [
+        "Enkel rechtdoor.",
+        "Enkel links.",
+        "Rechtdoor of links, je kiest zelf welke van de twee aangeduide richtingen."
+      ],
+      "correctIndex": 2,
+      "explanation": "Bord D3 verplicht bestuurders om een van de door de pijlen aangeduide richtingen te volgen, hier rechtdoor of links; je mag zelf kiezen tussen de aangeduide richtingen, maar niet rechtsaf slaan (art. 69 KB 1 december 1975).",
+      "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-69"
     }
   ]
 }

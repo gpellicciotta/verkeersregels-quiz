@@ -14,7 +14,6 @@ An overview of all tasks and their planning.
 ---
 
 ## Next Milestone
-- [~] T0081 [owner: @claude] Extend the quiz with 15 additional traffic situation questions
 - [ ] T0082 Extend the quiz with 10 questions that are likely asked on a Belgian theoretical driver exam and that are not about traffic situations or signs
 - [ ] T0083 In the about/info page, provide a button to print a document listing, in a table, all Belgian roadsigns with their explanation and a link to wegcode.be, and in the order they are also presented in wegcode.be.
 

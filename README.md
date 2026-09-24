@@ -75,14 +75,14 @@ Open dan [http://localhost:8000/index.html](http://localhost:8000/index.html) in
 ## Vragenbank aanpassen
 De vragen staan in [data/questions.json](data/questions.json), zie
 [data/SOURCES.md](data/SOURCES.md) voor de gebruikte bronnen en verkeersbord-afbeeldingen.
-De vragenbank telt momenteel 304 geverifieerde vragen. Elke vraag heeft een `type`:
+De vragenbank telt momenteel 343 geverifieerde vragen. Elke vraag heeft een `type`:
 - `recognize` — toont een verkeersbord (`sign`), 4 tekstopties als mogelijke betekenis.
 - `identify` — toont een omschrijving, 4 bord-afbeeldingen als opties.
 - `rule` — vraag over een verkeersregel, 4 tekstopties (toont optioneel een bord via `sign`).
 - `situation` — toont een foto van een verkeerssituatie (`image`), 4 opties over voorrang of rijgedrag.
 
 Verkeersborden staan in `assets/signs/` (193 SVG-bestanden).
-Situatiefoto's staan in `assets/situations/` (20 JPEG-bestanden).
+Situatiefoto's staan in `assets/situations/` (55 JPEG-bestanden).
 
 ## Deployen naar GitHub Pages
 1. Maak een GitHub-repository aan en push deze projectmap ernaartoe.

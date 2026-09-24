@@ -75,14 +75,14 @@ Functional and technical requirements for the Verkeersregels Quiz application.
   - Provides a print-optimized layout that spans full width and prevents page breaks inside result rows.
 
 ### Question Bank and Legal Accuracy
-- **Question Catalog**: Contains 304 verified questions covering hazard warnings, priority rules, speed limits, road positioning, cyclist/pedestrian infrastructure, and real-world traffic situations.
+- **Question Catalog**: Contains 343 verified questions covering hazard warnings, priority rules, speed limits, road positioning, cyclist/pedestrian infrastructure, and real-world traffic situations.
 - **Question Types**:
   - `recognize`: displays a traffic sign SVG and asks the user to identify its official meaning.
   - `identify`: displays a legal description and presents candidate sign options.
   - `rule`: presents a concrete driving scenario or regulatory question with four choice options.
   - `situation`: displays a high-resolution photograph of a real traffic situation and tests priority rules, lane positioning, and maneuvers.
 - **Sign Assets**: All 193 signs reside in `assets/signs/` as valid SVGs using official Belgian designation codes (e.g. `A1a.svg`, `C31a.svg`, `D5.svg`).
-- **Situation Photos**: All 20 situation photos reside in `assets/situations/` as high-resolution JPEG files sourced from De Grote Verkeerstoets.
+- **Situation Photos**: All 55 situation photos reside in `assets/situations/` as high-resolution JPEG files sourced from De Grote Verkeerstoets and, for the sign-focused situations, from Wikimedia Commons under compatible free licenses.
 - **Unshown Sign Safeguard**: No question may refer to a specific traffic sign without displaying its SVG image or photograph.
 - **Query Parameter Filtering and Configuration**:
   - `?lang=nl|fr|de|en`: sets the interface language (default `nl`).
