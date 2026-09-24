@@ -217,7 +217,6 @@
   "about.source3_title": "Wikimedia Commons & Verkeersborden België",
   "about.source3_description": "Officiële SVG vectorillustraties van Belgische verkeersborden.",
   "about.print_signs_btn": "Overzicht van alle verkeersborden afdrukken",
-  "about.export_signs_pdf_btn": "Exporteren als PDF",
   "signs_doc.title": "Overzicht van alle Belgische verkeersborden",
   "signs_doc.intro": "{count} verkeersborden uit de Belgische Wegcode (KB 1 december 1975), in dezelfde volgorde als op wegcode.be. Gegenereerd op {date}.",
   "signs_doc.col_sign": "Bord",

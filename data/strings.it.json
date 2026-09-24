@@ -217,7 +217,6 @@
   "about.source3_title": "Wikimedia Commons e segnaletica stradale Belgio",
   "about.source3_description": "Grafica vettoriale SVG ufficiale dei segnali stradali belgi.",
   "about.print_signs_btn": "Stampa la panoramica di tutti i segnali",
-  "about.export_signs_pdf_btn": "Esporta come PDF",
   "signs_doc.title": "Panoramica di tutti i segnali stradali belgi",
   "signs_doc.intro": "{count} segnali stradali del Codice della strada belga (Regio Decreto del 1° dicembre 1975), nello stesso ordine di wegcode.be. Generato il {date}.",
   "signs_doc.col_sign": "Segnale",

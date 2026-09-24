@@ -107,7 +107,6 @@ if (el.btnResultRetryErrors) el.btnResultRetryErrors.addEventListener("click", r
 if (el.btnShare) el.btnShare.addEventListener("click", handleShare);
 if (el.btnPrint) el.btnPrint.addEventListener("click", () => window.print());
 if (el.btnPrintSigns) el.btnPrintSigns.addEventListener("click", printSignsDocument);
-if (el.btnExportSignsPdf) el.btnExportSignsPdf.addEventListener("click", printSignsDocument);
 if (el.btnReportError) el.btnReportError.addEventListener("click", openReportModal);
 if (el.btnReportStart) el.btnReportStart.addEventListener("click", openReportModal);
 if (el.btnReportResult) el.btnReportResult.addEventListener("click", openReportModal);

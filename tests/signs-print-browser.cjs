@@ -111,15 +111,6 @@ const screenshotPrefix = process.env.QUIZ_SCREENSHOT_PREFIX || "T0083";
     await page.waitForFunction(() => !document.body.classList.contains("printing-signs-doc"));
     assert.equal(await page.evaluate(() => document.title), originalTitle, "document title must be restored after printing");
 
-    // The "Exporteren als PDF" button reuses the same print flow.
-    await page.evaluate(() => { window.__printCalled = false; });
-    await page.locator("#btn-export-signs-pdf").waitFor({ state: "visible" });
-    await page.locator("#btn-export-signs-pdf").click();
-    await page.waitForFunction(() => document.body.classList.contains("printing-signs-doc"));
-    assert.equal(await page.evaluate(() => window.__printCalled), true, "the PDF export button must also invoke window.print()");
-    await page.evaluate(() => window.dispatchEvent(new Event("afterprint")));
-    await page.waitForFunction(() => !document.body.classList.contains("printing-signs-doc"));
-
     assert.equal(errors.length, 0, `Page errors encountered: ${errors.join(", ")}`);
     console.log(`Signs print browser test PASSED with 0 errors (${rowCount} signs across ${seriesHeadings.length} series).`);
   } finally {

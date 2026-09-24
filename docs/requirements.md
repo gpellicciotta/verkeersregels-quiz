@@ -52,9 +52,9 @@ Functional and technical requirements for the Verkeersregels Quiz application.
   - Displays application version tag dynamically derived from `CHANGELOG.md`.
   - Highlights authoritative legal and educational sources (Wegcode, VSV, Vias, De Grote Verkeerstoets, Wikimedia Commons).
   - Offers a dedicated project support card with GitHub Sponsors and voluntary donation links.
-  - Provides buttons to print, or export as PDF, every Belgian road sign as a table,
-    grouped and ordered like wegcode.be (series A-F), each series starting on a new page
-    and each row linking to its numbered Wegcode article, under a descriptive filename.
+  - Provides a button that prints every Belgian road sign as a table, grouped and ordered
+    like wegcode.be (series A-F), each series starting on a new page and each row linking
+    to its numbered Wegcode article, under a descriptive filename.
   - Fetches and formats full release notes and version history from `CHANGELOG.md`.
   - Details software license terms and provides an immediate return button to the start screen.
 - **Dedicated Settings View**:

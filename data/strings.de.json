@@ -217,7 +217,6 @@
   "about.source3_title": "Wikimedia Commons & Verkehrszeichen Belgien",
   "about.source3_description": "Offizielle SVG-Vektorillustrationen belgischer Verkehrszeichen.",
   "about.print_signs_btn": "Übersicht aller Verkehrszeichen drucken",
-  "about.export_signs_pdf_btn": "Als PDF exportieren",
   "signs_doc.title": "Übersicht aller belgischen Verkehrszeichen",
   "signs_doc.intro": "{count} Verkehrszeichen aus dem belgischen Wegcode (Königlicher Erlass vom 1. Dezember 1975), in derselben Reihenfolge wie auf wegcode.be. Erstellt am {date}.",
   "signs_doc.col_sign": "Zeichen",

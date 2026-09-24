@@ -88,3 +88,19 @@ card across all 5 languages.
 - Review tier: solo AI agent, pre-authorized autonomous-loop integration per the
   coordination protocol; changes committed locally on `main`, never pushed per this
   repository's `CLAUDE.md`.
+
+- [2026-09-24] **[Implement]**
+  Follow-up in the same conversation: removed the "Exporteren als PDF" button again
+  since it triggered the identical `printSignsDocument()` flow as "Afdrukken" (the
+  browser's own print dialog already offers "Save as PDF" as a destination), making
+  two buttons for one action. Reverted `index.html`, `css/style.css` (dropped the
+  `.about-signs-print-actions` wrapper, restored the single full-width button), the
+  `download` icon in `js/icons.js`, the `btnExportSignsPdf` wiring in `js/dom.js` /
+  `js/app.js`, the `about.export_signs_pdf_btn` key in all 5 languages, the related
+  test assertions, and the PDF-export mentions in `docs/requirements.md`,
+  `docs/devops.md`, and `CHANGELOG.md` (all 5 languages, still unreleased `-pre` so
+  safe to edit in place). Also fixed a separately reported bug the same day: sign
+  icons could be missing on the very first print because `window.print()` fired
+  before the freshly inserted `<img>` thumbnails had loaded; `printSignsDocument()`
+  now awaits each thumbnail's `decode()` first. Full pytest suite: 173 passed, 8
+  subtests passed.

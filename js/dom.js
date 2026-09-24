@@ -110,7 +110,6 @@ export const el = {
   aboutSourceWegcode: document.getElementById("about-source-wegcode"),
   aboutSourceWegcodeChanges: document.getElementById("about-source-wegcode-changes"),
   btnPrintSigns: document.getElementById("btn-print-signs"),
-  btnExportSignsPdf: document.getElementById("btn-export-signs-pdf"),
   printSignsDocument: document.getElementById("print-signs-document"),
   screenStats: document.getElementById("screen-stats"),
   btnStats: document.getElementById("btn-stats"),

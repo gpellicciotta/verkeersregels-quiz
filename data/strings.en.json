@@ -217,7 +217,6 @@
   "about.source3_title": "Wikimedia Commons & Belgian Traffic Signs",
   "about.source3_description": "Official SVG vector illustrations of Belgian traffic signs.",
   "about.print_signs_btn": "Print overview of all traffic signs",
-  "about.export_signs_pdf_btn": "Export as PDF",
   "signs_doc.title": "Overview of all Belgian traffic signs",
   "signs_doc.intro": "{count} traffic signs from the Belgian Wegcode (Royal Decree of 1 December 1975), in the same order as on wegcode.be. Generated on {date}.",
   "signs_doc.col_sign": "Sign",

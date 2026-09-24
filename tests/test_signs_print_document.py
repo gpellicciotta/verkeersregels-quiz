@@ -18,7 +18,6 @@ SERIES_ORDER = ["A", "B", "C", "D", "E", "F"]
 
 NEW_KEYS = [
     "about.print_signs_btn",
-    "about.export_signs_pdf_btn",
     "signs_doc.title",
     "signs_doc.intro",
     "signs_doc.col_sign",
@@ -88,19 +87,16 @@ class TestSignsPrintDocument(unittest.TestCase):
     def test_button_and_document_markup_exist(self) -> None:
         """Validates index.html defines the print button and the hidden print-only document."""
         self.assertIn('id="btn-print-signs"', self.html)
-        self.assertIn('id="btn-export-signs-pdf"', self.html)
         self.assertIn('id="print-signs-document"', self.html)
         self.assertIn('data-icon="print"', self.html[self.html.index('id="btn-print-signs"'):self.html.index('id="btn-print-signs"') + 400])
-        self.assertIn('data-icon="download"', self.html[self.html.index('id="btn-export-signs-pdf"'):self.html.index('id="btn-export-signs-pdf"') + 400])
+        self.assertNotIn('id="btn-export-signs-pdf"', self.html)
 
     def test_dom_and_app_wiring(self) -> None:
-        """Validates dom.js caches the new elements and app.js wires the click handlers."""
+        """Validates dom.js caches the new elements and app.js wires the click handler."""
         self.assertIn('btnPrintSigns: document.getElementById("btn-print-signs")', self.dom_js)
-        self.assertIn('btnExportSignsPdf: document.getElementById("btn-export-signs-pdf")', self.dom_js)
         self.assertIn('printSignsDocument: document.getElementById("print-signs-document")', self.dom_js)
         self.assertIn('from "./signs-doc.js"', self.app_js)
         self.assertIn("el.btnPrintSigns.addEventListener", self.app_js)
-        self.assertIn("el.btnExportSignsPdf.addEventListener", self.app_js)
 
     def test_signs_doc_module_exports(self) -> None:
         """Validates js/signs-doc.js exports the catalog builder and print entry point."""
