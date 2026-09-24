@@ -14,7 +14,7 @@ An overview of all tasks and their planning.
 ---
 
 ## Next Milestone
-- [ ] T0079 Kijk alle links na: ze linken typisch wel naar de juiste website, maar daarbinnen bijna nooit naar de juiste paragraaf via een #-locatie. Dit moet wel meteen naar de juiste plaats in de website gaan, tenzij er geen HTML anchor zou zijn.
+- [~] T0079 [owner: @claude] Kijk alle links na: ze linken typisch wel naar de juiste website, maar daarbinnen bijna nooit naar de juiste paragraaf via een #-locatie. Dit moet wel meteen naar de juiste plaats in de website gaan, tenzij er geen HTML anchor zou zijn.
       
 ---
 
