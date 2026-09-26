@@ -13,6 +13,9 @@ A summarized overview of all changes, per version of this project.
 
 ---
 
+## v3.8.1-pre
+- BackEnd: Added three daily totals and practice-goal indicators before each tracked player's existing email statistics.
+
 ## v3.8.0 [released: 2026-09-24]
 - FrontEnd: Bordpictogrammen ontbraken soms bij de eerste keer afdrukken; het afdrukken wacht nu tot alle iconen geladen zijn.
 - FrontEnd: Verkeersbordenoverzicht toont nu het echte wetsartikel per bord, met paginaovergang per reeks en een herkenbare bestandsnaam.

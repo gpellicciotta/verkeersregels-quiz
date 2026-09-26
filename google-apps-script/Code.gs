@@ -13,6 +13,9 @@ var SUMMARY_EMAIL_TO = 'PUT_YOUR_EMAIL_HERE@example.com';
 // leave empty to skip that section entirely.
 var TRACKED_PLAYERS_ = [];
 
+// Calendar days in the tracked-player tables follow Belgian local time.
+var SUMMARY_TIME_ZONE_ = 'Europe/Brussels';
+
 var RESULTATEN_HEADERS_ = ['Wanneer', 'Wie', 'Juiste Antwoorden', 'Aantal Vragen', 'Percentage', 'Duur (sec)', 'Duur'];
 var MELDINGEN_HEADERS_ = ['Wanneer', 'Vraag ID', 'Vraag', 'Wie', 'Opmerking'];
 
@@ -129,7 +132,7 @@ var SUMMARY_EMAIL_TITLE_ = 'Verkeersregels Quiz Status Update';
 /**
  * Pure aggregation: turns already-parsed result/issue rows into an email
  * subject + plain-text body + HTML body. Takes no Apps Script globals (besides
- * TRACKED_PLAYERS_) so it can run and be tested under plain Node as well as
+ * TRACKED_PLAYERS_ and SUMMARY_TIME_ZONE_) so it can run under plain Node and
  * inside the Apps Script V8 runtime. Body text is in Dutch, matching the app's
  * audience; the HTML body mimics the app's light-theme blue styling.
  *
@@ -219,10 +222,45 @@ function buildSummaryEmail_(results, issues, now) {
       score: fmtPercent(avg(rows.map(function (r) { return r.percentage; }))),
     };
   }
+  var dateFormatter = new Intl.DateTimeFormat('en-CA', {
+    timeZone: SUMMARY_TIME_ZONE_, year: 'numeric', month: '2-digit', day: '2-digit',
+  });
+  function calendarDate(date) {
+    var parts = {};
+    dateFormatter.formatToParts(date).forEach(function (part) { parts[part.type] = part.value; });
+    return parts.year + '-' + parts.month + '-' + parts.day;
+  }
+  var today = new Date(calendarDate(now) + 'T00:00:00Z');
+  var calendarDays = ['Vandaag', 'Gisteren', 'Eergisteren'].map(function (label, offset) {
+    // Subtract from a UTC calendar-date surrogate, avoiding 23/25-hour DST days.
+    var key = new Date(today.getTime() - offset * DAY_MS).toISOString().slice(0, 10);
+    return { key: key, label: label, date: key.split('-').reverse().join('/') };
+  });
+  function dailyStatsFor(rows) {
+    var datedRows = rows.filter(function (row) {
+      return Number.isFinite(row.when.getTime()) && row.when <= now;
+    }).map(function (row) { return { key: calendarDate(row.when), result: row }; });
+    return calendarDays.map(function (day) {
+      var daily = datedRows.filter(function (row) { return row.key === day.key; })
+        .map(function (row) { return row.result; });
+      var questions = sum(daily.map(function (row) { return row.total; }));
+      var correct = sum(daily.map(function (row) { return row.correct; }));
+      var seconds = sum(daily.map(function (row) {
+        return Number.isFinite(row.durationSec) && row.durationSec > 0 ? row.durationSec : 0;
+      }));
+      return {
+        label: day.label, date: day.date, questions: questions,
+        score: fmtPercent(questions > 0 ? 100 * correct / questions : null),
+        minutes: fmtNum(seconds / 60), enough: seconds > 15 * 60,
+      };
+    });
+  }
   var playerStats = TRACKED_PLAYERS_.map(function (name) {
+    var playerResults = results.filter(function (r) { return matchesPlayer(r.who, name); });
     return {
       name: name,
-      all: statsFor(results.filter(function (r) { return matchesPlayer(r.who, name); })),
+      daily: dailyStatsFor(playerResults),
+      all: statsFor(playerResults),
       week: statsFor(results7d.filter(function (r) { return matchesPlayer(r.who, name); })),
       day: statsFor(results24h.filter(function (r) { return matchesPlayer(r.who, name); })),
     };
@@ -256,12 +294,43 @@ function buildSummaryEmail_(results, issues, now) {
   playerStats.forEach(function (player) {
     lines.push('');
     lines.push(player.name + ':');
+    lines.push('  Dag | Vragen beantwoord | Score | Minuten gespeeld | Voldoende geoefend (> 15 min/dag)');
+    player.daily.forEach(function (day) {
+      lines.push('  ' + day.label + ' (' + day.date + ') | ' + day.questions + ' | ' + day.score +
+        ' | ' + day.minutes + ' | ' + (day.enough ? '✓ Ja' : '✗ Nee'));
+    });
     lines.push('  Spelbeurten: ' + player.all.count + ' totaal, ' + player.week.count + ' (7d), ' + player.day.count + ' (24u)');
     lines.push('  Gespeelde minuten: ' + player.all.minutes + ' totaal, ' + player.week.minutes + ' (7d), ' + player.day.minutes + ' (24u)');
     lines.push('  Gem. score: ' + player.all.score + ' totaal, ' + player.week.score + ' (7d), ' + player.day.score + ' (24u)');
   });
 
   // HTML body mimics the app's light-theme/blue palette (see css/style.css :root).
+  function htmlDailyTable(days) {
+    var headers = ['Dag', 'Vragen beantwoord', 'Score', 'Minuten gespeeld', 'Voldoende geoefend (> 15 min/dag)'];
+    var widths = [25, 24, 13, 18, 20];
+    var header = headers.map(function (label, index) {
+      return '<th scope="col" width="' + widths[index] + '%" style="padding:0 2px 8px;border-bottom:2px solid #cbd5e1;' +
+        'color:#6b7280;font-size:11px;font-weight:600;text-align:' + (index === 0 ? 'left' : 'center') +
+        ';vertical-align:bottom;overflow-wrap:anywhere;">' + escapeHtml_(label) + '</th>';
+    }).join('');
+    var body = days.map(function (day) {
+      var cells = [
+        escapeHtml_(day.label) + '<br><span style="font-size:10px;color:#6b7280;">' + escapeHtml_(day.date) + '</span>',
+        escapeHtml_(day.questions), escapeHtml_(day.score), escapeHtml_(day.minutes),
+        '<span aria-label="' + (day.enough ? 'Voldoende geoefend' : 'Onvoldoende geoefend') + '" title="' +
+          (day.enough ? 'Voldoende geoefend' : 'Onvoldoende geoefend') + '" style="font-size:20px;font-weight:700;color:' +
+          (day.enough ? '#15803d' : '#dc2626') + ';">' + (day.enough ? '&#10003;' : '&#10007;') + '</span>',
+      ];
+      return '<tr>' + cells.map(function (cell, index) {
+        var tag = index === 0 ? 'th scope="row"' : 'td';
+        return '<' + tag + ' style="padding:8px 4px;border-bottom:1px solid #e2e8f0;color:#0f172a;font-size:12px;' +
+          'font-weight:600;text-align:' + (index === 0 ? 'left' : 'center') + ';">' + cell + (index === 0 ? '</th>' : '</td>');
+      }).join('') + '</tr>';
+    }).join('');
+    return '<table aria-label="Dagelijkse oefenstatistieken" width="100%" cellpadding="0" cellspacing="0" ' +
+      'style="border-collapse:collapse;table-layout:fixed;margin-bottom:20px;"><thead><tr>' + header +
+      '</tr></thead><tbody>' + body + '</tbody></table>';
+  }
   function htmlStatsTable(rows) {
     var header = '<tr>' +
       '<td width="25%" style="padding:0 8px 8px 0;border-bottom:2px solid #cbd5e1;"></td>' +
@@ -310,7 +379,7 @@ function buildSummaryEmail_(results, issues, now) {
     '<div style="margin-top:6px;">' + htmlListBlock(contexts) + '</div>');
 
   var playerSections = playerStats.map(function (player) {
-    return htmlSection(player.name, htmlStatsTable([
+    return htmlSection(player.name, htmlDailyTable(player.daily) + htmlStatsTable([
       ['Spelbeurten', String(player.all.count), String(player.week.count), String(player.day.count)],
       ['Gespeelde minuten', player.all.minutes, player.week.minutes, player.day.minutes],
       ['Gem. score', player.all.score, player.week.score, player.day.score],

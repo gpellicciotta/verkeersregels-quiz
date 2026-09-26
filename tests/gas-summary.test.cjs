@@ -130,8 +130,8 @@ test("reports stats per tracked player individually, not combined", () => {
     result(3, { who: "Iemand Anders", percentage: 0, durationSec: 600 }),
   ];
   const summary = context.buildSummaryEmail_(results, [], NOW);
-  assert.match(summary.body, /Mila:\n {2}Spelbeurten: 1 totaal, 1 \(7d\), 1 \(24u\)\n {2}Gespeelde minuten: 1 totaal, 1 \(7d\), 1 \(24u\)\n {2}Gem\. score: 60% totaal, 60% \(7d\), 60% \(24u\)/);
-  assert.match(summary.body, /Sami:\n {2}Spelbeurten: 1 totaal, 1 \(7d\), 1 \(24u\)\n {2}Gespeelde minuten: 2 totaal, 2 \(7d\), 2 \(24u\)\n {2}Gem\. score: 100% totaal, 100% \(7d\), 100% \(24u\)/);
+  assert.match(summary.body, /Mila:\n[\s\S]*? {2}Spelbeurten: 1 totaal, 1 \(7d\), 1 \(24u\)\n {2}Gespeelde minuten: 1 totaal, 1 \(7d\), 1 \(24u\)\n {2}Gem\. score: 60% totaal, 60% \(7d\), 60% \(24u\)/);
+  assert.match(summary.body, /Sami:\n[\s\S]*? {2}Spelbeurten: 1 totaal, 1 \(7d\), 1 \(24u\)\n {2}Gespeelde minuten: 2 totaal, 2 \(7d\), 2 \(24u\)\n {2}Gem\. score: 100% totaal, 100% \(7d\), 100% \(24u\)/);
   assert.doesNotMatch(summary.body, /Mila\/Sami/);
   assert.match(summary.htmlBody, />Mila</);
   assert.match(summary.htmlBody, />Sami</);
@@ -142,6 +142,83 @@ test("omits any tracked-player section when no player names are configured", () 
   context.TRACKED_PLAYERS_ = [];
   const summary = context.buildSummaryEmail_([result(1, { who: "Iemand" })], [], NOW);
   assert.doesNotMatch(summary.body, /Gespeelde minuten/);
+  assert.doesNotMatch(summary.htmlBody, /Dagelijkse oefenstatistieken/);
+});
+
+test("daily totals are weighted by questions and isolated by player before the existing table", () => {
+  const context = loadContext();
+  context.TRACKED_PLAYERS_ = ["Mila", "Sami"];
+  const summary = context.buildSummaryEmail_([
+    result(1, { who: " MILA ", correct: 1, total: 2, percentage: 50, durationSec: 600 }),
+    result(2, { who: "mila", correct: 8, total: 8, percentage: 100, durationSec: 360 }),
+    result(3, { who: "Sami", correct: 0, total: 10, percentage: 0, durationSec: 900 }),
+    result(4, { who: "Other", correct: 0, total: 100, durationSec: 5000 }),
+  ], [], NOW);
+  assert.match(summary.body, /Mila:\n {2}Dag[^\n]+\n {2}Vandaag \(22\/09\/2026\) \| 10 \| 90% \| 16 \| ✓ Ja/);
+  assert.match(summary.body, /Sami:\n {2}Dag[^\n]+\n {2}Vandaag \(22\/09\/2026\) \| 10 \| 0% \| 15 \| ✗ Nee/);
+  const playerHtml = summary.htmlBody.split('>Mila</div>')[1].split('>Sami</div>')[0];
+  assert.ok(playerHtml.indexOf('Dagelijkse oefenstatistieken') < playerHtml.indexOf('>Altijd<'));
+  assert.match(playerHtml, />90%</);
+  assert.match(playerHtml, /color:#15803d;">&#10003;/);
+  assert.match(playerHtml, /color:#dc2626;">&#10007;/);
+});
+
+test("daily rows use Brussels midnight, include now, and exclude future and invalid dates", () => {
+  const context = loadContext();
+  context.TRACKED_PLAYERS_ = ["Speler"];
+  /**
+   * Create a result at an exact timestamp for calendar boundary checks.
+   * @param {string} when - ISO timestamp or an intentionally invalid date.
+   * @returns {Object} Parsed result fixture.
+   */
+  const at = (when) => result(0, { when: new Date(when) });
+  const summary = context.buildSummaryEmail_([
+    at('2026-09-21T22:00:00Z'), at('2026-09-22T19:00:00Z'),
+    at('2026-09-21T21:59:59Z'), at('2026-09-20T22:00:00Z'),
+    at('2026-09-19T22:00:00Z'), at('2026-09-19T21:59:59Z'),
+    at('2026-09-22T19:00:01Z'), at('invalid'),
+  ], [], NOW);
+  assert.match(summary.body, /Vandaag \(22\/09\/2026\) \| 20 \| 80% \| 10 \| ✗ Nee/);
+  assert.match(summary.body, /Gisteren \(21\/09\/2026\) \| 20 \| 80% \| 10 \| ✗ Nee/);
+  assert.match(summary.body, /Eergisteren \(20\/09\/2026\) \| 10 \| 80% \| 5 \| ✗ Nee/);
+});
+
+test("practice threshold uses unrounded seconds and tolerates absent or invalid durations", () => {
+  for (const [seconds, enough] of [[899, false], [900, false], [901, true], [null, false], [undefined, false], [NaN, false], [-1, false]]) {
+    const context = loadContext();
+    context.TRACKED_PLAYERS_ = ["Speler"];
+    const summary = context.buildSummaryEmail_([result(1, { durationSec: seconds })], [], NOW);
+    const today = summary.body.split('\n').find(line => line.includes('Vandaag ('));
+    assert.ok(today.endsWith(enough ? '✓ Ja' : '✗ Nee'), `duration ${seconds}`);
+    assert.doesNotMatch(today, /NaN|undefined|null/);
+  }
+});
+
+test("empty days retain three dated rows, zero totals, unavailable scores, and red crosses", () => {
+  const context = loadContext();
+  context.TRACKED_PLAYERS_ = ["<Mila & Sami>"];
+  const summary = context.buildSummaryEmail_([], [], NOW);
+  const daily = summary.body.split('\n').filter(line => / \| 0 \| n\.v\.t\. \| 0 \| ✗ Nee$/.test(line));
+  assert.equal(daily.length, 3);
+  assert.match(daily[0], /Vandaag/);
+  assert.match(daily[1], /Gisteren/);
+  assert.match(daily[2], /Eergisteren/);
+  assert.match(summary.htmlBody, /&lt;Mila &amp; Sami&gt;/);
+});
+
+test("calendar days handle both DST transitions and year boundaries", () => {
+  for (const [now, times, dates] of [
+    ['2026-03-30T00:30:00+02:00', ['2026-03-29T23:30:00+02:00', '2026-03-29T00:00:00+01:00'], ['30/03/2026', '29/03/2026', '28/03/2026']],
+    ['2026-10-26T00:30:00+01:00', ['2026-10-25T23:30:00+01:00', '2026-10-25T00:00:00+02:00'], ['26/10/2026', '25/10/2026', '24/10/2026']],
+    ['2027-01-01T00:30:00+01:00', ['2026-12-31T23:30:00+01:00', '2026-12-31T00:00:00+01:00'], ['01/01/2027', '31/12/2026', '30/12/2026']],
+  ]) {
+    const context = loadContext();
+    context.TRACKED_PLAYERS_ = ["Speler"];
+    const summary = context.buildSummaryEmail_(times.map(when => result(0, { when: new Date(when) })), [], new Date(now));
+    assert.ok(summary.body.includes(`Vandaag (${dates[0]}) | 0 | n.v.t. | 0 | ✗ Nee`));
+    assert.ok(summary.body.includes(`Gisteren (${dates[1]}) | 20 | 80% | 10 | ✗ Nee`));
+    assert.ok(summary.body.includes(`Eergisteren (${dates[2]}) | 0 | n.v.t. | 0 | ✗ Nee`));
+  }
 });
 
 test("last 3 issues are listed most-recent first with their remark", () => {

@@ -229,6 +229,14 @@ Score logging and error reporting are handled by an external Google Apps Script 
 - When updating the secret, change `SHARED_SECRET` in `Code.gs` and republish a new deployment revision of the Web App, then update `CONFIG.SHEET_SECRET` in `js/config.js`.
 
 ### Daily Summary Email
+- Configure `TRACKED_PLAYERS_` with player names to include individual statistics, matched without case or surrounding whitespace.
+- Each tracked player gets a three-row daily table before the existing all-time, weekly, and 24-hour statistics.
+- Rows show today, yesterday, and the day before yesterday, including dates in `SUMMARY_TIME_ZONE_` (default `Europe/Brussels`).
+- Daily totals include recorded rounds up to email generation, assigned to the calendar day of their recorded timestamp.
+- Daily score divides total correct answers by total answered questions; days without answers show `n.v.t.`.
+- Practice indicators turn green only above 900 seconds per day; exactly 15 minutes remains red.
+- Missing or invalid durations count as zero in daily totals; displayed minutes round to one decimal.
+- Verify the email layout using `node tests/gas-summary-browser.cjs` with the review server running on port 8062.
 - `Code.gs` reads the `Resultaten` and `Meldingen` sheets and emails a summary via `sendDailySummaryEmail`.
 - Two Apps Script time-driven triggers call `sendDailySummaryEmail` daily at 07:00 and 19:00 UTC.
 - One-time setup in the deployed Apps Script project (not run automatically on code push):

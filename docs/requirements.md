@@ -135,6 +135,12 @@ Functional and technical requirements for the Verkeersregels Quiz application.
 - **Always-Include-Last-Errors Setting**: An opt-in settings checkbox forces the previous
   round's wrong questions into every subsequent quiz, filling remaining slots as usual.
 
+### Tracked Player Email Statistics
+- Show today, yesterday, and the day before yesterday above each tracked player's existing summary statistics.
+- Use Belgian calendar days and include each day's date, answered questions, question-weighted score, and total played minutes.
+- Mark practice exceeding 15 minutes with a green check; otherwise show a red cross, including days without activity.
+- Include equivalent daily statistics in the email's plain-text body.
+
 ---
 
 ## Technical and Architectural Requirements
