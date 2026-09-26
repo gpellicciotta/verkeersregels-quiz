@@ -13,8 +13,8 @@ A summarized overview of all changes, per version of this project.
 
 ---
 
-## v3.8.1-pre
-- BackEnd: Added three daily totals and practice-goal indicators before each tracked player's existing email statistics.
+## v3.8.2-pre
+- BackEnd: Added daily player practice totals and tabular recent issue reports and frequently reported questions to summary emails.
 
 ## v3.8.0 [released: 2026-09-24]
 - FrontEnd: Bordpictogrammen ontbraken soms bij de eerste keer afdrukken; het afdrukken wacht nu tot alle iconen geladen zijn.

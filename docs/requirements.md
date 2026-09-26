@@ -141,6 +141,11 @@ Functional and technical requirements for the Verkeersregels Quiz application.
 - Mark practice exceeding 15 minutes with a green check; otherwise show a red cross, including days without activity.
 - Include equivalent daily statistics in the email's plain-text body.
 
+### Reported Issue Email Tables
+- Present the latest three reports in a table with UTC date, reporter, question, and remark columns.
+- Present frequently reported questions in a table with question and report-count columns, preserving existing ranking rules.
+- Keep issue text readable on mobile, escape submitted HTML, and show explicit placeholders for empty tables and missing fields.
+
 ---
 
 ## Technical and Architectural Requirements

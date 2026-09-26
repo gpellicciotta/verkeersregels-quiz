@@ -161,6 +161,9 @@ function buildSummaryEmail_(results, issues, now) {
     return value === null ? 'n.v.t.' : fmtNum(value) + '%';
   }
   function fmtDate(date) {
+    if (!date || !Number.isFinite(date.getTime())) {
+      return 'n.v.t.';
+    }
     return date.toISOString().slice(0, 16).replace('T', ' ') + ' UTC';
   }
   function matchesPlayer(who, name) {
@@ -173,7 +176,7 @@ function buildSummaryEmail_(results, issues, now) {
     return issue.questionId || issue.question || '(geen context)';
   }
   function topContexts(allIssues, count) {
-    var counts = {};
+    var counts = Object.create(null);
     var order = [];
     allIssues.forEach(function (issue) {
       var context = contextOf(issue);
@@ -189,13 +192,13 @@ function buildSummaryEmail_(results, issues, now) {
         .slice()
         .sort(function (a, b) { return b.when - a.when; })
         .slice(0, count)
-        .map(contextOf);
+        .map(function (issue) { return { context: contextOf(issue), count: 1 }; });
     }
     return order
       .slice()
       .sort(function (a, b) { return counts[b] - counts[a]; })
       .slice(0, count)
-      .map(function (c) { return c + ' (' + counts[c] + 'x)'; });
+      .map(function (c) { return { context: c, count: counts[c] }; });
   }
 
   var results24h = since(results, since24h);
@@ -289,7 +292,10 @@ function buildSummaryEmail_(results, issues, now) {
   if (contexts.length === 0) {
     lines.push('  (geen)');
   } else {
-    contexts.forEach(function (c) { lines.push('  - ' + c); });
+    var showCounts = contexts.some(function (entry) { return entry.count > 1; });
+    contexts.forEach(function (entry) {
+      lines.push('  - ' + entry.context + (showCounts ? ' (' + entry.count + 'x)' : ''));
+    });
   }
   playerStats.forEach(function (player) {
     lines.push('');
@@ -348,13 +354,24 @@ function buildSummaryEmail_(results, issues, now) {
     }).join('');
     return '<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border-collapse:collapse;table-layout:fixed;">' + header + body + '</table>';
   }
-  function htmlListBlock(items) {
-    if (items.length === 0) {
-      return '<div style="color:#6b7280;font-size:13px;">(geen)</div>';
+  /** Renders escaped issue fields in a semantic table with wrapping email-safe styles. */
+  function htmlIssueTable(title, headers, widths, rows) {
+    var header = headers.map(function (label, index) {
+      return '<th scope="col" width="' + widths[index] + '%" style="padding:8px 4px;border-bottom:2px solid #cbd5e1;' +
+        'color:#6b7280;font-size:11px;font-weight:600;text-align:left;overflow-wrap:anywhere;">' + escapeHtml_(label) + '</th>';
+    }).join('');
+    var body = rows.map(function (row) {
+      return '<tr>' + row.map(function (cell) {
+        return '<td style="padding:8px 4px;border-bottom:1px solid #e2e8f0;color:#1f2933;font-size:12px;' +
+          'line-height:1.5;vertical-align:top;overflow-wrap:anywhere;word-wrap:break-word;white-space:pre-wrap;">' +
+          escapeHtml_(cell == null || cell === '' ? '—' : cell) + '</td>';
+      }).join('') + '</tr>';
+    }).join('');
+    if (rows.length === 0) {
+      body = '<tr><td colspan="' + headers.length + '" style="padding:8px 4px;color:#6b7280;font-size:12px;">(geen)</td></tr>';
     }
-    return '<ul style="margin:0;padding-left:18px;color:#1f2933;font-size:13px;line-height:1.6;">' +
-      items.map(function (item) { return '<li>' + escapeHtml_(item) + '</li>'; }).join('') +
-      '</ul>';
+    return '<table aria-label="' + escapeHtml_(title) + '" width="100%" cellpadding="0" cellspacing="0" ' +
+      'style="border-collapse:collapse;table-layout:fixed;"><thead><tr>' + header + '</tr></thead><tbody>' + body + '</tbody></table>';
   }
   function htmlSection(title, innerHtml) {
     return '<div style="margin:0 0 20px 0;">' +
@@ -374,9 +391,13 @@ function buildSummaryEmail_(results, issues, now) {
     ['Totaal', String(issues.length), String(issues7d.length), String(issues24h.length)],
   ]) +
     '<div style="margin-top:12px;color:#6b7280;font-weight:600;font-size:12px;">Laatste 3 meldingen</div>' +
-    '<div style="margin-top:6px;">' + htmlListBlock(last3Issues.map(issueLine)) + '</div>' +
+    htmlIssueTable('Laatste 3 meldingen', ['Datum (UTC)', 'Melder', 'Vraag', 'Opmerking'], [25, 20, 27, 28],
+      last3Issues.map(function (issue) {
+        return [fmtDate(issue.when), issue.who || 'Anoniem', contextOf(issue), issue.remark];
+      })) +
     '<div style="margin-top:12px;color:#6b7280;font-weight:600;font-size:12px;">Vaakst gemelde vragen</div>' +
-    '<div style="margin-top:6px;">' + htmlListBlock(contexts) + '</div>');
+    htmlIssueTable('Vaakst gemelde vragen', ['Vraag', 'Meldingen'], [80, 20],
+      contexts.map(function (entry) { return [entry.context, entry.count]; })));
 
   var playerSections = playerStats.map(function (player) {
     return htmlSection(player.name, htmlDailyTable(player.daily) + htmlStatsTable([

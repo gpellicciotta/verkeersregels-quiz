@@ -23,6 +23,89 @@ const HOUR = 60 * 60 * 1000;
 const NOW = new Date("2026-09-22T19:00:00.000Z");
 
 /**
+ * Extract one issue table from the generated HTML for focused output assertions.
+ * @param {Object} summary - Generated email bodies.
+ * @param {string} title - Accessible table title.
+ * @returns {string} Table HTML, including its headers and rows.
+ */
+function issueTable(summary, title) {
+  const start = summary.htmlBody.indexOf(`<table aria-label="${title}"`);
+  assert.ok(start >= 0, `Missing table: ${title}`);
+  return summary.htmlBody.slice(start, summary.htmlBody.indexOf('</table>', start) + '</table>'.length);
+}
+
+test("latest issue table retains three newest reports with separate escaped fields", () => {
+  const context = loadContext();
+  const summary = context.buildSummaryEmail_([], [
+    issue(4, { question: 'Oudste uitgesloten' }),
+    issue(2, { who: '', questionId: 'q2', question: 'Tweede vraag', remark: '' }),
+    issue(1, { who: 'Mila & Sami', questionId: '<q1>', question: '<img src=x onerror=alert(1)>', remark: '"Fout" <script>alert(1)</script>\nExtra uitleg' }),
+    issue(3, { questionId: 'q3', question: 'Derde vraag', remark: 'Details' }),
+  ], NOW);
+  const table = issueTable(summary, 'Laatste 3 meldingen');
+  assert.equal((table.match(/<th scope="col"/g) || []).length, 4);
+  assert.equal((table.match(/<td style=/g) || []).length, 12);
+  for (const header of ['Datum (UTC)', 'Melder', 'Vraag', 'Opmerking']) {
+    assert.ok(table.includes(`>${header}</th>`));
+  }
+  assert.ok(table.indexOf('Mila &amp; Sami') < table.indexOf('Tweede vraag'));
+  assert.ok(table.indexOf('Tweede vraag') < table.indexOf('Derde vraag'));
+  assert.ok(table.includes('2026-09-22 18:00 UTC'));
+  assert.ok(table.includes('&lt;q1&gt; - &lt;img src=x onerror=alert(1)&gt;'));
+  assert.ok(table.includes('&quot;Fout&quot; &lt;script&gt;alert(1)&lt;/script&gt;\nExtra uitleg'));
+  assert.match(table, />Anoniem<\/td>/);
+  assert.match(table, />—<\/td>/);
+  assert.doesNotMatch(table, /Oudste uitgesloten|<script|<img/);
+  assert.doesNotMatch(summary.htmlBody, /<ul|<li/);
+});
+
+test("frequent issue table places ranked counts in a separate column", () => {
+  const context = loadContext();
+  const summary = context.buildSummaryEmail_([], [
+    issue(1, { question: 'Bord A' }), issue(2, { question: 'Bord A' }),
+    issue(3, { question: 'Bord B (2x)' }), issue(4, { question: 'Bord B (2x)' }), issue(5, { question: 'Bord B (2x)' }),
+    issue(6, { question: 'Bord C' }), issue(7, { question: 'Bord D' }),
+  ], NOW);
+  const table = issueTable(summary, 'Vaakst gemelde vragen');
+  assert.match(table, />Vraag<\/th>/);
+  assert.match(table, />Meldingen<\/th>/);
+  assert.match(table, />q1 - Bord B \(2x\)<\/td><td[^>]*>3<\/td>/);
+  assert.match(table, />q1 - Bord A<\/td><td[^>]*>2<\/td>/);
+  assert.match(table, />q1 - Bord C<\/td><td[^>]*>1<\/td>/);
+  assert.ok(table.indexOf('Bord B') < table.indexOf('Bord A'));
+  assert.doesNotMatch(table, /Bord D/);
+});
+
+test("frequent issue table retains latest-first fallback for unique questions", () => {
+  const context = loadContext();
+  const summary = context.buildSummaryEmail_([], [
+    issue(4, { question: 'Oudste' }), issue(2, { question: 'Midden' }),
+    issue(1, { question: 'Nieuwste' }), issue(3, { question: 'Derde' }),
+  ], NOW);
+  const table = issueTable(summary, 'Vaakst gemelde vragen');
+  assert.ok(table.indexOf('Nieuwste') < table.indexOf('Midden'));
+  assert.ok(table.indexOf('Midden') < table.indexOf('Derde'));
+  assert.equal((table.match(/>1<\/td>/g) || []).length, 3);
+  assert.doesNotMatch(table, /Oudste/);
+});
+
+test("issue tables show empty states and safe fallbacks for missing fields", () => {
+  const context = loadContext();
+  const empty = context.buildSummaryEmail_([], [], NOW);
+  assert.match(issueTable(empty, 'Laatste 3 meldingen'), /colspan="4"[^>]*>\(geen\)<\/td>/);
+  assert.match(issueTable(empty, 'Vaakst gemelde vragen'), /colspan="2"[^>]*>\(geen\)<\/td>/);
+  for (const when of [null, undefined, new Date('invalid')]) {
+    const summary = context.buildSummaryEmail_([], [{ when }], NOW);
+    const table = issueTable(summary, 'Laatste 3 meldingen');
+    assert.match(table, />n\.v\.t\.<\/td>/);
+    assert.match(table, />Anoniem<\/td>/);
+    assert.match(table, />\(geen context\)<\/td>/);
+    assert.match(table, />—<\/td>/);
+    assert.doesNotMatch(table, /undefined|null|Invalid Date/);
+  }
+});
+
+/**
  * Build one quiz result row relative to the fixed test clock.
  *
  * @param {number} hoursAgo - How long before the test clock the round was played.

@@ -229,6 +229,10 @@ Score logging and error reporting are handled by an external Google Apps Script 
 - When updating the secret, change `SHARED_SECRET` in `Code.gs` and republish a new deployment revision of the Web App, then update `CONFIG.SHEET_SECRET` in `js/config.js`.
 
 ### Daily Summary Email
+- The HTML email shows recent reports in date, reporter, question, and remark columns; timestamps remain explicitly labeled UTC.
+- Frequently reported questions use question and count columns, retaining the latest-three fallback when every question occurs once.
+- Both issue tables retain column headings and show `(geen)` when there are no reports.
+- Verify report tables with `node tests/gas-summary-browser.cjs --issues`; screenshots are stored under `tasks/summary-issue-tables/`.
 - Configure `TRACKED_PLAYERS_` with player names to include individual statistics, matched without case or surrounding whitespace.
 - Each tracked player gets a three-row daily table before the existing all-time, weekly, and 24-hour statistics.
 - Rows show today, yesterday, and the day before yesterday, including dates in `SUMMARY_TIME_ZONE_` (default `Europe/Brussels`).
