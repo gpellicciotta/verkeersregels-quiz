@@ -40,7 +40,7 @@ Many signs are renumbered, so every sign code needs remapping, not just a new im
 
 ### Starting Context
 
-- Current-law snapshot and amendment list: [data/law/README.md](../data/law/README.md).
+- Current-law snapshot and amendment list: [data/law/README.md](../../data/law/README.md).
 - New texts, not stored because they change before 2027: [Code van de openbare weg](https://www.wegcode.be/nl/regelgeving/2024005817~0mocswfbry) and [Vlaams verkeersreglement](https://www.wegcode.be/nl/regelgeving/2024008489~uukwjmez0p).
 - Summary of all changes by road user: [Wat verandert er voor jou?](https://www.wegcode.be/nl/code-van-de-openbare-weg/wat-verandert-er-voor-jou) (Vias institute).
 - The 2024 sign designs were bundled up to commit `6e359b4`; Wikimedia Commons names end in "KB-AR 03-06-2024".

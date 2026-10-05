@@ -13,6 +13,9 @@ Una panoramica riepilogativa di tutte le modifiche, per versione di questo proge
 
 ---
 
+## v3.8.2-pre
+- BackEnd: Aggiunti i totali giornalieri degli allenamenti dei giocatori, i rapporti tabulari sui problemi recenti e le domande frequenti riportate nelle e-mail di riepilogo.
+
 ## v3.8.0 [released: 2026-09-24]
 - FrontEnd: Le icone della scheda a volte mancavano nella prima stampa; la stampa ora attende il caricamento di tutte le icone.
 - FrontEnd: La panoramica dei segnali stradali ora mostra l'articolo di legge reale per segnale, con transizione di pagina per serie e un nome di file riconoscibile.
@@ -100,7 +103,7 @@ Una panoramica riepilogativa di tutte le modifiche, per versione di questo proge
 - FrontEnd: Aggiunto filtro del tipo di domanda con istruzioni di avvio visive e visualizzazione di foto reattive per situazioni del mondo reale.
 - FrontEnd: Layout a due pannelli su desktop e visualizzazione mobile senza scorrimento con pulsante di azione mobile e collegamento alla legge compatto implementato.
 - FrontEnd: Applicazione Web progressiva installata con supporto offline al 100%, icone rotonde e coda di errori locale.
-- Test: Aggiunti test di layout automatizzati per la struttura a due pannelli, l'occultamento delle opzioni mobili e il collegamento alle leggi compatto.
+- Test: Aggiunti test di layout automatizzati per la struttura a due pannelli, l'occultamento delle opzioni mobili e il lawlink compatto.
 - Test: Aggiunti test di verifica automatizzati per il manifest dell'app Web, le dimensioni delle icone e i file di precaricamento dei lavoratori del servizio.
 - CLI: Standardizzati tutti gli script di sviluppo in linee guida CLI utilizzabili con registrazione strutturata e nomi di file kebab-case.
 
@@ -115,7 +118,7 @@ Una panoramica riepilogativa di tutte le modifiche, per versione di questo proge
 - FrontEnd: Aggiunta favicon del segnale stradale blu e pulsante per l'ultima domanda modificato per mostrare i risultati.
 - FrontEnd: La notifica di avvio e gli indicatori di progresso ora mostrano il conteggio dinamico delle domande limitato alle domande disponibili.
 - FrontEnd: Aggiunti parametri di interrogazione URL per filtrare per anno di legge e numero di domande.
-- FrontEnd: Articoli giuridici ufficiali e collegamenti esplicativi visualizzati dopo aver risposto a ciascuna domanda del quiz.
+- FrontEnd: Articoli di legge ufficiali e collegamenti esplicativi visualizzati dopo aver risposto a ciascuna domanda del quiz.
 - Inhoud: Banca delle domande raddoppiata a 126 domande con copertura completa e regole post-2022.
 
 ## v1.0.0 [released: 2026-09-18]

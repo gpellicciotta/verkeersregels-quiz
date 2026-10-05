@@ -13,6 +13,9 @@ Eine zusammenfassende Übersicht aller Änderungen pro Version dieses Projekts.
 
 ---
 
+## v3.8.2-pre
+- BackEnd: Tägliche Spielertrainingssummen und tabellarische aktuelle Problemberichte sowie häufig gemeldete Fragen zu zusammenfassenden E-Mails hinzugefügt.
+
 ## v3.8.0 [released: 2026-09-24]
 - FrontEnd: Board-Symbole fehlten manchmal beim ersten Druck; Beim Drucken wird nun darauf gewartet, dass alle Symbole geladen werden.
 - FrontEnd: Die Verkehrszeichenübersicht zeigt jetzt den echten Gesetzesartikel pro Zeichen, mit Seitenübergängen pro Serie und einem erkennbaren Dateinamen.
@@ -77,12 +80,12 @@ Eine zusammenfassende Übersicht aller Änderungen pro Version dieses Projekts.
 - FrontEnd: Englische Übersetzung und Sprachumschaltung für die Benutzeroberfläche, Konfigurationsdialoge und alle 324 Fragen hinzugefügt.
 - FrontEnd: Den Spaltenüberschriften in der Ergebnistabelle wurden „Scope“-Attribute hinzugefügt, um die Barrierefreiheit für Bildschirmleser zu gewährleisten.
 - DevEx: Die JavaScript-Architektur ist in separate ES-Module modularisiert und trennt Anwendungsstatus, Speicher und UI-Präsentationslogik.
-- FrontEnd: Aktivierte automatische Aktualisierungen des Service-Worker-Lebenszyklus und Neuladen des Clients bei der Einführung neuer Versionen.
+- FrontEnd: Automatische Aktualisierungen des Service-Worker-Lebenszyklus und Neuladen des Clients bei der Einführung neuer Versionen aktiviert.
 - FrontEnd: Behalten Sie den Einführungstext auf dem Startbildschirm bei, wenn Sie den Quizmodus wechseln oder Konfigurationen ändern.
 - FrontEnd: Dunkles Design und konfigurierbare Farbakzente hinzugefügt, einschließlich Systempräferenzerkennung und Unterstützung für Abfrageparameter.
 - FrontEnd: Unterstützung für Abfrageparameter für Spielernamen (einschließlich Aliase) hinzugefügt, um das Eingabefeld auf dem Startbildschirm zu umgehen.
 - FrontEnd: Zwanzig Fotofragen zu realen Verkehrssituationen hinzugefügt, einschließlich verbessertem Offline-Caching und automatisierten Tests.
-- DevEx: Alle Quellcodekommentare in HTML-, CSS- und JavaScript-Modulen, standardisiert auf amerikanisches Englisch.
+- DevEx: Alle Quellcodekommentare in HTML-, CSS- und JavaScript-Modulen, standardisiert auf US-Englisch.
 - FrontEnd: Spielername und Quizeinstellungen werden im lokalen Speicher gespeichert, wobei URL-Abfrageparameter Vorrang haben.
 
 ## v3.1.0 [released: 2026-09-21]
@@ -100,7 +103,7 @@ Eine zusammenfassende Übersicht aller Änderungen pro Version dieses Projekts.
 - FrontEnd: Fragetypfilter mit visuellen Startaufforderungen und reaktionsfähiger Fotoanzeige für reale Situationen hinzugefügt.
 - FrontEnd: Zwei-Panel-Layout auf dem Desktop und mobile Ansicht ohne Scrollen mit schwebender Aktionsschaltfläche und kompaktem Gesetzeslink implementiert.
 - FrontEnd: Progressive Web-App mit 100-prozentiger Offline-Unterstützung, Kreisverkehrsymbolen und lokaler Fehlerwarteschlange installiert.
-- Test: Automatisierte Layouttests für die Zwei-Panel-Struktur, das Ausblenden mobiler Optionen und den kompakten Rechtslink hinzugefügt.
+- Test: Automatisierte Layouttests für die Zwei-Panel-Struktur, das Ausblenden mobiler Optionen und den kompakten Lawlink hinzugefügt.
 - Test: Automatisierte Verifizierungstests für Web-App-Manifest, Symbolgrößen und Service-Worker-Preload-Dateien hinzugefügt.
 - CLI: Standardisierung aller Entwicklungsskripte nach umsetzbaren CLI-Richtlinien mit strukturierter Protokollierung und Kebab-Case-Dateinamen.
 

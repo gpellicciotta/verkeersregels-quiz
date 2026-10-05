@@ -1,4 +1,4 @@
-# TODO
+# Project Planning
 
 An overview of all tasks and their planning.
 
@@ -8,8 +8,6 @@ An overview of all tasks and their planning.
 > Status: `[ ]` available · `[~]` active · `[!]` blocked · `[?]` needs-review
 > Owner: `[owner: @name]` shown only when active/blocked/needs-review.
 > Dependencies: `[needs: Tnnnn]` shown only when unresolved.
-
-**Next ID:** 0087
 
 ---
 
