@@ -1,7 +1,6 @@
 .DS_Store
 Thumbs.db
 node_modules/
-*.log
 
 # Task worktrees
 work/
@@ -15,3 +14,7 @@ __pycache__/
 # Translation caches
 data/.trans_cache_*.json
 
+# Logs and runtime metadata
+logs/
+*.log
+*.lock
