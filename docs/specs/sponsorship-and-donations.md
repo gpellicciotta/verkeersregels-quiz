@@ -27,12 +27,15 @@ We evaluated multiple developer funding and donation mechanisms.
 
 ## Recommendations
 
-### **[Decided]** Triple-Rail External Model
-1. **Ko-fi**:
+### **[Decided]** Four-Rail External Model
+1. **GitHub Sponsors**:
+   Provide a direct link to `https://github.com/sponsors/gpellicciotta`, listed first because it carries no fees.
+   Mirror all rails in `.github/FUNDING.yml` so the repository shows a Sponsor button.
+2. **Ko-fi**:
    Provide a direct link to `https://ko-fi.com/gpellicciotta` for tipping and creator support.
-2. **Stripe Payment Link**:
+3. **Stripe Payment Link**:
    Provide a direct link to `https://donate.stripe.com/4gM5kDdELg3t822g3j8AE00` for voluntary donations.
-3. **Direct PayPal Donation**:
+4. **Direct PayPal Donation**:
    Provide a direct link to `https://paypal.me/gpellicciotta` for voluntary PayPal donations, listed last.
 
 ### **[Decided]** Zero-Footprint Client Integration

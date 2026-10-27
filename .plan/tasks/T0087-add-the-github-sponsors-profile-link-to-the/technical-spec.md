@@ -16,6 +16,7 @@
 - Combined task: the funding file and About link expose the same profile and are each a few lines.
 - Size estimate: 13 files, 40 lines.
 - Size note: localization and changelog fan-out across five languages exceeds 8 files; total lines stay small.
+- Mechanical command: `python scripts/generate-sw.py generate` (refreshes the `sw.js` precache version hash).
 - Completion check: `python -m pytest tests -q` passes, plus a visual check of the About view.
 
 ### Declared Files
@@ -28,6 +29,7 @@
 - `tests/test_about_view.py`
 - `.github/FUNDING.yml`
 - `docs/specs/sponsorship-and-donations.md`
+- `docs/requirements.md`
 - `CHANGELOG.md`
 - `CHANGELOG.en.md`
 - `CHANGELOG.fr.md`

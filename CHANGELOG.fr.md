@@ -14,6 +14,7 @@ Un aperçu résumé de toutes les modifications, par version de ce projet.
 ---
 
 ## v3.8.2-pre
+- FrontEnd: Ajout d'un lien GitHub Sponsors comme première option de soutien dans l'écran À propos, ainsi qu'un bouton Sponsor sur le dépôt GitHub.
 - BackEnd: Ajout des totaux d'entraînement quotidiens des joueurs, des rapports tabulaires sur les problèmes récents et des questions fréquemment signalées aux e-mails récapitulatifs.
 
 ## v3.8.0 [released: 2026-09-24]

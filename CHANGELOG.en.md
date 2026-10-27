@@ -14,6 +14,7 @@ A summarized overview of all changes, per version of this project.
 ---
 
 ## v3.8.2-pre
+- FrontEnd: Added a GitHub Sponsors link as the first support option in the About screen, plus a Sponsor button on the GitHub repository.
 - BackEnd: Added daily player practice totals and tabular recent issue reports and frequently reported questions to summary emails.
 
 ## v3.8.0 [released: 2026-09-24]
