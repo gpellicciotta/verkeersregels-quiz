@@ -4,9 +4,9 @@ owner: "@claude-code"
 needs: []
 branch: task/T0087-add-the-github-sponsors-profile-link-to-the
 worktree: .plan/work/T0087-add-the-github-sponsors-profile-link-to-the
-status: active
+status: completed
 started_at: "2026-10-27T19:52:20Z"
-ended_at: —
+ended_at: "2026-10-27T19:55:19Z"
 review: none
 preview: none
 protocol: standard
@@ -46,4 +46,7 @@ Keep all five interface languages and changelogs in sync.
   - Files touched: 15.
   - Lines touched: 58.
   - Reopenings: 0.
+
+- [2026-10-27] **[Complete]**
+  Task completed successfully.
 

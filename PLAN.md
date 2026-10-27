@@ -12,7 +12,7 @@ An overview of all tasks and their planning.
 ---
 
 ## Next Milestone
-- [ ] T0087 Add the GitHub Sponsors profile link to the About view support card and repository funding file.
+- [x] T0087 Add the GitHub Sponsors profile link to the About view support card and repository funding file.
 
 ---
 
