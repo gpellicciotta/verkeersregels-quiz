@@ -13,8 +13,8 @@ Un aperçu résumé de toutes les modifications, par version de ce projet.
 
 ---
 
-## v3.8.2-pre
-- FrontEnd: Ajout d'un lien GitHub Sponsors comme première option de soutien dans l'écran À propos, ainsi qu'un bouton Sponsor sur le dépôt GitHub.
+## v3.8.2 [released: 2026-10-27]
+- FrontEnd: Ajout du lien GitHub Sponsors comme première option de support sur l'écran À propos, ainsi qu'un bouton Sponsor sur le référentiel GitHub.
 - BackEnd: Ajout des totaux d'entraînement quotidiens des joueurs, des rapports tabulaires sur les problèmes récents et des questions fréquemment signalées aux e-mails récapitulatifs.
 
 ## v3.8.0 [released: 2026-09-24]
@@ -104,7 +104,7 @@ Un aperçu résumé de toutes les modifications, par version de ce projet.
 - FrontEnd: Ajout d'un filtre de type de question avec des invites de démarrage visuelles et un affichage de photos réactif pour les situations du monde réel.
 - FrontEnd: Disposition à deux panneaux sur ordinateur et vue mobile sans défilement avec bouton d'action flottant et lien de loi compact mis en œuvre.
 - FrontEnd: Application Web progressive installée avec une prise en charge 100 % hors ligne, des icônes de rond-point et une file d'attente d'erreurs locale.
-- Test: Ajout de tests de mise en page automatisés pour la structure à deux panneaux, le masquage des options mobiles et le lawlink compact.
+- Test: Ajout de tests de mise en page automatisés pour la structure à deux panneaux, le masquage d'options mobiles et le lien de loi compact.
 - Test: Ajout de tests de vérification automatisés pour le manifeste de l'application Web, la taille des icônes et les fichiers de préchargement des techniciens de service.
 - CLI: Standardisation de tous les scripts de développement selon des directives CLI exploitables avec une journalisation structurée et des noms de fichiers kebab-case.
 
@@ -140,4 +140,4 @@ Un aperçu résumé de toutes les modifications, par version de ce projet.
 - Inhoud: 63 questions d'examen vérifiées avec références de sources et 35 panneaux de signalisation belges ajoutés.
 - BackEnd: Suivi des scores facultatif dans Google Sheets pour les joueurs via un point de terminaison Apps Script sécurisé.
 - Documentatie: Ajout d'instructions pour les tests locaux, la publication de pages GitHub et la configuration de Google Sheet.
-- Documentatie: Code de la route officiel et toutes ses modifications depuis 2021 ajoutées comme sources de référence légales.
+- Documentatie: Code de la route officiel et tous les amendements depuis 2021 ajoutés comme sources de référence légale.

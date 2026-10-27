@@ -13,8 +13,8 @@ Eine zusammenfassende Übersicht aller Änderungen pro Version dieses Projekts.
 
 ---
 
-## v3.8.2-pre
-- FrontEnd: GitHub-Sponsors-Link als erste Unterstützungsoption im Über-Bildschirm hinzugefügt, dazu ein Sponsor-Button im GitHub-Repository.
+## v3.8.2 [released: 2026-10-27]
+- FrontEnd: GitHub-Sponsoren-Link als erste Support-Option zum Info-Bildschirm sowie eine Sponsor-Schaltfläche im GitHub-Repository hinzugefügt.
 - BackEnd: Tägliche Spielertrainingssummen und tabellarische aktuelle Problemberichte sowie häufig gemeldete Fragen zu zusammenfassenden E-Mails hinzugefügt.
 
 ## v3.8.0 [released: 2026-09-24]
@@ -55,7 +55,7 @@ Eine zusammenfassende Übersicht aller Änderungen pro Version dieses Projekts.
 - BackEnd: Google Apps Script sendet jetzt täglich um 7:00 Uhr und 19:00 Uhr UTC eine zusammenfassende E-Mail im niederländischen Stil mit Ergebnissen, Benachrichtigungen und einer anpassbaren Liste der Spieler, denen man folgen kann.
 - FrontEnd: Der Info-Bildschirm zeigt nun das Änderungsprotokoll in der Sprache der aktiven Benutzeroberfläche an.
 - FrontEnd: Das Dialogfeld „Fehler melden“ zeigt jetzt ein Titelsymbol und einen konfigurierbaren optionalen Fragenkontext an.
-- FrontEnd: Ein Einstellungsdialog mit klaren Abschnitten „Allgemein/Quiz/Karussell“ ersetzt die beiden separaten Dialoge.
+- FrontEnd: Ein Einstellungsdialog mit übersichtlichen Abschnitten „Allgemein/Quiz/Karussell“ ersetzt die beiden separaten Dialoge.
 - FrontEnd: Name, Sprache, Theme und Theme-Farbe sind nun ebenfalls anpassbar und werden im localStorage gespeichert.
 - DevEx: `translate-markdown.py` hinzugefügt, wobei Markdown vor der Übersetzung jeder Veröffentlichung nach Überschrift und Absatz aufgeteilt wird.
 
@@ -86,7 +86,7 @@ Eine zusammenfassende Übersicht aller Änderungen pro Version dieses Projekts.
 - FrontEnd: Dunkles Design und konfigurierbare Farbakzente hinzugefügt, einschließlich Systempräferenzerkennung und Unterstützung für Abfrageparameter.
 - FrontEnd: Unterstützung für Abfrageparameter für Spielernamen (einschließlich Aliase) hinzugefügt, um das Eingabefeld auf dem Startbildschirm zu umgehen.
 - FrontEnd: Zwanzig Fotofragen zu realen Verkehrssituationen hinzugefügt, einschließlich verbessertem Offline-Caching und automatisierten Tests.
-- DevEx: Alle Quellcodekommentare in HTML-, CSS- und JavaScript-Modulen, standardisiert auf US-Englisch.
+- DevEx: Alle Quellcodekommentare in HTML-, CSS- und JavaScript-Modulen, standardisiert auf amerikanisches Englisch.
 - FrontEnd: Spielername und Quizeinstellungen werden im lokalen Speicher gespeichert, wobei URL-Abfrageparameter Vorrang haben.
 
 ## v3.1.0 [released: 2026-09-21]
@@ -104,7 +104,7 @@ Eine zusammenfassende Übersicht aller Änderungen pro Version dieses Projekts.
 - FrontEnd: Fragetypfilter mit visuellen Startaufforderungen und reaktionsfähiger Fotoanzeige für reale Situationen hinzugefügt.
 - FrontEnd: Zwei-Panel-Layout auf dem Desktop und mobile Ansicht ohne Scrollen mit schwebender Aktionsschaltfläche und kompaktem Gesetzeslink implementiert.
 - FrontEnd: Progressive Web-App mit 100-prozentiger Offline-Unterstützung, Kreisverkehrsymbolen und lokaler Fehlerwarteschlange installiert.
-- Test: Automatisierte Layouttests für die Zwei-Panel-Struktur, das Ausblenden mobiler Optionen und den kompakten Lawlink hinzugefügt.
+- Test: Automatisierte Layouttests für die Zwei-Panel-Struktur, das Ausblenden mobiler Optionen und den kompakten Rechtslink hinzugefügt.
 - Test: Automatisierte Verifizierungstests für Web-App-Manifest, Symbolgrößen und Service-Worker-Preload-Dateien hinzugefügt.
 - CLI: Standardisierung aller Entwicklungsskripte nach umsetzbaren CLI-Richtlinien mit strukturierter Protokollierung und Kebab-Case-Dateinamen.
 
@@ -119,8 +119,8 @@ Eine zusammenfassende Übersicht aller Änderungen pro Version dieses Projekts.
 - FrontEnd: Blaues Verkehrszeichen-Favicon hinzugefügt und Schaltfläche für die letzte Frage geändert, um Ergebnisse anzuzeigen.
 - FrontEnd: Startbenachrichtigungen und Fortschrittsanzeigen zeigen jetzt dynamische Fragenanzahlen an, die auf verfügbare Fragen beschränkt sind.
 - FrontEnd: URL-Abfrageparameter zum Filtern nach Jahr der Gesetzesänderung und Anzahl der Fragen hinzugefügt.
-- FrontEnd: Offizielle Gesetzesartikel und erklärende Links werden nach der Beantwortung jeder Quizfrage angezeigt.
-- Inhoud: Fragendatenbank verdoppelt auf 126 Fragen mit vollständiger Abdeckung des Vorstands und Regeln für die Zeit nach 2022.
+- FrontEnd: Offizielle Gesetzesartikel und erläuternde Links werden nach der Beantwortung jeder Quizfrage angezeigt.
+- Inhoud: Fragendatenbank verdoppelt sich auf 126 Fragen mit vollständiger Abdeckung des Vorstands und Regeln für die Zeit nach 2022.
 
 ## v1.0.0 [released: 2026-09-18]
 - Documentatie: Standard-Projektdokumentation einschließlich Anforderungen, DevOps-Leitfaden, Lizenz und Dokumentationsindex hinzugefügt.

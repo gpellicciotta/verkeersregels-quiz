@@ -13,8 +13,8 @@ A summarized overview of all changes, per version of this project.
 
 ---
 
-## v3.8.2-pre
-- FrontEnd: Added a GitHub Sponsors link as the first support option in the About screen, plus a Sponsor button on the GitHub repository.
+## v3.8.2 [released: 2026-10-27]
+- FrontEnd: Added GitHub Sponsors link as the first support option to the About screen, plus a Sponsor button on the GitHub repository.
 - BackEnd: Added daily player practice totals and tabular recent issue reports and frequently reported questions to summary emails.
 
 ## v3.8.0 [released: 2026-09-24]
@@ -86,7 +86,7 @@ A summarized overview of all changes, per version of this project.
 - FrontEnd: Added dark theme and configurable color accents, including system preference detection and query parameter support.
 - FrontEnd: Added support for player name query parameters (including aliases) to bypass the input field on the home screen.
 - FrontEnd: Twenty photo questions about real traffic situations added, including improved offline caching and automated testing.
-- DevEx: All source code comments in HTML, CSS and JavaScript modules standardized to US English.
+- DevEx: All source code comments in HTML, CSS and JavaScript modules standardized to American English.
 - FrontEnd: Player name and quiz settings saved to local storage, with URL query parameters taking precedence.
 
 ## v3.1.0 [released: 2026-09-21]
@@ -104,7 +104,7 @@ A summarized overview of all changes, per version of this project.
 - FrontEnd: Added question type filter with visual start prompts and responsive photo display for real-world situations.
 - FrontEnd: Two-panel layout on desktop and scroll-free mobile view with floating action button and compact law link implemented.
 - FrontEnd: Progressive web app installed with 100 percent offline support, roundabout icons and local error queue.
-- Test: Added automated layout tests for two-panel structure, mobile option hiding, and compact lawlink.
+- Test: Added automated layout tests for two-panel structure, mobile option hiding, and compact law link.
 - Test: Added automated verification testing for web app manifest, icon sizes, and service worker preload files.
 - CLI: Standardized all development scripts to actionable CLI guidelines with structured logging and kebab-case filenames.
 
