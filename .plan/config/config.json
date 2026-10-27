@@ -1,4 +1,5 @@
 {
+  "plan_version": "3.0.191-pre",
   "locking_backend": "file",
   "locking_timeout": "10s",
   "log_level": "INFO",
