@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 import unittest
 from pathlib import Path
 
@@ -9,6 +10,8 @@ WORKTREE_ROOT = Path(__file__).resolve().parent.parent
 INDEX_PATH = WORKTREE_ROOT / "index.html"
 CSS_PATH = WORKTREE_ROOT / "css" / "style.css"
 JS_DIR = WORKTREE_ROOT / "js"
+DATA_DIR = WORKTREE_ROOT / "data"
+FUNDING_PATH = WORKTREE_ROOT / ".github" / "FUNDING.yml"
 
 
 def _read_js() -> str:
@@ -79,12 +82,19 @@ class TestAboutView(unittest.TestCase):
         self.assertIn('class="about-icons-card"', html, "index.html must define about-icons-card")
         self.assertIn('class="about-sources-card"', html, "index.html must define about-sources-card")
         self.assertIn('class="about-support-card"', html, "index.html must define about-support-card")
+        self.assertIn('id="about-support-github"', html, "About screen must define GitHub Sponsors link")
         self.assertIn('id="about-support-kofi"', html, "About screen must define Ko-fi sponsor link")
         self.assertIn('id="about-support-stripe"', html, "About screen must define Stripe donation link")
         self.assertIn('id="about-support-paypal"', html, "About screen must define PayPal donation link")
+        self.assertIn('https://github.com/sponsors/gpellicciotta', html, "About screen must link to GitHub Sponsors")
         self.assertIn('https://ko-fi.com/gpellicciotta', html, "About screen must link to Ko-fi")
         self.assertIn('https://donate.stripe.com/4gM5kDdELg3t822g3j8AE00', html, "About screen must link to Stripe donation")
         self.assertIn('https://paypal.me/gpellicciotta', html, "About screen must link to PayPal donation")
+
+        # GitHub Sponsors carries no fees, so it must be presented before Ko-fi
+        github_link_pos = html.index('id="about-support-github"')
+        kofi_link_pos = html.index('id="about-support-kofi"')
+        self.assertLess(github_link_pos, kofi_link_pos, "GitHub Sponsors link must precede Ko-fi link")
 
         # Stripe must be presented before PayPal in the support actions
         stripe_link_pos = html.index('id="about-support-stripe"')
@@ -103,6 +113,21 @@ class TestAboutView(unittest.TestCase):
         self.assertLess(icons_pos, sources_pos, "Iconen & Symbolen card must precede Gebruikte bronnen card")
         self.assertLess(sources_pos, support_pos, "Gebruikte bronnen card must precede Project ondersteunen card")
         self.assertLess(support_pos, version_pos, "Project ondersteunen card must precede Versiegeschiedenis card")
+
+    def test_support_github_label_localized(self) -> None:
+        """Validates that every interface language defines the GitHub Sponsors link label."""
+        string_files = sorted(DATA_DIR.glob("strings.*.json"))
+        self.assertEqual(len(string_files), 5, "Expected five interface string files")
+        for path in string_files:
+            strings = json.loads(path.read_text(encoding="utf-8"))
+            label = strings.get("about.support_github", "")
+            self.assertIn("GitHub Sponsors", label, f"{path.name} must define about.support_github")
+
+    def test_funding_file_lists_github_sponsors(self) -> None:
+        """Validates that the repository funding file exposes the GitHub Sponsors profile."""
+        self.assertTrue(FUNDING_PATH.exists(), ".github/FUNDING.yml must exist")
+        funding = FUNDING_PATH.read_text(encoding="utf-8")
+        self.assertIn("github: [gpellicciotta]", funding, "FUNDING.yml must list the GitHub Sponsors profile")
 
     def test_css_contains_about_and_start_meta_styles(self) -> None:
         """Validates that style.css defines layout rules for the start meta row, tooltips, and About view."""
