@@ -12,7 +12,7 @@ An overview of all tasks and their planning.
 ---
 
 ## Next Milestone
-*(Currently no tasks)*
+- [x] T0091 Include plan branch when pushing releases in devops deployment
 
 ---
 
