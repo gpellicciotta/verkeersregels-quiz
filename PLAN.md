@@ -12,6 +12,7 @@ An overview of all tasks and their planning.
 ---
 
 ## Next Milestone
+- [x] T0090 Consolidate deployment and review server operations into devops script
 - [x] T0089 Add unified devops script and fix markdown linting pre-flight check
 - [x] T0088 Correct question sit-28 trottoir parking phrasing to match situation image
 - [x] T0087 Add the GitHub Sponsors profile link to the About view support card and repository funding file.
