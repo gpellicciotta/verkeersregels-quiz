@@ -18,3 +18,6 @@ data/.trans_cache_*.json
 logs/
 *.log
 *.lock
+.plan/
+/PLAN.md
+/plan.code-workspace
