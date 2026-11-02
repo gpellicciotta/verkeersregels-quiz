@@ -1,13 +1,5 @@
 # Project Planning
-
-An overview of all tasks and their planning.
-
-> Tasks are listed by milestone.
-> See the coordinating work guidelines in the dev-guidelines repository for the full coordination protocol.
->
-> Status: `[ ]` available · `[~]` active · `[!]` blocked · `[?]` needs-review
-> Owner: `[owner: @name]` shown only when active/blocked/needs-review.
-> Dependencies: `[needs: Tnnnn]` shown only when unresolved.
+An overview of all tasks and their planning, grouped by milestone.
 
 ---
 
