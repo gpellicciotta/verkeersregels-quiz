@@ -13,6 +13,9 @@ Eine zusammenfassende Übersicht aller Änderungen pro Version dieses Projekts.
 
 ---
 
+## v3.8.3-pre
+- BackEnd: Frage `sit-28-parkeren-trottoir-verbod` auf Parken mit vier Rädern und Verweis auf Schild E9e korrigiert.
+
 ## v3.8.2 [released: 2026-10-27]
 - FrontEnd: GitHub-Sponsoren-Link als erste Support-Option zum Info-Bildschirm sowie eine Sponsor-Schaltfläche im GitHub-Repository hinzugefügt.
 - BackEnd: Tägliche Spielertrainingssummen und tabellarische aktuelle Problemberichte sowie häufig gemeldete Fragen zu zusammenfassenden E-Mails hinzugefügt.

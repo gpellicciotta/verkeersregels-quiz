@@ -13,6 +13,9 @@ Una panoramica riepilogativa di tutte le modifiche, per versione di questo proge
 
 ---
 
+## v3.8.3-pre
+- BackEnd: Corretta la domanda `sit-28-parkeren-trottoir-verbod` per indicare la sosta a quattro ruote e il segnale E9e.
+
 ## v3.8.2 [released: 2026-10-27]
 - FrontEnd: Aggiunto il collegamento Sponsor GitHub come prima opzione di supporto alla schermata Informazioni, oltre a un pulsante Sponsor nel repository GitHub.
 - BackEnd: Aggiunti i totali giornalieri degli allenamenti dei giocatori, i rapporti tabulari sui problemi recenti e le domande frequenti riportate nelle e-mail di riepilogo.

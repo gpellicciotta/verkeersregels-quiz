@@ -3527,13 +3527,13 @@
     "explanation": "Une ligne blanche continue ne peut en aucun cas être franchie (art. 72.2). Les dépassements en franchissant la ligne continue sont interdits, même avec un tracteur lent."
   },
   "sit-28-parkeren-trottoir-verbod": {
-    "question": "Êtes-vous autorisé à garer votre voiture à deux roues sur le trottoir comme indiqué sur cette photo, s'il n'y a pas de panneau de signalisation E9b ?",
+    "question": "Êtes-vous autorisé à garer votre voiture avec quatre roues sur le trottoir comme indiqué sur cette photo, s'il n'y a pas de panneau de signalisation (comme le panneau E9e) ?",
     "options": [
       "Oui, à condition qu'il y ait au moins 1 mètre d'espace pour les piétons.",
-      "Non, le stationnement sur le trottoir est interdit sauf si un panneau de signalisation spécifique (comme le E9b) le permet expressément.",
+      "Non, le stationnement sur le trottoir est interdit sauf si un panneau de signalisation spécifique (comme le E9e) le permet expressément.",
       "Oui, mais seulement la nuit et le week-end."
     ],
-    "explanation": "L'immobilisation et le stationnement sur le trottoir sont interdits conformément à l'article 24.1°, sauf si le panneau E9b le permet explicitement (article 23.1 et article 70)."
+    "explanation": "L'immobilisation et le stationnement sur le trottoir sont interdits conformément à l'article 24.1°, sauf si le panneau E9e le permet explicitement (article 23.1 et article 70)."
   },
   "sit-29-busstrook-f17": {
     "question": "Vous conduisez une voiture de tourisme normale. Êtes-vous autorisé à circuler sur cette plate-forme spéciale ou cette voie réservée aux bus (panneau F17 et marquage « BUS ») ?",

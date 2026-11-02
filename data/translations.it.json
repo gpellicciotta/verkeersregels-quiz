@@ -3527,13 +3527,13 @@
     "explanation": "Una linea bianca continua non può in nessun caso essere superata (art. 72.2). È vietato sorpassare superando la linea continua, anche con trattore lento."
   },
   "sit-28-parkeren-trottoir-verbod": {
-    "question": "È consentito parcheggiare l'auto con due ruote sul marciapiede come mostrato in questa foto, se non è presente il segnale stradale E9b?",
+    "question": "È consentito parcheggiare l'auto con quattro ruote sul marciapiede come mostrato in questa foto, se non è presente un segnale stradale (come il segnale E9e)?",
     "options": [
       "Sì, purché ci sia almeno 1 metro di spazio per i pedoni.",
-      "No, è vietato parcheggiare sul marciapiede a meno che un segnale stradale specifico (come E9b) non lo consenta espressamente.",
+      "No, è vietato parcheggiare sul marciapiede a meno che un segnale stradale specifico (come E9e) non lo consenta espressamente.",
       "Sì, ma solo di notte e nei fine settimana."
     ],
-    "explanation": "La sosta e il parcheggio sul marciapiede sono vietati ai sensi dell'articolo 24.1°, a meno che il segnale E9b non lo consenta esplicitamente (articolo 23.1 e articolo 70)."
+    "explanation": "La sosta e il parcheggio sul marciapiede sono vietati ai sensi dell'articolo 24.1°, a meno che il segnale E9e non lo consenta esplicitamente (articolo 23.1 e articolo 70)."
   },
   "sit-29-busstrook-f17": {
     "question": "Guidi una normale autovettura. È consentito circolare su questa speciale pavimentazione stradale o corsia preferenziale (cartello F17 e scritta 'BUS')?",

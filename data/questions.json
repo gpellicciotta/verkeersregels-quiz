@@ -5377,15 +5377,15 @@
       "id": "sit-28-parkeren-trottoir-verbod",
       "type": "situation",
       "category": "parkeren",
-      "question": "Mag je je auto met twee wielen op het trottoir parkeren zoals getoond op deze foto, als er geen verkeersbord E9b staat?",
+      "question": "Mag je je auto met vier wielen op het trottoir parkeren zoals getoond op deze foto, als er geen verkeersbord (zoals bord E9e) staat?",
       "image": "assets/situations/sit-28-parkeren-trottoir-verbod.jpg",
       "options": [
         "Ja, zolang er minstens 1 meter ruimte voor voetgangers overblijft.",
-        "Nee, parkeren op het trottoir is verboden tenzij een specifiek verkeersbord (zoals E9b) dit uitdrukkelijk toestaat.",
+        "Nee, parkeren op het trottoir is verboden tenzij een specifiek verkeersbord (zoals E9e) dit uitdrukkelijk toestaat.",
         "Ja, maar enkel 's nachts en tijdens het weekend."
       ],
       "correctIndex": 1,
-      "explanation": "Stilstaan en parkeren op het trottoir is volgens artikel 24.1° verboden, tenzij bord E9b dit expliciet toestaat (art. 23.1 en art. 70).",
+      "explanation": "Stilstaan en parkeren op het trottoir is volgens artikel 24.1° verboden, tenzij bord E9e dit expliciet toestaat (art. 23.1 en art. 70).",
       "source": "https://www.wegcode.be/nl/regelgeving/1975120109~hra8v386pu#art-24"
     },
     {

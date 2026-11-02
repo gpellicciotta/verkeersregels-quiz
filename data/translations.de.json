@@ -3527,13 +3527,13 @@
     "explanation": "Eine durchgehende weiße Linie darf unter keinen Umständen überschritten werden (Art. 72.2). Das Überholen durch Überfahren der durchgezogenen Linie ist auch mit einer langsamen Zugmaschine verboten."
   },
   "sit-28-parkeren-trottoir-verbod": {
-    "question": "Dürfen Sie Ihr Auto mit zwei Rädern wie auf diesem Foto auf dem Gehweg parken, wenn kein Verkehrszeichen E9b vorhanden ist?",
+    "question": "Dürfen Sie Ihr Auto mit vier Rädern wie auf diesem Foto auf dem Gehweg parken, wenn kein Verkehrszeichen (wie das Zeichen E9e) vorhanden ist?",
     "options": [
       "Ja, solange mindestens 1 Meter Platz für Fußgänger vorhanden ist.",
-      "Nein, das Parken auf dem Gehweg ist verboten, es sei denn, ein bestimmtes Verkehrszeichen (z. B. E9b) erlaubt dies ausdrücklich.",
+      "Nein, das Parken auf dem Gehweg ist verboten, es sei denn, ein bestimmtes Verkehrszeichen (z. B. E9e) erlaubt dies ausdrücklich.",
       "Ja, aber nur nachts und am Wochenende."
     ],
-    "explanation": "Das Stehenbleiben und Parken auf dem Gehweg ist gemäß Artikel 24.1° verboten, es sei denn, das Zeichen E9b erlaubt dies ausdrücklich (Artikel 23.1 und Artikel 70)."
+    "explanation": "Das Stehenbleiben und Parken auf dem Gehweg ist gemäß Artikel 24.1° verboten, es sei denn, das Zeichen E9e erlaubt dies ausdrücklich (Artikel 23.1 und Artikel 70)."
   },
   "sit-29-busstrook-f17": {
     "question": "Du fährst einen normalen Pkw. Dürfen Sie auf diesem speziellen Straßenbett oder auf dieser Busspur fahren (Schild F17 und Markierung „BUS“)?",

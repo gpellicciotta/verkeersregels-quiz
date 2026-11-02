@@ -169,6 +169,44 @@ class TestQuizData(unittest.TestCase):
                 self.assertIsNone(match, f"Question {qid} mentions sign code without showing it via 'sign': {match.group(0) if match else ''}")
 
 
+    def test_sit_28_trottoir_phrasing_and_sign_reference(self) -> None:
+        """Validates that sit-28 refers to parking with 4 wheels and sign E9e across all languages."""
+        sit_28 = next((q for q in self.questions if q.get("id") == "sit-28-parkeren-trottoir-verbod"), None)
+        self.assertIsNotNone(sit_28, "sit-28-parkeren-trottoir-verbod must exist in questions.json")
+
+        # Dutch question text and explanation checks
+        self.assertNotIn("twee wielen", sit_28["question"].lower())
+        self.assertIn("vier wielen", sit_28["question"].lower())
+        self.assertNotIn("E9b", sit_28["question"])
+        self.assertIn("E9e", sit_28["question"])
+        self.assertNotIn("E9b", sit_28["options"][1])
+        self.assertIn("E9e", sit_28["options"][1])
+        self.assertNotIn("E9b", sit_28["explanation"])
+        self.assertIn("E9e", sit_28["explanation"])
+
+        # Translation overlay checks
+        for lang, four_wheels_sub, two_wheels_sub in [
+            ("en", "four wheels", "two wheels"),
+            ("fr", "quatre roues", "deux roues"),
+            ("de", "vier rädern", "zwei rädern"),
+            ("it", "quattro ruote", "due ruote"),
+        ]:
+            trans_path = REPO_ROOT / "data" / f"translations.{lang}.json"
+            self.assertTrue(trans_path.exists(), f"Translation file {trans_path} must exist")
+            with open(trans_path, encoding="utf-8") as f:
+                trans_data = json.load(f)
+            t_item = trans_data.get("sit-28-parkeren-trottoir-verbod")
+            self.assertIsNotNone(t_item, f"sit-28 missing from translations.{lang}.json")
+            self.assertNotIn(two_wheels_sub, t_item["question"].lower())
+            self.assertIn(four_wheels_sub, t_item["question"].lower())
+            self.assertNotIn("E9b", t_item["question"])
+            self.assertIn("E9e", t_item["question"])
+            self.assertNotIn("E9b", t_item["options"][1])
+            self.assertIn("E9e", t_item["options"][1])
+            self.assertNotIn("E9b", t_item["explanation"])
+            self.assertIn("E9e", t_item["explanation"])
+
+
 if __name__ == "__main__":
     unittest.main()
 

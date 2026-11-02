@@ -3527,13 +3527,13 @@
     "explanation": "A continuous white line may under no circumstances be crossed (art. 72.2). Overtaking by driving over the solid line is prohibited, even with a slow tractor."
   },
   "sit-28-parkeren-trottoir-verbod": {
-    "question": "Are you allowed to park your car with two wheels on the sidewalk as shown in this photo, if there is no traffic sign E9b?",
+    "question": "Are you allowed to park your car with four wheels on the sidewalk as shown in this photo, if there is no traffic sign (such as sign E9e)?",
     "options": [
       "Yes, as long as there is at least 1 meter of space for pedestrians.",
-      "No, parking on the sidewalk is prohibited unless a specific traffic sign (such as E9b) expressly allows this.",
+      "No, parking on the sidewalk is prohibited unless a specific traffic sign (such as E9e) expressly allows this.",
       "Yes, but only at night and during weekends."
     ],
-    "explanation": "Standing still and parking on the sidewalk is prohibited according to Article 24.1°, unless sign E9b explicitly allows this (Article 23.1 and Article 70)."
+    "explanation": "Standing still and parking on the sidewalk is prohibited according to Article 24.1°, unless sign E9e explicitly allows this (Article 23.1 and Article 70)."
   },
   "sit-29-busstrook-f17": {
     "question": "You drive a normal passenger car. Are you allowed to drive on this special roadbed or bus lane (sign F17 and marking 'BUS')?",

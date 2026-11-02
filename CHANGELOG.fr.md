@@ -13,6 +13,9 @@ Un aperçu résumé de toutes les modifications, par version de ce projet.
 
 ---
 
+## v3.8.3-pre
+- BackEnd: Correction de la question `sit-28-parkeren-trottoir-verbod` pour indiquer le stationnement à quatre roues et le panneau E9e.
+
 ## v3.8.2 [released: 2026-10-27]
 - FrontEnd: Ajout du lien GitHub Sponsors comme première option de support sur l'écran À propos, ainsi qu'un bouton Sponsor sur le référentiel GitHub.
 - BackEnd: Ajout des totaux d'entraînement quotidiens des joueurs, des rapports tabulaires sur les problèmes récents et des questions fréquemment signalées aux e-mails récapitulatifs.

@@ -13,6 +13,9 @@ A summarized overview of all changes, per version of this project.
 
 ---
 
+## v3.8.3-pre
+- BackEnd: Corrected question `sit-28-parkeren-trottoir-verbod` to state parking with four wheels and reference sign E9e.
+
 ## v3.8.2 [released: 2026-10-27]
 - FrontEnd: Added GitHub Sponsors link as the first support option to the About screen, plus a Sponsor button on the GitHub repository.
 - BackEnd: Added daily player practice totals and tabular recent issue reports and frequently reported questions to summary emails.
