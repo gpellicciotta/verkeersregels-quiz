@@ -123,6 +123,8 @@ def setup(logger: TeeLogger) -> int:
             [
                 sys.executable,
                 str(linter_path),
+                "check",
+                "--offline",
                 "LICENSE.md",
                 "docs/index.md",
                 "docs/requirements.md",
@@ -134,7 +136,7 @@ def setup(logger: TeeLogger) -> int:
     if all_ok:
         logger.log(
             "\n[+] Bootstrap completed successfully: development environment is ready.\n"
-            "    To run the quiz locally: python scripts/run-review-server.py serve\n",
+            "    To run the quiz locally: python scripts/devops.py serve\n",
             level="INFO",
         )
         return 0

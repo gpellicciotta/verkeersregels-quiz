@@ -8,7 +8,7 @@ Usage:
   python scripts/devops.py test
   python scripts/devops.py lint
   python scripts/devops.py check
-  python scripts/devops.py serve [--port 8000]
+  python scripts/devops.py serve [--host 127.0.0.1] [--port 8000]
   python scripts/devops.py sw
   python scripts/devops.py versions [--check]
   python scripts/devops.py production {deploy|check} [--dry-run] [--push]
@@ -20,7 +20,9 @@ Usage:
 from __future__ import annotations
 
 import argparse
-import importlib.util
+from datetime import date
+import functools
+from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 import re
 import subprocess
@@ -39,13 +41,6 @@ from _cli_common import (
     print_help,
     print_version,
 )
-
-# Load deploy-to-production module dynamically due to hyphenated filename
-_DEPLOY_PATH = SCRIPTS_DIR / "deploy-to-production.py"
-_SPEC = importlib.util.spec_from_file_location("deploy_to_production", _DEPLOY_PATH)
-assert _SPEC and _SPEC.loader
-deploy_to_production = importlib.util.module_from_spec(_SPEC)
-_SPEC.loader.exec_module(deploy_to_production)
 
 PROG = "devops"
 DESCRIPTION = "Unified development and operational CLI: test, lint, check, serve, sw, versions, and deploy."
@@ -75,6 +70,60 @@ CORE_DOCS = [
     "docs/devops.md",
     "CHANGELOG.md",
 ]
+
+CHANGELOG_PATH = REPO_ROOT / "CHANGELOG.md"
+SW_SCRIPT_PATH = REPO_ROOT / "scripts" / "generate-sw.py"
+TRANSLATE_MARKDOWN_SCRIPT_PATH = REPO_ROOT / "scripts" / "translate-markdown.py"
+TRANSLATED_CHANGELOG_LANGS = ["en", "fr", "de", "it"]
+
+DEFAULT_HOST = "127.0.0.1"
+DEFAULT_PORT = 8000
+
+
+class ReviewServer(ThreadingHTTPServer):
+    """Threading HTTP server that survives the application's parallel module fetches."""
+
+    daemon_threads = True
+    request_queue_size = 128
+    # On Windows SO_REUSEADDR lets a second server silently steal a bound port.
+    # Duplicate start must fail loudly instead. POSIX keeps it to rebind after TIME_WAIT.
+    allow_reuse_address = sys.platform != "win32"
+
+
+class QuietHandler(SimpleHTTPRequestHandler):
+    """Static file handler routing its access log through the shared logger."""
+
+    logger: TeeLogger | None = None
+
+    def log_message(self, format: str, *args) -> None:
+        """Route access log lines to the shared logger at DEBUG level."""
+        if self.logger is not None:
+            self.logger.log(format % args, level="DEBUG", origin=PROG)
+
+    def end_headers(self) -> None:
+        """Disable caching so a reviewer always sees the current working tree."""
+        self.send_header("Cache-Control", "no-store, max-age=0")
+        super().end_headers()
+
+
+def serve(host: str, port: int, logger: TeeLogger) -> int:
+    """Runs the review server until interrupted, returning the process exit code."""
+    QuietHandler.logger = logger
+    handler = functools.partial(QuietHandler, directory=str(REPO_ROOT))
+    try:
+        server = ReviewServer((host, port), handler)
+    except OSError as exc:
+        logger.log(f"Cannot serve on {host}:{port}: {exc}", level="ERROR")
+        return 1
+
+    logger.log(f"Serving {REPO_ROOT} at http://{host}:{port}/ (Ctrl+C to stop).", level="INFO")
+    try:
+        server.serve_forever()
+    except KeyboardInterrupt:
+        logger.log("Shutting down on keyboard interrupt.", level="INFO")
+    finally:
+        server.server_close()
+    return 0
 
 
 def run_unit_tests(logger: TeeLogger) -> bool:
@@ -139,24 +188,18 @@ def run_check(logger: TeeLogger) -> bool:
     return tests_ok and lint_ok
 
 
-def run_serve(port: int, logger: TeeLogger) -> bool:
+def run_serve(host: str, port: int, logger: TeeLogger) -> bool:
     """Runs the local review web server."""
-    server_script = SCRIPTS_DIR / "run-review-server.py"
-    if not server_script.exists():
-        logger.log("run-review-server.py not found.", level="ERROR")
-        return False
-    cmd = [sys.executable, str(server_script), "serve", "--port", str(port)]
-    logger.log(f"Starting review server on port {port}...", level="INFO")
-    return subprocess.run(cmd, cwd=str(REPO_ROOT), check=False).returncode == 0
+    logger.log(f"Starting review server on {host}:{port}...", level="INFO")
+    return serve(host, port, logger) == 0
 
 
 def run_sw(logger: TeeLogger) -> bool:
     """Regenerates service worker precache assets and version hash."""
-    sw_script = SCRIPTS_DIR / "generate-sw.py"
-    if not sw_script.exists():
+    if not SW_SCRIPT_PATH.exists():
         logger.log("generate-sw.py not found.", level="ERROR")
         return False
-    cmd = [sys.executable, str(sw_script), "generate"]
+    cmd = [sys.executable, str(SW_SCRIPT_PATH), "generate"]
     result = subprocess.run(cmd, cwd=str(REPO_ROOT), check=False, capture_output=True, text=True)
     if result.returncode != 0:
         err = (result.stderr.strip() + "\n" + result.stdout.strip()).strip()
@@ -169,7 +212,6 @@ def run_sw(logger: TeeLogger) -> bool:
 def run_versions(check_drift: bool, logger: TeeLogger) -> bool:
     """Inspects project version and checks for drift."""
     version = get_project_version()
-    changelog_path = REPO_ROOT / "CHANGELOG.md"
     sw_path = REPO_ROOT / "sw.js"
 
     logger.log(f"Project version: v{version}", level="INFO")
@@ -177,8 +219,8 @@ def run_versions(check_drift: bool, logger: TeeLogger) -> bool:
         return True
 
     drift = False
-    if changelog_path.exists():
-        text = changelog_path.read_text(encoding="utf-8")
+    if CHANGELOG_PATH.exists():
+        text = CHANGELOG_PATH.read_text(encoding="utf-8")
         m = re.search(r"^##\s+v?([0-9]+(?:\.[0-9]+)+(?:-[^\s\[]+)?|[^\s\[]+)", text, re.MULTILINE)
         if m and m.group(1).strip() != version:
             logger.log(f"Version drift detected: CHANGELOG has v{m.group(1).strip()}, project has v{version}", level="ERROR")
@@ -193,6 +235,265 @@ def run_versions(check_drift: bool, logger: TeeLogger) -> bool:
             logger.log(f"Version note: sw.js cache key may not match release v{clean_v}; run 'devops sw' before release.", level="WARN")
 
     return not drift
+
+
+def check_clean_git_tree(logger: TeeLogger) -> bool:
+    """Returns whether the git working tree has no uncommitted changes."""
+    logger.log("\n[*] Checking git working tree status\n" + "=" * 60, level="INFO")
+    result = subprocess.run(
+        ["git", "status", "--porcelain"],
+        cwd=str(REPO_ROOT),
+        check=False,
+        capture_output=True,
+        text=True,
+    )
+    if result.returncode != 0:
+        logger.log("Failed to query git status", level="ERROR")
+        return False
+    if result.stdout.strip():
+        logger.log(
+            "Working tree has uncommitted changes - commit or stash before deploying.\n"
+            + result.stdout.strip(),
+            level="ERROR",
+        )
+        return False
+    logger.log("Working tree is clean.", level="INFO")
+    return True
+
+
+def read_active_pre_release_version(logger: TeeLogger) -> str | None:
+    """Returns the active '-pre' version number from CHANGELOG.md's top heading, or None."""
+    logger.log("\n[*] Checking active CHANGELOG.md version\n" + "=" * 60, level="INFO")
+    if not CHANGELOG_PATH.exists():
+        logger.log("CHANGELOG.md not found.", level="ERROR")
+        return None
+    text = CHANGELOG_PATH.read_text(encoding="utf-8")
+    m = re.search(r"^## v([0-9]+(?:\.[0-9]+)+)-pre\s*$", text, re.MULTILINE)
+    if not m:
+        logger.log(
+            "No active '-pre' version heading found at the top of CHANGELOG.md - nothing to release.",
+            level="ERROR",
+        )
+        return None
+    version = m.group(1)
+    logger.log(f"Active in-development version: v{version}-pre", level="INFO")
+    return version
+
+
+def finalize_changelog(version: str, logger: TeeLogger) -> bool:
+    """Replaces the active '-pre' heading with a '[released: date]' status tag."""
+    logger.log("\n[*] Finalizing CHANGELOG.md heading\n" + "=" * 60, level="INFO")
+    text = CHANGELOG_PATH.read_text(encoding="utf-8")
+    today = date.today().isoformat()
+    new_text, count = re.subn(
+        rf"^## v{re.escape(version)}-pre\s*$",
+        f"## v{version} [released: {today}]",
+        text,
+        count=1,
+        flags=re.MULTILINE,
+    )
+    if count != 1:
+        logger.log("Failed to locate the '-pre' heading to finalize.", level="ERROR")
+        return False
+    CHANGELOG_PATH.write_text(new_text, encoding="utf-8")
+    logger.log(f"Finalized heading: v{version} [released: {today}]", level="INFO")
+    return True
+
+
+def regenerate_translated_changelogs(logger: TeeLogger) -> bool:
+    """Regenerates CHANGELOG.<lang>.md overlays so the About view can show them per language."""
+    logger.log("\n[*] Regenerating translated CHANGELOG overlays\n" + "=" * 60, level="INFO")
+    result = subprocess.run(
+        [sys.executable, str(TRANSLATE_MARKDOWN_SCRIPT_PATH), "generate", "--all"],
+        cwd=str(REPO_ROOT),
+        check=False,
+        capture_output=True,
+        text=True,
+    )
+    if result.returncode != 0:
+        logger.log(f"Translated CHANGELOG generation failed:\n{result.stderr}\n{result.stdout}", level="ERROR")
+        return False
+    logger.log("Translated CHANGELOG overlays regenerated successfully.", level="INFO")
+    return True
+
+
+def regenerate_service_worker(logger: TeeLogger) -> bool:
+    """Regenerates sw.js so precached assets and the cache-key version stay current."""
+    logger.log("\n[*] Regenerating service worker precache\n" + "=" * 60, level="INFO")
+    result = subprocess.run(
+        [sys.executable, str(SW_SCRIPT_PATH), "generate"],
+        cwd=str(REPO_ROOT),
+        check=False,
+        capture_output=True,
+        text=True,
+    )
+    if result.returncode != 0:
+        logger.log(f"sw.js regeneration failed:\n{result.stderr}\n{result.stdout}", level="ERROR")
+        return False
+    logger.log("sw.js regenerated successfully.", level="INFO")
+    return True
+
+
+def create_release_commit(version: str, logger: TeeLogger) -> bool:
+    """Commits the finalized CHANGELOG.md, its translated overlays, and regenerated sw.js."""
+    logger.log("\n[*] Committing release\n" + "=" * 60, level="INFO")
+    changelog_files = ["CHANGELOG.md"] + [f"CHANGELOG.{lang}.md" for lang in TRANSLATED_CHANGELOG_LANGS]
+    result = subprocess.run(
+        ["git", "add", *changelog_files, "sw.js"],
+        cwd=str(REPO_ROOT),
+        check=False,
+        capture_output=True,
+        text=True,
+    )
+    if result.returncode != 0:
+        logger.log(f"git add failed:\n{result.stderr}", level="ERROR")
+        return False
+    result = subprocess.run(
+        ["git", "commit", "-m", f"Released v{version}."],
+        cwd=str(REPO_ROOT),
+        check=False,
+        capture_output=True,
+        text=True,
+    )
+    if result.returncode != 0:
+        logger.log(f"git commit failed:\n{result.stderr}\n{result.stdout}", level="ERROR")
+        return False
+    logger.log(f"Committed release v{version}.", level="INFO")
+    return True
+
+
+def create_git_tag(version: str, logger: TeeLogger) -> bool:
+    """Creates the local git tag for the release."""
+    logger.log("\n[*] Creating git tag\n" + "=" * 60, level="INFO")
+    result = subprocess.run(
+        ["git", "tag", f"v{version}"],
+        cwd=str(REPO_ROOT),
+        check=False,
+        capture_output=True,
+        text=True,
+    )
+    if result.returncode != 0:
+        logger.log(f"git tag failed (it may already exist):\n{result.stderr}", level="ERROR")
+        return False
+    logger.log(f"Created tag v{version}.", level="INFO")
+    return True
+
+
+def push_release(branch: str, version: str, logger: TeeLogger) -> bool:
+    """Pushes the release branch and tag to origin. Only called when --push was passed explicitly."""
+    logger.log("\n[*] Pushing release to origin\n" + "=" * 60, level="INFO")
+    result = subprocess.run(
+        ["git", "push", "origin", branch, f"v{version}"],
+        cwd=str(REPO_ROOT),
+        check=False,
+        capture_output=True,
+        text=True,
+    )
+    if result.returncode != 0:
+        logger.log(f"git push failed:\n{result.stderr}", level="ERROR")
+        return False
+    logger.log(f"Pushed {branch} and tag v{version} to origin.", level="INFO")
+    return True
+
+
+def check_current_branch(logger: TeeLogger) -> str:
+    """Returns the current git branch name."""
+    logger.log("\n[*] Checking git branch\n" + "=" * 60, level="INFO")
+    result = subprocess.run(
+        ["git", "rev-parse", "--abbrev-ref", "HEAD"],
+        cwd=str(REPO_ROOT),
+        check=False,
+        capture_output=True,
+        text=True,
+    )
+    branch = result.stdout.strip() if result.returncode == 0 else "unknown"
+    logger.log(f"Current branch: {branch}", level="INFO")
+    return branch
+
+
+def deploy(dry_run: bool, push: bool, logger: TeeLogger) -> int:
+    """Validates pre-flight checks, then finalizes, commits, tags, and optionally pushes the release."""
+    if dry_run and push:
+        logger.log("--dry-run and --push cannot be combined.", level="ERROR")
+        return 1
+
+    all_ok = True
+    all_ok &= check_clean_git_tree(logger)
+    version = read_active_pre_release_version(logger)
+    all_ok &= version is not None
+    branch = check_current_branch(logger)
+    all_ok &= run_unit_tests(logger)
+    all_ok &= run_markdown_lint(logger)
+
+    if not all_ok or version is None:
+        logger.log(
+            "\n[!] Pre-flight deployment checks failed. Resolve issues before deploying.",
+            level="ERROR",
+        )
+        return 1
+
+    summary_lines = [
+        f"\n[*] Deployment Pre-flight Summary for v{version}",
+        "=" * 60,
+        f"Target Version: v{version}",
+        f"Current Branch: {branch}",
+        "Pre-flight Checks: ALL PASSED",
+    ]
+    logger.log("\n".join(summary_lines), level="INFO")
+
+    if dry_run:
+        logger.log(
+            f"\n[dry-run] Preconditions validated successfully. Would finalize, commit, and "
+            f"tag v{version}. No files were changed.",
+            level="INFO",
+        )
+        return 0
+
+    if not finalize_changelog(version, logger):
+        return 1
+    if not regenerate_translated_changelogs(logger):
+        logger.log(
+            "CHANGELOG.md was finalized but translated CHANGELOG generation failed.\n"
+            "Fix the issue and rerun, or 'git checkout -- CHANGELOG.md' to revert.",
+            level="ERROR",
+        )
+        return 1
+    if not regenerate_service_worker(logger):
+        logger.log(
+            "CHANGELOG.md was finalized but sw.js regeneration failed.\n"
+            "Fix the issue and rerun, or 'git checkout -- CHANGELOG.md' to revert.",
+            level="ERROR",
+        )
+        return 1
+    if not create_release_commit(version, logger):
+        logger.log(
+            "CHANGELOG.md, its translated overlays, and sw.js were updated but not committed.\n"
+            "Inspect with 'git diff', then commit manually or resolve and rerun.",
+            level="ERROR",
+        )
+        return 1
+    if not create_git_tag(version, logger):
+        return 1
+
+    if not push:
+        guidance = (
+            f"\n[+] Release v{version} committed and tagged locally on '{branch}'.\n"
+            "    With explicit confirmation, push to publish to GitHub Pages:\n"
+            f"      git push origin {branch} v{version}\n"
+            "    GitHub Pages will build and publish automatically within 2 minutes.\n"
+        )
+        logger.log(guidance, level="INFO")
+        return 0
+
+    if not push_release(branch, version, logger):
+        return 1
+
+    logger.log(
+        f"\n[+] Release v{version} pushed to origin ('--push' was given). "
+        "GitHub Pages will build and publish automatically within 2 minutes.",
+        level="INFO",
+    )
+    return 0
 
 
 def print_detailed_help(prog: str, version: str, parser: argparse.ArgumentParser) -> None:
@@ -227,7 +528,8 @@ def main(argv: list[str] | None = None) -> int:
         help="Push the release branch and tag to origin after tagging (confirmation to publish).",
     )
     parser.add_argument("--check", action="store_true", help="Check version drift without modifying files")
-    parser.add_argument("--port", type=int, default=8000, help="HTTP port for serve (default: 8000)")
+    parser.add_argument("--host", default=DEFAULT_HOST, help=f"Interface to bind for serve (default: {DEFAULT_HOST})")
+    parser.add_argument("--port", type=int, default=DEFAULT_PORT, help=f"HTTP port for serve (default: {DEFAULT_PORT})")
 
     # Intercept --help and version early to support help --verbose
     is_help = any(arg in argv for arg in ("-h", "--help", "help"))
@@ -267,7 +569,7 @@ def main(argv: list[str] | None = None) -> int:
         elif args.action == "check":
             exit_code = 0 if run_check(logger) else 1
         elif args.action == "serve":
-            exit_code = 0 if run_serve(args.port, logger) else 1
+            exit_code = 0 if run_serve(args.host, args.port, logger) else 1
         elif args.action == "sw":
             exit_code = 0 if run_sw(logger) else 1
         elif args.action == "versions":
@@ -275,14 +577,14 @@ def main(argv: list[str] | None = None) -> int:
         elif args.action == "production":
             sub = args.subaction or "deploy"
             if sub == "check":
-                exit_code = deploy_to_production.deploy(dry_run=True, push=False, logger=logger)
+                exit_code = deploy(dry_run=True, push=False, logger=logger)
             elif sub == "deploy":
-                exit_code = deploy_to_production.deploy(dry_run=args.dry_run, push=args.push, logger=logger)
+                exit_code = deploy(dry_run=args.dry_run, push=args.push, logger=logger)
             else:
                 logger.log(f"Unknown production subaction: '{sub}'. Choose 'deploy' or 'check'.", level="ERROR")
                 exit_code = 2
         elif args.action == "deploy":
-            exit_code = deploy_to_production.deploy(dry_run=args.dry_run, push=args.push, logger=logger)
+            exit_code = deploy(dry_run=args.dry_run, push=args.push, logger=logger)
         else:
             logger.log(f"Unknown action: '{args.action}'", level="ERROR")
             exit_code = 2

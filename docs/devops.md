@@ -9,7 +9,7 @@ Practical guidance on development environment setup, testing, validation, deploy
 - **Node.js**: Node.js 22 or higher for executable service worker lifecycle regression tests.
 - **Git**: Git 2.30 or higher supporting worktree isolation (`git worktree`).
 - **Web Browser**: Any standard modern web browser (Google Chrome, Microsoft Edge, Mozilla Firefox, Safari).
-- **Static HTTP Server**: [run-review-server.py](../scripts/run-review-server.py) or any threaded local static web server.
+- **Static HTTP Server**: [devops.py](../scripts/devops.py) (`python scripts/devops.py serve`) or any threaded local static web server.
 
 ---
 
@@ -27,7 +27,7 @@ Because the quiz fetches [questions.json](../data/questions.json) and `CHANGELOG
 Start the review server from the repository root:
 
 ```bash
-python scripts/run-review-server.py serve --port 8000
+python scripts/devops.py serve --port 8000
 ```
 
 Open your browser and navigate to `http://localhost:8000`.
@@ -73,7 +73,7 @@ Install the optional browser test dependency locally, then run the review server
 
 ```bash
 npm install --no-save --package-lock=false playwright
-python scripts/run-review-server.py serve
+python scripts/devops.py serve
 ```
 
 With Google Chrome installed, run:
@@ -144,8 +144,6 @@ python ../dev-guidelines/scripts/lint-taskfile.py TODO.md
 All developer utilities live in `scripts/` and adhere strictly to CLI guidelines with `--version`, `--help`, `--verbose`, `--debug`, and `--log-file`:
 - [devops.py](../scripts/devops.py): unified CLI for test, lint, check, serve, sw, versions, and deployment operations.
 - [bootstrap-dev-environment.py](../scripts/bootstrap-dev-environment.py): verifies environment readiness, repository structure, and runs test suites.
-- [deploy-to-production.py](../scripts/deploy-to-production.py): verifies preconditions, then finalizes `CHANGELOG.md`, regenerates translated changelogs and [sw.js](../sw.js), commits, and tags a release.
-- [run-review-server.py](../scripts/run-review-server.py): serves the repository over threaded HTTP on `127.0.0.1:8062` for browser review and Playwright runs.
 - [generate-sw.py](../scripts/generate-sw.py): dynamically scans all assets and writes [sw.js](../sw.js) with versioned cache keys and 227 precached assets.
 - [translate-markdown.py](../scripts/translate-markdown.py): translates `CHANGELOG.md` into `CHANGELOG.<lang>.md` overlays for the About view, chunking by heading and paragraph via Google Translate.
 - [generate-pwa-icons.py](../scripts/generate-pwa-icons.py): renders transparent PNG and ICO icons via headless Chrome and Pillow.

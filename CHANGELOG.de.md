@@ -14,6 +14,7 @@ Eine zusammenfassende Übersicht aller Änderungen pro Version dieses Projekts.
 ---
 
 ## v3.8.3-pre
+- DevEx: Deployment- und Review-Server-Operationen in [devops.py](scripts/devops.py) zusammengeführt und veraltete Skripte entfernt.
 - DevEx: Vereinheitlichtes CLI-Skript `[devops.py](scripts/devops.py)` für Tests, Linting, lokalen Server, Service Worker und Deployment hinzugefügt.
 - DevEx: Markdown-Linting bei Deployment-Vorabprüfungen behoben und Dokumentationslinks korrigiert.
 - BackEnd: Frage `sit-28-parkeren-trottoir-verbod` auf Parken mit vier Rädern und Verweis auf Schild E9e korrigiert.
@@ -51,7 +52,7 @@ Eine zusammenfassende Übersicht aller Änderungen pro Version dieses Projekts.
 - FrontEnd: Live-Vorschau für Design- und Farbänderungen in den Einstellungen mit Zurücksetzen beim Abbrechen hinzugefügt.
 - FrontEnd: Sponsoring- und Projektunterstützungskarte zum Info-Bildschirm hinzugefügt.
 - DevEx: Unbenutzte Modusselektoren und versteckte Formularelemente im Quellcode und in den Stilen wurden dauerhaft bereinigt.
-- DevEx: Skript [`scripts/run-review-server.py`](scripts/run-review-server.py) für lokale Thread-HTTP-Überprüfungen und Browsertests hinzugefügt.
+- DevEx: Threaded-Review-Server-Skript für lokale HTTP-Überprüfungen und Browsertests hinzugefügt.
 - DevEx: JSDoc-Dokumentation zu allen JavaScript-Funktionen mit automatischer Regressionsprüfung hinzugefügt.
 - DevEx: Konsolen- und Browser-Warnmeldungen in allen Modulen auf Englisch standardisiert.
 - BackEnd: Zusammenfassungs-E-Mails mit regelmäßigen Statistiken pro Spieler und vollständigem Fragenkontext für Fehlermeldungen.
