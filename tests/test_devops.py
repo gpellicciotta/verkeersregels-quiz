@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import importlib.util
+from unittest.mock import MagicMock, patch
 import subprocess
 import sys
 import unittest
@@ -12,6 +13,14 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 DEVOPS_SCRIPT = REPO_ROOT / "scripts" / "devops.py"
 DEPLOY_SCRIPT = REPO_ROOT / "scripts" / "deploy-to-production.py"
 REVIEW_SERVER_SCRIPT = REPO_ROOT / "scripts" / "run-review-server.py"
+
+
+def _load_devops_module():
+    spec = importlib.util.spec_from_file_location("devops_mod", DEVOPS_SCRIPT)
+    assert spec and spec.loader
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    return mod
 
 
 class TestDevopsCli(unittest.TestCase):
@@ -34,11 +43,7 @@ class TestDevopsCli(unittest.TestCase):
 
     def test_inlined_server_and_deploy_symbols(self) -> None:
         """Validates that review server and deployment symbols are inlined into devops."""
-        spec = importlib.util.spec_from_file_location("devops_mod", DEVOPS_SCRIPT)
-        self.assertIsNotNone(spec)
-        self.assertIsNotNone(spec.loader)
-        mod = importlib.util.module_from_spec(spec)
-        spec.loader.exec_module(mod)
+        mod = _load_devops_module()
 
         # Ensure no obsolete forwarding or import references to deploy-to-production
         self.assertFalse(
@@ -53,6 +58,7 @@ class TestDevopsCli(unittest.TestCase):
 
         # Inlined deployment functions
         for func_name in [
+            "has_plan_branch",
             "check_clean_git_tree",
             "read_active_pre_release_version",
             "finalize_changelog",
@@ -67,6 +73,29 @@ class TestDevopsCli(unittest.TestCase):
             self.assertTrue(
                 hasattr(mod, func_name),
                 f"Missing inlined deployment function in devops: {func_name}",
+            )
+
+    def test_has_plan_branch_detects_plan(self) -> None:
+        """Validates that has_plan_branch detects local plan branch."""
+        mod = _load_devops_module()
+        self.assertTrue(hasattr(mod, "has_plan_branch"))
+        self.assertTrue(mod.has_plan_branch(), "Repository should report local plan branch present")
+
+    def test_push_release_includes_plan_branch(self) -> None:
+        """Validates that push_release includes plan branch when local plan branch exists."""
+        mod = _load_devops_module()
+        logger = MagicMock()
+        with patch.object(mod.subprocess, "run") as mock_run:
+            mock_run.return_value = MagicMock(returncode=0, stdout="", stderr="")
+            success = mod.push_release("main", "3.8.3", logger)
+            self.assertTrue(success)
+            push_calls = [c for c in mock_run.call_args_list if c[0][0][:2] == ["git", "push"]]
+            self.assertEqual(len(push_calls), 1)
+            called_cmd = push_calls[0][0][0]
+            self.assertEqual(
+                called_cmd,
+                ["git", "push", "origin", "main", "v3.8.3", "plan"],
+                f"Expected push command to include plan branch, got: {called_cmd}",
             )
 
     def test_version_flag_and_action(self) -> None:

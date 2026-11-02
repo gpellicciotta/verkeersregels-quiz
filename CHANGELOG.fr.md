@@ -13,6 +13,9 @@ Un aperçu résumé de toutes les modifications, par version de ce projet.
 
 ---
 
+## v3.8.4-pre
+- DevEx: Inclus la branche plan dans git push lors du déploiement et des instructions manuelles.
+
 ## v3.8.3 [released: 2026-11-02]
 - DevEx: Fusion des opérations de déploiement et de révision du serveur dans [devops.py](scripts/devops.py) et suppression des scripts autonomes obsolètes.
 - DevEx: Ajout du script CLI `[devops.py](scripts/devops.py)` unifié pour les tests, le peluchage, le serveur local, le service worker et le déploiement.

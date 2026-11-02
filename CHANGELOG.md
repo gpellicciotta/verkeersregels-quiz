@@ -13,6 +13,9 @@ A summarized overview of all changes, per version of this project.
 
 ---
 
+## v3.8.4-pre
+- DevEx: Plan-branch toegevoegd aan git push bij deployment en handmatige push-instructies.
+
 ## v3.8.3 [released: 2026-11-02]
 - DevEx: Deployment- en review-server-operaties samengevoegd in [devops.py](scripts/devops.py) en verouderde losse scripts verwijderd.
 - DevEx: Geünificeerd `[devops.py](scripts/devops.py)` CLI-script toegevoegd voor tests, linting, lokale server, service worker en deployment.

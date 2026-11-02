@@ -195,15 +195,15 @@ This verifies:
    - Regenerates service worker precache assets (`scripts/generate-sw.py generate`).
    - Commits `CHANGELOG.md`, its translated overlays, and [sw.js](../sw.js) with the message `Released v{{version}}.`.
    - Creates the local version tag (e.g. `git tag v3.0.0`).
-3. Push the branch and tag printed by the script:
+3. Push the branch, tag, and plan branch printed by the script:
    ```bash
-   git push origin main v3.0.0
+   git push origin main v3.0.0 plan
    ```
 4. GitHub Pages deploys the updated `main` branch automatically within about 2 minutes.
 5. Add the next `-pre` heading to `CHANGELOG.md` for ongoing development and commit it.
 
 By default the script only prints the step 3 push command; it never pushes on its own.
-Pass `--push` to have it push immediately after tagging instead:
+Pass `--push` to push release and plan branches and tag immediately after tagging instead:
 
 ```bash
 python scripts/devops.py deploy --push

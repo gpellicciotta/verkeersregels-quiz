@@ -237,6 +237,16 @@ def run_versions(check_drift: bool, logger: TeeLogger) -> bool:
     return not drift
 
 
+def has_plan_branch() -> bool:
+    """Returns whether a local plan branch exists in the repository."""
+    result = subprocess.run(
+        ["git", "show-ref", "--verify", "--quiet", "refs/heads/plan"],
+        cwd=str(REPO_ROOT),
+        check=False,
+    )
+    return result.returncode == 0
+
+
 def check_clean_git_tree(logger: TeeLogger) -> bool:
     """Returns whether the git working tree has no uncommitted changes."""
     logger.log("\n[*] Checking git working tree status\n" + "=" * 60, level="INFO")
@@ -257,6 +267,24 @@ def check_clean_git_tree(logger: TeeLogger) -> bool:
             level="ERROR",
         )
         return False
+
+    plan_dir = REPO_ROOT / ".plan"
+    if plan_dir.is_dir() and (plan_dir / ".git").exists():
+        plan_result = subprocess.run(
+            ["git", "status", "--porcelain"],
+            cwd=str(plan_dir),
+            check=False,
+            capture_output=True,
+            text=True,
+        )
+        if plan_result.returncode == 0 and plan_result.stdout.strip():
+            logger.log(
+                ".plan working tree has uncommitted changes - commit or stash before deploying.\n"
+                + plan_result.stdout.strip(),
+                level="ERROR",
+            )
+            return False
+
     logger.log("Working tree is clean.", level="INFO")
     return True
 
@@ -380,10 +408,13 @@ def create_git_tag(version: str, logger: TeeLogger) -> bool:
 
 
 def push_release(branch: str, version: str, logger: TeeLogger) -> bool:
-    """Pushes the release branch and tag to origin. Only called when --push was passed explicitly."""
+    """Pushes the release branch, tag, and plan branch to origin when --push was passed."""
     logger.log("\n[*] Pushing release to origin\n" + "=" * 60, level="INFO")
+    targets = [branch, f"v{version}"]
+    if has_plan_branch():
+        targets.append("plan")
     result = subprocess.run(
-        ["git", "push", "origin", branch, f"v{version}"],
+        ["git", "push", "origin", *targets],
         cwd=str(REPO_ROOT),
         check=False,
         capture_output=True,
@@ -392,7 +423,8 @@ def push_release(branch: str, version: str, logger: TeeLogger) -> bool:
     if result.returncode != 0:
         logger.log(f"git push failed:\n{result.stderr}", level="ERROR")
         return False
-    logger.log(f"Pushed {branch} and tag v{version} to origin.", level="INFO")
+    targets_str = " ".join(targets)
+    logger.log(f"Pushed {targets_str} to origin.", level="INFO")
     return True
 
 
@@ -476,10 +508,11 @@ def deploy(dry_run: bool, push: bool, logger: TeeLogger) -> int:
         return 1
 
     if not push:
+        plan_str = " plan" if has_plan_branch() else ""
         guidance = (
             f"\n[+] Release v{version} committed and tagged locally on '{branch}'.\n"
             "    With explicit confirmation, push to publish to GitHub Pages:\n"
-            f"      git push origin {branch} v{version}\n"
+            f"      git push origin {branch} v{version}{plan_str}\n"
             "    GitHub Pages will build and publish automatically within 2 minutes.\n"
         )
         logger.log(guidance, level="INFO")
