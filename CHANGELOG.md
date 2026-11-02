@@ -13,7 +13,7 @@ A summarized overview of all changes, per version of this project.
 
 ---
 
-## v3.8.3-pre
+## v3.8.3 [released: 2026-11-02]
 - DevEx: Deployment- en review-server-operaties samengevoegd in [devops.py](scripts/devops.py) en verouderde losse scripts verwijderd.
 - DevEx: Geünificeerd `[devops.py](scripts/devops.py)` CLI-script toegevoegd voor tests, linting, lokale server, service worker en deployment.
 - DevEx: Markdown-linting in deployment pre-flight checks hersteld en ontbrekende documentatielinks gecorrigeerd.

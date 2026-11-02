@@ -13,14 +13,14 @@ Eine zusammenfassende Übersicht aller Änderungen pro Version dieses Projekts.
 
 ---
 
-## v3.8.3-pre
-- DevEx: Deployment- und Review-Server-Operationen in [devops.py](scripts/devops.py) zusammengeführt und veraltete Skripte entfernt.
-- DevEx: Vereinheitlichtes CLI-Skript `[devops.py](scripts/devops.py)` für Tests, Linting, lokalen Server, Service Worker und Deployment hinzugefügt.
-- DevEx: Markdown-Linting bei Deployment-Vorabprüfungen behoben und Dokumentationslinks korrigiert.
-- BackEnd: Frage `sit-28-parkeren-trottoir-verbod` auf Parken mit vier Rädern und Verweis auf Schild E9e korrigiert.
+## v3.8.3 [released: 2026-11-02]
+- DevEx: Bereitstellungs- und Überprüfungsservervorgänge wurden in [devops.py](scripts/devops.py) zusammengeführt und veraltete eigenständige Skripte entfernt.
+- DevEx: Einheitliches CLI-Skript `[devops.py](scripts/devops.py)` für Tests, Linting, lokaler Server, Servicemitarbeiter und Bereitstellung hinzugefügt.
+- DevEx: Markdown-Linsen bei Bereitstellungs-Preflight-Prüfungen behoben und fehlende Dokumentationslinks korrigiert.
+- BackEnd: Frage `sit-28-parkeren-trottoir-verbod` korrigiert auf Allradparken und Verweis auf Zeichen E9e.
 
 ## v3.8.2 [released: 2026-10-27]
-- FrontEnd: GitHub-Sponsoren-Link als erste Support-Option zum Info-Bildschirm sowie eine Sponsor-Schaltfläche im GitHub-Repository hinzugefügt.
+- FrontEnd: GitHub-Sponsoren-Link als erste Support-Option zum Info-Bildschirm hinzugefügt, außerdem eine Sponsor-Schaltfläche im GitHub-Repository.
 - BackEnd: Tägliche Spielertrainingssummen und tabellarische aktuelle Problemberichte sowie häufig gemeldete Fragen zu zusammenfassenden E-Mails hinzugefügt.
 
 ## v3.8.0 [released: 2026-09-24]
@@ -34,7 +34,7 @@ Eine zusammenfassende Übersicht aller Änderungen pro Version dieses Projekts.
 - BackEnd: Vier fehlende Wegweiser F34b.1, F34b.2, F34c.1 und F34c.2 mit hinzugefügten Fragen.
 - BackEnd: Quelllinks von 50 Fragen, die direkt auf den richtigen Artikel oder Paragraphen des Gesetzes verweisen.
 - BackEnd: Korrigiertes Schild E9i.svg von einem Rollstuhlsymbol zum richtigen Motorradparkschild.
-- DevEx: Verkehrszeichenquellen in SOURCES.md wurden per Inhalts-Hash gegenüber Wikimedia Commons erneut verifiziert.
+- DevEx: Verkehrszeichenquellen in SOURCES.md wurden per Inhalts-Hash erneut mit Wikimedia Commons verifiziert.
 - DevEx: Skript check-sign-semantics.py hinzugefügt, das falsch beschriftete Commons-Quelldateien erkennt.
 
 ## v3.7.0 [released: 2026-09-24]
@@ -47,12 +47,12 @@ Eine zusammenfassende Übersicht aller Änderungen pro Version dieses Projekts.
 ## v3.6.0 [released: 2026-09-23]
 - FrontEnd: Vollbild-Layout standardisiert mit Sticky-Headern, festen Aktionsschaltflächen und einheitlichen Schließschaltflächen oben rechts.
 - FrontEnd: Schaltfläche „Fehler melden“ einheitlich unten links auf allen Bildschirmen platziert mit automatischer Kontexterkennung der aktiven Ansicht.
-- FrontEnd: Statistikansicht mit lokal erfasster Spielzeit, Spielanzahl, Durchschnittspunktzahl und Fehlerübersichten einschließlich der Option zum Zurücksetzen der Daten hinzugefügt.
+- FrontEnd: Statistikansicht mit lokal erfasster Spielzeit, Spielanzahl, Durchschnittspunktzahl und Fehlerzusammenfassungen einschließlich der Option zum Zurücksetzen der Daten hinzugefügt.
 - FrontEnd: Übungsmodus und Wiederholungsschaltflächen für falsche Fragen zum Startbildschirm, Karussell, Einstellungen und Ergebnisübersicht hinzugefügt.
 - FrontEnd: Live-Vorschau für Design- und Farbänderungen in den Einstellungen mit Zurücksetzen beim Abbrechen hinzugefügt.
 - FrontEnd: Sponsoring- und Projektunterstützungskarte zum Info-Bildschirm hinzugefügt.
 - DevEx: Unbenutzte Modusselektoren und versteckte Formularelemente im Quellcode und in den Stilen wurden dauerhaft bereinigt.
-- DevEx: Threaded-Review-Server-Skript für lokale HTTP-Überprüfungen und Browsertests hinzugefügt.
+- DevEx: Threaded-Review-Server-Skript für lokale HTTP-Reviews und Browsertests hinzugefügt.
 - DevEx: JSDoc-Dokumentation zu allen JavaScript-Funktionen mit automatischer Regressionsprüfung hinzugefügt.
 - DevEx: Konsolen- und Browser-Warnmeldungen in allen Modulen auf Englisch standardisiert.
 - BackEnd: Zusammenfassungs-E-Mails mit regelmäßigen Statistiken pro Spieler und vollständigem Fragenkontext für Fehlermeldungen.
@@ -61,7 +61,7 @@ Eine zusammenfassende Übersicht aller Änderungen pro Version dieses Projekts.
 - BackEnd: Google Apps Script sendet jetzt täglich um 7:00 Uhr und 19:00 Uhr UTC eine zusammenfassende E-Mail im niederländischen Stil mit Ergebnissen, Benachrichtigungen und einer anpassbaren Liste der Spieler, denen man folgen kann.
 - FrontEnd: Der Info-Bildschirm zeigt nun das Änderungsprotokoll in der Sprache der aktiven Benutzeroberfläche an.
 - FrontEnd: Das Dialogfeld „Fehler melden“ zeigt jetzt ein Titelsymbol und einen konfigurierbaren optionalen Fragenkontext an.
-- FrontEnd: Ein Einstellungsdialog mit übersichtlichen Abschnitten „Allgemein/Quiz/Karussell“ ersetzt die beiden separaten Dialoge.
+- FrontEnd: Ein Einstellungsdialog mit klaren Abschnitten „Allgemein/Quiz/Karussell“ ersetzt die beiden separaten Dialoge.
 - FrontEnd: Name, Sprache, Theme und Theme-Farbe sind nun ebenfalls anpassbar und werden im localStorage gespeichert.
 - DevEx: `translate-markdown.py` hinzugefügt, wobei Markdown vor der Übersetzung jeder Veröffentlichung nach Überschrift und Absatz aufgeteilt wird.
 
@@ -125,8 +125,8 @@ Eine zusammenfassende Übersicht aller Änderungen pro Version dieses Projekts.
 - FrontEnd: Blaues Verkehrszeichen-Favicon hinzugefügt und Schaltfläche für die letzte Frage geändert, um Ergebnisse anzuzeigen.
 - FrontEnd: Startbenachrichtigungen und Fortschrittsanzeigen zeigen jetzt dynamische Fragenanzahlen an, die auf verfügbare Fragen beschränkt sind.
 - FrontEnd: URL-Abfrageparameter zum Filtern nach Jahr der Gesetzesänderung und Anzahl der Fragen hinzugefügt.
-- FrontEnd: Offizielle Gesetzesartikel und erläuternde Links werden nach der Beantwortung jeder Quizfrage angezeigt.
-- Inhoud: Fragendatenbank verdoppelt sich auf 126 Fragen mit vollständiger Abdeckung des Vorstands und Regeln für die Zeit nach 2022.
+- FrontEnd: Offizielle Gesetzesartikel und erklärende Links werden nach der Beantwortung jeder Quizfrage angezeigt.
+- Inhoud: Fragendatenbank verdoppelt auf 126 Fragen mit vollständiger Abdeckung des Vorstands und Regeln für die Zeit nach 2022.
 
 ## v1.0.0 [released: 2026-09-18]
 - Documentatie: Standard-Projektdokumentation einschließlich Anforderungen, DevOps-Leitfaden, Lizenz und Dokumentationsindex hinzugefügt.

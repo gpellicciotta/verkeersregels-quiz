@@ -13,11 +13,11 @@ Una panoramica riepilogativa di tutte le modifiche, per versione di questo proge
 
 ---
 
-## v3.8.3-pre
-- DevEx: Consolidate le operazioni di deployment e review server in [devops.py](scripts/devops.py) e rimossi gli script obsoleti.
-- DevEx: Aggiunto lo script CLI unificato `[devops.py](scripts/devops.py)` per test, linting, server locale, service worker e deployment.
-- DevEx: Risolto il linting markdown nei controlli di pre-distribuzione e corretti i collegamenti alla documentazione.
-- BackEnd: Corretta la domanda `sit-28-parkeren-trottoir-verbod` per indicare la sosta a quattro ruote e il segnale E9e.
+## v3.8.3 [released: 2026-11-02]
+- DevEx: Unione delle operazioni di distribuzione e revisione del server in [devops.py](scripts/devops.py) e rimozione degli script autonomi obsoleti.
+- DevEx: Aggiunto script CLI `[devops.py](scripts/devops.py)` unificato per test, linting, server locale, operatore del servizio e distribuzione.
+- DevEx: Risolti i problemi di markdown nei controlli pre-volo della distribuzione e corretti i collegamenti alla documentazione mancanti.
+- BackEnd: Domanda `sit-28-parkeren-trottoir-verbod` corretta in parcheggio a quattro ruote e riferimento al segnale E9e.
 
 ## v3.8.2 [released: 2026-10-27]
 - FrontEnd: Aggiunto il collegamento Sponsor GitHub come prima opzione di supporto alla schermata Informazioni, oltre a un pulsante Sponsor nel repository GitHub.
@@ -47,12 +47,12 @@ Una panoramica riepilogativa di tutte le modifiche, per versione di questo proge
 ## v3.6.0 [released: 2026-09-23]
 - FrontEnd: Layout a schermo intero standardizzato con intestazioni permanenti, pulsanti di azione fissi e pulsanti di chiusura uniformi in alto a destra.
 - FrontEnd: Pulsante Segnala errore posizionato uniformemente in basso a sinistra su tutte le schermate con rilevamento automatico del contesto della vista attiva.
-- FrontEnd: Aggiunta la visualizzazione delle statistiche con tempo di gioco monitorato localmente, conteggi delle partite, punteggio medio e panoramiche degli errori inclusa l'opzione di ripristino dei dati.
+- FrontEnd: Aggiunta la visualizzazione delle statistiche con tempo di gioco monitorato localmente, conteggi delle partite, punteggio medio e riepilogo degli errori inclusa l'opzione di ripristino dei dati.
 - FrontEnd: Modalità pratica e pulsanti di ripetizione per domande errate aggiunti alla schermata iniziale, al carosello, alle impostazioni e alla panoramica dei risultati.
 - FrontEnd: Aggiunta l'anteprima dal vivo per le modifiche al tema e al colore nelle impostazioni con ripristino all'annullamento.
 - FrontEnd: Aggiunta la scheda di sponsorizzazione e supporto del progetto alla schermata Informazioni.
 - DevEx: Ripuliti in modo permanente i selettori di modalità inutilizzati e gli elementi dei moduli nascosti nel codice sorgente e negli stili.
-- DevEx: Script server di revisione con thread aggiunto per revisioni HTTP locali e test del browser.
+- DevEx: Aggiunto script del server di revisione con thread per revisioni HTTP locali e test del browser.
 - DevEx: Aggiunta la documentazione JSDoc a tutte le funzioni JavaScript con controllo di regressione automatizzato.
 - DevEx: Messaggi di avviso della console e del browser standardizzati in inglese in tutti i moduli.
 - BackEnd: E-mail di riepilogo migliorate con statistiche periodiche per giocatore e contesto completo delle domande per i messaggi di errore.
@@ -81,7 +81,7 @@ Una panoramica riepilogativa di tutte le modifiche, per versione di questo proge
 ## v3.2.0 [2026-09-22]
 - FrontEnd: Spiegazioni e titoli separati e localizzati per i segnali stradali aggiunti al carosello, comprese le traduzioni complete in olandese e inglese.
 - FrontEnd: Sostituiti i testi alternativi generici delle immagini con codici descrittivi della scheda nelle domande dei quiz, nelle opzioni di risposta e nel carosello.
-- FrontEnd: Aggiunta la possibilità di condividere i risultati dei quiz tramite l'API Web Share, con la possibilità di copiarli negli appunti e di inviare notifiche di avviso.
+- FrontEnd: Aggiunta la possibilità di condividere i risultati dei quiz tramite l'API Web Share, con possibilità di copiare negli appunti e notifiche di avviso popup.
 - FrontEnd: Aggiunti badge indicatori (non dipendenti dal colore) per le opzioni di risposta e l'intestazione per indicare le risposte corrette e errate (accessibilità daltonica).
 - FrontEnd: CSS rifattorizzato in un foglio di stile modulare "mobile-first" conforme ai token di controllo e agli standard di contrasto WCAG.
 - FrontEnd: Aggiunta la traduzione in inglese e il cambio di lingua per l'interfaccia utente, le finestre di dialogo di configurazione e tutte le 324 domande.

@@ -13,11 +13,11 @@ Un aperçu résumé de toutes les modifications, par version de ce projet.
 
 ---
 
-## v3.8.3-pre
-- DevEx: Fusionné les opérations de déploiement et de serveur dans [devops.py](scripts/devops.py) et supprimé les scripts obsolètes.
-- DevEx: Ajout du script CLI unifié `[devops.py](scripts/devops.py)` pour les tests, le linting, le serveur local et le déploiement.
-- DevEx: Correction du linting markdown lors des vérifications de déploiement et des liens de documentation.
-- BackEnd: Correction de la question `sit-28-parkeren-trottoir-verbod` pour indiquer le stationnement à quatre roues et le panneau E9e.
+## v3.8.3 [released: 2026-11-02]
+- DevEx: Fusion des opérations de déploiement et de révision du serveur dans [devops.py](scripts/devops.py) et suppression des scripts autonomes obsolètes.
+- DevEx: Ajout du script CLI `[devops.py](scripts/devops.py)` unifié pour les tests, le peluchage, le serveur local, le service worker et le déploiement.
+- DevEx: Le peluchage Markdown lors des vérifications avant vol du déploiement a été corrigé et les liens de documentation manquants ont été corrigés.
+- BackEnd: Question `sit-28-parkeren-trottoir-verbod` corrigée au stationnement pour quatre roues et référence au panneau E9e.
 
 ## v3.8.2 [released: 2026-10-27]
 - FrontEnd: Ajout du lien GitHub Sponsors comme première option de support sur l'écran À propos, ainsi qu'un bouton Sponsor sur le référentiel GitHub.
@@ -47,19 +47,19 @@ Un aperçu résumé de toutes les modifications, par version de ce projet.
 ## v3.6.0 [released: 2026-09-23]
 - FrontEnd: Disposition plein écran standardisée avec des en-têtes collants, des boutons d'action fixes et des boutons de fermeture uniformes en haut à droite.
 - FrontEnd: Bouton de rapport d'erreur uniformément placé en bas à gauche de tous les écrans avec détection automatique du contexte de la vue active.
-- FrontEnd: Ajout d'une vue des statistiques avec le temps de jeu suivi localement, le nombre de jeux, le score moyen et les aperçus des erreurs, y compris l'option de réinitialisation des données.
+- FrontEnd: Ajout d'une vue des statistiques avec le temps de jeu suivi localement, le nombre de parties, le score moyen et les résumés d'erreurs, y compris l'option de réinitialisation des données.
 - FrontEnd: Mode entraînement et boutons de répétition pour les questions incorrectes ajoutés à l'écran d'accueil, au carrousel, aux paramètres et à l'aperçu des résultats.
 - FrontEnd: Ajout d'un aperçu en direct pour les changements de thème et de couleur dans les paramètres avec réinitialisation en cas d'annulation.
 - FrontEnd: Ajout d'une carte de parrainage et de soutien au projet à l'écran À propos.
 - DevEx: Nettoyage permanent des sélecteurs de mode inutilisés et des éléments de formulaire cachés dans le code source et les styles.
-- DevEx: Script de serveur de révision threadé ajouté pour les révisions HTTP locales et les tests de navigateur.
+- DevEx: Ajout d'un script de serveur de révision par fil de discussion pour les révisions HTTP locales et les tests du navigateur.
 - DevEx: Ajout de la documentation JSDoc à toutes les fonctions JavaScript avec vérification de régression automatisée.
 - DevEx: Messages d'avertissement de la console et du navigateur normalisés en anglais dans tous les modules.
 - BackEnd: E-mails récapitulatifs améliorés avec des statistiques périodiques par joueur et un contexte de question complet pour les messages d'erreur.
 
 ## v3.5.0 [released: 2026-09-22]
 - BackEnd: Google Apps Script envoie désormais chaque jour à 7h00 et 19h00 UTC un e-mail récapitulatif de style néerlandais avec les résultats, les notifications et une liste personnalisable de joueurs à suivre.
-- FrontEnd: L'écran À propos affiche désormais le journal des modifications traduit dans la langue active de l'interface.
+- FrontEnd: L'écran À propos affiche désormais le journal des modifications traduit dans la langue de l'interface active.
 - FrontEnd: La boîte de dialogue "Signaler un bug" affiche désormais une icône de titre et un contexte de question facultatif configurable.
 - FrontEnd: Une boîte de dialogue de paramètres avec des sections claires Général/Quiz/Carrousel remplace les deux boîtes de dialogue séparées.
 - FrontEnd: Le nom, la langue, le thème et la couleur du thème sont désormais également réglables et enregistrés dans localStorage.
