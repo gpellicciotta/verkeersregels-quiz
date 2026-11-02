@@ -14,6 +14,8 @@ Un aperçu résumé de toutes les modifications, par version de ce projet.
 ---
 
 ## v3.8.3-pre
+- DevEx: Ajout du script CLI unifié `[devops.py](scripts/devops.py)` pour les tests, le linting, le serveur local et le déploiement.
+- DevEx: Correction du linting markdown lors des vérifications de déploiement et des liens de documentation.
 - BackEnd: Correction de la question `sit-28-parkeren-trottoir-verbod` pour indiquer le stationnement à quatre roues et le panneau E9e.
 
 ## v3.8.2 [released: 2026-10-27]

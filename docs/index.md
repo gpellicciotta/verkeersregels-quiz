@@ -9,7 +9,7 @@ Overview of all documentation and specifications for Verkeersregels Quiz.
 - [DevOps & Operations](devops.md): Local development setup, automated checks, testing, GitHub Pages hosting, and Apps Script operations.
 - [README](../README.md): Project overview, quick start, query parameters, and directory structure.
 - [CHANGELOG](../CHANGELOG.md): Human-readable version history and release notes.
-- [PLAN](../PLAN.md): All tasks to be planned for next milestone, or later.
+- PLAN.md: All tasks to be planned for next milestone, or later.
 - [LICENSE](../LICENSE.md): Software license terms (MIT).
 
 ---

@@ -14,6 +14,8 @@ Eine zusammenfassende Übersicht aller Änderungen pro Version dieses Projekts.
 ---
 
 ## v3.8.3-pre
+- DevEx: Vereinheitlichtes CLI-Skript `[devops.py](scripts/devops.py)` für Tests, Linting, lokalen Server, Service Worker und Deployment hinzugefügt.
+- DevEx: Markdown-Linting bei Deployment-Vorabprüfungen behoben und Dokumentationslinks korrigiert.
 - BackEnd: Frage `sit-28-parkeren-trottoir-verbod` auf Parken mit vier Rädern und Verweis auf Schild E9e korrigiert.
 
 ## v3.8.2 [released: 2026-10-27]

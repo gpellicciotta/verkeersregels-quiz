@@ -249,14 +249,20 @@ def run_unit_tests(logger: TeeLogger) -> bool:
 
 def run_markdown_lint(logger: TeeLogger) -> bool:
     """Runs markdown linter if available."""
-    linter_path = REPO_ROOT.parent / "dev-guidelines" / "scripts" / "lint-markdown.py"
-    if not linter_path.exists():
+    candidates = [
+        REPO_ROOT.parent / "dev-guidelines" / "scripts" / "lint-markdown.py",
+        REPO_ROOT.parent.parent.parent.parent / "dev-guidelines" / "scripts" / "lint-markdown.py",
+    ]
+    linter_path = next((p for p in candidates if p.exists()), None)
+    if linter_path is None:
         return True
     logger.log("\n[*] Linting documentation and changelog\n" + "=" * 60, level="INFO")
     result = subprocess.run(
         [
             sys.executable,
             str(linter_path),
+            "check",
+            "--offline",
             "LICENSE.md",
             "docs/index.md",
             "docs/requirements.md",
@@ -269,7 +275,8 @@ def run_markdown_lint(logger: TeeLogger) -> bool:
         text=True,
     )
     if result.returncode != 0:
-        logger.log(f"Markdown linting failed:\n{result.stdout}", level="ERROR")
+        err = (result.stderr.strip() + "\n" + result.stdout.strip()).strip()
+        logger.log(f"Markdown linting failed:\n{err}", level="ERROR")
         return False
     logger.log("All documentation passed markdown linting.", level="INFO")
     return True

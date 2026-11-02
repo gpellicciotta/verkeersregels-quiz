@@ -120,7 +120,7 @@ met de bredere toegang. Om dat recht te laten intrekken en te vervangen door de 
    vraag nu specifiek over "deze spreadsheet" gaat, niet over "al je spreadsheets".
 
 ### Gedeeld geheim tegen spam
-`Code.gs` en `js/config.js` delen een `sleutel`-waarde (`SHARED_SECRET` / `CONFIG.SHEET_SECRET`) die
+[Code.gs](google-apps-script/Code.gs) en [config.js](js/config.js) delen een `sleutel`-waarde (`SHARED_SECRET` / `CONFIG.SHEET_SECRET`) die
 moet overeenkomen voor er een rij wordt toegevoegd. Dit is geen echte beveiliging — de waarde staat
 gewoon leesbaar in de publieke broncode — maar houdt generieke bots tegen die lukraak Apps
 Script-URL's aanschieten. Wijzig je de waarde in het ene bestand, wijzig ze dan ook in het andere

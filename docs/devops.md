@@ -22,7 +22,7 @@ python scripts/bootstrap-dev-environment.py
 ```
 
 ### Running the Local Web Server
-Because the quiz fetches `data/questions.json` and `CHANGELOG.md` via JavaScript `fetch()`, files must be served over HTTP rather than opened directly as `file://` to prevent browser CORS restrictions.
+Because the quiz fetches [questions.json](../data/questions.json) and `CHANGELOG.md` via JavaScript `fetch()`, files must be served over HTTP rather than opened directly as `file://` to prevent browser CORS restrictions.
 
 Start the review server from the repository root:
 
@@ -60,13 +60,13 @@ python -m unittest discover -s tests -v
 ```
 
 The test suite consists of 148 tests across 22 test modules, including:
-- `tests/test_quiz_data.py`: verifies 304 questions, schemas, IDs, option counts, `since` years, authoritative URLs, and SVG assets.
-- `tests/test_pwa.py`: verifies manifest integrity, icon dimensions, corner transparency, and service worker precaching completeness.
-- `tests/test_sw_update.py`: executes lifecycle tests in Node and verifies asset fingerprints and startup ordering.
-- `tests/test_ux_layout.py`: verifies desktop two-panel split, mobile floating action button, hidden option collapsing, and pill links.
-- `tests/test_sign_carousel.py`: verifies carousel markup, timing controls, pause overlay, and keyboard navigation.
-- `tests/test_about_view.py`: verifies About screen markup, version tag, sources presentation, start screen cleanup, and navigation.
-- `tests/test_js_jsdoc.py`: verifies every JavaScript function carries a JSDoc block documenting its parameters and return value.
+- [test_quiz_data.py](../tests/test_quiz_data.py): verifies 304 questions, schemas, IDs, option counts, `since` years, authoritative URLs, and SVG assets.
+- [test_pwa.py](../tests/test_pwa.py): verifies manifest integrity, icon dimensions, corner transparency, and service worker precaching completeness.
+- [test_sw_update.py](../tests/test_sw_update.py): executes lifecycle tests in Node and verifies asset fingerprints and startup ordering.
+- [test_ux_layout.py](../tests/test_ux_layout.py): verifies desktop two-panel split, mobile floating action button, hidden option collapsing, and pill links.
+- [test_sign_carousel.py](../tests/test_sign_carousel.py): verifies carousel markup, timing controls, pause overlay, and keyboard navigation.
+- [test_about_view.py](../tests/test_about_view.py): verifies About screen markup, version tag, sources presentation, start screen cleanup, and navigation.
+- [test_js_jsdoc.py](../tests/test_js_jsdoc.py): verifies every JavaScript function carries a JSDoc block documenting its parameters and return value.
 
 ### Quiz Cancellation Browser Checks
 Install the optional browser test dependency locally, then run the review server in a separate terminal:
@@ -142,10 +142,11 @@ python ../dev-guidelines/scripts/lint-taskfile.py TODO.md
 
 ## DevOps and Asset Tooling
 All developer utilities live in `scripts/` and adhere strictly to CLI guidelines with `--version`, `--help`, `--verbose`, `--debug`, and `--log-file`:
+- [devops.py](../scripts/devops.py): unified CLI for test, lint, check, serve, sw, versions, and deployment operations.
 - [bootstrap-dev-environment.py](../scripts/bootstrap-dev-environment.py): verifies environment readiness, repository structure, and runs test suites.
-- [deploy-to-production.py](../scripts/deploy-to-production.py): verifies preconditions, then finalizes `CHANGELOG.md`, regenerates translated changelogs and `sw.js`, commits, and tags a release.
+- [deploy-to-production.py](../scripts/deploy-to-production.py): verifies preconditions, then finalizes `CHANGELOG.md`, regenerates translated changelogs and [sw.js](../sw.js), commits, and tags a release.
 - [run-review-server.py](../scripts/run-review-server.py): serves the repository over threaded HTTP on `127.0.0.1:8062` for browser review and Playwright runs.
-- [generate-sw.py](../scripts/generate-sw.py): dynamically scans all assets and writes `sw.js` with versioned cache keys and 227 precached assets.
+- [generate-sw.py](../scripts/generate-sw.py): dynamically scans all assets and writes [sw.js](../sw.js) with versioned cache keys and 227 precached assets.
 - [translate-markdown.py](../scripts/translate-markdown.py): translates `CHANGELOG.md` into `CHANGELOG.<lang>.md` overlays for the About view, chunking by heading and paragraph via Google Translate.
 - [generate-pwa-icons.py](../scripts/generate-pwa-icons.py): renders transparent PNG and ICO icons via headless Chrome and Pillow.
 - [fetch-belgian-signs.py](../scripts/fetch-belgian-signs.py): downloads, verifies, and rate-limits Belgian traffic sign SVGs from Wikimedia Commons.
@@ -165,7 +166,7 @@ Automatic reloads restart an active quiz; saved preferences remain intact.
 Offline or suspended apps update after reconnecting or resuming, subject to browser scheduling and hosting propagation.
 Older installations must first discover this release using their existing update behavior; closing and reopening may be necessary.
 
-Every deployment must regenerate `sw.js`; the release script already does this.
+Every deployment must regenerate [sw.js](../sw.js); the release script already does this.
 Its cache key includes an asset-content fingerprint, so regenerated deployments detect changes even with an unchanged version.
 Changing files without regenerating the worker does not trigger an update.
 
@@ -175,7 +176,7 @@ See the [update failure analysis](issues/pwa-update-stalls.md) for reproduction,
 Before releasing, dry-run the release script to verify preconditions without changing anything:
 
 ```bash
-python scripts/deploy-to-production.py deploy --dry-run
+python scripts/devops.py deploy --dry-run
 ```
 
 This verifies:
@@ -188,13 +189,13 @@ This verifies:
 1. Ensure the working tree is clean and you are on the branch to release from (usually `main`).
 2. Run the release script for real:
    ```bash
-   python scripts/deploy-to-production.py deploy
+   python scripts/devops.py deploy
    ```
    This re-runs the pre-flight checks above, then automatically:
    - Finalizes the active `-pre` heading in `CHANGELOG.md` to `[released: {{date}}]`.
-   - Regenerates `CHANGELOG.en.md`, `CHANGELOG.fr.md`, `CHANGELOG.de.md`, and `CHANGELOG.it.md` (`scripts/translate-markdown.py generate --all`).
+   - Regenerates [CHANGELOG.en.md](../CHANGELOG.en.md), [CHANGELOG.fr.md](../CHANGELOG.fr.md), [CHANGELOG.de.md](../CHANGELOG.de.md), and [CHANGELOG.it.md](../CHANGELOG.it.md) (`scripts/translate-markdown.py generate --all`).
    - Regenerates service worker precache assets (`scripts/generate-sw.py generate`).
-   - Commits `CHANGELOG.md`, its translated overlays, and `sw.js` with the message `Released v{{version}}.`.
+   - Commits `CHANGELOG.md`, its translated overlays, and [sw.js](../sw.js) with the message `Released v{{version}}.`.
    - Creates the local version tag (e.g. `git tag v3.0.0`).
 3. Push the branch and tag printed by the script:
    ```bash
@@ -207,7 +208,7 @@ By default the script only prints the step 3 push command; it never pushes on it
 Pass `--push` to have it push immediately after tagging instead:
 
 ```bash
-python scripts/deploy-to-production.py deploy --push
+python scripts/devops.py deploy --push
 ```
 
 Passing `--push` on the command line **is** the explicit confirmation to publish — only use
@@ -220,13 +221,13 @@ cannot be combined.
 ### Endpoint Configuration
 Score logging and error reporting are handled by an external Google Apps Script Web App:
 - Script source code is maintained in `google-apps-script/Code.gs`.
-- The Web App URL is configured in `CONFIG.SHEET_WEBAPP_URL` in `js/config.js`.
+- The Web App URL is configured in `CONFIG.SHEET_WEBAPP_URL` in [config.js](../js/config.js).
 - If `CONFIG.SHEET_WEBAPP_URL` is set to `null` or empty, client-side logging is disabled and the quiz operates in standalone offline mode.
 
 ### Abuse Mitigation Write Key
-- The shared secret `CONFIG.SHEET_SECRET` is defined in `js/config.js` and verified in `Code.gs`.
+- The shared secret `CONFIG.SHEET_SECRET` is defined in [config.js](../js/config.js) and verified in `Code.gs`.
 - It acts as an abuse mitigation write key to prevent automated scrapers and bots from posting garbage entries to the Google Sheet.
-- When updating the secret, change `SHARED_SECRET` in `Code.gs` and republish a new deployment revision of the Web App, then update `CONFIG.SHEET_SECRET` in `js/config.js`.
+- When updating the secret, change `SHARED_SECRET` in `Code.gs` and republish a new deployment revision of the Web App, then update `CONFIG.SHEET_SECRET` in [config.js](../js/config.js).
 
 ### Daily Summary Email
 - The HTML email shows recent reports in date, reporter, question, and remark columns; timestamps remain explicitly labeled UTC.
@@ -251,4 +252,4 @@ Score logging and error reporting are handled by an external Google Apps Script 
      Re-running it is safe: it first removes any existing `sendDailySummaryEmail` triggers.
   4. Authorize the script's Gmail/MailApp permission when prompted on first run.
 - The pure aggregation logic (`buildSummaryEmail_`) is unit tested under Node; see
-  `tests/gas-summary.test.cjs` and `tests/test_gas_summary.py`.
+  `tests/gas-summary.test.cjs` and [test_gas_summary.py](../tests/test_gas_summary.py).

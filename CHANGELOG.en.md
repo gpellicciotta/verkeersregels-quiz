@@ -14,6 +14,8 @@ A summarized overview of all changes, per version of this project.
 ---
 
 ## v3.8.3-pre
+- DevEx: Added unified `[devops.py](scripts/devops.py)` CLI for tests, linting, local server, service worker, and deployment.
+- DevEx: Fixed markdown linting in deployment pre-flight checks and corrected documentation link references.
 - BackEnd: Corrected question `sit-28-parkeren-trottoir-verbod` to state parking with four wheels and reference sign E9e.
 
 ## v3.8.2 [released: 2026-10-27]

@@ -158,14 +158,14 @@ Functional and technical requirements for the Verkeersregels Quiz application.
 
 ### Security and Abuse Mitigation
 - **Client-Side Secret Architectural Decision**:
-  - The configuration parameter `CONFIG.SHEET_SECRET` in `js/config.js` is an abuse-mitigation write key rather than a confidential secret.
+  - The configuration parameter `CONFIG.SHEET_SECRET` in [config.js](../js/config.js) is an abuse-mitigation write key rather than a confidential secret.
   - In a public static web application without a custom backend server, all client code and configuration strings are inherently visible to the user browser.
   - The write key acts as a threshold against generic scrapers, spiders, and automated spam bots targeting the Google Apps Script endpoint.
   - This architecture avoids requiring user registration, authentication servers, or database infrastructure while protecting the logging sheet against ambient automated abuse.
 
 ### Automated Testing and Quality Assurance
-- **Unit Test Suite**: 32 automated tests across five test modules (`tests/test_quiz_data.py`, `tests/test_pwa.py`, `tests/test_ux_layout.py`, `tests/test_sign_carousel.py`, `tests/test_about_view.py`):
-  - Validates exact count of 304 questions in `data/questions.json`.
+- **Unit Test Suite**: 32 automated tests across five test modules ([test_quiz_data.py](../tests/test_quiz_data.py), [test_pwa.py](../tests/test_pwa.py), [test_ux_layout.py](../tests/test_ux_layout.py), [test_sign_carousel.py](../tests/test_sign_carousel.py), [test_about_view.py](../tests/test_about_view.py)):
+  - Validates exact count of 304 questions in [questions.json](../data/questions.json).
   - Schema integrity, unique IDs, required fields, and valid option counts (`options >= 2`).
   - Correct index validity (`0 <= correctIndex < len(options)`).
   - Integer validity of `since` amendment years.
